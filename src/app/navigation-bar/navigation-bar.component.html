@@ -1,0 +1,56 @@
+<div class="navbar" #navbar>
+  <ng-container *ngIf = "!mobileNav">  
+    <ul >
+      <li *ngFor="let sport of sports; let i = index" (mouseover)="closeDropdownByMouseleave(i)">
+        <a routerLink="/{{sport.title === 'Popular' ? '' : sport.title}}" routerLinkActive="active" (click)="closeDropdown(i)" >
+          <div class="sport-image">
+            <img src="{{sport.image}}" #image>
+          </div>
+          <div class="sport-name">{{sport.title}}</div>
+        </a>
+      </li>
+      <li class="more">
+        <div class="sport-image">
+          <img src="/assets/images/sports-social-caret-down-blue.png" (click)="openDropdown()" (mouseover)="openDropdown()" >
+        </div>
+      </li>
+    </ul>
+    <ng-container *ngIf="isHoverOnCaret">
+        <ul  class="dropdown" (mouseleave)="closeDropdownByMouseleave()" #dropdown>
+            <li *ngFor="let sport of moreSports" >
+              <a routerLink="/{{sport.title}}" routerLinkActive="active" (click)="closeDropdownByClick(i)">
+                <div class="sport-image">
+                  <img src="{{sport.image}}" >
+                </div>
+                <div class="sport-name">{{sport.title}}</div>
+              </a>
+            </li>
+        </ul>
+    </ng-container>
+  </ng-container>
+
+
+<div class="mobile-nav" >
+   <ng-container *ngIf = "mobileNav">
+      <div class="active-route"> 
+          <div class="sport-image">
+            <img src="{{activeRoute.image}}" #image>
+          </div>
+          <div class="sport-name">{{activeRoute.title}}</div>
+        <img src="/assets/images/sports-social-caret-down-blue.png" (click)="openDropdown()" (mouseover)="openDropdown()" >
+      </div>
+      <ng-container *ngIf="isHoverOnCaret">
+        <ul (mouseleave)="closeDropdownByMouseleave()" #mobileNavbar>
+          <li *ngFor="let sport of sports; let i = index" >
+            <a routerLink="/{{sport.title}}" routerLinkActive="active" (click)="closeDropdownByClick(i)" >
+              <div class="sport-image">
+                <img src="{{sport.image}}" #image>
+              </div>
+              <div class="sport-name">{{sport.title}}</div>
+            </a>
+          </li>
+        </ul>
+      </ng-container>
+   </ng-container>
+</div>
+</div>

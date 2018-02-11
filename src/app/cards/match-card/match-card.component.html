@@ -1,0 +1,53 @@
+<div class="matchCard" >
+  <div class="user">
+    <div class="userImage">
+      <img src="{{doerPic}}" alt="">
+    </div>
+    <div class="matchDetails">
+      <div class="userNameAndActivity">{{doerName}} 
+        <span>{{activityName}}</span>
+      </div>
+      <div class="gameName">{{gameName}} Match</div>
+      <div class="activityDate">{{activityDate}}</div>
+    </div>
+    <div class="matchDate">
+      <img src="/assets/images/sports-social-clock.png" alt="">
+     <span>{{matchDate}}</span> 
+    </div>
+    <div class="restrictionCount">{{joineeCount}} playing</div>
+  </div>
+  <div class="matchText">{{matchText}}</div>
+  <div class="matchImage" (click) = "createComponent(eventId)">
+    <img src="{{matchImage}}" alt="">
+  </div>
+  <div class="actionsCount" #actionsCount>
+    <a routerLink="#" *ngIf="commentCount > 0">
+      {{commentCount}} 
+      <span>{{commentCount > 1 ? 'Comments' : 'Comment'}}</span>  
+    </a>
+    <a routerLink="#" *ngIf="promoteCount > 0">
+      {{promoteCount}} 
+      <span>{{promoteCount > 1 ? 'Promotes' : 'Promote'}}</span>  
+    </a>
+    <a routerLink="#" *ngIf="watchCount > 0">
+      {{watchCount}} 
+      <span>Watching</span> 
+    </a>
+  </div>
+  <div class="actions">
+    <button class="playButton">
+      <img src="/assets/images/sports-social-play.png" alt=""> <span>Play</span>  
+    </button>
+    <button class="commentButton">
+      <img src="/assets/images/sports-social-comment.png" alt=""><span>Comment</span>  
+    </button>
+    <button class="promoteButton">
+      <img src="/assets/images/sports-social-promote.png" alt=""> <span>Promote</span>
+    </button>
+    <button class="watchButton">
+      <img src="/assets/images/sports-social-watching.png" alt=""> <span>Watch</span>
+    </button>
+  </div>
+</div>
+
+<template #openMatchCard></template>

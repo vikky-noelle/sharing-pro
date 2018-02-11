@@ -1,0 +1,45 @@
+.blog-card{
+    width: 100%;
+    position: relative;
+}
+.blog-card > img {
+    width: 100%;
+}
+.blog-heading {
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    right: 0;
+    top:0;
+    bottom: 0px;
+}
+a{
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    width: 90%;
+    text-align: left;
+    position: absolute;
+    bottom: 30px;
+    left: 5px;
+    right: 5px !important;
+}
+.time {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.time > img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.time > span{
+    display: inline-block;
+    vertical-align: middle;
+    color: #bbbbbb;
+}

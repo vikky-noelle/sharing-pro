@@ -1,0 +1,145 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto' ,sans-serif;
+    
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+} 
+::-webkit-scrollbar-thumb {
+    background-color: #888888;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+.type > a{
+    color: black;
+    font-size: 0.45em;
+    font-weight: 700;
+    padding-bottom: 4%;
+    text-decoration:  none;
+}
+
+.actions{
+    padding: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.actions > button > img {
+    width: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.actions > button > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.close {
+    position: absolute;
+    top:2px;
+    right: 2px;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    
+}
+
+.col-4 {
+    -ms-flex: 31%; /* IE10 */
+    flex: 31%;
+    max-width: 31%;
+    margin: 1%;
+    
+}
+
+.open-card{
+    position: fixed;
+    width: 50%;
+    top: 1%;
+    left: 25%;
+    bottom:5px;
+    z-index: 40;
+    background-color: white;
+    box-shadow: 2px 2px 4px #bbbbbb;
+    overflow-y: scroll;
+}
+.open-card-header {
+    position: relative;
+    border-bottom: 1px solid #bbbbbb;
+    padding: 1%;
+    min-height: 80px;
+}
+
+.open-card-content{
+    position: relative;
+}
+
+.open-card-footer {
+    background-color: #bbbbbb;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 2%;
+}
+
+.open-card-footer > img {
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin:  auto;
+}
+
+.comment-bar{
+
+}
+
+@media ( max-width: 720px) {
+    .col-4{
+        -ms-flex: 97%; /* IE10 */
+        flex: 97%;
+        max-width: 97%;
+        margin: 1%;
+    }
+    .open-card{
+        width: 94%;
+        left: 3%;
+    }
+}
+@media ( max-width: 980px) and ( min-width: 720px) {
+    .col-4{
+        -ms-flex: 47%; /* IE10 */
+        flex: 47%;
+        max-width: 47%;
+        margin: 1%;
+    }
+    .open-card{
+        width: 70%;
+        left: 15%;
+    }
+}
+
+
+

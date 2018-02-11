@@ -1,0 +1,88 @@
+<div class="open-card" #openCard>
+  <div class="open-card-header">
+    <img  class="close" src="/assets/images/sports-social-cancel-black.png" alt="" (click)= "close()">
+    <div class="time-remaining">{{timeRemaining}}</div>
+    <div class="heading">{{gameName}}</div>
+    <div class="match-sum">Match Summary</div>
+    <div class="started-by">
+      <p>Started By</p>
+      <img src="{{creatorImage}}" title="{{creatorName}}" alt="">
+    </div>
+  </div>
+  <div class="open-card-content">
+    <div class="match-date">
+      <img src="/assets/images/calendar.png" alt="">
+      <span>{{matchDate}}</span>
+    </div>
+    <div class="venue">
+      <img src="/assets/images/map-marker.png" alt="">
+      <span>{{venueName}}</span>
+      <img src="/assets/images/map-marker.png" alt="">
+    </div>
+    <div class="match-text">
+      {{matchText}}
+    </div>
+    <div class="match-image">
+      <img src="{{matchImage}}" alt="">
+    </div>
+  </div>
+  <div class="actions-count" *ngIf = "removeActionBar ()">
+    <hr>
+    
+    <div class="count-bar" *ngIf="joineeCount > 0">
+      <p >{{joineeCount}} Playing</p>
+      <div class="image">
+        <img  *ngFor = "let joinee of joinees" src="{{joinee.image}}" title="{{joinee.name}}" alt="">
+      </div>
+      <hr>
+    </div>
+    
+    <div class="count-bar" *ngIf = "promoteCount > 0">
+      <p>{{promoteCount}} Promoting</p>
+      <div class="image" >
+        <img *ngFor = "let promoter of promoters" src="{{promoter.image}}" title="{{promoter.name}}" alt="">
+      </div>
+      <hr>
+    </div>
+    
+    <div class="count-bar" *ngIf = "watchCount > 0">
+      <p>{{watchCount}} Watching</p>
+      <div class="image" >
+        <img *ngFor = "let watcher of watchers" src="{{watcher.image}}" title="{{watcher.name}}" alt="">
+      </div>
+      <hr>
+    </div>
+  </div>
+  
+  <div class="actions">
+    <button class="playButton">
+      <img src="/assets/images/sports-social-play.png" alt=""> <span>Play</span>  
+    </button>
+    <button class="commentButton">
+      <img src="/assets/images/sports-social-comment.png" alt=""><span>Comment</span>  
+    </button>
+    <button class="promoteButton">
+      <img src="/assets/images/sports-social-promote.png" alt=""> <span>Promote</span>
+    </button>
+    <button class="watchButton">
+      <img src="/assets/images/sports-social-watching.png" alt=""> <span>Watch</span>
+    </button>
+  </div>
+  <div class="comment-bar">
+    <img src="/assets/images/user-default.png" alt="">
+    <input type="text" placeholder="Comment Your Views">
+  </div>
+  <div class="comments" *ngFor ="let comment of comments">
+      <img src="{{comment.userImage}}" alt="">
+      <div class="comment-details">
+        <div class="user-name">{{comment.userName}}</div>
+        <div class="comment-date">{{comment.commentDate}}</div>
+        <div class="unique-name"> @{{comment.uniqueName}} </div>
+        <div class="comment">{{comment.comment}}</div>
+      </div>
+  </div>
+  
+  <div class="open-card-footer">
+    <img src="/assets/images/sports-social-white-logo.png" alt="">
+  </div>
+</div>

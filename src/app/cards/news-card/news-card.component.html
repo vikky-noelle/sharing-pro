@@ -1,0 +1,33 @@
+<div class="news-card">
+  <div class="news-image-holder">
+    <img src="{{newsImage}}" alt="" (error)= "defaultImage()" (click)="createComponent(newsId)">
+  </div>
+  <div class="news-info">
+    <div class="source-img">
+      <img src="{{sourceImage}}" alt="">
+    </div>
+    <h1 class="source-name">{{sourceName}}</h1>
+    <h2 class="desc">
+      <a href="{{url}}" target="_blank">{{desc}}</a>
+    </h2>
+    <div class="publishedAt">{{publishedAt}}</div>
+  </div>
+  <div class="action-count" #actionsCount>
+    <a href="" *ngIf = "likeCount > 0">{{likeCount}} {{likeCount > 1 ? 'Likes': 'Like' }}</a>
+    <a href="" *ngIf = "shareCount > 0">{{shareCount}} {{shareCount > 1 ? 'Shares': 'Share'}}</a>
+    <a href="" *ngIf = "commentCount > 0">{{commentCount}} {{commentCount > 1 ? 'Comments': 'Comment' }}</a>
+  </div>
+  <div class="actions">
+    <button class="commentButton">
+      <img src="/assets/images/sports-social-comment.png" alt=""><span>Comment</span>  
+    </button>
+    <button class="promoteButton">
+      <img src="/assets/images/sports-social-like.png" alt=""> <span>Like</span>
+    </button>
+    <button class="watchButton">
+      <img src="/assets/images/sports-social-share-black.png" alt=""> <span>Share</span>
+    </button>
+  </div>
+</div>
+
+<template #openNewsCard></template>

@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="col-4" *ngFor = "let feed of globalArena; let i = index">
+      <ng-container *ngIf = "feed.type === 1">
+          <h1 class="type"> 
+            <a routerLink="/OpenArena">Open Arena >></a>  
+          </h1>
+            <sports-social-match-card class="cards"
+              [eventId] = "feed.eventId"
+              [creatorImage] = "feed.creatorImage"
+              [creatorName] = "feed.creatorName"
+              [doerId] = "feed.doerId"
+              [doerName] = "feed.doerName"
+              [doerPic] = "feed.doerPic"
+              [matchImage] = "feed.matchImage"
+              [matchText] = "feed.matchText"
+              [joineeCount] = "feed.joineeCount"
+              [commentCount] = "feed.commentCount"
+              [promoteCount] = "feed.promoteCount"
+              [watchCount] = "feed.watchCount"
+              [matchDate] = "feed.matchDate"
+              [activityDate] = "feed.activityDate"
+              [venueName] = "feed.venueName"
+              [gameName] = "feed.gameName"
+              [activityName] = "feed.activityName"
+              [restrictionCount] = "feed.restrictionCount"   #matchCard>
+            </sports-social-match-card>
+      </ng-container>
+      <ng-container *ngIf = "feed.type === 0">
+          <h1 class="type">
+            <a routerLink="/AroundTheWorld">Around The World >></a> 
+          </h1>
+          <sports-social-news-card class="cards"
+            [newsId] = "feed.newsId"
+            [sourceName]= "feed.source"
+            [sourceImage] = "feed.sourceImage"
+            [newsImage] = "feed.newsImage"
+            [title] = "feed.title"
+            [desc] = "feed.desc"
+            [url] = "feed.url"
+            [insertedDate] = "feed.insertedDate"
+            [likeCount] = "feed.likeCount"
+            [shareCount] = "feed.shareCount"
+            [commentCount] = "feed.commentCount">
+          </sports-social-news-card>
+      </ng-container>
+    </div>
+</div>
+

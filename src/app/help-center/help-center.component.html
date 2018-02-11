@@ -1,0 +1,37 @@
+<div class="help-center">
+  <div class="cover-image">
+    <img src="/assets/images/Passion-Led-us-Here.jpg" alt="">
+  </div>
+  <div class="cover-text">
+      <h1>Sports Social <span>Help</span></h1>
+      <h2>Welcome to Sports Social Help Center</h2>
+      <div class="brand-logo">
+        <img src="/assets/images/sports-social-white-logo.png" alt="">
+      </div>
+      <p>Having Trouble? We are here to help.</p>
+    </div>
+  <div class="get-ans">
+     Get Answer for the most common questions and learn to use 'SPORTS SOCIAL' like Champ.
+  </div>
+  <hr>
+  <div class="navigation">
+    <div class="left-nav">
+      <div class="left-nav-card" *ngFor = "let nav of leftNavMenu">
+        <img src="{{nav.image}}" alt="">
+        <p>{{nav.title}}</p>
+      </div>
+    </div>
+    <div class="right-nav">
+      <div class="right-nav-card-wrapper">
+        <div class="right-nav-card" *ngFor = "let nav of rightNavMenu">
+          <img src="{{nav.image}}" alt="">
+          <p>{{nav.title}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="app-download">
+    <p>New to Sports Social?</p>
+  </div>
+  <sports-social-footer></sports-social-footer>
+</div>

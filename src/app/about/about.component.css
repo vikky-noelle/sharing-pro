@@ -1,0 +1,35 @@
+.about{
+    margin-top: 70px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.def{
+    background-color: #024771;
+    color: white;
+    padding: 30px;
+}
+.def > h2 {
+    font-size: 1em;
+}
+.def > p {
+    font-size: 0.7em;
+}
+
+.mission{
+    font-size: 1.1em;
+    margin: 30px;
+}
+
+.mission-img{
+    margin: 30px;
+}
+
+.belief{
+    margin: 30px  auto;
+    width: 60%;
+}
+.latest-blog{
+    font-size: 1.4em;
+    font-weight: 700;
+}

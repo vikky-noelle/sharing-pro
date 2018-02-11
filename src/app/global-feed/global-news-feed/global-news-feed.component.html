@@ -1,0 +1,21 @@
+<sports-social-header></sports-social-header>
+<sports-social-carousel></sports-social-carousel>
+<sports-social-navigation-bar></sports-social-navigation-bar>
+<div class="container">
+    <div class="col-4" *ngFor = "let feed of News; let i = index">
+      <sports-social-news-card
+        [newsId] = "feed.newsId"
+        [sourceName]= "feed.source"
+        [sourceImage] = "feed.sourceImage"
+        [newsImage] = "feed.newsImage"
+        [title] = "feed.title"
+        [desc] = "feed.desc"
+        [url] = "feed.url"
+        [insertedDate] = "feed.insertedDate"
+        [likeCount] = "feed.likeCount"
+        [shareCount] = "feed.shareCount"
+        [commentCount] = "feed.commentCount">
+      </sports-social-news-card>
+    </div>
+</div>
+<sports-social-footer></sports-social-footer>

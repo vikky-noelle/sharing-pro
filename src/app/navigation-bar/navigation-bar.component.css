@@ -1,0 +1,110 @@
+
+.navbar{
+    background-color: #ffffff;
+    box-shadow: 2px 2px 4px #bbbbbb;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+    vertical-align: top;
+}
+.sport-name, .sport-image{
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+.sport-name{
+    margin-left: 5px;
+}
+.navbar li a,.dropdown li a{
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navbar li{
+    padding: 10px 0px 10px 0px;
+}
+
+.navbar li a, .dropdown li a {
+    color: #024771;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.more{
+    cursor: pointer;
+    text-align: center;
+}
+
+.more> .sport-image > img{
+    transform: translateY(4px)
+
+}
+
+.more li {
+    text-align: left;
+}
+
+.sport-name{
+    font-size: 1.2em;
+}
+
+.dropdown{
+    position: absolute;
+    top:40px;
+    right:10%;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 4px #bbbbbb;
+    z-index: 10;
+    overflow-y: visible;
+}
+
+.dropdown li{
+    display: block;
+    padding: 10px;
+}
+
+.active   {
+    color: #ffa600 !important;
+}
+li :hover{
+    color: #ffa600
+}
+.mobile-nav {
+    position: relative;
+}
+.mobile-nav > .active-route {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 4px #bbbbbb;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
+.active-route > p, .active-route > img {
+    display: inline-block;
+    vertical-align: middle;
+}
+.mobile-nav > ul {
+    position: absolute;
+    width: 300px;
+    top: 44px;
+    left: 0px;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 1px 1px 4px #bbbbbb;
+    overflow-y: visible;
+}
+
+ 
+.mobile-nav > ul > li {
+    display: block;
+    padding: 10px;
+    text-align: left;
+}

@@ -1,0 +1,48 @@
+<sports-social-header></sports-social-header>
+
+<div class="about">
+  <div class="brand-logo">
+    <img src="/assets/images/sports-social-blue-icon-100X100.png" alt="">
+  </div>
+  <h1 class="def">
+    <h2>Sports Social is</h2>
+    <p>Sports digital media and netwroking service that helps you to see what's going around 
+      the globe right now & let's you choose your passion to play your favourite sport.
+    </p>
+  </h1>
+  <h2 class="mission">
+    Our Mission is to give everyone opportunity for play & self-expression and 
+    show them to the world.
+  </h2>
+  <div class="mission-img">
+    <img src="/assets/images/sports-social-fitness.jpg" alt="">
+    <p> "A world where everyone is welcome to play and enjoy their favourite sports 
+      without any barriers."
+    </p>
+  </div>
+  <h3 class="belief">
+      We believe that everyone deserve an opportunity for self-expression and that the world is better 
+      place when we play, express ourselves and build communities through Sports.
+  </h3>
+  <p class="latest-blog">The Latest From Our Blog</p>
+  <div class="container">
+      <div class="col-4" *ngFor = "let feed of blog">
+        <sports-social-blog-card
+          [blogId] = "feed.blogId"
+          [blogImage] = "feed.blogImage"
+          [heading] = "feed.heading"
+          [viewCount] = "feed.viewCount"
+          [shareCount] = "feed.shareCount"
+          [metaDesc] = "feed.metaDesc"
+          [imageDesc] = "feed.imageDesc"
+          [topic] = "feed.topic"
+          [shortTitle] = "feed.shortTitle"
+          [insertedDate] = "feed.insertedDate"  >
+        </sports-social-blog-card>
+      </div>
+  </div>
+</div>
+
+
+
+<sports-social-footer></sports-social-footer>

@@ -1,0 +1,57 @@
+<header #header>
+  <div class="brand">
+    <a routerLink="/">
+      <div class="brand-image">
+        <img src="/assets/images/sports-social-logo.png" alt="Sport-Social-logo">
+      </div>
+      <div class="brand-title">
+        <span>Sports</span>
+        <span>Social</span>
+        <p>ChaseYourSport</p>
+      </div>
+    </a>
+  </div>
+  <div class="search" *ngIf="!isSearchInDropdown">
+    <input type="text" placeholder="Search Sport Social">
+  </div>
+  <div class="menu" *ngIf="!isMenuInDropdown">
+    <ul>
+      <li>
+        <a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" >About</a> 
+      </li>
+      <li>
+        <a href="">App</a> 
+      </li>
+      <li>
+        <a routerLink="/helpCenter" routerLinkActive="active">Help Center</a> 
+      </li>
+    </ul>
+  </div>
+  <div class="mobile-view" *ngIf="mobileView">
+    <div class="dropdown-menu-image-holder">
+      <img src="/assets/images/sports-social-menu.png" (click)="openDropdown()">
+    </div>
+    <div class="dropdown-menu" *ngIf="isDropdownIconclicked">
+      <div class="dropdown-cancel-image-holder">
+        <img src="/assets/images/sports-social-cancel-black.png"  (click)="closeDropdown()">
+      </div>
+      <ul  *ngIf="isMenuInDropdown">
+          <li>
+            <a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" >About</a> 
+          </li>
+          <li>
+            <a href="">App</a> 
+          </li>
+          <li>
+            <a routerLink="/helpCenter" routerLinkActive="active">Help Center</a> 
+          </li>
+      </ul>
+      <ng-container  *ngIf="isSearchInDropdown">
+        <div class="dropdown-search">
+          <input type="text" placeholder="Search Sports Social">
+        </div>
+        <button>Search</button>
+      </ng-container>
+    </div>
+  </div>
+</header>

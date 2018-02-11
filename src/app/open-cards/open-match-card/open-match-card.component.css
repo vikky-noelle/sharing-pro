@@ -1,0 +1,168 @@
+.time-remaining {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.started-by{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    text-align: center;
+}
+.started-by > p{
+   
+}
+.started-by > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.heading {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.heading, .match-sum {
+    text-align: center;
+}
+
+.match-text {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 55px;
+}
+
+.match-date {
+    position: absolute;
+    width: 30%;
+    top: 5px;
+    left: 5px;
+}
+
+.match-date > img, .match-date > span {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.venue{
+    position: absolute;
+    width: 60%;
+    top: 5px;
+    right: 5px;
+    text-align: right
+}
+
+.venue > img , .venue > span {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.venue > span {
+    max-width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.count-bar {
+    height: 50px;
+    /* border: 1px solid  black; */
+}
+
+.count-bar >  p{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    color: black;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin: 1% auto;
+    width: 20%;
+}
+.count-bar > div{ 
+    border-left: 1px solid #888888;
+    width: 78%;
+    display: inline-block;
+    vertical-align: middle;
+    height: 50px;
+}
+.count-bar > div > img{
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle
+}
+
+.comment-bar{
+    background-color: #4372a0;
+    padding: 2%;
+    width: 96%;
+    margin: 1% auto;
+}
+.comment-bar > img {
+    vertical-align: middle;
+    margin: 3%;
+}
+input{
+    width: 80%;
+    border: none;
+    background-color: #ffffff;
+    height: 35px;
+    text-align: center;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    border-radius: 25px;
+    outline: none;
+    vertical-align:  middle
+}
+
+.comments > img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 2%;
+}
+.comment-details{
+    vertical-align: middle;
+    display: inline-block;
+    border-bottom: 1px solid #bbbbbb;
+    width: 80%;
+    margin-bottom: 1%;
+}
+.user-name{
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 20%;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #024771;
+    text-align: left;
+}
+.comment-date{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.8em;
+    color: black;
+    min-width: 40%;
+    text-align: left;
+}
+.unique-name{
+    color: #ffa600;
+    font-style: italic;
+    font-size: 0.8em;
+}
+.comment{
+    color: black;
+    font-size: 0.95em;
+}
+.match-image{
+    padding-top: 60px;
+    width: 98%;
+    margin:2% auto;
+}
+.match-image > img {
+    width: 100%;
+}

@@ -1,0 +1,65 @@
+<div class="open-card" #openCard>
+  <div class="open-card-header">
+      <img  class="close" src="/assets/images/sports-social-cancel-black.png" alt="" (click)= "close()">
+    <div class="insert-date">{{insertedDate}}</div>
+    <div class="source">
+      <img src="{{sourceImage}}" alt="">
+      <p class="name">{{sourceName}}</p>
+    </div>
+  </div>
+  <div class="open-card-content">
+    <div class="title">{{title}}</div>
+    <div class="news-image">
+      <img src="{{newsImage}}" alt="">
+    </div>
+    <div class="desc">{{desc}}</div>
+    <a class="url" href="{{url}}" target="_blank">Read More At {{sourceName}}</a>
+  </div>
+  <div class="actions-count" *ngIf = "removeActionBar ()">
+    <hr>
+        
+    <div class="count-bar" *ngIf = "likeCount > 0">
+      <p>{{likeCount}} {{likeCount > 1 ? Likes : Like}}</p>
+      <div class="image" >
+        <img *ngFor = "let like of likes" src="{{like.image}}" title="{{like.name}}" alt="">
+      </div>
+      <hr>
+    </div>
+    
+    <div class="count-bar" *ngIf = "shareCount > 0">
+      <p>{{shareCount}} {{ shareCount > 1 ? Shares : Share }}</p>
+      <div class="image" >
+        <img *ngFor = "let share of shares" src="{{share.image}}" title="{{share.name}}" alt="">
+      </div>
+      <hr>
+    </div>
+  </div>
+  <div class="actions">
+    <button class="commentButton">
+      <img src="/assets/images/sports-social-comment.png" alt=""><span>Comment</span>  
+    </button>
+    <button class="promoteButton">
+      <img src="/assets/images/sports-social-like.png" alt=""> <span>Like</span>
+    </button>
+    <button class="watchButton">
+      <img src="/assets/images/sports-social-share-black.png" alt=""> <span>Share</span>
+    </button>
+  </div>
+  <div class="comment-bar">
+    <img src="/assets/images/user-default.png" alt="">
+    <input type="text" placeholder="Comment Your Views">
+  </div>
+  <div class="comments" *ngFor ="let comment of comments">
+      <img src="{{comment.userImage}}" alt="">
+      <div class="comment-details">
+        <div class="user-name">{{comment.userName}}</div>
+        <div class="comment-date">{{comment.commentDate}}</div>
+        <div class="unique-name"> @{{comment.uniqueName}} </div>
+        <div class="comment">{{comment.comment}}</div>
+      </div>
+  </div>
+  
+  <div class="open-card-footer">
+    <img src="/assets/images/sports-social-white-logo.png" alt="">
+  </div>
+</div>
