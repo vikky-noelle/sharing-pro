@@ -23,19 +23,6 @@ export class LocationBasedDataService {
     maximumAge: 0
   };
 
-  /* success(pos) {
-    const crd = pos.coords;
-    console.log(crd);
-    this.position = {
-      lat: crd.latitude,
-      long: crd.longitude
-    };
-    console.log('Your current position is:');
-    console.log(`Latitude : ${crd.latitude}`);
-    console.log(`Longitude: ${crd.longitude}`);
-    console.log(`More or less ${crd.accuracy} meters.`);
-  } */
-
   error(err) {
     console.warn(`ERROR(${err.code}): ${err.message}`);
   }
@@ -56,6 +43,10 @@ export class LocationBasedDataService {
       },
       (err) => {
         console.warn(`ERROR(${err.code}): ${err.message}`);
+        this.feedPositionRequestObject = {
+          latitude: 0,
+          longitude: 0
+        };
       },
       {
         enableHighAccuracy: true,
@@ -65,21 +56,11 @@ export class LocationBasedDataService {
     );
   }
 
- /*  globalFeed( pageNo, type) {
-    this.feedPageRequestObject = {
-      page: pageNo,
-      type: type
-    };
-    const feedRequestObject = { ...this.feedPageRequestObject, ...this.feedPositionRequestObject };
-    console.log(feedRequestObject);
-    return this.http.post('https://atg.sportsocial.in/feed/globalfeed', feedRequestObject);
-  }
- */
-  globalMatchFeed(pageNo) {
+  globalMatchFeed(pageNo , id) {
     this.feedPageRequestObject = {
       page: pageNo
     };
-    const feedRequestObject = { ...this.feedPageRequestObject, ...this.feedPositionRequestObject };
+    const feedRequestObject = { ...this.feedPageRequestObject, ...this.feedPositionRequestObject, ...{gameId: id} };
     console.log(feedRequestObject);
     return this.http.post('https://test.sportsocial.in/poc/webfeed', feedRequestObject);
   }

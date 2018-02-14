@@ -23,7 +23,7 @@ export class GlobalMatchFeedComponent implements OnInit {
   ) { }
 
   globalMatchFeed( pageNo ) {
-    this.get.globalMatchFeed( pageNo).subscribe(
+    this.get.globalMatchFeed( pageNo, 0).subscribe(
       res => {
         const data = res;
          console.log(data);

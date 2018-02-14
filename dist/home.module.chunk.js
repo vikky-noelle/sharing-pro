@@ -117,7 +117,7 @@ var GlobalOpenArenaFeedComponent = (function () {
     }
     GlobalOpenArenaFeedComponent.prototype.globalMatchFeed = function (pageNo) {
         var _this = this;
-        this.getM.globalMatchFeed(pageNo).subscribe(function (res) {
+        this.getM.globalMatchFeed(pageNo, 0).subscribe(function (res) {
             var data = res['Feed'];
             console.log(data);
             // tslint:disable-next-line:forin
@@ -196,7 +196,7 @@ var GlobalOpenArenaFeedComponent = (function () {
         this.loc.getGeoLocation();
         setTimeout(function () {
             _this.globalFeed();
-        }, 500);
+        }, 1000);
     };
     GlobalOpenArenaFeedComponent.prototype.ngAfterViewInit = function () {
     };

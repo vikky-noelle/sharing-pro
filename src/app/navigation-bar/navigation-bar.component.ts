@@ -40,19 +40,19 @@ export class NavigationBarComponent implements OnInit {
     image: '/assets/images/sports-social-cricket-blue.png'
   };
 
-  tempSports: { title: string, image: string}[]= [
-    {title: 'Popular', image: '/assets/images/sports-social-cricket-blue.png'},
-    {title: 'Cricket', image: '/assets/images/sports-social-cricket-blue.png'},
-    {title: 'Football', image: '/assets/images/sports-social-football-blue.png'},
-    {title: 'Basketball', image: '/assets/images/sports-social-basketball-blue.png'},
-    {title: 'Lawn Tennis', image: '/assets/images/sports-social-lawn-tennis-blue.png'},
-    {title: 'Badminton', image: '/assets/images/sports-social-badminton-blue.png'},
-    {title: 'Hockey', image: '/assets/images/sports-social-hockey-blue.png'},
-    {title: 'Table Tennis', image: '/assets/images/sports-social-table-tennis-blue.png'},
-    {title: 'Volleyball', image: '/assets/images/sports-social-volleyball-blue.png'}
+  tempSports: { id: number, title: string, image: string}[]= [
+    {id: 0, title: 'Popular', image: '/assets/images/sports-social-cricket-blue.png'},
+    { id: 17,  title: 'Cricket', image: '/assets/images/sports-social-cricket-blue.png'},
+    {id: 23, title: 'Football', image: '/assets/images/sports-social-football-blue.png'},
+    {id: 6, title: 'Basketball', image: '/assets/images/sports-social-basketball-blue.png'},
+    {id: 36, title: 'Lawn Tennis', image: '/assets/images/sports-social-lawn-tennis-blue.png'},
+    {id: 5, title: 'Badminton', image: '/assets/images/sports-social-badminton-blue.png'},
+    {id: 29, title: 'Hockey', image: '/assets/images/sports-social-hockey-blue.png'},
+    {id: 56, title: 'Table Tennis', image: '/assets/images/sports-social-table-tennis-blue.png'},
+    {id: 60, title: 'Volleyball', image: '/assets/images/sports-social-volleyball-blue.png'}
   ];
-  moreSports: { title: string, image: string}[];
-  sports: { title: string, image: string}[];
+  moreSports: { id: number, title: string, image: string}[];
+  sports: { id: number, title: string, image: string}[];
 
   responsiveNavigationBar() {
     const width = ɵgetDOM().getBoundingClientRect(this.navbar.nativeElement).width;

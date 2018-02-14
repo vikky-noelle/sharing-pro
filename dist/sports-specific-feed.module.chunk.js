@@ -79,7 +79,7 @@ var RenderType_SportsSpecificFeedComponent = __WEBPACK_IMPORTED_MODULE_1__angula
 function View_SportsSpecificFeedComponent_2(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["_32" /* ɵvid */](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* ɵeld */](0, 0, null, null, 12, null, null, null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["\n            "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* ɵeld */](2, 0, null, null, 5, "h1", [["class", "type"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, [" \n              "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* ɵeld */](4, 0, null, null, 2, "a", [["routerLink", "/OpenArena"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
         var pd_0 = (__WEBPACK_IMPORTED_MODULE_1__angular_core__["_27" /* ɵnov */](_v, 5).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_14" /* ɵdid */](5, 671744, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_router__["m" /* RouterLinkWithHref */], [__WEBPACK_IMPORTED_MODULE_2__angular_router__["k" /* Router */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_3__angular_common__["g" /* LocationStrategy */]], { routerLink: [0, "routerLink"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["Open Arena >>"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["  \n            "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["\n              "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* ɵeld */](9, 0, null, null, 2, "sports-social-match-card", [], null, null, null, __WEBPACK_IMPORTED_MODULE_4__cards_match_card_match_card_component_ngfactory__["b" /* View_MatchCardComponent_0 */], __WEBPACK_IMPORTED_MODULE_4__cards_match_card_match_card_component_ngfactory__["a" /* RenderType_MatchCardComponent */])), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_14" /* ɵdid */](10, 114688, [["matchCard", 4]], 0, __WEBPACK_IMPORTED_MODULE_5__cards_match_card_match_card_component__["a" /* MatchCardComponent */], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_6__shared_services_time_service__["a" /* TimeService */], __WEBPACK_IMPORTED_MODULE_1__angular_core__["l" /* ComponentFactoryResolver */], __WEBPACK_IMPORTED_MODULE_7__shared_services_post_service__["a" /* PostService */]], { doerId: [0, "doerId"], doerName: [1, "doerName"], doerPic: [2, "doerPic"], matchImage: [3, "matchImage"], matchText: [4, "matchText"], commentCount: [5, "commentCount"], promoteCount: [6, "promoteCount"], watchCount: [7, "watchCount"], activityName: [8, "activityName"], activityDate: [9, "activityDate"], matchDate: [10, "matchDate"], gameName: [11, "gameName"], restrictionCount: [12, "restrictionCount"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["\n              "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["\n        "]))], function (_ck, _v) { var currVal_2 = "/OpenArena"; _ck(_v, 5, 0, currVal_2); var currVal_3 = _v.parent.context.$implicit.doerId; var currVal_4 = _v.parent.context.$implicit.doerName; var currVal_5 = _v.parent.context.$implicit.doerPic; var currVal_6 = _v.parent.context.$implicit.matchImage; var currVal_7 = _v.parent.context.$implicit.matchText; var currVal_8 = _v.parent.context.$implicit.commentCount; var currVal_9 = _v.parent.context.$implicit.promoteCount; var currVal_10 = _v.parent.context.$implicit.watchCount; var currVal_11 = _v.parent.context.$implicit.activityName; var currVal_12 = _v.parent.context.$implicit.activityDate; var currVal_13 = _v.parent.context.$implicit.matchDate; var currVal_14 = _v.parent.context.$implicit.gameName; var currVal_15 = _v.parent.context.$implicit.restrictionCount; _ck(_v, 10, 1, [currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15]); }, function (_ck, _v) { var currVal_0 = __WEBPACK_IMPORTED_MODULE_1__angular_core__["_27" /* ɵnov */](_v, 5).target; var currVal_1 = __WEBPACK_IMPORTED_MODULE_1__angular_core__["_27" /* ɵnov */](_v, 5).href; _ck(_v, 4, 0, currVal_0, currVal_1); }); }
+    } return ad; }, null, null)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_14" /* ɵdid */](5, 671744, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_router__["m" /* RouterLinkWithHref */], [__WEBPACK_IMPORTED_MODULE_2__angular_router__["k" /* Router */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_3__angular_common__["g" /* LocationStrategy */]], { routerLink: [0, "routerLink"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["Open Arena >>"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["  \n            "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["\n              "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* ɵeld */](9, 0, null, null, 2, "sports-social-match-card", [], null, null, null, __WEBPACK_IMPORTED_MODULE_4__cards_match_card_match_card_component_ngfactory__["b" /* View_MatchCardComponent_0 */], __WEBPACK_IMPORTED_MODULE_4__cards_match_card_match_card_component_ngfactory__["a" /* RenderType_MatchCardComponent */])), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_14" /* ɵdid */](10, 114688, [["matchCard", 4]], 0, __WEBPACK_IMPORTED_MODULE_5__cards_match_card_match_card_component__["a" /* MatchCardComponent */], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_6__shared_services_time_service__["a" /* TimeService */], __WEBPACK_IMPORTED_MODULE_1__angular_core__["l" /* ComponentFactoryResolver */], __WEBPACK_IMPORTED_MODULE_7__shared_services_post_service__["a" /* PostService */]], { doerId: [0, "doerId"], doerName: [1, "doerName"], doerPic: [2, "doerPic"], matchImage: [3, "matchImage"], matchText: [4, "matchText"], joineeCount: [5, "joineeCount"], commentCount: [6, "commentCount"], promoteCount: [7, "promoteCount"], watchCount: [8, "watchCount"], activityName: [9, "activityName"], activityDate: [10, "activityDate"], matchDate: [11, "matchDate"], gameName: [12, "gameName"], restrictionCount: [13, "restrictionCount"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["\n              "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["\n        "]))], function (_ck, _v) { var currVal_2 = "/OpenArena"; _ck(_v, 5, 0, currVal_2); var currVal_3 = _v.parent.context.$implicit.doerId; var currVal_4 = _v.parent.context.$implicit.doerName; var currVal_5 = _v.parent.context.$implicit.doerPic; var currVal_6 = _v.parent.context.$implicit.matchImage; var currVal_7 = _v.parent.context.$implicit.matchText; var currVal_8 = _v.parent.context.$implicit.joineeCount; var currVal_9 = _v.parent.context.$implicit.commentCount; var currVal_10 = _v.parent.context.$implicit.promoteCount; var currVal_11 = _v.parent.context.$implicit.watchCount; var currVal_12 = _v.parent.context.$implicit.activityName; var currVal_13 = _v.parent.context.$implicit.activityDate; var currVal_14 = _v.parent.context.$implicit.matchDate; var currVal_15 = _v.parent.context.$implicit.gameName; var currVal_16 = _v.parent.context.$implicit.restrictionCount; _ck(_v, 10, 1, [currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16]); }, function (_ck, _v) { var currVal_0 = __WEBPACK_IMPORTED_MODULE_1__angular_core__["_27" /* ɵnov */](_v, 5).target; var currVal_1 = __WEBPACK_IMPORTED_MODULE_1__angular_core__["_27" /* ɵnov */](_v, 5).href; _ck(_v, 4, 0, currVal_0, currVal_1); }); }
 function View_SportsSpecificFeedComponent_3(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["_32" /* ɵvid */](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* ɵeld */](0, 0, null, null, 12, null, null, null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["\n            "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* ɵeld */](2, 0, null, null, 5, "h1", [["class", "type"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["\n              "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* ɵeld */](4, 0, null, null, 2, "a", [["routerLink", "/AroundTheWorld"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
         var pd_0 = (__WEBPACK_IMPORTED_MODULE_1__angular_core__["_27" /* ɵnov */](_v, 5).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
@@ -149,10 +149,21 @@ var SportsSpecificFeedComponent = (function () {
         this.globalArena = [];
         this.prevPageNo = 0;
         this.nextPageNo = 0;
+        this.Sports = [
+            { id: 0, title: 'Popular' },
+            { id: 17, title: 'Cricket' },
+            { id: 23, title: 'Football' },
+            { id: 6, title: 'Basketball' },
+            { id: 36, title: 'Lawn Tennis' },
+            { id: 5, title: 'Badminton' },
+            { id: 29, title: 'Hockey' },
+            { id: 56, title: 'Table Tennis' },
+            { id: 60, title: 'Volleyball' }
+        ];
     }
-    SportsSpecificFeedComponent.prototype.globalMatchFeed = function (pageNo) {
+    SportsSpecificFeedComponent.prototype.globalMatchFeed = function (pageNo, id) {
         var _this = this;
-        this.getM.globalMatchFeed(pageNo).subscribe(function (res) {
+        this.getM.globalMatchFeed(pageNo, id).subscribe(function (res) {
             var data = res['Feed'];
             console.log(data);
             // tslint:disable-next-line:forin
@@ -213,12 +224,19 @@ var SportsSpecificFeedComponent = (function () {
     SportsSpecificFeedComponent.prototype.globalFeed = function () {
         var _this = this;
         this.gameName = this.activeRoute.snapshot.params.sport;
+        this.gameId = this.Sports.find(function (sport) {
+            return sport.title === _this.gameName;
+        }).id;
+        console.log('id: ', this.gameId);
         console.log(this.gameName);
         this.activeRoute.params.subscribe(function (params) {
             _this.gameName = params.sport;
+            _this.gameId = _this.Sports.find(function (sport) {
+                return sport.title === _this.gameName;
+            }).id;
             _this.globalNewsFeed(_this.nextPageNo, _this.gameName.toLowerCase());
+            _this.globalMatchFeed(_this.nextPageNo, _this.gameId);
         });
-        // this.globalMatchFeed(this.nextPageNo);
     };
     SportsSpecificFeedComponent.prototype.nextPage = function (pageNo) {
         this.prevPageNo = pageNo;
@@ -232,9 +250,12 @@ var SportsSpecificFeedComponent = (function () {
         }
     };
     SportsSpecificFeedComponent.prototype.ngOnInit = function () {
+        var _this = this;
         this.loc.getGeoLocation();
         // console.log(this.loc.pos);
-        this.globalFeed();
+        setTimeout(function () {
+            _this.globalFeed();
+        }, 1000);
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* HostListener */])('window:scroll', ['$event']),

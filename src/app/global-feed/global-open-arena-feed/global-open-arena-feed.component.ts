@@ -47,7 +47,7 @@ export class GlobalOpenArenaFeedComponent implements OnInit, AfterViewInit {
 
 
   globalMatchFeed( pageNo ) {
-    this.getM.globalMatchFeed( pageNo).subscribe(
+    this.getM.globalMatchFeed( pageNo, 0).subscribe(
       res => {
         const data = res['Feed'];
          console.log(data);
@@ -136,7 +136,7 @@ export class GlobalOpenArenaFeedComponent implements OnInit, AfterViewInit {
     this.loc.getGeoLocation();
     setTimeout(() => {
       this.globalFeed();
-    }, 500);
+    }, 1000);
   }
 
   ngAfterViewInit() {

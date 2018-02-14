@@ -357,18 +357,6 @@ var LocationBasedDataService = (function () {
             maximumAge: 0
         };
     }
-    /* success(pos) {
-      const crd = pos.coords;
-      console.log(crd);
-      this.position = {
-        lat: crd.latitude,
-        long: crd.longitude
-      };
-      console.log('Your current position is:');
-      console.log(`Latitude : ${crd.latitude}`);
-      console.log(`Longitude: ${crd.longitude}`);
-      console.log(`More or less ${crd.accuracy} meters.`);
-    } */
     LocationBasedDataService.prototype.error = function (err) {
         console.warn("ERROR(" + err.code + "): " + err.message);
     };
@@ -387,27 +375,21 @@ var LocationBasedDataService = (function () {
             console.log("More or less " + crd.accuracy + " meters.");
         }, function (err) {
             console.warn("ERROR(" + err.code + "): " + err.message);
+            _this.feedPositionRequestObject = {
+                latitude: 0,
+                longitude: 0
+            };
         }, {
             enableHighAccuracy: true,
             timeout: 5000,
             maximumAge: 0
         });
     };
-    /*  globalFeed( pageNo, type) {
-       this.feedPageRequestObject = {
-         page: pageNo,
-         type: type
-       };
-       const feedRequestObject = { ...this.feedPageRequestObject, ...this.feedPositionRequestObject };
-       console.log(feedRequestObject);
-       return this.http.post('https://atg.sportsocial.in/feed/globalfeed', feedRequestObject);
-     }
-    */
-    LocationBasedDataService.prototype.globalMatchFeed = function (pageNo) {
+    LocationBasedDataService.prototype.globalMatchFeed = function (pageNo, id) {
         this.feedPageRequestObject = {
             page: pageNo
         };
-        var feedRequestObject = __assign({}, this.feedPageRequestObject, this.feedPositionRequestObject);
+        var feedRequestObject = __assign({}, this.feedPageRequestObject, this.feedPositionRequestObject, { gameId: id });
         console.log(feedRequestObject);
         return this.http.post('https://test.sportsocial.in/poc/webfeed', feedRequestObject);
     };

@@ -16,6 +16,18 @@ export class SportsSpecificFeedComponent implements OnInit {
   prevPageNo: number = 0;
   nextPageNo: number = 0;
   gameName: string;
+  gameId: number;
+  Sports: { id: number, title: string}[]= [
+    {id: 0, title: 'Popular'},
+    {id: 17, title: 'Cricket'},
+    {id: 23, title: 'Football'},
+    {id: 6, title: 'Basketball'},
+    {id: 36, title: 'Lawn Tennis'},
+    {id: 5, title: 'Badminton'},
+    {id: 29, title: 'Hockey'},
+    {id: 56, title: 'Table Tennis'},
+    {id: 60, title: 'Volleyball'}
+  ];
 
   constructor(
     private getM: LocationBasedDataService,
@@ -25,8 +37,8 @@ export class SportsSpecificFeedComponent implements OnInit {
     private activeRoute: ActivatedRoute
   ) { }
 
-  globalMatchFeed( pageNo ) {
-    this.getM.globalMatchFeed( pageNo).subscribe(
+  globalMatchFeed( pageNo, id ) {
+    this.getM.globalMatchFeed( pageNo, id).subscribe(
       res => {
         const data = res['Feed'];
          console.log(data);
@@ -51,7 +63,7 @@ export class SportsSpecificFeedComponent implements OnInit {
             promoteCount: data[i].PromoteCount,
             venueName: data[i].Venue_Name,
             gameName: data[i].GameName,
-            activityName: data[i].Activity_Name !== undefined ?  data[i].Activity_Name.split(' ')[0] : '' 
+            activityName: data[i].Activity_Name !== undefined ?  data[i].Activity_Name.split(' ')[0] : ''
           });
         }
       },
@@ -92,14 +104,21 @@ export class SportsSpecificFeedComponent implements OnInit {
 
   globalFeed( ) {
    this.gameName = this.activeRoute.snapshot.params.sport;
+   this.gameId = this.Sports.find((sport) => {
+     return sport.title === this.gameName;
+   }).id;
+   console.log('id: ', this.gameId);
    console.log(this.gameName);
     this.activeRoute.params.subscribe(
       (params) => {
         this.gameName = params.sport;
+        this.gameId = this.Sports.find((sport) => {
+          return sport.title === this.gameName;
+        }).id;
         this.globalNewsFeed(this.nextPageNo, this.gameName.toLowerCase());
+        this.globalMatchFeed(this.nextPageNo, this.gameId);
       }
     );
-    // this.globalMatchFeed(this.nextPageNo);
   }
 
 
@@ -121,7 +140,9 @@ export class SportsSpecificFeedComponent implements OnInit {
   ngOnInit() {
      this.loc.getGeoLocation();
     // console.log(this.loc.pos);
+    setTimeout(() => {
       this.globalFeed();
+    }, 1000);
   }
 
 

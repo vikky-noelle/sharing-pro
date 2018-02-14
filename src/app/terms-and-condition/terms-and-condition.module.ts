@@ -4,15 +4,18 @@ import { HeaderModule } from '../header/header.module';
 import { FooterModule } from '../footer/footer.module';
 import { RouterModule } from '@angular/router';
 import { TermsAndConditionComponent } from './terms-and-condition.component';
+import { TermRouter } from './terms-and-condition.router';
 
 @NgModule({
   imports: [
     CommonModule,
     HeaderModule,
     FooterModule,
-    RouterModule
+    RouterModule,
+    TermRouter
   ],
   exports: [
+    TermsAndConditionComponent
   ],
   declarations: [
     TermsAndConditionComponent

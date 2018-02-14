@@ -137,7 +137,7 @@ var GlobalMatchFeedComponent = (function () {
     }
     GlobalMatchFeedComponent.prototype.globalMatchFeed = function (pageNo) {
         var _this = this;
-        this.get.globalMatchFeed(pageNo).subscribe(function (res) {
+        this.get.globalMatchFeed(pageNo, 0).subscribe(function (res) {
             var data = res;
             console.log(data);
             // tslint:disable-next-line:forin
