@@ -166,3 +166,32 @@ input{
 .match-image > img {
     width: 100%;
 }
+
+.actions-match{
+    padding: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.actions-match > button > img {
+    width: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.actions-match > button > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.actions-match > button > span:hover{
+    font-weight: 700
+}

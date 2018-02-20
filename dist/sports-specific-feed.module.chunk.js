@@ -187,7 +187,7 @@ var SportsSpecificFeedComponent = (function () {
                     matchText: data[i].EventText,
                     matchImage: data[i].Event_Image,
                     activityDate: data[i].InsertedDate,
-                    matchDate: data[i].strartdatetime,
+                    matchDate: data[i].startdatetime,
                     restrictionCount: data[i].restrictionCount,
                     joineeCount: data[i].JoineeCount,
                     commentCount: data[i].CommentCount,
@@ -195,7 +195,7 @@ var SportsSpecificFeedComponent = (function () {
                     promoteCount: data[i].PromoteCount,
                     venueName: data[i].Venue_Name,
                     gameName: data[i].GameName,
-                    activityName: data[i].Activity_Name !== undefined ? data[i].Activity_Name.split(' ')[0] : ''
+                    activityName: data[i].Activity_name !== undefined ? data[i].Activity_name.split(' ')[0] : ''
                 });
             }
         }, function (err) {

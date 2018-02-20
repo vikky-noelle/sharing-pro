@@ -161,7 +161,7 @@ export class NavigationBarComponent implements OnInit {
       }
     }
   }
-  
+
 
   ngOnInit() {
     this.changeHomeIcon();

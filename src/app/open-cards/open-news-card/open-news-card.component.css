@@ -138,3 +138,31 @@ input{
     color: black;
     font-size: 0.95em;
 }
+.actions-news{
+    padding: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.actions-news > button > img {
+    width: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.actions-news > button > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.actions-news > button > span:hover{
+    font-weight: 700
+}
