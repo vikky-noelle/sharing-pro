@@ -1,5 +1,5 @@
-<div class="matchCard" >
-  <div class="user">
+<div class="sports-social-card" >
+  <div class="sports-social-card-header">
     <div class="userImage">
       <img src="{{doerPic}}" alt="">
     </div>
@@ -20,7 +20,7 @@
   <div class="matchImage" (click) = "createComponent(eventId)">
     <img src="{{matchImage}}" alt="">
   </div>
-  <div class="actionsCount" #actionsCount>
+  <div class="action-count" #actionsCount>
     <a routerLink="#" *ngIf="commentCount > 0">
       {{commentCount}} 
       <span>{{commentCount > 1 ? 'Comments' : 'Comment'}}</span>  
@@ -34,12 +34,12 @@
       <span>Watching</span> 
     </a>
   </div>
-  <div class="actions">
+  <div class="actions-match">
     <button class="playButton">
       <img src="/assets/images/sports-social-play.png" alt=""> <span>Play</span>  
     </button>
     <button class="commentButton">
-      <img src="/assets/images/sports-social-comment.png" alt=""><span>Comment</span>  
+      <img src="/assets/images/sports-social-match-talks.png" alt=""><span>Comment</span>  
     </button>
     <button class="promoteButton">
       <img src="/assets/images/sports-social-promote.png" alt=""> <span>Promote</span>

@@ -1,20 +1,26 @@
-import { Component, OnInit, ViewEncapsulation, Renderer2, HostListener } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Renderer2, HostListener, OnDestroy } from '@angular/core';
 import { PostService } from '../../shared/services/post.service';
 import { GetService } from '../../shared/services/get.service';
 import { LocationBasedDataService } from '../../shared/services/location-based-data.service';
 
+import { Masonry, MasonryGridItem } from 'ng-masonry-grid';
+import { ISubscription } from 'rxjs/Subscription';
+
 @Component({
   selector: 'sports-social-global-match-feed',
   templateUrl: './global-match-feed.component.html',
-  styleUrls: ['./global-match-feed.component.css'],
+  styleUrls: ['./global-match-feed.component.css', '../../../../node_modules/ng-masonry-grid/ng-masonry-grid.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class GlobalMatchFeedComponent implements OnInit {
+export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
 
   Match = [];
   prevPageNo: number = 0;
   nextPageNo: number = 0;
-
+  _masonry: Masonry;
+  private _removeAllSubscription: ISubscription;
+  private _removeItemSubscription: ISubscription;
+  private _removeFirstItemSubscription: ISubscription;
   constructor(
     private get: LocationBasedDataService,
     private loc: LocationBasedDataService,
@@ -25,40 +31,32 @@ export class GlobalMatchFeedComponent implements OnInit {
   globalMatchFeed( pageNo ) {
     this.get.globalMatchFeed( pageNo, 0).subscribe(
       res => {
-        const data = res;
+        const data = res['Feed'];
          console.log(data);
         // tslint:disable-next-line:forin
         for ( const i in data ) {
           this.Match.push({
-            eventId: data[i].eventId,
+            eventId: data[i].eventid,
             creatorImage: data[i].creatorImage,
             creatorName: data[i].creatorName,
-            type: data[i].feedType,
+            type: data[i].feedtype,
             doerId: data[i].doerId,
-            doerName: data[i].doerName,
-            doerPic: data[i].doerPic,
-            matchText: data[i].matchText,
-            matchImage: data[i].matchImage,
-            activityDate: data[i].startDate,
-            matchDate: data[i].creationDate,
+            doerName: data[i].user_name,
+            doerPic: data[i].Profile_Photo,
+            matchText: data[i].EventText,
+            matchImage: data[i].Event_Image,
+            activityDate: data[i].InsertedDate,
+            matchDate:  data[i].startdatetime,
             restrictionCount: data[i].restrictionCount,
-            joineeCount: data[i].joineeCount,
-            commentCount: data[i].commentCount,
-            watchCount: data[i].watchCount,
-            promoteCount: data[i].promoteCount,
-            gameName: data[i].gameName,
-            venueName: data[i].venueName,
-            activityName: data[i].activityName,
-            newsId: data[i]._id,
-            newsImage: data[i].newsImage,
-            sourceImage: data[i].sourceImage,
-            source: data[i].source,
-            title: data[i].title,
-            url: data[i].url,
-            desc: data[i].desc
+            joineeCount: data[i].JoineeCount,
+            commentCount: data[i].CommentCount,
+            watchCount: data[i].WatchCount,
+            promoteCount: data[i].PromoteCount,
+            venueName: data[i].Venue_Name,
+            gameName: data[i].GameName,
+            activityName: data[i].Activity_name !== undefined ?  data[i].Activity_name.split(' ')[0] : ''
           });
         }
-        console.log(this.Match);
       },
       err => {
         console.log('Something went wrong with feed!');
@@ -82,9 +80,21 @@ export class GlobalMatchFeedComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.loc.getGeoLocation();
-    // console.log(this.loc.pos);
-    this.globalMatchFeed(this.nextPageNo);
+    this.loc.getGeoLocation()
+    .then( () => {
+      this.globalMatchFeed(this.nextPageNo);
+    })
+    .catch( (err) => {
+      console.log(err);
+    });
+  }
+
+  ngOnDestroy() {
+    if (this._masonry) {
+      this._removeAllSubscription.unsubscribe();
+      this._removeItemSubscription.unsubscribe();
+      this._removeFirstItemSubscription.unsubscribe();
+    }
   }
 
 }

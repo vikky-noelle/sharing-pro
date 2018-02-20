@@ -8,6 +8,7 @@ import {
 } from '@angular/core';
 import { PropertyService } from '../shared/services/property.service';
 import { ɵgetDOM } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'sports-social-navigation-bar',
@@ -26,10 +27,12 @@ export class NavigationBarComponent implements OnInit {
   mobileNav = false;
   HeightOfHeader: any ;
   BottomOfCarousel: any;
+  route;
   constructor(
     private recieveHeight: PropertyService,
     private reciveBottom: PropertyService,
-    private renderer: Renderer2
+    private renderer: Renderer2,
+    private activatedRoute: ActivatedRoute
   ) { }
 
   activeRoute: {
@@ -41,7 +44,6 @@ export class NavigationBarComponent implements OnInit {
   };
 
   tempSports: { id: number, title: string, image: string}[]= [
-    {id: 0, title: 'Popular', image: '/assets/images/sports-social-cricket-blue.png'},
     { id: 17,  title: 'Cricket', image: '/assets/images/sports-social-cricket-blue.png'},
     {id: 23, title: 'Football', image: '/assets/images/sports-social-football-blue.png'},
     {id: 6, title: 'Basketball', image: '/assets/images/sports-social-basketball-blue.png'},
@@ -54,21 +56,30 @@ export class NavigationBarComponent implements OnInit {
   moreSports: { id: number, title: string, image: string}[];
   sports: { id: number, title: string, image: string}[];
 
+  changeHomeIcon() {
+    this.route = this.activatedRoute.snapshot.params.sport;
+    this.activatedRoute.params.subscribe(
+      (param) => {
+        this.route = param.sport;
+        /* console.log(this.route === undefined) */
+      }
+    );
+  }
   responsiveNavigationBar() {
     const width = ɵgetDOM().getBoundingClientRect(this.navbar.nativeElement).width;
     if ( width > 1200 ) {
-      this.sports = this.tempSports.slice(0, 8);
-      this.moreSports = this.tempSports.slice(8, this.tempSports.length);
+      this.sports = this.tempSports.slice(0, 9);
+      this.moreSports = this.tempSports.slice(9, this.tempSports.length);
       this.mobileNav = false;
     }
     if ( width > 950 && width < 1200 ) {
-        this.sports = this.tempSports.slice(0, 6);
-        this.moreSports = this.tempSports.slice(6, this.tempSports.length);
+        this.sports = this.tempSports.slice(0, 7);
+        this.moreSports = this.tempSports.slice(7, this.tempSports.length);
         this.mobileNav = false;
     }
     if ( width > 800 && width < 950 ) {
-        this.sports = this.tempSports.slice(0, 5);
-        this.moreSports = this.tempSports.slice(5, this.tempSports.length);
+        this.sports = this.tempSports.slice(0, 6);
+        this.moreSports = this.tempSports.slice(6, this.tempSports.length);
         this.mobileNav = false;
     }
     if ( width < 800 ) {
@@ -150,11 +161,10 @@ export class NavigationBarComponent implements OnInit {
       }
     }
   }
-  changeImageColor() {
-  }
-
+  
 
   ngOnInit() {
+    this.changeHomeIcon();
     this.responsiveNavigationBar();
     this.heightOfHeader();
     this.fixedNavbar();
@@ -172,7 +182,6 @@ export class NavigationBarComponent implements OnInit {
   }
 
   @HostListener('mouseover', ['$event']) onHover(event) {
-    this.changeImageColor();
     this.scrollabledropdown();
   }
 

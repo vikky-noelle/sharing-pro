@@ -1,16 +1,22 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, OnDestroy } from '@angular/core';
 import { PostService } from '../shared/services/post.service';
 import { TimeService } from '../shared/services/time.service';
+import { Masonry, MasonryGridItem } from 'ng-masonry-grid';
+import { ISubscription } from 'rxjs/Subscription';
 
 @Component({
   selector: 'sports-social-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css'],
+  styleUrls: ['./about.component.css', '../../../node_modules/ng-masonry-grid/ng-masonry-grid.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent implements OnInit, OnDestroy {
 
   blog = [];
+  _masonry: Masonry;
+  private _removeAllSubscription: ISubscription;
+  private _removeItemSubscription: ISubscription;
+  private _removeFirstItemSubscription: ISubscription;
   constructor(
     private get: PostService,
     private time: TimeService
@@ -43,5 +49,11 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
     this.getLatestBlog();
   }
-
+  ngOnDestroy() {
+    if (this._masonry) {
+      this._removeAllSubscription.unsubscribe();
+      this._removeItemSubscription.unsubscribe();
+      this._removeFirstItemSubscription.unsubscribe();
+    }
+  }
 }

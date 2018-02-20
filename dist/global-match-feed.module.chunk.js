@@ -26,24 +26,29 @@ var styles = [""];
 /* unused harmony export View_GlobalMatchFeedComponent_Host_0 */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GlobalMatchFeedComponentNgFactory; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__global_match_feed_component_css_ngstyle__ = __webpack_require__("../../../../../src/app/global-feed/global-match-feed/global-match-feed.component.css.ngstyle.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cards_match_card_match_card_component_ngfactory__ = __webpack_require__("../../../../../src/app/cards/match-card/match-card.component.ngfactory.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cards_match_card_match_card_component__ = __webpack_require__("../../../../../src/app/cards/match-card/match-card.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_services_time_service__ = __webpack_require__("../../../../../src/app/shared/services/time.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_services_post_service__ = __webpack_require__("../../../../../src/app/shared/services/post.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__header_header_component_ngfactory__ = __webpack_require__("../../../../../src/app/header/header.component.ngfactory.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__header_header_component__ = __webpack_require__("../../../../../src/app/header/header.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared_services_property_service__ = __webpack_require__("../../../../../src/app/shared/services/property.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__carousel_carousel_component_ngfactory__ = __webpack_require__("../../../../../src/app/carousel/carousel.component.ngfactory.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__carousel_carousel_component__ = __webpack_require__("../../../../../src/app/carousel/carousel.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__navigation_bar_navigation_bar_component_ngfactory__ = __webpack_require__("../../../../../src/app/navigation-bar/navigation-bar.component.ngfactory.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__navigation_bar_navigation_bar_component__ = __webpack_require__("../../../../../src/app/navigation-bar/navigation-bar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__footer_footer_component_ngfactory__ = __webpack_require__("../../../../../src/app/footer/footer.component.ngfactory.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__footer_footer_component__ = __webpack_require__("../../../../../src/app/footer/footer.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__global_match_feed_component__ = __webpack_require__("../../../../../src/app/global-feed/global-match-feed/global-match-feed.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__shared_services_location_based_data_service__ = __webpack_require__("../../../../../src/app/shared/services/location-based-data.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__shared_services_get_service__ = __webpack_require__("../../../../../src/app/shared/services/get.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_ng_masonry_grid_ng_masonry_grid_css_ngstyle__ = __webpack_require__("../../../../ng-masonry-grid/ng-masonry-grid.css.ngstyle.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng_masonry_grid__ = __webpack_require__("../../../../ng-masonry-grid/ng-masonry-grid.umd.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng_masonry_grid___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng_masonry_grid__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__cards_match_card_match_card_component_ngfactory__ = __webpack_require__("../../../../../src/app/cards/match-card/match-card.component.ngfactory.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__cards_match_card_match_card_component__ = __webpack_require__("../../../../../src/app/cards/match-card/match-card.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_services_time_service__ = __webpack_require__("../../../../../src/app/shared/services/time.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_services_post_service__ = __webpack_require__("../../../../../src/app/shared/services/post.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__header_header_component_ngfactory__ = __webpack_require__("../../../../../src/app/header/header.component.ngfactory.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__header_header_component__ = __webpack_require__("../../../../../src/app/header/header.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shared_services_property_service__ = __webpack_require__("../../../../../src/app/shared/services/property.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__carousel_carousel_component_ngfactory__ = __webpack_require__("../../../../../src/app/carousel/carousel.component.ngfactory.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__carousel_carousel_component__ = __webpack_require__("../../../../../src/app/carousel/carousel.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__navigation_bar_navigation_bar_component_ngfactory__ = __webpack_require__("../../../../../src/app/navigation-bar/navigation-bar.component.ngfactory.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__navigation_bar_navigation_bar_component__ = __webpack_require__("../../../../../src/app/navigation-bar/navigation-bar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__node_modules_ng_masonry_grid_ng_masonry_grid_ngfactory__ = __webpack_require__("../../../../ng-masonry-grid/ng-masonry-grid.ngfactory.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__footer_footer_component_ngfactory__ = __webpack_require__("../../../../../src/app/footer/footer.component.ngfactory.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__footer_footer_component__ = __webpack_require__("../../../../../src/app/footer/footer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__global_match_feed_component__ = __webpack_require__("../../../../../src/app/global-feed/global-match-feed/global-match-feed.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__shared_services_location_based_data_service__ = __webpack_require__("../../../../../src/app/shared/services/location-based-data.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__shared_services_get_service__ = __webpack_require__("../../../../../src/app/shared/services/get.service.ts");
 /**
 * @fileoverview This file is generated by the Angular template compiler.
 * Do not edit.
@@ -69,37 +74,42 @@ var styles = [""];
 
 
 
-var styles_GlobalMatchFeedComponent = [__WEBPACK_IMPORTED_MODULE_0__global_match_feed_component_css_ngstyle__["a" /* styles */]];
-var RenderType_GlobalMatchFeedComponent = __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* ɵcrt */]({ encapsulation: 2, styles: styles_GlobalMatchFeedComponent, data: {} });
 
-function View_GlobalMatchFeedComponent_1(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["_32" /* ɵvid */](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* ɵeld */](0, 0, null, null, 5, "div", [["class", "col-4"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* ɵeld */](2, 0, null, null, 2, "sports-social-match-card", [], null, null, null, __WEBPACK_IMPORTED_MODULE_2__cards_match_card_match_card_component_ngfactory__["b" /* View_MatchCardComponent_0 */], __WEBPACK_IMPORTED_MODULE_2__cards_match_card_match_card_component_ngfactory__["a" /* RenderType_MatchCardComponent */])), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_14" /* ɵdid */](3, 114688, [["matchCard", 4]], 0, __WEBPACK_IMPORTED_MODULE_3__cards_match_card_match_card_component__["a" /* MatchCardComponent */], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_4__shared_services_time_service__["a" /* TimeService */], __WEBPACK_IMPORTED_MODULE_1__angular_core__["l" /* ComponentFactoryResolver */], __WEBPACK_IMPORTED_MODULE_5__shared_services_post_service__["a" /* PostService */]], { creatorName: [0, "creatorName"], creatorImage: [1, "creatorImage"], eventId: [2, "eventId"], doerId: [3, "doerId"], doerName: [4, "doerName"], doerPic: [5, "doerPic"], matchImage: [6, "matchImage"], matchText: [7, "matchText"], joineeCount: [8, "joineeCount"], commentCount: [9, "commentCount"], promoteCount: [10, "promoteCount"], watchCount: [11, "watchCount"], activityName: [12, "activityName"], activityDate: [13, "activityDate"], matchDate: [14, "matchDate"], gameName: [15, "gameName"], venueName: [16, "venueName"], restrictionCount: [17, "restrictionCount"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["\n    "]))], function (_ck, _v) { var currVal_0 = _v.context.$implicit.creatorName; var currVal_1 = _v.context.$implicit.creatorImage; var currVal_2 = _v.context.$implicit.eventId; var currVal_3 = _v.context.$implicit.doerId; var currVal_4 = _v.context.$implicit.doerName; var currVal_5 = _v.context.$implicit.doerPic; var currVal_6 = _v.context.$implicit.matchImage; var currVal_7 = _v.context.$implicit.matchText; var currVal_8 = _v.context.$implicit.joineeCount; var currVal_9 = _v.context.$implicit.commentCount; var currVal_10 = _v.context.$implicit.promoteCount; var currVal_11 = _v.context.$implicit.watchCount; var currVal_12 = _v.context.$implicit.activityName; var currVal_13 = _v.context.$implicit.activityDate; var currVal_14 = _v.context.$implicit.matchDate; var currVal_15 = _v.context.$implicit.gameName; var currVal_16 = _v.context.$implicit.venueName; var currVal_17 = _v.context.$implicit.restrictionCount; _ck(_v, 3, 1, [currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17]); }, null); }
-function View_GlobalMatchFeedComponent_0(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["_32" /* ɵvid */](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* ɵeld */](0, 0, null, null, 1, "sports-social-header", [], null, [["window", "resize"]], function (_v, en, $event) { var ad = true; if (("window:resize" === en)) {
-        var pd_0 = (__WEBPACK_IMPORTED_MODULE_1__angular_core__["_27" /* ɵnov */](_v, 1).onresize() !== false);
+
+
+
+var styles_GlobalMatchFeedComponent = [__WEBPACK_IMPORTED_MODULE_0__global_match_feed_component_css_ngstyle__["a" /* styles */], __WEBPACK_IMPORTED_MODULE_1__node_modules_ng_masonry_grid_ng_masonry_grid_css_ngstyle__["a" /* styles */]];
+var RenderType_GlobalMatchFeedComponent = __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵcrt"]({ encapsulation: 2, styles: styles_GlobalMatchFeedComponent, data: {} });
+
+function View_GlobalMatchFeedComponent_1(_l) { return __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵeld"](0, 0, null, null, 0, "img", [["alt", ""], ["class", "spinner"], ["src", "/assets/images/sports-social-loading.gif"]], null, null, null, null, null))], null, null); }
+function View_GlobalMatchFeedComponent_2(_l) { return __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵeld"](0, 0, null, null, 6, "ng-masonry-grid-item", [["class", "col-4"]], null, null, null, null, null)), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵdid"](1, 4407296, null, 0, __WEBPACK_IMPORTED_MODULE_3_ng_masonry_grid__["NgMasonryGridDirective"], [__WEBPACK_IMPORTED_MODULE_2__angular_core__["ElementRef"], __WEBPACK_IMPORTED_MODULE_3_ng_masonry_grid__["NgMasonryGridComponent"], __WEBPACK_IMPORTED_MODULE_2__angular_core__["PLATFORM_ID"]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵeld"](3, 0, null, null, 2, "sports-social-match-card", [], null, null, null, __WEBPACK_IMPORTED_MODULE_4__cards_match_card_match_card_component_ngfactory__["b" /* View_MatchCardComponent_0 */], __WEBPACK_IMPORTED_MODULE_4__cards_match_card_match_card_component_ngfactory__["a" /* RenderType_MatchCardComponent */])), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵdid"](4, 114688, [["matchCard", 4]], 0, __WEBPACK_IMPORTED_MODULE_5__cards_match_card_match_card_component__["a" /* MatchCardComponent */], [__WEBPACK_IMPORTED_MODULE_2__angular_core__["Renderer2"], __WEBPACK_IMPORTED_MODULE_6__shared_services_time_service__["a" /* TimeService */], __WEBPACK_IMPORTED_MODULE_2__angular_core__["ComponentFactoryResolver"], __WEBPACK_IMPORTED_MODULE_7__shared_services_post_service__["a" /* PostService */]], { creatorName: [0, "creatorName"], creatorImage: [1, "creatorImage"], eventId: [2, "eventId"], doerId: [3, "doerId"], doerName: [4, "doerName"], doerPic: [5, "doerPic"], matchImage: [6, "matchImage"], matchText: [7, "matchText"], joineeCount: [8, "joineeCount"], commentCount: [9, "commentCount"], promoteCount: [10, "promoteCount"], watchCount: [11, "watchCount"], activityName: [12, "activityName"], activityDate: [13, "activityDate"], matchDate: [14, "matchDate"], gameName: [15, "gameName"], venueName: [16, "venueName"], restrictionCount: [17, "restrictionCount"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵted"](-1, null, ["\n    "]))], function (_ck, _v) { _ck(_v, 1, 0); var currVal_0 = _v.context.$implicit.creatorName; var currVal_1 = _v.context.$implicit.creatorImage; var currVal_2 = _v.context.$implicit.eventId; var currVal_3 = _v.context.$implicit.doerId; var currVal_4 = _v.context.$implicit.doerName; var currVal_5 = _v.context.$implicit.doerPic; var currVal_6 = _v.context.$implicit.matchImage; var currVal_7 = _v.context.$implicit.matchText; var currVal_8 = _v.context.$implicit.joineeCount; var currVal_9 = _v.context.$implicit.commentCount; var currVal_10 = _v.context.$implicit.promoteCount; var currVal_11 = _v.context.$implicit.watchCount; var currVal_12 = _v.context.$implicit.activityName; var currVal_13 = _v.context.$implicit.activityDate; var currVal_14 = _v.context.$implicit.matchDate; var currVal_15 = _v.context.$implicit.gameName; var currVal_16 = _v.context.$implicit.venueName; var currVal_17 = _v.context.$implicit.restrictionCount; _ck(_v, 4, 1, [currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17]); }, null); }
+function View_GlobalMatchFeedComponent_0(_l) { return __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵeld"](0, 0, null, null, 1, "sports-social-header", [], null, [["window", "resize"]], function (_v, en, $event) { var ad = true; if (("window:resize" === en)) {
+        var pd_0 = (__WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵnov"](_v, 1).onresize() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, __WEBPACK_IMPORTED_MODULE_6__header_header_component_ngfactory__["b" /* View_HeaderComponent_0 */], __WEBPACK_IMPORTED_MODULE_6__header_header_component_ngfactory__["a" /* RenderType_HeaderComponent */])), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_14" /* ɵdid */](1, 4308992, null, 0, __WEBPACK_IMPORTED_MODULE_7__header_header_component__["a" /* HeaderComponent */], [__WEBPACK_IMPORTED_MODULE_8__shared_services_property_service__["a" /* PropertyService */]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["\n"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* ɵeld */](3, 0, null, null, 1, "sports-social-carousel", [], null, [["window", "resize"], ["window", "scroll"]], function (_v, en, $event) { var ad = true; if (("window:resize" === en)) {
-        var pd_0 = (__WEBPACK_IMPORTED_MODULE_1__angular_core__["_27" /* ɵnov */](_v, 4).onresize() !== false);
+    } return ad; }, __WEBPACK_IMPORTED_MODULE_8__header_header_component_ngfactory__["b" /* View_HeaderComponent_0 */], __WEBPACK_IMPORTED_MODULE_8__header_header_component_ngfactory__["a" /* RenderType_HeaderComponent */])), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵdid"](1, 4308992, null, 0, __WEBPACK_IMPORTED_MODULE_9__header_header_component__["a" /* HeaderComponent */], [__WEBPACK_IMPORTED_MODULE_10__shared_services_property_service__["a" /* PropertyService */]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵted"](-1, null, ["\n"])), (_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵeld"](3, 0, null, null, 1, "sports-social-carousel", [], null, [["window", "resize"], ["window", "scroll"]], function (_v, en, $event) { var ad = true; if (("window:resize" === en)) {
+        var pd_0 = (__WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵnov"](_v, 4).onresize() !== false);
         ad = (pd_0 && ad);
     } if (("window:scroll" === en)) {
-        var pd_1 = (__WEBPACK_IMPORTED_MODULE_1__angular_core__["_27" /* ɵnov */](_v, 4).onscroll() !== false);
+        var pd_1 = (__WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵnov"](_v, 4).onscroll() !== false);
         ad = (pd_1 && ad);
-    } return ad; }, __WEBPACK_IMPORTED_MODULE_9__carousel_carousel_component_ngfactory__["b" /* View_CarouselComponent_0 */], __WEBPACK_IMPORTED_MODULE_9__carousel_carousel_component_ngfactory__["a" /* RenderType_CarouselComponent */])), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_14" /* ɵdid */](4, 114688, null, 0, __WEBPACK_IMPORTED_MODULE_10__carousel_carousel_component__["a" /* CarouselComponent */], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_8__shared_services_property_service__["a" /* PropertyService */], __WEBPACK_IMPORTED_MODULE_8__shared_services_property_service__["a" /* PropertyService */]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["\n"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* ɵeld */](6, 0, null, null, 1, "sports-social-navigation-bar", [], null, [["window", "resize"], ["window", "scroll"], [null, "mouseover"]], function (_v, en, $event) { var ad = true; if (("window:resize" === en)) {
-        var pd_0 = (__WEBPACK_IMPORTED_MODULE_1__angular_core__["_27" /* ɵnov */](_v, 7).onresize() !== false);
+    } return ad; }, __WEBPACK_IMPORTED_MODULE_11__carousel_carousel_component_ngfactory__["b" /* View_CarouselComponent_0 */], __WEBPACK_IMPORTED_MODULE_11__carousel_carousel_component_ngfactory__["a" /* RenderType_CarouselComponent */])), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵdid"](4, 114688, null, 0, __WEBPACK_IMPORTED_MODULE_12__carousel_carousel_component__["a" /* CarouselComponent */], [__WEBPACK_IMPORTED_MODULE_2__angular_core__["Renderer2"], __WEBPACK_IMPORTED_MODULE_10__shared_services_property_service__["a" /* PropertyService */], __WEBPACK_IMPORTED_MODULE_10__shared_services_property_service__["a" /* PropertyService */]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵted"](-1, null, ["\n"])), (_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵeld"](6, 0, null, null, 1, "sports-social-navigation-bar", [], null, [["window", "resize"], ["window", "scroll"], [null, "mouseover"]], function (_v, en, $event) { var ad = true; if (("window:resize" === en)) {
+        var pd_0 = (__WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵnov"](_v, 7).onresize() !== false);
         ad = (pd_0 && ad);
     } if (("window:scroll" === en)) {
-        var pd_1 = (__WEBPACK_IMPORTED_MODULE_1__angular_core__["_27" /* ɵnov */](_v, 7).onscroll() !== false);
+        var pd_1 = (__WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵnov"](_v, 7).onscroll() !== false);
         ad = (pd_1 && ad);
     } if (("mouseover" === en)) {
-        var pd_2 = (__WEBPACK_IMPORTED_MODULE_1__angular_core__["_27" /* ɵnov */](_v, 7).onHover($event) !== false);
+        var pd_2 = (__WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵnov"](_v, 7).onHover($event) !== false);
         ad = (pd_2 && ad);
-    } return ad; }, __WEBPACK_IMPORTED_MODULE_11__navigation_bar_navigation_bar_component_ngfactory__["b" /* View_NavigationBarComponent_0 */], __WEBPACK_IMPORTED_MODULE_11__navigation_bar_navigation_bar_component_ngfactory__["a" /* RenderType_NavigationBarComponent */])), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_14" /* ɵdid */](7, 114688, null, 0, __WEBPACK_IMPORTED_MODULE_12__navigation_bar_navigation_bar_component__["a" /* NavigationBarComponent */], [__WEBPACK_IMPORTED_MODULE_8__shared_services_property_service__["a" /* PropertyService */], __WEBPACK_IMPORTED_MODULE_8__shared_services_property_service__["a" /* PropertyService */], __WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* Renderer2 */]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["\n"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* ɵeld */](9, 0, null, null, 4, "div", [["class", "container"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_10" /* ɵand */](16777216, null, null, 1, null, View_GlobalMatchFeedComponent_1)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_14" /* ɵdid */](12, 802816, null, 0, __WEBPACK_IMPORTED_MODULE_13__angular_common__["h" /* NgForOf */], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["Z" /* ViewContainerRef */], __WEBPACK_IMPORTED_MODULE_1__angular_core__["V" /* TemplateRef */], __WEBPACK_IMPORTED_MODULE_1__angular_core__["z" /* IterableDiffers */]], { ngForOf: [0, "ngForOf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["\n"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["\n"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* ɵeld */](15, 0, null, null, 1, "sports-social-footer", [], null, [["window", "scroll"]], function (_v, en, $event) { var ad = true; if (("window:scroll" === en)) {
-        var pd_0 = (__WEBPACK_IMPORTED_MODULE_1__angular_core__["_27" /* ɵnov */](_v, 16).onscroll() !== false);
+    } return ad; }, __WEBPACK_IMPORTED_MODULE_13__navigation_bar_navigation_bar_component_ngfactory__["b" /* View_NavigationBarComponent_0 */], __WEBPACK_IMPORTED_MODULE_13__navigation_bar_navigation_bar_component_ngfactory__["a" /* RenderType_NavigationBarComponent */])), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵdid"](7, 114688, null, 0, __WEBPACK_IMPORTED_MODULE_14__navigation_bar_navigation_bar_component__["a" /* NavigationBarComponent */], [__WEBPACK_IMPORTED_MODULE_10__shared_services_property_service__["a" /* PropertyService */], __WEBPACK_IMPORTED_MODULE_10__shared_services_property_service__["a" /* PropertyService */], __WEBPACK_IMPORTED_MODULE_2__angular_core__["Renderer2"], __WEBPACK_IMPORTED_MODULE_15__angular_router__["a" /* ActivatedRoute */]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵted"](-1, null, ["\n"])), (_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵeld"](9, 0, null, null, 9, "ng-masonry-grid", [], null, null, null, __WEBPACK_IMPORTED_MODULE_16__node_modules_ng_masonry_grid_ng_masonry_grid_ngfactory__["b" /* View_NgMasonryGridComponent_0 */], __WEBPACK_IMPORTED_MODULE_16__node_modules_ng_masonry_grid_ng_masonry_grid_ngfactory__["a" /* RenderType_NgMasonryGridComponent */])), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵdid"](10, 1294336, null, 0, __WEBPACK_IMPORTED_MODULE_3_ng_masonry_grid__["NgMasonryGridComponent"], [__WEBPACK_IMPORTED_MODULE_2__angular_core__["PLATFORM_ID"], __WEBPACK_IMPORTED_MODULE_2__angular_core__["ElementRef"], __WEBPACK_IMPORTED_MODULE_3_ng_masonry_grid__["NgMasonryGridService"]], { masonryOptions: [0, "masonryOptions"], useAnimation: [1, "useAnimation"], useImagesLoaded: [2, "useImagesLoaded"] }, null), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵpod"](11, { transitionDuration: 0, gutter: 1 }), (_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵted"](-1, 0, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵand"](16777216, null, 0, 1, null, View_GlobalMatchFeedComponent_1)), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵdid"](14, 16384, null, 0, __WEBPACK_IMPORTED_MODULE_17__angular_common__["NgIf"], [__WEBPACK_IMPORTED_MODULE_2__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_2__angular_core__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵted"](-1, 0, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵand"](16777216, null, 0, 1, null, View_GlobalMatchFeedComponent_2)), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵdid"](17, 802816, null, 0, __WEBPACK_IMPORTED_MODULE_17__angular_common__["NgForOf"], [__WEBPACK_IMPORTED_MODULE_2__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_2__angular_core__["TemplateRef"], __WEBPACK_IMPORTED_MODULE_2__angular_core__["IterableDiffers"]], { ngForOf: [0, "ngForOf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵted"](-1, 0, ["\n"])), (_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵted"](-1, null, ["\n"])), (_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵeld"](20, 0, null, null, 1, "sports-social-footer", [], null, [["window", "scroll"]], function (_v, en, $event) { var ad = true; if (("window:scroll" === en)) {
+        var pd_0 = (__WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵnov"](_v, 21).onscroll() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, __WEBPACK_IMPORTED_MODULE_14__footer_footer_component_ngfactory__["b" /* View_FooterComponent_0 */], __WEBPACK_IMPORTED_MODULE_14__footer_footer_component_ngfactory__["a" /* RenderType_FooterComponent */])), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_14" /* ɵdid */](16, 114688, null, 0, __WEBPACK_IMPORTED_MODULE_15__footer_footer_component__["a" /* FooterComponent */], [], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_31" /* ɵted */](-1, null, ["\n\n\n"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* ɵeld */](18, 0, [["openMatchCard", 1]], null, 0, "template", [], null, null, null, null, null))], function (_ck, _v) { var _co = _v.component; _ck(_v, 1, 0); _ck(_v, 4, 0); _ck(_v, 7, 0); var currVal_0 = _co.Match; _ck(_v, 12, 0, currVal_0); _ck(_v, 16, 0); }, null); }
-function View_GlobalMatchFeedComponent_Host_0(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["_32" /* ɵvid */](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* ɵeld */](0, 0, null, null, 1, "sports-social-global-match-feed", [], null, [["window", "scroll"]], function (_v, en, $event) { var ad = true; if (("window:scroll" === en)) {
-        var pd_0 = (__WEBPACK_IMPORTED_MODULE_1__angular_core__["_27" /* ɵnov */](_v, 1).onWindowScroll($event) !== false);
+    } return ad; }, __WEBPACK_IMPORTED_MODULE_18__footer_footer_component_ngfactory__["b" /* View_FooterComponent_0 */], __WEBPACK_IMPORTED_MODULE_18__footer_footer_component_ngfactory__["a" /* RenderType_FooterComponent */])), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵdid"](21, 114688, null, 0, __WEBPACK_IMPORTED_MODULE_19__footer_footer_component__["a" /* FooterComponent */], [], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵted"](-1, null, ["\n\n\n"])), (_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵeld"](23, 0, [["openMatchCard", 1]], null, 0, "template", [], null, null, null, null, null))], function (_ck, _v) { var _co = _v.component; _ck(_v, 1, 0); _ck(_v, 4, 0); _ck(_v, 7, 0); var currVal_0 = _ck(_v, 11, 0, "0.4s", 2); var currVal_1 = true; var currVal_2 = true; _ck(_v, 10, 0, currVal_0, currVal_1, currVal_2); var currVal_3 = (_co.Match.length == 0); _ck(_v, 14, 0, currVal_3); var currVal_4 = _co.Match; _ck(_v, 17, 0, currVal_4); _ck(_v, 21, 0); }, null); }
+function View_GlobalMatchFeedComponent_Host_0(_l) { return __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵeld"](0, 0, null, null, 1, "sports-social-global-match-feed", [], null, [["window", "scroll"]], function (_v, en, $event) { var ad = true; if (("window:scroll" === en)) {
+        var pd_0 = (__WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵnov"](_v, 1).onWindowScroll($event) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, View_GlobalMatchFeedComponent_0, RenderType_GlobalMatchFeedComponent)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_14" /* ɵdid */](1, 114688, null, 0, __WEBPACK_IMPORTED_MODULE_16__global_match_feed_component__["a" /* GlobalMatchFeedComponent */], [__WEBPACK_IMPORTED_MODULE_17__shared_services_location_based_data_service__["a" /* LocationBasedDataService */], __WEBPACK_IMPORTED_MODULE_17__shared_services_location_based_data_service__["a" /* LocationBasedDataService */], __WEBPACK_IMPORTED_MODULE_18__shared_services_get_service__["a" /* GetService */], __WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* Renderer2 */]], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
-var GlobalMatchFeedComponentNgFactory = __WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* ɵccf */]("sports-social-global-match-feed", __WEBPACK_IMPORTED_MODULE_16__global_match_feed_component__["a" /* GlobalMatchFeedComponent */], View_GlobalMatchFeedComponent_Host_0, {}, {}, []);
+    } return ad; }, View_GlobalMatchFeedComponent_0, RenderType_GlobalMatchFeedComponent)), __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵdid"](1, 245760, null, 0, __WEBPACK_IMPORTED_MODULE_20__global_match_feed_component__["a" /* GlobalMatchFeedComponent */], [__WEBPACK_IMPORTED_MODULE_21__shared_services_location_based_data_service__["a" /* LocationBasedDataService */], __WEBPACK_IMPORTED_MODULE_21__shared_services_location_based_data_service__["a" /* LocationBasedDataService */], __WEBPACK_IMPORTED_MODULE_22__shared_services_get_service__["a" /* GetService */], __WEBPACK_IMPORTED_MODULE_2__angular_core__["Renderer2"]], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+var GlobalMatchFeedComponentNgFactory = __WEBPACK_IMPORTED_MODULE_2__angular_core__["ɵccf"]("sports-social-global-match-feed", __WEBPACK_IMPORTED_MODULE_20__global_match_feed_component__["a" /* GlobalMatchFeedComponent */], View_GlobalMatchFeedComponent_Host_0, {}, {}, []);
 
 
 
@@ -138,40 +148,32 @@ var GlobalMatchFeedComponent = (function () {
     GlobalMatchFeedComponent.prototype.globalMatchFeed = function (pageNo) {
         var _this = this;
         this.get.globalMatchFeed(pageNo, 0).subscribe(function (res) {
-            var data = res;
+            var data = res['Feed'];
             console.log(data);
             // tslint:disable-next-line:forin
             for (var i in data) {
                 _this.Match.push({
-                    eventId: data[i].eventId,
+                    eventId: data[i].eventid,
                     creatorImage: data[i].creatorImage,
                     creatorName: data[i].creatorName,
-                    type: data[i].feedType,
+                    type: data[i].feedtype,
                     doerId: data[i].doerId,
-                    doerName: data[i].doerName,
-                    doerPic: data[i].doerPic,
-                    matchText: data[i].matchText,
-                    matchImage: data[i].matchImage,
-                    activityDate: data[i].startDate,
-                    matchDate: data[i].creationDate,
+                    doerName: data[i].user_name,
+                    doerPic: data[i].Profile_Photo,
+                    matchText: data[i].EventText,
+                    matchImage: data[i].Event_Image,
+                    activityDate: data[i].InsertedDate,
+                    matchDate: data[i].startdatetime,
                     restrictionCount: data[i].restrictionCount,
-                    joineeCount: data[i].joineeCount,
-                    commentCount: data[i].commentCount,
-                    watchCount: data[i].watchCount,
-                    promoteCount: data[i].promoteCount,
-                    gameName: data[i].gameName,
-                    venueName: data[i].venueName,
-                    activityName: data[i].activityName,
-                    newsId: data[i]._id,
-                    newsImage: data[i].newsImage,
-                    sourceImage: data[i].sourceImage,
-                    source: data[i].source,
-                    title: data[i].title,
-                    url: data[i].url,
-                    desc: data[i].desc
+                    joineeCount: data[i].JoineeCount,
+                    commentCount: data[i].CommentCount,
+                    watchCount: data[i].WatchCount,
+                    promoteCount: data[i].PromoteCount,
+                    venueName: data[i].Venue_Name,
+                    gameName: data[i].GameName,
+                    activityName: data[i].Activity_name !== undefined ? data[i].Activity_name.split(' ')[0] : ''
                 });
             }
-            console.log(_this.Match);
         }, function (err) {
             console.log('Something went wrong with feed!');
         });
@@ -188,27 +190,39 @@ var GlobalMatchFeedComponent = (function () {
         }
     };
     GlobalMatchFeedComponent.prototype.ngOnInit = function () {
-        this.loc.getGeoLocation();
-        // console.log(this.loc.pos);
-        this.globalMatchFeed(this.nextPageNo);
+        var _this = this;
+        this.loc.getGeoLocation()
+            .then(function () {
+            _this.globalMatchFeed(_this.nextPageNo);
+        })
+            .catch(function (err) {
+            console.log(err);
+        });
+    };
+    GlobalMatchFeedComponent.prototype.ngOnDestroy = function () {
+        if (this._masonry) {
+            this._removeAllSubscription.unsubscribe();
+            this._removeItemSubscription.unsubscribe();
+            this._removeFirstItemSubscription.unsubscribe();
+        }
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* HostListener */])('window:scroll', ['$event']),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"])('window:scroll', ['$event']),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", [Object]),
         __metadata("design:returntype", void 0)
     ], GlobalMatchFeedComponent.prototype, "onWindowScroll", null);
     GlobalMatchFeedComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'sports-social-global-match-feed',
             templateUrl: './global-match-feed.component.html',
-            styleUrls: ['./global-match-feed.component.css'],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* ViewEncapsulation */].None
+            styleUrls: ['./global-match-feed.component.css', '../../../../node_modules/ng-masonry-grid/ng-masonry-grid.css'],
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__shared_services_location_based_data_service__["a" /* LocationBasedDataService */],
             __WEBPACK_IMPORTED_MODULE_2__shared_services_location_based_data_service__["a" /* LocationBasedDataService */],
             __WEBPACK_IMPORTED_MODULE_1__shared_services_get_service__["a" /* GetService */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer2 */]])
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer2"]])
     ], GlobalMatchFeedComponent);
     return GlobalMatchFeedComponent;
 }());
@@ -228,14 +242,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__open_cards_open_match_card_open_match_card_component_ngfactory__ = __webpack_require__("../../../../../src/app/open-cards/open-match-card/open-match-card.component.ngfactory.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global_match_feed_component_ngfactory__ = __webpack_require__("../../../../../src/app/global-feed/global-match-feed/global-match-feed.component.ngfactory.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__open_cards_open_match_card_open_match_card_module__ = __webpack_require__("../../../../../src/app/open-cards/open-match-card/open-match-card.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__cards_match_card_match_card_module__ = __webpack_require__("../../../../../src/app/cards/match-card/match-card.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__header_header_module__ = __webpack_require__("../../../../../src/app/header/header.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__footer_footer_module__ = __webpack_require__("../../../../../src/app/footer/footer.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__navigation_bar_navigation_bar_module__ = __webpack_require__("../../../../../src/app/navigation-bar/navigation-bar.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__carousel_carousel_module__ = __webpack_require__("../../../../../src/app/carousel/carousel.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__global_match_feed_component__ = __webpack_require__("../../../../../src/app/global-feed/global-match-feed/global-match-feed.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng_masonry_grid__ = __webpack_require__("../../../../ng-masonry-grid/ng-masonry-grid.umd.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng_masonry_grid___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_ng_masonry_grid__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__open_cards_open_match_card_open_match_card_module__ = __webpack_require__("../../../../../src/app/open-cards/open-match-card/open-match-card.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__cards_match_card_match_card_module__ = __webpack_require__("../../../../../src/app/cards/match-card/match-card.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__header_header_module__ = __webpack_require__("../../../../../src/app/header/header.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__footer_footer_module__ = __webpack_require__("../../../../../src/app/footer/footer.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__navigation_bar_navigation_bar_module__ = __webpack_require__("../../../../../src/app/navigation-bar/navigation-bar.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__carousel_carousel_module__ = __webpack_require__("../../../../../src/app/carousel/carousel.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__global_match_feed_component__ = __webpack_require__("../../../../../src/app/global-feed/global-match-feed/global-match-feed.component.ts");
 /**
 * @fileoverview This file is generated by the Angular template compiler.
 * Do not edit.
@@ -255,7 +271,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-var GlobalMatchFeedModuleNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* ɵcmf */](__WEBPACK_IMPORTED_MODULE_1__global_match_feed_module__["a" /* GlobalMatchFeedModule */], [], function (_l) { return __WEBPACK_IMPORTED_MODULE_0__angular_core__["_25" /* ɵmod */]([__WEBPACK_IMPORTED_MODULE_0__angular_core__["_26" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* ComponentFactoryResolver */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ɵCodegenComponentFactoryResolver */], [[8, [__WEBPACK_IMPORTED_MODULE_2__open_cards_open_match_card_open_match_card_component_ngfactory__["a" /* OpenMatchCardComponentNgFactory */], __WEBPACK_IMPORTED_MODULE_3__global_match_feed_component_ngfactory__["a" /* GlobalMatchFeedComponentNgFactory */]]], [3, __WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* ComponentFactoryResolver */]], __WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* NgModuleRef */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_26" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_4__angular_common__["k" /* NgLocalization */], __WEBPACK_IMPORTED_MODULE_4__angular_common__["j" /* NgLocaleLocalization */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* LOCALE_ID */], [2, __WEBPACK_IMPORTED_MODULE_4__angular_common__["o" /* ɵa */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_26" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_4__angular_common__["b" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_4__angular_common__["b" /* CommonModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_26" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_5__angular_router__["n" /* RouterModule */], __WEBPACK_IMPORTED_MODULE_5__angular_router__["n" /* RouterModule */], [[2, __WEBPACK_IMPORTED_MODULE_5__angular_router__["s" /* ɵa */]], [2, __WEBPACK_IMPORTED_MODULE_5__angular_router__["k" /* Router */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_26" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_6__open_cards_open_match_card_open_match_card_module__["a" /* OpenMatchCardModule */], __WEBPACK_IMPORTED_MODULE_6__open_cards_open_match_card_open_match_card_module__["a" /* OpenMatchCardModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_26" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_7__cards_match_card_match_card_module__["a" /* MatchCardModule */], __WEBPACK_IMPORTED_MODULE_7__cards_match_card_match_card_module__["a" /* MatchCardModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_26" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_8__header_header_module__["a" /* HeaderModule */], __WEBPACK_IMPORTED_MODULE_8__header_header_module__["a" /* HeaderModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_26" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_9__footer_footer_module__["a" /* FooterModule */], __WEBPACK_IMPORTED_MODULE_9__footer_footer_module__["a" /* FooterModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_26" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_10__navigation_bar_navigation_bar_module__["a" /* NavigationBarModule */], __WEBPACK_IMPORTED_MODULE_10__navigation_bar_navigation_bar_module__["a" /* NavigationBarModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_26" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_11__carousel_carousel_module__["a" /* CarouselModule */], __WEBPACK_IMPORTED_MODULE_11__carousel_carousel_module__["a" /* CarouselModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_26" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_1__global_match_feed_module__["a" /* GlobalMatchFeedModule */], __WEBPACK_IMPORTED_MODULE_1__global_match_feed_module__["a" /* GlobalMatchFeedModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_26" /* ɵmpd */](1024, __WEBPACK_IMPORTED_MODULE_5__angular_router__["i" /* ROUTES */], function () { return [[{ path: "", component: __WEBPACK_IMPORTED_MODULE_12__global_match_feed_component__["a" /* GlobalMatchFeedComponent */] }]]; }, [])]); });
+
+var GlobalMatchFeedModuleNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵcmf"](__WEBPACK_IMPORTED_MODULE_1__global_match_feed_module__["a" /* GlobalMatchFeedModule */], [], function (_l) { return __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmod"]([__WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_0__angular_core__["ComponentFactoryResolver"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵCodegenComponentFactoryResolver"], [[8, [__WEBPACK_IMPORTED_MODULE_2__open_cards_open_match_card_open_match_card_component_ngfactory__["a" /* OpenMatchCardComponentNgFactory */], __WEBPACK_IMPORTED_MODULE_3__global_match_feed_component_ngfactory__["a" /* GlobalMatchFeedComponentNgFactory */]]], [3, __WEBPACK_IMPORTED_MODULE_0__angular_core__["ComponentFactoryResolver"]], __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModuleRef"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_4__angular_common__["NgLocalization"], __WEBPACK_IMPORTED_MODULE_4__angular_common__["NgLocaleLocalization"], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["LOCALE_ID"], [2, __WEBPACK_IMPORTED_MODULE_4__angular_common__["ɵa"]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_5_ng_masonry_grid__["NgMasonryGridService"], __WEBPACK_IMPORTED_MODULE_5_ng_masonry_grid__["NgMasonryGridService"], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["PLATFORM_ID"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_4__angular_common__["CommonModule"], __WEBPACK_IMPORTED_MODULE_4__angular_common__["CommonModule"], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_6__angular_router__["n" /* RouterModule */], __WEBPACK_IMPORTED_MODULE_6__angular_router__["n" /* RouterModule */], [[2, __WEBPACK_IMPORTED_MODULE_6__angular_router__["s" /* ɵa */]], [2, __WEBPACK_IMPORTED_MODULE_6__angular_router__["k" /* Router */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_7__open_cards_open_match_card_open_match_card_module__["a" /* OpenMatchCardModule */], __WEBPACK_IMPORTED_MODULE_7__open_cards_open_match_card_open_match_card_module__["a" /* OpenMatchCardModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_8__cards_match_card_match_card_module__["a" /* MatchCardModule */], __WEBPACK_IMPORTED_MODULE_8__cards_match_card_match_card_module__["a" /* MatchCardModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_9__header_header_module__["a" /* HeaderModule */], __WEBPACK_IMPORTED_MODULE_9__header_header_module__["a" /* HeaderModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_10__footer_footer_module__["a" /* FooterModule */], __WEBPACK_IMPORTED_MODULE_10__footer_footer_module__["a" /* FooterModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_11__navigation_bar_navigation_bar_module__["a" /* NavigationBarModule */], __WEBPACK_IMPORTED_MODULE_11__navigation_bar_navigation_bar_module__["a" /* NavigationBarModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_12__carousel_carousel_module__["a" /* CarouselModule */], __WEBPACK_IMPORTED_MODULE_12__carousel_carousel_module__["a" /* CarouselModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_5_ng_masonry_grid__["NgMasonryGridModule"], __WEBPACK_IMPORTED_MODULE_5_ng_masonry_grid__["NgMasonryGridModule"], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_1__global_match_feed_module__["a" /* GlobalMatchFeedModule */], __WEBPACK_IMPORTED_MODULE_1__global_match_feed_module__["a" /* GlobalMatchFeedModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](1024, __WEBPACK_IMPORTED_MODULE_6__angular_router__["i" /* ROUTES */], function () { return [[{ path: "", component: __WEBPACK_IMPORTED_MODULE_13__global_match_feed_component__["a" /* GlobalMatchFeedComponent */] }]]; }, [])]); });
 
 
 
@@ -276,6 +293,8 @@ var GlobalMatchFeedModuleNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__global_match_feed_routes__ = __webpack_require__("../../../../../src/app/global-feed/global-match-feed/global-match-feed.routes.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__navigation_bar_navigation_bar_module__ = __webpack_require__("../../../../../src/app/navigation-bar/navigation-bar.module.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__carousel_carousel_module__ = __webpack_require__("../../../../../src/app/carousel/carousel.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_ng_masonry_grid__ = __webpack_require__("../../../../ng-masonry-grid/ng-masonry-grid.umd.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_ng_masonry_grid___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_ng_masonry_grid__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -292,20 +311,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var GlobalMatchFeedModule = (function () {
     function GlobalMatchFeedModule() {
     }
     GlobalMatchFeedModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_common__["CommonModule"],
                 __WEBPACK_IMPORTED_MODULE_2__angular_router__["n" /* RouterModule */],
                 __WEBPACK_IMPORTED_MODULE_3__cards_match_card_match_card_module__["a" /* MatchCardModule */],
                 __WEBPACK_IMPORTED_MODULE_4__header_header_module__["a" /* HeaderModule */],
                 __WEBPACK_IMPORTED_MODULE_5__footer_footer_module__["a" /* FooterModule */],
                 __WEBPACK_IMPORTED_MODULE_7__global_match_feed_routes__["a" /* MatchRoutes */],
                 __WEBPACK_IMPORTED_MODULE_8__navigation_bar_navigation_bar_module__["a" /* NavigationBarModule */],
-                __WEBPACK_IMPORTED_MODULE_9__carousel_carousel_module__["a" /* CarouselModule */]
+                __WEBPACK_IMPORTED_MODULE_9__carousel_carousel_module__["a" /* CarouselModule */],
+                __WEBPACK_IMPORTED_MODULE_10_ng_masonry_grid__["NgMasonryGridModule"]
             ],
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_6__global_match_feed_component__["a" /* GlobalMatchFeedComponent */]

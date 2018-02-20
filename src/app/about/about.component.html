@@ -25,8 +25,11 @@
       place when we play, express ourselves and build communities through Sports.
   </h3>
   <p class="latest-blog">The Latest From Our Blog</p>
-  <div class="container">
-      <div class="col-4" *ngFor = "let feed of blog">
+  <ng-masonry-grid  
+        [masonryOptions]="{ transitionDuration: '0.4s', gutter: 2 }"
+        [useAnimation]="true"
+        [useImagesLoaded]="true">
+      <ng-masonry-grid-item class="col-4" *ngFor = "let feed of blog">
         <sports-social-blog-card
           [blogId] = "feed.blogId"
           [blogImage] = "feed.blogImage"
@@ -39,8 +42,8 @@
           [shortTitle] = "feed.shortTitle"
           [insertedDate] = "feed.insertedDate"  >
         </sports-social-blog-card>
-      </div>
-  </div>
+      </ng-masonry-grid-item>
+  </ng-masonry-grid>
 </div>
 
 

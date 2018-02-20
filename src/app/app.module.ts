@@ -17,6 +17,7 @@ import { AppComponent } from './app.component';
 import { TimeService } from './shared/services/time.service';
 import { LocationBasedDataService } from './shared/services/location-based-data.service';
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -24,7 +25,7 @@ import { LocationBasedDataService } from './shared/services/location-based-data.
   imports: [
     BrowserModule,
     AppRoute,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [
     PropertyService,

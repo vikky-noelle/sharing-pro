@@ -1,8 +1,12 @@
 <sports-social-header></sports-social-header>
 <sports-social-carousel></sports-social-carousel>
 <sports-social-navigation-bar></sports-social-navigation-bar>
-<div class="container">
-      <div class="col-4" *ngFor = "let feed of globalArena; let i = index">
+<ng-masonry-grid  
+      [masonryOptions]="{ transitionDuration: '0.4s', gutter: 2 }"
+      [useAnimation]="true"
+      [useImagesLoaded]="true">
+    <img class="spinner" src="/assets/images/sports-social-loading.gif" *ngIf = "globalArena.length == 0" alt="">
+      <ng-masonry-grid-item class="col-4" *ngFor = "let feed of globalArena; let i = index">
         <ng-container *ngIf = "feed.type === 1">
             <h1 class="type"> 
               <a routerLink="/OpenArena">Open Arena >></a>  
@@ -41,6 +45,6 @@
               [commentCount] = "feed.commentCount">
             </sports-social-news-card>
         </ng-container>
-      </div>
-  </div>
+      </ng-masonry-grid-item>
+  </ng-masonry-grid>
   <sports-social-footer></sports-social-footer>

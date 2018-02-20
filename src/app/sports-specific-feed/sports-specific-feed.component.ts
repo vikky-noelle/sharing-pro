@@ -1,22 +1,30 @@
-import { Component, OnInit, ViewEncapsulation, HostListener, Renderer2 } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, HostListener, Renderer2, OnDestroy } from '@angular/core';
 import { PostService } from '../shared/services/post.service';
 import { GetService } from '../shared/services/get.service';
 import { LocationBasedDataService } from '../shared/services/location-based-data.service';
 import { ActivatedRoute } from '@angular/router';
+import { Masonry, MasonryGridItem } from 'ng-masonry-grid';
+import { ISubscription } from 'rxjs/Subscription';
 
 @Component({
   selector: 'sports-social-sports-specific-feed',
   templateUrl: './sports-specific-feed.component.html',
-  styleUrls: ['./sports-specific-feed.component.css'],
+  styleUrls: ['./sports-specific-feed.component.css', '../../../node_modules/ng-masonry-grid/ng-masonry-grid.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class SportsSpecificFeedComponent implements OnInit {
+export class SportsSpecificFeedComponent implements OnInit, OnDestroy {
 
   globalArena = [];
   prevPageNo: number = 0;
   nextPageNo: number = 0;
   gameName: string;
   gameId: number;
+
+  _masonry: Masonry;
+  private _removeAllSubscription: ISubscription;
+  private _removeItemSubscription: ISubscription;
+  private _removeFirstItemSubscription: ISubscription;
+
   Sports: { id: number, title: string}[]= [
     {id: 0, title: 'Popular'},
     {id: 17, title: 'Cricket'},
@@ -138,12 +146,21 @@ export class SportsSpecificFeedComponent implements OnInit {
   }
 
   ngOnInit() {
-     this.loc.getGeoLocation();
-    // console.log(this.loc.pos);
-    setTimeout(() => {
+    this.loc.getGeoLocation()
+    .then( () => {
       this.globalFeed();
-    }, 1000);
+    })
+    .catch( (err) => {
+      console.log(err);
+    });
   }
-
+  
+  ngOnDestroy() {
+    if (this._masonry) {
+      this._removeAllSubscription.unsubscribe();
+      this._removeItemSubscription.unsubscribe();
+      this._removeFirstItemSubscription.unsubscribe();
+    }
+  }
 
 }

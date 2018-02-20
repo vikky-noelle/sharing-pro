@@ -7,6 +7,7 @@ import { NewsRoutes } from './global-news-feed.routes';
 import { NavigationBarModule } from '../../navigation-bar/navigation-bar.module';
 import { GlobalNewsFeedComponent } from './global-news-feed.component';
 import { CarouselModule } from '../../carousel/carousel.module';
+import { NgMasonryGridModule } from 'ng-masonry-grid';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { CarouselModule } from '../../carousel/carousel.module';
     FooterModule,
     NewsRoutes,
     NavigationBarModule,
-    CarouselModule
+    CarouselModule,
+    NgMasonryGridModule
   ],
   declarations: [
     GlobalNewsFeedComponent

@@ -10,6 +10,8 @@ import { CarouselModule } from '../carousel/carousel.module';
 import { NavigationBarModule } from '../navigation-bar/navigation-bar.module';
 import { FooterModule } from '../footer/footer.module';
 
+import { NgMasonryGridModule } from 'ng-masonry-grid';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { FooterModule } from '../footer/footer.module';
     HeaderModule,
     CarouselModule,
     NavigationBarModule,
-    FooterModule
+    FooterModule,
+    NgMasonryGridModule
   ],
   declarations: [
     SportsSpecificFeedComponent

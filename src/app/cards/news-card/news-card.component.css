@@ -1,10 +1,6 @@
-.news-card {
-    width: 100%;
-    background-color: #FFFFFF;
-    box-shadow: 2px 2px 4px #bbbbbb;
-}
+
 .news-info {
-    margin: 2%;
+    
 }
 .source-img{
     width: 50px;
@@ -38,14 +34,18 @@
 .desc{
     margin-top: 5px;
     font-size: 1em;
-    color: black;
     font-weight: 700;
-  overflow: hidden;
-  position: relative; 
-  line-height: 1.2em;
-  max-height: 2.4em;
-  text-align: left; 
-  padding-right: 1em;
+    overflow: hidden;
+    position: relative; 
+    line-height: 1.2em;
+    max-height: 2.4em;
+    text-align: left; 
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.desc > a {
+    color: black;
 }
 
 .desc :before{
@@ -63,15 +63,22 @@
   margin-top: 0.2em;
   background: white;
 }
-.actionsCount{
+.action-count{
     padding: 2%;
 }
 
-.actionsCount > a {
+.action-count > a {
     text-decoration: none;
     margin-right: 7px;
+    color: black;
+    font-size: 0.9em;
+    font-weight: 500
 }
-.actions{
+.actionsCount  > a > span {
+    font-weight: 400;
+}
+
+.actions-news{
     padding: 3%;
     display: flex;
     justify-content: space-around;
@@ -81,16 +88,21 @@ button {
     background-color: transparent;
     outline: none;
     border: none;
+    cursor: pointer;
+    
 }
 
-.actions > button > img {
-    width: 18px;
+.actions-news > button > img {
+    width: 16px;
     display: inline-block;
     vertical-align: middle;
     margin-right: 3px;
 }
 
-.actions > button > span {
+.actions-news > button > span {
     display: inline-block;
     vertical-align: middle;
+}
+.actions-news > button > span:hover{
+    font-weight: 700
 }

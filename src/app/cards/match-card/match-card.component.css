@@ -4,10 +4,6 @@
     box-shadow: 2px 2px 4px #bbbbbb;
 }
 
-.user{
-    padding: 2%;
-    position: relative;
-}
 
 .userImage{
     width: 50px;
@@ -33,17 +29,18 @@
     position: absolute;
     top: 5px;
     right: 5px;
+
 }
 .matchDate > img{
     vertical-align: middle;
-    width: 22px;
-    height: 22px;
+    width: 32px;
+    height: 32px;
     margin-right: 4px;
 }
 .matchDate > span{
     display: inline-block;
     font-size: 0.9em;
-    color: #bbbbbb;
+    color: #888888;
 }
 
 .restrictionCount{
@@ -71,11 +68,11 @@
 .matchImage > img {
     width: 100%;
 }
-.actionsCount{
+.action-count{
     padding: 2%;
 }
 
-.actionsCount > a {
+.action-count > a {
     text-decoration: none;
     margin-right: 7px;
     color: black;
@@ -86,6 +83,34 @@
     font-weight: 400;
 }
 
+.actions-match{
+    padding: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.actions-match > button > img {
+    width: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.actions-match > button > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.actions > button > span:hover{
+    font-weight: 700
+}
 .userNameAndActivity{
     color: #024771;
     font-weight: 700;

@@ -5,6 +5,7 @@ import { NewsCardModule } from '../../cards/news-card/news-card.module';
 import { LiveMatchCardModule } from '../../cards/live-match-card/live-match-card.module';
 import { GlobalOpenArenaFeedComponent } from './global-open-arena-feed.component';
 import { RouterModule } from '@angular/router';
+import { NgMasonryGridModule } from 'ng-masonry-grid';
 
 @NgModule({
   imports: [
@@ -12,7 +13,8 @@ import { RouterModule } from '@angular/router';
     MatchCardModule,
     NewsCardModule,
     LiveMatchCardModule,
-    RouterModule
+    RouterModule,
+    NgMasonryGridModule
   ],
   declarations: [
     GlobalOpenArenaFeedComponent

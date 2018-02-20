@@ -7,13 +7,16 @@ import { HeaderComponent } from '../header/header.component';
 import { HeaderModule } from '../header/header.module';
 import { BlogCardModule } from '../cards/blog-card/blog-card.module';
 
+import { NgMasonryGridModule } from 'ng-masonry-grid';
+
 @NgModule({
   imports: [
     CommonModule,
     AboutRouter,
     FooterModule,
     HeaderModule,
-    BlogCardModule
+    BlogCardModule,
+    NgMasonryGridModule
   ],
   declarations: [
     AboutComponent,

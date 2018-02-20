@@ -1,8 +1,12 @@
 <sports-social-header></sports-social-header>
 <sports-social-carousel></sports-social-carousel>
 <sports-social-navigation-bar></sports-social-navigation-bar>
-<div class="container">
-    <div class="col-4" *ngFor = "let feed of Match; let i = index">
+<ng-masonry-grid  
+      [masonryOptions]="{ transitionDuration: '0.4s', gutter: 2 }"
+      [useAnimation]="true"
+      [useImagesLoaded]="true">
+    <img class="spinner" src="/assets/images/sports-social-loading.gif" *ngIf = "Match.length == 0" alt="">
+    <ng-masonry-grid-item class="col-4" *ngFor = "let feed of Match; let i = index">
       <sports-social-match-card 
         [eventId] = "feed.eventId"
         [creatorImage] = "feed.creatorImage"
@@ -23,8 +27,8 @@
         [activityName] = "feed.activityName"
         [restrictionCount] = "feed.restrictionCount"   #matchCard  >
       </sports-social-match-card>
-    </div>
-</div>
+    </ng-masonry-grid-item>
+</ng-masonry-grid >
 <sports-social-footer></sports-social-footer>
 
 

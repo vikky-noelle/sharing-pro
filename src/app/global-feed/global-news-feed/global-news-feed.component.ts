@@ -3,23 +3,31 @@ import {
   OnInit,
   ViewEncapsulation,
   HostListener,
-  Renderer2
+  Renderer2,
+  OnDestroy
 } from '@angular/core';
 import { PostService } from '../../shared/services/post.service';
 import { GetService } from '../../shared/services/get.service';
 
+import { Masonry, MasonryGridItem } from 'ng-masonry-grid';
+import { ISubscription } from 'rxjs/Subscription';
+
 @Component({
   selector: 'sports-social-global-news-feed',
   templateUrl: './global-news-feed.component.html',
-  styleUrls: ['./global-news-feed.component.css'],
+  styleUrls: ['./global-news-feed.component.css', '../../../../node_modules/ng-masonry-grid/ng-masonry-grid.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class GlobalNewsFeedComponent implements OnInit {
+export class GlobalNewsFeedComponent implements OnInit, OnDestroy {
 
   News = [];
   prevPageNo: number = 0;
   nextPageNo: number = 0;
 
+  _masonry: Masonry;
+  private _removeAllSubscription: ISubscription;
+  private _removeItemSubscription: ISubscription;
+  private _removeFirstItemSubscription: ISubscription;
   constructor(
     private get: PostService,
     private getNews: GetService,
@@ -73,9 +81,15 @@ export class GlobalNewsFeedComponent implements OnInit {
   }
 
   ngOnInit() {
-   // this.loc.getGeoLocation();
-    // console.log(this.loc.pos);
     this.globalNewsFeed(this.nextPageNo);
+  }
+
+  ngOnDestroy() {
+    if (this._masonry) {
+      this._removeAllSubscription.unsubscribe();
+      this._removeItemSubscription.unsubscribe();
+      this._removeFirstItemSubscription.unsubscribe();
+    }
   }
 
 

@@ -3,7 +3,7 @@
     background-color: #ffffff;
     box-shadow: 2px 2px 4px #bbbbbb;
     text-align: center;
-    z-index: 10;
+    z-index: 8;
     position: relative;
 }
 
@@ -14,11 +14,22 @@ ul {
 li{
     display: inline-block;
     vertical-align: top;
+    
+}
+a {
+    border-left: 1px solid #bbbbbb
 }
 .sport-name, .sport-image{
     display: inline-block;
     vertical-align: middle;
     
+}
+
+.sport-image{
+    width: 22px;
+}
+.sport-image > img {
+    width: 100%;
 }
 .sport-name{
     margin-left: 5px;
@@ -26,10 +37,12 @@ li{
 .navbar li a,.dropdown li a{
     padding: 10px;
     text-decoration: none;
+    
 }
 
 .navbar li{
-    padding: 10px 0px 10px 0px;
+     padding: 10px 0px 10px 0px; 
+    
 }
 
 .navbar li a, .dropdown li a {

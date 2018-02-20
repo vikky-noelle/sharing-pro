@@ -9,6 +9,8 @@ import { MatchRoutes } from './global-match-feed.routes';
 import { NavigationBarModule } from '../../navigation-bar/navigation-bar.module';
 import { CarouselModule } from '../../carousel/carousel.module';
 
+import { NgMasonryGridModule } from 'ng-masonry-grid';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -18,7 +20,8 @@ import { CarouselModule } from '../../carousel/carousel.module';
     FooterModule,
     MatchRoutes,
     NavigationBarModule,
-    CarouselModule
+    CarouselModule,
+    NgMasonryGridModule
   ],
   declarations: [
     GlobalMatchFeedComponent

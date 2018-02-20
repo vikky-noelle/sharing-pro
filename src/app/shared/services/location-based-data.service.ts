@@ -28,32 +28,36 @@ export class LocationBasedDataService {
   }
 
   getGeoLocation( ) {
-    navigator.geolocation.getCurrentPosition(
-      (pos) => {
-        const crd = pos.coords;
-        console.log(crd);
-        this.feedPositionRequestObject = {
-          latitude: crd.latitude,
-          longitude: crd.longitude
-        };
-        console.log('Your current position is:');
-        console.log(`Latitude : ${crd.latitude}`);
-        console.log(`Longitude: ${crd.longitude}`);
-        console.log(`More or less ${crd.accuracy} meters.`);
-      },
-      (err) => {
-        console.warn(`ERROR(${err.code}): ${err.message}`);
-        this.feedPositionRequestObject = {
-          latitude: 0,
-          longitude: 0
-        };
-      },
-      {
-        enableHighAccuracy: true,
-        timeout: 5000,
-        maximumAge: 0
-      }
-    );
+    return new Promise((resolve, reject)=> {
+      navigator.geolocation.getCurrentPosition(
+        (pos) => {
+          const crd = pos.coords;
+          console.log(crd);
+          this.feedPositionRequestObject = {
+            latitude: crd.latitude,
+            longitude: crd.longitude
+          };
+          resolve();
+          console.log('Your current position is:');
+          console.log(`Latitude : ${crd.latitude}`);
+          console.log(`Longitude: ${crd.longitude}`);
+          console.log(`More or less ${crd.accuracy} meters.`);
+        },
+        (err) => {
+          console.warn(`ERROR(${err.code}): ${err.message}`);
+          this.feedPositionRequestObject = {
+            latitude: 0,
+            longitude: 0
+          };
+          reject('location not recieved');
+        },
+        {
+          enableHighAccuracy: true,
+          timeout: 5000,
+          maximumAge: 0
+        }
+      );
+    });
   }
 
   globalMatchFeed(pageNo , id) {

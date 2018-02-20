@@ -37,7 +37,7 @@ export class TimeService {
 
   activityExactDate(i: string) {
     const months = [
-      'Jan', 'Feb', 'March', 'May', 'June', 'July', 'Sept', 'Oct', 'Nov', 'Dec'
+      'Jan', 'Feb', 'March', 'April',  'May', 'June', 'July', 'Aug',  'Sept', 'Oct', 'Nov', 'Dec'
     ];
     const matchDate = new Date(i);
     const presentDate = new Date();
@@ -53,9 +53,9 @@ export class TimeService {
     }
   }
 
-  matchDate( i: string) {
+  relativeDate( i ) {
     const months = [
-      'Jan', 'Feb', 'March', 'May', 'June', 'July', 'Sept', 'Oct', 'Nov', 'Dec'
+      'Jan', 'Feb', 'March', 'April',  'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'
     ];
     const matchDate = new Date(i);
     const presentDate = new Date();

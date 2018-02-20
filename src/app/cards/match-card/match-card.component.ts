@@ -24,9 +24,9 @@ import { PostService } from '../../shared/services/post.service';
 export class MatchCardComponent implements OnInit {
 
   @ViewChild('actionsCount') actionsCount;
- 
+
  /*  @Input()  creatorId: string;
-  
+
   @Input()  creatorUserName: string; */
   @Input()  creatorName: string;
   @Input()  creatorImage: string;
@@ -68,6 +68,10 @@ export class MatchCardComponent implements OnInit {
   joinees: {
     name: string;
     image: string
+  } [];
+
+  images: {
+    url: string
   } [];
 
   @ViewChild('openMatchCard', { read: ViewContainerRef}) openMatchCardContainer;
@@ -115,7 +119,7 @@ export class MatchCardComponent implements OnInit {
             uniqueName: commentData[i].uniqueName,
             userImage: commentData[i].userImage,
             comment: commentData[i].comment,
-            commentDate: this.time.matchDate(commentData[i].commentDate)
+            commentDate: this.time.relativeDate(commentData[i].commentDate)
           });
         }
        // console.log(this.comments);
@@ -140,10 +144,10 @@ export class MatchCardComponent implements OnInit {
         // this.componentRef.instance.watchers = this.watchers;
 
         // tslint:disable-next-line:forin
-        for ( const i in res['joinee'] ) {
+        for ( const i in res['EventJoineesInfo'] ) {
           this.componentRef.instance.joinees.push({
-            name: res['joinee'][i].name,
-            image: res['joinee'][i].image
+            name: res['EventJoineesInfo'][i].FirstName + res['EventJoineesInfo'][i].LastName,
+            image: res['EventJoineesInfo'][i].profilephoto
           });
         }
         // this.componentRef.instance.joinees = this.joinees;
@@ -154,7 +158,7 @@ export class MatchCardComponent implements OnInit {
   ngOnInit() {
     this.removeActionsCountBar();
     this.activityDate = this.time.activityExactDate(this.activityDate);
-    this.matchDate = this.time.matchDate(this.matchDate);
+    this.matchDate = this.time.relativeDate(parseInt(this.matchDate, 10) * 1000);
 
 
   }

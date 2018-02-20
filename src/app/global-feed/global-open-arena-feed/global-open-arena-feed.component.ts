@@ -11,22 +11,25 @@ import {
   ViewContainerRef,
   ComponentFactoryResolver,
   ComponentFactory,
-  ComponentRef
+  ComponentRef,
+  OnDestroy
 } from '@angular/core';
 import { PostService } from '../../shared/services/post.service';
 import { MatchCardComponent } from '../../cards/match-card/match-card.component';
 import { GetService } from '../../shared/services/get.service';
 import { OpenMatchCardComponent } from '../../open-cards/open-match-card/open-match-card.component';
 import { LocationBasedDataService } from '../../shared/services/location-based-data.service';
+import { Masonry, MasonryGridItem } from 'ng-masonry-grid';
+import { ISubscription } from 'rxjs/Subscription';
 
 @Component({
   selector: 'sports-social-global-open-arena-feed',
   templateUrl: './global-open-arena-feed.component.html',
-  styleUrls: ['./global-open-arena-feed.component.css'],
+  styleUrls: ['./global-open-arena-feed.component.css', '../../../../node_modules/ng-masonry-grid/ng-masonry-grid.css'],
   encapsulation: ViewEncapsulation.Emulated,
   preserveWhitespaces: false
 })
-export class GlobalOpenArenaFeedComponent implements OnInit, AfterViewInit {
+export class GlobalOpenArenaFeedComponent implements OnInit, OnDestroy {
 
 
   globalArena = [];
@@ -34,6 +37,11 @@ export class GlobalOpenArenaFeedComponent implements OnInit, AfterViewInit {
   News = [];
   prevPageNo: number = 0;
   nextPageNo: number = 0;
+
+  _masonry: Masonry;
+  private _removeAllSubscription: ISubscription;
+  private _removeItemSubscription: ISubscription;
+  private _removeFirstItemSubscription: ISubscription;
 
 
   constructor(
@@ -64,7 +72,7 @@ export class GlobalOpenArenaFeedComponent implements OnInit, AfterViewInit {
             matchText: data[i].EventText,
             matchImage: data[i].Event_Image,
             activityDate: data[i].InsertedDate,
-            matchDate: data[i].strartdatetime,
+            matchDate:  data[i].startdatetime,
             restrictionCount: data[i].restrictionCount,
             joineeCount: data[i].JoineeCount,
             commentCount: data[i].CommentCount,
@@ -72,10 +80,9 @@ export class GlobalOpenArenaFeedComponent implements OnInit, AfterViewInit {
             promoteCount: data[i].PromoteCount,
             venueName: data[i].Venue_Name,
             gameName: data[i].GameName,
-            activityName: data[i].Activity_Name !== undefined ?  data[i].Activity_Name.split(' ')[0] : '' 
+            activityName: data[i].Activity_name !== undefined ?  data[i].Activity_name.split(' ')[0] : ''
           });
         }
-        console.log(this.Match);
       },
       err => {
         console.log('Something went wrong with feed!');
@@ -105,7 +112,6 @@ export class GlobalOpenArenaFeedComponent implements OnInit, AfterViewInit {
             desc: data[i].desc
           });
         }
-        console.log(this.News);
       },
       err => {
         console.log('Something went wrong with feed!');
@@ -133,14 +139,21 @@ export class GlobalOpenArenaFeedComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
-    this.loc.getGeoLocation();
-    setTimeout(() => {
+    this.loc.getGeoLocation()
+    .then( () => {
       this.globalFeed();
-    }, 1000);
+    })
+    .catch( (err) => {
+      console.log(err);
+    });
   }
 
-  ngAfterViewInit() {
-
+  ngOnDestroy() {
+    if (this._masonry) {
+      this._removeAllSubscription.unsubscribe();
+      this._removeItemSubscription.unsubscribe();
+      this._removeFirstItemSubscription.unsubscribe();
+    }
   }
 
 }
