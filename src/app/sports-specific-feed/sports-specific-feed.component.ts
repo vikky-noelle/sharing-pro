@@ -1,10 +1,12 @@
 import { Component, OnInit, ViewEncapsulation, HostListener, Renderer2, OnDestroy } from '@angular/core';
 import { PostService } from '../shared/services/post.service';
 import { GetService } from '../shared/services/get.service';
-import { LocationBasedDataService } from '../shared/services/location-based-data.service';
+import { LocationService } from '../shared/services/location.service';
 import { ActivatedRoute } from '@angular/router';
 import { Masonry, MasonryGridItem } from 'ng-masonry-grid';
 import { ISubscription } from 'rxjs/Subscription';
+import { MatchDataService } from '../shared/services/match-data.service';
+import { NewsService } from '../shared/services/news.service';
 
 @Component({
   selector: 'sports-social-sports-specific-feed',
@@ -38,14 +40,13 @@ export class SportsSpecificFeedComponent implements OnInit, OnDestroy {
   ];
 
   constructor(
-    private getM: LocationBasedDataService,
-    private getN: PostService,
+    private matchData: MatchDataService,
+    private newsData: NewsService,
     private renderer: Renderer2,
-    private loc: LocationBasedDataService,
     private activeRoute: ActivatedRoute
   ) { }
 
-  globalMatchFeed( pageNo, id ) {
+  /* globalMatchFeed( pageNo, id ) {
     this.getM.globalMatchFeed( pageNo, id).subscribe(
       res => {
         const data = res['Feed'];
@@ -79,8 +80,8 @@ export class SportsSpecificFeedComponent implements OnInit, OnDestroy {
         console.log('Something went wrong with feed!');
       }
     );
-  }
-  globalNewsFeed( pageNo , gameName ) {
+  } */
+  /* globalNewsFeed( pageNo , gameName ) {
     this.getN.globalNewsFeed( pageNo, gameName ).subscribe(
       res => {
         const data = res;
@@ -109,8 +110,8 @@ export class SportsSpecificFeedComponent implements OnInit, OnDestroy {
       }
     );
   }
-
-  globalFeed( ) {
+ */
+  /* globalFeed( ) {
    this.gameName = this.activeRoute.snapshot.params.sport;
    this.gameId = this.Sports.find((sport) => {
      return sport.title === this.gameName;
@@ -129,7 +130,30 @@ export class SportsSpecificFeedComponent implements OnInit, OnDestroy {
     );
   }
 
-
+ */
+globalFeed( ) {
+  this.gameName = this.activeRoute.snapshot.params.sport;
+  this.gameId = this.Sports.find((sport) => {
+    return sport.title === this.gameName;
+  }).id;
+  this.activeRoute.params.subscribe(
+    (params) => {
+      this.gameName = params.sport;
+      this.gameId = this.Sports.find((sport) => {
+        return sport.title === this.gameName;
+      }).id;
+      const matchPomise = this.matchData.globalMatchFeed( this.nextPageNo, this.gameId );
+      const newsPromise =  this.newsData.globalNewsFeed( this.nextPageNo, this.gameName.toLowerCase());
+      Promise.all([matchPomise, newsPromise]).then( (data) => {
+        console.log(data);
+        this.globalArena = this.globalArena.concat(data['0']).concat(data['1']);
+        console.log(this.globalArena);
+      }).catch( (err) => {
+        console.log('err', err);
+      });
+    }
+  );
+}
   nextPage(pageNo) {
     this.prevPageNo = pageNo;
     this.globalFeed();
@@ -146,13 +170,7 @@ export class SportsSpecificFeedComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.loc.getGeoLocation()
-    .then( () => {
-      this.globalFeed();
-    })
-    .catch( (err) => {
-      console.log(err);
-    });
+    this.globalFeed();
   }
 
   ngOnDestroy() {

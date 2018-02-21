@@ -10,8 +10,13 @@ export class PostService {
     longitude: String
   };
 
-  Id: {
-    id: String;
+  singleMatchReqObj = [];
+
+  matchFeedReqObj = {
+    latitude: Number,
+    longitude: Number,
+    page: Number,
+    gameid: Number
   };
 
   newsFeedRequestObject: {
@@ -23,6 +28,8 @@ export class PostService {
     name: string,
     page: number
   };
+
+  url = ['https://test.sportsocial.in/poc/matchinfo', 'https://test.sportsocial.in/poc/activityuserdetails'];
 
   constructor(private http: HttpClient) { }
 
@@ -43,10 +50,23 @@ export class PostService {
     return this.http.post('https://prod.chaseyoursport.com/loadblogdata', this.blogRequestObject);
   }
 
-  singleMatchData(id) {
-    this.Id = {
-      id: id
+  globalMatchFeed(lat, long, page, gameid) {
+    this.matchFeedReqObj = {
+      latitude: lat,
+      longitude: long,
+      page: page,
+      gameid: gameid
     };
-    return this.http.post('http://test.chaseyoursport.com:3200/getMatchOpenData', this.Id);
+    console.log(this.matchFeedReqObj);
+    return this.http.post('https://test.sportsocial.in/poc/webfeed', this.matchFeedReqObj);
+  }
+
+  singleMatchData(eventid, userid, activityid, urlId) {
+    this.singleMatchReqObj.push({
+      'eventid': eventid,
+      'userid': userid,
+      'activityid': activityid
+    });
+    return this.http.post(this.url[urlId], this.singleMatchReqObj);
   }
 }

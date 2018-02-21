@@ -1,10 +1,11 @@
 import { Component, OnInit, ViewEncapsulation, Renderer2, HostListener, OnDestroy } from '@angular/core';
 import { PostService } from '../../shared/services/post.service';
 import { GetService } from '../../shared/services/get.service';
-import { LocationBasedDataService } from '../../shared/services/location-based-data.service';
+import { LocationService } from '../../shared/services/location.service';
 
 import { Masonry, MasonryGridItem } from 'ng-masonry-grid';
 import { ISubscription } from 'rxjs/Subscription';
+import { MatchDataService } from '../../shared/services/match-data.service';
 
 @Component({
   selector: 'sports-social-global-match-feed',
@@ -22,46 +23,16 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
   private _removeItemSubscription: ISubscription;
   private _removeFirstItemSubscription: ISubscription;
   constructor(
-    private get: LocationBasedDataService,
-    private loc: LocationBasedDataService,
-    private getNews: GetService,
     private renderer: Renderer2,
+    private matchData: MatchDataService
   ) { }
 
   globalMatchFeed( pageNo ) {
-    this.get.globalMatchFeed( pageNo, 0).subscribe(
-      res => {
-        const data = res['Feed'];
-         console.log(data);
-        // tslint:disable-next-line:forin
-        for ( const i in data ) {
-          this.Match.push({
-            eventId: data[i].eventid,
-            creatorImage: data[i].creatorImage,
-            creatorName: data[i].creatorName,
-            type: data[i].feedtype,
-            doerId: data[i].doerId,
-            doerName: data[i].user_name,
-            doerPic: data[i].Profile_Photo,
-            matchText: data[i].EventText,
-            matchImage: data[i].Event_Image,
-            activityDate: data[i].InsertedDate,
-            matchDate:  data[i].startdatetime,
-            restrictionCount: data[i].restrictionCount,
-            joineeCount: data[i].JoineeCount,
-            commentCount: data[i].CommentCount,
-            watchCount: data[i].WatchCount,
-            promoteCount: data[i].PromoteCount,
-            venueName: data[i].Venue_Name,
-            gameName: data[i].GameName,
-            activityName: data[i].Activity_name !== undefined ?  data[i].Activity_name.split(' ')[0] : ''
-          });
-        }
-      },
-      err => {
-        console.log('Something went wrong with feed!');
-      }
-    );
+    this.matchData.globalMatchFeed( this.nextPageNo, 0 ).then( (match) => {
+      this.Match = this.Match.concat(match);
+    }).catch( (err) => {
+      console.log(err);
+    });
   }
 
   nextPage(pageNo) {
@@ -80,13 +51,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.loc.getGeoLocation()
-    .then( () => {
-      this.globalMatchFeed(this.nextPageNo);
-    })
-    .catch( (err) => {
-      console.log(err);
-    });
+    this.globalMatchFeed(this.nextPageNo);
   }
 
   ngOnDestroy() {

@@ -180,6 +180,11 @@ var MatchCardComponent = (function () {
         this.resolver = resolver;
         this.get = get;
         this.comments = [];
+        this.activityid = {
+            commentid: 1005,
+            promoteid: 1004,
+            watchid: 1009
+        };
     }
     MatchCardComponent.prototype.removeActionsCountBar = function () {
         if (this.promoteCount === 0 && this.watchCount === 0 && this.commentCount === 0) {
@@ -203,7 +208,15 @@ var MatchCardComponent = (function () {
         this.componentRef.instance.timeRemaining = this.matchDate;
         this.componentRef.instance.venueName = this.venueName;
         this.componentRef.instance.gameName = this.gameName;
-        this.get.singleMatchData(id).subscribe(function (res) {
+        this.get.singleMatchData(id, 0, this.activityid.commentid, 1).subscribe(function (res) {
+        });
+        this.get.singleMatchData(id, 0, this.activityid.commentid, 1).subscribe(function (res) {
+        });
+        this.get.singleMatchData(id, 0, this.activityid.promoteid, 1).subscribe(function (res) {
+        });
+        this.get.singleMatchData(id, 0, this.activityid.watchid, 1).subscribe(function (res) {
+        });
+        this.get.singleMatchData(id, 0, 0, 0).subscribe(function (res) {
             console.log(res['comment']);
             var commentData = res['comment'];
             // tslint:disable-next-line:forin

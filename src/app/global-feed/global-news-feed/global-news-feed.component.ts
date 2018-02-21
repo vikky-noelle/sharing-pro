@@ -1,4 +1,4 @@
-import { 
+import {
   Component,
   OnInit,
   ViewEncapsulation,
@@ -6,11 +6,10 @@ import {
   Renderer2,
   OnDestroy
 } from '@angular/core';
-import { PostService } from '../../shared/services/post.service';
-import { GetService } from '../../shared/services/get.service';
 
 import { Masonry, MasonryGridItem } from 'ng-masonry-grid';
 import { ISubscription } from 'rxjs/Subscription';
+import { NewsService } from '../../shared/services/news.service';
 
 @Component({
   selector: 'sports-social-global-news-feed',
@@ -29,40 +28,16 @@ export class GlobalNewsFeedComponent implements OnInit, OnDestroy {
   private _removeItemSubscription: ISubscription;
   private _removeFirstItemSubscription: ISubscription;
   constructor(
-    private get: PostService,
-    private getNews: GetService,
+    private newsData: NewsService,
     private renderer: Renderer2,
   ) { }
 
   globalNewsFeed( pageNo ) {
-    this.get.globalNewsFeed( pageNo, 'all' ).subscribe(
-      res => {
-        const data = res;
-         console.log(data);
-        // tslint:disable-next-line:forin
-        for ( const i in data ) {
-          this.News.push({
-            type: data[i].feedType,
-            commentCount: data[i].commentCount,
-            likeCount: data[i].likeCount,
-            shareCount: data[i].shareCount,
-            publishedAt: data[i].publishedAt,
-            gameName: data[i].gameName,
-            newsId: data[i]._id,
-            newsImage: data[i].newsImage,
-            sourceImage: data[i].sourceImage,
-            source: data[i].source,
-            title: data[i].title,
-            url: data[i].url,
-            desc: data[i].desc
-          });
-        }
-        console.log(this.News);
-      },
-      err => {
-        console.log('Something went wrong with feed!');
-      }
-    );
+    this.newsData.globalNewsFeed(this.nextPageNo, 'all').then( (news) => {
+      this.News = this.News.concat(news);
+    }).catch( (err) => {
+      console.log(err);
+    });
   }
 
   nextPage(pageNo) {

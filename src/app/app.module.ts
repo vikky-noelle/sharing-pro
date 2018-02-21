@@ -15,7 +15,9 @@ import { AppRoute } from './routing/app.router';
 
 import { AppComponent } from './app.component';
 import { TimeService } from './shared/services/time.service';
-import { LocationBasedDataService } from './shared/services/location-based-data.service';
+import { LocationService } from './shared/services/location.service';
+import { MatchDataService } from './shared/services/match-data.service';
+import { NewsService } from './shared/services/news.service';
 
 
 @NgModule({
@@ -29,10 +31,12 @@ import { LocationBasedDataService } from './shared/services/location-based-data.
   ],
   providers: [
     PropertyService,
-    LocationBasedDataService,
+    LocationService,
     GetService,
     PostService,
-    TimeService
+    TimeService,
+    MatchDataService,
+    NewsService
   ],
   bootstrap: [AppComponent]
 })
