@@ -29,7 +29,7 @@ export class PostService {
     page: number
   };
 
-  url = ['https://test.sportsocial.in/poc/matchinfo', 'https://test.sportsocial.in/poc/activityuserdetails'];
+  url = ['https://prod.sportsocial.in/poc/matchinfo', 'https://prod.sportsocial.in/poc/activityuserdetails'];
 
   constructor(private http: HttpClient) { }
 
@@ -38,6 +38,7 @@ export class PostService {
       page: pageNo,
       game: game
     };
+    console.log(this.newsFeedRequestObject);
     return this.http.post('https://atg.sportsocial.in/news', this.newsFeedRequestObject);
   }
 
@@ -58,15 +59,21 @@ export class PostService {
       gameid: gameid
     };
     console.log(this.matchFeedReqObj);
-    return this.http.post('https://test.sportsocial.in/poc/webfeed', this.matchFeedReqObj);
+    return this.http.post('https://prod.sportsocial.in/poc/webfeed', this.matchFeedReqObj);
   }
 
-  singleMatchData(eventid, userid, activityid, urlId) {
-    this.singleMatchReqObj.push({
+  singleMatchData(eventid, userid, activityid, urlId, page) {
+    this.singleMatchReqObj = [{
       'eventid': eventid,
       'userid': userid,
-      'activityid': activityid
-    });
+      'activityid': activityid,
+      'page': page
+    }];
+    console.log(this.singleMatchReqObj);
     return this.http.post(this.url[urlId], this.singleMatchReqObj);
+  }
+
+  singleNewsData(id) {
+    return this.http.post('https://atg.sportsocial.in/newsById', { id: id} );
   }
 }

@@ -1,7 +1,7 @@
 <div class="sports-social-card" >
   <div class="sports-social-card-header">
     <div class="userImage">
-      <img src="{{doerPic}}" alt="">
+      <img src="{{doerPic}}"  (error)="defaultImage()" #userImg>
     </div>
     <div class="matchDetails">
       <div class="userNameAndActivity">{{doerName}} 
@@ -17,7 +17,7 @@
     <div class="restrictionCount">{{joineeCount}} playing</div>
   </div>
   <div class="matchText">{{matchText}}</div>
-  <div class="matchImage" (click) = "createComponent(eventId)">
+  <div class="matchImage" (click) = "openPopUp(eventId, gameName, $event )">
     <img src="{{matchImage}}" alt="">
   </div>
   <div class="action-count" #actionsCount>
@@ -50,4 +50,4 @@
   </div>
 </div>
 
-<template #openMatchCard></template>
+

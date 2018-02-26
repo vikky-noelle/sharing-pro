@@ -1,3 +1,4 @@
+
 .time-remaining {
     position: absolute;
     left: 10px;
@@ -59,6 +60,7 @@
 }
 
 .venue > span {
+    min-width: 70%;
     max-width: 70%;
     overflow: hidden;
     white-space: nowrap;

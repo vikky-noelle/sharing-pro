@@ -12,6 +12,7 @@
               <a routerLink="/OpenArena">Open Arena >></a>  
             </h1>
               <sports-social-match-card 
+                [eventId] = "feed.eventId"
                 [doerId] = "feed.doerId"
                 [doerName] = "feed.doerName"
                 [doerPic] = "feed.doerPic"
@@ -48,3 +49,5 @@
       </ng-masonry-grid-item>
   </ng-masonry-grid>
   <sports-social-footer></sports-social-footer>
+
+  

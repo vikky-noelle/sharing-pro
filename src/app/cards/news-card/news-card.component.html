@@ -7,7 +7,7 @@
         <div class="publishedAt">{{publishedAt}}</div>
   </div>
   <div class="news-image-holder">
-    <img src="{{newsImage}}" alt="" (error)= "defaultImage()" (click)="createComponent(newsId)">
+    <img src="{{newsImage}}" alt="" (error)= "defaultImage()" (click)="openPopUp(newsId)">
   </div>
   <h2 class="desc">
       <a href="{{url}}" target="_blank">{{desc}}</a>

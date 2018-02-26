@@ -103,7 +103,7 @@ var styles = [""];
 var styles_AppComponent = [__WEBPACK_IMPORTED_MODULE_0__app_component_css_shim_ngstyle__["a" /* styles */]];
 var RenderType_AppComponent = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵcrt"]({ encapsulation: 0, styles: styles_AppComponent, data: {} });
 
-function View_AppComponent_0(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](0, 16777216, null, null, 1, "router-outlet", [], null, null, null, null, null)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](1, 212992, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_router__["o" /* RouterOutlet */], [__WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* ChildrenOutletContexts */], __WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["ComponentFactoryResolver"], [8, null], __WEBPACK_IMPORTED_MODULE_1__angular_core__["ChangeDetectorRef"]], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+function View_AppComponent_0(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](0, 16777216, null, null, 1, "router-outlet", [], null, null, null, null, null)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](1, 212992, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_router__["o" /* RouterOutlet */], [__WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* ChildrenOutletContexts */], __WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["ComponentFactoryResolver"], [8, null], __WEBPACK_IMPORTED_MODULE_1__angular_core__["ChangeDetectorRef"]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](2, 16777216, null, null, 1, "router-outlet", [["name", "Match"]], null, null, null, null, null)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](3, 212992, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_router__["o" /* RouterOutlet */], [__WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* ChildrenOutletContexts */], __WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["ComponentFactoryResolver"], [8, "Match"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["ChangeDetectorRef"]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](4, 16777216, null, null, 1, "router-outlet", [["name", "News"]], null, null, null, null, null)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](5, 212992, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_router__["o" /* RouterOutlet */], [__WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* ChildrenOutletContexts */], __WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["ComponentFactoryResolver"], [8, "News"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["ChangeDetectorRef"]], null, null)], function (_ck, _v) { _ck(_v, 1, 0); _ck(_v, 3, 0); _ck(_v, 5, 0); }, null); }
 function View_AppComponent_Host_0(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](0, 0, null, null, 1, "sports-social-root", [], null, null, null, View_AppComponent_0, RenderType_AppComponent)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](1, 49152, null, 0, __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */], [], null, null)], null, null); }
 var AppComponentNgFactory = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵccf"]("sports-social-root", __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */], View_AppComponent_Host_0, {}, {}, []);
 
@@ -151,18 +151,25 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__("../../../../../src/app/app.module.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component_ngfactory__ = __webpack_require__("../../../../../src/app/app.component.ngfactory.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared_services_property_service__ = __webpack_require__("../../../../../src/app/shared/services/property.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__shared_services_location_service__ = __webpack_require__("../../../../../src/app/shared/services/location.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shared_services_get_service__ = __webpack_require__("../../../../../src/app/shared/services/get.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__shared_services_post_service__ = __webpack_require__("../../../../../src/app/shared/services/post.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__shared_services_time_service__ = __webpack_require__("../../../../../src/app/shared/services/time.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__shared_services_match_data_service__ = __webpack_require__("../../../../../src/app/shared/services/match-data.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__shared_services_news_service__ = __webpack_require__("../../../../../src/app/shared/services/news.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__open_cards_open_match_card_open_match_card_component_ngfactory__ = __webpack_require__("../../../../../src/app/open-cards/open-match-card/open-match-card.component.ngfactory.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__open_cards_open_news_card_open_news_card_component_ngfactory__ = __webpack_require__("../../../../../src/app/open-cards/open-news-card/open-news-card.component.ngfactory.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component_ngfactory__ = __webpack_require__("../../../../../src/app/app.component.ngfactory.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shared_services_property_service__ = __webpack_require__("../../../../../src/app/shared/services/property.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__shared_services_location_service__ = __webpack_require__("../../../../../src/app/shared/services/location.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__shared_services_get_service__ = __webpack_require__("../../../../../src/app/shared/services/get.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__shared_services_post_service__ = __webpack_require__("../../../../../src/app/shared/services/post.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__shared_services_time_service__ = __webpack_require__("../../../../../src/app/shared/services/time.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__shared_services_match_data_service__ = __webpack_require__("../../../../../src/app/shared/services/match-data.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__shared_services_news_service__ = __webpack_require__("../../../../../src/app/shared/services/news.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__shared_services_pop_up_service__ = __webpack_require__("../../../../../src/app/shared/services/pop-up.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__open_cards_open_match_card_open_match_card_component__ = __webpack_require__("../../../../../src/app/open-cards/open-match-card/open-match-card.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__open_cards_open_news_card_open_news_card_component__ = __webpack_require__("../../../../../src/app/open-cards/open-news-card/open-news-card.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__open_cards_open_match_card_open_match_card_module__ = __webpack_require__("../../../../../src/app/open-cards/open-match-card/open-match-card.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__open_cards_open_news_card_open_news_card_module__ = __webpack_require__("../../../../../src/app/open-cards/open-news-card/open-news-card.module.ts");
 /**
 * @fileoverview This file is generated by the Angular template compiler.
 * Do not edit.
@@ -184,7 +191,14 @@ var AppComponent = (function () {
 
 
 
-var AppModuleNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵcmf"](__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */], [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]], function (_l) { return __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmod"]([__WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_0__angular_core__["ComponentFactoryResolver"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵCodegenComponentFactoryResolver"], [[8, [__WEBPACK_IMPORTED_MODULE_3__app_component_ngfactory__["a" /* AppComponentNgFactory */]]], [3, __WEBPACK_IMPORTED_MODULE_0__angular_core__["ComponentFactoryResolver"]], __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModuleRef"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](5120, __WEBPACK_IMPORTED_MODULE_0__angular_core__["LOCALE_ID"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵm"], [[3, __WEBPACK_IMPORTED_MODULE_0__angular_core__["LOCALE_ID"]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_4__angular_common__["NgLocalization"], __WEBPACK_IMPORTED_MODULE_4__angular_common__["NgLocaleLocalization"], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["LOCALE_ID"], [2, __WEBPACK_IMPORTED_MODULE_4__angular_common__["ɵa"]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](5120, __WEBPACK_IMPORTED_MODULE_0__angular_core__["APP_ID"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵf"], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](5120, __WEBPACK_IMPORTED_MODULE_0__angular_core__["IterableDiffers"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵk"], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](5120, __WEBPACK_IMPORTED_MODULE_0__angular_core__["KeyValueDiffers"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵl"], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["b" /* DomSanitizer */], __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["q" /* ɵe */], [__WEBPACK_IMPORTED_MODULE_4__angular_common__["DOCUMENT"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](6144, __WEBPACK_IMPORTED_MODULE_0__angular_core__["Sanitizer"], null, [__WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["b" /* DomSanitizer */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["e" /* HAMMER_GESTURE_CONFIG */], __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["f" /* HammerGestureConfig */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](5120, __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["c" /* EVENT_MANAGER_PLUGINS */], function (p0_0, p0_1, p1_0, p2_0, p2_1) { return [new __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["j" /* ɵDomEventsPlugin */](p0_0, p0_1), new __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["n" /* ɵKeyEventsPlugin */](p1_0), new __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["m" /* ɵHammerGesturesPlugin */](p2_0, p2_1)]; }, [__WEBPACK_IMPORTED_MODULE_4__angular_common__["DOCUMENT"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"], __WEBPACK_IMPORTED_MODULE_4__angular_common__["DOCUMENT"], __WEBPACK_IMPORTED_MODULE_4__angular_common__["DOCUMENT"], __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["e" /* HAMMER_GESTURE_CONFIG */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["d" /* EventManager */], __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["d" /* EventManager */], [__WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["c" /* EVENT_MANAGER_PLUGINS */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](135680, __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["l" /* ɵDomSharedStylesHost */], __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["l" /* ɵDomSharedStylesHost */], [__WEBPACK_IMPORTED_MODULE_4__angular_common__["DOCUMENT"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["k" /* ɵDomRendererFactory2 */], __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["k" /* ɵDomRendererFactory2 */], [__WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["d" /* EventManager */], __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["l" /* ɵDomSharedStylesHost */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](6144, __WEBPACK_IMPORTED_MODULE_0__angular_core__["RendererFactory2"], null, [__WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["k" /* ɵDomRendererFactory2 */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](6144, __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["o" /* ɵSharedStylesHost */], null, [__WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["l" /* ɵDomSharedStylesHost */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_0__angular_core__["Testability"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["Testability"], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["g" /* Meta */], __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["g" /* Meta */], [__WEBPACK_IMPORTED_MODULE_4__angular_common__["DOCUMENT"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["h" /* Title */], __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["h" /* Title */], [__WEBPACK_IMPORTED_MODULE_4__angular_common__["DOCUMENT"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["h" /* HttpXsrfTokenExtractor */], __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["m" /* ɵg */], [__WEBPACK_IMPORTED_MODULE_4__angular_common__["DOCUMENT"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["PLATFORM_ID"], __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["k" /* ɵe */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["n" /* ɵh */], __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["n" /* ɵh */], [__WEBPACK_IMPORTED_MODULE_6__angular_common_http__["h" /* HttpXsrfTokenExtractor */], __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["l" /* ɵf */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](5120, __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["a" /* HTTP_INTERCEPTORS */], function (p0_0) { return [p0_0]; }, [__WEBPACK_IMPORTED_MODULE_6__angular_common_http__["n" /* ɵh */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["j" /* ɵd */], __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["j" /* ɵd */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](6144, __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["i" /* XhrFactory */], null, [__WEBPACK_IMPORTED_MODULE_6__angular_common_http__["j" /* ɵd */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["g" /* HttpXhrBackend */], __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["g" /* HttpXhrBackend */], [__WEBPACK_IMPORTED_MODULE_6__angular_common_http__["i" /* XhrFactory */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](6144, __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["b" /* HttpBackend */], null, [__WEBPACK_IMPORTED_MODULE_6__angular_common_http__["g" /* HttpXhrBackend */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](5120, __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["f" /* HttpHandler */], __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["o" /* ɵinterceptingHandler */], [__WEBPACK_IMPORTED_MODULE_6__angular_common_http__["b" /* HttpBackend */], [2, __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["a" /* HTTP_INTERCEPTORS */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["c" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["c" /* HttpClient */], [__WEBPACK_IMPORTED_MODULE_6__angular_common_http__["f" /* HttpHandler */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](5120, __WEBPACK_IMPORTED_MODULE_7__angular_router__["a" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_7__angular_router__["x" /* ɵf */], [__WEBPACK_IMPORTED_MODULE_7__angular_router__["k" /* Router */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_7__angular_router__["d" /* NoPreloading */], __WEBPACK_IMPORTED_MODULE_7__angular_router__["d" /* NoPreloading */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](6144, __WEBPACK_IMPORTED_MODULE_7__angular_router__["f" /* PreloadingStrategy */], null, [__WEBPACK_IMPORTED_MODULE_7__angular_router__["d" /* NoPreloading */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](135680, __WEBPACK_IMPORTED_MODULE_7__angular_router__["p" /* RouterPreloader */], __WEBPACK_IMPORTED_MODULE_7__angular_router__["p" /* RouterPreloader */], [__WEBPACK_IMPORTED_MODULE_7__angular_router__["k" /* Router */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModuleFactoryLoader"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["Compiler"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injector"], __WEBPACK_IMPORTED_MODULE_7__angular_router__["f" /* PreloadingStrategy */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_7__angular_router__["e" /* PreloadAllModules */], __WEBPACK_IMPORTED_MODULE_7__angular_router__["e" /* PreloadAllModules */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](5120, __WEBPACK_IMPORTED_MODULE_7__angular_router__["h" /* ROUTER_INITIALIZER */], __WEBPACK_IMPORTED_MODULE_7__angular_router__["A" /* ɵi */], [__WEBPACK_IMPORTED_MODULE_7__angular_router__["y" /* ɵg */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](5120, __WEBPACK_IMPORTED_MODULE_0__angular_core__["APP_BOOTSTRAP_LISTENER"], function (p0_0) { return [p0_0]; }, [__WEBPACK_IMPORTED_MODULE_7__angular_router__["h" /* ROUTER_INITIALIZER */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_8__shared_services_property_service__["a" /* PropertyService */], __WEBPACK_IMPORTED_MODULE_8__shared_services_property_service__["a" /* PropertyService */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_9__shared_services_location_service__["a" /* LocationService */], __WEBPACK_IMPORTED_MODULE_9__shared_services_location_service__["a" /* LocationService */], [__WEBPACK_IMPORTED_MODULE_6__angular_common_http__["c" /* HttpClient */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_10__shared_services_get_service__["a" /* GetService */], __WEBPACK_IMPORTED_MODULE_10__shared_services_get_service__["a" /* GetService */], [__WEBPACK_IMPORTED_MODULE_6__angular_common_http__["c" /* HttpClient */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_11__shared_services_post_service__["a" /* PostService */], __WEBPACK_IMPORTED_MODULE_11__shared_services_post_service__["a" /* PostService */], [__WEBPACK_IMPORTED_MODULE_6__angular_common_http__["c" /* HttpClient */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_12__shared_services_time_service__["a" /* TimeService */], __WEBPACK_IMPORTED_MODULE_12__shared_services_time_service__["a" /* TimeService */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_13__shared_services_match_data_service__["a" /* MatchDataService */], __WEBPACK_IMPORTED_MODULE_13__shared_services_match_data_service__["a" /* MatchDataService */], [__WEBPACK_IMPORTED_MODULE_9__shared_services_location_service__["a" /* LocationService */], __WEBPACK_IMPORTED_MODULE_11__shared_services_post_service__["a" /* PostService */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_14__shared_services_news_service__["a" /* NewsService */], __WEBPACK_IMPORTED_MODULE_14__shared_services_news_service__["a" /* NewsService */], [__WEBPACK_IMPORTED_MODULE_11__shared_services_post_service__["a" /* PostService */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_4__angular_common__["CommonModule"], __WEBPACK_IMPORTED_MODULE_4__angular_common__["CommonModule"], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](1024, __WEBPACK_IMPORTED_MODULE_0__angular_core__["ErrorHandler"], __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["p" /* ɵa */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](1024, __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgProbeToken"], function () { return [__WEBPACK_IMPORTED_MODULE_7__angular_router__["t" /* ɵb */]()]; }, []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_7__angular_router__["y" /* ɵg */], __WEBPACK_IMPORTED_MODULE_7__angular_router__["y" /* ɵg */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injector"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](1024, __WEBPACK_IMPORTED_MODULE_0__angular_core__["APP_INITIALIZER"], function (p0_0, p1_0) { return [__WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["s" /* ɵh */](p0_0), __WEBPACK_IMPORTED_MODULE_7__angular_router__["z" /* ɵh */](p1_0)]; }, [[2, __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgProbeToken"]], __WEBPACK_IMPORTED_MODULE_7__angular_router__["y" /* ɵg */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_0__angular_core__["ApplicationInitStatus"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ApplicationInitStatus"], [[2, __WEBPACK_IMPORTED_MODULE_0__angular_core__["APP_INITIALIZER"]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](131584, __WEBPACK_IMPORTED_MODULE_0__angular_core__["ApplicationRef"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ApplicationRef"], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵConsole"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injector"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ErrorHandler"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ComponentFactoryResolver"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ApplicationInitStatus"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_0__angular_core__["ApplicationModule"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ApplicationModule"], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["ApplicationRef"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["a" /* BrowserModule */], __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["a" /* BrowserModule */], [[3, __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["a" /* BrowserModule */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](1024, __WEBPACK_IMPORTED_MODULE_7__angular_router__["s" /* ɵa */], __WEBPACK_IMPORTED_MODULE_7__angular_router__["v" /* ɵd */], [[3, __WEBPACK_IMPORTED_MODULE_7__angular_router__["k" /* Router */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_7__angular_router__["r" /* UrlSerializer */], __WEBPACK_IMPORTED_MODULE_7__angular_router__["c" /* DefaultUrlSerializer */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_7__angular_router__["b" /* ChildrenOutletContexts */], __WEBPACK_IMPORTED_MODULE_7__angular_router__["b" /* ChildrenOutletContexts */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](256, __WEBPACK_IMPORTED_MODULE_7__angular_router__["g" /* ROUTER_CONFIGURATION */], { enableTracing: true }, []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](1024, __WEBPACK_IMPORTED_MODULE_4__angular_common__["LocationStrategy"], __WEBPACK_IMPORTED_MODULE_7__angular_router__["u" /* ɵc */], [__WEBPACK_IMPORTED_MODULE_4__angular_common__["PlatformLocation"], [2, __WEBPACK_IMPORTED_MODULE_4__angular_common__["APP_BASE_HREF"]], __WEBPACK_IMPORTED_MODULE_7__angular_router__["g" /* ROUTER_CONFIGURATION */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_4__angular_common__["Location"], __WEBPACK_IMPORTED_MODULE_4__angular_common__["Location"], [__WEBPACK_IMPORTED_MODULE_4__angular_common__["LocationStrategy"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_0__angular_core__["Compiler"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["Compiler"], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModuleFactoryLoader"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["SystemJsNgModuleLoader"], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["Compiler"], [2, __WEBPACK_IMPORTED_MODULE_0__angular_core__["SystemJsNgModuleLoaderConfig"]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](1024, __WEBPACK_IMPORTED_MODULE_7__angular_router__["i" /* ROUTES */], function () { return [[{ path: "helpCenter", loadChildren: "app/help-center/help-center.module#HelpCenterModule" }, { path: "Terms Of Service", loadChildren: "app/terms-and-condition/terms-and-condition.module#TermsAndConditionModule" }, { path: "Privacy Policy", loadChildren: "app/privacy-policy/privacy-policy.module#PrivacyPolicyModule" }, { path: "about", loadChildren: "app/about/about.module#AboutModule" }, { path: "", loadChildren: "app/home/home.module#HomeModule" }]]; }, []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](1024, __WEBPACK_IMPORTED_MODULE_7__angular_router__["k" /* Router */], __WEBPACK_IMPORTED_MODULE_7__angular_router__["w" /* ɵe */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["ApplicationRef"], __WEBPACK_IMPORTED_MODULE_7__angular_router__["r" /* UrlSerializer */], __WEBPACK_IMPORTED_MODULE_7__angular_router__["b" /* ChildrenOutletContexts */], __WEBPACK_IMPORTED_MODULE_4__angular_common__["Location"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injector"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModuleFactoryLoader"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["Compiler"], __WEBPACK_IMPORTED_MODULE_7__angular_router__["i" /* ROUTES */], __WEBPACK_IMPORTED_MODULE_7__angular_router__["g" /* ROUTER_CONFIGURATION */], [2, __WEBPACK_IMPORTED_MODULE_7__angular_router__["q" /* UrlHandlingStrategy */]], [2, __WEBPACK_IMPORTED_MODULE_7__angular_router__["j" /* RouteReuseStrategy */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_7__angular_router__["n" /* RouterModule */], __WEBPACK_IMPORTED_MODULE_7__angular_router__["n" /* RouterModule */], [[2, __WEBPACK_IMPORTED_MODULE_7__angular_router__["s" /* ɵa */]], [2, __WEBPACK_IMPORTED_MODULE_7__angular_router__["k" /* Router */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["e" /* HttpClientXsrfModule */], __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["e" /* HttpClientXsrfModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["d" /* HttpClientModule */], __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["d" /* HttpClientModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */], __WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](256, __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["k" /* ɵe */], "XSRF-TOKEN", []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](256, __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["l" /* ɵf */], "X-XSRF-TOKEN", [])]); });
+
+
+
+
+
+
+
+var AppModuleNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵcmf"](__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */], [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]], function (_l) { return __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmod"]([__WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_0__angular_core__["ComponentFactoryResolver"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵCodegenComponentFactoryResolver"], [[8, [__WEBPACK_IMPORTED_MODULE_3__open_cards_open_match_card_open_match_card_component_ngfactory__["a" /* OpenMatchCardComponentNgFactory */], __WEBPACK_IMPORTED_MODULE_4__open_cards_open_news_card_open_news_card_component_ngfactory__["a" /* OpenNewsCardComponentNgFactory */], __WEBPACK_IMPORTED_MODULE_5__app_component_ngfactory__["a" /* AppComponentNgFactory */]]], [3, __WEBPACK_IMPORTED_MODULE_0__angular_core__["ComponentFactoryResolver"]], __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModuleRef"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](5120, __WEBPACK_IMPORTED_MODULE_0__angular_core__["LOCALE_ID"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵm"], [[3, __WEBPACK_IMPORTED_MODULE_0__angular_core__["LOCALE_ID"]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_6__angular_common__["NgLocalization"], __WEBPACK_IMPORTED_MODULE_6__angular_common__["NgLocaleLocalization"], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["LOCALE_ID"], [2, __WEBPACK_IMPORTED_MODULE_6__angular_common__["ɵa"]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](5120, __WEBPACK_IMPORTED_MODULE_0__angular_core__["APP_ID"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵf"], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](5120, __WEBPACK_IMPORTED_MODULE_0__angular_core__["IterableDiffers"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵk"], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](5120, __WEBPACK_IMPORTED_MODULE_0__angular_core__["KeyValueDiffers"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵl"], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["b" /* DomSanitizer */], __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["q" /* ɵe */], [__WEBPACK_IMPORTED_MODULE_6__angular_common__["DOCUMENT"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](6144, __WEBPACK_IMPORTED_MODULE_0__angular_core__["Sanitizer"], null, [__WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["b" /* DomSanitizer */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["e" /* HAMMER_GESTURE_CONFIG */], __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["f" /* HammerGestureConfig */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](5120, __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["c" /* EVENT_MANAGER_PLUGINS */], function (p0_0, p0_1, p1_0, p2_0, p2_1) { return [new __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["j" /* ɵDomEventsPlugin */](p0_0, p0_1), new __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["n" /* ɵKeyEventsPlugin */](p1_0), new __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["m" /* ɵHammerGesturesPlugin */](p2_0, p2_1)]; }, [__WEBPACK_IMPORTED_MODULE_6__angular_common__["DOCUMENT"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"], __WEBPACK_IMPORTED_MODULE_6__angular_common__["DOCUMENT"], __WEBPACK_IMPORTED_MODULE_6__angular_common__["DOCUMENT"], __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["e" /* HAMMER_GESTURE_CONFIG */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["d" /* EventManager */], __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["d" /* EventManager */], [__WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["c" /* EVENT_MANAGER_PLUGINS */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](135680, __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["l" /* ɵDomSharedStylesHost */], __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["l" /* ɵDomSharedStylesHost */], [__WEBPACK_IMPORTED_MODULE_6__angular_common__["DOCUMENT"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["k" /* ɵDomRendererFactory2 */], __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["k" /* ɵDomRendererFactory2 */], [__WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["d" /* EventManager */], __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["l" /* ɵDomSharedStylesHost */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](6144, __WEBPACK_IMPORTED_MODULE_0__angular_core__["RendererFactory2"], null, [__WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["k" /* ɵDomRendererFactory2 */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](6144, __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["o" /* ɵSharedStylesHost */], null, [__WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["l" /* ɵDomSharedStylesHost */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_0__angular_core__["Testability"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["Testability"], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["g" /* Meta */], __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["g" /* Meta */], [__WEBPACK_IMPORTED_MODULE_6__angular_common__["DOCUMENT"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["h" /* Title */], __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["h" /* Title */], [__WEBPACK_IMPORTED_MODULE_6__angular_common__["DOCUMENT"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["h" /* HttpXsrfTokenExtractor */], __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["m" /* ɵg */], [__WEBPACK_IMPORTED_MODULE_6__angular_common__["DOCUMENT"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["PLATFORM_ID"], __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["k" /* ɵe */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["n" /* ɵh */], __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["n" /* ɵh */], [__WEBPACK_IMPORTED_MODULE_8__angular_common_http__["h" /* HttpXsrfTokenExtractor */], __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["l" /* ɵf */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](5120, __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["a" /* HTTP_INTERCEPTORS */], function (p0_0) { return [p0_0]; }, [__WEBPACK_IMPORTED_MODULE_8__angular_common_http__["n" /* ɵh */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["j" /* ɵd */], __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["j" /* ɵd */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](6144, __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["i" /* XhrFactory */], null, [__WEBPACK_IMPORTED_MODULE_8__angular_common_http__["j" /* ɵd */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["g" /* HttpXhrBackend */], __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["g" /* HttpXhrBackend */], [__WEBPACK_IMPORTED_MODULE_8__angular_common_http__["i" /* XhrFactory */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](6144, __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["b" /* HttpBackend */], null, [__WEBPACK_IMPORTED_MODULE_8__angular_common_http__["g" /* HttpXhrBackend */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](5120, __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["f" /* HttpHandler */], __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["o" /* ɵinterceptingHandler */], [__WEBPACK_IMPORTED_MODULE_8__angular_common_http__["b" /* HttpBackend */], [2, __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["a" /* HTTP_INTERCEPTORS */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["c" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["c" /* HttpClient */], [__WEBPACK_IMPORTED_MODULE_8__angular_common_http__["f" /* HttpHandler */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](5120, __WEBPACK_IMPORTED_MODULE_9__angular_router__["a" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_9__angular_router__["x" /* ɵf */], [__WEBPACK_IMPORTED_MODULE_9__angular_router__["k" /* Router */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_9__angular_router__["d" /* NoPreloading */], __WEBPACK_IMPORTED_MODULE_9__angular_router__["d" /* NoPreloading */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](6144, __WEBPACK_IMPORTED_MODULE_9__angular_router__["f" /* PreloadingStrategy */], null, [__WEBPACK_IMPORTED_MODULE_9__angular_router__["d" /* NoPreloading */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](135680, __WEBPACK_IMPORTED_MODULE_9__angular_router__["p" /* RouterPreloader */], __WEBPACK_IMPORTED_MODULE_9__angular_router__["p" /* RouterPreloader */], [__WEBPACK_IMPORTED_MODULE_9__angular_router__["k" /* Router */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModuleFactoryLoader"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["Compiler"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injector"], __WEBPACK_IMPORTED_MODULE_9__angular_router__["f" /* PreloadingStrategy */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_9__angular_router__["e" /* PreloadAllModules */], __WEBPACK_IMPORTED_MODULE_9__angular_router__["e" /* PreloadAllModules */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](5120, __WEBPACK_IMPORTED_MODULE_9__angular_router__["h" /* ROUTER_INITIALIZER */], __WEBPACK_IMPORTED_MODULE_9__angular_router__["A" /* ɵi */], [__WEBPACK_IMPORTED_MODULE_9__angular_router__["y" /* ɵg */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](5120, __WEBPACK_IMPORTED_MODULE_0__angular_core__["APP_BOOTSTRAP_LISTENER"], function (p0_0) { return [p0_0]; }, [__WEBPACK_IMPORTED_MODULE_9__angular_router__["h" /* ROUTER_INITIALIZER */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_10__shared_services_property_service__["a" /* PropertyService */], __WEBPACK_IMPORTED_MODULE_10__shared_services_property_service__["a" /* PropertyService */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_11__shared_services_location_service__["a" /* LocationService */], __WEBPACK_IMPORTED_MODULE_11__shared_services_location_service__["a" /* LocationService */], [__WEBPACK_IMPORTED_MODULE_8__angular_common_http__["c" /* HttpClient */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_12__shared_services_get_service__["a" /* GetService */], __WEBPACK_IMPORTED_MODULE_12__shared_services_get_service__["a" /* GetService */], [__WEBPACK_IMPORTED_MODULE_8__angular_common_http__["c" /* HttpClient */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_13__shared_services_post_service__["a" /* PostService */], __WEBPACK_IMPORTED_MODULE_13__shared_services_post_service__["a" /* PostService */], [__WEBPACK_IMPORTED_MODULE_8__angular_common_http__["c" /* HttpClient */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_14__shared_services_time_service__["a" /* TimeService */], __WEBPACK_IMPORTED_MODULE_14__shared_services_time_service__["a" /* TimeService */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_15__shared_services_match_data_service__["a" /* MatchDataService */], __WEBPACK_IMPORTED_MODULE_15__shared_services_match_data_service__["a" /* MatchDataService */], [__WEBPACK_IMPORTED_MODULE_11__shared_services_location_service__["a" /* LocationService */], __WEBPACK_IMPORTED_MODULE_13__shared_services_post_service__["a" /* PostService */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_16__shared_services_news_service__["a" /* NewsService */], __WEBPACK_IMPORTED_MODULE_16__shared_services_news_service__["a" /* NewsService */], [__WEBPACK_IMPORTED_MODULE_13__shared_services_post_service__["a" /* PostService */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](4608, __WEBPACK_IMPORTED_MODULE_17__shared_services_pop_up_service__["a" /* PopUpService */], __WEBPACK_IMPORTED_MODULE_17__shared_services_pop_up_service__["a" /* PopUpService */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_6__angular_common__["CommonModule"], __WEBPACK_IMPORTED_MODULE_6__angular_common__["CommonModule"], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](1024, __WEBPACK_IMPORTED_MODULE_0__angular_core__["ErrorHandler"], __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["p" /* ɵa */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](1024, __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgProbeToken"], function () { return [__WEBPACK_IMPORTED_MODULE_9__angular_router__["t" /* ɵb */]()]; }, []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_9__angular_router__["y" /* ɵg */], __WEBPACK_IMPORTED_MODULE_9__angular_router__["y" /* ɵg */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injector"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](1024, __WEBPACK_IMPORTED_MODULE_0__angular_core__["APP_INITIALIZER"], function (p0_0, p1_0) { return [__WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["s" /* ɵh */](p0_0), __WEBPACK_IMPORTED_MODULE_9__angular_router__["z" /* ɵh */](p1_0)]; }, [[2, __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgProbeToken"]], __WEBPACK_IMPORTED_MODULE_9__angular_router__["y" /* ɵg */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_0__angular_core__["ApplicationInitStatus"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ApplicationInitStatus"], [[2, __WEBPACK_IMPORTED_MODULE_0__angular_core__["APP_INITIALIZER"]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](131584, __WEBPACK_IMPORTED_MODULE_0__angular_core__["ApplicationRef"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ApplicationRef"], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵConsole"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injector"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ErrorHandler"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ComponentFactoryResolver"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ApplicationInitStatus"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_0__angular_core__["ApplicationModule"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ApplicationModule"], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["ApplicationRef"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["a" /* BrowserModule */], __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["a" /* BrowserModule */], [[3, __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["a" /* BrowserModule */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](1024, __WEBPACK_IMPORTED_MODULE_9__angular_router__["s" /* ɵa */], __WEBPACK_IMPORTED_MODULE_9__angular_router__["v" /* ɵd */], [[3, __WEBPACK_IMPORTED_MODULE_9__angular_router__["k" /* Router */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_9__angular_router__["r" /* UrlSerializer */], __WEBPACK_IMPORTED_MODULE_9__angular_router__["c" /* DefaultUrlSerializer */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_9__angular_router__["b" /* ChildrenOutletContexts */], __WEBPACK_IMPORTED_MODULE_9__angular_router__["b" /* ChildrenOutletContexts */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](256, __WEBPACK_IMPORTED_MODULE_9__angular_router__["g" /* ROUTER_CONFIGURATION */], { enableTracing: true }, []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](1024, __WEBPACK_IMPORTED_MODULE_6__angular_common__["LocationStrategy"], __WEBPACK_IMPORTED_MODULE_9__angular_router__["u" /* ɵc */], [__WEBPACK_IMPORTED_MODULE_6__angular_common__["PlatformLocation"], [2, __WEBPACK_IMPORTED_MODULE_6__angular_common__["APP_BASE_HREF"]], __WEBPACK_IMPORTED_MODULE_9__angular_router__["g" /* ROUTER_CONFIGURATION */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_6__angular_common__["Location"], __WEBPACK_IMPORTED_MODULE_6__angular_common__["Location"], [__WEBPACK_IMPORTED_MODULE_6__angular_common__["LocationStrategy"]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_0__angular_core__["Compiler"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["Compiler"], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModuleFactoryLoader"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["SystemJsNgModuleLoader"], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["Compiler"], [2, __WEBPACK_IMPORTED_MODULE_0__angular_core__["SystemJsNgModuleLoaderConfig"]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](1024, __WEBPACK_IMPORTED_MODULE_9__angular_router__["i" /* ROUTES */], function () { return [[{ path: "helpCenter", loadChildren: "app/help-center/help-center.module#HelpCenterModule" }, { path: "Terms Of Service", loadChildren: "app/terms-and-condition/terms-and-condition.module#TermsAndConditionModule" }, { path: "Privacy Policy", loadChildren: "app/privacy-policy/privacy-policy.module#PrivacyPolicyModule" }, { path: "about", loadChildren: "app/about/about.module#AboutModule" }, { path: "OpenArena", loadChildren: "app/global-feed/global-match-feed/global-match-feed.module#GlobalMatchFeedModule" }, { path: "AroundTheWorld", loadChildren: "app/global-feed/global-news-feed/global-news-feed.module#GlobalNewsFeedModule" }, { path: ":sport", loadChildren: "app/sports-specific-feed/sports-specific-feed.module#SportsSpecificFeedModule" }, { path: ":id", component: __WEBPACK_IMPORTED_MODULE_18__open_cards_open_match_card_open_match_card_component__["a" /* OpenMatchCardComponent */], outlet: "Match" }, { path: ":id", component: __WEBPACK_IMPORTED_MODULE_19__open_cards_open_news_card_open_news_card_component__["a" /* OpenNewsCardComponent */], outlet: "News" }, { path: "", loadChildren: "app/home/home.module#HomeModule" }]]; }, []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](1024, __WEBPACK_IMPORTED_MODULE_9__angular_router__["k" /* Router */], __WEBPACK_IMPORTED_MODULE_9__angular_router__["w" /* ɵe */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["ApplicationRef"], __WEBPACK_IMPORTED_MODULE_9__angular_router__["r" /* UrlSerializer */], __WEBPACK_IMPORTED_MODULE_9__angular_router__["b" /* ChildrenOutletContexts */], __WEBPACK_IMPORTED_MODULE_6__angular_common__["Location"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injector"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModuleFactoryLoader"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["Compiler"], __WEBPACK_IMPORTED_MODULE_9__angular_router__["i" /* ROUTES */], __WEBPACK_IMPORTED_MODULE_9__angular_router__["g" /* ROUTER_CONFIGURATION */], [2, __WEBPACK_IMPORTED_MODULE_9__angular_router__["q" /* UrlHandlingStrategy */]], [2, __WEBPACK_IMPORTED_MODULE_9__angular_router__["j" /* RouteReuseStrategy */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_9__angular_router__["n" /* RouterModule */], __WEBPACK_IMPORTED_MODULE_9__angular_router__["n" /* RouterModule */], [[2, __WEBPACK_IMPORTED_MODULE_9__angular_router__["s" /* ɵa */]], [2, __WEBPACK_IMPORTED_MODULE_9__angular_router__["k" /* Router */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["e" /* HttpClientXsrfModule */], __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["e" /* HttpClientXsrfModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["d" /* HttpClientModule */], __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["d" /* HttpClientModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_20__open_cards_open_match_card_open_match_card_module__["a" /* OpenMatchCardModule */], __WEBPACK_IMPORTED_MODULE_20__open_cards_open_match_card_open_match_card_module__["a" /* OpenMatchCardModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_21__open_cards_open_news_card_open_news_card_module__["a" /* OpenNewsCardModule */], __WEBPACK_IMPORTED_MODULE_21__open_cards_open_news_card_open_news_card_module__["a" /* OpenNewsCardModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](512, __WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */], __WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](256, __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["k" /* ɵe */], "XSRF-TOKEN", []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵmpd"](256, __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["l" /* ɵf */], "X-XSRF-TOKEN", [])]); });
 
 
 
@@ -207,6 +221,10 @@ var AppModuleNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵcmf"](__
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__shared_services_location_service__ = __webpack_require__("../../../../../src/app/shared/services/location.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shared_services_match_data_service__ = __webpack_require__("../../../../../src/app/shared/services/match-data.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__shared_services_news_service__ = __webpack_require__("../../../../../src/app/shared/services/news.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pop_up_pop_up_component__ = __webpack_require__("../../../../../src/app/pop-up/pop-up.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__shared_services_pop_up_service__ = __webpack_require__("../../../../../src/app/shared/services/pop-up.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__open_cards_open_match_card_open_match_card_module__ = __webpack_require__("../../../../../src/app/open-cards/open-match-card/open-match-card.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__open_cards_open_news_card_open_news_card_module__ = __webpack_require__("../../../../../src/app/open-cards/open-news-card/open-news-card.module.ts");
 /* angular modules */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -227,18 +245,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
+
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */]
+                __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__pop_up_pop_up_component__["a" /* PopUpComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_6__routing_app_router__["a" /* AppRoute */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["d" /* HttpClientModule */],
+                __WEBPACK_IMPORTED_MODULE_14__open_cards_open_match_card_open_match_card_module__["a" /* OpenMatchCardModule */],
+                __WEBPACK_IMPORTED_MODULE_15__open_cards_open_news_card_open_news_card_module__["a" /* OpenNewsCardModule */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_3__shared_services_property_service__["a" /* PropertyService */],
@@ -247,12 +272,661 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_5__shared_services_post_service__["a" /* PostService */],
                 __WEBPACK_IMPORTED_MODULE_8__shared_services_time_service__["a" /* TimeService */],
                 __WEBPACK_IMPORTED_MODULE_10__shared_services_match_data_service__["a" /* MatchDataService */],
-                __WEBPACK_IMPORTED_MODULE_11__shared_services_news_service__["a" /* NewsService */]
+                __WEBPACK_IMPORTED_MODULE_11__shared_services_news_service__["a" /* NewsService */],
+                __WEBPACK_IMPORTED_MODULE_13__shared_services_pop_up_service__["a" /* PopUpService */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/open-cards/open-match-card/open-match-card.component.css.shim.ngstyle.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return styles; });
+/**
+* @fileoverview This file is generated by the Angular template compiler.
+* Do not edit.
+* @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
+* tslint:disable
+*/ 
+var styles = [".time-remaining[_ngcontent-%COMP%] {\r\n    position: absolute;\r\n    left: 10px;\r\n    top: 10px;\r\n}\r\n.started-by[_ngcontent-%COMP%]{\r\n    position: absolute;\r\n    right: 10px;\r\n    top: 15px;\r\n    text-align: center;\r\n}\r\n.started-by[_ngcontent-%COMP%]    > p[_ngcontent-%COMP%]{\r\n   \r\n}\r\n.started-by[_ngcontent-%COMP%]    > img[_ngcontent-%COMP%] {\r\n    width: 50px;\r\n    height: 50px;\r\n    border-radius: 50%;\r\n}\r\n.heading[_ngcontent-%COMP%] {\r\n    margin-top: 20px;\r\n    font-size: 1.2em;\r\n    font-weight: 500;\r\n}\r\n.heading[_ngcontent-%COMP%], .match-sum[_ngcontent-%COMP%] {\r\n    text-align: center;\r\n}\r\n\r\n.match-text[_ngcontent-%COMP%] {\r\n    width: 100%;\r\n    text-align: center;\r\n    position: relative;\r\n    top: 55px;\r\n}\r\n\r\n.match-date[_ngcontent-%COMP%] {\r\n    position: absolute;\r\n    width: 30%;\r\n    top: 5px;\r\n    left: 5px;\r\n}\r\n\r\n.match-date[_ngcontent-%COMP%]    > img[_ngcontent-%COMP%], .match-date[_ngcontent-%COMP%]    > span[_ngcontent-%COMP%] {\r\n    vertical-align: middle;\r\n    display: inline-block;\r\n}\r\n\r\n.venue[_ngcontent-%COMP%]{\r\n    position: absolute;\r\n    width: 60%;\r\n    top: 5px;\r\n    right: 5px;\r\n    text-align: right\r\n}\r\n\r\n.venue[_ngcontent-%COMP%]    > img[_ngcontent-%COMP%], .venue[_ngcontent-%COMP%]    > span[_ngcontent-%COMP%] {\r\n    vertical-align: middle;\r\n    display: inline-block;\r\n}\r\n\r\n.venue[_ngcontent-%COMP%]    > span[_ngcontent-%COMP%] {\r\n    min-width: 70%;\r\n    max-width: 70%;\r\n    overflow: hidden;\r\n    white-space: nowrap;\r\n    text-overflow: ellipsis;\r\n}\r\n\r\n.count-bar[_ngcontent-%COMP%] {\r\n    height: 50px;\r\n    \r\n}\r\n\r\n.count-bar[_ngcontent-%COMP%]    > p[_ngcontent-%COMP%]{\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    text-align: center;\r\n    color: black;\r\n    font-size: 0.9em;\r\n    font-weight: 500;\r\n    margin: 1% auto;\r\n    width: 20%;\r\n}\r\n.count-bar[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]{ \r\n    border-left: 1px solid #888888;\r\n    width: 78%;\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    height: 50px;\r\n}\r\n.count-bar[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]    > img[_ngcontent-%COMP%]{\r\n    margin: 5px;\r\n    width: 40px;\r\n    height: 40px;\r\n    border-radius: 50%;\r\n    vertical-align: middle\r\n}\r\n\r\n.comment-bar[_ngcontent-%COMP%]{\r\n    background-color: #4372a0;\r\n    padding: 2%;\r\n    width: 96%;\r\n    margin: 1% auto;\r\n}\r\n.comment-bar[_ngcontent-%COMP%]    > img[_ngcontent-%COMP%] {\r\n    vertical-align: middle;\r\n    margin: 3%;\r\n}\r\ninput[_ngcontent-%COMP%]{\r\n    width: 80%;\r\n    border: none;\r\n    background-color: #ffffff;\r\n    height: 35px;\r\n    text-align: center;\r\n    box-shadow: 1px 1px 2px #bbbbbb;\r\n    border-radius: 25px;\r\n    outline: none;\r\n    vertical-align:  middle\r\n}\r\n\r\n.comments[_ngcontent-%COMP%]    > img[_ngcontent-%COMP%] {\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    width: 45px;\r\n    height: 45px;\r\n    border-radius: 50%;\r\n    margin: 2%;\r\n}\r\n.comment-details[_ngcontent-%COMP%]{\r\n    vertical-align: middle;\r\n    display: inline-block;\r\n    border-bottom: 1px solid #bbbbbb;\r\n    width: 80%;\r\n    margin-bottom: 1%;\r\n}\r\n.user-name[_ngcontent-%COMP%]{\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    min-width: 20%;\r\n    font-size: 0.9em;\r\n    font-weight: 500;\r\n    color: #024771;\r\n    text-align: left;\r\n}\r\n.comment-date[_ngcontent-%COMP%]{\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    font-size: 0.8em;\r\n    color: black;\r\n    min-width: 40%;\r\n    text-align: left;\r\n}\r\n.unique-name[_ngcontent-%COMP%]{\r\n    color: #ffa600;\r\n    font-style: italic;\r\n    font-size: 0.8em;\r\n}\r\n.comment[_ngcontent-%COMP%]{\r\n    color: black;\r\n    font-size: 0.95em;\r\n}\r\n.match-image[_ngcontent-%COMP%]{\r\n    padding-top: 60px;\r\n    width: 98%;\r\n    margin:2% auto;\r\n}\r\n.match-image[_ngcontent-%COMP%]    > img[_ngcontent-%COMP%] {\r\n    width: 100%;\r\n}\r\n\r\n.actions-match[_ngcontent-%COMP%]{\r\n    padding: 3%;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-pack: distribute;\r\n        justify-content: space-around;\r\n}\r\n\r\nbutton[_ngcontent-%COMP%] {\r\n    background-color: transparent;\r\n    outline: none;\r\n    border: none;\r\n    cursor: pointer;\r\n    \r\n}\r\n\r\n.actions-match[_ngcontent-%COMP%]    > button[_ngcontent-%COMP%]    > img[_ngcontent-%COMP%] {\r\n    width: 32px;\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    margin-right: 3px;\r\n}\r\n\r\n.actions-match[_ngcontent-%COMP%]    > button[_ngcontent-%COMP%]    > span[_ngcontent-%COMP%] {\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n}\r\n.actions-match[_ngcontent-%COMP%]    > button[_ngcontent-%COMP%]    > span[_ngcontent-%COMP%]:hover{\r\n    font-weight: 700\r\n}"];
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/open-cards/open-match-card/open-match-card.component.ngfactory.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export RenderType_OpenMatchCardComponent */
+/* unused harmony export View_OpenMatchCardComponent_0 */
+/* unused harmony export View_OpenMatchCardComponent_Host_0 */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OpenMatchCardComponentNgFactory; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__open_match_card_component_css_shim_ngstyle__ = __webpack_require__("../../../../../src/app/open-cards/open-match-card/open-match-card.component.css.shim.ngstyle.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__open_match_card_component__ = __webpack_require__("../../../../../src/app/open-cards/open-match-card/open-match-card.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_services_time_service__ = __webpack_require__("../../../../../src/app/shared/services/time.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_services_post_service__ = __webpack_require__("../../../../../src/app/shared/services/post.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+/**
+* @fileoverview This file is generated by the Angular template compiler.
+* Do not edit.
+* @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
+* tslint:disable
+*/ 
+
+
+
+
+
+
+
+var styles_OpenMatchCardComponent = [__WEBPACK_IMPORTED_MODULE_0__open_match_card_component_css_shim_ngstyle__["a" /* styles */]];
+var RenderType_OpenMatchCardComponent = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵcrt"]({ encapsulation: 0, styles: styles_OpenMatchCardComponent, data: {} });
+
+function View_OpenMatchCardComponent_1(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](0, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/default-image.png"]], null, null, null, null, null))], null, null); }
+function View_OpenMatchCardComponent_2(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](0, 0, null, null, 0, "img", [["alt", ""]], [[8, "src", 4]], null, null, null, null))], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵinlineInterpolate"](1, "", _co.matchImage, ""); _ck(_v, 0, 0, currVal_0); }); }
+function View_OpenMatchCardComponent_5(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](0, 0, null, null, 0, "img", [["alt", ""]], [[8, "src", 4], [8, "title", 0]], null, null, null, null))], null, function (_ck, _v) { var currVal_0 = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵinlineInterpolate"](1, "", _v.context.$implicit.image, ""); var currVal_1 = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵinlineInterpolate"](1, "", _v.context.$implicit.name, ""); _ck(_v, 0, 0, currVal_0, currVal_1); }); }
+function View_OpenMatchCardComponent_4(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](0, 0, null, null, 12, "div", [["class", "count-bar"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](2, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](3, null, ["", " Playing"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](5, 0, null, null, 4, "div", [["class", "image"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n        "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵand"](16777216, null, null, 1, null, View_OpenMatchCardComponent_5)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](8, 802816, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_common__["NgForOf"], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["TemplateRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["IterableDiffers"]], { ngForOf: [0, "ngForOf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](11, 0, null, null, 0, "hr", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "]))], function (_ck, _v) { var _co = _v.component; var currVal_1 = _co.joinees; _ck(_v, 8, 0, currVal_1); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.joineeCount; _ck(_v, 3, 0, currVal_0); }); }
+function View_OpenMatchCardComponent_7(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](0, 0, null, null, 0, "img", [["alt", ""]], [[8, "src", 4], [8, "title", 0]], null, null, null, null))], null, function (_ck, _v) { var currVal_0 = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵinlineInterpolate"](1, "", _v.context.$implicit.image, ""); var currVal_1 = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵinlineInterpolate"](1, "", _v.context.$implicit.name, ""); _ck(_v, 0, 0, currVal_0, currVal_1); }); }
+function View_OpenMatchCardComponent_6(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](0, 0, null, null, 12, "div", [["class", "count-bar"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](2, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](3, null, ["", " Promoting"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](5, 0, null, null, 4, "div", [["class", "image"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n        "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵand"](16777216, null, null, 1, null, View_OpenMatchCardComponent_7)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](8, 802816, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_common__["NgForOf"], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["TemplateRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["IterableDiffers"]], { ngForOf: [0, "ngForOf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](11, 0, null, null, 0, "hr", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "]))], function (_ck, _v) { var _co = _v.component; var currVal_1 = _co.promoters; _ck(_v, 8, 0, currVal_1); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.promoteCount; _ck(_v, 3, 0, currVal_0); }); }
+function View_OpenMatchCardComponent_9(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](0, 0, null, null, 0, "img", [["alt", ""]], [[8, "src", 4], [8, "title", 0]], null, null, null, null))], null, function (_ck, _v) { var currVal_0 = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵinlineInterpolate"](1, "", _v.context.$implicit.image, ""); var currVal_1 = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵinlineInterpolate"](1, "", _v.context.$implicit.name, ""); _ck(_v, 0, 0, currVal_0, currVal_1); }); }
+function View_OpenMatchCardComponent_8(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](0, 0, null, null, 12, "div", [["class", "count-bar"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](2, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](3, null, ["", " Watching"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](5, 0, null, null, 4, "div", [["class", "image"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n        "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵand"](16777216, null, null, 1, null, View_OpenMatchCardComponent_9)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](8, 802816, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_common__["NgForOf"], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["TemplateRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["IterableDiffers"]], { ngForOf: [0, "ngForOf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](11, 0, null, null, 0, "hr", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "]))], function (_ck, _v) { var _co = _v.component; var currVal_1 = _co.watchers; _ck(_v, 8, 0, currVal_1); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.watchCount; _ck(_v, 3, 0, currVal_0); }); }
+function View_OpenMatchCardComponent_3(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](0, 0, null, null, 12, "div", [["class", "actions-count"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](2, 0, null, null, 0, "hr", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    \n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵand"](16777216, null, null, 1, null, View_OpenMatchCardComponent_4)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](5, 16384, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_common__["NgIf"], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    \n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵand"](16777216, null, null, 1, null, View_OpenMatchCardComponent_6)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](8, 16384, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_common__["NgIf"], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    \n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵand"](16777216, null, null, 1, null, View_OpenMatchCardComponent_8)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](11, 16384, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_common__["NgIf"], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "]))], function (_ck, _v) { var _co = _v.component; var currVal_0 = (_co.joineeCount > 0); _ck(_v, 5, 0, currVal_0); var currVal_1 = (_co.promoteCount > 0); _ck(_v, 8, 0, currVal_1); var currVal_2 = (_co.watchCount > 0); _ck(_v, 11, 0, currVal_2); }, null); }
+function View_OpenMatchCardComponent_10(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](0, 0, null, null, 18, "div", [["class", "comments"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](2, 0, null, null, 0, "img", [["alt", ""]], [[8, "src", 4]], null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](4, 0, null, null, 13, "div", [["class", "comment-details"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n        "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](6, 0, null, null, 1, "div", [["class", "user-name"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](7, null, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n        "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](9, 0, null, null, 1, "div", [["class", "comment-date"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](10, null, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n        "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](12, 0, null, null, 1, "div", [["class", "unique-name"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](13, null, [" @", " "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n        "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](15, 0, null, null, 1, "div", [["class", "comment"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](16, null, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "]))], null, function (_ck, _v) { var currVal_0 = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵinlineInterpolate"](1, "", _v.context.$implicit.userImage, ""); _ck(_v, 2, 0, currVal_0); var currVal_1 = _v.context.$implicit.userName; _ck(_v, 7, 0, currVal_1); var currVal_2 = _v.context.$implicit.commentDate; _ck(_v, 10, 0, currVal_2); var currVal_3 = _v.context.$implicit.uniqueName; _ck(_v, 13, 0, currVal_3); var currVal_4 = _v.context.$implicit.comment; _ck(_v, 16, 0, currVal_4); }); }
+function View_OpenMatchCardComponent_0(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [__WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵqud"](402653184, 1, { openCard: 0 }), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵqud"](402653184, 2, { userImg: 0 }), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](2, 0, [[1, 0], ["openCard", 1]], null, 108, "div", [["class", "open-card"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](4, 0, null, null, 20, "div", [["class", "open-card-header"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](6, 0, null, null, 0, "img", [["alt", ""], ["class", "close"], ["src", "/assets/images/sports-social-cancel-black.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.close() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](8, 0, null, null, 1, "div", [["class", "time-remaining"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](9, null, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](11, 0, null, null, 1, "div", [["class", "heading"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](12, null, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](14, 0, null, null, 1, "div", [["class", "match-sum"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["Match Summary"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](17, 0, null, null, 6, "div", [["class", "started-by"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](19, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["Started By"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](22, 0, [[2, 0], ["userImg", 1]], null, 0, "img", [["alt", ""]], [[8, "src", 4], [8, "title", 0]], [[null, "error"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("error" === en)) {
+        var pd_0 = (_co.defaultImage() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](26, 0, null, null, 31, "div", [["class", "open-card-content"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](28, 0, null, null, 6, "div", [["class", "match-date"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](30, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/calendar.png"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](32, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](33, null, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](36, 0, null, null, 8, "div", [["class", "venue"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](38, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/map-marker.png"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](40, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](41, null, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](43, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/map-marker.png"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](46, 0, null, null, 1, "div", [["class", "match-text"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](47, null, ["\n      ", "\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](49, 0, null, null, 7, "div", [["class", "match-image"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵand"](16777216, null, null, 1, null, View_OpenMatchCardComponent_1)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](52, 16384, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_common__["NgIf"], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵand"](16777216, null, null, 1, null, View_OpenMatchCardComponent_2)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](55, 16384, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_common__["NgIf"], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵand"](16777216, null, null, 1, null, View_OpenMatchCardComponent_3)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](60, 16384, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_common__["NgIf"], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  \n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](62, 0, null, null, 32, "div", [["class", "actions-match"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](64, 0, null, null, 6, "button", [["class", "playButton"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](66, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sports-social-play.png"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, [" "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](68, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["Play"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["  \n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](72, 0, null, null, 5, "button", [["class", "commentButton"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](74, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sports-social-match-talks.png"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](75, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["Comment"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["  \n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](79, 0, null, null, 6, "button", [["class", "promoteButton"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](81, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sports-social-promote.png"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, [" "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](83, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["Promote"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](87, 0, null, null, 6, "button", [["class", "watchButton"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](89, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sports-social-watching.png"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, [" "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](91, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["Watch"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](96, 0, null, null, 5, "div", [["class", "comment-bar"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](98, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/user-default.png"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](100, 0, null, null, 0, "input", [["placeholder", "Comment Your Views"], ["type", "text"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵand"](16777216, null, null, 1, null, View_OpenMatchCardComponent_10)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](104, 802816, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_common__["NgForOf"], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["TemplateRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["IterableDiffers"]], { ngForOf: [0, "ngForOf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  \n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](106, 0, null, null, 3, "div", [["class", "open-card-footer"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](108, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sports-social-white-logo.png"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n"]))], function (_ck, _v) { var _co = _v.component; var currVal_7 = (_co.matchImage === undefined); _ck(_v, 52, 0, currVal_7); var currVal_8 = _co.matchImage; _ck(_v, 55, 0, currVal_8); var currVal_9 = _co.removeActionBar(); _ck(_v, 60, 0, currVal_9); var currVal_10 = _co.comments; _ck(_v, 104, 0, currVal_10); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.timeRemaining; _ck(_v, 9, 0, currVal_0); var currVal_1 = _co.gameName; _ck(_v, 12, 0, currVal_1); var currVal_2 = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵinlineInterpolate"](1, "", _co.creatorImage, ""); var currVal_3 = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵinlineInterpolate"](1, "", _co.creatorName, ""); _ck(_v, 22, 0, currVal_2, currVal_3); var currVal_4 = _co.matchDate; _ck(_v, 33, 0, currVal_4); var currVal_5 = _co.venueName; _ck(_v, 41, 0, currVal_5); var currVal_6 = _co.matchText; _ck(_v, 47, 0, currVal_6); }); }
+function View_OpenMatchCardComponent_Host_0(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](0, 0, null, null, 1, "sports-social-open-match-card", [], null, null, null, View_OpenMatchCardComponent_0, RenderType_OpenMatchCardComponent)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](1, 114688, null, 0, __WEBPACK_IMPORTED_MODULE_3__open_match_card_component__["a" /* OpenMatchCardComponent */], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["Renderer2"], __WEBPACK_IMPORTED_MODULE_4__shared_services_time_service__["a" /* TimeService */], __WEBPACK_IMPORTED_MODULE_5__shared_services_post_service__["a" /* PostService */], __WEBPACK_IMPORTED_MODULE_6__angular_router__["a" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_6__angular_router__["k" /* Router */]], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+var OpenMatchCardComponentNgFactory = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵccf"]("sports-social-open-match-card", __WEBPACK_IMPORTED_MODULE_3__open_match_card_component__["a" /* OpenMatchCardComponent */], View_OpenMatchCardComponent_Host_0, { timeRemaining: "timeRemaining", gameName: "gameName", creatorImage: "creatorImage", creatorName: "creatorName", matchDate: "matchDate", venueName: "venueName", matchText: "matchText", matchImage: "matchImage", joineeCount: "joineeCount", joinees: "joinees", promoteCount: "promoteCount", promoters: "promoters", watchCount: "watchCount", watchers: "watchers", commentCount: "commentCount", comments: "comments" }, {}, []);
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/open-cards/open-match-card/open-match-card.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OpenMatchCardComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_services_time_service__ = __webpack_require__("../../../../../src/app/shared/services/time.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_post_service__ = __webpack_require__("../../../../../src/app/shared/services/post.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var OpenMatchCardComponent = (function () {
+    function OpenMatchCardComponent(renderer, time, get, activeRoute, router) {
+        this.renderer = renderer;
+        this.time = time;
+        this.get = get;
+        this.activeRoute = activeRoute;
+        this.router = router;
+        this.activityid = {
+            commentid: 1005,
+            promoteid: 1004,
+            watchid: 1009
+        };
+        this.joinees = [];
+        this.promoters = [];
+        this.watchers = [];
+        this.comments = [];
+    }
+    OpenMatchCardComponent.prototype.defaultImage = function () {
+        this.renderer.setAttribute(this.userImg.nativeElement, 'src', '/assets/images/user-default.png');
+    };
+    OpenMatchCardComponent.prototype.close = function () {
+        this.router.navigate([{ outlets: { 'Match': null } }]);
+    };
+    OpenMatchCardComponent.prototype.removeActionBar = function () {
+        if (this.promoteCount === '0' && this.watchCount === '0' && this.joineeCount === '0') {
+            return false;
+        }
+        else {
+            return true;
+        }
+    };
+    OpenMatchCardComponent.prototype.getMatchData = function (id) {
+        var _this = this;
+        this.get.singleMatchData(id, 0, this.activityid.commentid, 0, 1).subscribe(function (res) {
+            console.log(res);
+            _this.matchImage = res['EventInfo'][0].event_image;
+            _this.matchText = res['EventInfo'][0].EventText;
+            _this.promoteCount = res['EventInfo'][0].PromoteCount;
+            _this.watchCount = res['EventInfo'][0].WatchCount;
+            _this.joineeCount = res['EventInfo'][0].EventJoineeCount;
+            _this.venueName = res['EventInfo'][0].Venue_Name;
+            _this.creatorName = res['EventInfo'][0].user_name;
+            _this.gameName = res['EventInfo'][0].gamename;
+            _this.timeRemaining = res['EventInfo'][0].CreationDate;
+            _this.creatorImage = res['EventInfo'][0].profile_photo;
+            _this.matchDate = res['EventInfo'][0].StartTime;
+            // tslint:disable-next-line:forin
+            for (var i in res['EventJoineesInfo']) {
+                _this.joinees.push({
+                    name: res['EventJoineesInfo'][i].FirstName + res['EventJoineesInfo'][i].LastName,
+                    image: res['EventJoineesInfo'][i].profilephoto
+                });
+            }
+        });
+        this.get.singleMatchData(id, 0, this.activityid.commentid, 1, 1).subscribe(function (res) {
+            console.log(res);
+            // tslint:disable-next-line:forin
+            for (var i in res[0]) {
+                _this.comments.push({
+                    userName: res[0][i].user_name,
+                    commentDate: res[0][i].InsertedDate,
+                    uniqueName: res[0][i].UniqueName,
+                    comment: '',
+                    userImage: res[0][i].profile_image,
+                });
+            }
+        });
+        this.get.singleMatchData(id, 0, this.activityid.watchid, 1, 1).subscribe(function (res) {
+            console.log(res);
+            // tslint:disable-next-line:forin
+            for (var i in res[0]) {
+                _this.watchers.push({
+                    name: res[0][i].user_name,
+                    image: res[0][i].profile_image,
+                });
+            }
+        });
+        this.get.singleMatchData(id, 0, this.activityid.promoteid, 1, 1).subscribe(function (res) {
+            console.log(res);
+            // tslint:disable-next-line:forin
+            for (var i in res[0]) {
+                _this.promoters.push({
+                    name: res[0][i].user_name,
+                    image: res[0][i].profile_image,
+                });
+            }
+        });
+    };
+    OpenMatchCardComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        console.log(this.watchers, this.comments, this.joinees, this.promoters);
+        this.activeRoute.params.subscribe(function (param) {
+            console.log(param.id);
+            _this.getMatchData(param.id);
+        });
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('openCard'),
+        __metadata("design:type", Object)
+    ], OpenMatchCardComponent.prototype, "openCard", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('userImg'),
+        __metadata("design:type", Object)
+    ], OpenMatchCardComponent.prototype, "userImg", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", String)
+    ], OpenMatchCardComponent.prototype, "timeRemaining", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", String)
+    ], OpenMatchCardComponent.prototype, "gameName", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", String)
+    ], OpenMatchCardComponent.prototype, "creatorImage", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", String)
+    ], OpenMatchCardComponent.prototype, "creatorName", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", String)
+    ], OpenMatchCardComponent.prototype, "matchDate", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", String)
+    ], OpenMatchCardComponent.prototype, "venueName", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", String)
+    ], OpenMatchCardComponent.prototype, "matchText", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", String)
+    ], OpenMatchCardComponent.prototype, "matchImage", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", String)
+    ], OpenMatchCardComponent.prototype, "joineeCount", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Array)
+    ], OpenMatchCardComponent.prototype, "joinees", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", String)
+    ], OpenMatchCardComponent.prototype, "promoteCount", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Array)
+    ], OpenMatchCardComponent.prototype, "promoters", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", String)
+    ], OpenMatchCardComponent.prototype, "watchCount", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Array)
+    ], OpenMatchCardComponent.prototype, "watchers", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", String)
+    ], OpenMatchCardComponent.prototype, "commentCount", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Array)
+    ], OpenMatchCardComponent.prototype, "comments", void 0);
+    OpenMatchCardComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'sports-social-open-match-card',
+            templateUrl: './open-match-card.component.html',
+            styleUrls: ['./open-match-card.component.css'],
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].Emulated
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer2"],
+            __WEBPACK_IMPORTED_MODULE_1__shared_services_time_service__["a" /* TimeService */],
+            __WEBPACK_IMPORTED_MODULE_2__shared_services_post_service__["a" /* PostService */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* ActivatedRoute */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_router__["k" /* Router */]])
+    ], OpenMatchCardComponent);
+    return OpenMatchCardComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/open-cards/open-match-card/open-match-card.module.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OpenMatchCardModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__open_match_card_component__ = __webpack_require__("../../../../../src/app/open-cards/open-match-card/open-match-card.component.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var OpenMatchCardModule = (function () {
+    function OpenMatchCardModule() {
+    }
+    OpenMatchCardModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1__angular_common__["CommonModule"]
+            ],
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__open_match_card_component__["a" /* OpenMatchCardComponent */]
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__open_match_card_component__["a" /* OpenMatchCardComponent */]
+            ]
+        })
+    ], OpenMatchCardModule);
+    return OpenMatchCardModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/open-cards/open-news-card/open-news-card.component.css.ngstyle.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return styles; });
+/**
+* @fileoverview This file is generated by the Angular template compiler.
+* Do not edit.
+* @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
+* tslint:disable
+*/ 
+var styles = [".insert-date {\r\n    position: absolute;\r\n    left: 10px;\r\n    top: 10px;\r\n}\r\n.url {\r\n    display: block;\r\n    margin: 1% auto;\r\n    text-align: center;\r\n    color: black;\r\n    width: 100%;\r\n    font-size: 1.5em;\r\n    font-weight: 900;\r\n}\r\n.source {\r\n      text-align: center;\r\n      margin: 1%;\r\n}\r\n.source > .name {\r\n    font-size: 1.4em;\r\n    font-weight: 900;\r\n}\r\n\r\n.title {\r\n    width: 100%;\r\n    text-align: center;\r\n    position: relative;\r\n    top: 30px;\r\n    font-size: 1.2em;\r\n    font-weight: 500;\r\n}\r\n.news-image{\r\n    padding-top: 60px;\r\n    width: 98%;\r\n    margin:2% auto;\r\n}\r\n.news-image > img {\r\n    width: 100%;\r\n}\r\n\r\n.desc {\r\n    width: 95%;\r\n    margin: 1% auto;\r\n    text-align: center;\r\n    font-size: 1.3em;\r\n    font-weight: 500;\r\n}\r\n.count-bar {\r\n    height: 50px;\r\n    \r\n}\r\n\r\n.count-bar >  p{\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    text-align: center;\r\n    color: black;\r\n    font-size: 0.9em;\r\n    font-weight: 500;\r\n    margin: 1% auto;\r\n    width: 20%;\r\n}\r\n.count-bar > div{ \r\n    border-left: 1px solid #888888;\r\n    width: 78%;\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    height: 50px;\r\n}\r\n.count-bar > div > img{\r\n    margin: 5px;\r\n    width: 40px;\r\n    height: 40px;\r\n    border-radius: 50%;\r\n    vertical-align: middle\r\n}\r\n\r\n.comment-bar{\r\n    background-color: #4372a0;\r\n    padding: 2%;\r\n    width: 96%;\r\n    margin: 1% auto;\r\n}\r\n.comment-bar > img {\r\n    vertical-align: middle;\r\n    margin: 3%;\r\n}\r\ninput{\r\n    width: 80%;\r\n    border: none;\r\n    background-color: #ffffff;\r\n    height: 35px;\r\n    text-align: center;\r\n    box-shadow: 1px 1px 2px #bbbbbb;\r\n    border-radius: 25px;\r\n    outline: none;\r\n    vertical-align:  middle\r\n}\r\n\r\n.comments > img {\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    width: 45px;\r\n    height: 45px;\r\n    border-radius: 50%;\r\n    margin: 2%;\r\n}\r\n.comment-details{\r\n    vertical-align: middle;\r\n    display: inline-block;\r\n    border-bottom: 1px solid #bbbbbb;\r\n    width: 80%;\r\n    margin-bottom: 1%;\r\n}\r\n.user-name{\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    min-width: 20%;\r\n    font-size: 0.9em;\r\n    font-weight: 500;\r\n    color: #024771;\r\n    text-align: left;\r\n}\r\n.comment-date{\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    font-size: 0.8em;\r\n    color: black;\r\n    min-width: 40%;\r\n    text-align: left;\r\n}\r\n.unique-name{\r\n    color: #ffa600;\r\n    font-style: italic;\r\n    font-size: 0.8em;\r\n}\r\n.comment{\r\n    color: black;\r\n    font-size: 0.95em;\r\n}\r\n.actions-news{\r\n    padding: 3%;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-pack: distribute;\r\n        justify-content: space-around;\r\n}\r\n\r\nbutton {\r\n    background-color: transparent;\r\n    outline: none;\r\n    border: none;\r\n    cursor: pointer;\r\n    \r\n}\r\n\r\n.actions-news > button > img {\r\n    width: 16px;\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    margin-right: 3px;\r\n}\r\n\r\n.actions-news > button > span {\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n}\r\n.actions-news > button > span:hover{\r\n    font-weight: 700\r\n}"];
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/open-cards/open-news-card/open-news-card.component.ngfactory.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export RenderType_OpenNewsCardComponent */
+/* unused harmony export View_OpenNewsCardComponent_0 */
+/* unused harmony export View_OpenNewsCardComponent_Host_0 */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OpenNewsCardComponentNgFactory; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__open_news_card_component_css_ngstyle__ = __webpack_require__("../../../../../src/app/open-cards/open-news-card/open-news-card.component.css.ngstyle.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__open_news_card_component__ = __webpack_require__("../../../../../src/app/open-cards/open-news-card/open-news-card.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_services_post_service__ = __webpack_require__("../../../../../src/app/shared/services/post.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+/**
+* @fileoverview This file is generated by the Angular template compiler.
+* Do not edit.
+* @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
+* tslint:disable
+*/ 
+
+
+
+
+
+
+var styles_OpenNewsCardComponent = [__WEBPACK_IMPORTED_MODULE_0__open_news_card_component_css_ngstyle__["a" /* styles */]];
+var RenderType_OpenNewsCardComponent = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵcrt"]({ encapsulation: 2, styles: styles_OpenNewsCardComponent, data: {} });
+
+function View_OpenNewsCardComponent_1(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](0, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/default-image.png"]], null, null, null, null, null))], null, null); }
+function View_OpenNewsCardComponent_4(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](0, 0, null, null, 0, "img", [["alt", ""]], [[8, "src", 4], [8, "title", 0]], null, null, null, null))], null, function (_ck, _v) { var currVal_0 = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵinlineInterpolate"](1, "", _v.context.$implicit.image, ""); var currVal_1 = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵinlineInterpolate"](1, "", _v.context.$implicit.name, ""); _ck(_v, 0, 0, currVal_0, currVal_1); }); }
+function View_OpenNewsCardComponent_3(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](0, 0, null, null, 12, "div", [["class", "count-bar"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](2, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](3, null, ["", " ", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](5, 0, null, null, 4, "div", [["class", "image"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n        "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵand"](16777216, null, null, 1, null, View_OpenNewsCardComponent_4)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](8, 802816, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_common__["NgForOf"], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["TemplateRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["IterableDiffers"]], { ngForOf: [0, "ngForOf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](11, 0, null, null, 0, "hr", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "]))], function (_ck, _v) { var _co = _v.component; var currVal_2 = _co.likes; _ck(_v, 8, 0, currVal_2); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.likeCount; var currVal_1 = ((_co.likeCount > 1) ? _co.Likes : _co.Like); _ck(_v, 3, 0, currVal_0, currVal_1); }); }
+function View_OpenNewsCardComponent_6(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](0, 0, null, null, 0, "img", [["alt", ""]], [[8, "src", 4], [8, "title", 0]], null, null, null, null))], null, function (_ck, _v) { var currVal_0 = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵinlineInterpolate"](1, "", _v.context.$implicit.image, ""); var currVal_1 = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵinlineInterpolate"](1, "", _v.context.$implicit.name, ""); _ck(_v, 0, 0, currVal_0, currVal_1); }); }
+function View_OpenNewsCardComponent_5(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](0, 0, null, null, 12, "div", [["class", "count-bar"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](2, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](3, null, ["", " ", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](5, 0, null, null, 4, "div", [["class", "image"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n        "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵand"](16777216, null, null, 1, null, View_OpenNewsCardComponent_6)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](8, 802816, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_common__["NgForOf"], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["TemplateRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["IterableDiffers"]], { ngForOf: [0, "ngForOf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](11, 0, null, null, 0, "hr", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "]))], function (_ck, _v) { var _co = _v.component; var currVal_2 = _co.shares; _ck(_v, 8, 0, currVal_2); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.shareCount; var currVal_1 = ((_co.shareCount > 1) ? _co.Shares : _co.Share); _ck(_v, 3, 0, currVal_0, currVal_1); }); }
+function View_OpenNewsCardComponent_2(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](0, 0, null, null, 9, "div", [["class", "actions-count"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](2, 0, null, null, 0, "hr", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n        \n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵand"](16777216, null, null, 1, null, View_OpenNewsCardComponent_3)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](5, 16384, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_common__["NgIf"], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    \n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵand"](16777216, null, null, 1, null, View_OpenNewsCardComponent_5)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](8, 16384, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_common__["NgIf"], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "]))], function (_ck, _v) { var _co = _v.component; var currVal_0 = (_co.likeCount > 0); _ck(_v, 5, 0, currVal_0); var currVal_1 = (_co.shareCount > 0); _ck(_v, 8, 0, currVal_1); }, null); }
+function View_OpenNewsCardComponent_7(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](0, 0, null, null, 18, "div", [["class", "comments"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](2, 0, null, null, 0, "img", [["alt", ""]], [[8, "src", 4]], null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](4, 0, null, null, 13, "div", [["class", "comment-details"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n        "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](6, 0, null, null, 1, "div", [["class", "user-name"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](7, null, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n        "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](9, 0, null, null, 1, "div", [["class", "comment-date"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](10, null, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n        "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](12, 0, null, null, 1, "div", [["class", "unique-name"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](13, null, [" @", " "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n        "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](15, 0, null, null, 1, "div", [["class", "comment"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](16, null, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "]))], null, function (_ck, _v) { var currVal_0 = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵinlineInterpolate"](1, "", _v.context.$implicit.userImage, ""); _ck(_v, 2, 0, currVal_0); var currVal_1 = _v.context.$implicit.userName; _ck(_v, 7, 0, currVal_1); var currVal_2 = _v.context.$implicit.commentDate; _ck(_v, 10, 0, currVal_2); var currVal_3 = _v.context.$implicit.uniqueName; _ck(_v, 13, 0, currVal_3); var currVal_4 = _v.context.$implicit.comment; _ck(_v, 16, 0, currVal_4); }); }
+function View_OpenNewsCardComponent_0(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [__WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵqud"](402653184, 1, { openCard: 0 }), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](1, 0, [[1, 0], ["openCard", 1]], null, 89, "div", [["class", "open-card"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](3, 0, null, null, 14, "div", [["class", "open-card-header"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](5, 0, null, null, 0, "img", [["alt", ""], ["class", "close"], ["src", "/assets/images/sports-social-cancel-black.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.close() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](7, 0, null, null, 1, "div", [["class", "insert-date"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](8, null, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](10, 0, null, null, 6, "div", [["class", "source"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](12, 0, null, null, 0, "img", [["alt", ""]], [[8, "src", 4]], null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](14, 0, null, null, 1, "p", [["class", "name"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](15, null, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](19, 0, null, null, 18, "div", [["class", "open-card-content"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](21, 0, null, null, 1, "div", [["class", "title"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](22, null, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](24, 0, null, null, 6, "div", [["class", "news-image"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n        "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵand"](16777216, null, null, 1, null, View_OpenNewsCardComponent_1)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](27, 16384, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_common__["NgIf"], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](29, 0, null, null, 0, "img", [["alt", ""]], [[8, "src", 4]], null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](32, 0, null, null, 1, "div", [["class", "desc"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](33, null, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](35, 0, null, null, 1, "a", [["class", "url"], ["target", "_blank"]], [[8, "href", 4]], null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](36, null, ["Read More At ", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵand"](16777216, null, null, 1, null, View_OpenNewsCardComponent_2)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](40, 16384, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_common__["NgIf"], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](42, 0, null, null, 32, "div", [["class", "actions-news"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](44, 0, null, null, 5, "button", [["class", "commentButton"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](46, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sports-social-comment.png"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](47, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["Comment"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["  \n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](51, 0, null, null, 6, "button", [["class", "promoteButton"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](53, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sports-social-like.png"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, [" "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](55, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["Like"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](59, 0, null, null, 6, "button", [["class", "watchButton"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](61, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sports-social-share-black.png"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, [" "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](63, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["Share"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](67, 0, null, null, 6, "button", [["class", "watchButton"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n        "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](69, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sports-social-save-black.png"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, [" "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](71, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["Save"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](76, 0, null, null, 5, "div", [["class", "comment-bar"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](78, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/user-default.png"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](80, 0, null, null, 0, "input", [["placeholder", "Comment Your Views"], ["type", "text"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵand"](16777216, null, null, 1, null, View_OpenNewsCardComponent_7)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](84, 802816, null, 0, __WEBPACK_IMPORTED_MODULE_2__angular_common__["NgForOf"], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["TemplateRef"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["IterableDiffers"]], { ngForOf: [0, "ngForOf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  \n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](86, 0, null, null, 3, "div", [["class", "open-card-footer"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](88, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sports-social-white-logo.png"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n"])), (_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵted"](-1, null, ["\n"]))], function (_ck, _v) { var _co = _v.component; var currVal_4 = (_co.newsImage === undefined); _ck(_v, 27, 0, currVal_4); var currVal_9 = _co.removeActionBar(); _ck(_v, 40, 0, currVal_9); var currVal_10 = _co.comments; _ck(_v, 84, 0, currVal_10); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.insertedDate; _ck(_v, 8, 0, currVal_0); var currVal_1 = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵinlineInterpolate"](1, "", _co.sourceImage, ""); _ck(_v, 12, 0, currVal_1); var currVal_2 = _co.sourceName; _ck(_v, 15, 0, currVal_2); var currVal_3 = _co.title; _ck(_v, 22, 0, currVal_3); var currVal_5 = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵinlineInterpolate"](1, "", _co.newsImage, ""); _ck(_v, 29, 0, currVal_5); var currVal_6 = _co.desc; _ck(_v, 33, 0, currVal_6); var currVal_7 = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵinlineInterpolate"](1, "", _co.url, ""); _ck(_v, 35, 0, currVal_7); var currVal_8 = _co.sourceName; _ck(_v, 36, 0, currVal_8); }); }
+function View_OpenNewsCardComponent_Host_0(_l) { return __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵvid"](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵeld"](0, 0, null, null, 1, "sports-social-open-news-card", [], null, null, null, View_OpenNewsCardComponent_0, RenderType_OpenNewsCardComponent)), __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵdid"](1, 114688, null, 0, __WEBPACK_IMPORTED_MODULE_3__open_news_card_component__["a" /* OpenNewsCardComponent */], [__WEBPACK_IMPORTED_MODULE_1__angular_core__["Renderer2"], __WEBPACK_IMPORTED_MODULE_4__shared_services_post_service__["a" /* PostService */], __WEBPACK_IMPORTED_MODULE_5__angular_router__["a" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_5__angular_router__["k" /* Router */]], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+var OpenNewsCardComponentNgFactory = __WEBPACK_IMPORTED_MODULE_1__angular_core__["ɵccf"]("sports-social-open-news-card", __WEBPACK_IMPORTED_MODULE_3__open_news_card_component__["a" /* OpenNewsCardComponent */], View_OpenNewsCardComponent_Host_0, { newsId: "newsId", newsImage: "newsImage", sourceImage: "sourceImage", sourceName: "sourceName", desc: "desc", likeCount: "likeCount", shareCount: "shareCount", commentCount: "commentCount", url: "url", insertedDate: "insertedDate", publishedAt: "publishedAt", title: "title", comments: "comments" }, {}, []);
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/open-cards/open-news-card/open-news-card.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OpenNewsCardComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_services_post_service__ = __webpack_require__("../../../../../src/app/shared/services/post.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var OpenNewsCardComponent = (function () {
+    function OpenNewsCardComponent(renderer, get, activeRoute, router) {
+        this.renderer = renderer;
+        this.get = get;
+        this.activeRoute = activeRoute;
+        this.router = router;
+        this.comments = [];
+    }
+    OpenNewsCardComponent.prototype.removeActionBar = function () {
+        if (this.likeCount === 0 && this.shareCount === 0) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    };
+    OpenNewsCardComponent.prototype.close = function () {
+        this.router.navigate([{ outlets: { 'News': null } }]);
+    };
+    OpenNewsCardComponent.prototype.getNewsData = function (id) {
+        var _this = this;
+        this.get.singleNewsData(id).subscribe(function (res) {
+            console.log(res);
+            _this.title = res['title'];
+            _this.insertedDate = res['insertedDate'];
+            _this.desc = res['desc'];
+            _this.newsImage = res['newsImage'];
+            _this.url = res['url'];
+            _this.likeCount = res['likeCount'];
+            _this.shareCount = res['shareCount'];
+            _this.sourceImage = res['sourceImage'];
+            _this.sourceName = res['sourceName'];
+        });
+    };
+    OpenNewsCardComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.activeRoute.params.subscribe(function (param) {
+            _this.getNewsData(param.id);
+        });
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('openCard'),
+        __metadata("design:type", Object)
+    ], OpenNewsCardComponent.prototype, "openCard", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", String)
+    ], OpenNewsCardComponent.prototype, "newsId", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", String)
+    ], OpenNewsCardComponent.prototype, "newsImage", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", String)
+    ], OpenNewsCardComponent.prototype, "sourceImage", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", String)
+    ], OpenNewsCardComponent.prototype, "sourceName", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", String)
+    ], OpenNewsCardComponent.prototype, "desc", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Number)
+    ], OpenNewsCardComponent.prototype, "likeCount", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Number)
+    ], OpenNewsCardComponent.prototype, "shareCount", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Number)
+    ], OpenNewsCardComponent.prototype, "commentCount", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", String)
+    ], OpenNewsCardComponent.prototype, "url", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", String)
+    ], OpenNewsCardComponent.prototype, "insertedDate", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", String)
+    ], OpenNewsCardComponent.prototype, "publishedAt", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", String)
+    ], OpenNewsCardComponent.prototype, "title", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Array)
+    ], OpenNewsCardComponent.prototype, "comments", void 0);
+    OpenNewsCardComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'sports-social-open-news-card',
+            templateUrl: './open-news-card.component.html',
+            styleUrls: ['./open-news-card.component.css'],
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer2"],
+            __WEBPACK_IMPORTED_MODULE_1__shared_services_post_service__["a" /* PostService */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["k" /* Router */]])
+    ], OpenNewsCardComponent);
+    return OpenNewsCardComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/open-cards/open-news-card/open-news-card.module.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OpenNewsCardModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__open_news_card_component__ = __webpack_require__("../../../../../src/app/open-cards/open-news-card/open-news-card.component.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var OpenNewsCardModule = (function () {
+    function OpenNewsCardModule() {
+    }
+    OpenNewsCardModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1__angular_common__["CommonModule"],
+            ],
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__open_news_card_component__["a" /* OpenNewsCardComponent */]
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__open_news_card_component__["a" /* OpenNewsCardComponent */]
+            ]
+        })
+    ], OpenNewsCardModule);
+    return OpenNewsCardModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/pop-up/pop-up.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PopUpComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_services_time_service__ = __webpack_require__("../../../../../src/app/shared/services/time.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__open_cards_open_match_card_open_match_card_component__ = __webpack_require__("../../../../../src/app/open-cards/open-match-card/open-match-card.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_post_service__ = __webpack_require__("../../../../../src/app/shared/services/post.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var PopUpComponent = (function () {
+    function PopUpComponent(renderer, time, resolver, get) {
+        this.renderer = renderer;
+        this.time = time;
+        this.resolver = resolver;
+        this.get = get;
+        this.activityid = {
+            commentid: 1005,
+            promoteid: 1004,
+            watchid: 1009
+        };
+    }
+    PopUpComponent.prototype.createComponent = function (id) {
+        var _this = this;
+        console.log('id', id);
+        this.openMatchCardContainer.clear();
+        var factory = this.resolver.resolveComponentFactory(__WEBPACK_IMPORTED_MODULE_2__open_cards_open_match_card_open_match_card_component__["a" /* OpenMatchCardComponent */]);
+        this.componentRef = this.openMatchCardContainer.createComponent(factory);
+        this.get.singleMatchData(id, 0, this.activityid.commentid, 0, 1).subscribe(function (res) {
+            console.log(res);
+            _this.componentRef.instance.matchImage = res['EventInfo'][0].event_image;
+            _this.componentRef.instance.matchText = res['EventInfo'][0].EventText;
+            _this.componentRef.instance.promoteCount = res['EventInfo'][0].PromoteCount;
+            _this.componentRef.instance.watchCount = res['EventInfo'][0].WatchCount;
+            _this.componentRef.instance.joineeCount = res['EventInfo'][0].EventJoineeCount;
+            _this.componentRef.instance.venueName = res['EventInfo'][0].Venue_Name;
+            _this.componentRef.instance.creatorName = res['EventInfo'][0].user_name;
+            _this.componentRef.instance.gameName = res['EventInfo'][0].gamename;
+            _this.componentRef.instance.timeRemaining = res['EventInfo'][0].CreationDate;
+            _this.componentRef.instance.creatorImage = res['EventInfo'][0].profile_photo;
+            _this.componentRef.instance.matchDate = res['EventInfo'][0].StartTime;
+            // tslint:disable-next-line:forin
+            for (var i in res['EventJoineesInfo']) {
+                _this.componentRef.instance.joinees.push({
+                    name: res['EventJoineesInfo'][i].FirstName + res['EventJoineesInfo'][i].LastName,
+                    image: res['EventJoineesInfo'][i].profilephoto
+                });
+            }
+        });
+    };
+    PopUpComponent.prototype.ngOnInit = function () {
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('openMatchCard', { read: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"] }),
+        __metadata("design:type", Object)
+    ], PopUpComponent.prototype, "openMatchCardContainer", void 0);
+    PopUpComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'sports-social-pop-up',
+            templateUrl: './pop-up.component.html',
+            styleUrls: ['./pop-up.component.css'],
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer2"],
+            __WEBPACK_IMPORTED_MODULE_1__shared_services_time_service__["a" /* TimeService */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["ComponentFactoryResolver"],
+            __WEBPACK_IMPORTED_MODULE_3__shared_services_post_service__["a" /* PostService */]])
+    ], PopUpComponent);
+    return PopUpComponent;
 }());
 
 
@@ -265,6 +939,10 @@ var AppModule = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoute; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__open_cards_open_match_card_open_match_card_component__ = __webpack_require__("../../../../../src/app/open-cards/open-match-card/open-match-card.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__open_cards_open_news_card_open_news_card_component__ = __webpack_require__("../../../../../src/app/open-cards/open-news-card/open-news-card.component.ts");
+
+
 
 var App_Route = [
     {
@@ -273,7 +951,7 @@ var App_Route = [
     },
     {
         path: 'Terms Of Service',
-        loadChildren: 'app/terms-and-condition/terms-and-condition.module#TermsAndConditionModule'
+        loadChildren: 'app/terms-and-condition/terms-and-condition.module#TermsAndConditionModule',
     },
     {
         path: 'Privacy Policy',
@@ -284,9 +962,31 @@ var App_Route = [
         loadChildren: 'app/about/about.module#AboutModule'
     },
     {
-        path: '',
-        loadChildren: 'app/home/home.module#HomeModule',
+        path: 'OpenArena',
+        loadChildren: 'app/global-feed/global-match-feed/global-match-feed.module#GlobalMatchFeedModule'
     },
+    {
+        path: 'AroundTheWorld',
+        loadChildren: 'app/global-feed/global-news-feed/global-news-feed.module#GlobalNewsFeedModule'
+    },
+    {
+        path: ':sport',
+        loadChildren: 'app/sports-specific-feed/sports-specific-feed.module#SportsSpecificFeedModule'
+    },
+    {
+        path: ':id',
+        component: __WEBPACK_IMPORTED_MODULE_1__open_cards_open_match_card_open_match_card_component__["a" /* OpenMatchCardComponent */],
+        outlet: 'Match'
+    },
+    {
+        path: ':id',
+        component: __WEBPACK_IMPORTED_MODULE_2__open_cards_open_news_card_open_news_card_component__["a" /* OpenNewsCardComponent */],
+        outlet: 'News'
+    },
+    {
+        path: '',
+        loadChildren: 'app/home/home.module#HomeModule'
+    }
 ];
 var AppRoute = __WEBPACK_IMPORTED_MODULE_0__angular_router__["n" /* RouterModule */].forRoot(App_Route, { enableTracing: true });
 
@@ -436,7 +1136,7 @@ var MatchDataService = (function () {
                 _this.get.globalMatchFeed(pos['latitude'], pos['longitude'], page, gameid).subscribe(function (res) {
                     var data = res['Feed'];
                     // tslint:disable-next-line:forin
-                    for (var i in data.slice(page * 15, (page + 1) * 15)) {
+                    for (var i in data) {
                         _this.globalArena.push({
                             eventId: data[i].eventid,
                             creatorImage: data[i].creatorImage,
@@ -459,7 +1159,7 @@ var MatchDataService = (function () {
                             activityName: data[i].Activity_name !== undefined ? data[i].Activity_name.split(' ')[0] : ''
                         });
                     }
-                    resolve(_this.globalArena);
+                    resolve(_this.globalArena.slice(page * 15, (page + 1) * 15));
                 }, function (err) {
                     var errObj = { 'err': err, 'message': 'Something went wrong with Match feed!' };
                     reject(errObj);
@@ -509,7 +1209,7 @@ var NewsService = (function () {
         return new Promise(function (resolve, reject) {
             _this.get.globalNewsFeed(page, gameName).subscribe(function (res) {
                 var data = res;
-                // console.log(data);
+                console.log(data);
                 // tslint:disable-next-line:forin
                 for (var i in data) {
                     _this.globalArena.push({
@@ -528,7 +1228,7 @@ var NewsService = (function () {
                         desc: data[i].desc
                     });
                 }
-                resolve(_this.globalArena.slice(page * 15, (page + 1) * 15));
+                resolve(_this.globalArena.slice(_this.globalArena.length - 15, _this.globalArena.length));
             }, function (err) {
                 var errObj = { 'err': err, 'message': 'Something went wrong with News feed!' };
                 reject(errObj);
@@ -540,6 +1240,40 @@ var NewsService = (function () {
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__post_service__["a" /* PostService */]])
     ], NewsService);
     return NewsService;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/shared/services/pop-up.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PopUpService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs__ = __webpack_require__("../../../../rxjs/Rx.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var PopUpService = (function () {
+    function PopUpService() {
+        this.ofCard = new __WEBPACK_IMPORTED_MODULE_1_rxjs__["ReplaySubject"]();
+    }
+    PopUpService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+        __metadata("design:paramtypes", [])
+    ], PopUpService);
+    return PopUpService;
 }());
 
 
@@ -574,13 +1308,14 @@ var PostService = (function () {
             page: Number,
             gameid: Number
         };
-        this.url = ['https://test.sportsocial.in/poc/matchinfo', 'https://test.sportsocial.in/poc/activityuserdetails'];
+        this.url = ['https://prod.sportsocial.in/poc/matchinfo', 'https://prod.sportsocial.in/poc/activityuserdetails'];
     }
     PostService.prototype.globalNewsFeed = function (pageNo, game) {
         this.newsFeedRequestObject = {
             page: pageNo,
             game: game
         };
+        console.log(this.newsFeedRequestObject);
         return this.http.post('https://atg.sportsocial.in/news', this.newsFeedRequestObject);
     };
     PostService.prototype.blogData = function (i, s) {
@@ -599,15 +1334,20 @@ var PostService = (function () {
             gameid: gameid
         };
         console.log(this.matchFeedReqObj);
-        return this.http.post('https://test.sportsocial.in/poc/webfeed', this.matchFeedReqObj);
+        return this.http.post('https://prod.sportsocial.in/poc/webfeed', this.matchFeedReqObj);
     };
-    PostService.prototype.singleMatchData = function (eventid, userid, activityid, urlId) {
-        this.singleMatchReqObj.push({
-            'eventid': eventid,
-            'userid': userid,
-            'activityid': activityid
-        });
+    PostService.prototype.singleMatchData = function (eventid, userid, activityid, urlId, page) {
+        this.singleMatchReqObj = [{
+                'eventid': eventid,
+                'userid': userid,
+                'activityid': activityid,
+                'page': page
+            }];
+        console.log(this.singleMatchReqObj);
         return this.http.post(this.url[urlId], this.singleMatchReqObj);
+    };
+    PostService.prototype.singleNewsData = function (id) {
+        return this.http.post('https://atg.sportsocial.in/newsById', { id: id });
     };
     PostService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),

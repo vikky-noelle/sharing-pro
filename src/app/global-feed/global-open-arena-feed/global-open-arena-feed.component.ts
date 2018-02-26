@@ -60,9 +60,9 @@ export class GlobalOpenArenaFeedComponent implements OnInit, OnDestroy {
 
   @HostListener('window:scroll', ['$event'])onWindowScroll(event) {
     this.nextPageNo = Math.floor(scrollY / 2200);
-    console.log(this.nextPageNo, scrollY);
+    // console.log(this.nextPageNo, scrollY);
     if ( this.nextPageNo > 0 && this.prevPageNo < this.nextPageNo ) {
-      this.nextPage(this.nextPageNo);
+     this.nextPage(this.nextPageNo);
     }
   }
 

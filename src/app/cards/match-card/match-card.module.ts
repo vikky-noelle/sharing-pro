@@ -14,9 +14,6 @@ import { OpenMatchCardComponent } from '../../open-cards/open-match-card/open-ma
   declarations: [
     MatchCardComponent
   ],
-  entryComponents: [
-    OpenMatchCardComponent 
-  ],
   exports: [
     MatchCardComponent
   ]

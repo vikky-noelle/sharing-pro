@@ -11,6 +11,7 @@ import {
   ComponentFactoryResolver
 } from '@angular/core';
 import { OpenNewsCardComponent } from '../../open-cards/open-news-card/open-news-card.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'sports-social-news-card',
@@ -41,7 +42,7 @@ export class NewsCardComponent implements OnInit {
 
   constructor(
     private renderer: Renderer2,
-    private resolver: ComponentFactoryResolver
+    private router: Router
   ) { }
 
   defaultImage() {
@@ -64,20 +65,8 @@ export class NewsCardComponent implements OnInit {
     }
   }
 
-  createComponent(id) {
-    this.openNewsCardContainer.clear();
-    const factory: ComponentFactory<any> = this.resolver.resolveComponentFactory(OpenNewsCardComponent);
-    this.componentRef = this.openNewsCardContainer.createComponent(factory);
-    console.log(id);
-    this.componentRef.instance.title = this.title;
-    this.componentRef.instance.insertedDate = this.insertedDate;
-    this.componentRef.instance.desc = this.desc;
-    this.componentRef.instance.newsImage = this.newsImage;
-    this.componentRef.instance.url = this.url;
-    this.componentRef.instance.likeCount = this.likeCount;
-    this.componentRef.instance.shareCount = this.shareCount;
-    this.componentRef.instance.sourceImage = this.sourceImage;
-    this.componentRef.instance.sourceName = this.sourceName;
+  openPopUp(id) {
+    this.router.navigate([{outlets: {'News':[id]}}]);
   }
   ngOnInit() {
     this.removeActionsCountBar();

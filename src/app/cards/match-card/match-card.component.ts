@@ -8,11 +8,15 @@ import {
   ViewContainerRef,
   ComponentFactoryResolver,
   ComponentRef,
-  ComponentFactory
+  ComponentFactory,
+  ChangeDetectionStrategy,
+  ChangeDetectorRef
 } from '@angular/core';
 import { TimeService } from '../../shared/services/time.service';
 import { OpenMatchCardComponent } from '../../open-cards/open-match-card/open-match-card.component';
 import { PostService } from '../../shared/services/post.service';
+import { PopUpService } from '../../shared/services/pop-up.service';
+import { Router, ActivatedRoute, ActivationStart } from '@angular/router';
 
 @Component({
   selector: 'sports-social-match-card',
@@ -24,6 +28,7 @@ import { PostService } from '../../shared/services/post.service';
 export class MatchCardComponent implements OnInit {
 
   @ViewChild('actionsCount') actionsCount;
+  @ViewChild('openMatchCard') openMatchcard;
 
  /*  @Input()  creatorId: string;
 
@@ -47,7 +52,7 @@ export class MatchCardComponent implements OnInit {
   @Input()  gameName: string;
   @Input()  venueName: string;
   @Input()  restrictionCount: string;
-
+  isClicked = false;
   comments: {
     userName: string;
     userImage: string;
@@ -80,7 +85,7 @@ export class MatchCardComponent implements OnInit {
     watchid: 1009
   };
 
-  @ViewChild('openMatchCard', { read: ViewContainerRef}) openMatchCardContainer;
+ @ViewChild('userImg') userImg;
 
   componentRef: ComponentRef<any>;
 
@@ -88,7 +93,10 @@ export class MatchCardComponent implements OnInit {
     private renderer: Renderer2,
     private time: TimeService,
     private resolver: ComponentFactoryResolver,
-    private get: PostService
+    private get: PostService,
+    private id: PopUpService,
+    private router: Router,
+    private activatedRoute: ActivatedRoute,
   ) { }
 
 
@@ -98,90 +106,28 @@ export class MatchCardComponent implements OnInit {
     }
   }
 
-  createComponent(id) {
-    console.log(id);
-    this.openMatchCardContainer.clear();
-    const factory: ComponentFactory<any> = this.resolver.resolveComponentFactory(OpenMatchCardComponent);
-    this.componentRef = this.openMatchCardContainer.createComponent(factory);
-    this.componentRef.instance.matchImage = this.matchImage;
-    this.componentRef.instance.matchDate = this.matchDate;
-    this.componentRef.instance.matchText = this.matchText;
-    this.componentRef.instance.promoteCount = this.promoteCount;
-    this.componentRef.instance.watchCount = this.watchCount;
-    this.componentRef.instance.joineeCount = this.joineeCount;
-    this.componentRef.instance.creatorImage = this.creatorImage;
-    this.componentRef.instance.creatorName = this.creatorName;
-    this.componentRef.instance.timeRemaining = this.matchDate;
-    this.componentRef.instance.venueName = this.venueName;
-    this.componentRef.instance.gameName = this.gameName;
-    this.get.singleMatchData(id, 0, this.activityid.commentid, 1).subscribe(
-      (res) => {
-
-      }
-    );
-    this.get.singleMatchData(id, 0, this.activityid.commentid, 1).subscribe(
-      (res) => {
-
-      }
-    );
-    this.get.singleMatchData(id, 0, this.activityid.promoteid, 1).subscribe(
-      (res) => {
-
-      }
-    );
-    this.get.singleMatchData(id, 0, this.activityid.watchid, 1).subscribe(
-      (res) => {
-
-      }
-    );
-    this.get.singleMatchData(id, 0, 0 , 0).subscribe(
-      res => {
-         console.log(res['comment']);
-         const commentData = res['comment'];
-        // tslint:disable-next-line:forin
-        for ( const i in commentData) {
-          this.componentRef.instance.comments.push({
-            userName: commentData[i].name,
-            uniqueName: commentData[i].uniqueName,
-            userImage: commentData[i].userImage,
-            comment: commentData[i].comment,
-            commentDate: this.time.relativeDate(commentData[i].commentDate)
-          });
-        }
-       // console.log(this.comments);
-      //  this.componentRef.instance.comments = this.comments;
-
-        // tslint:disable-next-line:forin
-        for ( const i in res['promote'] ) {
-          this.componentRef.instance.promoters.push({
-            name: res['promote'][i].name,
-            image: res['promote'][i].image
-          });
-        }
-        // this.componentRef.instance.promoters = this.promoters;
-
-        // tslint:disable-next-line:forin
-        for ( const i in res['watch'] ) {
-          this.componentRef.instance.watchers.push({
-            name: res['watch'][i].name,
-            image: res['watch'][i].image
-          });
-        }
-        // this.componentRef.instance.watchers = this.watchers;
-
-        // tslint:disable-next-line:forin
-        for ( const i in res['EventJoineesInfo'] ) {
-          this.componentRef.instance.joinees.push({
-            name: res['EventJoineesInfo'][i].FirstName + res['EventJoineesInfo'][i].LastName,
-            image: res['EventJoineesInfo'][i].profilephoto
-          });
-        }
-        // this.componentRef.instance.joinees = this.joinees;
-      }
-    );
+  removeOpenCardFromDOM()  {
+    this.renderer.setStyle(this.openMatchcard.nativeElement, 'position', 'fixed');
   }
 
+  sendId(eventId) {
+    this.isClicked = true;
+    console.log(eventId);
+    this.id.ofCard.next(eventId);
+  }
+  openPopUp(id, gameName, event) {
+    console.log(this.activatedRoute.outlet);
+    event.preventDefault();
+    console.log(id, gameName);
+    this.router.navigate( [ { outlets: { 'Match': [id]}} ], { skipLocationChange: true });
+  }
+
+ defaultImage() {
+  this.renderer.setAttribute(this.userImg.nativeElement, 'src', '/assets/images/user-default.png');
+ }
+
   ngOnInit() {
+    // this.removeOpenCardFromDOM();
     this.removeActionsCountBar();
     this.activityDate = this.time.activityExactDate(this.activityDate);
     this.matchDate = this.time.relativeDate(parseInt(this.matchDate, 10) * 1000);

@@ -56,8 +56,16 @@ a {
     cursor: pointer;
 }
 
-
-
+.no-animate {
+    -webkit-transition: none !important;
+    transition: none !important;
+ }
+.col-4{
+    display: inline-block;
+    vertical-align: middle;
+    width: 31%;
+    margin: 1%;
+}
 .open-card{
     position: fixed;
     width: 50%;

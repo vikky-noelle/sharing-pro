@@ -35,33 +35,34 @@ export class NavigationBarComponent implements OnInit {
     private activatedRoute: ActivatedRoute
   ) { }
 
-  activeRoute: {
+  /* activeRoute: {
     title: string,
     image: string
   } = {
     title: 'Popular',
     image: '/assets/images/sports-social-cricket-blue.png'
-  };
+  }; */
+  activeRoute;
 
-  tempSports: { id: number, title: string, image: string}[]= [
-    { id: 17,  title: 'Cricket', image: '/assets/images/sports-social-cricket-blue.png'},
-    {id: 23, title: 'Football', image: '/assets/images/sports-social-football-blue.png'},
-    {id: 6, title: 'Basketball', image: '/assets/images/sports-social-basketball-blue.png'},
-    {id: 36, title: 'Lawn Tennis', image: '/assets/images/sports-social-lawn-tennis-blue.png'},
-    {id: 5, title: 'Badminton', image: '/assets/images/sports-social-badminton-blue.png'},
-    {id: 29, title: 'Hockey', image: '/assets/images/sports-social-hockey-blue.png'},
-    {id: 56, title: 'Table Tennis', image: '/assets/images/sports-social-table-tennis-blue.png'},
-    {id: 60, title: 'Volleyball', image: '/assets/images/sports-social-volleyball-blue.png'}
+  tempSports: { id: number, title: string}[]= [
+    { id: 17,  title: 'Cricket'},
+    {id: 23, title: 'Football'},
+    {id: 6, title: 'Basketball'},
+    {id: 36, title: 'Lawn Tennis'},
+    {id: 5, title: 'Badminton'},
+    {id: 29, title: 'Hockey'},
+    {id: 56, title: 'Table Tennis'},
+    {id: 60, title: 'Volleyball'}
   ];
-  moreSports: { id: number, title: string, image: string}[];
-  sports: { id: number, title: string, image: string}[];
+  moreSports: { id: number, title: string}[];
+  sports: { id: number, title: string}[];
 
   changeHomeIcon() {
     this.route = this.activatedRoute.snapshot.params.sport;
     this.activatedRoute.params.subscribe(
       (param) => {
         this.route = param.sport;
-        /* console.log(this.route === undefined) */
+        console.log('sports',this.route)
       }
     );
   }
@@ -82,7 +83,13 @@ export class NavigationBarComponent implements OnInit {
         this.moreSports = this.tempSports.slice(6, this.tempSports.length);
         this.mobileNav = false;
     }
-    if ( width < 800 ) {
+    if ( width < 800  && width > 720) {
+      this.sports = this.tempSports.slice(0, 5);
+      this.moreSports = this.tempSports.slice(5, this.tempSports.length);
+      console.log(this.sports);
+      this.mobileNav = false;
+    }
+    if ( width < 720 ) {
       this.sports = this.tempSports;
       this.mobileNav = true;
     }
@@ -92,14 +99,14 @@ export class NavigationBarComponent implements OnInit {
     this.isHoverOnCaret = true;
     this.scrollabledropdown();
   }
-  closeDropdownByClick(i) {
+
+  closeDropdownByClick(event) {
     this.isHoverOnCaret = false;
+    event.preventDefault();
+    /* console.log(i);
     if ( i !== null && i !== undefined) {
-      this.activeRoute = {
-        title: this.sports[i].title,
-        image: this.sports[i].image
-      };
-    }
+      this.activeRoute = this.sports[i].title;
+    } */
   }
   closeDropdownByMouseleave() {
     this.isHoverOnCaret = false;

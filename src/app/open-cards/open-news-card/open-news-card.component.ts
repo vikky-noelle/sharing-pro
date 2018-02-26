@@ -6,6 +6,8 @@ import {
   ViewChild,
   Renderer2
 } from '@angular/core';
+import { PostService } from '../../shared/services/post.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'sports-social-open-news-card',
@@ -48,14 +50,38 @@ export class OpenNewsCardComponent implements OnInit {
   }
 
   close() {
-    this.renderer.setStyle(this.openCard.nativeElement, 'display', 'none');
+    this.router.navigate( [ { outlets: { 'News': null}} ])
   }
 
   constructor(
-    private renderer: Renderer2
+    private renderer: Renderer2,
+    private get: PostService,
+    private  activeRoute: ActivatedRoute,
+    private router: Router
   ) { }
 
+  getNewsData(id) {
+    this.get.singleNewsData(id).subscribe(
+      (res) => {
+        console.log(res);
+        this.title = res['title'];
+        this.insertedDate = res['insertedDate'];
+        this.desc = res['desc'];
+        this.newsImage = res['newsImage'];
+        this.url = res['url'];
+        this.likeCount = res['likeCount'];
+        this.shareCount = res['shareCount'];
+        this.sourceImage = res['sourceImage'];
+        this.sourceName = res['sourceName'];
+      }
+    );
+  }
   ngOnInit() {
+    this.activeRoute.params.subscribe(
+      (param) => {
+        this.getNewsData(param.id);
+      }
+    )
   }
 
 }

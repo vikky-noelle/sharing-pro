@@ -27,6 +27,7 @@ header{
 }
 .brand-title > span:first-child{
     color: #024771;
+    margin-right: 5px;
 }
 .brand-title > span:nth-of-type(2){
     color: #ffa600;

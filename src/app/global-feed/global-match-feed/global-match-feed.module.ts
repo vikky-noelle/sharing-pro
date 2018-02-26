@@ -25,6 +25,9 @@ import { NgMasonryGridModule } from 'ng-masonry-grid';
   ],
   declarations: [
     GlobalMatchFeedComponent
+  ],
+  exports: [
+    GlobalMatchFeedComponent
   ]
 })
 export class GlobalMatchFeedModule { }

@@ -15,7 +15,7 @@ export class NewsService {
       this.get.globalNewsFeed( page, gameName ).subscribe(
         res => {
           const data = res;
-          // console.log(data);
+           console.log(data);
           // tslint:disable-next-line:forin
           for ( const i in data ) {
             this.globalArena.push({
@@ -34,8 +34,8 @@ export class NewsService {
               desc: data[i].desc
             });
           }
-          resolve(this.globalArena.slice( page * 15, (page + 1) * 15));
-        },
+          resolve(this.globalArena.slice(this.globalArena.length - 15, this.globalArena.length));
+         },
         err => {
           const errObj = { 'err': err, 'message': 'Something went wrong with News feed!' };
           reject(errObj);

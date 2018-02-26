@@ -18,16 +18,24 @@ import { TimeService } from './shared/services/time.service';
 import { LocationService } from './shared/services/location.service';
 import { MatchDataService } from './shared/services/match-data.service';
 import { NewsService } from './shared/services/news.service';
+import { PopUpComponent } from './pop-up/pop-up.component';
+import { PopUpService } from './shared/services/pop-up.service';
+import { OpenMatchCardModule } from './open-cards/open-match-card/open-match-card.module';
+import { OpenNewsCardModule } from './open-cards/open-news-card/open-news-card.module';
+import { ActivationStart } from '@angular/router';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PopUpComponent
   ],
   imports: [
     BrowserModule,
     AppRoute,
     HttpClientModule,
+    OpenMatchCardModule,
+    OpenNewsCardModule
   ],
   providers: [
     PropertyService,
@@ -36,7 +44,8 @@ import { NewsService } from './shared/services/news.service';
     PostService,
     TimeService,
     MatchDataService,
-    NewsService
+    NewsService,
+    PopUpService
   ],
   bootstrap: [AppComponent]
 })

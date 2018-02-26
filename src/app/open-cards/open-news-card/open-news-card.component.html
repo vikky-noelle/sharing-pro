@@ -10,6 +10,7 @@
   <div class="open-card-content">
     <div class="title">{{title}}</div>
     <div class="news-image">
+        <img *ngIf="newsImage === undefined" src="/assets/images/default-image.png" alt="">
       <img src="{{newsImage}}" alt="">
     </div>
     <div class="desc">{{desc}}</div>

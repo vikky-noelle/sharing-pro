@@ -2,34 +2,24 @@
   <ng-container *ngIf = "!mobileNav">  
     <ul >
       <li>
-        <a routerLink="/">
-            <div class="sport-image">
-                <img src="{{route === undefined ? '/assets/images/sports-social-home-clicked.png': '/assets/images/sports-social-home.png'}}" #image>
-            </div>
+        <a routerLink="/" class="nav">
+          <img src="{{route === undefined ? '/assets/images/sports-social-home-clicked.png': '/assets/images/sports-social-home.png'}}" #image>
         </a>
       </li>
       <li *ngFor="let sport of sports; let i = index" (mouseover)="closeDropdownByMouseleave(i)">
-        <a routerLink="/{{ sport.title}}" routerLinkActive="active" (click)="closeDropdown(i)" >
-          <!-- <div class="sport-image">
-            <img src="{{sport.image}}" #image>
-          </div> -->
-          <div class="sport-name">{{sport.title}}</div>
+        <a class="nav" routerLink="/{{sport.title}}" routerLinkActive="active" (click)="closeDropdownByClick($event)" >
+          {{sport.title}}
         </a>
       </li>
-      <li class="more" *ngIf = "moreSports.length>0">
-        <div class="sport-image">
+      <li class="more"  *ngIf = "moreSports.length>0">
           <img src="/assets/images/sports-social-caret-down-blue.png" (click)="openDropdown()" (mouseover)="openDropdown()" >
-        </div>
       </li>
     </ul>
     <ng-container *ngIf="isHoverOnCaret">
         <ul  class="dropdown" (mouseleave)="closeDropdownByMouseleave()" #dropdown>
             <li *ngFor="let sport of moreSports" >
-              <a routerLink="/{{sport.title}}" routerLinkActive="active" (click)="closeDropdownByClick(i)">
-                <!-- <div class="sport-image">
-                  <img src="{{sport.image}}" >
-                </div> -->
-                <div class="sport-name">{{sport.title}}</div>
+              <a class="nav" routerLink="/{{sport.title}}" routerLinkActive="active" (click)="closeDropdownByClick($event)">
+                {{sport.title}}
               </a>
             </li>
         </ul>
@@ -39,21 +29,25 @@
 
 <div class="mobile-nav" >
    <ng-container *ngIf = "mobileNav">
-      <div class="active-route"> 
-          <div class="sport-image">
-            <img src="{{activeRoute.image}}" #image>
+      <div class="active-route" > 
+          <div  *ngIf= "route === undefined" >
+              <img src="{{ '/assets/images/sports-social-home-clicked.png'}}" #image>
           </div>
-          <div class="sport-name">{{activeRoute.title}}</div>
+          <ng-container *ngIf= "route !== 'Popular'">
+              <div >{{route}}</div>
+          </ng-container>
         <img  src="/assets/images/sports-social-caret-down-blue.png" (click)="openDropdown()" (mouseover)="openDropdown()" >
       </div>
       <ng-container *ngIf="isHoverOnCaret">
         <ul (mouseleave)="closeDropdownByMouseleave()" #mobileNavbar>
+            <li>
+                <a routerLink="/" class="nav">
+                  <img src="{{route === undefined ? '/assets/images/sports-social-home-clicked.png': '/assets/images/sports-social-home.png'}}" #image>
+                </a>
+              </li>
           <li *ngFor="let sport of sports; let i = index" >
-            <a routerLink="/{{sport.title}}" routerLinkActive="active" (click)="closeDropdownByClick(i)" >
-              <!-- <div class="sport-image">
-                <img src="{{sport.image}}" #image>
-              </div> -->
-              <div class="sport-name">{{sport.title}}</div>
+            <a class="nav" routerLink="/{{sport.title}}" routerLinkActive="active" (click)="closeDropdownByClick($event)" >
+              {{sport.title}}
             </a>
           </li>
         </ul>

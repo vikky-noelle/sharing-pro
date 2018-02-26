@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule , HostBinding} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { OpenMatchCardComponent } from './open-match-card.component';
 
@@ -13,4 +13,5 @@ import { OpenMatchCardComponent } from './open-match-card.component';
     OpenMatchCardComponent
   ]
 })
-export class OpenMatchCardModule { }
+export class OpenMatchCardModule {
+ }

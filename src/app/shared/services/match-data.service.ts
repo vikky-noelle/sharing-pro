@@ -20,7 +20,7 @@ export class MatchDataService {
           res => {
             const data = res['Feed'];
             // tslint:disable-next-line:forin
-            for ( const i in data.slice( page * 15, (page + 1) * 15) ) {
+            for ( const i in data ) {
               this.globalArena.push({
                 eventId: data[i].eventid,
                 creatorImage: data[i].creatorImage,
@@ -43,7 +43,7 @@ export class MatchDataService {
                 activityName: data[i].Activity_name !== undefined ?  data[i].Activity_name.split(' ')[0] : ''
               });
             }
-            resolve(this.globalArena);
+            resolve(this.globalArena.slice( page * 15, (page + 1) * 15));
           },
           err => {
             const errObj = { 'err': err, 'message': 'Something went wrong with Match feed!' };
