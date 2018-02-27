@@ -3,6 +3,7 @@
     position: absolute;
     left: 10px;
     top: 10px;
+    color: #024771;
 }
 .started-by{
     position: absolute;
@@ -60,7 +61,7 @@
 }
 
 .venue > span {
-    min-width: 70%;
+    min-width: 50%;
     max-width: 70%;
     overflow: hidden;
     white-space: nowrap;

@@ -127,10 +127,9 @@ export class MatchCardComponent implements OnInit {
  }
 
   ngOnInit() {
-    // this.removeOpenCardFromDOM();
     this.removeActionsCountBar();
-    this.activityDate = this.time.activityExactDate(this.activityDate);
-    this.matchDate = this.time.relativeDate(parseInt(this.matchDate, 10) * 1000);
+    this.activityDate = this.time.relativeDate(this.activityDate);
+    this.matchDate = this.time.exactDate(parseInt(this.matchDate, 10) * 1000);
 
 
   }

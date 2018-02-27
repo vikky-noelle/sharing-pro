@@ -1,7 +1,12 @@
 <div class="open-card"  #openCard>
   <div class="open-card-header">
     <img  class="close" src="/assets/images/sports-social-cancel-black.png" alt="" (click)= "close()">
-    <div class="time-remaining">{{timeRemaining}}</div>
+    <div *ngIf = "_days > 0" class="time-remaining">
+      <span>{{_days}}d</span>
+      <span>{{_hours}}h</span>
+      <span>{{_minutes}}m</span>
+      <span>{{_seconds}}s</span>
+    </div>
     <div class="heading">{{gameName}}</div>
     <div class="match-sum">Match Summary</div>
     <div class="started-by">
@@ -24,7 +29,7 @@
     </div>
     <div class="match-image">
       <img *ngIf="matchImage === undefined" src="/assets/images/default-image.png" alt="">
-      <img *ngIf="matchImage" src="{{matchImage}}" alt="">
+      <sports-social-gallery *ngIf="matchImage" [images] = "images" ></sports-social-gallery>
     </div>
   </div>
   <div class="actions-count" *ngIf = "removeActionBar ()">

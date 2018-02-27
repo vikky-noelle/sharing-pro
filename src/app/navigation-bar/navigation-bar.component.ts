@@ -5,6 +5,7 @@ import {
   ViewChild,
   Renderer2,
   HostListener,
+  NgZone,
 } from '@angular/core';
 import { PropertyService } from '../shared/services/property.service';
 import { ɵgetDOM } from '@angular/platform-browser';
@@ -32,7 +33,8 @@ export class NavigationBarComponent implements OnInit {
     private recieveHeight: PropertyService,
     private reciveBottom: PropertyService,
     private renderer: Renderer2,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private zone: NgZone
   ) { }
 
   /* activeRoute: {
@@ -103,10 +105,13 @@ export class NavigationBarComponent implements OnInit {
   closeDropdownByClick(event) {
     this.isHoverOnCaret = false;
     event.preventDefault();
-    /* console.log(i);
-    if ( i !== null && i !== undefined) {
-      this.activeRoute = this.sports[i].title;
-    } */
+    this.reloadPage();
+  }
+
+  reloadPage() {
+    this.zone.runOutsideAngular(() => {
+        location.reload();
+    });
   }
   closeDropdownByMouseleave() {
     this.isHoverOnCaret = false;

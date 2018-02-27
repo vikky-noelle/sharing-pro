@@ -1,0 +1,17 @@
+<div class="gallery">
+  <img *ngIf="hasprevious()" src="/assets/images/left.png" class="left" (click)="left()">
+  <img *ngIf="loading" src="/assets/images/sports-social-loading.gif" alt="" class="loader">
+  <img *ngIf="hasnext()" src="/assets/images/right.png" class="right" (click)="right()">
+  <div class="image-action">
+    <div class="like">
+      <img src="/assets/images/sports-social-like.png" alt="">
+      <span>{{likeCount}}</span>
+    </div>
+    <div class="comment">
+      <img src="/assets/images/sports-social-comment.png" alt="">
+      <span>{{commentCount}}</span>
+    </div>
+  </div>
+  <img src="{{image}}" class="gallery-item">
+</div>
+<p *ngIf = "text !== undefined" class="text">{{text}}</p>

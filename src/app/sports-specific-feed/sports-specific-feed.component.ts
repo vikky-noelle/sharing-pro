@@ -21,6 +21,7 @@ export class SportsSpecificFeedComponent implements OnInit, OnDestroy {
   nextPageNo: number = 0;
   gameName: string;
   gameId: number;
+  urlChanged = false;
 
   _masonry: Masonry;
   private _removeAllSubscription: ISubscription;
@@ -47,10 +48,6 @@ export class SportsSpecificFeedComponent implements OnInit, OnDestroy {
   ) { }
 
 globalFeed( ) {
-  this.gameName = this.activeRoute.snapshot.params.sport;
-  this.gameId = this.Sports.find((sport) => {
-    return sport.title === this.gameName;
-  }).id;
   this.activeRoute.params.subscribe(
     (params) => {
       this.gameName = params.sport;
@@ -62,7 +59,6 @@ globalFeed( ) {
       const newsPromise =  this.newsData.globalNewsFeed( this.nextPageNo, this.gameName.toLowerCase());
       Promise.all([matchPomise, newsPromise]).then( (data) => {
         console.log(data);
-        this.globalArena = [];
         this.globalArena = this.globalArena.concat(data['0']).concat(data['1']);
         console.log(this.globalArena);
       }).catch( (err) => {
@@ -77,11 +73,12 @@ globalFeed( ) {
   }
 
   @HostListener('window:scroll', ['$event'])onWindowScroll(event) {
-
-    this.nextPageNo = Math.floor(scrollY / 1200);
+    this.nextPageNo = Math.floor(scrollY / 2400);
 
     if (this.nextPageNo > 0 && this.prevPageNo < this.nextPageNo ) {
       this.nextPage(this.nextPageNo);
+      console.log('nextPage', this.nextPageNo, event);
+
     }
   }
 
@@ -90,11 +87,12 @@ globalFeed( ) {
   }
 
   ngOnDestroy() {
-    if (this._masonry) {
+    console.log('destroy');
+    /* if (this._masonry) {
       this._removeAllSubscription.unsubscribe();
       this._removeItemSubscription.unsubscribe();
       this._removeFirstItemSubscription.unsubscribe();
-    }
+    } */
   }
 
 }

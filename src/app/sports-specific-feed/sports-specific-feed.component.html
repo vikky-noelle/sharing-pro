@@ -2,52 +2,56 @@
 <sports-social-carousel></sports-social-carousel>
 <sports-social-navigation-bar></sports-social-navigation-bar>
 <ng-masonry-grid  
-      [masonryOptions]="{ transitionDuration: '0.4s', gutter: 2 }"
-      [useAnimation]="true"
-      [useImagesLoaded]="true">
-    <img class="spinner" src="/assets/images/sports-social-loading.gif" *ngIf = "globalArena.length == 0" alt="">
-      <ng-masonry-grid-item class="col-4" *ngFor = "let feed of globalArena; let i = index">
-        <ng-container *ngIf = "feed.type === 1">
-            <h1 class="type"> 
-              <a routerLink="/OpenArena">Open Arena >></a>  
-            </h1>
-              <sports-social-match-card 
-                [eventId] = "feed.eventId"
-                [doerId] = "feed.doerId"
-                [doerName] = "feed.doerName"
-                [doerPic] = "feed.doerPic"
-                [matchImage] = "feed.matchImage"
-                [matchText] = "feed.matchText"
-                [commentCount] = "feed.commentCount"
-                [promoteCount] = "feed.promoteCount"
-                [watchCount] = "feed.watchCount"
-                [matchDate] = "feed.matchDate"
-                [activityDate] = "feed.activityDate"
-                [gameName] = "feed.gameName"
-                [activityName] = "feed.activityName"
-                [joineeCount] = "feed.joineeCount"
-                [restrictionCount] = "feed.restrictionCount"   #matchCard>
-              </sports-social-match-card>
-        </ng-container>
-        <ng-container *ngIf = "feed.type === 0">
-            <h1 class="type">
-              <a routerLink="/AroundTheWorld">Around The World >></a> 
-            </h1>
-            <sports-social-news-card
-              [sourceName]= "feed.source"
-              [sourceImage] = "feed.sourceImage"
-              [newsImage] = "feed.newsImage"
-              [title] = "feed.title"
-              [desc] = "feed.desc"
-              [url] = "feed.url"
-              [insertedDate] = "feed.insertedDate"
-              [likeCount] = "feed.likeCount"
-              [shareCount] = "feed.shareCount"
-              [commentCount] = "feed.commentCount">
-            </sports-social-news-card>
-        </ng-container>
-      </ng-masonry-grid-item>
-  </ng-masonry-grid>
-  <sports-social-footer></sports-social-footer>
+    [masonryOptions]="{ transitionDuration: '0.4s', gutter: 2 }"
+    [useAnimation]="true"
+    [useImagesLoaded]="true">
+    <img class="spinner" src="/assets/images/sports-social-loading.gif" *ngIf = "globalArena.length === 0" alt="">
+    <ng-masonry-grid-item class="col-4" *ngFor = "let feed of globalArena; let i = index">
+      <ng-container *ngIf = "feed.type === 1">
+          <h1 class="type"> 
+            <a routerLink="/OpenArena">Open Arena >></a>  
+          </h1>
+            <sports-social-match-card class="cards"
+              [eventId] = "feed.eventId"
+              [creatorImage] = "feed.creatorImage"
+              [creatorName] = "feed.creatorName"
+              [doerId] = "feed.doerId"
+              [doerName] = "feed.doerName"
+              [doerPic] = "feed.doerPic"
+              [matchImage] = "feed.matchImage"
+              [matchText] = "feed.matchText"
+              [joineeCount] = "feed.joineeCount"
+              [commentCount] = "feed.commentCount"
+              [promoteCount] = "feed.promoteCount"
+              [watchCount] = "feed.watchCount"
+              [matchDate] = "feed.matchDate"
+              [activityDate] = "feed.activityDate"
+              [venueName] = "feed.venueName"
+              [gameName] = "feed.gameName"
+              [activityName] = "feed.activityName"
+              [restrictionCount] = "feed.restrictionCount"   #matchCard>
+            </sports-social-match-card>
+      </ng-container>
+      <ng-container *ngIf = "feed.type === 0">
+          <h1 class="type">
+            <a routerLink="/AroundTheWorld">Around The World >></a> 
+          </h1>
+          <sports-social-news-card class="cards"
+            [newsId] = "feed.newsId"
+            [sourceName]= "feed.source"
+            [sourceImage] = "feed.sourceImage"
+            [newsImage] = "feed.newsImage"
+            [title] = "feed.title"
+            [desc] = "feed.desc"
+            [url] = "feed.url"
+            [insertedDate] = "feed.insertedDate"
+            [likeCount] = "feed.likeCount"
+            [shareCount] = "feed.shareCount"
+            [commentCount] = "feed.commentCount">
+          </sports-social-news-card>
+      </ng-container>
+    </ng-masonry-grid-item>
+</ng-masonry-grid>
+<sports-social-footer></sports-social-footer>
 
   
