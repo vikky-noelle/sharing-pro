@@ -2,7 +2,7 @@ import { Component, OnInit, ViewEncapsulation, HostListener, Renderer2, OnDestro
 import { PostService } from '../shared/services/post.service';
 import { GetService } from '../shared/services/get.service';
 import { LocationService } from '../shared/services/location.service';
-import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
+import { ActivatedRoute, Router, NavigationEnd, ActivationEnd, ActivatedRouteSnapshot } from '@angular/router';
 import { Masonry, MasonryGridItem } from 'ng-masonry-grid';
 import { ISubscription } from 'rxjs/Subscription';
 import { MatchDataService } from '../shared/services/match-data.service';
@@ -46,7 +46,7 @@ export class SportsSpecificFeedComponent implements OnInit, OnDestroy {
     private renderer: Renderer2,
     private activeRoute: ActivatedRoute,
     private router: Router,
-    private zone: NgZone
+    private zone: NgZone,
   ) { }
   reloadPage() {
     this.zone.runOutsideAngular(() => {
@@ -54,15 +54,14 @@ export class SportsSpecificFeedComponent implements OnInit, OnDestroy {
     });
   }
 globalFeed( ) {
-  this.router.events.subscribe(
-    (res) => {
-     // console.log(res instanceof  NavigationEnd, "yee");
-      this.urlChanged = res instanceof  NavigationEnd;
-      this.reloadPage();
-    }
-  );
+  
   this.activeRoute.params.subscribe(
     (params) => {
+      if ( this.gameName !== params.sport && this.gameName !== undefined) {
+        // this.urlChanged = true;
+        console.log("true", this.gameName, params.sport)
+        this.reloadPage();
+      }
       this.gameName = params.sport;
       this.gameId = this.Sports.find((sport) => {
         return sport.title === this.gameName;
