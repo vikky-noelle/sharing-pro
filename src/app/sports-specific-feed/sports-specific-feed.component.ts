@@ -1,8 +1,8 @@
-import { Component, OnInit, ViewEncapsulation, HostListener, Renderer2, OnDestroy } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, HostListener, Renderer2, OnDestroy, NgZone } from '@angular/core';
 import { PostService } from '../shared/services/post.service';
 import { GetService } from '../shared/services/get.service';
 import { LocationService } from '../shared/services/location.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { Masonry, MasonryGridItem } from 'ng-masonry-grid';
 import { ISubscription } from 'rxjs/Subscription';
 import { MatchDataService } from '../shared/services/match-data.service';
@@ -44,10 +44,23 @@ export class SportsSpecificFeedComponent implements OnInit, OnDestroy {
     private matchData: MatchDataService,
     private newsData: NewsService,
     private renderer: Renderer2,
-    private activeRoute: ActivatedRoute
+    private activeRoute: ActivatedRoute,
+    private router: Router,
+    private zone: NgZone
   ) { }
-
+  reloadPage() {
+    this.zone.runOutsideAngular(() => {
+        location.reload();
+    });
+  }
 globalFeed( ) {
+  this.router.events.subscribe(
+    (res) => {
+     // console.log(res instanceof  NavigationEnd, "yee");
+      this.urlChanged = res instanceof  NavigationEnd;
+      this.reloadPage();
+    }
+  );
   this.activeRoute.params.subscribe(
     (params) => {
       this.gameName = params.sport;
@@ -88,11 +101,11 @@ globalFeed( ) {
 
   ngOnDestroy() {
     console.log('destroy');
-    /* if (this._masonry) {
+    if (this._masonry) {
       this._removeAllSubscription.unsubscribe();
       this._removeItemSubscription.unsubscribe();
       this._removeFirstItemSubscription.unsubscribe();
-    } */
+    }
   }
 
 }

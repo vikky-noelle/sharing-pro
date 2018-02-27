@@ -105,14 +105,10 @@ export class NavigationBarComponent implements OnInit {
   closeDropdownByClick(event) {
     this.isHoverOnCaret = false;
     event.preventDefault();
-    this.reloadPage();
+    // this.reloadPage();
   }
 
-  reloadPage() {
-    this.zone.runOutsideAngular(() => {
-        location.reload();
-    });
-  }
+  
   closeDropdownByMouseleave() {
     this.isHoverOnCaret = false;
   }
