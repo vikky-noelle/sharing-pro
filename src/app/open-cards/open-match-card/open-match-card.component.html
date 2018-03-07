@@ -11,7 +11,7 @@
     <div class="match-sum">Match Summary</div>
     <div class="started-by">
       <p>Started By</p>
-      <img src="{{creatorImage}}" title="{{creatorName}}" alt="" (error)="defaultImage()" #userImg>
+      <img src="{{creatorImage}}" title="{{creatorName}}" alt="" (error)="defaultImage($event)" #userImg>
     </div>
   </div>
   <div class="open-card-content">
@@ -38,7 +38,7 @@
     <div class="count-bar" *ngIf="joineeCount > 0">
       <p >{{joineeCount}} Playing</p>
       <div class="image">
-        <img  *ngFor = "let joinee of joinees" src="{{joinee.image}}" title="{{joinee.name}}" alt="">
+        <img  *ngFor = "let joinee of joinees" src="{{joinee.image}}" title="{{joinee.name}}" (error)="defaultImage($event)" alt="">
       </div>
       <hr>
     </div>
@@ -46,7 +46,7 @@
     <div class="count-bar" *ngIf = "promoteCount > 0">
       <p>{{promoteCount}} Promoting</p>
       <div class="image" >
-        <img *ngFor = "let promoter of promoters" src="{{promoter.image}}" title="{{promoter.name}}" alt="">
+        <img *ngFor = "let promoter of promoters" src="{{promoter.image}}" title="{{promoter.name}}" (error)="defaultImage($event)" alt="">
       </div>
       <hr>
     </div>
@@ -54,23 +54,23 @@
     <div class="count-bar" *ngIf = "watchCount > 0">
       <p>{{watchCount}} Watching</p>
       <div class="image" >
-        <img *ngFor = "let watcher of watchers" src="{{watcher.image}}" title="{{watcher.name}}" alt="">
+        <img *ngFor = "let watcher of watchers" src="{{watcher.image}}" title="{{watcher.name}}" (error)="defaultImage($event)" alt="">
       </div>
       <hr>
     </div>
   </div>
   
   <div class="actions-match">
-    <button class="playButton">
+    <button class="playButton" (click)="openAppDownloadPopup()">
       <img src="/assets/images/sports-social-play.png" alt=""> <span>Play</span>  
     </button>
-    <button class="commentButton">
+    <button class="commentButton" (click)="openAppDownloadPopup()">
       <img src="/assets/images/sports-social-match-talks.png" alt=""><span>Comment</span>  
     </button>
-    <button class="promoteButton">
+    <button class="promoteButton" (click)="openAppDownloadPopup()">
       <img src="/assets/images/sports-social-promote.png" alt=""> <span>Promote</span>
     </button>
-    <button class="watchButton">
+    <button class="watchButton" (click)="openAppDownloadPopup()">
       <img src="/assets/images/sports-social-watching.png" alt=""> <span>Watch</span>
     </button>
   </div>
@@ -79,7 +79,7 @@
     <input type="text" placeholder="Comment Your Views">
   </div>
   <div class="comments" *ngFor ="let comment of comments">
-      <img src="{{comment.userImage}}" alt="">
+      <img src="{{comment.userImage}}"(error)="defaultImage($event)" alt="">
       <div class="comment-details">
         <div class="user-name">{{comment.userName}}</div>
         <div class="comment-date">{{comment.commentDate}}</div>

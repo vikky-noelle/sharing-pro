@@ -21,6 +21,7 @@
     vertical-align: middle;
     font-size: 1.2em;
     margin-right: 2%;
+    color: #024771;
 }
 .news-image-holder{
     width: 100%;
@@ -34,7 +35,7 @@
 .desc{
     margin-top: 5px;
     font-size: 1em;
-    font-weight: 700;
+    font-weight: 500;
     overflow: hidden;
     position: relative; 
     line-height: 1.2em;
@@ -105,4 +106,23 @@ button {
 }
 .actions-news > button > span:hover{
     font-weight: 700
+}
+.news-date{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+}
+.news-date > img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+}
+.news-date > span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.9em;
+    color: #888888;
 }

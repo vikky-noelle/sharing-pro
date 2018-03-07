@@ -29,7 +29,11 @@ export class PostService {
     page: number
   };
 
-  url = ['https://prod.sportsocial.in/poc/matchinfo', 'https://prod.sportsocial.in/poc/activityuserdetails'];
+  url = [
+    'https://prod.sportsocial.in/poc/matchinfo',
+   'https://prod.sportsocial.in/poc/activityuserdetails',
+   'https://prod.sportsocial.in/poc/activityuserdetailsWeb'
+   ];
 
   constructor(private http: HttpClient) { }
 

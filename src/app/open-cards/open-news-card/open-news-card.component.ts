@@ -8,6 +8,7 @@ import {
 } from '@angular/core';
 import { PostService } from '../../shared/services/post.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { TimeService } from '../../shared/services/time.service';
 
 @Component({
   selector: 'sports-social-open-news-card',
@@ -50,14 +51,18 @@ export class OpenNewsCardComponent implements OnInit {
   }
 
   close() {
-    this.router.navigate( [ { outlets: { 'News': null}} ])
+    this.router.navigate( [ { outlets: { 'News': null}} ]);
+  }
+  openAppDownloadPopup() {
+    this.router.navigate( [ { outlets: { 'AppDownload': ['PopUp'] }} ], { skipLocationChange: true });
   }
 
   constructor(
     private renderer: Renderer2,
     private get: PostService,
     private  activeRoute: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private time: TimeService
   ) { }
 
   getNewsData(id) {
@@ -65,7 +70,7 @@ export class OpenNewsCardComponent implements OnInit {
       (res) => {
         console.log(res);
         this.title = res['title'];
-        this.insertedDate = res['insertedDate'];
+        this.insertedDate =this.time.newsDate( res['publishedAt'] );
         this.desc = res['desc'];
         this.newsImage = res['newsImage'];
         this.url = res['url'];

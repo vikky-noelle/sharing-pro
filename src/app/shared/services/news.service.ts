@@ -31,7 +31,8 @@ export class NewsService {
               source: data[i].source,
               title: data[i].title,
               url: data[i].url,
-              desc: data[i].desc
+              desc: data[i].desc,
+              insertedDate: data[i].insertedDate
             });
           }
           resolve(this.globalArena.slice(this.globalArena.length - 15, this.globalArena.length));

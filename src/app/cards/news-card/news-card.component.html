@@ -4,7 +4,10 @@
           <img src="{{sourceImage}}" alt="">
         </div>
         <h1 class="source-name">{{sourceName}}</h1>
-        <div class="publishedAt">{{publishedAt}}</div>
+        <div class="news-date">
+            <img src="/assets/images/sports-social-clock.png" alt="">
+          <span>{{publishedAt}}</span>
+        </div>
   </div>
   <div class="news-image-holder">
     <img src="{{newsImage}}" alt="" (error)= "defaultImage()" (click)="openPopUp(newsId)">
@@ -18,16 +21,16 @@
     <a href="" *ngIf = "commentCount > 0">{{commentCount}} {{commentCount > 1 ? 'Comments': 'Comment' }}</a>
   </div>
   <div class="actions-news">
-    <button class="commentButton">
+    <button class="commentButton" (click)="openAppDownloadPopup()">
       <img src="/assets/images/sports-social-comment.png" alt=""><span>Comment</span>  
     </button>
-    <button class="promoteButton">
+    <button class="promoteButton" (click)="openAppDownloadPopup()">
       <img src="/assets/images/sports-social-like.png" alt=""> <span>Like</span>
     </button>
-    <button class="watchButton">
+    <button class="watchButton" (click)="openAppDownloadPopup()">
       <img src="/assets/images/sports-social-share-black.png" alt=""> <span>Share</span>
     </button>
-    <button class="watchButton">
+    <button class="watchButton" (click)="openAppDownloadPopup()">
         <img src="/assets/images/sports-social-save-black.png" alt=""> <span>Save</span>
       </button>
   </div>

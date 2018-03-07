@@ -121,7 +121,9 @@ export class MatchCardComponent implements OnInit {
     console.log(id, gameName);
     this.router.navigate( [ { outlets: { 'Match': [id]}} ], { skipLocationChange: true });
   }
-
+  openAppDownloadPopup() {
+    this.router.navigate( [ { outlets: { 'AppDownload': ['PopUp'] }} ], { skipLocationChange: true });
+  }
  defaultImage() {
   this.renderer.setAttribute(this.userImg.nativeElement, 'src', '/assets/images/user-default.png');
  }
@@ -130,8 +132,6 @@ export class MatchCardComponent implements OnInit {
     this.removeActionsCountBar();
     this.activityDate = this.time.relativeDate(this.activityDate);
     this.matchDate = this.time.exactDate(parseInt(this.matchDate, 10) * 1000);
-
-
   }
 
 

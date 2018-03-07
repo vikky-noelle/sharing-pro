@@ -2,6 +2,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/compiler/src/core';
 import { OpenMatchCardComponent } from '../open-cards/open-match-card/open-match-card.component';
 import { OpenNewsCardComponent } from '../open-cards/open-news-card/open-news-card.component';
+import { PopUpComponent } from '../pop-up/pop-up.component';
 
 const App_Route: Routes = [
     {
@@ -41,6 +42,11 @@ const App_Route: Routes = [
         path: ':id',
         component: OpenNewsCardComponent,
         outlet: 'News'
+    },
+    {
+        path: 'PopUp',
+        component: PopUpComponent,
+        outlet: 'AppDownload'
     },
     {
         path: '',

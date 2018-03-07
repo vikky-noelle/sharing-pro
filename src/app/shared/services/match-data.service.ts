@@ -12,6 +12,24 @@ export class MatchDataService {
     private get: PostService
   ) { }
 
+  getActivityName( activityid ) {
+    if ( activityid === 1002 ) {
+      return 'Joined';
+    }
+    if ( activityid === 1004 ) {
+      return 'Promoted';
+    }
+    if ( activityid === 1009 ) {
+      return 'Watching';
+    }
+    if ( activityid === 1005 ) {
+      return 'Commented';
+    }
+    if ( activityid === 1001 ) {
+      return 'Created';
+    }
+  }
+
   globalMatchFeed( page, gameid ) {
     return new Promise( (resolve, reject) => {
       this.loc.getGeoLocation()
@@ -40,7 +58,7 @@ export class MatchDataService {
                 promoteCount: data[i].PromoteCount,
                 venueName: data[i].Venue_Name,
                 gameName: data[i].GameName,
-                activityName: data[i].Activity_name !== undefined ?  data[i].Activity_name.split(' ')[0] : ''
+                activityName: this.getActivityName(data[i].ActivityId)
               });
             }
             resolve(this.globalArena.slice( page * 15, (page + 1) * 15));

@@ -12,6 +12,7 @@ import {
 } from '@angular/core';
 import { OpenNewsCardComponent } from '../../open-cards/open-news-card/open-news-card.component';
 import { Router } from '@angular/router';
+import { TimeService } from '../../shared/services/time.service';
 
 @Component({
   selector: 'sports-social-news-card',
@@ -42,7 +43,8 @@ export class NewsCardComponent implements OnInit {
 
   constructor(
     private renderer: Renderer2,
-    private router: Router
+    private router: Router,
+    private time: TimeService
   ) { }
 
   defaultImage() {
@@ -66,10 +68,14 @@ export class NewsCardComponent implements OnInit {
   }
 
   openPopUp(id) {
-    this.router.navigate([{outlets: {'News':[id]}}]);
+    this.router.navigate([{outlets: {'News': [id]}}], { skipLocationChange: true });
+  }
+  openAppDownloadPopup() {
+    this.router.navigate( [ { outlets: { 'AppDownload': ['PopUp'] }} ], { skipLocationChange: true });
   }
   ngOnInit() {
     this.removeActionsCountBar();
+    this.publishedAt = this.time.newsDate(this.publishedAt);
   }
 
 }

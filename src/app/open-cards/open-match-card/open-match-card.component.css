@@ -12,7 +12,7 @@
     text-align: center;
 }
 .started-by > p{
-   
+   margin-bottom: 5px;
 }
 .started-by > img {
     width: 50px;

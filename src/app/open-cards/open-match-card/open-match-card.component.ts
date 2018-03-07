@@ -37,7 +37,7 @@ export class OpenMatchCardComponent implements OnInit, OnDestroy {
 
   private _seconds: number;
   @ViewChild('openCard') openCard;
-  @ViewChild('userImg') userImg;
+ // @ViewChild('userImg') userImg;
 
   @Input()  timeRemaining: string;
   @Input()  gameName: string;
@@ -85,8 +85,9 @@ export class OpenMatchCardComponent implements OnInit, OnDestroy {
     private router: Router
   ) { }
 
-  defaultImage() {
-    this.renderer.setAttribute(this.userImg.nativeElement, 'src', '/assets/images/user-default.png');
+  defaultImage(event) {
+    console.log(event);
+    event.target.src = '/assets/images/user-default.png';
   }
 
   close() {
@@ -145,16 +146,16 @@ export class OpenMatchCardComponent implements OnInit, OnDestroy {
         }
       }
     );
-    this.get.singleMatchData(id, 0, this.activityid.commentid, 1, 1).subscribe(
+    this.get.singleMatchData(id, 0, this.activityid.commentid, 2, 1).subscribe(
       (res) => {
         console.log(res);
         // tslint:disable-next-line:forin
         for ( const i in res[0] ) {
           this.comments.push({
             userName: res[0][i].user_name,
-            commentDate: res[0][i].InsertedDate,
+            commentDate: this.time.ExactDate(res[0][i].InsertedDate) ,
             uniqueName: res[0][i].UniqueName,
-            comment: '',
+            comment: res[0][i].Comment,
             userImage: res[0][i].profile_image,
           });
         }
@@ -226,7 +227,9 @@ export class OpenMatchCardComponent implements OnInit, OnDestroy {
       return seconds;
   }
 
-
+  openAppDownloadPopup() {
+    this.router.navigate( [ { outlets: { 'AppDownload': ['PopUp'] }} ], { skipLocationChange: true });
+  }
 
 
   ngOnInit() {

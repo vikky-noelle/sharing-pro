@@ -21,30 +21,30 @@
     <img src="{{matchImage}}" alt="">
   </div>
   <div class="action-count" #actionsCount>
-    <a routerLink="#" *ngIf="commentCount > 0">
+    <a href="#" *ngIf="commentCount > 0">
       {{commentCount}} 
       <span>{{commentCount > 1 ? 'Comments' : 'Comment'}}</span>  
     </a>
-    <a routerLink="#" *ngIf="promoteCount > 0">
+    <a href="#" *ngIf="promoteCount > 0">
       {{promoteCount}} 
       <span>{{promoteCount > 1 ? 'Promotes' : 'Promote'}}</span>  
     </a>
-    <a routerLink="#" *ngIf="watchCount > 0">
+    <a href="#" *ngIf="watchCount > 0">
       {{watchCount}} 
       <span>Watching</span> 
     </a>
   </div>
   <div class="actions-match">
-    <button class="playButton">
+    <button class="playButton" (click)="openAppDownloadPopup()">
       <img src="/assets/images/sports-social-play.png" alt=""> <span>Play</span>  
     </button>
-    <button class="commentButton">
+    <button class="commentButton" (click)="openAppDownloadPopup()">
       <img src="/assets/images/sports-social-match-talks.png" alt=""><span>Comment</span>  
     </button>
-    <button class="promoteButton">
+    <button class="promoteButton" (click)="openAppDownloadPopup()">
       <img src="/assets/images/sports-social-promote.png" alt=""> <span>Promote</span>
     </button>
-    <button class="watchButton">
+    <button class="watchButton" (click)="openAppDownloadPopup()">
       <img src="/assets/images/sports-social-watching.png" alt=""> <span>Watch</span>
     </button>
   </div>
