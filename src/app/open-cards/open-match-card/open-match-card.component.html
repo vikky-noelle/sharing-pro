@@ -10,7 +10,7 @@
     <div class="heading">{{gameName}}</div>
     <div class="match-sum">Match Summary</div>
     <div class="started-by">
-      <p>Started By</p>
+      <p>Created By</p>
       <img src="{{creatorImage}}" title="{{creatorName}}" alt="" (error)="defaultImage($event)" #userImg>
     </div>
   </div>
@@ -21,8 +21,8 @@
     </div>
     <div class="venue">
       <img src="/assets/images/map-marker.png" alt="">
-      <span>{{venueName}}</span>
-      <img src="/assets/images/map-marker.png" alt="">
+      <span>{{venueName}}</span><!-- 
+      <img src="/assets/images/map-marker.png" alt=""> -->
     </div>
     <div class="match-text">
       {{matchText}}

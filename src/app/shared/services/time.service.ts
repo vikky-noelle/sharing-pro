@@ -55,7 +55,7 @@ export class TimeService {
        // console.log("he")
         return 'Today at ' + matchDate.toLocaleTimeString( 'en-US', timeOpt);
     } else {
-      return 'On ' + matchDate.toLocaleDateString('en-US', dateOptions) + ' at ' + matchDate.toLocaleTimeString('en-US', timeOpt);
+      return  matchDate.toLocaleDateString('en-US', dateOptions) + ' at ' + matchDate.toLocaleTimeString('en-US', timeOpt);
     }
   }
 

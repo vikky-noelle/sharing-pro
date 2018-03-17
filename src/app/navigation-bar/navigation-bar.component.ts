@@ -98,14 +98,13 @@ export class NavigationBarComponent implements OnInit {
   }
 
   openDropdown() {
-    this.isHoverOnCaret = true;
+    this.isHoverOnCaret = !this.isHoverOnCaret;
     this.scrollabledropdown();
   }
 
   closeDropdownByClick(event) {
     this.isHoverOnCaret = false;
     event.preventDefault();
-    // this.reloadPage();
   }
 
   

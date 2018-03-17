@@ -2,8 +2,8 @@
 
 
 .userImage{
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     margin-right: 5px;
     display: inline-block;
@@ -17,11 +17,47 @@
 }
 
 .matchDetails{
+    width: 48%;
     display: inline-block;
     vertical-align: middle;
 }
+.userName{
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 60%;
+    color: #024771;
+    font-weight: 700;
+    font-size: 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 2%;
+}
 
+.activity-name {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 38%;
+    color: black;
+    font-size: 0.8em;
+    font-weight: 400 ;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.gameName{
+    color: black;
+    font-size: 0.8em;
+    font-weight: 400 ;
+}
+.activityDate{
+    color: black;
+    font-size: 0.8em;
+    font-weight: 400 ;
+}
 .match-date{
+    min-width: 32%;
+    text-align: right;
     position: absolute;
     top: 5px;
     right: 5px;
@@ -30,15 +66,15 @@
 .match-date > img{
     display: inline-block;
     vertical-align: middle;
-    width: 32px;
-    height: 32px;
-    margin-right: 4px;
+    width: 28px;
+    height: 28px;
 }
 .match-date > span{
     display: inline-block;
     vertical-align: middle;
     font-size: 0.9em;
     color: #888888;
+    text-align: left;
 }
 
 .restrictionCount{
@@ -61,6 +97,7 @@
     width: 100%;
     max-height: 300px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .matchImage > img {
@@ -96,10 +133,10 @@ button {
 }
 
 .actions-match > button > img {
-    width: 32px;
+    width: 30px;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 3px;
+    margin-right: 2px;
 }
 
 .actions-match > button > span {
@@ -109,17 +146,7 @@ button {
 .actions-match > button > span:hover{
     font-weight: 700
 }
-.userNameAndActivity{
-    color: #024771;
-    font-weight: 700;
-    font-size: 1em;
-}
 
-.userNameAndActivity > span, .gameName, .activityDate {
-    color: black;
-    font-size: 0.8em;
-    font-weight: 400 ;
-}
 .remove {
     position: absolute;
 }
