@@ -80,4 +80,15 @@ export class PostService {
   singleNewsData(id) {
     return this.http.post('https://atg.sportsocial.in/newsById', { id: id} );
   }
+
+  insertTopics(topic) {
+    console.log(topic)
+    return this.http.post('https://helpcenter.chaseyoursport.com/save/topic', topic);
+  }
+  insertSubTopics(subtopic) {
+    return this.http.post('https://helpcenter.chaseyoursport.com/save/subTopics', subtopic);
+  }
+  insertQuesAns(QA) {
+    return this.http.post('https://helpcenter.chaseyoursport.com/save/QA', QA);
+  }
 }

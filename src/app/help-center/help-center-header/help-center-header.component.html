@@ -1,0 +1,20 @@
+<div class="header">
+    <div>
+        <p class="brand-title"><span>Sports Social</span><span>Help</span></p>
+        <p  class="city"> Delhi-NCR</p>
+    </div>
+    <div>
+        <p class="heading">Welcome to Sports social Help Center</p>
+        <div class="brand-img-holder">
+            <img src="/assets/images/logo white.png" class="brand-img">
+        </div>
+        <p class="trouble">Having Trouble? We are here to help</p>
+    </div>
+    <div class="quickAnswers">
+        <p>Quick Answers: </p>
+        <p>
+          <a *ngFor="let data of quickAnswers" href="{{data.url}}">{{data.ques}}</a>
+        </p>
+    </div> 
+</div>
+            

@@ -1,0 +1,25 @@
+    <p>Get Answer for the most common quetsion and learn to use "Sports Social" like Champ.</p>
+    
+<div class="content">
+    <ul class="side-nav"  *ngIf="windowNavbar">
+        <li *ngFor="let data of topics"> 
+            <button (click)="SubtopicsIconChange(data.id)"><img src="{{data.icon}}">&nbsp;&nbsp;&nbsp;{{data.name}}
+            </button>
+        </li>
+    </ul>
+
+    <div *ngIf="!windowNavbar" class="mobileNav dropdown">
+        <div class="menuImgHolder" data-toggle="dropdown">
+            <img src="/assets/images/menu.png" role="button"  class="menuImg">
+        </div>  
+    </div>
+
+    <div #problems>
+        <div class="subtopicdata" *ngFor="let data of subtopics" #problem>
+            <a routerLink="{{data.topic_id}}/{{data.name}}/HelpCenter/{{data.id}}">
+                <img src="{{data.icon}}" class="img-responsive" height="100" width="100">
+                <p>{{data.name}}</p>
+            </a>
+        </div>
+    </div>
+</div>

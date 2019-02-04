@@ -1,13 +1,27 @@
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/compiler/src/core';
 import { OpenMatchCardComponent } from '../open-cards/open-match-card/open-match-card.component';
 import { OpenNewsCardComponent } from '../open-cards/open-news-card/open-news-card.component';
 import { PopUpComponent } from '../pop-up/pop-up.component';
+import { AboutComponent } from '../about/about.component';
+import { HelpCenterComponent } from '../help-center/help-center.component';
+import { AddTopicComponent } from '../add-topic/add-topic.component';
+import { AddQueAnsComponent } from '../add-que-ans/add-que-ans.component';
 
 const App_Route: Routes = [
+    
+    
+    {path:"addtopic",component:AddTopicComponent},
+    {path:"HelpCenter",component:HelpCenterComponent},
     {
-        path: 'helpCenter',
-        loadChildren: 'app/help-center/help-center.module#HelpCenterModule'
+        path: "HelpCenter/:topicId/:subtopicname/HelpCenter/:subtopicId",
+        component: AddQueAnsComponent
+      },
+    {
+        path: 'about',
+        component:AboutComponent,
+        
     },
     {
         path: 'Terms Of Service',
@@ -17,10 +31,7 @@ const App_Route: Routes = [
         path: 'Privacy Policy',
         loadChildren: 'app/privacy-policy/privacy-policy.module#PrivacyPolicyModule'
     },
-    {
-        path: 'about',
-        loadChildren: 'app/about/about.module#AboutModule'
-    },
+    
     {
         path: 'OpenArena',
         loadChildren: 'app/global-feed/global-match-feed/global-match-feed.module#GlobalMatchFeedModule'
@@ -52,7 +63,15 @@ const App_Route: Routes = [
         path: '',
         loadChildren: 'app/home/home.module#HomeModule'
     }
-];
+]
+@NgModule({
+    imports: [
+      RouterModule.forRoot(App_Route)
+    ],
+   exports: [RouterModule]
+  })
+  export class AppRouting { }
+  
 
 
 

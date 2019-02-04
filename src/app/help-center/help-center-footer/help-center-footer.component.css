@@ -1,0 +1,50 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    font-family: 'Roboto',sans-serif;
+}
+
+.jumbotron{
+    margin-top: 2%;
+    background-color: #4372a0;
+}
+.jumbotron p{
+    color: #fafafa;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    padding: 2% 0% 1% 0%;
+}
+.jumbotron a{
+    display: block;
+    width: 20%;
+    height: 20%;
+    margin:  auto;
+}
+.jumbotron a>img{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    width: 100%;
+}
+footer ul{
+    display: inline-block;
+    width:auto;
+    list-style-type: none;
+    padding: 1% 2.6% 1% 2%;
+}
+footer li p{
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    color: #101010;
+    white-space: nowrap;
+}
+footer li img{
+    width: 90%;
+    height: 90%;
+}
+

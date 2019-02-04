@@ -1,54 +1,131 @@
-<sports-social-header></sports-social-header>
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+<body>
+  <header>
+    <div class="nav" #header>
+      <ul>
+        <li class="brand">
+          <a routerLink="/">
+            <img src="/assets/images/blue_logo.png" class="brand-img img--responsine img-circle">
+            <h4 class="brand-title">Sports Social</h4>
+          </a>
+        </li>
 
-<div class="about">
-  <div class="brand-logo">
-    <img src="/assets/images/sports-social-blue-icon-100X100.png" alt="">
+        <li class="button">
+          <a routerLink="/About" class="About btn btn-responsive">About</a>
+          <a routerLink="/App" class="app1  btn btn-responsive">App</a>
+          <a routerLink="/HelpCenter" class="help  btn btn-responsive">Help Center</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="app" [style.margin-top.px]="marginTop+20">
+    <img src="/assets/images/app_icon.png" class="img-responsive app-icon">
   </div>
-  <h1 class="def">
-    <h2>Sports Social is</h2>
-    <p>Sports digital media and networking service that helps you to see what's going around 
-      in Sports right now & let's you chase your passion to play your favourite sport.
-    </p>
-  </h1>
-  <h2 class="mission">
-    Our Vision is to give everyone and equal opportunity for play & self-expression.
-  </h2>
-  <div class="mission-img">
-    <p>
-      Our Mission is to empower everyone to play sports by providing a technology based service that helps everyone to show their real talent in the real time to the real world.
-    </p>
-    <img src="/assets/images/sports-social-fitness.png" alt="">
-    
-    <h3 class="belief">
-      We believe that everyone deserves an opportunity for play and self-expression 
-      and the world will be much better place when we play, express ourselves and build communities 
-      around sports.
-    </h3>
-    <p> "A world where everyone is welcome to play and enjoy their favorite sports without any barriers."</p>
+
+  <h4 class="app-desc">
+    <p><u>{{descTitleDisplay}}</u></p>
+    <p>{{descDisplay}}</p>
+  </h4>
+
+  <div id="sec">
+    <a onclick="document.getElementById('bitdes').scrollIntoView();" class="scroll-down"></a>
   </div>
-  
-  <p class="latest-blog">The Latest From Our Blog</p>
-  <ng-masonry-grid  
-        [masonryOptions]="{ transitionDuration: '0.4s', gutter: 2 }"
-        [useAnimation]="true"
-        [useImagesLoaded]="true">
-      <ng-masonry-grid-item class="col-4" *ngFor = "let feed of blog">
-        <sports-social-blog-card
-          [blogId] = "feed.blogId"
-          [blogImage] = "feed.blogImage"
-          [heading] = "feed.heading"
-          [viewCount] = "feed.viewCount"
-          [shareCount] = "feed.shareCount"
-          [metaDesc] = "feed.metaDesc"
-          [imageDesc] = "feed.imageDesc"
-          [topic] = "feed.topic"
-          [shortTitle] = "feed.shortTitle"
-          [insertedDate] = "feed.insertedDate"  >
-        </sports-social-blog-card>
-      </ng-masonry-grid-item>
-  </ng-masonry-grid>
-</div>
+   
+  <div class="bit-desc" id="bitdes">  </div>
 
+  <h4 class="app-mantra">
+    Our Mission is to give everyone opportunity for
+    play and self-expression and Show them to World.
+  </h4>
+  <img src="/assets/images/sport-icon.jpg" class="sport-icon">
 
+  <h4 class="app-mantra">
+    <b>"A world where everyone is welcome to play and enjoy their favourite sports without any barrirers"</b>
+  </h4>
+  <h4 class="app-mantra">
+    We believe that everyone deserve an opportunity for
+    self-expression and that the world is better place when we play, express ourselves
+    and build communities through Sports.
+  </h4>
 
-<sports-social-footer></sports-social-footer>
+  <div class="blogFeed" id="blg-feed">
+    <p class="feedHeading">The Latest from our Blog</p>
+    <div style="position:relative">
+      <div class="blog" #blog>
+        <div *ngFor="let img of image" #blogImg>
+
+          <img src="{{img}}">
+        </div>
+        <img src="/assets/images/left.png" class="left" (click)="leftScroll()">
+        <img src="/assets/images/right.png" class="right" (click)="rightScroll()">
+      </div>
+    </div>
+  </div>
+
+  <div class="feed">
+    <p class="feedHeading">The Social Feed</p>
+    <div style="position:relative">
+      <div class="socialFeed" #socialFeed>
+        <div *ngFor="let img of image">
+          <img src="{{img}}" #socialFeedImg>                                                        
+        </div>
+        <img src="/assets/images/left.png" class="left" (click)="leftScroll()">
+        <img src="/assets/images/right.png" class="right" (click)="rightScroll()">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <h4>About</h4>
+          <h4>Company</h4>
+          <h4>Values</h4>
+          <h4>Blog</h4>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <h4>Help Center</h4>
+          <h4>Getting Started</h4>
+          <h4>My Account</h4>
+          <h4>Using My Locality</h4>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <h4>What's Going Around</h4>
+          <h4>Open Arena</h4>
+          <h4>Around The World</h4>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <h4><u>For Tips and Insight</u></h4>
+
+          <h3>
+            <img href="#" src="/assets/images/twitter1.png">
+            <a href="#" style="margin:1.2%">Follow us on Twitter</a>
+          </h3>
+          <h3>
+            <img src="/assets/images/facebook.jpg">
+            <a href="#" style="margin:1.2%">Like us on Facebook</a>
+          </h3>
+          <h3>
+            <img src="/assets/images/youtube.jpg">
+            <a href="#" style="margin:1.2%">Suscribe our Youtube Channel</a>
+          </h3>
+          <h3>
+            <img src="/assets/images/insta.png">
+            <a href="#" style="margin:1.2%">Follow us on Instagram </a>
+          </h3>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>

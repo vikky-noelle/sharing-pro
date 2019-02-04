@@ -1,0 +1,16 @@
+<div class="jumbotron"> 
+    <p>New to Sports Social?</p>  
+    <a href='https://play.google.com/store/apps/details?id=in.sportsocial.sportsocial&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+        <img alt='Get it on Google Play' src='/assets/images/google-play-badge.png'/>
+    </a>
+</div>
+<footer>
+    <ul *ngFor="let data of footer">
+        <li>
+            <a routerLink="{{data.Url}}">
+                <img *ngIf="data.image" src="{{data.image}}" alt="">
+                <p *ngIf="data.name">{{data.name}}</p>
+            </a>
+        </li>
+    </ul>
+</footer>

@@ -1,64 +1,401 @@
-.about{
-    margin-top: 90px;
-    text-align: center;
-    margin-bottom: 70px;
+/*media="only screen and (max-device-width: 480px) , only screen and (-webkit-min-device-pixel-ratio: 2) , screen and (-webkit-device-pixel-ratio:1.5)"*/
+body {
+  width: auto;
+  height: auto;
 }
-.brand-logo {
+.nav {
+  background-color: #fff;
+  height: auto;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+  .nav li {
+    display: inline-block;
+  }
+
+  .nav ul {
+    list-style: none;
+  }
+
+.brand {
+  width: auto;
+  padding: 0.6% 0.5% 0.5% 0.7%;
+}
+
+.brand-img {
+  width: 65px;
+  display: inline-block;
+}
+
+.brand-title {
+  font-family: 'Roboto',sans-serif;
+  font-size: 1.7em;
+  font-weight: 400;
+  color: #024771;
+  display: inline-block;
+  position: relative;
+  top: -6px;
+  text-shadow:2px 2px 2px;
+}
+
+.button {
+  display: inline-block;
+  width: auto;
+  padding: 0px;
+  text-align: right;
+  position: absolute;
+  top: 20%;
+  margin-top: .6%;
+  right: 0.5%;
+}
+
+  .button > a {
+    border: 1px solid #fafafa;
+    padding: 8px 20px 8px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #fafafa;
+    background-color:#024771;
+    border-radius: 5px;
+    font-weight: 300;
+  }
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (max-width: 800px) {
+  ul {
+    padding: 0;
+  }
+
+  .brand {
+    width: auto;
+    text-align: left;
+    margin-left: 1%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+  }
+  .brand-title{
+    text-shadow:2px 2px 2px;
+    margin-left:-10px;
+    font-size:20px;
+  }
+
+  .button {
+    width: auto;
+    height:10px;
+    position: absolute;
+    right: 2%;
+    top: 10%;
+  }
+  .brand-img {
+    width: 50px;
+  }
+
+  .button > a {
+    font-size: 0.8em;
+    padding: 2px 8px 2px 8px;
+    margin:auto;
+    margin-top:8%;
+    
+  }
+}
+
+/*===========body========================*/
+.app{
     width: 100px;
     height: 100px;
-    display: inline-block;
-    vertical-align: bottom;
-    margin: 10px
+    margin:auto;
 }
-.brand-logo > img {
+.app-icon{
     width: 100%;
     height: 100%;
+    border-radius:10px;
+    margin-top:100px;
 }
-
-.def{
-    color: #024771;
-    padding-bottom: 15px;
-    display: inline-block;
-    vertical-align: bottom;
+.app-mantra{
     width: 60%;
-}
-.def > h2 {
-    font-size: 0.6em;
-    font-weight: 500;
-    text-align: left;
-    color: #ffa600;
-    margin-bottom: 15px
-}
-.def > p {
-    font-size: 0.7em;
+    margin: 3% auto;
+    height: auto;
+    padding: 1%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
     font-weight: 300;
+    color: #101010;
+    text-align: justify;
+    text-align-last: center;
+}
+.app-desc{
+    width:65%;
+    height:auto;
+    padding:1%;
+    text-align:justify;
+    text-align-last:center;
+    margin:8% auto;
+    background-color: none;
+    color: #024771;
+    font-size:1em;
+    font-family:'Times New Roman', Times;
+    height:450px;
+    line-height:0.2em;
+ }
+.app-desc>p:first-child{
+    font-family: 'Roboto',sans-serif;
+    font-size: 2em;
+    line-height: 2em;
     text-align: left;
+    text-align: center;
+    margin: auto;
+    padding:0;
+}
+.app-desc>p:last-child{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.9em;
+    font-weight: 500;
+    line-height: 1.7em;
+}
+  /*testin*/
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+  margin-top:-3%;
+  
+  
 }
 
-.mission{
-    font-size: 1.1em;
-    margin: 30px;
-    color: #ffa600
+.scroll-down {
+  position: relative;
+  cursor:pointer;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid red;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  scroll-behavior: smooth;
 }
 
-.mission-img{
-    background-color: #4372a0;
-    color: white;
-    padding: 15px;
-    margin-bottom: 5%;
-}
+  .scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid red;
+    border-width: 0px 0 2px 2px;
+  }
 
-.mission-img > p:first-child{
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+  /*testing*/
+.bit-desc {
+    height: 200px;
+    width:auto;
+    background-color: #2d57de;
+    margin-top:10%;
+  }
+.blogFeed{
+    z-index: 10;
+    margin: 0px;
+}
+.blog{
+    width: 90%;
+    max-height: 400px;
+    margin: 5% auto;
+    overflow: hidden;
+    white-space: nowrap !important;
+}
+.blog>div{
+    display: inline-block;
     width: 50%;
-    margin: 2% auto;
-    font-size: 1.1em
+    height: 400px;
+    
+}
+.blog>div>img{
+    height: 100%;
+    width: 100%;
+    padding-right: 2%;
+    
+}
+.blog .left{
+    position: absolute;
+    top:45%;
+    left: 6%;
+}
+.blog .right{
+    position: absolute;
+    top:45%;
+    right: 7%;
+}
+.feed{
+    z-index: 800;
+    margin: 0px;
+}
+.feedHeading{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #101010;
+    margin:3% 0% 3% 0%;
+    text-align: center
+}
+.socialFeed{
+    max-height: 500px;
+    margin: 5% auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap !important;
+  
+}
+.socialFeed>div{
+    display: inline-block;
+    width:50%;
+    height: 500px;
+    margin: 0px;
+}
+.socialFeed>div>img{
+    max-width: 100%;
+    height: 100%;
+    padding-right: 2%;
+}
+.socialFeed .left{
+    position: absolute;
+    top:45%;
+    left: 2%;
+}
+.socialFeed .right{
+    position: absolute;
+    top:45%;
+    right: 3%;
+}
+.sport-icon{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 300px;
+}
+footer{
+    background-color: #024771;
+}
+.col-md-3 h3 ,.col-md-3 h3>a{
+    line-height: .2em;
+    color: white;
+    font-family: 'Robot',sans-serif;
+    font-size: 1em;
+    display: inline;
+}
+.col-md-3>h4>u{
+  margin-right: -70%;
+  
+  color:red;
 }
 
-.belief{
-    margin: 30px  auto;
-    width: 60%;
-}
-.latest-blog{
-    font-size: 1.4em;
+  .col-md-3 h4, .col-md-3 h4 > a {
+    line-height: 1.5em;
+    color: white;
+    font-family: 'Robot',sans-serif;
+    font-size: 1em;
+    display: inline-block;
+    padding:10px;
+  }
+.col-md-3 h4:first-child{
     font-weight: 700;
 }
+
+
+
+@media (max-width:500px) {
+  .app>img{
+    margin-top:60px;
+  }
+  .app-desc {
+    width: 250px;
+    height:330px;
+    text-align: center;
+    margin-left: 15%;
+    margin-top: 31%;
+    padding-top: 2%;
+    line-height:0.7em;
+    font-weight:180;
+  }
+    .app-desc > p:first-child {
+      font-family: 'Roboto',sans-serif;
+      font-size: 1.6em;
+      line-height: 1em;
+      text-align: center;
+      margin-top:-8%;
+    }
+    .app-desc > p:last-child {
+      font-family: 'Roboto',sans-serif;
+      font-size: 1.5em;
+      font-weight: 270;
+      line-height: 1.3em;
+      text-align:center;
+    }
+
+  .col-md-3 h4{
+    line-height: 0.7em;
+    padding:7px;
+    color: #fafafa;
+    font-family: 'Robot',sans-serif;
+    font-size: .8em;
+    display:inline-block;
+  }
+  .col-md-3 h3>img {
+    border-radius:5px;
+    margin-top: 7%;
+    padding: 5px;
+  }
+   .col-md-3 h3 > a {
+    line-height: .7em;
+    color: white;
+    margin-left: -13%;
+    font-family: 'Robot',sans-serif;
+    font-size: 0.8em;
+  }
+    
+    .col-md-3 h4:first-child {
+      font-weight: 500;
+    }
+    .col-md-3>h4>u{
+      margin-right: -40%;
+      color:yellow;
+    }
+}
+

@@ -1,11 +1,19 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import {Http} from '@angular/http';
 import { Observable } from 'rxjs/Rx';
+import {Subject} from 'rxjs/Subject';
+import 'rxjs/Rx';
 
 @Injectable()
 export class GetService {
-
-  constructor( private http: HttpClient) { }
+  provideIn:'root'
+  constructor( private http: Http) { }
+  serverData(url:string){
+    return this.http.get(url).map(
+        (response)=>response.json()
+      )
+  }
 
   GlobalOpenArenaFeed () {
     return this.http.get('http://test.chaseyoursport.com:3200/getGlobalOpenArenaFeed');
@@ -15,4 +23,24 @@ export class GetService {
     return this.http.get('http://atg.sportsocial.in:4000/news');
   }
 
+
+  data=new Subject();
+  getImage() {
+    return this.http.get("https://helpcenter.chaseyoursport.com/get/image");
+  }
+
+  getTopics(): Observable<any> {
+    return this.http.get("https://helpcenter.chaseyoursport.com/get/topics");
+  }
+
+  getSubTopic(id): Observable<any> {
+    return this.http.get(
+      "https://helpcenter.chaseyoursport.com/get/subTopics/" + id);
+  }
+
+  getQA(topicId, subtopicId): Observable<any> {
+    return this.http.get(
+      "https://helpcenter.chaseyoursport.com/get/QA/" +topicId + "/" + subtopicId
+    );
+  }
 }

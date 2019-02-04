@@ -1,59 +1,96 @@
-import { Component, OnInit, ViewEncapsulation, OnDestroy } from '@angular/core';
-import { PostService } from '../shared/services/post.service';
-import { TimeService } from '../shared/services/time.service';
-import { Masonry, MasonryGridItem } from 'ng-masonry-grid';
-import { ISubscription } from 'rxjs/Subscription';
+import { Component, 
+    OnInit ,
+    HostListener,
+    ViewChild,
+    ElementRef,
+    Renderer2
+} from '@angular/core';
+import { SendService } from '../shared/services/send.service';
 
 @Component({
-  selector: 'sports-social-about',
+  selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css', '../../../node_modules/ng-masonry-grid/ng-masonry-grid.css'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./about.component.css']
 })
-export class AboutComponent implements OnInit, OnDestroy {
+export class AboutComponent implements OnInit {
+  
+  private marginTop;
+  descTitle="Sports social is";
+  descTitleDisplay="";
+  desc="Sports digital media and Networking Service that helps you to see\
+   what's going around in your locality and around the globe right now & let's\
+    you chase your passion to play your favourite sport."
+  descDisplay=""
+  
+  @ViewChild('blog') blog:ElementRef;
+  @ViewChild('blogImg') blogImg:ElementRef;
+  @ViewChild('socialFeed') socialFeed:ElementRef;
+  @ViewChild('socialFeedImg') socialFeedImg:ElementRef;
 
-  blog = [];
-  _masonry: Masonry;
-  private _removeAllSubscription: ISubscription;
-  private _removeItemSubscription: ISubscription;
-  private _removeFirstItemSubscription: ISubscription;
-  constructor(
-    private get: PostService,
-    private time: TimeService
-  ) { }
+//@ViewChild('desc') desc:ElementRef;
 
-  getLatestBlog() {
-    this.get.blogData(1, 'dfg').subscribe(
-      res => {
-        const data = res;
-        console.log(res);
-        for (let i = 0 ; i <= 2 ; i++) {
-          console.log(data[i].blogId)
-          this.blog.push({
-              blogId: data[i].blogId,
-              blogImage: data[i].blogImage,
-              heading: data[i].heading,
-              ViewCount: data[i].ViewCount,
-              ShareCount: data[i].ShareCount,
-              MetaDesc: data[i].MetaDesc,
-              ImageDesc: data[i].ImageDesc,
-              topic: data[i].topic,
-              shortTitle: data[i].shortTitle,
-              insertedDate: this.time.timePassed( data[i].insertedDate )
-            });
-      }
-      }
-    );
-  }
+  image=["/assets/images/car1.jpg",
+          "/assets/images/car2.jpg",
+          "/assets/images/car3.jpeg",
+          "/assets/images/car4.jpg",
+          "/assets/images/car5.jpg",
+          "/assets/images/car6.jpg"]
+  constructor(private margin:SendService,private renderer:Renderer2) {
+    this.margin.height.subscribe(
+      (top)=>this.marginTop=top
+    )
+    
+   }
 
   ngOnInit() {
-    this.getLatestBlog();
+    // console.log(this.desc.nativeElement.textContent);
+    this.typeWriterTitle(this.descTitle,0); 
+    setTimeout(function() {
+      var i=0;
+      i++;
+      if(i<=5){}
+      console.log(i)
+    }, 1000);
+    this.typeWriter(this.desc,0);
+
+   
   }
-  ngOnDestroy() {
-    if (this._masonry) {
-      this._removeAllSubscription.unsubscribe();
-      this._removeItemSubscription.unsubscribe();
-      this._removeFirstItemSubscription.unsubscribe();
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.margin.height.subscribe(
+      (top)=>{
+        this.marginTop=top;
+      }
+    )
+  }
+
+  leftScroll(){
+    this.blog.nativeElement.scrollLeft -=this.blogImg.nativeElement.clientWidth;
+    this.socialFeed.nativeElement.scrollLeft -=this.socialFeedImg.nativeElement.clientWidth;
+  }
+  rightScroll(){
+    this.blog.nativeElement.scrollLeft +=this.blogImg.nativeElement.clientWidth;
+    this.socialFeed.nativeElement.scrollLeft +=this.socialFeedImg.nativeElement.clientWidth;
+  }
+
+  typeWriter(text:string,n:number){
+    if(n<text.length){
+      this.descDisplay+=(this.desc[n]);
+      n++;
+      setTimeout(()=> {
+       this.typeWriter(this.desc,n);
+      }, 30);
     }
   }
-}
+  typeWriterTitle(text:string,n:number){
+    if(n<text.length){
+      this.descTitleDisplay+=(text[n]);
+      n++;
+      setTimeout(()=> {
+       this.typeWriterTitle(text,n);
+      }, 40);
+    }
+  }
+  
+} 
+
