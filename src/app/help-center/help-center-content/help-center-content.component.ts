@@ -23,6 +23,8 @@ export class HelpCenterContentComponent implements OnInit {
   windowNavbar:boolean=true;
   topics = [];
   subtopics=[];
+  topicId;
+  
   
   constructor(private renderer:Renderer2,
     private getService: GetService, 
@@ -44,6 +46,8 @@ export class HelpCenterContentComponent implements OnInit {
         });
       }
       console.log(this.topics);
+      this.topicId = this.topics[0].id;
+      this.getSubTopics(this.topicId);
     }); 
   }
   SubtopicsIconChange(id){
@@ -53,7 +57,6 @@ export class HelpCenterContentComponent implements OnInit {
   
   getSubTopics(id){
   this.getService.getSubTopic(id).subscribe(res=>{
-    
       var body = JSON.parse(res._body);
       for (const i in body) {
         this.subtopics.push({
@@ -71,7 +74,6 @@ export class HelpCenterContentComponent implements OnInit {
   
   ngOnInit() {
     this.AllTopics();
-    this.getSubTopics(1);
     
     if(window.innerWidth<900){
       this.windowNavbar=false;

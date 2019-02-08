@@ -1,19 +1,20 @@
-<meta name="description" content="How use sportsocial">
-<meta name="description" content="Sport social">
-<meta name="description" content="How to find locality in sportsocial?">
+  <meta name="description" content="How use sportsocial">
+  <meta name="description" content="Sport social">
+  <meta name="description" content="How to find locality in sportsocial?">
 
-<SportSocial-help-center-header></SportSocial-help-center-header>
-<div class="QA">
-  <ul class="side-nav">
-   <li *ngFor="let qa of quesAns; let i = index">
-     <button (click)="getAns(qa.id)"><img src="{{qa.icon}}">&nbsp;&nbsp;{{ qa.ques }}</button>
-    </li>
-  </ul>
-</div>
+  <SportSocial-help-center-header></SportSocial-help-center-header>
+  <div class="qabody">
+    <div class="QA">
+      <ul class="side-nav">
+        <li *ngFor="let qa of quesAns; let i = index">
+          <button (click)="getAns(qa.id)"><img src="{{qa.icon}}">&nbsp;&nbsp;<p>{{ qa.ques }}</p></button>
+          </li>
+      </ul>
+    </div>
 
-<div class="answers">
-  <p [innerHtml]="Ans"></p>
+    <div class="answers">
+      <p>{{Ans}}</p>
+    </div>
+  </div>
 
-</div>
-
-<SportSocial-help-center-footer></SportSocial-help-center-footer>
+  <SportSocial-help-center-footer></SportSocial-help-center-footer>

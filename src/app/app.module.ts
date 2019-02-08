@@ -10,10 +10,7 @@ import { ScrollToModule } from 'ng2-scroll-to-el';
 import { PropertyService } from './shared/services/property.service';
 import { GetService } from './shared/services/get.service';
 
-
-
 import { AppRoute } from './routing/app.router';
-
 import { AppComponent } from './app.component';
 import { TimeService } from './shared/services/time.service';
 import { LocationService } from './shared/services/location.service';
@@ -36,7 +33,6 @@ import { HttpModule } from '@angular/http';
 import { AddTopicComponent } from './add-topic/add-topic.component';
 import { SubTopicComponent } from './sub-topic/sub-topic.component';
 import { AddQueAnsComponent } from './add-que-ans/add-que-ans.component';
-
 
 
 @NgModule({

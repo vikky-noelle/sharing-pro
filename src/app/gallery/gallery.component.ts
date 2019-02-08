@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
-import { patch } from 'webdriver-js-extender';
 
 @Component({
   selector: 'sports-social-gallery',

@@ -3,7 +3,8 @@
 <div class="content">
     <ul class="side-nav"  *ngIf="windowNavbar">
         <li *ngFor="let data of topics"> 
-            <button (click)="SubtopicsIconChange(data.id)"><img src="{{data.icon}}">&nbsp;&nbsp;&nbsp;{{data.name}}
+            <button (click)="SubtopicsIconChange(data.id)">
+                <img src="{{data.icon}}">&nbsp;&nbsp;{{data.name}}
             </button>
         </li>
     </ul>
@@ -17,8 +18,8 @@
     <div #problems>
         <div class="subtopicdata" *ngFor="let data of subtopics" #problem>
             <a routerLink="{{data.topic_id}}/{{data.name}}/HelpCenter/{{data.id}}">
-                <img src="{{data.icon}}" class="img-responsive" height="100" width="100">
-                <p>{{data.name}}</p>
+                <img src="{{data.icon}}" class="img-responsive">
+                <p class="subtid">{{data.name}}</p>
             </a>
         </div>
     </div>

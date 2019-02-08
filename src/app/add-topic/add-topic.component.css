@@ -10,13 +10,13 @@
     border-top: 1px solid #bbbbbb;
     white-space: nowrap;
 }
-/*
+
 .content>div{
     display: inline-block;
     white-space: normal;
     vertical-align: top;
     margin-left: 0px;
-}*/
+}
 .side-nav{
    padding: 0px;
    width: 20%;
