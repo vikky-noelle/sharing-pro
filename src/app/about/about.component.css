@@ -33,7 +33,7 @@ body {
 
 .brand-title {
   font-family: 'Roboto',sans-serif;
-  font-size: 1.7em;
+-  font-size: 1.7em;
   font-weight: 400;
   color: #024771;
   display: inline-block;
@@ -244,8 +244,7 @@ body {
 .blog>div{
     display: inline-block;
     width: 50%;
-    height: 400px;
-    
+    height: 400px; 
 }
 .blog>div>img{
     height: 100%;
@@ -397,5 +396,18 @@ footer{
       margin-right: -40%;
       color:yellow;
     }
+
+    .blog > div {
+      display: inline-block;
+      width: 100%;
+      height: 400px;
+    }
+  .socialFeed > div {
+    display: inline-block;
+    width: 100%;
+    height: 500px;
+    margin: 0px;
+    
+  }
 }
 

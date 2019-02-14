@@ -11,6 +11,7 @@ import {
 
 import { Router, ActivatedRoute } from '@angular/router';
 import { GetService } from '../../shared/services/get.service';
+import { PropertyService } from '../../shared/services/property.service';
 
 
 @Component({
@@ -24,11 +25,13 @@ export class HelpCenterContentComponent implements OnInit {
   topics = [];
   subtopics=[];
   topicId;
+  isDropdownIconclicked: boolean = false;
   
   
   constructor(private renderer:Renderer2,
     private getService: GetService, 
-    private router: Router, private route:ActivatedRoute
+    private router: Router, private route: ActivatedRoute,
+    private height: PropertyService
     ) { }
 
   @ViewChild('problems') problems:ElementRef;
@@ -70,6 +73,13 @@ export class HelpCenterContentComponent implements OnInit {
       console.log(this.subtopics);
   });
   }
+
+  openDropdown() {
+    this.isDropdownIconclicked = true;
+  }
+  closeDropdown() {
+    this.isDropdownIconclicked = false;
+  }
   
   
   ngOnInit() {
@@ -83,15 +93,16 @@ export class HelpCenterContentComponent implements OnInit {
     else{
       this.windowNavbar=true;
       this.renderer.setStyle(this.problems.nativeElement,'display','inline-block')
-      this.renderer.setStyle(this.problems.nativeElement,'width','79%')
+      this.renderer.setStyle(this.problems.nativeElement,'width','80%')
     }
     if(window.innerWidth<500){
      // this.problem.map(div=>{this.renderer.setStyle(div,'max-width','50%')})
       
     }
   }
-  @HostListener('window:resize',[]) onScreenResize(){
-    if(window.innerWidth<900){
+ 
+  @HostListener('window:resize', []) onScreenResize() {
+    if(window.innerWidth<800){
       this.windowNavbar=false;
       this.renderer.setStyle(this.problems.nativeElement,'display','block')
       this.renderer.setStyle(this.problems.nativeElement,'width','100%')
@@ -103,7 +114,15 @@ export class HelpCenterContentComponent implements OnInit {
     }
     if(window.innerWidth<500){
       //this.problem.map(div=>{this.renderer.setStyle(div,'max-width','50%')})
+      this.windowNavbar = false;
+      this.renderer.setStyle(this.problems.nativeElement, 'display', 'inline-block')
+      this.renderer.setStyle(this.problems.nativeElement,'width','50%')
       
     }
-  } 
+  }
+
+  /*mobile view*/
+ 
+
+  
 }

@@ -55,10 +55,79 @@
 .answers{
     margin-top: 5%;
     max-width: 74%;
-    max-height: auto;
+    height: auto;
     margin-left:5%; 
     vertical-align: top;
     font-size: 1.2em;
     font-weight: 500;
     text-align: left;
+}
+
+@media  (max-width:500px)
+{
+  .qabody {
+    margin-top: 6%;
+    width:100%;
+    border: 1px solid black;
+    overflow: hidden;
+    display: inline-flex;
+  }
+
+  .QA {
+    border-top: 1px solid #bbbbbb;
+    /* white-space: nowrap; */
+  }
+
+  .side-nav {
+    padding: 0px;
+    width: 95px;
+    list-style-type: none;
+    display: inline-block;
+  }
+
+    .side-nav li {
+      border: 1px solid #bbbbbb;
+      border-top: none;
+      padding: 2% 2% 2% .5%;
+    }
+
+      .side-nav li > button > img {
+        margin-left: 3%;
+        width: 18%;
+        height: 18%;
+        text-align: center;
+        border-radius: 3px;
+      }
+
+      .side-nav li > button {
+        width: 85px;
+        height: auto;
+        color: black;
+        font-size: .8em;
+        font-weight: 100;
+        background: transparent;
+        text-align: left;
+        border: none;
+      }
+
+        .side-nav li > button:hover {
+          font-weight: bold;
+          text-decoration:none;
+        }
+
+  .answers {
+    margin-top: 5%;
+    height: auto;
+    margin-left: 1%;
+    vertical-align: top;
+    font-size: .9em;
+    font-weight: 300;
+    text-align: left;
+  }
+  .answers>p{
+    width:100%;
+    height:auto;
+    margin-left:2%;
+   
+  }
 }

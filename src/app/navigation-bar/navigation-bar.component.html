@@ -15,6 +15,7 @@
           <img src="/assets/images/sports-social-caret-down-blue.png" (click)="openDropdown()" (mouseover)="openDropdown()" >
       </li>
     </ul>
+
     <ng-container *ngIf="isHoverOnCaret">
         <ul  class="dropdown" (mouseleave)="closeDropdownByMouseleave()" #dropdown>
             <li *ngFor="let sport of moreSports" >
