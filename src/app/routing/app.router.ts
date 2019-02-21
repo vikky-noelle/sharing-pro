@@ -11,10 +11,9 @@ import { AddQueAnsComponent } from '../add-que-ans/add-que-ans.component';
 
 const App_Route: Routes = [
     
-    
     {path:"addtopic",component:AddTopicComponent},
-    {path:"HelpCenter/:topicid/HelpCenter/:topicname",component:AddTopicComponent},
     {path:"HelpCenter",component:HelpCenterComponent},
+    {path:"HelpCenter/:topicname",component:HelpCenterComponent},
     {
         path: "HelpCenter/:topicId/:subtopicname/HelpCenter/:subtopicId",
         component: AddQueAnsComponent

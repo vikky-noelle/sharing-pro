@@ -53,6 +53,7 @@
     background:transparent;
     text-align: left;
     border: none;
+    cursor: pointer;
 }
 .side-nav li>button:hover{
     font-weight: 700;
@@ -124,16 +125,18 @@
         }
 
   .answers {
+    width:90%;
     margin-top: 5%;
     height: auto;
-    margin-left: 1%;
+    margin-left: 3%;
+    margin-right: 5%;
     vertical-align: top;
-    font-size: .9em;
+    font-size: .7em;
     font-weight: 300;
     text-align: left;
   }
   .answers>p{
-    width:100%;
+    width:90%;
     height:auto;
     margin-left:2%;
    

@@ -9,10 +9,8 @@ import {
   ViewChild
 } from '@angular/core';
 
-import { Router, ActivatedRoute } from '@angular/router';
 import { GetService } from '../../shared/services/get.service';
-import { PropertyService } from '../../shared/services/property.service';
-
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'SportSocial-help-center-content',
@@ -28,10 +26,8 @@ export class HelpCenterContentComponent implements OnInit {
   isDropdownIconclicked: boolean = false;
   
   
-  constructor(private renderer:Renderer2,
-    private getService: GetService, 
-    private router: Router, private route: ActivatedRoute,
-    private height: PropertyService
+  constructor(private getService: GetService, 
+    private route:ActivatedRoute
     ) { }
 
   @ViewChild('problems') problems:ElementRef;
@@ -50,6 +46,7 @@ export class HelpCenterContentComponent implements OnInit {
       }
       console.log(this.topics);
       this.topicId = this.topics[0].id;
+      //this.topicId=this.route.snapshot.params.id;
       this.getSubTopics(this.topicId);
     }); 
   }
@@ -85,6 +82,7 @@ export class HelpCenterContentComponent implements OnInit {
   ngOnInit() {
     this.AllTopics();
   }
+}
     /*
     if(window.innerWidth<900){
       this.windowNavbar=false;
@@ -125,5 +123,3 @@ export class HelpCenterContentComponent implements OnInit {
   /*mobile view*/
  
 
-  
-}

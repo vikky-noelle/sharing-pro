@@ -10,13 +10,13 @@
     <div class="QA">
       <ul class="side-nav">
         <li *ngFor="let qa of quesAns; let i = index">
-          <button (click)="getAns(qa.id)"><img src="{{qa.icon}}">&nbsp;&nbsp;<p>{{ qa.ques }}</p></button>
+          <button (click)="getAns(qa.id)"><img src="{{qa.icon}}">&nbsp;&nbsp;<p [innerHtml]="qa.ques"></p></button>
           </li>
       </ul>
     </div>
 
     <div class="answers">
-      <p>{{Ans}}</p>
+      <p [innerHtml]="Ans"></p>
     </div>
   </div>
 

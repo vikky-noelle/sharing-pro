@@ -33,13 +33,13 @@ p{
     border-top:none;
     padding: 5% 1.5% 5% 1.5%;
 }
-.side-nav li >button>img{
+.side-nav li>a>button>img{
     margin-left: 8%;
     width: 13%;
     height: 15%;
     border-radius: 5px;
 }
-.side-nav li >button{
+.side-nav li>a >button{
     margin-left: 2%;
     color: black;
     font-size: 1em;
@@ -48,8 +48,9 @@ p{
     border: none;
     text-align: left;
     position: relative;
+    cursor: pointer;
 }
- .side-nav li >button>p{
+ .side-nav li >a>button>p{
     margin-left: 2%;
     text-align: left;
     vertical-align: top;
@@ -153,14 +154,14 @@ p{
       padding: 2% .5% 2% .5%;
     }
 
-      .side-nav li > button > img {
+      .side-nav li >a> button > img {
         margin-left: 4%;
         width: 35px;
         height: 35px;
         border-radius: 5px;
       }
 
-      .side-nav li > button {
+      .side-nav li >a> button {
         margin-left: 1%;
         color: black;
         font-size: .5em;
@@ -170,11 +171,10 @@ p{
         text-align: left;
         position: relative;
       }
-      .side-nav>li>button:hover{
+      .side-nav>li>a>button:hover{
           font-weight: 500;
       }
         .subtopicdata{
-            
             display: inline-flex;
             width:70px;
             height: 70px;
