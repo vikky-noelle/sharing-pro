@@ -27,6 +27,7 @@
       </li>
     </ul>
   </div>
+
   <div class="mobile-view" *ngIf="mobileView">
     <div class="dropdown-menu-image-holder">
       <img src="/assets/images/sports-social-menu.png" (click)="openDropdown()">
@@ -43,7 +44,7 @@
             <a href="#">App</a> 
           </li>
           <li>
-            <a routerLink="/helpCenter" routerLinkActive="active">Help Center</a> 
+            <a routerLink="/HelpCenter" routerLinkActive="active">Help Center</a> 
           </li>
       </ul>
       <ng-container  *ngIf="isSearchInDropdown">

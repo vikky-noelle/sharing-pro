@@ -13,6 +13,7 @@ const App_Route: Routes = [
     
     
     {path:"addtopic",component:AddTopicComponent},
+    {path:"HelpCenter/:topicid/HelpCenter/:topicname",component:AddTopicComponent},
     {path:"HelpCenter",component:HelpCenterComponent},
     {
         path: "HelpCenter/:topicId/:subtopicname/HelpCenter/:subtopicId",

@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\about",
+    "\\src\\app\\add-que-ans",
+    "\\src\\app\\header",
+    "\\src\\app\\help-center",
+    "\\src\\app\\help-center\\help-center-header",
+    "\\src\\assets\\images"
+  ],
+  "SelectedNode": "\\src\\app\\help-center\\help-center-header\\help-center-header.component.ts",
+  "PreviewInSolutionExplorer": false
+}

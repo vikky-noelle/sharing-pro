@@ -13,6 +13,7 @@ p{
 }
 
 .content{
+    display: inline-flex;
     border-top: 1px solid purple;
 }
 .content>div{
@@ -23,7 +24,7 @@ p{
 }
 .side-nav{
    padding: 0px;
-   width: 260px;
+   width: 320px;
    list-style-type: none;
    display: inline-block;
 }
@@ -50,22 +51,22 @@ p{
 }
  .side-nav li >button>p{
     margin-left: 2%;
-    text-align: center;
+    text-align: left;
     vertical-align: top;
     font-size: 1em;
     font-weight: 300;
 } 
 .side-nav li>button:hover{
-    font-weight: 700;
+    font-weight: 650;
     text-decoration:none;
 }
 /*====Subtoipcs=======*/
 .subtopicdata{
     display: inline-block;
-    width:140px;
-    height: 140px;
-    padding:5%;
-    margin: 4% 0% 0% 10%;
+    width:120px;
+    height: 120px;
+    padding:2%;
+    margin: 4% 0% 0% 8%;
     vertical-align: top;
     border-radius: 5px;
 
@@ -75,7 +76,6 @@ p{
     font-weight: 400;
     width: 140px;
     text-align: center;
-    border:1 px solid black;
 }
 
 .subtopicdata a>p:hover{
@@ -131,4 +131,68 @@ p{
     font-weight: 400;
     margin-top: 15px;
     color: #101010;
+}
+.menuImgHolder>img:hover{
+  cursor:pointer;
+}
+
+@media(max-width:500px){
+    .content{
+        display: inline-flex;
+    }
+  .side-nav {
+    padding: 0px;
+    width: 240px;
+    list-style-type: none;
+    display: inline-block;
+  }
+
+    .side-nav li {
+      border: 1px solid #bbbbbb;
+      border-top: none;
+      padding: 2% .5% 2% .5%;
+    }
+
+      .side-nav li > button > img {
+        margin-left: 4%;
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+      }
+
+      .side-nav li > button {
+        margin-left: 1%;
+        color: black;
+        font-size: .5em;
+        font-weight: 200;
+        background: transparent;
+        border: none;
+        text-align: left;
+        position: relative;
+      }
+      .side-nav>li>button:hover{
+          font-weight: 500;
+      }
+        .subtopicdata{
+            
+            display: inline-flex;
+            width:70px;
+            height: 70px;
+            padding:2%;
+            margin: 5% 0% 13% 5%;
+            vertical-align: top;
+            border-radius: 5px;
+        
+        }
+        .subtopicdata>a>p{
+            font-size: .8em;
+            font-weight: 300;
+            width: 80px;
+            text-align: center;
+        }
+        
+        .subtopicdata a>p:hover{
+            font-weight: bolder;
+            text-decoration: none;
+        }
 }
