@@ -35,6 +35,7 @@ export class AddQueAnsComponent implements OnInit {
           id: body[i].id,
           topic_id: body[i].topic_id,
           subtopic_id: body[i].subtopic_id,
+          subtopic_name:body[i].subtopic_name,
           ques: body[i].ques,
           ans: body[i].ans,
           icon: body[i].icon

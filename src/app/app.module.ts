@@ -50,6 +50,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { GlobalNewsFeedComponent } from './global-feed/global-news-feed/global-news-feed.component';
 import { GlobalMatchFeedComponent } from './global-feed/global-match-feed/global-match-feed.component';
 import { HomeModule } from './home/home.module';
+import { HeaderModule } from './header/header.module';
 
 
 @NgModule({
@@ -89,6 +90,8 @@ import { HomeModule } from './home/home.module';
     OpenMatchCardModule,
     OpenNewsCardModule,
     HomeModule,
+    HeaderModule,
+    
     ScrollToModule.forRoot()
     
   ],
