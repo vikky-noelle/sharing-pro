@@ -3,9 +3,14 @@ import {
   OnInit,
   ViewEncapsulation,
   Input,
-  AfterViewInit
+  AfterViewInit,
+  Inject,
+  PLATFORM_ID
 } from '@angular/core';
 import { PostService } from '../../shared/services/post.service';
+import { Meta } from '@angular/platform-browser';
+import { LinkService } from '../../shared/services/link.service';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'sports-social-blog-card',
@@ -27,9 +32,9 @@ export class BlogCardComponent implements OnInit, AfterViewInit {
   @Input()  shortTitle: string;
 
   url;
-  constructor(
-  ) { }
-
+  
+  constructor(){} 
+  
 
 
   ngOnInit() {

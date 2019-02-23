@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/compiler/src/core';
 import { OpenMatchCardComponent } from '../open-cards/open-match-card/open-match-card.component';
@@ -8,12 +8,18 @@ import { AboutComponent } from '../about/about.component';
 import { HelpCenterComponent } from '../help-center/help-center.component';
 import { AddTopicComponent } from '../add-topic/add-topic.component';
 import { AddQueAnsComponent } from '../add-que-ans/add-que-ans.component';
+import { HomeComponent } from '../home/home.component';
+import { ApplicationComponent } from '../application/application.component';
 
 const App_Route: Routes = [
     
     {path:"addtopic",component:AddTopicComponent},
     {path:"HelpCenter",component:HelpCenterComponent},
     {path:"HelpCenter/:topicname",component:HelpCenterComponent},
+    {
+        path:"application",
+        component:ApplicationComponent  
+      },
     {
         path: "HelpCenter/:topicId/:subtopicname/HelpCenter/:subtopicId",
         component: AddQueAnsComponent
@@ -59,10 +65,15 @@ const App_Route: Routes = [
         component: PopUpComponent,
         outlet: 'AppDownload'
     },
+
     {
         path: '',
         loadChildren: 'app/home/home.module#HomeModule'
-    }
+    },
+    {
+        path: 'home',
+        component: HomeComponent,
+    },
 ]
 @NgModule({
     imports: [

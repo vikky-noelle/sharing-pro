@@ -33,6 +33,23 @@ import { HttpModule } from '@angular/http';
 import { AddTopicComponent } from './add-topic/add-topic.component';
 import { SubTopicComponent } from './sub-topic/sub-topic.component';
 import { AddQueAnsComponent } from './add-que-ans/add-que-ans.component';
+import { LinkService } from './shared/services/link.service';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { GlobalOpenArenaFeedComponent } from './global-feed/global-open-arena-feed/global-open-arena-feed.component';
+import { FooterComponent } from './footer/footer.component';
+import { ApplicationComponent } from './application/application.component';
+import { SportsSpecificFeedComponent } from './sports-specific-feed/sports-specific-feed.component';
+import { BlogCardComponent } from './cards/blog-card/blog-card.component';
+import { LiveMatchCardComponent } from './cards/live-match-card/live-match-card.component';
+import { MatchCardComponent } from './cards/match-card/match-card.component';
+import { NewsCardComponent } from './cards/news-card/news-card.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { GlobalNewsFeedComponent } from './global-feed/global-news-feed/global-news-feed.component';
+import { GlobalMatchFeedComponent } from './global-feed/global-match-feed/global-match-feed.component';
+import { HomeModule } from './home/home.module';
 
 
 @NgModule({
@@ -46,7 +63,23 @@ import { AddQueAnsComponent } from './add-que-ans/add-que-ans.component';
     HelpCenterHeaderComponent,
     AddTopicComponent,
     SubTopicComponent,
-    AddQueAnsComponent
+    AddQueAnsComponent,
+    ApplicationComponent,
+
+    //  HomeComponent,
+    // HeaderComponent,
+    // CarouselComponent,
+    // NavigationBarComponent,
+    // GlobalOpenArenaFeedComponent,
+    // FooterComponent,
+    // SportsSpecificFeedComponent,
+    // BlogCardComponent,
+    // LiveMatchCardComponent,
+    // MatchCardComponent,
+    // NewsCardComponent,
+    // FooterComponent,HeaderComponent,GalleryComponent,GlobalNewsFeedComponent,
+    // GlobalMatchFeedComponent,GlobalOpenArenaFeedComponent
+
   ],
   imports: [
     BrowserModule,
@@ -55,6 +88,7 @@ import { AddQueAnsComponent } from './add-que-ans/add-que-ans.component';
     HttpClientModule,
     OpenMatchCardModule,
     OpenNewsCardModule,
+    HomeModule,
     ScrollToModule.forRoot()
     
   ],
@@ -67,7 +101,8 @@ import { AddQueAnsComponent } from './add-que-ans/add-que-ans.component';
     TimeService,
     MatchDataService,
     NewsService,
-    PopUpService
+    PopUpService,
+    LinkService
   ],
   bootstrap: [AppComponent]
 })
