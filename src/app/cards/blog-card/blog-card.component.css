@@ -15,16 +15,48 @@
     top:0;
     bottom: 0px;
 }
-p{
-    text-decoration: none;
-    color: #bbbbbb;
+.blog-heading .heading{
+    margin-top:50%;
+    color: white;
     display: block;
-    width: 90%;
+    width: 20%;
+    font-weight: 100;
     text-align: left;
     position: absolute;
-    bottom: 30px;
-    left: 5px;
-    right: 5px !important;
+    left: 10px;
+    margin-right:10px;
+    
+}
+.blog-heading .bloggername{
+    margin-top:8%;
+    margin-bottom: 0%;
+    color: white;
+    display: block;
+    width: 40%;
+    text-align: left;
+    position: absolute;
+    left: 10px;
+    margin-right:10px;
+}
+.blog-heading #topic{
+    margin-top:10px;
+    margin-bottom: 0%;
+    color: white;
+    display: block;
+    width: 40%;
+    text-align: left;
+    position: absolute;
+    left: 10px;
+    margin-right:10px;
+}
+.blog-heading #views{
+    margin-top:55%;
+    margin-left: 80%;
+    color: white;
+    display: block;
+    width: 20%;
+    position: absolute;
+    margin-right:5px;
 }
 .time {
     position: absolute;
@@ -42,4 +74,29 @@ p{
     display: inline-block;
     vertical-align: middle;
     color: #bbbbbb;
+}
+@media(max-width:500px){
+    .heading>p{
+        margin-top:100px;
+        color: #ffffff;
+        display: block;
+        width: 20px;
+        text-align: left;
+        position: absolute;
+        left: 10px;
+        margin-right:10px;
+        
+    }
+    .blog-heading #views{
+        margin-top:15%;
+        margin-left: 73%;
+        color: white;
+        display: block;
+        width: 20%;
+        position: absolute;
+        margin-right:2%;
+    }
+    .blog-heading .bloggername{
+        margin-top:15%;
+    }
 }

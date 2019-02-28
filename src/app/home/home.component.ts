@@ -5,7 +5,7 @@ import {
   PLATFORM_ID,
   Inject
 } from '@angular/core';
-import { Meta } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 import { isPlatformBrowser } from '@angular/common';
 import { LinkService } from '../shared/services/link.service';
 
@@ -19,9 +19,10 @@ import { LinkService } from '../shared/services/link.service';
 export class HomeComponent implements OnInit {
 
   isbrowser:boolean;
-
+  title='Sports Social: Making it easier to play around';
   constructor(private metaservice:Meta,
     private link:LinkService,
+    private titleservice:Title,
     @Inject(PLATFORM_ID)platformid:Object) 
     {   
         link.addTag(  { rel: 'canonical', href: 'https://www.sportsocial.in/'});
@@ -33,14 +34,20 @@ export class HomeComponent implements OnInit {
             in sports,Indian Sports History, Sports Social media,sports technology,Sports blog,Indian Sports
             Blog,Multiplayer Strategy Video Games,Health and Fitness Tips,Sports Analytics blog, Indian sports
             news,outlook in sports industry,future trends in sports,sports business trends, sports articles,
-            sports management,Sports Social network india,sports jobs`},
-          { name: 'title', content: 'Sports Social: Sports Digital Media and Networking Service'},
+            sports management,Sports Social network india,sports jobs,Sports Social Network,Sports Digital Media,
+            Sports Network,Sports Networking websites,Sports Networking app,Khelo India,Find Sports Players Nearby,
+            Play Your Sport,Chase Your Sport`},
+          { name: 'title', content: 'Sports Social: Making it easier to play around'},
           { name: 'theme-color', content: '#4327a0'},
           { property: 'og:title', content: 'Sports Social: Sports Digital Media and Networking Service' },
           
           { property: 'og:description', content: `Sports Social Blog: Chase Your Sport aims to create a sustainable
           platform for Indian sports lovers to provide latest updates on Indian Sports Trends, analytics and
           career in sports.`},
+
+          { property: 'og:Meta-description', content: `Sports Social is Sports Digital Media and Networking Service that helps to 
+          see what's going around in sports and let's you chase your passion to play your favorite sport`},
+          
           { property: 'og:url', content:  'https://www.sportsocial.in/' },
           { property: 'og:image', content: 'https://test.sportsocial.in/defaultimages/Chase_Your_Sport.jpg'},
           { property: 'og:site_name', content: 'Sport Social' },
@@ -60,6 +67,10 @@ export class HomeComponent implements OnInit {
     }
 
   ngOnInit() {
+    this.titleservice.setTitle(this.title);
+    this.metaservice.addTag({name:'author',content:'sourabharora'});
+    this.metaservice.updateTag({name:'keywords',content:'Indian Sports Trends,Sports Social,Career in Sports,current trends in sports,Indian Sports History, Sports Social media,sports technology,Sports blog,Indian Sports Blog,Multiplayer Strategy Video Games,Health and Fitness Tips,Sports Analytics blog, Indian sports news,outlook in sports industry,future trends in sports,sports business trends, sports articles,sports management,Sports Social network india,sports jobs,Sports Social Network,Sports Digital Media,Sports Network,Sports Networking websites,Sports Networking app,Khelo India,Find Sports Players Nearby,Play Your Sport,Chase Your Sport'});
+    this.metaservice.updateTag({name:'Meta description',content:'Sports Social is Sports Digital Media and Networking Service that helps to see whats going around in sports and lets you chase your passion to play your favorite sport'});
   }
 
 }

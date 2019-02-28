@@ -15,7 +15,7 @@ const App_Route: Routes = [
     
     {path:"addtopic",component:AddTopicComponent},
     {path:"HelpCenter",component:HelpCenterComponent},
-    {path:"HelpCenter/:topicname",component:HelpCenterComponent},
+    {path:"Helpcenter/:topicname",component:HelpCenterComponent},
     {
         path:"application",
         component:ApplicationComponent  
@@ -29,6 +29,7 @@ const App_Route: Routes = [
         component:AboutComponent,
         
     },
+
     {
         path: 'Terms Of Service',
         loadChildren: 'app/terms-and-condition/terms-and-condition.module#TermsAndConditionModule',

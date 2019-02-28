@@ -23,6 +23,7 @@ export class HelpCenterContentComponent implements OnInit {
   topics = [];
   subtopics=[];
   topicId;
+  topicname:string='';
   isDropdownIconclicked: boolean = false;
   
   
@@ -43,9 +44,15 @@ export class HelpCenterContentComponent implements OnInit {
           icon: body[i].icon,
           shortDesc: body[i].shortDesc
         });
+        if(this.topicname!=''){
+            if(this.topicname==body[i].name)
+              this.topicId=body[i].id;
+        }
       }
       console.log(this.topics);
-      this.topicId = this.topics[0].id;
+      console.log(this.topicname);
+      if(this.topicname=='')
+        this.topicId = this.topics[0].id;
       //this.topicId=this.route.snapshot.params.id;
       this.getSubTopics(this.topicId);
     }); 
@@ -80,6 +87,9 @@ export class HelpCenterContentComponent implements OnInit {
   
   
   ngOnInit() {
+    if(this.route.snapshot.paramMap.has("topicname")){
+       this.topicname = this.route.snapshot.paramMap.get("topicname");
+    }
     this.AllTopics();
   }
 }

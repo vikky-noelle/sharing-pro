@@ -3,13 +3,14 @@
 <div class="content">
   <ul class="side-nav" *ngIf="windowNavbar">
     <li *ngFor="let data of topics">
-      <a routerLink="/HelpCenter/{{data.name}}">
+      <a routerLink="/Helpcenter/{{data.name}}">
       <button (click)="SubtopicsIconChange(data.id)">
         <img src="{{data.icon}}">&nbsp;&nbsp;{{data.name}}
       </button>
     </a>
     </li>
   </ul>
+  
   <!--
   <div *ngIf="!windowNavbar" class="mobileNav dropdown">
     <div class="menuImgHolder" data-toggle="dropdown">
@@ -23,6 +24,21 @@
       </li>
     </ul>
   </div>-->
+  <!-- <div class="content2" id="res-sidenav">
+      <div class="menuImg" data-toggle="dropdown">
+          <img src="/assets/images/menu.png" role="button" class="menuImg" (click)="opensidemenu()">
+        </div>
+      
+      <ul class="mynav" *ngIf="windowNavbar">
+          <li *ngFor="let data of topics">
+            <a routerLink="/HelpCenter/{{data.name}}" onclick="opensidemenu()">
+            <button (click)="SubtopicsIconChange(data.id)">
+              <img src="{{data.icon}}">&nbsp;&nbsp;<p>{{data.name}}</p>
+            </button>
+          </a>
+          </li>
+        </ul>
+  </div> -->
 
   <div #problems>
     <div class="subtopicdata" *ngFor="let data of subtopics" #problem>
@@ -32,5 +48,5 @@
       </a>
     </div>
   </div>
-</div>
+</div> 
 

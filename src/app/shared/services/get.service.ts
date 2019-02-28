@@ -43,4 +43,7 @@ export class GetService {
       "https://helpcenter.chaseyoursport.com/get/QA/" +topicId + "/" + subtopicId
     );
   }
+  getBlogdata():Observable<any>{
+    return this.http.get("https://prod.chaseyoursport.com/loadStartingTenblogs");
+  }
 }

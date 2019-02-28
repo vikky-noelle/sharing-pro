@@ -24,7 +24,7 @@ p{
 }
 .side-nav{
    padding: 0px;
-   width: 320px;
+   width: 400px;
    list-style-type: none;
    display: inline-block;
 }
@@ -41,6 +41,7 @@ p{
 }
 .side-nav li>a >button{
     margin-left: 2%;
+    width: 90%;
     color: black;
     font-size: 1em;
     font-weight: 300;
@@ -50,16 +51,22 @@ p{
     position: relative;
     cursor: pointer;
 }
- .side-nav li >a>button>p{
+ /* .side-nav li >a>button>p{
     margin-left: 2%;
     text-align: left;
     vertical-align: top;
     font-size: 1em;
     font-weight: 300;
-} 
-.side-nav li>button:hover{
-    font-weight: 650;
+    position: relative;
+    cursor: pointer;
+}  */
+.side-nav li>a>button:hover{
+    font-weight: bolder;
     text-decoration:none;
+}
+.side-nav li>a>button:focus{
+    font-weight: bolder;
+
 }
 /*====Subtoipcs=======*/
 .subtopicdata{
@@ -94,7 +101,7 @@ p{
 .menuImgHolder{
     height: 100%;
     width: 100%;
-    background-color: #fafafa;
+    background-color:red;
 }
 .menuImg{
   margin-left: 2%;
@@ -137,13 +144,85 @@ p{
   cursor:pointer;
 }
 
+.content2{
+        width:300px;
+        margin-left: 0%;
+        background-color: orange;
+    }
+    .content2>ul>li{
+        list-style-type: none;
+        border:1px solid red;
+        border-top: none;
+        width: 300px;
+        height: 35px;
+        float: left;
+    }
+    .mynav>li>button{
+        width:15px;
+        height: 5px;
+        background: transparent;
+    }
+    .mynav>li>a>button>p{
+        font-size: .9em;
+        margin-left: 30%;
+        margin-top: -10%;
+        
+    }
+    .mynav>li>a>button>img{
+        width:20px;
+        height: 20px;
+        margin-left: -60%;
+        position: relative;
+    }
+    
+/*================== media query ============== */
 @media(max-width:500px){
     .content{
         display: inline-flex;
     }
-  .side-nav {
+    /* .content2{
+        width:300px;
+    }
+    .menu{
+        margin-left:-30%;
+    }
+
+    .content2>ul>li{
+        list-style-type: none;
+        border:1px solid red;
+        border-top: none;
+        width: 300px;
+        height: 35px;
+        float: left;
+        
+        
+    }
+    .mynav>li>button{
+        width:15px;
+        height: 5px;
+        background: transparent;
+    }
+    .mynav>li>a>button>p{
+        font-size: .9em;
+        margin-left: 30%;
+        margin-top: -10%;
+        
+    }
+    .mynav>li>a>button>img{
+        width:20px;
+        height: 20px;
+        margin-left: -60%;
+        position: relative;
+    }
+    .side-nav{
+        visibility: hidden;
+    } */
+  .side-nav{
+      display: none;
+  }
+    .side-nav {
     padding: 0px;
-    width: 240px;
+    width: 260px;
     list-style-type: none;
     display: inline-block;
   }
@@ -172,14 +251,14 @@ p{
         position: relative;
       }
       .side-nav>li>a>button:hover{
-          font-weight: 500;
+          font-weight: bolder;
       }
         .subtopicdata{
             display: inline-flex;
             width:70px;
             height: 70px;
             padding:2%;
-            margin: 5% 0% 13% 5%;
+            margin: 5% 0% 20% 5%;
             vertical-align: top;
             border-radius: 5px;
         
@@ -194,5 +273,8 @@ p{
         .subtopicdata a>p:hover{
             font-weight: bolder;
             text-decoration: none;
+        }
+        .content2{
+            visibility: visible;
         }
 }

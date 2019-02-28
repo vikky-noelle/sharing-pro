@@ -51,13 +51,13 @@ import { GlobalNewsFeedComponent } from './global-feed/global-news-feed/global-n
 import { GlobalMatchFeedComponent } from './global-feed/global-match-feed/global-match-feed.component';
 import { HomeModule } from './home/home.module';
 import { HeaderModule } from './header/header.module';
+import { AboutModule } from './about/about.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PopUpComponent,
-    AboutComponent,
     HelpCenterComponent,
     HelpCenterContentComponent,
     HelpCenterFooterComponent,
@@ -66,20 +66,6 @@ import { HeaderModule } from './header/header.module';
     SubTopicComponent,
     AddQueAnsComponent,
     ApplicationComponent,
-
-    //  HomeComponent,
-    // HeaderComponent,
-    // CarouselComponent,
-    // NavigationBarComponent,
-    // GlobalOpenArenaFeedComponent,
-    // FooterComponent,
-    // SportsSpecificFeedComponent,
-    // BlogCardComponent,
-    // LiveMatchCardComponent,
-    // MatchCardComponent,
-    // NewsCardComponent,
-    // FooterComponent,HeaderComponent,GalleryComponent,GlobalNewsFeedComponent,
-    // GlobalMatchFeedComponent,GlobalOpenArenaFeedComponent
 
   ],
   imports: [
@@ -91,7 +77,7 @@ import { HeaderModule } from './header/header.module';
     OpenNewsCardModule,
     HomeModule,
     HeaderModule,
-    
+    AboutModule,
     ScrollToModule.forRoot()
     
   ],

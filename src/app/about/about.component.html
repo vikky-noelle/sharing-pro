@@ -3,29 +3,10 @@
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   </head>
   <sports-social-header></sports-social-header>
 <body>
-  
-  <!-- <header>
-    <div class="nav" #header>
-      <ul>
-        <li class="brand">
-          <a routerLink="/">
-            <img src="/assets/images/blue_logo.png" class="brand-img img--responsine img-circle">
-            <h4 class="brand-title">Sports Social</h4>
-          </a>
-        </li>
-
-        <li class="button">
-          <a routerLink="/About" class="About btn btn-responsive">About</a>
-          <a routerLink="/App" class="app1  btn btn-responsive">App</a>
-          <a routerLink="/HelpCenter" class="help  btn btn-responsive">Help Center</a>
-        </li>
-      </ul>
-    </div>
-  </header> -->
-
   <div class="app">
     <img src="/assets/images/app_icon.png" class="img-responsive app-icon">
   </div>
@@ -57,12 +38,22 @@
   </h4>
 
   <div class="blogFeed" id="blg-feed">
-    <p class="feedHeading">The Latest from our Blog</p>
+    <p class="feedHeading"><u>The Latest from our Blog</u></p>
     <div style="position:relative">
       <div class="blog" #blog>
-        <div *ngFor="let img of image" #blogImg>
-
-          <img src="{{img}}">
+        <div  class="feeddata" *ngFor="let feed of blogs" #blogImg>
+          <!-- <img src="{{img}}"> -->
+          <sports-social-blog-card
+                            [blogId] = "feed.blogId"
+                            [heading] = "feed.heading"
+                            [blogImage] = "feed.blogImage"
+                            [viewCount] = "feed.viewCount"
+                            [shareCount] = "feed.shareCount"
+                            [bloggerName] = "feed.bloggerName"
+                            [metaDesc] = "feed.metaDesc"
+                            [topic] = "feed.topic"
+                            [insertedDate] = "feed.insertedDate">
+                       </sports-social-blog-card>
         </div>
         <img src="/assets/images/left.png" class="left" (click)="leftScroll()">
         <img src="/assets/images/right.png" class="right" (click)="rightScroll()">
@@ -70,7 +61,7 @@
     </div>
   </div>
 
-  <div class="feed">
+  <!-- <div class="feed">
     <p class="feedHeading">The Social Feed</p>
     <div style="position:relative">
       <div class="socialFeed" #socialFeed>
@@ -81,47 +72,43 @@
         <img src="/assets/images/right.png" class="right" (click)="rightScroll()">
       </div>
     </div>
-  </div>
+  </div> -->
 
   <footer>
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-3 col-sm-6">
-          <h4>About</h4>
-          <h4>Company</h4>
-          <h4>Values</h4>
-          <h4>Blog</h4>
+          <a routerLink="/about"><h4>About</h4></a>
+          <a href="https://sportsocial.in/" target="_blank"><h4>Company</h4></a>
+          <!-- <h4>Values</h4> -->
+          <a href="https://chaseyoursport.com/" target="_blank"><h4>Blog</h4></a>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <h4>Help Center</h4>
-          <h4>Getting Started</h4>
-          <h4>My Account</h4>
-          <h4>Using My Locality</h4>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <h4>What's Going Around</h4>
-          <h4>Open Arena</h4>
-          <h4>Around The World</h4>
-        </div>
-
         <div class="col-md-3 col-sm-6">
           <h4><u>For Tips and Insight</u></h4>
 
           <h3>
-            <img href="#" src="/assets/images/twitter1.png">
-            <a href="#" style="margin:1.2%">Follow us on Twitter</a>
+              <a href="https://www.twitter.com/chaseyoursport" target="_blank" style="margin:1.2%">
+            <img src="/assets/images/twitter1.png">
+            Follow us on Twitter</a>
           </h3>
-          <h3>
+          <h3><a href="https://www.facebook.com/chaseyoursport" target="_blank" style="margin:1.2;">
             <img src="/assets/images/facebook.jpg">
-            <a href="#" style="margin:1.2%">Like us on Facebook</a>
+            Like us on Facebook</a>
           </h3>
-          <h3>
+          <h3><a href="https://www.youtube.com/channel/UC8dRPjyfNkxmOozPuUs5YVQ"  target="_blank" style="margin:1%">
             <img src="/assets/images/youtube.jpg">
-            <a href="#" style="margin:1.2%">Suscribe our Youtube Channel</a>
+            Suscribe our Youtube Channel</a>
           </h3>
           <h3>
-            <img src="/assets/images/insta.png">
-            <a href="#" style="margin:1.2%">Follow us on Instagram </a>
+              <a href="https://www.instagram.com/chaseyoursport" target="_blank" style="margin:1%">
+              <img src="/assets/images/insta.png">
+            Follow us on Instagram </a>
+          </h3>
+
+          <h3>
+              <a href="https://www.quora.com/topic/Sports-Social-Indias-First-Sports-Social-Network" target="_blank" style="margin:1%">
+            <img src="/assets/images/quora2.png">
+            Follow us on Quora </a>
           </h3>
 
         </div>
@@ -129,5 +116,8 @@
     </div>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </body>
 </html>
+  
+  
