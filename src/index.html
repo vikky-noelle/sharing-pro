@@ -7,6 +7,10 @@
   <style>.async-hide { opacity: 0 !important} </style>
 
   <title>Sports Social: Sports Digital Media and Networking Service</title>
+  <meta name="title" content=" ">
+  <meta name="keywords" content=" ">
+  <meta name="meta-description" content=" ">
+
   <base href="/">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72533275-1"></script>
@@ -53,6 +57,17 @@
 </head>
 <body>
  <sports-social-root></sports-social-root>
+ <div ng-controller="Controller">
+   <input type="text" ng-model="title" ng-change="change()">
+ </div>
+
+ <script>
+ function Controller($scope){
+    $scope.change= function(){
+      $scope.title=$scope.title.replace(/\s+/,'-');
+    }
+ }
+ </script>
  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 </body>
 </html>

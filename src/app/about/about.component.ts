@@ -123,6 +123,10 @@ constructor(private margin:SendService,
 ngOnInit() {
   // console.log(this.desc.nativeElement.textContent);
   this.titleservice.setTitle(this.title);
+  this.metaservice.updateTag({name:'title',content:this.title});
+  this.metaservice.updateTag({name: 'keywords' , content: `About Sports Social,Sports Social,Chase Your Sport,Sports is the new Social,Your Sports Manager,Bond over Sports,Participate in Sport,Khelo India,Play your sport`});
+  this.metaservice.updateTag({name: 'meta-description', content:"Sports Social is Social Networking Service that lets users to chase their passion for the sport at any time, anywhere.“Sports Social” aims to provide a framework and maximize access to participation in appropriate forms of physical activity."});
+  
   this.getLatestBlog();
   this.typeWriterTitle(this.descTitle,0); 
   setTimeout(function() {

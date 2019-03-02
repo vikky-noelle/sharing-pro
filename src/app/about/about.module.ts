@@ -12,7 +12,6 @@ import { NgMasonryGridModule } from 'ng-masonry-grid';
 @NgModule({
   imports: [
     CommonModule,
-    
     AboutRouter,
     FooterModule,
     HeaderModule,

@@ -19,6 +19,7 @@ import { LinkService } from '../shared/services/link.service';
 export class HomeComponent implements OnInit {
 
   isbrowser:boolean;
+  Keywords=[];
   title='Sports Social: Making it easier to play around';
   constructor(private metaservice:Meta,
     private link:LinkService,
@@ -53,6 +54,7 @@ export class HomeComponent implements OnInit {
           { property: 'og:site_name', content: 'Sport Social' },
           { property: 'fb:app_id', content: '1750709328507665'},
           { name: 'facebook:creator', content: '@SourabhArora'},
+          
           { name: 'twitter:card', content: 'summary_large_image'},
           { name: 'twitter:site', content: '@Sportsoical'},
           { name: 'twitter:creator', content: '@SourabhArora'},
@@ -68,9 +70,22 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.titleservice.setTitle(this.title);
-    this.metaservice.addTag({name:'author',content:'sourabharora'});
-    this.metaservice.updateTag({name:'keywords',content:'Indian Sports Trends,Sports Social,Career in Sports,current trends in sports,Indian Sports History, Sports Social media,sports technology,Sports blog,Indian Sports Blog,Multiplayer Strategy Video Games,Health and Fitness Tips,Sports Analytics blog, Indian sports news,outlook in sports industry,future trends in sports,sports business trends, sports articles,sports management,Sports Social network india,sports jobs,Sports Social Network,Sports Digital Media,Sports Network,Sports Networking websites,Sports Networking app,Khelo India,Find Sports Players Nearby,Play Your Sport,Chase Your Sport'});
-    this.metaservice.updateTag({name:'Meta description',content:'Sports Social is Sports Digital Media and Networking Service that helps to see whats going around in sports and lets you chase your passion to play your favorite sport'});
+    this.metaservice.updateTag({name:'title',content:this.title});
+    this.metaservice.addTag({name:'author',content:'Sourabh Arora'});
+    this.metaservice.updateTag({name:'keywords',content:'Sports Social,Sports Social app,Sports Social Network,Sports Digital Media,Sports Network,Sports Networking websites,Sports Networking app,Khelo India,Find Sports Players Nearby,Play Your Sport,Chase Your Sport'});
+    this.metaservice.updateTag({name:'meta-description',content:"Sports Social is Sports Digital Media and Networking Service that helps to see what's going around in sports and let's you chase your passion to play your favorite sport"});
   }
+
+  setCanonivalURL() {
+    let key;
+    if (this.Keywords[0].search(/ /g ) === -1) {
+       key = this.Keywords[0] ;
+    }else {
+        key = this.Keywords[0].replace(/\s/g, '-');
+    }
+    const url = 'https://www.sportsocial.in/' + key
+    + '/' + this.title.replace(/\s/g, '-') + '/' ;
+    this.link.addTag({ rel: 'canonical', href: url } );
+}
 
 }

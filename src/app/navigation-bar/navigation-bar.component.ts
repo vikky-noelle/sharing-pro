@@ -8,7 +8,7 @@ import {
   NgZone,
 } from '@angular/core';
 import { PropertyService } from '../shared/services/property.service';
-import { ɵgetDOM } from '@angular/platform-browser';
+import { ɵgetDOM, Meta, Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -34,7 +34,9 @@ export class NavigationBarComponent implements OnInit {
     private reciveBottom: PropertyService,
     private renderer: Renderer2,
     private activatedRoute: ActivatedRoute,
-    private zone: NgZone
+    private zone: NgZone,
+    private metaservice:Meta,
+    private title:Title
   ) { }
 
   /* activeRoute: {
@@ -175,6 +177,7 @@ export class NavigationBarComponent implements OnInit {
     this.responsiveNavigationBar();
     this.heightOfHeader();
     this.fixedNavbar();
+  
   }
 
   @HostListener('window:resize', []) onresize() {

@@ -14,6 +14,7 @@ p{
 
 .content{
     display: inline-flex;
+    padding-bottom: 5%;
     border-top: 1px solid purple;
 }
 .content>div{
@@ -35,6 +36,7 @@ p{
 }
 .side-nav li>a>button>img{
     margin-left: 8%;
+    padding-right: 15px;
     width: 13%;
     height: 15%;
     border-radius: 5px;
@@ -51,15 +53,6 @@ p{
     position: relative;
     cursor: pointer;
 }
- /* .side-nav li >a>button>p{
-    margin-left: 2%;
-    text-align: left;
-    vertical-align: top;
-    font-size: 1em;
-    font-weight: 300;
-    position: relative;
-    cursor: pointer;
-}  */
 .side-nav li>a>button:hover{
     font-weight: bolder;
     text-decoration:none;
@@ -74,15 +67,18 @@ p{
     width:120px;
     height: 120px;
     padding:2%;
+    padding-bottom: 8%;
     margin: 4% 0% 0% 8%;
     vertical-align: top;
     border-radius: 5px;
+    /* border: 1px solid black; */
 
 }
 .subtopicdata>a>p{
     font-size: 1.2em;
     font-weight: 400;
     width: 140px;
+    margin-left: -10px;
     text-align: center;
 }
 
@@ -222,7 +218,7 @@ p{
   }
     .side-nav {
     padding: 0px;
-    width: 260px;
+    width: 285px;
     list-style-type: none;
     display: inline-block;
   }
@@ -230,18 +226,17 @@ p{
     .side-nav li {
       border: 1px solid #bbbbbb;
       border-top: none;
-      padding: 2% .5% 2% .5%;
+      padding: 2% .4% 2% .2%;
     }
 
       .side-nav li >a> button > img {
-        margin-left: 4%;
+        margin-left: 2%;
         width: 35px;
         height: 35px;
         border-radius: 5px;
       }
 
       .side-nav li >a> button {
-        margin-left: 1%;
         color: black;
         font-size: .5em;
         font-weight: 200;

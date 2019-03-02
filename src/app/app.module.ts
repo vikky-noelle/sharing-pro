@@ -5,8 +5,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { ScrollToModule } from 'ng2-scroll-to-el';
 
-/* shared services */
-
 import { PropertyService } from './shared/services/property.service';
 import { GetService } from './shared/services/get.service';
 
@@ -52,6 +50,9 @@ import { GlobalMatchFeedComponent } from './global-feed/global-match-feed/global
 import { HomeModule } from './home/home.module';
 import { HeaderModule } from './header/header.module';
 import { AboutModule } from './about/about.module';
+import { FooterModule } from './footer/footer.module';
+import { HelpCenterModule } from './help-center/help-center.module';
+import { SeoService } from './shared/services/seo.service';
 
 
 @NgModule({
@@ -66,7 +67,7 @@ import { AboutModule } from './about/about.module';
     SubTopicComponent,
     AddQueAnsComponent,
     ApplicationComponent,
-
+    
   ],
   imports: [
     BrowserModule,
@@ -78,6 +79,7 @@ import { AboutModule } from './about/about.module';
     HomeModule,
     HeaderModule,
     AboutModule,
+    FooterModule,
     ScrollToModule.forRoot()
     
   ],
@@ -91,7 +93,8 @@ import { AboutModule } from './about/about.module';
     MatchDataService,
     NewsService,
     PopUpService,
-    LinkService
+    LinkService,
+    SeoService
   ],
   bootstrap: [AppComponent]
 })

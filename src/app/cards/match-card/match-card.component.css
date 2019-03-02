@@ -1,6 +1,5 @@
 
 
-
 .userImage{
     width: 45px;
     height: 45px;
@@ -103,6 +102,11 @@
 .matchImage > img {
     width: 100%;
 }
+.matchImage:hover img {
+    -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 .action-count{
     padding: 2%;
 }
@@ -153,4 +157,3 @@ button {
 .gameName {
     font-weight: 700 ;
 }
-

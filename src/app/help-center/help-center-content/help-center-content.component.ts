@@ -11,6 +11,8 @@ import {
 
 import { GetService } from '../../shared/services/get.service';
 import { ActivatedRoute } from '@angular/router';
+import { LinkService } from '../../shared/services/link.service';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'SportSocial-help-center-content',
@@ -20,15 +22,19 @@ import { ActivatedRoute } from '@angular/router';
 export class HelpCenterContentComponent implements OnInit {
 
   windowNavbar:boolean=true;
+  Keywords=[];
   topics = [];
   subtopics=[];
   topicId;
   topicname:string='';
   isDropdownIconclicked: boolean = false;
-  
+  pagetitle='Sports Social Help Center';
   
   constructor(private getService: GetService, 
-    private route:ActivatedRoute
+    private route:ActivatedRoute,
+    private link:LinkService,
+    private meta:Meta,
+    private title:Title
     ) { }
 
   @ViewChild('problems') problems:ElementRef;
@@ -56,11 +62,13 @@ export class HelpCenterContentComponent implements OnInit {
       //this.topicId=this.route.snapshot.params.id;
       this.getSubTopics(this.topicId);
     }); 
+     
   }
   SubtopicsIconChange(id){
     this.subtopics=[];
     this.getSubTopics(id);
   };
+  
   
   getSubTopics(id){
   this.getService.getSubTopic(id).subscribe(res=>{
@@ -87,6 +95,10 @@ export class HelpCenterContentComponent implements OnInit {
   
   
   ngOnInit() {
+    this.title.setTitle(this.pagetitle);
+    this.meta.updateTag({name:'title',content:this.pagetitle});
+    this.meta.updateTag({name:'meta-description',content:"How can we help you today? Using Sports Social, New to Sports Social? Learn the basics to get the most out of Sports Social. Having an issue contact us"});
+    this.meta.updateTag({name:'keywords',content:"Sports Social Help,Sports Social Help Center,Customer care Sports Social,Contact Sports Social,Chase Your Sport,FAQ Sports Social,Sports Social Support"});
     if(this.route.snapshot.paramMap.has("topicname")){
        this.topicname = this.route.snapshot.paramMap.get("topicname");
     }

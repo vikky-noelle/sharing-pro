@@ -7,6 +7,8 @@ import { Masonry, MasonryGridItem } from 'ng-masonry-grid';
 import { ISubscription } from 'rxjs/Subscription';
 import { MatchDataService } from '../shared/services/match-data.service';
 import { NewsService } from '../shared/services/news.service';
+import { Meta, Title } from '@angular/platform-browser';
+import { PARAMETERS } from '@angular/core/src/util/decorators';
 
 @Component({
   selector: 'sports-social-sports-specific-feed',
@@ -47,14 +49,16 @@ export class SportsSpecificFeedComponent implements OnInit, OnDestroy {
     private activeRoute: ActivatedRoute,
     private router: Router,
     private zone: NgZone,
+    private load :PostService,
+    private metaservice :Meta,
+    private pagetitle:Title
   ) { }
   reloadPage() {
     this.zone.runOutsideAngular(() => {
         location.reload();
     });
   }
-globalFeed( ) {
-  
+globalFeed() {
   this.activeRoute.params.subscribe(
     (params) => {
       if ( this.gameName !== params.sport && this.gameName !== undefined) {
@@ -66,6 +70,11 @@ globalFeed( ) {
       this.gameId = this.Sports.find((sport) => {
         return sport.title === this.gameName;
       }).id;
+
+      this.pagetitle.setTitle(this.gameName);
+      this.metaservice.updateTag({name:'title',content:this.gameName});
+      this.metaservice.updateTag({name:'meta-description',content:"See What's going around you in "+ this.gameName+" in the "+ this.gameName+ " Arena. Use "+ this.gameName+ " Arena to find,connect,play, follow "+ this.gameName+ " matches, players, academies, coaches, events etc. in your locality and around the world | stay connected to your " +this.gameName+ " world"});
+      this.metaservice.updateTag({name:'keywords',content:""+this.gameName+" Arena,Sports Social "+this.gameName+","+this.gameName+" Grounds Nearby,"+this.gameName+" Events Nearby, "+this.gameName+" Matches Nearby, Connect "+this.gameName+" Players, Play "+this.gameName+", Find "+this.gameName+" Players,Find "+this.gameName+" Academies,"+this.gameName+" Tournaments Nearby"});
       console.log(this.gameName, this.gameId);
       const matchPomise = this.matchData.globalMatchFeed( this.nextPageNo, this.gameId );
       const newsPromise =  this.newsData.globalNewsFeed( this.nextPageNo, this.gameName.toLowerCase());

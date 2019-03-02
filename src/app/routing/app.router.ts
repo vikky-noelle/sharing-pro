@@ -21,7 +21,7 @@ const App_Route: Routes = [
         component:ApplicationComponent  
       },
     {
-        path: "HelpCenter/:topicId/:subtopicname/HelpCenter/:subtopicId",
+        path: "HelpCenter/:topicId/:subtopicname/:subtopicId",
         component: AddQueAnsComponent
       },
     {
