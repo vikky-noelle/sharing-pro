@@ -17,7 +17,7 @@
 }
 .blog-heading .heading{
     margin-top:50%;
-    color: white;
+    color:rgb(217, 255, 0);
     display: block;
     width: 20%;
     font-weight: 100;
@@ -25,19 +25,20 @@
     position: absolute;
     left: 10px;
     margin-right:10px;
+    /* text-shadow: 2px 2px skyblue; */
     
 }
 .blog-heading .bloggername{
     margin-top:8%;
     margin-bottom: 0%;
-    
-    color: rgb(10, 253, 221);
+    color: rgb(240, 236, 25);
     display: block;
     width: 40%;
     text-align: left;
     position: absolute;
     left: 10px;
     margin-right:10px;
+    
 }
 .blog-heading #topic{
     margin-top:10px;
