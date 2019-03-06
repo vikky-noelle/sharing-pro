@@ -20,7 +20,7 @@ import { Meta, Title } from '@angular/platform-browser';
   styleUrls: ['./help-center-content.component.css']
 })
 export class HelpCenterContentComponent implements OnInit {
-
+  topicName="";
   windowNavbar:boolean=true;
   Keywords=[];
   topics = [];
@@ -29,12 +29,14 @@ export class HelpCenterContentComponent implements OnInit {
   topicname:string='';
   isDropdownIconclicked: boolean = false;
   pagetitle='Sports Social Help Center';
+  top='';
   
   constructor(private getService: GetService, 
     private route:ActivatedRoute,
     private link:LinkService,
     private meta:Meta,
-    private title:Title
+    private title:Title,
+    private renderer:Renderer2
     ) { }
 
   @ViewChild('problems') problems:ElementRef;
@@ -48,27 +50,35 @@ export class HelpCenterContentComponent implements OnInit {
           id: body[i].id,
           name: body[i].name,
           icon: body[i].icon,
-          shortDesc: body[i].shortDesc
+          shortDesc: body[i].shortDesc,
+          namkaran:body[i].name
+        
         });
         if(this.topicname!=''){
-            if(this.topicname==body[i].name)
-              this.topicId=body[i].id;
-        }
+          if(this.topicname==body[i].name)
+            this.topicId=body[i].id;
+      }
+        const url = 'https://www.sportsocial.in/' + this.strip(body[i].namkaran).replace(/\s/g, '-').toLowerCase();
+        this.link.addTag({ rel: 'canonical', href: url } );
       }
       console.log(this.topics);
       console.log(this.topicname);
       if(this.topicname=='')
         this.topicId = this.topics[0].id;
-      //this.topicId=this.route.snapshot.params.id;
       this.getSubTopics(this.topicId);
-    }); 
      
+    }); 
   }
+  strip(html) {
+    const tmp = this.renderer.createElement('DIV');
+    tmp.innerHTML = html;
+    return tmp.textContent || tmp.innerText || '';
+}
   SubtopicsIconChange(id){
     this.subtopics=[];
     this.getSubTopics(id);
+    this.getSeo(id);
   };
-  
   
   getSubTopics(id){
   this.getService.getSubTopic(id).subscribe(res=>{
@@ -85,6 +95,15 @@ export class HelpCenterContentComponent implements OnInit {
       console.log(this.subtopics);
   });
   }
+getSeo(id){
+  for(const topic in this.topics){
+    if(this.topics[topic].id == id)
+      this.top= this.topics[topic].name;
+  }
+  this.title.setTitle(this.top);
+  this.meta.updateTag({name:'title',content:this.top});
+}
+ 
 
   openDropdown() {
     this.isDropdownIconclicked = true;
@@ -97,13 +116,24 @@ export class HelpCenterContentComponent implements OnInit {
   ngOnInit() {
     this.title.setTitle(this.pagetitle);
     this.meta.updateTag({name:'title',content:this.pagetitle});
-    this.meta.updateTag({name:'meta-description',content:"How can we help you today? Using Sports Social, New to Sports Social? Learn the basics to get the most out of Sports Social. Having an issue contact us"});
+    this.meta.updateTag({name:'description',content:"How can we help you today? Using Sports Social, New to Sports Social? Learn the basics to get the most out of Sports Social. Having an issue contact us"});
     this.meta.updateTag({name:'keywords',content:"Sports Social Help,Sports Social Help Center,Customer care Sports Social,Contact Sports Social,Chase Your Sport,FAQ Sports Social,Sports Social Support"});
     if(this.route.snapshot.paramMap.has("topicname")){
        this.topicname = this.route.snapshot.paramMap.get("topicname");
     }
     this.AllTopics();
   }
+  setCanonivalURL() {
+    let key;
+    if (this.Keywords[0].search(/ /g ) === -1) {
+       key = this.Keywords[0] ;
+    }else {
+        key = this.Keywords[0].replace(/\s/g, '-');
+    }
+    const url = 'https://www.sportsocial.in/' + key
+    + '/' + this.pagetitle.replace(/\s/g, '-') + '/' ;
+    this.link.addTag({ rel: 'canonical', href: url } );
+}
 }
     /*
     if(window.innerWidth<900){

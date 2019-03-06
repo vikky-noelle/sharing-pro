@@ -19,6 +19,6 @@ import { FooterModule } from '../footer/footer.module';
 
     exports:[]
 })
-export class HelpCenterModule { }
+export class HelpCenterModule {}
 
 

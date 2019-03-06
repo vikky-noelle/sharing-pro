@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'sports-social-terms-and-condition',
@@ -8,7 +9,10 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class TermsAndConditionComponent implements OnInit {
 
-  constructor() { }
+  title="Terms of use | Sports Social";
+  constructor(private pagetite:Title,
+    private meta :Meta) { }
+    
   termsOfServices = [
     'Basic Terms',
     'Privacy',
@@ -23,6 +27,12 @@ export class TermsAndConditionComponent implements OnInit {
     'Entire Agreement'
   ];
   ngOnInit() {
+    this.pagetite.setTitle(this.title);
+    this.meta.updateTag({name:'title',content:this.title});
+    this.meta.updateTag({name:'description',content:"To all the users living in India, our terms and conditions are in compliance with user agreement, privacy policy and all other incorporated policies"});
+    this.meta.updateTag({name:'keywords',content:"Terms of Service Sports Social,Terms and Conditions Sports Social,User agreement Sports Social"});
+
+
   }
 
 }

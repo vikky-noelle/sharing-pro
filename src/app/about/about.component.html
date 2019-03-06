@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </head>
+
   <sports-social-header></sports-social-header>
   
 <body>
@@ -62,63 +63,29 @@
     </div>
   </div>
 
-  <!-- <div class="feed">
-    <p class="feedHeading">The Social Feed</p>
-    <div style="position:relative">
+  <div class="feed">
+         <p class="feedHeading"><u><img src="/assets/images/instagram.png" alt="">The Social Feed</u></p>
+    <div style="position:relative">    
       <div class="socialFeed" #socialFeed>
-        <div *ngFor="let img of image">
-          <img src="{{img}}" #socialFeedImg>                                                        
+        <div *ngFor="let data of instaArr" class="instaData">
+            <a href="{{data.link}}" target=_blank> <img src={{data.url}} #socialFeedImg> </a>
+            <p id="username" style="color:yellowgreen;">@{{data.username}}</p>
+                <p id="time">{{data.created_time}}</p>
+                <p id=content>{{data.text}}</p> 
+            <!-- <div  *ngFor="let data of instaArr" class="text">
+                <p id="username">@{{data.username}}</p>
+                <p id="time">{{data.created_time}}</p>
+                <p id=content>{{data.text}}</p> 
+               </div> -->
         </div>
-        <img src="/assets/images/left.png" class="left" (click)="leftScroll()">
-        <img src="/assets/images/right.png" class="right" (click)="rightScroll()">
-      </div>
+        <img src="/assets/images/left.png" class="left" (click)="leftScroll2()">
+        <img src="/assets/images/right.png" class="right" (click)="rightScroll2()">   
+      </div>    
     </div>
-  </div> -->
-
-  <!-- <footer>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <a routerLink="/about"><h4>About</h4></a>
-          <a href="https://sportsocial.in/" target="_blank"><h4>Company</h4></a>
-           <h4>Values</h4> 
-          <a href="https://chaseyoursport.com/" target="_blank"><h4>Blog</h4></a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <h4><u>For Tips and Insight</u></h4>
-
-          <h3>
-              <a href="https://www.twitter.com/chaseyoursport" target="_blank" style="margin:1.2%">
-            <img src="/assets/images/twitter1.png">
-            Follow us on Twitter</a>
-          </h3>
-          <h3><a href="https://www.facebook.com/chaseyoursport" target="_blank" style="margin:1.2;">
-            <img src="/assets/images/facebook.jpg">
-            Like us on Facebook</a>
-          </h3>
-          <h3><a href="https://www.youtube.com/channel/UC8dRPjyfNkxmOozPuUs5YVQ"  target="_blank" style="margin:1%">
-            <img src="/assets/images/youtube.jpg">
-            Suscribe our Youtube Channel</a>
-          </h3>
-          <h3>
-              <a href="https://www.instagram.com/chaseyoursport" target="_blank" style="margin:1%">
-              <img src="/assets/images/insta.png">
-            Follow us on Instagram </a>
-          </h3>
-
-          <h3>
-              <a href="https://www.quora.com/topic/Sports-Social-Indias-First-Sports-Social-Network" target="_blank" style="margin:1%">
-            <img src="/assets/images/quora2.png">
-            Follow us on Quora </a>
-          </h3>
-
-        </div>
-      </div>
-    </div>
-  </footer> -->
+  </div>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  
+
 </body>
 </html>
 <sports-social-footer></sports-social-footer>

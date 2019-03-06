@@ -3,7 +3,12 @@ body {
     width: auto;
     height: auto;
   }
-
+  .instagram{
+    border:1px solid black;
+  }
+  .instagram>img{
+    border:1px solid red;
+  }
   .nav {
     background-color: #fff;
     height: auto;
@@ -277,47 +282,97 @@ body {
       cursor: pointer;
       
   }
+
+  /* insta-feed */
   .feed{
-      z-index: 800;
-      margin: 0px;
+    z-index: 10;
+    margin: 0px;
   }
   .feedHeading{
-      font-family: 'Roboto',sans-serif;
-      font-size: 1.8em;
-      font-weight: 500;
-      color: #101010;
-      margin:3% 0% 3% 0%;
-      text-align: center
-  }
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #101010;
+    margin:3% 0% 3% 0%;
+    text-align: center
+}
   .socialFeed{
-      max-height: 500px;
+      width: 90%;
+      max-height: 400px;
       margin: 5% auto;
-      overflow-x: hidden;
-      overflow-y: hidden;
+      overflow: hidden;
       white-space: nowrap !important;
+      box-shadow: 10px 10px 5px  rgb(228, 157, 26);
+}
+.socialFeed>div{
+      display: inline-block;
+      width: 50%;
+      height: 400px; 
+}
+ 
+  .instaData>a>img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-right: 2%;
+    
     
   }
-  .socialFeed>div{
-      display: inline-block;
-      width:50%;
-      height: 500px;
-      margin: 0px;
+  .text{
+    position: absolute;
+    width:640px;
+    height: 100px;
+    background-color: black;
+    opacity: 0.8%;
+    filter: Alpha(opacity=90);
+    /* overflow: hidden;
+    overflow-x: hidden; */
+    font-size:1vw;
   }
-  .socialFeed>div>img{
-      max-width: 100%;
-      height: 100%;
-      padding-right: 2%;
+   .text #username{
+    position: absolute;
+    color:blue;
+    top:4%;
+    left:1%;
+    overflow: hidden;
+  }
+  .text #time{
+    position: absolute;
+    color:blue;
+    top:4%;
+    left:80%;
+    overflow: hidden;
+  }
+  .text #content{
+    /* position: absolute; */
+    border:1px solid white;
+    width:97%;
+    height: 50px;
+    margin-top:60px;
+    overflow-y: hidden;
+    color: yellow;
+    float: left;
+    font-size: 1vw;
+  }
+  
+  .instaData{
+    border:2px solid orange;
+    overflow: hidden;
+    margin: 2px;
   }
   .socialFeed .left{
       position: absolute;
       top:45%;
       left: 2%;
+      cursor: pointer;
   }
   .socialFeed .right{
       position: absolute;
       top:45%;
       right: 3%;
+      cursor: pointer;
   }
+  /* insta end */
   .sport-icon{
       display: block;
       margin: auto;
@@ -351,7 +406,6 @@ body {
   .col-md-3 h4:first-child{
       font-weight: 700;
   }
-  
   
   
   @media (max-width:500px) {
@@ -426,7 +480,3 @@ body {
     }
 }
   
-.latest-blog{
-    font-size: 1.4em;
-    font-weight: 700;
-}

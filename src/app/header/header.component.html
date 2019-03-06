@@ -21,11 +21,12 @@
         <a routerLink="/about" class="About btn btn-responsive">About</a>
       </li>
       <li>
-        <a routerLink="#">App</a> <!--https://goo.gl/qrgCz5-->
+        <a routerLink="/application">App</a> <!--https://goo.gl/qrgCz5-->
       </li>
       <li>
-        <a href="/HelpCenter">Help Center</a> 
+        <a routerLink="/HelpCenter">Help Center</a> 
       </li>
+      
     </ul>
   </div>
 
@@ -42,11 +43,12 @@
             <a routerLink="/about">About</a> 
           </li>
           <li>
-            <a href="#">App</a> <!--https://goo.gl/qrgCz5-->
+            <a routerLink="#">App</a> <!--https://goo.gl/qrgCz5-->
           </li>
           <li>
             <a routerLink="/HelpCenter" routerLinkActive="active">Help Center</a> 
           </li>
+          
       </ul>
       <ng-container  *ngIf="isSearchInDropdown">
         <div class="dropdown-search">

@@ -5,7 +5,8 @@ import { Component,
   ElementRef,
   Renderer2,
   PLATFORM_ID,
-  Inject
+  Inject,
+  AfterViewInit
 } from '@angular/core';
 import { SendService } from '../shared/services/send.service';
 import { PostService } from '../shared/services/post.service';
@@ -16,6 +17,7 @@ import { GetService } from '../shared/services/get.service';
 import { isPlatformBrowser } from '@angular/common';
 import { LinkService } from '../shared/services/link.service';
 import { Meta ,Title} from '@angular/platform-browser';
+import { Http ,Response} from '@angular/http';
 
 @Component({
 selector: 'app-about',
@@ -27,7 +29,48 @@ export class AboutComponent implements OnInit {
   title='About Sports Social | Chase Your Sport';
 private marginTop;
 isbrowser:boolean;
+url;
 blogs=[];
+instaArr=[];
+instadata=[];
+instaimageArray:
+{id,
+    user:{
+          profile_picture,username
+         },
+    images:{
+              standard_resolution:{
+                                    width,height,url
+                                  },
+            }
+    created_time,
+    caption:{
+             text
+             },
+    link
+};
+
+
+instafeed():void{
+  this.http.request('https://api.instagram.com/v1/users/self/media/recent/?access_token=3238782460.1408c01.74c84f4d73a048c69abe08f3d038e444')
+    .subscribe((res:Response)=>{
+      this.instadata=res.json().data;
+      console.log("this is insta data::"+this.instadata);
+      for(var i=0;i<this.instadata.length;i++){
+        this.instaimageArray=this.instadata[i];
+        this.instaArr.push({
+          id:this.instaimageArray.id,
+          profile_picture:this.instaimageArray.user.profile_picture,
+          username: this.instaimageArray.user.username,
+          url:this.instaimageArray.images.standard_resolution.url,
+          created_time:this.time.ExactDate(this.instaimageArray.created_time),
+          text:this.instaimageArray.caption.text,
+          link:this.instaimageArray.link
+        });
+      }
+      
+    });
+}
 _masonry: Masonry;
   private _removeAllSubscription: ISubscription;
   private _removeItemSubscription: ISubscription;
@@ -38,6 +81,7 @@ desc="Sports digital media and Networking Service that helps you to see\
  what's going around in your locality and around the globe right now & let's\
   you chase your passion to play your favourite sport."
 descDisplay=""
+
 
 @ViewChild('blog') blog:ElementRef;
 @ViewChild('blogImg') blogImg:ElementRef;
@@ -50,6 +94,7 @@ constructor(private margin:SendService,
   private link:LinkService,
   private metaservice:Meta,
   private titleservice:Title,
+  private http:Http,
   @Inject(PLATFORM_ID)platformid:Object)
     
     {   
@@ -115,19 +160,22 @@ constructor(private margin:SendService,
           metaDesc: data[i].metaDesc,
           topic: data[i].topic,
           insertedDate: this.time.timePassed( data[i].insertedDate )
-          });
+          })
     }
+    
     }
   );
 }
 ngOnInit() {
   // console.log(this.desc.nativeElement.textContent);
+  this.instafeed();
   this.titleservice.setTitle(this.title);
   this.metaservice.updateTag({name:'title',content:this.title});
   this.metaservice.updateTag({name: 'keywords' , content: `About Sports Social,Sports Social,Chase Your Sport,Sports is the new Social,Your Sports Manager,Bond over Sports,Participate in Sport,Khelo India,Play your sport`});
-  this.metaservice.updateTag({name: 'meta-description', content:"Sports Social is Social Networking Service that lets users to chase their passion for the sport at any time, anywhere.“Sports Social” aims to provide a framework and maximize access to participation in appropriate forms of physical activity."});
+  this.metaservice.updateTag({name: 'description', content:"Sports Social is Social Networking Service that lets users to chase their passion for the sport at any time, anywhere.“Sports Social” aims to provide a framework and maximize access to participation in appropriate forms of physical activity."});
   
   this.getLatestBlog();
+  
   this.typeWriterTitle(this.descTitle,0); 
   setTimeout(function() {
     var i=0;
@@ -137,6 +185,7 @@ ngOnInit() {
   }, 1000);
   this.typeWriter(this.desc,0);
 }
+
 ngOnDestroy() {
   if (this._masonry) {
     this._removeAllSubscription.unsubscribe();
@@ -155,10 +204,14 @@ onResize(event) {
 
 leftScroll(){
   this.blog.nativeElement.scrollLeft -=this.blogImg.nativeElement.clientWidth;
-  this.socialFeed.nativeElement.scrollLeft -=this.socialFeedImg.nativeElement.clientWidth;
 }
 rightScroll(){
   this.blog.nativeElement.scrollLeft +=this.blogImg.nativeElement.clientWidth;
+}
+leftScroll2(){
+  this.socialFeed.nativeElement.scrollLeft -=this.socialFeedImg.nativeElement.clientWidth;
+}
+rightScroll2(){
   this.socialFeed.nativeElement.scrollLeft +=this.socialFeedImg.nativeElement.clientWidth;
 }
 
@@ -180,5 +233,4 @@ typeWriterTitle(text:string,n:number){
     }, 40);
   }
 }
-
 } 

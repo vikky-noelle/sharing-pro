@@ -1,0 +1,253 @@
+webpackJsonp(["sports-specific-feed.module"],{
+
+/***/ "../../../../../src/app/sports-specific-feed/sports-specific-feed.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/sports-specific-feed/sports-specific-feed.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<sports-social-header></sports-social-header>\n<sports-social-carousel></sports-social-carousel>\n<sports-social-navigation-bar></sports-social-navigation-bar>\n<ng-masonry-grid  \n    [masonryOptions]=\"{ transitionDuration: '0.4s', gutter: 2 }\"\n    [useAnimation]=\"true\"\n    [useImagesLoaded]=\"true\">\n    <img class=\"spinner\" src=\"/assets/images/sports-social-loading.gif\" *ngIf = \"globalArena.length === 0\" alt=\"\">\n    \n    <ng-container *ngIf = \"globalArena.length > 0\">\n      <ng-masonry-grid-item  *ngFor = \"let feed of globalArena; let i = index\">\n        <ng-container *ngIf = \"feed.type === 1\">\n            <h1 class=\"type\"> \n              <a routerLink=\"/OpenArena\">Open Arena >></a>  \n            </h1>\n              <sports-social-match-card class=\"cards\"\n                [eventId] = \"feed.eventId\"\n                [creatorImage] = \"feed.creatorImage\"\n                [creatorName] = \"feed.creatorName\"\n                [doerId] = \"feed.doerId\"\n                [doerName] = \"feed.doerName\"\n                [doerPic] = \"feed.doerPic\"\n                [matchImage] = \"feed.matchImage\"\n                [matchText] = \"feed.matchText\"\n                [joineeCount] = \"feed.joineeCount\"\n                [commentCount] = \"feed.commentCount\"\n                [promoteCount] = \"feed.promoteCount\"\n                [watchCount] = \"feed.watchCount\"\n                [matchDate] = \"feed.matchDate\"\n                [activityDate] = \"feed.activityDate\"\n                [venueName] = \"feed.venueName\"\n                [gameName] = \"feed.gameName\"\n                [activityName] = \"feed.activityName\"\n                [restrictionCount] = \"feed.restrictionCount\"   #matchCard>\n              </sports-social-match-card>\n        </ng-container>\n        <ng-container *ngIf = \"feed.type === 0\">\n            <h1 class=\"type\">\n              <a routerLink=\"/AroundTheWorld\">Around The World >></a> \n            </h1>\n            <sports-social-news-card class=\"cards\"\n              [newsId] = \"feed.newsId\"\n              [sourceName]= \"feed.source\"\n              [sourceImage] = \"feed.sourceImage\"\n              [newsImage] = \"feed.newsImage\"\n              [title] = \"feed.title\"\n              [desc] = \"feed.desc\"\n              [url] = \"feed.url\"\n              [insertedDate] = \"feed.insertedDate\"\n              [likeCount] = \"feed.likeCount\"\n              [shareCount] = \"feed.shareCount\"\n              [commentCount] = \"feed.commentCount\"\n              [publishedAt] = \"feed.publishedAt\">\n            </sports-social-news-card>\n        </ng-container>\n      </ng-masonry-grid-item>\n    </ng-container>\n    \n</ng-masonry-grid>\n<sports-social-footer></sports-social-footer>\n\n  "
+
+/***/ }),
+
+/***/ "../../../../../src/app/sports-specific-feed/sports-specific-feed.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SportsSpecificFeedComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_services_post_service__ = __webpack_require__("../../../../../src/app/shared/services/post.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_match_data_service__ = __webpack_require__("../../../../../src/app/shared/services/match-data.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_services_news_service__ = __webpack_require__("../../../../../src/app/shared/services/news.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var SportsSpecificFeedComponent = (function () {
+    function SportsSpecificFeedComponent(matchData, newsData, renderer, activeRoute, router, zone, load, metaservice, pagetitle) {
+        this.matchData = matchData;
+        this.newsData = newsData;
+        this.renderer = renderer;
+        this.activeRoute = activeRoute;
+        this.router = router;
+        this.zone = zone;
+        this.load = load;
+        this.metaservice = metaservice;
+        this.pagetitle = pagetitle;
+        this.globalArena = [];
+        this.prevPageNo = 0;
+        this.nextPageNo = 0;
+        this.urlChanged = false;
+        this.Sports = [
+            { id: 0, title: 'Popular' },
+            { id: 17, title: 'Cricket' },
+            { id: 23, title: 'Football' },
+            { id: 6, title: 'Basketball' },
+            { id: 36, title: 'Lawn Tennis' },
+            { id: 5, title: 'Badminton' },
+            { id: 29, title: 'Hockey' },
+            { id: 56, title: 'Table Tennis' },
+            { id: 60, title: 'Volleyball' }
+        ];
+    }
+    SportsSpecificFeedComponent.prototype.reloadPage = function () {
+        this.zone.runOutsideAngular(function () {
+            location.reload();
+        });
+    };
+    SportsSpecificFeedComponent.prototype.globalFeed = function () {
+        var _this = this;
+        this.activeRoute.params.subscribe(function (params) {
+            if (_this.gameName !== params.sport && _this.gameName !== undefined) {
+                // this.urlChanged = true;
+                console.log("true", _this.gameName, params.sport);
+                _this.reloadPage();
+            }
+            _this.gameName = params.sport;
+            _this.gameId = _this.Sports.find(function (sport) {
+                return sport.title === _this.gameName;
+            }).id;
+            _this.pagetitle.setTitle(_this.gameName);
+            _this.metaservice.updateTag({ name: 'title', content: _this.gameName });
+            _this.metaservice.updateTag({ name: 'meta-description', content: "See What's going around you in " + _this.gameName + " in the " + _this.gameName + " Arena. Use " + _this.gameName + " Arena to find,connect,play, follow " + _this.gameName + " matches, players, academies, coaches, events etc. in your locality and around the world | stay connected to your " + _this.gameName + " world" });
+            _this.metaservice.updateTag({ name: 'keywords', content: "" + _this.gameName + " Arena,Sports Social " + _this.gameName + "," + _this.gameName + " Grounds Nearby," + _this.gameName + " Events Nearby, " + _this.gameName + " Matches Nearby, Connect " + _this.gameName + " Players, Play " + _this.gameName + ", Find " + _this.gameName + " Players,Find " + _this.gameName + " Academies," + _this.gameName + " Tournaments Nearby" });
+            console.log(_this.gameName, _this.gameId);
+            var matchPomise = _this.matchData.globalMatchFeed(_this.nextPageNo, _this.gameId);
+            var newsPromise = _this.newsData.globalNewsFeed(_this.nextPageNo, _this.gameName.toLowerCase());
+            Promise.all([matchPomise, newsPromise]).then(function (data) {
+                console.log(data);
+                _this.globalArena = _this.globalArena.concat(data['0']).concat(data['1']);
+                console.log(_this.globalArena);
+            }).catch(function (err) {
+                console.log('err', err);
+            });
+        });
+    };
+    SportsSpecificFeedComponent.prototype.nextPage = function (pageNo) {
+        this.prevPageNo = pageNo;
+        this.globalFeed();
+    };
+    SportsSpecificFeedComponent.prototype.onWindowScroll = function (event) {
+        this.nextPageNo = Math.floor(scrollY / 2400);
+        if (this.nextPageNo > 0 && this.prevPageNo < this.nextPageNo) {
+            this.nextPage(this.nextPageNo);
+            console.log('nextPage', this.nextPageNo, event);
+        }
+    };
+    SportsSpecificFeedComponent.prototype.ngOnInit = function () {
+        this.globalFeed();
+    };
+    SportsSpecificFeedComponent.prototype.ngOnDestroy = function () {
+        console.log('destroy');
+        if (this._masonry) {
+            this._removeAllSubscription.unsubscribe();
+            this._removeItemSubscription.unsubscribe();
+            this._removeFirstItemSubscription.unsubscribe();
+        }
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"])('window:scroll', ['$event']),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [Object]),
+        __metadata("design:returntype", void 0)
+    ], SportsSpecificFeedComponent.prototype, "onWindowScroll", null);
+    SportsSpecificFeedComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'sports-social-sports-specific-feed',
+            template: __webpack_require__("../../../../../src/app/sports-specific-feed/sports-specific-feed.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/sports-specific-feed/sports-specific-feed.component.css"), __webpack_require__("../../../../ng-masonry-grid/ng-masonry-grid.css")],
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__shared_services_match_data_service__["a" /* MatchDataService */],
+            __WEBPACK_IMPORTED_MODULE_4__shared_services_news_service__["a" /* NewsService */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer2"],
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"],
+            __WEBPACK_IMPORTED_MODULE_1__shared_services_post_service__["a" /* PostService */],
+            __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["c" /* Meta */],
+            __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["d" /* Title */]])
+    ], SportsSpecificFeedComponent);
+    return SportsSpecificFeedComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/sports-specific-feed/sports-specific-feed.module.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SportsSpecificFeedModule", function() { return SportsSpecificFeedModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sports_router__ = __webpack_require__("../../../../../src/app/sports-specific-feed/sports.router.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sports_specific_feed_component__ = __webpack_require__("../../../../../src/app/sports-specific-feed/sports-specific-feed.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__cards_news_card_news_card_module__ = __webpack_require__("../../../../../src/app/cards/news-card/news-card.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__cards_match_card_match_card_module__ = __webpack_require__("../../../../../src/app/cards/match-card/match-card.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__cards_live_match_card_live_match_card_module__ = __webpack_require__("../../../../../src/app/cards/live-match-card/live-match-card.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__header_header_module__ = __webpack_require__("../../../../../src/app/header/header.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__carousel_carousel_module__ = __webpack_require__("../../../../../src/app/carousel/carousel.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__navigation_bar_navigation_bar_module__ = __webpack_require__("../../../../../src/app/navigation-bar/navigation-bar.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__footer_footer_module__ = __webpack_require__("../../../../../src/app/footer/footer.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ng_masonry_grid__ = __webpack_require__("../../../../ng-masonry-grid/ng-masonry-grid.umd.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ng_masonry_grid___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_ng_masonry_grid__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+var SportsSpecificFeedModule = (function () {
+    function SportsSpecificFeedModule() {
+    }
+    SportsSpecificFeedModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1__angular_common__["CommonModule"],
+                __WEBPACK_IMPORTED_MODULE_2__sports_router__["a" /* SportsRouter */],
+                __WEBPACK_IMPORTED_MODULE_4__cards_news_card_news_card_module__["a" /* NewsCardModule */],
+                __WEBPACK_IMPORTED_MODULE_5__cards_match_card_match_card_module__["a" /* MatchCardModule */],
+                __WEBPACK_IMPORTED_MODULE_6__cards_live_match_card_live_match_card_module__["a" /* LiveMatchCardModule */],
+                __WEBPACK_IMPORTED_MODULE_7__header_header_module__["a" /* HeaderModule */],
+                __WEBPACK_IMPORTED_MODULE_8__carousel_carousel_module__["a" /* CarouselModule */],
+                __WEBPACK_IMPORTED_MODULE_9__navigation_bar_navigation_bar_module__["a" /* NavigationBarModule */],
+                __WEBPACK_IMPORTED_MODULE_10__footer_footer_module__["a" /* FooterModule */],
+                __WEBPACK_IMPORTED_MODULE_11_ng_masonry_grid__["NgMasonryGridModule"]
+            ],
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_3__sports_specific_feed_component__["a" /* SportsSpecificFeedComponent */]
+            ]
+        })
+    ], SportsSpecificFeedModule);
+    return SportsSpecificFeedModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/sports-specific-feed/sports.router.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SportsRouter; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sports_specific_feed_component__ = __webpack_require__("../../../../../src/app/sports-specific-feed/sports-specific-feed.component.ts");
+
+
+var Sports_Router = [
+    {
+        path: '',
+        component: __WEBPACK_IMPORTED_MODULE_1__sports_specific_feed_component__["a" /* SportsSpecificFeedComponent */],
+    }
+];
+var SportsRouter = __WEBPACK_IMPORTED_MODULE_0__angular_router__["c" /* RouterModule */].forChild(Sports_Router);
+
+
+/***/ })
+
+});
+//# sourceMappingURL=sports-specific-feed.module.chunk.js.map

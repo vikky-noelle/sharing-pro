@@ -9,6 +9,9 @@ export class PostService {
     latitude: String,
     longitude: String
   };
+  BlogId: {
+    blogid: string;
+  };
 
   singleMatchReqObj = [];
 
@@ -90,5 +93,14 @@ export class PostService {
   }
   insertQuesAns(QA) {
     return this.http.post('https://helpcenter.chaseyoursport.com/save/QA', QA);
+  }
+
+  singleBlogSmallDesc(id: string) {
+    this.BlogId = {
+      blogid: id
+    };
+   // console.log(this.BlogId);
+    return this.http.post('https://prod.chaseyoursport.com/loadSingleBlogDataSmallDesc', this.BlogId)
+    .map((response: Response) => response.json());
   }
 }

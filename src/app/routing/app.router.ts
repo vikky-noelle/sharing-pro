@@ -11,6 +11,7 @@ import { AddQueAnsComponent } from '../add-que-ans/add-que-ans.component';
 import { HomeComponent } from '../home/home.component';
 import { ApplicationComponent } from '../application/application.component';
 
+
 const App_Route: Routes = [
     
     {path:"addtopic",component:AddTopicComponent},
@@ -20,6 +21,7 @@ const App_Route: Routes = [
         path:"application",
         component:ApplicationComponent  
       },
+
     {
         path: "HelpCenter/:topicId/:subtopicname/:subtopicId",
         component: AddQueAnsComponent
