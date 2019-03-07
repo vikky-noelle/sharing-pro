@@ -71,7 +71,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.titleservice.setTitle(this.title);
     this.metaservice.updateTag({name:'title',content:this.title});
-    this.metaservice.addTag({name:'author',content:'Sourabh Arora'});
+    this.metaservice.updateTag({property:'og:title',content:this.title});
+    this.metaservice.updateTag({name:'author',content:'Sourabh Arora'});
     this.metaservice.updateTag({name:'keywords',content:'Sports Social,Sports Social app,Sports Social Network,Sports Digital Media,Sports Network,Sports Networking websites,Sports Networking app,Khelo India,Find Sports Players Nearby,Play Your Sport,Chase Your Sport'});
     this.metaservice.updateTag({name:'description',content:"Sports Social is Sports Digital Media and Networking Service that helps to see what's going around in sports and let's you chase your passion to play your favorite sport"});
   }

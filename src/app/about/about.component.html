@@ -63,9 +63,9 @@
         <div *ngFor="let data of instaArr" class="instaData">
             <a href="{{data.link}}" target=_blank> <img src={{data.url}} #socialFeedImg> </a>
             <p id="username" style="color:yellowgreen;">@{{data.username}}</p>
-                <p id="time">{{data.created_time}}</p>
+                <!-- <p id="time">{{data.created_time}}</p>
                 <p id=content>{{data.text}}</p> 
-            <!-- <div  *ngFor="let data of instaArr" class="text">
+            <div  *ngFor="let data of instaArr" class="text">
                 <p id="username">@{{data.username}}</p>
                 <p id="time">{{data.created_time}}</p>
                 <p id=content>{{data.text}}</p> 
@@ -81,6 +81,7 @@
 
 </body>
 </html>
+
 <sports-social-footer></sports-social-footer>
 
   
