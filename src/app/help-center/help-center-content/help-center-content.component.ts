@@ -29,6 +29,8 @@ export class HelpCenterContentComponent implements OnInit {
   topicname:string='';
   isDropdownIconclicked: boolean = false;
   pagetitle='Sports Social Help Center';
+  description="How can we help you today? Using Sports Social, New to Sports Social? Learn the basics to get the most out of Sports Social. Having an issue contact us";
+  metakeywords="Sports Social Help,Sports Social Help Center,Customer care Sports Social,Contact Sports Social,Chase Your Sport,FAQ Sports Social,Sports Social Support";
   top='';
   
   constructor(private getService: GetService, 
@@ -116,8 +118,12 @@ getSeo(id){
   ngOnInit() {
     this.title.setTitle(this.pagetitle);
     this.meta.updateTag({name:'title',content:this.pagetitle});
-    this.meta.updateTag({name:'description',content:"How can we help you today? Using Sports Social, New to Sports Social? Learn the basics to get the most out of Sports Social. Having an issue contact us"});
-    this.meta.updateTag({name:'keywords',content:"Sports Social Help,Sports Social Help Center,Customer care Sports Social,Contact Sports Social,Chase Your Sport,FAQ Sports Social,Sports Social Support"});
+    this.meta.updateTag({name:'description',content:this.description});
+    this.meta.updateTag({name:'keywords',content:this.metakeywords});
+    this.meta.updateTag({property:'og:title',content:this.pagetitle});
+    this.meta.updateTag({property:'og:description',content:this.description});
+    this.meta.updateTag({property:'og:keywords',content:this.metakeywords});
+
     if(this.route.snapshot.paramMap.has("topicname")){
        this.topicname = this.route.snapshot.paramMap.get("topicname");
     }

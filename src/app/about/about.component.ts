@@ -26,7 +26,9 @@ styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
 
-  title='About Sports Social | Chase Your Sport';
+title='About Sports Social | Chase Your Sport';
+keywords="About Sports Social,Sports Social,Chase Your Sport,Sports is the new Social,Your Sports Manager,Bond over Sports,Participate in Sport,Khelo India,Play your sport"
+description="Sports Social is Social Networking Service that lets users to chase their passion for the sport at any time, anywhere.“Sports Social” aims to provide a framework and maximize access to participation in appropriate forms of physical activity.";
 private marginTop;
 isbrowser:boolean;
 url;
@@ -171,9 +173,11 @@ ngOnInit() {
   this.instafeed();
   this.titleservice.setTitle(this.title);
   this.metaservice.updateTag({name:'title',content:this.title});
-  this.metaservice.updateTag({name: 'keywords' , content: `About Sports Social,Sports Social,Chase Your Sport,Sports is the new Social,Your Sports Manager,Bond over Sports,Participate in Sport,Khelo India,Play your sport`});
-  this.metaservice.updateTag({name: 'description', content:"Sports Social is Social Networking Service that lets users to chase their passion for the sport at any time, anywhere.“Sports Social” aims to provide a framework and maximize access to participation in appropriate forms of physical activity."});
-  
+  this.metaservice.updateTag({name: 'keywords' , content:this.keywords});
+  this.metaservice.updateTag({name:'description',content:this.description});
+  this.metaservice.updateTag({property:'og:title',content:this.title});
+  this.metaservice.updateTag({property:'og:description',content:this.description});
+  this.metaservice.updateTag({property:'og:keywords',content:this.keywords});
   this.getLatestBlog();
   
   this.typeWriterTitle(this.descTitle,0); 

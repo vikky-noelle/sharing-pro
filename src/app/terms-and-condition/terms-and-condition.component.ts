@@ -10,6 +10,8 @@ import { Title, Meta } from '@angular/platform-browser';
 export class TermsAndConditionComponent implements OnInit {
 
   title="Terms of use | Sports Social";
+  description="To all the users living in India, our terms and conditions are in compliance with user agreement, privacy policy and all other incorporated policies";
+  keywords="Terms of Service Sports Social,Terms and Conditions Sports Social,User agreement Sports Social";
   constructor(private pagetite:Title,
     private meta :Meta) { }
     
@@ -29,8 +31,11 @@ export class TermsAndConditionComponent implements OnInit {
   ngOnInit() {
     this.pagetite.setTitle(this.title);
     this.meta.updateTag({name:'title',content:this.title});
-    this.meta.updateTag({name:'description',content:"To all the users living in India, our terms and conditions are in compliance with user agreement, privacy policy and all other incorporated policies"});
-    this.meta.updateTag({name:'keywords',content:"Terms of Service Sports Social,Terms and Conditions Sports Social,User agreement Sports Social"});
+    this.meta.updateTag({name:'description',content:this.description});
+    this.meta.updateTag({name:'keywords',content:this.keywords});
+    this.meta.updateTag({property:'og:title',content:this.title});
+    this.meta.updateTag({property:'og:keywords',content:this.keywords});
+    this.meta.updateTag({property:'og:description',content:this.description});
 
 
   }
