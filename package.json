@@ -3,14 +3,15 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
     "serve:ssr": "node dist/server",
     "build:client-and-server-bundles": "ng build --prod && ng run angular.io-example:server",
     "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prestart": "ng build --prod && ngc",
+    "start": "ts-node src/server.ts"
   },
   "private": true,
   "dependencies": {
@@ -35,14 +36,15 @@
     "@angular/router": "^6.1.4",
     "@nguniversal/express-engine": "^6.1.0",
     "@nguniversal/module-map-ngfactory-loader": "^6.1.0",
+    "contributor": "^0.1.25",
     "core-js": "^2.5.4",
     "http-server": "^0.11.1",
     "imagesloaded": "^4.1.4",
-    "masonry-layout": "^4.2.2",
+    "masonry-layout": "^4.2.1",
     "ng-masonry-grid": "^1.3.0",
     "ng2-scroll-to-el": "^1.2.1",
     "ngx-gallery": "^5.6.1",
-    "rxjs": "^6.4.0",
+    "rxjs": "^6.2.2",
     "rxjs-compat": "^6.4.0",
     "ts-loader": "^4.5.0",
     "zone.js": "^0.8.26"

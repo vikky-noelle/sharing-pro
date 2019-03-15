@@ -63,10 +63,9 @@ import { SeoService } from './shared/services/seo.service';
     SubTopicComponent,
     AddQueAnsComponent,
     ApplicationComponent,
-    
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId:'sport-social'}),
     AppRoute,
     HttpModule,
     HttpClientModule,

@@ -23,7 +23,7 @@ import { HeaderModule } from '../header/header.module';
     
   ],
 
-    exports:[]
+    exports:[HelpCenterHeaderComponent]
 })
 export class HelpCenterModule {}
 
