@@ -5,15 +5,21 @@ import { HelpCenterContentComponent } from './help-center-content/help-center-co
 import { HelpCenterHeaderComponent } from './help-center-header/help-center-header.component';
 import { FooterComponent } from '../footer/footer.component';
 import { FooterModule } from '../footer/footer.module';
+import { HelpCenterFooterComponent } from './help-center-footer/help-center-footer.component';
+import { RouterModule } from '@angular/router';
+import { HeaderModule } from '../header/header.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    FooterModule
+    FooterModule,
+    RouterModule,
+    HeaderModule
   ],
   declarations: [HelpCenterComponent,
     HelpCenterContentComponent,
     HelpCenterHeaderComponent,
+    HelpCenterFooterComponent
     
   ],
 

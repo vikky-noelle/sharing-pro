@@ -59,10 +59,6 @@ import { SeoService } from './shared/services/seo.service';
   declarations: [
     AppComponent,
     PopUpComponent,
-    HelpCenterComponent,
-    HelpCenterContentComponent,
-    HelpCenterFooterComponent,
-    HelpCenterHeaderComponent,
     AddTopicComponent,
     SubTopicComponent,
     AddQueAnsComponent,
@@ -80,6 +76,7 @@ import { SeoService } from './shared/services/seo.service';
     HeaderModule,
     AboutModule,
     FooterModule,
+    HelpCenterModule,
     ScrollToModule.forRoot()
     
   ],
