@@ -10,7 +10,6 @@ import {
 import { Masonry, MasonryGridItem } from 'ng-masonry-grid';
 import { ISubscription } from 'rxjs/Subscription';
 import { NewsService } from '../../shared/services/news.service';
-import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'sports-social-global-news-feed',
@@ -25,15 +24,12 @@ export class GlobalNewsFeedComponent implements OnInit, OnDestroy {
   nextPageNo: number = 0;
 
   _masonry: Masonry;
-  title=" Around the World | Sports Social ";
   private _removeAllSubscription: ISubscription;
   private _removeItemSubscription: ISubscription;
   private _removeFirstItemSubscription: ISubscription;
   constructor(
     private newsData: NewsService,
     private renderer: Renderer2,
-    private pagetitle:Title,
-    private meta:Meta
   ) { }
 
   globalNewsFeed( pageNo ) {
@@ -61,11 +57,6 @@ export class GlobalNewsFeedComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.globalNewsFeed(this.nextPageNo);
-    this.pagetitle.setTitle(this.title);
-    this.meta.updateTag({name:'title',content:this.title});
-    this.meta.updateTag({name:'keywords',content:"Sports news from around the world,latest sports news,latest cricket news,football news,tennis news,pro kabbadi news,Hocket news"});
-    this.meta.updateTag({name:'description',content:"Sports Social Around the World Provides the latest news and stories in sports,sports trends,sports business, international tournaments, cricket news,football news, tennis news, hockey news etc. stay tuned"});
-
   }
 
   ngOnDestroy() {

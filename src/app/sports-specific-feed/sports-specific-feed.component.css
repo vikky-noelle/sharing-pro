@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+
+#col-4{
+    margin-left:2.7%;
+    width:30%;
+    
+}
+@media screen and (max-width:768px){
+      #col-4{
+          width:48%;
+          margin-left:1%;
+      }
+}
+@media screen and (max-width:500px){
+    #col-4{
+        width:100%;
+    }
+}
+
+

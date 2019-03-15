@@ -8,7 +8,7 @@
     <img class="spinner" src="/assets/images/sports-social-loading.gif" *ngIf = "globalArena.length === 0" alt="">
     
     <ng-container *ngIf = "globalArena.length > 0">
-      <ng-masonry-grid-item  *ngFor = "let feed of globalArena; let i = index">
+      <ng-masonry-grid-item id="col-4" *ngFor = "let feed of globalArena; let i = index">
         <ng-container *ngIf = "feed.type === 1">
             <h1 class="type"> 
               <a routerLink="/OpenArena">Open Arena >></a>  

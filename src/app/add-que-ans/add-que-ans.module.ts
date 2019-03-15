@@ -10,7 +10,7 @@ import { HelpCenterHeaderComponent } from '../help-center/help-center-header/hel
     RouterModule
   ],
   declarations: [
-    HelpCenterHeaderComponent
+    
   ],
   exports: [
     
