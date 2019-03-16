@@ -436,14 +436,18 @@ body {
   @media (max-width:500px) {
     .app>img{
       margin-top:60px;
+      margin-left: auto;
+      width:80px;
+      height: 80px;
+      
     }
     .app-desc {
       width: 250px;
       height:330px;
       text-align: center;
-      margin-left: 15%;
-      margin-top: 31%;
-      padding-top: 2%;
+      margin-left: 14%;
+      margin-top: 28%;
+      padding-top: 1.6%;
       line-height:0.7em;
       font-weight:180;
     }
@@ -453,6 +457,7 @@ body {
         line-height: 1em;
         text-align: center;
         margin-top:-8%;
+        margin-left: auto;
       }
       .app-desc > p:last-child {
         font-family: 'Roboto',sans-serif;
