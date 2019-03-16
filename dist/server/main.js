@@ -5459,7 +5459,7 @@ exports.LAZY_MODULE_MAP = { "app/terms-and-condition/terms-and-condition.module#
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/sportssocialweb/Desktop/SportSocialWebsite/src/main.server.ts */"./src/main.server.ts");
+module.exports = __webpack_require__(/*! /Users/sportssocial/Desktop/SportSocialWebsite/src/main.server.ts */"./src/main.server.ts");
 
 
 /***/ }),
