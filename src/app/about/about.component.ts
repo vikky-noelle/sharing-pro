@@ -168,6 +168,9 @@ constructor(private margin:SendService,
     }
   );
 }
+setCanonicalURL() {
+  this.link.addTag( { rel: 'canonical', href: 'https://www.sportsoical.in'});
+}
 ngOnInit() {
   // console.log(this.desc.nativeElement.textContent);
   this.instafeed();
@@ -179,6 +182,7 @@ ngOnInit() {
   this.metaservice.updateTag({property:'og:description',content:this.description});
   this.metaservice.updateTag({property:'og:keywords',content:this.keywords});
   this.getLatestBlog();
+  this.setCanonicalURL();
   
   this.typeWriterTitle(this.descTitle,0); 
   setTimeout(function() {
