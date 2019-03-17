@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
-    "serve:ssr": "node dist/server",
+    "serve:ssr": "node dist/server && node dist/browser",
     "build:client-and-server-bundles": "ng build --prod && ng run sport-social:server",
     "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
     "test": "ng test",

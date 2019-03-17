@@ -113,7 +113,7 @@ a{
     cursor: pointer;
 }
 .dropdown-menu{
-    background-color: black;
+    background-color: #ffffff;
     opacity: 0.9;
   filter: alpha(opacity=30);
 }
@@ -153,7 +153,7 @@ button{
     display: block;
     margin: 6% auto;
     color: #ffffff;
-    background-color: rgb(78, 14, 121);
+    background-color: #024772;
     padding: 1.5%;
     width: 40%;
     height: 30px;
