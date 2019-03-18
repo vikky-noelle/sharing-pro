@@ -121,6 +121,9 @@ body{
 
 }
 @media(max-width:500px){
+    .appbody{
+        overflow-x: hidden;
+    }
     .bg-1{
         background-image:none;
     }
@@ -129,14 +132,19 @@ body{
     height: 200px;
     width:200px;
     margin-left: 0;
-    background-size: cover;
+    position: relative;
+    margin-top: 80%;
 }
 .bg-1 .inside-div>img{
-    width:200px;
-    height: 200px;
+    position: absolute;
+    margin-top: -80%;
+    width:700px;
+    height: 700px;
 }
 .bg-1 .inside-div>h2{
+    position: relative;
     width:240px;
+    margin-top: 50%;
     font-size: 0.2em;
 }
 .bg-2{
@@ -177,25 +185,44 @@ body{
 }
 .banner>img{
     padding-top: 9.8%;
-    width:450px;
+    width:420px;
     height: 200px;
 }
 .banner>h1{
-    font-size: 1em;
-    margin-left: -30%;
-    margin-right: 90%;
-    top:10;
+    text-align: center;
+    font-family: Optima, sans-serif;
+    width:85%;
+    font-size: 2.5em;
+    margin-left: -35%;
+    margin-top: -30%;
+    text-align-last: center;
+}
+.banner>p{
+    text-align: center;
+    text-align-last: center;
+    width:75%;
+    margin-top: -24%;
+    margin-left: -14%;
+    font-size: 0.9em;
+    line-height: 1;
 }
 .banner>h2{
-    font-size: 1em;
+    font-size: 1.6em;
     color:black;
+    width:70%;
+    margin-top: -70%;
+    margin-left: -28%;
+    text-align: center;
+
 }
 .banner>h3{
-    font-size: 0.6em;
-    margin-left: -10%;
-    margin-right: 10%;
+    font-size: 0.9em;
+    width:80%;
+    margin-left: -25%;
+    margin-top: -50%;
     color:purple;
     text-align: left;
+    text-align-last: center;
 }
 
 }
