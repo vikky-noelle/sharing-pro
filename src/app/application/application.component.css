@@ -21,8 +21,9 @@ body{
         color: white;
         position: absolute; 
         top: 200px; 
-        left: 39%; 
+        left: 28%; 
         width: 100%; 
+        font-size: 3.8em;
         /* mix-blend-mode: difference; */
 }
 .banner>h2{
@@ -34,19 +35,20 @@ body{
     vertical-align: middle;
     left:40%;
     width: auto; 
-    font-weight: 400;
-    font-family: Jazz LET, fantasy; 
+    font-size: 2em;
+    font-family: sans-serif; 
 }
 .banner>h3{
     display: inline-flex;
     color: red;
     position: absolute; 
     text-align: center;
-    top: 600px; 
+    top: 630px; 
     vertical-align: middle;
-    left:30%;
+    left:25%;
     width: auto; 
     font-weight: 400;
+    font-size: 1.5em;
     font-family: Jazz LET, fantasy; 
 }
 /* banner end */
@@ -54,7 +56,7 @@ body{
     color: white;
     position: absolute; 
     text-align: center;
-    top: 300px; 
+    top: 380px; 
     vertical-align: middle;
     left:20%;
     width: auto; 
@@ -62,125 +64,105 @@ body{
     letter-spacing: -1px;  
     /* mix-blend-mode: difference; */
 }
+.div1{
+    background-image: url('/assets/images/1.Arena compress1.jpg');
+    height: 1744px;
+    background-size: 1000px 700px;
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+}
 
-.bg-1{
-    background-image: url('/assets/images/main4.jpg');
-    height: 1900px;
-    background-size: 1000px 800px;
+.right1{
+    width:550px;
+    height:1700px;
+    position: relative;
+    float: right;
+}
+.right1>img{
+    width: 100%;
+    height: 1745px;
+}
+
+.div2{
+    background-image: url('/assets/images/2.Arena.jpg');
+    height: 1744px;
+    background-size: 940px 700px;
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
 }
-.inside-div{
-    width:450px;
-    height: 1900px;
-    position: left;
-    /* border: 2px solid red; */
-    background: white;
+.left1{
+    width:550px;
+    height:1744px;
+    float: left;
+    clear: right;
 }
-.inside-div>img{
-    width:100%;
-    height: 1400px;
+.left1>img{
+    width: 100%;
+    height: 1744px;
+    position: relative;
 }
-.inside-div>h2{
-    width: 90%;
-    color:orange;
-}
-.bg-2{
-    background-image: url('/assets/images/car1.jpg');
-    height: 1700px;
-    width:100%;
-    background-size: cover;
+
+.div3{
+    background-image: url('/assets/images/3.Arena.jpg');
+    height: 1744px;
+    background-size: 1000px 700px;
     background-attachment: fixed;
+    background-position: left;
     background-repeat: no-repeat;
 }
-.bg-2>img{
-    width:500px;
-    height: 1700px;
-    margin-left: 65%;
-}
-.bg-2>h2{
-    color:orange;
-    width:600px;
-    margin-left: 58%;
-    margin-top: 70%;
-}
-.bg-3{
-    background-image: url('/assets/images/main4.jpg');
-    height: 1400px;
-    width:100%;
-    background-attachment: fixed;
-    background-size: cover;
-}.bg-3>img{
-    
-    width:450px;
-    height: 1400px;
-    position: left;
-    /* margin-left: 72%; */
-    overflow-x: hidden;
 
+.right2{
+    width:550px;
+    height:1700px;
+    position: relative;
+    float: right;
 }
-@media(max-width:500px){
+.right2>img{
+    width: 100%;
+    height: 1745px;
+}
+
+.div4{
+    background-image: url('/assets/images/4.Arena.jpg');
+    height: 1744px;
+    background-size: 940px 700px;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.left2{
+    width:550px;
+    height:1744px;
+    float: left;
+    clear: right;
+}
+.left2>img{
+    width: 100%;
+    height: 1744px;
+    position: relative;
+}
+
+.footer{
+    height:400px;
+    width: 500px;
+    display: flex; 
+    justify-content: center;
+}
+.footer>a>img,h3{
+    height:150px;
+    width: 350px;
+    text-align: center;
+}
+
+@media screen and (max-width:360px){
     .appbody{
         overflow-x: hidden;
     }
-    .bg-1{
-        background-image:none;
-    }
-.bg-1 .inside-div{
-    background-image: none;
-    height: 200px;
-    width:200px;
-    margin-left: 0;
-    position: relative;
-    margin-top: 80%;
-}
-.bg-1 .inside-div>img{
-    position: absolute;
-    margin-top: -80%;
-    width:700px;
-    height: 700px;
-}
-.bg-1 .inside-div>h2{
-    position: relative;
-    width:240px;
-    margin-top: 50%;
-    font-size: 0.2em;
-}
-.bg-2{
-    background-image: none;
-    height: 900px;
-    width:100%;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.bg-2>h2{
-    color:orange;
-    width:50px;
-    text-align: left;
-    font-size: 0.2em;
-}
-.bg-2>img{
-    width:200px;
-    height: 600px;
-    margin-left:-10%;
-}
-.bg-3{
-    background-image: none;
-    height: 200px;
-    width:100%;
-    background-attachment: fixed;
-    background-size: cover;
-}.bg-3>img{
-    width:200px;
-    height: 200px;
-    position: right;
-    /* margin-left: 72%; */
-    overflow-x: hidden;
-
-}
+   
 .banner{
-    width:400px;
+    width:500px;
     height:400px;
 }
 .banner>img{
@@ -192,37 +174,222 @@ body{
     text-align: center;
     font-family: Optima, sans-serif;
     width:85%;
-    font-size: 2.5em;
-    margin-left: -35%;
-    margin-top: -30%;
+    font-size: 2.4em;
+    margin-left: -34%;
+    margin-top: -25%;
     text-align-last: center;
 }
 .banner>p{
     text-align: center;
     text-align-last: center;
     width:75%;
-    margin-top: -24%;
-    margin-left: -14%;
-    font-size: 0.9em;
+    margin-top: -38%;
+    margin-left: -21%;
+    font-size: 1em;
     line-height: 1;
 }
 .banner>h2{
-    font-size: 1.6em;
-    color:black;
+    font-size: 1.5em;
     width:70%;
-    margin-top: -70%;
-    margin-left: -28%;
+    margin-top: -50%;
+    margin-left: -31%;
     text-align: center;
-
 }
 .banner>h3{
     font-size: 0.9em;
-    width:80%;
-    margin-left: -25%;
-    margin-top: -50%;
+    width:65%;
+    margin-left: -20%;
+    margin-top: -55%;
     color:purple;
     text-align: left;
     text-align-last: center;
 }
+.div1{
+    background-image: none;
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+}
 
+.right1{
+    width:370px;
+    height:1300px;
+    position: relative;
+    text-align: center;
+    /* float: right; */
+}
+.right1>img{
+    width: 100%;
+    height: 1300px;
+}
+.div2{
+    background-image: none;
+}
+.left1{
+    width:370px;
+    height:1300px;
+    float: left;
+    clear: right;
+}
+.left1>img{
+    width: 100%;
+    height: 1300px;
+    position: relative;
+}
+.div3{
+    background-image: none;
+}
+
+.right2{
+    width:370px;
+    height:1300px;
+    position: relative;
+}
+.right2>img{
+    width: 100%;
+    height: 1300px;
+}
+
+.div4{
+    background-image: none;
+}
+.left2{
+    width:370px;
+    height:1300px;
+    clear: right;
+}
+.left2>img{
+    width: 100%;
+    height: 1300px;
+    position: relative;
+}
+.footer{
+    height:300px;
+    width: 400px;
+    display: flex; 
+    justify-content: center;
+}
+.footer>a>img,h3{
+    height:150px;
+    width: 350px;
+    text-align: center;
+}
+
+}
+
+@media (max-width:768px) and (min-width:700px){
+    .banner>h1{
+        /* position: absolute;  */
+        top: 200px; 
+        left: 12%; 
+        width: 100%; 
+        font-size: 3.4em;
+}
+.banner>p{
+    color: white;
+    position: absolute; 
+    text-align: center;
+    top: 350px; 
+    vertical-align: middle;
+    left:5%;
+    width: auto; 
+    font: bold 24px/45px Helvetica, Sans-Serif; 
+    letter-spacing: -1px;  
+}
+.banner>h2{
+    display: inline-flex;
+    position: absolute; 
+    text-align: center;
+    top: 550px; 
+    vertical-align: middle;
+    left:30%;
+    width: auto; 
+    font-size: 2em;
+}
+.banner>h3{
+    display: inline-flex;
+    position: absolute; 
+    text-align: center;
+    vertical-align: middle;
+    left:3%;
+    width: auto; 
+    
+}
+.div1{
+    background-image: url('/assets/images/1.Arena compress1.jpg');
+    height: 1500px;
+    background-size: 570px 870px;
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.right1{
+    width:350px;
+    height:1500px;
+    position: relative;
+    float: right;
+}
+.right1>img{
+    width: 100%;
+    height: 1500px;
+}
+
+.div2{
+    background-image: url('/assets/images/2.Arena.jpg');
+    height: 1700px;
+    background-size: 500px 900px;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.left1{
+    width:300px;
+    height:1700px;
+    float: left;
+    clear: right;
+}
+.left1>img{
+    width: 100%;
+    height: 1700px;
+    
+}
+.div3{
+    background-image: url('/assets/images/3.Arena.jpg');
+    height: 1700px;
+    background-size: 550px 900px;
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.right2{
+    width:300px;
+    height:1700px;
+    position: relative;
+    float: right;
+}
+.right2>img{
+    width: 100%;
+    height: 1700px;
+}
+
+.div4{
+    background-image: url('/assets/images/4.Arena.jpg');
+    height: 1500px;
+    background-size: 500px 900px;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.left2{
+    width:300px;
+    height:1744px;
+    float: left;
+    clear: right;
+}
+.left2>img{
+    width: 100%;
+    height: 1500px;
+}
 }
