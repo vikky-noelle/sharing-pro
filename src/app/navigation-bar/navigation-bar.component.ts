@@ -177,7 +177,6 @@ export class NavigationBarComponent implements OnInit {
     this.responsiveNavigationBar();
     this.heightOfHeader();
     this.fixedNavbar();
-  
   }
 
   @HostListener('window:resize', []) onresize() {
