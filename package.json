@@ -11,17 +11,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "prestart": "ng build --prod && ngc",
-    "start": "ts-node src/server.ts",
-    "build:server:prod": "ng run sport-social:server && webpack --config webpack.server.config.js --progress --colors",
-    "build:browser:prod": "ng build --prod",
-    "build:prod": "npm run build:browser:prod && npm run build:server:prod",
-    "server": "node local.js",
-    "build:browser:serverless": "ng build --prod --base-href /production/",
-    "build:serverless": "npm run build:browser:serverless && npm run build:server:serverless",
-    "build:prod:deploy": "npm run build:prod && npm run deploy",
-    "build:serverless:deploy": "npm run build:serverless && npm run deploy",
-    "deploy": "serverless deploy",
-    "build:server:serverless": "ng run sport-social:server:serverless && webpack --config webpack.server.config.js --progress --colors"
+    "start": "ts-node src/server.ts"
   },
   "private": true,
   "dependencies": {
@@ -40,19 +30,14 @@
     "@angular/core": "^6.1.4",
     "@angular/forms": "^6.1.4",
     "@angular/http": "^6.1.4",
-    "@angular/platform-browser": "^6.0.0",
+    "@angular/platform-browser": "^6.1.4",
     "@angular/platform-browser-dynamic": "^6.1.4",
-    "@angular/platform-server": "^6.0.0",
+    "@angular/platform-server": "^6.1.4",
     "@angular/router": "^6.1.4",
-    "@ng-toolkit/serverless": "^1.1.51",
-    "@ng-toolkit/universal": "^1.1.40",
-    "@nguniversal/express-engine": "^6.0.0",
-    "@nguniversal/module-map-ngfactory-loader": "^6.0.0",
-    "aws-serverless-express": "^3.2.0",
+    "@nguniversal/express-engine": "^6.1.0",
+    "@nguniversal/module-map-ngfactory-loader": "^6.1.0",
     "contributor": "^0.1.25",
     "core-js": "^2.5.4",
-    "cors": "~2.8.4",
-    "cp-cli": "^1.1.0",
     "http-server": "^0.11.1",
     "imagesloaded": "^4.1.4",
     "masonry-layout": "^4.2.1",
@@ -62,8 +47,7 @@
     "path": "^0.12.7",
     "rxjs": "^6.2.2",
     "rxjs-compat": "^6.4.0",
-    "ts-loader": "4.2.0",
-    "webpack-cli": "^2.1.4",
+    "ts-loader": "^4.5.0",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
@@ -86,10 +70,6 @@
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
     "typescript": "~2.9.2",
-    "webpack-cli": "2.1.2",
-    "ts-loader": "4.2.0",
-    "opencollective": "^1.0.3",
-    "serverless": "1.39.1",
-    "serverless-apigw-binary": "^0.4.4"
+    "webpack-cli": "^3.2.3"
   }
 }
