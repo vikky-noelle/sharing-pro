@@ -5,7 +5,8 @@
     <li *ngFor="let data of topics">
       <a routerLink="/Helpcenter/{{data.name}}">
       <button (click)="SubtopicsIconChange(data.id)">
-        <img src="{{data.icon}}">{{data.name}}
+        <img src="{{data.icon}}">
+        {{data.name}}
       </button>
     </a>
     </li>
