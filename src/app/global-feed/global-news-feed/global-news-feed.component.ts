@@ -10,6 +10,7 @@ import {
 import { Masonry, MasonryGridItem } from 'ng-masonry-grid';
 import { ISubscription } from 'rxjs/Subscription';
 import { NewsService } from '../../shared/services/news.service';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'sports-social-global-news-feed',
@@ -19,6 +20,9 @@ import { NewsService } from '../../shared/services/news.service';
 })
 export class GlobalNewsFeedComponent implements OnInit, OnDestroy {
 
+  title="Around the World | Sports Social";
+  metakey="Sports news from around the world,latest sports news,latest cricket news,football news,tennis news,pro kabbadi news,Hocket news";
+  metades="Sports Social Around the World Provides the latest news and stories in sports,sports trends,sports business, international tournaments, cricket news,football news, tennis news, hockey news etc. stay tuned";
   News = [];
   prevPageNo: number = 0;
   nextPageNo: number = 0;
@@ -30,6 +34,8 @@ export class GlobalNewsFeedComponent implements OnInit, OnDestroy {
   constructor(
     private newsData: NewsService,
     private renderer: Renderer2,
+    private pagetitle:Title,
+    private metaservice:Meta
   ) { }
 
   globalNewsFeed( pageNo ) {
@@ -57,6 +63,13 @@ export class GlobalNewsFeedComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.globalNewsFeed(this.nextPageNo);
+    this.pagetitle.setTitle(this.title);
+    this.metaservice.updateTag({name:'title',content:this.title});
+    this.metaservice.updateTag({name:'keywords',content:this.metakey});
+    this.metaservice.updateTag({name:'description',content:this.metades});
+    this.metaservice.updateTag({property:'og:title',content:this.title});
+    this.metaservice.updateTag({property:'og:description',content:this.metades});
+    this.metaservice.updateTag({property:'og:keywords',content:this.metakey});
   }
 
   ngOnDestroy() {

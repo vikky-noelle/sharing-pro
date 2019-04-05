@@ -2,11 +2,11 @@
     [masonryOptions]="{ transitionDuration: '0.4s', gutter: 2 }"
     [useAnimation]="true"
     [useImagesLoaded]="true">
-    <img class="spinner" src="/assets/images/sports-social-loading.gif" *ngIf = "globalArena.length === 0" alt="">
+    <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf = "globalArena.length === 0" alt="">
     <ng-masonry-grid-item id="col-4" *ngFor = "let feed of globalArena; let i = index" >
       <ng-container *ngIf = "feed.type === 1">
           <h1 class="type"> 
-            <a routerLink="/OpenArena">Open Arena >></a>  
+            <a routerLink="/OpenArena">Open Arena>></a>  
           </h1>
             <sports-social-match-card class="cards"
               [eventId] = "feed.eventId"
@@ -31,7 +31,7 @@
       </ng-container>
       <ng-container *ngIf = "feed.type === 0">
           <h1 class="type">
-            <a routerLink="/AroundTheWorld">Around The World >></a> 
+            <a routerLink="/AroundTheWorld">Around The World</a> 
           </h1>
           <sports-social-news-card class="cards"
             [newsId] = "feed.newsId"

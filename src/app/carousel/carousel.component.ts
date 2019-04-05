@@ -4,7 +4,8 @@ import {
   ViewEncapsulation,
   HostListener,
   Renderer2,
-  ViewChild
+  ViewChild,
+  ElementRef
 } from '@angular/core';
 import { PropertyService } from '../shared/services/property.service';
 import { ɵgetDOM, Title, Meta } from '@angular/platform-browser';
@@ -18,8 +19,25 @@ import { ɵgetDOM, Title, Meta } from '@angular/platform-browser';
 })
 export class CarouselComponent implements OnInit {
 
+  transform;
+  selectedIndex;
+  img;
+  sliderArray = [
+    {img:'assets/images/3.Arena.jpg'},
+    // {img:'assets/images/2.Arena.jpg'},
+    // {img:'assets/images/4.Arena.jpg'},
+    // {img: 'http://bloquo.cc/img/works/1.jpg', alt: '', text: '365 Days Of weddings a year'},
+    // {img: 'http://bloquo.cc/img/works/2.jpg', alt: '', text: '365 Days Of weddings a year'},
+    // {img: 'http://bloquo.cc/img/works/3.jpg', alt: '', text: '365 Days Of weddings a year'},
+    // {img: 'http://bloquo.cc/img/works/4.jpg', alt: '', text: '365 Days Of weddings a year'},
+    // {img: 'http://bloquo.cc/img/works/5.jpg', alt: '', text: '365 Days Of weddings a year'},
+   
+   ];
+
   @ViewChild('carousel') carousel;
-  title=" Around the World | Sports Social ";
+  @ViewChild('blog') blog:ElementRef;
+  @ViewChild('blogImg') blogImg:ElementRef; 
+
   constructor(
     private renderer: Renderer2,
     private recieveHeight: PropertyService,
@@ -44,10 +62,6 @@ export class CarouselComponent implements OnInit {
   ngOnInit() {
     this.setTopMargin();
     this.sendBottomOfCarousel();
-    // this.pagetitle.setTitle(this.title);
-    // this.metaservice.updateTag({name:'title',contetn:this.title});
-    // this.metaservice.updateTag({name:'keywords',content:"Sports news from around the world,latest sports news,latest cricket news,football news,tennis news,pro kabbadi news,Hocket news"});
-    // this.metaservice.updateTag({name:'meta-description',content:"Sports Social Around the World Provides the latest news and stories in sports,sports trends,sports business, international tournaments, cricket news,football news, tennis news, hockey news etc. stay tuned"});
   }
   @HostListener('window:resize', [])onresize() {
     this.setTopMargin();
@@ -57,4 +71,41 @@ export class CarouselComponent implements OnInit {
     this.sendBottomOfCarousel();
   }
 
+  leftScroll(){
+    this.blog.nativeElement.scrollLeft -=this.blogImg.nativeElement.clientWidth;
+  }
+  rightScroll(){
+    this.blog.nativeElement.scrollLeft +=this.blogImg.nativeElement.clientWidth;
+  }
+
+  first1:boolean=true;
+  second1:boolean=false;
+  third1:boolean=false;
+  fourth1:boolean=false;
+
+  first(){
+    this.first1=true;
+    this.second1=false;
+    this.third1=false;
+    this.fourth1=false;
+  }
+  second(){
+    this.first1=false;
+    this.second1=true;
+    this.third1=false;
+    this.fourth1=false;
+  }
+
+  third(){
+    this.first1=false;
+    this.second1=false;
+    this.third1=true;
+    this.fourth1=false;
+  }
+  fourth(){
+    this.first1=false;
+    this.second1=false;
+    this.third1=false;
+    this.fourth1=true;
+  }
 }

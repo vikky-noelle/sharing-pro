@@ -1,13 +1,15 @@
 .blog-card{
     width: 100%;
     position: relative;
+    padding: 2%;
 }
-.blog-card > img {
-    width: 100%;
+.blog-card >a> img {
+    width: 94%;
+    height: 150px;
+    
 }
 .blog-heading {
     /* background-color: black; */
-    opacity: 0.8;
     position: absolute;
     width: 100%;
     left: 0%;
@@ -16,28 +18,34 @@
     bottom: 0px;
 }
 .blog-heading .heading{
-    margin-top:50%;
-    color:rgb(217, 255, 0);
+    margin-top:85%;
+    color:rgb(204, 27, 27);
+    font-size: 1.4em;
+    font-weight: bolder;
+    filter: brightness(100%);
     display: block;
-    width: 20%;
-    font-weight: 100;
+    width: 80%;
+    font-weight: bolder;
     text-align: left;
     position: absolute;
     left: 10px;
     margin-right:10px;
+    white-space: normal;
     /* text-shadow: 2px 2px skyblue; */
     
 }
 .blog-heading .bloggername{
-    margin-top:8%;
+    margin-top:60%;
     margin-bottom: 0%;
-    color: rgb(240, 236, 25);
+    color: #024771;
     display: block;
     width: 40%;
     text-align: left;
     position: absolute;
     left: 10px;
     margin-right:10px;
+    font-weight: bolder;
+    font-size: 1em;
     
 }
 .blog-heading #topic{
@@ -52,18 +60,23 @@
     margin-right:10px;
 }
 .blog-heading #views{
-    margin-top:55%;
-    margin-left: 80%;
-    color: white;
+    margin-top:60%;
+    margin-left: 63%;
+    color: #000000;
     display: block;
     width: 20%;
     position: absolute;
     margin-right:5px;
+    padding: 2%;
+    margin-right: 2%;
 }
 .time {
     position: absolute;
     top: 5px;
-    right: 5px;
+    right: 14px;
+    filter: brightness(100%);
+    font-weight: bolder;
+    padding-right: 3%;
 }
 
 .time > img {
@@ -71,34 +84,50 @@
     height: 25px;
     margin-right: 5px;
     vertical-align: middle;
+    filter: brightness(100%);
+    font-weight: bolder;
 }
 .time > span{
     display: inline-block;
     vertical-align: middle;
     color: #bbbbbb;
+    font-weight: bolder;
 }
-@media(max-width:500px){
+@media(max-width:360px){
     .heading>p{
-        margin-top:100px;
-        color: #ffffff;
-        display: block;
-        width: 20px;
-        text-align: left;
-        position: absolute;
-        left: 10px;
+        margin-top:150px;
+        display: inline-block;
+        width: 70%;
+        text-align: center;
         margin-right:10px;
+        font-size: 0.7em;
         
     }
-    .blog-heading #views{
-        margin-top:15%;
-        margin-left: 73%;
-        color: white;
-        display: block;
-        width: 20%;
-        position: absolute;
-        margin-right:2%;
+    .blog-heading{
+        width: 30%;
+        height: 100%;
     }
     .blog-heading .bloggername{
-        margin-top:15%;
+        font-weight: bolder;
+        font-weight: 1em;
+    }
+    .blog-heading #views{
+        margin-left: 220%;
+        margin-top: 180%;
+    }
+    .blog-heading .bloggername{
+        margin-top:175%;
+    }
+    .blog-heading .heading{
+        width:30%;
+        height: 30%;;
+    }
+    .time{
+        right: 30px;
+    }
+    .time>span{
+
+        font-weight: bolder;
+
     }
 }

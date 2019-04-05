@@ -1,6 +1,6 @@
 <div class="open-card" #openCard>
   <div class="open-card-header">
-      <img  class="close" src="/assets/images/sports-social-cancel-black.png" alt="" (click)= "close()">
+      <img  class="close" src="assets/images/sports-social-cancel-black.png" alt="" (click)= "close()">
     <div class="insert-date">{{insertedDate}}</div>
     <div class="source">
       <img src="{{sourceImage}}" alt="">
@@ -10,7 +10,7 @@
   <div class="open-card-content">
     <div class="title">{{title}}</div>
     <div class="news-image">
-        <img *ngIf="newsImage === undefined" src="/assets/images/default-image.png" alt="">
+        <img *ngIf="newsImage === undefined" src="assets/images/default-image.png" alt="">
       <img src="{{newsImage}}" alt="">
     </div>
     <div class="desc">{{desc}}</div>
@@ -37,20 +37,20 @@
   </div>
   <div class="actions-news">
     <button class="commentButton" (click)="openAppDownloadPopup()">
-      <img src="/assets/images/sports-social-comment.png" alt=""><span>Comment</span>  
+      <img src="assets/images/sports-social-comment.png" alt=""><span>Comment</span>  
     </button>
     <button class="promoteButton" (click)="openAppDownloadPopup()">
-      <img src="/assets/images/sports-social-like.png" alt=""> <span>Like</span>
+      <img src="assets/images/sports-social-like.png" alt=""> <span>Like</span>
     </button>
     <button class="watchButton" (click)="openAppDownloadPopup()">
-      <img src="/assets/images/sports-social-share-black.png" alt=""> <span>Share</span>
+      <img src="assets/images/sports-social-share-black.png" alt=""> <span>Share</span>
     </button>
     <button class="watchButton" (click)="openAppDownloadPopup()">
-        <img src="/assets/images/sports-social-save-black.png" alt=""> <span>Save</span>
+        <img src="assets/images/sports-social-save-black.png" alt=""> <span>Save</span>
     </button>
   </div>
   <div class="comment-bar">
-    <img src="/assets/images/user-default.png" alt="">
+    <img src="assets/images/user-default.png" alt="">
     <input type="text" placeholder="Comment Your Views">
   </div>
   <div class="comments" *ngFor ="let comment of comments">
@@ -64,6 +64,6 @@
   </div>
   
   <div class="open-card-footer">
-    <img src="/assets/images/sports-social-white-logo.png" alt="">
+    <img src="assets/images/sports-social-white-logo.png" alt="">
   </div>
 </div>

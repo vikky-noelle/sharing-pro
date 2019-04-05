@@ -6,6 +6,7 @@ import { LocationService } from '../../shared/services/location.service';
 import { Masonry, MasonryGridItem } from 'ng-masonry-grid';
 import { ISubscription } from 'rxjs/Subscription';
 import { MatchDataService } from '../../shared/services/match-data.service';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'sports-social-global-match-feed',
@@ -15,6 +16,9 @@ import { MatchDataService } from '../../shared/services/match-data.service';
 })
 export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
 
+  title="Arena | Sports Social";
+  metakey="Open Arena,Sports Social,Sports Arena nearby,Sports events nearby,Sports Activities nearby,Sports Grounds nearby, Connect to Sports players nearby,Find Sports players nearby";
+  metades="See What's going around you in sports in the open Arena. Use Arena to find,connect,play, follow matches, players, academies, coaches and events in your favorite sport in your locality and around the world | stay connected to your sports world.";
   Match = [];
   prevPageNo: number = 0;
   nextPageNo: number = 0;
@@ -24,7 +28,9 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
   private _removeFirstItemSubscription: ISubscription;
   constructor(
     private renderer: Renderer2,
-    private matchData: MatchDataService
+    private matchData: MatchDataService,
+    private pagetitle:Title,
+    private metaservice:Meta
   ) { }
 
   globalMatchFeed( pageNo ) {
@@ -52,6 +58,13 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.globalMatchFeed(this.nextPageNo);
+    this.pagetitle.setTitle(this.title);
+    this.metaservice.updateTag({name:'title',content:this.title});
+    this.metaservice.updateTag({name:'keywords',content:this.metakey});
+    this.metaservice.updateTag({name:'description',content:this.metades});
+    this.metaservice.updateTag({property:'og:title',content:this.title});
+    this.metaservice.updateTag({property:'og:description',content:this.metades});
+    this.metaservice.updateTag({property:'og:keywords',content:this.metakey});
   }
 
   ngOnDestroy() {

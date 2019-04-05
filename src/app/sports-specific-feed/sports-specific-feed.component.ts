@@ -71,11 +71,7 @@ globalFeed() {
         return sport.title === this.gameName;
       }).id;
 
-      this.pagetitle.setTitle(this.gameName);
-      this.metaservice.updateTag({name:'title',content:this.gameName});
-      this.metaservice.updateTag({name:'meta-description',content:"See What's going around you in "+ this.gameName+" in the "+ this.gameName+ " Arena. Use "+ this.gameName+ " Arena to find,connect,play, follow "+ this.gameName+ " matches, players, academies, coaches, events etc. in your locality and around the world | stay connected to your " +this.gameName+ " world"});
-      this.metaservice.updateTag({name:'keywords',content:""+this.gameName+" Arena,Sports Social "+this.gameName+","+this.gameName+" Grounds Nearby,"+this.gameName+" Events Nearby, "+this.gameName+" Matches Nearby, Connect "+this.gameName+" Players, Play "+this.gameName+", Find "+this.gameName+" Players,Find "+this.gameName+" Academies,"+this.gameName+" Tournaments Nearby"});
-      console.log(this.gameName, this.gameId);
+       console.log(this.gameName, this.gameId);
       const matchPomise = this.matchData.globalMatchFeed( this.nextPageNo, this.gameId );
       const newsPromise =  this.newsData.globalNewsFeed( this.nextPageNo, this.gameName.toLowerCase());
       Promise.all([matchPomise, newsPromise]).then( (data) => {
@@ -105,6 +101,13 @@ globalFeed() {
 
   ngOnInit() {
     this.globalFeed();
+    this.pagetitle.setTitle(this.gameName);
+    this.metaservice.updateTag({name:'title',content:this.gameName});
+    this.metaservice.updateTag({name:'description',content:"See What's going around you in "+ this.gameName+" in the "+ this.gameName+ " Arena. Use "+ this.gameName+ " Arena to find,connect,play, follow "+ this.gameName+ " matches, players, academies, coaches, events etc. in your locality and around the world | stay connected to your " +this.gameName+ " world"});
+    this.metaservice.updateTag({name:'keywords',content:""+this.gameName+"Arena,Sports Social "+this.gameName+","+this.gameName+" Grounds Nearby,"+this.gameName+" Events Nearby, "+this.gameName+" Matches Nearby, Connect "+this.gameName+" Players, Play "+this.gameName+", Find "+this.gameName+" Players,Find "+this.gameName+" Academies,"+this.gameName+" Tournaments Nearby"});
+    this.metaservice.updateTag({property:'og:title',content:this.gameName});
+    this.metaservice.updateTag({property:'og:description',content:"See What's going around you in "+ this.gameName+" in the "+ this.gameName+ " Arena. Use "+ this.gameName+ " Arena to find,connect,play, follow "+ this.gameName+ " matches, players, academies, coaches, events etc. in your locality and around the world | stay connected to your " +this.gameName+ " world"});
+    this.metaservice.updateTag({property:'og:keywords',content:""+this.gameName+"Arena,Sports Social "+this.gameName+","+this.gameName+" Grounds Nearby,"+this.gameName+" Events Nearby, "+this.gameName+" Matches Nearby, Connect "+this.gameName+" Players, Play "+this.gameName+", Find "+this.gameName+" Players,Find "+this.gameName+" Academies,"+this.gameName+" Tournaments Nearby"});
   }
 
   ngOnDestroy() {

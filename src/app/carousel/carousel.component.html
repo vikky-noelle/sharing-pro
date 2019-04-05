@@ -1,4 +1,43 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <div class="carousel" #carousel>
-  <p>See What's Going Around</p>
-  <p><a href="https://goo.gl/qrgCz5" target="_blank">Download The App</a></p>
+    <p>Play your favorite sport and stay</p>
+
+
+  <div class="left-side">
+      <div class="first" *ngIf=first1>
+        <img src="assets/images/Team-01.jpg">
+      </div>
+      <div class="second" *ngIf=second1>
+          <img src="assets/images/Profile-01.jpg">
+      </div>
+      <div class="third" *ngIf=third1>
+          <img src="assets/images/Locality-01.jpg">
+      </div>
+      <div class="fourth" *ngIf=fourth1>
+          <img src="assets/images/Arena-01 - Copy.jpg">
+      </div>
 </div>
+<div class="right-side">
+        <div>
+            <img src="assets/images/suggest-feature.png" (click)="first()">
+            <h4>Match card</h4>
+            <p>Design with millions of stock photographs,vector you can uplod your own</p>
+        </div>
+
+        <div>
+            <img src="assets/images/suggest-feature.png" (click)="second()">
+            <h4>User profile </h4>
+            <p>Design with millions of stock photographs,vector you can uplod your own</p>
+        </div>
+        <div>
+            <img src="assets/images/suggest-feature.png"  (click)="third()">
+            <h4>Find your locality</h4>
+             <p>Design with millions of stock photographs,vector you can uplod your own</p>
+        </div>
+        <div >
+            <img src="assets/images/suggest-feature.png" (click)="fourth()">
+            <h4>See what's going around arena</h4>
+             <p>Design with millions of stock photographs,vector you can uplod your own</p>
+        </div>
+</div>
+

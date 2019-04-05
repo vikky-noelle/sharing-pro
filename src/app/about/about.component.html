@@ -2,35 +2,62 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <div class="app">
-    <img src="/assets/images/app_icon.png" class="img-responsive app-icon">
-  </div>
+  <!-- <div class="app">
+    <img src="assets/images/app_icon.png" class="img-responsive app-icon">
+  </div> -->
 
   <h4 class="app-desc">
     <p><u>{{descTitleDisplay}}</u></p>
     <p>{{descDisplay}}</p>
   </h4>
 
-  <div id="sec">
+  <!-- <div id="sec">
     <a onclick="document.getElementById('bitdes').scrollIntoView();" class="scroll-down"></a>
-  </div>
+  </div> -->
    
-  <div class="bit-desc" id="bitdes">  </div>
+  <div class="banner"> 
+    <h3>1m+
+        <p>Daily Active User</p>
+    </h3>
+    <h3>1k+
+        <p>Daily Match Created</p>
+    </h3>
+    <h3>10k+
+        <p>Localities to Play</p>
+    </h3>
+    <h3>5k+
+        <p>Club and Academy</p>
+    </h3>
+  </div>
 
-  <h4 class="app-mantra">
-    Our Mission is to give everyone opportunity for
-    play and self-expression and Show them to World.
-  </h4>
-  <img src="/assets/images/sport-icon.jpg" class="sport-icon">
+  <div class="card">
+    <div class="card-image-holder">
+      <img src="assets/images/football-min.jpg">
+    </div>
+        <div class="card-content">
+          <div class="content">
+          <b>"A world where everyone is welcome to play and enjoy their favourite sports without any barrirers"</b>
+          <p>
+              Our Mission is to give everyone opportunity for play and self-expression and Show them to World.
+          </p>
+        </div>
+      </div> 
+  </div>  
 
-  <h4 class="app-mantra">
-    <b>"A world where everyone is welcome to play and enjoy their favourite sports without any barrirers"</b>
-  </h4>
-  <h4 class="app-mantra">
-    We believe that everyone deserve an opportunity for
-    self-expression and that the world is better place when we play, express ourselves
-    and build communities through Sports.
-  </h4>
+  <div class="card2">
+      <div class="card2-image">
+          <img src="assets/images/header-img.jpg">
+        </div>
+    <div class="card2-content">
+      <div class="content">
+        <h4>
+            We believe that everyone deserve an opportunity for
+            self-expression and that the world is better place when we play, express ourselves
+            and build communities through Sports.
+          </h4>
+    </div>
+  </div>   
+  </div>
 
   <div class="blogFeed" id="blg-feed">
     <p class="feedHeading"><u>The Latest from our Blog</u></p>
@@ -39,45 +66,43 @@
         <div  class="feeddata" *ngFor="let feed of blogs" #blogImg>
           <!-- <img src="{{img}}"> -->
           <sports-social-blog-card
-                            [blogId] = "feed.blogId"
-                            [heading] = "feed.heading"
                             [blogImage] = "feed.blogImage"
                             [viewCount] = "feed.viewCount"
-                            [shareCount] = "feed.shareCount"
                             [bloggerName] = "feed.bloggerName"
+                            [metaDesc] = "feed.metaDesc"
+                            [heading] = "feed.heading"
                             [metaDesc] = "feed.metaDesc"
                             [topic] = "feed.topic"
                             [insertedDate] = "feed.insertedDate">
                        </sports-social-blog-card>
         </div>
-        <img src="/assets/images/left.png" class="left" (click)="leftScroll()">
-        <img src="/assets/images/right.png" class="right" (click)="rightScroll()">
+        
+        <img src="assets/images/left.png" class="left" (click)="leftScroll()">
+        <img src="assets/images/right.png" class="right" (click)="rightScroll()">
       </div>
     </div>
   </div>
 
-  <div class="feed">
-         <p class="feedHeading"><u><img src="/assets/images/instagram.png" alt="">The Social Feed</u></p>
-    <div style="position:relative">    
-      <div class="socialFeed" #socialFeed>
-        <div *ngFor="let data of instaArr" class="instaData">
-            <a href="{{data.link}}" target=_blank> <img src={{data.url}} #socialFeedImg> </a>
-            <p id="username" style="color:yellowgreen;">@{{data.username}}</p>
-                <!-- <p id="time">{{data.created_time}}</p>
-                <p id=content>{{data.text}}</p> 
-            <div  *ngFor="let data of instaArr" class="text">
+  <div class="instafeed">
+        <p class="instafeedHeading">
+          <u><img src="assets/images/instagram.png" alt="">The Social Feed</u>
+        </p>
+         <div class="socialFeed" #socialFeed>
+         <div *ngFor="let data of instaArr" class="instaData">
+            <a href="{{data.link}}" target=_blank> 
+              <img src={{data.url}} #socialFeedImg> </a>
                 <p id="username">@{{data.username}}</p>
                 <p id="time">{{data.created_time}}</p>
-                <p id=content>{{data.text}}</p> 
-               </div> -->
+                <div class="textdata">
+                    <p>{{data.text}}</p>   
+                </div>            
          </div>
-        <img src="/assets/images/left.png" class="left" (click)="leftScroll2()">
-        <img src="/assets/images/right.png" class="right" (click)="rightScroll2()">   
+        <img src="assets/images/left-arrow (4).png" class="left" (click)="leftScroll2()">
+        <img src="assets/images/right-arrow (3).png" class="right" (click)="rightScroll2()">   
       </div>    
-    </div>
+    
   </div> 
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
 </body>
 </html>

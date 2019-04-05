@@ -4,7 +4,7 @@
     <ul >
       <li>
         <a routerLink="/" class="nav">
-          <img src="{{route === undefined ? '/assets/images/sports-social-home-clicked.png': '/assets/images/sports-social-home.png'}}" #image>
+          <img src="{{route === undefined ? 'assets/images/sports-social-home-clicked.png': 'assets/images/sports-social-home.png'}}" #image>
         </a>
       </li>
       <li *ngFor="let sport of sports; let i = index" (mouseover)="closeDropdownByMouseleave(i)">
@@ -13,7 +13,7 @@
         </a>
       </li>
       <li class="more"  *ngIf = "moreSports.length>0">
-          <img src="/assets/images/sports-social-caret-down-blue.png" (click)="openDropdown()" (mouseover)="openDropdown()" >
+          <img src="assets/images/sports-social-caret-down-blue.png" (click)="openDropdown()" (mouseover)="openDropdown()" >
       </li>
     </ul>
 
@@ -33,18 +33,18 @@
    <ng-container *ngIf = "mobileNav">
       <div class="active-route" > 
           <div  *ngIf= "route === undefined" >
-              <img src="{{ '/assets/images/sports-social-home-clicked.png'}}" #image>
+              <img src="{{ 'assets/images/sports-social-home-clicked.png'}}" #image>
           </div>
           <ng-container *ngIf= "route !== 'Popular'">
               <div >{{route}}</div>
           </ng-container>
-        <img  src="/assets/images/sports-social-caret-down-blue.png" (click)="openDropdown()" (mouseover)="openDropdown()" >
+        <img  src="assets/images/sports-social-caret-down-blue.png" (click)="openDropdown()" (mouseover)="openDropdown()" >
       </div>
       <ng-container *ngIf="isHoverOnCaret">
         <ul (mouseleave)="closeDropdownByMouseleave()" #mobileNavbar>
             <li>
                 <a routerLink="/" class="nav">
-                  <img src="{{route === undefined ? '/assets/images/sports-social-home-clicked.png': '/assets/images/sports-social-home.png'}}" #image>
+                  <img src="{{route === undefined ? 'assets/images/sports-social-home-clicked.png': 'assets/images/sports-social-home.png'}}" #image>
                 </a>
               </li>
           <li *ngFor="let sport of sports; let i = index" >
