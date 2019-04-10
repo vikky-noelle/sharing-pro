@@ -4,8 +4,10 @@
     padding: 2%;
 }
 .blog-card >a> img {
-    width: 94%;
+    width: 95%;
     height: 150px;
+    margin-top: 10%;
+    border-radius: 4%;
     
 }
 .blog-heading {
@@ -18,15 +20,16 @@
     bottom: 0px;
 }
 .blog-heading .heading{
-    margin-top:85%;
-    color:rgb(204, 27, 27);
-    font-size: 1.4em;
+    margin-top:100%;
+    color:#000000;
+    font-size: 1.2em;
     font-weight: bolder;
     filter: brightness(100%);
     display: block;
-    width: 80%;
+    width: 90%;
     font-weight: bolder;
-    text-align: left;
+    text-align: center;
+    text-align-last: center;
     position: absolute;
     left: 10px;
     margin-right:10px;
@@ -35,9 +38,10 @@
     
 }
 .blog-heading .bloggername{
-    margin-top:60%;
+    margin-top:70%;
     margin-bottom: 0%;
-    color: #024771;
+    /* color: #f0be54; */
+    color: #000000;
     display: block;
     width: 40%;
     text-align: left;
@@ -51,22 +55,23 @@
 .blog-heading #topic{
     margin-top:10px;
     margin-bottom: 0%;
-    color: white;
+    color:#000000;;
     display: block;
     width: 40%;
     text-align: left;
     position: absolute;
     left: 10px;
     margin-right:10px;
+    font-size: 0.9em;
+    font-weight: bolder;
 }
 .blog-heading #views{
-    margin-top:60%;
+    margin-top:67.5%;
     margin-left: 63%;
     color: #000000;
     display: block;
     width: 20%;
     position: absolute;
-    margin-right:5px;
     padding: 2%;
     margin-right: 2%;
 }
@@ -82,7 +87,7 @@
 .time > img {
     width: 25px;
     height: 25px;
-    margin-right: 5px;
+    margin-right: 1px;
     vertical-align: middle;
     filter: brightness(100%);
     font-weight: bolder;
@@ -90,21 +95,26 @@
 .time > span{
     display: inline-block;
     vertical-align: middle;
-    color: #bbbbbb;
+    color: #000000;
+    font-size: 0.7em;
     font-weight: bolder;
 }
-@media(max-width:360px){
+@media(max-width:700) and (min-width:320px){
+    .blog-card{
+        width:100%;
+        height: 100%;
+    }
     .heading>p{
-        margin-top:150px;
+        margin-top:5%;
         display: inline-block;
-        width: 70%;
+        width: 90%;
         text-align: center;
         margin-right:10px;
         font-size: 0.7em;
         
     }
     .blog-heading{
-        width: 30%;
+        width: 100%;
         height: 100%;
     }
     .blog-heading .bloggername{
@@ -112,15 +122,18 @@
         font-weight: 1em;
     }
     .blog-heading #views{
-        margin-left: 220%;
-        margin-top: 180%;
+        margin-left: 60%;
+        margin-top: 56%;
+        font-weight: bolder;
     }
     .blog-heading .bloggername{
-        margin-top:175%;
+        margin-top:58%;
+        font-weight: bolder;
     }
     .blog-heading .heading{
-        width:30%;
-        height: 30%;;
+        width:100%;
+        height: 100%;
+
     }
     .time{
         right: 30px;

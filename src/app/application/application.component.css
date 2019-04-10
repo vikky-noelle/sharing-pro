@@ -70,81 +70,81 @@ html{
 }
 .div1{
     background-image: url('/assets/images/1.Arena compress1.jpg');
-    height: 1744px;
-    background-size: 1000px 700px;
+    height: 1350px;
+    background-size: 65% 700px;
     background-attachment: fixed;
     background-position: left;
     background-repeat: no-repeat;
 }
 
 .right1{
-    width:550px;
-    height:1700px;
+    width:35%;
+    height:1350px;
     position: relative;
     float: right;
 }
 .right1>img{
     width: 100%;
-    height: 1745px;
+    height: 100%;
 }
 
 .div2{
     background-image: url('/assets/images/2.Arena.jpg');
-    height: 1744px;
-    background-size: 940px 700px;
+    height: 1400px;
+    background-size: 65% 700px;
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
 }
 .left1{
-    width:550px;
-    height:1744px;
+    width:35%;
+    height:1400px;
     float: left;
     clear: right;
 }
 .left1>img{
     width: 100%;
-    height: 1744px;
+    height: 100%;
     position: relative;
 }
 
 .div3{
     background-image: url('/assets/images/3.Arena.jpg');
-    height: 1744px;
-    background-size: 1000px 700px;
+    height: 1400px;
+    background-size: 65% 700px;
     background-attachment: fixed;
     background-position: left;
     background-repeat: no-repeat;
 }
 
 .right2{
-    width:550px;
-    height:1700px;
+    width:35%;
+    height:1400px;
     position: relative;
     float: right;
 }
 .right2>img{
     width: 100%;
-    height: 1745px;
+    height: 100%;
 }
 
 .div4{
     background-image: url('/assets/images/4.Arena.jpg');
-    height: 1744px;
-    background-size: 940px 700px;
+    height: 1400px;
+    background-size: 65% 700px;
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
 }
 .left2{
     width:35%;
-    height:1744px;
+    height:1400px;
     float: left;
     clear: right;
 }
 .left2>img{
     width: 100%;
-    height: 1744px;
+    height: 100%;
     position: relative;
 }
 
@@ -210,9 +210,6 @@ html{
 }
 .div1{
     background-image: none;
-    background-attachment: fixed;
-    background-position: left;
-    background-repeat: no-repeat;
 }
 
 .right1{
@@ -274,15 +271,23 @@ html{
     position: relative;
 }
 .footer{
-    height:300px;
-    width: 400px;
+    margin-top: -20%;
+    margin-bottom: 25%;
+    margin-left: 27%;
+    height:30%;
+    width: 50%;
+    margin-top: 20%;
     display: flex; 
     justify-content: center;
 }
-.footer>a>img,h3{
-    height:150px;
-    width: 350px;
-    text-align: center;
+.footer>a>img{
+    height:25%;
+    width: 35%;
+    margin-left: 32%;
+    justify-content: center;
+}
+.footer>a>h3{
+    font-size: 0.6em;
 }
 
 }

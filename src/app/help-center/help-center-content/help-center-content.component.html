@@ -4,10 +4,10 @@
   <ul class="side-nav" *ngIf="windowNavbar">
     <li *ngFor="let data of topics">
       <a routerLink="/Helpcenter/{{data.name}}">
-      <button (click)="SubtopicsIconChange(data.id)">
+      <div (click)="SubtopicsIconChange(data.id)">
         <img src="{{data.icon}}">
-        {{data.name}}
-      </button>
+        <div class="topicdata"><p>{{data.name}}</p></div>
+      </div>
     </a>
     </li>
   </ul>

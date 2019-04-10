@@ -26,6 +26,13 @@ p{
 .content>.side-nav{
     display: inline-block;
 }
+.content> .side-nav::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+.content> .side-nav::-webkit-scrollbar {
+    width: 3px; 
+    }
+    
 .side-nav{
    border: 1px solid black;
    height: 600px;
@@ -33,9 +40,7 @@ p{
    width: 420px;
    list-style-type: none;
    display: inline-block;
-   overflow-y: hidden;
    overflow-x: hidden;
-   overflow: scroll;
 }
 .side-nav li{
     border: 1px solid #bbbbbb;
@@ -43,15 +48,15 @@ p{
     height: 50px;
     padding: 5% 1.5% 5% 1.5%;
 }
-.side-nav li>a>button>img{
-    margin-left: 8%;
+.side-nav li>a>div>img{
+    margin-left: 0%;
     padding-right: 15px;
     width: 50px;
     height: 50px;
     border-radius: 5px;
-    /* border: 1px solid black; */
+    
 }
-.side-nav li>a >button{
+.side-nav li>a >div{
     margin-left: 2%;
     width: 90%;
     color: black;
@@ -62,15 +67,31 @@ p{
     text-align: left;
     position: relative;
     cursor: pointer;
+    /* vertical-align: top; */
+    display: inline-block;
+}
+
+.side-nav li>a .topicdata{
+    display: inline-flex;
+    width: 70%;
     vertical-align: top;
-    /* border: 1px solid black; */
 }
-.side-nav li>a>button:hover{
-    font-weight: bolder;
-    text-decoration:none;
+.side-nav li>a .topicdata>p{
+    text-align: left;
+    text-align-last: left;
+    font-size: 1em;
+    margin-left: 0%;
+    font-style: bold;
 }
-.side-nav li>a>button:focus{
+
+.side-nav li>a .topicdata>p:hover{
     font-weight: bolder;
+}
+.side-nav li>a>div:focus{
+    font-weight: bolder;
+}
+.content>ul>li:hover{
+    background-color: #dddddd;
 }
 /*====Subtoipcs=======*/
 .subtopicdata{
@@ -93,9 +114,15 @@ p{
     text-align: center;
 }
 
-.subtopicdata a>p:hover{
+/* .subtopicdata a>p:hover{
     font-weight: bolder;
     text-decoration: none;
+} */
+.subtopicdata:hover {
+    -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.2);
+  font-weight: bolder;
 }
 
 /*subtopics end*/
@@ -183,7 +210,7 @@ p{
     }
     
 /*================== media query ============== */
-@media(max-width:500px){
+@media(max-width:700px){
     .content{
         display: inline-flex;
         margin-bottom: 15%;
@@ -227,9 +254,7 @@ p{
     .side-nav{
         visibility: hidden;
     } */
-  .side-nav{
-      display: none;
-  }
+
     .side-nav {
     padding: 0px;
     width: 285px;
@@ -245,14 +270,14 @@ p{
       padding: 2% .4% 2% .2%;
     }
 
-      .side-nav li >a> button > img {
+      .side-nav li >a> div > img {
         margin-left: 2%;
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
         border-radius: 5px;
       }
 
-      .side-nav li >a> button {
+      /* .side-nav li >a> div {
         color: black;
         font-size: .5em;
         font-weight: 200;
@@ -260,10 +285,24 @@ p{
         border: none;
         text-align: left;
         position: relative;
-      }
-      .side-nav>li>a>button:hover{
-          font-weight: bolder;
-      }
+      } */
+      .side-nav li>a .topicdata{
+        display: inline-flex;
+        width: 50%;
+        height: 50%;
+        margin-top: -20%;
+        margin-left: 40%;
+        vertical-align: top;
+    }
+    .side-nav li>a .topicdata>p{
+        text-align: left;
+        font-weight: bolder;
+        text-align-last: left;
+        font-size: .5em;
+        margin-left: 0%;
+        font-weight: bold;
+    }
+    
         .subtopicdata{
             display: inline-flex;
             width:70px;
@@ -280,11 +319,8 @@ p{
             width: 80px;
             text-align: center;
         }
-        
-        .subtopicdata a>p:hover{
-            font-weight: bolder;
-            text-decoration: none;
-        }
+
+       
         .content2{
             visibility: visible;
         }
