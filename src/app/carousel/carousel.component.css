@@ -55,7 +55,7 @@
 }
 .right-side>div>h4{
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 1.5%;
     margin-top: -0.5%;
     vertical-align:top;
     font-size: 1.1em;
@@ -63,19 +63,18 @@
 }
 
 .right-side>div>p{
-    margin-top: -4%;
-    margin-left: 19.5%;
+    margin-top: -6%;
+    margin-left: 19.7%;
     font-size: .8em;
 }
 .right-side>div>img{
     border: 1px solid black;
-    width:55px;
-    height:55px;
+    width:65px;
+    height:65px;
     margin-left: 8%;
     background: transparent;
     border: none;
     cursor: pointer;
-    
     text-decoration: none;
     text-decoration-color: none;
     border-radius: 50%;
