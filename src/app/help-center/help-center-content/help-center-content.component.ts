@@ -47,7 +47,7 @@ export class HelpCenterContentComponent implements OnInit {
   AllTopics() {
     this.getService.getTopics().subscribe(res => {
       var body = JSON.parse(res._body);
-      for (var i in body) {
+      for (const i in body) {
         this.topics.push({
           id: body[i].id,
           name: body[i].name,
@@ -67,7 +67,7 @@ export class HelpCenterContentComponent implements OnInit {
       console.log(this.topicname);
       if(this.topicname=='')
         this.topicId = this.topics[0].id;
-      this.getSubTopics(this.topicId);
+        this.getSubTopics(this.topicId);
      
     }); 
   }
@@ -85,6 +85,7 @@ export class HelpCenterContentComponent implements OnInit {
   getSubTopics(id){
   this.getService.getSubTopic(id).subscribe(res=>{
       var body = JSON.parse(res._body);
+      this.subtopics=[];
       for (const i in body) {
         this.subtopics.push({
           topic_id:body[i].topic_id,

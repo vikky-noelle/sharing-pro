@@ -22,21 +22,15 @@ export class CarouselComponent implements OnInit {
   transform;
   selectedIndex;
   img;
-  sliderArray = [
-    {img:'assets/images/3.Arena.jpg'},
-    // {img:'assets/images/2.Arena.jpg'},
-    // {img:'assets/images/4.Arena.jpg'},
-    // {img: 'http://bloquo.cc/img/works/1.jpg', alt: '', text: '365 Days Of weddings a year'},
-    // {img: 'http://bloquo.cc/img/works/2.jpg', alt: '', text: '365 Days Of weddings a year'},
-    // {img: 'http://bloquo.cc/img/works/3.jpg', alt: '', text: '365 Days Of weddings a year'},
-    // {img: 'http://bloquo.cc/img/works/4.jpg', alt: '', text: '365 Days Of weddings a year'},
-    // {img: 'http://bloquo.cc/img/works/5.jpg', alt: '', text: '365 Days Of weddings a year'},
-   
-   ];
 
   @ViewChild('carousel') carousel;
   @ViewChild('blog') blog:ElementRef;
   @ViewChild('blogImg') blogImg:ElementRef; 
+  one=document.getElementsByClassName('one') as HTMLCollectionOf<HTMLElement>;
+  two=document.getElementsByClassName('two') as HTMLCollectionOf<HTMLElement>;
+  three=document.getElementsByClassName('three') as HTMLCollectionOf<HTMLElement>;
+  four=document.getElementsByClassName('four') as HTMLCollectionOf<HTMLElement>;
+
 
   constructor(
     private renderer: Renderer2,
@@ -84,12 +78,20 @@ export class CarouselComponent implements OnInit {
   fourth1:boolean=false;
 
   first(){
+    this.one[0].style.color="red";
+    this.two[0].style.color="black";
+    this.three[0].style.color="black";
+    this.four[0].style.color="black";
     this.first1=true;
     this.second1=false;
     this.third1=false;
     this.fourth1=false;
   }
   second(){
+    this.two[0].style.color="red";
+    this.one[0].style.color="black";
+    this.three[0].style.color="black";
+    this.four[0].style.color="black";
     this.first1=false;
     this.second1=true;
     this.third1=false;
@@ -97,12 +99,20 @@ export class CarouselComponent implements OnInit {
   }
 
   third(){
+    this.three[0].style.color="red";
+    this.one[0].style.color="black";
+    this.two[0].style.color="black";
+    this.four[0].style.color="black";
     this.first1=false;
     this.second1=false;
     this.third1=true;
     this.fourth1=false;
   }
   fourth(){
+    this.four[0].style.color="red";
+    this.one[0].style.color="black";
+    this.two[0].style.color="black";
+    this.three[0].style.color="black";
     this.first1=false;
     this.second1=false;
     this.third1=false;

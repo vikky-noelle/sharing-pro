@@ -85,13 +85,6 @@
   -webkit-transform: scale(1.1);
   transform: scale(1.2);
 } */
-.right-side>div:active {
-   font-weight: bolder;
-   color: orange;
-}
-.right-side>div:focus{
-    font-weight: bold;
-}
 
 
 @media screen and (max-width:414px){
