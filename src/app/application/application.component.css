@@ -12,13 +12,14 @@ html{
     position: relative; 
     overflow-x:hidden; 
     width:100%;
-    height: 810px;
+    height: 40%;
     padding-top: 3%;
 }
 .banner>img{
     width:100%;
-    height: 450px;
+    height: 100%;
     padding-bottom: 400px;  
+    border:10px solid #bbbbbb;
     
 }
 .banner>h1{
