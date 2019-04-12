@@ -66,6 +66,10 @@ export class PostService {
       gameid: gameid
     };
     console.log(this.matchFeedReqObj);
+    console.log("Heyy this is lat.="+lat);
+    console.log("Heyy this is log.="+long);
+    console.log("Heyy this is page.="+page);
+    console.log("Heyy this is gameid.="+gameid);
     return this.http.post('https://prod.sportsocial.in/poc/webfeed', this.matchFeedReqObj);
   }
 

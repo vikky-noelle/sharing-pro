@@ -37,7 +37,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     if ( width < 800 && width > 720) {
       this.mobileView = true;
       this.isMenuInDropdown = true;
-      this.isSearchInDropdown = false;
+      this.isSearchInDropdown = true;
     }
     if ( width < 720 ) {
       this.mobileView = true;

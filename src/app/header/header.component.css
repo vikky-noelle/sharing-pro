@@ -41,12 +41,13 @@ header{
     font-style: italic;
 }
 .search{
-    width: 40%;
-    margin-left: 4%;
-    margin-right: 2%;
+    width: 15%;
+    margin-left: 55%;
+    margin-right: 3%;
 }
 input{
     width: 100%;
+    float: right;
     display: block;
     border: none;
     background-image: url('/assets/images/sports-social-search.png');
@@ -142,10 +143,11 @@ a{
 
 .dropdown-search{
     margin-top: 7%;
+    margin-left: 0%;
     width: 100%;
 }
 .dropdown-search > input {
-    width: 95%;
+    width: 90%;
     margin: 1% auto; 
     background-image: unset;
     border-radius: 0px;
@@ -166,3 +168,4 @@ button{
 .active{
     color: #ffa600 !important
 }
+
