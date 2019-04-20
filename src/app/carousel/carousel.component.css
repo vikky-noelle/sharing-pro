@@ -4,12 +4,20 @@
     height: 560px;
     display: inline-block;
     /* background-image: url('assets/images/Banner1.jpg'); */
+}
 
+.carousel-content{
+    width:90%;
+    margin-left: 5%;
+    height: 83%;
+    /* border:  1px solid black; */
+    margin-top: 0%;
+    display: inline-flex;
 }
 .carousel > p {
     position: relative;
     top: 6%;
-    margin-bottom: 3%;
+    margin-bottom: 1.2%;
     transform: translateY(-50%); 
     width: 100%;
     text-align: center;
@@ -17,18 +25,13 @@
     font-size: 2.4em;
     font-weight: 500;
 }
-.carousel a{
-    color: #ffffff;
-    font-weight: 300;
-}
-
 .left-side{
-    margin-left: 5%;
-    margin-top: 2%;
-    width:40%;
-    height: 80%;
-    border: 5px solid #bbbbbb;
+    margin-left: 1%;
+    width:50%;
+    height: 100%;
+    /* border: 5px solid #bbbbbb; */
     border-radius: 4%;
+    box-shadow: 8px 8px 10px #bbbbbb; 
 }
 .left-side>div{
     width: 100%;
@@ -41,14 +44,16 @@
 }
 .right-side{
     width:50%;
-    margin-top: -33.5%;
+    margin-top: 0%;
     margin-right: 2%;
-    height: 370px;
+    height: 100%;
     float:right;
+    vertical-align: top;
     /* border: 1px solid black; */
 }
 .right-side>div{
-    margin: 5%;
+    margin: 4%;
+    margin-top: 0%;
     height: 23%;
     cursor: pointer;
     /* border: 1px solid black; */
@@ -56,7 +61,7 @@
 .right-side>div>h4{
     display: inline-block;
     margin-left: 1.5%;
-    margin-top: -0.5%;
+    margin-top: 0%;
     vertical-align:top;
     font-size: 1.1em;
     font-weight: bolder;
@@ -64,8 +69,9 @@
 
 .right-side>div>p{
     margin-top: -6%;
-    margin-left: 19.7%;
+    margin-left: 21%;
     font-size: .8em;
+    width:87%;
 }
 .right-side>div>img{
     border: 1px solid black;
@@ -93,12 +99,19 @@
         margin-top: 0%;
         margin-bottom: 4%;
     }
+    .carousel-content{
+        width:90%;
+        margin-left: 5%;
+        height: 83%;
+        margin-top: 0%;
+        display: block;
+    }
     .left-side{
         margin-left: 2%;
         margin-top: 2%;
         width:95%;
         height: 60%;
-        border: 5px solid #bbbbbb;
+        
     }
     .left-side>div{
         width: 100%;
@@ -110,7 +123,8 @@
     }
     .right-side{
         width:100%;  
-        margin-top: 3%;
+        /* margin-top: 95%; */
+        margin-left: 0%;
         margin-right: 0%;
         height: 20%;
         display: inline-flex;
@@ -150,16 +164,26 @@
         text-decoration-color: none;
     }
 }
-@media (max-width:1023px) and (min-width:768px){
-    .carousel{
-        height: 600px;
+@media screen and (max-width:767px) and (min-width:415px){
+    .carousel>p{
+        font-size: 1.3em;
+        padding: 2%;
+        margin-top: 0%;
+        margin-bottom: 4%;
+    }
+    .carousel-content{
+        width:90%;
+        margin-left: 5%;
+        height: 83%;
+        margin-top: 0%;
+        display: block;
     }
     .left-side{
-        margin-left: 1%;
-        margin-top: 4%;
-        width:53%;
-        height: 75%;
-        border: 5px solid #bbbbbb;
+        margin-left: 2%;
+        margin-top: 2%;
+        width:95%;
+        height: 60%;
+        
     }
     .left-side>div{
         width: 100%;
@@ -170,10 +194,75 @@
         height: 100%;
     }
     .right-side{
-        width:45%;
-        margin-top: -60%;
+        width:100%;  
+        /* margin-top: 95%; */
+        margin-left: 0%;
+        margin-right: 0%;
+        height: 20%;
+        display: inline-flex;
+        float: left;
+    }
+    .right-side>div{
+        width:100%;
+        height: 40%;
+        margin: 3%;
+    }
+
+    .right-side>div>h4{
+        width: 100%;
+        text-align: center;
+        font-size: 0.7em;
+        font-weight: bolder;
+        margin-left: 0%;
+    }
+    /* .right-side>div>p{
+        width: 100%;
+        height: 40%;
+        font-size: .5em;
+        margin-left: 0%;
+        margin-top: -10%;
+    } */
+    .right-side>div>p{
+        display: none;
+    }
+    .right-side>div>img{
+        width:30px;
+        height: 30px;
+        margin-left: 25%;
+        margin-bottom: 15%;
+        background: transparent;
+        border: none;
+        text-decoration: none;
+        text-decoration-color: none;
+    }
+}
+@media (max-width:1200px) and (min-width:768px){
+    .carousel{
+        height: 600px;
+    }
+    .carousel-content{
+        width:90%;
+        margin-left: 2%;
+        height: 83%;
+        /* border:  1px solid black; */
+        margin-top: 0%;
+        display: inline-flex;
+    }
+    .left-side{
+        margin-left: 1%;
+        width:60%;
+        height: 100%;
+    }
+    .left-side>div{
+        width: 100%;
+        height: 100%;
+    }
+    .left-side>div>img{
+        width: 100%;
+        height: 100%;
+    }
+    .right-side{
         margin-right: 2%;
-        height: 370px;
         display: inline-block;
     }
     .right-side>div{

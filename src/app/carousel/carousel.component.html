@@ -2,7 +2,7 @@
 <div class="carousel" #carousel>
     <p>Play your favorite sport and stay</p>
 
-
+<div class="carousel-content">
   <div class="left-side">
       <div class="first" *ngIf=first1>
         <img src="assets/images/Team-01-min.jpg">
@@ -19,8 +19,8 @@
 </div>
 
  <div class="right-side">
-        <div (click)="first()" class="one">
-            <img src="assets/images/Teams.png" >
+        <div (click)="first()" class="one" style="color:red;"> 
+            <img src="assets/images/Teams.png">
             <h4>TOGETHER WE ACHIEVE MORE</h4>
             <p>Join A Group, Support Your Players. Get In Touch, Get Inspired. There's So Much To Share In Sports Media. Group Is The Perfect Place To Connect Your Emotions.</p>
         </div>
@@ -44,4 +44,5 @@
                 Make the stadium roar with victory chants.</p>
         </div>
 </div> 
+</div>
 </div>
