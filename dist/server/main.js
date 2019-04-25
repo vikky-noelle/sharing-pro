@@ -3560,7 +3560,7 @@ var LivedataComponent = /** @class */ (function () {
             .subscribe(function (res) {
             var data1 = res.json();
             // console.log("thi sis data1:"+JSON.stringify(data1));
-            for (var i in data1) {
+            for (var i = 0; i < data1.length; i++) {
                 _this.cricketArr.push({
                     id: data1[i].id,
                     series: data1[i].series.name,
@@ -4914,7 +4914,7 @@ var MessagingService = /** @class */ (function () {
         this.angularFireDB = angularFireDB;
         this.angularFireAuth = angularFireAuth;
         this.angularFireMessaging = angularFireMessaging;
-        this.currentMessage = new rxjs_1.BehaviorSubject(null);
+        this.currentMessage = new rxjs_1.BehaviorSubject(this.currentMessage);
         this.angularFireMessaging.messaging.subscribe(function (_messaging) {
             _messaging.onMessage = _messaging.onMessage.bind(_messaging);
             _messaging.onTokenRefresh = _messaging.onTokenRefresh.bind(_messaging);

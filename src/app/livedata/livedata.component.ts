@@ -51,7 +51,7 @@ export class LivedataComponent implements OnInit {
     .subscribe(res=>{
       var data1 = res.json();
       // console.log("thi sis data1:"+JSON.stringify(data1));
-      for(const i in data1){
+      for(var i=0;i<data1.length;i++){
         this.cricketArr.push({
           id:data1[i].id,
           series:data1[i].series.name,
