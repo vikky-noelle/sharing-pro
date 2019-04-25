@@ -72,7 +72,9 @@
     margin-left: 21%;
     font-size: .8em;
     width:87%;
+    font-weight: bolder;
 }
+
 .right-side>div>img{
     border: 1px solid black;
     width:65px;
@@ -84,7 +86,14 @@
     text-decoration: none;
     text-decoration-color: none;
     border-radius: 50%;
+    /* filter: gray; 
+    -webkit-filter: grayscale(1); 
+    filter: grayscale(1);  */
 }
+/* .right-side>div>img:hover{
+    -webkit-filter: grayscale(0);
+    filter: none;
+  } */
 /* .right-side>div>img:hover {
     -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);

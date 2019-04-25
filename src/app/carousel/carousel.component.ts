@@ -78,20 +78,20 @@ export class CarouselComponent implements OnInit {
   fourth1:boolean=false;
 
   first(){
-    this.one[0].style.color="red";
-    this.two[0].style.color="black";
-    this.three[0].style.color="black";
-    this.four[0].style.color="black";
+    this.one[0].style.color="black";
+    this.two[0].style.color="#696969";
+    this.three[0].style.color="#696969";
+    this.four[0].style.color="#696969";
     this.first1=true;
     this.second1=false;
     this.third1=false;
     this.fourth1=false;
   }
   second(){
-    this.two[0].style.color="red";
-    this.one[0].style.color="black";
-    this.three[0].style.color="black";
-    this.four[0].style.color="black";
+    this.two[0].style.color="black";
+    this.one[0].style.color="#696969";
+    this.three[0].style.color="#696969";
+    this.four[0].style.color="#696969";
     this.first1=false;
     this.second1=true;
     this.third1=false;
@@ -99,23 +99,25 @@ export class CarouselComponent implements OnInit {
   }
 
   third(){
-    this.three[0].style.color="red";
-    this.one[0].style.color="black";
-    this.two[0].style.color="black";
-    this.four[0].style.color="black";
+    this.three[0].style.color="black";
+    this.one[0].style.color="#696969";
+    this.two[0].style.color="#696969";
+    this.four[0].style.color="#696969";
     this.first1=false;
     this.second1=false;
     this.third1=true;
     this.fourth1=false;
   }
   fourth(){
-    this.four[0].style.color="red";
-    this.one[0].style.color="black";
-    this.two[0].style.color="black";
-    this.three[0].style.color="black";
+    this.four[0].style.color="black";
+    this.one[0].style.color="#696969";
+    this.two[0].style.color="#696969";
+    this.three[0].style.color="#696969";
     this.first1=false;
     this.second1=false;
     this.third1=false;
     this.fourth1=true;
   }
+
+
 }

@@ -51,6 +51,7 @@
     "rxjs": "^6.2.2",
     "rxjs-compat": "^6.4.0",
     "ts-loader": "^4.5.0",
+    "xmlhttprequest": "^1.8.0",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {

@@ -42,11 +42,11 @@
       </div>
       <ng-container *ngIf="isHoverOnCaret">
         <ul (mouseleave)="closeDropdownByMouseleave()" #mobileNavbar>
-            <li>
+            <!-- <li>
                 <a routerLink="/" class="nav">
                   <img src="{{route === undefined ? 'assets/images/sports-social-home-clicked.png': 'assets/images/sports-social-home.png'}}" #image>
                 </a>
-              </li>
+              </li> -->
           <li *ngFor="let sport of sports; let i = index" >
             <a class="nav" routerLink="/{{sport.title}}" routerLinkActive="active" (click)="closeDropdownByClick($event)" >
               {{sport.title}}

@@ -42,6 +42,7 @@ import { environment } from '../environments/environment';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AsyncPipe } from '@angular/common';
 import {AngularFirestoreModule} from 'angularfire2/firestore';
+import { LivedataComponent } from './livedata/livedata.component';
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import {AngularFirestoreModule} from 'angularfire2/firestore';
     SubTopicComponent,
     AddQueAnsComponent,
     ApplicationComponent,
+    LivedataComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({appId:'sport-social'}),

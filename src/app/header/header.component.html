@@ -12,11 +12,15 @@
       </div>
     </a>
   </div>
-  <div class="search" *ngIf="!isSearchInDropdown">
-    <input type="text" placeholder="Search Sport Social">
-  </div>
+  
   <div class="menu" *ngIf="!isMenuInDropdown">
+      <div class="search" *ngIf="!isSearchInDropdown">
+          <input type="text" placeholder="Search Sport Social">
+        </div>
     <ul>
+        <!-- <li>
+            <a routerLink="/live" class="About btn btn-responsive" routerLinkActive="active">Live</a>
+          </li> -->
       <li>
         <a routerLink="/about" class="About btn btn-responsive" routerLinkActive="active">About</a>
       </li>
@@ -39,6 +43,9 @@
         <img src="/assets/images/sports-social-cancel-black.png"  (click)="closeDropdown()">
       </div>
       <ul  *ngIf="isMenuInDropdown">
+          <!-- <li>
+              <a routerLink="/live" class="About btn btn-responsive" routerLinkActive="active">Live</a>
+            </li> -->
           <li>
               <a routerLink="/about" routerLinkActive="active">About</a> 
           </li>

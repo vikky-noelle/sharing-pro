@@ -57,7 +57,7 @@ instafeed():void{
   this.http.request('https://api.instagram.com/v1/users/self/media/recent/?access_token=3238782460.1408c01.74c84f4d73a048c69abe08f3d038e444')
     .subscribe((res:Response)=>{
       this.instadata=res.json().data;
-      console.log("this is insta data::"+this.instadata);
+      // console.log("this is insta data::"+this.instadata);
       for(var i=0;i<this.instadata.length;i++){
         this.instaimageArray=this.instadata[i];
         this.instaArr.push({
@@ -77,7 +77,7 @@ _masonry: Masonry;
   private _removeAllSubscription: ISubscription;
   private _removeItemSubscription: ISubscription;
   private _removeFirstItemSubscription: ISubscription;
-descTitle="Sports social is";
+descTitle="Sports Social is";
 descTitleDisplay="";
 desc="Sports digital media and Networking Service that helps you to see\
  what's going around in your locality and around the globe right now & let's\

@@ -1,5 +1,8 @@
 .sports-social-card{
     width:100%;
+    border: 1px solid #dddddd;
+    margin-bottom: 10%;
+    border-radius: 1%;
 }
 
 .userImage{
@@ -57,7 +60,7 @@
     font-weight: 400 ;
 }
 .match-date{
-    min-width: 32%;
+    min-width: 80%;
     text-align: right;
     position: absolute;
     top: 5px;
@@ -135,7 +138,6 @@ button {
     outline: none;
     border: none;
     cursor: pointer;
-    
 }
 
 .actions-match > button > img {

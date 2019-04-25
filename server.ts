@@ -8,7 +8,7 @@ import { join } from 'path';
 
 // Faster server renders w/ Prod mode (dev mode never needed)
 enableProdMode();
-
+(global as any).XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 // Express server
 const app = express();
 

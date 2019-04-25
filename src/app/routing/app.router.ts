@@ -10,10 +10,12 @@ import { AddTopicComponent } from '../add-topic/add-topic.component';
 import { AddQueAnsComponent } from '../add-que-ans/add-que-ans.component';
 import { HomeComponent } from '../home/home.component';
 import { ApplicationComponent } from '../application/application.component';
+import { LivedataComponent } from '../livedata/livedata.component';
 
 
 const App_Route: Routes = [
     
+    {path:"live",component:LivedataComponent},
     {path:"addtopic",component:AddTopicComponent},
     {path:"HelpCenter",component:HelpCenterComponent},
     {path:"Helpcenter/:topicname",component:HelpCenterComponent},

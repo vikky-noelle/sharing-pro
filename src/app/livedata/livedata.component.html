@@ -1,0 +1,30 @@
+<sports-social-header></sports-social-header>
+
+<div class="cricket">
+    <p>UPCOMING MATCHES</p>
+  <div class="forUi">
+      
+      <div *ngFor="let data of cricketArr" class="content">
+          <div class="header">
+              <p class="seriesname">{{data.series}}</p>
+                   <div class="icon">
+                      <img src={{data.t1_logourl}} class="icon1">
+                      <p class="vs">V/S</p>
+                      <img src={{data.t2_logourl}} class="icon2">
+                    </div>
+          </div>
+         <p class="venue">{{data.venue}}</p>
+         <p class="starttime">{{data.startdate}}</p>
+          <fieldset class="fieldset1">
+          <legend>{{data.team1}}</legend>
+        </fieldset>
+          <p class="vs2">V/S</p>
+        <fieldset class="fieldset2">
+            <legend>{{data.team2}}</legend>
+          </fieldset>
+          <p class="matchNo">{{data.matchNo}}</p>
+        </div>
+        
+      </div>
+      
+</div> 

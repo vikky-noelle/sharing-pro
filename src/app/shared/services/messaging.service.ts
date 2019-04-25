@@ -19,7 +19,6 @@ export class MessagingService {
       (_messaging) => {
         _messaging.onMessage = _messaging.onMessage.bind(_messaging);
         _messaging.onTokenRefresh = _messaging.onTokenRefresh.bind(_messaging);
-        console.log("this si scmsg hasjhjshs:"+this.currentMessage);
       }
     )
   }
@@ -64,7 +63,7 @@ export class MessagingService {
     this.angularFireMessaging.messages.subscribe(
       (payload) => {
         console.log("new message received. ", payload);
-        this.currentMessage.next(payload);
+        this.currentMessage.next("payload");
       })
   }
 }
