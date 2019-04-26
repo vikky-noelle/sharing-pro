@@ -47,7 +47,7 @@ export class HomeComponent implements OnInit {
     }
 
   ngOnInit() {
-  
+    this.titleservice.setTitle("Sports Social: Making it easier to play around");
   }
 
 //   setCanonivalURL() {

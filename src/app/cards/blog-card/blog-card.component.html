@@ -1,16 +1,17 @@
 <div class="blog-card">
-  <a href="{{url}}" target="_blank">
-    <img src="{{blogImage}}" alt="">
-    <div class="blog-heading">
-         <span class="heading"><p>{{heading}}</p></span> 
-         <span id="topic">{{topic}}</span>
-         <p class="bloggername">By:<br>{{bloggerName}}</p>
-         <span id="views">Views:{{viewCount}}</span>
-    </div>
-    <div class="time">
-      <img src="assets/images/sports-social-clock.png" alt="">
-      <span>{{insertedDate}}</span>
-    
-    </div>
-  </a>
-</div>
+    <a href="{{url}}" target="_blank">
+      <img src="{{blogImage}}" alt="">
+      <div class="blog-heading">
+           <span id="topic">{{topic}}</span>
+      </div>
+      <div class="body">
+          <p class="bloggername">By:<br>{{bloggerName}}</p>
+          <span id="views">Views:{{viewCount}}</span>
+          <span class="heading"><p>{{heading}}</p></span> 
+      </div>
+      <div class="time">
+        <img src="assets/images/sports-social-clock.png" alt="">
+        <span>{{insertedDate}}</span>
+      </div>
+    </a>
+  </div>

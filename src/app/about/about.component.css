@@ -2,6 +2,7 @@ body {
     width: auto;
     height: auto;
   }
+  
   *{
     box-sizing: border-box;
     margin: 0;
@@ -262,6 +263,7 @@ body {
       height: 150px;
       width:100%;
       background-color: rgb(219, 235, 241);
+      overflow-y: hidden;
     }
     .banner> h3{
       width:25%;
@@ -362,9 +364,10 @@ body {
       /* border: 1p solid black; */
       border-radius:2%; 
   }
-  .blog>div>img{
-      height: 20%;
+  .blog>img{
+      height: 7%;
       width: 5%;
+      font-weight: bolder;
       padding-right:3%;  
   }
   .feeddata{
@@ -391,7 +394,7 @@ body {
   .blog .right{
       position: absolute;
       top:47%;
-      right: -2%;
+      right: 0%;
       cursor: pointer;    
   }
 

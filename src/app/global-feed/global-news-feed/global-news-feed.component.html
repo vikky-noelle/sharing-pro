@@ -6,7 +6,7 @@
       [useAnimation]="true"
       [useImagesLoaded]="true">
     <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf = "News.length == 0" alt="">
-    <ng-masonry-grid-item class="col-4" *ngFor = "let feed of News; let i = index">
+    <ng-masonry-grid-item id="col-4" *ngFor = "let feed of News; let i = index">
       <sports-social-news-card
         [newsId] = "feed.newsId"
         [sourceName]= "feed.source"

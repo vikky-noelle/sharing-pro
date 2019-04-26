@@ -18,6 +18,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { LinkService } from '../shared/services/link.service';
 import { Meta ,Title} from '@angular/platform-browser';
 import { Http ,Response} from '@angular/http';
+import { BuiltinVar } from '@angular/compiler';
 
 @Component({
 selector: 'app-about',
@@ -32,7 +33,9 @@ description="Sports Social is Social Networking Service that lets users to chase
 private marginTop;
 isbrowser:boolean;
 url;
+posturl="https://prod.chaseyoursport.com/sportSocialBlogs";
 blogs=[];
+data1=[];
 instaArr=[];
 instadata=[];
 instaimageArray:
@@ -53,26 +56,7 @@ instaimageArray:
 };
 
 
-instafeed():void{
-  this.http.request('https://api.instagram.com/v1/users/self/media/recent/?access_token=3238782460.1408c01.74c84f4d73a048c69abe08f3d038e444')
-    .subscribe((res:Response)=>{
-      this.instadata=res.json().data;
-      // console.log("this is insta data::"+this.instadata);
-      for(var i=0;i<this.instadata.length;i++){
-        this.instaimageArray=this.instadata[i];
-        this.instaArr.push({
-          id:this.instaimageArray.id,
-          profile_picture:this.instaimageArray.user.profile_picture,
-          username: this.instaimageArray.user.username,
-          url:this.instaimageArray.images.standard_resolution.url,
-          created_time:this.time.ExactDate(this.instaimageArray.created_time),
-          text:this.instaimageArray.caption.text,
-          link:this.instaimageArray.link
-        });
-      }
-      
-    });
-}
+
 _masonry: Masonry;
   private _removeAllSubscription: ISubscription;
   private _removeItemSubscription: ISubscription;
@@ -92,6 +76,7 @@ descDisplay=""
 constructor(private margin:SendService,
   private renderer:Renderer2,
   private get:GetService,
+  private post:PostService,
   private time:TimeService,
   private link:LinkService,
   private metaservice:Meta,
@@ -104,30 +89,47 @@ constructor(private margin:SendService,
     (top)=>this.marginTop=top
   )
   }
-  
- getLatestBlog() {
-  this.get.getBlogdata().subscribe(
-    res => {
-      var data =JSON.parse(res._body);
-      console.log(res);
-      for (const i in data) {
-       // console.log(data[i].blogId)
-        this.blogs.push({
-          blogId: data[i].blogId,
-          heading: data[i].heading,
-          blogImage: data[i].blogImage,
-          viewCount: data[i].viewCount,
-          shareCount:data[i].shareCount,
-          bloggerName: data[i].bloggerName,
-          metaDesc: data[i].metaDesc,
-          topic: data[i].topic,
-          insertedDate: this.time.timePassed( data[i].insertedDate )
-          })
-    }
-    
-    }
-  );
+
+instafeed():void{
+  this.get.getinstadata()
+    .subscribe((res:Response)=>{
+      this.instadata=res.json().data;
+      // console.log("this is insta data::"+JSON.stringify(this.instadata));
+      for(var i=0;i<this.instadata.length;i++){
+        this.instaimageArray=this.instadata[i];
+        this.instaArr.push({
+          id:this.instaimageArray.id,
+          profile_picture:this.instaimageArray.user.profile_picture,
+          username: this.instaimageArray.user.username,
+          url:this.instaimageArray.images.standard_resolution.url,
+          created_time:this.time.ExactDate(this.instaimageArray.created_time),
+          text:this.instaimageArray.caption.text,
+          link:this.instaimageArray.link
+        });
+      }
+      
+    });
 }
+
+getLatestBlog() {
+  this.http.post(this.posturl, {}).map((res:Response) => res.json())
+  .subscribe( data => {
+    for(var i=0;i<data.length;i++){
+      this.blogs.push({
+                  blogId: data[i].blogId,
+                  heading: data[i].heading,
+                  blogImage: data[i].blogImage,
+                  viewCount: data[i].viewCount,
+                  shareCount:data[i].shareCount,
+                  bloggerName: data[i].bloggerName,
+                  metaDesc: data[i].metaDesc,
+                  topic: data[i].topic,
+                  insertedDate: this.time.timePassed( data[i].insertedDate )
+      });
+
+    }
+  });
+  }
 setCanonicalURL() {
   this.link.addTag( { rel: 'canonical', href: 'https://www.sportsoical.in'});
 }
