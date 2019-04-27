@@ -72,7 +72,7 @@ import { LivedataComponent } from './livedata/livedata.component';
     AngularFireAuthModule,
     AngularFireMessagingModule,
     AngularFireModule.initializeApp(environment.firebase,'sport-social'),
-    AngularFirestoreModule
+    AngularFirestoreModule,
   ],
   providers: [
     PropertyService,
