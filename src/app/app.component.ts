@@ -18,7 +18,7 @@ export class AppComponent {
     const userId = 'user001';
     this.messagingService.requestPermission(userId)
     this.messagingService.receiveMessage()
-    console.log("this is recieve message:"+this.messagingService.receiveMessage());
+    // this.messagingService.subscribe_device(localStorage.getItem('hiiiiiii'));
     this.message = this.messagingService.currentMessage
     console.log("Hey user this is my message:"+JSON.stringify(this.message));
   }
