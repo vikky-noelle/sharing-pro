@@ -22,6 +22,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   isMenuInDropdown: boolean = false;
   isSearchInDropdown: boolean = false;
   isDropdownIconclicked: boolean = false;
+  searchButton:boolean=false;
   @ViewChild('header') header;
   constructor(
     private height: PropertyService
@@ -34,11 +35,11 @@ export class HeaderComponent implements OnInit, AfterViewInit {
       this.isMenuInDropdown = false;
       this.isSearchInDropdown = false;
     }
-    if ( width > 800  && width < 1220) {
-      this.mobileView = true;
-      this.isMenuInDropdown = true;
-      this.isSearchInDropdown = true;
-    }
+    // if ( width > 800  && width < 1295) {
+    //   this.mobileView = true;
+    //   this.isMenuInDropdown = true;
+    //   this.isSearchInDropdown = true;
+    // }
     if ( width < 800 && width > 720) {
       this.mobileView = true;
       this.isMenuInDropdown = true;
@@ -48,6 +49,13 @@ export class HeaderComponent implements OnInit, AfterViewInit {
       this.mobileView = true;
       this.isMenuInDropdown = true;
       this.isSearchInDropdown = true;
+    }
+  }
+  searchClick(){
+    if(this.searchButton===true){
+      this.searchButton=false;
+    }else{
+      this.searchButton=true;
     }
   }
 
