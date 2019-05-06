@@ -1,0 +1,78 @@
+<sports-social-header></sports-social-header>
+
+  <div class="header">
+    <div class="headerContent">
+      <h2>Contact Us</h2>
+      <p>Need an Expert? you are more than welcome
+        to leave your contact info and we will be touch shortly
+      </p>
+    </div>
+  </div>
+
+  <div class="userform">
+      <div class="left-model">
+          <h4>Send Us a Message</h4>
+      
+        <form name="contactUs">
+            <label>
+              * First Name<br>
+              <input type="text" name="firstname" placeholder="first-name" required #firstname>
+            </label>
+            <label>
+              Last Name<br>
+              <input type="text" name="lastname" placeholder="last-name" #lastname>
+            </label>
+            <label>
+              * Contact Number<br>
+              <input type="text" name="contactnumber" placeholder="0123456789" required #contactnumber>
+            </label>
+            <label>
+              * Email Id<br>
+              <input type="text" name="email" placeholder="abc@gmail.com" required #email>
+            </label>
+            <label class="msg">
+              * Message<br>
+              <input type="text" name="message" required #message>
+            </label><br>
+            <button (click)="saveformdata()">Send</button>
+        </form>
+      </div>
+      <div class="right-model">
+          <h2>Follow Us</h2>
+          <a href="https://www.facebook.com/chaseyoursport/" target="_blank">
+            <img src="assets/images/facebook-logo.png">
+          </a>
+          <a href="https://in.linkedin.com/company/sports-social" target="_blank">
+            <img src="assets/images/linkedin.png">
+          </a>
+          <a href="https://www.twitter.com/chaseyoursport" target="_blank">
+          <img src="assets/images/twitter3.png">
+        </a>
+      </div>
+  </div>
+
+
+<div class="midbody">
+  <div class="blockData">
+    <img src="assets/images/home-icon-silhouette.png">
+    <h3>VISIT US</h3>
+    <p>Basement,307,chakkarpur,sector28,
+      Gurugram, Haryana 122002 </p>
+  </div>
+  <div class="blockData">
+    <img src="assets/images/call-answer.png">
+    <h3>CALL US</h3>
+    <p>+91-8800617124</p>
+  </div>
+  <div class="blockData">
+    <img src="assets/images/envelope.png">
+    <h3> MESSAGE US</h3>
+    <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" target="_blank"><P>info@sportsocial.in</P></a>
+  </div><br>
+  <div class="map">
+      <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+      </div>
+</div>
+

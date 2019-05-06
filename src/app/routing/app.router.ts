@@ -11,10 +11,12 @@ import { AddQueAnsComponent } from '../add-que-ans/add-que-ans.component';
 import { HomeComponent } from '../home/home.component';
 import { ApplicationComponent } from '../application/application.component';
 import { LivedataComponent } from '../livedata/livedata.component';
+import { ContactUsComponent } from '../contact-us/contact-us.component';
 
 
 const App_Route: Routes = [
     
+    {path:"contactus",component:ContactUsComponent},
     {path:"live",component:LivedataComponent},
     {path:"addtopic",component:AddTopicComponent},
     {path:"HelpCenter",component:HelpCenterComponent},

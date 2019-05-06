@@ -108,4 +108,8 @@ export class PostService {
     return this.http.post('https://prod.chaseyoursport.com/loadSingleBlogDataSmallDesc', this.BlogId)
     .map((response: Response) => response.json());
   }
+
+  saveformdata(dataObject){
+    return this.http.post('https://test.sportsocial.in/web/webcontactus',dataObject);
+  }
 }
