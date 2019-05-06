@@ -13,28 +13,28 @@
       <div class="left-model">
           <h4>Send Us a Message</h4>
       
-        <form name="contactUs">
+        <form name="contactUs" #formdata="ngForm" (ngSubmit)="onsubmit(formdata.value)">
             <label>
               * First Name<br>
-              <input type="text" name="firstname" placeholder="first-name" required #firstname>
+              <input type="text" name="firstname" placeholder="first-name" required [(ngModel)]="firstName">
             </label>
             <label>
               Last Name<br>
-              <input type="text" name="lastname" placeholder="last-name" #lastname>
+              <input type="text" name="lastname" placeholder="last-name"  [(ngModel)]="lastName">
             </label>
             <label>
               * Contact Number<br>
-              <input type="text" name="contactnumber" placeholder="0123456789" required #contactnumber>
+              <input type="text" name="contactnumber" placeholder="0123456789" required [(ngModel)]="contactnumber">
             </label>
             <label>
               * Email Id<br>
-              <input type="text" name="email" placeholder="abc@gmail.com" required #email>
+              <input type="text" name="email" placeholder="abc@gmail.com" required [(ngModel)]="email">
             </label>
             <label class="msg">
               * Message<br>
-              <input type="text" name="message" required #message>
+              <input type="text" name="message" required [(ngModel)]="message">
             </label><br>
-            <button (click)="saveformdata()">Send</button>
+            <button type="submit">Send</button>
         </form>
       </div>
       <div class="right-model">
