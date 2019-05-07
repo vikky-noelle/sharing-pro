@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { MapsAPILoader } from '@agm/core';
 import { ViewChild, ElementRef, NgZone, } from '@angular/core';
-import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormControl, FormGroup, FormBuilder, Validators,FormsModule } from '@angular/forms';
 import { GooglePlaceDirective } from 'ngx-google-places-autocomplete/ngx-google-places-autocomplete.directive';
-import { Address } from 'ngx-google-places-autocomplete/objects/address';
 import { Http } from '@angular/http';
 import { PostService } from '../shared/services/post.service';
-import { Contactus } from '../contactus';
+import { Contactus2 } from '../contactus2';
 
 @Component({
   selector: 'sports-social-contact-us',
@@ -14,8 +13,8 @@ import { Contactus } from '../contactus';
   styleUrls: ['./contact-us.component.css']
 })
 export class ContactUsComponent implements OnInit {
+  form = new Contactus2();
 
-  body;
   
   @ViewChild('places') places: GooglePlaceDirective;
   @ViewChild('search' ) public searchElement: ElementRef;
@@ -24,18 +23,12 @@ export class ContactUsComponent implements OnInit {
   zoom: number = 15;
   constructor(private http:Http,private post:PostService) {  }
 
-  registerform:FormGroup;
-
-  onsubmit(savedata:Contactus){
-    this.post.saveformdata(savedata).subscribe((res)=>{
+  onsubmit(form2:Contactus2){
+    this.post.saveformdata(form2).subscribe((res)=>{
       console.log("this is forom data",res);
       window.location.reload();
     })
   }
 
-  ngOnInit() {
-
-     
-  }
-
+  ngOnInit() {}  
 }

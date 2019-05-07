@@ -13,26 +13,26 @@
       <div class="left-model">
           <h4>Send Us a Message</h4>
       
-        <form name="contactUs" #formdata="ngForm" (ngSubmit)="onsubmit(formdata.value)">
+        <form  #formdata="ngForm" (ngSubmit)="onsubmit(formdata.value)">
             <label>
               * First Name<br>
-              <input type="text" name="firstname" placeholder="first-name" required [(ngModel)]="firstName">
+              <input type="text" name="firstname" [(ngModel)]="form.firstname" placeholder="first-name" required />
             </label>
             <label>
               Last Name<br>
-              <input type="text" name="lastname" placeholder="last-name"  [(ngModel)]="lastName">
+              <input type="text" name="lastname"  [(ngModel)]="form.lastname" placeholder="last-name"   />
             </label>
             <label>
               * Contact Number<br>
-              <input type="text" name="contactnumber" placeholder="0123456789" required [(ngModel)]="contactnumber">
+              <input type="text" name="contactnumber" [(ngModel)]="form.contactnumber" placeholder="0123456789" required  maxlength="10" />
             </label>
             <label>
               * Email Id<br>
-              <input type="text" name="email" placeholder="abc@gmail.com" required [(ngModel)]="email">
+              <input type="text" name="email" [(ngModel)]="form.email" placeholder="abc@gmail.com" required />
             </label>
             <label class="msg">
               * Message<br>
-              <input type="text" name="message" required [(ngModel)]="message">
+              <input  type="text" name="message" [(ngModel)]="form.message" required />
             </label><br>
             <button type="submit">Send</button>
         </form>
@@ -47,6 +47,9 @@
           </a>
           <a href="https://www.twitter.com/chaseyoursport" target="_blank">
           <img src="assets/images/twitter3.png">
+        </a>
+        <a href="https://www.instagram.com/chaseyoursport" target="_blank">
+          <img src="assets/images/instagram-social-network-logo-of-photo-camera.png">
         </a>
       </div>
   </div>

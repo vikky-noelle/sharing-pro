@@ -56,7 +56,12 @@ form{
     margin-top:4.3%;
 }
 .msg{
+    width: 70% !important;
+    height: auto !important;
+}
+.msg>textarea{
     width: 100% !important;
+    height: 80px;
 }
 input{
     margin-top: 5%;
@@ -95,8 +100,8 @@ input{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .right-model>a>img{
-    margin-top: 20%;
-    padding: 8%;
+    margin-top: 5%;
+    padding: 5%;
     width: 15%;
     height: 12%;
     display: inline-block;
@@ -145,6 +150,161 @@ agm-map {
     height: 40%;
     width: 100%;
     position: absolute;
-    margin-bottom: 10%;
+    margin-bottom: 10%; 
+}
+
+@media screen and (min-width:250px) and (max-width:720px){
+    .header{
+        width: 100%;
+        height: 400px;
+        position: static;
+    }
+    .headerContent{
+        margin-top: 25%;
+        margin-left: 15%;
+        position: absolute;
+    }
+    .headerContent>h2{
+        font-size: 2em;
+        font-weight: bolder;
+    }
+    .headerContent>p{
+        width: 80%;
+        margin-top: 1%;
+        text-align: left;
+        font-size: 1.3em;
+        color: #ffffff;
+    }
+    .userform{
+        width: 100%;
+        height: 400px;
+        border: 1px solid #bbbbbb;
+        position: absolute;
+        margin-left: 0%;
+        margin-top: 18%;
+        border-radius: 1%;
+    } 
+    .midbody{
+        position: static;
+        margin-left:5%; 
+        width: 90%;
+        height: 35%;
+        margin-top: 120%;
+    }
+    .blockData{
+        text-align: center;
+        position: static;
+        display: block;
+        width:90%;
+        height: 100%;
+    }
+    .midbody .blockData>img{
+        margin-top: 5%;
+        margin-left: 0%;
+        width: 20%;
+        height: 20%;
+    }
+    .left-model{
+        position: absolute;
+        background-color: #ffffff;
+        width: 60%;
+        height: 100%;
+    }
+    form{
+        width: 80%;
+    }
+    .left-model>form>label{
+        display:block;
+        width: 100%;
+        font-size: 0.8em;
+        margin-left: 5%;
+        margin-top:1%;
+    }
+    .right-model{
+        width: 40%;
+    }
+    input{
+        margin-top: 0%;
+    }
+    .msg{
+        width:100% !important;
+        height: auto !important;
+    }
+    .msg>textarea{
+        width: 100% !important;
+        height: 80px;
+    }
+    .left-model>form>button{
+        border-radius: 10%;
+        width: 40%;
     
+    }
+    
+    agm-map {
+        height: 400px;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .map{
+        height: 40%;
+        width: 100%;
+        position: relative;
+        margin-bottom: 10%; 
+    }
+    
+    
+}
+
+@media screen and (min-width:721px) and (max-width:1200px){
+    .header{
+        position: static;
+    }
+    .headerContent{
+        position: absolute;
+        margin-top: 20%;
+        margin-left: 15%;
+    }
+    .userform{
+        width: 70%;
+        height: 400px;
+        box-shadow: 0 8px 6px -6px #aaaaaa;
+        position: absolute;
+        margin-top: -8%;
+        margin-left: 15%;
+        border-radius: 1%;
+    } 
+    .midbody{
+        position: absolute;
+        margin-left:5%; 
+        width: 90%;
+        height: 35%;
+        margin-top: 50%;
+    }
+    .blockData{
+        vertical-align: top;
+        margin-left: 5%;
+        display: inline-block;
+        width:26%;
+        height: 100%;
+    }
+    .midbody .blockData>img{
+        margin-top: 5%;
+        margin-left: 40%;
+        width: 20%;
+        height: 20%;
+    }
+    .midbody .blockData>h3{
+        margin-top: 2%;
+        text-align: center;
+    }
+    .midbody .blockData>a,p{
+        /* width: 10%; */
+        margin-top: 5%;
+        text-align: center;
+        color: orange;
+        font-weight: bolder;
+        font-size: .8em;
+    }
+
+
 }

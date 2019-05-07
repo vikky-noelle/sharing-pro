@@ -46,7 +46,7 @@ import { LivedataComponent } from './livedata/livedata.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { GooglePlaceModule } from "ngx-google-places-autocomplete";
 import {AgmCoreModule } from '@agm/core';
-import { FormsModule }    from '@angular/forms';
+import { FormsModule, ReactiveFormsModule }    from '@angular/forms';
 
 
 @NgModule({
@@ -62,13 +62,14 @@ import { FormsModule }    from '@angular/forms';
   ],
   imports: [
     BrowserModule.withServerTransition({appId:'sport-social'}),
+    FormsModule,
+    ReactiveFormsModule,
     GooglePlaceModule,
     AgmCoreModule.forRoot({
       apiKey:'AIzaSyBhy2_i75_m05Chs918Q5UKG2fHxMlhia4'
    }),
     AppRoute,
     HttpModule,
-    FormsModule,
     HttpClientModule,
     OpenMatchCardModule,
     OpenNewsCardModule,
