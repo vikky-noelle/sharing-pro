@@ -1,6 +1,6 @@
 <ng-masonry-grid  
     [masonryOptions]="{ transitionDuration: '0.4s', gutter: 2 }"
-    [useAnimation]="true"
+    [useAnimation]="false"
     [useImagesLoaded]="true">
     <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf = "globalArena.length === 0" alt="">
     <ng-masonry-grid-item id="col-4" *ngFor = "let feed of globalArena; let i = index" >
@@ -8,6 +8,7 @@
           <h1 class="type"> 
             <a routerLink="/OpenArena">Open Arena>></a>  
           </h1>
+          <div class="matchcard">
             <sports-social-match-card class="cards"
               [eventId] = "feed.eventId"
               [creatorImage] = "feed.creatorImage"
@@ -28,6 +29,7 @@
               [activityName] = "feed.activityName"
               [restrictionCount] = "feed.restrictionCount"   #matchCard>
             </sports-social-match-card>
+          </div>
       </ng-container>
       <ng-container *ngIf = "feed.type === 0">
           <h1 class="type">

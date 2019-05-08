@@ -1,0 +1,46 @@
+.body{
+    background-color: #024771;
+    width: 100%;
+    height: 270px;
+    position: relative;
+}
+.body>div{
+    display: inline-block;
+    
+}
+.content{
+    display: block;
+    color: #ffffff;
+    width: 25%;
+    margin-left: 5%;
+    vertical-align: top;
+}
+.content>a>h4{
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+
+.content>a>p{
+    font-size: .8em;
+}
+.content>a>h4,p{
+    color: #ffffff;
+    padding:2.5%;
+}
+.body>p{
+    font-size: 0.5em;
+    color: #bbbbbb;
+}
+
+@media screen and (min-width:200px) and (max-width:800px){
+    .content>a>h4{
+        font-size: .7em;
+        font-weight: bolder;
+    }
+    .content>a>p{
+        font-size: .7em;
+    }
+    .content>a>h4,p{
+        padding:8%;
+    }
+}

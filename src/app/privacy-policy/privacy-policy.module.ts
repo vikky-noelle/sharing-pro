@@ -5,6 +5,7 @@ import { FooterModule } from '../footer/footer.module';
 import { RouterModule } from '@angular/router';
 import { PrivacyPolicyComponent } from './privacy-policy.component';
 import { PrivacyRouter } from './privacy-policy.router';
+import { BackfooterModule } from '../backfooter/backfooter.module';
 
 @NgModule({
   imports: [
@@ -12,7 +13,8 @@ import { PrivacyRouter } from './privacy-policy.router';
     HeaderModule,
     FooterModule,
     RouterModule,
-    PrivacyRouter
+    PrivacyRouter,
+    BackfooterModule
   ],
   exports: [
     PrivacyPolicyComponent

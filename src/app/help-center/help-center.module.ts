@@ -8,19 +8,20 @@ import { FooterModule } from '../footer/footer.module';
 import { HelpCenterFooterComponent } from './help-center-footer/help-center-footer.component';
 import { RouterModule } from '@angular/router';
 import { HeaderModule } from '../header/header.module';
+import { BackfooterModule } from '../backfooter/backfooter.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FooterModule,
     RouterModule,
-    HeaderModule
+    HeaderModule,
+    BackfooterModule
   ],
   declarations: [HelpCenterComponent,
     HelpCenterContentComponent,
     HelpCenterHeaderComponent,
     HelpCenterFooterComponent
-    
   ],
 
     exports:[HelpCenterHeaderComponent]

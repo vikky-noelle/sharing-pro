@@ -108,15 +108,18 @@ input{
 }
 .midbody{
     position: absolute;
-    margin-left:5%; 
-    width: 90%;
+    width: 100%;
     height: 35%;
     margin-top: 50%;
     /* border: 2px solid red; */
 }
+/* .midbody>div{
+    margin-left: 6%;
+    border: 1px solid red;
+} */
  .blockData{
     vertical-align: top;
-    margin-left: 5%;
+    margin-left: 6%;
     display: inline-block;
     width:25%;
     height: 100%;
@@ -126,7 +129,7 @@ input{
     margin-top: 5%;
     margin-left: 40%;
     width: 20%;
-    height: 20%;
+    height: 25%;
 }
 .midbody .blockData>h3{
     margin-top: 2%;
@@ -148,9 +151,15 @@ agm-map {
 }
 .map{
     height: 40%;
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
     position: absolute;
     margin-bottom: 10%; 
+}
+.footer{
+    vertical-align: bottom;
+    width: 100%;
+    margin-top: 35%;
 }
 
 @media screen and (min-width:250px) and (max-width:720px){
@@ -186,10 +195,10 @@ agm-map {
     } 
     .midbody{
         position: static;
-        margin-left:5%; 
-        width: 90%;
+        /* margin-left:5%;  */
+        width: 100%;
         height: 35%;
-        margin-top: 120%;
+        margin-top: 145%;
     }
     .blockData{
         text-align: center;
@@ -248,8 +257,14 @@ agm-map {
     .map{
         height: 40%;
         width: 100%;
+        margin-left: 0%;
         position: relative;
         margin-bottom: 10%; 
+    }
+
+    .footer{
+        position: relative;
+        width: 100% !important;
     }
     
     

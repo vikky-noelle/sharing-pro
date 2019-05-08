@@ -11,7 +11,7 @@
       <ng-masonry-grid-item id="col-4" *ngFor = "let feed of globalArena; let i = index">
         <ng-container *ngIf = "feed.type === 1">
             <h1 class="type"> 
-              <a routerLink="/OpenArena">Open Arena >></a>  
+              <a routerLink="/OpenArena">Open Arena>></a>  
             </h1>
               <sports-social-match-card class="cards"
                 [eventId] = "feed.eventId"

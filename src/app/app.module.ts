@@ -47,6 +47,9 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { GooglePlaceModule } from "ngx-google-places-autocomplete";
 import {AgmCoreModule } from '@agm/core';
 import { FormsModule, ReactiveFormsModule }    from '@angular/forms';
+import { BackfooterComponent } from './backfooter/backfooter.component';
+import { BackfooterModule } from './backfooter/backfooter.module';
+import { OurteamComponent } from './ourteam/ourteam.component';
 
 
 @NgModule({
@@ -59,6 +62,7 @@ import { FormsModule, ReactiveFormsModule }    from '@angular/forms';
     ApplicationComponent,
     LivedataComponent,
     ContactUsComponent,
+    OurteamComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId:'sport-social'}),
@@ -84,6 +88,7 @@ import { FormsModule, ReactiveFormsModule }    from '@angular/forms';
     AngularFireMessagingModule,
     AngularFireModule.initializeApp(environment.firebase,'sport-social'),
     AngularFirestoreModule,
+    BackfooterModule
   ],
   providers: [
     PropertyService,

@@ -8,6 +8,7 @@ import { HeaderModule } from '../header/header.module';
 import { BlogCardModule } from '../cards/blog-card/blog-card.module';
 
 import { NgMasonryGridModule } from 'ng-masonry-grid';
+import { BackfooterModule } from '../backfooter/backfooter.module';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { NgMasonryGridModule } from 'ng-masonry-grid';
     FooterModule,
     HeaderModule,
     BlogCardModule,
-    NgMasonryGridModule
+    NgMasonryGridModule,
+    BackfooterModule
   ],
   declarations: [
     AboutComponent,

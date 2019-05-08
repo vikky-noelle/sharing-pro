@@ -12,10 +12,13 @@ import { HomeComponent } from '../home/home.component';
 import { ApplicationComponent } from '../application/application.component';
 import { LivedataComponent } from '../livedata/livedata.component';
 import { ContactUsComponent } from '../contact-us/contact-us.component';
+import { OurteamComponent } from '../ourteam/ourteam.component';
 
 
 const App_Route: Routes = [
     
+    {path:"ourTeam",component:OurteamComponent
+    },
     {path:"contactus",component:ContactUsComponent},
     {path:"live",component:LivedataComponent},
     {path:"addtopic",component:AddTopicComponent},
@@ -80,7 +83,8 @@ const App_Route: Routes = [
     {
         path: 'home',
         component: HomeComponent,
-    },
+    }
+    
 ]
 @NgModule({
     imports: [

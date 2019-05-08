@@ -5,6 +5,7 @@ import { FooterModule } from '../footer/footer.module';
 import { RouterModule } from '@angular/router';
 import { TermsAndConditionComponent } from './terms-and-condition.component';
 import { TermRouter } from './terms-and-condition.router';
+import { BackfooterModule } from '../backfooter/backfooter.module';
 
 @NgModule({
   imports: [
@@ -12,7 +13,8 @@ import { TermRouter } from './terms-and-condition.router';
     HeaderModule,
     FooterModule,
     RouterModule,
-    TermRouter
+    TermRouter,
+    BackfooterModule
   ],
   exports: [
     TermsAndConditionComponent
