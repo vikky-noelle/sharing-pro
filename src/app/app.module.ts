@@ -50,6 +50,7 @@ import { FormsModule, ReactiveFormsModule }    from '@angular/forms';
 import { BackfooterComponent } from './backfooter/backfooter.component';
 import { BackfooterModule } from './backfooter/backfooter.module';
 import { OurteamComponent } from './ourteam/ourteam.component';
+import { FirebaseComponent } from './firebase/firebase.component';
 
 
 @NgModule({
@@ -62,7 +63,8 @@ import { OurteamComponent } from './ourteam/ourteam.component';
     ApplicationComponent,
     LivedataComponent,
     ContactUsComponent,
-    OurteamComponent
+    OurteamComponent,
+    FirebaseComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId:'sport-social'}),

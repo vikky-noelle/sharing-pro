@@ -47,7 +47,7 @@ export class TimeService {
     const timeOpt = {hour: '2-digit', minute: '2-digit'};
     const matchDate = new Date(i);
     const presentDate = new Date();
-    console.log(matchDate.toLocaleDateString('en-US', dateOptions), matchDate.toLocaleTimeString('en-US', timeOpt));
+    // console.log(matchDate.toLocaleDateString('en-US', dateOptions), matchDate.toLocaleTimeString('en-US', timeOpt));
     // console.log('Today at ' + matchDate.getHours() + ':' + matchDate.getMinutes());
     if ( matchDate.getUTCDate() === presentDate.getUTCDate()
       && matchDate.getFullYear() === presentDate.getFullYear()

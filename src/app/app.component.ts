@@ -1,6 +1,7 @@
 import { Component, HostBinding } from '@angular/core';
 import { MessagingService } from './shared/services/messaging.service';
 
+
 @Component({
   selector: 'sports-social-root',
   templateUrl: './app.component.html',
@@ -11,14 +12,17 @@ export class AppComponent {
   title = 'app';
   message;
   msg;
+  
 
-  constructor(private messagingService: MessagingService) { }
+  constructor(private messagingService:MessagingService ) { 
+   
+    
+  }
 
   ngOnInit() {
     const userId = 'user001';
     this.messagingService.requestPermission(userId)
     this.messagingService.receiveMessage()
-    // this.messagingService.subscribe_device(localStorage.getItem('hiiiiiii'));
     this.message = this.messagingService.currentMessage
     console.log("Hey user this is my message:"+JSON.stringify(this.message));
   }

@@ -4,6 +4,8 @@
     text-align: center;
     z-index: 8;
     position: relative;
+    /* border: 2px solid red; */
+    vertical-align: top
 }
 
 ul {
