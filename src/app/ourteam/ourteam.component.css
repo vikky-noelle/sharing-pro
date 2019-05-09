@@ -15,16 +15,32 @@
 .cards{
     width: 100%;
     height: 400px;
+
 }
 .cardsbody{
+    vertical-align: top;
     display: inline-block;
     position: relative;
     margin-left: 10%;
     margin-top: 10%;
     width:20%;
     height:90%;
-    border: 2px solid red;
+    border: 2px solid #ffffff;
     border-radius: 2%;
+    box-shadow: 5px 5px 10px #bbbbbb;
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(0.7);
+    -webkit-transition: all .4s ease-in-out;  
+    cursor: pointer;
+}
+.cardsbody:hover{
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1);
+      -ms-transform: scale(2);
+    -webkit-transform: scale(2); 
+    transform: scale(1.1); 
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 .cardsimg{
     margin-top: -27%;
@@ -36,10 +52,11 @@
     border-radius: 50%;
 }
 .cardsimg>img{
-    background-size: cover;
+    /* background-size: cover; */
     width: auto;
     height: 100%;
     margin-left: 0px;
+    
 }
 .cardData{
     margin-left: 6%;
@@ -76,8 +93,11 @@
     width: 15%;
     height: 80%;
 }
+.bodyfooter{
+    margin-top: 5%;
+}
 
-@media screen and (min-width:200px) and (max-width:600px){
+@media screen and (min-width:200px) and (max-width:430px){
     .head{
         text-align: center;
         margin-top: 30%;
@@ -95,11 +115,32 @@
         margin-top: 30%;
         width:80%;
         height:90%;
-        border: 2px solid red;
         border-radius: 2%;
     }
 }
-@media screen and (min-width:601px) and (max-width:750px){
+@media screen and (min-width:431px) and (max-width:600px){
+    .head{
+        text-align: center;
+        margin-top: 30%;
+    }
+    .head>p{
+        font-size: .8em;
+    }
+    .cards{
+        width: 100%;
+        height: 400px;
+    }
+    .cardsbody{
+        margin-left: 20%;
+        display: block;
+        position: relative;
+        margin-top: 30%;
+        width:65%;
+        height:90%;
+        border-radius: 2%;
+    }
+}
+@media screen and (min-width:601px) and (max-width:1000px){
     .head{
         text-align: center;
         margin-top: 30%;
@@ -117,12 +158,38 @@
     }
     .cardsbody{
         display: inline-block;
-        position: relative;
         margin-left: 5%;
         margin-top: 30%;
         width:40%;
         height:90%;
-        border: 2px solid red;
         border-radius: 2%;
+    }
+    .cardData>p{
+        font-size: .8em;
+    }
+}
+@media screen and (min-width:1001px) and (max-width:1200px){
+    .head{
+        text-align: center;
+        margin-top: 30%;
+    }
+    .head>h2{
+        padding: 2%;
+        font-size: 3em;
+    }
+    .head>p{
+        font-size: 1.7em;
+    }
+    .cards{
+        width: 100%;
+        height: 400px;
+    }
+    .cardsbody{
+        margin-top: 30%;
+        width:35%;
+        height:90%;
+    }
+    .cardData>p{
+        font-size: .8em;
     }
 }
