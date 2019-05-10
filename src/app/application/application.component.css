@@ -94,14 +94,14 @@ html{
 
 
 .midData>h2{
-    display: inline-flex;
+    /* display: inline-flex; */
     color: #000000;
     position: static; 
     text-align: center;
     top: 550px; 
     vertical-align: middle;
-    margin-left: 20%;
-    width: 60%; 
+    /* margin-left: 20%; */
+    /* width: 60%;  */
     font-size: 2em;
     font-family: 'Times New Roman', Times, serif;
 }

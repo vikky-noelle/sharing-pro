@@ -2,16 +2,15 @@
 
   <div class="header">
     <div class="headerContent">
-      <h2>Contact Us</h2>
-      <p>Need an Expert? you are more than welcome
-        to leave your contact info and we will be touch shortly
+      <h2>Reach Out to us</h2>
+      <p>For any queries and suggestions, please leave your contact info here and we will be in touch with you shortly.
       </p>
     </div>
   </div>
 
   <div class="userform">
       <div class="left-model">
-          <h4>Send Us a Message</h4>
+          <h4></h4>
       
         <form  #formdata="ngForm" (ngSubmit)="onsubmit(formdata.value)">
             <label>
@@ -56,22 +55,24 @@
 
 
     <div class="midbody">
-      <div class="blockData">
-        <img src="assets/images/home-icon-silhouette.png">
-        <h3>VISIT US</h3>
-        <p>Basement,307,chakkarpur,sector28,
-          Gurugram, Haryana 122002 </p>
+      <div class="blocks">
+          <div class="blockData">
+            <img src="assets/images/home-icon-silhouette.png">
+            <!-- <h3>VISIT US</h3> -->
+            <p>Basement,307,chakkarpur,sector28,
+              Gurugram, Haryana 122002 </p>
+          </div>
+          <div class="blockData">
+            <img src="assets/images/call-answer.png">
+            <!-- <h3>CALL US</h3> -->
+            <p>+91-8800617124</p>
+          </div>
+          <div class="blockData">
+            <img src="assets/images/envelope.png">
+            <!-- <h3> MESSAGE US</h3> -->
+            <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" target="_blank"><P>info@sportsocial.in</P></a>
+          </div><br>
       </div>
-      <div class="blockData">
-        <img src="assets/images/call-answer.png">
-        <h3>CALL US</h3>
-        <p>+91-8800617124</p>
-      </div>
-      <div class="blockData">
-        <img src="assets/images/envelope.png">
-        <h3> MESSAGE US</h3>
-        <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" target="_blank"><P>info@sportsocial.in</P></a>
-      </div><br>
       <div class="map">
           <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
               <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>

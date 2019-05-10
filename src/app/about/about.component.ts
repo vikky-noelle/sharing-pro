@@ -35,7 +35,6 @@ isbrowser:boolean;
 url;
 posturl="https://prod.chaseyoursport.com/sportSocialBlogs";
 blogs=[];
-data1=[];
 instaArr=[];
 instadata=[];
 instaimageArray:
@@ -63,9 +62,10 @@ _masonry: Masonry;
   private _removeFirstItemSubscription: ISubscription;
 descTitle="Sports Social is";
 descTitleDisplay="";
-desc="Sports digital media and Networking Service that helps you to see\
- what's going around in your locality and around the globe right now & let's\
-  you chase your passion to play your favourite sport."
+desc="Sports Social is Sports Digital Media and "+
+"Networking Service that connects the people, places and activities" +
+" involved in the sports ecosystem and enables users to chase their passion "+
+"to play and follow their favorite sport."
 descDisplay=""
 
 
@@ -107,7 +107,7 @@ instafeed():void{
           link:this.instaimageArray.link
         });
       }
-      
+      // console.log("this is timeof instagram",this.instaArr[i].created_time);
     });
 }
 
@@ -117,6 +117,8 @@ getLatestBlog() {
     for(var i=0;i<data.length;i++){
       this.blogs.push({
                   blogId: data[i].blogId,
+                  shortTitle:data[i].shortTitle,
+                  url:data[i].url,
                   heading: data[i].heading,
                   blogImage: data[i].blogImage,
                   viewCount: data[i].viewCount,
@@ -124,10 +126,10 @@ getLatestBlog() {
                   bloggerName: data[i].bloggerName,
                   metaDesc: data[i].metaDesc,
                   topic: data[i].topic,
-                  insertedDate: this.time.timePassed( data[i].insertedDate )
+                  insertedDate: this.time.timePassed( data[i].insertedDate)
       });
-
     }
+    
   });
   }
 setCanonicalURL() {

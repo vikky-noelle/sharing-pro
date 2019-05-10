@@ -11,6 +11,8 @@ import { PostService } from '../../shared/services/post.service';
 import { Meta } from '@angular/platform-browser';
 import { LinkService } from '../../shared/services/link.service';
 import { isPlatformBrowser } from '@angular/common';
+import { Http ,Response} from '@angular/http';
+import { TimeService } from '../../shared/services/time.service';
 
 @Component({
   selector: 'sports-social-blog-card',
@@ -18,7 +20,8 @@ import { isPlatformBrowser } from '@angular/common';
   styleUrls: ['./blog-card.component.css'],
   encapsulation: ViewEncapsulation.Emulated
 })
-export class BlogCardComponent implements OnInit, AfterViewInit {
+export class BlogCardComponent implements OnInit, AfterViewInit{
+  url1 = 'https://www.chaseyoursport.com/'
 
   @Input()  blogId: string;
   @Input()  heading: string;
@@ -31,16 +34,41 @@ export class BlogCardComponent implements OnInit, AfterViewInit {
   @Input()  topic: string;
   @Input()  shortTitle: string;
   @Input()  insertedDate: string;
-  url;
+  @Input()  url:string;
+
+  blogs=[];
   
-  constructor(){} 
+  constructor(private http:Http,private time:TimeService){} 
+  // getLatestBlog() {
+  //   this.http.post(this.url1, {}).map((res:Response) => res.json())
+  //   .subscribe( data => {
+  //     for(var i=0;i<data.length;i++){
+  //       this.blogs.push({
+  //                   blogId: data[i].blogId,
+  //                   shortTitle:data[i].shortTitle,
+  //                   url:data[i].url,
+  //                   heading: data[i].heading,
+  //                   blogImage: data[i].blogImage,
+  //                   viewCount: data[i].viewCount,
+  //                   shareCount:data[i].shareCount,
+  //                   bloggerName: data[i].bloggerName,
+  //                   metaDesc: data[i].metaDesc,
+  //                   topic: data[i].topic,
+  //                   insertedDate: this.time.timePassed( data[i].insertedDate )
+  //       });
+  //       console.log("this is only blogidigjhgjhfjhf",this.blogs[i].url);
   
+  //     }
+  //   });
+  //   }
+
+
   ngOnInit() {
+    // this.getLatestBlog();
   }
 
   ngAfterViewInit() {
-    this.url = 'https://www.chaseyoursport.com/' + this.topic
-      + '/' + this.shortTitle + '/' + this.blogId;
+    this.url = 'https://www.chaseyoursport.com/'+this.topic+'/'+this.shortTitle +'/'+this.blogId;
   }
 
 }

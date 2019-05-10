@@ -5,7 +5,7 @@
   </div> -->
 
   <h4 class="app-desc">
-    <p><u>{{descTitleDisplay}}</u></p>
+    <!-- <p><u>{{descTitleDisplay}}</u></p> -->
     <p>{{descDisplay}}</p>
   </h4>
 
@@ -34,7 +34,7 @@
     </div>
         <div class="card-content">
           <div class="content">
-          <b><h2>"A world where everyone is welcome to play and enjoy their favourite sports without any barrirers"</h2></b>
+          <b><h2>We want to empower everyone to play and enjoy their favorite sports without any barriers.</h2></b>
           <p>
               Our Mission is to give everyone opportunity for play and self-expression and Show them to World.
           </p>
@@ -49,9 +49,7 @@
     <div class="card2-content">
       <div class="content">
         <h3>
-            We believe that everyone deserve an opportunity for
-            self-expression and that the world is better place when we play, express ourselves
-            and build communities through Sports.
+            We believe that world would be a better place if there are more sports based communities.
           </h3>
     </div>
   </div>   
@@ -70,14 +68,16 @@
       <div class="blog" #blog>
         <div  class="feeddata" *ngFor="let feed of blogs" #blogImg>
           <!-- <img src="{{img}}"> -->
+      <a href={{feed.url}} target=_blank>
           <sports-social-blog-card
                             [blogImage] = "feed.blogImage"
                             [metaDesc] = "feed.metaDesc"
                             [heading] = "feed.heading"
                             [metaDesc] = "feed.metaDesc"
                             [topic] = "feed.topic"
-                            [insertedDate] = "feed.insertedDate">
+                            [insertedDate] = "feed.insertedDate | slice:4:16">
                        </sports-social-blog-card>
+                      </a>
         </div>
         
         <img src="assets/images/1.png" class="left" (click)="leftScroll()">
@@ -94,8 +94,8 @@
          <div *ngFor="let data of instaArr" class="instaData">
             <a href="{{data.link}}" target=_blank> 
               <img src={{data.url}} #socialFeedImg> </a>
-                <p id="username">@{{data.username}}</p>
-                <p id="time">{{data.created_time}}</p>
+                <!-- <p id="username">@{{data.username}}</p> -->
+                <p id="time">{{data.created_time | slice:4:16}}</p>
                 <div class="textdata">
                     <p>{{data.text}}</p>   
                 </div>            
