@@ -92,7 +92,7 @@ ul{
 }
 .menu>ul{
     vertical-align: right;
-    margin-left: 0%;
+    margin-left: 50%;
     margin-top: 3%;
     width: 40%;
     display: inline-flex;
