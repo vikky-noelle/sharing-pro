@@ -19,26 +19,7 @@ export class LivedataComponent implements OnInit {
     inProgressMatchCount,
     completedMatchCount
   }
-  // match:{
-  //   meta:{
-  //     upcomingMatchCount,
-  //     inProgressMatchCount,
-  //     completedMatchCount
-  //   },
-  //     matchList:
-  //     {
-  //         matches:[
-  //           {
-  //                 statisticsProvider,
-  //                   series:{
-  //                     name,
-  //                     shortName
-  //                   }
-              
-  //           }
-  //       ]
-  //     }
-  // }
+
   constructor(private http:Http,
     private get:GetService) { }
 
