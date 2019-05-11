@@ -15,9 +15,9 @@ import { Title, Meta } from '@angular/platform-browser';
 })
 export class ContactUsComponent implements OnInit {
   form = new Contactus2();
-  pagetitle="Contact | Sports Social";
-  metadesc="You can contact Sports Social support and customer care for any issues you are facing related to app, website, blog or any of other product. You can chat with us on Whatsapp, Email us, Call us. For more information to know about sports social you can also visit our helpcenter";
-  metakeywords="Contact Sports Social,Customer Care Sports Social,Email Sports Social,Phone Number Sports Social,Sports Social Office,Sports Social Enquiry,Sports Social Gurgaon" 
+  title="Contact | Sports Social";
+  description="You can contact Sports Social support and customer care for any issues you are facing related to app, website, blog or any of other product. You can chat with us on Whatsapp, Email us, Call us. For more information to know about sports social you can also visit our helpcenter";
+  keywords="Contact Sports Social,Customer Care Sports Social,Email Sports Social,Phone Number Sports Social,Sports Social Office,Sports Social Enquiry,Sports Social Gurgaon" 
   
   @ViewChild('places') places: GooglePlaceDirective;
   @ViewChild('search' ) public searchElement: ElementRef;
@@ -36,11 +36,12 @@ export class ContactUsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.metattitle.setTitle(this.pagetitle);
-    this.metaservice.updateTag({name:'description',content:this.metadesc});
-    this.metaservice.updateTag({name:'keywords',content:this.metakeywords});
-    this.metaservice.updateTag({property:'og:title',content:this.pagetitle});
-    this.metaservice.updateTag({property:'og:description',content:this.metadesc});
-    this.metaservice.updateTag({property:'og:keywords',content:this.metakeywords});
+    this.metattitle.setTitle(this.title);
+    this.metaservice.updateTag({name:'title',content:this.title});
+    this.metaservice.updateTag({name: 'keywords' , content: this.keywords});
+    this.metaservice.updateTag({name: 'description', content: this.description});
+    this.metaservice.updateTag({property:'og:title',content:this.title});
+    this.metaservice.updateTag({property:'og:keywords',content:this.keywords});
+    this.metaservice.updateTag({property:'og:description',content:this.description});
   }  
 }

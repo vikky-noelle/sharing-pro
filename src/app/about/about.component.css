@@ -83,7 +83,7 @@ body {
   .card{
     /* position:relative; */
     width:100%;
-    height:500px;
+    height:400px;
     margin-top: 7%;
   }
   .card-image-holder{
@@ -111,7 +111,7 @@ body {
   text-align: center;
  }
  .card-content .content>b>h2{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;  
   padding: 5%;
 }
 .card-content>.content>p{
@@ -121,7 +121,7 @@ body {
  .card2{
   /* position:relative; */
   width:100%;
-  height:550px;
+  height:500px;
   margin-top: 7%;
   
 }
@@ -152,8 +152,7 @@ body {
  margin-left: 50%;
  margin-top: 3%;
 }
-.card2-content>.content>h3{
- font-size: 2em;
+.card2-content>.content>h2{
  font-family: 'Roboto', sans-serif;
  }
  
@@ -302,7 +301,10 @@ body {
       width:100%;
       background-color: rgb(219, 235, 241);
     }
-    .banner3>p{
+    .subbanner3{
+      margin-bottom: 5%;
+    }
+    .subbanner3>p{
       width:90%;
       color: black;
       display: inline-block;
@@ -313,7 +315,7 @@ body {
       font-family: 'Roboto', sans-serif;
       text-align-last: center;
     }
-    .banner3>a>button{
+    .subbanner3>a>button{
       margin-left: 45%;
       margin-top: 3%;
       background: transparent;
@@ -322,7 +324,7 @@ body {
       font-size: .9em;
       cursor: pointer;
       width: 8%;
-      height: 20%;
+      height: 30px;
     }
     
   .blogFeed{
@@ -672,7 +674,7 @@ body {
     font-size: 1.3em;
     font-family: 'Roboto', sans-serif;
     }
-    .banner3>p{
+    .subbanner3>p{
       width:96%;
       color: black;
       display: inline-block;
@@ -682,7 +684,7 @@ body {
       font-size: 1.5em;
       text-align-last: center;
     }
-    .banner3>a>button{
+    .subbanner3>a>button{
       margin-left: 35%;
       margin-top: 3%;
       background: transparent;
@@ -691,7 +693,6 @@ body {
       font-size: .9em;
       cursor: pointer;
       width: 30%;
-      height: 20%;
     }
     .banner2>p:first-child{
       width:90%;
@@ -870,7 +871,7 @@ body {
     margin-left: 2%;
     text-align-last: center;
   }
-  .banner3>a>button{
+  .subbanner3>a>button{
     margin-left: 45%;
     margin-top: 3%;
     background: transparent;
@@ -879,7 +880,6 @@ body {
     font-size: .9em;
     cursor: pointer;
     width: 15%;
-    height: 20%;
   }
 
 }
@@ -1065,11 +1065,11 @@ margin-left:0;
     font-family: 'Roboto', sans-serif;
     text-align-last: center;
   }
-  .banner3>p{
+  .subbanner3>p{
     text-align: center;
     margin-left: 5%;
   }
-  .banner3>a>button{
+  .subbanner3>a>button{
     margin-left: 32.5%;
     margin-top: 3%;
     background: transparent;
@@ -1078,7 +1078,6 @@ margin-left:0;
     font-size: .9em;
     cursor: pointer;
     width: 35%;
-    height: 20%;
   }
 }
   
