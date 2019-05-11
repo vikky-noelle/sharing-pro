@@ -6,6 +6,7 @@ import { GooglePlaceDirective } from 'ngx-google-places-autocomplete/ngx-google-
 import { Http } from '@angular/http';
 import { PostService } from '../shared/services/post.service';
 import { Contactus2 } from '../contactus2';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'sports-social-contact-us',
@@ -14,21 +15,32 @@ import { Contactus2 } from '../contactus2';
 })
 export class ContactUsComponent implements OnInit {
   form = new Contactus2();
-
+  pagetitle="Contact | Sports Social";
+  metadesc="You can contact Sports Social support and customer care for any issues you are facing related to app, website, blog or any of other product. You can chat with us on Whatsapp, Email us, Call us. For more information to know about sports social you can also visit our helpcenter";
+  metakeywords="Contact Sports Social,Customer Care Sports Social,Email Sports Social,Phone Number Sports Social,Sports Social Office,Sports Social Enquiry,Sports Social Gurgaon" 
   
   @ViewChild('places') places: GooglePlaceDirective;
   @ViewChild('search' ) public searchElement: ElementRef;
   lat: number = 28.4700264/*=28.473660*/;
   lng: number = 77.0889223/*=77.086710*/;
   zoom: number = 15;
-  constructor(private http:Http,private post:PostService) {  }
+  constructor(private http:Http,private post:PostService,
+    private metattitle:Title,
+    private metaservice:Meta) {  }
 
   onsubmit(form2:Contactus2){
     this.post.saveformdata(form2).subscribe((res)=>{
-      console.log("this is forom data",res);
+      // console.log("this is forom data",res);
       window.location.reload();
     })
   }
 
-  ngOnInit() {}  
+  ngOnInit() {
+    this.metattitle.setTitle(this.pagetitle);
+    this.metaservice.updateTag({name:'description',content:this.metadesc});
+    this.metaservice.updateTag({name:'keywords',content:this.metakeywords});
+    this.metaservice.updateTag({property:'og:title',content:this.pagetitle});
+    this.metaservice.updateTag({property:'og:description',content:this.metadesc});
+    this.metaservice.updateTag({property:'og:keywords',content:this.metakeywords});
+  }  
 }

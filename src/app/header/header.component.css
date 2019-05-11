@@ -169,9 +169,11 @@ ul{
     margin-top: 7%;
     margin-left: 15%;
     width: 100%;
+    justify-content: center;
 }
 .dropdown-search > input {
-    width: 90%;
+    text-align: center;
+    width: 70%;
     margin: 1% auto; 
     background-image: unset;
     border-radius: 0px;
