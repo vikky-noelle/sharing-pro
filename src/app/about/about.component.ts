@@ -89,7 +89,15 @@ constructor(private margin:SendService,
     (top)=>this.marginTop=top
   )
   }
-
+  //this is the anchor scroll
+  /*scrollToElement($element): void {
+    var string = 'target';
+    string = string + 2;
+    this.scrollToElement(string);
+    console.log($element);
+    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }*/
+  
 instafeed():void{
   this.get.getinstadata()
     .subscribe((res:Response)=>{

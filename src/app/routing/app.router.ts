@@ -89,15 +89,14 @@ const App_Route: Routes = [
 ]
 @NgModule({
     imports: [
-      RouterModule.forRoot(App_Route)
+      RouterModule.forRoot(App_Route, {
+        anchorScrolling: 'enabled'
+    },)
     ],
    exports: [RouterModule]
   })
   export class AppRouting { }
   
-
-
-
 
 export const AppRoute: ModuleWithProviders =    RouterModule.forRoot(App_Route, { enableTracing: true });
 

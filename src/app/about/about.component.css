@@ -9,12 +9,7 @@ body {
     padding: 0;
     font-family:'Roboto',sans-serif;
   }
-  .instagram{
-    border:1px solid black;
-  }
-  .instagram>img{
-    border:1px solid red;
-  }
+
   .nav {
     background-color: #fff;
     height: auto;
@@ -299,7 +294,7 @@ body {
     .banner3 {
       height: 200px;
       width:100%;
-      background-color: rgb(219, 235, 241);
+      background-color: white;
     }
     .subbanner3{
       margin-bottom: 5%;
@@ -328,9 +323,13 @@ body {
     }
     
   .blogFeed{
+      opacity: 1;
+      filter: Alpha(opacity=0); /* IE8 and earlier */
+      background-color: rgb(219, 235, 241);
       z-index: 10;
       margin: 0px;
-      /* padding-top: 2%; */
+      padding-top: 2%;
+      padding-bottom: 2%;
       padding-left: 2%;
       padding-right: 5%;
       /* border: 1px solid red; */
@@ -345,11 +344,11 @@ body {
     text-align: center;
 }
   .blog{
-      width: 90%;
+      width: 80%;
       height: 500px;
       margin: 1%;
       margin-top: 0%;
-      margin-left: 6%;
+      margin-left: 12%;
       overflow: hidden;
       overflow-x: scroll;
       white-space: nowrap !important;
@@ -361,7 +360,7 @@ body {
   }
   .blog>div{
       display: inline-block;
-      width: 20%;
+      width: 27.2%;
       margin-left: 1%;
       margin-right: 5%;
       margin-top: 5%;
@@ -371,11 +370,12 @@ body {
   }
   .blog>img{
       height: 7%;
-      width: 5.5%;
+      width: 5%;
       font-weight: bolder;
       padding-right:3%;  
   }
   .feeddata{
+    background-color: white;
     border:2px solid #fff;
     filter: brightness(100%);
     overflow: hidden;
@@ -394,24 +394,30 @@ body {
   .blog .left{
       position: absolute;
       top:47%;
-      left: 3%;
+      left: 2%;
       cursor: pointer; 
   }
   .blog .right{
       position: absolute;
       top:47%;
-      right: -2%;
+      right: -4%;
       cursor: pointer;    
   }
-
+  /*instafeed transparent container
+  #instacontainer {
+   
+  }*/
   /* insta-feed */
   .instafeed{
+    opacity: 1;
+    filter: Alpha(opacity=0); /* IE8 and earlier */
+    background-color: rgb(219, 235, 241);
     flex-wrap: nowrap;
     z-index: 10;
     margin: 0px;
     padding-bottom: 0%;
-    padding-top: 1%;
-    padding-left: 4%;
+    padding-top: 0%;
+    padding-left: 5%;
     /* border: 1px solid black; */
     padding-right: 5%;
   }
@@ -424,23 +430,24 @@ body {
     text-align: center;
 }
   .socialFeed{
-      width: 90%;
+      width: 80%;
       max-height: 20%;
-      padding:3%;
+      padding:5%;
       margin: 0%;
-      margin-left: 5%;
+      margin-left: 10%;
       overflow: hidden;
       overflow-x: scroll;
       white-space: nowrap !important;  
       /* border: 1px solid red; */
 }
+
 .socialFeed>img{
     width: 2%;
 }
 
 .socialFeed>div{
       display: inline-block;
-      width: 22%;
+      width: 33%;
       height: 400px; 
       border-radius: 2%;
       margin-left: -1%;
@@ -457,6 +464,7 @@ body {
     border-radius: 5%;
   }
   .instaData{
+    background-color: white;
     border:4px solid #fff;
     overflow: hidden;
     margin: 25px;   /* gaps betwenn cards of instafeed*/
@@ -474,14 +482,14 @@ body {
   .socialFeed .left{
       position: absolute;
       padding-top: 15%;
-      left: 6%;
+      left: 4%;
       cursor: pointer;
       scroll-behavior: smooth;
   }
   .socialFeed .right{
       position: absolute;
       padding-top: 15%;
-      right: 7%;
+      right: 4%;
       cursor: pointer;
       scroll-behavior: smooth;
   }
