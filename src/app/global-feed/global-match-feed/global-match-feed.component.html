@@ -2,12 +2,53 @@
 <sports-social-carousel></sports-social-carousel>
 <sports-social-navigation-bar></sports-social-navigation-bar>
 <ng-masonry-grid  
-      [masonryOptions]="{ transitionDuration: '0.4s', gutter: 2 }"
-      [useAnimation]="true"
-      [useImagesLoaded]="true">
-    <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf = "Match.length == 0" alt="">
-    <ng-masonry-grid-item id="col-4" *ngFor = "let feed of Match; let i = index">
-      <sports-social-match-card 
+      [masonryOptions]="{ transitionDuration: '0.4s'}"
+      [useAnimation]="false">
+      <img class="spinner" src="assets/images/sports-social-loading.gif"  alt="" *ngIf=subscription>
+    <ng-masonry-grid-item  id="col-4" *ngFor = "let feed of Matcharr; let i = index">
+      <div class="outdiv">
+        <div class="head">
+              <div class="creator">
+                  <img src={{feed.coverpic}} class="circularImage"> 
+                  <p class="username"><b style="color:#000000;">{{feed.userName}}</b><br>created</p>
+            </div>
+                <div class="headtime">
+                    <img src="assets/images/sports-social-clock.png" alt="" class="clock">
+                    <p>{{feed.InsertedDate | slice:3:15}}</p>
+              </div>
+        </div>
+
+          <div class="card">
+            <p>{{feed.gamename}}</p>
+            <h5>{{feed.Venue_Name}}</h5>
+            <div class="cardData">
+                  <div class="team1">
+                      <img src={{feed.coverpic}}>
+                      <p>{{feed.Team1Name}}</p>
+                  </div>
+
+                  <div class="vs">
+                      <h3>VS</h3>
+                      <p>{{feed.startdatetime}}</p>
+                   </div>
+
+                   <div class="team2">
+                      <img src={{feed.coverpic}}>
+                      <p>{{feed.Team2Name}}</p>
+                   </div>      
+            </div>
+            
+            <div class="footer">
+                  <button class="playButton" (click)="openAppDownloadPopup()">Prediction</button>
+                  <button class="commentButton" (click)="openAppDownloadPopup()">Talk</button>
+                  <button class="promoteButton" (click)="openAppDownloadPopup()">Promote</button>
+                  <button class="watchButton" (click)="openAppDownloadPopup()">Watch</button>
+            </div>
+
+          </div>
+    </div>
+      
+      <!-- <sports-social-match-card 
         [eventId] = "feed.eventId"
         [creatorImage] = "feed.creatorImage"
         [creatorName] = "feed.creatorName"
@@ -26,10 +67,7 @@
         [venueName] = "feed.venueName"
         [activityName] = "feed.activityName"
         [restrictionCount] = "feed.restrictionCount"   #matchCard  >
-      </sports-social-match-card>
+      </sports-social-match-card> -->
     </ng-masonry-grid-item>
 </ng-masonry-grid >
 <sports-social-footer></sports-social-footer>
-
-
-<template #openMatchCard></template>
