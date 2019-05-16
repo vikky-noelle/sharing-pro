@@ -7,14 +7,12 @@ import { GlobalOpenArenaFeedModule } from '../global-feed/global-open-arena-feed
 import { FooterModule } from '../footer/footer.module';
 import { HomeComponent } from './home.component';
 import { HomeRouter } from './home.router';
-import { NewHeaderModule } from '../newheader/newheader.module';
 
 @NgModule({
   imports: [
     CommonModule,
     CarouselModule,
     HeaderModule,
-    NewHeaderModule,
     NavigationBarModule,
     GlobalOpenArenaFeedModule,
     FooterModule,

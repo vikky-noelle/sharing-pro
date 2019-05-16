@@ -1,37 +1,26 @@
 <header #header>
-  <div class="brand">
-    <a routerLink="/">
-      <div class="brand-image">
-        <img src="/assets/images/sports-social-logo.png" alt="Sport-Social-logo">
-      </div>
-      <div class="brand-title">
-        <span>Sports</span>
-        <span>Social</span>
-        <p>ChaseYourSport</p>
-      </div>
-    </a>
-  </div>
+  <!-- dekstop view -->
+<nav class="head">
+  <a routerLink="/">
+    <ul> 
+      <li><img class="img" src="/assets/images/sports-social-logo.png" alt="Sport-Social-logo"></li>
+      <li>
+        <span class="c1">Sports</span>
+        <span class="c2">Social</span>
+        <i><p class="c3">ChaseYourSport</p></i>
+      </li>
+    </ul>
+  </a>
   <!-- dekstop view -->
   <div class="menu" *ngIf="!isMenuInDropdown">
-      <!-- <div class="search" *ngIf="!isSearchInDropdown">
-          <input type="text"   placeholder="  Search Sport Social">
-        </div> -->
-    <ul>
-        <!-- <li>
-            <a routerLink="/live" class="About btn btn-responsive" routerLinkActive="active">Live</a>
-          </li> -->
-      <li>
-        <a routerLink="/about" class="About btn btn-responsive" routerLinkActive="active">About</a>
-      </li>
-      <li>
-        <a routerLink="/application" routerLinkActive="active">App</a> <!--https://goo.gl/qrgCz5-->
-      </li>
-      <li>
-        <a routerLink="/HelpCenter" routerLinkActive="active">Help</a> 
-      </li>
-      
-    </ul>
+     <a routerLink="/HelpCenter" routerLinkActive="active">Help</a> 
+     <a routerLink="/application" routerLinkActive="active">App</a> <!--https://goo.gl/qrgCz5-->
+     <a routerLink="/about" class="About btn btn-responsive" routerLinkActive="active">About</a>
   </div>
+</nav>  
+
+    <!-- </ul> -->
+  
       <!-- mobile view -->
   <div class="mobile-view" *ngIf="mobileView">
     <div class="dropdown-menu-image-holder">
@@ -64,7 +53,6 @@
       </ng-container>
     </div>
   </div>
-
     
 </header>
 
