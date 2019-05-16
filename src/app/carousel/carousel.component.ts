@@ -79,6 +79,7 @@ export class CarouselComponent implements OnInit {
 
   first(){
     this.one[0].style.color="black";
+    //this.one[0].style.width= "500px";
     this.two[0].style.color="#696969";
     this.three[0].style.color="#696969";
     this.four[0].style.color="#696969";
@@ -86,6 +87,11 @@ export class CarouselComponent implements OnInit {
     this.second1=false;
     this.third1=false;
     this.fourth1=false;
+    this.one[0].style.fontSize= "16px";
+    this.two[0].style.fontSize= "15px";
+    this.three[0].style.fontSize= "15px";
+    this.four[0].style.fontSize= "15px";
+
   }
   second(){
     this.two[0].style.color="black";
@@ -96,6 +102,10 @@ export class CarouselComponent implements OnInit {
     this.second1=true;
     this.third1=false;
     this.fourth1=false;
+    this.two[0].style.fontSize= "16px";
+    this.one[0].style.fontSize= "15px";
+    this.three[0].style.fontSize= "15px";
+    this.four[0].style.fontSize= "15px";
   }
 
   third(){
@@ -107,6 +117,10 @@ export class CarouselComponent implements OnInit {
     this.second1=false;
     this.third1=true;
     this.fourth1=false;
+    this.three[0].style.fontSize= "16px";
+    this.one[0].style.fontSize= "15px";
+    this.two[0].style.fontSize= "15px";
+    this.four[0].style.fontSize= "15px";
   }
   fourth(){
     this.four[0].style.color="black";
@@ -117,6 +131,10 @@ export class CarouselComponent implements OnInit {
     this.second1=false;
     this.third1=false;
     this.fourth1=true;
+    this.four[0].style.fontSize= "16px";
+    this.one[0].style.fontSize= "15px";
+    this.two[0].style.fontSize= "15px";
+    this.three[0].style.fontSize= "15px";
   }
 
 

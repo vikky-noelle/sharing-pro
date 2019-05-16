@@ -9,7 +9,9 @@ body {
     padding: 0;
     font-family:'Roboto',sans-serif;
   }
-
+  #0 {
+    background-color: #101010;
+  }
   .nav {
     background-color: #fff;
     height: auto;
@@ -349,12 +351,22 @@ body {
       margin: 1%;
       margin-top: 0%;
       margin-left: 12%;
-      overflow: hidden;
+      /* overflow: hidden; */
       overflow-x: scroll;
       white-space: nowrap !important;
       /* border: 1px solid yellow; */
       
   }
+  .overlap{
+    top: -510px;
+    position: relative;
+    left: 346px;
+    width: 305px;
+    opacity: 0.5;
+  }
+  /* here the highlighting is taking place */
+  /* .overlap,.feeddata { */
+
   .blog::-webkit-scrollbar{
     display: none;
   }

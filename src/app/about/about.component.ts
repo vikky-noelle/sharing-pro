@@ -54,8 +54,6 @@ instaimageArray:
     link
 };
 
-
-
 _masonry: Masonry;
   private _removeAllSubscription: ISubscription;
   private _removeItemSubscription: ISubscription;
@@ -73,6 +71,7 @@ descDisplay=""
 @ViewChild('blogImg') blogImg:ElementRef;
 @ViewChild('socialFeed') socialFeed:ElementRef;
 @ViewChild('socialFeedImg') socialFeedImg:ElementRef;
+@ViewChild('blogoverlap') blogoverlap:ElementRef;
 constructor(private margin:SendService,
   private renderer:Renderer2,
   private get:GetService,
@@ -89,15 +88,7 @@ constructor(private margin:SendService,
     (top)=>this.marginTop=top
   )
   }
-  //this is the anchor scroll
-  /*scrollToElement($element): void {
-    var string = 'target';
-    string = string + 2;
-    this.scrollToElement(string);
-    console.log($element);
-    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-  }*/
-  
+  //pos=this.blog.nativeElement.getElementsByClassName('1').getBoundingClientRect();
 instafeed():void{
   this.get.getinstadata()
     .subscribe((res:Response)=>{
@@ -106,13 +97,14 @@ instafeed():void{
       for(var i=0;i<this.instadata.length;i++){
         this.instaimageArray=this.instadata[i];
         this.instaArr.push({
-          id:this.instaimageArray.id,
-          profile_picture:this.instaimageArray.user.profile_picture,
-          username: this.instaimageArray.user.username,
-          url:this.instaimageArray.images.standard_resolution.url,
-          created_time:this.time.ExactDate(this.instaimageArray.created_time),
-          text:this.instaimageArray.caption.text,
-          link:this.instaimageArray.link
+                       number:i,
+                       id:this.instaimageArray.id,
+                       profile_picture:this.instaimageArray.user.profile_picture,
+                       username: this.instaimageArray.user.username,
+                       url:this.instaimageArray.images.standard_resolution.url,
+                       created_time:this.time.ExactDate(this.instaimageArray.created_time),
+                       text:this.instaimageArray.caption.text,
+                       link:this.instaimageArray.link
         });
       }
       // console.log("this is timeof instagram",this.instaArr[i].created_time);
@@ -124,6 +116,7 @@ getLatestBlog() {
   .subscribe( data => {
     for(var i=0;i<data.length;i++){
       this.blogs.push({
+                  number:i,
                   blogId: data[i].blogId,
                   shortTitle:data[i].shortTitle,
                   url:data[i].url,
@@ -155,8 +148,15 @@ ngOnInit() {
   this.metaservice.updateTag({property:'og:keywords',content:this.keywords});
   this.getLatestBlog();
   this.setCanonicalURL();
-  
   this.typeWriterTitle(this.descTitle,0); 
+  console.log('window width - ' + window.innerWidth);
+  var pod = this.blogoverlap.nativeElement.getBoundingClientRect();
+  var pos = this.blog.nativeElement.getBoundingClientRect();
+  console.log('tile position' + pos.x);
+  console.log('box position' + pod.top);
+  if(pod.top-pos.top<=32){
+    console.log('working');
+  }
   setTimeout(function() {
     var i=0;
     i++;

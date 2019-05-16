@@ -66,8 +66,9 @@
   <div class="blogFeed" id="blg-feed">
     <div style="position:relative">
       <div class="blog" #blog>
-        <div  class="feeddata" *ngFor="let feed of blogs" #blogImg>
+        <div class="feeddata" *ngFor="let feed of blogs" #blogImg>
           <!-- <img src="{{img}}"> -->
+          <h1>{{feed.number}}</h1>
       <a href={{feed.url}} target=_blank>
           <sports-social-blog-card
                             [blogImage] = "feed.blogImage"
@@ -84,8 +85,11 @@
         <img src="assets/images/2.png" class="right" (click)="rightScroll()">
       </div>
     </div>
+    <!-- <div class="blog overlap" style="background-color: yellow"></div> -->
+
   </div>
-  <br>
+  <div class="blog overlap" style="background-color: black" #blogoverlap></div>
+  
   <div>
     <a></a>
      <p class="instafeedHeading">
