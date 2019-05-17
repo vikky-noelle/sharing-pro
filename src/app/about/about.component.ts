@@ -6,7 +6,6 @@ import { Component,
   Renderer2,
   PLATFORM_ID,
   Inject,
-  AfterViewInit
 } from '@angular/core';
 import { SendService } from '../shared/services/send.service';
 import { PostService } from '../shared/services/post.service';
@@ -14,11 +13,9 @@ import { TimeService } from '../shared/services/time.service';
 import { ISubscription } from 'rxjs/Subscription';
 import { Masonry } from 'ng-masonry-grid';
 import { GetService } from '../shared/services/get.service';
-import { isPlatformBrowser } from '@angular/common';
 import { LinkService } from '../shared/services/link.service';
 import { Meta ,Title} from '@angular/platform-browser';
 import { Http ,Response} from '@angular/http';
-import { BuiltinVar } from '@angular/compiler';
 
 @Component({
 selector: 'app-about',
@@ -97,7 +94,6 @@ instafeed():void{
       for(var i=0;i<this.instadata.length;i++){
         this.instaimageArray=this.instadata[i];
         this.instaArr.push({
-                       number:i,
                        id:this.instaimageArray.id,
                        profile_picture:this.instaimageArray.user.profile_picture,
                        username: this.instaimageArray.user.username,
@@ -116,7 +112,6 @@ getLatestBlog() {
   .subscribe( data => {
     for(var i=0;i<data.length;i++){
       this.blogs.push({
-                  number:i,
                   blogId: data[i].blogId,
                   shortTitle:data[i].shortTitle,
                   url:data[i].url,

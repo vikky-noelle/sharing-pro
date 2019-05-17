@@ -14,6 +14,7 @@ import { LivedataComponent } from '../livedata/livedata.component';
 import { ContactUsComponent } from '../contact-us/contact-us.component';
 import { OurteamComponent } from '../ourteam/ourteam.component';
 import { FirebaseComponent } from '../firebase/firebase.component';
+import { TeamviewComponent } from '../teamview/teamview.component';
 
 
 const App_Route: Routes = [
@@ -25,6 +26,7 @@ const App_Route: Routes = [
     {path:"addtopic",component:AddTopicComponent},
     {path:"HelpCenter",component:HelpCenterComponent},
     {path:"Helpcenter/:topicname",component:HelpCenterComponent},
+    {path: "teamview",component:TeamviewComponent},
     {
         path:"application",
         component:ApplicationComponent  
@@ -84,7 +86,7 @@ const App_Route: Routes = [
     {
         path: 'home',
         component: HomeComponent,
-    }
+    },
     
 ]
 @NgModule({

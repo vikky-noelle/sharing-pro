@@ -47,11 +47,11 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { GooglePlaceModule } from "ngx-google-places-autocomplete";
 import {AgmCoreModule } from '@agm/core';
 import { FormsModule, ReactiveFormsModule }    from '@angular/forms';
-import { BackfooterComponent } from './backfooter/backfooter.component';
 import { BackfooterModule } from './backfooter/backfooter.module';
 import { OurteamComponent } from './ourteam/ourteam.component';
 import { FirebaseComponent } from './firebase/firebase.component';
 import { NewHeaderModule } from './newheader/newheader.module';
+import { TeamviewComponent } from './teamview/teamview.component';
 
 
 @NgModule({
@@ -65,7 +65,8 @@ import { NewHeaderModule } from './newheader/newheader.module';
     LivedataComponent,
     ContactUsComponent,
     OurteamComponent,
-    FirebaseComponent
+    FirebaseComponent,
+    TeamviewComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({appId:'sport-social'}),
@@ -92,7 +93,7 @@ import { NewHeaderModule } from './newheader/newheader.module';
     AngularFireModule.initializeApp(environment.firebase,'sport-social'),
     AngularFirestoreModule,
     BackfooterModule,
-    NewHeaderModule
+    NewHeaderModule,
   ],
   providers: [
     PropertyService,

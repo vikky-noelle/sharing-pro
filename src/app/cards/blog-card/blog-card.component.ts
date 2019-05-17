@@ -4,14 +4,8 @@ import {
   ViewEncapsulation,
   Input,
   AfterViewInit,
-  Inject,
-  PLATFORM_ID
 } from '@angular/core';
-import { PostService } from '../../shared/services/post.service';
-import { Meta } from '@angular/platform-browser';
-import { LinkService } from '../../shared/services/link.service';
-import { isPlatformBrowser } from '@angular/common';
-import { Http ,Response} from '@angular/http';
+import { Http } from '@angular/http';
 import { TimeService } from '../../shared/services/time.service';
 
 @Component({

@@ -53,4 +53,8 @@ export class GetService {
   getUpcomingCricket(){
     return this.http.get("http://35.176.65.124:2200/score/upcomingCricketMatches");
   }
+
+  getTeamviewData(): Observable<any>{
+    return this.http.get("https://test.sportsocial.in/web/webTeamStatic");
+  }
 }

@@ -68,7 +68,6 @@
       <div class="blog" #blog>
         <div class="feeddata" *ngFor="let feed of blogs" #blogImg>
           <!-- <img src="{{img}}"> -->
-          <h1>{{feed.number}}</h1>
       <a href={{feed.url}} target=_blank>
           <sports-social-blog-card
                             [blogImage] = "feed.blogImage"
