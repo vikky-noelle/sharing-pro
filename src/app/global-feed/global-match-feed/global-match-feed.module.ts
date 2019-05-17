@@ -10,6 +10,7 @@ import { NavigationBarModule } from '../../navigation-bar/navigation-bar.module'
 import { CarouselModule } from '../../carousel/carousel.module';
 
 import { NgMasonryGridModule } from 'ng-masonry-grid';
+import { SsMatchCardModule } from '../../cards/ss-match-card/ss-match-card.module';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { NgMasonryGridModule } from 'ng-masonry-grid';
     MatchRoutes,
     NavigationBarModule,
     CarouselModule,
-    NgMasonryGridModule
+    NgMasonryGridModule,
+    SsMatchCardModule
   ],
   declarations: [
     GlobalMatchFeedComponent

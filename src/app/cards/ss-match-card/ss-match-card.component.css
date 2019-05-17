@@ -1,0 +1,172 @@
+
+ .head{
+    width: 100%;
+    height: 25px;
+    display: inline-block;
+    border-bottom: 1px solid #dddddd;
+}
+.head>b{
+    margin-left: 1%;
+}
+.head>p{
+    float: right;
+    margin-right: 1%;
+}
+
+.cardData{
+    width: 100%;
+    height: 80px;
+    display: inline-flex;
+    margin-top: 5%;
+    
+}
+.vs{
+    width: 40%;
+    text-align: center;
+    margin-left: 5%;
+}
+.vs>h3{
+    font-weight: bolder;
+    margin-top: 8%;
+}
+.vs>p{
+    font-size: 0.7em;
+}
+.creator{
+    margin-top: 8%;
+    width: 100%;
+    height: 60px;
+    display: inline-flex;
+    /* border-top: 1px solid #d3d1d1; */
+}
+ .circularImage{
+    margin-left: 2%;
+    width: 40px;
+    height: 40px;
+}
+.username{
+    margin-left: 3%;
+    font-size: .9em;
+    font-weight: bolder;
+    color: #7e7d7d;
+}
+#creatorname{
+    margin-left: 40%;
+    color: #024770;
+}
+.card{
+    width: 100%;
+    height: 350px;
+    border: 1px solid #ece9e9;
+    margin-bottom: 2%;
+    border-radius: 2%;
+    box-shadow: 5px 5px 10px #dddddd;
+    background-color: #ffffff; 
+}
+.eventtext{
+    width: 100%;
+    height: 90px;
+}
+.eventtext>p{
+    margin-left: 3%;
+    font-size: 0.9em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.circularImage {
+    border-radius: 50%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+}
+
+
+.card>p{
+    margin: 1% 0% 1% 2%;
+    color: #000000;
+    font-size: 1em !important;
+    font-weight: bolder !important;
+}
+.card>h5{
+    margin-left: 2%;
+    font-size: 0.6em;
+    width: 50% !important;
+    color: #7e7d7d;
+}
+
+
+.team1{
+    margin-left: 3%;
+    width: 40%;
+}
+.team1,.team2>p{
+    text-align: center;
+}
+.team1>img{
+    border-radius: 50%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    height: 60px;
+    width: 60px;
+    margin-left: 18%;
+}
+.team2{
+    margin-left: 7%;
+    width: 40%;
+}
+
+ .team2>img{
+    border-radius: 50%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    height: 60px;
+    width: 60px;
+    margin-left: 20%;
+}
+
+
+.footer
+{
+    border-top: 1px solid #d3d1d1;
+    width: 100%;
+    height: 30px;
+    /* margin-top: 10%; */
+}
+.footer>button{
+    margin-left: 10%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1%;
+    text-align: center;
+    font-size: 1em;
+    color: #7e7d7d;
+    background-color: transparent;
+}
+
+@media screen and (min-width:200px) and (max-width:800px){
+    .team1,.team2>p{
+        font-size: 0.9em;
+    }
+    .creator{
+        margin-top: 12%;
+    }
+    .username{
+        font-size: .6em;
+    }
+    #creatorname{
+        font-size: .8em;
+    }
+    .footer>button{
+        font-size: 0.8em;
+    }
+    .eventtext>p{
+        font-size: .8em;
+    }
+
+}

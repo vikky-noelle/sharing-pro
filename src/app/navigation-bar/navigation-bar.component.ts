@@ -66,7 +66,6 @@ export class NavigationBarComponent implements OnInit {
     this.activatedRoute.params.subscribe(
       (param) => {
         this.route = param.sport;
-        console.log('sports',this.route)
       }
     );
   }

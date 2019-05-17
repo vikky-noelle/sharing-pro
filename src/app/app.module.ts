@@ -51,6 +51,7 @@ import { BackfooterComponent } from './backfooter/backfooter.component';
 import { BackfooterModule } from './backfooter/backfooter.module';
 import { OurteamComponent } from './ourteam/ourteam.component';
 import { FirebaseComponent } from './firebase/firebase.component';
+import { SsMatchCardModule } from './cards/ss-match-card/ss-match-card.module';
 
 
 @NgModule({
@@ -90,7 +91,8 @@ import { FirebaseComponent } from './firebase/firebase.component';
     AngularFireMessagingModule,
     AngularFireModule.initializeApp(environment.firebase,'sport-social'),
     AngularFirestoreModule,
-    BackfooterModule
+    BackfooterModule,
+    SsMatchCardModule
   ],
   providers: [
     PropertyService,

@@ -1,0 +1,41 @@
+<div class="card">
+              <div class="head">
+                    <b>Men's {{gamename}}</b>
+                    <p>{{startdatetime | date:',hh:mm a':'+0530'}}</p>
+                    <p><b>On</b> {{startdatetime | slice:0:10}}</p>
+                    
+              </div>
+            <div class="cardData">
+                  <div class="team1">
+                      <img src={{coverpic}} onerror="this.src='assets/images/user-default.png'">
+                      <p>{{Team1Name}}</p>
+                  </div>
+
+                  <div class="vs">
+                      <h3>VS</h3>
+                      <p>{{Venue_Name}}</p>
+                   </div>
+
+                   <div class="team2">
+                      <img src={{coverpic}} onerror="this.src='assets/images/user-default.png'">
+                      <p>{{Team2Name}}</p>
+                   </div>      
+            </div>
+            <div class="creator">
+                <img src={{coverpic}} class="circularImage" onerror="this.src='assets/images/user-default.png'"> 
+                <p class="username"><b style="color:#000000;">{{userName}}</b><br>{{InsertedDate | slice:3:15}}</p>
+                <p id="creatorname">@{{Uniquename}}</p>
+            </div>
+            
+            <div class="eventtext">
+                    <p>{{EventText}}</p>
+                </div>
+            <div class="footer">
+                  <button class="playButton" (click)="openAppDownloadPopup()">Prediction</button>
+                  <button class="commentButton" (click)="openAppDownloadPopup()">{{CommentCount}} Talk</button>
+                  <button class="promoteButton" (click)="openAppDownloadPopup()">{{PromoteCount}} Promote</button>
+                  <button class="watchButton" (click)="openAppDownloadPopup()">{{WatchCount}} Watch</button>
+            </div>
+
+</div>
+

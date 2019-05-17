@@ -51,6 +51,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
     private router: Router,
   ) { }
 
+  
   // globalMatchFeed( pageNo ) {
   //   this.matchData.globalMatchFeed( this.nextPageNo, 0 ).then( (match) => {
   //     this.Match = this.Match.concat(match);
@@ -70,14 +71,18 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
           userName:body[i].user_name,
           coverpic:body[i].CoverPic,
           gamename:body[i].gamename,
-          startdatetime: this.time.timePassed( body[i].startdatetime),
+          startdatetime:  this.time.timePassed(body[i].startdatetime),
           InsertedDate:this.time.timePassed(body[i].InsertedDate),
           Uniquename:body[i].Uniquename,
+          EventText:body[i].EventText,
           city:body[i].city,
           Venue_Name:body[i].Venue_Name,
-          MatchStarterUniqueName:body[i].MatchStarterUniqueName,
+          MatchStarterUniqueName:body[i].MatchStarterUniqueName,  
           Team1Name:body[i].Team1Name,
-          Team2Name:body[i].Team2Name
+          Team2Name:body[i].Team2Name,
+          WatchCount:body[i].WatchCount,
+          PromoteCount:body[i].PromoteCount,
+          CommentCount:body[i].CommentCount
         });
         console.log("this is feed id:",this.Matcharr[i].coverpic);
       }
