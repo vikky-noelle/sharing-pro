@@ -17,7 +17,7 @@ import { PropertyService } from '../shared/services/property.service';
   encapsulation: ViewEncapsulation.Emulated,
   preserveWhitespaces: false
 })
-export class NewHeaderComponent implements OnInit, AfterViewInit {
+export class NewheaderComponent implements OnInit, AfterViewInit {
 
   mobileView: boolean = false;
   isMenuInDropdown: boolean = false;

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NewHeaderComponent } from './newheader.component';
+import { NewheaderComponent } from './newheader.component';
 import { RouterModule } from '@angular/router';
 
 
@@ -10,10 +10,11 @@ import { RouterModule } from '@angular/router';
     RouterModule
   ],
   declarations: [
-    NewHeaderComponent
+    NewheaderComponent
   ],
   exports: [
-    NewHeaderComponent
+    NewheaderComponent
   ]
 })
 export class NewHeaderModule { }
+  
