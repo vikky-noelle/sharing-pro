@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GetService } from '../shared/services/get.service';
+import { PostService } from '../shared/services/post.service';
 
 @Component({
   selector: 'sports-social-teamview',
@@ -8,11 +8,21 @@ import { GetService } from '../shared/services/get.service';
 })
 export class TeamviewComponent implements OnInit {
   
-  service = '';
-  constructor(private get:GetService) { }
+  service = [];
+  tvdata = [];
+  body=[];
+  mview: Number;
+  constructor(private post:PostService) { }
 
   ngOnInit() {
     this.tmv();
+    //mobile view 
+    if(window.innerWidth <= 700) {
+      this.mview = 0;
+    }
+    else {
+      this.mview = 1;
+    }
   }
   // anchor scroll
   scrollToElement($element): void {
@@ -20,10 +30,14 @@ export class TeamviewComponent implements OnInit {
   }
 
   tmv() {
-    this.get.getTeamviewData()
+    this.post.Teamviewdata(this.service)
     .subscribe(
-      (response) => console.log(response),
-      (error) => console.log(error)
+      (response) => {
+      for(const i in response){
+        this.tvdata.push(response[i]);
+      }    
+    },
+    (error) => console.log(error)
     );
   }
 }

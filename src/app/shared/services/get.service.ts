@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import {Http} from '@angular/http';
 import { Observable } from 'rxjs/Rx';
 import {Subject} from 'rxjs/Subject';
@@ -52,9 +51,5 @@ export class GetService {
 
   getUpcomingCricket(){
     return this.http.get("http://35.176.65.124:2200/score/upcomingCricketMatches");
-  }
-
-  getTeamviewData(): Observable<any>{
-    return this.http.get("https://test.sportsocial.in/web/webTeamStatic");
   }
 }

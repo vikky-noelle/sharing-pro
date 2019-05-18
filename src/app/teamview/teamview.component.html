@@ -9,14 +9,43 @@
     <br>
     <p>Joining together is a beginning. Keeping together is a process. Playing together is a success.</p></div>
 </div>
-<div class="container2" #target>
+<a #target></a>
+<div *ngIf="mview === 1">
+<div class="container2" *ngFor="let data of tvdata">
     <br><br><br><br><br><br>
-  <div class="content"><h1>Fan</h1></div>
-  <div class="content-gif"><h1>fam</h1></div>
-</div>
+  <div class="content" *ngIf = "data.id % 2 === 0">
+    <h1>{{data.name}}</h1>
+    <p>{{data.shortDesc}}</p>
+  </div>
+  <div class="content-gif" *ngIf = "data.id % 2 === 0">
+    <img src="{{data.icon}}">
+  </div>
 
+
+  <div class="contentt" *ngIf = "data.id % 2 != 0">
+      <h1>{{data.name}}</h1>
+      <p>{{data.shortDesc}}</p>
+    </div>
+    <div class="contentt-gif" *ngIf = "data.id % 2 != 0">
+      <img src="{{data.icon}}">
+    </div>
+</div>
+</div>
+<!-- mobile view -->
+<div *ngIf="mview === 0">
+  <div class="mview" *ngFor=" let data of tvdata">
+      <br><br><br><br>
+    <h1>{{ data.name }}</h1>
+    <br><br>
+    <p>{{ data.shortDesc }}</p>
+    <br><br>
+    <img src="{{ data.icon }}">
+  </div>
+</div>
+<br>
+<br><br><br><br><br>
 <div class="footer">
-    <p>"Create Your Team, Build Your Legacy With Sports Social."</p><br> 
+    <p><br>"Create Your Team, Build Your Legacy With Sports Social."</p><br> 
     <a href="https://play.google.com/store/apps/details?id=in.sportsocial.sportsocial&hl=en"><img src="assets/images/sportsocialgoogleplay.jpg"></a>
 </div>
 
