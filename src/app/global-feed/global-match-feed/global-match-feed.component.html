@@ -4,7 +4,7 @@
 <ng-masonry-grid  
       [masonryOptions]="{ transitionDuration: '0.4s'}"
       [useAnimation]="false">
-      <img class="spinner" src="assets/images/sports-social-loading.gif"  alt="" *ngIf=subscription>
+      <img class="spinner" src="assets/images/sports-social-loading.gif"  *ngIf="Matcharr.length == 0" alt="">
     <ng-masonry-grid-item  id="col-4" *ngFor = "let feed of Matcharr; let i = index">
 
         <!-- <a>

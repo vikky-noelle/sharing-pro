@@ -5,8 +5,8 @@
 #col-4{
     margin-left:3%;
     width:30%;
-    margin-bottom: 10%;
-    display: inline-block;
+    margin-bottom: 5%;
+    /* display: inline-block; */
 }
 
 @media screen and (max-width:768px){

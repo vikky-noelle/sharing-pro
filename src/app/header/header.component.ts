@@ -81,5 +81,8 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     this.setMobileView();
     this.sendHeightOfHeader();
   }
+  topscroll(){
+    window.scrollTo(0,0);
+  }
 
 }

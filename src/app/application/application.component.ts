@@ -17,6 +17,8 @@ export class ApplicationComponent implements OnInit {
     constructor(private titleservice:Title,
     private metaservice:Meta) { }
 
+   
+
   ngOnInit() {
     this.titleservice.setTitle(this.title);
     this.metaservice.updateTag({name:'title',content:this.title});

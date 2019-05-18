@@ -44,7 +44,7 @@ export class GlobalOpenArenaFeedComponent implements OnInit, OnDestroy {
     const matchPomise = this.matchData.globalMatchFeed( this.nextPageNo, 0 );
     const newsPromise =  this.newsData.globalNewsFeed( this.nextPageNo, 'all');
     Promise.all([matchPomise, newsPromise]).then( (data) => {
-      console.log(data);
+      console.log("this is my data for home",data);
       this.globalArena = this.globalArena.concat(data['0']).concat(data['1']);
       console.log(this.globalArena);
     }).catch( (err) => {

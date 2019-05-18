@@ -11,6 +11,7 @@ import { Http } from '@angular/http';
 import { Observable } from 'rxjs';
 import { TimeService } from '../../shared/services/time.service';
 import { Router } from '@angular/router';
+import { timer } from 'rxjs/observable/timer';
 
 @Component({
   selector: 'sports-social-global-match-feed',
