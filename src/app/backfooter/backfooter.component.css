@@ -1,30 +1,20 @@
-.column {
-    text-align: left;
-    margin-top: 3%;
-    text-align: center;
-    float: left;
+.body{
+    background-color: #024771;
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+.body>div{
+    display: inline-block;
+}
+.content{
+    display: block;
+    color: #ffffff;
     width: 25%;
-    height: 260px;  
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .column > a {
-      color: rgb(105, 104, 104);
-      padding: 20px;
-  }
-  .column > a > h1 {
-      font-size: 20px;
-      color: black;
-      margin-bottom: 27px;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  
-/* .content>a>h4{
+    margin-left: 5%;
+    vertical-align: top;
+}
+.content>a>h4{
     font-size: 1.3em;
     font-weight: bolder;
 }
@@ -39,23 +29,17 @@
 .body>p{
     font-size: 0.5em;
     color: #bbbbbb;
-} */
+}
 
 @media screen and (min-width:200px) and (max-width:800px){
-    .column {
-        text-align: left;
-        height: 200px;
-    }
-    .column > a{
+    .content>a>h4{
+        font-size: .7em;
         font-weight: bolder;
-        font-size: 9px;
-        color: rgb(105, 104, 104);
     }
-    .column > a > h1{
-       font-size: 13px;
+    .content>a>p{
+        font-size: .7em;
     }
-    /* .li {
-        margin-bottom: -55px;
+    .content>a>h4,p{
+        padding:8%;
     }
-     */
 }

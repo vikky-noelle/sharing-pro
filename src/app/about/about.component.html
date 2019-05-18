@@ -3,6 +3,7 @@
   <!-- <div class="app">
     <img src="assets/images/app_icon.png" class="img-responsive app-icon">
   </div> -->
+
   <h4 class="app-desc">
     <!-- <p><u>{{descTitleDisplay}}</u></p> -->
     <p>{{descDisplay}}</p>
@@ -11,8 +12,7 @@
   <!-- <div id="sec">
     <a onclick="document.getElementById('bitdes').scrollIntoView();" class="scroll-down"></a>
   </div> -->
-  <!--<a (click)="scrollToElement(target)"><h1>yo fam.</h1></a>-->
-   <br>
+   
   <div class="banner"> 
     <h3>30k+
         <p>Number of Users</p>
@@ -27,6 +27,7 @@
         <p>Sports available</p>
     </h3>
   </div>
+
   <div class="card">
     <div class="card-image-holder">
       <img src="assets/images/0.17694108530739472.jpeg">
@@ -40,8 +41,7 @@
         </div>
       </div> 
   </div>  
- 
-  <br>
+
   <div class="card2">
       <div class="card2-image">
           <img src="assets/images/0.08521108651820741.jpeg">
@@ -54,19 +54,18 @@
     </div>
   </div>   
   </div>
-  
-    <div class="banner2"> 
+
+  <div class="banner2"> 
       <p>We will ensure that every goal you score is contributing to your sports career. Every match you play is recorded officially.
          The whole gamut of your sports activities will be recorded and mapped by Sports Social.</p>
          <p>"We showcase your sports journey to the whole world."</p>
     </div>
-<br>
-<p class="feedHeading">The Latest from our Blog</p>
 
   <div class="blogFeed" id="blg-feed">
+    <p class="feedHeading"><u>The Latest from our Blog</u></p>
     <div style="position:relative">
       <div class="blog" #blog>
-        <div class="feeddata" *ngFor="let feed of blogs" #blogImg>
+        <div  class="feeddata" *ngFor="let feed of blogs" #blogImg>
           <!-- <img src="{{img}}"> -->
       <a href={{feed.url}} target=_blank>
           <sports-social-blog-card
@@ -84,20 +83,13 @@
         <img src="assets/images/2.png" class="right" (click)="rightScroll()">
       </div>
     </div>
-    <!-- <div class="blog overlap" style="background-color: yellow"></div> -->
+  </div>
 
-  </div>
-  <div class="blog overlap" style="background-color: black" #blogoverlap></div>
-  
-  <div>
-    <a></a>
-     <p class="instafeedHeading">
-      The Social Feed
-    </p>
-    <br>
-  </div>
   <div class="instafeed">
-      <div class="socialFeed" #socialFeed>
+        <p class="instafeedHeading">
+          <u>The Social Feed</u>
+        </p>
+         <div class="socialFeed" #socialFeed>
          <div *ngFor="let data of instaArr" class="instaData">
             <a href="{{data.link}}" target=_blank> 
               <img src={{data.url}} #socialFeedImg> </a>
@@ -110,14 +102,19 @@
         <img src="assets/images/1.png" class="left" (click)="leftScroll2()">
         <img src="assets/images/2.png" class="right" (click)="rightScroll2()">   
       </div>    
+    
   </div> 
-  <br>
+  
   <div class="banner3"> 
-    <div class="subbanner3">
+    <!-- <div class="subbanner3">
       <p>Start your journey with Sports Social </p>
       <a href="https://goo.gl/qrgCz5" target="_blank">
       <button>Get Started</button>
     </a>
-  </div>
+  </div> -->
     <sports-social-backfooter></sports-social-backfooter>
     </div>
+
+
+
+  
