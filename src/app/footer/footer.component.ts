@@ -19,6 +19,10 @@ export class FooterComponent implements OnInit {
   @ViewChild('footer') footer;
   constructor() { }
 
+  topscroll(){
+    window.scrollTo(0,0);
+  }
+
   ngOnInit() {
   }
 
