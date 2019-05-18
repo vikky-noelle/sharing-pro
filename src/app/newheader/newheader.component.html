@@ -1,0 +1,74 @@
+<header #header>
+    <div class="brand">
+      <a routerLink="/">
+        <div class="brand-image">
+          <!-- <img src="/assets/images/sports-social-logo.png" alt="Sport-Social-logo"> -->
+        </div>
+        <div class="brand-title">
+          <span>Sports</span>
+          <span>Social</span>
+          <p><strong style="opacity: 0;">lalalalal</strong>ChaseYourSport</p>
+        </div>
+      </a>
+    </div>
+    
+    <div class="menu" *ngIf="!isMenuInDropdown">
+        <!-- <div class="search" *ngIf="!isSearchInDropdown">
+            <input type="text"   placeholder="  Search Sport Social">
+          </div> -->
+      <ul>
+          <!-- <li>
+              <a routerLink="/live" class="About btn btn-responsive" routerLinkActive="active">Live</a>
+            </li> -->
+        <li>
+          <a routerLink="/about" class="About btn btn-responsive" routerLinkActive="active">About</a>
+        </li>
+        <li>
+          <a routerLink="/application" routerLinkActive="active">App</a> <!--https://goo.gl/qrgCz5-->
+        </li>
+        <li>
+          <a routerLink="/HelpCenter" routerLinkActive="active">Help</a> 
+        </li>
+        <li>
+            <a routerLink="/teamview" routerLinkActive="active">Team</a> 
+        </li>
+        
+      </ul>
+    </div>
+        <!-- mobile view -->
+    <div class="mobile-view" *ngIf="mobileView">
+      <div class="dropdown-menu-image-holder">
+        <img src="/assets/images/sports-social-menu.png" (click)="openDropdown()">
+      </div>
+      <div class="dropdown-menu" *ngIf="isDropdownIconclicked">
+        <div class="dropdown-cancel-image-holder">
+          <img src="/assets/images/sports-social-cancel-black.png"  (click)="closeDropdown()">
+        </div>
+        <ul  *ngIf="isMenuInDropdown">
+            <!-- <li>
+                <a routerLink="/live" class="About btn btn-responsive" routerLinkActive="active">Live</a>
+              </li> -->
+            <li>
+                <a routerLink="/about" routerLinkActive="active">About</a> 
+            </li>
+            <li>
+              <a routerLink="/application" routerLinkActive="active">App</a> <!--https://goo.gl/qrgCz5-->
+            </li>
+            <li>
+              <a routerLink="/HelpCenter" routerLinkActive="active">Help Center</a> 
+            </li>
+            
+        </ul>
+        <ng-container  *ngIf="isSearchInDropdown">
+          <div class="dropdown-search">
+            <input type="text" placeholder="Search Sports Social">
+          </div>
+          <button>Search</button>
+        </ng-container>
+      </div>
+    </div>
+  
+      
+  </header>
+  
+  

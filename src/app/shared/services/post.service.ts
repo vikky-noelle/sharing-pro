@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs/Rx';
 
 @Injectable()
 export class PostService {
@@ -31,7 +30,15 @@ export class PostService {
     name: string,
     page: number
   };
-
+  
+  tvdataobject: [
+    {
+      id: string,
+      name: string,
+      icon: string,
+      shortDesc: string
+    }
+  ]
   url = [
     'https://prod.sportsocial.in/poc/matchinfo',
    'https://prod.sportsocial.in/poc/activityuserdetails',
@@ -111,5 +118,9 @@ export class PostService {
 
   saveformdata(dataObject){
     return this.http.post('https://test.sportsocial.in/web/webcontactus',dataObject);
+  }
+
+  Teamviewdata(tvdataobject){
+    return this.http.post('https://test.sportsocial.in/web/webTeamStatic', tvdataobject);
   }
 }

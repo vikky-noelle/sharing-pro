@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { SeoService } from '../shared/services/seo.service';
 
 
 @Component({

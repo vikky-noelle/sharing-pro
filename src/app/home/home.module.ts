@@ -7,7 +7,6 @@ import { GlobalOpenArenaFeedModule } from '../global-feed/global-open-arena-feed
 import { FooterModule } from '../footer/footer.module';
 import { HomeComponent } from './home.component';
 import { HomeRouter } from './home.router';
-import { HeaderComponent } from '../header/header.component';
 
 @NgModule({
   imports: [

@@ -1,217 +1,181 @@
 body {
-    width: auto;
-    height: auto;
-  }
-  
-  *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family:'Roboto',sans-serif;
-  }
-  .instagram{
-    border:1px solid black;
-  }
-  .instagram>img{
-    border:1px solid red;
-  }
-  .nav {
-    background-color: #fff;
-    height: auto;
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    z-index: 1000;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  
-    .nav li {
-      display: inline-block;
-    }
-  
-    .nav ul {
-      list-style: none;
-    }
-  
-  .brand {
-    width: auto;
-    padding: 0.6% 0.5% 0.5% 0.7%;
-  }
-  
-  .brand-img {
-    width: 65px;
-    display: inline-block;
-  }
-  
-  .brand-title {
-    font-family: 'Roboto',sans-serif;
-    font-size: 1.7em;
-    font-weight: 400;
-    color: #024771;
-    display: inline-block;
-    position: relative;
-    top: -6px;
-    text-shadow:2px 2px 2px;
-  }
-  
-  .button {
-    display: inline-block;
-    width: auto;
-    padding: 0px;
-    text-align: right;
-    position: absolute;
-    top: 20%;
-    margin-top: .6%;
-    right: 0.5%;
-  }
-  
-    .button > a {
-      border: 1px solid #fafafa;
-      padding: 8px 20px 8px 20px;
-      font-family: 'Roboto', sans-serif;
-      font-size: 1em;
-      color: #fafafa;
-      background-color:#024771;
-      border-radius: 5px;
-      font-weight: 300;
-    }
-  
-  
-  .card-content>.content>b{
-    padding-bottom: 3%;
-  }
-  .card{
-    /* position:relative; */
-    width:100%;
-    height:400px;
-    margin-top: 7%;
-  }
-  .card-image-holder{
-    /* position:absolute; */
-    width:50%;
-    height:300px;
-    top:5%;
-    left: 0;
-  }
-  .card-image-holder>img{
-    width:80%;
-    height:100%;
-    margin-left:60%;
-  }
-  .card-content{
-    /* position:absolute; */
-    width:60%;
-    height:100%;
-    display: block;
-    top:30%;
-  }
- .card-content>.content{
-   width:80%;
-   margin-left: 43%;
-  text-align: center;
- }
- .card-content .content>b>h2{
-  font-family: 'Roboto', sans-serif;  
-  padding: 5%;
+  width: auto;
+  height: auto;
 }
-.card-content>.content>p{
-  font-size: 1.2em;
-  font-family: 'Roboto', sans-serif;
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:'Roboto',sans-serif;
 }
- .card2{
+.instagram{
+  border:1px solid black;
+}
+.instagram>img{
+  border:1px solid red;
+}
+.nav {
+  background-color: #fff;
+  height: auto;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+  .nav li {
+    display: inline-block;
+  }
+
+  .nav ul {
+    list-style: none;
+  }
+
+.brand {
+  width: auto;
+  padding: 0.6% 0.5% 0.5% 0.7%;
+}
+
+.brand-img {
+  width: 65px;
+  display: inline-block;
+}
+
+.brand-title {
+  font-family: 'Roboto',sans-serif;
+  font-size: 1.7em;
+  font-weight: 400;
+  color: #024771;
+  display: inline-block;
+  position: relative;
+  top: -6px;
+  text-shadow:2px 2px 2px;
+}
+
+.button {
+  display: inline-block;
+  width: auto;
+  padding: 0px;
+  text-align: right;
+  position: absolute;
+  top: 20%;
+  margin-top: .6%;
+  right: 0.5%;
+}
+
+  .button > a {
+    border: 1px solid #fafafa;
+    padding: 8px 20px 8px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #fafafa;
+    background-color:#024771;
+    border-radius: 5px;
+    font-weight: 300;
+  }
+
+
+.card-content>.content>b{
+  padding-bottom: 3%;
+}
+.card{
   /* position:relative; */
   width:100%;
-  height:500px;
+  height:400px;
   margin-top: 7%;
-  
 }
-.card2-image{
+.card-image-holder{
   /* position:absolute; */
   width:50%;
   height:300px;
   top:5%;
-  left:0;
+  left: 0;
 }
-.card2-image>img{
+.card-image-holder>img{
   width:80%;
   height:100%;
-  margin-left: 60%;
-  /* margin-left:110%; */
+  margin-left:60%;
 }
-.card2-content{
+.card-content{
   /* position:absolute; */
-  width:50%;
+  width:60%;
   height:100%;
   display: block;
-  top:10%;
-  /* right:0; */
+  top:30%;
+}
+.card-content>.content{
+ width:80%;
+ margin-left: 43%;
+text-align: center;
+}
+.card-content .content>b>h2{
+font-family: 'Roboto', sans-serif;  
+padding: 5%;
+}
+.card-content>.content>p{
+font-size: 1.2em;
+font-family: 'Roboto', sans-serif;
+}
+.card2{
+/* position:relative; */
+width:100%;
+height:500px;
+margin-top: 7%;
+
+}
+.card2-image{
+/* position:absolute; */
+width:50%;
+height:300px;
+top:5%;
+left:0;
+}
+.card2-image>img{
+width:80%;
+height:100%;
+margin-left: 60%;
+/* margin-left:110%; */
+}
+.card2-content{
+/* position:absolute; */
+width:50%;
+height:100%;
+display: block;
+top:10%;
+/* right:0; */
 }
 .card2-content>.content{
- width:100%;
- text-align: center;
- margin-left: 50%;
- margin-top: 3%;
+width:100%;
+text-align: center;
+margin-left: 50%;
+margin-top: 3%;
 }
 .card2-content>.content>h2{
- font-family: 'Roboto', sans-serif;
- }
- 
-  /*===========body========================*/
-  .app{
-      width: 100px;
-      height: 100px;
-      margin:auto;
-  }
-  .app>img{
-    padding-bottom: 2%;
-  }
-  .app-icon{
-      width: 100%;
-      height: 100%;
-      border-radius:10px;
-      margin-top:100px;
-  }
-  .app-mantra1{
-      width: 90%;
-      border: 1px solid black;
-      margin: 3% ;
-      height: 100%;
-      padding: 1%;
-      font-family: 'Roboto', sans-serif;
-      font-size: 1.2em;
-      font-weight: 300;
-      color: #101010;
-      text-align: justify;
-      text-align-last: center;
-  }
-  .app-mantra1>img{
-      display: block;
-      margin: auto;
-      width: 55%;
-      height: 300px;
-      margin-left: 5%;
-  }
-  .app-mantra1>b{
-    margin-left: 70%;
-    display: block;
-    margin-top: -25%;
-    width: 60%;
-    padding-bottom: 10%;
-    text-align: justify;
-    text-align-last: left;
-  }
-  .app-mantra1>p{
-    margin-left: 70%;
-    display: block;
-    width: 60%;
-    text-align: justify;
-    text-align-last: left;
-  }
-  .app-mantra2>h4{
-    width: 34%;
-    margin-left: 7%;
-    margin-top: 13%;
-    height: auto;
+font-family: 'Roboto', sans-serif;
+}
+
+/*===========body========================*/
+.app{
+    width: 100px;
+    height: 100px;
+    margin:auto;
+}
+.app>img{
+  padding-bottom: 2%;
+}
+.app-icon{
+    width: 100%;
+    height: 100%;
+    border-radius:10px;
+    margin-top:100px;
+}
+.app-mantra1{
+    width: 90%;
+    border: 1px solid black;
+    margin: 3% ;
+    height: 100%;
     padding: 1%;
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
@@ -220,655 +184,135 @@ body {
     text-align: justify;
     text-align-last: center;
 }
-.app-mantra2>img{
-  display: block;
-  margin: auto;
-  width: 40%;
-  height: 300px;
-  margin-left: 45%;
-  margin-top: -15%;
-}
-  .app-desc{
-      width:65%;
-      height:auto;
-      padding:1%;
-      padding-top: 2%;
-      margin:6%;
-      background-color: none;
-      font-family: 'Roboto', sans-serif;
-      height:300px;
-      line-height:0.2em;
-   }
-  .app-desc>p:first-child{
-      font-family: 'Roboto',sans-serif;
-      font-size: 2em;
-      color: orange;
-      line-height: 2.2em;
-      text-align: left;
-      /* text-align: center; */
-      margin: auto;
-      padding:0;
-  }
-  .app-desc>p:last-child{
-      font-family: 'Roboto',sans-serif;
-      color: #024771;
-      font-size: 1.7em;
-      font-weight: 500;
-      line-height: 1.7em;
-  }
-    /*testing*/
-  .banner {
-      height: 150px;
-      width:100%;
-      background-color: rgb(219, 235, 241);
-      overflow-y: hidden;
-    }
-    .banner> h3{
-      width:25%;
-      color: black;
-      display: inline-block;
-      margin-top: -5%;
-      padding: 100px;
-    }
-    .banner2 {
-      height: 150px;
-      width:100%;
-      background-color: rgb(219, 235, 241);
-    }
-    .banner2>p:first-child{
-      width:90%;
-      color: black;
-      display: inline-block;
-      margin-left: 6%;
-      margin-top: 1%;
-      font-weight: bolder;
-      font-size: 1.2em;
-      font-family: 'Roboto', sans-serif;
-      text-align-last: center;
-    }
-    .banner2>p:last-child{
-      width:100%;
-      color: black;
-      display: inline-block;
-      margin-top: 3%;
-      font-weight: bolder;
-      font-size: 1.2em;
-      font-family: 'Roboto', sans-serif;
-      text-align-last: center;
-    }
-    .banner3 {
-      height: 200px;
-      width:100%;
-      background-color: rgb(219, 235, 241);
-    }
-    .subbanner3{
-      margin-bottom: 5%;
-    }
-    .subbanner3>p{
-      width:90%;
-      color: black;
-      display: inline-block;
-      margin-left: 4%;
-      margin-top: 1%;
-      font-weight: bolder;
-      font-size: 1.5em;
-      font-family: 'Roboto', sans-serif;
-      text-align-last: center;
-    }
-    .subbanner3>a>button{
-      margin-left: 45%;
-      margin-top: 3%;
-      background: transparent;
-      border: 1px solid blueviolet;
-      font-weight: bolder;
-      font-size: .9em;
-      cursor: pointer;
-      width: 8%;
-      height: 30px;
-    }
-    
-  .blogFeed{
-      z-index: 10;
-      margin: 0px;
-      /* padding-top: 2%; */
-      padding-left: 2%;
-      padding-right: 5%;
-      /* border: 1px solid red; */
-
-  }
-  .feedHeading{
-    font-family: 'Roboto',sans-serif;
-    font-size: 1.8em;
-    font-weight: 500;
-    color: #101010;
-    margin:3% 0% 3% 0%;
-    text-align: center;
-}
-  .blog{
-      width: 90%;
-      height: 500px;
-      margin: 1%;
-      margin-top: 0%;
-      margin-left: 6%;
-      overflow: hidden;
-      overflow-x: scroll;
-      white-space: nowrap !important;
-      /* border: 1px solid yellow; */
-      
-  }
-  .blog::-webkit-scrollbar{
-    display: none;
-  }
-  .blog>div{
-      display: inline-block;
-      width: 20%;
-      margin-left: 1%;
-      margin-right: 5%;
-      margin-top: 5%;
-      height: 400px; 
-      /* border: 1p solid black; */
-      border-radius:2%; 
-  }
-  .blog>img{
-      height: 7%;
-      width: 5.5%;
-      font-weight: bolder;
-      padding-right:3%;  
-  }
-  .feeddata{
-    border:2px solid #fff;
-    filter: brightness(100%);
-    overflow: hidden;
-    margin: 10px;
-    height: 100%;
-    transition: transform .2s;
-    box-shadow: 0 0 11px rgba(230, 62, 62, 0.2); 
-  }
-  .feeddata:hover {
-    -ms-transform: scale(2);
-    -webkit-transform: scale(2); 
-    transform: scale(1.1); 
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
-  }
- 
-  .blog .left{
-      position: absolute;
-      top:47%;
-      left: 3%;
-      cursor: pointer; 
-  }
-  .blog .right{
-      position: absolute;
-      top:47%;
-      right: -2%;
-      cursor: pointer;    
-  }
-
-  /* insta-feed */
-  .instafeed{
-    flex-wrap: nowrap;
-    z-index: 10;
-    margin: 0px;
-    padding-bottom: 0%;
-    padding-top: 1%;
-    padding-left: 4%;
-    /* border: 1px solid black; */
-    padding-right: 5%;
-  }
-  .instafeedHeading{
-    font-family: 'Roboto',sans-serif;
-    font-size: 1.8em;
-    font-weight: 500;
-    color: #101010;
-    margin:3% 0% 3% 0%;
-    text-align: center;
-}
-  .socialFeed{
-      width: 90%;
-      max-height: 20%;
-      padding:3%;
-      margin: 0%;
-      margin-left: 5%;
-      overflow: hidden;
-      overflow-x: scroll;
-      white-space: nowrap !important;  
-      /* border: 1px solid red; */
-}
-.socialFeed>img{
-    width: 2%;
-}
-
-.socialFeed>div{
-      display: inline-block;
-      width: 22%;
-      height: 400px; 
-      border-radius: 2%;
-      margin-left: -1%;
-      margin-right: 5.3%;
-}
-.socialFeed::-webkit-scrollbar{
-  display: none;
-}
-  .instaData>a>img{
-    position: relative;
-    height: 45%;
-    width: 100%;
-    padding: 2%;
-    border-radius: 5%;
-  }
-  .instaData{
-    border:4px solid #fff;
-    overflow: hidden;
-    margin: 25px;   /* gaps betwenn cards of instafeed*/
-    display: inline-block;
-    transition: transform .2s;
-    filter: brightness(100%);
-    box-shadow: 0 0 11px rgba(230, 62, 62, 0.2); 
-  }
-  .instaData:hover {
-    -ms-transform: scale(2);
-    -webkit-transform: scale(2); 
-    transform: scale(1.1); 
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
-  }
-  .socialFeed .left{
-      position: absolute;
-      padding-top: 15%;
-      left: 6%;
-      cursor: pointer;
-      scroll-behavior: smooth;
-  }
-  .socialFeed .right{
-      position: absolute;
-      padding-top: 15%;
-      right: 7%;
-      cursor: pointer;
-      scroll-behavior: smooth;
-  }
-  #username{
-    color:orange;
-    padding:2%;
-    text-align: right;
-    width:10%;
-    font-size: .9em
-  }
-  #time{
-    color:orange;
+.app-mantra1>img{
     display: block;
-    font-size: .8em;
-    text-align: center;
-    margin-top: 0%;
-    padding:2%;
-    
-  }
-  .textdata{
-    width:96%;
-    height: 350px;
-    white-space: normal;  
-    padding: 2%;
-    
-  }
-  .textdata>p{
-    font-size: .8em;
-    padding-top:8%;
-    height: 340px;
-    text-align: center;
-    display: inline-flex; 
-    padding-bottom: 5%;
-    font-weight: bolder;
-  }
-  
-  
-  /* insta end */
-
-  footer{
-      background-color: #024771;
-  }
-  
-  
-  @media screen and (min-width:459px) and (max-width:767px) {
-    .app>img{
-      margin-top:60px;
-      margin-left: auto;
-      width:80px;
-      height: 80px;
-      
-    }
-    .app-desc {
-      width: 300px;
-      height:330px;
-      text-align: left;
-      margin-top: 28%;
-      padding-top: 1.6%;
-      line-height:0.7em;
-      font-weight:180;
-    }
-      .app-desc > p:first-child {
-        font-size: 1.6em;
-        line-height: 1em;
-        text-align: left;
-        margin-top:-8%;
-        padding-bottom: 3%;
-        margin-left: auto;
-      }
-      .app-desc > p:last-child {
-        font-size: 1.5em;
-        font-weight: 270;
-        line-height: 1.3em;
-        text-align:left;
-      }
-      .banner {
-        height:auto;
-        width:100%;
-        background-color: rgb(219, 235, 241);
-        text-align: center;
-        margin-bottom:10%;
-      }
-      .banner> h3{
-        width:100%;
-        color: black;
-        display:block;
-        margin-top:0;
-        padding: 20px;
-      }
-      .banner2{
-        height:auto;
-        width:100%;
-        background-color: rgb(219, 235, 241);
-        text-align: center;
-        margin-bottom:10%;
-      }
-      .banner>p{
-        width:100%;
-        color: black;
-        display:block;
-        margin-top:0;
-        padding: 20px;
-      }
-      .blog > div {
-        display: inline-block;
-        width: 100%;
-        height: 400px;
-      }
-    .socialFeed > div {
-      display: inline-block;
-      width: 100%;
-      height: 500px;
-      margin: 0px;
-      
-    }
-    .instafeed{
-      z-index: 10;
-      margin: 0px;
-      padding-bottom: 25%;
-    }
-    .socialFeed .left{
-      margin-top: 75%;
-      left: 7%;
-  }
-  .socialFeed .right{
-      margin-top: 75%;
-      right: 7%;   
-  }
-  .card{
-    position:relative;
-    width:100%;
-    height:500px;
-  }
-  .card-image-holder{
-    position:absolute;
-    width:100%;
-    height:300px;
-    display:block;
-    top:0;
-  }
-  .card-image-holder>img{
-    width:100%;
-    height:100%;
-    margin-left:0%;
-  }
-  .card-content{
-    position:absolute;
-    top:300px;
-    width:100%;
-    height:200px;
-    display: inline-block;
-  }
- .card-content>.content{
-  margin-top:5%;
-  width:100%;
-  margin-left:0;
- }
-
-
- .card2{
-  position:relative;
-  width:100%;
-  height:500px;
+    margin: auto;
+    width: 55%;
+    height: 300px;
+    margin-left: 5%;
 }
-.card2-image{
-  position:absolute;
-  width:100%;
-  height:300px;
-  display:block;
-  top:0;
+.app-mantra1>b{
+  margin-left: 70%;
+  display: block;
+  margin-top: -25%;
+  width: 60%;
+  padding-bottom: 10%;
+  text-align: justify;
+  text-align-last: left;
 }
-.card2-image>img{
-  width:100%;
-  height:100%;
-  margin-left:0%;
+.app-mantra1>p{
+  margin-left: 70%;
+  display: block;
+  width: 60%;
+  text-align: justify;
+  text-align-last: left;
 }
-.card2-content{
-  position:absolute;
-  top:300px;
-  width:100%;
-  height:200px;
-  display: inline-block;
+.app-mantra2>h4{
+  width: 34%;
+  margin-left: 7%;
+  margin-top: 13%;
+  height: auto;
+  padding: 1%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #101010;
+  text-align: justify;
+  text-align-last: center;
 }
-  .card2-content>.content{
-  margin-top:5%;
-  width:100%;
-  margin-left:0;
-  }
-  .card2-content>.content>h3{
-    font-size: 1.3em;
+.app-mantra2>img{
+display: block;
+margin: auto;
+width: 40%;
+height: 300px;
+margin-left: 45%;
+margin-top: -15%;
+}
+.app-desc{
+    width:65%;
+    height:auto;
+    padding:1%;
+    padding-top: 2%;
+    margin:6%;
+    background-color: none;
     font-family: 'Roboto', sans-serif;
-    }
-    .subbanner3>p{
-      width:96%;
-      color: black;
-      display: inline-block;
-      margin-left: 6%;
-      margin-top: 1%;
-      font-weight: bolder;
-      font-size: 1.5em;
-      text-align-last: center;
-    }
-    .subbanner3>a>button{
-      margin-left: 35%;
-      margin-top: 3%;
-      background: transparent;
-      border: 1px solid blueviolet;
-      font-weight: bolder;
-      font-size: .9em;
-      cursor: pointer;
-      width: 30%;
-    }
-    .banner2>p:first-child{
-      width:90%;
-      color: black;
-      display: inline-block;
-      margin-left: 3%;
-      margin-top: 1%;
-      font-weight: bolder;
-      font-size: 1em;
-      text-align-last: center;
-    }
-    .banner2>p:last-child{
-      width:100%;
-      color: black;
-      display: inline-block;
-      margin-top: 3%;
-      font-weight: bolder;
-      font-size: 1em;
-      text-align-last: center;
-    }
-}
-@media  (min-width:768px) and (max-width: 1220px) {
-  ul {
-    padding: 0;
-  }
-
-  .brand {
-    width: auto;
+    height:300px;
+    line-height:0.2em;
+ }
+.app-desc>p:first-child{
+    font-family: 'Roboto',sans-serif;
+    font-size: 2em;
+    color: orange;
+    line-height: 2.2em;
     text-align: left;
-    margin-left: 1%;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
+    /* text-align: center; */
+    margin: auto;
+    padding:0;
+}
+.app-desc>p:last-child{
+    font-family: 'Roboto',sans-serif;
+    color: #024771;
+    font-size: 1.7em;
+    font-weight: 500;
+    line-height: 1.7em;
+}
+  /*testing*/
+.banner {
+    height: 150px;
+    width:100%;
+    background-color: rgb(219, 235, 241);
+    overflow-y: hidden;
   }
-  .brand-title{
-    text-shadow:2px 2px 2px;
-    margin-left:-10px;
-    font-size:20px;
+  .banner> h3{
+    width:25%;
+    color: black;
+    display: inline-block;
+    margin-top: -5%;
+    padding: 100px;
   }
-
-  .button {
-    width: auto;
-    height:10px;
-    position: absolute;
-    right: 2%;
-    top: 10%;
-  }
-  .brand-img {
-    width: 50px;
-  }
-
-  .button > a {
-    font-size: 0.8em;
-    padding: 2px 8px 2px 8px;
-    margin:auto;
-    margin-top:8%;
-  }
-  
-  .banner {
+  .banner2 {
     height: 150px;
     width:100%;
     background-color: rgb(219, 235, 241);
   }
-  .banner> h3{
-    width:35%;
+  .banner2>p:first-child{
+    width:90%;
     color: black;
     display: inline-block;
-    margin-top: -7%;
-    font-size: 1em;
-    margin-left: -10%;
-  }
-  .instafeed{
-    width: 80%;
-    z-index: 10;
-    margin: 0px;
-    padding-bottom: 10%;
-    padding-top: 5%;
-    margin-left: 12%;
-  }
-  .instafeedHeading{
-    font-family: 'Roboto',sans-serif;
-    font-size: 1.8em;
-    font-weight: 500;
-    color: #101010;
-    margin:3% 0% 3% 0%;
-    text-align: center;
-}
-  .socialFeed{
-      width: 100%;
-      max-height: 450px;
-      flex-wrap: nowrap;
-      padding:3%;
-      margin: 0%;
-      overflow: hidden;
-      white-space: nowrap !important;  
-}
-
-.socialFeed>div{
-      display: inline-block;
-      width: 50%;
-      height: 400px; 
-}
-.socialFeed>img{
-  /* height: 7%; */
-  width: 5%;
-}
-  .instaData>a>img{
-    position: relative;
-    height: 45%;
-    width: 100%;
-    padding: 2%;
-  }
-  .instaData{
-    border:4px solid #fff;
-    overflow: hidden;
-    margin: 25px;   /* gaps betwenn cards of instafeed*/
-    display: inline-block;
-    transition: transform .2s;
-    filter: brightness(100%);
-    box-shadow: 0 0 11px rgba(230, 62, 62, 0.2); 
-  }
-  .socialFeed .left{
-      position: absolute;
-      padding-top: 30%;
-      left: 10%;
-      cursor: pointer;
-      scroll-behavior: smooth;
-  }
-  .socialFeed .right{
-      position: absolute;
-      padding-top: 30%;
-      right: 7.5%;
-      cursor: pointer;
-      scroll-behavior: smooth;
-  }
-
-  .blog{
-    width: 90%;
-    max-height: 450px;
-    margin: 4%;
-    overflow: hidden;
-    white-space: nowrap !important;
-}
-.blog>div{
-    display: inline-block;
-    width: 50%;
-    height: 430px; 
-}
-.blog>img{
-    height: 7%;
-    width: 7%;
-    /* padding-right:3%;   */
-}
-
-.blog .left{
-    position: absolute;
-    top:50%;
-    left: 0%;
-    cursor: pointer; 
-}
-.blog .right{
-    position: absolute;
-    top:50%;
-    right: -2.5%;
-    cursor: pointer;    
-}
-.card2-content>.content>h3{
-  font-size: 1.5em;
+    margin-left: 6%;
+    margin-top: 1%;
+    font-weight: bolder;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    text-align-last: center;
   }
   .banner2>p:last-child{
-    width:90%;
+    width:100%;
     color: black;
     display: inline-block;
     margin-top: 3%;
     font-weight: bolder;
-    font-size: .8em;
-    margin-left: 2%;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    text-align-last: center;
+  }
+  .banner3 {
+    height: 200px;
+    width:100%;
+    background-color: rgb(219, 235, 241);
+  }
+  .subbanner3{
+    margin-bottom: 5%;
+  }
+  .subbanner3>p{
+    width:90%;
+    color: black;
+    display: inline-block;
+    margin-left: 4%;
+    margin-top: 1%;
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
     text-align-last: center;
   }
   .subbanner3>a>button{
@@ -879,12 +323,210 @@ body {
     font-weight: bolder;
     font-size: .9em;
     cursor: pointer;
-    width: 15%;
+    width: 8%;
+    height: 30px;
   }
+  
+.blogFeed{
+    z-index: 10;
+    margin: 0px;
+    /* padding-top: 2%; */
+    padding-left: 2%;
+    padding-right: 5%;
+    /* border: 1px solid red; */
 
 }
+.feedHeading{
+  font-family: 'Roboto',sans-serif;
+  font-size: 1.8em;
+  font-weight: 500;
+  color: #101010;
+  margin:3% 0% 3% 0%;
+  text-align: center;
+}
+.blog{
+    width: 90%;
+    height: 500px;
+    margin: 1%;
+    margin-top: 0%;
+    margin-left: 6%;
+    overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap !important;
+    /* border: 1px solid yellow; */
+    
+}
+.blog::-webkit-scrollbar{
+  display: none;
+}
+.blog>div{
+    display: inline-block;
+    width: 20%;
+    margin-left: 1%;
+    margin-right: 5%;
+    margin-top: 5%;
+    height: 400px; 
+    /* border: 1p solid black; */
+    border-radius:2%; 
+}
+.blog>img{
+    height: 7%;
+    width: 5.5%;
+    font-weight: bolder;
+    padding-right:3%;  
+}
+.feeddata{
+  border:2px solid #fff;
+  filter: brightness(100%);
+  overflow: hidden;
+  margin: 10px;
+  height: 100%;
+  transition: transform .2s;
+  box-shadow: 0 0 11px rgba(230, 62, 62, 0.2); 
+}
+.feeddata:hover {
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2); 
+  transform: scale(1.1); 
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
 
-@media screen and (min-width:320px) and (max-width:500px) {
+.blog .left{
+    position: absolute;
+    top:47%;
+    left: 3%;
+    cursor: pointer; 
+}
+.blog .right{
+    position: absolute;
+    top:47%;
+    right: -2%;
+    cursor: pointer;    
+}
+
+/* insta-feed */
+.instafeed{
+  flex-wrap: nowrap;
+  z-index: 10;
+  margin: 0px;
+  padding-bottom: 0%;
+  padding-top: 1%;
+  padding-left: 4%;
+  /* border: 1px solid black; */
+  padding-right: 5%;
+}
+.instafeedHeading{
+  font-family: 'Roboto',sans-serif;
+  font-size: 1.8em;
+  font-weight: 500;
+  color: #101010;
+  margin:3% 0% 3% 0%;
+  text-align: center;
+}
+.socialFeed{
+    width: 90%;
+    max-height: 20%;
+    padding:3%;
+    margin: 0%;
+    margin-left: 5%;
+    overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap !important;  
+    /* border: 1px solid red; */
+}
+.socialFeed>img{
+  width: 2%;
+}
+
+.socialFeed>div{
+    display: inline-block;
+    width: 22%;
+    height: 400px; 
+    border-radius: 2%;
+    margin-left: -1%;
+    margin-right: 5.3%;
+}
+.socialFeed::-webkit-scrollbar{
+display: none;
+}
+.instaData>a>img{
+  position: relative;
+  height: 45%;
+  width: 100%;
+  padding: 2%;
+  border-radius: 5%;
+}
+.instaData{
+  border:4px solid #fff;
+  overflow: hidden;
+  margin: 25px;   /* gaps betwenn cards of instafeed*/
+  display: inline-block;
+  transition: transform .2s;
+  filter: brightness(100%);
+  box-shadow: 0 0 11px rgba(230, 62, 62, 0.2); 
+}
+.instaData:hover {
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2); 
+  transform: scale(1.1); 
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.socialFeed .left{
+    position: absolute;
+    padding-top: 15%;
+    left: 6%;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+.socialFeed .right{
+    position: absolute;
+    padding-top: 15%;
+    right: 7%;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+#username{
+  color:orange;
+  padding:2%;
+  text-align: right;
+  width:10%;
+  font-size: .9em
+}
+#time{
+  color:orange;
+  display: block;
+  font-size: .8em;
+  text-align: center;
+  margin-top: 0%;
+  padding:2%;
+  
+}
+.textdata{
+  width:96%;
+  height: 350px;
+  white-space: normal;  
+  padding: 2%;
+  
+}
+.textdata>p{
+  font-size: .8em;
+  padding-top:8%;
+  height: 340px;
+  text-align: center;
+  display: inline-flex; 
+  padding-bottom: 5%;
+  font-weight: bolder;
+}
+
+
+/* insta end */
+
+footer{
+    background-color: #024771;
+}
+
+
+@media screen and (min-width:459px) and (max-width:767px) {
   .app>img{
     margin-top:60px;
     margin-left: auto;
@@ -902,7 +544,6 @@ body {
     font-weight:180;
   }
     .app-desc > p:first-child {
-      font-family: 'Roboto',sans-serif;
       font-size: 1.6em;
       line-height: 1em;
       text-align: left;
@@ -911,7 +552,6 @@ body {
       margin-left: auto;
     }
     .app-desc > p:last-child {
-      font-family: 'Roboto',sans-serif;
       font-size: 1.5em;
       font-weight: 270;
       line-height: 1.3em;
@@ -931,33 +571,31 @@ body {
       margin-top:0;
       padding: 20px;
     }
+    .banner2{
+      height:auto;
+      width:100%;
+      background-color: rgb(219, 235, 241);
+      text-align: center;
+      margin-bottom:10%;
+    }
+    .banner>p{
+      width:100%;
+      color: black;
+      display:block;
+      margin-top:0;
+      padding: 20px;
+    }
     .blog > div {
       display: inline-block;
-      width: 85%;
-      margin: 6%;
+      width: 100%;
       height: 400px;
     }
-    .blog>img{
-      width:9%;
-      height: 6%;
-    }
-    .blog .left{
-      top:45%;
-      left: 0%;
-  }
-  .blog .right{
-      top:45%;
-      right: -5%;
-  }
   .socialFeed > div {
     display: inline-block;
     width: 100%;
-    height: 400px;
-    margin: 10px;
+    height: 500px;
+    margin: 0px;
     
-  }
-  .socialFeed>img{
-    width: 5%;
   }
   .instafeed{
     z-index: 10;
@@ -965,26 +603,24 @@ body {
     padding-bottom: 25%;
   }
   .socialFeed .left{
-    margin-top: 40%;
-    left: 2%;
+    margin-top: 75%;
+    left: 7%;
 }
 .socialFeed .right{
-    margin-top: 40%;
-    right: 2%;   
+    margin-top: 75%;
+    right: 7%;   
 }
 .card{
-  /* position:relative; */
+  position:relative;
   width:100%;
   height:500px;
 }
 .card-image-holder{
-  /* position:absolute; */
+  position:absolute;
   width:100%;
   height:300px;
   display:block;
   top:0;
-  margin-left: 0%;
-  margin-bottom: 10%;
 }
 .card-image-holder>img{
   width:100%;
@@ -992,13 +628,377 @@ body {
   margin-left:0%;
 }
 .card-content{
-  /* position:absolute; */
+  position:absolute;
   top:300px;
   width:100%;
-  height:400px;
-  margin-left: 0%;
+  height:200px;
+  display: inline-block;
+}
+.card-content>.content{
+margin-top:5%;
+width:100%;
+margin-left:0;
+}
 
-  /* display: inline-block; */
+
+.card2{
+position:relative;
+width:100%;
+height:500px;
+}
+.card2-image{
+position:absolute;
+width:100%;
+height:300px;
+display:block;
+top:0;
+}
+.card2-image>img{
+width:100%;
+height:100%;
+margin-left:0%;
+}
+.card2-content{
+position:absolute;
+top:300px;
+width:100%;
+height:200px;
+display: inline-block;
+}
+.card2-content>.content{
+margin-top:5%;
+width:100%;
+margin-left:0;
+}
+.card2-content>.content>h3{
+  font-size: 1.3em;
+  font-family: 'Roboto', sans-serif;
+  }
+  .subbanner3>p{
+    width:96%;
+    color: black;
+    display: inline-block;
+    margin-left: 6%;
+    margin-top: 1%;
+    font-weight: bolder;
+    font-size: 1.5em;
+    text-align-last: center;
+  }
+  .subbanner3>a>button{
+    margin-left: 35%;
+    margin-top: 3%;
+    background: transparent;
+    border: 1px solid blueviolet;
+    font-weight: bolder;
+    font-size: .9em;
+    cursor: pointer;
+    width: 30%;
+  }
+  .banner2>p:first-child{
+    width:90%;
+    color: black;
+    display: inline-block;
+    margin-left: 3%;
+    margin-top: 1%;
+    font-weight: bolder;
+    font-size: 1em;
+    text-align-last: center;
+  }
+  .banner2>p:last-child{
+    width:100%;
+    color: black;
+    display: inline-block;
+    margin-top: 3%;
+    font-weight: bolder;
+    font-size: 1em;
+    text-align-last: center;
+  }
+}
+@media  (min-width:768px) and (max-width: 1220px) {
+ul {
+  padding: 0;
+}
+
+.brand {
+  width: auto;
+  text-align: left;
+  margin-left: 1%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+.brand-title{
+  text-shadow:2px 2px 2px;
+  margin-left:-10px;
+  font-size:20px;
+}
+
+.button {
+  width: auto;
+  height:10px;
+  position: absolute;
+  right: 2%;
+  top: 10%;
+}
+.brand-img {
+  width: 50px;
+}
+
+.button > a {
+  font-size: 0.8em;
+  padding: 2px 8px 2px 8px;
+  margin:auto;
+  margin-top:8%;
+}
+
+.banner {
+  height: 150px;
+  width:100%;
+  background-color: rgb(219, 235, 241);
+}
+.banner> h3{
+  width:35%;
+  color: black;
+  display: inline-block;
+  margin-top: -7%;
+  font-size: 1em;
+  margin-left: -10%;
+}
+.instafeed{
+  width: 80%;
+  z-index: 10;
+  margin: 0px;
+  padding-bottom: 10%;
+  padding-top: 5%;
+  margin-left: 12%;
+}
+.instafeedHeading{
+  font-family: 'Roboto',sans-serif;
+  font-size: 1.8em;
+  font-weight: 500;
+  color: #101010;
+  margin:3% 0% 3% 0%;
+  text-align: center;
+}
+.socialFeed{
+    width: 100%;
+    max-height: 450px;
+    flex-wrap: nowrap;
+    padding:3%;
+    margin: 0%;
+    overflow: hidden;
+    white-space: nowrap !important;  
+}
+
+.socialFeed>div{
+    display: inline-block;
+    width: 50%;
+    height: 400px; 
+}
+.socialFeed>img{
+/* height: 7%; */
+width: 5%;
+}
+.instaData>a>img{
+  position: relative;
+  height: 45%;
+  width: 100%;
+  padding: 2%;
+}
+.instaData{
+  border:4px solid #fff;
+  overflow: hidden;
+  margin: 25px;   /* gaps betwenn cards of instafeed*/
+  display: inline-block;
+  transition: transform .2s;
+  filter: brightness(100%);
+  box-shadow: 0 0 11px rgba(230, 62, 62, 0.2); 
+}
+.socialFeed .left{
+    position: absolute;
+    padding-top: 30%;
+    left: 10%;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+.socialFeed .right{
+    position: absolute;
+    padding-top: 30%;
+    right: 7.5%;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+
+.blog{
+  width: 90%;
+  max-height: 450px;
+  margin: 4%;
+  overflow: hidden;
+  white-space: nowrap !important;
+}
+.blog>div{
+  display: inline-block;
+  width: 50%;
+  height: 430px; 
+}
+.blog>img{
+  height: 7%;
+  width: 7%;
+  /* padding-right:3%;   */
+}
+
+.blog .left{
+  position: absolute;
+  top:50%;
+  left: 0%;
+  cursor: pointer; 
+}
+.blog .right{
+  position: absolute;
+  top:50%;
+  right: -2.5%;
+  cursor: pointer;    
+}
+.card2-content>.content>h3{
+font-size: 1.5em;
+}
+.banner2>p:last-child{
+  width:90%;
+  color: black;
+  display: inline-block;
+  margin-top: 3%;
+  font-weight: bolder;
+  font-size: .8em;
+  margin-left: 2%;
+  text-align-last: center;
+}
+.subbanner3>a>button{
+  margin-left: 45%;
+  margin-top: 3%;
+  background: transparent;
+  border: 1px solid blueviolet;
+  font-weight: bolder;
+  font-size: .9em;
+  cursor: pointer;
+  width: 15%;
+}
+
+}
+
+@media screen and (min-width:320px) and (max-width:500px) {
+.app>img{
+  margin-top:60px;
+  margin-left: auto;
+  width:80px;
+  height: 80px;
+  
+}
+.app-desc {
+  width: 300px;
+  height:330px;
+  text-align: left;
+  margin-top: 28%;
+  padding-top: 1.6%;
+  line-height:0.7em;
+  font-weight:180;
+}
+  .app-desc > p:first-child {
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.6em;
+    line-height: 1em;
+    text-align: left;
+    margin-top:-8%;
+    padding-bottom: 3%;
+    margin-left: auto;
+  }
+  .app-desc > p:last-child {
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.5em;
+    font-weight: 270;
+    line-height: 1.3em;
+    text-align:left;
+  }
+  .banner {
+    height:auto;
+    width:100%;
+    background-color: rgb(219, 235, 241);
+    text-align: center;
+    margin-bottom:10%;
+  }
+  .banner> h3{
+    width:100%;
+    color: black;
+    display:block;
+    margin-top:0;
+    padding: 20px;
+  }
+  .blog > div {
+    display: inline-block;
+    width: 85%;
+    margin: 6%;
+    height: 400px;
+  }
+  .blog>img{
+    width:9%;
+    height: 6%;
+  }
+  .blog .left{
+    top:45%;
+    left: 0%;
+}
+.blog .right{
+    top:45%;
+    right: -5%;
+}
+.socialFeed > div {
+  display: inline-block;
+  width: 100%;
+  height: 400px;
+  margin: 10px;
+  
+}
+.socialFeed>img{
+  width: 5%;
+}
+.instafeed{
+  z-index: 10;
+  margin: 0px;
+  padding-bottom: 25%;
+}
+.socialFeed .left{
+  margin-top: 40%;
+  left: 2%;
+}
+.socialFeed .right{
+  margin-top: 40%;
+  right: 2%;   
+}
+.card{
+/* position:relative; */
+width:100%;
+height:500px;
+}
+.card-image-holder{
+/* position:absolute; */
+width:100%;
+height:300px;
+display:block;
+top:0;
+margin-left: 0%;
+margin-bottom: 10%;
+}
+.card-image-holder>img{
+width:100%;
+height:100%;
+margin-left:0%;
+}
+.card-content{
+/* position:absolute; */
+top:300px;
+width:100%;
+height:400px;
+margin-left: 0%;
+
+/* display: inline-block; */
 }
 .card-content>.content{
 margin-top:5%;
@@ -1039,45 +1039,44 @@ width:100%;
 margin-left:0;
 }
 .card2-content>.content>h3{
-  font-size: 1em;
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  }
-  .banner2>p:first-child{
-    width:95%;
-    color: black;
-    display: inline-block;
-    margin-left: 3%;
-    margin-top: 1%;
-    font-weight: bolder;
-    font-size: .8em;
-    font-family: 'Roboto', sans-serif;
-    text-align-last: center;
-  }
-  .banner2>p:last-child{
-    width:100%;
-    color: black;
-    display: inline-block;
-    margin-top: 3%;
-    font-weight: bolder;
-    font-size: .8em;
-    margin-left: 2%;
-    font-family: 'Roboto', sans-serif;
-    text-align-last: center;
-  }
-  .subbanner3>p{
-    text-align: center;
-    margin-left: 5%;
-  }
-  .subbanner3>a>button{
-    margin-left: 32.5%;
-    margin-top: 3%;
-    background: transparent;
-    border: 1px solid blueviolet;
-    font-weight: bolder;
-    font-size: .9em;
-    cursor: pointer;
-    width: 35%;
-  }
+font-size: 1em;
+font-family: 'Roboto', sans-serif;
+text-align: center;
 }
-  
+.banner2>p:first-child{
+  width:95%;
+  color: black;
+  display: inline-block;
+  margin-left: 3%;
+  margin-top: 1%;
+  font-weight: bolder;
+  font-size: .8em;
+  font-family: 'Roboto', sans-serif;
+  text-align-last: center;
+}
+.banner2>p:last-child{
+  width:100%;
+  color: black;
+  display: inline-block;
+  margin-top: 3%;
+  font-weight: bolder;
+  font-size: .8em;
+  margin-left: 2%;
+  font-family: 'Roboto', sans-serif;
+  text-align-last: center;
+}
+.subbanner3>p{
+  text-align: center;
+  margin-left: 5%;
+}
+.subbanner3>a>button{
+  margin-left: 32.5%;
+  margin-top: 3%;
+  background: transparent;
+  border: 1px solid blueviolet;
+  font-weight: bolder;
+  font-size: .9em;
+  cursor: pointer;
+  width: 35%;
+}
+}

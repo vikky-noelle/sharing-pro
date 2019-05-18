@@ -3,7 +3,6 @@ import {
   OnInit,
   ViewEncapsulation,
   HostListener,
-  Renderer2,
   ViewChild,
   AfterViewInit
 } from '@angular/core';
