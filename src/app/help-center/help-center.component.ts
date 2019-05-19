@@ -18,7 +18,6 @@ export class HelpCenterComponent implements OnInit {
 }
 
   ngOnInit() {
-    console.log(this.helpCenter);
   }
   @HostListener('window:resize',[]) onScreenResize(){
     

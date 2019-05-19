@@ -3,6 +3,7 @@
     width: 100%;
     height: 100%;
 }
+ 
 p{
     font-size: 1.3em;
     font-weight: 300;
@@ -11,11 +12,17 @@ p{
     color:black;
     text-align: center;
 }
-
+/* problems tab */
+.problems {
+    border-radius: 5px;
+    float: right;
+    width: 70%;
+    margin-right: 7%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);
+}
 .content{
     display: inline-flex;
     padding-bottom: 5%;
-    border-top: 1px solid #101010;
 }
 .content>div{
     display: inline-block;
@@ -26,33 +33,40 @@ p{
 .content>.side-nav{
     display: inline-block;
 }
-.content> .side-nav::-webkit-scrollbar-thumb {
-    background: #FF0000;
-}
+
 .content> .side-nav::-webkit-scrollbar {
     width: 3px; 
     }
     
+.sidenav {
+    align-content: center;
+    float: left;
+    width: 30%;
+    padding-left: 7%;
+}
 .side-nav{
-   border: 1px solid black;
-   height: 600px;
+   border-radius: 5px;
    padding: 0px;
-   width: 420px;
+   width: 90%;
    list-style-type: none;
    display: inline-block;
    overflow-x: hidden;
+   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);
 }
+
 .side-nav li{
-    border: 1px solid #bbbbbb;
-    border-top:none;
-    height: 50px;
+    height: 20px;
     padding: 5% 1.5% 5% 1.5%;
+}
+
+.side-nav li:hover {
+    background-color: silver;
 }
 .side-nav li>a>div>img{
     margin-left: 0%;
     padding-right: 15px;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 5px;
     
 }
@@ -62,12 +76,10 @@ p{
     color: black;
     font-size: 1em;
     font-weight: 300;
-    background:transparent;
     border: none;
     text-align: left;
     position: relative;
     cursor: pointer;
-    /* vertical-align: top; */
     display: inline-block;
 }
 
@@ -80,24 +92,15 @@ p{
     text-align: left;
     text-align-last: left;
     font-size: 1em;
-    margin-left: 0%;
+    margin-left: 19%;
     font-style: bold;
 }
 
-.side-nav li>a .topicdata>p:hover{
-    font-weight: bolder;
-}
-.side-nav li>a>div:focus{
-    font-weight: bolder;
-}
-.content>ul>li:hover{
-    background-color: #dddddd;
-}
 /*====Subtoipcs=======*/
 .subtopicdata{
     display: inline-block;
-    width:120px;
-    height: 120px;
+    width:100px;
+    height: 100px;
     padding:2%;
     padding-bottom: 8%;
     margin: 4% 0% 0% 8%;
@@ -106,23 +109,18 @@ p{
     /* border: 1px solid black; */
 
 }
-.subtopicdata>a>p{
-    font-size: 1.2em;
-    font-weight: 400;
-    width: 140px;
-    margin-left: -10px;
-    text-align: center;
+.subtopicdata:hover {
+    /* -moz-transform: scale(1..05);
+  -webkit-transform: scale(1..05);
+  transform: scale(1.1); */
+  /* font-weight: bolder; */
+  border-radius: 5px;
+  background-image: url('/assets/images/sportsocialteamheader.jpg');
+  /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19); */
 }
 
-/* .subtopicdata a>p:hover{
-    font-weight: bolder;
-    text-decoration: none;
-} */
-.subtopicdata:hover {
-    -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.2);
-  font-weight: bolder;
+.subtopicdata:hover p {
+    color: white;
 }
 
 /*subtopics end*/
@@ -210,12 +208,17 @@ p{
     }
 
     .banner3 {
-        height: 200px;
+        height: 150px;
         width:100%;
         background-color: rgb(219, 235, 241);
         margin-bottom: 0%;
         padding-bottom: 0%;
+        box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
       }
+      .banner3 button {
+          border-radius: 5px;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+    }
       .banner3>p{
         width:90%;
         color: black;
@@ -238,7 +241,7 @@ p{
       }
     
 /*================== media query ============== */
-@media(max-width:700px){
+/* @media(max-width:700px){ 
     .content{
         display: inline-flex;
         margin-bottom: 15%;
@@ -281,7 +284,7 @@ p{
     }
     .side-nav{
         visibility: hidden;
-    } */
+    } 
 
     .side-nav {
     padding: 0px;
@@ -313,7 +316,7 @@ p{
         border: none;
         text-align: left;
         position: relative;
-      } */
+      } 
       .side-nav li>a .topicdata{
         display: inline-flex;
         width: 50%;
@@ -391,4 +394,4 @@ p{
         font-size: 1em;
         cursor: pointer;
       }
-} 
+} */
