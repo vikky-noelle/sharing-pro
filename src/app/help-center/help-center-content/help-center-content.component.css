@@ -51,6 +51,7 @@ p{
    list-style-type: none;
    display: inline-block;
    overflow-x: hidden;
+   overflow-y: hidden;
    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);
 }
 
