@@ -105,7 +105,6 @@ showw() {
         this.Ques = this.quesAns[qu].ques;
         this.qques = this.quesAns[qu].qques;
         this.img = this.quesAns[qu].icon;
-        break;
     }
     const convertedhtml=this.strip(this.Ans)
    this.meta.updateTag({name:'description',content:convertedhtml});
