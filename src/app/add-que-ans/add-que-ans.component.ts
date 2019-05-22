@@ -5,9 +5,6 @@ import { Router, ActivatedRoute } from '@angular/router';
 
 import {Meta, Title} from '@angular/platform-browser'
 import { GetService } from '../shared/services/get.service';
-import { PostService } from '../shared/services/post.service';
-import { SharedService } from '../help-center/help-center-content/sharedservice';
-import { QueryValueType } from '@angular/compiler/src/core';
 
 
 @Component({
@@ -25,34 +22,35 @@ export class AddQueAnsComponent implements OnInit {
   Ques="";
   img;
   topicId;
+  qid;
   name;
   qques;
+  no=0;
   subtopicId;
   sub: Subscription;
   hide=document.getElementsByClassName('modal') as HTMLCollectionOf<HTMLElement>;
   blog:{title:string,question:string,answer:string}={title:'',question:'',answer:''};
 
   constructor( private router: Router,
-    private route: ActivatedRoute,
-    private sharedservice: SharedService,
     private getService: GetService,
-    private load:PostService,
     private meta :Meta,
+    private route: ActivatedRoute,
     private pagetitle:Title,
     private renderer: Renderer2) {}
 
   ngOnInit() {
-    this.datastr=this.sharedservice.userToEdit;
-    console.log("lalalala" + this.datastr);
-    this.topicId=this.datastr[0];
-    this.name=this.datastr[1];
-    this.subtopicId=this.datastr[2];
-    console.log("wooohoooo" + this.topicId)
-    this.getQuesAns(this.topicId, this.subtopicId); 
-    console.log("hello",this.name);
+    this.route.queryParams.subscribe(params => {
+      this.name = params['name'];
+      this.topicId = params['topic_id'];
+      this.subtopicId = params['id'];
+      this.qid = params['qid'];
+  });
+    // this.topicId=this.datastr[0];
+    // this.name=this.datastr[1];
+    // this.subtopicId=this.datastr[2];
+    this.getQuesAns(this.topicId, this.subtopicId, this.qid); 
     if(window.innerWidth <= 700){
       this.mobv = 1;
-      console.log("yeah");
     }
 
   }
@@ -70,35 +68,44 @@ export class AddQueAnsComponent implements OnInit {
 showw() {
   this.hide[0].style.display="block";
 }
-  getQuesAns(topicId: number, subtopicId: number) {
+  getQuesAns(topicId: number, subtopicId: number, qid:number) {
     this.getService.getQA(topicId, subtopicId).subscribe(res => {
       const body = JSON.parse(res._body);
       for (const i in body) {
         this.quesAns.push({
+          no:this.no,
           id: body[i].id,
           topic_id: body[i].topic_id,
           subtopic_id: body[i].subtopic_id,
           subtopic_name:body[i].subtopic_name,
           ques: body[i].ques,
-          qques:body[i].ques.replace(/\s/g, "_"),
+          qques:body[i].ques.replace(/\s/g, "-"),
           ans: body[i].ans,
           icon: body[i].icon
         });
-        
+      if(qid==0){
+        this.Ans = this.quesAns[0].ans;
+        this.Ques = this.quesAns[0].ques;
+        this.img = this.quesAns[0].icon;
       }
-      this.Ans = this.quesAns[0].ans;
-      this.Ques = this.quesAns[0].ques;
-      this.img = this.quesAns[0].icon;
+      else if(this.quesAns[i].id == qid){
+        this.Ans = this.quesAns[i].ans;
+        this.Ques = this.quesAns[i].ques;
+        this.img = this.quesAns[i].icon;
+      }
+      }
     });
   }
   
   getAns(id){
+    this.qid=id;
     for(const qu in this.quesAns){
       if(this.quesAns[qu].id == id)
         this.Ans = this.quesAns[qu].ans;
         this.Ques = this.quesAns[qu].ques;
         this.qques = this.quesAns[qu].qques;
         this.img = this.quesAns[qu].icon;
+        break;
     }
     const convertedhtml=this.strip(this.Ans)
    this.meta.updateTag({name:'description',content:convertedhtml});

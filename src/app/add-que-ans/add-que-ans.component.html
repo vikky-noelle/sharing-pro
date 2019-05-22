@@ -6,19 +6,19 @@
 <div class="content">
     <div class="sidenav">
         <ul class="side-nav">
-          <li><a routerLink="/HelpCenter"><div class="topicdata"><p>Go Back</p></div></a></li>
-            <li routerLinkActive="active" *ngFor="let qa of  quesAns; let i = index">
-              <a routerLink="/HelpCenter/{{name}}/{{qa.qques}}">
-              <div class="topicdata" (click)="getAns(qa.id)">
-                <!-- <img src="{{data.icon}}"> -->
-               &nbsp;&nbsp;<p>{{qa.ques}}</p>
-              </div>
-            </a>
-            </li>
+          <li><a routerLink="/HelpCenter"><div class="topicdata"><img style="height: 8px;width:8px;padding-top:5%;" src="/assets/images/sportsocialarrowleft.png"><p>Go Back</p></div></a></li>
+          <li routerLinkActive="active" *ngFor="let qa of  quesAns; let i = index">
+            <a routerLink="/HelpCenter/{{name}}/{{qa.qques}}" [queryParams]="{ topic_id: topicId , id: subtopicId, qid: qid, name:name}">
+            <div class="topicdata" (click)="getAns(qa.id)">
+              <!-- <img src="{{data.icon}}"> -->
+             &nbsp;&nbsp;<p>{{qa.ques}}</p>
+            </div>
+          </a>
+          </li>
           </ul>
       </div>
     <div class="problems">
-        <div class="subtopicdata">
+        <div class="subtopicdataaa">
             <h1 [innerHtml]="Ques"></h1>
             <hr>
             <!-- <br>
@@ -42,10 +42,11 @@
            
              <div class="modal">
                <div class="modal-content">
-                <div class="modal-header" (click)="home(); close()"><h1>Home</h1></div>   
+                <div class="modal-header" style="display: inline-flex;" (click)="home(); close()"><h1>Go Back</h1><img (click)="close();" style="height: 18px;width:18px;z-index: 1;" src="/assets/images/sportsocialcross.png"></div>   
                  <a *ngFor="let qa of  quesAns; let i = index" routerLink="/Helpcenter/{{name}}/{{qa.qques}}"
+                 [queryParams]="{ topic_id: topicId , id: subtopicId, qid: qid, name:name}"
                  routerLinkActive="active"> 
-                 <div (click)="getAns(qa.id); close();">
+                 <div style="width:80%" (click)="getAns(qa.id); close();">
                     {{qa.ques}} 
                </div></a>  
                     

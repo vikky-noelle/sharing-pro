@@ -51,7 +51,6 @@ import { OurteamComponent } from './ourteam/ourteam.component';
 import { FirebaseComponent } from './firebase/firebase.component';
 import { NewHeaderModule } from './newheader/newheader.module';
 import { TeamviewComponent } from './teamview/teamview.component';
-import { SharedService } from './help-center/help-center-content/sharedservice';
 
 
 @NgModule({
@@ -106,7 +105,6 @@ import { SharedService } from './help-center/help-center-content/sharedservice';
     PopUpService,
     LinkService,
     SeoService,
-    SharedService,
     MessagingService,
     AsyncPipe
   ],

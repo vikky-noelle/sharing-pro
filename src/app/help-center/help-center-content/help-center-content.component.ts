@@ -12,9 +12,9 @@ import { GetService } from '../../shared/services/get.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { LinkService } from '../../shared/services/link.service';
 import { Meta, Title } from '@angular/platform-browser';
-import { SharedService } from './sharedservice';
 import { Subscription } from 'rxjs';
 import { HighlightDelayBarrier } from 'blocking-proxy/built/lib/highlight_delay_barrier';
+import { PARAMETERS } from '@angular/core/src/util/decorators';
 
 @Component({
   selector: 'SportSocial-help-center-content',
@@ -43,7 +43,6 @@ export class HelpCenterContentComponent implements OnInit {
     private link:LinkService,
     private meta:Meta,
     private title:Title,
-    private sharedservice: SharedService,
     ) { }
 
   @ViewChild('problems') problems:ElementRef;
@@ -118,18 +117,13 @@ close(){
   this.hide[0].style.display="none";
 }
   getdata(topic_id, topic_name, id){
+    const qid=0;
     this.ptopic[0]=topic_id;
     this.ptopic[1]=topic_name;
     this.ptopic[2]=id;
-    this.sharedservice.userToEdit=this.ptopic;
-    this.router.navigate(['/HelpCenter/' + topic_name]); 
-    console.log('working muhahaha' + this.ptopic);
+    this.router.navigate(['/HelpCenter/' + topic_name], {queryParams: {topic_id: topic_id, id: id, qid:qid, name:topic_name}}); 
   }
 
-  // indata() {
-  //   console.log('pdata working' + this.ptopic);
-  //   return this.ptopic;
-  // }
 getSeo(id){
   for(const topic in this.topics){
     if(this.topics[topic].id == id)

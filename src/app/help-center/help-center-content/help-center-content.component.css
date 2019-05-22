@@ -285,4 +285,12 @@ p{
         font-size: .9em;
         cursor: pointer;
       }
-   
+   .arrow {
+     padding-top:5%;
+     height: 8px;
+     width: 8px;
+   }
+   .modal-content::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;
+  }

@@ -10,7 +10,9 @@
             <a routerLink="/Helpcenter/{{data.name}}">
             <div (click)="SubtopicsIconChange(data.id)">
               <img src="{{data.icon}}">
-              <div class="topicdata"><p>{{data.name}}</p></div>
+              <div class="topicdata"><p>{{data.name}}</p>
+              <img class="arrow" src="/assets/images/sportsocialarrow.png" alt="">
+              </div>
             </div>
           </a>
           </li>
@@ -47,7 +49,7 @@
 
   <div class="modal">
     <div class="modal-content"> 
-      <div class="modal-header" (click)="home(); close();"><h1>Home</h1></div>  
+      <div class="modal-header" style="display: inline-flex;" (click)="home(); close();"><h1>Home</h1><img (click)="close();" style="height: 18px;width:18px;z-index: 1;" src="/assets/images/sportsocialcross.png"></div>  
       <a *ngFor="let data of topics" routerLink="/Helpcenter/{{data.name}}"
       routerLinkActive="active"> 
       <div (click)="SubtopicsIconChange(data.id); close();">
