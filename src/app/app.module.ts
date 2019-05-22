@@ -23,7 +23,6 @@ import { SendService } from './shared/services/send.service';
 import { PostService } from './shared/services/post.service';
 import { HttpModule } from '@angular/http';
 import { AddTopicComponent } from './add-topic/add-topic.component';
-import { SubTopicComponent } from './sub-topic/sub-topic.component';
 import { AddQueAnsComponent } from './add-que-ans/add-que-ans.component';
 import { LinkService } from './shared/services/link.service';
 import { ApplicationComponent } from './application/application.component';
@@ -52,6 +51,7 @@ import { OurteamComponent } from './ourteam/ourteam.component';
 import { FirebaseComponent } from './firebase/firebase.component';
 import { NewHeaderModule } from './newheader/newheader.module';
 import { TeamviewComponent } from './teamview/teamview.component';
+import { SharedService } from './help-center/help-center-content/sharedservice';
 
 
 @NgModule({
@@ -59,7 +59,6 @@ import { TeamviewComponent } from './teamview/teamview.component';
     AppComponent,
     PopUpComponent,
     AddTopicComponent,
-    SubTopicComponent,
     AddQueAnsComponent,
     ApplicationComponent,
     LivedataComponent,
@@ -107,6 +106,7 @@ import { TeamviewComponent } from './teamview/teamview.component';
     PopUpService,
     LinkService,
     SeoService,
+    SharedService,
     MessagingService,
     AsyncPipe
   ],

@@ -1,7 +1,6 @@
 import { 
   Component, 
   OnInit, 
-  HostListener,
   ViewChildren,
   ElementRef,
   Renderer2,
@@ -10,9 +9,12 @@ import {
 } from '@angular/core';
 
 import { GetService } from '../../shared/services/get.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { LinkService } from '../../shared/services/link.service';
 import { Meta, Title } from '@angular/platform-browser';
+import { SharedService } from './sharedservice';
+import { Subscription } from 'rxjs';
+import { HighlightDelayBarrier } from 'blocking-proxy/built/lib/highlight_delay_barrier';
 
 @Component({
   selector: 'SportSocial-help-center-content',
@@ -20,6 +22,8 @@ import { Meta, Title } from '@angular/platform-browser';
   styleUrls: ['./help-center-content.component.css']
 })
 export class HelpCenterContentComponent implements OnInit {
+  ptopic =[];
+  mobv = 0;
   topicName="";
   windowNavbar:boolean=true;
   Keywords=[];
@@ -32,18 +36,22 @@ export class HelpCenterContentComponent implements OnInit {
   description="How can we help you today? Using Sports Social, New to Sports Social? Learn the basics to get the most out of Sports Social. Having an issue contact us";
   metakeywords="Sports Social Help,Sports Social Help Center,Customer care Sports Social,Contact Sports Social,Chase Your Sport,FAQ Sports Social,Sports Social Support";
   top='';
-  
-  constructor(private getService: GetService, 
+  sub: Subscription;
+  constructor(private getService: GetService,
+    private router: Router, 
     private route:ActivatedRoute,
     private link:LinkService,
     private meta:Meta,
     private title:Title,
-    private renderer:Renderer2
+    private sharedservice: SharedService,
     ) { }
 
   @ViewChild('problems') problems:ElementRef;
   @ViewChildren('problem') problem: QueryList<any>
+  hide=document.getElementsByClassName('modal') as HTMLCollectionOf<HTMLElement>;
 
+
+  // Getting topics
   AllTopics() {
     this.getService.getTopics().subscribe(res => {
       var body = JSON.parse(res._body);
@@ -60,8 +68,8 @@ export class HelpCenterContentComponent implements OnInit {
           if(this.topicname==body[i].name)
             this.topicId=body[i].id;
       }
-        const url = 'https://www.sportsocial.in/' + this.strip(body[i].namkaran).replace(/\s/g, '-').toLowerCase();
-        this.link.addTag({ rel: 'canonical', href: url } );
+        // const url = 'https://www.sportsocial.in/' + this.strip(body[i].namkaran).replace(/\s/g, '-').toLowerCase();
+        // this.link.addTag({ rel: 'canonical', href: url } );
       }
       console.log(this.topics);
       console.log(this.topicname);
@@ -71,11 +79,11 @@ export class HelpCenterContentComponent implements OnInit {
      
     }); 
   }
-  strip(html) {
-    const tmp = this.renderer.createElement('DIV');
-    tmp.innerHTML = html;
-    return tmp.textContent || tmp.innerText || '';
-}
+//   strip(html) {
+//     const tmp = this.renderer.createElement('DIV');
+//     tmp.innerHTML = html;
+//     return tmp.textContent || tmp.innerText || '';
+// }
   SubtopicsIconChange(id){
     this.subtopics=[];
     this.getSubTopics(id);
@@ -98,6 +106,30 @@ export class HelpCenterContentComponent implements OnInit {
       console.log(this.subtopics);
   });
   }
+  showw() {
+    this.hide[0].style.display="block";
+    console.log('show working');
+ 
+}
+home() {
+  this.router.navigate(['/HelpCenter']); 
+}
+close(){
+  this.hide[0].style.display="none";
+}
+  getdata(topic_id, topic_name, id){
+    this.ptopic[0]=topic_id;
+    this.ptopic[1]=topic_name;
+    this.ptopic[2]=id;
+    this.sharedservice.userToEdit=this.ptopic;
+    this.router.navigate(['/HelpCenter/' + topic_name]); 
+    console.log('working muhahaha' + this.ptopic);
+  }
+
+  // indata() {
+  //   console.log('pdata working' + this.ptopic);
+  //   return this.ptopic;
+  // }
 getSeo(id){
   for(const topic in this.topics){
     if(this.topics[topic].id == id)
@@ -129,7 +161,11 @@ getSeo(id){
        this.topicname = this.route.snapshot.paramMap.get("topicname");
     }
     this.AllTopics();
+    if(window.innerWidth <= 700) {
+      this.mobv = 1;
+    }
   }
+  
   setCanonivalURL() {
     let key;
     if (this.Keywords[0].search(/ /g ) === -1) {
@@ -142,43 +178,4 @@ getSeo(id){
     this.link.addTag({ rel: 'canonical', href: url } );
 }
 }
-    /*
-    if(window.innerWidth<900){
-      this.windowNavbar=false;
-      this.renderer.setStyle(this.problems.nativeElement,'display','inline-block')
-      this.renderer.setStyle(this.problems.nativeElement,'width','100%')
-    }
-    else{
-      this.windowNavbar=true;
-      this.renderer.setStyle(this.problems.nativeElement,'display','inline-block')
-      this.renderer.setStyle(this.problems.nativeElement,'width','80%')
-    }
-    if(window.innerWidth<500){
-     // this.problem.map(div=>{this.renderer.setStyle(div,'max-width','50%')})
-      
-    }
-  }
- 
-  @HostListener('window:resize', []) onScreenResize() {
-    if(window.innerWidth<800){
-      this.windowNavbar=false;
-      this.renderer.setStyle(this.problems.nativeElement,'display','block')
-      this.renderer.setStyle(this.problems.nativeElement,'width','100%')
-    }
-    else{
-      this.windowNavbar=true;
-      this.renderer.setStyle(this.problems.nativeElement,'display','inline-block')
-      this.renderer.setStyle(this.problems.nativeElement,'width','79%')
-    }
-    if(window.innerWidth<500){
-      //this.problem.map(div=>{this.renderer.setStyle(div,'max-width','50%')})
-      this.windowNavbar = false;
-      this.renderer.setStyle(this.problems.nativeElement, 'display', 'inline-block')
-      this.renderer.setStyle(this.problems.nativeElement,'width','50%')
-      
-    }
-  }*/
-
-  /*mobile view*/
- 
-
+    

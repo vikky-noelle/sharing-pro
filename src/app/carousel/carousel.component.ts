@@ -36,8 +36,6 @@ export class CarouselComponent implements OnInit {
     private renderer: Renderer2,
     private recieveHeight: PropertyService,
     private sendBottom: PropertyService,
-    private pagetitle:Title,
-    private metaservice:Meta
   ) { }
 
   setTopMargin() {

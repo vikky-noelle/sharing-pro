@@ -33,8 +33,12 @@ const App_Route: Routes = [
       },
 
     {
-        path: "HelpCenter/:topicId/:subtopicname/:subtopicId",
+        path: "HelpCenter/:subtopicname",
         component: AddQueAnsComponent
+      },
+      {
+          path: "HelpCenter/:subtopicname/:question",
+          component: AddQueAnsComponent
       },
     {
         path: 'about',
