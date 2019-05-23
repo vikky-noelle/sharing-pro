@@ -124,7 +124,47 @@
     width: 60%;
     height: 85%;
   }
-  
+
+  .mview {
+      text-align: center;
+  }
+ 
+  .mview img {
+      width: 80%;
+      height: 250px;
+  }
+  .mbox h1 {
+    text-shadow: 1px 1px 3px #024771    ;
+    font-weight: lighter;
+    font-size: 2em;
+}
+.mbox p {
+    font-weight: lighter;
+   font-size: 1em;
+}
+.mboxx h1 {
+    text-shadow: 1px 1px 3px #024771    ;
+    font-weight: lighter;
+    font-size: 2em;
+}
+.mboxx p {
+    font-weight: lighter;
+   font-size: 1em;
+}
+.mbox button {
+    background-color: #024771;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+    border: 0;
+    opacity: 0.95;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+    width: 50%
+}
+.mboxx img {
+    width: 40%;
+}
 @media screen and (min-width: 200px) and (max-width:650px) {
    .dview{
        display: none;

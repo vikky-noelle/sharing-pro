@@ -41,10 +41,29 @@
     </div>
 </div>
 </div>
-<br><br>
+<br><br><br>
 
 <!-- mobile view -->
 <div class="mview">
-
+    <div class="mbox"><h1>Sports Social</h1>
+      <br><br>
+       <p>{{ photo.shortDesc }}</p>
+      <br><br>
+      <button>Create</button></div>
+      <br><br>
+<img src="/assets/images/sportsociallocality1.png">
+<div class="mbox"><h1>{{photo.name}}</h1>
+  <br><br>
+   <p>{{ photo.shortDesc }}</p>
+  <br><br>
+</div>
+<div class="mboxx" *ngFor="let data of lvdata">
+  <br>
+    <h1>{{data.name}}</h1> 
+    <br>
+  <img src="{{data.icon}}">
+  <br><br>
+   <p>{{ data.shortDesc }}</p>
+  <br><br>
 </div>
 <sports-social-backfooter></sports-social-backfooter>
