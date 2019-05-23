@@ -1,0 +1,50 @@
+<sports-social-header></sports-social-header>
+<br><br><br>
+<div class="dview">
+<div class="container" style="background-image: url('/assets/images/sportsociallocality.png'); background-size: 100% 100%;">
+  <div class="centered-div"></div>
+  <div class="centered-div">
+    <div class="innerbox"><h1>Sports Social</h1>
+    <br><br>
+     <p>{{ photo.shortDesc }}</p>
+    <br><br>
+    <button>Create</button></div>
+  </div>
+  <!-- <div class="centered-div"></div>   -->
+  <div class="centered-div"></div>
+  <div class="centered-div"></div>
+  <div class="centered-div">
+    <div class="innerbox1"><h1>{{ photo.name }}</h1>
+    <br><br>
+     <p>{{ photo.shortDesc }}</p>
+    <br><br>
+  </div>  
+</div>
+</div>
+<div class="container2" *ngFor="let data of lvdata">
+    <br><br><br><br><br><br>
+  <div class="content" *ngIf = "data.id % 2 === 0">
+    <h1>{{data.name}}</h1>
+    <p>{{data.shortDesc}}</p>
+  </div>
+  <div class="content-gif" *ngIf = "data.id % 2 === 0">
+    <img src="{{data.icon}}">
+  </div>
+
+
+  <div class="contentt" *ngIf = "data.id % 2 != 0">
+      <h1>{{data.name}}</h1>
+      <p>{{data.shortDesc}}</p>
+    </div>
+    <div class="contentt-gif" *ngIf = "data.id % 2 != 0">
+      <img src="{{data.icon}}">
+    </div>
+</div>
+</div>
+<br><br>
+
+<!-- mobile view -->
+<div class="mview">
+
+</div>
+<sports-social-backfooter></sports-social-backfooter>

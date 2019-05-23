@@ -39,6 +39,14 @@ export class PostService {
       shortDesc: string
     }
   ]
+  lvdataobject: [
+    {
+      id: string,
+      name: string,
+      icon: string,
+      shortDesc: string
+    }
+  ]
   url = [
     'https://prod.sportsocial.in/poc/matchinfo',
    'https://prod.sportsocial.in/poc/activityuserdetails',
@@ -122,5 +130,9 @@ export class PostService {
 
   Teamviewdata(tvdataobject){
     return this.http.post('https://test.sportsocial.in/web/webTeamStatic', tvdataobject);
+  }
+
+  Localityviewdata(lvdataobject){
+    return this.http.post('http://34.245.85.57:3000/web/webLocalityStatic', lvdataobject);
   }
 }

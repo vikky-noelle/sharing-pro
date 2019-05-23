@@ -51,6 +51,7 @@ import { OurteamComponent } from './ourteam/ourteam.component';
 import { FirebaseComponent } from './firebase/firebase.component';
 import { NewHeaderModule } from './newheader/newheader.module';
 import { TeamviewComponent } from './teamview/teamview.component';
+import { LocalitypageComponent } from './localitypage/localitypage.component';
 
 
 @NgModule({
@@ -65,6 +66,7 @@ import { TeamviewComponent } from './teamview/teamview.component';
     OurteamComponent,
     FirebaseComponent,
     TeamviewComponent,
+    LocalitypageComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({appId:'sport-social'}),

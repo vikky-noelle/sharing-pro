@@ -22,12 +22,16 @@
   .content > h1 {
     text-align: center;
     padding: 50px;
-    color: #024771;
+    text-shadow: 1px 1px 3px #024771    ;
+    font-weight: lighter;
+    font-size: 3em;
   }
   .content > p {
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
+    font-weight: lighter;
+   font-size: 1.3em;
   }
   .content-gif {
     text-align: center;
@@ -50,12 +54,16 @@
   .contentt > h1 {
     text-align: center;
     padding: 50px;
-    color: #024771;
+    text-shadow: 1px 1px 3px #024771    ;
+    font-weight: lighter;
+    font-size: 3em;
   }
   .contentt > p {
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
+    font-weight: lighter;
+   font-size: 1.3em;
   }
   .contentt-gif {
     text-align: center;

@@ -3,7 +3,6 @@ import {
   OnInit, 
   ViewChildren,
   ElementRef,
-  Renderer2,
   QueryList,
   ViewChild
 } from '@angular/core';
@@ -13,8 +12,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { LinkService } from '../../shared/services/link.service';
 import { Meta, Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
-import { HighlightDelayBarrier } from 'blocking-proxy/built/lib/highlight_delay_barrier';
-import { PARAMETERS } from '@angular/core/src/util/decorators';
 
 @Component({
   selector: 'SportSocial-help-center-content',
@@ -23,7 +20,6 @@ import { PARAMETERS } from '@angular/core/src/util/decorators';
 })
 export class HelpCenterContentComponent implements OnInit {
   ptopic =[];
-  mobv = 0;
   topicName="";
   windowNavbar:boolean=true;
   Keywords=[];
@@ -155,9 +151,6 @@ getSeo(id){
        this.topicname = this.route.snapshot.paramMap.get("topicname");
     }
     this.AllTopics();
-    if(window.innerWidth <= 700) {
-      this.mobv = 1;
-    }
   }
   
   setCanonivalURL() {
