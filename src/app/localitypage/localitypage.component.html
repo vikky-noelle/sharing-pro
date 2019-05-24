@@ -21,6 +21,7 @@
   </div>  
 </div>
 </div>
+<img class="spinner" style="height: 70px; width:60px;" src="assets/images/sports-social-loading.gif" *ngIf = "lvdata.length === 0" alt="">
 <div class="container2" *ngFor="let data of lvdata">
     <br><br><br><br><br><br>
   <div class="content" *ngIf = "data.id % 2 === 0">
@@ -57,6 +58,7 @@
    <p>{{ photo.shortDesc }}</p>
   <br><br>
 </div>
+<img style="height:60px; width:60px;" src="assets/images/sports-social-loading.gif" *ngIf = "lvdata.length === 0" alt="">
 <div class="mboxx" *ngFor="let data of lvdata">
   <br>
     <h1>{{data.name}}</h1> 

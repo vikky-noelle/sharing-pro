@@ -193,6 +193,7 @@ p{
   background-color: #fefefe;
   color: rgb(77, 76, 76);
   margin: auto;
+  overflow-x: hidden;
   overflow-y: scroll;
   /* padding: 20px; */
   border: 1px solid rgb(56, 54, 54);

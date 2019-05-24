@@ -49,7 +49,10 @@
 
   <div class="modal">
     <div class="modal-content"> 
-      <div class="modal-header" style="display: inline-flex;" (click)="home(); close();"><h1>Home</h1><img (click)="close();" style="height: 18px;width:18px;z-index: 1;" src="/assets/images/sportsocialcross.png"></div>  
+      <div class="modal-header" style="display: inline-flex;" (click)="home(); close();">
+        <h1>Home</h1>
+        <img (click)="close();" style="margin-right: 2%;height: 18px;width:18px;z-index: 1;" src="/assets/images/sportsocialcross.png">
+      </div>  
       <a *ngFor="let data of topics" routerLink="/Helpcenter/{{data.name}}"
       routerLinkActive="active"> 
       <div (click)="SubtopicsIconChange(data.id); close();">
