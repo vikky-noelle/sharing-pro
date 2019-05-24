@@ -23,7 +23,6 @@ import { SendService } from './shared/services/send.service';
 import { PostService } from './shared/services/post.service';
 import { HttpModule } from '@angular/http';
 import { AddTopicComponent } from './add-topic/add-topic.component';
-import { SubTopicComponent } from './sub-topic/sub-topic.component';
 import { AddQueAnsComponent } from './add-que-ans/add-que-ans.component';
 import { LinkService } from './shared/services/link.service';
 import { ApplicationComponent } from './application/application.component';
@@ -53,6 +52,7 @@ import { FirebaseComponent } from './firebase/firebase.component';
 import { SsMatchCardModule } from './cards/ss-match-card/ss-match-card.module';
 import { NewHeaderModule } from './newheader/newheader.module';
 import { TeamviewComponent } from './teamview/teamview.component';
+import { LocalitypageComponent } from './localitypage/localitypage.component';
 import { SideNavModule } from './side-nav/side-nav.module';
 
 
@@ -61,14 +61,14 @@ import { SideNavModule } from './side-nav/side-nav.module';
     AppComponent,
     PopUpComponent,
     AddTopicComponent,
-    SubTopicComponent,
     AddQueAnsComponent,
     ApplicationComponent,
     LivedataComponent,
     ContactUsComponent,
     OurteamComponent,
     FirebaseComponent,
-    TeamviewComponent
+    TeamviewComponent,
+    LocalitypageComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({appId:'sport-social'}),

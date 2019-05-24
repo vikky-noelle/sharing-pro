@@ -10,7 +10,6 @@ export class TeamviewComponent implements OnInit {
   
   service = [];
   tvdata = [];
-  body=[];
   mview: Number;
   constructor(private post:PostService) { }
 

@@ -1,3 +1,4 @@
+import { LocalitypageComponent } from './../localitypage/localitypage.component';
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/compiler/src/core';
@@ -27,14 +28,19 @@ const App_Route: Routes = [
     {path:"HelpCenter",component:HelpCenterComponent},
     {path:"Helpcenter/:topicname",component:HelpCenterComponent},
     {path: "teamview",component:TeamviewComponent},
+    {path: "localitypage", component:LocalitypageComponent},
     {
         path:"application",
         component:ApplicationComponent  
       },
 
     {
-        path: "HelpCenter/:topicId/:subtopicname/:subtopicId",
+        path: "HelpCenter/:subtopicname",
         component: AddQueAnsComponent
+      },
+      {
+          path: "HelpCenter/:subtopicname/:question",
+          component: AddQueAnsComponent
       },
     {
         path: 'about',
