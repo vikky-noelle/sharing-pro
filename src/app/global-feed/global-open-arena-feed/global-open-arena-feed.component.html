@@ -1,4 +1,4 @@
-<ng-masonry-grid  
+<!-- <ng-masonry-grid  
     [masonryOptions]="{ transitionDuration: '0.4s', gutter: 2 }"
     [useAnimation]="false"
     [useImagesLoaded]="true">
@@ -9,26 +9,23 @@
             <a routerLink="/OpenArena">Open Arena>></a>  
           </h1>
           <div class="matchcard">
-            <sports-social-match-card class="cards"
-              [eventId] = "feed.eventId"
-              [creatorImage] = "feed.creatorImage"
-              [creatorName] = "feed.creatorName"
-              [doerId] = "feed.doerId"
-              [doerName] = "feed.doerName"
-              [doerPic] = "feed.doerPic"
-              [matchImage] = "feed.matchImage"
-              [matchText] = "feed.matchText"
-              [joineeCount] = "feed.joineeCount"
-              [commentCount] = "feed.commentCount"
-              [promoteCount] = "feed.promoteCount"
-              [watchCount] = "feed.watchCount"
-              [matchDate] = "feed.matchDate"
-              [activityDate] = "feed.activityDate"
-              [venueName] = "feed.venueName"
-              [gameName] = "feed.gameName"
-              [activityName] = "feed.activityName"
-              [restrictionCount] = "feed.restrictionCount"   #matchCard>
-            </sports-social-match-card>
+              <sports-social-ss-match-card
+              [coverpic]="feed.coverpic"
+              [userName]="feed.userName"
+              [gamename]="feed.gamename"
+              [startdatetime]="feed.startdatetime"
+              [InsertedDate]="feed.InsertedDate"
+              [Uniquename]="feed.Uniquename"
+              [EventText]="feed.EventText"
+              [city]="feed.city"
+              [Venue_Name]="feed.Venue_Name"
+              [MatchStarterUniqueName]="feed.MatchStarterUniqueName"
+              [Team1Name]="feed.Team1Name"
+              [Team2Name]="feed.Team2Name"
+              [WatchCount]="feed.WatchCount"
+              [PromoteCount]="feed.PromoteCount"
+              [CommentCount]="feed.CommentCount"
+              ></sports-social-ss-match-card>
           </div>
       </ng-container>
       <ng-container *ngIf = "feed.type === 0">
@@ -54,4 +51,65 @@
 </ng-masonry-grid>
 
 
+ -->
 
+ <div class="home">
+    <div class="sidenav">
+        <sports-social-side-nav></sports-social-side-nav>
+    </div>
+      <div class="rightside"> 
+          <div class="topic">
+              <a><h4>Cricket matches</h4></a>
+            </div>  
+        <div class="blog">
+          
+          <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf = "Matcharr.length === 0" alt="">
+            <a>
+              <div class="outdiv" *ngFor = "let feed of Matcharr; let i = index">
+                <div class="card">
+                    <div class="head">
+                          <div class="gamename">
+                              <b>Men's {{feed.gamename}}</b>
+                              <h6>{{feed.Venue_Name}}</h6>
+                            </div>
+                            <div class="result">
+                              <b>Final Result</b><br>
+                              <p> @{{feed.Uniquename}}</p>
+                            </div> 
+                    </div>
+
+                    <div class="cardData">
+                        <div class="team1">
+                            <img src={{feed.Team1Pic}} onerror="this.src='assets/images/user-default.png'">
+                            <p>{{feed.Team1Name}}</p>
+                        </div>
+                        <div class="score"> 
+                            <div class="t1score">
+                              <b style="font-size: .9em;">181/2</b>
+                              <p style="font-size: .6em; color:#7e7d7d;">Overs:20</p>
+                            </div>
+                            <div class="t2score">
+                                <b style="font-size: .9em;">181/2</b>
+                                <p style="font-size: .6em; color:#7e7d7d;">Overs:20</p>
+                              </div>
+                        </div>
+                          <div class="team2">
+                            <img src={{feed.Team2Pic}} onerror="this.src='assets/images/user-default.png'">
+                            <p>{{feed.Team2Name}}</p>
+                          </div>     
+                  </div> 
+                      <div class="matchstatus">
+                          <p>kapil p won by 8 wickets</p>
+                      </div>
+                  <div class="footer">
+                        <button class="playButton" (click)="openAppDownloadPopup()">Prediction</button>
+                        <button class="commentButton" (click)="openAppDownloadPopup()">{{CommentCount}} Talk</button>
+                        <button class="promoteButton" (click)="openAppDownloadPopup()">{{PromoteCount}} Promote</button>
+                        <button class="watchButton" (click)="openAppDownloadPopup()">{{WatchCount}} Watch</button>
+                  </div> 
+                </div>    
+              </div>
+            </a> 
+          </div> 
+      </div>        
+</div>

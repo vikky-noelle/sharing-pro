@@ -53,6 +53,7 @@ import { FirebaseComponent } from './firebase/firebase.component';
 import { SsMatchCardModule } from './cards/ss-match-card/ss-match-card.module';
 import { NewHeaderModule } from './newheader/newheader.module';
 import { TeamviewComponent } from './teamview/teamview.component';
+import { SideNavModule } from './side-nav/side-nav.module';
 
 
 @NgModule({
@@ -67,7 +68,7 @@ import { TeamviewComponent } from './teamview/teamview.component';
     ContactUsComponent,
     OurteamComponent,
     FirebaseComponent,
-    TeamviewComponent,
+    TeamviewComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId:'sport-social'}),
@@ -96,6 +97,7 @@ import { TeamviewComponent } from './teamview/teamview.component';
     BackfooterModule,
     SsMatchCardModule,
     NewHeaderModule,
+    SideNavModule
   ],
   providers: [
     PropertyService,

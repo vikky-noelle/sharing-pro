@@ -79,7 +79,6 @@ export class CarouselComponent implements OnInit {
 
   first(){
     this.one[0].style.color="black";
-    //this.one[0].style.width= "500px";
     this.two[0].style.color="#696969";
     this.three[0].style.color="#696969";
     this.four[0].style.color="#696969";

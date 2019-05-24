@@ -14,6 +14,26 @@ header{
     display: inline-block;
     vertical-align: middle;
 }
+.leftmenu{
+    width:2%;
+    height: 30px;
+    display: inline-block;
+    /* border: 1px solid red; */
+    margin-right: 1%;   
+}
+.menuImageHolder{
+    width:25px;
+    height: 25px;
+    cursor: pointer;
+    /* text-align: left !important; */
+    float:left;
+    margin-top: 10px;
+    
+}
+.menuImageHolder img{
+    width: 100%;
+    height: 100%;
+}
 .brand-image{
     width: 45px;
     height: 45px;
@@ -114,6 +134,7 @@ ul{
     font-weight: 700;
     color: #ffa600;
 }
+
 .dropdown-menu-image-holder{
     position: fixed;
     top:12px;
@@ -194,3 +215,53 @@ button{
 .active{
     color: #ffa600 !important
 }
+
+
+.sidenav {
+    display: block;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    background-color: #a19e9e;
+    opacity: 0.9;
+    filter: alpha(opacity=30);
+  }
+   
+  .sidenav li{
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    font-size:15px;
+    color: #818181;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+  }
+  a{
+      font-size: 15px;
+      text-decoration: none;
+      color:black;
+  }
+  .sidenav a:hover {
+    color:blue;
+  }
+  .sidenav p{
+      text-align:left;
+      font-size: 18px;
+      color: #000;
+      margin-top:5px;
+      margin-left:10px;
+      margin-bottom: 5px;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+  }

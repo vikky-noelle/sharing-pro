@@ -21,6 +21,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   isMenuInDropdown: boolean = false;
   isSearchInDropdown: boolean = false;
   isDropdownIconclicked: boolean = false;
+  sidenav:boolean=false;
   searchButton:boolean=false;
   @ViewChild('header') header;
   constructor(
@@ -56,6 +57,12 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     }else{
       this.searchButton=true;
     }
+  }
+  openNav(){
+    this.sidenav=true;
+  }
+  closeNav(){
+    this.sidenav=false;
   }
 
   openDropdown() {

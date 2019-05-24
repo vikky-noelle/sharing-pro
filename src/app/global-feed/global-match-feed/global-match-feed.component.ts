@@ -1,9 +1,5 @@
 import { Component, OnInit, ViewEncapsulation, Renderer2, HostListener, OnDestroy } from '@angular/core';
-import { PostService } from '../../shared/services/post.service';
-import { GetService } from '../../shared/services/get.service';
-import { LocationService } from '../../shared/services/location.service';
-
-import { Masonry, MasonryGridItem } from 'ng-masonry-grid';
+import { Masonry } from 'ng-masonry-grid';
 import { ISubscription, Subscription } from 'rxjs/Subscription';
 import { MatchDataService } from '../../shared/services/match-data.service';
 import { Title, Meta } from '@angular/platform-browser';
@@ -11,7 +7,6 @@ import { Http } from '@angular/http';
 import { Observable } from 'rxjs';
 import { TimeService } from '../../shared/services/time.service';
 import { Router } from '@angular/router';
-import { timer } from 'rxjs/observable/timer';
 
 @Component({
   selector: 'sports-social-global-match-feed',
@@ -25,11 +20,13 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
   metakey="Open Arena,Sports Social,Sports Arena nearby,Sports events nearby,Sports Activities nearby,Sports Grounds nearby, Connect to Sports players nearby,Find Sports players nearby";
   metades="See What's going around you in sports in the open Arena. Use Arena to find,connect,play, follow matches, players, academies, coaches and events in your favorite sport in your locality and around the world | stay connected to your sports world.";
   Matcharr = [];
+  gendercheck="";
 
-  posturl='https://test.sportsocial.in/poc/newfeed';
-  urlObj=[{ userid: "69",
+  // posturl='https://test.sportsocial.in/poc/newfeed';
+  posturl='http://34.245.85.57:3000/poc/newfeed';
+  urlObj=[{ userid: "112",
             page: "1",
-            timestamp: "1557567104000",
+            timestamp: "1558615054000",
             token: "ndsjndsjknjksnndnjkks"
       }];
   prevPageNo: number = 0;
@@ -83,9 +80,15 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
           Team2Name:body[i].Team2Name,
           WatchCount:body[i].WatchCount,
           PromoteCount:body[i].PromoteCount,
-          CommentCount:body[i].CommentCount
+          CommentCount:body[i].CommentCount,
+  
         });
-        console.log("this is feed id:",this.Matcharr[i].coverpic);
+      console.log("thisis imageof open arena",this.Matcharr[i].coverpic);
+        //  this.gendercheck=this.Matcharr[i].gender;
+        //    if(this.gendercheck=="Male"){
+        //   var HeShe= this.gendercheck.replace(this.Matcharr[i].gender,"Men's");
+        //   console.log(HeShe);
+        // }
       }
     })
   }

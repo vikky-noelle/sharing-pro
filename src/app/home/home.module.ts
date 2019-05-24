@@ -7,6 +7,7 @@ import { GlobalOpenArenaFeedModule } from '../global-feed/global-open-arena-feed
 import { FooterModule } from '../footer/footer.module';
 import { HomeComponent } from './home.component';
 import { HomeRouter } from './home.router';
+import { SideNavModule } from '../side-nav/side-nav.module';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { HomeRouter } from './home.router';
     NavigationBarModule,
     GlobalOpenArenaFeedModule,
     FooterModule,
-    HomeRouter
+    HomeRouter,
+    SideNavModule
   ],
   declarations: [
     HomeComponent,

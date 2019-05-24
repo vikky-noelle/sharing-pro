@@ -25,6 +25,7 @@ export class SsMatchCardComponent implements OnInit {
   @Input() WatchCount:string;
   @Input() PromoteCount:string;
   @Input() CommentCount:string;
+  @Input() gender:string;
 
   constructor(private router:Router) { }
 

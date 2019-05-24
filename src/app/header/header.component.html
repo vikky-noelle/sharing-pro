@@ -1,8 +1,26 @@
 <header #header>
+  <!-- <div class="leftmenu">
+      <ul>
+          <li class="menuImageHolder">
+              <img src="assets/images/sports-social-menu.png" role="button" (click)="openNav()" alt="sports-social-menu">
+            </li>
+          </ul>
+  </div>
+  <div id="mySidenav" *ngIf="sidenav" class="sidenav">
+      <a  class="closebtn" (click)="closeNav()">&times;</a><hr>
+      <ul class="list-block">
+        <li><a routerLink="/">Home</a></li>
+      </ul>
+      <hr class="line">
+      <p class="popular"><b>POPULAR TOPICS</b></p>
+      <ul class="list-block">  
+        <li (click)="closeNav()"></li>
+      </ul>
+    </div> -->
   <div class="brand">
     <a routerLink="/">
       <div class="brand-image">
-        <img src="/assets/images/sports-social-logo.png" alt="Sport-Social-logo">
+        <img src="assets/images/sports-social-logo.png" alt="Sport-Social-logo">
       </div>
       <div class="brand-title">
         <span>Sports</span>
@@ -32,6 +50,7 @@
       <li>
           <a routerLink="/teamview" routerLinkActive="active">Team</a> 
       </li>
+      
       
     </ul>
   </div>
