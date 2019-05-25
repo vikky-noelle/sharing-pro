@@ -2,22 +2,19 @@
 <!-- <br><br><br> -->
 <div class="dview">
 <div class="container" style="background-image: url('/assets/images/sportsociallocality.png'); background-size: 100% 100%;">
-  <div class="centered-div"></div>
+  
   <div class="centered-div">
     <div class="innerbox"><h1>Sports Social</h1>
-    <br><br>
-     <p>{{ photo.shortDesc }}</p>
-    <br><br>
+    <br>
+     <p>{{ photo }}</p>
+    <br>
     <button>Create</button></div>
   </div>
-  <!-- <div class="centered-div"></div>   -->
-  <div class="centered-div"></div>
-  <div class="centered-div"></div>
-  <div class="centered-div">
-    <div class="innerbox1"><h1>{{ photo.name }}</h1>
-    <br><br>
-     <p>{{ photo.shortDesc }}</p>
-    <br><br>
+  
+  <div class="centered-div1">
+    <div class="innerbox1"><h1>Locality</h1>
+    <br>
+     <p>{{ photo }}</p>
   </div>  
 </div>
 </div>
@@ -46,14 +43,14 @@
 <div class="mview">
     <div class="mbox"><h1>Sports Social</h1>
       <br><br>
-       <p>{{ photo.shortDesc }}</p>
+       <p>{{ photo }}</p>
       <br><br>
       <button>Create</button></div>
       <br><br>
 <img src="/assets/images/sportsociallocality1.png">
-<div class="mbox"><h1>{{photo.name}}</h1>
+<div class="mbox"><h1>Locality</h1>
   <br><br>
-   <p>{{ photo.shortDesc }}</p>
+   <p>{{ photo }}</p>
   <br><br>
 </div>
 <img style="height:60px; width:60px;" src="assets/images/sports-social-loading.gif" *ngIf = "lvdata.length === 0" alt="">

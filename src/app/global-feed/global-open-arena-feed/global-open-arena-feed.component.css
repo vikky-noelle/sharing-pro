@@ -22,7 +22,7 @@
 }
 .blog{
     width: 100%;
-    height: 370px;
+    height: 340px;
     /* border: 1px solid red; */
     overflow: hidden;
     overflow-x: scroll;
@@ -91,124 +91,113 @@
 
 .head{
     width: 100%;
-    height: 32px;
+    height: 34px;
     border-bottom: 1px solid #dddddd;
-    margin-bottom: 8%;
 }
-.head>div{
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 0.1%;
+.gamename {
+    height: 100%;
+    width: 60%;
+    margin-left: 2%;
+    float:left;
 }
-.result ,.gamename>b{
-    margin-left: 1%;
+.result {
+    height: 100%;
+    width: 30%;
+    margin-right: 2%;
+    float: right;
+}
+.result b,.result p {
+    float: right;
+}
+.result b {
     font-size: .9em;
 }
-.gamename>h6{
-    width: 20%;
-    margin-left: 1%;
-    font-size: .6em;
-    font-weight: bold;
-    color: #7e7d7d;
+.gamename b {
+    font-size: 1em;
 }
-.result{
-    float: right;
-    margin-right: 1%;
+.gamename p {
+    margin-top: -0.5%;
+    font-size: 0.7em;
+    font-weight: lighter;
 }
-.result>p{
-    font-size: .8em;
+.result p {
+    margin-top: -0.5%;
+    font-size: 0.8em;
     font-weight: bold;
-    color: #7e7d7d;
+    color: #5f5e5e;
 }
 
 .cardData{
-    width: 99%;
-    height: 80px;
-}
-.cardData>div{
-    display: inline-block;
-    vertical-align: top !important;
-}
-.team1{
-    width: 32%;
     float: left;
+    width: 100%;
+    height: 40px;
 }
-
+.team1 {
+    width:30%;
+}
+.t1score {
+    width: 20%;
+}
+.t2score {
+    width: 20%;
+}
+.team2 {
+    width:30%;
+}
+.team1,.team2 {
+    text-align: center;
+}
+.t1score,.t2score {
+    text-align: center;
+    margin-top: 7%;
+}
 .team1,.team2>p{
     text-align: center;
 }
 .team1>img{
     border-radius: 50%;
-    border-top-left-radius: 50% 50%;
-    border-top-right-radius: 50% 50%;
-    border-bottom-right-radius: 50% 50%;
-    border-bottom-left-radius: 50% 50%;
-    height: 55px;
+    height: 60px;
     width: 60px;
 }
-.score{
-    width: 25%;
-    margin-top: 4%;
-}
-.score>div{
-    display: inline-block;
-    width: 16%;
-}
-.t1score{
-    float: left;
-}
-.t2score{
-    float: right;
-}
-.team2{
-    width: 34%;
-    float: right;
-}
-
- .team2>img{
-    border-radius: 50%;
-    border-top-left-radius: 50% 50%;
-    border-top-right-radius: 50% 50%;
-    border-bottom-right-radius: 50% 50%;
-    border-bottom-left-radius: 50% 50%;
-    height: 55px;
-    width: 60px;
-    margin-left: 25%;
+.team2>img{
+   border-radius: 50%;
+   height: 60px;
+   width: 60px;
 }
 
 .card{
+    display: grid;
     width: 100%;
-    height: 300px;
+    height: 280px;
     border: 1px solid #ece9e9;
     margin-bottom: 2%;
     border-radius: 2%;
     box-shadow: 5px 5px 10px #dddddd;
 }
 .matchstatus{
-    width: 99%;
-    height: 90px;
-    /* border:  1px solid blue; */
+    width: 100%;
+    height: 40px;
     margin-top: 5%;
 }
 .matchstatus>p{
     font-weight: bolder;
     text-align: center;
 }
-.footer
-{
+.footer{
+    float: left;
     border-top: 1px solid #d3d1d1;
     width: 100%;
     height: 30px;
 }
-.footer>button{
-    margin-left: 10%;
+.Button{
     border: none;
+    width: 25%;
     cursor: pointer;
     outline: none;
     margin-top: 2%;
     text-align: center;
     font-size: 1em;
-    color: #7e7d7d;
+    color: #686868;
     background-color: transparent;
 }
 

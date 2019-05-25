@@ -1,18 +1,23 @@
 .container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    height: 900px;
-    
+    height: 900px;    
   }
-  .dview{
-      margin-top: 4%;
-  }
-  .centered-div {
-      text-align: left;
-  }
-  .container img {
-    width:100%;
-    height: 100%;
+.container img {
+   width:100%;
+   height: 100%;
+}
+.innerbox {
+    width: 35%;
+    height: auto;
+    margin: 0 auto;
+    margin-left: 40%;
+    padding: 10px;
+    position: relative;
+}
+.innerbox1 {
+    padding: 30px;
+    margin-top: 11%;
+    float: right;
+    width: 40%;
 }
 .centered-div h1 {
     text-shadow: 1px 1px 3px #024771    ;
@@ -35,31 +40,34 @@
     width: 50%
 }
 
+.centered-div1 h1 {
+    text-shadow: 1px 1px 3px #024771    ;
+    font-weight: lighter;
+    font-size: 3em;
+}
+.centered-div1 p {
+    font-weight: lighter;
+   font-size: 1.3em;
+}
+
 .centered-div button:hover {
     opacity: 1;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.innerbox {
-    padding-top: 5%;
-    margin-left: 40%;
-    width: 40%;
-    height: 100px;
-}
-.innerbox1 {
-    padding-top: 7%;
-    float: right;
-    margin-left: 34%;
-    width: 40%;
-    height: 100px;
-}
+
+
 @media screen and (min-width: 650px) and (max-width:800px) {
     .innerbox {
-        padding-top: 7%;
+        padding-top: 3%;
         margin-left: 37%;
-        width: 40%;
+        width: 43%;
         height: 100px;
     }
+    .innerbox1 {
+        margin-top: 40%;
+    }
 }
+
 .container2 {
     width:100%;
     height: 640px;
