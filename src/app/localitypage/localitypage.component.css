@@ -4,6 +4,9 @@
     height: 900px;
     
   }
+  .dview{
+      margin-top: 4%;
+  }
   .centered-div {
       text-align: left;
   }
