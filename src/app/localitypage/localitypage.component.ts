@@ -1,5 +1,5 @@
 import { PostService } from './../shared/services/post.service';
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'sports-social-localitypage',
@@ -7,10 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./localitypage.component.css']
 })
 export class LocalitypageComponent implements OnInit {
-  @Input() photo: string;
+  
   mview;
   service=[];
   lvdata = [];
+  photo;
   constructor(private post:PostService) { }
 
   ngOnInit() {
@@ -29,15 +30,10 @@ export class LocalitypageComponent implements OnInit {
       (response) => {
       for(const i in response){
         if(+i == 0) {
-          this.photo = response[i].shortDesc;
+          this.photo = response[i];
         }
         else {
-        this.lvdata.push({
-          id: response[i].id,
-          name: response[i].name,
-          icon: response[i].icon,
-          shortDesc: response[i].shortDesc,
-        });
+        this.lvdata.push(response[i]);
         }  
       }  
     },

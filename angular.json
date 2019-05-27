@@ -22,7 +22,9 @@
               "src/firebase-messaging-sw.js", 
               "src/manifest.json"
             ],
-            "styles": [],
+            "styles": [
+              "src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {

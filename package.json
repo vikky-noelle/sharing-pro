@@ -40,7 +40,6 @@
     "@nguniversal/module-map-ngfactory-loader": "^6.1.0",
     "@types/googlemaps": "^3.30.19",
     "angularfire2": "^5.1.2",
-    "bootstrap": "^3.4.1",
     "contributor": "^0.1.25",
     "core-js": "^2.5.4",
     "firebase": "^5.9.4",
