@@ -1,3 +1,11 @@
+ 
+ .close {
+    float: right; 
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: hsl(0, 0%, 100%, 0.5);
+ }
  .sidenav{
     margin-top: 0%;
     width: 18%;
@@ -47,7 +55,7 @@
   }
   .msidenav{
       display: none;
-      margin-top: 50%;
+      margin-top: 10%;
   }
   .msidenav button {
       background-color: #024771;
@@ -62,15 +70,29 @@
       height: 11px;
   }
   .modal{
+      text-align: center;
+      position: fixed;
       display: none;
-      z-index: 10;
-      width: 100%;
-      height: 300px;
+      z-index: 15;
+      width: 60%;
+      border-radius: 5px;
       box-shadow: 2px 2px 4px #bbbbbb;
-      background: rgba(171, 205, 239, 0.3) /* Blue background with 30% opacity */
+      background: rgba(58, 58, 58, 0.7) /* Blue background with 30% opacity */
     }
-
-  @media screen and (min-width: 200px) and (max-width: 850px){
+    .modal a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.7em;
+    }
+    .modal img{
+        padding: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    .modal div{
+        padding: 20px;
+    }
+  @media screen and (min-width: 600px) and (max-width: 950px){
       .sidenav{
           display:none;
       }
@@ -78,4 +100,25 @@
           display: block;
       }
   }
-  
+  @media screen and (min-width: 200px) and (max-width: 600px){
+    .modal {
+        width: 70%;
+    }
+    .sidenav{
+        display:none;
+    }
+    .msidenav{
+        display: block;
+    }
+    .modal div{
+        padding: 10px;
+    }
+    .modal a{
+        font-size: 1em;
+    }
+    .modal img {
+        padding: 10px;
+        width: 30px;
+        height: 30px;
+    }
+}

@@ -22,8 +22,10 @@ export class SideNavComponent implements OnInit {
   ];
   
   open() {
-    console.log('working');
     this.resnav[0].style.display="block";
+  }
+  close() {
+    this.resnav[0].style.display="none";
   }
   onClick(item) {
     this.selectedItem = item;
