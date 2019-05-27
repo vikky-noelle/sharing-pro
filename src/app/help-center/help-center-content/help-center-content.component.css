@@ -190,14 +190,14 @@ p{
   backface-visibility: hidden;
   border-radius: 5px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);
-  background-color: #fefefe;
+  background-color: white;
   color: rgb(77, 76, 76);
   margin: auto;
   overflow-x: hidden;
   overflow-y: scroll;
   /* padding: 20px; */
   border: 1px solid rgb(56, 54, 54);
-  width: 80%;
+  width: 85%;
   height: 70%;
 }
 .modal-content div {
@@ -207,6 +207,7 @@ p{
   margin-left:10%;
 }
 .modal-header {
+  border-bottom: 1px solid silver;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -223,11 +224,19 @@ p{
 
 /* The Close Button */
 .dropbtn {
-  width: 90%;
-  margin-left: 5%;
-  background-color: rgb(212, 211, 211);
+  width: 100%;
+  color: white;
+  background-image: url('/assets/images/sportsocialteamviewheader.jpg');
   font-weight: lighter;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.dropbtn img{
+  float: right;
+  padding: 3px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%; 
+  background-color: white;
 }
 
 

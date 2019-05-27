@@ -39,14 +39,14 @@
 <div class="mv">
  <p style="font-size: 15px;">Get Answer for the most common question and learn to use "Sports Social" like Champ.</p>
  <h1 
- (click)="showw()" class="dropbtn">Menu <span>+</span>
+ (click)="showw()" class="dropbtn">&nbsp;Menu <img src="/assets/images/sportsocialplus.png">
 </h1>
 
   <div class="modal">
     <div class="modal-content"> 
       <div class="modal-header" style="display: inline-flex;" (click)="home(); close();">
         <h1>Home</h1>
-        <img (click)="close();" style="margin-right: 2%;height: 18px;width:18px;z-index: 1;" src="/assets/images/sportsocialcross.png">
+        <img (click)="close();" style="margin-top: 1.8%;margin-right: 3%;height: 28px;width:28px;z-index: 1;" src="/assets/images/sportsocialcross.png">
       </div>  
       <a *ngFor="let data of topics" routerLink="/Helpcenter/{{data.name}}"
       routerLinkActive="active"> 

@@ -60,29 +60,22 @@
         <sports-social-side-nav></sports-social-side-nav>
     </div>
       <div class="rightside"> 
-<<<<<<< HEAD
         <div class="leftarrow">
         </div>
 
           <!-- <div class="topic">
-=======
-          <div class="topic">
->>>>>>> 5fb1dbf026012d5780aff4be4ee54338e5e9c087
               <a><h4>Cricket matches</h4></a>
             </div>   -->
         <div class="blog">
           <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf = "Matcharr.length === 0" alt="">
             <a>
               <div class="outdiv" *ngFor = "let feed of Matcharr; let i = index">
+                
                 <div class="card">
                     <div class="head">
                           <div class="gamename">
                               <b>Men's {{feed.gamename}}</b>
-<<<<<<< HEAD
                               <p>{{feed.Venue_Name | slice:0:40}}...</p>
-=======
-                              <h6>{{feed.Venue_Name}}</h6>
->>>>>>> 5fb1dbf026012d5780aff4be4ee54338e5e9c087
                             </div>
                             <div class="result">
                               <b>Final Result</b><br>
@@ -91,33 +84,32 @@
                     </div>
 
                     <div class="cardData">
-                        <div class="team1">
-                            <img src={{feed.Team1Pic}} onerror="this.src='assets/images/user-default.png'">
-                            <p>{{feed.Team1Name}}</p>
+                        <div class="cardData team1">
+                           <img src={{feed.Team1Pic}} onerror="this.src='assets/images/user-default.png'">
+                           <p>{{feed.Team1Name}}</p>    
                         </div>
-                        <div class="score"> 
-                            <div class="t1score">
-                              <b style="font-size: .9em;">181/2</b>
-                              <p style="font-size: .6em; color:#7e7d7d;">Overs:20</p>
-                            </div>
-                            <div class="t2score">
-                                <b style="font-size: .9em;">181/2</b>
-                                <p style="font-size: .6em; color:#7e7d7d;">Overs:20</p>
-                              </div>
+                        <div class="cardData t1score">
+                            <b style="font-size: 1.2em;">181/2</b>
+                            <p style="font-size: .6em; color:#7e7d7d;">Overs:20</p>
                         </div>
-                          <div class="team2">
-                            <img src={{feed.Team2Pic}} onerror="this.src='assets/images/user-default.png'">
-                            <p>{{feed.Team2Name}}</p>
-                          </div>     
+                        <div class="cardData t2score">
+                           <b style="font-size: 1.2em;">181/2</b>
+                           <p style="font-size: .6em; color:#7e7d7d;">Overs:20</p>
+                        </div>
+                        <div class="cardData team2">
+                           <img src={{feed.Team2Pic}} onerror="this.src='assets/images/user-default.png'">
+                           <p>{{feed.Team2Name}}</p>
+                        </div>     
                   </div> 
+                  
                       <div class="matchstatus">
                           <p>kapil p won by 8 wickets</p>
                       </div>
                   <div class="footer">
-                        <button class="playButton" (click)="openAppDownloadPopup()">Prediction</button>
-                        <button class="commentButton" (click)="openAppDownloadPopup()">{{CommentCount}} Talk</button>
-                        <button class="promoteButton" (click)="openAppDownloadPopup()">{{PromoteCount}} Promote</button>
-                        <button class="watchButton" (click)="openAppDownloadPopup()">{{WatchCount}} Watch</button>
+                        <button class="footer Button" (click)="openAppDownloadPopup()">Prediction</button>
+                        <button class="footer Button" (click)="openAppDownloadPopup()">{{CommentCount}} Talk</button>
+                        <button class="footer Button" (click)="openAppDownloadPopup()">{{PromoteCount}} Promote</button>
+                        <button class="footer Button" (click)="openAppDownloadPopup()">{{WatchCount}} Watch</button>
                   </div> 
                 </div>    
               </div>
