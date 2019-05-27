@@ -58,12 +58,13 @@
         <sports-social-side-nav></sports-social-side-nav>
     </div>
       <div class="rightside"> 
-        <br>
-          <div class="topic">
+        <div class="leftarrow">
+        </div>
+
+          <!-- <div class="topic">
               <a><h4>Cricket matches</h4></a>
-            </div>  
+            </div>   -->
         <div class="blog">
-          
           <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf = "Matcharr.length === 0" alt="">
             <a>
               <div class="outdiv" *ngFor = "let feed of Matcharr; let i = index">
@@ -111,6 +112,8 @@
                 </div>    
               </div>
             </a> 
+          </div>
+          <div class="rightarrow">
           </div> 
       </div>        
 </div>

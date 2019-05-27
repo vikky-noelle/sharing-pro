@@ -6,4 +6,15 @@
              <a routerLink>{{sports.title}}</a>
         </div>
 </div>
+<div class="msidenav">
+      <button class="mbtn"  (click)="open();">Sports Menu  |  <img src="/assets/images/sportsocialtvicon.png"></button>
+      <div class="modal">
+      <a routerLink="" class="homeicon"><img src="assets/images/sports-social-home-clicked.png"></a>
+<div class="data" *ngFor="let sports of tempSports" (click)="onClick(sports)" 
+[ngClass]="{'selected': sports == selectedItem }">
+     
+       <a routerLink>{{sports.title}}</a>
+  </div>
+</div>
+</div>
 

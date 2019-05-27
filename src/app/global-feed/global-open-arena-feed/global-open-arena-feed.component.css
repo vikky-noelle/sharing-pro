@@ -15,18 +15,40 @@
     height: 600px;
 }
 .rightside{
-    /* border: 1px solid orange; */
-    width: 81%;
-    height: 500px;
-    /* overflow-x: hidden; */
+    margin-top: 3%;
+    width: 82%;
+    height: 400px;
     z-index: 10;
 }
 .blog{
-    width: 100%;
+    float: left;
+    width: 95%;
     height: 300px;
-    overflow: hidden;
     overflow-x: scroll;
     white-space: nowrap !important;
+}
+.blog::-webkit-scrollbar {
+    display: none;
+}
+.leftarrow,.rightarrow {
+    margin-top: 10%;
+    float: left;
+    width: 2%;
+    border-radius: 50%;
+    height: 6%;
+    background-size: 100% 100%; 
+}
+.leftarrow,.rightarrow:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #ecebeb;
+}
+.leftarrow {
+    margin-left: 1%;
+    background-image: url('/assets/images/sportsocialhomearrow1.png');
+}
+.rightarrow {
+    /* margin-left: 1%; */  
+    background-image: url('/assets/images/sportsocialhomearrow.png');
 }
 .topic{
     margin-left: 2%;
@@ -37,7 +59,7 @@
 }
 .outdiv{
     width: 31%;
-    margin: 1% 0.9% 0% 0.9%;
+    margin: 1% 1.1% 0% 1.1%;
     border-radius: 2%;
     vertical-align: top;
 }
@@ -200,8 +222,21 @@
     color: #686868;
     background-color: transparent;
 }
-
-@media screen and (min-width:200px) and (max-width:800px){
+@media screen and (min-width: 700px) and (max-width: 950px){
+    .outdiv {
+        width: 47%;
+    }
+    .rightside{
+        margin-top: 7%;
+    }
+    .leftarrow,.rightarrow{
+        margin-top: 16%;
+    }
+    .card {
+        height: 230px;
+    }
+}
+@media screen and (min-width:200px) and (max-width:700px){
     .team1,.team2>p{
         font-size: 0.9em;
     }

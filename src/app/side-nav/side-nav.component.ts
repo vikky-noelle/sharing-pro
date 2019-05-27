@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideNavComponent implements OnInit {
   selectedItem;
-
+  resnav=document.getElementsByClassName('modal') as HTMLCollectionOf<HTMLElement>;
   constructor() { }
 
   tempSports = [
@@ -21,7 +21,10 @@ export class SideNavComponent implements OnInit {
     // {id: 60, title: 'Volleyball',icon:'/assets/images/volleyball.png'},
   ];
   
-
+  open() {
+    console.log('working');
+    this.resnav[0].style.display="block";
+  }
   onClick(item) {
     this.selectedItem = item;
   }
