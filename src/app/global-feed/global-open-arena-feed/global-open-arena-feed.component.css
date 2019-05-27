@@ -21,9 +21,16 @@
     z-index: 10;
 }
 .blog{
+<<<<<<< HEAD
     float: left;
     width: 95%;
     height: 300px;
+=======
+    width: 100%;
+    height: 370px;
+    /* border: 1px solid red; */
+    overflow: hidden;
+>>>>>>> 5fb1dbf026012d5780aff4be4ee54338e5e9c087
     overflow-x: scroll;
     white-space: nowrap !important;
 }
@@ -113,71 +120,83 @@
 
 .head{
     width: 100%;
-    height: 34px;
+    height: 32px;
     border-bottom: 1px solid #dddddd;
+    margin-bottom: 8%;
 }
-.gamename {
-    height: 100%;
-    width: 60%;
-    margin-left: 2%;
-    float:left;
+.head>div{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0.1%;
 }
-.result {
-    height: 100%;
-    width: 30%;
-    margin-right: 2%;
-    float: right;
-}
-.result b,.result p {
-    float: right;
-}
-.result b {
+.result ,.gamename>b{
+    margin-left: 1%;
     font-size: .9em;
 }
-.gamename b {
-    font-size: 1em;
-}
-.gamename p {
-    margin-top: -0.5%;
-    font-size: 0.7em;
-    font-weight: lighter;
-}
-.result p {
-    margin-top: -0.5%;
-    font-size: 0.8em;
+.gamename>h6{
+    width: 20%;
+    margin-left: 1%;
+    font-size: .6em;
     font-weight: bold;
-    color: #5f5e5e;
+    color: #7e7d7d;
+}
+.result{
+    float: right;
+    margin-right: 1%;
+}
+.result>p{
+    font-size: .8em;
+    font-weight: bold;
+    color: #7e7d7d;
 }
 
 .cardData{
+    width: 99%;
+    height: 80px;
+}
+.cardData>div{
+    display: inline-block;
+    vertical-align: top !important;
+}
+.team1{
+    width: 32%;
     float: left;
-    width: 100%;
-    height: 40px;
 }
-.team1 {
-    width:30%;
-}
-.t1score {
-    width: 20%;
-}
-.t2score {
-    width: 20%;
-}
-.team2 {
-    width:30%;
-}
-.team1,.team2 {
-    text-align: center;
-}
-.t1score,.t2score {
-    text-align: center;
-    margin-top: 7%;
-}
+
 .team1,.team2>p{
     text-align: center;
 }
 .team1>img{
     border-radius: 50%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    height: 55px;
+    width: 60px;
+}
+.score{
+    width: 25%;
+    margin-top: 4%;
+}
+.score>div{
+    display: inline-block;
+    width: 16%;
+}
+.t1score{
+    float: left;
+}
+.t2score{
+    float: right;
+}
+.team2{
+    width: 34%;
+    float: right;
+}
+
+ .team2>img{
+    border-radius: 50%;
+<<<<<<< HEAD
     height: 45px;
     width: 45px;
 }
@@ -185,41 +204,64 @@
    border-radius: 50%;
    height: 45px;
    width: 45px;
+=======
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    height: 55px;
+    width: 60px;
+    margin-left: 25%;
+>>>>>>> 5fb1dbf026012d5780aff4be4ee54338e5e9c087
 }
 
 .card{
-    display: grid;
     width: 100%;
+<<<<<<< HEAD
     height: 250px;
+=======
+    height: 300px;
+>>>>>>> 5fb1dbf026012d5780aff4be4ee54338e5e9c087
     border: 1px solid #ece9e9;
     margin-bottom: 2%;
     border-radius: 2%;
     box-shadow: 3px 3px 5px #ecebeb;
 }
 .matchstatus{
+<<<<<<< HEAD
     width: 100%;
     height: 30px;
+=======
+    width: 99%;
+    height: 90px;
+    /* border:  1px solid blue; */
+>>>>>>> 5fb1dbf026012d5780aff4be4ee54338e5e9c087
     margin-top: 5%;
 }
 .matchstatus>p{
     font-weight: bolder;
     text-align: center;
 }
-.footer{
-    float: left;
+.footer
+{
     border-top: 1px solid #d3d1d1;
     width: 100%;
     height: 30px;
 }
-.Button{
+.footer>button{
+    margin-left: 10%;
     border: none;
-    width: 25%;
     cursor: pointer;
     outline: none;
     margin-top: 2%;
     text-align: center;
+<<<<<<< HEAD
     font-size: 0.9em;
     color: #686868;
+=======
+    font-size: 1em;
+    color: #7e7d7d;
+>>>>>>> 5fb1dbf026012d5780aff4be4ee54338e5e9c087
     background-color: transparent;
 }
 @media screen and (min-width: 700px) and (max-width: 950px){
