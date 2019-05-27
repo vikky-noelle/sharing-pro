@@ -60,7 +60,7 @@
         <sports-social-side-nav></sports-social-side-nav>
     </div>
       <div class="rightside"> 
-        <div class="leftarrow">
+        <div class="leftarrow" (click)="lscroll();">
         </div>
 
           <!-- <div class="topic">
@@ -69,7 +69,7 @@
         <div class="blog">
           <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf = "Matcharr.length === 0" alt="">
             <a>
-              <div class="outdiv" *ngFor = "let feed of Matcharr; let i = index">
+              <div class="outdiv" *ngFor = "let feed of Matcharr; let i = index" #target>
                 
                 <div class="card">
                     <div class="head">
@@ -115,7 +115,7 @@
               </div>
             </a> 
           </div>
-          <div class="rightarrow">
+          <div class="rightarrow" (click)="rscroll();">
           </div> 
       </div>        
 </div>

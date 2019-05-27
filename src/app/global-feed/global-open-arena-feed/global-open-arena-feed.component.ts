@@ -2,8 +2,8 @@ import {
   Component,
   OnInit,
   ViewEncapsulation,
-  ViewChildren,
   Renderer2,
+  ElementRef,
   HostListener,
   ViewChild,
   OnDestroy
@@ -46,7 +46,8 @@ export class GlobalOpenArenaFeedComponent implements OnInit, OnDestroy {
             timestamp: "1558615054000",
             token: "ndsjndsjknjksnndnjkks"
       }];
-
+  @ViewChild('blog') blog:ElementRef;
+  @ViewChild('target') target:ElementRef;
   constructor(
     private  matchData: MatchDataService,
     private newsData: NewsService,
@@ -133,5 +134,10 @@ export class GlobalOpenArenaFeedComponent implements OnInit, OnDestroy {
       this._removeFirstItemSubscription.unsubscribe();
     }
   }
-
+  lscroll(){
+    this.blog.nativeElement.scrollLeft -=this.target.nativeElement.clientWidth;
+  }
+  rscroll(){
+    this.blog.nativeElement.scrollLeft +=this.target.nativeElement.clientWidth;
+  }
 }

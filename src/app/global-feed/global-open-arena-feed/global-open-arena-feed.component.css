@@ -24,8 +24,13 @@
     float: left;
     width: 95%;
     height: 300px;
+    scroll-behavior: smooth;
     overflow-x: scroll;
     white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-snap-destination: 0% 100%;
+    scroll-snap-points-x: repeat(100%);
 }
 .blog::-webkit-scrollbar {
     display: none;
@@ -58,6 +63,7 @@
     display: inline-block;
 }
 .outdiv{
+    scroll-snap-align: start;
     width: 31%;
     margin: 1% 1.1% 0% 1.1%;
     border-radius: 2%;
