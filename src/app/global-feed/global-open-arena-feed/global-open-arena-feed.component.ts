@@ -40,7 +40,7 @@ export class GlobalOpenArenaFeedComponent implements OnInit, OnDestroy {
   gendercheck="";
 
   // posturl='https://test.sportsocial.in/poc/newfeed';
-  posturl='http://34.245.85.57:3000/poc/newfeed';
+  posturl='https://test.sportsocial.in/poc/newfeed';
   urlObj=[{ userid: "112",
             page: "1",
             timestamp: "1558615054000",

@@ -14,13 +14,13 @@ import { ApplicationComponent } from '../application/application.component';
 import { LivedataComponent } from '../livedata/livedata.component';
 import { ContactUsComponent } from '../contact-us/contact-us.component';
 import { OurteamComponent } from '../ourteam/ourteam.component';
-import { FirebaseComponent } from '../firebase/firebase.component';
+// import { FirebaseComponent } from '../firebase/firebase.component';
 import { TeamviewComponent } from '../teamview/teamview.component';
 
 
 const App_Route: Routes = [
     
-    {path:"firebase",component:FirebaseComponent},
+    // {path:"firebase",component:FirebaseComponent},
     {path:"ourTeam",component:OurteamComponent},
     {path:"contactus",component:ContactUsComponent},
     {path:"live",component:LivedataComponent},

@@ -19,7 +19,6 @@
             "assets": [
               "src/assets",
               "src/Sports-Social.ico",
-              "src/firebase-messaging-sw.js", 
               "src/manifest.json"
             ],
             "styles": [
