@@ -33,14 +33,14 @@ import { AboutModule } from './about/about.module';
 import { FooterModule } from './footer/footer.module';
 import { HelpCenterModule } from './help-center/help-center.module';
 import { SeoService } from './shared/services/seo.service';
-import { MessagingService } from './shared/services/messaging.service';
-import { AngularFireDatabaseModule } from '@angular/fire/database';
-import { AngularFireMessagingModule } from '@angular/fire/messaging';
-import { AngularFireModule } from '@angular/fire';
-import { environment } from '../environments/environment';
-import { AngularFireAuthModule } from '@angular/fire/auth';
+// import { MessagingService } from './shared/services/messaging.service';
+// import { AngularFireDatabaseModule } from '@angular/fire/database';
+// import { AngularFireMessagingModule } from '@angular/fire/messaging';
+// import { AngularFireModule } from '@angular/fire';
+// import { environment } from '../environments/environment';
+// import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AsyncPipe } from '@angular/common';
-import {AngularFirestoreModule} from 'angularfire2/firestore';
+// import {AngularFirestoreModule} from 'angularfire2/firestore';
 import { LivedataComponent } from './livedata/livedata.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { GooglePlaceModule } from "ngx-google-places-autocomplete";
@@ -48,7 +48,7 @@ import {AgmCoreModule } from '@agm/core';
 import { FormsModule, ReactiveFormsModule }    from '@angular/forms';
 import { BackfooterModule } from './backfooter/backfooter.module';
 import { OurteamComponent } from './ourteam/ourteam.component';
-import { FirebaseComponent } from './firebase/firebase.component';
+// import { FirebaseComponent } from './firebase/firebase.component';
 import { SsMatchCardModule } from './cards/ss-match-card/ss-match-card.module';
 import { NewHeaderModule } from './newheader/newheader.module';
 import { TeamviewComponent } from './teamview/teamview.component';
@@ -66,7 +66,7 @@ import { SideNavModule } from './side-nav/side-nav.module';
     LivedataComponent,
     ContactUsComponent,
     OurteamComponent,
-    FirebaseComponent,
+    // FirebaseComponent,
     TeamviewComponent,
     LocalitypageComponent,
   ],
@@ -89,11 +89,11 @@ import { SideNavModule } from './side-nav/side-nav.module';
     FooterModule,
     HelpCenterModule,
     ScrollToModule.forRoot(),
-    AngularFireDatabaseModule,
-    AngularFireAuthModule,
-    AngularFireMessagingModule,
-    AngularFireModule.initializeApp(environment.firebase,'sport-social'),
-    AngularFirestoreModule,
+    // AngularFireDatabaseModule,
+    // AngularFireAuthModule,
+    // AngularFireMessagingModule,
+    // AngularFireModule.initializeApp(environment.firebase,'sport-social'),
+    // AngularFirestoreModule,
     BackfooterModule,
     SsMatchCardModule,
     NewHeaderModule,
@@ -111,7 +111,7 @@ import { SideNavModule } from './side-nav/side-nav.module';
     PopUpService,
     LinkService,
     SeoService,
-    MessagingService,
+    // MessagingService,
     AsyncPipe
   ],
   bootstrap: [AppComponent]
