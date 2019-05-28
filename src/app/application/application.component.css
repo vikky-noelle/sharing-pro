@@ -263,9 +263,9 @@ html{
     height: 40%;
     float: right;
 }
-.bottom{
+/* .bottom{
     margin-top: -23%;
-}
+} */
 @media screen and (min-width:170px) and (max-width:500px)  {
         .appbody{
             overflow-x: hidden;
@@ -404,7 +404,7 @@ html{
             width: 100%;
             align-content: center; 
             justify-content: center;
-            padding-bottom: 30%;
+            /* padding-bottom: 30%; */
         }
        
         .leftside>a>img{
