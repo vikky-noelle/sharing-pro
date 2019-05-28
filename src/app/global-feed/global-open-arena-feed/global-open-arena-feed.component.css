@@ -272,6 +272,7 @@
         display: none;
     }
     .msidenav{
+        text-align: center;
         display:block;
         margin-top: 10%;
     }
@@ -299,6 +300,7 @@
         display: none;
     }
     .msidenav{
+        text-align: center;
         display:block;
         margin-top: 24%;
     }
