@@ -133,6 +133,6 @@ export class PostService {
   }
 
   Localityviewdata(lvdataobject){
-    return this.http.post('http://34.245.85.57:3000/web/webLocalityStatic', lvdataobject);
+    return this.http.post('https://test.sportsocial.in/web/webLocalityStatic', lvdataobject);
   }
 }

@@ -334,6 +334,7 @@
     .leftarrow,.rightarrow{
         margin-top: 25%;
         width: 5%;
+        z-index: 15;
     }
     .home{
         margin-top: 10%;
