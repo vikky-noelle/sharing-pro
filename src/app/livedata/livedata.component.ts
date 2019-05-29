@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Http,Response } from '@angular/http';
-import { database } from 'firebase';
 import { GetService } from '../shared/services/get.service';
 
 @Component({

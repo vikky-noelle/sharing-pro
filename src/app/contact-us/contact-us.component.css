@@ -171,7 +171,7 @@ agm-map {
 .footer{
     vertical-align: bottom;
     width: 100%;
-    margin-top: 35%;
+    margin-top: 40%;
 }
 
 @media screen and (min-width:250px) and (max-width:720px){
@@ -242,7 +242,15 @@ agm-map {
         margin-top:1%;
     }
     .right-model{
+        text-align: center;
         width: 40%;
+    }
+    .right-model a{
+        display: block;
+    }
+    .right-model a img{
+        height: 50px;
+        width: 50px;
     }
     input{
         margin-top: 0%;
@@ -283,6 +291,10 @@ agm-map {
 }
 
 @media screen and (min-width:721px) and (max-width:1200px){
+    .footer{
+        margin-top: 60%;
+        width: 100%;
+    }
     .header{
         position: static;
     }
@@ -301,11 +313,8 @@ agm-map {
         border-radius: 1%;
     } 
     .midbody{
-        position: absolute;
-        margin-left:5%; 
-        width: 90%;
+        width: 100%;
         height: 35%;
-        margin-top: 50%;
     }
     .blockData{
         vertical-align: top;
@@ -325,7 +334,6 @@ agm-map {
         text-align: center;
     }
     .midbody .blockData>a,p{
-        /* width: 10%; */
         margin-top: 5%;
         text-align: center;
         color: orange;
