@@ -68,7 +68,7 @@ import { SideNavModule } from './side-nav/side-nav.module';
     OurteamComponent,
     // FirebaseComponent,
     TeamviewComponent,
-    LocalitypageComponent,
+    LocalitypageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId:'sport-social'}),
