@@ -15,7 +15,6 @@
     display: inline-flex;
 }
 .carousel > p {
-    posith4n: relative;
     top: 6%;
     margin-bottom: 1.2%;
     transform: translateY(-50%); 
