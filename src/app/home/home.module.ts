@@ -8,6 +8,7 @@ import { BackfooterModule } from '../backfooter/backfooter.module';
 import { HomeComponent } from './home.component';
 import { HomeRouter } from './home.router';
 import { SideNavModule } from '../side-nav/side-nav.module';
+import { HomeMatchFeedModule } from '../global-feed/home-match-feed/home-match-feed.module';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { SideNavModule } from '../side-nav/side-nav.module';
     GlobalOpenArenaFeedModule,
     BackfooterModule,
     HomeRouter,
-    SideNavModule
+    SideNavModule,
+    HomeMatchFeedModule
   ],
   declarations: [
     HomeComponent,

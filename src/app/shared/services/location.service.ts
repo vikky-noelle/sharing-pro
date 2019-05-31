@@ -27,7 +27,7 @@ export class LocationService {
     console.warn(`ERROR(${err.code}): ${err.message}`);
   }
 
-  getGeoLocation( ) {
+  getGeoLocation() {
     return new Promise((resolve, reject) => {
         navigator.geolocation.getCurrentPosition(
           (pos) => {
@@ -38,11 +38,11 @@ export class LocationService {
               longitude: crd.longitude
             };
             resolve(this.position);
-            console.log('Your current position is:');
-            console.log(`Latitude : ${crd.latitude}`);
-            console.log(`Longitude: ${crd.longitude}`);
-            console.log('page no. is :'+this.feedPageRequestObject.page);
-            console.log(`More or less ${crd.accuracy} meters.`);
+            // console.log('Your current position is:');
+            // console.log(`Latitude is : ${crd.latitude}`);
+            // console.log(`Longitude: ${crd.longitude}`);
+            // console.log('page no. is :'+this.feedPageRequestObject.page);
+            // console.log(`More or less ${crd.accuracy} meters.`);
           },
           (err) => {
             console.warn(`ERROR(${err.code}): ${err.message}`);

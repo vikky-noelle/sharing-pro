@@ -14,6 +14,13 @@ export class PostService {
 
   singleMatchReqObj = [];
 
+  homematchfeedObj= {
+    latitude:Number,
+    longitude:Number,
+    gameid:Number,
+    timestamp:Number
+  }
+
   matchFeedReqObj = {
     latitude: Number,
     longitude: Number,
@@ -87,6 +94,16 @@ export class PostService {
     // console.log("Heyy this is gameid.="+gameid);
     return this.http.post('https://prod.sportsocial.in/poc/webfeed', this.matchFeedReqObj);
     // return this.http.post('https://test.sportsocial.in/poc/webfeed', this.matchFeedReqObj);
+  }
+
+  homeMatchFeed(lat,long,Gameid,timest){
+      this.homematchfeedObj={
+        latitude:lat,
+        longitude:long,
+        gameid:Gameid,
+        timestamp:timest
+      }
+      return this.http.post('https://test.sportsocial.in/poc/webfeed',this.homematchfeedObj);
   }
 
   singleMatchData(eventid, userid, activityid, urlId, page) {

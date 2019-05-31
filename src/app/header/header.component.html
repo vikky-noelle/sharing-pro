@@ -75,14 +75,15 @@
             <a routerLink="/application" routerLinkActive="active">App</a> <!--https://goo.gl/qrgCz5-->
           </li>
           <li>
-              <a routerLink="/teamview" routerLinkActive="active">Team</a> 
+              <a routerLink="/teamview" routerLinkActive="active" (click)="topscroll()">Team</a> 
           </li>
           <li>
-              <a routerLink="/localitypage" routerLinkActive="active">Locality</a> 
+              <a routerLink="/localitypage" routerLinkActive="active" (click)="topscroll()">Locality</a> 
           </li>
           <li>
-            <a routerLink="/HelpCenter" routerLinkActive="active">Help</a> 
-          </li>          
+              <a routerLink="/HelpCenter" routerLinkActive="active" (click)="topscroll()">Help</a> 
+            </li>
+          
       </ul>
       <!-- <ng-container  *ngIf="isSearchInDropdown">
         <div class="dropdown-search">
