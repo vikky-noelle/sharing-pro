@@ -1,0 +1,209 @@
+.side-nav{
+    width: 25%;
+    margin-top: 5%;
+}
+.main-body{
+    overflow: hidden;
+}
+.newsbody{  
+    float: right;
+    margin-right: 5%;
+    width: 72%;
+}
+.news-header{
+    padding-bottom: 5px;
+    overflow: hidden;
+    border-bottom: 2px solid rgb(216, 216, 216);
+}
+.news-header h1,h2{
+    padding-top: 30px;
+}
+.news-header h2{
+    color: rgb(126, 126, 126);
+}
+.news-header h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px #585858;
+    font-size: 2.3em;
+}
+.timestamp{
+    float: left;
+}
+.share{
+    width: 35%;
+    float: right;
+}
+.share .fb{
+    background-size: 100% 100%; 
+    background-image: url('/assets/images/sportsocialnewsfacebook.png');
+}
+.share .rss{
+    background-size: 100% 100%; 
+    background-image: url('/assets/images/sportsocialnewsrss.png');
+}
+.share .rss:hover{
+    cursor: pointer;
+    background-size: 100% 100%; 
+    background-image: url('/assets/images/sssrss.png');
+}
+.share .insta{
+    background-size: 100% 100%; 
+    background-image: url('/assets/images/sportsocialnewsinstagram.png');
+}
+.share .insta:hover{
+    cursor: pointer;
+    background-size: 100% 100%; 
+    background-image: url('/assets/images/sssinstagram.png');
+}
+.share .linkedin{
+    background-size: 100% 100%; 
+    background-image: url('/assets/images/sportsocialnewslinkedin.png');
+}
+.share .linkedin:hover{
+    cursor: pointer;
+    background-size: 100% 100%; 
+    background-image: url('/assets/images/ssslinkedin.png');
+}
+.share .twitter{
+    background-size: 100% 100%; 
+    background-image: url('/assets/images/sportsocialnewstwitter.png');
+}
+.share .twitter:hover{
+    cursor: pointer;
+    background-size: 100% 100%; 
+    background-image: url('/assets/images/ssstwitter.png');
+}
+.share div{
+    float: left;
+    margin-left: 11%;
+    height: 23px;
+    width: 23px;
+}
+.share .fb:hover{
+    background-image: url('/assets/images/sssfacebook.png');
+    cursor: pointer;
+    /* transform: scale(1.1); */
+}
+.timestamp,.share{
+    font-size: 1.3em;
+}
+.news{
+    box-shadow: 2px 2px rgb(216, 216, 216);
+    float: left;
+    width: 65%;
+}
+.nbody{
+    margin-top: 2%;
+}
+.news img {
+    border-radius: 10px;
+    margin: 0 auto;
+    height: 60px;
+    width: 60px;
+}
+.top-stories{
+    width: 35%;
+    float: right;
+}
+.top-stories h1{
+    text-align: center;
+    font-weight: lighter;
+}
+.top-stories div{
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+}
+.top-stories h2{
+    font-size: 1.2em;
+}
+.top-stories p{
+    padding-top: 5px;
+    font-size: 0.9em;
+}
+
+.main-news img{
+    margin-bottom: 30px;
+    width: 95%;
+    height: 350px;
+}
+.melement{
+    text-align: center;
+    display: none;
+}
+.melement p{
+    padding: 30px;
+}
+.melement button{
+    font-size: 1.3em;
+    border: none;
+    background-color: #024771;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+}
+.main-news h1{
+    margin-right: 25px;
+    margin-bottom: 30px;
+}
+
+.main-news h3{
+    color: black;
+    /* font-weight: lighter; */
+    font-size: 1.8em;
+    text-align: center;
+}
+.main-news h3:hover{
+    cursor: pointer;
+}
+.more-news{
+    margin-top: 5%;
+}
+.mnews{
+    height: 170px;
+}
+.mnews img{
+    width: 40%;
+    height: 80%;;
+    float: left;
+}
+.mnews h1{
+    padding-top: 8px;
+    padding-bottom: 4px;
+    font-size: 1.2em;
+}
+.mnews p{
+    font-size: 0.9em;
+}
+.mnews div{
+    float: right;
+    width: 50%;
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+}
+.top-stories div h2:hover{
+    cursor: pointer;
+}
+.mnews h1:hover{
+    cursor: pointer;
+}
+@media screen and (min-width: 200px) and (max-width: 1000px){
+    .main-body{
+        display: none;
+    }
+    .mobile-main{
+        display: block;
+    }
+}
+@media screen and (min-width: 1100px) and (max-width: 2000px){
+    .main-body{
+        display: block;
+    }
+    .mobile-main{
+        display: none;
+    }
+}
+
+

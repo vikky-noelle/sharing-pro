@@ -10,6 +10,7 @@ import { HelpCenterComponent } from '../help-center/help-center.component';
 import { AddTopicComponent } from '../add-topic/add-topic.component';
 import { AddQueAnsComponent } from '../add-que-ans/add-que-ans.component';
 import { HomeComponent } from '../home/home.component';
+import { NewspageComponent } from '../newspage/newspage.component';
 import { ApplicationComponent } from '../application/application.component';
 import { LivedataComponent } from '../livedata/livedata.component';
 import { ContactUsComponent } from '../contact-us/contact-us.component';
@@ -29,6 +30,10 @@ const App_Route: Routes = [
     {path:"Helpcenter/:topicname",component:HelpCenterComponent},
     {path: "teamview",component:TeamviewComponent},
     {path: "localitypage", component:LocalitypageComponent},
+    {
+        path: "newspage", 
+        component:NewspageComponent
+    },
     {
         path:"application",
         component:ApplicationComponent  

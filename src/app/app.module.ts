@@ -54,6 +54,7 @@ import { NewHeaderModule } from './newheader/newheader.module';
 import { TeamviewComponent } from './teamview/teamview.component';
 import { LocalitypageComponent } from './localitypage/localitypage.component';
 import { SideNavModule } from './side-nav/side-nav.module';
+import { NewspageComponent } from './newspage/newspage.component';
 
 
 @NgModule({
@@ -69,6 +70,7 @@ import { SideNavModule } from './side-nav/side-nav.module';
     // FirebaseComponent,
     TeamviewComponent,
     LocalitypageComponent,
+    NewspageComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({appId:'sport-social'}),

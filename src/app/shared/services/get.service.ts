@@ -52,4 +52,9 @@ export class GetService {
   getUpcomingCricket(){
     return this.http.get("http://35.176.65.124:2200/score/upcomingCricketMatches");
   }
+  getsportnews(topic): Observable<any> {
+    return this.http.get(
+      "http://192.168.0.104:3100/api/news/" +topic
+    );
+  }
 }
