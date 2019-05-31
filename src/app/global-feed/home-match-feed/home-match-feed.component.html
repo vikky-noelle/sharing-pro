@@ -7,15 +7,13 @@
     <div class="rightside" *ngFor = "let game of Matcharr; let i = index" #target> 
         <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf = "Matcharr.length === 0" alt="">
       
-        <div class="leftarrow" (click)="lscroll();">
-      </div>
+        <!-- <div class="leftarrow" (click)="lscroll();">
+      </div> -->
 
         <div class="topic">
             <a><h4>{{game[0].GameName}} matches</h4></a>
           </div>  
-      <div class="blog">
-       
-          
+      <div class="blog">    
             <div class="outdiv" *ngFor = "let feed of Matcharr[i]; let j = index" #target>
 
               <div class="card">
@@ -30,7 +28,7 @@
                             <p> @{{feed.uniquename}}</p>
                           </div> 
                   </div>
-              <a>      
+              <a routerLink={{feed.GameId}}>      
                   <div class="cardData">
                       <div class="cardData team1">
                          <img src={{feed.Team1Pic}} onerror="this.src='assets/images/user-default.png'">
@@ -63,7 +61,7 @@
             </div>
           
         </div>
-        <div class="rightarrow" (click)="rscroll();">
-        </div> 
+        <!-- <div class="rightarrow" (click)="rscroll();">
+        </div>  -->
     </div>        
 </div>

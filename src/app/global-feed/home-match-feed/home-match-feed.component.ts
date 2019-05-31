@@ -14,16 +14,10 @@ import { LocationService } from '../../shared/services/location.service';
 export class HomeMatchFeedComponent{
 
   Matcharr = [];
-  gendercheck="";
+  gendercheck;
   onesport;
   timestamp = Math.floor(Date.now()/1000);
 
-  // posturl='https://test.sportsocial.in/poc/newfeed';
-  // urlObj=[{ userid: "112",
-  //           page: "1",
-  //           timestamp: "1558615054000",
-  //           token: "ndsjndsjknjksnndnjkks"
-  //     }];
   constructor(
     private http:Http,
     private postservice:PostService,
@@ -79,17 +73,24 @@ export class HomeMatchFeedComponent{
               City:data["Feed"][i].City,
               CommentCount:data["Feed"][i].CommentCount,
               PromoteCount:data["Feed"][i].PromoteCount,
-              WatchCount:data["Feed"][i].WatchCount,
-            })
+              WatchCount:data["Feed"][i].WatchCount
+            });
+
+            var newstring=arr[i].gender;
+            if(newstring = "Male" && "male"){
+               this.gendercheck= newstring.replace(/male/,"Men's");
+             }
+             else if(newstring = "Female" && "female"){
+              this.gendercheck= newstring.replace(/female/,"Female's");
+            }
+           else if(newstring = "mix"){
+              this.gendercheck= newstring.replace(/mix/,"Mix");
+            }
           }
-          // var newstring=arr[i].gender;
-          // console.log("adfjksfdjkgsfvsfgshjdhshfkgsjhffjhsgjfgfjsgghjsghdjfs",newstring);
-          // if(newstring=="male"){
-          //    this.gendercheck= newstring.replace("Men's");
-          // }
+          console.log("this is genderchk:",this.gendercheck);
+          
           if(data["Feed"].length>0){
-            this.Matcharr.push(arr);
-          console.log("this is feed id of ",JSON.stringify(this.Matcharr.toString()));
+            this.Matcharr.push(arr);  
           }
      });
       
