@@ -1,6 +1,7 @@
 import { ActivatedRoute } from '@angular/router';
 import { GetService } from './../shared/services/get.service';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { EventEmiterService } from '../shared/services/event.emiter.service';
 
 @Component({
   selector: 'sports-social-newspage',
@@ -14,12 +15,11 @@ export class NewspageComponent implements OnInit {
   mnewsimage;
   mnewsdesc;
   mnewsurl;
+  datastr;
   mnewstime;
   topic;
-  rdore = document.getElementsByClassName('rdmore') as HTMLCollectionOf<HTMLElement>;
-  ls = document.getElementsByClassName('rd') as HTMLCollectionOf<HTMLElement>;
-  hide = document.getElementsByClassName('melement') as HTMLCollectionOf<HTMLElement>;
   constructor(
+    private _eventemiter: EventEmiterService,
     private getService: GetService,
     private route: ActivatedRoute
   ) { }
@@ -29,6 +29,14 @@ export class NewspageComponent implements OnInit {
       this.topic = params['topic'];
     });
     this.getnews(this.topic);
+    this.datastr=this._eventemiter.userToEdit;
+    if(this.datastr !== undefined){
+    this.mnewshead = this.datastr.title;
+    this.mnewstime = this.datastr.timestamp;
+    this.mnewsimage = this.datastr.image;
+    this.mnewsdesc = this.datastr.desc;
+    this.mnewsurl = this.datastr.url;
+    }
   }
   getnews(topic){
     this.getService.getsportnews(topic).subscribe(res=>{
@@ -46,21 +54,18 @@ export class NewspageComponent implements OnInit {
             image: body.news[i].newsImage,
             desc: body.news[i].desc
           });
+          if(this.datastr === undefined){
           this.mnewshead = this.news[0].title;
           this.mnewstime = this.news[0].timestamp;
           this.mnewsimage = this.news[0].image;
           this.mnewsdesc = this.news[0].desc;
           this.mnewsurl = this.news[0].url;
+          }
           if(i==="5"){
             break;
           }
         }
     });
-    }
-    rdmore(){
-      this.ls[0].style.display="none";
-      this.hide[0].style.display="block";
-      this.rdore[0].style.display="none";
     }
     opennews(id){
       this.mnewshead = this.news[id].title;

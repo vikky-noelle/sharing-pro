@@ -1,10 +1,12 @@
+import { Subscription } from 'rxjs/Rx';
 import { Component} from '@angular/core';
-import { ISubscription } from 'rxjs/Subscription';
 import { Http } from '@angular/http';
 import { Router } from '@angular/router';
 import { TimeService } from '../../shared/services/time.service';
 import { PostService } from '../../shared/services/post.service';
 import { LocationService } from '../../shared/services/location.service';
+import { GetService } from '../../shared/services/get.service';
+import { EventEmiterService } from '../../shared/services/event.emiter.service';
 
 @Component({
   selector: 'sports-social-home-match-feed',
@@ -14,11 +16,16 @@ import { LocationService } from '../../shared/services/location.service';
 export class HomeMatchFeedComponent{
 
   Matcharr = [];
+  index=-1; //used to provide index for it
+  Matchnews = [];
+  news=[];
   gendercheck;
   onesport;
   timestamp = Math.floor(Date.now()/1000);
-
+  sub: Subscription;
   constructor(
+    private _eventemiter: EventEmiterService,
+    private getService: GetService,
     private http:Http,
     private postservice:PostService,
     private time:TimeService,
@@ -29,7 +36,7 @@ export class HomeMatchFeedComponent{
   Sports= [
     {id: 5, title: 'Badminton'},
     {id: 6, title: 'Basketball'},
-    { id: 17,  title: 'Cricket'},
+    {id: 17,  title: 'Cricket'},
     {id: 23, title: 'Football'},
     {id: 29, title: 'Hockey'},
     {id: 36, title: 'Lawn Tennis'},
@@ -37,18 +44,14 @@ export class HomeMatchFeedComponent{
     {id: 60, title: 'Volleyball'}
   ];
 
-  Games=[17,5,23,6,29,36,56,60];
-
   getlocation(){
     this.location.getGeoLocation().then((pos)=>{
-      for(var i=0;i<this.Games.length;i++){
-      console.log("thi is games",this.Games[i]);
-      this.postservice.homeMatchFeed(pos['latitude'],pos['longitude'],this.Games[i],this.timestamp)
+      for(var i=0;i<this.Sports.length;i++){
+      this.postservice.homeMatchFeed(pos['latitude'],pos['longitude'],this.Sports[i].id,this.timestamp)
       .subscribe(data=>{
-        // console.log("ahdadhaadhhjdgahdghadha",data["Feed"]);
         var arr=[];
           for(var i=0;i<data["Feed"].length;i++){
-            arr.push({
+              arr.push({
               feedid:data["Feed"][i].feedid,
               Activity_name:data["Feed"][i].Activity_name,
               uniquename:data["Feed"][i].uniquename,
@@ -75,7 +78,6 @@ export class HomeMatchFeedComponent{
               PromoteCount:data["Feed"][i].PromoteCount,
               WatchCount:data["Feed"][i].WatchCount
             });
-
             var newstring=arr[i].gender;
             if(newstring = "Male" && "male"){
                this.gendercheck= newstring.replace(/male/,"Men's");
@@ -86,11 +88,16 @@ export class HomeMatchFeedComponent{
            else if(newstring = "mix"){
               this.gendercheck= newstring.replace(/mix/,"Mix");
             }
-          }
-          console.log("this is genderchk:",this.gendercheck);
-          
-          if(data["Feed"].length>0){
-            this.Matcharr.push(arr);  
+          }    
+          if(arr.length>0){
+            this.index=this.index+1;
+            var x = arr[0].GameName.replace(/ matches/g,"");
+            this.getnewsdata(x.toLowerCase());
+            this.Matcharr.push({
+              gamenumber: this.index,
+              gametitle: arr[0].GameName,
+              gamearray: arr
+            }); 
           }
      });
       
@@ -101,49 +108,43 @@ export class HomeMatchFeedComponent{
     this.router.navigate( [ { outlets: { 'AppDownload': ['PopUp'] }} ], { skipLocationChange: true });
   }
 
-  
-  // openarenamatches(){
-  //   this.http.post(this.posturl,this.urlObj)
-  //   .subscribe(res=>{
-  //     var body=res.json();
-  //     console.log("hi this is my console",body);
-  //     for(const i in body){
-  //       this.Matcharr.push({
-  //         feedid:body[i].feedid,
-  //         userName:body[i].user_name,
-  //         coverpic:body[i].CoverPic,
-  //         gamename:body[i].gamename,
-  //         startdatetime:  this.time.timePassed(body[i].startdatetime),
-  //         InsertedDate:this.time.timePassed(body[i].InsertedDate),
-  //         Uniquename:body[i].Uniquename,
-  //         EventText:body[i].EventText,
-  //         city:body[i].city,
-  //         Venue_Name:body[i].Venue_Name,
-  //         MatchStarterUniqueName:body[i].MatchStarterUniqueName,  
-  //         Team1Name:body[i].Team1Name,
-  //         Team2Name:body[i].Team2Name,
-  //         Team1Pic:body[i].Team1Pic,
-  //         Team2Pic:body[i].Team2Pic,
-  //         WatchCount:body[i].WatchCount,
-  //         PromoteCount:body[i].PromoteCount,
-  //         CommentCount:body[i].CommentCount,
-  //       });
-  //        this.gendercheck=this.Matcharr[i].gender;
-  //          if(this.gendercheck=="Male"){
-  //         var HeShe= this.gendercheck.replace(this.Matcharr[i].gender,"Men's");
-  //         console.log(HeShe);
-  //       }
-  //     }
-  //   })
-  // }
-  
   ngOnInit() {
     this.getlocation();
     // this.openarenamatches();
   }
-
-  
-
+  getnewsdata(topic){
+    this.getService.getsportnews(topic).subscribe(res=>{
+      var body = JSON.parse(res._body);
+      var arr=[];
+      for (const i in body.news) {
+        var x = body.news[i].insertedDate;
+        x = x.replace(/T/g," at "); 
+        arr.push({
+          id:body.news[i]._id,
+          title:body.news[i].title,
+          timestamp:x.substr(0,19),
+          url: body.news[i].url,
+          image: body.news[i].newsImage,
+          desc: body.news[i].desc
+        });
+        if(i==="10"){
+          break;
+        }
+      }
+      this.news.push(arr);
+    });
+  }
+  change(id, topic){
+    for(var i in this.news){
+      for(var j in this.news[i]){
+        if(id === this.news[i][j].id){
+          topic = topic.toLowerCase();  
+          this._eventemiter.userToEdit=this.news[i][j];
+          this.router.navigate(['/newspage'], { queryParams: {topic: topic}})
+        }
+      }
+    }
+  }
 }
 
 

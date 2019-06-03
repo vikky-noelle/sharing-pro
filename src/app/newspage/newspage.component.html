@@ -20,12 +20,8 @@
   <div class="news">
     <div class="main-news">
       <img src="{{mnewsimage}}" alt="lit news fam.">
-      <h1 class="rd">{{mnewsdesc}}</h1>
-      <div class="melement">
-        <p>{{mnewsdesc}} lala {{mnewsdesc}}</p> 
-        <a href="{{mnewsurl}}"><button>Jump to</button></a>
-      </div>
-      <a class="rdmore" (click)="rdmore();"><h3>READ MORE</h3></a>
+      <h1>{{mnewsdesc}}...</h1>
+      <a href="{{mnewsurl}}" target="_blank"><h3>READ MORE</h3></a>
       <br>
       <hr>
       <div class="more-news">
@@ -40,26 +36,44 @@
     </div>
   </div>
   <div class="top-stories">
-    <h1>Top Stories</h1>
+    <h1>Recent Stories</h1>
     <div  (click)="opennews(data.id);" *ngFor="let data of news">
       <h2>{{data.title}}</h2>
       <p>{{data.desc | slice:0:100}}...</p>
     </div>
-    <hr>
     <br>
-    <h1>Top News</h1>
-    <div (click)="opennews(data.id);" *ngFor="let data of news">
-        <h2>{{data.title}}</h2>
-      <p>{{data.desc | slice:0:100}}...</p>
-    </div>
   </div>
   </div>
 </div>
 </div>
 <!-- mobile view -->
 <div class="mobile-main">
+    <h2 class="share"> 
+        <div class="twitter"></div>
+        <div class="linkedin"></div>
+        <div class="fb"></div>
+        <div class="insta"></div>
+        <div class="rss"></div>
+      </h2>
   <div class="newscard">
+    <h1>{{mnewshead}}</h1>
+    <img src="{{mnewsimage}}" alt="">
+    <p>{{mnewsdesc}}</p>
+    <a href="{{mnewsurl}}" target="_blank"><h3>READ MORE</h3></a>
 
   </div>
+  <div (click)="opennews(data.id);" class="morecard" *ngFor="let data of news">
+      <img src="{{data.image}}" alt="">
+      <h1>{{data.title|slice:0:40}}....</h1>
+    </div>
+    <hr>
+    <h1 class="heading">Recent Stories</h1>
+    <div class="tnews">
+        <div (click)="opennews(data.id);" class="tnewscard" *ngFor="let data of news">
+            <textarea class="head" disabled>{{data.title}}</textarea>
+            <br>
+            <textarea class="para" disabled>{{data.desc}}</textarea>
+          </div>
+    </div>
 </div>
 <sports-social-backfooter></sports-social-backfooter>

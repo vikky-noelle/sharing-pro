@@ -55,6 +55,7 @@ import { TeamviewComponent } from './teamview/teamview.component';
 import { LocalitypageComponent } from './localitypage/localitypage.component';
 import { SideNavModule } from './side-nav/side-nav.module';
 import { NewspageComponent } from './newspage/newspage.component';
+import { EventEmiterService } from './shared/services/event.emiter.service';
 
 
 @NgModule({
@@ -113,6 +114,7 @@ import { NewspageComponent } from './newspage/newspage.component';
     PopUpService,
     LinkService,
     SeoService,
+    EventEmiterService,
     // MessagingService,
     AsyncPipe
   ],

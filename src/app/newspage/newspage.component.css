@@ -6,9 +6,11 @@
     overflow: hidden;
 }
 .newsbody{  
+    border-left: 2px solid rgb(216, 216, 216);
     float: right;
+    padding: 20px;
     margin-right: 5%;
-    width: 72%;
+    width: 74%;
 }
 .news-header{
     padding-bottom: 5px;
@@ -34,6 +36,7 @@
     width: 35%;
     float: right;
 }
+
 .share .fb{
     background-size: 100% 100%; 
     background-image: url('/assets/images/sportsocialnewsfacebook.png');
@@ -128,24 +131,10 @@
     width: 95%;
     height: 350px;
 }
-.melement{
-    text-align: center;
-    display: none;
-}
-.melement p{
-    padding: 30px;
-}
-.melement button{
-    font-size: 1.3em;
-    border: none;
-    background-color: #024771;
-    border-radius: 5px;
-    color: white;
-    padding: 10px;
-}
 .main-news h1{
     margin-right: 25px;
     margin-bottom: 30px;
+    font-size: 1.2em;
 }
 
 .main-news h3{
@@ -161,11 +150,16 @@
     margin-top: 5%;
 }
 .mnews{
+    margin-right: 1%;
+    margin-bottom: 2%;
     height: 170px;
 }
 .mnews img{
     width: 40%;
-    height: 80%;;
+    height: 90%;
+    margin-top: 1.2%;
+    margin-left: 1.2%;
+    margin-bottom: 1%;
     float: left;
 }
 .mnews h1{
@@ -184,10 +178,133 @@
     padding-bottom: 25px;
 }
 .top-stories div h2:hover{
+    color: #024771;
     cursor: pointer;
 }
-.mnews h1:hover{
+.mnews:hover{
+     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
+}
+.mnews:hover h1{
+    color: #024771;
+}
+.top-stories div:hover h1{
+    color: #024771;
+}
+
+/* mobile view */
+.mobile-main{
+    margin-top: 5%;
+}
+.newscard{
+    text-align: center;
+    border-radius: 5px;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-bottom: 2px solid silver;
+}
+.newscard img{
+    border:1px solid silver;
+    border-radius: 5px; 
+    height: 150px;
+    width: 70%;
+}
+.newscard h1{
+    padding: 10px;
+}
+.newscard p{
+    padding: 20px;  
+}
+.newscard a{
+    color: black;
+}
+.morecard{
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px rgb(233, 232, 232), 3px 3px rgb(240, 240, 240);
+}
+.morecard img{
+    border:1px solid silver;
+    float: left;
+
+    border-radius: 5px; 
+    height: 100px;
+    width: 40%;
+}
+.morecard h1{
+    padding: 10px;
+    font-size: 1em;
+    font-weight: lighter;
+    width: 45%;
+    float: right;
+}
+.tnews{
+    margin-left: 5%;
+    width: 85%;
+    /* float: left; */
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-snap-destination: 0% 100%;
+    scroll-snap-points-x: repeat(100%);
+    display: inline-block;
+}
+.tnews::-webkit-scrollbar {
+    display: none;
+}
+.newscard button{
+    font-size: 0.8em;
+    border: none;
+    background-color: #024771;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
+.heading{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 10px;
+    font-weight: lighter;   
+}
+.head{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.para{
+    font-size: 1em;
+}
+.tnewscard{
+    display: inline-block;
+    scroll-snap-align: start;
+    border-radius: 5px;
+    width: 93%;
+    height: 150px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tnewscard textarea{
+    width: 90%;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    overflow: hidden;
+}
+.tnewscard h1{
+    padding: 10px;
+    font-size: 1em;
+    font-weight: lighter;
+    width: 45%;
 }
 @media screen and (min-width: 200px) and (max-width: 1000px){
     .main-body{
@@ -195,6 +312,11 @@
     }
     .mobile-main{
         display: block;
+    }
+    .share{
+        margin-bottom: 3%;
+        clear: both;
+        width: 100%;
     }
 }
 @media screen and (min-width: 1100px) and (max-width: 2000px){

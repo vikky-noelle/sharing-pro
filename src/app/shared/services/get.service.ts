@@ -54,7 +54,7 @@ export class GetService {
   }
   getsportnews(topic): Observable<any> {
     return this.http.get(
-      "http://192.168.0.104:3100/api/news/" +topic
+      "http://3.8.116.65:3100/api/news/" +topic
     );
   }
 }
