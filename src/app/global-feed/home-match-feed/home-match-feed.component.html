@@ -1,11 +1,7 @@
-<sports-social-side-nav></sports-social-side-nav>
- 
-<div class="home">
-  <div class="sidenav">
-      <sports-social-side-nav></sports-social-side-nav>
-  </div>
+<!-- <sports-social-side-nav></sports-social-side-nav> -->
+ <div class="home">
     <div class="rightside" *ngFor = "let game of Matcharr; let i = index" #target> 
-        <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf = "Matcharr.length === 0" alt="">
+       
       
         <!-- <div class="leftarrow" (click)="lscroll();">
       </div> -->
@@ -14,10 +10,9 @@
             <a><h4>{{game[0].GameName}} matches</h4></a>
           </div>  
       <div class="blog">    
+          <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf="Matcharr.length === 0" alt="">
             <div class="outdiv" *ngFor = "let feed of Matcharr[i]; let j = index" #target>
-
               <div class="card">
-                
                   <div class="head">
                         <div class="gamename">
                             <b>{{feed.gender}} {{feed.GameName}}</b>
@@ -28,26 +23,26 @@
                             <p> @{{feed.uniquename}}</p>
                           </div> 
                   </div>
-              <a routerLink={{feed.GameId}}>      
-                  <div class="cardData">
-                      <div class="cardData team1">
-                         <img src={{feed.Team1Pic}} onerror="this.src='assets/images/user-default.png'">
-                         <p>{{feed.Team1name | slice:0:11}}</p>    
-                      </div>
-                      <div class="cardData t1score">
-                          <b style="font-size: 1.2em;">{{feed.scoreTeam1}}</b>
-                          <p style="font-size: .6em; color:#7e7d7d;">Score</p>
-                      </div>
-                      <div class="cardData t2score">
-                         <b style="font-size: 1.2em;">{{feed.scoreTeam2}}</b>
-                         <p style="font-size: .6em; color:#7e7d7d;">Score</p>
-                      </div>
-                      <div class="cardData team2">
-                         <img src={{feed.Team2Pic}} onerror="this.src='assets/images/user-default.png'">
-                         <p>{{feed.Team2name | slice:0:11}}</p>
-                      </div>     
-                </div> 
-              </a> 
+                      <a routerLink="/opencard/{{feed.feedid}}">      
+                          <div class="cardData">
+                              <div class="cardData team1">
+                                <img src={{feed.Team1Pic}} onerror="this.src='assets/images/user-default.png'">
+                                <p>{{feed.Team1name | slice:0:11}}</p>    
+                              </div>
+                              <div class="cardData t1score">
+                                  <b style="font-size: 1.2em;">{{feed.scoreTeam1}}</b>
+                                  <p style="font-size: .6em; color:#7e7d7d;">Score</p>
+                              </div>
+                              <div class="cardData t2score">
+                                <b style="font-size: 1.2em;">{{feed.scoreTeam2}}</b>
+                                <p style="font-size: .6em; color:#7e7d7d;">Score</p>
+                              </div>
+                              <div class="cardData team2">
+                                <img src={{feed.Team2Pic}} onerror="this.src='assets/images/user-default.png'">
+                                <p>{{feed.Team2name | slice:0:11}}</p>
+                              </div>     
+                        </div> 
+                      </a> 
                     <div class="matchstatus">
                         <textarea disabled>{{feed.EventText | slice:0:100}}..</textarea>
                     </div>

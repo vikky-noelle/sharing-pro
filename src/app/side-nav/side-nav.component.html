@@ -1,9 +1,8 @@
 <div class="sidenav">
-            <a routerLink="" class="homeicon"><img src="assets/images/sports-social-home-clicked.png"></a>
+      <a routerLink="" class="homeicon"><img src="assets/images/sports-social-home-clicked.png"></a>
       <div class="data" *ngFor="let sports of tempSports" (click)="onClick(sports)" 
       [ngClass]="{'selected': sports == selectedItem }">
-           
-             <a routerLink>{{sports.title}}</a>
+            <a routerLink>{{sports.title}}</a>
         </div>
 </div>
 <div class="msidenav">
@@ -11,11 +10,11 @@
       <div class="modal">
       <a routerLink=""><img src="assets/images/sports-social-home-clicked.png">
             <img class="close" src="/assets/images/sportsocialcross.png" (click)="close();"></a>
-<div class="mdata" *ngFor="let sports of tempSports" (click)="onClick(sports)" 
-[ngClass]="{'selected': sports == selectedItem }">
-     
-       <a routerLink>{{sports.title}}</a>
-  </div>
+            
+            <div class="mdata" *ngFor="let sports of tempSports" (click)="onClick(sports)" 
+            [ngClass]="{'selected': sports == selectedItem }">
+                  <a routerLink>{{sports.title}}</a>
+            </div>
 </div>
 </div>
 

@@ -1945,7 +1945,7 @@ exports.NgMasonryGridComponentNgFactory = NgMasonryGridComponentNgFactory;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
-var styles = ["body[_ngcontent-%COMP%] {\n  width: auto;\n  height: auto;\n}\n\n*[_ngcontent-%COMP%]{\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  font-family:'Roboto',sans-serif;\n}\n\n.instagram[_ngcontent-%COMP%]{\n  border:1px solid black;\n}\n\n.instagram[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n  border:1px solid red;\n}\n\n.nav[_ngcontent-%COMP%] {\n  background-color: #fff;\n  height: auto;\n  width: 100%;\n  position: fixed;\n  top: 0px;\n  z-index: 1000;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n}\n\n.nav[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n    display: inline-block;\n  }\n\n.nav[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%] {\n    list-style: none;\n  }\n\n.brand[_ngcontent-%COMP%] {\n  width: auto;\n  padding: 0.6% 0.5% 0.5% 0.7%;\n}\n\n.brand-img[_ngcontent-%COMP%] {\n  width: 65px;\n  display: inline-block;\n}\n\n.brand-title[_ngcontent-%COMP%] {\n  font-family: 'Roboto',sans-serif;\n  font-size: 1.7em;\n  font-weight: 400;\n  color: #024771;\n  display: inline-block;\n  position: relative;\n  top: -6px;\n  text-shadow:2px 2px 2px;\n}\n\n.button[_ngcontent-%COMP%] {\n  display: inline-block;\n  width: auto;\n  padding: 0px;\n  text-align: right;\n  position: absolute;\n  top: 20%;\n  margin-top: .6%;\n  right: 0.5%;\n}\n\n.button[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n    border: 1px solid #fafafa;\n    padding: 8px 20px 8px 20px;\n    font-family: 'Roboto', sans-serif;\n    font-size: 1em;\n    color: #fafafa;\n    background-color:#024771;\n    border-radius: 5px;\n    font-weight: 300;\n  }\n\n.card-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%] > b[_ngcontent-%COMP%]{\n  padding-bottom: 3%;\n}\n\n.card[_ngcontent-%COMP%]{\n  \n  width:100%;\n  height:400px;\n  margin-top: 7%;\n}\n\n.card-image-holder[_ngcontent-%COMP%]{\n  \n  width:50%;\n  height:300px;\n  top:5%;\n  left: 0;\n}\n\n.card-image-holder[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n  width:80%;\n  height:100%;\n  margin-left:60%;\n}\n\n.card-content[_ngcontent-%COMP%]{\n  \n  width:60%;\n  height:100%;\n  display: block;\n  top:30%;\n}\n\n.card-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%]{\n width:80%;\n margin-left: 43%;\ntext-align: center;\n}\n\n.card-content[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%] > b[_ngcontent-%COMP%] > h2[_ngcontent-%COMP%]{\nfont-family: 'Roboto', sans-serif;  \npadding: 5%;\n}\n\n.card-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\nfont-size: 1.2em;\nfont-family: 'Roboto', sans-serif;\n}\n\n.card2[_ngcontent-%COMP%]{\n\nwidth:100%;\nheight:500px;\nmargin-top: 7%;\n\n}\n\n.card2-image[_ngcontent-%COMP%]{\n\nwidth:50%;\nheight:300px;\ntop:5%;\nleft:0;\n}\n\n.card2-image[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\nwidth:80%;\nheight:100%;\nmargin-left: 60%;\n\n}\n\n.card2-content[_ngcontent-%COMP%]{\n\nwidth:50%;\nheight:100%;\ndisplay: block;\ntop:10%;\n\n}\n\n.card2-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%]{\nwidth:100%;\ntext-align: center;\nmargin-left: 50%;\nmargin-top: 3%;\n}\n\n.card2-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%] > h2[_ngcontent-%COMP%]{\nfont-family: 'Roboto', sans-serif;\n}\n\n\n\n.app[_ngcontent-%COMP%]{\n    width: 100px;\n    height: 100px;\n    margin:auto;\n}\n\n.app[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n  padding-bottom: 2%;\n}\n\n.app-icon[_ngcontent-%COMP%]{\n    width: 100%;\n    height: 100%;\n    border-radius:10px;\n    margin-top:100px;\n}\n\n.app-mantra1[_ngcontent-%COMP%]{\n    width: 90%;\n    border: 1px solid black;\n    margin: 3% ;\n    height: 100%;\n    padding: 1%;\n    font-family: 'Roboto', sans-serif;\n    font-size: 1.2em;\n    font-weight: 300;\n    color: #101010;\n    text-align: justify;\n    -moz-text-align-last: center;\n         text-align-last: center;\n}\n\n.app-mantra1[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    display: block;\n    margin: auto;\n    width: 55%;\n    height: 300px;\n    margin-left: 5%;\n}\n\n.app-mantra1[_ngcontent-%COMP%] > b[_ngcontent-%COMP%]{\n  margin-left: 70%;\n  display: block;\n  margin-top: -25%;\n  width: 60%;\n  padding-bottom: 10%;\n  text-align: justify;\n  -moz-text-align-last: left;\n       text-align-last: left;\n}\n\n.app-mantra1[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n  margin-left: 70%;\n  display: block;\n  width: 60%;\n  text-align: justify;\n  -moz-text-align-last: left;\n       text-align-last: left;\n}\n\n.app-mantra2[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%]{\n  width: 34%;\n  margin-left: 7%;\n  margin-top: 13%;\n  height: auto;\n  padding: 1%;\n  font-family: 'Roboto', sans-serif;\n  font-size: 1.2em;\n  font-weight: 300;\n  color: #101010;\n  text-align: justify;\n  -moz-text-align-last: center;\n       text-align-last: center;\n}\n\n.app-mantra2[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\ndisplay: block;\nmargin: auto;\nwidth: 40%;\nheight: 300px;\nmargin-left: 45%;\nmargin-top: -15%;\n}\n\n.app-desc[_ngcontent-%COMP%]{\n    width:65%;\n    height:auto;\n    padding:1%;\n    padding-top: 2%;\n    margin:6%;\n    background-color: none;\n    font-family: 'Roboto', sans-serif;\n    height:300px;\n    line-height:0.2em;\n }\n\n.app-desc[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]:first-child{\n    font-family: 'Roboto',sans-serif;\n    font-size: 2em;\n    color: orange;\n    line-height: 2.2em;\n    text-align: left;\n    \n    margin: auto;\n    padding:0;\n}\n\n.app-desc[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]:last-child{\n    font-family: 'Roboto',sans-serif;\n    color: #024771;\n    font-size: 1.7em;\n    font-weight: 500;\n    line-height: 1.7em;\n}\n\n\n\n.banner[_ngcontent-%COMP%] {\n    height: 150px;\n    width:100%;\n    background-color: rgb(219, 235, 241);\n    overflow-y: hidden;\n  }\n\n.banner[_ngcontent-%COMP%] > h3[_ngcontent-%COMP%]{\n    width:25%;\n    color: black;\n    display: inline-block;\n    margin-top: -5%;\n    padding: 100px;\n  }\n\n.banner2[_ngcontent-%COMP%] {\n    height: 150px;\n    width:100%;\n    background-color: rgb(219, 235, 241);\n  }\n\n.banner2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]:first-child{\n    width:90%;\n    color: black;\n    display: inline-block;\n    margin-left: 6%;\n    margin-top: 1%;\n    font-weight: bolder;\n    font-size: 1.2em;\n    font-family: 'Roboto', sans-serif;\n    -moz-text-align-last: center;\n         text-align-last: center;\n  }\n\n.banner2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]:last-child{\n    width:100%;\n    color: black;\n    display: inline-block;\n    margin-top: 3%;\n    font-weight: bolder;\n    font-size: 1.2em;\n    font-family: 'Roboto', sans-serif;\n    -moz-text-align-last: center;\n         text-align-last: center;\n  }\n\n.banner3[_ngcontent-%COMP%] {\n    height: 200px;\n    width:100%;\n    background-color: rgb(219, 235, 241);\n  }\n\n.subbanner3[_ngcontent-%COMP%]{\n    margin-bottom: 5%;\n  }\n\n.subbanner3[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n    width:90%;\n    color: black;\n    display: inline-block;\n    margin-left: 4%;\n    margin-top: 1%;\n    font-weight: bolder;\n    font-size: 1.5em;\n    font-family: 'Roboto', sans-serif;\n    -moz-text-align-last: center;\n         text-align-last: center;\n  }\n\n.subbanner3[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > button[_ngcontent-%COMP%]{\n    margin-left: 45%;\n    margin-top: 3%;\n    background: transparent;\n    border: 1px solid blueviolet;\n    font-weight: bolder;\n    font-size: .9em;\n    cursor: pointer;\n    width: 8%;\n    height: 30px;\n  }\n\n.blogFeed[_ngcontent-%COMP%]{\n    z-index: 10;\n    margin: 0px;\n    \n    padding-left: 2%;\n    padding-right: 5%;\n    \n\n}\n\n.feedHeading[_ngcontent-%COMP%]{\n  font-family: 'Roboto',sans-serif;\n  font-size: 1.8em;\n  font-weight: 500;\n  color: #101010;\n  margin:3% 0% 3% 0%;\n  text-align: center;\n}\n\n.blog[_ngcontent-%COMP%]{\n    width: 90%;\n    height: 500px;\n    margin: 1%;\n    margin-top: 0%;\n    margin-left: 6%;\n    overflow: hidden;\n    overflow-x: scroll;\n    white-space: nowrap !important;\n    \n    \n}\n\n.blog[_ngcontent-%COMP%]::-webkit-scrollbar{\n  display: none;\n}\n\n.blog[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{\n    display: inline-block;\n    width: 20%;\n    margin-left: 1%;\n    margin-right: 5%;\n    margin-top: 5%;\n    height: 400px; \n    \n    border-radius:2%; \n}\n\n.blog[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    height: 7%;\n    width: 5.5%;\n    font-weight: bolder;\n    padding-right:3%;  \n}\n\n.feeddata[_ngcontent-%COMP%]{\n  border:2px solid #fff;\n  -webkit-filter: brightness(100%);\n          filter: brightness(100%);\n  overflow: hidden;\n  margin: 10px;\n  height: 100%;\n  transition: -webkit-transform .2s;\n  transition: transform .2s;\n  transition: transform .2s, -webkit-transform .2s;\n  box-shadow: 0 0 11px rgba(230, 62, 62, 0.2); \n}\n\n.feeddata[_ngcontent-%COMP%]:hover {\n  -webkit-transform: scale(2); \n  transform: scale(1.1); \n  box-shadow: 0 0 11px rgba(33,33,33,.2); \n}\n\n.blog[_ngcontent-%COMP%]   .left[_ngcontent-%COMP%]{\n    position: absolute;\n    top:47%;\n    left: 3%;\n    cursor: pointer; \n}\n\n.blog[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]{\n    position: absolute;\n    top:47%;\n    right: -2%;\n    cursor: pointer;    \n}\n\n\n\n.instafeed[_ngcontent-%COMP%]{\n  flex-wrap: nowrap;\n  z-index: 10;\n  margin: 0px;\n  padding-bottom: 0%;\n  padding-top: 1%;\n  padding-left: 4%;\n  \n  padding-right: 5%;\n}\n\n.instafeedHeading[_ngcontent-%COMP%]{\n  font-family: 'Roboto',sans-serif;\n  font-size: 1.8em;\n  font-weight: 500;\n  color: #101010;\n  margin:3% 0% 3% 0%;\n  text-align: center;\n}\n\n.socialFeed[_ngcontent-%COMP%]{\n    width: 90%;\n    max-height: 20%;\n    padding:3%;\n    margin: 0%;\n    margin-left: 5%;\n    overflow: hidden;\n    overflow-x: scroll;\n    white-space: nowrap !important;  \n    \n}\n\n.socialFeed[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n  width: 2%;\n}\n\n.socialFeed[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{\n    display: inline-block;\n    width: 22%;\n    height: 400px; \n    border-radius: 2%;\n    margin-left: -1%;\n    margin-right: 5.3%;\n}\n\n.socialFeed[_ngcontent-%COMP%]::-webkit-scrollbar{\ndisplay: none;\n}\n\n.instaData[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n  position: relative;\n  height: 45%;\n  width: 100%;\n  padding: 2%;\n  border-radius: 5%;\n}\n\n.instaData[_ngcontent-%COMP%]{\n  border:4px solid #fff;\n  overflow: hidden;\n  margin: 25px;   \n  display: inline-block;\n  transition: -webkit-transform .2s;\n  transition: transform .2s;\n  transition: transform .2s, -webkit-transform .2s;\n  -webkit-filter: brightness(100%);\n          filter: brightness(100%);\n  box-shadow: 0 0 11px rgba(230, 62, 62, 0.2); \n}\n\n.instaData[_ngcontent-%COMP%]:hover {\n  -webkit-transform: scale(2); \n  transform: scale(1.1); \n  box-shadow: 0 0 11px rgba(33,33,33,.2); \n}\n\n.socialFeed[_ngcontent-%COMP%]   .left[_ngcontent-%COMP%]{\n    position: absolute;\n    padding-top: 15%;\n    left: 6%;\n    cursor: pointer;\n    scroll-behavior: smooth;\n}\n\n.socialFeed[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]{\n    position: absolute;\n    padding-top: 15%;\n    right: 7%;\n    cursor: pointer;\n    scroll-behavior: smooth;\n}\n\n#username[_ngcontent-%COMP%]{\n  color:orange;\n  padding:2%;\n  text-align: right;\n  width:10%;\n  font-size: .9em\n}\n\n#time[_ngcontent-%COMP%]{\n  color:orange;\n  display: block;\n  font-size: .8em;\n  text-align: center;\n  margin-top: 0%;\n  padding:2%;\n  \n}\n\n.textdata[_ngcontent-%COMP%]{\n  width:96%;\n  height: 350px;\n  white-space: normal;  \n  padding: 2%;\n  \n}\n\n.textdata[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n  font-size: .8em;\n  padding-top:8%;\n  height: 340px;\n  text-align: center;\n  display: inline-flex; \n  padding-bottom: 5%;\n  font-weight: bolder;\n}\n\n\n\nfooter[_ngcontent-%COMP%]{\n    background-color: #024771;\n}\n\n@media screen and (min-width:459px) and (max-width:767px) {\n  .app[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    margin-top:60px;\n    margin-left: auto;\n    width:80px;\n    height: 80px;\n    \n  }\n  .app-desc[_ngcontent-%COMP%] {\n    width: 300px;\n    height:330px;\n    text-align: left;\n    margin-top: 28%;\n    padding-top: 1.6%;\n    line-height:0.7em;\n    font-weight:180;\n  }\n    .app-desc[_ngcontent-%COMP%]    > p[_ngcontent-%COMP%]:first-child {\n      font-size: 1.6em;\n      line-height: 1em;\n      text-align: left;\n      margin-top:-8%;\n      padding-bottom: 3%;\n      margin-left: auto;\n    }\n    .app-desc[_ngcontent-%COMP%]    > p[_ngcontent-%COMP%]:last-child {\n      font-size: 1.5em;\n      font-weight: 270;\n      line-height: 1.3em;\n      text-align:left;\n    }\n    .banner[_ngcontent-%COMP%] {\n      height:auto;\n      width:100%;\n      background-color: rgb(219, 235, 241);\n      text-align: center;\n      margin-bottom:10%;\n    }\n    .banner[_ngcontent-%COMP%] > h3[_ngcontent-%COMP%]{\n      width:100%;\n      color: black;\n      display:block;\n      margin-top:0;\n      padding: 20px;\n    }\n    .banner2[_ngcontent-%COMP%]{\n      height:auto;\n      width:100%;\n      background-color: rgb(219, 235, 241);\n      text-align: center;\n      margin-bottom:10%;\n    }\n    .banner[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n      width:100%;\n      color: black;\n      display:block;\n      margin-top:0;\n      padding: 20px;\n    }\n    .blog[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%] {\n      display: inline-block;\n      width: 100%;\n      height: 400px;\n    }\n  .socialFeed[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%] {\n    display: inline-block;\n    width: 100%;\n    height: 500px;\n    margin: 0px;\n    \n  }\n  .instafeed[_ngcontent-%COMP%]{\n    z-index: 10;\n    margin: 0px;\n    padding-bottom: 25%;\n  }\n  .socialFeed[_ngcontent-%COMP%]   .left[_ngcontent-%COMP%]{\n    margin-top: 75%;\n    left: 7%;\n}\n.socialFeed[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]{\n    margin-top: 75%;\n    right: 7%;   \n}\n.card[_ngcontent-%COMP%]{\n  position:relative;\n  width:100%;\n  height:500px;\n}\n.card-image-holder[_ngcontent-%COMP%]{\n  position:absolute;\n  width:100%;\n  height:300px;\n  display:block;\n  top:0;\n}\n.card-image-holder[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n  width:100%;\n  height:100%;\n  margin-left:0%;\n}\n.card-content[_ngcontent-%COMP%]{\n  position:absolute;\n  top:300px;\n  width:100%;\n  height:200px;\n  display: inline-block;\n}\n.card-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%]{\nmargin-top:5%;\nwidth:100%;\nmargin-left:0;\n}\n\n\n.card2[_ngcontent-%COMP%]{\nposition:relative;\nwidth:100%;\nheight:500px;\n}\n.card2-image[_ngcontent-%COMP%]{\nposition:absolute;\nwidth:100%;\nheight:300px;\ndisplay:block;\ntop:0;\n}\n.card2-image[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\nwidth:100%;\nheight:100%;\nmargin-left:0%;\n}\n.card2-content[_ngcontent-%COMP%]{\nposition:absolute;\ntop:300px;\nwidth:100%;\nheight:200px;\ndisplay: inline-block;\n}\n.card2-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%]{\nmargin-top:5%;\nwidth:100%;\nmargin-left:0;\n}\n.card2-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%] > h3[_ngcontent-%COMP%]{\n  font-size: 1.3em;\n  font-family: 'Roboto', sans-serif;\n  }\n  .subbanner3[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n    width:96%;\n    color: black;\n    display: inline-block;\n    margin-left: 6%;\n    margin-top: 1%;\n    font-weight: bolder;\n    font-size: 1.5em;\n    -moz-text-align-last: center;\n         text-align-last: center;\n  }\n  .subbanner3[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > button[_ngcontent-%COMP%]{\n    margin-left: 35%;\n    margin-top: 3%;\n    background: transparent;\n    border: 1px solid blueviolet;\n    font-weight: bolder;\n    font-size: .9em;\n    cursor: pointer;\n    width: 30%;\n  }\n  .banner2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]:first-child{\n    width:90%;\n    color: black;\n    display: inline-block;\n    margin-left: 3%;\n    margin-top: 1%;\n    font-weight: bolder;\n    font-size: 1em;\n    -moz-text-align-last: center;\n         text-align-last: center;\n  }\n  .banner2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]:last-child{\n    width:100%;\n    color: black;\n    display: inline-block;\n    margin-top: 3%;\n    font-weight: bolder;\n    font-size: 1em;\n    -moz-text-align-last: center;\n         text-align-last: center;\n  }\n}\n\n@media  (min-width:768px) and (max-width: 1220px) {\nul[_ngcontent-%COMP%] {\n  padding: 0;\n}\n\n.brand[_ngcontent-%COMP%] {\n  width: auto;\n  text-align: left;\n  margin-left: 1%;\n  padding-top: 1.5%;\n  padding-bottom: 1.5%;\n}\n.brand-title[_ngcontent-%COMP%]{\n  text-shadow:2px 2px 2px;\n  margin-left:-10px;\n  font-size:20px;\n}\n\n.button[_ngcontent-%COMP%] {\n  width: auto;\n  height:10px;\n  position: absolute;\n  right: 2%;\n  top: 10%;\n}\n.brand-img[_ngcontent-%COMP%] {\n  width: 50px;\n}\n\n.button[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n  font-size: 0.8em;\n  padding: 2px 8px 2px 8px;\n  margin:auto;\n  margin-top:8%;\n}\n\n.banner[_ngcontent-%COMP%] {\n  height: 150px;\n  width:100%;\n  background-color: rgb(219, 235, 241);\n}\n.banner[_ngcontent-%COMP%] > h3[_ngcontent-%COMP%]{\n  width:35%;\n  color: black;\n  display: inline-block;\n  margin-top: -7%;\n  font-size: 1em;\n  margin-left: -10%;\n}\n.instafeed[_ngcontent-%COMP%]{\n  width: 80%;\n  z-index: 10;\n  margin: 0px;\n  padding-bottom: 10%;\n  padding-top: 5%;\n  margin-left: 12%;\n}\n.instafeedHeading[_ngcontent-%COMP%]{\n  font-family: 'Roboto',sans-serif;\n  font-size: 1.8em;\n  font-weight: 500;\n  color: #101010;\n  margin:3% 0% 3% 0%;\n  text-align: center;\n}\n.socialFeed[_ngcontent-%COMP%]{\n    width: 100%;\n    max-height: 450px;\n    flex-wrap: nowrap;\n    padding:3%;\n    margin: 0%;\n    overflow: hidden;\n    white-space: nowrap !important;  \n}\n\n.socialFeed[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{\n    display: inline-block;\n    width: 50%;\n    height: 400px; \n}\n.socialFeed[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n\nwidth: 5%;\n}\n.instaData[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n  position: relative;\n  height: 45%;\n  width: 100%;\n  padding: 2%;\n}\n.instaData[_ngcontent-%COMP%]{\n  border:4px solid #fff;\n  overflow: hidden;\n  margin: 25px;   \n  display: inline-block;\n  transition: -webkit-transform .2s;\n  transition: transform .2s;\n  transition: transform .2s, -webkit-transform .2s;\n  -webkit-filter: brightness(100%);\n          filter: brightness(100%);\n  box-shadow: 0 0 11px rgba(230, 62, 62, 0.2); \n}\n.socialFeed[_ngcontent-%COMP%]   .left[_ngcontent-%COMP%]{\n    position: absolute;\n    padding-top: 30%;\n    left: 10%;\n    cursor: pointer;\n    scroll-behavior: smooth;\n}\n.socialFeed[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]{\n    position: absolute;\n    padding-top: 30%;\n    right: 7.5%;\n    cursor: pointer;\n    scroll-behavior: smooth;\n}\n\n.blog[_ngcontent-%COMP%]{\n  width: 90%;\n  max-height: 450px;\n  margin: 4%;\n  overflow: hidden;\n  white-space: nowrap !important;\n}\n.blog[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{\n  display: inline-block;\n  width: 50%;\n  height: 430px; \n}\n.blog[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n  height: 7%;\n  width: 7%;\n  \n}\n\n.blog[_ngcontent-%COMP%]   .left[_ngcontent-%COMP%]{\n  position: absolute;\n  top:50%;\n  left: 0%;\n  cursor: pointer; \n}\n.blog[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]{\n  position: absolute;\n  top:50%;\n  right: -2.5%;\n  cursor: pointer;    \n}\n.card2-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%] > h3[_ngcontent-%COMP%]{\nfont-size: 1.5em;\n}\n.banner2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]:last-child{\n  width:90%;\n  color: black;\n  display: inline-block;\n  margin-top: 3%;\n  font-weight: bolder;\n  font-size: .8em;\n  margin-left: 2%;\n  -moz-text-align-last: center;\n       text-align-last: center;\n}\n.subbanner3[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > button[_ngcontent-%COMP%]{\n  margin-left: 45%;\n  margin-top: 3%;\n  background: transparent;\n  border: 1px solid blueviolet;\n  font-weight: bolder;\n  font-size: .9em;\n  cursor: pointer;\n  width: 15%;\n}\n\n}\n\n@media screen and (min-width:320px) and (max-width:500px) {\n.app[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n  margin-top:60px;\n  margin-left: auto;\n  width:80px;\n  height: 80px;\n  \n}\n.app-desc[_ngcontent-%COMP%] {\n  width: 300px;\n  height:330px;\n  text-align: left;\n  margin-top: 28%;\n  padding-top: 1.6%;\n  line-height:0.7em;\n  font-weight:180;\n}\n  .app-desc[_ngcontent-%COMP%]    > p[_ngcontent-%COMP%]:first-child {\n    font-family: 'Roboto',sans-serif;\n    font-size: 1.6em;\n    line-height: 1em;\n    text-align: left;\n    margin-top:-8%;\n    padding-bottom: 3%;\n    margin-left: auto;\n  }\n  .app-desc[_ngcontent-%COMP%]    > p[_ngcontent-%COMP%]:last-child {\n    font-family: 'Roboto',sans-serif;\n    font-size: 1.5em;\n    font-weight: 270;\n    line-height: 1.3em;\n    text-align:left;\n  }\n  .banner[_ngcontent-%COMP%] {\n    height:auto;\n    width:100%;\n    background-color: rgb(219, 235, 241);\n    text-align: center;\n    margin-bottom:10%;\n  }\n  .banner[_ngcontent-%COMP%] > h3[_ngcontent-%COMP%]{\n    width:100%;\n    color: black;\n    display:block;\n    margin-top:0;\n    padding: 20px;\n  }\n  .blog[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%] {\n    display: inline-block;\n    width: 85%;\n    margin: 6%;\n    height: 400px;\n  }\n  .blog[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    width:9%;\n    height: 6%;\n  }\n  .blog[_ngcontent-%COMP%]   .left[_ngcontent-%COMP%]{\n    top:45%;\n    left: 0%;\n}\n.blog[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]{\n    top:45%;\n    right: -5%;\n}\n.socialFeed[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%] {\n  display: inline-block;\n  width: 100%;\n  height: 400px;\n  margin: 10px;\n  \n}\n.socialFeed[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n  width: 5%;\n}\n.instafeed[_ngcontent-%COMP%]{\n  z-index: 10;\n  margin: 0px;\n  padding-bottom: 25%;\n}\n.socialFeed[_ngcontent-%COMP%]   .left[_ngcontent-%COMP%]{\n  margin-top: 40%;\n  left: 2%;\n}\n.socialFeed[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]{\n  margin-top: 40%;\n  right: 2%;   \n}\n.card[_ngcontent-%COMP%]{\n\nwidth:100%;\nheight:500px;\n}\n.card-image-holder[_ngcontent-%COMP%]{\n\nwidth:100%;\nheight:300px;\ndisplay:block;\ntop:0;\nmargin-left: 0%;\nmargin-bottom: 10%;\n}\n.card-image-holder[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\nwidth:100%;\nheight:100%;\nmargin-left:0%;\n}\n.card-content[_ngcontent-%COMP%]{\n\ntop:300px;\nwidth:100%;\nheight:400px;\nmargin-left: 0%;\n\n\n}\n.card-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%]{\nmargin-top:5%;\nwidth:100%;\nmargin-left:0;\nmargin-bottom: 10%;\n}\n\n\n.card2[_ngcontent-%COMP%]{\nposition:relative;\nwidth:100%;\nheight:500px;\nmargin-top: 20%;\n}\n.card2-image[_ngcontent-%COMP%]{\nposition:absolute;\nwidth:100%;\nheight:300px;\ndisplay:block;\ntop:0;\n}\n.card2-image[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\nwidth:100%;\nheight:100%;\nmargin-left:0%;\n}\n.card2-content[_ngcontent-%COMP%]{\nposition:absolute;\ntop:300px;\nwidth:100%;\nheight:200px;\ndisplay: inline-block;\n}\n.card2-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%]{\nmargin-top:5%;\nwidth:100%;\nmargin-left:0;\n}\n.card2-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%] > h3[_ngcontent-%COMP%]{\nfont-size: 1em;\nfont-family: 'Roboto', sans-serif;\ntext-align: center;\n}\n.banner2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]:first-child{\n  width:95%;\n  color: black;\n  display: inline-block;\n  margin-left: 3%;\n  margin-top: 1%;\n  font-weight: bolder;\n  font-size: .8em;\n  font-family: 'Roboto', sans-serif;\n  -moz-text-align-last: center;\n       text-align-last: center;\n}\n.banner2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]:last-child{\n  width:100%;\n  color: black;\n  display: inline-block;\n  margin-top: 3%;\n  font-weight: bolder;\n  font-size: .8em;\n  margin-left: 2%;\n  font-family: 'Roboto', sans-serif;\n  -moz-text-align-last: center;\n       text-align-last: center;\n}\n.subbanner3[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n  text-align: center;\n  margin-left: 5%;\n}\n.subbanner3[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > button[_ngcontent-%COMP%]{\n  margin-left: 32.5%;\n  margin-top: 3%;\n  background: transparent;\n  border: 1px solid blueviolet;\n  font-weight: bolder;\n  font-size: .9em;\n  cursor: pointer;\n  width: 35%;\n}\n}"];
+var styles = ["body[_ngcontent-%COMP%] {\n  width: auto;\n  height: auto;\n}\n\n*[_ngcontent-%COMP%]{\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  font-family:'Roboto',sans-serif;\n}\n\n.instagram[_ngcontent-%COMP%]{\n  border:1px solid black;\n}\n\n.instagram[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n  border:1px solid red;\n}\n\n.nav[_ngcontent-%COMP%] {\n  background-color: #fff;\n  height: auto;\n  width: 100%;\n  position: fixed;\n  top: 0px;\n  z-index: 1000;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n}\n\n.nav[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n    display: inline-block;\n  }\n\n.nav[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%] {\n    list-style: none;\n  }\n\n.brand[_ngcontent-%COMP%] {\n  width: auto;\n  padding: 0.6% 0.5% 0.5% 0.7%;\n}\n\n.brand-img[_ngcontent-%COMP%] {\n  width: 65px;\n  display: inline-block;\n}\n\n.brand-title[_ngcontent-%COMP%] {\n  font-family: 'Roboto',sans-serif;\n  font-size: 1.7em;\n  font-weight: 400;\n  color: #024771;\n  display: inline-block;\n  position: relative;\n  top: -6px;\n  text-shadow:2px 2px 2px;\n}\n\n.button[_ngcontent-%COMP%] {\n  display: inline-block;\n  width: auto;\n  padding: 0px;\n  text-align: right;\n  position: absolute;\n  top: 20%;\n  margin-top: .6%;\n  right: 0.5%;\n}\n\n.button[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n    border: 1px solid #fafafa;\n    padding: 8px 20px 8px 20px;\n    font-family: 'Roboto', sans-serif;\n    font-size: 1em;\n    color: #fafafa;\n    background-color:#024771;\n    border-radius: 5px;\n    font-weight: 300;\n  }\n\n.card-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%] > b[_ngcontent-%COMP%]{\n  padding-bottom: 3%;\n}\n\n.card[_ngcontent-%COMP%]{\n  \n  width:100%;\n  height:400px;\n  margin-top: 7%;\n}\n\n.card-image-holder[_ngcontent-%COMP%]{\n  \n  width:50%;\n  height:300px;\n  top:5%;\n  left: 0;\n}\n\n.card-image-holder[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n  width:80%;\n  height:100%;\n  margin-left:60%;\n}\n\n.card-content[_ngcontent-%COMP%]{\n  \n  width:60%;\n  height:100%;\n  display: block;\n  top:30%;\n}\n\n.card-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%]{\n width:80%;\n margin-left: 43%;\ntext-align: center;\n}\n\n.card-content[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%] > b[_ngcontent-%COMP%] > h2[_ngcontent-%COMP%]{\nfont-family: 'Roboto', sans-serif;  \npadding: 5%;\n}\n\n.card-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\nfont-size: 1.2em;\nfont-family: 'Roboto', sans-serif;\n}\n\n.card2[_ngcontent-%COMP%]{\n\nwidth:100%;\nheight:500px;\nmargin-top: 7%;\n\n}\n\n.card2-image[_ngcontent-%COMP%]{\n\nwidth:50%;\nheight:300px;\ntop:5%;\nleft:0;\n}\n\n.card2-image[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\nwidth:80%;\nheight:100%;\nmargin-left: 60%;\n\n}\n\n.card2-content[_ngcontent-%COMP%]{\n\nwidth:50%;\nheight:100%;\ndisplay: block;\ntop:10%;\n\n}\n\n.card2-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%]{\nwidth:100%;\ntext-align: center;\nmargin-left: 50%;\nmargin-top: 3%;\n}\n\n.card2-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%] > h2[_ngcontent-%COMP%]{\nfont-family: 'Roboto', sans-serif;\n}\n\n\n\n.app[_ngcontent-%COMP%]{\n    width: 100px;\n    height: 100px;\n    margin:auto;\n}\n\n.app[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n  padding-bottom: 2%;\n}\n\n.app-icon[_ngcontent-%COMP%]{\n    width: 100%;\n    height: 100%;\n    border-radius:10px;\n    margin-top:100px;\n}\n\n.app-mantra1[_ngcontent-%COMP%]{\n    width: 90%;\n    border: 1px solid black;\n    margin: 3% ;\n    height: 100%;\n    padding: 1%;\n    font-family: 'Roboto', sans-serif;\n    font-size: 1.2em;\n    font-weight: 300;\n    color: #101010;\n    text-align: justify;\n    -moz-text-align-last: center;\n         text-align-last: center;\n}\n\n.app-mantra1[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    display: block;\n    margin: auto;\n    width: 55%;\n    height: 300px;\n    margin-left: 5%;\n}\n\n.app-mantra1[_ngcontent-%COMP%] > b[_ngcontent-%COMP%]{\n  margin-left: 70%;\n  display: block;\n  margin-top: -25%;\n  width: 60%;\n  padding-bottom: 10%;\n  text-align: justify;\n  -moz-text-align-last: left;\n       text-align-last: left;\n}\n\n.app-mantra1[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n  margin-left: 70%;\n  display: block;\n  width: 60%;\n  text-align: justify;\n  -moz-text-align-last: left;\n       text-align-last: left;\n}\n\n.app-mantra2[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%]{\n  width: 34%;\n  margin-left: 7%;\n  margin-top: 13%;\n  height: auto;\n  padding: 1%;\n  font-family: 'Roboto', sans-serif;\n  font-size: 1.2em;\n  font-weight: 300;\n  color: #101010;\n  text-align: justify;\n  -moz-text-align-last: center;\n       text-align-last: center;\n}\n\n.app-mantra2[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\ndisplay: block;\nmargin: auto;\nwidth: 40%;\nheight: 300px;\nmargin-left: 45%;\nmargin-top: -15%;\n}\n\n.app-desc[_ngcontent-%COMP%]{\n    width:65%;\n    height:auto;\n    padding:1%;\n    padding-top: 2%;\n    margin:6%;\n    background-color: none;\n    font-family: 'Roboto', sans-serif;\n    height:300px;\n    line-height:0.2em;\n }\n\n.app-desc[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]:first-child{\n    font-family: 'Roboto',sans-serif;\n    font-size: 2em;\n    color: orange;\n    line-height: 2.2em;\n    text-align: left;\n    \n    margin: auto;\n    padding:0;\n}\n\n.app-desc[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]:last-child{\n    font-family: 'Roboto',sans-serif;\n    color: #024771;\n    font-size: 1.7em;\n    font-weight: 500;\n    line-height: 1.7em;\n}\n\n\n\n.banner[_ngcontent-%COMP%] {\n    height: 150px;\n    width:100%;\n    background-color: rgb(219, 235, 241);\n    overflow-y: hidden;\n  }\n\n.banner[_ngcontent-%COMP%] > h3[_ngcontent-%COMP%]{\n    width:25%;\n    color: black;\n    display: inline-block;\n    margin-top: -5%;\n    padding: 100px;\n  }\n\n.banner2[_ngcontent-%COMP%] {\n    height: 150px;\n    width:100%;\n    background-color: rgb(219, 235, 241);\n  }\n\n.banner2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]:first-child{\n    width:90%;\n    color: black;\n    display: inline-block;\n    margin-left: 6%;\n    margin-top: 1%;\n    font-weight: bolder;\n    font-size: 1.2em;\n    font-family: 'Roboto', sans-serif;\n    -moz-text-align-last: center;\n         text-align-last: center;\n  }\n\n.banner2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]:last-child{\n    width:100%;\n    color: black;\n    display: inline-block;\n    margin-top: 3%;\n    font-weight: bolder;\n    font-size: 1.2em;\n    font-family: 'Roboto', sans-serif;\n    -moz-text-align-last: center;\n         text-align-last: center;\n  }\n\n.banner3[_ngcontent-%COMP%] {\n    height: 200px;\n    width:100%;\n    background-color: rgb(219, 235, 241);\n  }\n\n.subbanner3[_ngcontent-%COMP%]{\n    margin-bottom: 5%;\n  }\n\n.subbanner3[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n    width:90%;\n    color: black;\n    display: inline-block;\n    margin-left: 4%;\n    margin-top: 1%;\n    font-weight: bolder;\n    font-size: 1.5em;\n    font-family: 'Roboto', sans-serif;\n    -moz-text-align-last: center;\n         text-align-last: center;\n  }\n\n.subbanner3[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > button[_ngcontent-%COMP%]{\n    margin-left: 45%;\n    margin-top: 3%;\n    background: transparent;\n    border: 1px solid blueviolet;\n    font-weight: bolder;\n    font-size: .9em;\n    cursor: pointer;\n    width: 8%;\n    height: 30px;\n  }\n\n.blogFeed[_ngcontent-%COMP%]{\n    z-index: 10;\n    margin: 0px;\n    \n    padding-left: 2%;\n    padding-right: 5%;\n    \n\n}\n\n.feedHeading[_ngcontent-%COMP%]{\n  font-family: 'Roboto',sans-serif;\n  font-size: 1.8em;\n  font-weight: 500;\n  color: #101010;\n  margin:3% 0% 3% 0%;\n  text-align: center;\n}\n\n.blog[_ngcontent-%COMP%]{\n    width: 90%;\n    height: 500px;\n    margin: 1%;\n    margin-top: 0%;\n    margin-left: 6%;\n    overflow: hidden;\n    overflow-x: scroll;\n    white-space: nowrap !important;\n    \n    -ms-scroll-snap-type: mandatory;\n        scroll-snap-type: mandatory;\n    -ms-scroll-snap-points-x: repeat(500px);\n        scroll-snap-points-x: repeat(500px);\n    -ms-scroll-snap-type: x mandatory;\n        scroll-snap-type: x mandatory;\n    \n}\n\n.blog[_ngcontent-%COMP%]::-webkit-scrollbar{\n  display: none;\n}\n\n.blog[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{\n    display: inline-block;\n    width: 20%;\n    margin-left: 1%;\n    margin-right: 3%;\n    margin-top: 5%;\n    height: 400px; \n    \n    border-radius:2%; \n    scroll-snap-align: start;\n}\n\n.blog[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    height: 7%;\n    width: 5.5%;\n    font-weight: bolder;\n    padding-right:3%;  \n}\n\n.feeddata[_ngcontent-%COMP%]{\n  border:2px solid #fff;\n  -webkit-filter: brightness(100%);\n          filter: brightness(100%);\n  overflow: hidden;\n  margin: 10px;\n  height: 100%;\n  transition: -webkit-transform .2s;\n  transition: transform .2s;\n  transition: transform .2s, -webkit-transform .2s;\n  box-shadow: 0 0 11px rgba(230, 62, 62, 0.2); \n}\n\n.feeddata[_ngcontent-%COMP%]:hover {\n  -webkit-transform: scale(2); \n  transform: scale(1.1); \n  box-shadow: 0 0 11px rgba(33,33,33,.2); \n}\n\n.blog[_ngcontent-%COMP%]   .left[_ngcontent-%COMP%]{\n    position: absolute;\n    top:47%;\n    left: 3%;\n    cursor: pointer; \n}\n\n.blog[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]{\n    position: absolute;\n    top:47%;\n    right: -2%;\n    cursor: pointer;    \n}\n\n\n\n.instafeed[_ngcontent-%COMP%]{\n  flex-wrap: nowrap;\n  z-index: 10;\n  margin: 0px;\n  padding-bottom: 0%;\n  padding-top: 1%;\n  padding-left: 4%;\n  \n  padding-right: 5%;\n}\n\n.instafeedHeading[_ngcontent-%COMP%]{\n  font-family: 'Roboto',sans-serif;\n  font-size: 1.8em;\n  font-weight: 500;\n  color: #101010;\n  margin:3% 0% 3% 0%;\n  text-align: center;\n}\n\n.socialFeed[_ngcontent-%COMP%]{\n    width: 90%;\n    max-height: 20%;\n    padding:3%;\n    margin: 0%;\n    margin-left: 5%;\n    overflow: hidden;\n    overflow-x: scroll;\n    white-space: nowrap !important;  \n    \n    -ms-scroll-snap-type: mandatory;\n        scroll-snap-type: mandatory;\n    -ms-scroll-snap-points-x: repeat(500px);\n        scroll-snap-points-x: repeat(500px);\n    -ms-scroll-snap-type: x mandatory;\n        scroll-snap-type: x mandatory;\n}\n\n.socialFeed[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n  width: 2%;\n}\n\n.socialFeed[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{\n    display: inline-block;\n    width: 22%;\n    height: 400px; \n    border-radius: 2%;\n    margin-left: -1%;\n    margin-right: 5.3%;\n    scroll-snap-align: start;\n}\n\n.socialFeed[_ngcontent-%COMP%]::-webkit-scrollbar{\ndisplay: none;\n}\n\n.instaData[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n  position: relative;\n  height: 45%;\n  width: 100%;\n  padding: 2%;\n  border-radius: 5%;\n}\n\n.instaData[_ngcontent-%COMP%]{\n  border:4px solid #fff;\n  overflow: hidden;\n  margin: 22px;   \n  display: inline-block;\n  transition: -webkit-transform .2s;\n  transition: transform .2s;\n  transition: transform .2s, -webkit-transform .2s;\n  -webkit-filter: brightness(100%);\n          filter: brightness(100%);\n  box-shadow: 0 0 11px rgba(230, 62, 62, 0.2); \n}\n\n.instaData[_ngcontent-%COMP%]:hover {\n  -webkit-transform: scale(2); \n  transform: scale(1.1); \n  box-shadow: 0 0 11px rgba(33,33,33,.2); \n}\n\n.socialFeed[_ngcontent-%COMP%]   .left[_ngcontent-%COMP%]{\n    position: absolute;\n    padding-top: 15%;\n    left: 6%;\n    cursor: pointer;\n    scroll-behavior: smooth;\n}\n\n.socialFeed[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]{\n    position: absolute;\n    padding-top: 15%;\n    right: 7%;\n    cursor: pointer;\n    scroll-behavior: smooth;\n}\n\n#username[_ngcontent-%COMP%]{\n  color:orange;\n  padding:2%;\n  text-align: right;\n  width:10%;\n  font-size: .9em\n}\n\n#time[_ngcontent-%COMP%]{\n  color:orange;\n  display: block;\n  font-size: .8em;\n  text-align: center;\n  margin-top: 0%;\n  padding:2%;\n  \n}\n\n.textdata[_ngcontent-%COMP%]{\n  width:96%;\n  height: 350px;\n  white-space: normal;  \n  padding: 2%;\n  \n}\n\n.textdata[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n  font-size: .8em;\n  padding-top:8%;\n  height: 340px;\n  text-align: center;\n  display: inline-flex; \n  padding-bottom: 5%;\n  font-weight: bolder;\n}\n\n\n\nfooter[_ngcontent-%COMP%]{\n    background-color: #024771;\n}\n\n@media screen and (min-width:459px) and (max-width:767px) {\n  .app[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    margin-top:60px;\n    margin-left: auto;\n    width:80px;\n    height: 80px;\n    \n  }\n  .app-desc[_ngcontent-%COMP%] {\n    width: 300px;\n    height:330px;\n    text-align: left;\n    margin-top: 28%;\n    padding-top: 1.6%;\n    line-height:0.7em;\n    font-weight:180;\n  }\n    .app-desc[_ngcontent-%COMP%]    > p[_ngcontent-%COMP%]:first-child {\n      font-size: 1.6em;\n      line-height: 1em;\n      text-align: left;\n      margin-top:-8%;\n      padding-bottom: 3%;\n      margin-left: auto;\n    }\n    .app-desc[_ngcontent-%COMP%]    > p[_ngcontent-%COMP%]:last-child {\n      font-size: 1.5em;\n      font-weight: 270;\n      line-height: 1.3em;\n      text-align:left;\n    }\n    .banner[_ngcontent-%COMP%] {\n      height:auto;\n      width:100%;\n      background-color: rgb(219, 235, 241);\n      text-align: center;\n      margin-bottom:10%;\n    }\n    .banner[_ngcontent-%COMP%] > h3[_ngcontent-%COMP%]{\n      width:100%;\n      color: black;\n      display:block;\n      margin-top:0;\n      padding: 20px;\n    }\n    .banner2[_ngcontent-%COMP%]{\n      height:auto;\n      width:100%;\n      background-color: rgb(219, 235, 241);\n      text-align: center;\n      margin-bottom:10%;\n    }\n    .banner[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n      width:100%;\n      color: black;\n      display:block;\n      margin-top:0;\n      padding: 20px;\n    }\n    .blog[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%] {\n      display: inline-block;\n      width: 100%;\n      height: 400px;\n    }\n  .socialFeed[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%] {\n    display: inline-block;\n    width: 100%;\n    height: 500px;\n    margin: 0px;\n    \n  }\n  .instafeed[_ngcontent-%COMP%]{\n    z-index: 10;\n    margin: 0px;\n    padding-bottom: 25%;\n  }\n  .socialFeed[_ngcontent-%COMP%]   .left[_ngcontent-%COMP%]{\n    margin-top: 75%;\n    left: 7%;\n}\n.socialFeed[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]{\n    margin-top: 75%;\n    right: 7%;   \n}\n.card[_ngcontent-%COMP%]{\n  position:relative;\n  width:100%;\n  height:500px;\n}\n.card-image-holder[_ngcontent-%COMP%]{\n  position:absolute;\n  width:100%;\n  height:300px;\n  display:block;\n  top:0;\n}\n.card-image-holder[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n  width:100%;\n  height:100%;\n  margin-left:0%;\n}\n.card-content[_ngcontent-%COMP%]{\n  position:absolute;\n  top:300px;\n  width:100%;\n  height:200px;\n  display: inline-block;\n}\n.card-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%]{\nmargin-top:5%;\nwidth:100%;\nmargin-left:0;\n}\n\n\n.card2[_ngcontent-%COMP%]{\nposition:relative;\nwidth:100%;\nheight:500px;\n}\n.card2-image[_ngcontent-%COMP%]{\nposition:absolute;\nwidth:100%;\nheight:300px;\ndisplay:block;\ntop:0;\n}\n.card2-image[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\nwidth:100%;\nheight:100%;\nmargin-left:0%;\n}\n.card2-content[_ngcontent-%COMP%]{\nposition:absolute;\ntop:300px;\nwidth:100%;\nheight:200px;\ndisplay: inline-block;\n}\n.card2-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%]{\nmargin-top:5%;\nwidth:100%;\nmargin-left:0;\n}\n.card2-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%] > h3[_ngcontent-%COMP%]{\n  font-size: 1.3em;\n  font-family: 'Roboto', sans-serif;\n  }\n  .subbanner3[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n    width:96%;\n    color: black;\n    display: inline-block;\n    margin-left: 6%;\n    margin-top: 1%;\n    font-weight: bolder;\n    font-size: 1.5em;\n    -moz-text-align-last: center;\n         text-align-last: center;\n  }\n  .subbanner3[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > button[_ngcontent-%COMP%]{\n    margin-left: 35%;\n    margin-top: 3%;\n    background: transparent;\n    border: 1px solid blueviolet;\n    font-weight: bolder;\n    font-size: .9em;\n    cursor: pointer;\n    width: 30%;\n  }\n  .banner2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]:first-child{\n    width:90%;\n    color: black;\n    display: inline-block;\n    margin-left: 3%;\n    margin-top: 1%;\n    font-weight: bolder;\n    font-size: 1em;\n    -moz-text-align-last: center;\n         text-align-last: center;\n  }\n  .banner2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]:last-child{\n    width:100%;\n    color: black;\n    display: inline-block;\n    margin-top: 3%;\n    font-weight: bolder;\n    font-size: 1em;\n    -moz-text-align-last: center;\n         text-align-last: center;\n  }\n}\n\n@media  (min-width:768px) and (max-width: 1220px) {\nul[_ngcontent-%COMP%] {\n  padding: 0;\n}\n\n.brand[_ngcontent-%COMP%] {\n  width: auto;\n  text-align: left;\n  margin-left: 1%;\n  padding-top: 1.5%;\n  padding-bottom: 1.5%;\n}\n.brand-title[_ngcontent-%COMP%]{\n  text-shadow:2px 2px 2px;\n  margin-left:-10px;\n  font-size:20px;\n}\n\n.button[_ngcontent-%COMP%] {\n  width: auto;\n  height:10px;\n  position: absolute;\n  right: 2%;\n  top: 10%;\n}\n.brand-img[_ngcontent-%COMP%] {\n  width: 50px;\n}\n\n.button[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n  font-size: 0.8em;\n  padding: 2px 8px 2px 8px;\n  margin:auto;\n  margin-top:8%;\n}\n\n.banner[_ngcontent-%COMP%] {\n  height: 150px;\n  width:100%;\n  background-color: rgb(219, 235, 241);\n}\n.banner[_ngcontent-%COMP%] > h3[_ngcontent-%COMP%]{\n  width:35%;\n  color: black;\n  display: inline-block;\n  margin-top: -7%;\n  font-size: 1em;\n  margin-left: -10%;\n}\n.instafeed[_ngcontent-%COMP%]{\n  width: 80%;\n  z-index: 10;\n  margin: 0px;\n  padding-bottom: 10%;\n  padding-top: 5%;\n  margin-left: 12%;\n}\n.instafeedHeading[_ngcontent-%COMP%]{\n  font-family: 'Roboto',sans-serif;\n  font-size: 1.8em;\n  font-weight: 500;\n  color: #101010;\n  margin:3% 0% 3% 0%;\n  text-align: center;\n}\n.socialFeed[_ngcontent-%COMP%]{\n    width: 100%;\n    max-height: 450px;\n    flex-wrap: nowrap;\n    padding:3%;\n    margin: 0%;\n    overflow: hidden;\n    white-space: nowrap !important;  \n}\n\n.socialFeed[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{\n    display: inline-block;\n    width: 50%;\n    height: 400px; \n}\n.socialFeed[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n\nwidth: 5%;\n}\n.instaData[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n  position: relative;\n  height: 45%;\n  width: 100%;\n  padding: 2%;\n}\n.instaData[_ngcontent-%COMP%]{\n  border:4px solid #fff;\n  overflow: hidden;\n  margin: 25px;   \n  display: inline-block;\n  transition: -webkit-transform .2s;\n  transition: transform .2s;\n  transition: transform .2s, -webkit-transform .2s;\n  -webkit-filter: brightness(100%);\n          filter: brightness(100%);\n  box-shadow: 0 0 11px rgba(230, 62, 62, 0.2); \n}\n.socialFeed[_ngcontent-%COMP%]   .left[_ngcontent-%COMP%]{\n    position: absolute;\n    padding-top: 30%;\n    left: 10%;\n    cursor: pointer;\n    scroll-behavior: smooth;\n}\n.socialFeed[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]{\n    position: absolute;\n    padding-top: 30%;\n    right: 7.5%;\n    cursor: pointer;\n    scroll-behavior: smooth;\n}\n\n.blog[_ngcontent-%COMP%]{\n  width: 90%;\n  max-height: 450px;\n  margin: 4%;\n  overflow: hidden;\n  white-space: nowrap !important;\n}\n.blog[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{\n  display: inline-block;\n  width: 50%;\n  height: 430px; \n}\n.blog[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n  height: 7%;\n  width: 7%;\n  \n}\n\n.blog[_ngcontent-%COMP%]   .left[_ngcontent-%COMP%]{\n  position: absolute;\n  top:50%;\n  left: 0%;\n  cursor: pointer; \n}\n.blog[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]{\n  position: absolute;\n  top:50%;\n  right: -2.5%;\n  cursor: pointer;    \n}\n.card2-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%] > h3[_ngcontent-%COMP%]{\nfont-size: 1.5em;\n}\n.banner2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]:last-child{\n  width:90%;\n  color: black;\n  display: inline-block;\n  margin-top: 3%;\n  font-weight: bolder;\n  font-size: .8em;\n  margin-left: 2%;\n  -moz-text-align-last: center;\n       text-align-last: center;\n}\n.subbanner3[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > button[_ngcontent-%COMP%]{\n  margin-left: 45%;\n  margin-top: 3%;\n  background: transparent;\n  border: 1px solid blueviolet;\n  font-weight: bolder;\n  font-size: .9em;\n  cursor: pointer;\n  width: 15%;\n}\n\n}\n\n@media screen and (min-width:320px) and (max-width:500px) {\n.app[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n  margin-top:60px;\n  margin-left: auto;\n  width:80px;\n  height: 80px;\n  \n}\n.app-desc[_ngcontent-%COMP%] {\n  width: 300px;\n  height:330px;\n  text-align: left;\n  margin-top: 28%;\n  padding-top: 1.6%;\n  line-height:0.7em;\n  font-weight:180;\n}\n  .app-desc[_ngcontent-%COMP%]    > p[_ngcontent-%COMP%]:first-child {\n    font-family: 'Roboto',sans-serif;\n    font-size: 1.6em;\n    line-height: 1em;\n    text-align: left;\n    margin-top:-8%;\n    padding-bottom: 3%;\n    margin-left: auto;\n  }\n  .app-desc[_ngcontent-%COMP%]    > p[_ngcontent-%COMP%]:last-child {\n    font-family: 'Roboto',sans-serif;\n    font-size: 1.5em;\n    font-weight: 270;\n    line-height: 1.3em;\n    text-align:left;\n  }\n  .banner[_ngcontent-%COMP%] {\n    height:auto;\n    width:100%;\n    background-color: rgb(219, 235, 241);\n    text-align: center;\n    margin-bottom:10%;\n  }\n  .banner[_ngcontent-%COMP%] > h3[_ngcontent-%COMP%]{\n    width:100%;\n    color: black;\n    display:block;\n    margin-top:0;\n    padding: 20px;\n  }\n  .blog[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%] {\n    display: inline-block;\n    width: 85%;\n    margin: 6%;\n    height: 400px;\n  }\n  .blog[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    width:9%;\n    height: 6%;\n  }\n  .blog[_ngcontent-%COMP%]   .left[_ngcontent-%COMP%]{\n    top:45%;\n    left: 0%;\n}\n.blog[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]{\n    top:45%;\n    right: -5%;\n}\n.socialFeed[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%] {\n  display: inline-block;\n  width: 100%;\n  height: 400px;\n  margin: 10px;\n  \n}\n.socialFeed[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n  width: 5%;\n}\n.instafeed[_ngcontent-%COMP%]{\n  z-index: 10;\n  margin: 0px;\n  padding-bottom: 25%;\n}\n.socialFeed[_ngcontent-%COMP%]   .left[_ngcontent-%COMP%]{\n  margin-top: 40%;\n  left: 2%;\n}\n.socialFeed[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]{\n  margin-top: 40%;\n  right: 2%;   \n}\n.card[_ngcontent-%COMP%]{\n\nwidth:100%;\nheight:500px;\n}\n.card-image-holder[_ngcontent-%COMP%]{\n\nwidth:100%;\nheight:300px;\ndisplay:block;\ntop:0;\nmargin-left: 0%;\nmargin-bottom: 10%;\n}\n.card-image-holder[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\nwidth:100%;\nheight:100%;\nmargin-left:0%;\n}\n.card-content[_ngcontent-%COMP%]{\n\ntop:300px;\nwidth:100%;\nheight:400px;\nmargin-left: 0%;\n\n\n}\n.card-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%]{\nmargin-top:5%;\nwidth:100%;\nmargin-left:0;\nmargin-bottom: 10%;\n}\n\n\n.card2[_ngcontent-%COMP%]{\nposition:relative;\nwidth:100%;\nheight:500px;\nmargin-top: 20%;\n}\n.card2-image[_ngcontent-%COMP%]{\nposition:absolute;\nwidth:100%;\nheight:300px;\ndisplay:block;\ntop:0;\n}\n.card2-image[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\nwidth:100%;\nheight:100%;\nmargin-left:0%;\n}\n.card2-content[_ngcontent-%COMP%]{\nposition:absolute;\ntop:300px;\nwidth:100%;\nheight:200px;\ndisplay: inline-block;\n}\n.card2-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%]{\nmargin-top:5%;\nwidth:100%;\nmargin-left:0;\n}\n.card2-content[_ngcontent-%COMP%] > .content[_ngcontent-%COMP%] > h3[_ngcontent-%COMP%]{\nfont-size: 1em;\nfont-family: 'Roboto', sans-serif;\ntext-align: center;\n}\n.banner2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]:first-child{\n  width:95%;\n  color: black;\n  display: inline-block;\n  margin-left: 3%;\n  margin-top: 1%;\n  font-weight: bolder;\n  font-size: .8em;\n  font-family: 'Roboto', sans-serif;\n  -moz-text-align-last: center;\n       text-align-last: center;\n}\n.banner2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]:last-child{\n  width:100%;\n  color: black;\n  display: inline-block;\n  margin-top: 3%;\n  font-weight: bolder;\n  font-size: .8em;\n  margin-left: 2%;\n  font-family: 'Roboto', sans-serif;\n  -moz-text-align-last: center;\n       text-align-last: center;\n}\n.subbanner3[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n  text-align: center;\n  margin-left: 5%;\n}\n.subbanner3[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > button[_ngcontent-%COMP%]{\n  margin-left: 32.5%;\n  margin-top: 3%;\n  background: transparent;\n  border: 1px solid blueviolet;\n  font-weight: bolder;\n  font-size: .9em;\n  cursor: pointer;\n  width: 35%;\n}\n}"];
 exports.styles = styles;
 
 
@@ -2661,83 +2661,87 @@ var i3 = __webpack_require__(/*! ../../node_modules/@angular/router/router.ngfac
 var i4 = __webpack_require__(/*! ./open-cards/open-news-card/open-news-card.component.ngfactory */ "./src/app/open-cards/open-news-card/open-news-card.component.ngfactory.js");
 var i5 = __webpack_require__(/*! ./home/home.component.ngfactory */ "./src/app/home/home.component.ngfactory.js");
 var i6 = __webpack_require__(/*! ./about/about.component.ngfactory */ "./src/app/about/about.component.ngfactory.js");
-var i7 = __webpack_require__(/*! ./ourteam/ourteam.component.ngfactory */ "./src/app/ourteam/ourteam.component.ngfactory.js");
-var i8 = __webpack_require__(/*! ./contact-us/contact-us.component.ngfactory */ "./src/app/contact-us/contact-us.component.ngfactory.js");
-var i9 = __webpack_require__(/*! ./livedata/livedata.component.ngfactory */ "./src/app/livedata/livedata.component.ngfactory.js");
-var i10 = __webpack_require__(/*! ./add-topic/add-topic.component.ngfactory */ "./src/app/add-topic/add-topic.component.ngfactory.js");
-var i11 = __webpack_require__(/*! ./help-center/help-center.component.ngfactory */ "./src/app/help-center/help-center.component.ngfactory.js");
-var i12 = __webpack_require__(/*! ./teamview/teamview.component.ngfactory */ "./src/app/teamview/teamview.component.ngfactory.js");
-var i13 = __webpack_require__(/*! ./localitypage/localitypage.component.ngfactory */ "./src/app/localitypage/localitypage.component.ngfactory.js");
-var i14 = __webpack_require__(/*! ./application/application.component.ngfactory */ "./src/app/application/application.component.ngfactory.js");
-var i15 = __webpack_require__(/*! ./add-que-ans/add-que-ans.component.ngfactory */ "./src/app/add-que-ans/add-que-ans.component.ngfactory.js");
-var i16 = __webpack_require__(/*! ./open-cards/open-match-card/open-match-card.component.ngfactory */ "./src/app/open-cards/open-match-card/open-match-card.component.ngfactory.js");
-var i17 = __webpack_require__(/*! ./pop-up/pop-up.component.ngfactory */ "./src/app/pop-up/pop-up.component.ngfactory.js");
-var i18 = __webpack_require__(/*! ./app.component.ngfactory */ "./src/app/app.component.ngfactory.js");
-var i19 = __webpack_require__(/*! @angular/http */ "@angular/http");
-var i20 = __webpack_require__(/*! @angular/platform-server */ "@angular/platform-server");
-var i21 = __webpack_require__(/*! @angular/common/http */ "@angular/common/http");
-var i22 = __webpack_require__(/*! @angular/common */ "@angular/common");
-var i23 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
-var i24 = __webpack_require__(/*! @angular/animations/browser */ "@angular/animations/browser");
-var i25 = __webpack_require__(/*! @angular/platform-browser/animations */ "@angular/platform-browser/animations");
-var i26 = __webpack_require__(/*! @angular/animations */ "@angular/animations");
-var i27 = __webpack_require__(/*! @angular/forms */ "@angular/forms");
-var i28 = __webpack_require__(/*! ng-masonry-grid */ "ng-masonry-grid");
-var i29 = __webpack_require__(/*! ng2-scroll-to-el/scrollTo.service */ "ng2-scroll-to-el/scrollTo.service");
-var i30 = __webpack_require__(/*! @agm/core/utils/browser-globals */ "@agm/core/utils/browser-globals");
-var i31 = __webpack_require__(/*! @agm/core/services/maps-api-loader/maps-api-loader */ "@agm/core/services/maps-api-loader/maps-api-loader");
-var i32 = __webpack_require__(/*! @agm/core/services/maps-api-loader/lazy-maps-api-loader */ "@agm/core/services/maps-api-loader/lazy-maps-api-loader");
-var i33 = __webpack_require__(/*! @angular/router */ "@angular/router");
-var i34 = __webpack_require__(/*! ./shared/services/property.service */ "./src/app/shared/services/property.service.ts");
-var i35 = __webpack_require__(/*! ./shared/services/location.service */ "./src/app/shared/services/location.service.ts");
-var i36 = __webpack_require__(/*! ./shared/services/get.service */ "./src/app/shared/services/get.service.ts");
-var i37 = __webpack_require__(/*! ./shared/services/send.service */ "./src/app/shared/services/send.service.ts");
-var i38 = __webpack_require__(/*! ./shared/services/post.service */ "./src/app/shared/services/post.service.ts");
-var i39 = __webpack_require__(/*! ./shared/services/time.service */ "./src/app/shared/services/time.service.ts");
-var i40 = __webpack_require__(/*! ./shared/services/match-data.service */ "./src/app/shared/services/match-data.service.ts");
-var i41 = __webpack_require__(/*! ./shared/services/news.service */ "./src/app/shared/services/news.service.ts");
-var i42 = __webpack_require__(/*! ./shared/services/pop-up.service */ "./src/app/shared/services/pop-up.service.ts");
-var i43 = __webpack_require__(/*! ./shared/services/link.service */ "./src/app/shared/services/link.service.ts");
-var i44 = __webpack_require__(/*! ./shared/services/seo.service */ "./src/app/shared/services/seo.service.ts");
-var i45 = __webpack_require__(/*! ngx-google-places-autocomplete/ngx-google-places-autocomplete.module */ "ngx-google-places-autocomplete/ngx-google-places-autocomplete.module");
-var i46 = __webpack_require__(/*! @agm/core/core.module */ "@agm/core/core.module");
-var i47 = __webpack_require__(/*! @nguniversal/module-map-ngfactory-loader */ "@nguniversal/module-map-ngfactory-loader");
-var i48 = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-var i49 = __webpack_require__(/*! ./about/about.component */ "./src/app/about/about.component.ts");
-var i50 = __webpack_require__(/*! ./ourteam/ourteam.component */ "./src/app/ourteam/ourteam.component.ts");
-var i51 = __webpack_require__(/*! ./contact-us/contact-us.component */ "./src/app/contact-us/contact-us.component.ts");
-var i52 = __webpack_require__(/*! ./livedata/livedata.component */ "./src/app/livedata/livedata.component.ts");
-var i53 = __webpack_require__(/*! ./add-topic/add-topic.component */ "./src/app/add-topic/add-topic.component.ts");
-var i54 = __webpack_require__(/*! ./help-center/help-center.component */ "./src/app/help-center/help-center.component.ts");
-var i55 = __webpack_require__(/*! ./teamview/teamview.component */ "./src/app/teamview/teamview.component.ts");
-var i56 = __webpack_require__(/*! ./localitypage/localitypage.component */ "./src/app/localitypage/localitypage.component.ts");
-var i57 = __webpack_require__(/*! ./application/application.component */ "./src/app/application/application.component.ts");
-var i58 = __webpack_require__(/*! ./add-que-ans/add-que-ans.component */ "./src/app/add-que-ans/add-que-ans.component.ts");
-var i59 = __webpack_require__(/*! ./open-cards/open-match-card/open-match-card.component */ "./src/app/open-cards/open-match-card/open-match-card.component.ts");
-var i60 = __webpack_require__(/*! ./open-cards/open-news-card/open-news-card.component */ "./src/app/open-cards/open-news-card/open-news-card.component.ts");
-var i61 = __webpack_require__(/*! ./pop-up/pop-up.component */ "./src/app/pop-up/pop-up.component.ts");
-var i62 = __webpack_require__(/*! ./gallery/gallery.module */ "./src/app/gallery/gallery.module.ts");
-var i63 = __webpack_require__(/*! ./open-cards/open-match-card/open-match-card.module */ "./src/app/open-cards/open-match-card/open-match-card.module.ts");
-var i64 = __webpack_require__(/*! ./open-cards/open-news-card/open-news-card.module */ "./src/app/open-cards/open-news-card/open-news-card.module.ts");
-var i65 = __webpack_require__(/*! ./carousel/carousel.module */ "./src/app/carousel/carousel.module.ts");
-var i66 = __webpack_require__(/*! ./header/header.module */ "./src/app/header/header.module.ts");
-var i67 = __webpack_require__(/*! ./navigation-bar/navigation-bar.module */ "./src/app/navigation-bar/navigation-bar.module.ts");
-var i68 = __webpack_require__(/*! ./cards/match-card/match-card.module */ "./src/app/cards/match-card/match-card.module.ts");
-var i69 = __webpack_require__(/*! ./cards/news-card/news-card.module */ "./src/app/cards/news-card/news-card.module.ts");
-var i70 = __webpack_require__(/*! ./cards/live-match-card/live-match-card.module */ "./src/app/cards/live-match-card/live-match-card.module.ts");
-var i71 = __webpack_require__(/*! ./cards/ss-match-card/ss-match-card.module */ "./src/app/cards/ss-match-card/ss-match-card.module.ts");
-var i72 = __webpack_require__(/*! ./side-nav/side-nav.module */ "./src/app/side-nav/side-nav.module.ts");
-var i73 = __webpack_require__(/*! ./global-feed/global-open-arena-feed/global-open-arena-feed.module */ "./src/app/global-feed/global-open-arena-feed/global-open-arena-feed.module.ts");
-var i74 = __webpack_require__(/*! ./footer/footer.module */ "./src/app/footer/footer.module.ts");
-var i75 = __webpack_require__(/*! ./home/home.module */ "./src/app/home/home.module.ts");
-var i76 = __webpack_require__(/*! ./cards/blog-card/blog-card.module */ "./src/app/cards/blog-card/blog-card.module.ts");
-var i77 = __webpack_require__(/*! ./backfooter/backfooter.module */ "./src/app/backfooter/backfooter.module.ts");
-var i78 = __webpack_require__(/*! ./about/about.module */ "./src/app/about/about.module.ts");
-var i79 = __webpack_require__(/*! ./newheader/newheader.module */ "./src/app/newheader/newheader.module.ts");
-var i80 = __webpack_require__(/*! ./help-center/help-center.module */ "./src/app/help-center/help-center.module.ts");
-var i81 = __webpack_require__(/*! ng2-scroll-to-el/scrollTo.module */ "ng2-scroll-to-el/scrollTo.module");
-var i82 = __webpack_require__(/*! ./app.module */ "./src/app/app.module.ts");
-var AppServerModuleNgFactory = i0.ɵcmf(i1.AppServerModule, [i2.AppComponent], function (_l) { return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i3.ɵEmptyOutletComponentNgFactory, i4.OpenNewsCardComponentNgFactory, i5.HomeComponentNgFactory, i6.AboutComponentNgFactory, i7.OurteamComponentNgFactory, i8.ContactUsComponentNgFactory, i9.LivedataComponentNgFactory, i10.AddTopicComponentNgFactory, i11.HelpCenterComponentNgFactory, i12.TeamviewComponentNgFactory, i13.LocalitypageComponentNgFactory, i14.ApplicationComponentNgFactory, i15.AddQueAnsComponentNgFactory, i16.OpenMatchCardComponentNgFactory, i17.PopUpComponentNgFactory, i18.AppComponentNgFactory]], [3, i0.ComponentFactoryResolver], i0.NgModuleRef]), i0.ɵmpd(4608, i19.BrowserXhr, i20.ɵangular_packages_platform_server_platform_server_e, []), i0.ɵmpd(4608, i19.ResponseOptions, i19.BaseResponseOptions, []), i0.ɵmpd(4608, i19.XSRFStrategy, i20.ɵangular_packages_platform_server_platform_server_f, []), i0.ɵmpd(4608, i19.XHRBackend, i19.XHRBackend, [i19.BrowserXhr, i19.ResponseOptions, i19.XSRFStrategy]), i0.ɵmpd(4608, i19.RequestOptions, i19.BaseRequestOptions, []), i0.ɵmpd(5120, i19.Http, i20.ɵangular_packages_platform_server_platform_server_g, [i19.XHRBackend, i19.RequestOptions]), i0.ɵmpd(4608, i21.HttpXsrfTokenExtractor, i21.ɵangular_packages_common_http_http_g, [i22.DOCUMENT, i0.PLATFORM_ID, i21.ɵangular_packages_common_http_http_e]), i0.ɵmpd(4608, i21.ɵangular_packages_common_http_http_h, i21.ɵangular_packages_common_http_http_h, [i21.HttpXsrfTokenExtractor, i21.ɵangular_packages_common_http_http_f]), i0.ɵmpd(5120, i21.HTTP_INTERCEPTORS, function (p0_0) { return [p0_0]; }, [i21.ɵangular_packages_common_http_http_h]), i0.ɵmpd(4608, i21.XhrFactory, i20.ɵangular_packages_platform_server_platform_server_e, []), i0.ɵmpd(4608, i21.HttpXhrBackend, i21.HttpXhrBackend, [i21.XhrFactory]), i0.ɵmpd(6144, i21.HttpBackend, null, [i21.HttpXhrBackend]), i0.ɵmpd(5120, i21.HttpHandler, i20.ɵangular_packages_platform_server_platform_server_h, [i21.HttpBackend, i0.Injector]), i0.ɵmpd(4608, i21.HttpClient, i21.HttpClient, [i21.HttpHandler]), i0.ɵmpd(4608, i21.ɵangular_packages_common_http_http_d, i21.ɵangular_packages_common_http_http_d, []), i0.ɵmpd(5120, i0.LOCALE_ID, i0.ɵangular_packages_core_core_k, [[3, i0.LOCALE_ID]]), i0.ɵmpd(4608, i22.NgLocalization, i22.NgLocaleLocalization, [i0.LOCALE_ID, [2, i22.ɵangular_packages_common_common_a]]), i0.ɵmpd(5120, i0.IterableDiffers, i0.ɵangular_packages_core_core_i, []), i0.ɵmpd(5120, i0.KeyValueDiffers, i0.ɵangular_packages_core_core_j, []), i0.ɵmpd(4608, i23.DomSanitizer, i23.ɵDomSanitizerImpl, [i22.DOCUMENT]), i0.ɵmpd(6144, i0.Sanitizer, null, [i23.DomSanitizer]), i0.ɵmpd(4608, i23.HAMMER_GESTURE_CONFIG, i23.HammerGestureConfig, []), i0.ɵmpd(5120, i23.EVENT_MANAGER_PLUGINS, function (p0_0, p0_1, p0_2, p1_0, p2_0, p2_1, p2_2, p2_3, p3_0) { return [new i23.ɵDomEventsPlugin(p0_0, p0_1, p0_2), new i23.ɵKeyEventsPlugin(p1_0), new i23.ɵHammerGesturesPlugin(p2_0, p2_1, p2_2, p2_3), new i20.ɵangular_packages_platform_server_platform_server_d(p3_0)]; }, [i22.DOCUMENT, i0.NgZone, i0.PLATFORM_ID, i22.DOCUMENT, i22.DOCUMENT, i23.HAMMER_GESTURE_CONFIG, i0.ɵConsole, [2, i23.HAMMER_LOADER], i23.DOCUMENT]), i0.ɵmpd(4608, i23.EventManager, i23.EventManager, [i23.EVENT_MANAGER_PLUGINS, i0.NgZone]), i0.ɵmpd(135680, i23.ɵDomSharedStylesHost, i23.ɵDomSharedStylesHost, [i22.DOCUMENT]), i0.ɵmpd(4608, i23.ɵDomRendererFactory2, i23.ɵDomRendererFactory2, [i23.EventManager, i23.ɵDomSharedStylesHost]), i0.ɵmpd(4608, i20.ɵangular_packages_platform_server_platform_server_c, i20.ɵangular_packages_platform_server_platform_server_c, [i23.DOCUMENT, [2, i23.ɵTRANSITION_ID]]), i0.ɵmpd(6144, i23.ɵSharedStylesHost, null, [i20.ɵangular_packages_platform_server_platform_server_c]), i0.ɵmpd(4608, i20.ɵServerRendererFactory2, i20.ɵServerRendererFactory2, [i23.EventManager, i0.NgZone, i23.DOCUMENT, i23.ɵSharedStylesHost]), i0.ɵmpd(4608, i24.AnimationDriver, i24.ɵNoopAnimationDriver, []), i0.ɵmpd(5120, i24.ɵAnimationStyleNormalizer, i25.ɵangular_packages_platform_browser_animations_animations_c, []), i0.ɵmpd(4608, i24.ɵAnimationEngine, i25.ɵangular_packages_platform_browser_animations_animations_a, [i22.DOCUMENT, i24.AnimationDriver, i24.ɵAnimationStyleNormalizer]), i0.ɵmpd(5120, i0.RendererFactory2, i20.ɵangular_packages_platform_server_platform_server_a, [i20.ɵServerRendererFactory2, i24.ɵAnimationEngine, i0.NgZone]), i0.ɵmpd(4352, i0.Testability, null, []), i0.ɵmpd(4608, i26.AnimationBuilder, i25.ɵBrowserAnimationBuilder, [i0.RendererFactory2, i23.DOCUMENT]), i0.ɵmpd(4608, i22.ViewportScroller, i22.ɵNullViewportScroller, []), i0.ɵmpd(4608, i27.ɵangular_packages_forms_forms_i, i27.ɵangular_packages_forms_forms_i, []), i0.ɵmpd(4608, i27.FormBuilder, i27.FormBuilder, []), i0.ɵmpd(4608, i28.NgMasonryGridService, i28.NgMasonryGridService, [i0.PLATFORM_ID]), i0.ɵmpd(4608, i29.ScrollToService, i29.ScrollToService, []), i0.ɵmpd(4608, i30.WindowRef, i30.WindowRef, []), i0.ɵmpd(4608, i30.DocumentRef, i30.DocumentRef, []), i0.ɵmpd(4608, i31.MapsAPILoader, i32.LazyMapsAPILoader, [[2, i32.LAZY_MAPS_API_CONFIG], i30.WindowRef, i30.DocumentRef]), i0.ɵmpd(5120, i33.ActivatedRoute, i33.ɵangular_packages_router_router_g, [i33.Router]), i0.ɵmpd(4608, i33.NoPreloading, i33.NoPreloading, []), i0.ɵmpd(6144, i33.PreloadingStrategy, null, [i33.NoPreloading]), i0.ɵmpd(135680, i33.RouterPreloader, i33.RouterPreloader, [i33.Router, i0.NgModuleFactoryLoader, i0.Compiler, i0.Injector, i33.PreloadingStrategy]), i0.ɵmpd(4608, i33.PreloadAllModules, i33.PreloadAllModules, []), i0.ɵmpd(5120, i33.ɵangular_packages_router_router_n, i33.ɵangular_packages_router_router_c, [i33.Router, i22.ViewportScroller, i33.ROUTER_CONFIGURATION]), i0.ɵmpd(5120, i33.ROUTER_INITIALIZER, i33.ɵangular_packages_router_router_j, [i33.ɵangular_packages_router_router_h]), i0.ɵmpd(5120, i0.APP_BOOTSTRAP_LISTENER, function (p0_0) { return [p0_0]; }, [i33.ROUTER_INITIALIZER]), i0.ɵmpd(4608, i34.PropertyService, i34.PropertyService, []), i0.ɵmpd(4608, i35.LocationService, i35.LocationService, [i21.HttpClient]), i0.ɵmpd(4608, i36.GetService, i36.GetService, [i19.Http]), i0.ɵmpd(4608, i37.SendService, i37.SendService, []), i0.ɵmpd(4608, i38.PostService, i38.PostService, [i21.HttpClient]), i0.ɵmpd(4608, i39.TimeService, i39.TimeService, []), i0.ɵmpd(4608, i40.MatchDataService, i40.MatchDataService, [i35.LocationService, i38.PostService]), i0.ɵmpd(4608, i41.NewsService, i41.NewsService, [i38.PostService]), i0.ɵmpd(4608, i42.PopUpService, i42.PopUpService, []), i0.ɵmpd(4608, i43.LinkService, i43.LinkService, [i0.RendererFactory2, i23.DOCUMENT]), i0.ɵmpd(4608, i44.SeoService, i44.SeoService, [i23.Meta]), i0.ɵmpd(135680, i22.AsyncPipe, i22.AsyncPipe, [i0.ChangeDetectorRef]), i0.ɵmpd(1073742336, i19.HttpModule, i19.HttpModule, []), i0.ɵmpd(1073742336, i21.HttpClientXsrfModule, i21.HttpClientXsrfModule, []), i0.ɵmpd(1073742336, i21.HttpClientModule, i21.HttpClientModule, []), i0.ɵmpd(1073742336, i22.CommonModule, i22.CommonModule, []), i0.ɵmpd(1024, i0.ErrorHandler, i23.ɵangular_packages_platform_browser_platform_browser_a, []), i0.ɵmpd(1024, i0.NgProbeToken, function () { return [i33.ɵangular_packages_router_router_b()]; }, []), i0.ɵmpd(256, i0.APP_ID, "sport-social", []), i0.ɵmpd(2048, i23.ɵTRANSITION_ID, null, [i0.APP_ID]), i0.ɵmpd(512, i33.ɵangular_packages_router_router_h, i33.ɵangular_packages_router_router_h, [i0.Injector]), i0.ɵmpd(1024, i0.APP_INITIALIZER, function (p0_0, p1_0, p1_1, p1_2, p2_0) { return [i23.ɵangular_packages_platform_browser_platform_browser_j(p0_0), i23.ɵangular_packages_platform_browser_platform_browser_h(p1_0, p1_1, p1_2), i33.ɵangular_packages_router_router_i(p2_0)]; }, [[2, i0.NgProbeToken], i23.ɵTRANSITION_ID, i22.DOCUMENT, i0.Injector, i33.ɵangular_packages_router_router_h]), i0.ɵmpd(512, i0.ApplicationInitStatus, i0.ApplicationInitStatus, [[2, i0.APP_INITIALIZER]]), i0.ɵmpd(131584, i0.ApplicationRef, i0.ApplicationRef, [i0.NgZone, i0.ɵConsole, i0.Injector, i0.ErrorHandler, i0.ComponentFactoryResolver, i0.ApplicationInitStatus]), i0.ɵmpd(1073742336, i0.ApplicationModule, i0.ApplicationModule, [i0.ApplicationRef]), i0.ɵmpd(1073742336, i23.BrowserModule, i23.BrowserModule, [[3, i23.BrowserModule]]), i0.ɵmpd(1073742336, i25.NoopAnimationsModule, i25.NoopAnimationsModule, []), i0.ɵmpd(1073742336, i20.ServerModule, i20.ServerModule, []), i0.ɵmpd(1073742336, i27.ɵangular_packages_forms_forms_bb, i27.ɵangular_packages_forms_forms_bb, []), i0.ɵmpd(1073742336, i27.FormsModule, i27.FormsModule, []), i0.ɵmpd(1073742336, i27.ReactiveFormsModule, i27.ReactiveFormsModule, []), i0.ɵmpd(1073742336, i45.GooglePlaceModule, i45.GooglePlaceModule, []), i0.ɵmpd(1073742336, i46.AgmCoreModule, i46.AgmCoreModule, []), i0.ɵmpd(1024, i33.ɵangular_packages_router_router_a, i33.ɵangular_packages_router_router_e, [[3, i33.Router]]), i0.ɵmpd(512, i33.UrlSerializer, i33.DefaultUrlSerializer, []), i0.ɵmpd(512, i33.ChildrenOutletContexts, i33.ChildrenOutletContexts, []), i0.ɵmpd(256, i33.ROUTER_CONFIGURATION, { enableTracing: true }, []), i0.ɵmpd(1024, i22.LocationStrategy, i33.ɵangular_packages_router_router_d, [i22.PlatformLocation, [2, i22.APP_BASE_HREF], i33.ROUTER_CONFIGURATION]), i0.ɵmpd(512, i22.Location, i22.Location, [i22.LocationStrategy]), i0.ɵmpd(512, i0.Compiler, i0.Compiler, []), i0.ɵmpd(512, i0.NgModuleFactoryLoader, i47.ModuleMapNgFactoryLoader, [i0.Compiler, i47.MODULE_MAP]), i0.ɵmpd(1024, i33.ROUTES, function () { return [[{ path: "", component: i48.HomeComponent }], [{ path: "", component: i49.AboutComponent }], [{ path: "ourTeam", component: i50.OurteamComponent }, { path: "contactus", component: i51.ContactUsComponent }, { path: "live", component: i52.LivedataComponent }, { path: "addtopic", component: i53.AddTopicComponent }, { path: "HelpCenter", component: i54.HelpCenterComponent }, { path: "Helpcenter/:topicname", component: i54.HelpCenterComponent }, { path: "teamview", component: i55.TeamviewComponent }, { path: "localitypage", component: i56.LocalitypageComponent }, { path: "application", component: i57.ApplicationComponent }, { path: "HelpCenter/:subtopicname", component: i58.AddQueAnsComponent }, { path: "HelpCenter/:subtopicname/:question", component: i58.AddQueAnsComponent }, { path: "about", component: i49.AboutComponent }, { path: "Terms Of Service", loadChildren: "app/terms-and-condition/terms-and-condition.module#TermsAndConditionModule" }, { path: "Privacy Policy", loadChildren: "app/privacy-policy/privacy-policy.module#PrivacyPolicyModule" }, { path: "OpenArena", loadChildren: "app/global-feed/global-match-feed/global-match-feed.module#GlobalMatchFeedModule" }, { path: "AroundTheWorld", loadChildren: "app/global-feed/global-news-feed/global-news-feed.module#GlobalNewsFeedModule" }, { path: ":sport", loadChildren: "app/sports-specific-feed/sports-specific-feed.module#SportsSpecificFeedModule" }, { path: ":id", component: i59.OpenMatchCardComponent, outlet: "Match" }, { path: ":id", component: i60.OpenNewsCardComponent, outlet: "News" }, { path: "PopUp", component: i61.PopUpComponent, outlet: "AppDownload" }, { path: "", loadChildren: "app/home/home.module#HomeModule" }, { path: "home", component: i48.HomeComponent }]]; }, []), i0.ɵmpd(1024, i33.Router, i33.ɵangular_packages_router_router_f, [i0.ApplicationRef, i33.UrlSerializer, i33.ChildrenOutletContexts, i22.Location, i0.Injector, i0.NgModuleFactoryLoader, i0.Compiler, i33.ROUTES, i33.ROUTER_CONFIGURATION, [2, i33.UrlHandlingStrategy], [2, i33.RouteReuseStrategy]]), i0.ɵmpd(1073742336, i33.RouterModule, i33.RouterModule, [[2, i33.ɵangular_packages_router_router_a], [2, i33.Router]]), i0.ɵmpd(1073742336, i62.GalleryModule, i62.GalleryModule, []), i0.ɵmpd(1073742336, i63.OpenMatchCardModule, i63.OpenMatchCardModule, []), i0.ɵmpd(1073742336, i64.OpenNewsCardModule, i64.OpenNewsCardModule, []), i0.ɵmpd(1073742336, i65.CarouselModule, i65.CarouselModule, []), i0.ɵmpd(1073742336, i66.HeaderModule, i66.HeaderModule, []), i0.ɵmpd(1073742336, i67.NavigationBarModule, i67.NavigationBarModule, []), i0.ɵmpd(1073742336, i68.MatchCardModule, i68.MatchCardModule, []), i0.ɵmpd(1073742336, i69.NewsCardModule, i69.NewsCardModule, []), i0.ɵmpd(1073742336, i70.LiveMatchCardModule, i70.LiveMatchCardModule, []), i0.ɵmpd(1073742336, i28.NgMasonryGridModule, i28.NgMasonryGridModule, []), i0.ɵmpd(1073742336, i71.SsMatchCardModule, i71.SsMatchCardModule, []), i0.ɵmpd(1073742336, i72.SideNavModule, i72.SideNavModule, []), i0.ɵmpd(1073742336, i73.GlobalOpenArenaFeedModule, i73.GlobalOpenArenaFeedModule, []), i0.ɵmpd(1073742336, i74.FooterModule, i74.FooterModule, []), i0.ɵmpd(1073742336, i75.HomeModule, i75.HomeModule, []), i0.ɵmpd(1073742336, i76.BlogCardModule, i76.BlogCardModule, []), i0.ɵmpd(1073742336, i77.BackfooterModule, i77.BackfooterModule, []), i0.ɵmpd(1073742336, i78.AboutModule, i78.AboutModule, []), i0.ɵmpd(1073742336, i79.NewHeaderModule, i79.NewHeaderModule, []), i0.ɵmpd(1073742336, i80.HelpCenterModule, i80.HelpCenterModule, []), i0.ɵmpd(1073742336, i81.ScrollToModule, i81.ScrollToModule, []), i0.ɵmpd(1073742336, i82.AppModule, i82.AppModule, []), i0.ɵmpd(1073742336, i47.ModuleMapLoaderModule, i47.ModuleMapLoaderModule, []), i0.ɵmpd(1073742336, i1.AppServerModule, i1.AppServerModule, []), i0.ɵmpd(256, i21.ɵangular_packages_common_http_http_e, "XSRF-TOKEN", []), i0.ɵmpd(256, i21.ɵangular_packages_common_http_http_f, "X-XSRF-TOKEN", []), i0.ɵmpd(256, i0.ɵAPP_ROOT, true, []), i0.ɵmpd(256, i25.ANIMATION_MODULE_TYPE, "NoopAnimations", []), i0.ɵmpd(256, i32.LAZY_MAPS_API_CONFIG, { apiKey: "AIzaSyBhy2_i75_m05Chs918Q5UKG2fHxMlhia4" }, [])]); });
+var i7 = __webpack_require__(/*! ./open-cards/open-home-match-card/open-home-match-card.component.ngfactory */ "./src/app/open-cards/open-home-match-card/open-home-match-card.component.ngfactory.js");
+var i8 = __webpack_require__(/*! ./ourteam/ourteam.component.ngfactory */ "./src/app/ourteam/ourteam.component.ngfactory.js");
+var i9 = __webpack_require__(/*! ./contact-us/contact-us.component.ngfactory */ "./src/app/contact-us/contact-us.component.ngfactory.js");
+var i10 = __webpack_require__(/*! ./livedata/livedata.component.ngfactory */ "./src/app/livedata/livedata.component.ngfactory.js");
+var i11 = __webpack_require__(/*! ./add-topic/add-topic.component.ngfactory */ "./src/app/add-topic/add-topic.component.ngfactory.js");
+var i12 = __webpack_require__(/*! ./help-center/help-center.component.ngfactory */ "./src/app/help-center/help-center.component.ngfactory.js");
+var i13 = __webpack_require__(/*! ./teamview/teamview.component.ngfactory */ "./src/app/teamview/teamview.component.ngfactory.js");
+var i14 = __webpack_require__(/*! ./localitypage/localitypage.component.ngfactory */ "./src/app/localitypage/localitypage.component.ngfactory.js");
+var i15 = __webpack_require__(/*! ./application/application.component.ngfactory */ "./src/app/application/application.component.ngfactory.js");
+var i16 = __webpack_require__(/*! ./add-que-ans/add-que-ans.component.ngfactory */ "./src/app/add-que-ans/add-que-ans.component.ngfactory.js");
+var i17 = __webpack_require__(/*! ./open-cards/open-match-card/open-match-card.component.ngfactory */ "./src/app/open-cards/open-match-card/open-match-card.component.ngfactory.js");
+var i18 = __webpack_require__(/*! ./pop-up/pop-up.component.ngfactory */ "./src/app/pop-up/pop-up.component.ngfactory.js");
+var i19 = __webpack_require__(/*! ./app.component.ngfactory */ "./src/app/app.component.ngfactory.js");
+var i20 = __webpack_require__(/*! @angular/http */ "@angular/http");
+var i21 = __webpack_require__(/*! @angular/platform-server */ "@angular/platform-server");
+var i22 = __webpack_require__(/*! @angular/common/http */ "@angular/common/http");
+var i23 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var i24 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
+var i25 = __webpack_require__(/*! @angular/animations/browser */ "@angular/animations/browser");
+var i26 = __webpack_require__(/*! @angular/platform-browser/animations */ "@angular/platform-browser/animations");
+var i27 = __webpack_require__(/*! @angular/animations */ "@angular/animations");
+var i28 = __webpack_require__(/*! @angular/forms */ "@angular/forms");
+var i29 = __webpack_require__(/*! ng-masonry-grid */ "ng-masonry-grid");
+var i30 = __webpack_require__(/*! ng2-scroll-to-el/scrollTo.service */ "ng2-scroll-to-el/scrollTo.service");
+var i31 = __webpack_require__(/*! @agm/core/utils/browser-globals */ "@agm/core/utils/browser-globals");
+var i32 = __webpack_require__(/*! @agm/core/services/maps-api-loader/maps-api-loader */ "@agm/core/services/maps-api-loader/maps-api-loader");
+var i33 = __webpack_require__(/*! @agm/core/services/maps-api-loader/lazy-maps-api-loader */ "@agm/core/services/maps-api-loader/lazy-maps-api-loader");
+var i34 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var i35 = __webpack_require__(/*! ./shared/services/property.service */ "./src/app/shared/services/property.service.ts");
+var i36 = __webpack_require__(/*! ./shared/services/location.service */ "./src/app/shared/services/location.service.ts");
+var i37 = __webpack_require__(/*! ./shared/services/get.service */ "./src/app/shared/services/get.service.ts");
+var i38 = __webpack_require__(/*! ./shared/services/send.service */ "./src/app/shared/services/send.service.ts");
+var i39 = __webpack_require__(/*! ./shared/services/post.service */ "./src/app/shared/services/post.service.ts");
+var i40 = __webpack_require__(/*! ./shared/services/time.service */ "./src/app/shared/services/time.service.ts");
+var i41 = __webpack_require__(/*! ./shared/services/match-data.service */ "./src/app/shared/services/match-data.service.ts");
+var i42 = __webpack_require__(/*! ./shared/services/news.service */ "./src/app/shared/services/news.service.ts");
+var i43 = __webpack_require__(/*! ./shared/services/pop-up.service */ "./src/app/shared/services/pop-up.service.ts");
+var i44 = __webpack_require__(/*! ./shared/services/link.service */ "./src/app/shared/services/link.service.ts");
+var i45 = __webpack_require__(/*! ./shared/services/seo.service */ "./src/app/shared/services/seo.service.ts");
+var i46 = __webpack_require__(/*! ngx-google-places-autocomplete/ngx-google-places-autocomplete.module */ "ngx-google-places-autocomplete/ngx-google-places-autocomplete.module");
+var i47 = __webpack_require__(/*! @agm/core/core.module */ "@agm/core/core.module");
+var i48 = __webpack_require__(/*! @nguniversal/module-map-ngfactory-loader */ "@nguniversal/module-map-ngfactory-loader");
+var i49 = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+var i50 = __webpack_require__(/*! ./about/about.component */ "./src/app/about/about.component.ts");
+var i51 = __webpack_require__(/*! ./open-cards/open-home-match-card/open-home-match-card.component */ "./src/app/open-cards/open-home-match-card/open-home-match-card.component.ts");
+var i52 = __webpack_require__(/*! ./ourteam/ourteam.component */ "./src/app/ourteam/ourteam.component.ts");
+var i53 = __webpack_require__(/*! ./contact-us/contact-us.component */ "./src/app/contact-us/contact-us.component.ts");
+var i54 = __webpack_require__(/*! ./livedata/livedata.component */ "./src/app/livedata/livedata.component.ts");
+var i55 = __webpack_require__(/*! ./add-topic/add-topic.component */ "./src/app/add-topic/add-topic.component.ts");
+var i56 = __webpack_require__(/*! ./help-center/help-center.component */ "./src/app/help-center/help-center.component.ts");
+var i57 = __webpack_require__(/*! ./teamview/teamview.component */ "./src/app/teamview/teamview.component.ts");
+var i58 = __webpack_require__(/*! ./localitypage/localitypage.component */ "./src/app/localitypage/localitypage.component.ts");
+var i59 = __webpack_require__(/*! ./application/application.component */ "./src/app/application/application.component.ts");
+var i60 = __webpack_require__(/*! ./add-que-ans/add-que-ans.component */ "./src/app/add-que-ans/add-que-ans.component.ts");
+var i61 = __webpack_require__(/*! ./open-cards/open-match-card/open-match-card.component */ "./src/app/open-cards/open-match-card/open-match-card.component.ts");
+var i62 = __webpack_require__(/*! ./open-cards/open-news-card/open-news-card.component */ "./src/app/open-cards/open-news-card/open-news-card.component.ts");
+var i63 = __webpack_require__(/*! ./pop-up/pop-up.component */ "./src/app/pop-up/pop-up.component.ts");
+var i64 = __webpack_require__(/*! ./gallery/gallery.module */ "./src/app/gallery/gallery.module.ts");
+var i65 = __webpack_require__(/*! ./open-cards/open-match-card/open-match-card.module */ "./src/app/open-cards/open-match-card/open-match-card.module.ts");
+var i66 = __webpack_require__(/*! ./open-cards/open-news-card/open-news-card.module */ "./src/app/open-cards/open-news-card/open-news-card.module.ts");
+var i67 = __webpack_require__(/*! ./carousel/carousel.module */ "./src/app/carousel/carousel.module.ts");
+var i68 = __webpack_require__(/*! ./header/header.module */ "./src/app/header/header.module.ts");
+var i69 = __webpack_require__(/*! ./navigation-bar/navigation-bar.module */ "./src/app/navigation-bar/navigation-bar.module.ts");
+var i70 = __webpack_require__(/*! ./cards/match-card/match-card.module */ "./src/app/cards/match-card/match-card.module.ts");
+var i71 = __webpack_require__(/*! ./cards/news-card/news-card.module */ "./src/app/cards/news-card/news-card.module.ts");
+var i72 = __webpack_require__(/*! ./cards/live-match-card/live-match-card.module */ "./src/app/cards/live-match-card/live-match-card.module.ts");
+var i73 = __webpack_require__(/*! ./cards/ss-match-card/ss-match-card.module */ "./src/app/cards/ss-match-card/ss-match-card.module.ts");
+var i74 = __webpack_require__(/*! ./side-nav/side-nav.module */ "./src/app/side-nav/side-nav.module.ts");
+var i75 = __webpack_require__(/*! ./global-feed/global-open-arena-feed/global-open-arena-feed.module */ "./src/app/global-feed/global-open-arena-feed/global-open-arena-feed.module.ts");
+var i76 = __webpack_require__(/*! ./footer/footer.module */ "./src/app/footer/footer.module.ts");
+var i77 = __webpack_require__(/*! ./global-feed/home-match-feed/home-match-feed.module */ "./src/app/global-feed/home-match-feed/home-match-feed.module.ts");
+var i78 = __webpack_require__(/*! ./home/home.module */ "./src/app/home/home.module.ts");
+var i79 = __webpack_require__(/*! ./cards/blog-card/blog-card.module */ "./src/app/cards/blog-card/blog-card.module.ts");
+var i80 = __webpack_require__(/*! ./backfooter/backfooter.module */ "./src/app/backfooter/backfooter.module.ts");
+var i81 = __webpack_require__(/*! ./about/about.module */ "./src/app/about/about.module.ts");
+var i82 = __webpack_require__(/*! ./newheader/newheader.module */ "./src/app/newheader/newheader.module.ts");
+var i83 = __webpack_require__(/*! ./help-center/help-center.module */ "./src/app/help-center/help-center.module.ts");
+var i84 = __webpack_require__(/*! ng2-scroll-to-el/scrollTo.module */ "ng2-scroll-to-el/scrollTo.module");
+var i85 = __webpack_require__(/*! ./open-cards/open-home-match-card/open-home-match-card.module */ "./src/app/open-cards/open-home-match-card/open-home-match-card.module.ts");
+var i86 = __webpack_require__(/*! ./app.module */ "./src/app/app.module.ts");
+var AppServerModuleNgFactory = i0.ɵcmf(i1.AppServerModule, [i2.AppComponent], function (_l) { return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i3.ɵEmptyOutletComponentNgFactory, i4.OpenNewsCardComponentNgFactory, i5.HomeComponentNgFactory, i6.AboutComponentNgFactory, i7.OpenHomeMatchCardComponentNgFactory, i8.OurteamComponentNgFactory, i9.ContactUsComponentNgFactory, i10.LivedataComponentNgFactory, i11.AddTopicComponentNgFactory, i12.HelpCenterComponentNgFactory, i13.TeamviewComponentNgFactory, i14.LocalitypageComponentNgFactory, i15.ApplicationComponentNgFactory, i16.AddQueAnsComponentNgFactory, i17.OpenMatchCardComponentNgFactory, i18.PopUpComponentNgFactory, i19.AppComponentNgFactory]], [3, i0.ComponentFactoryResolver], i0.NgModuleRef]), i0.ɵmpd(4608, i20.BrowserXhr, i21.ɵangular_packages_platform_server_platform_server_e, []), i0.ɵmpd(4608, i20.ResponseOptions, i20.BaseResponseOptions, []), i0.ɵmpd(4608, i20.XSRFStrategy, i21.ɵangular_packages_platform_server_platform_server_f, []), i0.ɵmpd(4608, i20.XHRBackend, i20.XHRBackend, [i20.BrowserXhr, i20.ResponseOptions, i20.XSRFStrategy]), i0.ɵmpd(4608, i20.RequestOptions, i20.BaseRequestOptions, []), i0.ɵmpd(5120, i20.Http, i21.ɵangular_packages_platform_server_platform_server_g, [i20.XHRBackend, i20.RequestOptions]), i0.ɵmpd(4608, i22.HttpXsrfTokenExtractor, i22.ɵangular_packages_common_http_http_g, [i23.DOCUMENT, i0.PLATFORM_ID, i22.ɵangular_packages_common_http_http_e]), i0.ɵmpd(4608, i22.ɵangular_packages_common_http_http_h, i22.ɵangular_packages_common_http_http_h, [i22.HttpXsrfTokenExtractor, i22.ɵangular_packages_common_http_http_f]), i0.ɵmpd(5120, i22.HTTP_INTERCEPTORS, function (p0_0) { return [p0_0]; }, [i22.ɵangular_packages_common_http_http_h]), i0.ɵmpd(4608, i22.XhrFactory, i21.ɵangular_packages_platform_server_platform_server_e, []), i0.ɵmpd(4608, i22.HttpXhrBackend, i22.HttpXhrBackend, [i22.XhrFactory]), i0.ɵmpd(6144, i22.HttpBackend, null, [i22.HttpXhrBackend]), i0.ɵmpd(5120, i22.HttpHandler, i21.ɵangular_packages_platform_server_platform_server_h, [i22.HttpBackend, i0.Injector]), i0.ɵmpd(4608, i22.HttpClient, i22.HttpClient, [i22.HttpHandler]), i0.ɵmpd(4608, i22.ɵangular_packages_common_http_http_d, i22.ɵangular_packages_common_http_http_d, []), i0.ɵmpd(5120, i0.LOCALE_ID, i0.ɵangular_packages_core_core_k, [[3, i0.LOCALE_ID]]), i0.ɵmpd(4608, i23.NgLocalization, i23.NgLocaleLocalization, [i0.LOCALE_ID, [2, i23.ɵangular_packages_common_common_a]]), i0.ɵmpd(5120, i0.IterableDiffers, i0.ɵangular_packages_core_core_i, []), i0.ɵmpd(5120, i0.KeyValueDiffers, i0.ɵangular_packages_core_core_j, []), i0.ɵmpd(4608, i24.DomSanitizer, i24.ɵDomSanitizerImpl, [i23.DOCUMENT]), i0.ɵmpd(6144, i0.Sanitizer, null, [i24.DomSanitizer]), i0.ɵmpd(4608, i24.HAMMER_GESTURE_CONFIG, i24.HammerGestureConfig, []), i0.ɵmpd(5120, i24.EVENT_MANAGER_PLUGINS, function (p0_0, p0_1, p0_2, p1_0, p2_0, p2_1, p2_2, p2_3, p3_0) { return [new i24.ɵDomEventsPlugin(p0_0, p0_1, p0_2), new i24.ɵKeyEventsPlugin(p1_0), new i24.ɵHammerGesturesPlugin(p2_0, p2_1, p2_2, p2_3), new i21.ɵangular_packages_platform_server_platform_server_d(p3_0)]; }, [i23.DOCUMENT, i0.NgZone, i0.PLATFORM_ID, i23.DOCUMENT, i23.DOCUMENT, i24.HAMMER_GESTURE_CONFIG, i0.ɵConsole, [2, i24.HAMMER_LOADER], i24.DOCUMENT]), i0.ɵmpd(4608, i24.EventManager, i24.EventManager, [i24.EVENT_MANAGER_PLUGINS, i0.NgZone]), i0.ɵmpd(135680, i24.ɵDomSharedStylesHost, i24.ɵDomSharedStylesHost, [i23.DOCUMENT]), i0.ɵmpd(4608, i24.ɵDomRendererFactory2, i24.ɵDomRendererFactory2, [i24.EventManager, i24.ɵDomSharedStylesHost]), i0.ɵmpd(4608, i21.ɵangular_packages_platform_server_platform_server_c, i21.ɵangular_packages_platform_server_platform_server_c, [i24.DOCUMENT, [2, i24.ɵTRANSITION_ID]]), i0.ɵmpd(6144, i24.ɵSharedStylesHost, null, [i21.ɵangular_packages_platform_server_platform_server_c]), i0.ɵmpd(4608, i21.ɵServerRendererFactory2, i21.ɵServerRendererFactory2, [i24.EventManager, i0.NgZone, i24.DOCUMENT, i24.ɵSharedStylesHost]), i0.ɵmpd(4608, i25.AnimationDriver, i25.ɵNoopAnimationDriver, []), i0.ɵmpd(5120, i25.ɵAnimationStyleNormalizer, i26.ɵangular_packages_platform_browser_animations_animations_c, []), i0.ɵmpd(4608, i25.ɵAnimationEngine, i26.ɵangular_packages_platform_browser_animations_animations_a, [i23.DOCUMENT, i25.AnimationDriver, i25.ɵAnimationStyleNormalizer]), i0.ɵmpd(5120, i0.RendererFactory2, i21.ɵangular_packages_platform_server_platform_server_a, [i21.ɵServerRendererFactory2, i25.ɵAnimationEngine, i0.NgZone]), i0.ɵmpd(4352, i0.Testability, null, []), i0.ɵmpd(4608, i27.AnimationBuilder, i26.ɵBrowserAnimationBuilder, [i0.RendererFactory2, i24.DOCUMENT]), i0.ɵmpd(4608, i23.ViewportScroller, i23.ɵNullViewportScroller, []), i0.ɵmpd(4608, i28.ɵangular_packages_forms_forms_i, i28.ɵangular_packages_forms_forms_i, []), i0.ɵmpd(4608, i28.FormBuilder, i28.FormBuilder, []), i0.ɵmpd(4608, i29.NgMasonryGridService, i29.NgMasonryGridService, [i0.PLATFORM_ID]), i0.ɵmpd(4608, i30.ScrollToService, i30.ScrollToService, []), i0.ɵmpd(4608, i31.WindowRef, i31.WindowRef, []), i0.ɵmpd(4608, i31.DocumentRef, i31.DocumentRef, []), i0.ɵmpd(4608, i32.MapsAPILoader, i33.LazyMapsAPILoader, [[2, i33.LAZY_MAPS_API_CONFIG], i31.WindowRef, i31.DocumentRef]), i0.ɵmpd(5120, i34.ActivatedRoute, i34.ɵangular_packages_router_router_g, [i34.Router]), i0.ɵmpd(4608, i34.NoPreloading, i34.NoPreloading, []), i0.ɵmpd(6144, i34.PreloadingStrategy, null, [i34.NoPreloading]), i0.ɵmpd(135680, i34.RouterPreloader, i34.RouterPreloader, [i34.Router, i0.NgModuleFactoryLoader, i0.Compiler, i0.Injector, i34.PreloadingStrategy]), i0.ɵmpd(4608, i34.PreloadAllModules, i34.PreloadAllModules, []), i0.ɵmpd(5120, i34.ɵangular_packages_router_router_n, i34.ɵangular_packages_router_router_c, [i34.Router, i23.ViewportScroller, i34.ROUTER_CONFIGURATION]), i0.ɵmpd(5120, i34.ROUTER_INITIALIZER, i34.ɵangular_packages_router_router_j, [i34.ɵangular_packages_router_router_h]), i0.ɵmpd(5120, i0.APP_BOOTSTRAP_LISTENER, function (p0_0) { return [p0_0]; }, [i34.ROUTER_INITIALIZER]), i0.ɵmpd(4608, i35.PropertyService, i35.PropertyService, []), i0.ɵmpd(4608, i36.LocationService, i36.LocationService, [i22.HttpClient]), i0.ɵmpd(4608, i37.GetService, i37.GetService, [i20.Http]), i0.ɵmpd(4608, i38.SendService, i38.SendService, []), i0.ɵmpd(4608, i39.PostService, i39.PostService, [i22.HttpClient]), i0.ɵmpd(4608, i40.TimeService, i40.TimeService, []), i0.ɵmpd(4608, i41.MatchDataService, i41.MatchDataService, [i36.LocationService, i39.PostService]), i0.ɵmpd(4608, i42.NewsService, i42.NewsService, [i39.PostService]), i0.ɵmpd(4608, i43.PopUpService, i43.PopUpService, []), i0.ɵmpd(4608, i44.LinkService, i44.LinkService, [i0.RendererFactory2, i24.DOCUMENT]), i0.ɵmpd(4608, i45.SeoService, i45.SeoService, [i24.Meta]), i0.ɵmpd(135680, i23.AsyncPipe, i23.AsyncPipe, [i0.ChangeDetectorRef]), i0.ɵmpd(1073742336, i20.HttpModule, i20.HttpModule, []), i0.ɵmpd(1073742336, i22.HttpClientXsrfModule, i22.HttpClientXsrfModule, []), i0.ɵmpd(1073742336, i22.HttpClientModule, i22.HttpClientModule, []), i0.ɵmpd(1073742336, i23.CommonModule, i23.CommonModule, []), i0.ɵmpd(1024, i0.ErrorHandler, i24.ɵangular_packages_platform_browser_platform_browser_a, []), i0.ɵmpd(1024, i0.NgProbeToken, function () { return [i34.ɵangular_packages_router_router_b()]; }, []), i0.ɵmpd(256, i0.APP_ID, "sport-social", []), i0.ɵmpd(2048, i24.ɵTRANSITION_ID, null, [i0.APP_ID]), i0.ɵmpd(512, i34.ɵangular_packages_router_router_h, i34.ɵangular_packages_router_router_h, [i0.Injector]), i0.ɵmpd(1024, i0.APP_INITIALIZER, function (p0_0, p1_0, p1_1, p1_2, p2_0) { return [i24.ɵangular_packages_platform_browser_platform_browser_j(p0_0), i24.ɵangular_packages_platform_browser_platform_browser_h(p1_0, p1_1, p1_2), i34.ɵangular_packages_router_router_i(p2_0)]; }, [[2, i0.NgProbeToken], i24.ɵTRANSITION_ID, i23.DOCUMENT, i0.Injector, i34.ɵangular_packages_router_router_h]), i0.ɵmpd(512, i0.ApplicationInitStatus, i0.ApplicationInitStatus, [[2, i0.APP_INITIALIZER]]), i0.ɵmpd(131584, i0.ApplicationRef, i0.ApplicationRef, [i0.NgZone, i0.ɵConsole, i0.Injector, i0.ErrorHandler, i0.ComponentFactoryResolver, i0.ApplicationInitStatus]), i0.ɵmpd(1073742336, i0.ApplicationModule, i0.ApplicationModule, [i0.ApplicationRef]), i0.ɵmpd(1073742336, i24.BrowserModule, i24.BrowserModule, [[3, i24.BrowserModule]]), i0.ɵmpd(1073742336, i26.NoopAnimationsModule, i26.NoopAnimationsModule, []), i0.ɵmpd(1073742336, i21.ServerModule, i21.ServerModule, []), i0.ɵmpd(1073742336, i28.ɵangular_packages_forms_forms_bb, i28.ɵangular_packages_forms_forms_bb, []), i0.ɵmpd(1073742336, i28.FormsModule, i28.FormsModule, []), i0.ɵmpd(1073742336, i28.ReactiveFormsModule, i28.ReactiveFormsModule, []), i0.ɵmpd(1073742336, i46.GooglePlaceModule, i46.GooglePlaceModule, []), i0.ɵmpd(1073742336, i47.AgmCoreModule, i47.AgmCoreModule, []), i0.ɵmpd(1024, i34.ɵangular_packages_router_router_a, i34.ɵangular_packages_router_router_e, [[3, i34.Router]]), i0.ɵmpd(512, i34.UrlSerializer, i34.DefaultUrlSerializer, []), i0.ɵmpd(512, i34.ChildrenOutletContexts, i34.ChildrenOutletContexts, []), i0.ɵmpd(256, i34.ROUTER_CONFIGURATION, { enableTracing: true }, []), i0.ɵmpd(1024, i23.LocationStrategy, i34.ɵangular_packages_router_router_d, [i23.PlatformLocation, [2, i23.APP_BASE_HREF], i34.ROUTER_CONFIGURATION]), i0.ɵmpd(512, i23.Location, i23.Location, [i23.LocationStrategy]), i0.ɵmpd(512, i0.Compiler, i0.Compiler, []), i0.ɵmpd(512, i0.NgModuleFactoryLoader, i48.ModuleMapNgFactoryLoader, [i0.Compiler, i48.MODULE_MAP]), i0.ɵmpd(1024, i34.ROUTES, function () { return [[{ path: "", component: i49.HomeComponent }], [{ path: "", component: i50.AboutComponent }], [{ path: "opencard/:feedid", component: i51.OpenHomeMatchCardComponent }, { path: "ourTeam", component: i52.OurteamComponent }, { path: "contactus", component: i53.ContactUsComponent }, { path: "live", component: i54.LivedataComponent }, { path: "addtopic", component: i55.AddTopicComponent }, { path: "HelpCenter", component: i56.HelpCenterComponent }, { path: "Helpcenter/:topicname", component: i56.HelpCenterComponent }, { path: "teamview", component: i57.TeamviewComponent }, { path: "localitypage", component: i58.LocalitypageComponent }, { path: "application", component: i59.ApplicationComponent }, { path: "HelpCenter/:subtopicname", component: i60.AddQueAnsComponent }, { path: "HelpCenter/:subtopicname/:question", component: i60.AddQueAnsComponent }, { path: "about", component: i50.AboutComponent }, { path: "Terms Of Service", loadChildren: "app/terms-and-condition/terms-and-condition.module#TermsAndConditionModule" }, { path: "Privacy Policy", loadChildren: "app/privacy-policy/privacy-policy.module#PrivacyPolicyModule" }, { path: "OpenArena", loadChildren: "app/global-feed/global-match-feed/global-match-feed.module#GlobalMatchFeedModule" }, { path: "AroundTheWorld", loadChildren: "app/global-feed/global-news-feed/global-news-feed.module#GlobalNewsFeedModule" }, { path: ":sport", loadChildren: "app/sports-specific-feed/sports-specific-feed.module#SportsSpecificFeedModule" }, { path: ":id", component: i61.OpenMatchCardComponent, outlet: "Match" }, { path: ":id", component: i62.OpenNewsCardComponent, outlet: "News" }, { path: "PopUp", component: i63.PopUpComponent, outlet: "AppDownload" }, { path: "", loadChildren: "app/home/home.module#HomeModule" }, { path: "home", component: i49.HomeComponent }]]; }, []), i0.ɵmpd(1024, i34.Router, i34.ɵangular_packages_router_router_f, [i0.ApplicationRef, i34.UrlSerializer, i34.ChildrenOutletContexts, i23.Location, i0.Injector, i0.NgModuleFactoryLoader, i0.Compiler, i34.ROUTES, i34.ROUTER_CONFIGURATION, [2, i34.UrlHandlingStrategy], [2, i34.RouteReuseStrategy]]), i0.ɵmpd(1073742336, i34.RouterModule, i34.RouterModule, [[2, i34.ɵangular_packages_router_router_a], [2, i34.Router]]), i0.ɵmpd(1073742336, i64.GalleryModule, i64.GalleryModule, []), i0.ɵmpd(1073742336, i65.OpenMatchCardModule, i65.OpenMatchCardModule, []), i0.ɵmpd(1073742336, i66.OpenNewsCardModule, i66.OpenNewsCardModule, []), i0.ɵmpd(1073742336, i67.CarouselModule, i67.CarouselModule, []), i0.ɵmpd(1073742336, i68.HeaderModule, i68.HeaderModule, []), i0.ɵmpd(1073742336, i69.NavigationBarModule, i69.NavigationBarModule, []), i0.ɵmpd(1073742336, i70.MatchCardModule, i70.MatchCardModule, []), i0.ɵmpd(1073742336, i71.NewsCardModule, i71.NewsCardModule, []), i0.ɵmpd(1073742336, i72.LiveMatchCardModule, i72.LiveMatchCardModule, []), i0.ɵmpd(1073742336, i29.NgMasonryGridModule, i29.NgMasonryGridModule, []), i0.ɵmpd(1073742336, i73.SsMatchCardModule, i73.SsMatchCardModule, []), i0.ɵmpd(1073742336, i74.SideNavModule, i74.SideNavModule, []), i0.ɵmpd(1073742336, i75.GlobalOpenArenaFeedModule, i75.GlobalOpenArenaFeedModule, []), i0.ɵmpd(1073742336, i76.FooterModule, i76.FooterModule, []), i0.ɵmpd(1073742336, i77.HomeMatchFeedModule, i77.HomeMatchFeedModule, []), i0.ɵmpd(1073742336, i78.HomeModule, i78.HomeModule, []), i0.ɵmpd(1073742336, i79.BlogCardModule, i79.BlogCardModule, []), i0.ɵmpd(1073742336, i80.BackfooterModule, i80.BackfooterModule, []), i0.ɵmpd(1073742336, i81.AboutModule, i81.AboutModule, []), i0.ɵmpd(1073742336, i82.NewHeaderModule, i82.NewHeaderModule, []), i0.ɵmpd(1073742336, i83.HelpCenterModule, i83.HelpCenterModule, []), i0.ɵmpd(1073742336, i84.ScrollToModule, i84.ScrollToModule, []), i0.ɵmpd(1073742336, i85.OpenHomeMatchCardModule, i85.OpenHomeMatchCardModule, []), i0.ɵmpd(1073742336, i86.AppModule, i86.AppModule, []), i0.ɵmpd(1073742336, i48.ModuleMapLoaderModule, i48.ModuleMapLoaderModule, []), i0.ɵmpd(1073742336, i1.AppServerModule, i1.AppServerModule, []), i0.ɵmpd(256, i22.ɵangular_packages_common_http_http_e, "XSRF-TOKEN", []), i0.ɵmpd(256, i22.ɵangular_packages_common_http_http_f, "X-XSRF-TOKEN", []), i0.ɵmpd(256, i0.ɵAPP_ROOT, true, []), i0.ɵmpd(256, i26.ANIMATION_MODULE_TYPE, "NoopAnimations", []), i0.ɵmpd(256, i33.LAZY_MAPS_API_CONFIG, { apiKey: "AIzaSyBhy2_i75_m05Chs918Q5UKG2fHxMlhia4" }, [])]); });
 exports.AppServerModuleNgFactory = AppServerModuleNgFactory;
 
 
@@ -4823,6 +4827,243 @@ exports.GlobalOpenArenaFeedModule = GlobalOpenArenaFeedModule;
 
 /***/ }),
 
+/***/ "./src/app/global-feed/home-match-feed/home-match-feed.component.css.shim.ngstyle.js":
+/*!*******************************************************************************************!*\
+  !*** ./src/app/global-feed/home-match-feed/home-match-feed.component.css.shim.ngstyle.js ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var styles = [".home[_ngcontent-%COMP%]{\n    width:100%;\n    margin-top: 4%;\n}\n.home[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{\n    display: inline-block;\n}\n.sidenav[_ngcontent-%COMP%]{\n    margin-top: 0%;\n    width: 18%;\n    height: auto;\n    float: left;\n    \n    height: 600px;\n}\n.rightside[_ngcontent-%COMP%]{\n    \n    float: right;\n    width: 80%;\n    height: 350px;\n    z-index: 10;\n    border-bottom: 1px solid #bbbbbb;\n}\n.blog[_ngcontent-%COMP%]{\n    float: left;\n    width: 95%;\n    height: 300px;\n    scroll-behavior: smooth;\n    overflow-x: scroll;\n    white-space: nowrap !important;\n    -webkit-overflow-scrolling: touch;\n    -ms-scroll-snap-type: x mandatory;\n        scroll-snap-type: x mandatory;\n    -ms-scroll-snap-destination: 0% 100%;\n        scroll-snap-destination: 0% 100%;\n    -ms-scroll-snap-points-x: repeat(100%);\n        scroll-snap-points-x: repeat(100%);\n    \n}\n.blog[_ngcontent-%COMP%]::-webkit-scrollbar {\n    display: none;\n}\n.leftarrow[_ngcontent-%COMP%], .rightarrow[_ngcontent-%COMP%] {\n    margin-top: 10%;\n    float: left;\n    width: 2%;\n    border-radius: 50%;\n    height: 6%;\n    background-size: 100% 100%; \n}\n.leftarrow[_ngcontent-%COMP%], .rightarrow[_ngcontent-%COMP%]:hover{\n    cursor: pointer;\n    box-shadow: 3px 3px 5px #ecebeb;\n}\n.leftarrow[_ngcontent-%COMP%] {\n    margin-left: 1%;\n    background-image: url('/assets/images/sportsocialhomearrow1.png');\n}\n.rightarrow[_ngcontent-%COMP%] {\n      \n    background-image: url('/assets/images/sportsocialhomearrow.png');\n}\n.topic[_ngcontent-%COMP%]{\n    text-decoration: underline;\n    margin-left: 2%;\n    margin-top: 2%;\n}\n.blog[_ngcontent-%COMP%]   .outdiv[_ngcontent-%COMP%]{\n    display: inline-block;\n}\n.outdiv[_ngcontent-%COMP%]{\n    scroll-snap-align: start;\n    width: 31%;\n    margin: 1% 1.1% 0% 1.1%;\n    border-radius: 2%;\n    vertical-align: top;\n}\n.head[_ngcontent-%COMP%]{\n    width: 100%;\n    height: 34px;\n    border-bottom: 1px solid #dddddd;\n}\n.gamename[_ngcontent-%COMP%] {\n    height: 100%;\n    width: 60%;\n    margin-left: 2%;\n    float:left;\n}\n.result[_ngcontent-%COMP%] {\n    height: 100%;\n    width: 30%;\n    margin-right: 2%;\n    float: right;\n}\n.result[_ngcontent-%COMP%]   b[_ngcontent-%COMP%], .result[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    float: right;\n}\n.result[_ngcontent-%COMP%]   b[_ngcontent-%COMP%] {\n    font-size: .9em;\n}\n.gamename[_ngcontent-%COMP%]   b[_ngcontent-%COMP%] {\n    font-size: 1em;\n}\n.gamename[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    margin-top: -0.5%;\n    font-size: 0.7em;\n    font-weight: lighter;\n}\n.result[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    margin-top: -0.5%;\n    font-size: 0.8em;\n    font-weight: bold;\n    color: #5f5e5e;\n}\n.cardData[_ngcontent-%COMP%]{\n    float: left;\n    width: 100%;\n    height: 40px;\n}\n.team1[_ngcontent-%COMP%] {\n    width:30%;\n}\n.t1score[_ngcontent-%COMP%] {\n    width: 20%;\n}\n.t2score[_ngcontent-%COMP%] {\n    width: 20%;\n}\n.team2[_ngcontent-%COMP%] {\n    width:30%;\n}\n.team1[_ngcontent-%COMP%], .team2[_ngcontent-%COMP%] {\n    text-align: center;\n}\n.t1score[_ngcontent-%COMP%], .t2score[_ngcontent-%COMP%] {\n    text-align: center;\n    margin-top: 7%;\n}\n.team1[_ngcontent-%COMP%], .team2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n    text-align: center;\n}\n.team1[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    border-radius: 50%;\n    height: 45px;\n    width: 45px;\n}\n.team2[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n   border-radius: 50%;\n   height: 45px;\n   width: 45px;\n}\n.card[_ngcontent-%COMP%]{\n    display: -ms-grid;\n    display: grid;\n    width: 100%;\n    height: 250px;\n    border: 1px solid #ece9e9;\n    margin-bottom: 2%;\n    border-radius: 2%;\n    box-shadow: 3px 3px 5px #ecebeb;\n}\n.matchstatus[_ngcontent-%COMP%]{\n    width: 100%;\n    height: 30px;\n    margin-top: 5%;\n}\n.matchstatus[_ngcontent-%COMP%] > textarea[_ngcontent-%COMP%]{\n    width: 100%;\n    border: none;\n    resize: none;\n    text-align: center;\n    height: auto;\n    font-size: .8em;\n    font-weight: bolder;\n}\n.footer[_ngcontent-%COMP%]{\n    float: left;\n    border-top: 1px solid #d3d1d1;\n    width: 100%;\n    height: 30px;\n}\n.Button[_ngcontent-%COMP%]{\n    border: none;\n    width: 25%;\n    cursor: pointer;\n    outline: none;\n    margin-top: 2%;\n    text-align: center;\n    font-size: 0.9em;\n    color: #686868;\n    background-color: transparent;\n}\n@media screen and (min-width: 700px) and (max-width: 950px){\n    .outdiv[_ngcontent-%COMP%] {\n        width: 31%;\n    }\n    .rightside[_ngcontent-%COMP%]{\n        margin-top: 7%;\n    }\n    .leftarrow[_ngcontent-%COMP%], .rightarrow[_ngcontent-%COMP%]{\n        margin-top: 16%;\n    }\n    .card[_ngcontent-%COMP%] {\n        height: 230px;\n    }\n    .home[_ngcontent-%COMP%]   .sidenav[_ngcontent-%COMP%]{\n        display: none;\n    }\n    .msidenav[_ngcontent-%COMP%]{\n        display: block;\n    }\n    .rightside[_ngcontent-%COMP%] {\n        width: 100%;\n    }\n    .outdiv[_ngcontent-%COMP%]{\n        width: 48%;\n    }\n    .blog[_ngcontent-%COMP%]{\n        width: 91%;\n        height: 200px;\n    }\n    .card[_ngcontent-%COMP%]{\n        width: 95%;\n        height: 210px;\n    }\n    .leftarrow[_ngcontent-%COMP%], .rightarrow[_ngcontent-%COMP%]{\n        margin-top: 11%;\n        width: 4%;\n    }\n    .home[_ngcontent-%COMP%]{\n        margin-top: 1%;\n    }\n    .home[_ngcontent-%COMP%]   .sidenav[_ngcontent-%COMP%]{\n        display: none;\n    }\n    .msidenav[_ngcontent-%COMP%]{\n        text-align: center;\n        display:block;\n        margin-top: 10%;\n    }\n}\n@media screen and (min-width:200px) and (max-width:700px){\n    .team1[_ngcontent-%COMP%], .team2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n        font-size: 0.9em;\n    }\n    .creator[_ngcontent-%COMP%]{\n        margin-top: 12%;\n    }\n    .username[_ngcontent-%COMP%]{\n        font-size: .6em;\n    }\n    #creatorname[_ngcontent-%COMP%]{\n        font-size: .8em;\n    }\n    .footer[_ngcontent-%COMP%] > button[_ngcontent-%COMP%]{\n        font-size: 0.8em;\n    }\n    .eventtext[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n        font-size: .8em;\n    }\n    .home[_ngcontent-%COMP%]   .sidenav[_ngcontent-%COMP%]{\n        display: none;\n    }\n    .msidenav[_ngcontent-%COMP%]{\n        text-align: center;\n        display:block;\n        margin-top: 24%;\n    }\n    .rightside[_ngcontent-%COMP%] {\n        width: 100%;\n    }\n    .outdiv[_ngcontent-%COMP%]{\n        width: 100%;\n    }\n    .blog[_ngcontent-%COMP%]{\n        width: 89%;\n        height: 200px;\n    }\n    .card[_ngcontent-%COMP%]{\n        width: 95%;\n        height: 180px;\n    }\n    .gamename[_ngcontent-%COMP%], .result[_ngcontent-%COMP%]   b[_ngcontent-%COMP%]{\n        font-size: 0.8em;\n    }\n    .result[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n        font-size: 0.7em;\n    }\n    .cardData[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n        height: 35px;\n        width: 35px;\n    }\n    .t1score[_ngcontent-%COMP%], .t2score[_ngcontent-%COMP%]{\n        font-size: 0.75em;\n    }\n    .leftarrow[_ngcontent-%COMP%], .rightarrow[_ngcontent-%COMP%]{\n        margin-top: 25%;\n        width: 5%;\n        z-index: 15;\n    }\n    .home[_ngcontent-%COMP%]{\n        margin-top: 10%;\n    }\n}"];
+exports.styles = styles;
+
+
+/***/ }),
+
+/***/ "./src/app/global-feed/home-match-feed/home-match-feed.component.ngfactory.js":
+/*!************************************************************************************!*\
+  !*** ./src/app/global-feed/home-match-feed/home-match-feed.component.ngfactory.js ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var i0 = __webpack_require__(/*! ./home-match-feed.component.css.shim.ngstyle */ "./src/app/global-feed/home-match-feed/home-match-feed.component.css.shim.ngstyle.js");
+var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var i3 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var i4 = __webpack_require__(/*! ./home-match-feed.component */ "./src/app/global-feed/home-match-feed/home-match-feed.component.ts");
+var i5 = __webpack_require__(/*! @angular/http */ "@angular/http");
+var i6 = __webpack_require__(/*! ../../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
+var i7 = __webpack_require__(/*! ../../shared/services/time.service */ "./src/app/shared/services/time.service.ts");
+var i8 = __webpack_require__(/*! ../../shared/services/location.service */ "./src/app/shared/services/location.service.ts");
+var styles_HomeMatchFeedComponent = [i0.styles];
+var RenderType_HomeMatchFeedComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_HomeMatchFeedComponent, data: {} });
+exports.RenderType_HomeMatchFeedComponent = RenderType_HomeMatchFeedComponent;
+function View_HomeMatchFeedComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 0, "img", [["alt", ""], ["class", "spinner"], ["src", "assets/images/sports-social-loading.gif"]], null, null, null, null, null))], null, null); }
+function View_HomeMatchFeedComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, [["target", 1]], null, 50, "div", [["class", "outdiv"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 49, "div", [["class", "card"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 12, "div", [["class", "head"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 5, "div", [["class", "gamename"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 1, "b", [], null, null, null, null, null)), (_l()(), i1.ɵted(5, null, ["", " ", ""])), (_l()(), i1.ɵeld(6, 0, null, null, 2, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(7, null, ["", "..."])), i1.ɵpid(0, i2.SlicePipe, []), (_l()(), i1.ɵeld(9, 0, null, null, 5, "div", [["class", "result"]], null, null, null, null, null)), (_l()(), i1.ɵeld(10, 0, null, null, 1, "b", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Final Result"])), (_l()(), i1.ɵeld(12, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(14, null, [" @", ""])), (_l()(), i1.ɵeld(15, 0, null, null, 22, "a", [], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 16).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), i1.ɵdid(16, 671744, null, 0, i3.RouterLinkWithHref, [i3.Router, i3.ActivatedRoute, i2.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(17, 0, null, null, 20, "div", [["class", "cardData"]], null, null, null, null, null)), (_l()(), i1.ɵeld(18, 0, null, null, 4, "div", [["class", "cardData team1"]], null, null, null, null, null)), (_l()(), i1.ɵeld(19, 0, null, null, 0, "img", [["onerror", "this.src='assets/images/user-default.png'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(20, 0, null, null, 2, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(21, null, ["", ""])), i1.ɵpid(0, i2.SlicePipe, []), (_l()(), i1.ɵeld(23, 0, null, null, 4, "div", [["class", "cardData t1score"]], null, null, null, null, null)), (_l()(), i1.ɵeld(24, 0, null, null, 1, "b", [["style", "font-size: 1.2em;"]], null, null, null, null, null)), (_l()(), i1.ɵted(25, null, ["", ""])), (_l()(), i1.ɵeld(26, 0, null, null, 1, "p", [["style", "font-size: .6em; color:#7e7d7d;"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Score"])), (_l()(), i1.ɵeld(28, 0, null, null, 4, "div", [["class", "cardData t2score"]], null, null, null, null, null)), (_l()(), i1.ɵeld(29, 0, null, null, 1, "b", [["style", "font-size: 1.2em;"]], null, null, null, null, null)), (_l()(), i1.ɵted(30, null, ["", ""])), (_l()(), i1.ɵeld(31, 0, null, null, 1, "p", [["style", "font-size: .6em; color:#7e7d7d;"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Score"])), (_l()(), i1.ɵeld(33, 0, null, null, 4, "div", [["class", "cardData team2"]], null, null, null, null, null)), (_l()(), i1.ɵeld(34, 0, null, null, 0, "img", [["onerror", "this.src='assets/images/user-default.png'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(35, 0, null, null, 2, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(36, null, ["", ""])), i1.ɵpid(0, i2.SlicePipe, []), (_l()(), i1.ɵeld(38, 0, null, null, 3, "div", [["class", "matchstatus"]], null, null, null, null, null)), (_l()(), i1.ɵeld(39, 0, null, null, 2, "textarea", [["disabled", ""]], null, null, null, null, null)), (_l()(), i1.ɵted(40, null, ["", ".."])), i1.ɵpid(0, i2.SlicePipe, []), (_l()(), i1.ɵeld(42, 0, null, null, 8, "div", [["class", "footer"]], null, null, null, null, null)), (_l()(), i1.ɵeld(43, 0, null, null, 1, "button", [["class", "footer Button"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.openAppDownloadPopup() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Prediction"])), (_l()(), i1.ɵeld(45, 0, null, null, 1, "button", [["class", "footer Button"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.openAppDownloadPopup() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵted(46, null, ["", " Talk"])), (_l()(), i1.ɵeld(47, 0, null, null, 1, "button", [["class", "footer Button"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.openAppDownloadPopup() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵted(48, null, ["", " Promote"])), (_l()(), i1.ɵeld(49, 0, null, null, 1, "button", [["class", "footer Button"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.openAppDownloadPopup() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵted(50, null, ["", " Watch"]))], function (_ck, _v) { var currVal_6 = i1.ɵinlineInterpolate(1, "/opencard/", _v.context.$implicit.feedid, ""); _ck(_v, 16, 0, currVal_6); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = _v.context.$implicit.gender; var currVal_1 = _v.context.$implicit.GameName; _ck(_v, 5, 0, currVal_0, currVal_1); var currVal_2 = i1.ɵunv(_v, 7, 0, i1.ɵnov(_v, 8).transform(_v.context.$implicit.Venue_Name, 0, 40)); _ck(_v, 7, 0, currVal_2); var currVal_3 = _v.context.$implicit.uniquename; _ck(_v, 14, 0, currVal_3); var currVal_4 = i1.ɵnov(_v, 16).target; var currVal_5 = i1.ɵnov(_v, 16).href; _ck(_v, 15, 0, currVal_4, currVal_5); var currVal_7 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.Team1Pic, ""); _ck(_v, 19, 0, currVal_7); var currVal_8 = i1.ɵunv(_v, 21, 0, i1.ɵnov(_v, 22).transform(_v.context.$implicit.Team1name, 0, 11)); _ck(_v, 21, 0, currVal_8); var currVal_9 = _v.context.$implicit.scoreTeam1; _ck(_v, 25, 0, currVal_9); var currVal_10 = _v.context.$implicit.scoreTeam2; _ck(_v, 30, 0, currVal_10); var currVal_11 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.Team2Pic, ""); _ck(_v, 34, 0, currVal_11); var currVal_12 = i1.ɵunv(_v, 36, 0, i1.ɵnov(_v, 37).transform(_v.context.$implicit.Team2name, 0, 11)); _ck(_v, 36, 0, currVal_12); var currVal_13 = i1.ɵunv(_v, 40, 0, i1.ɵnov(_v, 41).transform(_v.context.$implicit.EventText, 0, 100)); _ck(_v, 40, 0, currVal_13); var currVal_14 = _co.CommentCount; _ck(_v, 46, 0, currVal_14); var currVal_15 = _co.PromoteCount; _ck(_v, 48, 0, currVal_15); var currVal_16 = _co.WatchCount; _ck(_v, 50, 0, currVal_16); }); }
+function View_HomeMatchFeedComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, [["target", 1]], null, 9, "div", [["class", "rightside"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 3, "div", [["class", "topic"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 2, "a", [], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "h4", [], null, null, null, null, null)), (_l()(), i1.ɵted(4, null, ["", " matches"])), (_l()(), i1.ɵeld(5, 0, null, null, 4, "div", [["class", "blog"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HomeMatchFeedComponent_2)), i1.ɵdid(7, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HomeMatchFeedComponent_3)), i1.ɵdid(9, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_1 = (_co.Matcharr.length === 0); _ck(_v, 7, 0, currVal_1); var currVal_2 = _co.Matcharr[_v.context.index]; _ck(_v, 9, 0, currVal_2); }, function (_ck, _v) { var currVal_0 = _v.context.$implicit[0].GameName; _ck(_v, 4, 0, currVal_0); }); }
+function View_HomeMatchFeedComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "div", [["class", "home"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HomeMatchFeedComponent_1)), i1.ɵdid(2, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.Matcharr; _ck(_v, 2, 0, currVal_0); }, null); }
+exports.View_HomeMatchFeedComponent_0 = View_HomeMatchFeedComponent_0;
+function View_HomeMatchFeedComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-home-match-feed", [], null, null, null, View_HomeMatchFeedComponent_0, RenderType_HomeMatchFeedComponent)), i1.ɵdid(1, 114688, null, 0, i4.HomeMatchFeedComponent, [i5.Http, i6.PostService, i7.TimeService, i8.LocationService, i3.Router], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+exports.View_HomeMatchFeedComponent_Host_0 = View_HomeMatchFeedComponent_Host_0;
+var HomeMatchFeedComponentNgFactory = i1.ɵccf("sports-social-home-match-feed", i4.HomeMatchFeedComponent, View_HomeMatchFeedComponent_Host_0, {}, {}, []);
+exports.HomeMatchFeedComponentNgFactory = HomeMatchFeedComponentNgFactory;
+
+
+/***/ }),
+
+/***/ "./src/app/global-feed/home-match-feed/home-match-feed.component.ts":
+/*!**************************************************************************!*\
+  !*** ./src/app/global-feed/home-match-feed/home-match-feed.component.ts ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var http_1 = __webpack_require__(/*! @angular/http */ "@angular/http");
+var router_1 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var time_service_1 = __webpack_require__(/*! ../../shared/services/time.service */ "./src/app/shared/services/time.service.ts");
+var post_service_1 = __webpack_require__(/*! ../../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
+var location_service_1 = __webpack_require__(/*! ../../shared/services/location.service */ "./src/app/shared/services/location.service.ts");
+var HomeMatchFeedComponent = /** @class */ (function () {
+    function HomeMatchFeedComponent(http, postservice, time, location, router) {
+        this.http = http;
+        this.postservice = postservice;
+        this.time = time;
+        this.location = location;
+        this.router = router;
+        this.Matcharr = [];
+        this.timestamp = Math.floor(Date.now() / 1000);
+        this.Sports = [
+            { id: 5, title: 'Badminton' },
+            { id: 6, title: 'Basketball' },
+            { id: 17, title: 'Cricket' },
+            { id: 23, title: 'Football' },
+            { id: 29, title: 'Hockey' },
+            { id: 36, title: 'Lawn Tennis' },
+            { id: 56, title: 'Table Tennis' },
+            { id: 60, title: 'Volleyball' }
+        ];
+        this.Games = [17, 5, 23, 6, 29, 36, 56, 60];
+    }
+    HomeMatchFeedComponent.prototype.ssmatchfeed = function () {
+        var _this = this;
+        this.location.getGeoLocation().then(function (pos) {
+            for (var i = 0; i < _this.Games.length; i++) {
+                console.log("thi is games", _this.Games[i]);
+                _this.postservice.homeMatchFeed(pos['latitude'], pos['longitude'], _this.Games[i], _this.timestamp)
+                    .subscribe(function (data) {
+                    // console.log("ahdadhaadhhjdgahdghadha",data["Feed"]);
+                    var arr = [];
+                    for (var i = 0; i < data["Feed"].length; i++) {
+                        arr.push({
+                            feedid: data["Feed"][i].feedid,
+                            Activity_name: data["Feed"][i].Activity_name,
+                            uniquename: data["Feed"][i].uniquename,
+                            InsertedDate: data["Feed"][i].InsertedDate,
+                            profile_image: data["Feed"][i].profile_image,
+                            Venue_Name: data["Feed"][i].Venue_Name,
+                            EventText: data["Feed"][i].EventText,
+                            startdatetime: data["Feed"][i].startdatetime,
+                            GameName: data["Feed"][i].GameName,
+                            GameId: data["Feed"][i].GameId,
+                            Event_Image: data["Feed"][i].Event_Image,
+                            MatchStarterName: data["Feed"][i].MatchStarterName,
+                            MatchStarterPhoto: data["Feed"][i].MatchStarterPhoto,
+                            Team1name: data["Feed"][i].Team1name,
+                            Team1Pic: data["Feed"][i].Team1Pic,
+                            Team2name: data["Feed"][i].Team2name,
+                            Team2Pic: data["Feed"][i].Team2Pic,
+                            scoreTeam1: data["Feed"][i].scoreTeam1,
+                            scoreTeam2: data["Feed"][i].scoreTeam2,
+                            gender: data["Feed"][i].gender,
+                            Profile_Photo: data["Feed"][i].Profile_Photo,
+                            City: data["Feed"][i].City,
+                            CommentCount: data["Feed"][i].CommentCount,
+                            PromoteCount: data["Feed"][i].PromoteCount,
+                            WatchCount: data["Feed"][i].WatchCount
+                        });
+                        var newstring = arr[i].gender;
+                        if (newstring = "Male" && "male") {
+                            _this.gendercheck == newstring.replace(/male/, "Men's");
+                        }
+                        else if (newstring == "Female" && "female") {
+                            _this.gendercheck = newstring.replace(/female/, "Female's");
+                        }
+                        else
+                            (newstring == "mix");
+                        _this.gendercheck = newstring.replace(/mix/, "Mix");
+                    }
+                    console.log("this is genderchk:", _this.gendercheck);
+                    if (data["Feed"].length > 0) {
+                        _this.Matcharr.push(arr);
+                    }
+                });
+            }
+        });
+    };
+    HomeMatchFeedComponent.prototype.openAppDownloadPopup = function () {
+        this.router.navigate([{ outlets: { 'AppDownload': ['PopUp'] } }], { skipLocationChange: true });
+    };
+    // openarenamatches(){
+    //   this.http.post(this.posturl,this.urlObj)
+    //   .subscribe(res=>{
+    //     var body=res.json();
+    //     console.log("hi this is my console",body);
+    //     for(const i in body){
+    //       this.Matcharr.push({
+    //         feedid:body[i].feedid,
+    //         userName:body[i].user_name,
+    //         coverpic:body[i].CoverPic,
+    //         gamename:body[i].gamename,
+    //         startdatetime:  this.time.timePassed(body[i].startdatetime),
+    //         InsertedDate:this.time.timePassed(body[i].InsertedDate),
+    //         Uniquename:body[i].Uniquename,
+    //         EventText:body[i].EventText,
+    //         city:body[i].city,
+    //         Venue_Name:body[i].Venue_Name,
+    //         MatchStarterUniqueName:body[i].MatchStarterUniqueName,  
+    //         Team1Name:body[i].Team1Name,
+    //         Team2Name:body[i].Team2Name,
+    //         Team1Pic:body[i].Team1Pic,
+    //         Team2Pic:body[i].Team2Pic,
+    //         WatchCount:body[i].WatchCount,
+    //         PromoteCount:body[i].PromoteCount,
+    //         CommentCount:body[i].CommentCount,
+    //       });
+    //        this.gendercheck=this.Matcharr[i].gender;
+    //          if(this.gendercheck=="Male"){
+    //         var HeShe= this.gendercheck.replace(this.Matcharr[i].gender,"Men's");
+    //         console.log(HeShe);
+    //       }
+    //     }
+    //   })
+    // }
+    HomeMatchFeedComponent.prototype.ngOnInit = function () {
+        this.ssmatchfeed();
+    };
+    return HomeMatchFeedComponent;
+}());
+exports.HomeMatchFeedComponent = HomeMatchFeedComponent;
+
+
+/***/ }),
+
+/***/ "./src/app/global-feed/home-match-feed/home-match-feed.module.ts":
+/*!***********************************************************************!*\
+  !*** ./src/app/global-feed/home-match-feed/home-match-feed.module.ts ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var HomeMatchFeedModule = /** @class */ (function () {
+    function HomeMatchFeedModule() {
+    }
+    return HomeMatchFeedModule;
+}());
+exports.HomeMatchFeedModule = HomeMatchFeedModule;
+
+
+/***/ }),
+
 /***/ "./src/app/header/header.component.css.shim.ngstyle.js":
 /*!*************************************************************!*\
   !*** ./src/app/header/header.component.css.shim.ngstyle.js ***!
@@ -5565,33 +5806,34 @@ var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var i2 = __webpack_require__(/*! ../header/header.component.ngfactory */ "./src/app/header/header.component.ngfactory.js");
 var i3 = __webpack_require__(/*! ../header/header.component */ "./src/app/header/header.component.ts");
 var i4 = __webpack_require__(/*! ../shared/services/property.service */ "./src/app/shared/services/property.service.ts");
-var i5 = __webpack_require__(/*! ../carousel/carousel.component.ngfactory */ "./src/app/carousel/carousel.component.ngfactory.js");
-var i6 = __webpack_require__(/*! ../carousel/carousel.component */ "./src/app/carousel/carousel.component.ts");
-var i7 = __webpack_require__(/*! ../footer/footer.component.ngfactory */ "./src/app/footer/footer.component.ngfactory.js");
-var i8 = __webpack_require__(/*! ../footer/footer.component */ "./src/app/footer/footer.component.ts");
-var i9 = __webpack_require__(/*! ./home.component */ "./src/app/home/home.component.ts");
-var i10 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
-var i11 = __webpack_require__(/*! ../shared/services/link.service */ "./src/app/shared/services/link.service.ts");
+var i5 = __webpack_require__(/*! ../side-nav/side-nav.component.ngfactory */ "./src/app/side-nav/side-nav.component.ngfactory.js");
+var i6 = __webpack_require__(/*! ../side-nav/side-nav.component */ "./src/app/side-nav/side-nav.component.ts");
+var i7 = __webpack_require__(/*! ../global-feed/home-match-feed/home-match-feed.component.ngfactory */ "./src/app/global-feed/home-match-feed/home-match-feed.component.ngfactory.js");
+var i8 = __webpack_require__(/*! ../global-feed/home-match-feed/home-match-feed.component */ "./src/app/global-feed/home-match-feed/home-match-feed.component.ts");
+var i9 = __webpack_require__(/*! @angular/http */ "@angular/http");
+var i10 = __webpack_require__(/*! ../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
+var i11 = __webpack_require__(/*! ../shared/services/time.service */ "./src/app/shared/services/time.service.ts");
+var i12 = __webpack_require__(/*! ../shared/services/location.service */ "./src/app/shared/services/location.service.ts");
+var i13 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var i14 = __webpack_require__(/*! ../footer/footer.component.ngfactory */ "./src/app/footer/footer.component.ngfactory.js");
+var i15 = __webpack_require__(/*! ../footer/footer.component */ "./src/app/footer/footer.component.ts");
+var i16 = __webpack_require__(/*! ./home.component */ "./src/app/home/home.component.ts");
+var i17 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
+var i18 = __webpack_require__(/*! ../shared/services/link.service */ "./src/app/shared/services/link.service.ts");
 var styles_HomeComponent = [i0.styles];
 var RenderType_HomeComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_HomeComponent, data: {} });
 exports.RenderType_HomeComponent = RenderType_HomeComponent;
 function View_HomeComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-header", [], null, [["window", "resize"]], function (_v, en, $event) { var ad = true; if (("window:resize" === en)) {
         var pd_0 = (i1.ɵnov(_v, 1).onresize() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, i2.View_HeaderComponent_0, i2.RenderType_HeaderComponent)), i1.ɵdid(1, 4308992, null, 0, i3.HeaderComponent, [i4.PropertyService], null, null), (_l()(), i1.ɵeld(2, 0, null, null, 1, "sports-social-carousel", [], null, [["window", "resize"], ["window", "scroll"]], function (_v, en, $event) { var ad = true; if (("window:resize" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 3).onresize() !== false);
+    } return ad; }, i2.View_HeaderComponent_0, i2.RenderType_HeaderComponent)), i1.ɵdid(1, 4308992, null, 0, i3.HeaderComponent, [i4.PropertyService], null, null), (_l()(), i1.ɵeld(2, 0, null, null, 1, "sports-social-side-nav", [], null, null, null, i5.View_SideNavComponent_0, i5.RenderType_SideNavComponent)), i1.ɵdid(3, 114688, null, 0, i6.SideNavComponent, [], null, null), (_l()(), i1.ɵeld(4, 0, null, null, 1, "sports-social-home-match-feed", [], null, null, null, i7.View_HomeMatchFeedComponent_0, i7.RenderType_HomeMatchFeedComponent)), i1.ɵdid(5, 114688, null, 0, i8.HomeMatchFeedComponent, [i9.Http, i10.PostService, i11.TimeService, i12.LocationService, i13.Router], null, null), (_l()(), i1.ɵeld(6, 0, null, null, 1, "sports-social-footer", [], null, [["window", "scroll"]], function (_v, en, $event) { var ad = true; if (("window:scroll" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 7).onscroll() !== false);
         ad = (pd_0 && ad);
-    } if (("window:scroll" === en)) {
-        var pd_1 = (i1.ɵnov(_v, 3).onscroll() !== false);
-        ad = (pd_1 && ad);
-    } return ad; }, i5.View_CarouselComponent_0, i5.RenderType_CarouselComponent)), i1.ɵdid(3, 114688, null, 0, i6.CarouselComponent, [i1.Renderer2, i4.PropertyService, i4.PropertyService], null, null), (_l()(), i1.ɵeld(4, 0, null, null, 1, "sports-social-footer", [], null, [["window", "scroll"]], function (_v, en, $event) { var ad = true; if (("window:scroll" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 5).onscroll() !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, i7.View_FooterComponent_0, i7.RenderType_FooterComponent)), i1.ɵdid(5, 114688, null, 0, i8.FooterComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); _ck(_v, 3, 0); _ck(_v, 5, 0); }, null); }
+    } return ad; }, i14.View_FooterComponent_0, i14.RenderType_FooterComponent)), i1.ɵdid(7, 114688, null, 0, i15.FooterComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); _ck(_v, 3, 0); _ck(_v, 5, 0); _ck(_v, 7, 0); }, null); }
 exports.View_HomeComponent_0 = View_HomeComponent_0;
-function View_HomeComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-home", [], null, null, null, View_HomeComponent_0, RenderType_HomeComponent)), i1.ɵdid(1, 114688, null, 0, i9.HomeComponent, [i10.Meta, i11.LinkService, i10.Title, i1.PLATFORM_ID], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+function View_HomeComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-home", [], null, null, null, View_HomeComponent_0, RenderType_HomeComponent)), i1.ɵdid(1, 114688, null, 0, i16.HomeComponent, [i17.Meta, i18.LinkService, i17.Title, i1.PLATFORM_ID], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_HomeComponent_Host_0 = View_HomeComponent_Host_0;
-var HomeComponentNgFactory = i1.ɵccf("sports-social-home", i9.HomeComponent, View_HomeComponent_Host_0, {}, {}, []);
+var HomeComponentNgFactory = i1.ɵccf("sports-social-home", i16.HomeComponent, View_HomeComponent_Host_0, {}, {}, []);
 exports.HomeComponentNgFactory = HomeComponentNgFactory;
 
 
@@ -5680,8 +5922,9 @@ var i17 = __webpack_require__(/*! ../cards/ss-match-card/ss-match-card.module */
 var i18 = __webpack_require__(/*! ../side-nav/side-nav.module */ "./src/app/side-nav/side-nav.module.ts");
 var i19 = __webpack_require__(/*! ../global-feed/global-open-arena-feed/global-open-arena-feed.module */ "./src/app/global-feed/global-open-arena-feed/global-open-arena-feed.module.ts");
 var i20 = __webpack_require__(/*! ../footer/footer.module */ "./src/app/footer/footer.module.ts");
-var i21 = __webpack_require__(/*! ./home.component */ "./src/app/home/home.component.ts");
-var HomeModuleNgFactory = i0.ɵcmf(i1.HomeModule, [], function (_l) { return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i2.ɵEmptyOutletComponentNgFactory, i3.OpenNewsCardComponentNgFactory, i4.HomeComponentNgFactory]], [3, i0.ComponentFactoryResolver], i0.NgModuleRef]), i0.ɵmpd(4608, i5.NgLocalization, i5.NgLocaleLocalization, [i0.LOCALE_ID, [2, i5.ɵangular_packages_common_common_a]]), i0.ɵmpd(4608, i6.NgMasonryGridService, i6.NgMasonryGridService, [i0.PLATFORM_ID]), i0.ɵmpd(1073742336, i5.CommonModule, i5.CommonModule, []), i0.ɵmpd(1073742336, i7.CarouselModule, i7.CarouselModule, []), i0.ɵmpd(1073742336, i8.RouterModule, i8.RouterModule, [[2, i8.ɵangular_packages_router_router_a], [2, i8.Router]]), i0.ɵmpd(1073742336, i9.HeaderModule, i9.HeaderModule, []), i0.ɵmpd(1073742336, i10.NavigationBarModule, i10.NavigationBarModule, []), i0.ɵmpd(1073742336, i11.GalleryModule, i11.GalleryModule, []), i0.ɵmpd(1073742336, i12.OpenMatchCardModule, i12.OpenMatchCardModule, []), i0.ɵmpd(1073742336, i13.MatchCardModule, i13.MatchCardModule, []), i0.ɵmpd(1073742336, i14.OpenNewsCardModule, i14.OpenNewsCardModule, []), i0.ɵmpd(1073742336, i15.NewsCardModule, i15.NewsCardModule, []), i0.ɵmpd(1073742336, i16.LiveMatchCardModule, i16.LiveMatchCardModule, []), i0.ɵmpd(1073742336, i6.NgMasonryGridModule, i6.NgMasonryGridModule, []), i0.ɵmpd(1073742336, i17.SsMatchCardModule, i17.SsMatchCardModule, []), i0.ɵmpd(1073742336, i18.SideNavModule, i18.SideNavModule, []), i0.ɵmpd(1073742336, i19.GlobalOpenArenaFeedModule, i19.GlobalOpenArenaFeedModule, []), i0.ɵmpd(1073742336, i20.FooterModule, i20.FooterModule, []), i0.ɵmpd(1073742336, i1.HomeModule, i1.HomeModule, []), i0.ɵmpd(1024, i8.ROUTES, function () { return [[{ path: "", component: i21.HomeComponent }]]; }, [])]); });
+var i21 = __webpack_require__(/*! ../global-feed/home-match-feed/home-match-feed.module */ "./src/app/global-feed/home-match-feed/home-match-feed.module.ts");
+var i22 = __webpack_require__(/*! ./home.component */ "./src/app/home/home.component.ts");
+var HomeModuleNgFactory = i0.ɵcmf(i1.HomeModule, [], function (_l) { return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i2.ɵEmptyOutletComponentNgFactory, i3.OpenNewsCardComponentNgFactory, i4.HomeComponentNgFactory]], [3, i0.ComponentFactoryResolver], i0.NgModuleRef]), i0.ɵmpd(4608, i5.NgLocalization, i5.NgLocaleLocalization, [i0.LOCALE_ID, [2, i5.ɵangular_packages_common_common_a]]), i0.ɵmpd(4608, i6.NgMasonryGridService, i6.NgMasonryGridService, [i0.PLATFORM_ID]), i0.ɵmpd(1073742336, i5.CommonModule, i5.CommonModule, []), i0.ɵmpd(1073742336, i7.CarouselModule, i7.CarouselModule, []), i0.ɵmpd(1073742336, i8.RouterModule, i8.RouterModule, [[2, i8.ɵangular_packages_router_router_a], [2, i8.Router]]), i0.ɵmpd(1073742336, i9.HeaderModule, i9.HeaderModule, []), i0.ɵmpd(1073742336, i10.NavigationBarModule, i10.NavigationBarModule, []), i0.ɵmpd(1073742336, i11.GalleryModule, i11.GalleryModule, []), i0.ɵmpd(1073742336, i12.OpenMatchCardModule, i12.OpenMatchCardModule, []), i0.ɵmpd(1073742336, i13.MatchCardModule, i13.MatchCardModule, []), i0.ɵmpd(1073742336, i14.OpenNewsCardModule, i14.OpenNewsCardModule, []), i0.ɵmpd(1073742336, i15.NewsCardModule, i15.NewsCardModule, []), i0.ɵmpd(1073742336, i16.LiveMatchCardModule, i16.LiveMatchCardModule, []), i0.ɵmpd(1073742336, i6.NgMasonryGridModule, i6.NgMasonryGridModule, []), i0.ɵmpd(1073742336, i17.SsMatchCardModule, i17.SsMatchCardModule, []), i0.ɵmpd(1073742336, i18.SideNavModule, i18.SideNavModule, []), i0.ɵmpd(1073742336, i19.GlobalOpenArenaFeedModule, i19.GlobalOpenArenaFeedModule, []), i0.ɵmpd(1073742336, i20.FooterModule, i20.FooterModule, []), i0.ɵmpd(1073742336, i21.HomeMatchFeedModule, i21.HomeMatchFeedModule, []), i0.ɵmpd(1073742336, i1.HomeModule, i1.HomeModule, []), i0.ɵmpd(1024, i8.ROUTES, function () { return [[{ path: "", component: i22.HomeComponent }]]; }, [])]); });
 exports.HomeModuleNgFactory = HomeModuleNgFactory;
 
 
@@ -6313,6 +6556,245 @@ var NewHeaderModule = /** @class */ (function () {
     return NewHeaderModule;
 }());
 exports.NewHeaderModule = NewHeaderModule;
+
+
+/***/ }),
+
+/***/ "./src/app/open-cards/open-home-match-card/open-home-match-card.component.css.shim.ngstyle.js":
+/*!****************************************************************************************************!*\
+  !*** ./src/app/open-cards/open-home-match-card/open-home-match-card.component.css.shim.ngstyle.js ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var styles = [".rightside[_ngcontent-%COMP%]{\n    \n    float: right;\n    width: 80%;\n    height: 350px;\n    z-index: 10;\n    border-bottom: 1px solid #bbbbbb;\n    background-color: #eeeeee;\n}\n\n.topic[_ngcontent-%COMP%]{\n    text-decoration: underline;\n    margin-left: 2%;\n    margin-top: 2%;\n}\n\n.outdiv[_ngcontent-%COMP%]{\n    scroll-snap-align: start;\n    width: 70%;\n    margin: 1% 1.1% 0% 10%;\n    border-radius: 2%;\n    vertical-align: top;\n}\n\n.card[_ngcontent-%COMP%]{\n    display: -ms-grid;\n    display: grid;\n    width: 80%;\n    height: auto;    \n    border: 1px solid #ece9e9;\n    margin-bottom: 2%;\n    border-radius: 2%;\n    box-shadow: 3px 3px 5px #ecebeb;\n    background-color: #ffffff;\n}\n\n.head[_ngcontent-%COMP%]{\n    width: 100%;\n    height: 34px;\n    border-bottom: 1px solid #dddddd;\n}\n\n.gamename[_ngcontent-%COMP%] {\n    height: 100%;\n    width: 60%;\n    margin-left: 2%;\n    float:left;\n}\n\n.result[_ngcontent-%COMP%] {\n    height: 100%;\n    width: 30%;\n    margin-right: 2%;\n    float: right;\n}\n\n.result[_ngcontent-%COMP%]   b[_ngcontent-%COMP%], .result[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    float: right;\n}\n\n.result[_ngcontent-%COMP%]   b[_ngcontent-%COMP%] {\n    font-size: .9em;\n}\n\n.gamename[_ngcontent-%COMP%]   b[_ngcontent-%COMP%] {\n    font-size: 1em;\n}\n\n.gamename[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    margin-top: -0.5%;\n    font-size: 0.7em;\n    font-weight: lighter;\n}\n\n.result[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    margin-top: -0.5%;\n    font-size: 0.8em;\n    font-weight: bold;\n    color: #5f5e5e;\n}\n\n.cardData[_ngcontent-%COMP%]{\n    float: left;\n    width: 100%;\n    height: 70px;\n    margin-top: 3%;\n    \n}\n\n.cardData[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{\n    vertical-align: top;\n    margin-top: 0%;\n}\n\n.team1[_ngcontent-%COMP%] {\n    width:25%;\n    margin-left: 4%;\n}\n\n.team2[_ngcontent-%COMP%] {\n    width:25%;\n}\n\n.t1score[_ngcontent-%COMP%] {\n    width: 20%;\n}\n\n.t2score[_ngcontent-%COMP%] {\n    width: 20%;\n}\n\n.team1[_ngcontent-%COMP%], .team2[_ngcontent-%COMP%] {\n    text-align: center;\n}\n\n.t1score[_ngcontent-%COMP%], .t2score[_ngcontent-%COMP%] {\n    text-align: center;\n    margin-top: 7%;\n}\n\n.team1[_ngcontent-%COMP%], .team2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n    text-align: center;\n}\n\n.team1[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    border-radius: 50%;\n    height: 45px;\n    width: 45px;\n}\n\n.team2[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n   border-radius: 50%;\n   height: 45px;\n   width: 45px;\n}\n\n.matchstatus[_ngcontent-%COMP%]{\n    width: 100%;\n    height: 30px;\n    margin-top: 5%;\n}\n\n.matchstatus[_ngcontent-%COMP%] > textarea[_ngcontent-%COMP%]{\n    width: 100%;\n    border: none;\n    resize: none;\n    text-align: center;\n    height: auto;\n    font-size: .8em;\n    font-weight: bolder;\n    color: #000000;\n}\n\n.footer[_ngcontent-%COMP%]{\n    border-top: 1px solid #d3d1d1;\n    width: 100%;\n    height: 30px;\n    background-color: #eeeeee;\n}\n\n.footer[_ngcontent-%COMP%] > button[_ngcontent-%COMP%]{\n    border: none;\n    width: auto;\n    cursor: pointer;\n    outline: none;\n    margin-top: 1%;\n    margin-left: 18%;\n    text-align: center;\n    font-size: 0.9em;\n    color: #686868;\n    background-color: transparent;\n}\n\n@media screen and (min-width: 700px) and (max-width: 950px){\n    .outdiv[_ngcontent-%COMP%] {\n        width: 31%;\n    }\n    .rightside[_ngcontent-%COMP%]{\n        margin-top: 7%;\n    }\n    .card[_ngcontent-%COMP%] {\n        height: 230px;\n    }\n    .home[_ngcontent-%COMP%]   .sidenav[_ngcontent-%COMP%]{\n        display: none;\n    }\n    .msidenav[_ngcontent-%COMP%]{\n        display: block;\n    }\n    .rightside[_ngcontent-%COMP%] {\n        width: 100%;\n    }\n    .outdiv[_ngcontent-%COMP%]{\n        width: 48%;\n    }\n    \n    .card[_ngcontent-%COMP%]{\n        width: 95%;\n        height: 210px;\n    }\n    .home[_ngcontent-%COMP%]{\n        margin-top: 1%;\n    }\n    .home[_ngcontent-%COMP%]   .sidenav[_ngcontent-%COMP%]{\n        display: none;\n    }\n    .msidenav[_ngcontent-%COMP%]{\n        text-align: center;\n        display:block;\n        margin-top: 10%;\n    }\n}\n\n@media screen and (min-width:200px) and (max-width:700px){\n    .team1[_ngcontent-%COMP%], .team2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n        font-size: 0.9em;\n    }\n    .creator[_ngcontent-%COMP%]{\n        margin-top: 12%;\n    }\n    .username[_ngcontent-%COMP%]{\n        font-size: .6em;\n    }\n    #creatorname[_ngcontent-%COMP%]{\n        font-size: .8em;\n    }\n    \n    .eventtext[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n        font-size: .8em;\n    }\n    .home[_ngcontent-%COMP%]   .sidenav[_ngcontent-%COMP%]{\n        display: none;\n    }\n    .msidenav[_ngcontent-%COMP%]{\n        text-align: center;\n        display:block;\n        margin-top: 24%;\n    }\n    .rightside[_ngcontent-%COMP%] {\n        width: 100%;\n    }\n    .outdiv[_ngcontent-%COMP%]{\n        width: 100%;\n    }\n    \n    .card[_ngcontent-%COMP%]{\n        width: 95%;\n        height: 180px;\n    }\n    .gamename[_ngcontent-%COMP%], .result[_ngcontent-%COMP%]   b[_ngcontent-%COMP%]{\n        font-size: 0.8em;\n    }\n    .result[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n        font-size: 0.7em;\n    }\n    .cardData[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n        height: 35px;\n        width: 35px;\n    }\n    .t1score[_ngcontent-%COMP%], .t2score[_ngcontent-%COMP%]{\n        font-size: 0.75em;\n    }\n    .home[_ngcontent-%COMP%]{\n        margin-top: 10%;\n    }\n}"];
+exports.styles = styles;
+
+
+/***/ }),
+
+/***/ "./src/app/open-cards/open-home-match-card/open-home-match-card.component.ngfactory.js":
+/*!*********************************************************************************************!*\
+  !*** ./src/app/open-cards/open-home-match-card/open-home-match-card.component.ngfactory.js ***!
+  \*********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var i0 = __webpack_require__(/*! ./open-home-match-card.component.css.shim.ngstyle */ "./src/app/open-cards/open-home-match-card/open-home-match-card.component.css.shim.ngstyle.js");
+var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var i3 = __webpack_require__(/*! ../../header/header.component.ngfactory */ "./src/app/header/header.component.ngfactory.js");
+var i4 = __webpack_require__(/*! ../../header/header.component */ "./src/app/header/header.component.ts");
+var i5 = __webpack_require__(/*! ../../shared/services/property.service */ "./src/app/shared/services/property.service.ts");
+var i6 = __webpack_require__(/*! ../../side-nav/side-nav.component.ngfactory */ "./src/app/side-nav/side-nav.component.ngfactory.js");
+var i7 = __webpack_require__(/*! ../../side-nav/side-nav.component */ "./src/app/side-nav/side-nav.component.ts");
+var i8 = __webpack_require__(/*! ./open-home-match-card.component */ "./src/app/open-cards/open-home-match-card/open-home-match-card.component.ts");
+var i9 = __webpack_require__(/*! ../../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
+var i10 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var styles_OpenHomeMatchCardComponent = [i0.styles];
+var RenderType_OpenHomeMatchCardComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_OpenHomeMatchCardComponent, data: {} });
+exports.RenderType_OpenHomeMatchCardComponent = RenderType_OpenHomeMatchCardComponent;
+function View_OpenHomeMatchCardComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 43, "div", [["class", "outdiv"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 42, "div", [["class", "card"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 12, "div", [["class", "head"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 5, "div", [["class", "gamename"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 1, "b", [], null, null, null, null, null)), (_l()(), i1.ɵted(5, null, ["", " ", ""])), (_l()(), i1.ɵeld(6, 0, null, null, 2, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(7, null, ["", "..."])), i1.ɵpid(0, i2.SlicePipe, []), (_l()(), i1.ɵeld(9, 0, null, null, 5, "div", [["class", "result"]], null, null, null, null, null)), (_l()(), i1.ɵeld(10, 0, null, null, 1, "b", [], null, null, null, null, null)), (_l()(), i1.ɵted(11, null, ["Final Result", ""])), (_l()(), i1.ɵeld(12, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(14, null, [" @", ""])), (_l()(), i1.ɵeld(15, 0, null, null, 18, "div", [["class", "cardData"]], null, null, null, null, null)), (_l()(), i1.ɵeld(16, 0, null, null, 3, "div", [["class", "cardData team1"]], null, null, null, null, null)), (_l()(), i1.ɵeld(17, 0, null, null, 0, "img", [["onerror", "this.src='assets/images/user-default.png'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(18, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(19, null, ["", ""])), (_l()(), i1.ɵeld(20, 0, null, null, 4, "div", [["class", "cardData t1score"]], null, null, null, null, null)), (_l()(), i1.ɵeld(21, 0, null, null, 1, "b", [["style", "font-size: 1.2em;"]], null, null, null, null, null)), (_l()(), i1.ɵted(22, null, ["", ""])), (_l()(), i1.ɵeld(23, 0, null, null, 1, "p", [["style", "font-size: .6em; color:#7e7d7d;"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Score"])), (_l()(), i1.ɵeld(25, 0, null, null, 4, "div", [["class", "cardData t2score"]], null, null, null, null, null)), (_l()(), i1.ɵeld(26, 0, null, null, 1, "b", [["style", "font-size: 1.2em;"]], null, null, null, null, null)), (_l()(), i1.ɵted(27, null, ["", ""])), (_l()(), i1.ɵeld(28, 0, null, null, 1, "p", [["style", "font-size: .6em; color:#7e7d7d;"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Score"])), (_l()(), i1.ɵeld(30, 0, null, null, 3, "div", [["class", "cardData team2"]], null, null, null, null, null)), (_l()(), i1.ɵeld(31, 0, null, null, 0, "img", [["onerror", "this.src='assets/images/user-default.png'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(32, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(33, null, ["", ""])), (_l()(), i1.ɵeld(34, 0, null, null, 2, "div", [["class", "matchstatus"]], null, null, null, null, null)), (_l()(), i1.ɵeld(35, 0, null, null, 1, "textarea", [["disabled", ""]], null, null, null, null, null)), (_l()(), i1.ɵted(36, null, ["", ""])), (_l()(), i1.ɵeld(37, 0, null, null, 6, "div", [["class", "footer"]], null, null, null, null, null)), (_l()(), i1.ɵeld(38, 0, null, null, 1, "button", [["class", "one"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.first() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Match Talk"])), (_l()(), i1.ɵeld(40, 0, null, null, 1, "button", [["class", "two"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.second() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Moments"])), (_l()(), i1.ɵeld(42, 0, null, null, 1, "button", [["class", "four"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.fourth() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Line Ups"]))], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = _v.context.$implicit.gender; var currVal_1 = _v.context.$implicit.GameName; _ck(_v, 5, 0, currVal_0, currVal_1); var currVal_2 = i1.ɵunv(_v, 7, 0, i1.ɵnov(_v, 8).transform(_v.context.$implicit.Venue_Name, 0, 40)); _ck(_v, 7, 0, currVal_2); var currVal_3 = _v.context.$implicit.Activity_name; _ck(_v, 11, 0, currVal_3); var currVal_4 = _v.context.$implicit.uniquename; _ck(_v, 14, 0, currVal_4); var currVal_5 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.Team1Pic, ""); _ck(_v, 17, 0, currVal_5); var currVal_6 = _v.context.$implicit.Team1name; _ck(_v, 19, 0, currVal_6); var currVal_7 = _v.context.$implicit.scoreTeam1; _ck(_v, 22, 0, currVal_7); var currVal_8 = _v.context.$implicit.scoreTeam2; _ck(_v, 27, 0, currVal_8); var currVal_9 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.Team2Pic, ""); _ck(_v, 31, 0, currVal_9); var currVal_10 = _v.context.$implicit.Team2name; _ck(_v, 33, 0, currVal_10); var currVal_11 = _co.resultOfMatch; _ck(_v, 36, 0, currVal_11); }); }
+function View_OpenHomeMatchCardComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-header", [], null, [["window", "resize"]], function (_v, en, $event) { var ad = true; if (("window:resize" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 1).onresize() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, i3.View_HeaderComponent_0, i3.RenderType_HeaderComponent)), i1.ɵdid(1, 4308992, null, 0, i4.HeaderComponent, [i5.PropertyService], null, null), (_l()(), i1.ɵeld(2, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 1, "sports-social-side-nav", [], null, null, null, i6.View_SideNavComponent_0, i6.RenderType_SideNavComponent)), i1.ɵdid(6, 114688, null, 0, i7.SideNavComponent, [], null, null), (_l()(), i1.ɵeld(7, 0, null, null, 2, "div", [["class", "rightside"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_OpenHomeMatchCardComponent_1)), i1.ɵdid(9, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; _ck(_v, 1, 0); _ck(_v, 6, 0); var currVal_0 = _co.Matcharr; _ck(_v, 9, 0, currVal_0); }, null); }
+exports.View_OpenHomeMatchCardComponent_0 = View_OpenHomeMatchCardComponent_0;
+function View_OpenHomeMatchCardComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-open-home-match-card", [], null, null, null, View_OpenHomeMatchCardComponent_0, RenderType_OpenHomeMatchCardComponent)), i1.ɵdid(1, 114688, null, 0, i8.OpenHomeMatchCardComponent, [i9.PostService, i10.ActivatedRoute], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+exports.View_OpenHomeMatchCardComponent_Host_0 = View_OpenHomeMatchCardComponent_Host_0;
+var OpenHomeMatchCardComponentNgFactory = i1.ɵccf("sports-social-open-home-match-card", i8.OpenHomeMatchCardComponent, View_OpenHomeMatchCardComponent_Host_0, {}, {}, []);
+exports.OpenHomeMatchCardComponentNgFactory = OpenHomeMatchCardComponentNgFactory;
+
+
+/***/ }),
+
+/***/ "./src/app/open-cards/open-home-match-card/open-home-match-card.component.ts":
+/*!***********************************************************************************!*\
+  !*** ./src/app/open-cards/open-home-match-card/open-home-match-card.component.ts ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var post_service_1 = __webpack_require__(/*! ../../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
+var router_1 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var OpenHomeMatchCardComponent = /** @class */ (function () {
+    function OpenHomeMatchCardComponent(postservice, activatedroute) {
+        this.postservice = postservice;
+        this.activatedroute = activatedroute;
+        this.Matcharr = [];
+        this.one = document.getElementsByClassName('one');
+        this.two = document.getElementsByClassName('two');
+        this.three = document.getElementsByClassName('three');
+        this.four = document.getElementsByClassName('four');
+        this.five = document.getElementsByClassName('five');
+        this.buttonArr = [{ name: "Match Talk" },
+            { name: "Moments" },
+            { name: "Score Card" },
+            { name: "Line Ups" },
+            { name: "Head to Head" }];
+    }
+    OpenHomeMatchCardComponent.prototype.first = function () {
+        this.one[0].style.color = "red";
+        this.two[0].style.color = "#696969";
+        this.three[0].style.color = "#696969";
+        this.four[0].style.color = "#696969";
+        this.five[0].style.color = "#696969";
+    };
+    OpenHomeMatchCardComponent.prototype.second = function () {
+        this.two[0].style.color = "red";
+        this.one[0].style.color = "#696969";
+        this.three[0].style.color = "#696969";
+        this.four[0].style.color = "#696969";
+        this.five[0].style.color = "#696969";
+    };
+    OpenHomeMatchCardComponent.prototype.third = function () {
+        this.three[0].style.color = "red";
+        this.one[0].style.color = "#696969";
+        this.two[0].style.color = "#696969";
+        this.four[0].style.color = "#696969";
+        this.five[0].style.color = "#696969";
+    };
+    OpenHomeMatchCardComponent.prototype.fourth = function () {
+        this.four[0].style.color = "red";
+        this.one[0].style.color = "#696969";
+        this.three[0].style.color = "#696969";
+        this.two[0].style.color = "#696969";
+        this.five[0].style.color = "#696969";
+    };
+    OpenHomeMatchCardComponent.prototype.fifth = function () {
+        this.five[0].style.color = "red";
+        this.one[0].style.color = "#696969";
+        this.three[0].style.color = "#696969";
+        this.two[0].style.color = "#696969";
+        this.four[0].style.color = "#696969";
+    };
+    OpenHomeMatchCardComponent.prototype.getSingleMatchFeed = function () {
+        var _this = this;
+        this.postservice.OpenOneMatchCard(this.eventid).subscribe(function (data) {
+            for (var i = 0; i < data["Feed"].length; i++) {
+                _this.Matcharr.push({
+                    Activity_name: data["Feed"][i].Activity_name,
+                    uniquename: data["Feed"][i].uniquename,
+                    InsertedDate: data["Feed"][i].InsertedDate,
+                    profile_image: data["Feed"][i].profile_image,
+                    Venue_Name: data["Feed"][i].Venue_Name,
+                    EventText: data["Feed"][i].EventText,
+                    startdatetime: data["Feed"][i].startdatetime,
+                    GameName: data["Feed"][i].GameName,
+                    GameId: data["Feed"][i].GameId,
+                    Event_Image: data["Feed"][i].Event_Image,
+                    MatchStarterName: data["Feed"][i].MatchStarterName,
+                    MatchStarterPhoto: data["Feed"][i].MatchStarterPhoto,
+                    Team1name: data["Feed"][i].Team1name,
+                    Team1Id: data["Feed"][i].Team1Id,
+                    Team2Id: data["Feed"][i].Team2Id,
+                    Team1Pic: data["Feed"][i].Team1Pic,
+                    Team2name: data["Feed"][i].Team2name,
+                    Team2Pic: data["Feed"][i].Team2Pic,
+                    scoreTeam1: data["Feed"][i].scoreTeam1,
+                    scoreTeam2: data["Feed"][i].scoreTeam2,
+                    gender: data["Feed"][i].gender,
+                    Profile_Photo: data["Feed"][i].Profile_Photo,
+                    City: data["Feed"][i].City,
+                    CommentCount: data["Feed"][i].CommentCount,
+                    PromoteCount: data["Feed"][i].PromoteCount,
+                    WatchCount: data["Feed"][i].WatchCount,
+                    winnerid: data["Feed"][i].winnerid,
+                    eventStatus: data["Feed"][i].eventStatus
+                });
+                var winnerId = _this.Matcharr[i].winnerid;
+                var team1score = _this.Matcharr[i].Team1Id;
+                var team2score = _this.Matcharr[i].Team2Id;
+                var eventstatus = _this.Matcharr[i].eventStatus;
+                if (winnerId == team1score) {
+                    _this.resultOfMatch = _this.Matcharr[i].Team1name + " has won the match";
+                }
+                else if (winnerId == null || team1score == team2score || winnerId == 0) {
+                    _this.resultOfMatch = "Match Draw";
+                }
+                else if (eventstatus == 4) {
+                    _this.resultOfMatch = " Result is not declared !!";
+                }
+                else {
+                    _this.resultOfMatch = _this.Matcharr[i].Team2name + " has won the match";
+                }
+            }
+        });
+    };
+    OpenHomeMatchCardComponent.prototype.isDarkStyle = function () {
+        return false;
+    };
+    OpenHomeMatchCardComponent.prototype.isNormalStyle = function () {
+        return true;
+    };
+    OpenHomeMatchCardComponent.prototype.getparamid = function () {
+        var _this = this;
+        this.activatedroute.params.subscribe(function (param) {
+            _this.eventid = param.feedid;
+            console.log("this is paramid:", _this.eventid);
+        });
+    };
+    OpenHomeMatchCardComponent.prototype.ngOnInit = function () {
+        this.getparamid();
+        this.getSingleMatchFeed();
+        // this.activatedroute.paramMap.subscribe(params=>{
+        //   console.log(params);
+        // })
+    };
+    return OpenHomeMatchCardComponent;
+}());
+exports.OpenHomeMatchCardComponent = OpenHomeMatchCardComponent;
+
+
+/***/ }),
+
+/***/ "./src/app/open-cards/open-home-match-card/open-home-match-card.module.ts":
+/*!********************************************************************************!*\
+  !*** ./src/app/open-cards/open-home-match-card/open-home-match-card.module.ts ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var OpenHomeMatchCardModule = /** @class */ (function () {
+    function OpenHomeMatchCardModule() {
+    }
+    return OpenHomeMatchCardModule;
+}());
+exports.OpenHomeMatchCardModule = OpenHomeMatchCardModule;
 
 
 /***/ }),
@@ -7271,11 +7753,11 @@ var LocationService = /** @class */ (function () {
                     longitude: crd.longitude
                 };
                 resolve(_this.position);
-                console.log('Your current position is:');
-                console.log("Latitude : " + crd.latitude);
-                console.log("Longitude: " + crd.longitude);
-                console.log('page no. is :' + _this.feedPageRequestObject.page);
-                console.log("More or less " + crd.accuracy + " meters.");
+                // console.log('Your current position is:');
+                // console.log(`Latitude is : ${crd.latitude}`);
+                // console.log(`Longitude: ${crd.longitude}`);
+                // console.log('page no. is :'+this.feedPageRequestObject.page);
+                // console.log(`More or less ${crd.accuracy} meters.`);
             }, function (err) {
                 console.warn("ERROR(" + err.code + "): " + err.message);
                 _this.position = {
@@ -7472,6 +7954,12 @@ var PostService = /** @class */ (function () {
     function PostService(http) {
         this.http = http;
         this.singleMatchReqObj = [];
+        this.homematchfeedObj = {
+            latitude: Number,
+            longitude: Number,
+            gameid: Number,
+            timestamp: Number
+        };
         this.matchFeedReqObj = {
             latitude: Number,
             longitude: Number,
@@ -7514,6 +8002,21 @@ var PostService = /** @class */ (function () {
         // console.log("Heyy this is gameid.="+gameid);
         return this.http.post('https://prod.sportsocial.in/poc/webfeed', this.matchFeedReqObj);
         // return this.http.post('https://test.sportsocial.in/poc/webfeed', this.matchFeedReqObj);
+    };
+    PostService.prototype.homeMatchFeed = function (lat, long, Gameid, timest) {
+        this.homematchfeedObj = {
+            latitude: lat,
+            longitude: long,
+            gameid: Gameid,
+            timestamp: timest
+        };
+        return this.http.post('https://test.sportsocial.in/poc/webfeed', this.homematchfeedObj);
+    };
+    PostService.prototype.OpenOneMatchCard = function (id) {
+        this.paramIdObj = {
+            eventid: id
+        };
+        return this.http.post('https://test.sportsocial.in/poc/webmatchinfo', this.paramIdObj);
     };
     PostService.prototype.singleMatchData = function (eventid, userid, activityid, urlId, page) {
         this.singleMatchReqObj = [{
@@ -7749,6 +8252,126 @@ var TimeService = /** @class */ (function () {
     return TimeService;
 }());
 exports.TimeService = TimeService;
+
+
+/***/ }),
+
+/***/ "./src/app/side-nav/side-nav.component.css.shim.ngstyle.js":
+/*!*****************************************************************!*\
+  !*** ./src/app/side-nav/side-nav.component.css.shim.ngstyle.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var styles = [".close[_ngcontent-%COMP%] {\n    float: right; \n    border-radius: 50%;\n    height: 20px;\n    width: 20px;\n    background-color: hsl(0, 0%, 100%, 0.5);\n }\n .sidenav[_ngcontent-%COMP%]{\n    \n    width: 18%;\n    height: auto;\n    border: 1px solid #dddddd;\n    position: fixed !important;\n}\n .data[_ngcontent-%COMP%], .home1[_ngcontent-%COMP%]{\n        width: 100%;\n        padding: 5% 0% 5% 0%;\n        font-size: 1em;\n        font-family: 'Roboto',sans-serif;\n        border-top-right-radius: 25px;\n        border-bottom-right-radius: 25px;\n        cursor: pointer;\n    }\n .sidenav[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n        \n        margin: 5% 0% 2% 12%;\n    }\n .data[_ngcontent-%COMP%] > a[_ngcontent-%COMP%]{\n        margin-top: 3%;\n        margin-left: 20%;\n        height: 20px;\n        color: grey;\n        filter: rgb(211, 211, 211); \n        -webkit-filter: grayscale(1);\n    }\n .data[_ngcontent-%COMP%] > a[_ngcontent-%COMP%]:hover{\n        color: #024770;\n    }\n .homeicon[_ngcontent-%COMP%]{\n        margin-left: 15%;\n    }\n .selected[_ngcontent-%COMP%]{\n    background-color: rgb(204,218,227);\n    filter: none; \n    -webkit-filter: grayscale(0);\n  }\n .selected[_ngcontent-%COMP%] > a[_ngcontent-%COMP%]{\n      color: #024770;\n      font-weight: bolder;\n      filter: none;\n    -webkit-filter: grayscale(0);\n  }\n .msidenav[_ngcontent-%COMP%]{\n      display: none;\n      margin-top: 10%;\n  }\n .msidenav[_ngcontent-%COMP%]   button[_ngcontent-%COMP%] {\n      background-color: #024771;\n      color: white;\n      border: none;\n      border-radius: 3px;\n      padding: 8px;\n      box-shadow: 2px 2px 2px 2px rgb(228, 225, 225);\n  }\n .msidenav[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n      width: 11px;\n      height: 11px;\n  }\n .modal[_ngcontent-%COMP%]{\n      margin-left: 15%;\n      text-align: center;\n      position: fixed;\n      display: none;\n      z-index: 15;\n      width: 60%;\n      border-radius: 5px;\n      box-shadow: 2px 2px 4px #bbbbbb;\n      background: rgba(58, 58, 58, 0.7) \n    }\n .modal[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{\n        text-decoration: none;\n        color: white;\n        font-size: 1.7em;\n    }\n .modal[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n        padding: 20px;\n        width: 40px;\n        height: 40px;\n    }\n .modal[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]{\n        padding: 20px;\n    }\n @media screen and (min-width: 600px) and (max-width: 950px){\n      .sidenav[_ngcontent-%COMP%]{\n          display:none;\n      }\n      .msidenav[_ngcontent-%COMP%]{\n          display: block;\n      }\n  }\n @media screen and (min-width: 200px) and (max-width: 600px){\n    .modal[_ngcontent-%COMP%] {\n        width: 70%;\n    }\n    .sidenav[_ngcontent-%COMP%]{\n        display:none;\n    }\n    .msidenav[_ngcontent-%COMP%]{\n        display: block;\n    }\n    .modal[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]{\n        padding: 10px;\n    }\n    .modal[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{\n        font-size: 1em;\n    }\n    .modal[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n        padding: 10px;\n        width: 30px;\n        height: 30px;\n    }\n}"];
+exports.styles = styles;
+
+
+/***/ }),
+
+/***/ "./src/app/side-nav/side-nav.component.ngfactory.js":
+/*!**********************************************************!*\
+  !*** ./src/app/side-nav/side-nav.component.ngfactory.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var i0 = __webpack_require__(/*! ./side-nav.component.css.shim.ngstyle */ "./src/app/side-nav/side-nav.component.css.shim.ngstyle.js");
+var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var i3 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var i4 = __webpack_require__(/*! ./side-nav.component */ "./src/app/side-nav/side-nav.component.ts");
+var styles_SideNavComponent = [i0.styles];
+var RenderType_SideNavComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_SideNavComponent, data: {} });
+exports.RenderType_SideNavComponent = RenderType_SideNavComponent;
+function View_SideNavComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 5, "div", [["class", "data"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.onClick(_v.context.$implicit) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), i1.ɵdid(1, 278528, null, 0, i2.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), i1.ɵpod(2, { "selected": 0 }), (_l()(), i1.ɵeld(3, 0, null, null, 2, "a", [["routerLink", ""]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 4).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), i1.ɵdid(4, 671744, null, 0, i3.RouterLinkWithHref, [i3.Router, i3.ActivatedRoute, i2.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(5, null, ["", ""]))], function (_ck, _v) { var _co = _v.component; var currVal_0 = "data"; var currVal_1 = _ck(_v, 2, 0, (_v.context.$implicit == _co.selectedItem)); _ck(_v, 1, 0, currVal_0, currVal_1); var currVal_4 = ""; _ck(_v, 4, 0, currVal_4); }, function (_ck, _v) { var currVal_2 = i1.ɵnov(_v, 4).target; var currVal_3 = i1.ɵnov(_v, 4).href; _ck(_v, 3, 0, currVal_2, currVal_3); var currVal_5 = _v.context.$implicit.title; _ck(_v, 5, 0, currVal_5); }); }
+function View_SideNavComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 5, "div", [["class", "mdata"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.onClick(_v.context.$implicit) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), i1.ɵdid(1, 278528, null, 0, i2.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), i1.ɵpod(2, { "selected": 0 }), (_l()(), i1.ɵeld(3, 0, null, null, 2, "a", [["routerLink", ""]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 4).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), i1.ɵdid(4, 671744, null, 0, i3.RouterLinkWithHref, [i3.Router, i3.ActivatedRoute, i2.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(5, null, ["", ""]))], function (_ck, _v) { var _co = _v.component; var currVal_0 = "mdata"; var currVal_1 = _ck(_v, 2, 0, (_v.context.$implicit == _co.selectedItem)); _ck(_v, 1, 0, currVal_0, currVal_1); var currVal_4 = ""; _ck(_v, 4, 0, currVal_4); }, function (_ck, _v) { var currVal_2 = i1.ɵnov(_v, 4).target; var currVal_3 = i1.ɵnov(_v, 4).href; _ck(_v, 3, 0, currVal_2, currVal_3); var currVal_5 = _v.context.$implicit.title; _ck(_v, 5, 0, currVal_5); }); }
+function View_SideNavComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 5, "div", [["class", "sidenav"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 2, "a", [["class", "homeicon"], ["routerLink", ""]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 2).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), i1.ɵdid(2, 671744, null, 0, i3.RouterLinkWithHref, [i3.Router, i3.ActivatedRoute, i2.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(3, 0, null, null, 0, "img", [["src", "assets/images/sports-social-home-clicked.png"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_SideNavComponent_1)), i1.ɵdid(5, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(6, 0, null, null, 10, "div", [["class", "msidenav"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 2, "button", [["class", "mbtn"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.open() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Sports Menu | "])), (_l()(), i1.ɵeld(9, 0, null, null, 0, "img", [["src", "/assets/images/sportsocialtvicon.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(10, 0, null, null, 6, "div", [["class", "modal"]], null, null, null, null, null)), (_l()(), i1.ɵeld(11, 0, null, null, 3, "a", [["routerLink", ""]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 12).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), i1.ɵdid(12, 671744, null, 0, i3.RouterLinkWithHref, [i3.Router, i3.ActivatedRoute, i2.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(13, 0, null, null, 0, "img", [["src", "assets/images/sports-social-home-clicked.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(14, 0, null, null, 0, "img", [["class", "close"], ["src", "/assets/images/sportsocialcross.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.close() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_SideNavComponent_2)), i1.ɵdid(16, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_2 = ""; _ck(_v, 2, 0, currVal_2); var currVal_3 = _co.tempSports; _ck(_v, 5, 0, currVal_3); var currVal_6 = ""; _ck(_v, 12, 0, currVal_6); var currVal_7 = _co.tempSports; _ck(_v, 16, 0, currVal_7); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 2).target; var currVal_1 = i1.ɵnov(_v, 2).href; _ck(_v, 1, 0, currVal_0, currVal_1); var currVal_4 = i1.ɵnov(_v, 12).target; var currVal_5 = i1.ɵnov(_v, 12).href; _ck(_v, 11, 0, currVal_4, currVal_5); }); }
+exports.View_SideNavComponent_0 = View_SideNavComponent_0;
+function View_SideNavComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-side-nav", [], null, null, null, View_SideNavComponent_0, RenderType_SideNavComponent)), i1.ɵdid(1, 114688, null, 0, i4.SideNavComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+exports.View_SideNavComponent_Host_0 = View_SideNavComponent_Host_0;
+var SideNavComponentNgFactory = i1.ɵccf("sports-social-side-nav", i4.SideNavComponent, View_SideNavComponent_Host_0, {}, {}, []);
+exports.SideNavComponentNgFactory = SideNavComponentNgFactory;
+
+
+/***/ }),
+
+/***/ "./src/app/side-nav/side-nav.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/side-nav/side-nav.component.ts ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var SideNavComponent = /** @class */ (function () {
+    function SideNavComponent() {
+        this.resnav = document.getElementsByClassName('modal');
+        this.tempSports = [
+            { id: 17, title: 'Sports-Social Arena', icon: '/assets/images/cricket (2).png' },
+            { id: 23, title: 'International Arena', icon: '/assets/images/soccer-ball-variant (2).png' },
+            { id: 6, title: 'News', icon: '/assets/images/basketball (2).png' },
+        ];
+    }
+    SideNavComponent.prototype.open = function () {
+        this.resnav[0].style.display = "block";
+    };
+    SideNavComponent.prototype.close = function () {
+        this.resnav[0].style.display = "none";
+    };
+    SideNavComponent.prototype.onClick = function (item) {
+        this.selectedItem = item;
+    };
+    SideNavComponent.prototype.ngOnInit = function () {
+    };
+    return SideNavComponent;
+}());
+exports.SideNavComponent = SideNavComponent;
 
 
 /***/ }),

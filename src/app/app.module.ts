@@ -54,6 +54,7 @@ import { NewHeaderModule } from './newheader/newheader.module';
 import { TeamviewComponent } from './teamview/teamview.component';
 import { LocalitypageComponent } from './localitypage/localitypage.component';
 import { SideNavModule } from './side-nav/side-nav.module';
+import { OpenHomeMatchCardModule } from './open-cards/open-home-match-card/open-home-match-card.module';
 
 
 @NgModule({
@@ -97,7 +98,8 @@ import { SideNavModule } from './side-nav/side-nav.module';
     BackfooterModule,
     SsMatchCardModule,
     NewHeaderModule,
-    SideNavModule
+    SideNavModule,
+    OpenHomeMatchCardModule
   ],
   providers: [
     PropertyService,

@@ -16,11 +16,13 @@ import { ContactUsComponent } from '../contact-us/contact-us.component';
 import { OurteamComponent } from '../ourteam/ourteam.component';
 // import { FirebaseComponent } from '../firebase/firebase.component';
 import { TeamviewComponent } from '../teamview/teamview.component';
+import { OpenHomeMatchCardComponent } from '../open-cards/open-home-match-card/open-home-match-card.component';
 
 
 const App_Route: Routes = [
     
     // {path:"firebase",component:FirebaseComponent},
+    {path:"opencard/:feedid",component:OpenHomeMatchCardComponent},
     {path:"ourTeam",component:OurteamComponent},
     {path:"contactus",component:ContactUsComponent},
     {path:"live",component:LivedataComponent},

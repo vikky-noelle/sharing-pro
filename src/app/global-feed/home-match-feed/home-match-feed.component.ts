@@ -1,5 +1,4 @@
 import { Component} from '@angular/core';
-import { ISubscription } from 'rxjs/Subscription';
 import { Http } from '@angular/http';
 import { Router } from '@angular/router';
 import { TimeService } from '../../shared/services/time.service';
@@ -39,7 +38,7 @@ export class HomeMatchFeedComponent{
 
   Games=[17,5,23,6,29,36,56,60];
 
-  getlocation(){
+  ssmatchfeed(){
     this.location.getGeoLocation().then((pos)=>{
       for(var i=0;i<this.Games.length;i++){
       console.log("thi is games",this.Games[i]);
@@ -78,14 +77,14 @@ export class HomeMatchFeedComponent{
 
             var newstring=arr[i].gender;
             if(newstring = "Male" && "male"){
-               this.gendercheck= newstring.replace(/male/,"Men's");
+               this.gendercheck == newstring.replace(/male/,"Men's");
              }
-             else if(newstring = "Female" && "female"){
+             else if(newstring == "Female" && "female"){
               this.gendercheck= newstring.replace(/female/,"Female's");
             }
-           else if(newstring = "mix"){
+           else (newstring == "mix")
               this.gendercheck= newstring.replace(/mix/,"Mix");
-            }
+            
           }
           console.log("this is genderchk:",this.gendercheck);
           
@@ -138,12 +137,8 @@ export class HomeMatchFeedComponent{
   // }
   
   ngOnInit() {
-    this.getlocation();
-    // this.openarenamatches();
+    this.ssmatchfeed();
   }
-
-  
-
 }
 
 
