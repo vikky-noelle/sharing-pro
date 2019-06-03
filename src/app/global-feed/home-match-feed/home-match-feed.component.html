@@ -6,8 +6,8 @@
     <div class="rightside" *ngFor = "let game of Matcharr;" #target> 
         <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf = "Matcharr.length === 0" alt="">
       
-        <div class="leftarrow" (click)="lscroll();">
-      </div>
+        <!-- <div class="leftarrow" (click)="lscroll();">
+      </div> -->
 
         <div class="topic">
             <a><h4>{{game.gametitle}} matches</h4></a>
@@ -58,8 +58,8 @@
                 </div> 
               </div>    
             </div>
-        <div class="rightarrow" (click)="rscroll();">
-        </div> 
+        <!-- <div class="rightarrow" (click)="rscroll();">
+        </div>  -->
     </div> 
     <h1>News<h2>See all</h2></h1> 
     <div class="news-section">

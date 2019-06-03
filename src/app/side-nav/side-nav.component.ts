@@ -22,10 +22,11 @@ export class SideNavComponent implements OnInit {
   ];
   
   open() {
-    this.resnav[0].style.display="block";
+    this.resnav[0].style.left="0px";
   }
+
   close() {
-    this.resnav[0].style.display="none";
+    this.resnav[0].style.left="-300px";
   }
   onClick(item) {
     this.selectedItem = item;
