@@ -11,6 +11,7 @@ import { EventEmiterService } from '../shared/services/event.emiter.service';
 export class NewspageComponent implements OnInit {
   
   news=[];
+  rnews=[];
   mnewshead;
   mnewsimage;
   mnewsdesc;
@@ -18,6 +19,7 @@ export class NewspageComponent implements OnInit {
   datastr;
   mnewstime;
   topic;
+  j=-1;
   constructor(
     private _eventemiter: EventEmiterService,
     private getService: GetService,
@@ -29,6 +31,7 @@ export class NewspageComponent implements OnInit {
       this.topic = params['topic'];
     });
     this.getnews(this.topic);
+    this.recentnews("");
     this.datastr=this._eventemiter.userToEdit;
     if(this.datastr !== undefined){
     this.mnewshead = this.datastr.title;
@@ -38,16 +41,39 @@ export class NewspageComponent implements OnInit {
     this.mnewsurl = this.datastr.url;
     }
   }
+  recentnews(topic){
+    this.getService.getsportnews(topic).subscribe(res=>{
+      var body = JSON.parse(res._body);
+      var x;
+      for (var i in body.news) {
+        this.j=this.j+1;
+        x = body.news[i].insertedDate;
+        x = x.replace(/T/g," at "); 
+        this.rnews.push({
+          id:this.j,
+          title:body.news[i].title,
+          timestamp:x.substr(0,19),
+          url: body.news[i].url,
+          image: body.news[i].newsImage,
+          desc: body.news[i].desc
+        });
+        if(i==="10"){
+          break;
+        }
+      }
+    });
+
+  }
   getnews(topic){
     this.getService.getsportnews(topic).subscribe(res=>{
         var body = JSON.parse(res._body);
-        this.news=[];
         var x;
         for (const i in body.news) {
+          this.j=this.j+1;
           x = body.news[i].insertedDate;
           x = x.replace(/T/g," at "); 
           this.news.push({
-            id:i,
+            id:this.j,
             title:body.news[i].title,
             timestamp:x.substr(0,19),
             url: body.news[i].url,
@@ -61,17 +87,28 @@ export class NewspageComponent implements OnInit {
           this.mnewsdesc = this.news[0].desc;
           this.mnewsurl = this.news[0].url;
           }
-          if(i==="5"){
+          if(i==="4"){
             break;
           }
         }
     });
     }
     opennews(id){
+      console.log("lalala"+id);
+      if(id < 5){
       this.mnewshead = this.news[id].title;
       this.mnewstime = this.news[id].timestamp;
       this.mnewsimage = this.news[id].image;
       this.mnewsdesc = this.news[id].desc;
       this.mnewsurl = this.news[id].url;
+      }
+      else{
+        id=id-5;
+        this.mnewshead = this.rnews[id].title;
+        this.mnewstime = this.rnews[id].timestamp;
+        this.mnewsimage = this.rnews[id].image;
+        this.mnewsdesc = this.rnews[id].desc;
+        this.mnewsurl = this.rnews[id].url;
+      }
     }
 }

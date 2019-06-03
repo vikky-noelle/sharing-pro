@@ -37,7 +37,7 @@
   </div>
   <div class="top-stories">
     <h1>Recent Stories</h1>
-    <div  (click)="opennews(data.id);" *ngFor="let data of news">
+    <div  (click)="opennews(data.id);" *ngFor="let data of rnews">
       <h2>{{data.title}}</h2>
       <p>{{data.desc | slice:0:100}}...</p>
     </div>
@@ -67,12 +67,13 @@
       <h1>{{data.title|slice:0:40}}....</h1>
     </div>
     <hr>
-    <h1 class="heading">Recent Stories</h1>
+    <h1 class="heading">Recent Stories <p>Swipe right>></p></h1>
     <div class="tnews">
         <div (click)="opennews(data.id);" class="tnewscard" *ngFor="let data of news">
-            <textarea class="head" disabled>{{data.title}}</textarea>
+          <img src="{{data.image}}">
+            <textarea class="head" disabled>{{data.title|slice:0:31}}..</textarea>
             <br>
-            <textarea class="para" disabled>{{data.desc}}</textarea>
+            <textarea class="para" disabled>{{data.desc|slice:0:41}}....</textarea>
           </div>
     </div>
 </div>

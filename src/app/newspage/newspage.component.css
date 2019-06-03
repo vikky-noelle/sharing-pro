@@ -287,18 +287,31 @@
     scroll-snap-align: start;
     border-radius: 5px;
     width: 93%;
-    height: 150px;
+    height: 120px;
     margin-left: 5%;
     margin-bottom: 20px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .tnewscard textarea{
-    width: 90%;
+    width: 55%;
     background-color: white;
     border: none;
-    padding: 10px;
+    padding: 4px;
+    float: right;
     overflow: hidden;
+}
+.tnewscard img{
+    float: left;
+    width: 35%;
+    height: 100px;
+    border-radius: 5px;
+    margin: 3.5% 2% 2% 2%;
+}
+.heading p{
+    float: right;
+    margin-top: 1%;
+    font-size: 0.5em;
 }
 .tnewscard h1{
     padding: 10px;
