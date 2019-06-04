@@ -1,5 +1,5 @@
 import { Subscription } from 'rxjs/Rx';
-import { Component} from '@angular/core';
+import { Component, ViewChild, ElementRef} from '@angular/core';
 import { Http } from '@angular/http';
 import { Router } from '@angular/router';
 import { TimeService } from '../../shared/services/time.service';
@@ -23,6 +23,8 @@ export class HomeMatchFeedComponent{
   onesport;
   timestamp = Math.floor(Date.now()/1000);
   sub: Subscription;
+  @ViewChild('blog') blog:ElementRef;
+  @ViewChild('outdiv') outdiv:ElementRef;
   constructor(
     private _eventemiter: EventEmiterService,
     private getService: GetService,
@@ -144,6 +146,16 @@ export class HomeMatchFeedComponent{
         }
       }
     }
+  }
+  changee(topic){
+          this.router.navigate(['/newspage'], { queryParams: {topic: topic}})
+  }
+  lscroll(){
+    this.blog.nativeElement.scrollLeft-=this.outdiv.nativeElement.clientWidth;
+  }
+  rscroll(){
+    console.log('lalala');
+    this.blog.nativeElement.scrollLeft+=this.outdiv.nativeElement.clientWidth;
   }
 }
 

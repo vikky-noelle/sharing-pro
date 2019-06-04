@@ -26,7 +26,7 @@ export class SideNavComponent implements OnInit {
   }
 
   close() {
-    this.resnav[0].style.left="-300px";
+    this.resnav[0].style.left="-500px";
   }
   onClick(item) {
     this.selectedItem = item;

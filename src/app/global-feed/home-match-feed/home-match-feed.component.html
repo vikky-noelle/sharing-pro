@@ -3,24 +3,24 @@
   <div class="sidenav">
       <sports-social-side-nav></sports-social-side-nav>
   </div>
-    <div class="rightside" *ngFor = "let game of Matcharr;" #target> 
+    <div class="rightside" *ngFor = "let game of Matcharr;"> 
         <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf = "Matcharr.length === 0" alt="">
-      
-        <!-- <div class="leftarrow" (click)="lscroll();">
-      </div> -->
-
         <div class="topic">
-            <a><h4>{{game.gametitle}} matches</h4></a>
+            <a><h4>{{game.gametitle}} matches<h5>See all</h5></h4></a>
           </div>  
-      <div class="blog">    
-            <div class="outdiv" *ngFor = "let feed of game.gamearray;" #target>
+      <div class="blog" #blog>  
+          <div class="leftarrow" (click)="lscroll();">
+            </div>  
+          <div class="rightarrow" (click)="rscroll();">
+              </div> 
+            <div class="outdiv" *ngFor = "let feed of game.gamearray;" #outdiv>
 
               <div class="card">
                 
                   <div class="head">
                         <div class="gamename">
                             <b>{{feed.gender}} {{feed.GameName}}</b>
-                            <p>{{feed.Venue_Name | slice:0:40}}...</p>
+                            <p>{{feed.Venue_Name | slice:0:30}}...</p>
                           </div>
                           <div class="result">
                             <b>Final Result</b><br>
@@ -58,12 +58,15 @@
                 </div> 
               </div>    
             </div>
-        <!-- <div class="rightarrow" (click)="rscroll();">
-        </div>  -->
-    </div> 
-    <h1>News<h2>See all</h2></h1> 
+          </div> 
+    
+    <h1>News<h2 (click)="changee(game.gametitle)">See all</h2></h1> 
     <div class="news-section">
-      <div class="outdiv" *ngFor="let feed of news[game.gamenumber]">
+        <div class="lefttarrow" (click)="lscroll();">
+          </div>  
+        <div class="righttarrow" (click)="rscroll();">
+            </div> 
+      <div class="outdiv" *ngFor="let feed of news[game.gamenumber]" #targett>
         <div class="news-card" (click)="change(feed.id, game.gametitle)">
           <div class="news-img">
             <img src="{{feed.image}}" alt="sportsocialimg">
@@ -77,4 +80,5 @@
     </div> 
          
 </div>
-<br>
+<br><br>
+<br><br>

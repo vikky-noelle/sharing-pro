@@ -18,7 +18,7 @@
     float: right;
     width: 82%;
     padding-left: 20px;
-    height: 580px;
+    height: 520px;
     z-index: 10;
     border-left: 1px solid rgb(218, 218, 218);
     border-bottom: 1px solid rgb(218, 218, 218);
@@ -26,9 +26,9 @@
 .blog{
     margin: 0 auto;
     /* float: left; */
-    width: 95%;
+    width: 92%;
     overflow-y: hidden;
-    height: 300px;
+    height: 270px;
     scroll-behavior: smooth;
     overflow-x: scroll;
     white-space: nowrap !important;
@@ -41,24 +41,22 @@
 .blog::-webkit-scrollbar {
     display: none;
 }
-.leftarrow,.rightarrow {
-    z-index: 20;
+.leftarrow {
     position: absolute;
-    margin-top: 10%;
-    float: left;
-    width: 50px;
-    margin-right: -10px;
+    margin-top: 80px;
+    width: 30px;
+    margin-left:-37px;
     border-radius: 50%;
-    height: 50px;
+    height: 30px;
     background-size: 100% 100%; 
 }
 .rightarrow{
-    margin-top: 10%;
-    float: right;
-    width: 50px;
-    margin-right: -10px;
+    position: absolute;
+    margin-left: 75%;
+    margin-top: 80px;
+    width: 30px;
     border-radius: 50%;
-    height: 50px;
+    height: 30px;
     background-size: 100% 100%;
 }
 .leftarrow,.rightarrow:hover{
@@ -66,27 +64,71 @@
     box-shadow: 3px 3px 5px #ecebeb;
 }
 .leftarrow {
+    border: 1px solid silver;
     /* margin-left: 1%; */
     background-image: url('/assets/images/sportsocialhomearrow1.png');
 }
 .rightarrow {
+    border: 1px solid silver;
     /* margin-left: 1%; */  
     background-image: url('/assets/images/sportsocialhomearrow.png');
 }
+
+.lefttarrow {
+    position: absolute;
+    margin-top: 37px;
+    margin-left: -37px;
+    width: 30px;
+    border-radius: 50%;
+    height: 30px;
+    background-size: 100% 100%; 
+}
+.righttarrow{
+    position: absolute;
+    margin-left: 74%;
+    margin-top: 37px;
+    width: 30px;
+    border-radius: 50%;
+    height: 30px;
+    background-size: 100% 100%;
+}
+.lefttarrow,.righttarrow:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #ecebeb;
+}
+.lefttarrow {
+    border: 1px solid silver;
+    /* margin-left: 1%; */
+    background-image: url('/assets/images/sportsocialhomearrow1.png');
+}
+.righttarrow {
+    border: 1px solid silver;
+    /* margin-left: 1%; */  
+    background-image: url('/assets/images/sportsocialhomearrow.png');
+}
+
+
 .topic h4{
     text-decoration: none;
     font-weight: lighter;
-    font-size: 1.8em;
-    margin-left: 1%;
+    font-size: 1.6em;
+    margin-left: 4%;
     margin-top: 10px;
     margin-bottom: 8px;
+}
+.topic h4 h5{
+    float: right;
+    margin-right: 15px;
+    color: rgb(133, 131, 131);
+    font-size: 0.8em;
+    font-weight: lighter;
 }
 .blog .outdiv{
     display: inline-block;
 }
 .outdiv{
     scroll-snap-align: start;
-    width: 31.5%;
+    width: 31%;
     margin: 1% 1.1% 0% 1.1%;
     border-radius: 2%;
     vertical-align: top;
@@ -117,7 +159,7 @@
     font-size: .9em;
 }
 .gamename b {
-    font-size: 1em;
+    font-size: 0.9em;
 }
 .gamename p {
     margin-top: -0.5%;
@@ -152,31 +194,34 @@
     text-align: center;
 }
 .t1score,.t2score {
+    color: black;
     text-align: center;
     margin-top: 7%;
 }
 .team1,.team2>p{
+    color: black;
+    font-size: 0.8em;
     text-align: center;
 }
 .team1>img{
     border-radius: 50%;
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
 }
 .team2>img{
    border-radius: 50%;
-   height: 45px;
-   width: 45px;
+   height: 40px;
+   width: 40px;
 }
 
 .card{
     display: grid;
     width: 100%;
-    height: 250px;
-    border: 1px solid #ece9e9;
+    height: 180px;
+    border: 1px solid #929292;
     margin-bottom: 2%;
     border-radius: 2%;
-    box-shadow: 3px 3px 5px #ecebeb;
+    box-shadow: 3px 3px 5px #9c9c9c;
 }
 .matchstatus{
     width: 100%;
@@ -191,7 +236,7 @@
     resize: none;
     text-align: center;
     height: auto;
-    font-size: .8em;
+    font-size: .6em;
     font-weight: bolder;
 }
 .footer{
@@ -248,6 +293,18 @@
         margin-top: 11%;
         width: 4%;
     }
+    .leftarrow{
+        margin-left: -3%;
+    }
+    .rightarrow{
+        margin-left: 90%;
+    }
+    .lefttarrow{
+        margin-left: -4%;
+    }
+    .righttarrow{
+        margin-left: 89%;
+    }
     .home{
         margin-top: 1%;
     }
@@ -264,6 +321,7 @@
     .team1,.team2>p{
         font-size: 0.9em;
     }
+
     .creator{
         margin-top: 12%;
     }
@@ -288,13 +346,14 @@
         margin-top: 24%;
     }
     .rightside {
+        height: 450px;
         width: 100%;
     }
     .outdiv{
-        width: 100%;
+        width: 90%;
     }
     .blog{
-        width: 89%;
+        width: 85%;
         height: 200px;
     }
     .card{
@@ -314,21 +373,28 @@
     .t1score, .t2score{
         font-size: 0.75em;
     }
-    .leftarrow,.rightarrow{
-        margin-top: 25%;
-        width: 5%;
-        z-index: 15;
+    .leftarrow,.rightarrow,.lefttarrow,.righttarrow{
+        display: none;
     }
     .home{
         margin-top: 10%;
+    }
+    .topic{
+        padding: 20px;
+    }
+    h1{
+        padding: 20px;
+    }
+    .news-section{
+        width: 80%;
     }
 }
 .news-section{
     margin: 0 auto;
     /* float: left; */
-    width: 95%;
+    width: 90%;
     overflow-y: hidden;
-    height: 200px;
+    height: 150px;
     scroll-behavior: smooth;
     overflow-x: scroll;
     white-space: nowrap !important;
@@ -341,15 +407,16 @@
     display: none;
 }
 h1{
+    font-size: 1.6em;
     margin-bottom: 8px;
-    margin-left: 1%;
+    margin-left: 4%;
     font-weight: lighter;
 }
 h1 h2{
     float: right;
     margin-right: 15px;
     color: rgb(133, 131, 131);
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: lighter;
 }
 
@@ -357,6 +424,7 @@ h1 h2{
     width: 100%;
     height: 120px;
     border-right: 1px solid #ece9e9;
+    border-bottom: 1px solid #ece9e9;
     margin-bottom: 2%;
     border-radius: 2%;
     overflow: hidden;
@@ -365,10 +433,10 @@ h1 h2{
 .news-img{
     /* padding: 10px; */
     float: left;
-    width: 50%;
+    width: 40%;
 }
 .news-img img{
-    height: 100px;
+    height: 70px;
     width: 90%;
     border-radius: 5px;
 }
@@ -376,7 +444,7 @@ h1 h2{
     /* overflow: hidden; */
     word-wrap: break-word;
     /* padding: 10px; */
-    width: 50%;
+    width: 60%;
     float: right;
     font-size: 0.7em;
 }

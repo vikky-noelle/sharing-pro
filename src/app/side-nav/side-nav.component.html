@@ -7,10 +7,11 @@
         </div>
 </div>
 <div class="msidenav">
-      <button class="mbtn"  (click)="open();">Sports Menu  |  <img src="/assets/images/sportsocialtvicon.png"></button>
+      <img (click)="open();" src="/assets/images/sports-social-menu.png">
       <div class="modal">
       <a routerLink=""><img src="assets/images/sports-social-home-clicked.png">
-            <img class="close" src="/assets/images/sportsocialcross.png" (click)="close();"></a>
+      </a>
+            <img class="close" src="/assets/images/sportsocialcross.png" (click)="close();">
 <div class="mdata" *ngFor="let sports of tempSports" (click)="onClick(sports)" 
 [ngClass]="{'selected': sports == selectedItem }">
      
