@@ -42,20 +42,6 @@ export class OpenHomeMatchCardComponent implements OnInit {
     this.four[0].style.color="#696969";
     this.five[0].style.color="#696969";
   }
-  fourth(){
-    this.four[0].style.color="red";
-    this.one[0].style.color="#696969";
-    this.three[0].style.color="#696969";
-    this.two[0].style.color="#696969";
-    this.five[0].style.color="#696969";
-  }
-  fifth(){
-    this.five[0].style.color="red";
-    this.one[0].style.color="#696969";
-    this.three[0].style.color="#696969";
-    this.two[0].style.color="#696969";
-    this.four[0].style.color="#696969";
-  }
 
   constructor(
     private postservice:PostService,
