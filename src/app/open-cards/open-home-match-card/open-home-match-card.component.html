@@ -1,0 +1,52 @@
+<sports-social-header></sports-social-header>
+<br><br><br><sports-social-side-nav></sports-social-side-nav>
+
+    <div class="rightside"> 
+      <!-- <div class="blog">     -->
+            <div class="outdiv" *ngFor="let feed of Matcharr">
+              <div class="card">
+                  <div class="head">
+                        <div class="gamename">
+                            <b>{{feed.gender}} {{feed.GameName}}</b>
+                            <p>{{feed.Venue_Name | slice:0:40}}...</p>
+                          </div>
+                          <div class="result">
+                            <b>Final Result{{feed.Activity_name}}</b><br>
+                            <p> @{{feed.uniquename}}</p>
+                          </div> 
+                  </div>
+          
+                  <div class="cardData">
+                      <div class="cardData team1">
+                         <img src={{feed.Team1Pic}} onerror="this.src='assets/images/user-default.png'">
+                         <p>{{feed.Team1name}}</p>    
+                      </div>
+                      <div class="cardData t1score">
+                          <b style="font-size: 1.2em;">{{feed.scoreTeam1}}</b>
+                          <p style="font-size: .6em; color:#7e7d7d;">Score</p>
+                      </div>
+                      <div class="cardData t2score">
+                         <b style="font-size: 1.2em;">{{feed.scoreTeam2}}</b>
+                         <p style="font-size: .6em; color:#7e7d7d;">Score</p>
+                      </div>
+                      <div class="cardData team2">
+                         <img src={{feed.Team2Pic}} onerror="this.src='assets/images/user-default.png'">
+                         <p>{{feed.Team2name}}</p>
+                      </div>     
+                </div> 
+          
+                    <div class="matchstatus">
+                        <textarea disabled>{{resultOfMatch}}</textarea>
+                    </div>
+                <div class="footer">
+                      <a (click)="first()" class="one" style="color:red; ">Match Talk</a>
+                      <a (click)="second()" class="two">Moments</a>
+                      <a (click)="third()" class="three">Line Ups</a>
+                      <!-- <a (click)="fourth()" class="four">Score Card</a> -->
+                      <!-- <a (click)="fifth()" class="five">Head to Head</a> -->
+                </div> 
+              </div>    
+            </div>
+        <!-- </div> -->
+</div>        
+<!-- [ngStyle]="{backgroundColor:isDarkStyle() ? 'red' : isNormalStyle() ? 'green':''}" -->

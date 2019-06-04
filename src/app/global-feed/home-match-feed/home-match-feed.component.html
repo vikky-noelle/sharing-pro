@@ -9,14 +9,13 @@
             <a><h4>{{game.gametitle}} matches<h5>See all</h5></h4></a>
           </div>  
       <div class="blog" #blog>  
-          <div class="leftarrow" (click)="lscroll();">
+          <!-- <div class="leftarrow" (click)="lscroll();">
             </div>  
           <div class="rightarrow" (click)="rscroll();">
-              </div> 
+              </div>  -->
             <div class="outdiv" *ngFor = "let feed of game.gamearray;" #outdiv>
 
               <div class="card">
-                
                   <div class="head">
                         <div class="gamename">
                             <b>{{feed.gender}} {{feed.GameName}}</b>
@@ -27,34 +26,34 @@
                             <p> @{{feed.uniquename}}</p>
                           </div> 
                   </div>
-              <a routerLink={{feed.GameId}}>      
-                  <div class="cardData">
-                      <div class="cardData team1">
-                         <img src={{feed.Team1Pic}} onerror="this.src='assets/images/user-default.png'">
-                         <p>{{feed.Team1name | slice:0:11}}</p>    
-                      </div>
-                      <div class="cardData t1score">
-                          <b style="font-size: 1.2em;">{{feed.scoreTeam1}}</b>
-                          <p style="font-size: .6em; color:#7e7d7d;">Score</p>
-                      </div>
-                      <div class="cardData t2score">
-                         <b style="font-size: 1.2em;">{{feed.scoreTeam2}}</b>
-                         <p style="font-size: .6em; color:#7e7d7d;">Score</p>
-                      </div>
-                      <div class="cardData team2">
-                         <img src={{feed.Team2Pic}} onerror="this.src='assets/images/user-default.png'">
-                         <p>{{feed.Team2name | slice:0:11}}</p>
-                      </div>     
-                </div> 
-              </a> 
+                      <a routerLink="/opencard/{{feed.feedid}}">      
+                          <div class="cardData">
+                              <div class="cardData team1">
+                                <img src={{feed.Team1Pic}} onerror="this.src='assets/images/user-default.png'">
+                                <p>{{feed.Team1name | slice:0:11}}</p>    
+                              </div>
+                              <div class="cardData t1score">
+                                  <b style="font-size: 1.2em;">{{feed.scoreTeam1}}</b>
+                                  <p style="font-size: .6em; color:#7e7d7d;">Score</p>
+                              </div>
+                              <div class="cardData t2score">
+                                <b style="font-size: 1.2em;">{{feed.scoreTeam2}}</b>
+                                <p style="font-size: .6em; color:#7e7d7d;">Score</p>
+                              </div>
+                              <div class="cardData team2">
+                                <img src={{feed.Team2Pic}} onerror="this.src='assets/images/user-default.png'">
+                                <p>{{feed.Team2name | slice:0:11}}</p>
+                              </div>     
+                        </div> 
+                      </a> 
                     <div class="matchstatus">
                         <textarea disabled>{{feed.EventText | slice:0:100}}..</textarea>
                     </div>
                 <div class="footer">
                       <button class="footer Button" (click)="openAppDownloadPopup()">Prediction</button>
-                      <button class="footer Button" (click)="openAppDownloadPopup()">{{CommentCount}} Talk</button>
-                      <button class="footer Button" (click)="openAppDownloadPopup()">{{PromoteCount}} Promote</button>
-                      <button class="footer Button" (click)="openAppDownloadPopup()">{{WatchCount}} Watch</button>
+                      <button class="footer Button" (click)="openAppDownloadPopup()">Talk</button>
+                      <button class="footer Button" (click)="openAppDownloadPopup()">Promote</button>
+                      <button class="footer Button" (click)="openAppDownloadPopup()">Watch</button>
                 </div> 
               </div>    
             </div>
@@ -62,10 +61,10 @@
     
     <h1>News<h2 (click)="changee(game.gametitle)">See all</h2></h1> 
     <div class="news-section">
-        <div class="lefttarrow" (click)="lscroll();">
+        <!-- <div class="lefttarrow" (click)="lscroll();">
           </div>  
         <div class="righttarrow" (click)="rscroll();">
-            </div> 
+            </div>  -->
       <div class="outdiv" *ngFor="let feed of news[game.gamenumber]" #targett>
         <div class="news-card" (click)="change(feed.id, game.gametitle)">
           <div class="news-img">

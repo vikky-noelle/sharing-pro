@@ -56,6 +56,7 @@ import { LocalitypageComponent } from './localitypage/localitypage.component';
 import { SideNavModule } from './side-nav/side-nav.module';
 import { NewspageComponent } from './newspage/newspage.component';
 import { EventEmiterService } from './shared/services/event.emiter.service';
+import { OpenHomeMatchCardModule } from './open-cards/open-home-match-card/open-home-match-card.module';
 
 
 @NgModule({
@@ -100,7 +101,8 @@ import { EventEmiterService } from './shared/services/event.emiter.service';
     BackfooterModule,
     SsMatchCardModule,
     NewHeaderModule,
-    SideNavModule
+    SideNavModule,
+    OpenHomeMatchCardModule
   ],
   providers: [
     PropertyService,

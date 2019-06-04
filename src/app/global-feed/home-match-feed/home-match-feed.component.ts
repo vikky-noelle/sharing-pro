@@ -46,7 +46,7 @@ export class HomeMatchFeedComponent{
     {id: 60, title: 'Volleyball'}
   ];
 
-  getlocation(){
+  ssmatchfeed(){
     this.location.getGeoLocation().then((pos)=>{
       for(var i=0;i<this.Sports.length;i++){
       this.postservice.homeMatchFeed(pos['latitude'],pos['longitude'],this.Sports[i].id,this.timestamp)
@@ -82,15 +82,14 @@ export class HomeMatchFeedComponent{
             });
             var newstring=arr[i].gender;
             if(newstring = "Male" && "male"){
-               this.gendercheck= newstring.replace(/male/,"Men's");
+               this.gendercheck == newstring.replace(/male/,"Men's");
              }
-             else if(newstring = "Female" && "female"){
+             else if(newstring == "Female" && "female"){
               this.gendercheck= newstring.replace(/female/,"Female's");
             }
-           else if(newstring = "mix"){
+           else (newstring == "mix")
               this.gendercheck= newstring.replace(/mix/,"Mix");
-            }
-          }    
+            }  
           if(arr.length>0){
             this.index=this.index+1;
             var x = arr[0].GameName.replace(/ matches/g,"");
@@ -111,8 +110,7 @@ export class HomeMatchFeedComponent{
   }
 
   ngOnInit() {
-    this.getlocation();
-    // this.openarenamatches();
+    this.ssmatchfeed();
   }
   getnewsdata(topic){
     this.getService.getsportnews(topic).subscribe(res=>{
