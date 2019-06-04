@@ -16,14 +16,17 @@ sourabhFb="https://www.facebook.com/sourabh.arora.5011";
   Aniketdesc="Aniket Chaturvedi is the Tech Lead for Sport Social.He is a Full Stack Developer with vested interests in technology.A software engineer, responsible for leading a development team, and responsible for the quality of its technical deliverables."
 
   imgarr=[
-    {name:"Sourabh Arora",profile:"Web Developer",desc:this.Sourabhdesc,url:"assets/images/football-min.jpg",fburl:this.sourabhFb},
-    {name:"Tushar Gangvar",profile:"CEO",desc:this.Tushardesc,url:"assets/images/football-min.jpg"},
-    {name:"Nikhil Kanujiya",profile:"CEO",desc:this.Nikhildesc,url:"assets/images/football-min.jpg"},
-    {name:"Aniket Chaturvedi",profile:"Tech Lead",desc:this.Aniketdesc,url:"assets/images/IMG_20181020_190416.jpg"},
-    {url:"assets/images/football-min.jpg"},
-    {url:"assets/images/football-min.jpg"},
-    {url:"assets/images/football-min.jpg"},
-    {url:"assets/images/football-min.jpg"}
+    {name:"Nikhil Kanaujia",profile:"Co Founder & CEO",desc:this.Nikhildesc,url:"assets/images/football-min.jpg",fburl:""},
+    {name:"Tushar Gangwar",profile:"MD & COO",desc:this.Tushardesc,url:"assets/images/football-min.jpg",fburl:""},
+    {name:"Raghav Khandelwal",profile:"Director Finance and Strategy",desc:"",url:"assets/images/football-min.jpg",fburl:""},
+    {name:"Aniket Chaturvedi",profile:"Tech Lead",desc:this.Aniketdesc,url:"assets/images/football-min.jpg",fburl:""},
+    {name:"Sourabh Arora",profile:"Front end web developer",desc:this.Sourabhdesc,url:"assets/images/football-min.jpg",fburl:this.sourabhFb},
+    {name:"Kapil Pokheriyal",profile:"Android Developer",desc:"",url:"assets/images/football-min.jpg",fburl:""},
+    {name:"Harsh Punj",profile:"Business Development Manager",desc:"",url:"assets/images/football-min.jpg",fburl:""},
+    {name:"Aditya Shastry",profile:"Content Writer",desc:"",url:"assets/images/football-min.jpg",fburl:""},
+    {name:"Anubhav Bajpeyee",profile:"Marketing and Blog Manager",desc:"",url:"assets/images/football-min.jpg",fburl:""},
+    {name:"Gopal Singh",profile:"UI/UX Designer",desc:"",url:"assets/images/football-min.jpg",fburl:""},
+    {name:"Abhinav Katiyar",profile:"Assistant Blog Manager",desc:"",url:"assets/images/football-min.jpg",fburl:""}
   ]
   ngOnInit() {
   }
