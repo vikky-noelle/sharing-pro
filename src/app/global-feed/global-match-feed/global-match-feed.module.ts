@@ -11,6 +11,7 @@ import { CarouselModule } from '../../carousel/carousel.module';
 
 import { NgMasonryGridModule } from 'ng-masonry-grid';
 import { SsMatchCardModule } from '../../cards/ss-match-card/ss-match-card.module';
+import { SideNavModule } from '../../side-nav/side-nav.module';
 
 @NgModule({
   imports: [
@@ -21,6 +22,7 @@ import { SsMatchCardModule } from '../../cards/ss-match-card/ss-match-card.modul
     FooterModule,
     MatchRoutes,
     NavigationBarModule,
+    SideNavModule,
     CarouselModule,
     NgMasonryGridModule,
     SsMatchCardModule

@@ -1,22 +1,40 @@
 <div class="sidenav">
-            <a routerLink="" class="homeicon"><img src="assets/images/sports-social-home-clicked.png"></a>
-      <div class="data" *ngFor="let sports of tempSports" (click)="onClick(sports)" 
-      [ngClass]="{'selected': sports == selectedItem }">
-           
-             <a routerLink>{{sports.title}}</a>
-        </div>
+      <div class="data" routerLinkActive="Active" [routerLinkActiveOptions]="{exact: true}">
+           <a routerLink="">Home</a>
+      </div>
+      <div class="data" routerLinkActive="Active">
+            <a routerLink="/newspage" [queryParams]="{topic:''}">News</a>
+      </div>
+      <div class="data" routerLinkActive="Active">
+                  <a routerLink="/OpenArena">Open Arena</a>
+      </div>
+      <div class="data" (click)="openn()">
+                  <a>Local Arena</a>
+      </div>
+      <div *ngIf="data===0" class="data t1">
+                  <a>Cricket</a>
+      </div>
+      <div *ngIf="data===0" class="data t2">
+                  <a>Football</a>
+      </div>
 </div>
 <div class="msidenav">
       <img (click)="open();" src="/assets/images/sports-social-menu.png">
       <div class="modal">
-      <a routerLink=""><img src="assets/images/sports-social-home-clicked.png">
-      </a>
             <img class="close" src="/assets/images/sportsocialcross.png" (click)="close();">
-<div class="mdata" *ngFor="let sports of tempSports" (click)="onClick(sports)" 
-[ngClass]="{'selected': sports == selectedItem }">
-     
-       <a routerLink>{{sports.title}}</a>
-  </div>
-</div>
+            <div class="mdata" routerLinkActive="Active" [routerLinkActiveOptions]="{exact: true}">
+                        <a routerLink="">Home</a>
+            </div>
+            <div class="mdata" routerLinkActive="Active">
+                        <a>Local Arena</a>
+            </div>
+            
+            <div class="mdata" routerLinkActive="Active">
+                  <a routerLink="/OpenArena">Open Arena</a>
+            </div>
+            <div class="mdata" routerLinkActive="Active">
+                  <a routerLink="/newspage" [queryParams]="{topic:''}">News</a>
+            </div>
+      </div>
 </div>
 
