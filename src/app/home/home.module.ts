@@ -7,19 +7,19 @@ import { GlobalOpenArenaFeedModule } from '../global-feed/global-open-arena-feed
 import { FooterModule } from '../footer/footer.module';
 import { HomeComponent } from './home.component';
 import { HomeRouter } from './home.router';
-import { SideNavModule } from '../side-nav/side-nav.module';
 import { HomeMatchFeedModule } from '../global-feed/home-match-feed/home-match-feed.module';
+import { NewsidenavModule } from '../newsidenav/newsidenav.module';
 
 @NgModule({
   imports: [
     CommonModule,
     CarouselModule,
     HeaderModule,
+    NewsidenavModule,
     NavigationBarModule,
     GlobalOpenArenaFeedModule,
     FooterModule,
     HomeRouter,
-    SideNavModule,
     HomeMatchFeedModule
   ],
   declarations: [

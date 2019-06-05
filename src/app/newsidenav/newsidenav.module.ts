@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SideNavComponent } from './side-nav.component';
+import { NewsidenavComponent } from './newsidenav.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
@@ -8,7 +8,11 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     RouterModule
   ],
-  declarations: [SideNavComponent],
-  exports:[SideNavComponent]
+  declarations: [
+    NewsidenavComponent
+  ],
+  exports:[
+    NewsidenavComponent
+  ]
 })
-export class SideNavModule { }
+export class NewsidenavModule { }

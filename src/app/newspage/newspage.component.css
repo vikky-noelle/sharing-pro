@@ -1,12 +1,11 @@
 .side-nav{
     width: 25%;
-    margin-top: 5%;
+    margin-top: 3.5%;
 }
 .main-body{
     overflow: hidden;
 }
 .newsbody{  
-    border-left: 2px solid rgb(216, 216, 216);
     float: right;
     padding: 20px;
     margin-right: 5%;
@@ -20,6 +19,7 @@
 .news-header h1,h2{
     padding-top: 30px;
 }
+
 .news-header h2{
     color: rgb(126, 126, 126);
 }

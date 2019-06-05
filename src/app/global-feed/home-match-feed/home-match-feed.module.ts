@@ -4,16 +4,16 @@ import { HomeMatchFeedComponent } from './home-match-feed.component';
 import { RouterModule } from '@angular/router';
 import { HeaderModule } from '../../header/header.module';
 import { FooterModule } from '../../footer/footer.module';
-import { SideNavModule } from '../../side-nav/side-nav.module';
 import { SsMatchCardModule } from '../../cards/ss-match-card/ss-match-card.module';
+import { NewsidenavModule } from '../../newsidenav/newsidenav.module';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
     HeaderModule,
+    NewsidenavModule,
     FooterModule,
-    SideNavModule,
     SsMatchCardModule
   ],
   declarations: [HomeMatchFeedComponent],

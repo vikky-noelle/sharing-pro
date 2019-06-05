@@ -1,3 +1,5 @@
+import { NewsidenavModule } from './newsidenav/newsidenav.module';
+// import { NewsidenavComponent } from './newsidenav/newsidenav.component';
 /* angular modules */
 
 import { NgModule } from '@angular/core';
@@ -53,7 +55,6 @@ import { SsMatchCardModule } from './cards/ss-match-card/ss-match-card.module';
 import { NewHeaderModule } from './newheader/newheader.module';
 import { TeamviewComponent } from './teamview/teamview.component';
 import { LocalitypageComponent } from './localitypage/localitypage.component';
-import { SideNavModule } from './side-nav/side-nav.module';
 import { NewspageComponent } from './newspage/newspage.component';
 import { EventEmiterService } from './shared/services/event.emiter.service';
 
@@ -64,6 +65,7 @@ import { EventEmiterService } from './shared/services/event.emiter.service';
     PopUpComponent,
     AddTopicComponent,
     AddQueAnsComponent,
+    // NewsidenavComponent,  
     ApplicationComponent,
     LivedataComponent,
     ContactUsComponent,
@@ -89,6 +91,7 @@ import { EventEmiterService } from './shared/services/event.emiter.service';
     HomeModule,
     HeaderModule,
     AboutModule,
+    NewsidenavModule,
     FooterModule,
     HelpCenterModule,
     ScrollToModule.forRoot(),
@@ -100,7 +103,6 @@ import { EventEmiterService } from './shared/services/event.emiter.service';
     BackfooterModule,
     SsMatchCardModule,
     NewHeaderModule,
-    SideNavModule
   ],
   providers: [
     PropertyService,

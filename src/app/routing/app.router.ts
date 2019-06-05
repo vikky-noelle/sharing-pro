@@ -31,7 +31,7 @@ const App_Route: Routes = [
     {path: "teamview",component:TeamviewComponent},
     {path: "localitypage", component:LocalitypageComponent},
     {
-        path: "newspage", 
+        path: "newspage/:topic", 
         component:NewspageComponent
     },
     {

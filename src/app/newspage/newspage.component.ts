@@ -2,13 +2,14 @@ import { ActivatedRoute } from '@angular/router';
 import { GetService } from './../shared/services/get.service';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { EventEmiterService } from '../shared/services/event.emiter.service';
+import { DefaultRouteReuseStrategy } from '@angular/router/src/route_reuse_strategy';
 
 @Component({
   selector: 'sports-social-newspage',
   templateUrl: './newspage.component.html',
   styleUrls: ['./newspage.component.css']
 })
-export class NewspageComponent implements OnInit {
+export class NewspageComponent implements OnInit{
   
   news=[];
   rnews=[];
@@ -27,9 +28,10 @@ export class NewspageComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.route.queryParams.subscribe(params => {
-      this.topic = params['topic'];
-    });
+    if(this.route.snapshot.paramMap.has("topic")){
+      this.topic = this.route.snapshot.paramMap.get("topic");
+   }
+    console.log(this.topic);
     this.getnews(this.topic);
     this.recentnews("");
     this.datastr=this._eventemiter.userToEdit;
@@ -110,5 +112,8 @@ export class NewspageComponent implements OnInit {
         this.mnewsdesc = this.rnews[id].desc;
         this.mnewsurl = this.rnews[id].url;
       }
+    }
+    ngDestroy(){
+      
     }
 }

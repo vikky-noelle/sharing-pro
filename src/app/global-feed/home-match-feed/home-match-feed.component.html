@@ -1,8 +1,6 @@
  
 <div class="home">
-  <div class="sidenav">
-      <sports-social-side-nav></sports-social-side-nav>
-  </div>
+
     <div class="rightside" *ngFor = "let game of Matcharr;"> 
         <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf = "Matcharr.length === 0" alt="">
         <div class="topic">
