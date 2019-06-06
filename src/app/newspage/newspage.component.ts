@@ -1,9 +1,9 @@
+import { TimeService } from './../shared/services/time.service';
 import { ActivatedRoute } from '@angular/router';
 import { GetService } from './../shared/services/get.service';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { EventEmiterService } from '../shared/services/event.emiter.service';
 import { DefaultRouteReuseStrategy } from '@angular/router/src/route_reuse_strategy';
-
 @Component({
   selector: 'sports-social-newspage',
   templateUrl: './newspage.component.html',
@@ -13,26 +13,44 @@ export class NewspageComponent implements OnInit{
   
   news=[];
   rnews=[];
+  list=[];
+  list1=[];
   mnewshead;
   mnewsimage;
   mnewsdesc;
   mnewsurl;
   datastr;
   mnewstime;
+  cdata=true;
+  ddata=true;
   topic;
   j=-1;
+  scroll=document.getElementsByClassName('c-element') as HTMLCollectionOf<HTMLElement>;
+  @ViewChild('widgets') widgets:ElementRef;
+  @ViewChild('widgetsContent') widgetsContent:ElementRef;
   constructor(
     private _eventemiter: EventEmiterService,
     private getService: GetService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private time: TimeService
   ) { }
 
   ngOnInit() {
-    if(this.route.snapshot.paramMap.has("topic")){
-      this.topic = this.route.snapshot.paramMap.get("topic");
-   }
-    console.log(this.topic);
+  //   if(this.route.snapshot.paramMap.has("topic")){
+  //     this.topic = this.route.snapshot.paramMap.get("topic");
+  //  }
+  this.route.params.subscribe(params => {
+    this.topic = params.topic;
+    console.log("routes working"+this.topic);
+  });
+   if(this.topic===""){
+    this.cdata=false;
     this.getnews(this.topic);
+   }
+   else{
+    this.getnewss(this.topic);
+     this.ddata=false;
+   }
     this.recentnews("");
     this.datastr=this._eventemiter.userToEdit;
     if(this.datastr !== undefined){
@@ -49,9 +67,10 @@ export class NewspageComponent implements OnInit{
       var x;
       for (var i in body.news) {
         this.j=this.j+1;
-        x = body.news[i].insertedDate;
+        x = this.time.ExactDate(Date.parse(body.news[i].insertedDate));
         x = x.replace(/T/g," at "); 
         this.rnews.push({
+          source: body.news[i].source,
           id:this.j,
           title:body.news[i].title,
           timestamp:x.substr(0,19),
@@ -67,21 +86,47 @@ export class NewspageComponent implements OnInit{
 
   }
   getnews(topic){
-    this.getService.getsportnews(topic).subscribe(res=>{
+      this.getService.getsportnews(topic).subscribe(res=>{
         var body = JSON.parse(res._body);
         var x;
-        for (const i in body.news) {
-          this.j=this.j+1;
-          x = body.news[i].insertedDate;
+        this.j=this.j+1;
+        console.log(body);
+        for (var i=0; i<5; i++) {
+          x = this.time.ExactDate(body.news[i].insertedDate);
           x = x.replace(/T/g," at "); 
-          this.news.push({
-            id:this.j,
-            title:body.news[i].title,
-            timestamp:x.substr(0,19),
-            url: body.news[i].url,
-            image: body.news[i].newsImage,
-            desc: body.news[i].desc
+            this.list.push({
+              source: body.news[i].source,
+              title:body.news[i].title,
+              timestamp:x.substr(0,19),
+              url: body.news[i].url,
+              image: body.news[i].newsImage,
+              desc: body.news[i].desc
+            });
+          }
+          // console.log(this.list);
+          for(var i=5; i<7; i++){
+            x = this.time.ExactDate(body.news[i].insertedDate);
+            x = x.replace(/T/g," at "); 
+            this.list1.push({
+              title:body.news[i].title,
+              timestamp:x.substr(0,19),
+              url: body.news[i].url,
+              image: body.news[i].newsImage,
+              desc: body.news[i].desc
+            });
+          }
+          for(var i=7; i<20; i++){
+            x = this.time.ExactDate(Date.parse(body.news[i].insertedDate)/1000);
+            x = x.replace(/T/g," at "); 
+            this.news.push({
+              source: body.news[i].source,
+              title:body.news[i].title,
+              timestamp:x.substr(0,19),
+              url: body.news[i].url,
+              image: body.news[i].newsImage,
+              desc: body.news[i].desc
           });
+        }
           if(this.datastr === undefined){
           this.mnewshead = this.news[0].title;
           this.mnewstime = this.news[0].timestamp;
@@ -89,12 +134,38 @@ export class NewspageComponent implements OnInit{
           this.mnewsdesc = this.news[0].desc;
           this.mnewsurl = this.news[0].url;
           }
-          if(i==="4"){
-            break;
-          }
-        }
     });
-    }
+  }
+  getnewss(topic){
+      this.getService.getsportnews(topic).subscribe(res=>{
+          var body = JSON.parse(res._body);
+          var x;
+          for (const i in body.news) {
+            this.j=this.j+1;
+            x = this.time.ExactDate(body.news[i].insertedDate);
+            x = x.replace(/T/g," at "); 
+            this.news.push({
+              source: body.news[i].source,
+              id:this.j,
+              title:body.news[i].title,
+              timestamp:x.substr(0,19),
+              url: body.news[i].url,
+              image: body.news[i].newsImage,
+              desc: body.news[i].desc
+            });
+            if(this.datastr === undefined){
+            this.mnewshead = this.news[0].title;
+            this.mnewstime = this.news[0].timestamp;
+            this.mnewsimage = this.news[0].image;
+            this.mnewsdesc = this.news[0].desc;
+            this.mnewsurl = this.news[0].url;
+            }
+            if(i==="4"){
+              break;
+            }
+          }
+      });
+  }
     opennews(id){
       console.log("lalala"+id);
       if(id < 5){
@@ -115,5 +186,16 @@ export class NewspageComponent implements OnInit{
     }
     ngDestroy(){
       
+    }
+    lscroll(){
+      console.log('working');
+      this.widgets.nativeElement.scrollLeft -=this.widgetsContent.nativeElement.clientWidth;
+      // this.scroll[0].scrollLeft+=150;
+    }
+    rscroll(){
+      console.log('working');
+      this.widgets.nativeElement.scrollLeft +=this.widgetsContent.nativeElement.clientWidth;
+      
+      // this.scroll[0].scrollLeft+=150;
     }
 }

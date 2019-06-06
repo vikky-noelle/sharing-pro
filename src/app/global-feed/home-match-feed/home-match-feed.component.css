@@ -417,6 +417,7 @@ h1 h2{
     color: rgb(133, 131, 131);
     font-size: 0.8em;
     font-weight: lighter;
+    cursor: pointer;
 }
 
 .news-card{
@@ -461,4 +462,10 @@ h1 h2{
         height: auto;
         font-size: 1.5em;
         font-weight: bolder;
+}
+.news-detail p{
+    color: rgb(77, 77, 77);
+    padding-top: 10px;
+    font-size: 1.3em;
+    padding-left: 25px;
 }

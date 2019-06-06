@@ -30,6 +30,7 @@ const App_Route: Routes = [
     {path:"Helpcenter/:topicname",component:HelpCenterComponent},
     {path: "teamview",component:TeamviewComponent},
     {path: "localitypage", component:LocalitypageComponent},
+    {path: 'newspage', redirectTo: 'newspage/'},
     {
         path: "newspage/:topic", 
         component:NewspageComponent
@@ -104,7 +105,7 @@ const App_Route: Routes = [
     imports: [
       RouterModule.forRoot(App_Route, {
         anchorScrolling: 'enabled'
-    },)
+    },),
     ],
    exports: [RouterModule]
   })

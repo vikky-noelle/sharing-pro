@@ -2,7 +2,40 @@
 <div class="side-nav">
 <sports-social-newsidenav></sports-social-newsidenav>
 </div>
-<div class="main-body">
+<!-- home news -->
+<div *ngIf="ddata" class="home-body">
+  <div class="larrow">
+    <img (click)="lscroll()" src="/assets/images/sportsocialhomearrow1.png">
+  </div>
+  <div class="crousal" #widgets>
+    <div *ngFor="let data of list" class="c-element" #widgetsContent>
+      <img src="{{data.image}}">
+      <div class="c-head">
+        <h1>{{data.title}}</h1>
+        <p>{{data.source}}</p>
+      </div>
+    </div>  
+  </div>
+  <div class="rarrow">
+      <img (click)="rscroll()" src="/assets/images/sportsocialhomearrow.png">
+  </div>
+  <div *ngIf="ddata" class="dnews">
+    <div *ngFor="let data of list1">
+      <img src="{{data.image}}">
+      <h1>{{data.title|slice:0:70}}...</h1>
+    </div>
+  </div>
+  </div>
+  <div *ngIf="ddata">
+  <div *ngFor="let data of news" class="normal-news">
+    <img src="{{data.image}}">
+    <h1>{{data.title}}</h1>
+    <p>{{data.desc|slice:0:100}}...</p>
+    <p class="source">{{data.source}}<span>{{data.timestamp}}</span></p>
+  </div>
+</div>
+<!-- sport wise view -->
+<div *ngIf="cdata" class="main-body">
 <div class="newsbody">
   <div class="news-header">
   <h1>{{mnewshead}}</h1>
@@ -19,7 +52,7 @@
   <div class="nbody">
   <div class="news">
     <div class="main-news">
-      <img src="{{mnewsimage}}" alt="lit news fam.">
+      <img src="{{mnewsimage}}" alt="news image">
       <h1>{{mnewsdesc}}...</h1>
       <a href="{{mnewsurl}}" target="_blank"><h3>READ MORE</h3></a>
       <br>
@@ -47,7 +80,7 @@
 </div>
 </div>
 <!-- mobile view -->
-<div class="mobile-main">
+<div *ngIf="cdata" class="mobile-main">
     <h2 class="share"> 
         <div class="twitter"></div>
         <div class="linkedin"></div>

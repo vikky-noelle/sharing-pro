@@ -122,6 +122,7 @@ export class HomeMatchFeedComponent{
         var x = body.news[i].insertedDate;
         x = x.replace(/T/g," at "); 
         arr.push({
+          source: body.news[i].source,
           id:body.news[i]._id,
           title:body.news[i].title,
           timestamp:x.substr(0,19),
@@ -142,13 +143,15 @@ export class HomeMatchFeedComponent{
         if(id === this.news[i][j].id){
           topic = topic.toLowerCase();  
           this._eventemiter.userToEdit=this.news[i][j];
-          this.router.navigate(['/newspage'], { queryParams: {topic: topic}})
+          topic=topic.toLowerCase();
+          this.router.navigate(['/newspage', topic]);
         }
       }
     }
   }
   changee(topic){
-          this.router.navigate(['/newspage'], { queryParams: {topic: topic}})
+          topic=topic.toLowerCase();
+          this.router.navigate(['/newspage', topic]);
   }
   lscroll(){
     this.blog.nativeElement.scrollLeft-=this.outdiv.nativeElement.clientWidth;

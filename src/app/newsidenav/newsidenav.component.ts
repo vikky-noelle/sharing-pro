@@ -9,8 +9,8 @@ export class NewsidenavComponent implements OnInit {
   
   l1=0;
   l2=0;
-  list1=['cricket', 'football', 'basketball'];
-  list2=['cricket', 'football', 'basketball'];
+  list1=['cricket', 'football', 'basketball', 'volleyball', 'lawn tennis', 'table tennis', 'hockey', 'badminton'];
+  list2=['cricket', 'football', 'basketball', 'volleyball', 'lawn tennis', 'table tennis', 'hockey', 'badminton'];
   resnav=document.getElementsByClassName('modal') as HTMLCollectionOf<HTMLElement>;
   damn=document.getElementsByClassName('con') as HTMLCollectionOf<HTMLElement>;
   dam=document.getElementsByClassName('conn') as HTMLCollectionOf<HTMLElement>;
@@ -21,7 +21,7 @@ export class NewsidenavComponent implements OnInit {
   }
 
   close() {
-    this.resnav[0].style.left="-500px";
+    this.resnav[0].style.left="-600px";
   }
 
   openn(){

@@ -74,7 +74,7 @@ li.Active{
     z-index: 15;
     position: fixed;
     top: 0;
-    left: -500px;
+    left: -600px;
     width: 60%;
     border-radius: 5px;
     box-shadow: 2px 2px 4px #bbbbbb;
@@ -95,7 +95,7 @@ li.Active{
       padding: 80px;
   } */
 @media screen and (min-width: 600px) and (max-width: 950px){
-    .sidenav{
+    .navi{
         display:none;
     }
     .msidenav{
@@ -103,6 +103,9 @@ li.Active{
     }
 }
 @media screen and (min-width: 200px) and (max-width: 600px){
+    .navi{
+        display: none;
+    }
   .modal {
       width: 70%;
   }
