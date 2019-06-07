@@ -15,7 +15,7 @@ import { Router } from '@angular/router';
   encapsulation: ViewEncapsulation.None
 })
 export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
-
+  show:boolean=false;
   title="Arena | Sports Social";
   metakey="Open Arena,Sports Social,Sports Arena nearby,Sports events nearby,Sports Activities nearby,Sports Grounds nearby, Connect to Sports players nearby,Find Sports players nearby";
   metades="See What's going around you in sports in the open Arena. Use Arena to find,connect,play, follow matches, players, academies, coaches and events in your favorite sport in your locality and around the world | stay connected to your sports world.";
@@ -61,6 +61,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
   openarenamatches(){
     this.http.post(this.posturl,this.urlObj)
     .subscribe(res=>{
+      this.show=true;
       var body=res.json();
       console.log("hi this is my console",body);
       for(const i in body){

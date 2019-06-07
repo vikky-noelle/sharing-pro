@@ -3,8 +3,9 @@
   <div class="sidenav">
       <sports-social-side-nav></sports-social-side-nav>
   </div>
+  <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf="Matcharr.length === 0" alt="">
+
     <div class="rightside" *ngFor = "let game of Matcharr;"> 
-        <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf = "Matcharr.length === 0" alt="">
         <div class="topic">
             <a><h4>{{game.gametitle}} matches<h5>See all</h5></h4></a>
           </div>  
@@ -18,13 +19,15 @@
               <div class="card">
                   <div class="head">
                         <div class="gamename">
-                            <b>{{feed.gender}} {{feed.GameName}}</b>
+                            <b>{{gendercheck}} {{feed.GameName}}</b>
                             <p>{{feed.Venue_Name | slice:0:30}}...</p>
                           </div>
                           <div class="result">
-                            <b>Final Result</b><br>
-                            <p> @{{feed.uniquename}}</p>
-                          </div> 
+                            <!-- <b>Final Result</b><br> -->
+                            <b>{{feed.result}}</b>
+                            <p> {{feed.MatchStarterUniqueName}}</p>
+                            
+                          </div>  
                   </div>
                       <a routerLink="/opencard/{{feed.feedid}}">      
                           <div class="cardData">
@@ -32,13 +35,9 @@
                                 <img src={{feed.Team1Pic}} onerror="this.src='assets/images/user-default.png'">
                                 <p>{{feed.Team1name | slice:0:11}}</p>    
                               </div>
-                              <div class="cardData t1score">
+                              <div class="cardData t1score" style="margin-top: 5%;">
                                   <b style="font-size: 1.2em;">{{feed.scoreTeam1}}</b>
-                                  <p style="font-size: .6em; color:#7e7d7d;">Score</p>
-                              </div>
-                              <div class="cardData t2score">
-                                <b style="font-size: 1.2em;">{{feed.scoreTeam2}}</b>
-                                <p style="font-size: .6em; color:#7e7d7d;">Score</p>
+                                  <b style="font-size: 1.2em;">{{feed.scoreTeam2}}</b>
                               </div>
                               <div class="cardData team2">
                                 <img src={{feed.Team2Pic}} onerror="this.src='assets/images/user-default.png'">
@@ -50,10 +49,10 @@
                         <textarea disabled>{{feed.EventText | slice:0:100}}..</textarea>
                     </div>
                 <div class="footer">
-                      <button class="footer Button" (click)="openAppDownloadPopup()">Prediction</button>
-                      <button class="footer Button" (click)="openAppDownloadPopup()">Talk</button>
-                      <button class="footer Button" (click)="openAppDownloadPopup()">Promote</button>
-                      <button class="footer Button" (click)="openAppDownloadPopup()">Watch</button>
+                      <button class="footer Button">{{feed.JoineeCount}} Joinee</button>
+                      <button class="footer Button">{{feed.CommentCount}} Talk</button>
+                      <button class="footer Button">{{feed.PromoteCount}} Promote</button>
+                      <button class="footer Button">{{feed.WatchCount}} Subscribe</button>
                 </div> 
               </div>    
             </div>
@@ -76,8 +75,8 @@
         </div>
     </div>
     </div>
-    </div> 
-         
+    </div>     
 </div>
-<br><br>
-<br><br>
+<div *ngIf="show">
+<sports-social-backfooter></sports-social-backfooter>
+</div>

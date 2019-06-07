@@ -1,52 +1,84 @@
 <sports-social-header></sports-social-header>
 <br><br><br><sports-social-side-nav></sports-social-side-nav>
 
-    <div class="rightside"> 
-      <!-- <div class="blog">     -->
-            <div class="outdiv" *ngFor="let feed of Matcharr">
-              <div class="card">
-                  <div class="head">
-                        <div class="gamename">
-                            <b>{{feed.gender}} {{feed.GameName}}</b>
-                            <p>{{feed.Venue_Name | slice:0:40}}...</p>
-                          </div>
-                          <div class="result">
-                            <b>Final Result{{feed.Activity_name}}</b><br>
-                            <p> @{{feed.uniquename}}</p>
-                          </div> 
-                  </div>
-          
-                  <div class="cardData">
-                      <div class="cardData team1">
-                         <img src={{feed.Team1Pic}} onerror="this.src='assets/images/user-default.png'">
-                         <p>{{feed.Team1name}}</p>    
-                      </div>
-                      <div class="cardData t1score">
-                          <b style="font-size: 1.2em;">{{feed.scoreTeam1}}</b>
-                          <p style="font-size: .6em; color:#7e7d7d;">Score</p>
-                      </div>
-                      <div class="cardData t2score">
-                         <b style="font-size: 1.2em;">{{feed.scoreTeam2}}</b>
-                         <p style="font-size: .6em; color:#7e7d7d;">Score</p>
-                      </div>
-                      <div class="cardData team2">
-                         <img src={{feed.Team2Pic}} onerror="this.src='assets/images/user-default.png'">
-                         <p>{{feed.Team2name}}</p>
-                      </div>     
+<div class="rightside"> 
+    <div class="outdiv" *ngFor="let feed of Matcharr;let i=index">
+      <div class="card">
+            <div class="head">
+                <div class="gamename">
+                    <b>{{genderCheck}} {{feed.GameName}}</b>
+                    <p>{{feed.Venue_Name}}</p>
+                </div>
+                <div class="result">
+                  <b>{{feed.result}}</b><br>
+                  <p>{{feed.MatchStarterUniqueName}}</p>
                 </div> 
-          
-                    <div class="matchstatus">
-                        <textarea disabled>{{resultOfMatch}}</textarea>
-                    </div>
-                <div class="footer">
-                      <a (click)="first()" class="one" style="color:red; ">Match Talk</a>
-                      <a (click)="second()" class="two">Moments</a>
-                      <a (click)="third()" class="three">Line Ups</a>
-                      <!-- <a (click)="fourth()" class="four">Score Card</a> -->
-                      <!-- <a (click)="fifth()" class="five">Head to Head</a> -->
-                </div> 
-              </div>    
             </div>
-        <!-- </div> -->
-</div>        
-<!-- [ngStyle]="{backgroundColor:isDarkStyle() ? 'red' : isNormalStyle() ? 'green':''}" -->
+          
+            <div class="cardData">
+                <div class="cardData team1">
+                    <img src={{feed.Team1Pic}} onerror="this.src='assets/images/user-default.png'">
+                    <p>{{feed.Team1name}}</p>    
+                </div>
+                <div class="cardData t1score">
+                    <b style="font-size: 1.2em;">{{feed.scoreTeam1}}</b>
+                    <b style="font-size: 1.2em;">{{feed.scoreTeam2}}</b>
+                </div>
+                <div class="cardData team2">
+                    <img src={{feed.Team2Pic}} onerror="this.src='assets/images/user-default.png'">
+                    <p>{{feed.Team2name}}</p>
+                </div>     
+            </div> 
+
+            <div class="matchstatus">
+                <textarea disabled>{{resultOfMatch}}</textarea>
+            </div>
+          
+            <div  *ngFor="let data of ManOfMatch; let j=index">
+                <div class="manofmatch" *ngIf="manOfMatchImg != null">
+                  <img src={{data.profilepic}} onerror="this.src='assets/images/user-default.png'">
+                    <div class="text">
+                        <p>Man of the Match</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                  <button (click)="first()" class="one" style="background: none; color: black;">Match Talk</button>
+                  <button (click)="second()" class="two">Moments</button>
+                  <button (click)="third()" class="three">Line Ups</button>
+            </div> 
+            <div class="details" *ngIf="comment"> 
+                <div class="container" *ngFor="let data of MatchCommnets">
+                    <img src="{{data.Profileimage}}" onerror="this.src='assets/images/user-default.png'" style="width:100%;">
+                    <h6>{{data.User_name}}</h6>
+                    <p>{{data.Comment}}</p>
+                </div>
+            </div>
+            <div class="details" *ngIf="moment"> 
+                <div class="container2" *ngFor="let data of MatchMoments">
+                  <img src="{{data.imagepath}}" onerror="this.src='assets/images/user-default.png'">
+                </div>
+            </div>
+            <div class="details3" *ngIf="joinee"> 
+              <button (click)="thirdchild1()" class="joineechild1">{{feed.Team1name}}</button>
+              <button (click)="thirdchild2()" class="joineechild2" style="color:skyblue;">{{feed.Team2name}}</button>
+              
+                  <div *ngIf="child1">
+                    <div class="container3" *ngFor="let data of MatchLineup1">
+                      <img src="{{data.Profileimage}}" onerror="this.src='assets/images/user-default.png'" style="width:100%;">
+                      <p>{{data.User_name}}</p>
+                    </div>
+                  </div>
+                  <div *ngIf="child2">
+                    <div class="container3"  *ngFor="let data of MatchLineup2">
+                      <img src="{{data.Profileimage}}" onerror="this.src='assets/images/user-default.png'" style="width:100%;">
+                      <p>{{data.User_name}}</p>
+                    </div>
+                  </div>
+            </div>
+        </div>    
+    </div>            
+  </div>   
+  <sports-social-backfooter></sports-social-backfooter>
+  <!-- <sports-social-footer></sports-social-footer> -->
+

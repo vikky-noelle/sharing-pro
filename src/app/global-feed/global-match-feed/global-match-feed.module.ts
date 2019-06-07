@@ -12,6 +12,7 @@ import { CarouselModule } from '../../carousel/carousel.module';
 import { NgMasonryGridModule } from 'ng-masonry-grid';
 import { SsMatchCardModule } from '../../cards/ss-match-card/ss-match-card.module';
 import { SideNavModule } from '../../side-nav/side-nav.module';
+import { BackfooterModule } from '../../backfooter/backfooter.module';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { SideNavModule } from '../../side-nav/side-nav.module';
     SideNavModule,
     CarouselModule,
     NgMasonryGridModule,
-    SsMatchCardModule
+    SsMatchCardModule,
+    BackfooterModule
   ],
   declarations: [
     GlobalMatchFeedComponent

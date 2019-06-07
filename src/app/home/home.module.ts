@@ -9,6 +9,7 @@ import { HomeComponent } from './home.component';
 import { HomeRouter } from './home.router';
 import { SideNavModule } from '../side-nav/side-nav.module';
 import { HomeMatchFeedModule } from '../global-feed/home-match-feed/home-match-feed.module';
+import { BackfooterModule } from '../backfooter/backfooter.module';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { HomeMatchFeedModule } from '../global-feed/home-match-feed/home-match-f
     FooterModule,
     HomeRouter,
     SideNavModule,
-    HomeMatchFeedModule
+    HomeMatchFeedModule,
+    BackfooterModule
   ],
   declarations: [
     HomeComponent,

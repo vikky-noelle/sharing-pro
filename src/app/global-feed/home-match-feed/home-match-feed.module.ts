@@ -6,6 +6,7 @@ import { HeaderModule } from '../../header/header.module';
 import { FooterModule } from '../../footer/footer.module';
 import { SideNavModule } from '../../side-nav/side-nav.module';
 import { SsMatchCardModule } from '../../cards/ss-match-card/ss-match-card.module';
+import { BackfooterModule } from '../../backfooter/backfooter.module';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { SsMatchCardModule } from '../../cards/ss-match-card/ss-match-card.modul
     HeaderModule,
     FooterModule,
     SideNavModule,
-    SsMatchCardModule
+    SsMatchCardModule,
+    BackfooterModule
   ],
   declarations: [HomeMatchFeedComponent],
   exports:[HomeMatchFeedComponent]
