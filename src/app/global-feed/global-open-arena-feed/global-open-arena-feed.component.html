@@ -1,0 +1,51 @@
+<ng-masonry-grid  
+    [masonryOptions]="{ transitionDuration: '0.4s', gutter: 2 }"
+    [useAnimation]="false"
+    [useImagesLoaded]="true">
+    <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf = "globalArena.length === 0" alt="">
+    <ng-masonry-grid-item id="col-4" *ngFor = "let feed of globalArena; let i = index" >
+      <ng-container *ngIf = "feed.type === 1">
+          <h1 class="type"> 
+            <a routerLink="/OpenArena">Open Arena>></a>  
+          </h1>
+          <div class="matchcard">
+              <sports-social-ss-match-card
+              [coverpic]="feed.coverpic"
+              [userName]="feed.userName"
+              [gamename]="feed.gamename"
+              [startdatetime]="feed.startdatetime"
+              [InsertedDate]="feed.InsertedDate"
+              [Uniquename]="feed.Uniquename"
+              [EventText]="feed.EventText"
+              [city]="feed.city"
+              [Venue_Name]="feed.Venue_Name"
+              [MatchStarterUniqueName]="feed.MatchStarterUniqueName"
+              [Team1Name]="feed.Team1Name"
+              [Team2Name]="feed.Team2Name"
+              [WatchCount]="feed.WatchCount"
+              [PromoteCount]="feed.PromoteCount"
+              [CommentCount]="feed.CommentCount"
+              ></sports-social-ss-match-card>
+          </div>
+      </ng-container>
+      <ng-container *ngIf = "feed.type === 0">
+          <h1 class="type">
+            <a routerLink="/AroundTheWorld">Around The World</a> 
+          </h1>
+          <sports-social-news-card class="cards"
+            [newsId] = "feed.newsId"
+            [sourceName]= "feed.source"
+            [sourceImage] = "feed.sourceImage"
+            [newsImage] = "feed.newsImage"
+            [title] = "feed.title"
+            [desc] = "feed.desc"
+            [url] = "feed.url"
+            [insertedDate] = "feed.insertedDate"
+            [likeCount] = "feed.likeCount"
+            [shareCount] = "feed.shareCount"
+            [commentCount] = "feed.commentCount"
+            [publishedAt] = "feed.publishedAt">
+          </sports-social-news-card>
+      </ng-container>
+    </ng-masonry-grid-item>
+</ng-masonry-grid>

@@ -9,6 +9,7 @@ import { HomeComponent } from './home.component';
 import { HomeRouter } from './home.router';
 import { HomeMatchFeedModule } from '../global-feed/home-match-feed/home-match-feed.module';
 import { NewsidenavModule } from '../newsidenav/newsidenav.module';
+import { BackfooterModule } from '../backfooter/backfooter.module';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { NewsidenavModule } from '../newsidenav/newsidenav.module';
     GlobalOpenArenaFeedModule,
     FooterModule,
     HomeRouter,
-    HomeMatchFeedModule
+    HomeMatchFeedModule,
+    BackfooterModule
   ],
   declarations: [
     HomeComponent,
