@@ -81,7 +81,7 @@ export class OpenMatchCardComponent implements OnInit, OnDestroy {
     private renderer: Renderer2,
     private time: TimeService,
     private get: PostService,
-    private activeRoute: ActivatedRoute,
+    private   activeRoute: ActivatedRoute,
     private router: Router
   ) { }
 

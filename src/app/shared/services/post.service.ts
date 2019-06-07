@@ -4,6 +4,10 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class PostService {
 
+  paramIdObj:{
+    eventid:string;
+  }
+
   loc: {
     latitude: String,
     longitude: String
@@ -104,6 +108,13 @@ export class PostService {
         timestamp:timest
       }
       return this.http.post('https://test.sportsocial.in/poc/webfeed',this.homematchfeedObj);
+  }
+
+  OpenOneMatchCard(id){
+    this.paramIdObj={
+      eventid:id
+    }
+    return this.http.post('https://test.sportsocial.in/poc/webmatchinfo',this.paramIdObj);
   }
 
   singleMatchData(eventid, userid, activityid, urlId, page) {
