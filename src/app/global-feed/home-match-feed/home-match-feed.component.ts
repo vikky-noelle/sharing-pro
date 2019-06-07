@@ -50,14 +50,9 @@ export class HomeMatchFeedComponent{
   getlocation(){
     this.location.getGeoLocation().then((pos)=>{
       for(var i=0;i<this.Sports.length;i++){
-        var name = this.Sports[i].title;
       this.postservice.homeMatchFeed(pos['latitude'],pos['longitude'],this.Sports[i].id,this.timestamp)
       .subscribe(data=>{
         var arr=[];
-        if(data["Feed"].length===0){
-          this.v=this.v+1;
-          this.tarray.push(name);
-        }
           for(var i=0;i<data["Feed"].length;i++){
               arr.push({
               feedid:data["Feed"][i].feedid,

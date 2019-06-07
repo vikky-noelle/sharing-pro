@@ -29,12 +29,8 @@ export class LocalitypageComponent implements OnInit {
     .subscribe(
       (response) => {
       for(const i in response){
-        if(+i == 0) {
-          this.photo = response[i];
-        }
-        else {
         this.lvdata.push(response[i]);
-        }  
+        
       }  
     },
     (error) => console.log(error)

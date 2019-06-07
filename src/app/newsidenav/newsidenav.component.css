@@ -6,7 +6,7 @@
     height: 100vh;
     border-right: 2px solid silver;
 }
-li{
+.navi li{
     border-top-right-radius: 30% 150%;
     border-bottom-right-radius: 30% 150%;
     width: 80%;
@@ -15,13 +15,16 @@ li{
     padding-bottom: 13px;
     padding-left: 30px;
 }
-a{
+.navi a{
     color: rgb(97, 96, 96);
 }
-li.active a{
+.navi li.active a{
     color: white;
 }
-li.active{
+.navi li.active{
+    background-color: rgb(71, 148, 148);
+}
+.modal>ul>a>li.active{
     background-color: rgb(71, 148, 148);
 }
 .aicon {
@@ -38,7 +41,7 @@ li.active{
     height: 13px;
     width: 10px;
 }
-a.active li{
+.navi a.active li{
     color: white;
     font-weight: bold;
     background-color: rgb(71, 148, 148);
@@ -72,10 +75,32 @@ li.Active{
     height: 35px;
     z-index: 25;
 }
+.modal>ul>li>a {
+    margin-left: 25px;
+    font-size: 2em;
+    color: white;
+}
+.modal li{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.modal>ul>li>img{
+    margin-right: 15px;
+    float: right;
+    height: 25px;
+    width: 15px;
+    margin-top: 2px;
+    margin-bottom: 0;
+} 
+.modal>ul>a>li {
+    font-size: 2em;
+    color: white;
+}
 
 .modal{
     margin-top: 12%;
     float: left;
+    overflow-y: scroll;
     height: 100vh;
     text-align: center;
     z-index: 15;
@@ -97,6 +122,18 @@ li.Active{
       font-size: 1.8em;
       margin-top: 30px;
   }
+  .connn{
+      display: none;
+  }
+  .connnn{
+      display: none;
+  }
+  .connn a{
+      color: white;
+  }
+  .connnn a{
+        color: white;
+  }
   
   /* .modal div{
       padding: 80px;
@@ -107,6 +144,9 @@ li.Active{
     }
     .msidenav{
         display: block;
+    }
+    .con{
+        background-color: white;
     }
 }
 @media screen and (min-width: 200px) and (max-width: 600px){
@@ -130,4 +170,26 @@ li.Active{
       width: 30px;
       height: 30px;
   }
+  .modal>ul>li>a {
+    margin-left: 30px;
+    font-size: 1em;
+    color: white;
+}
+.modal li{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.modal>ul>li>img{
+    margin-right: 7px;
+    float: right;
+    height: 12px;
+    width: 12px;
+    margin-top: 2px;
+    margin-bottom: 0;
+} 
+.modal>ul>a>li {
+    font-size: 1em;
+    color: white;
+}
+
 }

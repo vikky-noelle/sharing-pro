@@ -30,6 +30,8 @@ export class NewsidenavComponent implements OnInit {
   aiconn=document.getElementsByClassName('aiconn') as HTMLCollectionOf<HTMLElement>;
   damn=document.getElementsByClassName('con') as HTMLCollectionOf<HTMLElement>;
   dam=document.getElementsByClassName('conn') as HTMLCollectionOf<HTMLElement>;
+  damnn=document.getElementsByClassName('connn') as HTMLCollectionOf<HTMLElement>;
+  damnnn=document.getElementsByClassName('connnn') as HTMLCollectionOf<HTMLElement>;
   constructor(
     private router: Router,
     private route: ActivatedRoute
@@ -44,24 +46,30 @@ export class NewsidenavComponent implements OnInit {
   }
 
   openn(){
+    // this.resnav[0].style.left="-600px";
     if(this.l1===0){
+      // this.resnav[0].style.left="-600px";
       this.aiconn[0].style.transform="rotate(90deg)";
       this.damn[0].style.display="block";
+      this.damnn[0].style.display="block";
       this.l1=1;
     }
     else{
       this.aiconn[0].style.transform="rotate(0deg)";
       this.l1=0;
+      this.damnn[0].style.display="none";
       this.damn[0].style.display="none";
     }
   }
   opennn(){
     if(this.l2===0){
       this.l2=1;
+      this.damnnn[0].style.display="block";
       this.aicon[0].style.transform="rotate(90deg)";
       this.dam[0].style.display="block";
     }
     else{
+      this.damnnn[0].style.display="none";
       this.aicon[0].style.transform="rotate(0deg)";
       this.l2=0;
       this.dam[0].style.display="none";

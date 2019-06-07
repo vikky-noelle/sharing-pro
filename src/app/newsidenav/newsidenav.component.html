@@ -60,19 +60,63 @@
 <div class="msidenav">
   <img (click)="open();" src="/assets/images/sports-social-menu.png">
   <div class="modal">
-        <img class="close" src="/assets/images/sportsocialcross.png" (click)="close();">
-        <div class="mdata" routerLinkActive="Active" [routerLinkActiveOptions]="{exact: true}">
-              <a routerLink="">Home</a>
-        </div>
-        <div class="mdata" routerLinkActive="Active">
-              <a>Local Arena</a>
-        </div>
-
-        <div class="mdata" routerLinkActive="Active">
-              <a routerLink="/OpenArena">Open Arena</a>
-        </div>
-        <div class="mdata" routerLinkActive="Active">
-              <a routerLink="/newspage" [queryParams]="{topic:''}">News</a>
-        </div>
+    <ul>
+        <a routerLink="" 
+  routerLinkActive="active" 
+  [routerLinkActiveOptions]="{exact: true}">
+    <li>Home</li>
+  </a>
+  <li routerLinkActive="active">
+      <a routerLink="/OpenArena">
+        Open Arena </a> <img (click)="openn()" src="/assets/images/sportsocialarrowhome1.png" alt="">  
+      </li>
+       
+  <ul class="connn">
+    <a [routerLink]="['/Open Arena', list]" 
+    *ngFor="let list of list1">
+      <li>{{list}}</li>
+    </a>
+  </ul>
+  <li class="newsone" routerLinkActive="active">
+  <a class="newsonea" [routerLink]="['/newspage', '']">
+    News </a> <img (click)="opennn()" src="/assets/images/sportsocialarrowhome1.png" alt="">  
+  </li>
+    <ul class="connnn">
+    <a [routerLink]="['/newspage/cricket']"
+    (click)="cliurl()">
+      <li>Cricket</li>
+    </a>
+    <a [routerLink]="['/newspage/football']"
+    (click)="cliurl()">
+     <li>Football</li>  
+    </a>
+    <a [routerLink]="['/newspage/basketball']" 
+    (click)="cliurl()">
+      <li>basketball</li>
+  </a>
+    <a [routerLink]="['/newspage/volleyball']" 
+    (click)="cliurl()">
+     <li>volleyball</li>  
+    </a>
+    <a [routerLink]="['/newspage/tennis']" 
+    (click)="cliurl()">
+      <li>Tennis</li>
+  </a>
+    <a [routerLink]="['/newspage/table tennis']" 
+    (click)="cliurl()">
+     <li>Table Tennis</li>  
+    </a>
+    <a [routerLink]="['/newspage/hockey']" 
+    (click)="cliurl()">
+      <li>Hockey</li>
+  </a>
+    <a [routerLink]="['/newspage/badminton']" 
+    (click)="cliurl()">
+     <li>Badminton</li>  
+    </a>
+  </ul>
+  <li class="cc"><img class="close" style="border-radius: 50%; background-color: white;height: 30px;width: 30px;" src="/assets/images/sportsocialcross.png" (click)="close();">
+  </li>
+  </ul>
   </div>
 </div>
