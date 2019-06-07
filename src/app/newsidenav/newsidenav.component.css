@@ -24,9 +24,7 @@
 .navi li.active{
     background-color: rgb(71, 148, 148);
 }
-.modal>ul>a>li.active{
-    background-color: rgb(71, 148, 148);
-}
+
 .aicon {
     float: right;
     margin-right: 3%;
