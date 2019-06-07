@@ -36,12 +36,8 @@ export class NewspageComponent implements OnInit{
   ) { }
 
   ngOnInit() {
-  //   if(this.route.snapshot.paramMap.has("topic")){
-  //     this.topic = this.route.snapshot.paramMap.get("topic");
-  //  }
   this.route.params.subscribe(params => {
     this.topic = params.topic;
-    console.log("routes working"+this.topic);
   });
    if(this.topic===""){
     this.cdata=false;
@@ -61,6 +57,30 @@ export class NewspageComponent implements OnInit{
     this.mnewsurl = this.datastr.url;
     }
   }
+  // public ngfake(){
+  //   console.log("ngfake working");  
+  //   this.route.params.subscribe(params => {
+  //     this.topic = params.topic;
+  //     console.log("topic is  "+ this.topic);
+  //   });
+  //    if(this.topic===""){
+  //     this.cdata=false;
+  //     this.getnews(this.topic);
+  //    }
+  //    else{
+  //     this.getnewss(this.topic);
+  //      this.ddata=false;
+  //    }
+  //     this.recentnews("");
+  //     this.datastr=this._eventemiter.userToEdit;
+  //     if(this.datastr !== undefined){
+  //     this.mnewshead = this.datastr.title;
+  //     this.mnewstime = this.datastr.timestamp;
+  //     this.mnewsimage = this.datastr.image;
+  //     this.mnewsdesc = this.datastr.desc;
+  //     this.mnewsurl = this.datastr.url;
+  //     }
+  // }
   recentnews(topic){
     this.getService.getsportnews(topic).subscribe(res=>{
       var body = JSON.parse(res._body);
@@ -90,7 +110,6 @@ export class NewspageComponent implements OnInit{
         var body = JSON.parse(res._body);
         var x;
         this.j=this.j+1;
-        console.log(body);
         for (var i=0; i<5; i++) {
           x = this.time.ExactDate(body.news[i].insertedDate);
           x = x.replace(/T/g," at "); 
@@ -103,7 +122,6 @@ export class NewspageComponent implements OnInit{
               desc: body.news[i].desc
             });
           }
-          // console.log(this.list);
           for(var i=5; i<7; i++){
             x = this.time.ExactDate(body.news[i].insertedDate);
             x = x.replace(/T/g," at "); 
@@ -167,7 +185,6 @@ export class NewspageComponent implements OnInit{
       });
   }
     opennews(id){
-      console.log("lalala"+id);
       if(id < 5){
       this.mnewshead = this.news[id].title;
       this.mnewstime = this.news[id].timestamp;
@@ -188,12 +205,10 @@ export class NewspageComponent implements OnInit{
       
     }
     lscroll(){
-      console.log('working');
       this.widgets.nativeElement.scrollLeft -=this.widgetsContent.nativeElement.clientWidth;
       // this.scroll[0].scrollLeft+=150;
     }
     rscroll(){
-      console.log('working');
       this.widgets.nativeElement.scrollLeft +=this.widgetsContent.nativeElement.clientWidth;
       
       // this.scroll[0].scrollLeft+=150;

@@ -16,6 +16,7 @@ import { EventEmiterService } from '../../shared/services/event.emiter.service';
 export class HomeMatchFeedComponent{
 
   Matcharr = [];
+  v=0;
   index=-1; //used to provide index for it
   Matchnews = [];
   news=[];
@@ -34,11 +35,11 @@ export class HomeMatchFeedComponent{
     private location:LocationService,
     private router:Router
   ) { }
-
+  tarray;
   Sports= [
     {id: 5, title: 'Badminton'},
     {id: 6, title: 'Basketball'},
-    {id: 17,  title: 'Cricket'},
+    {id: 17, title: 'Cricket'},
     {id: 23, title: 'Football'},
     {id: 29, title: 'Hockey'},
     {id: 36, title: 'Lawn Tennis'},
@@ -49,9 +50,14 @@ export class HomeMatchFeedComponent{
   getlocation(){
     this.location.getGeoLocation().then((pos)=>{
       for(var i=0;i<this.Sports.length;i++){
+        var name = this.Sports[i].title;
       this.postservice.homeMatchFeed(pos['latitude'],pos['longitude'],this.Sports[i].id,this.timestamp)
       .subscribe(data=>{
         var arr=[];
+        if(data["Feed"].length===0){
+          this.v=this.v+1;
+          this.tarray.push(name);
+        }
           for(var i=0;i<data["Feed"].length;i++){
               arr.push({
               feedid:data["Feed"][i].feedid,
@@ -104,6 +110,14 @@ export class HomeMatchFeedComponent{
      });
       
     }
+    // for(var k in this.tarray){
+    //   this.Matcharr.push({
+    //     gamenumber: null,
+    //     gametitle: null,
+    //     gamearray: null
+    //   });
+    //   this.getnewsdata(this.tarray[k]);
+    // }
     });
   }
   openAppDownloadPopup() {
@@ -112,6 +126,15 @@ export class HomeMatchFeedComponent{
 
   ngOnInit() {
     this.getlocation();
+    for(var i=0; i<this.v; i++){
+        this.Matcharr.push({
+        gamenumber: null,
+        gametitle: null,
+        gamearray: null
+      });
+      this.getnewsdata(this.tarray[i]);
+    }
+    console.log(this.tarray);
     // this.openarenamatches();
   }
   getnewsdata(topic){
@@ -157,7 +180,6 @@ export class HomeMatchFeedComponent{
     this.blog.nativeElement.scrollLeft-=this.outdiv.nativeElement.clientWidth;
   }
   rscroll(){
-    console.log('lalala');
     this.blog.nativeElement.scrollLeft+=this.outdiv.nativeElement.clientWidth;
   }
 }

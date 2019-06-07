@@ -7,7 +7,7 @@
   </a>
   <li routerLinkActive="active">
       <a routerLink="/OpenArena">
-        Open Arena </a> <img class="aicon" (click)="openn()" src="/assets/images/sportsocialarrow.png" alt="">  
+        Open Arena </a> <img class="aiconn" (click)="openn()" src="/assets/images/sportsocialarrowhome.png" alt="">  
       </li>
        
   <ul class="con">
@@ -16,15 +16,42 @@
       <li>{{list}}</li>
     </a>
   </ul>
-  <li routerLinkActive="active">
-  <a [routerLink]="['/newspage', '']">
-    News </a> <img class="aicon" (click)="opennn()" src="/assets/images/sportsocialarrow.png" alt="">  
+  <li class="newsone" routerLinkActive="active">
+  <a class="newsonea" [routerLink]="['/newspage', '']">
+    News </a> <img class="aicon" (click)="opennn()" src="/assets/images/sportsocialarrowhome.png" alt="">  
   </li>
     <ul class="conn">
-    <a href="/newspage/{{list}}" 
-    routerLinkActive="Active"
-    *ngFor="let list of list2">
-      <li>{{list}}</li>
+    <a [routerLink]="['/newspage/cricket']"
+    (click)="cliurl()">
+      <li class="c">Cricket</li>
+    </a>
+    <a [routerLink]="['/newspage/football']"
+    (click)="cliurl()">
+     <li class="f" >Football</li>  
+    </a>
+    <a [routerLink]="['/newspage/basketball']" 
+    (click)="cliurl()">
+      <li class="b">basketball</li>
+  </a>
+    <a [routerLink]="['/newspage/volleyball']" 
+    (click)="cliurl()">
+     <li class="v">volleyball</li>  
+    </a>
+    <a [routerLink]="['/newspage/tennis']" 
+    (click)="cliurl()">
+      <li class="t">Tennis</li>
+  </a>
+    <a [routerLink]="['/newspage/table tennis']" 
+    (click)="cliurl()">
+     <li class="tt">Table Tennis</li>  
+    </a>
+    <a [routerLink]="['/newspage/hockey']" 
+    (click)="cliurl()">
+      <li class="h">Hockey</li>
+  </a>
+    <a [routerLink]="['/newspage/badminton']" 
+    (click)="cliurl()">
+     <li class="bd">Badminton</li>  
     </a>
   </ul>
 </ul>
