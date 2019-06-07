@@ -6,7 +6,7 @@ import { FooterModule } from '../../footer/footer.module';
 import { BackfooterModule } from '../../backfooter/backfooter.module';
 import { HomeMatchFeedModule } from '../../global-feed/home-match-feed/home-match-feed.module';
 import { OpenHomeMatchCardComponent } from './open-home-match-card.component';
-import { SideNavModule } from '../../side-nav/side-nav.module';
+import { NewsidenavModule } from '../../newsidenav/newsidenav.module';
 
 @NgModule({
   imports: [
@@ -16,7 +16,7 @@ import { SideNavModule } from '../../side-nav/side-nav.module';
     FooterModule,
     BackfooterModule,
     HomeMatchFeedModule,
-    SideNavModule
+    NewsidenavModule
   ],
   declarations: [OpenHomeMatchCardComponent],
   exports:[OpenHomeMatchCardComponent]

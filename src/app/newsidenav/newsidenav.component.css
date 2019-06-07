@@ -2,9 +2,9 @@
     z-index: 0;
     position: fixed;
     margin-top: 0%;
-    width: 18%;
+    width: 16%;
     height: 100vh;
-    border-right: 2px solid silver;
+    /* border-right: 2px solid silver; */
 }
 .navi li{
     border-top-right-radius: 30% 150%;

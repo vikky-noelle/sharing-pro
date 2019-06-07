@@ -7,7 +7,8 @@ import { GlobalOpenArenaFeedComponent } from './global-open-arena-feed.component
 import { RouterModule } from '@angular/router';
 import { NgMasonryGridModule } from 'ng-masonry-grid';
 import { SsMatchCardModule } from '../../cards/ss-match-card/ss-match-card.module';
-import { SideNavModule } from '../../side-nav/side-nav.module';
+import { NewsidenavModule } from '../../newsidenav/newsidenav.module';
+
 
 @NgModule({
   imports: [
@@ -18,7 +19,7 @@ import { SideNavModule } from '../../side-nav/side-nav.module';
     RouterModule,
     NgMasonryGridModule,
     SsMatchCardModule,
-    SideNavModule
+    NewsidenavModule
   ],
   declarations: [
     GlobalOpenArenaFeedComponent

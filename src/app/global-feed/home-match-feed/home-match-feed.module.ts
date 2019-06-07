@@ -16,7 +16,8 @@ import { NewsidenavModule } from '../../newsidenav/newsidenav.module';
     FooterModule,
     NewsidenavModule,
     SsMatchCardModule,
-    BackfooterModule
+    BackfooterModule,
+    NewsidenavModule
   ],
   declarations: [HomeMatchFeedComponent],
   exports:[HomeMatchFeedComponent]

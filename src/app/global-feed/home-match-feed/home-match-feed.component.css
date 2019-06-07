@@ -322,6 +322,7 @@ h1 h2{
     width: 60%;
     float: right;
     font-size: 0.7em;
+    cursor: pointer;
 }
 .news-section .outdiv{
     display: inline-block;
