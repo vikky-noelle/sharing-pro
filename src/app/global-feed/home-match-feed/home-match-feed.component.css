@@ -7,16 +7,10 @@
 .home>div{
     display: inline-block;
 }
-.sidenav{
-    margin-top: 0%;
-    width: 18%;
-    height: 100%;
-    float: left;
-}
 .rightside{
     margin-top: 0%;
     float: right;
-    width: 80.5%;
+    width: 82.5%;
     padding-left: 20px;
     height: 455px;
     z-index: 10;
@@ -322,6 +316,7 @@ h1 h2{
     width: 60%;
     float: right;
     font-size: 0.7em;
+    cursor: pointer;
 }
 .news-section .outdiv{
     display: inline-block;

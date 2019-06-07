@@ -23,6 +23,7 @@ import { NewsidenavModule } from '../../newsidenav/newsidenav.module';
     FooterModule,
     MatchRoutes,
     NavigationBarModule,
+    NewsidenavModule,
     CarouselModule,
     NgMasonryGridModule,
     SsMatchCardModule,

@@ -2626,6 +2626,10 @@ exports.AppComponent = AppComponent;
 
 "use strict";
 
+<<<<<<< HEAD
+=======
+/* angular modules */
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
 Object.defineProperty(exports, "__esModule", { value: true });
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -2660,6 +2664,7 @@ var i3 = __webpack_require__(/*! ../../node_modules/@angular/router/router.ngfac
 var i4 = __webpack_require__(/*! ./open-cards/open-news-card/open-news-card.component.ngfactory */ "./src/app/open-cards/open-news-card/open-news-card.component.ngfactory.js");
 var i5 = __webpack_require__(/*! ./home/home.component.ngfactory */ "./src/app/home/home.component.ngfactory.js");
 var i6 = __webpack_require__(/*! ./about/about.component.ngfactory */ "./src/app/about/about.component.ngfactory.js");
+<<<<<<< HEAD
 var i7 = __webpack_require__(/*! ./ourteam/ourteam.component.ngfactory */ "./src/app/ourteam/ourteam.component.ngfactory.js");
 var i8 = __webpack_require__(/*! ./contact-us/contact-us.component.ngfactory */ "./src/app/contact-us/contact-us.component.ngfactory.js");
 var i9 = __webpack_require__(/*! ./livedata/livedata.component.ngfactory */ "./src/app/livedata/livedata.component.ngfactory.js");
@@ -2741,6 +2746,92 @@ var i84 = __webpack_require__(/*! ./help-center/help-center.module */ "./src/app
 var i85 = __webpack_require__(/*! ng2-scroll-to-el/scrollTo.module */ "ng2-scroll-to-el/scrollTo.module");
 var i86 = __webpack_require__(/*! ./app.module */ "./src/app/app.module.ts");
 var AppServerModuleNgFactory = i0.ɵcmf(i1.AppServerModule, [i2.AppComponent], function (_l) { return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i3.ɵEmptyOutletComponentNgFactory, i4.OpenNewsCardComponentNgFactory, i5.HomeComponentNgFactory, i6.AboutComponentNgFactory, i7.OurteamComponentNgFactory, i8.ContactUsComponentNgFactory, i9.LivedataComponentNgFactory, i10.AddTopicComponentNgFactory, i11.HelpCenterComponentNgFactory, i12.TeamviewComponentNgFactory, i13.LocalitypageComponentNgFactory, i14.NewspageComponentNgFactory, i15.ApplicationComponentNgFactory, i16.AddQueAnsComponentNgFactory, i17.OpenMatchCardComponentNgFactory, i18.PopUpComponentNgFactory, i19.AppComponentNgFactory]], [3, i0.ComponentFactoryResolver], i0.NgModuleRef]), i0.ɵmpd(4608, i20.BrowserXhr, i21.ɵangular_packages_platform_server_platform_server_e, []), i0.ɵmpd(4608, i20.ResponseOptions, i20.BaseResponseOptions, []), i0.ɵmpd(4608, i20.XSRFStrategy, i21.ɵangular_packages_platform_server_platform_server_f, []), i0.ɵmpd(4608, i20.XHRBackend, i20.XHRBackend, [i20.BrowserXhr, i20.ResponseOptions, i20.XSRFStrategy]), i0.ɵmpd(4608, i20.RequestOptions, i20.BaseRequestOptions, []), i0.ɵmpd(5120, i20.Http, i21.ɵangular_packages_platform_server_platform_server_g, [i20.XHRBackend, i20.RequestOptions]), i0.ɵmpd(4608, i22.HttpXsrfTokenExtractor, i22.ɵangular_packages_common_http_http_g, [i23.DOCUMENT, i0.PLATFORM_ID, i22.ɵangular_packages_common_http_http_e]), i0.ɵmpd(4608, i22.ɵangular_packages_common_http_http_h, i22.ɵangular_packages_common_http_http_h, [i22.HttpXsrfTokenExtractor, i22.ɵangular_packages_common_http_http_f]), i0.ɵmpd(5120, i22.HTTP_INTERCEPTORS, function (p0_0) { return [p0_0]; }, [i22.ɵangular_packages_common_http_http_h]), i0.ɵmpd(4608, i22.XhrFactory, i21.ɵangular_packages_platform_server_platform_server_e, []), i0.ɵmpd(4608, i22.HttpXhrBackend, i22.HttpXhrBackend, [i22.XhrFactory]), i0.ɵmpd(6144, i22.HttpBackend, null, [i22.HttpXhrBackend]), i0.ɵmpd(5120, i22.HttpHandler, i21.ɵangular_packages_platform_server_platform_server_h, [i22.HttpBackend, i0.Injector]), i0.ɵmpd(4608, i22.HttpClient, i22.HttpClient, [i22.HttpHandler]), i0.ɵmpd(4608, i22.ɵangular_packages_common_http_http_d, i22.ɵangular_packages_common_http_http_d, []), i0.ɵmpd(5120, i0.LOCALE_ID, i0.ɵangular_packages_core_core_k, [[3, i0.LOCALE_ID]]), i0.ɵmpd(4608, i23.NgLocalization, i23.NgLocaleLocalization, [i0.LOCALE_ID, [2, i23.ɵangular_packages_common_common_a]]), i0.ɵmpd(5120, i0.IterableDiffers, i0.ɵangular_packages_core_core_i, []), i0.ɵmpd(5120, i0.KeyValueDiffers, i0.ɵangular_packages_core_core_j, []), i0.ɵmpd(4608, i24.DomSanitizer, i24.ɵDomSanitizerImpl, [i23.DOCUMENT]), i0.ɵmpd(6144, i0.Sanitizer, null, [i24.DomSanitizer]), i0.ɵmpd(4608, i24.HAMMER_GESTURE_CONFIG, i24.HammerGestureConfig, []), i0.ɵmpd(5120, i24.EVENT_MANAGER_PLUGINS, function (p0_0, p0_1, p0_2, p1_0, p2_0, p2_1, p2_2, p2_3, p3_0) { return [new i24.ɵDomEventsPlugin(p0_0, p0_1, p0_2), new i24.ɵKeyEventsPlugin(p1_0), new i24.ɵHammerGesturesPlugin(p2_0, p2_1, p2_2, p2_3), new i21.ɵangular_packages_platform_server_platform_server_d(p3_0)]; }, [i23.DOCUMENT, i0.NgZone, i0.PLATFORM_ID, i23.DOCUMENT, i23.DOCUMENT, i24.HAMMER_GESTURE_CONFIG, i0.ɵConsole, [2, i24.HAMMER_LOADER], i24.DOCUMENT]), i0.ɵmpd(4608, i24.EventManager, i24.EventManager, [i24.EVENT_MANAGER_PLUGINS, i0.NgZone]), i0.ɵmpd(135680, i24.ɵDomSharedStylesHost, i24.ɵDomSharedStylesHost, [i23.DOCUMENT]), i0.ɵmpd(4608, i24.ɵDomRendererFactory2, i24.ɵDomRendererFactory2, [i24.EventManager, i24.ɵDomSharedStylesHost]), i0.ɵmpd(4608, i21.ɵangular_packages_platform_server_platform_server_c, i21.ɵangular_packages_platform_server_platform_server_c, [i24.DOCUMENT, [2, i24.ɵTRANSITION_ID]]), i0.ɵmpd(6144, i24.ɵSharedStylesHost, null, [i21.ɵangular_packages_platform_server_platform_server_c]), i0.ɵmpd(4608, i21.ɵServerRendererFactory2, i21.ɵServerRendererFactory2, [i24.EventManager, i0.NgZone, i24.DOCUMENT, i24.ɵSharedStylesHost]), i0.ɵmpd(4608, i25.AnimationDriver, i25.ɵNoopAnimationDriver, []), i0.ɵmpd(5120, i25.ɵAnimationStyleNormalizer, i26.ɵangular_packages_platform_browser_animations_animations_c, []), i0.ɵmpd(4608, i25.ɵAnimationEngine, i26.ɵangular_packages_platform_browser_animations_animations_a, [i23.DOCUMENT, i25.AnimationDriver, i25.ɵAnimationStyleNormalizer]), i0.ɵmpd(5120, i0.RendererFactory2, i21.ɵangular_packages_platform_server_platform_server_a, [i21.ɵServerRendererFactory2, i25.ɵAnimationEngine, i0.NgZone]), i0.ɵmpd(4352, i0.Testability, null, []), i0.ɵmpd(4608, i27.AnimationBuilder, i26.ɵBrowserAnimationBuilder, [i0.RendererFactory2, i24.DOCUMENT]), i0.ɵmpd(4608, i23.ViewportScroller, i23.ɵNullViewportScroller, []), i0.ɵmpd(4608, i28.ɵangular_packages_forms_forms_i, i28.ɵangular_packages_forms_forms_i, []), i0.ɵmpd(4608, i28.FormBuilder, i28.FormBuilder, []), i0.ɵmpd(4608, i29.NgMasonryGridService, i29.NgMasonryGridService, [i0.PLATFORM_ID]), i0.ɵmpd(4608, i30.ScrollToService, i30.ScrollToService, []), i0.ɵmpd(4608, i31.WindowRef, i31.WindowRef, []), i0.ɵmpd(4608, i31.DocumentRef, i31.DocumentRef, []), i0.ɵmpd(4608, i32.MapsAPILoader, i33.LazyMapsAPILoader, [[2, i33.LAZY_MAPS_API_CONFIG], i31.WindowRef, i31.DocumentRef]), i0.ɵmpd(5120, i34.ActivatedRoute, i34.ɵangular_packages_router_router_g, [i34.Router]), i0.ɵmpd(4608, i34.NoPreloading, i34.NoPreloading, []), i0.ɵmpd(6144, i34.PreloadingStrategy, null, [i34.NoPreloading]), i0.ɵmpd(135680, i34.RouterPreloader, i34.RouterPreloader, [i34.Router, i0.NgModuleFactoryLoader, i0.Compiler, i0.Injector, i34.PreloadingStrategy]), i0.ɵmpd(4608, i34.PreloadAllModules, i34.PreloadAllModules, []), i0.ɵmpd(5120, i34.ɵangular_packages_router_router_n, i34.ɵangular_packages_router_router_c, [i34.Router, i23.ViewportScroller, i34.ROUTER_CONFIGURATION]), i0.ɵmpd(5120, i34.ROUTER_INITIALIZER, i34.ɵangular_packages_router_router_j, [i34.ɵangular_packages_router_router_h]), i0.ɵmpd(5120, i0.APP_BOOTSTRAP_LISTENER, function (p0_0) { return [p0_0]; }, [i34.ROUTER_INITIALIZER]), i0.ɵmpd(4608, i35.PropertyService, i35.PropertyService, []), i0.ɵmpd(4608, i36.LocationService, i36.LocationService, [i22.HttpClient]), i0.ɵmpd(4608, i37.GetService, i37.GetService, [i20.Http]), i0.ɵmpd(4608, i38.SendService, i38.SendService, []), i0.ɵmpd(4608, i39.PostService, i39.PostService, [i22.HttpClient]), i0.ɵmpd(4608, i40.TimeService, i40.TimeService, []), i0.ɵmpd(4608, i41.MatchDataService, i41.MatchDataService, [i36.LocationService, i39.PostService]), i0.ɵmpd(4608, i42.NewsService, i42.NewsService, [i39.PostService]), i0.ɵmpd(4608, i43.PopUpService, i43.PopUpService, []), i0.ɵmpd(4608, i44.LinkService, i44.LinkService, [i0.RendererFactory2, i24.DOCUMENT]), i0.ɵmpd(4608, i45.SeoService, i45.SeoService, [i24.Meta]), i0.ɵmpd(4608, i46.EventEmiterService, i46.EventEmiterService, []), i0.ɵmpd(135680, i23.AsyncPipe, i23.AsyncPipe, [i0.ChangeDetectorRef]), i0.ɵmpd(1073742336, i20.HttpModule, i20.HttpModule, []), i0.ɵmpd(1073742336, i22.HttpClientXsrfModule, i22.HttpClientXsrfModule, []), i0.ɵmpd(1073742336, i22.HttpClientModule, i22.HttpClientModule, []), i0.ɵmpd(1073742336, i23.CommonModule, i23.CommonModule, []), i0.ɵmpd(1024, i0.ErrorHandler, i24.ɵangular_packages_platform_browser_platform_browser_a, []), i0.ɵmpd(1024, i0.NgProbeToken, function () { return [i34.ɵangular_packages_router_router_b()]; }, []), i0.ɵmpd(256, i0.APP_ID, "sport-social", []), i0.ɵmpd(2048, i24.ɵTRANSITION_ID, null, [i0.APP_ID]), i0.ɵmpd(512, i34.ɵangular_packages_router_router_h, i34.ɵangular_packages_router_router_h, [i0.Injector]), i0.ɵmpd(1024, i0.APP_INITIALIZER, function (p0_0, p1_0, p1_1, p1_2, p2_0) { return [i24.ɵangular_packages_platform_browser_platform_browser_j(p0_0), i24.ɵangular_packages_platform_browser_platform_browser_h(p1_0, p1_1, p1_2), i34.ɵangular_packages_router_router_i(p2_0)]; }, [[2, i0.NgProbeToken], i24.ɵTRANSITION_ID, i23.DOCUMENT, i0.Injector, i34.ɵangular_packages_router_router_h]), i0.ɵmpd(512, i0.ApplicationInitStatus, i0.ApplicationInitStatus, [[2, i0.APP_INITIALIZER]]), i0.ɵmpd(131584, i0.ApplicationRef, i0.ApplicationRef, [i0.NgZone, i0.ɵConsole, i0.Injector, i0.ErrorHandler, i0.ComponentFactoryResolver, i0.ApplicationInitStatus]), i0.ɵmpd(1073742336, i0.ApplicationModule, i0.ApplicationModule, [i0.ApplicationRef]), i0.ɵmpd(1073742336, i24.BrowserModule, i24.BrowserModule, [[3, i24.BrowserModule]]), i0.ɵmpd(1073742336, i26.NoopAnimationsModule, i26.NoopAnimationsModule, []), i0.ɵmpd(1073742336, i21.ServerModule, i21.ServerModule, []), i0.ɵmpd(1073742336, i28.ɵangular_packages_forms_forms_bb, i28.ɵangular_packages_forms_forms_bb, []), i0.ɵmpd(1073742336, i28.FormsModule, i28.FormsModule, []), i0.ɵmpd(1073742336, i28.ReactiveFormsModule, i28.ReactiveFormsModule, []), i0.ɵmpd(1073742336, i47.GooglePlaceModule, i47.GooglePlaceModule, []), i0.ɵmpd(1073742336, i48.AgmCoreModule, i48.AgmCoreModule, []), i0.ɵmpd(1024, i34.ɵangular_packages_router_router_a, i34.ɵangular_packages_router_router_e, [[3, i34.Router]]), i0.ɵmpd(512, i34.UrlSerializer, i34.DefaultUrlSerializer, []), i0.ɵmpd(512, i34.ChildrenOutletContexts, i34.ChildrenOutletContexts, []), i0.ɵmpd(256, i34.ROUTER_CONFIGURATION, { enableTracing: true }, []), i0.ɵmpd(1024, i23.LocationStrategy, i34.ɵangular_packages_router_router_d, [i23.PlatformLocation, [2, i23.APP_BASE_HREF], i34.ROUTER_CONFIGURATION]), i0.ɵmpd(512, i23.Location, i23.Location, [i23.LocationStrategy]), i0.ɵmpd(512, i0.Compiler, i0.Compiler, []), i0.ɵmpd(512, i0.NgModuleFactoryLoader, i49.ModuleMapNgFactoryLoader, [i0.Compiler, i49.MODULE_MAP]), i0.ɵmpd(1024, i34.ROUTES, function () { return [[{ path: "", component: i50.HomeComponent }], [{ path: "", component: i51.AboutComponent }], [{ path: "ourTeam", component: i52.OurteamComponent }, { path: "contactus", component: i53.ContactUsComponent }, { path: "live", component: i54.LivedataComponent }, { path: "addtopic", component: i55.AddTopicComponent }, { path: "HelpCenter", component: i56.HelpCenterComponent }, { path: "Helpcenter/:topicname", component: i56.HelpCenterComponent }, { path: "teamview", component: i57.TeamviewComponent }, { path: "localitypage", component: i58.LocalitypageComponent }, { path: "newspage", redirectTo: "newspage/" }, { path: "newspage/:topic", component: i59.NewspageComponent }, { path: "application", component: i60.ApplicationComponent }, { path: "HelpCenter/:subtopicname", component: i61.AddQueAnsComponent }, { path: "HelpCenter/:subtopicname/:question", component: i61.AddQueAnsComponent }, { path: "about", component: i51.AboutComponent }, { path: "Terms Of Service", loadChildren: "app/terms-and-condition/terms-and-condition.module#TermsAndConditionModule" }, { path: "Privacy Policy", loadChildren: "app/privacy-policy/privacy-policy.module#PrivacyPolicyModule" }, { path: "OpenArena", loadChildren: "app/global-feed/global-match-feed/global-match-feed.module#GlobalMatchFeedModule" }, { path: "AroundTheWorld", loadChildren: "app/global-feed/global-news-feed/global-news-feed.module#GlobalNewsFeedModule" }, { path: ":sport", loadChildren: "app/sports-specific-feed/sports-specific-feed.module#SportsSpecificFeedModule" }, { path: ":id", component: i62.OpenMatchCardComponent, outlet: "Match" }, { path: ":id", component: i63.OpenNewsCardComponent, outlet: "News" }, { path: "PopUp", component: i64.PopUpComponent, outlet: "AppDownload" }, { path: "", loadChildren: "app/home/home.module#HomeModule" }, { path: "home", component: i50.HomeComponent }]]; }, []), i0.ɵmpd(1024, i34.Router, i34.ɵangular_packages_router_router_f, [i0.ApplicationRef, i34.UrlSerializer, i34.ChildrenOutletContexts, i23.Location, i0.Injector, i0.NgModuleFactoryLoader, i0.Compiler, i34.ROUTES, i34.ROUTER_CONFIGURATION, [2, i34.UrlHandlingStrategy], [2, i34.RouteReuseStrategy]]), i0.ɵmpd(1073742336, i34.RouterModule, i34.RouterModule, [[2, i34.ɵangular_packages_router_router_a], [2, i34.Router]]), i0.ɵmpd(1073742336, i65.GalleryModule, i65.GalleryModule, []), i0.ɵmpd(1073742336, i66.OpenMatchCardModule, i66.OpenMatchCardModule, []), i0.ɵmpd(1073742336, i67.OpenNewsCardModule, i67.OpenNewsCardModule, []), i0.ɵmpd(1073742336, i68.CarouselModule, i68.CarouselModule, []), i0.ɵmpd(1073742336, i69.HeaderModule, i69.HeaderModule, []), i0.ɵmpd(1073742336, i70.NewsidenavModule, i70.NewsidenavModule, []), i0.ɵmpd(1073742336, i71.NavigationBarModule, i71.NavigationBarModule, []), i0.ɵmpd(1073742336, i72.MatchCardModule, i72.MatchCardModule, []), i0.ɵmpd(1073742336, i73.NewsCardModule, i73.NewsCardModule, []), i0.ɵmpd(1073742336, i74.LiveMatchCardModule, i74.LiveMatchCardModule, []), i0.ɵmpd(1073742336, i29.NgMasonryGridModule, i29.NgMasonryGridModule, []), i0.ɵmpd(1073742336, i75.SsMatchCardModule, i75.SsMatchCardModule, []), i0.ɵmpd(1073742336, i76.GlobalOpenArenaFeedModule, i76.GlobalOpenArenaFeedModule, []), i0.ɵmpd(1073742336, i77.FooterModule, i77.FooterModule, []), i0.ɵmpd(1073742336, i78.HomeMatchFeedModule, i78.HomeMatchFeedModule, []), i0.ɵmpd(1073742336, i79.HomeModule, i79.HomeModule, []), i0.ɵmpd(1073742336, i80.BlogCardModule, i80.BlogCardModule, []), i0.ɵmpd(1073742336, i81.BackfooterModule, i81.BackfooterModule, []), i0.ɵmpd(1073742336, i82.AboutModule, i82.AboutModule, []), i0.ɵmpd(1073742336, i83.NewHeaderModule, i83.NewHeaderModule, []), i0.ɵmpd(1073742336, i84.HelpCenterModule, i84.HelpCenterModule, []), i0.ɵmpd(1073742336, i85.ScrollToModule, i85.ScrollToModule, []), i0.ɵmpd(1073742336, i86.AppModule, i86.AppModule, []), i0.ɵmpd(1073742336, i49.ModuleMapLoaderModule, i49.ModuleMapLoaderModule, []), i0.ɵmpd(1073742336, i1.AppServerModule, i1.AppServerModule, []), i0.ɵmpd(256, i22.ɵangular_packages_common_http_http_e, "XSRF-TOKEN", []), i0.ɵmpd(256, i22.ɵangular_packages_common_http_http_f, "X-XSRF-TOKEN", []), i0.ɵmpd(256, i0.ɵAPP_ROOT, true, []), i0.ɵmpd(256, i26.ANIMATION_MODULE_TYPE, "NoopAnimations", []), i0.ɵmpd(256, i33.LAZY_MAPS_API_CONFIG, { apiKey: "AIzaSyBhy2_i75_m05Chs918Q5UKG2fHxMlhia4" }, [])]); });
+=======
+var i7 = __webpack_require__(/*! ./open-cards/open-home-match-card/open-home-match-card.component.ngfactory */ "./src/app/open-cards/open-home-match-card/open-home-match-card.component.ngfactory.js");
+var i8 = __webpack_require__(/*! ./ourteam/ourteam.component.ngfactory */ "./src/app/ourteam/ourteam.component.ngfactory.js");
+var i9 = __webpack_require__(/*! ./contact-us/contact-us.component.ngfactory */ "./src/app/contact-us/contact-us.component.ngfactory.js");
+var i10 = __webpack_require__(/*! ./livedata/livedata.component.ngfactory */ "./src/app/livedata/livedata.component.ngfactory.js");
+var i11 = __webpack_require__(/*! ./add-topic/add-topic.component.ngfactory */ "./src/app/add-topic/add-topic.component.ngfactory.js");
+var i12 = __webpack_require__(/*! ./help-center/help-center.component.ngfactory */ "./src/app/help-center/help-center.component.ngfactory.js");
+var i13 = __webpack_require__(/*! ./teamview/teamview.component.ngfactory */ "./src/app/teamview/teamview.component.ngfactory.js");
+var i14 = __webpack_require__(/*! ./localitypage/localitypage.component.ngfactory */ "./src/app/localitypage/localitypage.component.ngfactory.js");
+var i15 = __webpack_require__(/*! ./newspage/newspage.component.ngfactory */ "./src/app/newspage/newspage.component.ngfactory.js");
+var i16 = __webpack_require__(/*! ./application/application.component.ngfactory */ "./src/app/application/application.component.ngfactory.js");
+var i17 = __webpack_require__(/*! ./add-que-ans/add-que-ans.component.ngfactory */ "./src/app/add-que-ans/add-que-ans.component.ngfactory.js");
+var i18 = __webpack_require__(/*! ./open-cards/open-match-card/open-match-card.component.ngfactory */ "./src/app/open-cards/open-match-card/open-match-card.component.ngfactory.js");
+var i19 = __webpack_require__(/*! ./pop-up/pop-up.component.ngfactory */ "./src/app/pop-up/pop-up.component.ngfactory.js");
+var i20 = __webpack_require__(/*! ./app.component.ngfactory */ "./src/app/app.component.ngfactory.js");
+var i21 = __webpack_require__(/*! @angular/http */ "@angular/http");
+var i22 = __webpack_require__(/*! @angular/platform-server */ "@angular/platform-server");
+var i23 = __webpack_require__(/*! @angular/common/http */ "@angular/common/http");
+var i24 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var i25 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
+var i26 = __webpack_require__(/*! @angular/animations/browser */ "@angular/animations/browser");
+var i27 = __webpack_require__(/*! @angular/platform-browser/animations */ "@angular/platform-browser/animations");
+var i28 = __webpack_require__(/*! @angular/animations */ "@angular/animations");
+var i29 = __webpack_require__(/*! @angular/forms */ "@angular/forms");
+var i30 = __webpack_require__(/*! ng-masonry-grid */ "ng-masonry-grid");
+var i31 = __webpack_require__(/*! ng2-scroll-to-el/scrollTo.service */ "ng2-scroll-to-el/scrollTo.service");
+var i32 = __webpack_require__(/*! @agm/core/utils/browser-globals */ "@agm/core/utils/browser-globals");
+var i33 = __webpack_require__(/*! @agm/core/services/maps-api-loader/maps-api-loader */ "@agm/core/services/maps-api-loader/maps-api-loader");
+var i34 = __webpack_require__(/*! @agm/core/services/maps-api-loader/lazy-maps-api-loader */ "@agm/core/services/maps-api-loader/lazy-maps-api-loader");
+var i35 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var i36 = __webpack_require__(/*! ./shared/services/property.service */ "./src/app/shared/services/property.service.ts");
+var i37 = __webpack_require__(/*! ./shared/services/location.service */ "./src/app/shared/services/location.service.ts");
+var i38 = __webpack_require__(/*! ./shared/services/get.service */ "./src/app/shared/services/get.service.ts");
+var i39 = __webpack_require__(/*! ./shared/services/send.service */ "./src/app/shared/services/send.service.ts");
+var i40 = __webpack_require__(/*! ./shared/services/post.service */ "./src/app/shared/services/post.service.ts");
+var i41 = __webpack_require__(/*! ./shared/services/time.service */ "./src/app/shared/services/time.service.ts");
+var i42 = __webpack_require__(/*! ./shared/services/match-data.service */ "./src/app/shared/services/match-data.service.ts");
+var i43 = __webpack_require__(/*! ./shared/services/news.service */ "./src/app/shared/services/news.service.ts");
+var i44 = __webpack_require__(/*! ./shared/services/pop-up.service */ "./src/app/shared/services/pop-up.service.ts");
+var i45 = __webpack_require__(/*! ./shared/services/link.service */ "./src/app/shared/services/link.service.ts");
+var i46 = __webpack_require__(/*! ./shared/services/seo.service */ "./src/app/shared/services/seo.service.ts");
+var i47 = __webpack_require__(/*! ./shared/services/event.emiter.service */ "./src/app/shared/services/event.emiter.service.ts");
+var i48 = __webpack_require__(/*! ngx-google-places-autocomplete/ngx-google-places-autocomplete.module */ "ngx-google-places-autocomplete/ngx-google-places-autocomplete.module");
+var i49 = __webpack_require__(/*! @agm/core/core.module */ "@agm/core/core.module");
+var i50 = __webpack_require__(/*! @nguniversal/module-map-ngfactory-loader */ "@nguniversal/module-map-ngfactory-loader");
+var i51 = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+var i52 = __webpack_require__(/*! ./about/about.component */ "./src/app/about/about.component.ts");
+var i53 = __webpack_require__(/*! ./open-cards/open-home-match-card/open-home-match-card.component */ "./src/app/open-cards/open-home-match-card/open-home-match-card.component.ts");
+var i54 = __webpack_require__(/*! ./ourteam/ourteam.component */ "./src/app/ourteam/ourteam.component.ts");
+var i55 = __webpack_require__(/*! ./contact-us/contact-us.component */ "./src/app/contact-us/contact-us.component.ts");
+var i56 = __webpack_require__(/*! ./livedata/livedata.component */ "./src/app/livedata/livedata.component.ts");
+var i57 = __webpack_require__(/*! ./add-topic/add-topic.component */ "./src/app/add-topic/add-topic.component.ts");
+var i58 = __webpack_require__(/*! ./help-center/help-center.component */ "./src/app/help-center/help-center.component.ts");
+var i59 = __webpack_require__(/*! ./teamview/teamview.component */ "./src/app/teamview/teamview.component.ts");
+var i60 = __webpack_require__(/*! ./localitypage/localitypage.component */ "./src/app/localitypage/localitypage.component.ts");
+var i61 = __webpack_require__(/*! ./newspage/newspage.component */ "./src/app/newspage/newspage.component.ts");
+var i62 = __webpack_require__(/*! ./application/application.component */ "./src/app/application/application.component.ts");
+var i63 = __webpack_require__(/*! ./add-que-ans/add-que-ans.component */ "./src/app/add-que-ans/add-que-ans.component.ts");
+var i64 = __webpack_require__(/*! ./open-cards/open-match-card/open-match-card.component */ "./src/app/open-cards/open-match-card/open-match-card.component.ts");
+var i65 = __webpack_require__(/*! ./open-cards/open-news-card/open-news-card.component */ "./src/app/open-cards/open-news-card/open-news-card.component.ts");
+var i66 = __webpack_require__(/*! ./pop-up/pop-up.component */ "./src/app/pop-up/pop-up.component.ts");
+var i67 = __webpack_require__(/*! ./gallery/gallery.module */ "./src/app/gallery/gallery.module.ts");
+var i68 = __webpack_require__(/*! ./open-cards/open-match-card/open-match-card.module */ "./src/app/open-cards/open-match-card/open-match-card.module.ts");
+var i69 = __webpack_require__(/*! ./open-cards/open-news-card/open-news-card.module */ "./src/app/open-cards/open-news-card/open-news-card.module.ts");
+var i70 = __webpack_require__(/*! ./carousel/carousel.module */ "./src/app/carousel/carousel.module.ts");
+var i71 = __webpack_require__(/*! ./header/header.module */ "./src/app/header/header.module.ts");
+var i72 = __webpack_require__(/*! ./navigation-bar/navigation-bar.module */ "./src/app/navigation-bar/navigation-bar.module.ts");
+var i73 = __webpack_require__(/*! ./cards/match-card/match-card.module */ "./src/app/cards/match-card/match-card.module.ts");
+var i74 = __webpack_require__(/*! ./cards/news-card/news-card.module */ "./src/app/cards/news-card/news-card.module.ts");
+var i75 = __webpack_require__(/*! ./cards/live-match-card/live-match-card.module */ "./src/app/cards/live-match-card/live-match-card.module.ts");
+var i76 = __webpack_require__(/*! ./cards/ss-match-card/ss-match-card.module */ "./src/app/cards/ss-match-card/ss-match-card.module.ts");
+var i77 = __webpack_require__(/*! ./side-nav/side-nav.module */ "./src/app/side-nav/side-nav.module.ts");
+var i78 = __webpack_require__(/*! ./global-feed/global-open-arena-feed/global-open-arena-feed.module */ "./src/app/global-feed/global-open-arena-feed/global-open-arena-feed.module.ts");
+var i79 = __webpack_require__(/*! ./footer/footer.module */ "./src/app/footer/footer.module.ts");
+var i80 = __webpack_require__(/*! ./global-feed/home-match-feed/home-match-feed.module */ "./src/app/global-feed/home-match-feed/home-match-feed.module.ts");
+var i81 = __webpack_require__(/*! ./home/home.module */ "./src/app/home/home.module.ts");
+var i82 = __webpack_require__(/*! ./cards/blog-card/blog-card.module */ "./src/app/cards/blog-card/blog-card.module.ts");
+var i83 = __webpack_require__(/*! ./backfooter/backfooter.module */ "./src/app/backfooter/backfooter.module.ts");
+var i84 = __webpack_require__(/*! ./about/about.module */ "./src/app/about/about.module.ts");
+var i85 = __webpack_require__(/*! ./newheader/newheader.module */ "./src/app/newheader/newheader.module.ts");
+var i86 = __webpack_require__(/*! ./help-center/help-center.module */ "./src/app/help-center/help-center.module.ts");
+var i87 = __webpack_require__(/*! ng2-scroll-to-el/scrollTo.module */ "ng2-scroll-to-el/scrollTo.module");
+var i88 = __webpack_require__(/*! ./open-cards/open-home-match-card/open-home-match-card.module */ "./src/app/open-cards/open-home-match-card/open-home-match-card.module.ts");
+var i89 = __webpack_require__(/*! ./app.module */ "./src/app/app.module.ts");
+var AppServerModuleNgFactory = i0.ɵcmf(i1.AppServerModule, [i2.AppComponent], function (_l) { return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i3.ɵEmptyOutletComponentNgFactory, i4.OpenNewsCardComponentNgFactory, i5.HomeComponentNgFactory, i6.AboutComponentNgFactory, i7.OpenHomeMatchCardComponentNgFactory, i8.OurteamComponentNgFactory, i9.ContactUsComponentNgFactory, i10.LivedataComponentNgFactory, i11.AddTopicComponentNgFactory, i12.HelpCenterComponentNgFactory, i13.TeamviewComponentNgFactory, i14.LocalitypageComponentNgFactory, i15.NewspageComponentNgFactory, i16.ApplicationComponentNgFactory, i17.AddQueAnsComponentNgFactory, i18.OpenMatchCardComponentNgFactory, i19.PopUpComponentNgFactory, i20.AppComponentNgFactory]], [3, i0.ComponentFactoryResolver], i0.NgModuleRef]), i0.ɵmpd(4608, i21.BrowserXhr, i22.ɵangular_packages_platform_server_platform_server_e, []), i0.ɵmpd(4608, i21.ResponseOptions, i21.BaseResponseOptions, []), i0.ɵmpd(4608, i21.XSRFStrategy, i22.ɵangular_packages_platform_server_platform_server_f, []), i0.ɵmpd(4608, i21.XHRBackend, i21.XHRBackend, [i21.BrowserXhr, i21.ResponseOptions, i21.XSRFStrategy]), i0.ɵmpd(4608, i21.RequestOptions, i21.BaseRequestOptions, []), i0.ɵmpd(5120, i21.Http, i22.ɵangular_packages_platform_server_platform_server_g, [i21.XHRBackend, i21.RequestOptions]), i0.ɵmpd(4608, i23.HttpXsrfTokenExtractor, i23.ɵangular_packages_common_http_http_g, [i24.DOCUMENT, i0.PLATFORM_ID, i23.ɵangular_packages_common_http_http_e]), i0.ɵmpd(4608, i23.ɵangular_packages_common_http_http_h, i23.ɵangular_packages_common_http_http_h, [i23.HttpXsrfTokenExtractor, i23.ɵangular_packages_common_http_http_f]), i0.ɵmpd(5120, i23.HTTP_INTERCEPTORS, function (p0_0) { return [p0_0]; }, [i23.ɵangular_packages_common_http_http_h]), i0.ɵmpd(4608, i23.XhrFactory, i22.ɵangular_packages_platform_server_platform_server_e, []), i0.ɵmpd(4608, i23.HttpXhrBackend, i23.HttpXhrBackend, [i23.XhrFactory]), i0.ɵmpd(6144, i23.HttpBackend, null, [i23.HttpXhrBackend]), i0.ɵmpd(5120, i23.HttpHandler, i22.ɵangular_packages_platform_server_platform_server_h, [i23.HttpBackend, i0.Injector]), i0.ɵmpd(4608, i23.HttpClient, i23.HttpClient, [i23.HttpHandler]), i0.ɵmpd(4608, i23.ɵangular_packages_common_http_http_d, i23.ɵangular_packages_common_http_http_d, []), i0.ɵmpd(5120, i0.LOCALE_ID, i0.ɵangular_packages_core_core_k, [[3, i0.LOCALE_ID]]), i0.ɵmpd(4608, i24.NgLocalization, i24.NgLocaleLocalization, [i0.LOCALE_ID, [2, i24.ɵangular_packages_common_common_a]]), i0.ɵmpd(5120, i0.IterableDiffers, i0.ɵangular_packages_core_core_i, []), i0.ɵmpd(5120, i0.KeyValueDiffers, i0.ɵangular_packages_core_core_j, []), i0.ɵmpd(4608, i25.DomSanitizer, i25.ɵDomSanitizerImpl, [i24.DOCUMENT]), i0.ɵmpd(6144, i0.Sanitizer, null, [i25.DomSanitizer]), i0.ɵmpd(4608, i25.HAMMER_GESTURE_CONFIG, i25.HammerGestureConfig, []), i0.ɵmpd(5120, i25.EVENT_MANAGER_PLUGINS, function (p0_0, p0_1, p0_2, p1_0, p2_0, p2_1, p2_2, p2_3, p3_0) { return [new i25.ɵDomEventsPlugin(p0_0, p0_1, p0_2), new i25.ɵKeyEventsPlugin(p1_0), new i25.ɵHammerGesturesPlugin(p2_0, p2_1, p2_2, p2_3), new i22.ɵangular_packages_platform_server_platform_server_d(p3_0)]; }, [i24.DOCUMENT, i0.NgZone, i0.PLATFORM_ID, i24.DOCUMENT, i24.DOCUMENT, i25.HAMMER_GESTURE_CONFIG, i0.ɵConsole, [2, i25.HAMMER_LOADER], i25.DOCUMENT]), i0.ɵmpd(4608, i25.EventManager, i25.EventManager, [i25.EVENT_MANAGER_PLUGINS, i0.NgZone]), i0.ɵmpd(135680, i25.ɵDomSharedStylesHost, i25.ɵDomSharedStylesHost, [i24.DOCUMENT]), i0.ɵmpd(4608, i25.ɵDomRendererFactory2, i25.ɵDomRendererFactory2, [i25.EventManager, i25.ɵDomSharedStylesHost]), i0.ɵmpd(4608, i22.ɵangular_packages_platform_server_platform_server_c, i22.ɵangular_packages_platform_server_platform_server_c, [i25.DOCUMENT, [2, i25.ɵTRANSITION_ID]]), i0.ɵmpd(6144, i25.ɵSharedStylesHost, null, [i22.ɵangular_packages_platform_server_platform_server_c]), i0.ɵmpd(4608, i22.ɵServerRendererFactory2, i22.ɵServerRendererFactory2, [i25.EventManager, i0.NgZone, i25.DOCUMENT, i25.ɵSharedStylesHost]), i0.ɵmpd(4608, i26.AnimationDriver, i26.ɵNoopAnimationDriver, []), i0.ɵmpd(5120, i26.ɵAnimationStyleNormalizer, i27.ɵangular_packages_platform_browser_animations_animations_c, []), i0.ɵmpd(4608, i26.ɵAnimationEngine, i27.ɵangular_packages_platform_browser_animations_animations_a, [i24.DOCUMENT, i26.AnimationDriver, i26.ɵAnimationStyleNormalizer]), i0.ɵmpd(5120, i0.RendererFactory2, i22.ɵangular_packages_platform_server_platform_server_a, [i22.ɵServerRendererFactory2, i26.ɵAnimationEngine, i0.NgZone]), i0.ɵmpd(4352, i0.Testability, null, []), i0.ɵmpd(4608, i28.AnimationBuilder, i27.ɵBrowserAnimationBuilder, [i0.RendererFactory2, i25.DOCUMENT]), i0.ɵmpd(4608, i24.ViewportScroller, i24.ɵNullViewportScroller, []), i0.ɵmpd(4608, i29.ɵangular_packages_forms_forms_i, i29.ɵangular_packages_forms_forms_i, []), i0.ɵmpd(4608, i29.FormBuilder, i29.FormBuilder, []), i0.ɵmpd(4608, i30.NgMasonryGridService, i30.NgMasonryGridService, [i0.PLATFORM_ID]), i0.ɵmpd(4608, i31.ScrollToService, i31.ScrollToService, []), i0.ɵmpd(4608, i32.WindowRef, i32.WindowRef, []), i0.ɵmpd(4608, i32.DocumentRef, i32.DocumentRef, []), i0.ɵmpd(4608, i33.MapsAPILoader, i34.LazyMapsAPILoader, [[2, i34.LAZY_MAPS_API_CONFIG], i32.WindowRef, i32.DocumentRef]), i0.ɵmpd(5120, i35.ActivatedRoute, i35.ɵangular_packages_router_router_g, [i35.Router]), i0.ɵmpd(4608, i35.NoPreloading, i35.NoPreloading, []), i0.ɵmpd(6144, i35.PreloadingStrategy, null, [i35.NoPreloading]), i0.ɵmpd(135680, i35.RouterPreloader, i35.RouterPreloader, [i35.Router, i0.NgModuleFactoryLoader, i0.Compiler, i0.Injector, i35.PreloadingStrategy]), i0.ɵmpd(4608, i35.PreloadAllModules, i35.PreloadAllModules, []), i0.ɵmpd(5120, i35.ɵangular_packages_router_router_n, i35.ɵangular_packages_router_router_c, [i35.Router, i24.ViewportScroller, i35.ROUTER_CONFIGURATION]), i0.ɵmpd(5120, i35.ROUTER_INITIALIZER, i35.ɵangular_packages_router_router_j, [i35.ɵangular_packages_router_router_h]), i0.ɵmpd(5120, i0.APP_BOOTSTRAP_LISTENER, function (p0_0) { return [p0_0]; }, [i35.ROUTER_INITIALIZER]), i0.ɵmpd(4608, i36.PropertyService, i36.PropertyService, []), i0.ɵmpd(4608, i37.LocationService, i37.LocationService, [i23.HttpClient]), i0.ɵmpd(4608, i38.GetService, i38.GetService, [i21.Http]), i0.ɵmpd(4608, i39.SendService, i39.SendService, []), i0.ɵmpd(4608, i40.PostService, i40.PostService, [i23.HttpClient]), i0.ɵmpd(4608, i41.TimeService, i41.TimeService, []), i0.ɵmpd(4608, i42.MatchDataService, i42.MatchDataService, [i37.LocationService, i40.PostService]), i0.ɵmpd(4608, i43.NewsService, i43.NewsService, [i40.PostService]), i0.ɵmpd(4608, i44.PopUpService, i44.PopUpService, []), i0.ɵmpd(4608, i45.LinkService, i45.LinkService, [i0.RendererFactory2, i25.DOCUMENT]), i0.ɵmpd(4608, i46.SeoService, i46.SeoService, [i25.Meta]), i0.ɵmpd(4608, i47.EventEmiterService, i47.EventEmiterService, []), i0.ɵmpd(135680, i24.AsyncPipe, i24.AsyncPipe, [i0.ChangeDetectorRef]), i0.ɵmpd(1073742336, i21.HttpModule, i21.HttpModule, []), i0.ɵmpd(1073742336, i23.HttpClientXsrfModule, i23.HttpClientXsrfModule, []), i0.ɵmpd(1073742336, i23.HttpClientModule, i23.HttpClientModule, []), i0.ɵmpd(1073742336, i24.CommonModule, i24.CommonModule, []), i0.ɵmpd(1024, i0.ErrorHandler, i25.ɵangular_packages_platform_browser_platform_browser_a, []), i0.ɵmpd(1024, i0.NgProbeToken, function () { return [i35.ɵangular_packages_router_router_b()]; }, []), i0.ɵmpd(256, i0.APP_ID, "sport-social", []), i0.ɵmpd(2048, i25.ɵTRANSITION_ID, null, [i0.APP_ID]), i0.ɵmpd(512, i35.ɵangular_packages_router_router_h, i35.ɵangular_packages_router_router_h, [i0.Injector]), i0.ɵmpd(1024, i0.APP_INITIALIZER, function (p0_0, p1_0, p1_1, p1_2, p2_0) { return [i25.ɵangular_packages_platform_browser_platform_browser_j(p0_0), i25.ɵangular_packages_platform_browser_platform_browser_h(p1_0, p1_1, p1_2), i35.ɵangular_packages_router_router_i(p2_0)]; }, [[2, i0.NgProbeToken], i25.ɵTRANSITION_ID, i24.DOCUMENT, i0.Injector, i35.ɵangular_packages_router_router_h]), i0.ɵmpd(512, i0.ApplicationInitStatus, i0.ApplicationInitStatus, [[2, i0.APP_INITIALIZER]]), i0.ɵmpd(131584, i0.ApplicationRef, i0.ApplicationRef, [i0.NgZone, i0.ɵConsole, i0.Injector, i0.ErrorHandler, i0.ComponentFactoryResolver, i0.ApplicationInitStatus]), i0.ɵmpd(1073742336, i0.ApplicationModule, i0.ApplicationModule, [i0.ApplicationRef]), i0.ɵmpd(1073742336, i25.BrowserModule, i25.BrowserModule, [[3, i25.BrowserModule]]), i0.ɵmpd(1073742336, i27.NoopAnimationsModule, i27.NoopAnimationsModule, []), i0.ɵmpd(1073742336, i22.ServerModule, i22.ServerModule, []), i0.ɵmpd(1073742336, i29.ɵangular_packages_forms_forms_bb, i29.ɵangular_packages_forms_forms_bb, []), i0.ɵmpd(1073742336, i29.FormsModule, i29.FormsModule, []), i0.ɵmpd(1073742336, i29.ReactiveFormsModule, i29.ReactiveFormsModule, []), i0.ɵmpd(1073742336, i48.GooglePlaceModule, i48.GooglePlaceModule, []), i0.ɵmpd(1073742336, i49.AgmCoreModule, i49.AgmCoreModule, []), i0.ɵmpd(1024, i35.ɵangular_packages_router_router_a, i35.ɵangular_packages_router_router_e, [[3, i35.Router]]), i0.ɵmpd(512, i35.UrlSerializer, i35.DefaultUrlSerializer, []), i0.ɵmpd(512, i35.ChildrenOutletContexts, i35.ChildrenOutletContexts, []), i0.ɵmpd(256, i35.ROUTER_CONFIGURATION, { enableTracing: true }, []), i0.ɵmpd(1024, i24.LocationStrategy, i35.ɵangular_packages_router_router_d, [i24.PlatformLocation, [2, i24.APP_BASE_HREF], i35.ROUTER_CONFIGURATION]), i0.ɵmpd(512, i24.Location, i24.Location, [i24.LocationStrategy]), i0.ɵmpd(512, i0.Compiler, i0.Compiler, []), i0.ɵmpd(512, i0.NgModuleFactoryLoader, i50.ModuleMapNgFactoryLoader, [i0.Compiler, i50.MODULE_MAP]), i0.ɵmpd(1024, i35.ROUTES, function () { return [[{ path: "", component: i51.HomeComponent }], [{ path: "", component: i52.AboutComponent }], [{ path: "opencard/:feedid", component: i53.OpenHomeMatchCardComponent }, { path: "ourTeam", component: i54.OurteamComponent }, { path: "contactus", component: i55.ContactUsComponent }, { path: "live", component: i56.LivedataComponent }, { path: "addtopic", component: i57.AddTopicComponent }, { path: "HelpCenter", component: i58.HelpCenterComponent }, { path: "Helpcenter/:topicname", component: i58.HelpCenterComponent }, { path: "teamview", component: i59.TeamviewComponent }, { path: "localitypage", component: i60.LocalitypageComponent }, { path: "newspage", component: i61.NewspageComponent }, { path: "application", component: i62.ApplicationComponent }, { path: "HelpCenter/:subtopicname", component: i63.AddQueAnsComponent }, { path: "HelpCenter/:subtopicname/:question", component: i63.AddQueAnsComponent }, { path: "about", component: i52.AboutComponent }, { path: "Terms Of Service", loadChildren: "app/terms-and-condition/terms-and-condition.module#TermsAndConditionModule" }, { path: "Privacy Policy", loadChildren: "app/privacy-policy/privacy-policy.module#PrivacyPolicyModule" }, { path: "OpenArena", loadChildren: "app/global-feed/global-match-feed/global-match-feed.module#GlobalMatchFeedModule" }, { path: "AroundTheWorld", loadChildren: "app/global-feed/global-news-feed/global-news-feed.module#GlobalNewsFeedModule" }, { path: ":sport", loadChildren: "app/sports-specific-feed/sports-specific-feed.module#SportsSpecificFeedModule" }, { path: ":id", component: i64.OpenMatchCardComponent, outlet: "Match" }, { path: ":id", component: i65.OpenNewsCardComponent, outlet: "News" }, { path: "PopUp", component: i66.PopUpComponent, outlet: "AppDownload" }, { path: "", loadChildren: "app/home/home.module#HomeModule" }, { path: "home", component: i51.HomeComponent }]]; }, []), i0.ɵmpd(1024, i35.Router, i35.ɵangular_packages_router_router_f, [i0.ApplicationRef, i35.UrlSerializer, i35.ChildrenOutletContexts, i24.Location, i0.Injector, i0.NgModuleFactoryLoader, i0.Compiler, i35.ROUTES, i35.ROUTER_CONFIGURATION, [2, i35.UrlHandlingStrategy], [2, i35.RouteReuseStrategy]]), i0.ɵmpd(1073742336, i35.RouterModule, i35.RouterModule, [[2, i35.ɵangular_packages_router_router_a], [2, i35.Router]]), i0.ɵmpd(1073742336, i67.GalleryModule, i67.GalleryModule, []), i0.ɵmpd(1073742336, i68.OpenMatchCardModule, i68.OpenMatchCardModule, []), i0.ɵmpd(1073742336, i69.OpenNewsCardModule, i69.OpenNewsCardModule, []), i0.ɵmpd(1073742336, i70.CarouselModule, i70.CarouselModule, []), i0.ɵmpd(1073742336, i71.HeaderModule, i71.HeaderModule, []), i0.ɵmpd(1073742336, i72.NavigationBarModule, i72.NavigationBarModule, []), i0.ɵmpd(1073742336, i73.MatchCardModule, i73.MatchCardModule, []), i0.ɵmpd(1073742336, i74.NewsCardModule, i74.NewsCardModule, []), i0.ɵmpd(1073742336, i75.LiveMatchCardModule, i75.LiveMatchCardModule, []), i0.ɵmpd(1073742336, i30.NgMasonryGridModule, i30.NgMasonryGridModule, []), i0.ɵmpd(1073742336, i76.SsMatchCardModule, i76.SsMatchCardModule, []), i0.ɵmpd(1073742336, i77.SideNavModule, i77.SideNavModule, []), i0.ɵmpd(1073742336, i78.GlobalOpenArenaFeedModule, i78.GlobalOpenArenaFeedModule, []), i0.ɵmpd(1073742336, i79.FooterModule, i79.FooterModule, []), i0.ɵmpd(1073742336, i80.HomeMatchFeedModule, i80.HomeMatchFeedModule, []), i0.ɵmpd(1073742336, i81.HomeModule, i81.HomeModule, []), i0.ɵmpd(1073742336, i82.BlogCardModule, i82.BlogCardModule, []), i0.ɵmpd(1073742336, i83.BackfooterModule, i83.BackfooterModule, []), i0.ɵmpd(1073742336, i84.AboutModule, i84.AboutModule, []), i0.ɵmpd(1073742336, i85.NewHeaderModule, i85.NewHeaderModule, []), i0.ɵmpd(1073742336, i86.HelpCenterModule, i86.HelpCenterModule, []), i0.ɵmpd(1073742336, i87.ScrollToModule, i87.ScrollToModule, []), i0.ɵmpd(1073742336, i88.OpenHomeMatchCardModule, i88.OpenHomeMatchCardModule, []), i0.ɵmpd(1073742336, i89.AppModule, i89.AppModule, []), i0.ɵmpd(1073742336, i50.ModuleMapLoaderModule, i50.ModuleMapLoaderModule, []), i0.ɵmpd(1073742336, i1.AppServerModule, i1.AppServerModule, []), i0.ɵmpd(256, i23.ɵangular_packages_common_http_http_e, "XSRF-TOKEN", []), i0.ɵmpd(256, i23.ɵangular_packages_common_http_http_f, "X-XSRF-TOKEN", []), i0.ɵmpd(256, i0.ɵAPP_ROOT, true, []), i0.ɵmpd(256, i27.ANIMATION_MODULE_TYPE, "NoopAnimations", []), i0.ɵmpd(256, i34.LAZY_MAPS_API_CONFIG, { apiKey: "AIzaSyBhy2_i75_m05Chs918Q5UKG2fHxMlhia4" }, [])]); });
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
 exports.AppServerModuleNgFactory = AppServerModuleNgFactory;
 
 
@@ -2881,7 +2972,11 @@ exports.ApplicationComponent = ApplicationComponent;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
+<<<<<<< HEAD
 var styles = [".yea[_ngcontent-%COMP%] {\n    position: relative;\n    z-index: 15;\n    background-image: url('/assets/images/sportsocialteamviewheader.jpg');\n    height: 220px;\n    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;\n}\n.app[_ngcontent-%COMP%] {\n    float: right;\n}\n.app[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    height: 30px;\n    width: 30px;\n}\n.app[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{\n    color: white;\n}\n.body[_ngcontent-%COMP%]{\n    z-index: 15;\n\n    padding-top: 10px;\n    margin: 0 auto;\n    width: 80%;\n    position: relative;\n    bottom: 0%;\n}\n.body[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{\n    display: inline-block;\n}\n.content[_ngcontent-%COMP%]{\n    display: block;\n    color: #ffffff;\n    width: 20%;\n    margin-left: 5%;\n    vertical-align: top;\n}\n.content[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%]{\n    font-size: 1.3em;\n    font-weight: bolder;\n}\n.content[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n    font-size: 1em;\n}\n.content[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%], p[_ngcontent-%COMP%]{\n    color: #ffffff;\n    padding:2.5%;\n}\n.body[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n    font-size: 0.5em;\n    color: #bbbbbb;\n}\n.follow[_ngcontent-%COMP%] {\n    vertical-align: middle;\n    margin: 0 auto;\n    width: 80%;\n    margin-top:35px;\n    border-top: 1.5px solid rgb(170, 169, 169);\n    border-bottom: 1.5px solid rgb(170, 169, 169);\n    \n    padding-top: 20px;\n    padding-bottom: 20px;\n    color: white;\n}\n.follow[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    vertical-align: middle;\n}\n.follow[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{\n    padding: 10px;\n}\n.follow[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]:hover{\n    -webkit-transform: scale(1.1);\n            transform: scale(1.1);\n}\n@media screen and (min-width:200px) and (max-width:800px){\n    .body[_ngcontent-%COMP%]{\n        height: 110px;\n    }\n    .follow[_ngcontent-%COMP%]{\n        height: 60px;\n    }\n    .follow[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{\n        padding: 5px;\n    }\n    .yea[_ngcontent-%COMP%]{\n        height: 270px;\n    }\n    .app[_ngcontent-%COMP%]{\n        margin-top: 3%;\n    }\n    .content[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%]{\n        font-size: .7em;\n        font-weight: bolder;\n    }\n    .content[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n        font-size: .7em;\n    }\n    .content[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%], p[_ngcontent-%COMP%]{\n        padding:8%;\n    }\n    .app[_ngcontent-%COMP%]{\n        float: left;\n    }\n}\n@media screen and (min-width:750px) and (max-width:1100px){\n    .body[_ngcontent-%COMP%]{\n        margin-top: 10%;\n        height: 140px;\n    }\n    .yea[_ngcontent-%COMP%]{\n        height: 280px;\n    }\n    .follow[_ngcontent-%COMP%] {\n        height: 37px;\n    }\n    .app[_ngcontent-%COMP%] {\n        margin-top: 0;\n        float: right;\n    }\n}"];
+=======
+var styles = [".yea[_ngcontent-%COMP%] {\n    background-image: url('/assets/images/sportsocialteamviewheader.jpg');\n    height: 220px;\n    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;\n}\n.app[_ngcontent-%COMP%] {\n    float: right;\n}\n.app[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    height: 30px;\n    width: 30px;\n}\n.app[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{\n    color: white;\n}\n.body[_ngcontent-%COMP%]{\n    padding-top: 10px;\n    margin: 0 auto;\n    width: 80%;\n    position: relative;\n    bottom: 0%;\n}\n.body[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{\n    display: inline-block;\n}\n.content[_ngcontent-%COMP%]{\n    display: block;\n    color: #ffffff;\n    width: 20%;\n    margin-left: 5%;\n    vertical-align: top;\n}\n.content[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%]{\n    font-size: 1.3em;\n    font-weight: bolder;\n}\n.content[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n    font-size: 1em;\n}\n.content[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%], p[_ngcontent-%COMP%]{\n    color: #ffffff;\n    padding:2.5%;\n}\n.body[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n    font-size: 0.5em;\n    color: #bbbbbb;\n}\n.follow[_ngcontent-%COMP%] {\n    vertical-align: middle;\n    margin: 0 auto;\n    width: 80%;\n    margin-top:35px;\n    border-top: 1.5px solid rgb(170, 169, 169);\n    border-bottom: 1.5px solid rgb(170, 169, 169);\n    \n    padding-top: 20px;\n    padding-bottom: 20px;\n    color: white;\n}\n.follow[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    vertical-align: middle;\n}\n.follow[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{\n    padding: 10px;\n}\n.follow[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]:hover{\n    -webkit-transform: scale(1.1);\n            transform: scale(1.1);\n}\n@media screen and (min-width:200px) and (max-width:800px){\n    .body[_ngcontent-%COMP%]{\n        height: 110px;\n    }\n    .follow[_ngcontent-%COMP%]{\n        height: 60px;\n    }\n    .follow[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{\n        padding: 5px;\n    }\n    .yea[_ngcontent-%COMP%]{\n        height: 270px;\n    }\n    .app[_ngcontent-%COMP%]{\n        margin-top: 3%;\n    }\n    .content[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%]{\n        font-size: .7em;\n        font-weight: bolder;\n    }\n    .content[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n        font-size: .7em;\n    }\n    .content[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%], p[_ngcontent-%COMP%]{\n        padding:8%;\n    }\n    .app[_ngcontent-%COMP%]{\n        float: left;\n    }\n}\n@media screen and (min-width:750px) and (max-width:1100px){\n    .body[_ngcontent-%COMP%]{\n        margin-top: 10%;\n        height: 140px;\n    }\n    .yea[_ngcontent-%COMP%]{\n        height: 280px;\n    }\n    .follow[_ngcontent-%COMP%] {\n        height: 37px;\n    }\n    .app[_ngcontent-%COMP%] {\n        margin-top: 0;\n        float: right;\n    }\n}"];
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
 exports.styles = styles;
 
 
@@ -4540,10 +4635,18 @@ var i9 = __webpack_require__(/*! ../../cards/match-card/match-card.module */ "./
 var i10 = __webpack_require__(/*! ../../header/header.module */ "./src/app/header/header.module.ts");
 var i11 = __webpack_require__(/*! ../../footer/footer.module */ "./src/app/footer/footer.module.ts");
 var i12 = __webpack_require__(/*! ../../navigation-bar/navigation-bar.module */ "./src/app/navigation-bar/navigation-bar.module.ts");
+<<<<<<< HEAD
 var i13 = __webpack_require__(/*! ../../carousel/carousel.module */ "./src/app/carousel/carousel.module.ts");
 var i14 = __webpack_require__(/*! ../../cards/ss-match-card/ss-match-card.module */ "./src/app/cards/ss-match-card/ss-match-card.module.ts");
 var i15 = __webpack_require__(/*! ./global-match-feed.component */ "./src/app/global-feed/global-match-feed/global-match-feed.component.ts");
 var GlobalMatchFeedModuleNgFactory = i0.ɵcmf(i1.GlobalMatchFeedModule, [], function (_l) { return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i2.ɵEmptyOutletComponentNgFactory, i3.GlobalMatchFeedComponentNgFactory]], [3, i0.ComponentFactoryResolver], i0.NgModuleRef]), i0.ɵmpd(4608, i4.NgLocalization, i4.NgLocaleLocalization, [i0.LOCALE_ID, [2, i4.ɵangular_packages_common_common_a]]), i0.ɵmpd(4608, i5.NgMasonryGridService, i5.NgMasonryGridService, [i0.PLATFORM_ID]), i0.ɵmpd(1073742336, i4.CommonModule, i4.CommonModule, []), i0.ɵmpd(1073742336, i6.RouterModule, i6.RouterModule, [[2, i6.ɵangular_packages_router_router_a], [2, i6.Router]]), i0.ɵmpd(1073742336, i7.GalleryModule, i7.GalleryModule, []), i0.ɵmpd(1073742336, i8.OpenMatchCardModule, i8.OpenMatchCardModule, []), i0.ɵmpd(1073742336, i9.MatchCardModule, i9.MatchCardModule, []), i0.ɵmpd(1073742336, i10.HeaderModule, i10.HeaderModule, []), i0.ɵmpd(1073742336, i11.FooterModule, i11.FooterModule, []), i0.ɵmpd(1073742336, i12.NavigationBarModule, i12.NavigationBarModule, []), i0.ɵmpd(1073742336, i13.CarouselModule, i13.CarouselModule, []), i0.ɵmpd(1073742336, i5.NgMasonryGridModule, i5.NgMasonryGridModule, []), i0.ɵmpd(1073742336, i14.SsMatchCardModule, i14.SsMatchCardModule, []), i0.ɵmpd(1073742336, i1.GlobalMatchFeedModule, i1.GlobalMatchFeedModule, []), i0.ɵmpd(1024, i6.ROUTES, function () { return [[{ path: "", component: i15.GlobalMatchFeedComponent }]]; }, [])]); });
+=======
+var i13 = __webpack_require__(/*! ../../side-nav/side-nav.module */ "./src/app/side-nav/side-nav.module.ts");
+var i14 = __webpack_require__(/*! ../../carousel/carousel.module */ "./src/app/carousel/carousel.module.ts");
+var i15 = __webpack_require__(/*! ../../cards/ss-match-card/ss-match-card.module */ "./src/app/cards/ss-match-card/ss-match-card.module.ts");
+var i16 = __webpack_require__(/*! ./global-match-feed.component */ "./src/app/global-feed/global-match-feed/global-match-feed.component.ts");
+var GlobalMatchFeedModuleNgFactory = i0.ɵcmf(i1.GlobalMatchFeedModule, [], function (_l) { return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i2.ɵEmptyOutletComponentNgFactory, i3.GlobalMatchFeedComponentNgFactory]], [3, i0.ComponentFactoryResolver], i0.NgModuleRef]), i0.ɵmpd(4608, i4.NgLocalization, i4.NgLocaleLocalization, [i0.LOCALE_ID, [2, i4.ɵangular_packages_common_common_a]]), i0.ɵmpd(4608, i5.NgMasonryGridService, i5.NgMasonryGridService, [i0.PLATFORM_ID]), i0.ɵmpd(1073742336, i4.CommonModule, i4.CommonModule, []), i0.ɵmpd(1073742336, i6.RouterModule, i6.RouterModule, [[2, i6.ɵangular_packages_router_router_a], [2, i6.Router]]), i0.ɵmpd(1073742336, i7.GalleryModule, i7.GalleryModule, []), i0.ɵmpd(1073742336, i8.OpenMatchCardModule, i8.OpenMatchCardModule, []), i0.ɵmpd(1073742336, i9.MatchCardModule, i9.MatchCardModule, []), i0.ɵmpd(1073742336, i10.HeaderModule, i10.HeaderModule, []), i0.ɵmpd(1073742336, i11.FooterModule, i11.FooterModule, []), i0.ɵmpd(1073742336, i12.NavigationBarModule, i12.NavigationBarModule, []), i0.ɵmpd(1073742336, i13.SideNavModule, i13.SideNavModule, []), i0.ɵmpd(1073742336, i14.CarouselModule, i14.CarouselModule, []), i0.ɵmpd(1073742336, i5.NgMasonryGridModule, i5.NgMasonryGridModule, []), i0.ɵmpd(1073742336, i15.SsMatchCardModule, i15.SsMatchCardModule, []), i0.ɵmpd(1073742336, i1.GlobalMatchFeedModule, i1.GlobalMatchFeedModule, []), i0.ɵmpd(1024, i6.ROUTES, function () { return [[{ path: "", component: i16.GlobalMatchFeedComponent }]]; }, [])]); });
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
 exports.GlobalMatchFeedModuleNgFactory = GlobalMatchFeedModuleNgFactory;
 
 
@@ -4831,7 +4934,11 @@ exports.GlobalOpenArenaFeedModule = GlobalOpenArenaFeedModule;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
+<<<<<<< HEAD
 var styles = [".home[_ngcontent-%COMP%]{\n    width:100%;\n    margin-top: 4%;\n    overflow: hidden;\n}\n.home[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{\n    display: inline-block;\n}\n.sidenav[_ngcontent-%COMP%]{\n    margin-top: 0%;\n    width: 18%;\n    height: 100%;\n    float: left;\n}\n.rightside[_ngcontent-%COMP%]{\n    \n    float: right;\n    width: 82%;\n    padding-left: 20px;\n    height: 520px;\n    z-index: 10;\n    border-bottom: 1px solid rgb(218, 218, 218);\n}\n.blog[_ngcontent-%COMP%]{\n    margin: 0 auto;\n    \n    width: 92%;\n    overflow-y: hidden;\n    height: 270px;\n    scroll-behavior: smooth;\n    overflow-x: scroll;\n    white-space: nowrap !important;\n    -webkit-overflow-scrolling: touch;\n    -ms-scroll-snap-type: x mandatory;\n        scroll-snap-type: x mandatory;\n    -ms-scroll-snap-destination: 0% 100%;\n        scroll-snap-destination: 0% 100%;\n    -ms-scroll-snap-points-x: repeat(100%);\n        scroll-snap-points-x: repeat(100%);\n    \n}\n.blog[_ngcontent-%COMP%]::-webkit-scrollbar {\n    display: none;\n}\n.leftarrow[_ngcontent-%COMP%] {\n    position: absolute;\n    margin-top: 80px;\n    width: 30px;\n    margin-left:-37px;\n    border-radius: 50%;\n    height: 30px;\n    background-size: 100% 100%; \n}\n.rightarrow[_ngcontent-%COMP%]{\n    position: absolute;\n    margin-left: 75%;\n    margin-top: 80px;\n    width: 30px;\n    border-radius: 50%;\n    height: 30px;\n    background-size: 100% 100%;\n}\n.leftarrow[_ngcontent-%COMP%], .rightarrow[_ngcontent-%COMP%]:hover{\n    cursor: pointer;\n    box-shadow: 3px 3px 5px #ecebeb;\n}\n.leftarrow[_ngcontent-%COMP%] {\n    border: 1px solid silver;\n    \n    background-image: url('/assets/images/sportsocialhomearrow1.png');\n}\n.rightarrow[_ngcontent-%COMP%] {\n    border: 1px solid silver;\n      \n    background-image: url('/assets/images/sportsocialhomearrow.png');\n}\n.lefttarrow[_ngcontent-%COMP%] {\n    position: absolute;\n    margin-top: 37px;\n    margin-left: -37px;\n    width: 30px;\n    border-radius: 50%;\n    height: 30px;\n    background-size: 100% 100%; \n}\n.righttarrow[_ngcontent-%COMP%]{\n    position: absolute;\n    margin-left: 74%;\n    margin-top: 37px;\n    width: 30px;\n    border-radius: 50%;\n    height: 30px;\n    background-size: 100% 100%;\n}\n.lefttarrow[_ngcontent-%COMP%], .righttarrow[_ngcontent-%COMP%]:hover{\n    cursor: pointer;\n    box-shadow: 3px 3px 5px #ecebeb;\n}\n.lefttarrow[_ngcontent-%COMP%] {\n    border: 1px solid silver;\n    \n    background-image: url('/assets/images/sportsocialhomearrow1.png');\n}\n.righttarrow[_ngcontent-%COMP%] {\n    border: 1px solid silver;\n      \n    background-image: url('/assets/images/sportsocialhomearrow.png');\n}\n.topic[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%]{\n    text-decoration: none;\n    font-weight: lighter;\n    font-size: 1.6em;\n    margin-left: 4%;\n    margin-top: 10px;\n    margin-bottom: 8px;\n}\n.topic[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%]{\n    float: right;\n    margin-right: 15px;\n    color: rgb(133, 131, 131);\n    font-size: 0.8em;\n    font-weight: lighter;\n}\n.blog[_ngcontent-%COMP%]   .outdiv[_ngcontent-%COMP%]{\n    display: inline-block;\n}\n.outdiv[_ngcontent-%COMP%]{\n    scroll-snap-align: start;\n    width: 31%;\n    margin: 1% 1.1% 0% 1.1%;\n    border-radius: 2%;\n    vertical-align: top;\n    \n}\n.head[_ngcontent-%COMP%]{\n    width: 100%;\n    height: 34px;\n    border-bottom: 1px solid #dddddd;\n}\n.gamename[_ngcontent-%COMP%] {\n    height: 100%;\n    width: 60%;\n    margin-left: 2%;\n    float:left;\n}\n.result[_ngcontent-%COMP%] {\n    height: 100%;\n    width: 30%;\n    margin-right: 2%;\n    float: right;\n}\n.result[_ngcontent-%COMP%]   b[_ngcontent-%COMP%], .result[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    float: right;\n}\n.result[_ngcontent-%COMP%]   b[_ngcontent-%COMP%] {\n    font-size: .9em;\n}\n.gamename[_ngcontent-%COMP%]   b[_ngcontent-%COMP%] {\n    font-size: 0.9em;\n}\n.gamename[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    margin-top: -0.5%;\n    font-size: 0.7em;\n    font-weight: lighter;\n}\n.result[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    margin-top: -0.5%;\n    font-size: 0.8em;\n    font-weight: bold;\n    color: #5f5e5e;\n}\n.cardData[_ngcontent-%COMP%]{\n    float: left;\n    width: 100%;\n    height: 40px;\n}\n.team1[_ngcontent-%COMP%] {\n    width:30%;\n}\n.t1score[_ngcontent-%COMP%] {\n    width: 20%;\n}\n.t2score[_ngcontent-%COMP%] {\n    width: 20%;\n}\n.team2[_ngcontent-%COMP%] {\n    width:30%;\n}\n.team1[_ngcontent-%COMP%], .team2[_ngcontent-%COMP%] {\n    text-align: center;\n}\n.t1score[_ngcontent-%COMP%], .t2score[_ngcontent-%COMP%] {\n    color: black;\n    text-align: center;\n    margin-top: 7%;\n}\n.team1[_ngcontent-%COMP%], .team2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n    color: black;\n    font-size: 0.8em;\n    text-align: center;\n}\n.team1[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    border-radius: 50%;\n    height: 40px;\n    width: 40px;\n}\n.team2[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n   border-radius: 50%;\n   height: 40px;\n   width: 40px;\n}\n.card[_ngcontent-%COMP%]{\n    display: -ms-grid;\n    display: grid;\n    width: 100%;\n    height: 180px;\n    border: 1px solid #929292;\n    margin-bottom: 2%;\n    border-radius: 2%;\n    box-shadow: 3px 3px 5px #9c9c9c;\n}\n.matchstatus[_ngcontent-%COMP%]{\n    width: 100%;\n    height: 30px;\n    margin-top: 5%;\n}\n.matchstatus[_ngcontent-%COMP%] > textarea[_ngcontent-%COMP%]{\n    width: 100%;\n    background-color: white;\n    overflow: hidden;\n    border: none;\n    resize: none;\n    text-align: center;\n    height: auto;\n    font-size: .6em;\n    font-weight: bolder;\n}\n.footer[_ngcontent-%COMP%]{\n    float: left;\n    border-top: 1px solid #d3d1d1;\n    width: 100%;\n    height: 30px;\n}\n.Button[_ngcontent-%COMP%]{\n    border: none;\n    width: 25%;\n    cursor: pointer;\n    outline: none;\n    margin-top: 2%;\n    text-align: center;\n    font-size: 0.9em;\n    color: #686868;\n    background-color: transparent;\n}\n@media screen and (min-width: 700px) and (max-width: 950px){\n    \n    .rightside[_ngcontent-%COMP%]{\n        margin-top: 7%;\n    }\n    .leftarrow[_ngcontent-%COMP%], .rightarrow[_ngcontent-%COMP%]{\n        margin-top: 16%;\n    }\n    .card[_ngcontent-%COMP%] {\n        height: 230px;\n    }\n    .home[_ngcontent-%COMP%]   .sidenav[_ngcontent-%COMP%]{\n        display: none;\n    }\n    .msidenav[_ngcontent-%COMP%]{\n        display: block;\n    }\n    .rightside[_ngcontent-%COMP%] {\n        width: 100%;\n    }\n    .outdiv[_ngcontent-%COMP%]{\n        width: 48%;\n    }\n    .blog[_ngcontent-%COMP%]{\n        width: 91%;\n        height: 200px;\n    }\n    .card[_ngcontent-%COMP%]{\n        width: 95%;\n        height: 210px;\n    }\n    .leftarrow[_ngcontent-%COMP%], .rightarrow[_ngcontent-%COMP%]{\n        margin-top: 11%;\n        width: 4%;\n    }\n    .leftarrow[_ngcontent-%COMP%]{\n        margin-left: -3%;\n    }\n    .rightarrow[_ngcontent-%COMP%]{\n        margin-left: 90%;\n    }\n    .lefttarrow[_ngcontent-%COMP%]{\n        margin-left: -4%;\n    }\n    .righttarrow[_ngcontent-%COMP%]{\n        margin-left: 89%;\n    }\n    .home[_ngcontent-%COMP%]{\n        margin-top: 1%;\n    }\n    .home[_ngcontent-%COMP%]   .sidenav[_ngcontent-%COMP%]{\n        display: none;\n    }\n    .msidenav[_ngcontent-%COMP%]{\n        text-align: center;\n        display:block;\n        margin-top: 10%;\n    }\n}\n@media screen and (min-width:200px) and (max-width:700px){\n    .team1[_ngcontent-%COMP%], .team2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n        font-size: 0.9em;\n    }\n\n    .creator[_ngcontent-%COMP%]{\n        margin-top: 12%;\n    }\n    .username[_ngcontent-%COMP%]{\n        font-size: .6em;\n    }\n    #creatorname[_ngcontent-%COMP%]{\n        font-size: .8em;\n    }\n    .footer[_ngcontent-%COMP%] > button[_ngcontent-%COMP%]{\n        font-size: 0.8em;\n    }\n    .eventtext[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n        font-size: .8em;\n    }\n    .home[_ngcontent-%COMP%]   .sidenav[_ngcontent-%COMP%]{\n        display: none;\n    }\n    .msidenav[_ngcontent-%COMP%]{\n        text-align: center;\n        display:block;\n        margin-top: 24%;\n    }\n    .rightside[_ngcontent-%COMP%] {\n        height: 450px;\n        width: 100%;\n    }\n    .outdiv[_ngcontent-%COMP%]{\n        width: 90%;\n    }\n    .blog[_ngcontent-%COMP%]{\n        width: 85%;\n        height: 200px;\n    }\n    .card[_ngcontent-%COMP%]{\n        width: 95%;\n        height: 180px;\n    }\n    .gamename[_ngcontent-%COMP%], .result[_ngcontent-%COMP%]   b[_ngcontent-%COMP%]{\n        font-size: 0.8em;\n    }\n    .result[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n        font-size: 0.7em;\n    }\n    .cardData[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n        height: 35px;\n        width: 35px;\n    }\n    .t1score[_ngcontent-%COMP%], .t2score[_ngcontent-%COMP%]{\n        font-size: 0.75em;\n    }\n    .leftarrow[_ngcontent-%COMP%], .rightarrow[_ngcontent-%COMP%], .lefttarrow[_ngcontent-%COMP%], .righttarrow[_ngcontent-%COMP%]{\n        display: none;\n    }\n    .home[_ngcontent-%COMP%]{\n        margin-top: 10%;\n    }\n    .topic[_ngcontent-%COMP%]{\n        padding: 20px;\n    }\n    h1[_ngcontent-%COMP%]{\n        padding: 20px;\n    }\n    .news-section[_ngcontent-%COMP%]{\n        width: 80%;\n    }\n}\n.news-section[_ngcontent-%COMP%]{\n    margin: 0 auto;\n    \n    width: 90%;\n    overflow-y: hidden;\n    height: 150px;\n    scroll-behavior: smooth;\n    overflow-x: scroll;\n    white-space: nowrap !important;\n    -webkit-overflow-scrolling: touch;\n    -ms-scroll-snap-type: x mandatory;\n        scroll-snap-type: x mandatory;\n    -ms-scroll-snap-destination: 0% 100%;\n        scroll-snap-destination: 0% 100%;\n    -ms-scroll-snap-points-x: repeat(100%);\n        scroll-snap-points-x: repeat(100%);\n}\n.news-section[_ngcontent-%COMP%]::-webkit-scrollbar {\n    display: none;\n}\nh1[_ngcontent-%COMP%]{\n    font-size: 1.6em;\n    margin-bottom: 8px;\n    margin-left: 4%;\n    font-weight: lighter;\n}\nh1[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{\n    float: right;\n    margin-right: 15px;\n    color: rgb(133, 131, 131);\n    font-size: 0.8em;\n    font-weight: lighter;\n    cursor: pointer;\n}\n.news-card[_ngcontent-%COMP%]{\n    width: 100%;\n    height: 120px;\n    border-right: 1px solid #ece9e9;\n    border-bottom: 1px solid #ece9e9;\n    margin-bottom: 2%;\n    border-radius: 2%;\n    overflow: hidden;\n    \n}\n.news-img[_ngcontent-%COMP%]{\n    \n    float: left;\n    width: 40%;\n}\n.news-img[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    height: 70px;\n    width: 90%;\n    border-radius: 5px;\n}\n.news-detail[_ngcontent-%COMP%]{\n    \n    word-wrap: break-word;\n    \n    width: 60%;\n    float: right;\n    font-size: 0.7em;\n}\n.news-section[_ngcontent-%COMP%]   .outdiv[_ngcontent-%COMP%]{\n    display: inline-block;\n}\n.news-detail[_ngcontent-%COMP%]   textarea[_ngcontent-%COMP%]{\n        width: 100%;\n        color:black;\n        background-color: white;\n        overflow: hidden;\n        border: none;\n        resize: none;\n        text-align: center;\n        height: auto;\n        font-size: 1.5em;\n        font-weight: bolder;\n}\n.news-detail[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{\n    color: rgb(77, 77, 77);\n    padding-top: 10px;\n    font-size: 1.3em;\n    padding-left: 25px;\n}"];
+=======
+var styles = [".home[_ngcontent-%COMP%]{\n    width:100%;\n    margin-top: 4%;\n    overflow: hidden;\n}\n.home[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{\n    display: inline-block;\n}\n.sidenav[_ngcontent-%COMP%]{\n    margin-top: 0%;\n    width: 18%;\n    height: 100%;\n    float: left;\n}\n.rightside[_ngcontent-%COMP%]{\n    \n    float: right;\n    width: 82%;\n    padding-left: 20px;\n    height: 520px;\n    z-index: 10;\n    border-left: 1px solid rgb(218, 218, 218);\n    border-bottom: 1px solid rgb(218, 218, 218);\n}\n.blog[_ngcontent-%COMP%]{\n    margin: 0 auto;\n    \n    width: 92%;\n    overflow-y: hidden;\n    height: 270px;\n    scroll-behavior: smooth;\n    overflow-x: scroll;\n    white-space: nowrap !important;\n    -webkit-overflow-scrolling: touch;\n    -ms-scroll-snap-type: x mandatory;\n        scroll-snap-type: x mandatory;\n    -ms-scroll-snap-destination: 0% 100%;\n        scroll-snap-destination: 0% 100%;\n    -ms-scroll-snap-points-x: repeat(100%);\n        scroll-snap-points-x: repeat(100%);\n    \n}\n.blog[_ngcontent-%COMP%]::-webkit-scrollbar {\n    display: none;\n}\n.leftarrow[_ngcontent-%COMP%] {\n    position: absolute;\n    margin-top: 80px;\n    width: 30px;\n    margin-left:-37px;\n    border-radius: 50%;\n    height: 30px;\n    background-size: 100% 100%; \n}\n.rightarrow[_ngcontent-%COMP%]{\n    position: absolute;\n    margin-left: 75%;\n    margin-top: 80px;\n    width: 30px;\n    border-radius: 50%;\n    height: 30px;\n    background-size: 100% 100%;\n}\n.leftarrow[_ngcontent-%COMP%], .rightarrow[_ngcontent-%COMP%]:hover{\n    cursor: pointer;\n    box-shadow: 3px 3px 5px #ecebeb;\n}\n.leftarrow[_ngcontent-%COMP%] {\n    border: 1px solid silver;\n    \n    background-image: url('/assets/images/sportsocialhomearrow1.png');\n}\n.rightarrow[_ngcontent-%COMP%] {\n    border: 1px solid silver;\n      \n    background-image: url('/assets/images/sportsocialhomearrow.png');\n}\n.lefttarrow[_ngcontent-%COMP%] {\n    position: absolute;\n    margin-top: 37px;\n    margin-left: -37px;\n    width: 30px;\n    border-radius: 50%;\n    height: 30px;\n    background-size: 100% 100%; \n}\n.righttarrow[_ngcontent-%COMP%]{\n    position: absolute;\n    margin-left: 74%;\n    margin-top: 37px;\n    width: 30px;\n    border-radius: 50%;\n    height: 30px;\n    background-size: 100% 100%;\n}\n.lefttarrow[_ngcontent-%COMP%], .righttarrow[_ngcontent-%COMP%]:hover{\n    cursor: pointer;\n    box-shadow: 3px 3px 5px #ecebeb;\n}\n.lefttarrow[_ngcontent-%COMP%] {\n    border: 1px solid silver;\n    \n    background-image: url('/assets/images/sportsocialhomearrow1.png');\n}\n.righttarrow[_ngcontent-%COMP%] {\n    border: 1px solid silver;\n      \n    background-image: url('/assets/images/sportsocialhomearrow.png');\n}\n.topic[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%]{\n    text-decoration: none;\n    font-weight: lighter;\n    font-size: 1.6em;\n    margin-left: 4%;\n    margin-top: 10px;\n    margin-bottom: 8px;\n}\n.topic[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%]{\n    float: right;\n    margin-right: 15px;\n    color: rgb(133, 131, 131);\n    font-size: 0.8em;\n    font-weight: lighter;\n}\n.blog[_ngcontent-%COMP%]   .outdiv[_ngcontent-%COMP%]{\n    display: inline-block;\n}\n.outdiv[_ngcontent-%COMP%]{\n    scroll-snap-align: start;\n    width: 31%;\n    margin: 1% 1.1% 0% 1.1%;\n    border-radius: 2%;\n    vertical-align: top;\n}\n.head[_ngcontent-%COMP%]{\n    width: 100%;\n    height: 34px;\n    border-bottom: 1px solid #dddddd;\n}\n.gamename[_ngcontent-%COMP%] {\n    height: 100%;\n    width: 60%;\n    margin-left: 2%;\n    float:left;\n}\n.result[_ngcontent-%COMP%] {\n    height: 100%;\n    width: 30%;\n    margin-right: 2%;\n    float: right;\n}\n.result[_ngcontent-%COMP%]   b[_ngcontent-%COMP%], .result[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    float: right;\n}\n.result[_ngcontent-%COMP%]   b[_ngcontent-%COMP%] {\n    font-size: .9em;\n}\n.gamename[_ngcontent-%COMP%]   b[_ngcontent-%COMP%] {\n    font-size: 0.9em;\n}\n.gamename[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    margin-top: -0.5%;\n    font-size: 0.7em;\n    font-weight: lighter;\n}\n.result[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    margin-top: -0.5%;\n    font-size: 0.8em;\n    font-weight: bold;\n    color: #5f5e5e;\n}\n.cardData[_ngcontent-%COMP%]{\n    float: left;\n    width: 100%;\n    height: 40px;\n}\n.team1[_ngcontent-%COMP%] {\n    width:30%;\n}\n.t1score[_ngcontent-%COMP%] {\n    width: 20%;\n}\n.t2score[_ngcontent-%COMP%] {\n    width: 20%;\n}\n.team2[_ngcontent-%COMP%] {\n    width:30%;\n}\n.team1[_ngcontent-%COMP%], .team2[_ngcontent-%COMP%] {\n    text-align: center;\n}\n.t1score[_ngcontent-%COMP%], .t2score[_ngcontent-%COMP%] {\n    color: black;\n    text-align: center;\n    margin-top: 7%;\n}\n.team1[_ngcontent-%COMP%], .team2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n    color: black;\n    font-size: 0.8em;\n    text-align: center;\n}\n.team1[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    border-radius: 50%;\n    height: 40px;\n    width: 40px;\n}\n.team2[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n   border-radius: 50%;\n   height: 40px;\n   width: 40px;\n}\n.card[_ngcontent-%COMP%]{\n    display: -ms-grid;\n    display: grid;\n    width: 100%;\n    height: 180px;\n    border: 1px solid #929292;\n    margin-bottom: 2%;\n    border-radius: 2%;\n    box-shadow: 3px 3px 5px #9c9c9c;\n}\n.matchstatus[_ngcontent-%COMP%]{\n    width: 100%;\n    height: 30px;\n    margin-top: 5%;\n}\n.matchstatus[_ngcontent-%COMP%] > textarea[_ngcontent-%COMP%]{\n    width: 100%;\n    background-color: white;\n    overflow: hidden;\n    border: none;\n    resize: none;\n    text-align: center;\n    height: auto;\n    font-size: .6em;\n    font-weight: bolder;\n}\n.footer[_ngcontent-%COMP%]{\n    float: left;\n    border-top: 1px solid #d3d1d1;\n    width: 100%;\n    height: 30px;\n}\n.Button[_ngcontent-%COMP%]{\n    border: none;\n    width: 25%;\n    cursor: pointer;\n    outline: none;\n    margin-top: 2%;\n    text-align: center;\n    font-size: 0.9em;\n    color: #686868;\n    background-color: transparent;\n}\n@media screen and (min-width: 700px) and (max-width: 950px){\n    \n    .rightside[_ngcontent-%COMP%]{\n        margin-top: 7%;\n    }\n    .leftarrow[_ngcontent-%COMP%], .rightarrow[_ngcontent-%COMP%]{\n        margin-top: 16%;\n    }\n    .card[_ngcontent-%COMP%] {\n        height: 230px;\n    }\n    .home[_ngcontent-%COMP%]   .sidenav[_ngcontent-%COMP%]{\n        display: none;\n    }\n    .msidenav[_ngcontent-%COMP%]{\n        display: block;\n    }\n    .rightside[_ngcontent-%COMP%] {\n        width: 100%;\n    }\n    .outdiv[_ngcontent-%COMP%]{\n        width: 48%;\n    }\n    .blog[_ngcontent-%COMP%]{\n        width: 91%;\n        height: 200px;\n    }\n    .card[_ngcontent-%COMP%]{\n        width: 95%;\n        height: 210px;\n    }\n    .leftarrow[_ngcontent-%COMP%], .rightarrow[_ngcontent-%COMP%]{\n        margin-top: 11%;\n        width: 4%;\n    }\n    .leftarrow[_ngcontent-%COMP%]{\n        margin-left: -3%;\n    }\n    .rightarrow[_ngcontent-%COMP%]{\n        margin-left: 90%;\n    }\n    .lefttarrow[_ngcontent-%COMP%]{\n        margin-left: -4%;\n    }\n    .righttarrow[_ngcontent-%COMP%]{\n        margin-left: 89%;\n    }\n    .home[_ngcontent-%COMP%]{\n        margin-top: 1%;\n    }\n    .home[_ngcontent-%COMP%]   .sidenav[_ngcontent-%COMP%]{\n        display: none;\n    }\n    .msidenav[_ngcontent-%COMP%]{\n        text-align: center;\n        display:block;\n        margin-top: 10%;\n    }\n}\n@media screen and (min-width:200px) and (max-width:700px){\n    .team1[_ngcontent-%COMP%], .team2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n        font-size: 0.9em;\n    }\n\n    .creator[_ngcontent-%COMP%]{\n        margin-top: 12%;\n    }\n    .username[_ngcontent-%COMP%]{\n        font-size: .6em;\n    }\n    #creatorname[_ngcontent-%COMP%]{\n        font-size: .8em;\n    }\n    .footer[_ngcontent-%COMP%] > button[_ngcontent-%COMP%]{\n        font-size: 0.8em;\n    }\n    .eventtext[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n        font-size: .8em;\n    }\n    .home[_ngcontent-%COMP%]   .sidenav[_ngcontent-%COMP%]{\n        display: none;\n    }\n    .msidenav[_ngcontent-%COMP%]{\n        text-align: center;\n        display:block;\n        margin-top: 24%;\n    }\n    .rightside[_ngcontent-%COMP%] {\n        height: 450px;\n        width: 100%;\n    }\n    .outdiv[_ngcontent-%COMP%]{\n        width: 90%;\n    }\n    .blog[_ngcontent-%COMP%]{\n        width: 85%;\n        height: 200px;\n    }\n    .card[_ngcontent-%COMP%]{\n        width: 95%;\n        height: 180px;\n    }\n    .gamename[_ngcontent-%COMP%], .result[_ngcontent-%COMP%]   b[_ngcontent-%COMP%]{\n        font-size: 0.8em;\n    }\n    .result[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n        font-size: 0.7em;\n    }\n    .cardData[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n        height: 35px;\n        width: 35px;\n    }\n    .t1score[_ngcontent-%COMP%], .t2score[_ngcontent-%COMP%]{\n        font-size: 0.75em;\n    }\n    .leftarrow[_ngcontent-%COMP%], .rightarrow[_ngcontent-%COMP%], .lefttarrow[_ngcontent-%COMP%], .righttarrow[_ngcontent-%COMP%]{\n        display: none;\n    }\n    .home[_ngcontent-%COMP%]{\n        margin-top: 10%;\n    }\n    .topic[_ngcontent-%COMP%]{\n        padding: 20px;\n    }\n    h1[_ngcontent-%COMP%]{\n        padding: 20px;\n    }\n    .news-section[_ngcontent-%COMP%]{\n        width: 80%;\n    }\n}\n.news-section[_ngcontent-%COMP%]{\n    margin: 0 auto;\n    \n    width: 90%;\n    overflow-y: hidden;\n    height: 150px;\n    scroll-behavior: smooth;\n    overflow-x: scroll;\n    white-space: nowrap !important;\n    -webkit-overflow-scrolling: touch;\n    -ms-scroll-snap-type: x mandatory;\n        scroll-snap-type: x mandatory;\n    -ms-scroll-snap-destination: 0% 100%;\n        scroll-snap-destination: 0% 100%;\n    -ms-scroll-snap-points-x: repeat(100%);\n        scroll-snap-points-x: repeat(100%);\n}\n.news-section[_ngcontent-%COMP%]::-webkit-scrollbar {\n    display: none;\n}\nh1[_ngcontent-%COMP%]{\n    font-size: 1.6em;\n    margin-bottom: 8px;\n    margin-left: 4%;\n    font-weight: lighter;\n}\nh1[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{\n    float: right;\n    margin-right: 15px;\n    color: rgb(133, 131, 131);\n    font-size: 0.8em;\n    font-weight: lighter;\n}\n.news-card[_ngcontent-%COMP%]{\n    width: 100%;\n    height: 120px;\n    border-right: 1px solid #ece9e9;\n    border-bottom: 1px solid #ece9e9;\n    margin-bottom: 2%;\n    border-radius: 2%;\n    overflow: hidden;\n    cursor: pointer;  \n}\n.news-img[_ngcontent-%COMP%]{\n    \n    float: left;\n    width: 40%;\n}\n.news-img[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    height: 70px;\n    width: 90%;\n    border-radius: 5px;\n}\n.news-detail[_ngcontent-%COMP%]{\n    \n    word-wrap: break-word;\n    \n    width: 60%;\n    float: right;\n    font-size: 0.7em;\n}\n.news-section[_ngcontent-%COMP%]   .outdiv[_ngcontent-%COMP%]{\n    display: inline-block;\n}\n.news-detail[_ngcontent-%COMP%]   textarea[_ngcontent-%COMP%]{\n        width: 100%;\n        color:black;\n        background-color: white;\n        overflow: hidden;\n        border: none;\n        resize: none;\n        text-align: center;\n        height: auto;\n        font-size: 1.5em;\n        font-weight: bolder;\n}"];
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
 exports.styles = styles;
 
 
@@ -4857,6 +4964,7 @@ var i0 = __webpack_require__(/*! ./home-match-feed.component.css.shim.ngstyle */
 var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
 var i3 = __webpack_require__(/*! @angular/router */ "@angular/router");
+<<<<<<< HEAD
 var i4 = __webpack_require__(/*! ./home-match-feed.component */ "./src/app/global-feed/home-match-feed/home-match-feed.component.ts");
 var i5 = __webpack_require__(/*! ../../shared/services/event.emiter.service */ "./src/app/shared/services/event.emiter.service.ts");
 var i6 = __webpack_require__(/*! ../../shared/services/get.service */ "./src/app/shared/services/get.service.ts");
@@ -4864,6 +4972,17 @@ var i7 = __webpack_require__(/*! @angular/http */ "@angular/http");
 var i8 = __webpack_require__(/*! ../../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
 var i9 = __webpack_require__(/*! ../../shared/services/time.service */ "./src/app/shared/services/time.service.ts");
 var i10 = __webpack_require__(/*! ../../shared/services/location.service */ "./src/app/shared/services/location.service.ts");
+=======
+var i4 = __webpack_require__(/*! ../../side-nav/side-nav.component.ngfactory */ "./src/app/side-nav/side-nav.component.ngfactory.js");
+var i5 = __webpack_require__(/*! ../../side-nav/side-nav.component */ "./src/app/side-nav/side-nav.component.ts");
+var i6 = __webpack_require__(/*! ./home-match-feed.component */ "./src/app/global-feed/home-match-feed/home-match-feed.component.ts");
+var i7 = __webpack_require__(/*! ../../shared/services/event.emiter.service */ "./src/app/shared/services/event.emiter.service.ts");
+var i8 = __webpack_require__(/*! ../../shared/services/get.service */ "./src/app/shared/services/get.service.ts");
+var i9 = __webpack_require__(/*! @angular/http */ "@angular/http");
+var i10 = __webpack_require__(/*! ../../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
+var i11 = __webpack_require__(/*! ../../shared/services/time.service */ "./src/app/shared/services/time.service.ts");
+var i12 = __webpack_require__(/*! ../../shared/services/location.service */ "./src/app/shared/services/location.service.ts");
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
 var styles_HomeMatchFeedComponent = [i0.styles];
 var RenderType_HomeMatchFeedComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_HomeMatchFeedComponent, data: {} });
 exports.RenderType_HomeMatchFeedComponent = RenderType_HomeMatchFeedComponent;
@@ -4877,6 +4996,7 @@ function View_HomeMatchFeedComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵe
     } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Prediction"])), (_l()(), i1.ɵeld(45, 0, null, null, 1, "button", [["class", "footer Button"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.openAppDownloadPopup() !== false);
         ad = (pd_0 && ad);
+<<<<<<< HEAD
     } return ad; }, null, null)), (_l()(), i1.ɵted(46, null, ["", " Talk"])), (_l()(), i1.ɵeld(47, 0, null, null, 1, "button", [["class", "footer Button"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.openAppDownloadPopup() !== false);
         ad = (pd_0 && ad);
@@ -4909,6 +5029,28 @@ exports.View_HomeMatchFeedComponent_0 = View_HomeMatchFeedComponent_0;
 function View_HomeMatchFeedComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-home-match-feed", [], null, null, null, View_HomeMatchFeedComponent_0, RenderType_HomeMatchFeedComponent)), i1.ɵdid(1, 114688, null, 0, i4.HomeMatchFeedComponent, [i5.EventEmiterService, i6.GetService, i7.Http, i8.PostService, i9.TimeService, i10.LocationService, i3.Router], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_HomeMatchFeedComponent_Host_0 = View_HomeMatchFeedComponent_Host_0;
 var HomeMatchFeedComponentNgFactory = i1.ɵccf("sports-social-home-match-feed", i4.HomeMatchFeedComponent, View_HomeMatchFeedComponent_Host_0, {}, {}, []);
+=======
+    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Talk"])), (_l()(), i1.ɵeld(47, 0, null, null, 1, "button", [["class", "footer Button"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.openAppDownloadPopup() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Promote"])), (_l()(), i1.ɵeld(49, 0, null, null, 1, "button", [["class", "footer Button"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.openAppDownloadPopup() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Watch"]))], function (_ck, _v) { var currVal_6 = i1.ɵinlineInterpolate(1, "/opencard/", _v.context.$implicit.feedid, ""); _ck(_v, 16, 0, currVal_6); }, function (_ck, _v) { var currVal_0 = _v.context.$implicit.gender; var currVal_1 = _v.context.$implicit.GameName; _ck(_v, 5, 0, currVal_0, currVal_1); var currVal_2 = i1.ɵunv(_v, 7, 0, i1.ɵnov(_v, 8).transform(_v.context.$implicit.Venue_Name, 0, 30)); _ck(_v, 7, 0, currVal_2); var currVal_3 = _v.context.$implicit.uniquename; _ck(_v, 14, 0, currVal_3); var currVal_4 = i1.ɵnov(_v, 16).target; var currVal_5 = i1.ɵnov(_v, 16).href; _ck(_v, 15, 0, currVal_4, currVal_5); var currVal_7 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.Team1Pic, ""); _ck(_v, 19, 0, currVal_7); var currVal_8 = i1.ɵunv(_v, 21, 0, i1.ɵnov(_v, 22).transform(_v.context.$implicit.Team1name, 0, 11)); _ck(_v, 21, 0, currVal_8); var currVal_9 = _v.context.$implicit.scoreTeam1; _ck(_v, 25, 0, currVal_9); var currVal_10 = _v.context.$implicit.scoreTeam2; _ck(_v, 30, 0, currVal_10); var currVal_11 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.Team2Pic, ""); _ck(_v, 34, 0, currVal_11); var currVal_12 = i1.ɵunv(_v, 36, 0, i1.ɵnov(_v, 37).transform(_v.context.$implicit.Team2name, 0, 11)); _ck(_v, 36, 0, currVal_12); var currVal_13 = i1.ɵunv(_v, 40, 0, i1.ɵnov(_v, 41).transform(_v.context.$implicit.EventText, 0, 100)); _ck(_v, 40, 0, currVal_13); }); }
+function View_HomeMatchFeedComponent_4(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, [["targett", 1]], null, 7, "div", [["class", "outdiv"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 6, "div", [["class", "news-card"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.change(_v.context.$implicit.id, _v.parent.context.$implicit.gametitle) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 1, "div", [["class", "news-img"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 0, "img", [["alt", "sportsocialimg"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 3, "div", [["class", "news-detail"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 2, "textarea", [["disabled", ""]], null, null, null, null, null)), (_l()(), i1.ɵted(6, null, ["", ".."])), i1.ɵpid(0, i2.SlicePipe, [])], null, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.image, ""); _ck(_v, 3, 0, currVal_0); var currVal_1 = i1.ɵunv(_v, 6, 0, i1.ɵnov(_v, 7).transform(_v.context.$implicit.title, 0, 100)); _ck(_v, 6, 0, currVal_1); }); }
+function View_HomeMatchFeedComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 18, "div", [["class", "rightside"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HomeMatchFeedComponent_2)), i1.ɵdid(2, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵeld(3, 0, null, null, 5, "div", [["class", "topic"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 4, "a", [], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 3, "h4", [], null, null, null, null, null)), (_l()(), i1.ɵted(6, null, ["", " matches"])), (_l()(), i1.ɵeld(7, 0, null, null, 1, "h5", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["See all"])), (_l()(), i1.ɵeld(9, 0, [[1, 0], ["blog", 1]], null, 2, "div", [["class", "blog"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HomeMatchFeedComponent_3)), i1.ɵdid(11, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(12, 0, null, null, 3, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["News"])), (_l()(), i1.ɵeld(14, 0, null, null, 1, "h2", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.changee(_v.context.$implicit.gametitle) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["See all"])), (_l()(), i1.ɵeld(16, 0, null, null, 2, "div", [["class", "news-section"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HomeMatchFeedComponent_4)), i1.ɵdid(18, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = (_co.Matcharr.length === 0); _ck(_v, 2, 0, currVal_0); var currVal_2 = _v.context.$implicit.gamearray; _ck(_v, 11, 0, currVal_2); var currVal_3 = _co.news[_v.context.$implicit.gamenumber]; _ck(_v, 18, 0, currVal_3); }, function (_ck, _v) { var currVal_1 = _v.context.$implicit.gametitle; _ck(_v, 6, 0, currVal_1); }); }
+function View_HomeMatchFeedComponent_0(_l) { return i1.ɵvid(0, [i1.ɵqud(671088640, 1, { blog: 0 }), i1.ɵqud(671088640, 2, { outdiv: 0 }), (_l()(), i1.ɵeld(2, 0, null, null, 5, "div", [["class", "home"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 2, "div", [["class", "sidenav"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 1, "sports-social-side-nav", [], null, null, null, i4.View_SideNavComponent_0, i4.RenderType_SideNavComponent)), i1.ɵdid(5, 114688, null, 0, i5.SideNavComponent, [], null, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HomeMatchFeedComponent_1)), i1.ɵdid(7, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(8, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(10, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(11, 0, null, null, 0, "br", [], null, null, null, null, null))], function (_ck, _v) { var _co = _v.component; _ck(_v, 5, 0); var currVal_0 = _co.Matcharr; _ck(_v, 7, 0, currVal_0); }, null); }
+exports.View_HomeMatchFeedComponent_0 = View_HomeMatchFeedComponent_0;
+function View_HomeMatchFeedComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-home-match-feed", [], null, null, null, View_HomeMatchFeedComponent_0, RenderType_HomeMatchFeedComponent)), i1.ɵdid(1, 114688, null, 0, i6.HomeMatchFeedComponent, [i7.EventEmiterService, i8.GetService, i9.Http, i10.PostService, i11.TimeService, i12.LocationService, i3.Router], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+exports.View_HomeMatchFeedComponent_Host_0 = View_HomeMatchFeedComponent_Host_0;
+var HomeMatchFeedComponentNgFactory = i1.ɵccf("sports-social-home-match-feed", i6.HomeMatchFeedComponent, View_HomeMatchFeedComponent_Host_0, {}, {}, []);
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
 exports.HomeMatchFeedComponentNgFactory = HomeMatchFeedComponentNgFactory;
 
 
@@ -4942,7 +5084,10 @@ var HomeMatchFeedComponent = /** @class */ (function () {
         this.location = location;
         this.router = router;
         this.Matcharr = [];
+<<<<<<< HEAD
         this.v = 0;
+=======
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
         this.index = -1; //used to provide index for it
         this.Matchnews = [];
         this.news = [];
@@ -4958,7 +5103,11 @@ var HomeMatchFeedComponent = /** @class */ (function () {
             { id: 60, title: 'Volleyball' }
         ];
     }
+<<<<<<< HEAD
     HomeMatchFeedComponent.prototype.getlocation = function () {
+=======
+    HomeMatchFeedComponent.prototype.ssmatchfeed = function () {
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
         var _this = this;
         this.location.getGeoLocation().then(function (pos) {
             for (var i = 0; i < _this.Sports.length; i++) {
@@ -4995,6 +5144,7 @@ var HomeMatchFeedComponent = /** @class */ (function () {
                         });
                         var newstring = arr[i].gender;
                         if (newstring = "Male" && "male") {
+<<<<<<< HEAD
                             _this.gendercheck = newstring.replace(/male/, "Men's");
                         }
                         else if (newstring = "Female" && "female") {
@@ -5003,6 +5153,16 @@ var HomeMatchFeedComponent = /** @class */ (function () {
                         else if (newstring = "mix") {
                             _this.gendercheck = newstring.replace(/mix/, "Mix");
                         }
+=======
+                            _this.gendercheck == newstring.replace(/male/, "Men's");
+                        }
+                        else if (newstring == "Female" && "female") {
+                            _this.gendercheck = newstring.replace(/female/, "Female's");
+                        }
+                        else
+                            (newstring == "mix");
+                        _this.gendercheck = newstring.replace(/mix/, "Mix");
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
                     }
                     if (arr.length > 0) {
                         _this.index = _this.index + 1;
@@ -5016,6 +5176,7 @@ var HomeMatchFeedComponent = /** @class */ (function () {
                     }
                 });
             }
+<<<<<<< HEAD
             // for(var k in this.tarray){
             //   this.Matcharr.push({
             //     gamenumber: null,
@@ -5024,12 +5185,15 @@ var HomeMatchFeedComponent = /** @class */ (function () {
             //   });
             //   this.getnewsdata(this.tarray[k]);
             // }
+=======
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
         });
     };
     HomeMatchFeedComponent.prototype.openAppDownloadPopup = function () {
         this.router.navigate([{ outlets: { 'AppDownload': ['PopUp'] } }], { skipLocationChange: true });
     };
     HomeMatchFeedComponent.prototype.ngOnInit = function () {
+<<<<<<< HEAD
         this.getlocation();
         for (var i = 0; i < this.v; i++) {
             this.Matcharr.push({
@@ -5041,6 +5205,9 @@ var HomeMatchFeedComponent = /** @class */ (function () {
         }
         console.log(this.tarray);
         // this.openarenamatches();
+=======
+        this.ssmatchfeed();
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
     };
     HomeMatchFeedComponent.prototype.getnewsdata = function (topic) {
         var _this = this;
@@ -5051,7 +5218,10 @@ var HomeMatchFeedComponent = /** @class */ (function () {
                 var x = body.news[i].insertedDate;
                 x = x.replace(/T/g, " at ");
                 arr.push({
+<<<<<<< HEAD
                     source: body.news[i].source,
+=======
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
                     id: body.news[i]._id,
                     title: body.news[i].title,
                     timestamp: x.substr(0, 19),
@@ -5072,20 +5242,32 @@ var HomeMatchFeedComponent = /** @class */ (function () {
                 if (id === this.news[i][j].id) {
                     topic = topic.toLowerCase();
                     this._eventemiter.userToEdit = this.news[i][j];
+<<<<<<< HEAD
                     topic = topic.toLowerCase();
                     this.router.navigate(['/newspage', topic]);
+=======
+                    this.router.navigate(['/newspage'], { queryParams: { topic: topic } });
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
                 }
             }
         }
     };
     HomeMatchFeedComponent.prototype.changee = function (topic) {
+<<<<<<< HEAD
         topic = topic.toLowerCase();
         this.router.navigate(['/newspage', topic]);
+=======
+        this.router.navigate(['/newspage'], { queryParams: { topic: topic } });
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
     };
     HomeMatchFeedComponent.prototype.lscroll = function () {
         this.blog.nativeElement.scrollLeft -= this.outdiv.nativeElement.clientWidth;
     };
     HomeMatchFeedComponent.prototype.rscroll = function () {
+<<<<<<< HEAD
+=======
+        console.log('lalala');
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
         this.blog.nativeElement.scrollLeft += this.outdiv.nativeElement.clientWidth;
     };
     return HomeMatchFeedComponent;
@@ -5842,6 +6024,7 @@ var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var i2 = __webpack_require__(/*! ../header/header.component.ngfactory */ "./src/app/header/header.component.ngfactory.js");
 var i3 = __webpack_require__(/*! ../header/header.component */ "./src/app/header/header.component.ts");
 var i4 = __webpack_require__(/*! ../shared/services/property.service */ "./src/app/shared/services/property.service.ts");
+<<<<<<< HEAD
 var i5 = __webpack_require__(/*! ../newsidenav/newsidenav.component.ngfactory */ "./src/app/newsidenav/newsidenav.component.ngfactory.js");
 var i6 = __webpack_require__(/*! ../newsidenav/newsidenav.component */ "./src/app/newsidenav/newsidenav.component.ts");
 var i7 = __webpack_require__(/*! @angular/router */ "@angular/router");
@@ -5853,6 +6036,19 @@ var i12 = __webpack_require__(/*! @angular/http */ "@angular/http");
 var i13 = __webpack_require__(/*! ../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
 var i14 = __webpack_require__(/*! ../shared/services/time.service */ "./src/app/shared/services/time.service.ts");
 var i15 = __webpack_require__(/*! ../shared/services/location.service */ "./src/app/shared/services/location.service.ts");
+=======
+var i5 = __webpack_require__(/*! ../side-nav/side-nav.component.ngfactory */ "./src/app/side-nav/side-nav.component.ngfactory.js");
+var i6 = __webpack_require__(/*! ../side-nav/side-nav.component */ "./src/app/side-nav/side-nav.component.ts");
+var i7 = __webpack_require__(/*! ../global-feed/home-match-feed/home-match-feed.component.ngfactory */ "./src/app/global-feed/home-match-feed/home-match-feed.component.ngfactory.js");
+var i8 = __webpack_require__(/*! ../global-feed/home-match-feed/home-match-feed.component */ "./src/app/global-feed/home-match-feed/home-match-feed.component.ts");
+var i9 = __webpack_require__(/*! ../shared/services/event.emiter.service */ "./src/app/shared/services/event.emiter.service.ts");
+var i10 = __webpack_require__(/*! ../shared/services/get.service */ "./src/app/shared/services/get.service.ts");
+var i11 = __webpack_require__(/*! @angular/http */ "@angular/http");
+var i12 = __webpack_require__(/*! ../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
+var i13 = __webpack_require__(/*! ../shared/services/time.service */ "./src/app/shared/services/time.service.ts");
+var i14 = __webpack_require__(/*! ../shared/services/location.service */ "./src/app/shared/services/location.service.ts");
+var i15 = __webpack_require__(/*! @angular/router */ "@angular/router");
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
 var i16 = __webpack_require__(/*! ../footer/footer.component.ngfactory */ "./src/app/footer/footer.component.ngfactory.js");
 var i17 = __webpack_require__(/*! ../footer/footer.component */ "./src/app/footer/footer.component.ts");
 var i18 = __webpack_require__(/*! ./home.component */ "./src/app/home/home.component.ts");
@@ -5864,7 +6060,11 @@ exports.RenderType_HomeComponent = RenderType_HomeComponent;
 function View_HomeComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-header", [], null, [["window", "resize"]], function (_v, en, $event) { var ad = true; if (("window:resize" === en)) {
         var pd_0 = (i1.ɵnov(_v, 1).onresize() !== false);
         ad = (pd_0 && ad);
+<<<<<<< HEAD
     } return ad; }, i2.View_HeaderComponent_0, i2.RenderType_HeaderComponent)), i1.ɵdid(1, 4308992, null, 0, i3.HeaderComponent, [i4.PropertyService], null, null), (_l()(), i1.ɵeld(2, 0, null, null, 1, "sports-social-newsidenav", [], null, null, null, i5.View_NewsidenavComponent_0, i5.RenderType_NewsidenavComponent)), i1.ɵdid(3, 114688, null, 0, i6.NewsidenavComponent, [i7.Router, i7.ActivatedRoute], null, null), (_l()(), i1.ɵeld(4, 0, null, null, 1, "sports-social-home-match-feed", [], null, null, null, i8.View_HomeMatchFeedComponent_0, i8.RenderType_HomeMatchFeedComponent)), i1.ɵdid(5, 114688, null, 0, i9.HomeMatchFeedComponent, [i10.EventEmiterService, i11.GetService, i12.Http, i13.PostService, i14.TimeService, i15.LocationService, i7.Router], null, null), (_l()(), i1.ɵeld(6, 0, null, null, 1, "sports-social-footer", [], null, [["window", "scroll"]], function (_v, en, $event) { var ad = true; if (("window:scroll" === en)) {
+=======
+    } return ad; }, i2.View_HeaderComponent_0, i2.RenderType_HeaderComponent)), i1.ɵdid(1, 4308992, null, 0, i3.HeaderComponent, [i4.PropertyService], null, null), (_l()(), i1.ɵeld(2, 0, null, null, 1, "sports-social-side-nav", [], null, null, null, i5.View_SideNavComponent_0, i5.RenderType_SideNavComponent)), i1.ɵdid(3, 114688, null, 0, i6.SideNavComponent, [], null, null), (_l()(), i1.ɵeld(4, 0, null, null, 1, "sports-social-home-match-feed", [], null, null, null, i7.View_HomeMatchFeedComponent_0, i7.RenderType_HomeMatchFeedComponent)), i1.ɵdid(5, 114688, null, 0, i8.HomeMatchFeedComponent, [i9.EventEmiterService, i10.GetService, i11.Http, i12.PostService, i13.TimeService, i14.LocationService, i15.Router], null, null), (_l()(), i1.ɵeld(6, 0, null, null, 1, "sports-social-footer", [], null, [["window", "scroll"]], function (_v, en, $event) { var ad = true; if (("window:scroll" === en)) {
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
         var pd_0 = (i1.ɵnov(_v, 7).onscroll() !== false);
         ad = (pd_0 && ad);
     } return ad; }, i16.View_FooterComponent_0, i16.RenderType_FooterComponent)), i1.ɵdid(7, 114688, null, 0, i17.FooterComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); _ck(_v, 3, 0); _ck(_v, 5, 0); _ck(_v, 7, 0); }, null); }
@@ -5949,6 +6149,7 @@ var i6 = __webpack_require__(/*! ng-masonry-grid */ "ng-masonry-grid");
 var i7 = __webpack_require__(/*! ../carousel/carousel.module */ "./src/app/carousel/carousel.module.ts");
 var i8 = __webpack_require__(/*! @angular/router */ "@angular/router");
 var i9 = __webpack_require__(/*! ../header/header.module */ "./src/app/header/header.module.ts");
+<<<<<<< HEAD
 var i10 = __webpack_require__(/*! ../newsidenav/newsidenav.module */ "./src/app/newsidenav/newsidenav.module.ts");
 var i11 = __webpack_require__(/*! ../navigation-bar/navigation-bar.module */ "./src/app/navigation-bar/navigation-bar.module.ts");
 var i12 = __webpack_require__(/*! ../gallery/gallery.module */ "./src/app/gallery/gallery.module.ts");
@@ -5958,11 +6159,26 @@ var i15 = __webpack_require__(/*! ../open-cards/open-news-card/open-news-card.mo
 var i16 = __webpack_require__(/*! ../cards/news-card/news-card.module */ "./src/app/cards/news-card/news-card.module.ts");
 var i17 = __webpack_require__(/*! ../cards/live-match-card/live-match-card.module */ "./src/app/cards/live-match-card/live-match-card.module.ts");
 var i18 = __webpack_require__(/*! ../cards/ss-match-card/ss-match-card.module */ "./src/app/cards/ss-match-card/ss-match-card.module.ts");
+=======
+var i10 = __webpack_require__(/*! ../navigation-bar/navigation-bar.module */ "./src/app/navigation-bar/navigation-bar.module.ts");
+var i11 = __webpack_require__(/*! ../gallery/gallery.module */ "./src/app/gallery/gallery.module.ts");
+var i12 = __webpack_require__(/*! ../open-cards/open-match-card/open-match-card.module */ "./src/app/open-cards/open-match-card/open-match-card.module.ts");
+var i13 = __webpack_require__(/*! ../cards/match-card/match-card.module */ "./src/app/cards/match-card/match-card.module.ts");
+var i14 = __webpack_require__(/*! ../open-cards/open-news-card/open-news-card.module */ "./src/app/open-cards/open-news-card/open-news-card.module.ts");
+var i15 = __webpack_require__(/*! ../cards/news-card/news-card.module */ "./src/app/cards/news-card/news-card.module.ts");
+var i16 = __webpack_require__(/*! ../cards/live-match-card/live-match-card.module */ "./src/app/cards/live-match-card/live-match-card.module.ts");
+var i17 = __webpack_require__(/*! ../cards/ss-match-card/ss-match-card.module */ "./src/app/cards/ss-match-card/ss-match-card.module.ts");
+var i18 = __webpack_require__(/*! ../side-nav/side-nav.module */ "./src/app/side-nav/side-nav.module.ts");
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
 var i19 = __webpack_require__(/*! ../global-feed/global-open-arena-feed/global-open-arena-feed.module */ "./src/app/global-feed/global-open-arena-feed/global-open-arena-feed.module.ts");
 var i20 = __webpack_require__(/*! ../footer/footer.module */ "./src/app/footer/footer.module.ts");
 var i21 = __webpack_require__(/*! ../global-feed/home-match-feed/home-match-feed.module */ "./src/app/global-feed/home-match-feed/home-match-feed.module.ts");
 var i22 = __webpack_require__(/*! ./home.component */ "./src/app/home/home.component.ts");
+<<<<<<< HEAD
 var HomeModuleNgFactory = i0.ɵcmf(i1.HomeModule, [], function (_l) { return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i2.ɵEmptyOutletComponentNgFactory, i3.OpenNewsCardComponentNgFactory, i4.HomeComponentNgFactory]], [3, i0.ComponentFactoryResolver], i0.NgModuleRef]), i0.ɵmpd(4608, i5.NgLocalization, i5.NgLocaleLocalization, [i0.LOCALE_ID, [2, i5.ɵangular_packages_common_common_a]]), i0.ɵmpd(4608, i6.NgMasonryGridService, i6.NgMasonryGridService, [i0.PLATFORM_ID]), i0.ɵmpd(1073742336, i5.CommonModule, i5.CommonModule, []), i0.ɵmpd(1073742336, i7.CarouselModule, i7.CarouselModule, []), i0.ɵmpd(1073742336, i8.RouterModule, i8.RouterModule, [[2, i8.ɵangular_packages_router_router_a], [2, i8.Router]]), i0.ɵmpd(1073742336, i9.HeaderModule, i9.HeaderModule, []), i0.ɵmpd(1073742336, i10.NewsidenavModule, i10.NewsidenavModule, []), i0.ɵmpd(1073742336, i11.NavigationBarModule, i11.NavigationBarModule, []), i0.ɵmpd(1073742336, i12.GalleryModule, i12.GalleryModule, []), i0.ɵmpd(1073742336, i13.OpenMatchCardModule, i13.OpenMatchCardModule, []), i0.ɵmpd(1073742336, i14.MatchCardModule, i14.MatchCardModule, []), i0.ɵmpd(1073742336, i15.OpenNewsCardModule, i15.OpenNewsCardModule, []), i0.ɵmpd(1073742336, i16.NewsCardModule, i16.NewsCardModule, []), i0.ɵmpd(1073742336, i17.LiveMatchCardModule, i17.LiveMatchCardModule, []), i0.ɵmpd(1073742336, i6.NgMasonryGridModule, i6.NgMasonryGridModule, []), i0.ɵmpd(1073742336, i18.SsMatchCardModule, i18.SsMatchCardModule, []), i0.ɵmpd(1073742336, i19.GlobalOpenArenaFeedModule, i19.GlobalOpenArenaFeedModule, []), i0.ɵmpd(1073742336, i20.FooterModule, i20.FooterModule, []), i0.ɵmpd(1073742336, i21.HomeMatchFeedModule, i21.HomeMatchFeedModule, []), i0.ɵmpd(1073742336, i1.HomeModule, i1.HomeModule, []), i0.ɵmpd(1024, i8.ROUTES, function () { return [[{ path: "", component: i22.HomeComponent }]]; }, [])]); });
+=======
+var HomeModuleNgFactory = i0.ɵcmf(i1.HomeModule, [], function (_l) { return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i2.ɵEmptyOutletComponentNgFactory, i3.OpenNewsCardComponentNgFactory, i4.HomeComponentNgFactory]], [3, i0.ComponentFactoryResolver], i0.NgModuleRef]), i0.ɵmpd(4608, i5.NgLocalization, i5.NgLocaleLocalization, [i0.LOCALE_ID, [2, i5.ɵangular_packages_common_common_a]]), i0.ɵmpd(4608, i6.NgMasonryGridService, i6.NgMasonryGridService, [i0.PLATFORM_ID]), i0.ɵmpd(1073742336, i5.CommonModule, i5.CommonModule, []), i0.ɵmpd(1073742336, i7.CarouselModule, i7.CarouselModule, []), i0.ɵmpd(1073742336, i8.RouterModule, i8.RouterModule, [[2, i8.ɵangular_packages_router_router_a], [2, i8.Router]]), i0.ɵmpd(1073742336, i9.HeaderModule, i9.HeaderModule, []), i0.ɵmpd(1073742336, i10.NavigationBarModule, i10.NavigationBarModule, []), i0.ɵmpd(1073742336, i11.GalleryModule, i11.GalleryModule, []), i0.ɵmpd(1073742336, i12.OpenMatchCardModule, i12.OpenMatchCardModule, []), i0.ɵmpd(1073742336, i13.MatchCardModule, i13.MatchCardModule, []), i0.ɵmpd(1073742336, i14.OpenNewsCardModule, i14.OpenNewsCardModule, []), i0.ɵmpd(1073742336, i15.NewsCardModule, i15.NewsCardModule, []), i0.ɵmpd(1073742336, i16.LiveMatchCardModule, i16.LiveMatchCardModule, []), i0.ɵmpd(1073742336, i6.NgMasonryGridModule, i6.NgMasonryGridModule, []), i0.ɵmpd(1073742336, i17.SsMatchCardModule, i17.SsMatchCardModule, []), i0.ɵmpd(1073742336, i18.SideNavModule, i18.SideNavModule, []), i0.ɵmpd(1073742336, i19.GlobalOpenArenaFeedModule, i19.GlobalOpenArenaFeedModule, []), i0.ɵmpd(1073742336, i20.FooterModule, i20.FooterModule, []), i0.ɵmpd(1073742336, i21.HomeMatchFeedModule, i21.HomeMatchFeedModule, []), i0.ɵmpd(1073742336, i1.HomeModule, i1.HomeModule, []), i0.ɵmpd(1024, i8.ROUTES, function () { return [[{ path: "", component: i22.HomeComponent }]]; }, [])]); });
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
 exports.HomeModuleNgFactory = HomeModuleNgFactory;
 
 
@@ -6257,7 +6473,16 @@ var LocalitypageComponent = /** @class */ (function () {
         this.post.Localityviewdata(this.service)
             .subscribe(function (response) {
             for (var i in response) {
+<<<<<<< HEAD
                 _this.lvdata.push(response[i]);
+=======
+                if (+i == 0) {
+                    _this.photo = response[i];
+                }
+                else {
+                    _this.lvdata.push(response[i]);
+                }
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
             }
         }, function (error) { return console.log(error); });
     };
@@ -6593,6 +6818,7 @@ exports.NewHeaderModule = NewHeaderModule;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./src/app/newsidenav/newsidenav.component.css.shim.ngstyle.js":
 /*!*********************************************************************!*\
   !*** ./src/app/newsidenav/newsidenav.component.css.shim.ngstyle.js ***!
@@ -6944,6 +7170,8 @@ exports.NewsidenavModule = NewsidenavModule;
 
 /***/ }),
 
+=======
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
 /***/ "./src/app/newspage/newspage.component.css.shim.ngstyle.js":
 /*!*****************************************************************!*\
   !*** ./src/app/newspage/newspage.component.css.shim.ngstyle.js ***!
@@ -6960,7 +7188,11 @@ exports.NewsidenavModule = NewsidenavModule;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
+<<<<<<< HEAD
 var styles = [".home-body[_ngcontent-%COMP%]{\n    margin-top: 5%;\n    overflow: hidden;\n    width: 82%;\n    margin-left: 18%;\n    margin-bottom: 3%;\n    border-bottom: 2px solid silver;\n}\n.larrow[_ngcontent-%COMP%]{\n    opacity: 0.8;\n    position: relative;\n    z-index: 1;\n    margin-top: 20vh;\n    width: 15.5%;\n    float: left;\n}\n.dnews[_ngcontent-%COMP%]{\n    width: 82%;\n    margin-left: 15%;\n}\n.dnews[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]{\n    margin-top: 1.2%;\n    width: 43.2%;\n    float: left;\n}\n.dnews[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    padding: 10px;\n    width: 95%;\n    height: 180px;\n}\n.dnews[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n    padding-left: 10px;\n    width: 95%;\n    height: auto;\n    letter-spacing: 1px;\n    font-size: 1em;\n    margin-bottom: 40px;\n}\n.normal-news[_ngcontent-%COMP%]{\n    border-radius: 3px;\n    margin-bottom: 2%;\n    padding: 20px;\n    width: 54%;\n    margin-left: 30%;\n    overflow: hidden;\n    \n    cursor: pointer;\n}\n.normal-news[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    border-radius: 3px;\n    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);\n    float: left;\n    height: 130px;\n    width: 30%;\n}\n.normal-news[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n    font-size: 1.2em;\n    padding: 7px;\n    float: left;\n    width: 60%;\n    margin-left: 2%;\n}\n.normal-news[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{\n    float: right;\n}\n.normal-news[_ngcontent-%COMP%]:hover{\n    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);\n}\n.normal-news[_ngcontent-%COMP%]:hover   h1[_ngcontent-%COMP%]{\n    color: #024771;\n}\n.source[_ngcontent-%COMP%]{\n    margin-top: 25px;\n    color: rgb(85, 85, 85);\n}\n.normal-news[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{\n    padding-left: 7px;\n    font-size: 1em;\n    float: left;\n    width: 60%;\n    margin-left: 2%;\n}\n.rarrow[_ngcontent-%COMP%]{\n    opacity: 0.8;\n    position: relative;\n    margin-top: 20vh;\n    width: 9%;\n    float: right;\n}\n.larrow[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);\n    margin-left: 79%;\n    border: 2px solid silver;\n    border-radius: 50%;\n    height: 60px;\n    width: 60px;\n}\n.rarrow[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);\n    margin-left: -87.5%;\n    border: 2px solid silver;\n    border-radius: 50%;\n    height: 60px;\n    width: 60px;\n}\n.crousal[_ngcontent-%COMP%]{\n    position: relative;\n    text-align: center;\n    width: 70%;\n    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.19);\n    \n    overflow-y: hidden;\n    scroll-behavior: smooth;\n    overflow-x: scroll;\n    white-space: nowrap !important;\n    display: inline-block;\n    -webkit-overflow-scrolling: touch;\n    -ms-scroll-snap-type: x mandatory;\n        scroll-snap-type: x mandatory;\n    -ms-scroll-snap-destination: 0% 100%;\n        scroll-snap-destination: 0% 100%;\n    -ms-scroll-snap-points-x: repeat(100%);\n        scroll-snap-points-x: repeat(100%);\n}\n.crousal[_ngcontent-%COMP%]::-webkit-scrollbar {\n    display: none;\n}\n.c-element[_ngcontent-%COMP%]{\n    position: relative;\n    scroll-snap-align: start;\n    width: 100%;\n    height: 50vh;\n    display: inline-block;\n}\n.c-element[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    height: 100%;\n    overflow: hidden;\n    width: 100%;\n}\n.c-head[_ngcontent-%COMP%]{\n    text-align: left;\n    color: white;\n    position: absolute;\n    background-color: rgb(0, 0, 0, 0.7);\n    top: 90%;\n    left: 50%;\n    width: 100%;\n    height: 29%;\n    -webkit-transform: translate(-50%, -50%);\n            transform: translate(-50%, -50%);\n    \n}\n.c-head[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n    font-size: 1.6em;\n    padding: 15px;\n    letter-spacing: 1px;\n}\n.c-head[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{\n    font-size: 1.3em;\n    letter-spacing: 1px;\n    padding-left: 15px;\n}\n.side-nav[_ngcontent-%COMP%]{\n    width: 25%;\n    margin-top: 3.5%;\n}\n.main-body[_ngcontent-%COMP%]{\n    overflow: hidden;\n}\n.newsbody[_ngcontent-%COMP%]{  \n    float: right;\n    padding: 20px;\n    margin-right: 5%;\n    width: 74%;\n}\n.news-header[_ngcontent-%COMP%]{\n    padding-bottom: 5px;\n    overflow: hidden;\n    border-bottom: 2px solid rgb(216, 216, 216);\n}\n.news-header[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%], h2[_ngcontent-%COMP%]{\n    padding-top: 30px;\n}\n.news-header[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{\n    color: rgb(126, 126, 126);\n}\n.news-header[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\n    font-weight: 500;\n    text-shadow: 1px 1px 3px #585858;\n    font-size: 2.3em;\n}\n.timestamp[_ngcontent-%COMP%]{\n    float: left;\n}\n.share[_ngcontent-%COMP%]{\n    width: 35%;\n    float: right;\n}\n.share[_ngcontent-%COMP%]   .fb[_ngcontent-%COMP%]{\n    background-size: 100% 100%; \n    background-image: url('/assets/images/sportsocialnewsfacebook.png');\n}\n.share[_ngcontent-%COMP%]   .rss[_ngcontent-%COMP%]{\n    background-size: 100% 100%; \n    background-image: url('/assets/images/sportsocialnewsrss.png');\n}\n.share[_ngcontent-%COMP%]   .rss[_ngcontent-%COMP%]:hover{\n    cursor: pointer;\n    background-size: 100% 100%; \n    background-image: url('/assets/images/sssrss.png');\n}\n.share[_ngcontent-%COMP%]   .insta[_ngcontent-%COMP%]{\n    background-size: 100% 100%; \n    background-image: url('/assets/images/sportsocialnewsinstagram.png');\n}\n.share[_ngcontent-%COMP%]   .insta[_ngcontent-%COMP%]:hover{\n    cursor: pointer;\n    background-size: 100% 100%; \n    background-image: url('/assets/images/sssinstagram.png');\n}\n.share[_ngcontent-%COMP%]   .linkedin[_ngcontent-%COMP%]{\n    background-size: 100% 100%; \n    background-image: url('/assets/images/sportsocialnewslinkedin.png');\n}\n.share[_ngcontent-%COMP%]   .linkedin[_ngcontent-%COMP%]:hover{\n    cursor: pointer;\n    background-size: 100% 100%; \n    background-image: url('/assets/images/ssslinkedin.png');\n}\n.share[_ngcontent-%COMP%]   .twitter[_ngcontent-%COMP%]{\n    background-size: 100% 100%; \n    background-image: url('/assets/images/sportsocialnewstwitter.png');\n}\n.share[_ngcontent-%COMP%]   .twitter[_ngcontent-%COMP%]:hover{\n    cursor: pointer;\n    background-size: 100% 100%; \n    background-image: url('/assets/images/ssstwitter.png');\n}\n.share[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]{\n    float: left;\n    margin-left: 11%;\n    height: 23px;\n    width: 23px;\n}\n.share[_ngcontent-%COMP%]   .fb[_ngcontent-%COMP%]:hover{\n    background-image: url('/assets/images/sssfacebook.png');\n    cursor: pointer;\n    \n}\n.timestamp[_ngcontent-%COMP%], .share[_ngcontent-%COMP%]{\n    font-size: 1.3em;\n}\n.news[_ngcontent-%COMP%]{\n    box-shadow: 2px 2px rgb(216, 216, 216);\n    float: left;\n    width: 65%;\n}\n.nbody[_ngcontent-%COMP%]{\n    margin-top: 2%;\n}\n.news[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n    border-radius: 10px;\n    margin: 0 auto;\n    height: 60px;\n    width: 60px;\n}\n.top-stories[_ngcontent-%COMP%]{\n    width: 35%;\n    float: right;\n}\n.top-stories[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n    text-align: center;\n    font-weight: lighter;\n}\n.top-stories[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]{\n    padding-left: 25px;\n    padding-right: 20px;\n    padding-bottom: 25px;\n}\n.top-stories[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{\n    font-size: 1.2em;\n}\n.top-stories[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{\n    padding-top: 5px;\n    font-size: 0.9em;\n}\n.main-news[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    margin-bottom: 30px;\n    width: 95%;\n    height: 350px;\n}\n.main-news[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n    margin-right: 25px;\n    margin-bottom: 30px;\n    font-size: 1.2em;\n}\n.main-news[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{\n    color: black;\n    \n    font-size: 1.8em;\n    text-align: center;\n}\n.main-news[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]:hover{\n    cursor: pointer;\n}\n.more-news[_ngcontent-%COMP%]{\n    margin-top: 5%;\n}\n.mnews[_ngcontent-%COMP%]{\n    margin-right: 1%;\n    margin-bottom: 2%;\n    height: 170px;\n}\n.mnews[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    width: 40%;\n    height: 90%;\n    margin-top: 1.2%;\n    margin-left: 1.2%;\n    margin-bottom: 1%;\n    float: left;\n}\n.mnews[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n    padding-top: 8px;\n    padding-bottom: 4px;\n    font-size: 1.2em;\n}\n.mnews[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{\n    font-size: 0.9em;\n}\n.mnews[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]{\n    float: right;\n    width: 50%;\n    padding-left: 25px;\n    padding-right: 15px;\n    padding-bottom: 25px;\n}\n.top-stories[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]:hover{\n    color: #024771;\n    cursor: pointer;\n}\n.mnews[_ngcontent-%COMP%]:hover{\n     border-radius: 10px;\n    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);\n    cursor: pointer;\n}\n.mnews[_ngcontent-%COMP%]:hover   h1[_ngcontent-%COMP%]{\n    color: #024771;\n}\n.top-stories[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:hover   h1[_ngcontent-%COMP%]{\n    color: #024771;\n}\n\n.mobile-main[_ngcontent-%COMP%]{\n    margin-top: 5%;\n}\n.newscard[_ngcontent-%COMP%]{\n    text-align: center;\n    border-radius: 5px;\n    width: 90%;\n    margin: 0 auto;\n    overflow: hidden;\n    margin-bottom: 20px;\n    border-bottom: 2px solid silver;\n}\n.newscard[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    border:1px solid silver;\n    border-radius: 5px; \n    height: 150px;\n    width: 70%;\n}\n.newscard[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n    padding: 10px;\n}\n.newscard[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{\n    padding: 20px;  \n}\n.newscard[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{\n    color: black;\n}\n.morecard[_ngcontent-%COMP%]{\n    border-radius: 5px;\n    width: 90%;\n    margin-left: 5%;\n    overflow: hidden;\n    margin-bottom: 20px;\n    box-shadow: 2px 2px rgb(233, 232, 232), 3px 3px rgb(240, 240, 240);\n}\n.morecard[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    border:1px solid silver;\n    float: left;\n\n    border-radius: 5px; \n    height: 100px;\n    width: 40%;\n}\n.morecard[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n    padding: 10px;\n    font-size: 1em;\n    font-weight: lighter;\n    width: 45%;\n    float: right;\n}\n.tnews[_ngcontent-%COMP%]{\n    margin-left: 5%;\n    width: 85%;\n    \n    overflow-y: hidden;\n    scroll-behavior: smooth;\n    overflow-x: scroll;\n    white-space: nowrap !important;\n    -webkit-overflow-scrolling: touch;\n    -ms-scroll-snap-type: x mandatory;\n        scroll-snap-type: x mandatory;\n    -ms-scroll-snap-destination: 0% 100%;\n        scroll-snap-destination: 0% 100%;\n    -ms-scroll-snap-points-x: repeat(100%);\n        scroll-snap-points-x: repeat(100%);\n    display: inline-block;\n}\n.tnews[_ngcontent-%COMP%]::-webkit-scrollbar {\n    display: none;\n}\n.newscard[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{\n    font-size: 0.8em;\n    border: none;\n    background-color: #024771;\n    border-radius: 5px;\n    color: white;\n    padding: 5px;\n}\n.heading[_ngcontent-%COMP%]{\n    margin-top: 5%;\n    margin-bottom: 5%;\n    padding: 10px;\n    font-weight: lighter;   \n}\n.head[_ngcontent-%COMP%]{\n    font-weight: bold;\n    font-size: 1.5em;\n}\n.para[_ngcontent-%COMP%]{\n    font-size: 1em;\n}\n.tnewscard[_ngcontent-%COMP%]{\n    display: inline-block;\n    scroll-snap-align: start;\n    border-radius: 5px;\n    width: 93%;\n    height: 120px;\n    margin-left: 5%;\n    margin-bottom: 20px;\n    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);\n}\n.tnewscard[_ngcontent-%COMP%]   textarea[_ngcontent-%COMP%]{\n    width: 55%;\n    background-color: white;\n    border: none;\n    padding: 4px;\n    float: right;\n    overflow: hidden;\n}\n.tnewscard[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    float: left;\n    width: 35%;\n    height: 100px;\n    border-radius: 5px;\n    margin: 3.5% 2% 2% 2%;\n}\n.heading[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{\n    float: right;\n    margin-top: 1%;\n    font-size: 0.5em;\n}\n.tnewscard[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n    padding: 10px;\n    font-size: 1em;\n    font-weight: lighter;\n    width: 45%;\n}\n@media screen and (min-width: 200px) and (max-width: 700px){\n    .main-body[_ngcontent-%COMP%]{\n        display: none;\n    }\n    .mobile-main[_ngcontent-%COMP%]{\n        display: block;\n    }\n    .share[_ngcontent-%COMP%]{\n        margin-bottom: 3%;\n        clear: both;\n        width: 100%;\n    }\n    .home-body[_ngcontent-%COMP%]{\n        margin-left: 0%;\n        width: 100%;\n    }\n    .c-element[_ngcontent-%COMP%]{\n        height: 27vh;\n   }\n   .dnews[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]{\n       width: 100%;\n       clear: both; \n   }\n   .dnews[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n       width: 35%;\n       float: left;\n   }\n   .dnews[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n       padding-top: 10px;\n       float: left;\n       width: 40%;\n        font-weight: lighter;\n       margin-bottom: 0;\n   }\n   .c-head[_ngcontent-%COMP%]{\n       font-size: 0.4em;\n       font-weight: lighter;\n   }\n   .dnews[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n       height: 100px;\n   }\n   .dnews[_ngcontent-%COMP%]{\n       margin-left: 13%;\n   }\n   .dnews[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n       font-size: 0.8em;\n   }\n   .larrow[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n       margin-left: 48%;\n   }    \n   .larrow[_ngcontent-%COMP%]   img[_ngcontent-%COMP%], .rarrow[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n       height: 30px;\n       width: 30px;\n   }\n   .rarrow[_ngcontent-%COMP%], .larrow[_ngcontent-%COMP%]{\n       margin-top: 12vh;\n   }\n   .normal-news[_ngcontent-%COMP%]{\n       margin-left: 14%;\n       width: 70%;\n   }\n   .normal-news[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n       height: 100px;\n   }\n   .normal-news[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n       font-size: 1em;\n   }\n   .normal-news[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{\n       padding: 0;\n       margin-left: 0;\n       margin-top: 4%; \n       clear: both;\n       width: 100%;\n   }\n   .normal-news[_ngcontent-%COMP%]   .source[_ngcontent-%COMP%] {\n       clear: both;\n       font-size: 0.9em;\n   }\n   .source[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{\n    clear: both;\n    font-size: 0.9em;\n    }\n}\n@media screen and (min-width: 700px) and (max-width: 1000px){\n    .main-body[_ngcontent-%COMP%]{\n        display: none;\n    }\n    .mobile-main[_ngcontent-%COMP%]{\n        display: block;\n    }\n    .share[_ngcontent-%COMP%]{\n        margin-bottom: 3%;\n        clear: both;\n        width: 100%;\n    }\n    .home-body[_ngcontent-%COMP%]{\n        margin-left: 0%;\n        width: 100%;\n    }\n    .c-element[_ngcontent-%COMP%]{\n        height: 27vh;\n   }\n   .larrow[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n       margin-left: 65%;\n   }\n   .rarrow[_ngcontent-%COMP%], .larrow[_ngcontent-%COMP%]{\n       margin-top: 12vh;\n   }\n   .normal-news[_ngcontent-%COMP%]{\n       margin-left: 14%;\n       width: 70%;\n   }\n}\n@media screen and (min-width: 1000px) and (max-width: 1100px){\n   .crousal[_ngcontent-%COMP%]{\n       margin-top: 2%;\n   }\n   .c-element[_ngcontent-%COMP%]{\n        height: 27vh;\n   }\n   .larrow[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n       margin-left: 67%;\n   }\n   .rarrow[_ngcontent-%COMP%], .larrow[_ngcontent-%COMP%]{\n       margin-top: 13vh;\n   }\n}\n@media screen and (min-width: 1100px) and (max-width: 2000px){\n    .main-body[_ngcontent-%COMP%]{\n        display: block;\n    }\n    .mobile-main[_ngcontent-%COMP%]{\n        display: none;\n    }\n}"];
+=======
+var styles = [".side-nav[_ngcontent-%COMP%]{\n    width: 25%;\n    margin-top: 5%;\n}\n.main-body[_ngcontent-%COMP%]{\n    overflow: hidden;\n}\n.newsbody[_ngcontent-%COMP%]{  \n    border-left: 2px solid rgb(216, 216, 216);\n    float: right;\n    padding: 20px;\n    margin-right: 5%;\n    width: 74%;\n}\n.news-header[_ngcontent-%COMP%]{\n    padding-bottom: 5px;\n    overflow: hidden;\n    border-bottom: 2px solid rgb(216, 216, 216);\n}\n.news-header[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%], h2[_ngcontent-%COMP%]{\n    padding-top: 30px;\n}\n.news-header[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{\n    color: rgb(126, 126, 126);\n}\n.news-header[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\n    font-weight: 500;\n    text-shadow: 1px 1px 3px #585858;\n    font-size: 2.3em;\n}\n.timestamp[_ngcontent-%COMP%]{\n    float: left;\n}\n.share[_ngcontent-%COMP%]{\n    width: 35%;\n    float: right;\n}\n.share[_ngcontent-%COMP%]   .fb[_ngcontent-%COMP%]{\n    background-size: 100% 100%; \n    background-image: url('/assets/images/sportsocialnewsfacebook.png');\n}\n.share[_ngcontent-%COMP%]   .rss[_ngcontent-%COMP%]{\n    background-size: 100% 100%; \n    background-image: url('/assets/images/sportsocialnewsrss.png');\n}\n.share[_ngcontent-%COMP%]   .rss[_ngcontent-%COMP%]:hover{\n    cursor: pointer;\n    background-size: 100% 100%; \n    background-image: url('/assets/images/sssrss.png');\n}\n.share[_ngcontent-%COMP%]   .insta[_ngcontent-%COMP%]{\n    background-size: 100% 100%; \n    background-image: url('/assets/images/sportsocialnewsinstagram.png');\n}\n.share[_ngcontent-%COMP%]   .insta[_ngcontent-%COMP%]:hover{\n    cursor: pointer;\n    background-size: 100% 100%; \n    background-image: url('/assets/images/sssinstagram.png');\n}\n.share[_ngcontent-%COMP%]   .linkedin[_ngcontent-%COMP%]{\n    background-size: 100% 100%; \n    background-image: url('/assets/images/sportsocialnewslinkedin.png');\n}\n.share[_ngcontent-%COMP%]   .linkedin[_ngcontent-%COMP%]:hover{\n    cursor: pointer;\n    background-size: 100% 100%; \n    background-image: url('/assets/images/ssslinkedin.png');\n}\n.share[_ngcontent-%COMP%]   .twitter[_ngcontent-%COMP%]{\n    background-size: 100% 100%; \n    background-image: url('/assets/images/sportsocialnewstwitter.png');\n}\n.share[_ngcontent-%COMP%]   .twitter[_ngcontent-%COMP%]:hover{\n    cursor: pointer;\n    background-size: 100% 100%; \n    background-image: url('/assets/images/ssstwitter.png');\n}\n.share[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]{\n    float: left;\n    margin-left: 11%;\n    height: 23px;\n    width: 23px;\n}\n.share[_ngcontent-%COMP%]   .fb[_ngcontent-%COMP%]:hover{\n    background-image: url('/assets/images/sssfacebook.png');\n    cursor: pointer;\n    \n}\n.timestamp[_ngcontent-%COMP%], .share[_ngcontent-%COMP%]{\n    font-size: 1.3em;\n}\n.news[_ngcontent-%COMP%]{\n    box-shadow: 2px 2px rgb(216, 216, 216);\n    float: left;\n    width: 65%;\n}\n.nbody[_ngcontent-%COMP%]{\n    margin-top: 2%;\n}\n.news[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n    border-radius: 10px;\n    margin: 0 auto;\n    height: 60px;\n    width: 60px;\n}\n.top-stories[_ngcontent-%COMP%]{\n    width: 35%;\n    float: right;\n}\n.top-stories[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n    text-align: center;\n    font-weight: lighter;\n}\n.top-stories[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]{\n    padding-left: 25px;\n    padding-right: 20px;\n    padding-bottom: 25px;\n}\n.top-stories[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{\n    font-size: 1.2em;\n}\n.top-stories[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{\n    padding-top: 5px;\n    font-size: 0.9em;\n}\n.main-news[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    margin-bottom: 30px;\n    width: 95%;\n    height: 350px;\n}\n.main-news[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n    margin-right: 25px;\n    margin-bottom: 30px;\n    font-size: 1.2em;\n}\n.main-news[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{\n    color: black;\n    \n    font-size: 1.8em;\n    text-align: center;\n}\n.main-news[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]:hover{\n    cursor: pointer;\n}\n.more-news[_ngcontent-%COMP%]{\n    margin-top: 5%;\n}\n.mnews[_ngcontent-%COMP%]{\n    margin-right: 1%;\n    margin-bottom: 2%;\n    height: 170px;\n}\n.mnews[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    width: 40%;\n    height: 90%;\n    margin-top: 1.2%;\n    margin-left: 1.2%;\n    margin-bottom: 1%;\n    float: left;\n}\n.mnews[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n    padding-top: 8px;\n    padding-bottom: 4px;\n    font-size: 1.2em;\n}\n.mnews[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{\n    font-size: 0.9em;\n}\n.mnews[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]{\n    float: right;\n    width: 50%;\n    padding-left: 25px;\n    padding-right: 15px;\n    padding-bottom: 25px;\n}\n.top-stories[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]:hover{\n    color: #024771;\n    cursor: pointer;\n}\n.mnews[_ngcontent-%COMP%]:hover{\n     border-radius: 10px;\n    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);\n    cursor: pointer;\n}\n.mnews[_ngcontent-%COMP%]:hover   h1[_ngcontent-%COMP%]{\n    color: #024771;\n}\n.top-stories[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:hover   h1[_ngcontent-%COMP%]{\n    color: #024771;\n}\n\n.mobile-main[_ngcontent-%COMP%]{\n    margin-top: 5%;\n}\n.newscard[_ngcontent-%COMP%]{\n    text-align: center;\n    border-radius: 5px;\n    width: 90%;\n    margin: 0 auto;\n    overflow: hidden;\n    margin-bottom: 20px;\n    border-bottom: 2px solid silver;\n}\n.newscard[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    border:1px solid silver;\n    border-radius: 5px; \n    height: 150px;\n    width: 70%;\n}\n.newscard[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n    padding: 10px;\n}\n.newscard[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{\n    padding: 20px;  \n}\n.newscard[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{\n    color: black;\n}\n.morecard[_ngcontent-%COMP%]{\n    border-radius: 5px;\n    width: 90%;\n    margin-left: 5%;\n    overflow: hidden;\n    margin-bottom: 20px;\n    box-shadow: 2px 2px rgb(233, 232, 232), 3px 3px rgb(240, 240, 240);\n}\n.morecard[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    border:1px solid silver;\n    float: left;\n\n    border-radius: 5px; \n    height: 100px;\n    width: 40%;\n}\n.morecard[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n    padding: 10px;\n    font-size: 1em;\n    font-weight: lighter;\n    width: 45%;\n    float: right;\n}\n.tnews[_ngcontent-%COMP%]{\n    margin-left: 5%;\n    width: 85%;\n    \n    overflow-y: hidden;\n    scroll-behavior: smooth;\n    overflow-x: scroll;\n    white-space: nowrap !important;\n    -webkit-overflow-scrolling: touch;\n    -ms-scroll-snap-type: x mandatory;\n        scroll-snap-type: x mandatory;\n    -ms-scroll-snap-destination: 0% 100%;\n        scroll-snap-destination: 0% 100%;\n    -ms-scroll-snap-points-x: repeat(100%);\n        scroll-snap-points-x: repeat(100%);\n    display: inline-block;\n}\n.tnews[_ngcontent-%COMP%]::-webkit-scrollbar {\n    display: none;\n}\n.newscard[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{\n    font-size: 0.8em;\n    border: none;\n    background-color: #024771;\n    border-radius: 5px;\n    color: white;\n    padding: 5px;\n}\n.heading[_ngcontent-%COMP%]{\n    margin-top: 5%;\n    margin-bottom: 5%;\n    padding: 10px;\n    font-weight: lighter;   \n}\n.head[_ngcontent-%COMP%]{\n    font-weight: bold;\n    font-size: 1.5em;\n}\n.para[_ngcontent-%COMP%]{\n    font-size: 1em;\n}\n.tnewscard[_ngcontent-%COMP%]{\n    display: inline-block;\n    scroll-snap-align: start;\n    border-radius: 5px;\n    width: 93%;\n    height: 120px;\n    margin-left: 5%;\n    margin-bottom: 20px;\n    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);\n}\n.tnewscard[_ngcontent-%COMP%]   textarea[_ngcontent-%COMP%]{\n    width: 55%;\n    background-color: white;\n    border: none;\n    padding: 4px;\n    float: right;\n    overflow: hidden;\n}\n.tnewscard[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    float: left;\n    width: 35%;\n    height: 100px;\n    border-radius: 5px;\n    margin: 3.5% 2% 2% 2%;\n}\n.heading[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{\n    float: right;\n    margin-top: 1%;\n    font-size: 0.5em;\n}\n.tnewscard[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n    padding: 10px;\n    font-size: 1em;\n    font-weight: lighter;\n    width: 45%;\n}\n@media screen and (min-width: 200px) and (max-width: 1000px){\n    .main-body[_ngcontent-%COMP%]{\n        display: none;\n    }\n    .mobile-main[_ngcontent-%COMP%]{\n        display: block;\n    }\n    .share[_ngcontent-%COMP%]{\n        margin-bottom: 3%;\n        clear: both;\n        width: 100%;\n    }\n}\n@media screen and (min-width: 1100px) and (max-width: 2000px){\n    .main-body[_ngcontent-%COMP%]{\n        display: block;\n    }\n    .mobile-main[_ngcontent-%COMP%]{\n        display: none;\n    }\n}"];
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
 exports.styles = styles;
 
 
@@ -6988,6 +7220,7 @@ var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
 var i3 = __webpack_require__(/*! ../header/header.component.ngfactory */ "./src/app/header/header.component.ngfactory.js");
 var i4 = __webpack_require__(/*! ../header/header.component */ "./src/app/header/header.component.ts");
 var i5 = __webpack_require__(/*! ../shared/services/property.service */ "./src/app/shared/services/property.service.ts");
+<<<<<<< HEAD
 var i6 = __webpack_require__(/*! ../newsidenav/newsidenav.component.ngfactory */ "./src/app/newsidenav/newsidenav.component.ngfactory.js");
 var i7 = __webpack_require__(/*! ../newsidenav/newsidenav.component */ "./src/app/newsidenav/newsidenav.component.ts");
 var i8 = __webpack_require__(/*! @angular/router */ "@angular/router");
@@ -7038,6 +7271,43 @@ exports.View_NewspageComponent_0 = View_NewspageComponent_0;
 function View_NewspageComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-newspage", [], null, null, null, View_NewspageComponent_0, RenderType_NewspageComponent)), i1.ɵdid(1, 114688, null, 0, i11.NewspageComponent, [i12.EventEmiterService, i13.GetService, i8.ActivatedRoute, i14.TimeService], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_NewspageComponent_Host_0 = View_NewspageComponent_Host_0;
 var NewspageComponentNgFactory = i1.ɵccf("sports-social-newspage", i11.NewspageComponent, View_NewspageComponent_Host_0, {}, {}, []);
+=======
+var i6 = __webpack_require__(/*! ../side-nav/side-nav.component.ngfactory */ "./src/app/side-nav/side-nav.component.ngfactory.js");
+var i7 = __webpack_require__(/*! ../side-nav/side-nav.component */ "./src/app/side-nav/side-nav.component.ts");
+var i8 = __webpack_require__(/*! ../backfooter/backfooter.component.ngfactory */ "./src/app/backfooter/backfooter.component.ngfactory.js");
+var i9 = __webpack_require__(/*! ../backfooter/backfooter.component */ "./src/app/backfooter/backfooter.component.ts");
+var i10 = __webpack_require__(/*! ./newspage.component */ "./src/app/newspage/newspage.component.ts");
+var i11 = __webpack_require__(/*! ../shared/services/event.emiter.service */ "./src/app/shared/services/event.emiter.service.ts");
+var i12 = __webpack_require__(/*! ../shared/services/get.service */ "./src/app/shared/services/get.service.ts");
+var i13 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var styles_NewspageComponent = [i0.styles];
+var RenderType_NewspageComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_NewspageComponent, data: {} });
+exports.RenderType_NewspageComponent = RenderType_NewspageComponent;
+function View_NewspageComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 7, "div", [["class", "mnews"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 0, "img", [["alt", "more news"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 5, "div", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.opennews(_v.context.$implicit.id) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(4, null, ["", ""])), (_l()(), i1.ɵeld(5, 0, null, null, 2, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(6, null, ["", "..."])), i1.ɵpid(0, i2.SlicePipe, [])], null, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.image, ""); _ck(_v, 1, 0, currVal_0); var currVal_1 = _v.context.$implicit.title; _ck(_v, 4, 0, currVal_1); var currVal_2 = i1.ɵunv(_v, 6, 0, i1.ɵnov(_v, 7).transform(_v.context.$implicit.desc, 0, 100)); _ck(_v, 6, 0, currVal_2); }); }
+function View_NewspageComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 5, "div", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.opennews(_v.context.$implicit.id) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(2, null, ["", ""])), (_l()(), i1.ɵeld(3, 0, null, null, 2, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(4, null, ["", "..."])), i1.ɵpid(0, i2.SlicePipe, [])], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.title; _ck(_v, 2, 0, currVal_0); var currVal_1 = i1.ɵunv(_v, 4, 0, i1.ɵnov(_v, 5).transform(_v.context.$implicit.desc, 0, 100)); _ck(_v, 4, 0, currVal_1); }); }
+function View_NewspageComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 4, "div", [["class", "morecard"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.opennews(_v.context.$implicit.id) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 0, "img", [["alt", ""]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 2, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(3, null, ["", "...."])), i1.ɵpid(0, i2.SlicePipe, [])], null, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.image, ""); _ck(_v, 1, 0, currVal_0); var currVal_1 = i1.ɵunv(_v, 3, 0, i1.ɵnov(_v, 4).transform(_v.context.$implicit.title, 0, 40)); _ck(_v, 3, 0, currVal_1); }); }
+function View_NewspageComponent_4(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 8, "div", [["class", "tnewscard"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.opennews(_v.context.$implicit.id) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 0, "img", [], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 2, "textarea", [["class", "head"], ["disabled", ""]], null, null, null, null, null)), (_l()(), i1.ɵted(3, null, ["", ".."])), i1.ɵpid(0, i2.SlicePipe, []), (_l()(), i1.ɵeld(5, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 2, "textarea", [["class", "para"], ["disabled", ""]], null, null, null, null, null)), (_l()(), i1.ɵted(7, null, ["", "...."])), i1.ɵpid(0, i2.SlicePipe, [])], null, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.image, ""); _ck(_v, 1, 0, currVal_0); var currVal_1 = i1.ɵunv(_v, 3, 0, i1.ɵnov(_v, 4).transform(_v.context.$implicit.title, 0, 31)); _ck(_v, 3, 0, currVal_1); var currVal_2 = i1.ɵunv(_v, 7, 0, i1.ɵnov(_v, 8).transform(_v.context.$implicit.desc, 0, 41)); _ck(_v, 7, 0, currVal_2); }); }
+function View_NewspageComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-header", [], null, [["window", "resize"]], function (_v, en, $event) { var ad = true; if (("window:resize" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 1).onresize() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, i3.View_HeaderComponent_0, i3.RenderType_HeaderComponent)), i1.ɵdid(1, 4308992, null, 0, i4.HeaderComponent, [i5.PropertyService], null, null), (_l()(), i1.ɵeld(2, 0, null, null, 2, "div", [["class", "side-nav"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "sports-social-side-nav", [], null, null, null, i6.View_SideNavComponent_0, i6.RenderType_SideNavComponent)), i1.ɵdid(4, 114688, null, 0, i7.SideNavComponent, [], null, null), (_l()(), i1.ɵeld(5, 0, null, null, 32, "div", [["class", "main-body"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 31, "div", [["class", "newsbody"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 10, "div", [["class", "news-header"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(9, null, ["", ""])), (_l()(), i1.ɵeld(10, 0, null, null, 1, "h2", [["class", "timestamp"]], null, null, null, null, null)), (_l()(), i1.ɵted(11, null, ["", ""])), (_l()(), i1.ɵeld(12, 0, null, null, 5, "h2", [["class", "share"]], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 0, "div", [["class", "twitter"]], null, null, null, null, null)), (_l()(), i1.ɵeld(14, 0, null, null, 0, "div", [["class", "linkedin"]], null, null, null, null, null)), (_l()(), i1.ɵeld(15, 0, null, null, 0, "div", [["class", "fb"]], null, null, null, null, null)), (_l()(), i1.ɵeld(16, 0, null, null, 0, "div", [["class", "insta"]], null, null, null, null, null)), (_l()(), i1.ɵeld(17, 0, null, null, 0, "div", [["class", "rss"]], null, null, null, null, null)), (_l()(), i1.ɵeld(18, 0, null, null, 19, "div", [["class", "nbody"]], null, null, null, null, null)), (_l()(), i1.ɵeld(19, 0, null, null, 12, "div", [["class", "news"]], null, null, null, null, null)), (_l()(), i1.ɵeld(20, 0, null, null, 11, "div", [["class", "main-news"]], null, null, null, null, null)), (_l()(), i1.ɵeld(21, 0, null, null, 0, "img", [["alt", "lit news fam."]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(22, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(23, null, ["", "..."])), (_l()(), i1.ɵeld(24, 0, null, null, 2, "a", [["target", "_blank"]], [[8, "href", 4]], null, null, null, null)), (_l()(), i1.ɵeld(25, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["READ MORE"])), (_l()(), i1.ɵeld(27, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(28, 0, null, null, 0, "hr", [], null, null, null, null, null)), (_l()(), i1.ɵeld(29, 0, null, null, 2, "div", [["class", "more-news"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_NewspageComponent_1)), i1.ɵdid(31, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(32, 0, null, null, 5, "div", [["class", "top-stories"]], null, null, null, null, null)), (_l()(), i1.ɵeld(33, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Recent Stories"])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_NewspageComponent_2)), i1.ɵdid(36, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(37, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(38, 0, null, null, 25, "div", [["class", "mobile-main"]], null, null, null, null, null)), (_l()(), i1.ɵeld(39, 0, null, null, 5, "h2", [["class", "share"]], null, null, null, null, null)), (_l()(), i1.ɵeld(40, 0, null, null, 0, "div", [["class", "twitter"]], null, null, null, null, null)), (_l()(), i1.ɵeld(41, 0, null, null, 0, "div", [["class", "linkedin"]], null, null, null, null, null)), (_l()(), i1.ɵeld(42, 0, null, null, 0, "div", [["class", "fb"]], null, null, null, null, null)), (_l()(), i1.ɵeld(43, 0, null, null, 0, "div", [["class", "insta"]], null, null, null, null, null)), (_l()(), i1.ɵeld(44, 0, null, null, 0, "div", [["class", "rss"]], null, null, null, null, null)), (_l()(), i1.ɵeld(45, 0, null, null, 8, "div", [["class", "newscard"]], null, null, null, null, null)), (_l()(), i1.ɵeld(46, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(47, null, ["", ""])), (_l()(), i1.ɵeld(48, 0, null, null, 0, "img", [["alt", ""]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(49, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(50, null, ["", ""])), (_l()(), i1.ɵeld(51, 0, null, null, 2, "a", [["target", "_blank"]], [[8, "href", 4]], null, null, null, null)), (_l()(), i1.ɵeld(52, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["READ MORE"])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_NewspageComponent_3)), i1.ɵdid(55, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(56, 0, null, null, 0, "hr", [], null, null, null, null, null)), (_l()(), i1.ɵeld(57, 0, null, null, 3, "h1", [["class", "heading"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Recent Stories "])), (_l()(), i1.ɵeld(59, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Swipe right>>"])), (_l()(), i1.ɵeld(61, 0, null, null, 2, "div", [["class", "tnews"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_NewspageComponent_4)), i1.ɵdid(63, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(64, 0, null, null, 1, "sports-social-backfooter", [], null, null, null, i8.View_BackfooterComponent_0, i8.RenderType_BackfooterComponent)), i1.ɵdid(65, 114688, null, 0, i9.BackfooterComponent, [], null, null)], function (_ck, _v) { var _co = _v.component; _ck(_v, 1, 0); _ck(_v, 4, 0); var currVal_5 = _co.news; _ck(_v, 31, 0, currVal_5); var currVal_6 = _co.rnews; _ck(_v, 36, 0, currVal_6); var currVal_11 = _co.news; _ck(_v, 55, 0, currVal_11); var currVal_12 = _co.news; _ck(_v, 63, 0, currVal_12); _ck(_v, 65, 0); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.mnewshead; _ck(_v, 9, 0, currVal_0); var currVal_1 = _co.mnewstime; _ck(_v, 11, 0, currVal_1); var currVal_2 = i1.ɵinlineInterpolate(1, "", _co.mnewsimage, ""); _ck(_v, 21, 0, currVal_2); var currVal_3 = _co.mnewsdesc; _ck(_v, 23, 0, currVal_3); var currVal_4 = i1.ɵinlineInterpolate(1, "", _co.mnewsurl, ""); _ck(_v, 24, 0, currVal_4); var currVal_7 = _co.mnewshead; _ck(_v, 47, 0, currVal_7); var currVal_8 = i1.ɵinlineInterpolate(1, "", _co.mnewsimage, ""); _ck(_v, 48, 0, currVal_8); var currVal_9 = _co.mnewsdesc; _ck(_v, 50, 0, currVal_9); var currVal_10 = i1.ɵinlineInterpolate(1, "", _co.mnewsurl, ""); _ck(_v, 51, 0, currVal_10); }); }
+exports.View_NewspageComponent_0 = View_NewspageComponent_0;
+function View_NewspageComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-newspage", [], null, null, null, View_NewspageComponent_0, RenderType_NewspageComponent)), i1.ɵdid(1, 114688, null, 0, i10.NewspageComponent, [i11.EventEmiterService, i12.GetService, i13.ActivatedRoute], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+exports.View_NewspageComponent_Host_0 = View_NewspageComponent_Host_0;
+var NewspageComponentNgFactory = i1.ɵccf("sports-social-newspage", i10.NewspageComponent, View_NewspageComponent_Host_0, {}, {}, []);
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
 exports.NewspageComponentNgFactory = NewspageComponentNgFactory;
 
 
@@ -7053,12 +7323,16 @@ exports.NewspageComponentNgFactory = NewspageComponentNgFactory;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
+<<<<<<< HEAD
 var time_service_1 = __webpack_require__(/*! ./../shared/services/time.service */ "./src/app/shared/services/time.service.ts");
+=======
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
 var router_1 = __webpack_require__(/*! @angular/router */ "@angular/router");
 var get_service_1 = __webpack_require__(/*! ./../shared/services/get.service */ "./src/app/shared/services/get.service.ts");
 var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var event_emiter_service_1 = __webpack_require__(/*! ../shared/services/event.emiter.service */ "./src/app/shared/services/event.emiter.service.ts");
 var NewspageComponent = /** @class */ (function () {
+<<<<<<< HEAD
     function NewspageComponent(_eventemiter, getService, route, time) {
         this._eventemiter = _eventemiter;
         this.getService = getService;
@@ -7086,6 +7360,22 @@ var NewspageComponent = /** @class */ (function () {
             this.getnewss(this.topic);
             this.ddata = false;
         }
+=======
+    function NewspageComponent(_eventemiter, getService, route) {
+        this._eventemiter = _eventemiter;
+        this.getService = getService;
+        this.route = route;
+        this.news = [];
+        this.rnews = [];
+        this.j = -1;
+    }
+    NewspageComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.queryParams.subscribe(function (params) {
+            _this.topic = params['topic'];
+        });
+        this.getnews(this.topic);
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
         this.recentnews("");
         this.datastr = this._eventemiter.userToEdit;
         if (this.datastr !== undefined) {
@@ -7096,6 +7386,7 @@ var NewspageComponent = /** @class */ (function () {
             this.mnewsurl = this.datastr.url;
         }
     };
+<<<<<<< HEAD
     // public ngfake(){
     //   console.log("ngfake working");  
     //   this.route.params.subscribe(params => {
@@ -7120,6 +7411,8 @@ var NewspageComponent = /** @class */ (function () {
     //     this.mnewsurl = this.datastr.url;
     //     }
     // }
+=======
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
     NewspageComponent.prototype.recentnews = function (topic) {
         var _this = this;
         this.getService.getsportnews(topic).subscribe(function (res) {
@@ -7127,10 +7420,16 @@ var NewspageComponent = /** @class */ (function () {
             var x;
             for (var i in body.news) {
                 _this.j = _this.j + 1;
+<<<<<<< HEAD
                 x = _this.time.ExactDate(Date.parse(body.news[i].insertedDate));
                 x = x.replace(/T/g, " at ");
                 _this.rnews.push({
                     source: body.news[i].source,
+=======
+                x = body.news[i].insertedDate;
+                x = x.replace(/T/g, " at ");
+                _this.rnews.push({
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
                     id: _this.j,
                     title: body.news[i].title,
                     timestamp: x.substr(0, 19),
@@ -7149,6 +7448,7 @@ var NewspageComponent = /** @class */ (function () {
         this.getService.getsportnews(topic).subscribe(function (res) {
             var body = JSON.parse(res._body);
             var x;
+<<<<<<< HEAD
             _this.j = _this.j + 1;
             for (var i = 0; i < 5; i++) {
                 x = _this.time.ExactDate(body.news[i].insertedDate);
@@ -7205,6 +7505,13 @@ var NewspageComponent = /** @class */ (function () {
                 x = x.replace(/T/g, " at ");
                 _this.news.push({
                     source: body.news[i].source,
+=======
+            for (var i in body.news) {
+                _this.j = _this.j + 1;
+                x = body.news[i].insertedDate;
+                x = x.replace(/T/g, " at ");
+                _this.news.push({
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
                     id: _this.j,
                     title: body.news[i].title,
                     timestamp: x.substr(0, 19),
@@ -7226,6 +7533,10 @@ var NewspageComponent = /** @class */ (function () {
         });
     };
     NewspageComponent.prototype.opennews = function (id) {
+<<<<<<< HEAD
+=======
+        console.log("lalala" + id);
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
         if (id < 5) {
             this.mnewshead = this.news[id].title;
             this.mnewstime = this.news[id].timestamp;
@@ -7242,6 +7553,7 @@ var NewspageComponent = /** @class */ (function () {
             this.mnewsurl = this.rnews[id].url;
         }
     };
+<<<<<<< HEAD
     NewspageComponent.prototype.ngDestroy = function () {
     };
     NewspageComponent.prototype.lscroll = function () {
@@ -7255,6 +7567,236 @@ var NewspageComponent = /** @class */ (function () {
     return NewspageComponent;
 }());
 exports.NewspageComponent = NewspageComponent;
+=======
+    return NewspageComponent;
+}());
+exports.NewspageComponent = NewspageComponent;
+
+
+/***/ }),
+
+/***/ "./src/app/open-cards/open-home-match-card/open-home-match-card.component.css.shim.ngstyle.js":
+/*!****************************************************************************************************!*\
+  !*** ./src/app/open-cards/open-home-match-card/open-home-match-card.component.css.shim.ngstyle.js ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var styles = [".rightside[_ngcontent-%COMP%]{\n    \n    float: right;\n    width: 80%;\n    height: 350px;\n    z-index: 10;\n    border-bottom: 1px solid #bbbbbb;\n    background-color: #eeeeee;\n}\n\n.topic[_ngcontent-%COMP%]{\n    text-decoration: underline;\n    margin-left: 2%;\n    margin-top: 2%;\n}\n\n.outdiv[_ngcontent-%COMP%]{\n    scroll-snap-align: start;\n    width: 70%;\n    margin: 1% 1.1% 0% 10%;\n    border-radius: 2%;\n    vertical-align: top;\n}\n\n.card[_ngcontent-%COMP%]{\n    display: -ms-grid;\n    display: grid;\n    width: 80%;\n    height: auto;    \n    border: 1px solid #ece9e9;\n    margin-bottom: 2%;\n    border-radius: 2%;\n    box-shadow: 3px 3px 5px #ecebeb;\n    background-color: #ffffff;\n}\n\n.head[_ngcontent-%COMP%]{\n    width: 100%;\n    height: 34px;\n    border-bottom: 1px solid #dddddd;\n}\n\n.gamename[_ngcontent-%COMP%] {\n    height: 100%;\n    width: 60%;\n    margin-left: 2%;\n    float:left;\n}\n\n.result[_ngcontent-%COMP%] {\n    height: 100%;\n    width: 30%;\n    margin-right: 2%;\n    float: right;\n}\n\n.result[_ngcontent-%COMP%]   b[_ngcontent-%COMP%], .result[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    float: right;\n}\n\n.result[_ngcontent-%COMP%]   b[_ngcontent-%COMP%] {\n    font-size: .9em;\n}\n\n.gamename[_ngcontent-%COMP%]   b[_ngcontent-%COMP%] {\n    font-size: 1em;\n}\n\n.gamename[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    margin-top: -0.5%;\n    font-size: 0.7em;\n    font-weight: lighter;\n}\n\n.result[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    margin-top: -0.5%;\n    font-size: 0.8em;\n    font-weight: bold;\n    color: #5f5e5e;\n}\n\n.cardData[_ngcontent-%COMP%]{\n    float: left;\n    width: 100%;\n    height: 70px;\n    margin-top: 3%;\n    \n}\n\n.cardData[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{\n    vertical-align: top;\n    margin-top: 0%;\n}\n\n.team1[_ngcontent-%COMP%] {\n    width:25%;\n    margin-left: 4%;\n}\n\n.team2[_ngcontent-%COMP%] {\n    width:25%;\n}\n\n.t1score[_ngcontent-%COMP%] {\n    width: 20%;\n}\n\n.t2score[_ngcontent-%COMP%] {\n    width: 20%;\n}\n\n.team1[_ngcontent-%COMP%], .team2[_ngcontent-%COMP%] {\n    text-align: center;\n}\n\n.t1score[_ngcontent-%COMP%], .t2score[_ngcontent-%COMP%] {\n    text-align: center;\n    margin-top: 7%;\n}\n\n.team1[_ngcontent-%COMP%], .team2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n    text-align: center;\n}\n\n.team1[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    border-radius: 50%;\n    height: 45px;\n    width: 45px;\n}\n\n.team2[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n   border-radius: 50%;\n   height: 45px;\n   width: 45px;\n}\n\n.matchstatus[_ngcontent-%COMP%]{\n    width: 100%;\n    height: 30px;\n    margin-top: 5%;\n}\n\n.matchstatus[_ngcontent-%COMP%] > textarea[_ngcontent-%COMP%]{\n    width: 100%;\n    border: none;\n    resize: none;\n    text-align: center;\n    height: auto;\n    font-size: .8em;\n    font-weight: bolder;\n    color: #000000;\n}\n\n.footer[_ngcontent-%COMP%]{\n    border-top: 1px solid #d3d1d1;\n    width: 100%;\n    height: 30px;\n    \n}\n\n.footer[_ngcontent-%COMP%] > a[_ngcontent-%COMP%]{\n    border: none;\n    width: auto;\n    cursor: pointer;\n    outline: none;\n    margin-top: 1%;\n    margin-left: 18%;\n    text-align: center;\n    font-size: 0.9em;\n    color: #686868;\n    background-color: transparent;\n}\n\n@media screen and (min-width:200px) and (max-width:700px){\n    .team1[_ngcontent-%COMP%], .team2[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n        font-size: 0.9em;\n    }\n    .creator[_ngcontent-%COMP%]{\n        margin-top: 12%;\n    }\n    .username[_ngcontent-%COMP%]{\n        font-size: .6em;\n    }\n    #creatorname[_ngcontent-%COMP%]{\n        font-size: .8em;\n    }\n    .eventtext[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n        font-size: .8em;\n    }\n    .home[_ngcontent-%COMP%]   .sidenav[_ngcontent-%COMP%]{\n        display: none;\n    }\n    .msidenav[_ngcontent-%COMP%]{\n        text-align: center;\n        display:block;\n        margin-top: 24%;\n    }\n    .rightside[_ngcontent-%COMP%] {\n        width: 100%;\n    }\n    .outdiv[_ngcontent-%COMP%]{\n        width: 100%;\n        \n        margin-left: 0%;\n    }\n    .card[_ngcontent-%COMP%]{\n        width: 95%;\n        height: 180px;\n        margin-left: 2%;\n        \n    }\n    .gamename[_ngcontent-%COMP%], .result[_ngcontent-%COMP%]   b[_ngcontent-%COMP%]{\n        font-size: 0.8em;\n    }\n    .result[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n        font-size: 0.7em;\n    }\n    .cardData[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n        height: 35px;\n        width: 35px;\n    }\n    .t1score[_ngcontent-%COMP%], .t2score[_ngcontent-%COMP%]{\n        font-size: 0.75em;\n    }\n    .home[_ngcontent-%COMP%]{\n        margin-top: 10%;\n    }\n    .footer[_ngcontent-%COMP%] > a[_ngcontent-%COMP%]{\n        margin-left: 10%;\n        outline: none;\n        outline-color: none;  \n    }\n}\n\n@media screen and (min-width: 701px) and (max-width: 950px){\n    .outdiv[_ngcontent-%COMP%] {\n        width: 100%;\n        \n        margin-left: 0%;\n    }\n    .rightside[_ngcontent-%COMP%]{\n        width: 100%;\n        margin-top: 7%;\n    }\n    .msidenav[_ngcontent-%COMP%]{\n        display: block;\n    }\n    .card[_ngcontent-%COMP%]{\n        width: 95%;\n        height: auto;\n        margin-left: 2%;\n    }\n\n    .footer[_ngcontent-%COMP%] > a[_ngcontent-%COMP%]{\n        margin-top: 2%;\n        margin-left: 20%;\n        outline: none;\n        outline-color: none;\n    }\n}"];
+exports.styles = styles;
+
+
+/***/ }),
+
+/***/ "./src/app/open-cards/open-home-match-card/open-home-match-card.component.ngfactory.js":
+/*!*********************************************************************************************!*\
+  !*** ./src/app/open-cards/open-home-match-card/open-home-match-card.component.ngfactory.js ***!
+  \*********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var i0 = __webpack_require__(/*! ./open-home-match-card.component.css.shim.ngstyle */ "./src/app/open-cards/open-home-match-card/open-home-match-card.component.css.shim.ngstyle.js");
+var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var i3 = __webpack_require__(/*! ../../header/header.component.ngfactory */ "./src/app/header/header.component.ngfactory.js");
+var i4 = __webpack_require__(/*! ../../header/header.component */ "./src/app/header/header.component.ts");
+var i5 = __webpack_require__(/*! ../../shared/services/property.service */ "./src/app/shared/services/property.service.ts");
+var i6 = __webpack_require__(/*! ../../side-nav/side-nav.component.ngfactory */ "./src/app/side-nav/side-nav.component.ngfactory.js");
+var i7 = __webpack_require__(/*! ../../side-nav/side-nav.component */ "./src/app/side-nav/side-nav.component.ts");
+var i8 = __webpack_require__(/*! ./open-home-match-card.component */ "./src/app/open-cards/open-home-match-card/open-home-match-card.component.ts");
+var i9 = __webpack_require__(/*! ../../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
+var i10 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var styles_OpenHomeMatchCardComponent = [i0.styles];
+var RenderType_OpenHomeMatchCardComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_OpenHomeMatchCardComponent, data: {} });
+exports.RenderType_OpenHomeMatchCardComponent = RenderType_OpenHomeMatchCardComponent;
+function View_OpenHomeMatchCardComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 43, "div", [["class", "outdiv"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 42, "div", [["class", "card"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 12, "div", [["class", "head"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 5, "div", [["class", "gamename"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 1, "b", [], null, null, null, null, null)), (_l()(), i1.ɵted(5, null, ["", " ", ""])), (_l()(), i1.ɵeld(6, 0, null, null, 2, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(7, null, ["", "..."])), i1.ɵpid(0, i2.SlicePipe, []), (_l()(), i1.ɵeld(9, 0, null, null, 5, "div", [["class", "result"]], null, null, null, null, null)), (_l()(), i1.ɵeld(10, 0, null, null, 1, "b", [], null, null, null, null, null)), (_l()(), i1.ɵted(11, null, ["Final Result", ""])), (_l()(), i1.ɵeld(12, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(14, null, [" @", ""])), (_l()(), i1.ɵeld(15, 0, null, null, 18, "div", [["class", "cardData"]], null, null, null, null, null)), (_l()(), i1.ɵeld(16, 0, null, null, 3, "div", [["class", "cardData team1"]], null, null, null, null, null)), (_l()(), i1.ɵeld(17, 0, null, null, 0, "img", [["onerror", "this.src='assets/images/user-default.png'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(18, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(19, null, ["", ""])), (_l()(), i1.ɵeld(20, 0, null, null, 4, "div", [["class", "cardData t1score"]], null, null, null, null, null)), (_l()(), i1.ɵeld(21, 0, null, null, 1, "b", [["style", "font-size: 1.2em;"]], null, null, null, null, null)), (_l()(), i1.ɵted(22, null, ["", ""])), (_l()(), i1.ɵeld(23, 0, null, null, 1, "p", [["style", "font-size: .6em; color:#7e7d7d;"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Score"])), (_l()(), i1.ɵeld(25, 0, null, null, 4, "div", [["class", "cardData t2score"]], null, null, null, null, null)), (_l()(), i1.ɵeld(26, 0, null, null, 1, "b", [["style", "font-size: 1.2em;"]], null, null, null, null, null)), (_l()(), i1.ɵted(27, null, ["", ""])), (_l()(), i1.ɵeld(28, 0, null, null, 1, "p", [["style", "font-size: .6em; color:#7e7d7d;"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Score"])), (_l()(), i1.ɵeld(30, 0, null, null, 3, "div", [["class", "cardData team2"]], null, null, null, null, null)), (_l()(), i1.ɵeld(31, 0, null, null, 0, "img", [["onerror", "this.src='assets/images/user-default.png'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(32, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(33, null, ["", ""])), (_l()(), i1.ɵeld(34, 0, null, null, 2, "div", [["class", "matchstatus"]], null, null, null, null, null)), (_l()(), i1.ɵeld(35, 0, null, null, 1, "textarea", [["disabled", ""]], null, null, null, null, null)), (_l()(), i1.ɵted(36, null, ["", ""])), (_l()(), i1.ɵeld(37, 0, null, null, 6, "div", [["class", "footer"]], null, null, null, null, null)), (_l()(), i1.ɵeld(38, 0, null, null, 1, "a", [["class", "one"], ["style", "color:red; "]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.first() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Match Talk"])), (_l()(), i1.ɵeld(40, 0, null, null, 1, "a", [["class", "two"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.second() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Moments"])), (_l()(), i1.ɵeld(42, 0, null, null, 1, "a", [["class", "three"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.third() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Line Ups"]))], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = _v.context.$implicit.gender; var currVal_1 = _v.context.$implicit.GameName; _ck(_v, 5, 0, currVal_0, currVal_1); var currVal_2 = i1.ɵunv(_v, 7, 0, i1.ɵnov(_v, 8).transform(_v.context.$implicit.Venue_Name, 0, 40)); _ck(_v, 7, 0, currVal_2); var currVal_3 = _v.context.$implicit.Activity_name; _ck(_v, 11, 0, currVal_3); var currVal_4 = _v.context.$implicit.uniquename; _ck(_v, 14, 0, currVal_4); var currVal_5 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.Team1Pic, ""); _ck(_v, 17, 0, currVal_5); var currVal_6 = _v.context.$implicit.Team1name; _ck(_v, 19, 0, currVal_6); var currVal_7 = _v.context.$implicit.scoreTeam1; _ck(_v, 22, 0, currVal_7); var currVal_8 = _v.context.$implicit.scoreTeam2; _ck(_v, 27, 0, currVal_8); var currVal_9 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.Team2Pic, ""); _ck(_v, 31, 0, currVal_9); var currVal_10 = _v.context.$implicit.Team2name; _ck(_v, 33, 0, currVal_10); var currVal_11 = _co.resultOfMatch; _ck(_v, 36, 0, currVal_11); }); }
+function View_OpenHomeMatchCardComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-header", [], null, [["window", "resize"]], function (_v, en, $event) { var ad = true; if (("window:resize" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 1).onresize() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, i3.View_HeaderComponent_0, i3.RenderType_HeaderComponent)), i1.ɵdid(1, 4308992, null, 0, i4.HeaderComponent, [i5.PropertyService], null, null), (_l()(), i1.ɵeld(2, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 1, "sports-social-side-nav", [], null, null, null, i6.View_SideNavComponent_0, i6.RenderType_SideNavComponent)), i1.ɵdid(6, 114688, null, 0, i7.SideNavComponent, [], null, null), (_l()(), i1.ɵeld(7, 0, null, null, 2, "div", [["class", "rightside"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_OpenHomeMatchCardComponent_1)), i1.ɵdid(9, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; _ck(_v, 1, 0); _ck(_v, 6, 0); var currVal_0 = _co.Matcharr; _ck(_v, 9, 0, currVal_0); }, null); }
+exports.View_OpenHomeMatchCardComponent_0 = View_OpenHomeMatchCardComponent_0;
+function View_OpenHomeMatchCardComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-open-home-match-card", [], null, null, null, View_OpenHomeMatchCardComponent_0, RenderType_OpenHomeMatchCardComponent)), i1.ɵdid(1, 114688, null, 0, i8.OpenHomeMatchCardComponent, [i9.PostService, i10.ActivatedRoute], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+exports.View_OpenHomeMatchCardComponent_Host_0 = View_OpenHomeMatchCardComponent_Host_0;
+var OpenHomeMatchCardComponentNgFactory = i1.ɵccf("sports-social-open-home-match-card", i8.OpenHomeMatchCardComponent, View_OpenHomeMatchCardComponent_Host_0, {}, {}, []);
+exports.OpenHomeMatchCardComponentNgFactory = OpenHomeMatchCardComponentNgFactory;
+
+
+/***/ }),
+
+/***/ "./src/app/open-cards/open-home-match-card/open-home-match-card.component.ts":
+/*!***********************************************************************************!*\
+  !*** ./src/app/open-cards/open-home-match-card/open-home-match-card.component.ts ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var post_service_1 = __webpack_require__(/*! ../../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
+var router_1 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var OpenHomeMatchCardComponent = /** @class */ (function () {
+    function OpenHomeMatchCardComponent(postservice, activatedroute) {
+        this.postservice = postservice;
+        this.activatedroute = activatedroute;
+        this.Matcharr = [];
+        this.one = document.getElementsByClassName('one');
+        this.two = document.getElementsByClassName('two');
+        this.three = document.getElementsByClassName('three');
+        this.four = document.getElementsByClassName('four');
+        this.five = document.getElementsByClassName('five');
+        this.buttonArr = [{ name: "Match Talk" },
+            { name: "Moments" },
+            { name: "Score Card" },
+            { name: "Line Ups" },
+            { name: "Head to Head" }];
+    }
+    OpenHomeMatchCardComponent.prototype.first = function () {
+        this.one[0].style.color = "red";
+        this.two[0].style.color = "#696969";
+        this.three[0].style.color = "#696969";
+        this.four[0].style.color = "#696969";
+        this.five[0].style.color = "#696969";
+    };
+    OpenHomeMatchCardComponent.prototype.second = function () {
+        this.two[0].style.color = "red";
+        this.one[0].style.color = "#696969";
+        this.three[0].style.color = "#696969";
+        this.four[0].style.color = "#696969";
+        this.five[0].style.color = "#696969";
+    };
+    OpenHomeMatchCardComponent.prototype.third = function () {
+        this.three[0].style.color = "red";
+        this.one[0].style.color = "#696969";
+        this.two[0].style.color = "#696969";
+        this.four[0].style.color = "#696969";
+        this.five[0].style.color = "#696969";
+    };
+    OpenHomeMatchCardComponent.prototype.getSingleMatchFeed = function () {
+        var _this = this;
+        this.postservice.OpenOneMatchCard(this.eventid).subscribe(function (data) {
+            for (var i = 0; i < data["Feed"].length; i++) {
+                _this.Matcharr.push({
+                    Activity_name: data["Feed"][i].Activity_name,
+                    uniquename: data["Feed"][i].uniquename,
+                    InsertedDate: data["Feed"][i].InsertedDate,
+                    profile_image: data["Feed"][i].profile_image,
+                    Venue_Name: data["Feed"][i].Venue_Name,
+                    EventText: data["Feed"][i].EventText,
+                    startdatetime: data["Feed"][i].startdatetime,
+                    GameName: data["Feed"][i].GameName,
+                    GameId: data["Feed"][i].GameId,
+                    Event_Image: data["Feed"][i].Event_Image,
+                    MatchStarterName: data["Feed"][i].MatchStarterName,
+                    MatchStarterPhoto: data["Feed"][i].MatchStarterPhoto,
+                    Team1name: data["Feed"][i].Team1name,
+                    Team1Id: data["Feed"][i].Team1Id,
+                    Team2Id: data["Feed"][i].Team2Id,
+                    Team1Pic: data["Feed"][i].Team1Pic,
+                    Team2name: data["Feed"][i].Team2name,
+                    Team2Pic: data["Feed"][i].Team2Pic,
+                    scoreTeam1: data["Feed"][i].scoreTeam1,
+                    scoreTeam2: data["Feed"][i].scoreTeam2,
+                    gender: data["Feed"][i].gender,
+                    Profile_Photo: data["Feed"][i].Profile_Photo,
+                    City: data["Feed"][i].City,
+                    CommentCount: data["Feed"][i].CommentCount,
+                    PromoteCount: data["Feed"][i].PromoteCount,
+                    WatchCount: data["Feed"][i].WatchCount,
+                    winnerid: data["Feed"][i].winnerid,
+                    eventStatus: data["Feed"][i].eventStatus
+                });
+                var winnerId = _this.Matcharr[i].winnerid;
+                var team1score = _this.Matcharr[i].Team1Id;
+                var team2score = _this.Matcharr[i].Team2Id;
+                var eventstatus = _this.Matcharr[i].eventStatus;
+                if (winnerId == team1score) {
+                    _this.resultOfMatch = _this.Matcharr[i].Team1name + " has won the match";
+                }
+                else if (winnerId == null || team1score == team2score || winnerId == 0) {
+                    _this.resultOfMatch = "Match Draw";
+                }
+                else if (eventstatus == 4) {
+                    _this.resultOfMatch = " Result is not declared !!";
+                }
+                else {
+                    _this.resultOfMatch = _this.Matcharr[i].Team2name + " has won the match";
+                }
+            }
+        });
+    };
+    OpenHomeMatchCardComponent.prototype.isDarkStyle = function () {
+        return false;
+    };
+    OpenHomeMatchCardComponent.prototype.isNormalStyle = function () {
+        return true;
+    };
+    OpenHomeMatchCardComponent.prototype.getparamid = function () {
+        var _this = this;
+        this.activatedroute.params.subscribe(function (param) {
+            _this.eventid = param.feedid;
+            console.log("this is paramid:", _this.eventid);
+        });
+    };
+    OpenHomeMatchCardComponent.prototype.ngOnInit = function () {
+        this.getparamid();
+        this.getSingleMatchFeed();
+        // this.activatedroute.paramMap.subscribe(params=>{
+        //   console.log(params);
+        // })
+    };
+    return OpenHomeMatchCardComponent;
+}());
+exports.OpenHomeMatchCardComponent = OpenHomeMatchCardComponent;
+
+
+/***/ }),
+
+/***/ "./src/app/open-cards/open-home-match-card/open-home-match-card.module.ts":
+/*!********************************************************************************!*\
+  !*** ./src/app/open-cards/open-home-match-card/open-home-match-card.module.ts ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var OpenHomeMatchCardModule = /** @class */ (function () {
+    function OpenHomeMatchCardModule() {
+    }
+    return OpenHomeMatchCardModule;
+}());
+exports.OpenHomeMatchCardModule = OpenHomeMatchCardModule;
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
 
 
 /***/ }),
@@ -7816,6 +8358,7 @@ var OurteamComponent = /** @class */ (function () {
         this.Sourabhdesc = "Sourabh handels the frontend developement at Sport Social,where he oversees the company's goal, including functionality of website & he actively involved in other departments of company.Sourabh holds a Masters in Computer application from National institute of technology.";
         this.Tushardesc = "Tushar Gangvar co-founded of Sporr Social Inc. in 2015 and returned as chief executiv officer in September 2016.Additionaly.Tushar Co-founder square, Where he serves as CEO and chairman";
         this.Nikhildesc = "Nikhil Kanujiya co-founded of Sporr Social Inc. in 2015 and returned as chief executiv officer in September 2016.Additionaly.Nikhil Co-founder square, Where he serves as CEO and chairman";
+<<<<<<< HEAD
         //Aniketdesc="Aniket Chaturvedi is the Tech Lead for Sport Social.He is a Full Stack Developer with vested interests in technology.A software engineer, responsible for leading a development team, and responsible for the quality of its technical deliverables."
         this.imgarr = [
             { name: "Sourabh Arora", profile: "Web Developer", desc: this.Sourabhdesc, url: "assets/images/football-min.jpg", fburl: this.sourabhFb },
@@ -7826,6 +8369,21 @@ var OurteamComponent = /** @class */ (function () {
             { url: "assets/images/football-min.jpg" },
             { url: "assets/images/football-min.jpg" },
             { url: "assets/images/football-min.jpg" }
+=======
+        this.Aniketdesc = "Aniket Chaturvedi is the Tech Lead for Sport Social.He is a Full Stack Developer with vested interests in technology.A software engineer, responsible for leading a development team, and responsible for the quality of its technical deliverables.";
+        this.imgarr = [
+            { name: "Nikhil Kanaujia", profile: "Co Founder & CEO", desc: this.Nikhildesc, url: "assets/images/football-min.jpg", fburl: "" },
+            { name: "Tushar Gangwar", profile: "MD & COO", desc: this.Tushardesc, url: "assets/images/football-min.jpg", fburl: "" },
+            { name: "Raghav Khandelwal", profile: "Director Finance and Strategy", desc: "", url: "assets/images/football-min.jpg", fburl: "" },
+            { name: "Aniket Chaturvedi", profile: "Tech Lead", desc: this.Aniketdesc, url: "assets/images/football-min.jpg", fburl: "" },
+            { name: "Sourabh Arora", profile: "Front end web developer", desc: this.Sourabhdesc, url: "assets/images/football-min.jpg", fburl: this.sourabhFb },
+            { name: "Kapil Pokheriyal", profile: "Android Developer", desc: "", url: "assets/images/football-min.jpg", fburl: "" },
+            { name: "Harsh Punj", profile: "Business Development Manager", desc: "", url: "assets/images/football-min.jpg", fburl: "" },
+            { name: "Aditya Shastry", profile: "Content Writer", desc: "", url: "assets/images/football-min.jpg", fburl: "" },
+            { name: "Anubhav Bajpeyee", profile: "Marketing and Blog Manager", desc: "", url: "assets/images/football-min.jpg", fburl: "" },
+            { name: "Gopal Singh", profile: "UI/UX Designer", desc: "", url: "assets/images/football-min.jpg", fburl: "" },
+            { name: "Abhinav Katiyar", profile: "Assistant Blog Manager", desc: "", url: "assets/images/football-min.jpg", fburl: "" }
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
         ];
     }
     OurteamComponent.prototype.ngOnInit = function () {
@@ -8505,6 +9063,15 @@ var PostService = /** @class */ (function () {
         };
         return this.http.post('https://test.sportsocial.in/poc/webfeed', this.homematchfeedObj);
     };
+<<<<<<< HEAD
+=======
+    PostService.prototype.OpenOneMatchCard = function (id) {
+        this.paramIdObj = {
+            eventid: id
+        };
+        return this.http.post('https://test.sportsocial.in/poc/webmatchinfo', this.paramIdObj);
+    };
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
     PostService.prototype.singleMatchData = function (eventid, userid, activityid, urlId, page) {
         this.singleMatchReqObj = [{
                 'eventid': eventid,
@@ -8743,6 +9310,149 @@ exports.TimeService = TimeService;
 
 /***/ }),
 
+<<<<<<< HEAD
+=======
+/***/ "./src/app/side-nav/side-nav.component.css.shim.ngstyle.js":
+/*!*****************************************************************!*\
+  !*** ./src/app/side-nav/side-nav.component.css.shim.ngstyle.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var styles = [".close[_ngcontent-%COMP%] {\n    float: right; \n    border-radius: 50%;\n    height: 20px;\n    width: 20px;\n    background-color: hsl(0, 0%, 100%, 0.5);\n }\n .sidenav[_ngcontent-%COMP%]{\n    margin-top: 2%;\n    width: 18%;\n    height: auto;\n    \n    position: fixed !important;\n}\n .data[_ngcontent-%COMP%]{\n        width: 90%;\n        padding: 5% 0% 5% 0%;\n        font-size: 1em;\n        font-family: 'Roboto',sans-serif;\n        border-top-right-radius: 25px;\n        border-bottom-right-radius: 25px;\n        cursor: pointer;\n    }\n .sidenav[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n        \n        margin: 5% 0% 2% 12%;\n    }\n .data[_ngcontent-%COMP%] > a[_ngcontent-%COMP%]{\n        margin-top: 3%;\n        margin-left: 20%;\n        height: 20px;\n        color: grey;\n        filter: rgb(211, 211, 211); \n        -webkit-filter: grayscale(1);\n    }\n .data[_ngcontent-%COMP%] > a[_ngcontent-%COMP%]:hover{\n        color: #024770;\n    }\n .homeicon[_ngcontent-%COMP%]{\n        margin-left: 15%;\n    }\n .data.Active[_ngcontent-%COMP%]{\n    background-color: rgb(133, 169, 190);\n    filter: none; \n    -webkit-filter: grayscale(0);\n  }\n .t1[_ngcontent-%COMP%], .t2[_ngcontent-%COMP%]{\n      margin-left: 2%;\n      font-size: 0.9em;\n  }\n .data.Active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{\n      color: white;\n      font-weight: bolder;\n      filter: none;\n    -webkit-filter: grayscale(0);\n  }\n img[_ngcontent-%COMP%]{\n      float: right;\n      \n      \n      margin-right: 6%;\n      height: 20px;\n      width: 30px;\n  }\n .msidenav[_ngcontent-%COMP%]{\n      display: none;\n      margin-top: 10%;\n  }\n .msidenav[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n      float: left;\n      margin-top: 25px;\n      margin-left: 1%;\n      width: 35px;\n      height: 35px;\n      z-index: 25;\n  }\n .modal[_ngcontent-%COMP%]{\n      margin-top: 12%;\n      float: left;\n      height: 100vh;\n      text-align: center;\n      z-index: 15;\n      position: fixed;\n      top: 0;\n      left: -500px;\n      width: 60%;\n      border-radius: 5px;\n      box-shadow: 2px 2px 4px #bbbbbb;\n      background-color: rgba(58, 58, 58, 0.7);\n      transition: all .5s ease-in-out;\n }\n .mdata[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{\n        text-decoration: none;\n        color: white;\n    }\n .mdata[_ngcontent-%COMP%]{\n        font-size: 1.8em;\n        margin-top: 30px;\n    }\n \n @media screen and (min-width: 600px) and (max-width: 950px){\n      .sidenav[_ngcontent-%COMP%]{\n          display:none;\n      }\n      .msidenav[_ngcontent-%COMP%]{\n          display: block;\n      }\n  }\n @media screen and (min-width: 200px) and (max-width: 600px){\n    .modal[_ngcontent-%COMP%] {\n        width: 70%;\n    }\n    .sidenav[_ngcontent-%COMP%]{\n        display:none;\n    }\n    .msidenav[_ngcontent-%COMP%]{\n        display: block;\n    }\n    .modal[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]{\n        padding: 10px;\n    }\n    .modal[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{\n        font-size: 1em;\n    }\n    .modal[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n        padding: 10px;\n        width: 30px;\n        height: 30px;\n    }\n}"];
+exports.styles = styles;
+
+
+/***/ }),
+
+/***/ "./src/app/side-nav/side-nav.component.ngfactory.js":
+/*!**********************************************************!*\
+  !*** ./src/app/side-nav/side-nav.component.ngfactory.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var i0 = __webpack_require__(/*! ./side-nav.component.css.shim.ngstyle */ "./src/app/side-nav/side-nav.component.css.shim.ngstyle.js");
+var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var i2 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var i3 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var i4 = __webpack_require__(/*! ./side-nav.component */ "./src/app/side-nav/side-nav.component.ts");
+var styles_SideNavComponent = [i0.styles];
+var RenderType_SideNavComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_SideNavComponent, data: {} });
+exports.RenderType_SideNavComponent = RenderType_SideNavComponent;
+function View_SideNavComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "div", [["class", "data t1"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "a", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Cricket"]))], null, null); }
+function View_SideNavComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "div", [["class", "data t2"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "a", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Football"]))], null, null); }
+function View_SideNavComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 30, "div", [["class", "sidenav"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 7, "div", [["class", "data"], ["routerLinkActive", "Active"]], null, null, null, null, null)), i1.ɵdid(2, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActiveOptions: [0, "routerLinkActiveOptions"], routerLinkActive: [1, "routerLinkActive"] }, null), i1.ɵqud(603979776, 1, { links: 1 }), i1.ɵqud(603979776, 2, { linksWithHrefs: 1 }), i1.ɵpod(5, { exact: 0 }), (_l()(), i1.ɵeld(6, 0, null, null, 2, "a", [["routerLink", ""]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 7).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), i1.ɵdid(7, 671744, [[2, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(-1, null, ["Home"])), (_l()(), i1.ɵeld(9, 0, null, null, 7, "div", [["class", "data"], ["routerLinkActive", "Active"]], null, null, null, null, null)), i1.ɵdid(10, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 3, { links: 1 }), i1.ɵqud(603979776, 4, { linksWithHrefs: 1 }), (_l()(), i1.ɵeld(13, 0, null, null, 3, "a", [["routerLink", "/newspage"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 14).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), i1.ɵdid(14, 671744, [[4, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { queryParams: [0, "queryParams"], routerLink: [1, "routerLink"] }, null), i1.ɵpod(15, { topic: 0 }), (_l()(), i1.ɵted(-1, null, ["News"])), (_l()(), i1.ɵeld(17, 0, null, null, 6, "div", [["class", "data"], ["routerLinkActive", "Active"]], null, null, null, null, null)), i1.ɵdid(18, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 5, { links: 1 }), i1.ɵqud(603979776, 6, { linksWithHrefs: 1 }), (_l()(), i1.ɵeld(21, 0, null, null, 2, "a", [["routerLink", "/OpenArena"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 22).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), i1.ɵdid(22, 671744, [[6, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(-1, null, ["Open Arena"])), (_l()(), i1.ɵeld(24, 0, null, null, 2, "div", [["class", "data"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.openn() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(25, 0, null, null, 1, "a", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Local Arena"])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_SideNavComponent_1)), i1.ɵdid(28, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_SideNavComponent_2)), i1.ɵdid(30, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵeld(31, 0, null, null, 32, "div", [["class", "msidenav"]], null, null, null, null, null)), (_l()(), i1.ɵeld(32, 0, null, null, 0, "img", [["src", "/assets/images/sports-social-menu.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.open() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(33, 0, null, null, 30, "div", [["class", "modal"]], null, null, null, null, null)), (_l()(), i1.ɵeld(34, 0, null, null, 0, "img", [["class", "close"], ["src", "/assets/images/sportsocialcross.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.close() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(35, 0, null, null, 7, "div", [["class", "mdata"], ["routerLinkActive", "Active"]], null, null, null, null, null)), i1.ɵdid(36, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActiveOptions: [0, "routerLinkActiveOptions"], routerLinkActive: [1, "routerLinkActive"] }, null), i1.ɵqud(603979776, 7, { links: 1 }), i1.ɵqud(603979776, 8, { linksWithHrefs: 1 }), i1.ɵpod(39, { exact: 0 }), (_l()(), i1.ɵeld(40, 0, null, null, 2, "a", [["routerLink", ""]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 41).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), i1.ɵdid(41, 671744, [[8, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(-1, null, ["Home"])), (_l()(), i1.ɵeld(43, 0, null, null, 5, "div", [["class", "mdata"], ["routerLinkActive", "Active"]], null, null, null, null, null)), i1.ɵdid(44, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 9, { links: 1 }), i1.ɵqud(603979776, 10, { linksWithHrefs: 1 }), (_l()(), i1.ɵeld(47, 0, null, null, 1, "a", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Local Arena"])), (_l()(), i1.ɵeld(49, 0, null, null, 6, "div", [["class", "mdata"], ["routerLinkActive", "Active"]], null, null, null, null, null)), i1.ɵdid(50, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 11, { links: 1 }), i1.ɵqud(603979776, 12, { linksWithHrefs: 1 }), (_l()(), i1.ɵeld(53, 0, null, null, 2, "a", [["routerLink", "/OpenArena"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 54).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), i1.ɵdid(54, 671744, [[12, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(-1, null, ["Open Arena"])), (_l()(), i1.ɵeld(56, 0, null, null, 7, "div", [["class", "mdata"], ["routerLinkActive", "Active"]], null, null, null, null, null)), i1.ɵdid(57, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 13, { links: 1 }), i1.ɵqud(603979776, 14, { linksWithHrefs: 1 }), (_l()(), i1.ɵeld(60, 0, null, null, 3, "a", [["routerLink", "/newspage"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 61).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), i1.ɵdid(61, 671744, [[14, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { queryParams: [0, "queryParams"], routerLink: [1, "routerLink"] }, null), i1.ɵpod(62, { topic: 0 }), (_l()(), i1.ɵted(-1, null, ["News"]))], function (_ck, _v) { var _co = _v.component; var currVal_0 = _ck(_v, 5, 0, true); var currVal_1 = "Active"; _ck(_v, 2, 0, currVal_0, currVal_1); var currVal_4 = ""; _ck(_v, 7, 0, currVal_4); var currVal_5 = "Active"; _ck(_v, 10, 0, currVal_5); var currVal_8 = _ck(_v, 15, 0, ""); var currVal_9 = "/newspage"; _ck(_v, 14, 0, currVal_8, currVal_9); var currVal_10 = "Active"; _ck(_v, 18, 0, currVal_10); var currVal_13 = "/OpenArena"; _ck(_v, 22, 0, currVal_13); var currVal_14 = (_co.data === 0); _ck(_v, 28, 0, currVal_14); var currVal_15 = (_co.data === 0); _ck(_v, 30, 0, currVal_15); var currVal_16 = _ck(_v, 39, 0, true); var currVal_17 = "Active"; _ck(_v, 36, 0, currVal_16, currVal_17); var currVal_20 = ""; _ck(_v, 41, 0, currVal_20); var currVal_21 = "Active"; _ck(_v, 44, 0, currVal_21); var currVal_22 = "Active"; _ck(_v, 50, 0, currVal_22); var currVal_25 = "/OpenArena"; _ck(_v, 54, 0, currVal_25); var currVal_26 = "Active"; _ck(_v, 57, 0, currVal_26); var currVal_29 = _ck(_v, 62, 0, ""); var currVal_30 = "/newspage"; _ck(_v, 61, 0, currVal_29, currVal_30); }, function (_ck, _v) { var currVal_2 = i1.ɵnov(_v, 7).target; var currVal_3 = i1.ɵnov(_v, 7).href; _ck(_v, 6, 0, currVal_2, currVal_3); var currVal_6 = i1.ɵnov(_v, 14).target; var currVal_7 = i1.ɵnov(_v, 14).href; _ck(_v, 13, 0, currVal_6, currVal_7); var currVal_11 = i1.ɵnov(_v, 22).target; var currVal_12 = i1.ɵnov(_v, 22).href; _ck(_v, 21, 0, currVal_11, currVal_12); var currVal_18 = i1.ɵnov(_v, 41).target; var currVal_19 = i1.ɵnov(_v, 41).href; _ck(_v, 40, 0, currVal_18, currVal_19); var currVal_23 = i1.ɵnov(_v, 54).target; var currVal_24 = i1.ɵnov(_v, 54).href; _ck(_v, 53, 0, currVal_23, currVal_24); var currVal_27 = i1.ɵnov(_v, 61).target; var currVal_28 = i1.ɵnov(_v, 61).href; _ck(_v, 60, 0, currVal_27, currVal_28); }); }
+exports.View_SideNavComponent_0 = View_SideNavComponent_0;
+function View_SideNavComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-side-nav", [], null, null, null, View_SideNavComponent_0, RenderType_SideNavComponent)), i1.ɵdid(1, 114688, null, 0, i4.SideNavComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+exports.View_SideNavComponent_Host_0 = View_SideNavComponent_Host_0;
+var SideNavComponentNgFactory = i1.ɵccf("sports-social-side-nav", i4.SideNavComponent, View_SideNavComponent_Host_0, {}, {}, []);
+exports.SideNavComponentNgFactory = SideNavComponentNgFactory;
+
+
+/***/ }),
+
+/***/ "./src/app/side-nav/side-nav.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/side-nav/side-nav.component.ts ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var SideNavComponent = /** @class */ (function () {
+    function SideNavComponent() {
+        this.data = 1;
+        this.resnav = document.getElementsByClassName('modal');
+    }
+    SideNavComponent.prototype.open = function () {
+        console.log('lalala');
+        this.resnav[0].style.left = "0px";
+    };
+    SideNavComponent.prototype.close = function () {
+        this.resnav[0].style.left = "-500px";
+    };
+    SideNavComponent.prototype.openn = function () {
+        this.data = 0;
+    };
+    SideNavComponent.prototype.ngOnInit = function () {
+    };
+    return SideNavComponent;
+}());
+exports.SideNavComponent = SideNavComponent;
+
+
+/***/ }),
+
+/***/ "./src/app/side-nav/side-nav.module.ts":
+/*!*********************************************!*\
+  !*** ./src/app/side-nav/side-nav.module.ts ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var SideNavModule = /** @class */ (function () {
+    function SideNavModule() {
+    }
+    return SideNavModule;
+}());
+exports.SideNavModule = SideNavModule;
+
+
+/***/ }),
+
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
 /***/ "./src/app/sports-specific-feed/sports-specific-feed.component.css.ngstyle.js":
 /*!************************************************************************************!*\
   !*** ./src/app/sports-specific-feed/sports-specific-feed.component.css.ngstyle.js ***!
@@ -9341,7 +10051,11 @@ exports.LAZY_MODULE_MAP = { "app/terms-and-condition/terms-and-condition.module#
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 module.exports = __webpack_require__(/*! /home/vikky/SportSocialWebsite/src/main.server.ts */"./src/main.server.ts");
+=======
+module.exports = __webpack_require__(/*! /Users/sportssocialweb/Desktop/SportSocialWebsite/src/main.server.ts */"./src/main.server.ts");
+>>>>>>> 4338d43454cf311cb13665891d17793faf7c5d3c
 
 
 /***/ }),

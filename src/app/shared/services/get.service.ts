@@ -53,8 +53,6 @@ export class GetService {
     return this.http.get("http://35.176.65.124:2200/score/upcomingCricketMatches");
   }
   getsportnews(topic): Observable<any> {
-    return this.http.get(
-      "http://3.8.116.65:3100/api/news/" +topic
-    );
+    return this.http.get("http://3.8.116.65:3100/api/news/" +topic);
   }
 }

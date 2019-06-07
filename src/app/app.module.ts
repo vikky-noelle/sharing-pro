@@ -57,6 +57,7 @@ import { TeamviewComponent } from './teamview/teamview.component';
 import { LocalitypageComponent } from './localitypage/localitypage.component';
 import { NewspageComponent } from './newspage/newspage.component';
 import { EventEmiterService } from './shared/services/event.emiter.service';
+import { OpenHomeMatchCardModule } from './open-cards/open-home-match-card/open-home-match-card.module';
 
 
 @NgModule({
@@ -103,6 +104,7 @@ import { EventEmiterService } from './shared/services/event.emiter.service';
     BackfooterModule,
     SsMatchCardModule,
     NewHeaderModule,
+    OpenHomeMatchCardModule
   ],
   providers: [
     PropertyService,
