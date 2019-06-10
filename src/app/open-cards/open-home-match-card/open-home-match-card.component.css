@@ -2,6 +2,10 @@
 .cbody{
     overflow: hidden;
 }
+.ffooter{
+    width: 84%;
+    float: right;
+}
 .rightside{
     float: right;
     width: 80%;
@@ -225,6 +229,10 @@
         margin-left: 2%;
         /* border: 1px solid red; */
     }
+    .ffooter{
+        clear: both;
+        width: 100%;
+    }
     .gamename,.result b{
         font-size: 0.8em;
     }
@@ -288,6 +296,10 @@
         width: 100%;
         /* border: 1px solid blue; */
         margin-left: 0%;
+    }
+    .ffooter{
+        clear: both;
+        width: 100%;
     }
     .rightside{
         width: 100%;

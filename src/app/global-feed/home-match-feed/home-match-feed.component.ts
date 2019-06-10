@@ -207,13 +207,13 @@ export class HomeMatchFeedComponent{
         if(id === this.news[i][j].id){
           topic = topic.toLowerCase();  
           this._eventemiter.userToEdit=this.news[i][j];
-          this.router.navigate(['/newspage'], { queryParams: {topic: topic}})
+          this.router.navigate(['/newspage', topic]);
         }
       }
     }
   }
   changee(topic){
-          this.router.navigate(['/newspage'], { queryParams: {topic: topic}})
+    this.router.navigate(['/newspage', topic]);
   }
   lscroll(){
     this.blog.nativeElement.scrollLeft-=this.outdiv.nativeElement.clientWidth;

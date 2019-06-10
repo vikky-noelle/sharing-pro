@@ -168,7 +168,6 @@ export class OpenHomeMatchCardComponent implements OnInit {
               this.genderCheck="Mix UP ";
             }
 
-            console.log("this is gender",this.genderCheck);
           }
 
           for(var j=0;j<data["Comment"].length;j++){
@@ -183,7 +182,6 @@ export class OpenHomeMatchCardComponent implements OnInit {
           
           for(var j=0;j<data["Joinees"].length;j++){
               this.JoineeTeamId = data["Joinees"][j].teamid;
-              console.log("thi is joineeeTEamId",this.JoineeTeamId);
               if(this.JoineeTeamId == this.team1id)
                 {
                   this.MatchLineup1.push({
@@ -240,7 +238,6 @@ export class OpenHomeMatchCardComponent implements OnInit {
       this.activatedroute.params.subscribe(
         (param)=>{
           this.eventid=param.feedid;
-          console.log("this is paramid:",this.eventid);
         }
       )
   }
