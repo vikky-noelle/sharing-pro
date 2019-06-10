@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs/Rx';
 import { Component, ViewChild, ElementRef} from '@angular/core';
 import { Http } from '@angular/http';
@@ -16,7 +17,9 @@ import { EventEmiterService } from '../../shared/services/event.emiter.service';
 export class HomeMatchFeedComponent{
   show:boolean=false;
   Matcharr = [];
+  tarray=[];
   finalstatus;
+  tnews=[];
   index=-1; //used to provide index for it
   news=[];
   gendercheck;
@@ -33,7 +36,15 @@ export class HomeMatchFeedComponent{
     private location:LocationService,
     private router:Router
   ) { }
-
+  count=8;
+  sport= ['Badminton', 
+  'Basketball', 
+  'Cricket', 
+  'Football', 
+  'Hockey', 
+  'Lawn Tennis', 
+  'Table Tennis', 
+  'Volleyball']
   Sports= [
     {id: 5, title: 'Badminton'},
     {id: 6, title: 'Basketball'},
@@ -44,14 +55,16 @@ export class HomeMatchFeedComponent{
     {id: 56, title: 'Table Tennis'},
     {id: 60, title: 'Volleyball'}
   ];
+  count1 = 0;
 
   ssmatchfeed(){
+    var gamename;
     this.location.getGeoLocation().then((pos)=>{
-      for(var i=0;i<this.Sports.length;i++){
-      this.postservice.homeMatchFeed(pos['latitude'],pos['longitude'],this.Sports[i].id,this.timestamp)
+      for(var ij=0;ij<this.Sports.length;ij++){
+      this.postservice.homeMatchFeed(pos['latitude'],pos['longitude'],this.Sports[ij].id,this.timestamp)
       .subscribe(data=>{
+        this.count1=this.count1+1;
         this.show=true;
-        console.log("asjfsjhsdfsgdjhdgh",data);
         var arr=[];
           for(var i=0;i<data["Feed"].length;i++){
               arr.push({
@@ -96,7 +109,6 @@ export class HomeMatchFeedComponent{
               this.finalstatus="Match Finish";
             }
 
-
             if(newstring = "male"){
               this.gendercheck = "Men's ";
              }
@@ -106,28 +118,69 @@ export class HomeMatchFeedComponent{
              else if (newstring == "mix")
               this.gendercheck= "Mix-up";
              }  
-             
           if(arr.length>0){
             this.index=this.index+1;
-            var x = arr[0].GameName.replace(/ matches/g,"");
-            this.getnewsdata(x.toLowerCase());
+            gamename = arr[0].GameName.replace(/ matches/g,"");
+            this.getnewsdata(gamename.toLowerCase());
             this.Matcharr.push({
               gamenumber: this.index,
               gametitle: arr[0].GameName,
               gamearray: arr
             }); 
           }
+          for(var k=0; k<this.count; k++){
+              if(this.sport[k]===gamename){
+                this.sport.splice(k,1);
+                this.count=this.count-1;
+                break;
+              }
+            }
+            if(this.count1===this.Sports.length){
+            this.gett(this.sport);
+          }
      });
-      
     }
+    });  
+  }
+  gett(str){
+    this.tarray=[];
+    for(var i=0; i<str.length; i++){
+      this.gettnewsdata(str[i]);
+    }
+  }
+  gettnewsdata(topic){
+    var name = topic;
+    topic=topic.toLowerCase();
+    topic = topic.replace(/ /g,"-");
+    this.getService.getsportnews(topic).subscribe(res=>{
+      var body = JSON.parse(res._body);
+      var arr=[];
+      console.log(body);
+      for (const i in body.news) {
+        var x = body.news[i].insertedDate;
+        x = x.replace(/T/g," at "); 
+        arr.push({
+          id:body.news[i]._id,
+          title:body.news[i].title,
+          timestamp:x.substr(0,19),
+          url: body.news[i].url,
+          image: body.news[i].newsImage,
+          desc: body.news[i].desc,
+          source: body.news[i].source
+        });
+        if(i==="10"){
+          break;
+        }
+      }
+      this.tnews.push({
+        gamename: name,
+        gamenews: arr
+      });
     });
   }
-
   getnewsdata(topic){
     this.getService.getsportnews(topic).subscribe(res=>{
-      console.log("thisis response",res);
       var body = JSON.parse(res._body);
-      console.log("this is body of my array:",body);
       var arr=[];
       for (const i in body.news) {
         var x = body.news[i].insertedDate;
@@ -138,7 +191,8 @@ export class HomeMatchFeedComponent{
           timestamp:x.substr(0,19),
           url: body.news[i].url,
           image: body.news[i].newsImage,
-          desc: body.news[i].desc
+          desc: body.news[i].desc,
+          source: body.news[i].source
         });
         if(i==="10"){
           break;
@@ -165,7 +219,6 @@ export class HomeMatchFeedComponent{
     this.blog.nativeElement.scrollLeft-=this.outdiv.nativeElement.clientWidth;
   }
   rscroll(){
-    console.log('lalala');
     this.blog.nativeElement.scrollLeft+=this.outdiv.nativeElement.clientWidth;
   }
   ngOnInit() {

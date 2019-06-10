@@ -2,9 +2,7 @@
 <div class="home">
 
   <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf="Matcharr.length === 0" alt="">
-
-  <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf="Matcharr.length === 0" alt="">
-
+      
     <div class="rightside" *ngFor = "let game of Matcharr;"> 
         <div class="topic">
             <a><h4>{{game.gametitle}} matches<h5>See all</h5></h4></a>
@@ -71,12 +69,34 @@
           </div>
           <div class="news-detail">
             <textarea disabled>{{feed.title | slice:0:100}}..</textarea>
+            <p>{{feed.source}}</p>
           </div>
         </div>
     </div>
     </div>
-    </div>     
+    </div> 
+    <div class="rightside1" *ngFor="let data of tnews">
+      <h1 class="no-matches">{{data.gamename}} matches<h2>No matches</h2></h1>
+      <h1>News<h2 (click)="changee(data.gamename)">See all</h2></h1> 
+      <div class="news-section">
+          <!-- <div class="lefttarrow" (click)="lscroll();">
+            </div>  
+          <div class="righttarrow" (click)="rscroll();">
+              </div>  -->
+        <div class="outdiv" *ngFor="let feed of data.gamenews" #targett>
+          <div class="news-card" (click)="change(feed.id, game.gametitle)">
+            <div class="news-img">
+              <img src="{{feed.image}}" alt="sportsocialimg">
+            </div>
+            <div class="news-detail">
+              <textarea disabled>{{feed.title | slice:0:100}}..</textarea>
+              <p>{{feed.source}}</p>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>    
 </div>
-<div *ngIf="show">
+<div class="rightsidefooter" *ngIf="show">
 <sports-social-backfooter></sports-social-backfooter>
 </div>

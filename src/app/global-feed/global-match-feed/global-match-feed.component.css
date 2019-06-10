@@ -4,6 +4,10 @@
 .sidenav{
     margin-top: 4%;
 }
+.rightsidefooter{
+    width: 84%;
+    float: right;
+}
 .rightside{
     margin-top: 4%;
     width: 80%;
@@ -30,4 +34,9 @@
   #col-4{
       width:100%;
   }
+}
+@media screen and (min-width: 200px) and (max-width: 700px){
+    .rightside{
+        width: 100%;
+    }
 }

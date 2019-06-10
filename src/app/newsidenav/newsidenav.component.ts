@@ -53,6 +53,10 @@ export class NewsidenavComponent implements OnInit {
       this.damn[0].style.display="block";
       this.damnn[0].style.display="block";
       this.l1=1;
+      this.damnnn[0].style.display="none";
+      this.aicon[0].style.transform="rotate(0deg)";
+      this.l2=0;
+      this.dam[0].style.display="none";
     }
     else{
       this.aiconn[0].style.transform="rotate(0deg)";
@@ -67,6 +71,10 @@ export class NewsidenavComponent implements OnInit {
       this.damnnn[0].style.display="block";
       this.aicon[0].style.transform="rotate(90deg)";
       this.dam[0].style.display="block";
+      this.aiconn[0].style.transform="rotate(0deg)";
+      this.l1=0;
+      this.damnn[0].style.display="none";
+      this.damn[0].style.display="none";
     }
     else{
       this.damnnn[0].style.display="none";

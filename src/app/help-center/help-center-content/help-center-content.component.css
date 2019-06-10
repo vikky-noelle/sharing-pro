@@ -182,9 +182,6 @@ p{
   background-color: rgba(0,0,0,0.4); 
 }
 
-.dropbtn:hover {
-  cursor: pointer;
-}
 .modal-content {
   backface-visibility: hidden;
   border-radius: 5px;

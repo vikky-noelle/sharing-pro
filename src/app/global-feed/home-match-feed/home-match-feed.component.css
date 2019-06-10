@@ -7,6 +7,24 @@
 .home>div{
     display: inline-block;
 }
+.rightsidefooter{
+    width: 84%;
+    float: right;
+}
+.rightside1{
+    margin-top: 0%;
+    float: right;
+    width: 82.5%;
+    padding-left: 20px;
+    height: 240px;
+    z-index: 10;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+.no-matches{
+    height: 55px;
+    padding-top: 2%;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
 .rightside{
     margin-top: 0%;
     float: right;
@@ -14,7 +32,6 @@
     padding-left: 20px;
     height: 455px;
     z-index: 10;
-    border-left: 1px solid rgb(218, 218, 218);
     border-bottom: 1px solid rgb(218, 218, 218);
 }
 .blog{
@@ -249,7 +266,7 @@
 .Button{
     border: none;
     width: auto;
-    padding: 3.5%;
+    padding: 3%;
     outline: none;
     text-align: center;
     font-size: 0.9em;
@@ -307,7 +324,7 @@ h1 h2{
     width: 40%;
 }
 .news-img img{
-    height: 100%;
+    height: 80px;
     width: 90%;
     border-radius: 5px;
 }
@@ -317,6 +334,12 @@ h1 h2{
     float: right;
     font-size: 0.7em;
     cursor: pointer;
+}
+.news-detail p{
+    padding-top: 10px;
+    
+    color: rgb(87, 87, 87);
+    font-size: 1.3em;
 }
 .news-section .outdiv{
     display: inline-block;
@@ -328,7 +351,7 @@ h1 h2{
         overflow: hidden;
         border: none;
         resize: none;
-        text-align: center;
+        /* text-align: center; */
         height: auto;
         font-size: 1.5em;
         font-weight: bolder;
@@ -338,7 +361,9 @@ h1 h2{
     .team1,.team2>p{
         font-size: 0.9em;
     }
-
+    .rightsidefooter{
+        width: 100%;
+    }
     .creator{
         margin-top: 12%;
     }
@@ -364,6 +389,10 @@ h1 h2{
     }
     .rightside {
         height: 450px;
+        width: 100%;
+    }
+    .rightside1 {
+        height: 260px;
         width: 100%;
     }
     .outdiv{
@@ -412,11 +441,15 @@ h1 h2{
 }
 
 @media screen and (min-width: 700px) and (max-width: 950px){
-    /* .outdiv {
-        width: 31%;
-    } */
+    .rightsidefooter{
+        width: 100%;
+    }
     .rightside{
         margin-top: 7%;
+    }
+    .rightside1{
+        margin-top: 7%;
+        width: 100%;
     }
     .leftarrow,.rightarrow{
         margin-top: 16%;
@@ -472,3 +505,10 @@ h1 h2{
         margin-top: 10%;
     }
 }
+@media screen and (min-width: 951px) and (max-width: 1100px){
+    .Button{
+        padding: 2.5%;
+        font-size: 0.7em;
+    }
+}
+

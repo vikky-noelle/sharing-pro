@@ -1,4 +1,7 @@
 
+.cbody{
+    overflow: hidden;
+}
 .rightside{
     float: right;
     width: 80%;
@@ -6,8 +9,6 @@
     z-index: 10;
     border-bottom: 1px solid #bbbbbb;
     background-color: #f4f4f4;
-    overflow: hidden;
-    
 }
 
 .topic{
