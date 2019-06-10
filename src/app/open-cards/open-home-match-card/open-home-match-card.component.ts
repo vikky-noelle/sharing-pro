@@ -26,6 +26,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
   JoineeTeamId;
   gender;
   genderCheck;
+  BestPerfomerUsername;
 
   comment:boolean=true;
   moment:boolean=false;
@@ -158,7 +159,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
 
             this.gender=this.Matcharr[i].gender;
             
-            if(this.gender="male"){
+            if(this.gender=="male"){
               this.genderCheck="Men's ";
             }
             else if(this.gender=="female"){
@@ -225,11 +226,19 @@ export class OpenHomeMatchCardComponent implements OnInit {
           for(var j=0;j<data["bestperformers"].length;j++){
             this.ManOfMatch.push({
               username:data["bestperformers"][j].username,
-              profilepic:data["bestperformers"][j].profilepic== null ? " " : data["bestperformers"][j].profilepic
+              profilepic:data["bestperformers"][j].profilepic == null ? " " : data["bestperformers"][j].profilepic
             });
               this.manOfMatchImg=this.ManOfMatch[j].profilepic;
           }
-
+            if(this.ManOfMatch.length == 0){
+              this.BestPerfomerUsername="";
+            }
+            else if(this.ManOfMatch.length > 1){
+              this.BestPerfomerUsername="Players of Match";
+            }
+            else{
+              this.BestPerfomerUsername="Player of Match";
+            }
         }
       )
   }

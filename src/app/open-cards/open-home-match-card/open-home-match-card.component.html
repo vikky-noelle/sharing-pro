@@ -14,6 +14,12 @@
                   <p>{{feed.MatchStarterUniqueName}}</p>
                 </div> 
             </div>
+            <div class="activitycount">
+              <div>
+                <img src="assets/images/sports-social-promote.png"><p>{{feed.PromoteCount}}</p>
+                <img src="assets/images/sports-social-watching.png"><p>{{feed.WatchCount}}</p>
+              </div>
+            </div>
           
             <div class="cardData">
                 <div class="cardData team1">
@@ -33,15 +39,22 @@
             <div class="matchstatus">
                 <textarea disabled>{{resultOfMatch}}</textarea>
             </div>
+            <div class="matchstatus">
+                <textarea disabled>{{feed.EventText}}</textarea>
+            </div>
           
-            <div  *ngFor="let data of ManOfMatch; let j=index">
-                <div class="manofmatch" *ngIf="manOfMatchImg != null">
-                  <img src={{data.profilepic}} onerror="this.src='assets/images/user-default.png'">
-                    <div class="text">
-                        <p>Man of the Match</p>
+            <div class="performermatch">
+                <p>{{BestPerfomerUsername}}</p>
+                <div  *ngFor="let data of ManOfMatch; let j=index">
+                    <div class="manofmatch" *ngIf="manOfMatchImg != null">
+                      <img src={{data.profilepic}} onerror="this.src='assets/images/user-default.png'">
+                        <div class="text">
+                            <p>{{data.username}}</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div class="footer">
                   <button (click)="first()" class="one" style="background: none; color: black;">Match Talk</button>
                   <button (click)="second()" class="two">Moments</button>

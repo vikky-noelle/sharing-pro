@@ -55,10 +55,12 @@ export class HomeMatchFeedComponent{
     {id: 56, title: 'Table Tennis'},
     {id: 60, title: 'Volleyball'}
   ];
+
   count1 = 0;
 
   ssmatchfeed(){
     var gamename;
+
     this.location.getGeoLocation().then((pos)=>{
       for(var ij=0;ij<this.Sports.length;ij++){
       this.postservice.homeMatchFeed(pos['latitude'],pos['longitude'],this.Sports[ij].id,this.timestamp)

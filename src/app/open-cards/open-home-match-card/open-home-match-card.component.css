@@ -8,7 +8,7 @@
 }
 .rightside{
     float: right;
-    width: 80%;
+    width: 84%;
     height: 100vh;
     z-index: 10;
     border-bottom: 1px solid #bbbbbb;
@@ -76,13 +76,23 @@
     font-weight: bold;
     color: #5f5e5e;
 }
+.activitycount>div{
+    display: inline-flex;
+}
+.activitycount>div>img{
+    width:40px;
+    height:40px;
+}
+.activitycount>div>p{
+    text-align: center;
+    margin-top: 10%;
+}
 
 .cardData{
     float: left;
     width: 100%;
-    height: 70px;
-    margin-top: 3%;
-    /* border: 1px solid red; */
+    height: 73px;
+    margin-top: 2%;
 }
 .cardData>div{
     vertical-align: top;
@@ -97,7 +107,9 @@
 .t1score {
     width: 33%;
     margin-top: 3% !important;
+    font-size: 2em;
 }
+
 .team1,.team2 {
     text-align: center;
 }
@@ -124,28 +136,39 @@
 
 .matchstatus{
     width: 100%;
-    height: 30px;
+    height: 50px;
     margin-top: 5%;
 }
 .matchstatus>textarea{
     width: 100%;
+    height: 100%;
     border: none;
     resize: none;
     text-align: center;
-    height: auto;
     font-size: .8em;
     font-weight: bolder;
     color: #000000;
 }
-
+.performermatch>div{
+    display: inline-block;
+    justify-content: center !important;
+    width: 32%;
+}
+.performermatch>p{
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 2%;
+}
 .manofmatch{
     display: inline-flex;
     justify-content: center;
-    width: 100%;
-    text-align: center;
+    width: 90%;
+    margin-left: 3%;
+    align-content: center;
 }
 .manofmatch>img{
-    max-width: 60px;
+    /* max-width: 60px; */
     width: 50px;
     height: 50px;
     margin-right: .5%;
@@ -154,7 +177,7 @@
 .text{
     height: 45px;
     text-align: center;
-    width: 30%;
+    width: 100%;
     border: none;
     border-top-right-radius: 10%;
     border-bottom-right-radius: 10%;
