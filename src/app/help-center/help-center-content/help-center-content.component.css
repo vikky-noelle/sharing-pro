@@ -106,7 +106,7 @@ p{
 .subtopicdata{
   text-align: center;
     display: inline-block;
-    width:70px;
+    width: 150px;
     height: 70px;
     padding:2%;
     padding-bottom: 8%;
@@ -116,12 +116,18 @@ p{
     /* border: 1px solid black; */
 
 }
+.subtopicdata a img{
+  width: 60px;
+}
+.subtopicdata a p{
+  font-size: 1.1em;
+}
 .subtopicdata:hover img {
   text-align: center;
   border-radius: 5px;
-  transform: scale(1.05);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-  background-image: url('/assets/images/sportsocialteamheader.jpg');
+  transform: scale(1.1);
+  transition: .2s ease-in;
+  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .subtopicdata:hover {
@@ -232,7 +238,6 @@ p{
   height: 30px;
   width: 30px;
   border-radius: 50%; 
-  background-color: white;
 }
 
 
@@ -240,16 +245,20 @@ p{
       .problemss {
           display: flex;
           flex-wrap: wrap;
+          width: 97.5%;
           padding-top: 30px;
           align-self: center;
           text-align: center;
       }
       .subtopicdataa {
+        padding-top: 5px;
         text-align: center;
         display: inline-flex;
         flex-grow: 1;
+        height: 120px;
         margin:10px 0 0 10px;
         border-radius: 5px;
+        font-size: 0.8em;
         width: calc(100% *(1/2) - 10px - 1px);
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);
       }
@@ -292,9 +301,9 @@ p{
         cursor: pointer;
       }
    .arrow {
-     padding-top:5%;
-     height: 8px;
-     width: 8px;
+     padding-top:3%;
+     height: 18px;
+     width: 18px;
    }
    .modal-content::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */

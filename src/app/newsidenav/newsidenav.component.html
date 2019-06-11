@@ -5,58 +5,75 @@
   [routerLinkActiveOptions]="{exact: true}">
     <li>Home</li>
   </a>
-  <li routerLinkActive="active">
-      <a routerLink="/OpenArena">
-        Open Arena </a> <img class="aiconn" (click)="openn()" src="/assets/images/sportsocialarrowhome.png" alt="">  
+  <li class="openarena"
+  routerLinkActive="active">
+      <a class="openarena1"
+       href="/OpenArena">
+        Open Arena </a> <img class="arrowiconn" (click)="openn()" src="/assets/images/sportsocialarrowhome.png" alt="">  
       </li>
        
-  <ul class="con">
-    <a [routerLink]="['/Open Arena', list]" 
-    *ngFor="let list of list1">
-      <li>{{list}}</li>
-    </a>
-  </ul>
-  <li class="newsone" routerLinkActive="active">
-  <a class="newsonea" [routerLink]="['/newspage', '']">
-    News </a> <img class="aicon" (click)="opennn()" src="/assets/images/sportsocialarrowhome.png" alt="">  
+  
+      <ul class="openarenaopen">
+        <a href="/OpenArena/cricket">
+          <li class="c1">Cricket</li>
+        </a>
+        <a href="/OpenArena/football">
+         <li class="f1" >Football</li>  
+        </a>
+        <a href="/OpenArena/basketball">
+          <li class="b1">basketball</li>
+      </a>
+      <a href="/OpenArena/volleyball">
+         <li class="v1">volleyball</li>  
+        </a>
+        <a href="/OpenArena/tennis">
+          <li class="t1">Tennis</li>
+      </a>
+      <a href="/OpenArena/table-tennis">
+         <li class="tt1">Table Tennis</li>  
+        </a>
+        <a href="/OpenArena/hockey">
+          <li class="h1">Hockey</li>
+      </a>
+      <a href="/OpenArena/badminton">
+         <li class="bd1">Badminton</li>  
+        </a>
+      </ul>
+
+  <li     
+    class="newsone" routerLinkActive="active">
+  <a class="newsonea" href="/newspage">
+    News </a> <img class="arrowicon" (click)="opennn()" src="/assets/images/sportsocialarrowhome.png" alt="">  
   </li>
-    <ul class="conn">
-    <a [routerLink]="['/newspage/cricket']"
-    (click)="cliurl()">
-      <li class="c">Cricket</li>
+    <ul class="newsopen">
+    <a href="/newspage/cricket">
+      <li class="cricket">Cricket</li>
     </a>
-    <a [routerLink]="['/newspage/football']"
-    (click)="cliurl()">
-     <li class="f" >Football</li>  
+    <a href="/newspage/football">
+     <li class="football" >Football</li>  
     </a>
-    <a [routerLink]="['/newspage/basketball']" 
-    (click)="cliurl()">
-      <li class="b">basketball</li>
+    <a href="/newspage/basketball">
+      <li class="basketball">basketball</li>
   </a>
-    <a [routerLink]="['/newspage/volleyball']" 
-    (click)="cliurl()">
-     <li class="v">volleyball</li>  
+  <a href="/newspage/volleyball">
+     <li class="volleyball">volleyball</li>  
     </a>
-    <a [routerLink]="['/newspage/tennis']" 
-    (click)="cliurl()">
-      <li class="t">Tennis</li>
+    <a href="/newspage/tennis">
+      <li class="tennis">Tennis</li>
   </a>
-    <a [routerLink]="['/newspage/table tennis']" 
-    (click)="cliurl()">
-     <li class="tt">Table Tennis</li>  
+  <a href="/newspage/table-tennis">
+     <li class="tabletennis">Table Tennis</li>  
     </a>
-    <a [routerLink]="['/newspage/hockey']" 
-    (click)="cliurl()">
-      <li class="h">Hockey</li>
+    <a href="/newspage/hockey">
+      <li class="hockey">Hockey</li>
   </a>
-    <a [routerLink]="['/newspage/badminton']" 
-    (click)="cliurl()">
-     <li class="bd">Badminton</li>  
+  <a href="/newspage/badminton">
+     <li class="badminton">Badminton</li>  
     </a>
   </ul>
 </ul>
 
-
+<!-- 
 <div class="msidenav">
   <img (click)="open();" src="/assets/images/sports-social-menu.png">
   <div class="modal">
@@ -71,52 +88,44 @@
         Open Arena </a> <img (click)="openn()" src="/assets/images/sportsocialarrowhome1.png" alt="">  
       </li>
        
-  <ul class="connn">
+  <ul class="mnewsopen">
     <a [routerLink]="['/Open Arena', list]" 
     *ngFor="let list of list1">
       <li>{{list}}</li>
     </a>
   </ul>
   <li class="newsone" routerLinkActive="active">
-  <a class="newsonea" [routerLink]="['/newspage', '']">
+  <a class="newsonea" href="/newspage">
     News </a> <img (click)="opennn()" src="/assets/images/sportsocialarrowhome1.png" alt="">  
   </li>
-    <ul class="connnn">
-    <a [routerLink]="['/newspage/cricket']"
-    (click)="cliurl()">
-      <li>Cricket</li>
+    <ul class="mopenarenaopen">
+      <a href="/newspage/cricket">
+        <li class="cricket">Cricket</li>
+      </a>
+      <a href="/newspage/football">
+       <li class="football" >Football</li>  
+      </a>
+      <a href="/newspage/basketball">
+        <li class="basketball">basketball</li>
     </a>
-    <a [routerLink]="['/newspage/football']"
-    (click)="cliurl()">
-     <li>Football</li>  
+    <a href="/newspage/volleyball">
+       <li class="volleyball">volleyball</li>  
+      </a>
+      <a href="/newspage/tennis">
+        <li class="tennis">Tennis</li>
     </a>
-    <a [routerLink]="['/newspage/basketball']" 
-    (click)="cliurl()">
-      <li>basketball</li>
-  </a>
-    <a [routerLink]="['/newspage/volleyball']" 
-    (click)="cliurl()">
-     <li>volleyball</li>  
+    <a href="/newspage/table-tennis">
+       <li class="tabletennis">Table Tennis</li>  
+      </a>
+      <a href="/newspage/hockey">
+        <li class="hockey">Hockey</li>
     </a>
-    <a [routerLink]="['/newspage/tennis']" 
-    (click)="cliurl()">
-      <li>Tennis</li>
-  </a>
-    <a [routerLink]="['/newspage/table tennis']" 
-    (click)="cliurl()">
-     <li>Table Tennis</li>  
-    </a>
-    <a [routerLink]="['/newspage/hockey']" 
-    (click)="cliurl()">
-      <li>Hockey</li>
-  </a>
-    <a [routerLink]="['/newspage/badminton']" 
-    (click)="cliurl()">
-     <li>Badminton</li>  
-    </a>
+    <a href="/newspage/badminton">
+       <li class="badminton">Badminton</li>  
+      </a>
   </ul>
   <li class="cc"><img class="close" style="border-radius: 50%; background-color: white;height: 30px;width: 30px;" src="/assets/images/sportsocialcross.png" (click)="close();">
   </li>
   </ul>
   </div>
-</div>
+</div> -->

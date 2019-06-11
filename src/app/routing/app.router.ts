@@ -70,6 +70,10 @@ const App_Route: Routes = [
         loadChildren: 'app/global-feed/global-match-feed/global-match-feed.module#GlobalMatchFeedModule'
     },
     {
+        path: 'OpenArena/:topic',
+        loadChildren: 'app/global-feed/global-match-feed/global-match-feed.module#GlobalMatchFeedModule'
+    },
+    {
         path: 'AroundTheWorld',
         loadChildren: 'app/global-feed/global-news-feed/global-news-feed.module#GlobalNewsFeedModule'
     },

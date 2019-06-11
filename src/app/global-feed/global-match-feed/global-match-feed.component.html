@@ -4,6 +4,7 @@
 </div>
 <div class="newbox">
 <div class="rightside">
+    <h1>{{selected}}</h1>
 <ng-masonry-grid  
       [masonryOptions]="{ transitionDuration: '0.4s'}"
       [useAnimation]="false">
@@ -55,9 +56,12 @@
         </a> -->
       <sports-social-ss-match-card
       [coverpic]="feed.coverpic"
+      [matchstartername]="feed.MatchStarterName"
       [userName]="feed.userName"
       [gamename]="feed.gamename"
       [startdatetime]="feed.startdatetime"
+      [team1pic]="feed.Team1Pic"
+      [team2pic]="feed.Team2Pic"
       [InsertedDate]="feed.InsertedDate"
       [Uniquename]="feed.Uniquename"
       [EventText]="feed.EventText"
@@ -78,7 +82,7 @@
     </div> -->
 </div>
 </div>
-<div class="rightsidefooter">
+<div class="rightsidefooter" *ngIf="Matcharr.length !== 0">
 <sports-social-backfooter></sports-social-backfooter>
 </div>
 <!-- <sports-social-footer></sports-social-footer> -->

@@ -66,8 +66,6 @@ export class HelpCenterContentComponent implements OnInit {
         // const url = 'https://www.sportsocial.in/' + this.strip(body[i].namkaran).replace(/\s/g, '-').toLowerCase();
         // this.link.addTag({ rel: 'canonical', href: url } );
       }
-      console.log(this.topics);
-      console.log(this.topicname);
       if(this.topicname=='')
         this.topicId = this.topics[0].id;
         this.getSubTopics(this.topicId);
@@ -98,13 +96,10 @@ export class HelpCenterContentComponent implements OnInit {
           shortDesc: body[i].shortDesc
         });
       }
-      console.log(this.subtopics);
   });
   }
   showw() {
-    this.hide[0].style.display="block";
-    console.log('show working');
- 
+    this.hide[0].style.display="block"; 
 }
 home() {
   this.router.navigate(['/HelpCenter']); 

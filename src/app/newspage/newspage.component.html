@@ -8,7 +8,9 @@
     <img (click)="lscroll()" src="/assets/images/sportsocialhomearrow1.png">
   </div>
   <div class="crousal" #widgets>
-    <div *ngFor="let data of list" class="c-element" #widgetsContent>
+    <div *ngFor="let data of list" 
+    class="c-element" #widgetsContent
+    (click)="openews(data.id, data.game)">
       <img src="{{data.image}}">
       <div class="c-head">
         <h1>{{data.title}}</h1>
@@ -20,14 +22,14 @@
       <img (click)="rscroll()" src="/assets/images/sportsocialhomearrow.png">
   </div>
   <div *ngIf="ddata" class="dnews">
-    <div *ngFor="let data of list1">
+    <div (click)="openews(data.id, data.game)" *ngFor="let data of list1">
       <img src="{{data.image}}">
       <h1>{{data.title|slice:0:70}}...</h1>
     </div>
   </div>
   </div>
   <div *ngIf="ddata">
-  <div *ngFor="let data of news" class="normal-news">
+  <div (click)="openews(data.id, data.game)" *ngFor="let data of news" class="normal-news">
     <img src="{{data.image}}">
     <h1>{{data.title}}</h1>
     <p>{{data.desc|slice:0:100}}...</p>
