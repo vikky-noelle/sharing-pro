@@ -1,4 +1,3 @@
-import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs/Rx';
 import { Component, ViewChild, ElementRef} from '@angular/core';
 import { Http } from '@angular/http';
@@ -55,15 +54,15 @@ export class HomeMatchFeedComponent{
     {id: 56, title: 'Table Tennis'},
     {id: 60, title: 'Volleyball'}
   ];
+  Sports1=[5,6,17,23,29,36,56,60];
 
   count1 = 0;
 
   ssmatchfeed(){
     var gamename;
-
     this.location.getGeoLocation().then((pos)=>{
-      for(var ij=0;ij<this.Sports.length;ij++){
-      this.postservice.homeMatchFeed(pos['latitude'],pos['longitude'],this.Sports[ij].id,this.timestamp)
+      for(var i=0;i<this.Sports.length;i++){
+      this.postservice.homeMatchFeed(pos['latitude'],pos['longitude'],this.Sports[i].id,this.timestamp)
       .subscribe(data=>{
         this.count1=this.count1+1;
         this.show=true;

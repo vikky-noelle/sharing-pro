@@ -63,6 +63,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
     .subscribe(res=>{
       this.show=true;
       var body=res.json();
+      
       console.log("hi this is my console",body);
       for(const i in body){
         this.Matcharr.push({
@@ -81,15 +82,9 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
           Team2Name:body[i].Team2Name,
           WatchCount:body[i].WatchCount,
           PromoteCount:body[i].PromoteCount,
-          CommentCount:body[i].CommentCount,
-  
+          CommentCount:body[i].CommentCount
         });
-      console.log("thisis imageof open arena",this.Matcharr[i].coverpic);
-        //  this.gendercheck=this.Matcharr[i].gender;
-        //    if(this.gendercheck=="Male"){
-        //   var HeShe= this.gendercheck.replace(this.Matcharr[i].gender,"Men's");
-        //   console.log(HeShe);
-        // }
+      console.log("thisis imageof open arena",this.Matcharr[i].coverpic);     
       }
     })
   }
