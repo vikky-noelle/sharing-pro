@@ -97,7 +97,6 @@ export class PostService {
     // console.log("Heyy this is page.="+page);
     // console.log("Heyy this is gameid.="+gameid);
     return this.http.post('https://prod.sportsocial.in/poc/webfeed', this.matchFeedReqObj);
-    // return this.http.post('https://test.sportsocial.in/poc/webfeed', this.matchFeedReqObj);
   }
 
   homeMatchFeed(lat,long,Gameid,timest){
@@ -107,14 +106,14 @@ export class PostService {
         gameid:Gameid,
         timestamp:timest
       }
-      return this.http.post('https://test.sportsocial.in/poc/webfeed',this.homematchfeedObj);
+      return this.http.post('https://test.sportsocial.in/web/webfeed',this.homematchfeedObj);
   }
 
   OpenOneMatchCard(id){
     this.paramIdObj={
       eventid:id
     }
-    return this.http.post('https://test.sportsocial.in/poc/webmatchinfo',this.paramIdObj);
+    return this.http.post('https://test.sportsocial.in/web/webmatchinfo',this.paramIdObj);
   }
 
   singleMatchData(eventid, userid, activityid, urlId, page) {
