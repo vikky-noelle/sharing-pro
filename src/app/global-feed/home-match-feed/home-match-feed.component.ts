@@ -200,6 +200,7 @@ export class HomeMatchFeedComponent{
           break;
         }
       }
+      name = name.replace(/ /g,"-");
       this.tnews.push({
         gamename: name,
         gamenews: arr
@@ -240,8 +241,25 @@ export class HomeMatchFeedComponent{
       }
     }
   }
+  changenomatch(id, topic){
+    console.log(id+"lala"+topic + this.tnews[0].gamenews[0].title);
+    topic = topic.toLowerCase();
+    for(var i=0;i<this.tnews.length;i++){
+      for(var j=0;j<this.tnews[i].gamenews.length; j++){
+        if(id === this.tnews[i].gamenews[j].id){
+          this._eventemiter.userToEdit=this.tnews[i].gamenews[j];
+          this.router.navigate(['/newspage', topic]);
+       }
+      }
+    }
+  }
   changee(topic){
+    topic = topic.toLowerCase();
     this.router.navigate(['/newspage', topic]);
+  }
+  gotoarena(topic){
+    topic = topic.toLowerCase();
+    this.router.navigate(['/OpenArena', topic]);
   }
   lscroll(){
     this.blog.nativeElement.scrollLeft-=this.outdiv.nativeElement.clientWidth;

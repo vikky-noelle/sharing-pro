@@ -201,12 +201,9 @@
 }
 .t1score {
     margin-top: 0%;
-    width: 30%;
+    width: 40%;
 }
 
-.t2score {
-    width: 20%;
-}
 .team2 {
     width:30%;
 }
@@ -296,13 +293,27 @@
 .news-section::-webkit-scrollbar {
     display: none;
 }
-h1{
+.rightside h1{
     font-size: 1.6em;
     margin-bottom: 8px;
     margin-left: 4%;
     font-weight: lighter;
 }
-h1 h2{
+.rightside h1 h2{
+    float: right;
+    margin-right: 15px;
+    color: rgb(133, 131, 131);
+    font-size: 0.8em;
+    font-weight: lighter;
+    cursor: pointer;
+}
+.rightside1 h1{
+    font-size: 1.6em;
+    margin-bottom: 8px;
+    margin-left: 4%;
+    font-weight: lighter;
+}
+.rightside1 h1 h2{
     float: right;
     margin-right: 15px;
     color: rgb(133, 131, 131);
@@ -437,7 +448,11 @@ h1 h2{
         padding: 2px;
         margin-top: 1.5%;
     }
-    h1{
+    .rightside h1{
+        padding: 2px;
+        font-size: 1.1em;
+    }
+    .rightside1 h1{
         padding: 2px;
         font-size: 1.1em;
     }

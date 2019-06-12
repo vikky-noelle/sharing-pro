@@ -107,6 +107,8 @@ export class HeaderComponent implements OnInit, AfterViewInit {
       this.dpslide2[0].style.left="-1000px";
       this.opennews[0].style.right="-1000px";
       this.l1=false;
+      this.arrowrotate1[0].style.transform="rotate(0deg)"
+      this.l2=true;
     }
     else{
       this.openarena[0].style.right="-1000px";
