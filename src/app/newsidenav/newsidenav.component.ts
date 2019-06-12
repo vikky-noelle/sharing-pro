@@ -15,7 +15,8 @@ export class NewsidenavComponent implements OnInit {
   l2=0;
   list1=['cricket', 'football', 'basketball', 'volleyball', 'tennis', 'table tennis', 'hockey', 'badminton'];
   list2=['cricket', 'football', 'basketball', 'volleyball', 'tennis', 'table tennis', 'hockey', 'badminton'];
- cricket=document.getElementsByClassName('cricket') as HTMLCollectionOf<HTMLElement>;
+  
+  cricket=document.getElementsByClassName('cricket') as HTMLCollectionOf<HTMLElement>;
   football=document.getElementsByClassName('football') as HTMLCollectionOf<HTMLElement>;
   basketball=document.getElementsByClassName('basketball') as HTMLCollectionOf<HTMLElement>;
   volleyball=document.getElementsByClassName('volleyball') as HTMLCollectionOf<HTMLElement>;
@@ -23,6 +24,17 @@ export class NewsidenavComponent implements OnInit {
   tabletennis=document.getElementsByClassName('tabletennis') as HTMLCollectionOf<HTMLElement>;
   hockey=document.getElementsByClassName('hockey') as HTMLCollectionOf<HTMLElement>;
   badminton=document.getElementsByClassName('badminton') as HTMLCollectionOf<HTMLElement>;
+
+  cricket1=document.getElementsByClassName('cricket1') as HTMLCollectionOf<HTMLElement>;
+  football1=document.getElementsByClassName('football1') as HTMLCollectionOf<HTMLElement>;
+  basketball1=document.getElementsByClassName('basketball1') as HTMLCollectionOf<HTMLElement>;
+  volleyball1=document.getElementsByClassName('volleyball1') as HTMLCollectionOf<HTMLElement>;
+  tennis1=document.getElementsByClassName('tennis1') as HTMLCollectionOf<HTMLElement>;
+  tabletennis1=document.getElementsByClassName('tabletennis1') as HTMLCollectionOf<HTMLElement>;
+  hockey1=document.getElementsByClassName('hockey1') as HTMLCollectionOf<HTMLElement>;
+  badminton1=document.getElementsByClassName('badminton1') as HTMLCollectionOf<HTMLElement>;
+  
+  
   newsone=document.getElementsByClassName('newsone') as HTMLCollectionOf<HTMLElement>;
   newsonea=document.getElementsByClassName('newsonea') as HTMLCollectionOf<HTMLElement>;
   openarena=document.getElementsByClassName('openarena') as HTMLCollectionOf<HTMLElement>;
@@ -89,7 +101,7 @@ export class NewsidenavComponent implements OnInit {
       this.openarena[0].style.backgroundColor=" rgb(71, 148, 148)";
       this.openarena1[0].style.color="white";
     }
-    if(this.router.url.includes('/cricket')){
+    if(this.router.url.includes('newspage/cricket')){
       this.cricket[0].style.color="black";
     }
     if(this.router.url.includes('newspage/football')){
@@ -118,6 +130,31 @@ export class NewsidenavComponent implements OnInit {
       this.openmenu[0].style.display="block";
       this.l1=1;
       this.arrowiconn[0].style.transform="rotate(90deg)";
+    }
+    if(this.router.url.includes('OpenArena/cricket')){
+      this.cricket1[0].style.color="black";
+    }
+    if(this.router.url.includes('OpenArena/football')){
+      this.football1[0].style.color="black";
+    }
+    if(this.router.url.includes('OpenArena/basketball')){
+      this.basketball1[0].style.color="black";
+    }
+    if(this.router.url.includes('OpenArena/volley')){
+      this.volleyball1[0].style.color="black";
+    }
+    if(this.router.url.includes('OpenArena/tennis')){
+      console.log("working");
+      this.tennis1[0].style.color="black";
+    }
+    if(this.router.url.includes('OpenArena/table')){
+      this.tabletennis1[0].style.color="black";
+    }
+    if(this.router.url.includes('OpenArena/hockey')){
+      this.hockey1[0].style.color="black";
+    }
+    if(this.router.url.includes('OpenArena/badminton')){
+      this.badminton1[0].style.color="black";
     }
   }
 }

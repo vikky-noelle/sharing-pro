@@ -55,8 +55,10 @@
       </li>
     </ul>
   </div>
+
+
       <!-- mobile view -->
-  <div class="mobile-view" *ngIf="mobileView">
+  <!-- <div class="mobile-view" *ngIf="mobileView">
     <div class="dropdown-menu-image-holder">
       <img src="/assets/images/sports-social-menu.png" (click)="openDropdown()">
     </div>
@@ -64,16 +66,16 @@
       <div class="dropdown-cancel-image-holder">
         <img src="/assets/images/sports-social-cancel-black.png"  (click)="closeDropdown()">
       </div>
-      <ul  *ngIf="isMenuInDropdown">
+      <ul  *ngIf="isMenuInDropdown">-->
           <!-- <li>
               <a routerLink="/live" class="About btn btn-responsive" routerLinkActive="active">Live</a>
             </li> -->
-          <li>
+        <!--  <li>
               <a routerLink="/about" routerLinkActive="active">About</a> 
           </li>
           <li>
-            <a routerLink="/application" routerLinkActive="active">App</a> <!--https://goo.gl/qrgCz5-->
-          </li>
+            <a routerLink="/application" routerLinkActive="active">App</a>--> <!--https://goo.gl/qrgCz5-->
+        <!--  </li>
           <li>
               <a routerLink="/teamview" routerLinkActive="active" (click)="topscroll()">Team</a> 
           </li>
@@ -84,16 +86,46 @@
               <a routerLink="/HelpCenter" routerLinkActive="active" (click)="topscroll()">Help</a> 
             </li>
           
-      </ul>
+      </ul> -->
       <!-- <ng-container  *ngIf="isSearchInDropdown">
         <div class="dropdown-search">
           <input type="text" placeholder="Search Sports Social">
         </div>
         <button>Search</button>
       </ng-container> -->
-    </div>
-  </div>
+  <!--  </div>
+  </div> -->
 
+  <div class="mobile-view">
+      <div class="dropdown-menu-image-holder">
+          <img src="/assets/images/sports-social-menu.png" (click)="openDropdown()">
+      </div>
+      
+      <div class="slide-menu">
+        <ul class="ul" >
+          <a routerLink="/" (click)="topscroll()"><li>Home</li></a>
+          <li id="niftview"><a routerLink="/OpenArena" (click)="topscroll()">Open Arena</a></li>
+          <li id="niftview" (click)="openarenamenu()"><img class="arrow-rotate" src="assets/images/sportsocialhomearrow.png" alt=""></li>
+            <ul id="niftview" class="open-arena-menu">
+              <a *ngFor="let data of list" (click)="topscroll()" href="/OpenArena/{{data.link}}"><li>{{data.name}}</li></a>
+            </ul>
+          <span class="dpslide">
+            <li id="niftview"><a routerLink="/newspage" (click)="topscroll()">News</a></li>
+            <li id="niftview" (click)="opennewsmenu()"><img class="arrow-rotate1" src="assets/images/sportsocialhomearrow.png" alt=""></li>
+            </span>
+            <ul id="niftview" class="open-news-menu">
+              <a *ngFor="let data of list" (click)="topscroll()" href="/newspage/{{data.link}}"><li>{{data.name}}</li></a>
+            </ul>
+            <span class="dpslide2">
+            <li><a (click)="topscroll()" routerLink="/about">About</a></li>
+            <li><a routerLink="/application" (click)="topscroll()">App</a></li>
+            <li><a routerLink="/teamview" (click)="topscroll()">Team</a></li>
+            <li><a routerLink="/localitypage" (click)="topscroll()">Locality</a></li>
+            <li><a routerLink="/HelpCenter" (click)="topscroll()">Help</a></li>
+          </span>
+        </ul>
+      </div>
+  </div>
     
 </header>
 
