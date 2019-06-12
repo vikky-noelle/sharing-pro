@@ -1,5 +1,6 @@
 
 .cbody{
+    /* height: 2000px; */
     overflow: hidden;
 }
 .ffooter{
@@ -9,10 +10,9 @@
 .rightside{
     float: right;
     width: 84%;
-    height: 100vh;
     z-index: 10;
     border-bottom: 1px solid #bbbbbb;
-    background-color: #f4f4f4;
+    background-color: #dbdada;
 }
 
 .topic{
@@ -22,15 +22,16 @@
 }
 .outdiv{
     scroll-snap-align: start;
-    width: 70%;
-    margin: 1% 1.1% 0% 10%;
+    width: 60%;
+    margin: 0 auto;
+    /* margin: 1% 1.1% 0% 10%; */
     border-radius: 2%;
     vertical-align: top;
 }
 
 .card{
     display: grid;
-    width: 80%;
+    width: 100%;
     height: auto;    /* height for comments and etc*/
     border: 1px solid #ece9e9;
     margin-bottom: 2%;
@@ -247,9 +248,9 @@
         margin-left: 0%;
     }
     .card{
-        width: 95%;
+        width: 100%;
         height: auto;
-        margin-left: 2%;
+        /* margin-left: 2%; */
         /* border: 1px solid red; */
     }
     .ffooter{
@@ -332,9 +333,9 @@
         display: block;
     }
     .card{
-        width: 95%;
+        width: 100%;
         height: auto;
-        margin-left: 2%;
+        /* margin-left: 2%; */
     }
 
     .footer>a{
@@ -353,7 +354,7 @@
 }
 .container {
     border: 2px solid #fafafa;
-    background-color: #fafafa;
+    /* background-color: #fafafa; */
     border-radius: 5px;
     margin: 7px 0;
   }
@@ -362,11 +363,11 @@
     clear: both;
     display: grid;
   }
-  .container img {
+  .profile-data img {
     float: left;
-    max-width: 60px;
-    width: 50px;
-    height: 50px;
+    max-width: 40px;
+    width: 40px;
+    height: 40px;
     margin-right: 2%;
     margin-left: 2%;
     border-radius: 50%;
@@ -377,19 +378,27 @@
     margin-left: 20px;
     margin-right:0;
   }
-  .container>h6{
-      width: 30%;
+  .profile-data h6{
+      /* width: 30%; */
       margin-top: 3%;
   }
-  .container>p{
-    display: inline-flex;
-    float: right;
-    margin-top: -3%;
-    width: 65%;
+  /* message tags */
+  .profile-data{
+      float: left;  
+      /* width: 30%; */
+  }
+  .message{
+    background-color: silver; 
+    float: left;
+    /* margin-top: -3%; */
+    width: auto;
     height: auto;
     text-align: center;
+    border-radius: 10px;
   }
-
+  .message p{
+      padding: 10px;
+  }
   .container2 {
     width:100%;
     height: auto;

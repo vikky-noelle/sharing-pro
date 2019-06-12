@@ -214,6 +214,7 @@ export class HomeMatchFeedComponent{
     }
   }
   changee(topic){
+    topic = topic.toLowerCase();
     this.router.navigate(['/newspage', topic]);
   }
   lscroll(){
