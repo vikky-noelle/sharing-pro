@@ -27,6 +27,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
   gender;
   genderCheck;
   BestPerfomerUsername;
+  Age;
 
   comment:boolean=true;
   moment:boolean=false;
@@ -106,6 +107,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
                   uniquename:data["Feed"][i].uniquename==null?"":"@"+data["Feed"][i].uniquename,
                   result:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?this.time.ExactDate(data["Feed"][i].startdatetime):'Match Finished',
                   InsertedDate:data["Feed"][i].InsertedDate,
+                  ageBracket:data["Feed"][i].ageBracket,
                   profile_image:data["Feed"][i].profile_image,
                   Venue_Name:data["Feed"][i].Venue_Name,
                   EventText:data["Feed"][i].EventText,
@@ -169,7 +171,31 @@ export class OpenHomeMatchCardComponent implements OnInit {
               this.genderCheck="Mix UP ";
             }
 
+            var agebracket= this.Matcharr[i].ageBracket;
+              if(agebracket == 0){
+                this.Age="Under 13";
+              }
+              else if(agebracket ==1){
+                this.Age="Under 15";
+              }
+              else if(agebracket ==2){
+                this.Age="Under 17";
+              }
+              else if(agebracket ==3){
+                this.Age="Under 19";
+              }
+              else if(agebracket ==4){
+                this.Age="Under 21";
+              }
+              else if(agebracket ==5){
+                this.Age="Under 23";
+              }
+              else if(agebracket ==-1){
+                this.Age="Open for All";
+              }
+      
           }
+          
 
           for(var j=0;j<data["Comment"].length;j++){
             this.MatchCommnets.push({

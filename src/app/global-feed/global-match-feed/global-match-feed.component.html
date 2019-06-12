@@ -54,6 +54,7 @@
                 </div>
           </div>
         </a> -->
+      <a routerLink="/opencard/{{feed.feedid}}">
       <sports-social-ss-match-card
       [coverpic]="feed.coverpic"
       [matchstartername]="feed.MatchStarterName"
@@ -74,15 +75,12 @@
       [PromoteCount]="feed.PromoteCount"
       [CommentCount]="feed.CommentCount"
       ></sports-social-ss-match-card>
-      
+    </a>
     </ng-masonry-grid-item>
 </ng-masonry-grid>
-<!-- <div *ngIf="show">
-    <sports-social-backfooter></sports-social-backfooter>
-    </div> -->
+
 </div>
 </div>
 <div class="rightsidefooter" *ngIf="Matcharr.length !== 0">
 <sports-social-backfooter></sports-social-backfooter>
 </div>
-<!-- <sports-social-footer></sports-social-footer> -->

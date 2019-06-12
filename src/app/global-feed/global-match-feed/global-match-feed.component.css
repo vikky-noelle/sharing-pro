@@ -30,6 +30,9 @@
     margin-bottom: 5%;
     /* display: inline-block; */
 }
+#col-4>a{
+    color: black;
+}
 
 @media screen and (max-width:768px){
     #col-4{

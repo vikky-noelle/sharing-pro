@@ -25,7 +25,6 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
   gendercheck="";
   selected="";
   posturl='https://test.sportsocial.in/poc/newfeed';
-  // posturl='http://34.245.85.57:3000/poc/newfeed';
   urlObj=[{ userid: "112",
             page: "1",
             timestamp: "1558615054000",
@@ -65,15 +64,6 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
     private router: Router,
     private postservice: PostService,
   ) { }
-
-  
-  // globalMatchFeed( pageNo ) {
-  //   this.matchData.globalMatchFeed( this.nextPageNo, 0 ).then( (match) => {
-  //     this.Match = this.Match.concat(match);
-  //   }).catch( (err) => {
-  //     console.log(err);
-  //   });
-  // }
 
   openarenamatches(){
     this.location.getGeoLocation().then((pos)=>{
@@ -134,8 +124,6 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
   }
 
   @HostListener('window:scroll', ['$event'])onWindowScroll(event) {
-
-    // console.log(Math.floor(scrollY / 1200));
     this.nextPageNo = Math.floor(scrollY / 1200);
 
     if (this.nextPageNo > 0 && this.prevPageNo < this.nextPageNo ) {
