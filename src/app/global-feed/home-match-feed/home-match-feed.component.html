@@ -5,9 +5,10 @@
       
     <div class="rightside" *ngFor = "let game of Matcharr;"> 
         <div class="topic">
-            <a><h4>{{game.gametitle}} matches<h5 (click)="gotoarena()">See all</h5></h4></a>
+            <h3>{{game.gametitle}}<h5 (click)="gotoarena(game.gametitle)">See all</h5></h3>
           </div>  
       <div class="blog" #blog>  
+        <h3>Matches</h3><br><br>
           <!-- <div class="leftarrow" (click)="lscroll();">
             </div>  
           <div class="rightarrow" (click)="rscroll();">
@@ -65,7 +66,7 @@
       <div class="outdiv" *ngFor="let feed of news[game.gamenumber]" #targett>
         <div class="news-card" (click)="change(feed.id, game.gametitle)">
           <div class="news-img">
-            <img src="{{feed.image}}" alt="sportsocialimg">
+            <img src="{{feed.image}}" alt="sportsocialimg" onerror="this.src='assets/images/user-default.png'">
           </div>
           <div class="news-detail">
             <textarea disabled>{{feed.title | slice:0:100}}..</textarea>
@@ -84,7 +85,7 @@
           <div class="righttarrow" (click)="rscroll();">
               </div>  -->
         <div class="outdiv" *ngFor="let feed of data.gamenews" #targett>
-          <div class="news-card" (click)="change(feed.id, game.gametitle)">
+          <div class="news-card" (click)="changenomatch(feed.id, data.gamename)">
             <div class="news-img">
               <img src="{{feed.image}}" alt="sportsocialimg">
             </div>
