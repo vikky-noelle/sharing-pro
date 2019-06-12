@@ -495,12 +495,25 @@
         clear: both;
         width: 100%;
     }
+    .back-footer{
+        width: 100%;
+    }
     .home-body{
         margin-left: 0%;
         width: 100%;
     }
+    .crousal{
+        margin-top: 40px;
+        border: 2px solid white;
+        width: 100%;
+    }
     .c-element{
         height: 27vh;
+   }
+   .dnews{
+       clear: both;
+       width: 100%;
+       margin-left: 0% !important;
    }
    .dnews div{
        width: 100%;
@@ -513,7 +526,7 @@
    .dnews div h1{
        padding-top: 10px;
        float: left;
-       width: 40%;
+       width: 55%;
         font-weight: lighter;
        margin-bottom: 0;
    }
@@ -524,38 +537,28 @@
    .dnews div img{
        height: 100px;
    }
-   .dnews{
-       margin-left: 13%;
-   }
    .dnews div h1{
        font-size: 0.8em;
    }
-   .larrow img{
-       margin-left: 48%;
-   }    
-   .larrow img,.rarrow img{
-       height: 30px;
-       width: 30px;
-   }
    .rarrow,.larrow{
-       margin-top: 12vh;
+       display: none;
    }
    .normal-news{
-       margin-left: 14%;
-       width: 70%;
+       padding: 0 !important;
+       margin-left: 0% !important;
+       width:100%;
+       margin-bottom: 30px;
    }
    .normal-news img{
+       margin-left: 4%;
        height: 100px;
    }
    .normal-news h1{
-       font-size: 1em;
+       width: 50%;
+       font-size: 0.9em;
    }
    .normal-news p{
-       padding: 0;
-       margin-left: 0;
-       margin-top: 4%; 
-       clear: both;
-       width: 100%;
+      display: none;
    }
    .normal-news .source {
        clear: both;

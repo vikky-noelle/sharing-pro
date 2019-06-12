@@ -26,14 +26,14 @@
     background-color: rgb(71, 148, 148);
 }
 
-.aicon {
+.arrowicon {
     float: right;
     margin-right: 3%;
     z-index: 45;
     height: 13px;
     width: 10px;
 }
-.aiconn {
+.arrowiconn {
     float: right;
     margin-right: 3%;
     z-index: 45;
@@ -45,7 +45,7 @@
     font-weight: bold;
     background-color: rgb(71, 148, 148);
 }
-.con{
+.openarenaopen{
     list-style: none;
     padding-left: 30px;
     display: none;
@@ -55,13 +55,13 @@ li.Active{
     font-weight: bold;
     background-color: rgb(125, 206, 206);
 }
-.conn{
+.newsopen{
     list-style: none;
     padding-left: 30px;
     display: none;
 }
 
-.msidenav{
+/* .msidenav{
     display: none;
     margin-top: 10%;
 }
@@ -121,18 +121,18 @@ li.Active{
       font-size: 1.8em;
       margin-top: 30px;
   }
-  .connn{
+  .mewsopen{
       display: none;
   }
-  .connnn{
+  .mopenarenaopen{
       display: none;
   }
-  .connn a{
+  .mnewsopen a{
       color: white;
   }
-  .connnn a{
+  .mopenarenaopen a{
         color: white;
-  }
+  } */
   
   /* .modal div{
       padding: 80px;
@@ -141,10 +141,10 @@ li.Active{
     .navi{
         display:none;
     }
-    .msidenav{
+    /* .msidenav{
         display: block;
-    }
-    .con{
+    } */
+    .openarenaopen{
         background-color: white;
     }
 }
@@ -152,7 +152,7 @@ li.Active{
     .navi{
         display: none;
     }
-  .modal {
+  /* .modal {
       width: 70%;
   }
   .msidenav{
@@ -189,6 +189,6 @@ li.Active{
 .modal>ul>a>li {
     font-size: 1em;
     color: white;
-}
+} */
 
 }

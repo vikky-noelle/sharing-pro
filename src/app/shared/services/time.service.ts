@@ -11,7 +11,39 @@ export class TimeService {
     private subscription: Subscription;
     private message: string;
   constructor() { }
-
+  tellmethetime(string){
+    var ny, mon, leap, nd, month="";
+    leap=false;
+    ny = Math.floor(string/86400);
+    if(ny%4 === 0){
+      leap=true;
+    }
+    mon = string/86400 - ny;
+    nd = Math.floor(mon*365);
+    ny = 1970 + ny;
+    if(leap){
+      if(nd < 31){
+        month = "january";
+        nd = nd - 31;
+      }
+      else if(nd <= 60 && nd >31){
+        month = "february";
+        nd = nd - 60;
+      }
+    } 
+    else{
+      if(nd < 31){
+        month = "january";
+        nd = nd - 31;
+      }
+      else if(nd <= 59 && nd >31){
+        month = "february";
+        nd = nd - 59;
+      }
+    }
+    if(month.length===0){
+    }
+  }
   timePassed(i: string) {
     const writtenDate = new Date(parseInt(i, 10) * 1000);
     const presentDate = new Date();

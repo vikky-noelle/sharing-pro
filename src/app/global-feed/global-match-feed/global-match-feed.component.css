@@ -1,6 +1,13 @@
 *{
     scroll-behavior: smooth;
 }
+.rightside h1{
+    font-weight: lighter;
+    border-bottom: 1px solid silver;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    font-size: 3em;
+}
 .sidenav{
     margin-top: 4%;
 }
@@ -30,13 +37,28 @@
         margin-left:1%;
     }
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:700px){
   #col-4{
-      width:100%;
+      margin-left: 5%;
+      width:90%;
   }
 }
 @media screen and (min-width: 200px) and (max-width: 700px){
     .rightside{
+        width: 100%;
+    }
+    .rightsidefooter{
+        width: 100%;
+    }
+    .newbox{
+        margin-top: 20px;
+    }
+}
+@media screen and (min-width: 701px) and (max-width: 950px){
+    .rightside{
+        width: 100%;
+    }
+    .rightsidefooter{
         width: 100%;
     }
 }

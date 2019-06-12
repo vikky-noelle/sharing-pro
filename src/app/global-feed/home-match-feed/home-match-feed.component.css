@@ -402,7 +402,7 @@ h1 h2{
         width: 90%;
     }
     .blog{
-        width: 85%;
+        width: 92%;
         height: 200px;
     }
     .card{
@@ -429,13 +429,20 @@ h1 h2{
         margin-top: 10%;
     }
     .topic{
-        padding: 20px;
+        font-size: 1.1em;
+
+        padding: 2px;
     }
     h1{
-        padding: 20px;
+        padding: 2px;
+        font-size: 1.1em;
+    }
+    .topic h4{
+        font-size: 1.1em;
+        padding: 2px;
     }
     .news-section{
-        width: 80%;
+        width: 90%;
     }
     .Button{
         padding: 2%;

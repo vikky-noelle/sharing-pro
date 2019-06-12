@@ -16,13 +16,33 @@ import { PropertyService } from '../shared/services/property.service';
   preserveWhitespaces: false
 })
 export class HeaderComponent implements OnInit, AfterViewInit {
-
+  
+  l1=true;
+  l2=true;
+  openstatus = true;
   mobileView: boolean = false;
   isMenuInDropdown: boolean = false;
   isSearchInDropdown: boolean = false;
   isDropdownIconclicked: boolean = false;
   sidenav:boolean=false;
   searchButton:boolean=false;
+  list=[
+    {link: 'cricket', name: 'Cricket' },
+    {link: 'football', name: 'Football' },
+    {link: 'basketball', name: 'Basketball' },
+    {link: 'volleyball', name: 'Volleyball' },
+    {link: 'tennis', name: 'Tennis' },
+    {link: 'table-tennis', name: 'Table Tennis' },
+    {link: 'hockey', name: 'Hockey' },
+    {link: 'badminton', name: 'Badminton' },
+  ]
+  openmenu = document.getElementsByClassName('slide-menu') as HTMLCollectionOf<HTMLElement>;
+  openarena = document.getElementsByClassName('open-arena-menu') as HTMLCollectionOf<HTMLElement>;
+  opennews = document.getElementsByClassName('open-news-menu') as HTMLCollectionOf<HTMLElement>;
+  dpslide = document.getElementsByClassName('dpslide') as HTMLCollectionOf<HTMLElement>;
+  dpslide2 = document.getElementsByClassName('dpslide2') as HTMLCollectionOf<HTMLElement>;
+  arrowrotate = document.getElementsByClassName('arrow-rotate') as HTMLCollectionOf<HTMLElement>;
+  arrowrotate1 = document.getElementsByClassName('arrow-rotate1') as HTMLCollectionOf<HTMLElement>;
   @ViewChild('header') header;
   constructor(
     private height: PropertyService
@@ -66,12 +86,51 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   }
 
   openDropdown() {
-    this.isDropdownIconclicked = true;
+  if(this.openstatus){
+    this.openmenu[0].style.right="0px";
+    this.openstatus=false;
+   }
+   else{
+    this.openmenu[0].style.right="-1000px";
+    this.openstatus=true;
+   }
   }
   closeDropdown() {
-    this.isDropdownIconclicked = false;
+    this.openmenu[0].style.right="2000px";
+    // this.isDropdownIconclicked = false;
   }
-
+  openarenamenu(){
+    if(this.l1){
+      this.openarena[0].style.right="0px";
+      this.arrowrotate[0].style.transform="rotate(180deg)"
+      this.dpslide[0].style.left="-1000px";
+      this.dpslide2[0].style.left="-1000px";
+      this.opennews[0].style.right="-1000px";
+      this.l1=false;
+    }
+    else{
+      this.openarena[0].style.right="-1000px";
+      this.arrowrotate[0].style.transform="rotate(0deg)"
+      this.dpslide[0].style.left="0px";
+      this.dpslide2[0].style.left="0px";
+      this.opennews[0].style.right="-1000px";
+      this.l1=true;
+    }
+  }
+  opennewsmenu(){
+    if(this.l2){
+      this.opennews[0].style.right="0px";
+      this.arrowrotate1[0].style.transform="rotate(180deg)"
+      this.dpslide2[0].style.left="-1000px";
+      this.l2=false;
+    }
+    else{
+      this.opennews[0].style.right="-1000px";
+      this.arrowrotate1[0].style.transform="rotate(0deg)"
+      this.dpslide2[0].style.left="0px";
+      this.l2=true;
+    }
+  }
   sendHeightOfHeader() {
     const height = this.header.nativeElement.getBoundingClientRect().height;
     this.height.ofHeader.next(height);

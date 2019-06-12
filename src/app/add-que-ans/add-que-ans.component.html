@@ -6,7 +6,7 @@
 <div class="content">
     <div class="sidenav">
         <ul class="side-nav">
-          <li><a routerLink="/HelpCenter"><div class="topicdata"><img style="height: 8px;width:8px;padding-top:5%;" src="/assets/images/sportsocialarrowleft.png"><p>Go Back</p></div></a></li>
+          <li><a routerLink="/HelpCenter"><div class="topicdata"><img style="height: 18px;width:18px;padding-top:3%;" src="/assets/images/sportsocialarrowleft.png"><p>Go Back</p></div></a></li>
           <li routerLinkActive="active" *ngFor="let qa of  quesAns; let i = index">
             <a routerLink="/HelpCenter/{{name}}/{{qa.qques}}" [queryParams]="{ topic_id: topicId , id: subtopicId, qid: qid, name:name}">
             <div class="topicdata" (click)="getAns(qa.id)">
@@ -37,7 +37,7 @@
         <div *ngIf="mobv === 1">
             <p style="font-size: 15px;">Get Answer for the most common question and learn to use "Sports Social" like Champ.</p>
             <h1 
-            (click)="showw()" class="dropbtn">&nbsp;Menu <img src="/assets/images/sportsocialplus.png">
+            (click)="showw()" class="dropbtn">&nbsp;Menu <img src="/assets/images/sportsocialhelparrow.png">
            </h1>
            
              <div class="modal">
