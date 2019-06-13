@@ -28,6 +28,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
   genderCheck;
   BestPerfomerUsername;
   Age;
+  startTime:string;
 
   comment:boolean=true;
   moment:boolean=false;
@@ -105,10 +106,13 @@ export class OpenHomeMatchCardComponent implements OnInit {
       this.postservice.OpenOneMatchCard(this.eventid).subscribe(
         data=>{
           for(var i=0;i<data["Feed"].length;i++){
+              var time= new Date(data["Feed"][i].startdatetime*1000);
+              var timeconvert= new String(time);
+              this.startTime=timeconvert.slice(3,21);
             this.Matcharr.push({
                   Activity_name:data["Feed"][i].Activity_name,
                   uniquename:data["Feed"][i].uniquename==null?"":"@"+data["Feed"][i].uniquename,
-                  result:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?this.time.ExactDate(data["Feed"][i].startdatetime):'Match Finished',
+                  result:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?"On:"+this.startTime:'Match Finished',
                   InsertedDate:data["Feed"][i].InsertedDate,
                   ageBracket:data["Feed"][i].ageBracket,
                   profile_image:data["Feed"][i].profile_image,
@@ -120,7 +124,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
                   Event_Image:data["Feed"][i].Event_Image,
                   MatchStarterName:data["Feed"][i].MatchStarterName,
                   MatchStarterPhoto:data["Feed"][i].MatchStarterPhoto,
-                  MatchStarterUniqueName:data["Feed"][i].MatchStarterUniqueName==null?"":"@"+data["Feed"][i].MatchStarterUniqueName,
+                  MatchStarterUniqueName:data["Feed"][i].MatchStarterUniqueName==null?"":"Created by:@"+data["Feed"][i].MatchStarterUniqueName,
                   Team1name:data["Feed"][i].Team1name,
                   Team1Id:data["Feed"][i].Team1Id,
                   Team2Id:data["Feed"][i].Team2Id,
