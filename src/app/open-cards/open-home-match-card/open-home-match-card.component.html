@@ -1,25 +1,24 @@
 <sports-social-header></sports-social-header>
 <br><br><br><sports-social-newsidenav></sports-social-newsidenav>
 <div class="pop-up">
-  <div class="arrow-right">
-    <img src="/assets/images/sportsocialhome1.png" alt="">
-  </div>
-  <div class="arrow-right">
-    <img src="/assets/images/sportsocialhome1.png" alt="">
-  </div>  <div class="pop-crousal">
-    <h1>Match Moments<img src="/assets/images/sportsocialcancel.png"></h1>
-    <div class="contain">
+    <div class="pop-crousal" #widgets>
+    <!-- <img class="cancel" src="/assets/images/sportsocialcancel.png"> -->
       <div *ngFor="let data of MatchMoments" 
       class="c-element" #widgetsContent
-      (click)="openews(data.id, data.game)">
+      (click)="openews(data.id, data.game)" #widgetsContent>
       <img src="{{data.imagepath}}" onerror="this.src='assets/images/user-default.png'">
       <div class="c-head">
           <h1>{{data.title}}</h1>
           <p>{{data.source}}</p>
         </div>
       </div>
-    </div> 
   </div>
+  <div class="arrow-left">
+      <img (click)="lscroll()" src="/assets/images/sportsocialarrowhome1.png" alt="">
+    </div>
+  <div class="arrow-right">
+      <img (click)="rscroll()" src="/assets/images/sportsocialarrowhome1.png" alt="">
+    </div>
 </div>
 <div class="cbody">
 <div class="rightside"> 

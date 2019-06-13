@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 import { PostService } from '../../shared/services/post.service';
 import { LocationService } from '../../shared/services/location.service';
 import { ActivatedRoute } from '@angular/router';
@@ -32,6 +32,9 @@ export class OpenHomeMatchCardComponent implements OnInit {
   comment:boolean=true;
   moment:boolean=false;
   joinee:boolean=false;
+
+  @ViewChild('widgets') widgets:ElementRef;
+  @ViewChild('widgetsContent') widgetsContent:ElementRef;
 
   child1:boolean=true;
   child2:boolean=false;
@@ -288,6 +291,14 @@ export class OpenHomeMatchCardComponent implements OnInit {
     //   console.log(params);
     // })
   }
-
+  lscroll(){
+    this.widgets.nativeElement.scrollLeft -=this.widgetsContent.nativeElement.clientWidth;
+    // this.scroll[0].scrollLeft+=150;
+  }
+  rscroll(){
+    this.widgets.nativeElement.scrollLeft +=this.widgetsContent.nativeElement.clientWidth;
+    
+    // this.scroll[0].scrollLeft+=150;
+  }
 
 }

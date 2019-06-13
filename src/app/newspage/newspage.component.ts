@@ -3,7 +3,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { GetService } from './../shared/services/get.service';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { EventEmiterService } from '../shared/services/event.emiter.service';
-import { DefaultRouteReuseStrategy } from '@angular/router/src/route_reuse_strategy';
 @Component({
   selector: 'sports-social-newspage',
   templateUrl: './newspage.component.html',
