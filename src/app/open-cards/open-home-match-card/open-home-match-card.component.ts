@@ -197,62 +197,62 @@ export class OpenHomeMatchCardComponent implements OnInit {
           }
           
 
-          for(var j=0;j<data["Comment"].length;j++){
+          for(var j=0;j<data["Match Talk"].length;j++){
             this.MatchCommnets.push({
-              eventid:data["Comment"][j].eventid,
-              UserId:data["Comment"][j].UserId,
-              User_name:data["Comment"][j].User_name,
-              Profileimage:data["Comment"][j].Profileimage,
-              Comment:data["Comment"][j].Comment,
+              eventid:data["Match Talk"][j].eventid,
+              UserId:data["Match Talk"][j].UserId,
+              User_name:data["Match Talk"][j].User_name,
+              Profileimage:data["Match Talk"][j].Profileimage,
+              Comment:data["Match Talk"][j].Comment,
             });
           }  
           
-          for(var j=0;j<data["Joinees"].length;j++){
-              this.JoineeTeamId = data["Joinees"][j].teamid;
+          for(var j=0;j<data["Line Ups"].length;j++){
+              this.JoineeTeamId = data["Line Ups"][j].teamid;
               if(this.JoineeTeamId == this.team1id)
                 {
                   this.MatchLineup1.push({
-                  eventid:data["Joinees"][j].eventid,
-                  UserId:data["Joinees"][j].UserId,
-                  teamid:data["Joinees"][j].teamid,
-                  User_name:data["Joinees"][j].User_name,
-                  Profileimage:data["Joinees"][j].Profileimage
+                  eventid:data["Line Ups"][j].eventid,
+                  UserId:data["Line Ups"][j].UserId,
+                  teamid:data["Line Ups"][j].teamid,
+                  User_name:data["Line Ups"][j].User_name,
+                  Profileimage:data["Line Ups"][j].Profileimage
               });
               } 
             }
 
-            for(var j=0;j<data["Joinees"].length;j++){
-              this.JoineeTeamId = data["Joinees"][j].teamid;
+            for(var j=0;j<data["Line Ups"].length;j++){
+              this.JoineeTeamId = data["Line Ups"][j].teamid;
               if(this.JoineeTeamId == this.team2id)
                 {
                   this.MatchLineup2.push({
-                  eventid:data["Joinees"][j].eventid,
-                  UserId:data["Joinees"][j].UserId,
-                  teamid:data["Joinees"][j].teamid,
-                  User_name:data["Joinees"][j].User_name,
-                  Profileimage:data["Joinees"][j].Profileimage
+                  eventid:data["Line Ups"][j].eventid,
+                  UserId:data["Line Ups"][j].UserId,
+                  teamid:data["Line Ups"][j].teamid,
+                  User_name:data["Line Ups"][j].User_name,
+                  Profileimage:data["Line Ups"][j].Profileimage
               });
               } 
             }
 
-          for(var j=0;j<data["Images"].length;j++){
+          for(var j=0;j<data["Moments"].length;j++){
             this.MatchMoments.push({
-              ImageId:data["Images"][j].ImageId,
-              imagepath:data["Images"][j].imagepath,
-              eventid:data["Images"][j].eventid,
-              Text:data["Images"][j].Text,
-              User_Name:data["Images"][j].User_Name,
-              profile_photo:data["Images"][j].profile_photo,
-              commentcount:data["Images"][j].commentcount,
-              likecount:data["Images"][j].likecount,
-              IsLiked:data["Images"][j].IsLiked
+              ImageId:data["Moments"][j].ImageId,
+              imagepath:data["Moments"][j].imagepath,
+              eventid:data["Moments"][j].eventid,
+              Text:data["Moments"][j].Text,
+              User_Name:data["Moments"][j].User_Name,
+              profile_photo:data["Moments"][j].profile_photo,
+              commentcount:data["Moments"][j].commentcount,
+              likecount:data["Moments"][j].likecount,
+              IsLiked:data["Moments"][j].IsLiked
             });
           } 
 
-          for(var j=0;j<data["bestperformers"].length;j++){
+          for(var j=0;j<data["Player Of The Match"].length;j++){
             this.ManOfMatch.push({
-              username:data["bestperformers"][j].username,
-              profilepic:data["bestperformers"][j].profilepic == null ? " " : data["bestperformers"][j].profilepic
+              username:data["Player Of The Match"][j].username,
+              profilepic:data["Player Of The Match"][j].profilepic == null ? " " : data["Player Of The Match"][j].profilepic
             });
               this.manOfMatchImg=this.ManOfMatch[j].profilepic;
           }

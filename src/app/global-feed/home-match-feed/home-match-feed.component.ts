@@ -242,7 +242,6 @@ export class HomeMatchFeedComponent{
     }
   }
   changenomatch(id, topic){
-    console.log(id+"lala"+topic + this.tnews[0].gamenews[0].title);
     topic = topic.toLowerCase();
     for(var i=0;i<this.tnews.length;i++){
       for(var j=0;j<this.tnews[i].gamenews.length; j++){

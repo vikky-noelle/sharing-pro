@@ -18,14 +18,12 @@
               <div class="card">
                   <div class="head">
                         <div class="gamename">
-                            <b>{{gendercheck}} {{feed.GameName}} - {{Age}}</b>
+                            <b>{{gendercheck}} {{feed.GameName}}<h6>- {{Age}}</h6></b>
                             <p>{{feed.Venue_Name | slice:0:30}}...</p>
                           </div>
                           <div class="result">
-                            <!-- <b>Final Result</b><br> -->
                             <b>{{feed.result}}</b>
                             <p> {{feed.MatchStarterUniqueName}}</p>
-                            
                           </div>  
                   </div>
                       <a routerLink="/opencard/{{feed.feedid}}">      
