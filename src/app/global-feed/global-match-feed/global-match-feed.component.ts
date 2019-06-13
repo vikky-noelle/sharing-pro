@@ -24,16 +24,9 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
   Matcharr = [];
   gendercheck="";
   selected="";
-  posturl='https://test.sportsocial.in/poc/newfeed';
-  // posturl='http://34.245.85.57:3000/poc/newfeed';
-  urlObj=[{ userid: "112",
-            page: "1",
-            timestamp: "1558615054000",
-            token: "ndsjndsjknjksnndnjkks"
-      }];
-      number=[];
-  prevPageNo: number = 0;
-  nextPageNo: number = 0;
+  number=[];
+  startTime:string;
+
   timestamp = Math.floor(Date.now()/1000);
   Sports= [
     {id: 5, title: 'Badminton'},
@@ -59,21 +52,11 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
     private pagetitle:Title,
     private metaservice:Meta,
     private route: ActivatedRoute,
-    private http:Http,
     private location: LocationService,
     private time:TimeService,
     private router: Router,
     private postservice: PostService,
   ) { }
-
-  
-  // globalMatchFeed( pageNo ) {
-  //   this.matchData.globalMatchFeed( this.nextPageNo, 0 ).then( (match) => {
-  //     this.Match = this.Match.concat(match);
-  //   }).catch( (err) => {
-  //     console.log(err);
-  //   });
-  // }
 
   openarenamatches(){
     this.location.getGeoLocation().then((pos)=>{
@@ -83,10 +66,12 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         this.show=true;
         this.count=this.count+1;
       for(const i in data["Feed"]){
-        var x = data["Feed"][i].startdatetime;
-        this.number.push(x);
+
+        var convertdate=new String(new Date(data["Feed"][i].startdatetime*1000));
+        this.startTime=convertdate.slice(0,21);
+        console.log("this is time"+this.startTime);
+    
         this.arr.push({
-              id: x,
               feedid:data["Feed"][i].feedid,
               Activity_name:data["Feed"][i].Activity_name,
               userName: data["Feed"][i].user_name,
@@ -98,7 +83,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
               profile_image:data["Feed"][i].profile_image,
               Venue_Name:data["Feed"][i].Venue_Name,
               EventText:data["Feed"][i].EventText,
-              startdatetime:this.time.ExactDate(data["Feed"][i].startdatetime),
+              startdatetime:this.startTime,
               gamename:data["Feed"][i].GameName,
               GameId:data["Feed"][i].GameId,
               Event_Image:data["Feed"][i].Event_Image,
@@ -119,6 +104,8 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
               WatchCount:data["Feed"][i].WatchCount,
               JoineeCount:data["Feed"][i].JoineeCount
             });
+            this.startTime= this.arr[i].startdatetime;
+            
       }
       if(this.Sports.length === this.count){
         this.sorting(this.arr);
@@ -126,21 +113,6 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
     });
     }
   });
-  }
-
-  nextPage(pageNo) {
-    this.prevPageNo = pageNo;
-    // this.globalMatchFeed(pageNo);
-  }
-
-  @HostListener('window:scroll', ['$event'])onWindowScroll(event) {
-
-    // console.log(Math.floor(scrollY / 1200));
-    this.nextPageNo = Math.floor(scrollY / 1200);
-
-    if (this.nextPageNo > 0 && this.prevPageNo < this.nextPageNo ) {
-      this.nextPage(this.nextPageNo);
-    }
   }
 
   openAppDownloadPopup() {
@@ -158,10 +130,10 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
       this.postservice.homeMatchFeed(pos['latitude'],pos['longitude'],id,this.timestamp)
       .subscribe(data=>{
         this.show=true;
-      for(const i in data["Feed"]){
-        var x = data["Feed"][i].startdatetime;
-        x = Math.floor(x/3600);
-        this.Matcharr.push({
+           for(const i in data["Feed"]){
+              var x = data["Feed"][i].startdatetime;
+              x = Math.floor(x/3600);
+              this.Matcharr.push({
               id: x,
               feedid:data["Feed"][i].feedid,
               Activity_name:data["Feed"][i].Activity_name,
@@ -227,7 +199,6 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
       this.selected = topic[0].toUpperCase();
       this.selected = this.selected + topic.slice(1);
     }
-    // this.globalMatchFeed(this.nextPageNo);
     this.pagetitle.setTitle(this.title);
     this.metaservice.updateTag({name:'title',content:this.title});
     this.metaservice.updateTag({name:'keywords',content:this.metakey});

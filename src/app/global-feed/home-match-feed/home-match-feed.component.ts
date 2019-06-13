@@ -18,6 +18,7 @@ export class HomeMatchFeedComponent{
   Matcharr = [];
   tarray=[];
   finalstatus;
+  Age;
   tnews=[];
   index=-1; //used to provide index for it
   news=[];
@@ -71,6 +72,7 @@ export class HomeMatchFeedComponent{
           for(var i=0;i<data["Feed"].length;i++){
               arr.push({
               feedid:data["Feed"][i].feedid,
+              ageBracket:data["Feed"][i].ageBracket,
               Activity_name:data["Feed"][i].Activity_name,
               MatchStarterUniqueName:data["Feed"][i].MatchStarterUniqueName==null?"":"@"+data["Feed"][i].MatchStarterUniqueName,
               result:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?this.time.ExactDate(data["Feed"][i].startdatetime):'Match Finished',
@@ -117,9 +119,33 @@ export class HomeMatchFeedComponent{
              else if(newstring == "female"){
               this.gendercheck= "Women's";
              }
-             else if (newstring == "mix")
+             else if (newstring == "mix"){
               this.gendercheck= "Mix-up";
-             }  
+             }
+
+             var agebracket= arr[i].ageBracket;
+              if(agebracket == 0){
+                this.Age="Under 13";
+              }
+              else if(agebracket ==1){
+                this.Age="Under 15";
+              }
+              else if(agebracket ==2){
+                this.Age="Under 17";
+              }
+              else if(agebracket ==3){
+                this.Age="Under 19";
+              }
+              else if(agebracket ==4){
+                this.Age="Under 21";
+              }
+              else if(agebracket ==5){
+                this.Age="Under 23";
+              }
+              else if(agebracket ==-1){
+                this.Age="Open for All";
+              }
+          }  
           if(arr.length>0){
             this.index=this.index+1;
             gamename = arr[0].GameName.replace(/ matches/g,"");
@@ -140,6 +166,7 @@ export class HomeMatchFeedComponent{
             if(this.count1===this.Sports.length){
             this.gett(this.sport);
           }
+          
      });
     }
     });  
@@ -216,7 +243,6 @@ export class HomeMatchFeedComponent{
     }
   }
   changenomatch(id, topic){
-    console.log(id+"lala"+topic + this.tnews[0].gamenews[0].title);
     topic = topic.toLowerCase();
     for(var i=0;i<this.tnews.length;i++){
       for(var j=0;j<this.tnews[i].gamenews.length; j++){
