@@ -68,7 +68,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
       for(const i in data["Feed"]){
 
         var convertdate=new String(new Date(data["Feed"][i].startdatetime*1000));
-        this.startTime=convertdate.slice(0,21);
+        this.startTime=convertdate.slice(3,21);
         console.log("this is time"+this.startTime);
     
         this.arr.push({
