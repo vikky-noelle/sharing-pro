@@ -1,8 +1,17 @@
 <div class="card">
               <div class="head">
-                    <b>Men's {{gamename}}</b>
-                    <p><b style="font-weight: 800;">On</b> {{startdatetime}}</p>
-                    
+                  <div>
+                    <b>{{gender}}{{gamename}}
+                        <p class="pp">{{Venue_Name|slice:0:30}}...</p>
+                    </b>
+                </div>
+                <div class="rresult">
+                    <p><b *ngIf="finished" style="font-weight: 800;">On</b> {{startdatetime}}<br><span>Created by: {{matchstartername}}</span></p>
+                </div> 
+              </div>
+              <div class="icon">
+                    <p><img src="assets/images/sports-social-promote.png"><span>{{PromoteCount}}</span>
+                <img src="assets/images/sports-social-watching.png"><span>{{WatchCount}}</span></p>
               </div>
             <div class="cardData">
                   <div class="team1">
@@ -12,7 +21,7 @@
 
                   <div class="vs">
                       <h3>VS</h3>
-                      <p>{{Venue_Name}}</p>
+                      <p *ngIf="finished">{{scoreTeam1}}{{scoreTeam2}}</p>
                    </div>
 
                    <div class="team2">

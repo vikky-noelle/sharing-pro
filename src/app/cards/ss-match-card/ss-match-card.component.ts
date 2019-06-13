@@ -8,13 +8,14 @@ import { Router } from '@angular/router';
 })
 export class SsMatchCardComponent implements OnInit {
 
-
   @Input() feedid:string;
   @Input() matchstartername:string;
   @Input() userName:string;
   @Input() coverpic:string;
   @Input() team1pic: string;
   @Input() team2pic: string;
+  @Input() scoreTeam1: string;
+  @Input() scoreTeam2: string;
   @Input() gamename:string;
   @Input() startdatetime: string;
   @Input() InsertedDate:string;
@@ -29,6 +30,7 @@ export class SsMatchCardComponent implements OnInit {
   @Input() PromoteCount:string;
   @Input() CommentCount:string;
   @Input() gender:string;
+  @Input() finished:boolean;
 
   constructor(private router:Router) { }
 

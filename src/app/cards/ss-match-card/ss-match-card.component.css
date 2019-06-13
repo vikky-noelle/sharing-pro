@@ -1,7 +1,8 @@
 
  .head{
+     line-height: 1.1;
     width: 100%;
-    height: 21px;
+    height: 32px;
     display: inline-block;
     border-bottom: 1px solid #dddddd;
 }
@@ -13,7 +14,36 @@
     float: right;
     margin-right: 1%;
 }
-
+.rresult{
+    margin-top: -25px;
+    float: right;
+    margin-right: 1%;
+}
+.rresult p span{
+    float: right;
+    font-size: 0.6em;
+    color: rgb(75, 73, 73);
+}
+.head b span{
+   margin-top:1%;
+}
+.pp{
+    margin-left: 1%;
+    color: grey;
+    font-size: 0.6em;
+}
+.icon{
+    width: 100%;
+}
+.icon span{
+    margin-top: 2.5%;
+    float: left;
+}
+.icon img{
+    float: left;
+    height: 40px;
+    width: 40px;
+}
 .cardData{
     width: 100%;
     height: 60px;
@@ -69,7 +99,7 @@
 }
 .eventtext{
     width: 100%;
-    height: 130px;
+    height: 90px;
     font-size: 1em;
     /* border: 1px solid red; */
 }
@@ -169,4 +199,9 @@
         font-size: .8em;
     }
 
+}
+@media screen and (min-width:801px) and (max-width:920px){
+    .footer button{
+        font-size: 0.8em;
+    }
 }

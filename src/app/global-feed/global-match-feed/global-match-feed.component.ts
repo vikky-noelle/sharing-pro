@@ -59,6 +59,8 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
   ) { }
 
   openarenamatches(){
+    var temp;
+    var finished;
     this.location.getGeoLocation().then((pos)=>{
       for(var ij=0;ij<this.Sports.length;ij++){
       this.postservice.homeMatchFeed(pos['latitude'],pos['longitude'],this.Sports[ij].id,this.timestamp)
@@ -66,10 +68,26 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         this.show=true;
         this.count=this.count+1;
       for(const i in data["Feed"]){
-
+        temp = data["Feed"][i].gender;
+        if(temp.toLowerCase()==="mix"){
+          temp="Mix up ";
+        }
+        else if(temp.toLowerCase()==="male"){
+          temp="Men's ";
+        }
+        else if(temp.toLowerCase()==="female"){
+          temp="Women's ";
+        }
         var convertdate=new String(new Date(data["Feed"][i].startdatetime*1000));
         this.startTime=convertdate.slice(3,21);
-        console.log("this is time"+this.startTime);
+        if(data["Feed"][i].scoreTeam1===null || data["Feed"][i].scoreTeam2===null){
+          this.startTime="Match Finished";
+          finished= false;
+        
+        }
+        else{
+          finished= true;
+        }
     
         this.arr.push({
               feedid:data["Feed"][i].feedid,
@@ -77,6 +95,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
               userName: data["Feed"][i].user_name,
               Uniquename:data["Feed"][i].MatchStarterUniqueName==null?"":data["Feed"][i].MatchStarterUniqueName,
               MatchStarterUniqueName:data["Feed"][i].MatchStarterUniqueName==null?"":data["Feed"][i].MatchStarterUniqueName,
+              finished: finished,
               timestamp: data["Feed"][i].startdatetime,
               result:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?this.time.ExactDate(data["Feed"][i].startdatetime):'Match Finished',
               InsertedDate:data["Feed"][i].InsertedDate,
@@ -96,7 +115,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
               Team2Pic:data["Feed"][i].Team2Pic,
               scoreTeam1:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?'':data["Feed"][i].scoreTeam1 + ' - ',
               scoreTeam2:data["Feed"][i].scoreTeam2==null || data["Feed"][i].scoreTeam1==null?'VS':data["Feed"][i].scoreTeam2,
-              gender:data["Feed"][i].gender,
+              gender:temp,
               Profile_Photo:data["Feed"][i].Profile_Photo,
               city:data["Feed"][i].City,
               CommentCount:data["Feed"][i].CommentCount,
