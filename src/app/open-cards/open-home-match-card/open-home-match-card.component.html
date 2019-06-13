@@ -1,5 +1,26 @@
 <sports-social-header></sports-social-header>
 <br><br><br><sports-social-newsidenav></sports-social-newsidenav>
+<div class="pop-up">
+  <div class="arrow-right">
+    <img src="/assets/images/sportsocialhome1.png" alt="">
+  </div>
+  <div class="arrow-right">
+    <img src="/assets/images/sportsocialhome1.png" alt="">
+  </div>  <div class="pop-crousal">
+    <h1>Match Moments<img src="/assets/images/sportsocialcancel.png"></h1>
+    <div class="contain">
+      <div *ngFor="let data of MatchMoments" 
+      class="c-element" #widgetsContent
+      (click)="openews(data.id, data.game)">
+      <img src="{{data.imagepath}}" onerror="this.src='assets/images/user-default.png'">
+      <div class="c-head">
+          <h1>{{data.title}}</h1>
+          <p>{{data.source}}</p>
+        </div>
+      </div>
+    </div> 
+  </div>
+</div>
 <div class="cbody">
 <div class="rightside"> 
     <div class="outdiv" *ngFor="let feed of Matcharr;let i=index">
@@ -64,16 +85,19 @@
                 <div class="container" *ngFor="let data of MatchCommnets">
                   <div class="profile-data">
                     <img src="{{data.Profileimage}}" onerror="this.src='assets/images/user-default.png'" style="width:100%;">
-                    <h6>{{data.User_name}}<br>{{data.MatchStarterUniqueName}}</h6>
-                  </div>
+                    <h6>{{data.User_name}}<br>{{data.uniquename}}</h6>
+                  <div class="message-outter">
                   <div class="message">
                     <p>{{data.Comment}}</p>
                   </div>
                 </div>
+                </div>
+              </div>
+
             </div>
             <div class="details" *ngIf="moment"> 
                 <div class="container2" *ngFor="let data of MatchMoments">
-                  <img src="{{data.imagepath}}" onerror="this.src='assets/images/user-default.png'">
+                  <img (click)="openpopcrousal()" src="{{data.imagepath}}" onerror="this.src='assets/images/user-default.png'">
                 </div>
             </div>
             <div class="details3" *ngIf="joinee"> 

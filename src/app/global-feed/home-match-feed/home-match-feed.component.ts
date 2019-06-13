@@ -24,8 +24,9 @@ export class HomeMatchFeedComponent{
   gendercheck;
   timestamp = Math.floor(Date.now()/1000);
   sub: Subscription;
-  @ViewChild('blog') blog:ElementRef;
-  @ViewChild('outdiv') outdiv:ElementRef;
+  scroll=document.getElementsByClassName('c-element') as HTMLCollectionOf<HTMLElement>;
+  @ViewChild('widgets') widgets:ElementRef;
+  @ViewChild('widgetsContent') widgetsContent:ElementRef;
   constructor(
     private _eventemiter: EventEmiterService,
     private getService: GetService,
@@ -235,10 +236,13 @@ export class HomeMatchFeedComponent{
     this.router.navigate(['/OpenArena', topic]);
   }
   lscroll(){
-    this.blog.nativeElement.scrollLeft-=this.outdiv.nativeElement.clientWidth;
+    this.widgets.nativeElement.scrollLeft -=this.widgetsContent.nativeElement.clientWidth;
+    // this.scroll[0].scrollLeft+=150;
   }
   rscroll(){
-    this.blog.nativeElement.scrollLeft+=this.outdiv.nativeElement.clientWidth;
+    this.widgets.nativeElement.scrollLeft +=this.widgetsContent.nativeElement.clientWidth;
+    
+    // this.scroll[0].scrollLeft+=150;
   }
   ngOnInit() {
     this.ssmatchfeed();
