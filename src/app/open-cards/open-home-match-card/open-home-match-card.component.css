@@ -49,7 +49,7 @@
     top: 90%;
     left: 5%;
     width: auto;
-    height: 55px;
+    height: 38px;
     line-height: 0.7;
     transform: translate(-10%, -20%);
     font-size: 0.7em;  
@@ -62,7 +62,7 @@
     margin-left: 5%;
 }
 .pop-up{
-    /* display: none; */
+    display: none;
     position: fixed;
     z-index: 40;
     height: 100vh;
