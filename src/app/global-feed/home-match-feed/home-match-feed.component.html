@@ -4,11 +4,12 @@
   <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf="Matcharr.length === 0" alt="">
       
     <div class="rightside" *ngFor = "let game of Matcharr;"> 
-        <div class="topic">
-            <h3>{{game.gametitle}}<h5 (click)="gotoarena(game.gametitle)">See all</h5></h3>
-          </div>  
+    
+          <div class="topic">
+              <h2>{{game.gametitle}}</h2>
+              <h3>Matches<h5 (click)="gotoarena(game.gametitle)">See all</h5></h3>
+            </div>
       <div class="blog" #widgets>  
-        <h3>Matches</h3><br><br>
           <!-- <div class="leftarrow" (click)="lscroll();">
             </div>  
           <div class="rightarrow" (click)="rscroll();">
@@ -56,46 +57,51 @@
           </div> 
     
     <h1>News<h2 (click)="changee(game.gametitle)">See all</h2></h1> 
-    <div class="news-section">
+     <div class="news-section">
         <!-- <div class="lefttarrow" (click)="lscroll();">
           </div>  
         <div class="righttarrow" (click)="rscroll();">
             </div>  -->
-      <div class="outdiv" *ngFor="let feed of news[game.gamenumber]" #targett>
-        <div class="news-card" (click)="change(feed.id, game.gametitle)">
-          <div class="news-img">
-            <img src="{{feed.image}}" alt="sportsocialimg" onerror="this.src='assets/images/user-default.png'">
-          </div>
-          <div class="news-detail">
-            <textarea disabled>{{feed.title | slice:0:100}}..</textarea>
-            <p>{{feed.source}}</p>  
-          </div>
-        </div>
-    </div>
-    </div>
+          <div class="outdiv" *ngFor="let feed of news[game.gamenumber]" #targett>
+            <div class="news-card" (click)="change(feed.id, game.gametitle)">
+               <div class="news-img">
+                 <img src="{{feed.image}}" alt="sportsocialimg" onerror="this.src='assets/images/user-default.png'">
+               </div>
+               <div class="news-detail">
+                 <textarea disabled>{{feed.title | slice:0:100}}..</textarea>
+                 <p>{{feed.source}}</p>  
+              </div>
+            </div>
+           </div>
+       </div>
     </div> 
     <div class="rightside1" *ngFor="let data of tnews">
-      <h1 class="no-matches">{{data.gamename}} matches<h2>No matches</h2></h1>
-      <h1>News<h2 (click)="changee(data.gamename)">See all</h2></h1> 
-      <div class="news-section">
-          <!-- <div class="lefttarrow" (click)="lscroll();">
-            </div>  
-          <div class="righttarrow" (click)="rscroll();">
-              </div>  -->
-        <div class="outdiv" *ngFor="let feed of data.gamenews" #targett>
-          <div class="news-card" (click)="changenomatch(feed.id, data.gamename)">
-            <div class="news-img">
-              <img src="{{feed.image}}" alt="sportsocialimg">
-            </div>
-            <div class="news-detail">
-              <textarea disabled>{{feed.title | slice:0:100}}..</textarea>
-              <p>{{feed.source}}</p>
+      <div class="gametopic">
+          
+        </div>  
+
+      <div class="topic2">
+          <h2>{{data.gamename}}</h2>
+          <h3>Matches<h5>No matches</h5></h3>
+        </div>
+        
+          <h1>News<h2 (click)="changee(data.gamename)">See all</h2></h1> 
+        
+          <div class="news-section">
+            <div class="outdiv" *ngFor="let feed of data.gamenews" #targett>
+              <div class="news-card" (click)="changenomatch(feed.id, data.gamename)">
+                <div class="news-img">
+                  <img src="{{feed.image}}" alt="sportsocialimg">
+                </div>
+                <div class="news-detail">
+                  <textarea disabled>{{feed.title | slice:0:100}}..</textarea>
+                  <p>{{feed.source}}</p>
+                </div>
+              </div>
             </div>
           </div>
-      </div>
-      </div>
-    </div>    
-</div>
+      </div>    
+ </div>
 <div class="rightsidefooter" *ngIf="Matcharr.length !== 0">
 <sports-social-backfooter></sports-social-backfooter>
 </div>

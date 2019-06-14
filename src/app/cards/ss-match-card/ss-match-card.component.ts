@@ -26,6 +26,7 @@ export class SsMatchCardComponent implements OnInit {
   @Input() Team1Name:string;
   @Input() Team2Name:string;
   @Input() EventText:string;
+  @Input() JoineeCount:string;
   @Input() WatchCount:string;
   @Input() PromoteCount:string;
   @Input() CommentCount:string;
