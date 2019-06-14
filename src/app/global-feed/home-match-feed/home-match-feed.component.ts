@@ -101,7 +101,7 @@ export class HomeMatchFeedComponent{
               JoineeCount:data["Feed"][i].JoineeCount
             });
 
-            var newstring=arr[i].gender;
+            
 
             var score1 = data["Feed"][i].scoreTeam1;
             var score2 = data["Feed"][i].scoreTeam2;
@@ -112,16 +112,17 @@ export class HomeMatchFeedComponent{
             else{
               this.finalstatus="Match Finish";
             }
-
-            if(newstring = "male"){
-              this.gendercheck = "Men's ";
+            var newstring=arr[i].gender;
+            if(newstring.toLowerCase() === "mix"){
+              this.gendercheck = "Mix-up";
              }
-             else if(newstring == "female"){
+             else if(newstring.toLowerCase() === "female"){
               this.gendercheck= "Women's";
              }
-             else if (newstring == "mix"){
-              this.gendercheck= "Mix-up";
+             else if (newstring.toLowerCase() === "male"){
+              this.gendercheck= "Men's";
              }
+             console.log("this is gender checkung",this.gendercheck);
 
              var agebracket= arr[i].ageBracket;
               if(agebracket == 0){
