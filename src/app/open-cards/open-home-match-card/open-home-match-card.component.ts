@@ -241,8 +241,14 @@ export class OpenHomeMatchCardComponent implements OnInit {
               });
               } 
             }
-
+          var temp;
           for(var j=0;j<data["Moments"].length;j++){
+            if(data["Moments"][i].likecount==null){
+              temp = 0;
+            }
+            else{
+              temp = data["Moments"][i].likecount;
+            }
             this.MatchMoments.push({
               ImageId:data["Moments"][j].ImageId,
               imagepath:data["Moments"][j].imagepath,
@@ -251,7 +257,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
               User_Name:data["Moments"][j].User_Name,
               profile_photo:data["Moments"][j].profile_photo,
               commentcount:data["Moments"][j].commentcount,
-              likecount:data["Moments"][j].likecount,
+              likecount:temp,
               IsLiked:data["Moments"][j].IsLiked
             });
           } 
@@ -294,6 +300,9 @@ export class OpenHomeMatchCardComponent implements OnInit {
     // this.activatedroute.paramMap.subscribe(params=>{
     //   console.log(params);
     // })
+  }
+  close(){
+    this.openpop[0].style.display="none";
   }
   lscroll(){
     this.widgets.nativeElement.scrollLeft -=this.widgetsContent.nativeElement.clientWidth;

@@ -7,17 +7,21 @@
       class="c-element" #widgetsContent
       (click)="openews(data.id, data.game)" #widgetsContent>
       <img src="{{data.imagepath}}" onerror="this.src='assets/images/user-default.png'">
-      <div class="c-head">
-          <h1>{{data.title}}</h1>
-          <p>{{data.source}}</p>
-        </div>
+      <div *ngIf="data.Text.length > 0" class="c-head">
+          <h1>{{data.Text}}</h1>
+          <p>by:{{data.User_Name}}</p>
       </div>
+      <div *ngIf="data.Text.length > 0" class="c-bottom">
+        <h1><img src="/assets/images/sportsociallike.png" alt="">&nbsp;{{data.likecount}}</h1>
+    </div>
+    </div>
   </div>
+  <img (click)="close()" class="close" src="/assets/images/sportsocialhomecross.png" alt="">
   <div class="arrow-left">
-      <img (click)="lscroll()" src="/assets/images/sportsocialarrowhome1.png" alt="">
+      <img (click)="lscroll()" src="/assets/images/sportsocialmatcharrow.png" alt="">
     </div>
   <div class="arrow-right">
-      <img (click)="rscroll()" src="/assets/images/sportsocialarrowhome1.png" alt="">
+      <img (click)="rscroll()" src="/assets/images/sportsocialmatcharrow1.png" alt="">
     </div>
 </div>
 <div class="cbody">
