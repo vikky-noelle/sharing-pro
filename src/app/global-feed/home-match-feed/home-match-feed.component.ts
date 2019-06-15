@@ -70,12 +70,14 @@ export class HomeMatchFeedComponent{
         this.show=true;
         var arr=[];
           for(var i=0;i<data["Feed"].length;i++){
+            var Starttime= new Date( data["Feed"][i].startdatetime *1000);
+            var timestampConvert= new String(Starttime).slice(3,21);
               arr.push({
               feedid:data["Feed"][i].feedid,
               ageBracket:data["Feed"][i].ageBracket,
               Activity_name:data["Feed"][i].Activity_name,
-              MatchStarterUniqueName:data["Feed"][i].MatchStarterUniqueName==null?"":"@"+data["Feed"][i].MatchStarterUniqueName,
-              result:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?this.time.ExactDate(data["Feed"][i].startdatetime):'Match Finished',
+              MatchStarterUniqueName:data["Feed"][i].MatchStarterUniqueName==null?"":"By:@"+data["Feed"][i].MatchStarterUniqueName,
+              result:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?timestampConvert:'Final result',
               InsertedDate:data["Feed"][i].InsertedDate,
               profile_image:data["Feed"][i].profile_image,
               Venue_Name:data["Feed"][i].Venue_Name,
@@ -122,7 +124,6 @@ export class HomeMatchFeedComponent{
              else if (newstring.toLowerCase() === "male"){
               this.gendercheck= "Men's";
              }
-             console.log("this is gender checkung",this.gendercheck);
 
              var agebracket= arr[i].ageBracket;
               if(agebracket == 0){
@@ -264,12 +265,9 @@ export class HomeMatchFeedComponent{
   }
   lscroll(){
     this.widgets.nativeElement.scrollLeft -=this.widgetsContent.nativeElement.clientWidth;
-    // this.scroll[0].scrollLeft+=150;
   }
   rscroll(){
     this.widgets.nativeElement.scrollLeft +=this.widgetsContent.nativeElement.clientWidth;
-    
-    // this.scroll[0].scrollLeft+=150;
   }
   ngOnInit() {
     this.ssmatchfeed();

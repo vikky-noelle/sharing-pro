@@ -9,17 +9,17 @@
               <h2>{{game.gametitle}}</h2>
               <h3>Matches<h5 (click)="gotoarena(game.gametitle)">See all</h5></h3>
             </div>
-      <div class="blog" #widgets>  
+      <div class="blog">  
           <!-- <div class="leftarrow" (click)="lscroll();">
             </div>  
           <div class="rightarrow" (click)="rscroll();">
               </div>  -->
-            <div class="outdiv" *ngFor = "let feed of game.gamearray;" #widgetsContent>
+            <div class="outdiv"  *ngFor = "let feed of game.gamearray;"  #widgets>
 
-              <div class="card">
+              <div class="card" #widgetsContent>
                   <div class="head">
                         <div class="gamename">
-                            <b>{{gendercheck}} {{feed.GameName}}<h6>- {{Age}}</h6></b>
+                            <b>{{gendercheck}} {{feed.GameName}} <h6>- {{Age}}</h6></b>
                             <p>{{feed.Venue_Name | slice:0:30}}...</p>
                           </div>
                           <div class="result">
@@ -30,7 +30,7 @@
                       <a routerLink="/opencard/{{feed.feedid}}">      
                           <div class="cardData">
                               <div class="cardData team1">
-                                <img src={{feed.Team1Pic}} onerror="this.src='assets/images/user-default.png'">
+                                <img src={{feed.Team1Pic}} onerror="this.src='assets/images/user.png'">
                                 <p>{{feed.Team1name | slice:0:11}}</p>    
                               </div>
                               <div class="cardData t1score" style="margin-top: 5%;">
@@ -38,7 +38,7 @@
                                   <b style="font-size: 1.2em;">{{feed.scoreTeam2}}</b>
                               </div>
                               <div class="cardData team2">
-                                <img src={{feed.Team2Pic}} onerror="this.src='assets/images/user-default.png'">
+                                <img src={{feed.Team2Pic}} onerror="this.src='assets/images/user.png'">
                                 <p>{{feed.Team2name | slice:0:11}}</p>
                               </div>     
                         </div> 
@@ -48,15 +48,18 @@
                     </div>
                 <div class="footer">
                       <button class="footer Button">{{feed.JoineeCount}} Joinee</button>
-                      <button class="footer Button">{{feed.CommentCount}} Talk</button>
                       <button class="footer Button">{{feed.PromoteCount}} Promote</button>
                       <button class="footer Button">{{feed.WatchCount}} Subscribe</button>
+                      <button class="footer Button">{{feed.CommentCount}} Talk</button>
                 </div> 
               </div>    
             </div>
           </div> 
+
+          <div class="topic">
+              <h3>News<h5 (click)="changee(game.gametitle)">See all</h5></h3> 
+          </div>
     
-    <h1>News<h2 (click)="changee(game.gametitle)">See all</h2></h1> 
      <div class="news-section">
         <!-- <div class="lefttarrow" (click)="lscroll();">
           </div>  
@@ -76,17 +79,12 @@
        </div>
     </div> 
     <div class="rightside1" *ngFor="let data of tnews">
-      <div class="gametopic">
-          
-        </div>  
-
       <div class="topic2">
           <h2>{{data.gamename}}</h2>
-          <h3>Matches<h5>No matches</h5></h3>
+          <h3>No Matches</h3>
         </div>
-        
-          <h1>News<h2 (click)="changee(data.gamename)">See all</h2></h1> 
-        
+  
+          <h1>News<h5 (click)="changee(data.gamename)">See all</h5></h1> 
           <div class="news-section">
             <div class="outdiv" *ngFor="let feed of data.gamenews" #targett>
               <div class="news-card" (click)="changenomatch(feed.id, data.gamename)">
