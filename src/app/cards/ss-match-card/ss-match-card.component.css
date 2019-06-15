@@ -1,9 +1,10 @@
 
  .head{
-     line-height: 1.1;
+    line-height: 1.1;
     width: 100%;
-    height: 32px;
+    height: 34px;
     display: inline-block;
+    margin-top: 1%;
     border-bottom: 1px solid #dddddd;
 }
 .head>b{
@@ -18,6 +19,12 @@
     margin-top: -25px;
     float: right;
     margin-right: 1%;
+}
+.rresult p img{
+    margin-top: 2px;
+    float: right;
+    height: 12px;
+    width: 12px;
 }
 .rresult p span{
     float: right;
@@ -48,8 +55,8 @@
     width: 100%;
     height: 60px;
     display: inline-flex;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-bottom: 10%;
 }
 .vs{
     width: 20%;
@@ -90,12 +97,12 @@
     color: #024771;
 }
 .card{
-    width: 100%;
-    height: 300px;
-    border: 1px solid #ece9e9;
+    width: 90%;
+    height: 284px;
+    /* border: 1px solid #ece9e9; */
     margin-bottom: 2%;
     border-radius: 2%;
-    box-shadow: 5px 5px 10px #dddddd;
+    box-shadow: 0 4px 8px 0 rgba(173, 172, 172, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
 }
 .eventtext{
     width: 100%;
@@ -136,8 +143,14 @@
     /* margin-left: 3%; */
     width: 40%;
 }
-.team1,.team2>p{
+.team1,.team2 p{
     text-align: center;
+}
+.team1 p{
+    padding: 10px;
+}
+.team2 p{
+    padding: 10px;
 }
 .team1>img{
     margin: 0 auto;
@@ -168,13 +181,14 @@
     /* margin-top: 8%; */
 }
 .footer>button{
-    margin-left: 10%;
     border: none;
+    float: left;
     cursor: pointer;
     outline: none;
-    margin-top: 1%;
     text-align: center;
     font-size: 1em;
+    width: 25%;
+    padding: 5px;
     color: #7e7d7d;
     background-color: transparent;
 }
@@ -193,7 +207,6 @@
         font-size: .8em;
     }
     .footer>button{
-        margin-left: 7%;
         font-size: 0.7em;
     }
     .eventtext>p{

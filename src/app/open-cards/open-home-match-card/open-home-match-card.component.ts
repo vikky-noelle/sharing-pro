@@ -49,9 +49,13 @@ export class OpenHomeMatchCardComponent implements OnInit {
   joineechild2=document.getElementsByClassName('joineechild2') as HTMLCollectionOf<HTMLElement>;
   
   first(){  
-     this.one[0].style.background="none";
-     this.two[0].style.background="#f4f4f4";
+    this.one[0].style.background="none";
+    this.one[0].style.fontWeight="bolder";
+    this.two[0].style.background="#f4f4f4";
      this.three[0].style.background="#f4f4f4";
+      this.one[0].style.fontSize="1em";
+     this.two[0].style.fontSize="0.9em";
+     this.three[0].style.fontSize="0.9em";
      this.comment=true;
      this.moment=false;
      this.joinee=false;
@@ -60,6 +64,10 @@ export class OpenHomeMatchCardComponent implements OnInit {
      this.three[0].style.color="#888888";
   }
   second(){
+    this.two[0].style.fontSize="1em";
+    this.one[0].style.fontSize="0.9em";
+    this.three[0].style.fontSize="0.9em";
+
     this.two[0].style.background="none";
     this.one[0].style.background="#f4f4f4";
     this.three[0].style.background="#f4f4f4";
@@ -71,6 +79,9 @@ export class OpenHomeMatchCardComponent implements OnInit {
     this.one[0].style.color="#888888";
   }
   third(){
+    this.three[0].style.fontSize="1em";
+    this.two[0].style.fontSize="0.9em";
+    this.one[0].style.fontSize="0.9em";
     this.three[0].style.background="none";
     this.two[0].style.background="#f4f4f4";
     this.one[0].style.background="#f4f4f4";
@@ -85,15 +96,24 @@ export class OpenHomeMatchCardComponent implements OnInit {
   thirdchild1(){
     this.child1=true;
     this.child2=false;
-    this.joineechild1[0].style.color="#fff";
-    this.joineechild2[0].style.color="skyblue";
+    this.joineechild1[0].style.color="#024771";
+    this.joineechild2[0].style.color="white";
+    this.joineechild1[0].style.backgroundColor="white";
+    this.joineechild2[0].style.backgroundColor="#024771";
+    this.joineechild1[0].style.fontWeight="bolder";
+    this.joineechild2[0].style.fontWeight="lighter";
+
   }
   
   thirdchild2(){
     this.child1=false;
     this.child2=true;
-    this.joineechild1[0].style.color="skyblue";
-    this.joineechild2[0].style.color="#fff";
+    this.joineechild1[0].style.color="white";
+    this.joineechild2[0].style.color="#024771";
+    this.joineechild2[0].style.backgroundColor="white";
+    this.joineechild1[0].style.backgroundColor="#024771";
+    this.joineechild2[0].style.fontWeight="bolder";
+    this.joineechild1[0].style.fontWeight="lighter";
   }
 
   constructor(
@@ -112,7 +132,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
             this.Matcharr.push({
                   Activity_name:data["Feed"][i].Activity_name,
                   uniquename:data["Feed"][i].uniquename==null?"":"@"+data["Feed"][i].uniquename,
-                  result:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?"On:"+this.startTime:'Match Finished',
+                  result:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?""+this.startTime:'Match Finished',
                   InsertedDate:data["Feed"][i].InsertedDate,
                   ageBracket:data["Feed"][i].ageBracket,
                   profile_image:data["Feed"][i].profile_image,
@@ -124,7 +144,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
                   Event_Image:data["Feed"][i].Event_Image,
                   MatchStarterName:data["Feed"][i].MatchStarterName,
                   MatchStarterPhoto:data["Feed"][i].MatchStarterPhoto,
-                  MatchStarterUniqueName:data["Feed"][i].MatchStarterUniqueName==null?"":"Created by:@"+data["Feed"][i].MatchStarterUniqueName,
+                  MatchStarterUniqueName:data["Feed"][i].MatchStarterUniqueName==null?"":"@"+data["Feed"][i].MatchStarterUniqueName,
                   Team1name:data["Feed"][i].Team1name,
                   Team1Id:data["Feed"][i].Team1Id,
                   Team2Id:data["Feed"][i].Team2Id,

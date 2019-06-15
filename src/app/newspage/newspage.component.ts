@@ -106,7 +106,7 @@ export class NewspageComponent implements OnInit{
           image: body.news[i].newsImage,
           desc: body.news[i].desc
         });
-        if(i==="10"){
+        if(i==="5"){
           break;
         }
       }
@@ -120,7 +120,7 @@ export class NewspageComponent implements OnInit{
         var x;
         this.j=this.j+1;
         for (var i=0; i<5; i++) {
-          x = this.time.ExactDate(body.news[i].insertedDate);
+          x = this.time.ExactDate(Date.parse(body.news[i].insertedDate)/1000);
           x = x.replace(/T/g," at "); 
             this.list.push({
               id: i,
@@ -134,10 +134,11 @@ export class NewspageComponent implements OnInit{
             });
           }
           for(var i=5; i<7; i++){
-            x = this.time.ExactDate(body.news[i].insertedDate);
+            x = this.time.ExactDate(Date.parse(body.news[i].insertedDate)/1000);
             x = x.replace(/T/g," at "); 
             this.list1.push({
               id: i,
+              source: body.news[i].source,
               game: body.news[i].gameName,
               title:body.news[i].title,
               timestamp:x.substr(0,19),
@@ -214,7 +215,7 @@ export class NewspageComponent implements OnInit{
           var x;
           for (const i in body.news) {
             this.j=this.j+1;
-            x = this.time.ExactDate(body.news[i].insertedDate);
+            x = this.time.ExactDate(Date.parse(body.news[i].insertedDate)/1000);
             x = x.replace(/T/g," at "); 
             this.news.push({
               source: body.news[i].source,

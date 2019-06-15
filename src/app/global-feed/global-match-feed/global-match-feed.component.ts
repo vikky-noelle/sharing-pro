@@ -59,7 +59,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
   ) { }
 
   openarenamatches(){
-    var temp;
+    var temp, checkstat, checkstat2, upcoming=false;
     var finished;
     this.location.getGeoLocation().then((pos)=>{
       for(var ij=0;ij<this.Sports.length;ij++){
@@ -80,13 +80,35 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         }
         var convertdate=new String(new Date(data["Feed"][i].startdatetime*1000));
         this.startTime=convertdate.slice(3,21);
-        if(data["Feed"][i].scoreTeam1===null || data["Feed"][i].scoreTeam2===null){
-          this.startTime="Match Finished";
-          finished= false;
+        checkstat = Date.now();
+        checkstat2 = data["Feed"][i].startdatetime;
         
+        if(checkstat>checkstat2){
+          if((checkstat-checkstat2)>86400){
+            if(data["Feed"][i].scoreTeam1===null || data["Feed"][i].scoreTeam2===null){
+              this.startTime="Score Awaited";
+              finished= false;
+            } 
+            if(data["Feed"][i].Team2name === null){
+              this.startTime="Match Abandoned";
+              finished= false;
+            }
+          }
+          else{
+            if(data["Feed"][i].scoreTeam1===null || data["Feed"][i].scoreTeam2===null){
+              this.startTime="Score Awaited";
+              finished= false;
+            }
+          }
         }
-        else{
+        if(checkstat === checkstat2 || checkstat < checkstat2){
+          this.startTime="Upcoming";
+          finished= false; 
+          upcoming=true;   
+        }
+        if(data["Feed"][i].scoreTeam1!==null && data["Feed"][i].scoreTeam2!==null){
           finished= true;
+          this.startTime="Match Finished";
         }
     
         this.arr.push({
@@ -96,6 +118,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
               Uniquename:data["Feed"][i].MatchStarterUniqueName==null?"":data["Feed"][i].MatchStarterUniqueName,
               MatchStarterUniqueName:data["Feed"][i].MatchStarterUniqueName==null?"":data["Feed"][i].MatchStarterUniqueName,
               finished: finished,
+              upcoming: upcoming,
               timestamp: data["Feed"][i].startdatetime,
               result:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?this.time.ExactDate(data["Feed"][i].startdatetime):'Match Finished',
               InsertedDate:data["Feed"][i].InsertedDate,
@@ -103,6 +126,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
               Venue_Name:data["Feed"][i].Venue_Name,
               EventText:data["Feed"][i].EventText,
               startdatetime:this.startTime,
+              starttimestamp: data["Feed"][i].startdatatime,
               gamename:data["Feed"][i].GameName,
               GameId:data["Feed"][i].GameId,
               Event_Image:data["Feed"][i].Event_Image,

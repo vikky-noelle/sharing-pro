@@ -43,7 +43,7 @@ export class HomeMatchFeedComponent{
   'Cricket', 
   'Football', 
   'Hockey', 
-  'Lawn Tennis', 
+  'Tennis', 
   'Table Tennis', 
   'Volleyball']
   Sports= [
@@ -52,7 +52,7 @@ export class HomeMatchFeedComponent{
     {id: 17,  title: 'Cricket'},
     {id: 23, title: 'Football'},
     {id: 29, title: 'Hockey'},
-    {id: 36, title: 'Lawn Tennis'},
+    {id: 36, title: 'Tennis'},
     {id: 56, title: 'Table Tennis'},
     {id: 60, title: 'Volleyball'}
   ];
@@ -256,6 +256,7 @@ export class HomeMatchFeedComponent{
   }
   changee(topic){
     topic = topic.toLowerCase();
+    topic = topic.replace(/ /g, "-")
     this.router.navigate(['/newspage', topic]);
   }
   gotoarena(topic){

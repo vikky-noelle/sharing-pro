@@ -1,5 +1,3 @@
-<sports-social-header></sports-social-header>
-<br><br><br><sports-social-newsidenav></sports-social-newsidenav>
 <div class="pop-up">
     <div class="pop-crousal" #widgets>
     <!-- <img class="cancel" src="/assets/images/sportsocialcancel.png"> -->
@@ -24,18 +22,21 @@
       <img (click)="rscroll()" src="/assets/images/sportsocialmatcharrow1.png" alt="">
     </div>
 </div>
+<sports-social-header></sports-social-header>
+<div class="main-body">
+  <sports-social-newsidenav></sports-social-newsidenav>
 <div class="cbody">
 <div class="rightside"> 
     <div class="outdiv" *ngFor="let feed of Matcharr;let i=index">
       <div class="card">
             <div class="head">
                 <div class="gamename">
-                    <b>{{genderCheck}} {{feed.GameName}} - {{Age}}</b>
+                    <b>{{genderCheck}} {{feed.GameName}} - <span style="font-weight: lighter;font-size: 0.9em;color: #444444">{{Age}}</span></b>
                     <p>{{feed.Venue_Name}}</p>
                 </div>
                 <div class="result">
                   <b>{{feed.result}}</b><br>
-                  <p>{{feed.MatchStarterUniqueName}}</p>
+                  <p style="color: #024771"><span style="color: #888888; font-weight: lighter;">Created By: </span>{{feed.MatchStarterUniqueName}}</p>
                 </div> 
             </div>
             <div class="activitycount">
@@ -80,7 +81,7 @@
             </div>
 
             <div class="footer">
-                  <button (click)="first()" class="one" style="background: none; color: black;">Match Talk</button>
+                  <button (click)="first()" class="one" style="background: none; color: black; font-size: 1em;">Match Talk</button>
                   <button (click)="second()" class="two">Moments</button>
                   <button (click)="third()" class="three">Line Ups</button>
             </div> 
@@ -104,8 +105,8 @@
                 </div>
             </div>
             <div class="details3" *ngIf="joinee"> 
-              <button (click)="thirdchild1()" class="joineechild1">{{feed.Team1name}}</button>
-              <button (click)="thirdchild2()" class="joineechild2" style="color:skyblue;">{{feed.Team2name}}</button>
+              <button (click)="thirdchild1()" class="joineechild1" style="color: #024771; background-color: white; font-weight: bolder">{{feed.Team1name}}</button>
+              <button (click)="thirdchild2()" class="joineechild2">{{feed.Team2name}}</button>
               
                   <div *ngIf="child1">
                     <div class="container3" *ngFor="let data of MatchLineup1">
@@ -127,4 +128,4 @@
 <div class="ffooter">
   <sports-social-backfooter></sports-social-backfooter>
 </div>
-
+</div>

@@ -1,4 +1,6 @@
-
+.main-body{
+    margin-top: 57.5px;
+}
 .cbody{
     /* height: 2000px; */
     overflow: hidden;
@@ -155,16 +157,19 @@
     display: grid;
     width: 100%;
     height: auto;    /* height for comments and etc*/
-    border: 1px solid #ece9e9;
+    /* border: 1px solid #ece9e9; */
     margin-bottom: 2%;
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px #ecebeb;
+    /* border-radius: 10px; */
+    /* box-shadow: 1px 1px 1px #f3f3f3; */
     background-color: #ffffff;
 }
 
 .head{
+    margin-top: 7px;
+    margin-bottom: 10px;
     width: 100%;
-    height: 34px;
+    height: 43px;
+    line-height: 1.4;
     border-bottom: 1px solid #dddddd;
 }
 .gamename {
@@ -183,15 +188,17 @@
     float: right;
 }
 .result b {
+    font-weight: 500;
     font-size: .9em;
 }
 .gamename b {
     font-size: 1em;
 }
 .gamename p {
-    margin-top: -0.5%;
-    font-size: 0.7em;
-    font-weight: lighter;
+    /* margin-top: -0.5%; */
+    font-size: 0.8em;
+    color: #888888;
+    /* font-weight: lighter; */
 }
 .result p {
     margin-top: -0.5%;
@@ -267,6 +274,7 @@
     height: 100%;
     border: none;
     resize: none;
+    overflow: hidden;
     text-align: center;
     font-size: .8em;
     font-weight: bolder;
@@ -314,7 +322,8 @@
 }
 .footer{
     display: inline-flex;
-    border-top: 1px solid #d3d1d1;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
     width: 100%;
     height: 30px;
 }
@@ -324,8 +333,8 @@
    color: #888888;
    width: 50%;
    height: 30px;
-   font-size: 1em;
-   font-weight: bolder;
+   font-size: 0.9em;
+   /* font-weight: bolder; */
    cursor: pointer;
 }
 .one{
@@ -339,14 +348,17 @@
 
 }
 @media screen and (min-width:200px) and (max-width:700px){
+    .pop-crousal{
+        margin-top: 23vh;
+        width: 80%;
+        height: 40%;
+        margin-left: 10%
+    }
     .team1,.team2>p{
         font-size: 0.9em;
     }
     .creator{
         margin-top: 12%;
-    }
-    .result b{
-        font-size: 0.7em;
     }
     .username{
         font-size: .6em;
@@ -390,7 +402,10 @@
         font-size: 0.6em;
     }
     .result p {
-        font-size: 0.6em;
+        font-size: 0.5em;
+    }
+    .result b{
+        font-size: 0.7em;
     }
     .cardData img{
         height: 35px;
@@ -426,7 +441,10 @@
         width: 100%;
         margin-top: 3%;
     }
-}
+    .head{
+        height: 45px;
+    }
+ }
 @media screen and (min-width: 701px) and (max-width: 950px){
     .outdiv {
         width: 95%;
@@ -561,15 +579,19 @@
     display: grid;
   }
   .details3>button{
+      margin-top: 10px;
       vertical-align: top;
       width: 50%;
-      border: none;
-      border-right: 2px solid #2796db;
+      font-size: lighter;
+      letter-spacing: 1px;
+      border: 2px solid #024771;
+      /* border-right: 2px solid white; */
       outline: none;
-      height: 30px;
-      background-image: linear-gradient(#024771, #2796db);
+      /* height: 30px; */
+      padding: 10px;
+      background-color: #024771;
+      /* background-image: linear-gradient(#024771, #2796db); */
       color: #ffffff;
-      font-size: 1em;
-      font-weight: bolder;
+      font-size: 0.9em;
       cursor: pointer;
   }

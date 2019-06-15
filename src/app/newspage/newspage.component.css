@@ -11,14 +11,6 @@
     float: right;
     width: 84%;
 }
-.larrow{
-    opacity: 0.8;
-    position: relative;
-    z-index: 1;
-    margin-top: 20vh;
-    width: 15.5%;
-    float: left;
-}
 .dnews{
     width: 82%;
     margin-left: 15%;
@@ -86,28 +78,44 @@
     width: 60%;
     margin-left: 2%;
 }
+.larrow{
+    border-radius: 50%;
+    /* opacity: 0.8; */
+    position: relative;
+    z-index: 1;
+    margin-top: 20vh;
+    width: 15.5%;
+    float: left;
+}
+
 .rarrow{
-    opacity: 0.8;
+    /* opacity: 0.8; */
+    z-index: 1;
+    border-radius: 50%;
     position: relative;
     margin-top: 20vh;
     width: 9%;
     float: right;
 }
 .larrow img{
+    background-color: white;
+    cursor: pointer;
     box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
     margin-left: 79%;
-    border: 2px solid silver;
+    /* border: 2px solid silver; */
     border-radius: 50%;
     height: 60px;
     width: 60px;
 }
 .rarrow img{
+    border-radius: 50%;
+    background-color: white;
     box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
     margin-left: -87.5%;
-    border: 2px solid silver;
-    border-radius: 50%;
+    /* border: 2px solid silver; */
     height: 60px;
     width: 60px;
+    cursor: pointer;
 }
 
 .crousal{
@@ -473,6 +481,12 @@
     border-radius: 5px;
     margin: 3.5% 2% 2% 2%;
 }
+.source-desc{
+    display: none;
+}
+.source-dnews{
+    display: none;
+}
 .heading p{
     float: right;
     margin-top: 1%;
@@ -516,6 +530,14 @@
        width: 100%;
        margin-left: 0% !important;
    }
+   .source-dnews{
+       display: block;
+       font-size: 0.8em;
+       margin-top: 25px;
+       float: left;
+       padding-left: 10px;
+       width: 55%;
+   }
    .dnews div{
        width: 100%;
        clear: both; 
@@ -528,7 +550,8 @@
        padding-top: 10px;
        float: left;
        width: 55%;
-        font-weight: lighter;
+       height: 30px;
+        /* font-weight: lighter; */
        margin-bottom: 0;
    }
    .c-head{
@@ -558,15 +581,23 @@
        width: 50%;
        font-size: 0.9em;
    }
-   .normal-news p{
-      display: none;
+   .hide-source-news{
+       display: none;
    }
    .normal-news .source {
        clear: both;
        font-size: 0.9em;
    }
+   .source-desc{
+    display: block;
+    }
+   .source{
+       width: 100%;
+       display: block;
+   }
    .source span{
     clear: both;
+    float: right;
     font-size: 0.9em;
     }
 }

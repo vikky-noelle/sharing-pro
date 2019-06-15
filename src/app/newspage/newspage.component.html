@@ -25,6 +25,7 @@
     <div (click)="openews(data.id, data.game)" *ngFor="let data of list1">
       <img src="{{data.image}}">
       <h1>{{data.title|slice:0:70}}...</h1>
+      <p class="source-dnews">{{data.source}}<br><br>{{data.timestamp}}</p>
     </div>
   </div>
   </div>
@@ -32,8 +33,9 @@
   <div (click)="openews(data.id, data.game)" *ngFor="let data of news" class="normal-news">
     <img src="{{data.image}}">
     <h1>{{data.title}}</h1>
-    <p>{{data.desc|slice:0:100}}...</p>
-    <p class="source">{{data.source}}<span>{{data.timestamp}}</span></p>
+    <p class="hide-source-news">{{data.desc|slice:0:100}}...</p>
+    <p class="source-desc">{{data.desc|slice:0:55}}...</p>
+    <p class="source">{{data.source}}&nbsp;<span>{{data.timestamp}}</span></p>
   </div>
 </div>
 <!-- sport wise view -->

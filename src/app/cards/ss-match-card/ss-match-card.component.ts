@@ -11,7 +11,9 @@ export class SsMatchCardComponent implements OnInit {
   @Input() feedid:string;
   @Input() matchstartername:string;
   @Input() userName:string;
+  @Input() starttimestamp:string;
   @Input() coverpic:string;
+  @Input() upcoming:string;
   @Input() team1pic: string;
   @Input() team2pic: string;
   @Input() scoreTeam1: string;
