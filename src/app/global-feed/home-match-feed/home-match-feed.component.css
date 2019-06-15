@@ -35,8 +35,8 @@
     border-bottom: 1px solid rgb(218, 218, 218);
 }
 .blog{
-    margin: 7% auto 0% ;
-    width: 92%;
+    margin: 7% auto 0%;
+    width: 90%;
     overflow-y: hidden;
     height: 215px;
     scroll-behavior: smooth;
@@ -114,16 +114,17 @@
 }
 
 .topic{
+    /* border: 1px solid green; */
     position: absolute;
-    width: 76%;
-    margin-left: 3%;
+    width: 73%;
+    margin-left: 4%;
 }
 .topic>h2{
-    text-decoration: underline;
     font-weight: bolder;
     font-size: 1.5em;
     margin-top: 10px;
     margin-bottom: 8px;
+    color: #024771;
 }
 .topic>h3{
     font-weight: lighter;
@@ -133,7 +134,7 @@
 }
 .topic h5{
     float: right;
-    margin-right: 15px;
+    margin-right: 5px;
     color: rgb(133, 131, 131);
     font-size: 0.8em;
     font-weight: lighter;
@@ -141,19 +142,21 @@
 }
 .topic2{
     width: 95%;
+    height: 20px;
     margin-left: 3%;
 }
 .topic2>h3{
     font-weight: lighter;
     font-size: 1.4em;
-    margin:10px 0px 8px 10px;
+    margin:10px 0px 8px 2.5%;
 }
 .topic2>h2{
-    text-decoration: underline;
     font-weight: bolder;
+    margin-left: 2.5%;
     font-size: 1.5em;
     margin-top: 10px;
     margin-bottom: 8px;
+    color: #024771;
 }
 .topic2 h5{
     float: right;
@@ -171,74 +174,75 @@
 .blog .outdiv{
     display: inline-block;
 }
+
 .outdiv{
     scroll-snap-align: start;
     width: 31%;
-    margin: 1% 1.1% 0% 1.1%;
+    margin: 1% 2.4% 0% 0%;
     border-radius: 2%;
     vertical-align: top;
 }
 
 .head{
     width: 100%;
-    height: 34px;
+    height: 38px;
     border-bottom: 1px solid #dddddd;
 }
-.gamename {
+.gamename{
     height: 100%;
     width: 60%;
-    margin-left: 2%;
     float:left;
+    padding: 1%;
 }
 .gamename>b{
     display: inline-flex;
-    font-size: 0.5em;
+    font-size: 0.8em;
 }
 .gamename>b>h6{
     font-size: .8em;
     color: #686868;
 }
+.gamename>p {
+    font-size: 0.7em;
+    font-weight: lighter;
+}
+
 .result {
     height: 100%;
     width: 30%;
-    margin-right: 2%;
     float: right;
+    padding: 1%;
 }
 .result b,.result p {
     float: right;
 }
 .result b {
-    font-size: .9em;
-}
-.gamename b {
-    font-size: 0.9em;
-}
-.gamename p {
-    margin-top: -0.5%;
-    font-size: 0.7em;
-    font-weight: lighter;
-}
-.result p {
-    margin-top: -0.5%;
     font-size: 0.8em;
+}
+
+.result p {
+    font-size: 0.7em;
     font-weight: bold;
-    color: #5f5e5e;
+    /* color: #5f5e5e; */
+    color: #024771;
 }
 
 .cardData{
     float: left;
     width: 100%;
     height: 40px;
+    margin: 2% 0% 2% 0%;
 }
 .cardData>div{
     margin-top: 0%;
+    margin-left: 2%;
 }
 .team1 {
     width:30%;
 }
 .t1score {
     margin-top: 0%;
-    width: 40%;
+    width: 30%;
 }
 
 .team2 {
@@ -272,21 +276,22 @@
     display: grid;
     width: 100%;
     height: 180px;
-    border: 1px solid #929292;
+    /* border: 1px solid red; */
     margin-bottom: 1%;
     border-radius: 2%;
-   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.10);
 }
-.card:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
-}
+
 .matchstatus{
-    width: 100%;
+    width: 96%;
     height: 30px;
     margin-top: 5%;
+    padding: 2%;
+    /* border :1px solid red; */
 }
 .matchstatus>textarea{
     width: 100%;
+    margin-top: 3%;
     cursor: pointer;
     background-color: white;
     overflow: hidden;
@@ -304,8 +309,9 @@
     height: 30px;
 }
 .Button{
+    float: left;
     border: none;
-    width: 24%;
+    width: 25%;
     outline: none;
     text-align: center;
     font-size: 0.8em;
@@ -313,10 +319,9 @@
     background-color: transparent;
 }
 .news-section{
-    margin: 0 auto;
+    margin: 4% auto;
     width: 90%;
     overflow-y: hidden;
-    /* height: 105px; */
     scroll-behavior: smooth;
     overflow-x: scroll;
     white-space: nowrap !important;
@@ -333,12 +338,12 @@
 .rightside h1{
     font-size: 1.6em;
     margin-bottom: 8px;
-    margin-left: 4%;
+    margin-left: 5%;
     font-weight: lighter;
 }
 .rightside h1 h2{
     float: right;
-    margin-right:5.6%;
+    margin-right:6.5%;
     color: rgb(133, 131, 131);
     font-size: 0.7em;
     font-weight: lighter;
@@ -350,7 +355,7 @@
     margin-left: 4%;
     font-weight: lighter;
 }
-.rightside1 h1 h2{
+.rightside1 h1 h5{
     float: right;
     margin-right: 5%;
     color: rgb(133, 131, 131);
@@ -361,9 +366,10 @@
 
 .news-card{
     width: 100%;
-    height: 80px;
-    border-right: 1px solid #ece9e9;
-    border-top: 1px solid #ece9e9;
+    height: 84px;
+    /* border: 1px solid #ece9e9; */
+    /* border-right: 1px solid #ece9e9;
+    border-top: 1px solid #ece9e9; */
     margin-bottom: 2%;
     border-radius: 2%;
     overflow: hidden;
@@ -374,26 +380,31 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
 }
 .news-img{
-    /* padding: 10px; */
     float: left;
     width: 40%;
+    height: 80px;
 }
 .news-img img{
-    height: 80px;
+    padding: 5px;
+    height: 75px;
     width: 90%;
-    border-radius: 5px;
+    border-radius: 10%;
 }
 .news-detail{
+    /* border: 1px solid red; */
     word-wrap: break-word;
-    width: 60%;
+    width: 58%;
     float: right;
-    font-size: 0.7em;
+    font-size: 0.6em;
     cursor: pointer;
 }
-.news-detail p{
-    padding-top: 10px;
+.news-detail>textarea{
+    margin-top: 2%;
+}
+.news-detail>p{
+    padding:12px;
     color: rgb(87, 87, 87);
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 .news-section .outdiv{
     display: inline-block;
@@ -498,12 +509,10 @@
     }
     .news-section{
         width: 90%;
+        margin-top: 10%;
     }
 
     .Button{
-        /* padding: 2%; */
-        margin-right: 1%;
-        text-align: left;
         font-size: 0.7em;
     }
     .gametopic>h3{
