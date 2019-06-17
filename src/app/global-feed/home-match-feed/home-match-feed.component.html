@@ -4,62 +4,58 @@
   <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf="Matcharr.length === 0" alt="">
       
     <div class="rightside" *ngFor = "let game of Matcharr;"> 
-    
-          <div class="topic">
-              <h2>{{game.gametitle}}</h2>
-              <h3>Matches<h5 (click)="gotoarena(game.gametitle)">See all</h5></h3>
-            </div>
-      <div class="blog">  
-          <!-- <div class="leftarrow" (click)="lscroll();">
-            </div>  
-          <div class="rightarrow" (click)="rscroll();">
-              </div>  -->
-            <div class="outdiv"  *ngFor = "let feed of game.gamearray;"  #widgets>
-
-              <div class="card" #widgetsContent>
-                  <div class="head">
-                        <div class="gamename">
-                            <b>{{gendercheck}} {{feed.GameName}} <h6>- {{Age}}</h6></b>
-                            <p>{{feed.Venue_Name | slice:0:30}}...</p>
+        <div class="topic">
+            <h2>{{game.gametitle}}</h2>
+            <h3>Matches<h5 (click)="gotoarena(game.gametitle)">See all</h5></h3>
+        </div>
+        
+          <div class="blog">  
+              <!-- <div class="leftarrow" (click)="lscroll();"></div>  
+              <div class="rightarrow" (click)="rscroll();"></div>  -->
+                
+              <div class="outdiv"  *ngFor = "let feed of game.gamearray;"  #widgets>
+                  <div class="card" #widgetsContent>
+                      <div class="head">
+                          <div class="gamename">
+                              <b>{{gendercheck}} {{feed.GameName}} <h6>- {{Age}}</h6></b>
+                              <p>{{feed.Venue_Name | slice:0:30}}...</p>
                           </div>
                           <div class="result">
-                            <b>{{feed.result}}</b>
-                            <p> {{feed.MatchStarterUniqueName}}</p>
+                              <b>{{feed.result}}</b>
+                              <p> {{feed.MatchStarterUniqueName}}</p>
                           </div>  
-                  </div>
-                      <a routerLink="/opencard/{{feed.feedid}}">      
-                          <div class="cardData">
-                              <div class="cardData team1">
-                                <img src={{feed.Team1Pic}} onerror="this.src='assets/images/user.png'">
-                                <p>{{feed.Team1name | slice:0:11}}</p>    
-                              </div>
-                              <div class="cardData t1score" style="margin-top: 5%;">
-                                  <b style="font-size: 1.2em;">{{feed.scoreTeam1}}</b>
-                                  <b style="font-size: 1.2em;">{{feed.scoreTeam2}}</b>
-                              </div>
-                              <div class="cardData team2">
-                                <img src={{feed.Team2Pic}} onerror="this.src='assets/images/user.png'">
-                                <p>{{feed.Team2name | slice:0:11}}</p>
-                              </div>     
-                        </div> 
-                      </a> 
-                    <div class="matchstatus">
-                        <textarea disabled>{{feed.EventText | slice:0:100}}..</textarea>
-                    </div>
-                <div class="footer">
-                      <button class="footer Button">{{feed.JoineeCount}} Joinee</button>
-                      <button class="footer Button">{{feed.PromoteCount}} Promote</button>
-                      <button class="footer Button">{{feed.WatchCount}} Subscribe</button>
-                      <button class="footer Button">{{feed.CommentCount}} Talk</button>
-                </div> 
-              </div>    
-            </div>
-          </div> 
-
+                      </div>
+                          <a routerLink="/opencard/{{feed.feedid}}">      
+                              <div class="cardData">
+                                  <div class="cardData team1">
+                                      <img src={{feed.Team1Pic}} onerror="this.src='assets/images/user.png'">
+                                      <p>{{feed.Team1name | slice:0:11}}</p>    
+                                  </div>
+                                  <div class="cardData t1score" style="margin-top: 5%;">
+                                      <b style="font-size: 1.2em;">{{feed.scoreTeam1}}</b>
+                                      <b style="font-size: 1.2em;">{{feed.scoreTeam2}}</b>
+                                  </div>
+                                  <div class="cardData team2">
+                                    <img src={{feed.Team2Pic}} onerror="this.src='assets/images/user.png'">
+                                    <p>{{feed.Team2name | slice:0:11}}</p>
+                                  </div>     
+                            </div> 
+                          </a> 
+                        <div class="matchstatus">
+                            <textarea disabled>{{feed.EventText | slice:0:100}}..</textarea>
+                        </div>
+                    <div class="footer">
+                          <button class="footer Button">{{feed.JoineeCount}} Joinee</button>
+                          <button class="footer Button">{{feed.PromoteCount}} Promote</button>
+                          <button class="footer Button">{{feed.WatchCount}} Subscribe</button>
+                          <button class="footer Button">{{feed.CommentCount}} Talk</button>
+                    </div> 
+                  </div>    
+                </div>
+              </div> 
           <div class="topic">
               <h3>News<h5 (click)="changee(game.gametitle)">See all</h5></h3> 
           </div>
-    
      <div class="news-section">
         <!-- <div class="lefttarrow" (click)="lscroll();">
           </div>  

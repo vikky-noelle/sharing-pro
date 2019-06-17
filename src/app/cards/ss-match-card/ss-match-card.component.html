@@ -5,9 +5,11 @@
                     </b>
                 <div class="rresult">
                     <p>{{startdatetime}} 
-                            <img *ngIf="!finished" src="/assets/images/sportsocialfinalicon.jpeg">
-                            <img *ngIf="finished" src="/assets/images/sportsocialgreendot.png"><br><span>Created by: {{matchstartername}}</span></p>
-                        </div> 
+                        <img *ngIf="!finished" src="/assets/images/sportsocialfinalicon.jpeg">
+                        <img *ngIf="finished" src="/assets/images/sportsocialgreendot.png"><br>
+                        <span>Created by: {{matchstartername}}</span>
+                    </p>
+                </div> 
               </div>
             <div class="cardData">
                   <div class="team1">
@@ -36,9 +38,9 @@
                 </div>
             <div class="footer">
                   <button class="playButton">{{JoineeCount}} Joinee</button>
-                  <button class="commentButton">{{CommentCount}} Talk</button>
                   <button class="promoteButton">{{PromoteCount}} Promote</button>
                   <button class="watchButton">{{WatchCount}} Subscribe</button>
+                  <button class="commentButton">{{CommentCount}} Talk</button>
             </div>
 
 </div>
