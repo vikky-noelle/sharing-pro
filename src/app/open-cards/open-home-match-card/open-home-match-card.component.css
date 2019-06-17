@@ -104,7 +104,7 @@
     margin-left: 5%;
 }
 .pop-up{
-    display: none;
+    /* display: none; */
     position: fixed;
     z-index: 40;
     height: 100vh;
@@ -117,13 +117,13 @@
     position: absolute;
     z-index: 20;
     height: 50px;
-    width: 25px;
+    width: 50px;
     cursor: pointer;
 }
 .close{
     margin-right: 0.5%;
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
 }
 .arrow-right img{
     margin-top:40vh;
@@ -132,7 +132,7 @@
     /* left: 97%; */
     z-index: 20;
     height: 50px;
-    width: 25px;
+    width: 50px;
     margin-right: 1%;
     cursor: pointer;
 }
@@ -153,7 +153,7 @@
     z-index: 20;
     background-color: rgba(255, 255, 255);
     position: fixed;
-    margin-top: 2vh;
+    margin-top: 10vh;
     height: 65vh;
     width: 50%;
     margin-left: 25%;
@@ -393,6 +393,24 @@
         width: 80%;
         height: 40%;
         margin-left: 10%
+    }
+    .c-bottom{
+        top: 85%;
+        font-size: 0.5em;
+        height: 38px;
+    }
+    .arrow-left{
+        display: none;
+    }
+    .arrow-right{
+        display: none;
+    }
+    .c-head{
+        height: 43px;
+        font-size: 0.5em;
+    }
+    .pop-up{
+        background-color: black;
     }
     .team1,.team2>p{
         font-size: 0.9em;

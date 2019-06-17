@@ -15,20 +15,20 @@
     </div>
   </div>
   <div class="circle-tab">
-    <div id="data.id" *ngFor="let data of MatchMoments" class="circle"></div>
+    <div *ngFor="let data of MatchMoments" class="circle"></div>
   </div>
-  <div class="tab">
+  <!-- <div class="tab">
     <img (click)="lscroll()" src="/assets/images/sportsocialmatcharrow1.png" alt="">
     <img (click)="close()" src="/assets/images/sportsocialhomecross.png" alt="">
     <img (click)="rscroll()" src="/assets/images/sportsocialmatcharrow.png" alt="">
-  </div>
-  <!-- <img (click)="close()" class="close" src="/assets/images/sportsocialhomecross.png" alt="">
+  </div> -->
+  <img (click)="close()" class="close" src="/assets/images/close.png" alt="">
   <div class="arrow-left">
-      <img  src="/assets/images/sportsocialmatcharrow.png" alt="">
+      <img (click)="lscroll()" src="/assets/images/sportsocialmatcharrow1.png" alt="">
     </div>
   <div class="arrow-right">
-      <img  src="/assets/images/sportsocialmatcharrow1.png" alt="">
-    </div> -->
+      <img (click)="rscroll()" src="/assets/images/sportsocialmatcharrow.png" alt="">
+    </div>
 </div>
 <sports-social-header></sports-social-header>
 <div class="main-body">

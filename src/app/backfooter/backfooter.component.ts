@@ -11,5 +11,7 @@ export class BackfooterComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  topscroll(){
+    window.scrollTo(0,0);
+  }
 }

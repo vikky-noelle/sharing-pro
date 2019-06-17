@@ -25,7 +25,12 @@
 .navi li.active{
     background-color: rgb(71, 148, 148);
 }
-
+.openarena{
+    cursor: pointer;
+}
+.newsone{
+    cursor: pointer;
+}
 .arrowicon {
     float: right;
     margin-right: 3%;

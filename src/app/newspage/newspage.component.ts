@@ -14,11 +14,15 @@ export class NewspageComponent implements OnInit{
   rnews=[];
   list=[];
   list1=[];
+  arr=[];
+  temp=[];
   mnewshead;
   mnewsimage;
   mnewsdesc;
   mnewsurl;
+  firststatus=true;
   datastr;
+  newsstatus = false;
   mnewstime;
   cdata=true;
   ddata=true;
@@ -242,13 +246,45 @@ export class NewspageComponent implements OnInit{
       });
   }
     opennews(id){
-      console.log(id);
+      this.newsstatus=true;
       if(id < 5){
-      this.mnewshead = this.news[id].title;
-      this.mnewstime = this.news[id].timestamp;
-      this.mnewsimage = this.news[id].image;
-      this.mnewsdesc = this.news[id].desc;
-      this.mnewsurl = this.news[id].url;
+        this.mnewshead = this.news[id].title;
+        this.mnewstime = this.news[id].timestamp;
+        this.mnewsimage = this.news[id].image;
+        this.mnewsdesc = this.news[id].desc;
+        this.mnewsurl = this.news[id].url;
+      if(this.newsstatus){
+        if(this.firststatus){
+          var popnews = this.news.splice(id,1)[0];
+          this.arr.push(popnews);
+          for(var i=1; i<this.news.length;i++){
+            this.news[i].id=this.news[i].id-1;
+          }
+          this.firststatus=false;
+          console.log(this.arr);
+        }
+        else{
+          console.log(this.arr);
+          this.temp=this.arr;
+          this.news.push({
+            id: null,
+            source: this.temp[0].source,
+            title:this.temp[0].title,
+            timestamp:this.temp[0].timestamp,
+            url: this.temp[0].url,
+            image: this.temp[0].image,
+            desc: this.temp[0].desc
+          });
+          this.news[this.news.length-1].id=this.news.length-1;
+          console.log(this.news);
+          this.arr=[];
+          var popnews = this.news.splice(id,1)[0];
+          this.arr.push(popnews);
+          for(var i=1; i<this.news.length;i++){
+            this.news[i].id=this.news[i].id-1;
+          }
+        }
+      }
       }
       else{
         id=id-5;
@@ -258,17 +294,18 @@ export class NewspageComponent implements OnInit{
         this.mnewsdesc = this.rnews[id].desc;
         this.mnewsurl = this.rnews[id].url;
       }
+      this.topscroll();
     }
     ngDestroy(){
       
     }
+    topscroll(){
+      window.scrollTo(0,0);
+    }
     lscroll(){
       this.widgets.nativeElement.scrollLeft -=this.widgetsContent.nativeElement.clientWidth;
-      // this.scroll[0].scrollLeft+=150;
     }
     rscroll(){
       this.widgets.nativeElement.scrollLeft +=this.widgetsContent.nativeElement.clientWidth;
-      
-      // this.scroll[0].scrollLeft+=150;
     }
 }

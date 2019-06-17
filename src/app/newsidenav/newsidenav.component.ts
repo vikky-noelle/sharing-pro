@@ -24,7 +24,8 @@ export class NewsidenavComponent implements OnInit {
   tabletennis=document.getElementsByClassName('tabletennis') as HTMLCollectionOf<HTMLElement>;
   hockey=document.getElementsByClassName('hockey') as HTMLCollectionOf<HTMLElement>;
   badminton=document.getElementsByClassName('badminton') as HTMLCollectionOf<HTMLElement>;
-
+  openarenaul = document.getElementsByClassName('openarenaul') as HTMLCollectionOf<HTMLElement>;
+  newspageul = document.getElementsByClassName('newspageul') as HTMLCollectionOf<HTMLElement>;
   cricket1=document.getElementsByClassName('cricket1') as HTMLCollectionOf<HTMLElement>;
   football1=document.getElementsByClassName('football1') as HTMLCollectionOf<HTMLElement>;
   basketball1=document.getElementsByClassName('basketball1') as HTMLCollectionOf<HTMLElement>;
@@ -93,6 +94,7 @@ export class NewsidenavComponent implements OnInit {
       this.arrowicon[0].style.transform="rotate(90deg)";
       this.newsone[0].style.backgroundColor=" rgb(71, 148, 148)";
       this.newsonea[0].style.color="white";
+      this.newspageul[0].style.color="black";
     }
     if(this.router.url.includes('/OpenArena')){
       this.openmenu[0].style.display="block";
@@ -100,6 +102,7 @@ export class NewsidenavComponent implements OnInit {
       this.arrowiconn[0].style.transform="rotate(90deg)";
       this.openarena[0].style.backgroundColor=" rgb(71, 148, 148)";
       this.openarena1[0].style.color="white";
+      this.openarenaul[0].style.color="black";
     }
     if(this.router.url.includes('newspage/cricket')){
       this.cricket[0].style.color="black";

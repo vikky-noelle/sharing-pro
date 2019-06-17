@@ -5,15 +5,18 @@
   [routerLinkActiveOptions]="{exact: true}">
     <li>Home</li>
   </a>
-  <li class="openarena"
+  <li (click)="openn()"
+  class="openarena"
   routerLinkActive="active">
-      <a class="openarena1"
-       href="/OpenArena">
-        Open Arena </a> <img class="arrowiconn" (click)="openn()" src="/assets/images/sportsocialarrowhome.png" alt="">  
+      <a class="openarena1">
+        Arena </a> <img class="arrowiconn" src="/assets/images/sportsocialarrowhome.png" alt="">  
       </li>
        
   
       <ul class="openarenaopen">
+          <a href="/OpenArena">
+            <li class="openarenaul">OpenArena</li>
+          </a>
         <a href="/OpenArena/cricket">
           <li class="cricket1">Cricket</li>
         </a>
@@ -40,12 +43,15 @@
         </a>
       </ul>
 
-  <li     
+  <li (click)="opennn()"    
     class="newsone" routerLinkActive="active">
-  <a class="newsonea" href="/newspage">
-    News </a> <img class="arrowicon" (click)="opennn()" src="/assets/images/sportsocialarrowhome.png" alt="">  
+  <a class="newsonea">
+    News </a> <img class="arrowicon" src="/assets/images/sportsocialarrowhome.png" alt="">  
   </li>
     <ul class="newsopen">
+    <a href="/newspage">
+      <li class="newspageul">All Sport</li>
+    </a>
     <a href="/newspage/cricket">
       <li class="cricket">Cricket</li>
     </a>

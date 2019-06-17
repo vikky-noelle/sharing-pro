@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewChild, ElementRef, HostListener } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef, HostListener, ViewChildren, QueryList } from '@angular/core';
 import { PostService } from '../../shared/services/post.service';
 import { LocationService } from '../../shared/services/location.service';
 import { ActivatedRoute } from '@angular/router';
@@ -33,7 +33,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
   comment:boolean=true;
   moment:boolean=false;
   joinee:boolean=false;
-
+  @ViewChildren('circle') parents: QueryList<any>;
   @ViewChild('widgets') widgets:ElementRef;
   @ViewChild('widgetsContent') widgetsContent:ElementRef;
 
@@ -329,6 +329,9 @@ export class OpenHomeMatchCardComponent implements OnInit {
     }
   }
   ngOnInit(){
+    // const arr = this.circle.toArray();
+    // const el = arr[0];
+    // el.style.backgroundColor="white";
     this.getparamid();
     this.getSingleMatchFeed();
   }

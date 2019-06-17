@@ -10,7 +10,7 @@
   <div class="crousal" #widgets>
     <div *ngFor="let data of list" 
     class="c-element" #widgetsContent
-    (click)="openews(data.id, data.game)">
+    (click)="openews(data.id, data.game); topscroll();">
       <img src="{{data.image}}">
       <div class="c-head">
         <h1>{{data.title}}</h1>
@@ -22,7 +22,7 @@
       <img (click)="rscroll()" src="/assets/images/sportsocialhomearrow.png">
   </div>
   <div *ngIf="ddata" class="dnews">
-    <div (click)="openews(data.id, data.game)" *ngFor="let data of list1">
+    <div (click)="openews(data.id, data.game);topscroll();" *ngFor="let data of list1">
       <img src="{{data.image}}">
       <h1>{{data.title|slice:0:70}}...</h1>
       <p class="source-dnews">{{data.source}}<br><br>{{data.timestamp}}</p>
@@ -30,7 +30,7 @@
   </div>
   </div>
   <div *ngIf="ddata">
-  <div (click)="openews(data.id, data.game)" *ngFor="let data of news" class="normal-news">
+  <div (click)="openews(data.id, data.game);topscroll();" *ngFor="let data of news" class="normal-news">
     <img src="{{data.image}}">
     <h1>{{data.title}}</h1>
     <p class="hide-source-news">{{data.desc|slice:0:100}}...</p>
@@ -64,8 +64,8 @@
       <div class="more-news">
         <div class="mnews" *ngFor="let data of news">
         <img src="{{data.image}}" alt="more news">
-        <div (click)="opennews(data.id);">
-          <h1>{{data.title}}</h1>
+        <div (click)="opennews(data.id);topscroll();">
+          <h1>{{data.title|slice:0:52}}...</h1>
           <p>{{data.desc | slice:0:100}}...</p>
         </div>
       </div>
@@ -74,7 +74,7 @@
   </div>
   <div class="top-stories">
     <h1>Recent Stories</h1>
-    <div  (click)="opennews(data.id);" *ngFor="let data of rnews">
+    <div  (click)="opennews(data.id);topscroll();" *ngFor="let data of rnews">
       <h2>{{data.title}}</h2>
       <p>{{data.desc | slice:0:100}}...</p>
     </div>
@@ -99,14 +99,14 @@
     <a href="{{mnewsurl}}" target="_blank"><h3>READ MORE</h3></a>
 
   </div>
-  <div (click)="opennews(data.id);" class="morecard" *ngFor="let data of news">
+  <div (click)="opennews(data.id);topscroll();" class="morecard" *ngFor="let data of news">
       <img src="{{data.image}}" alt="">
       <h1>{{data.title|slice:0:40}}....</h1>
     </div>
     <hr>
     <h1 class="heading">Recent Stories <p>Swipe right>></p></h1>
     <div class="tnews">
-        <div (click)="opennews(data.id);" class="tnewscard" *ngFor="let data of news">
+        <div (click)="opennews(data.id);topscroll();" class="tnewscard" *ngFor="let data of news">
           <img src="{{data.image}}">
             <textarea class="head" disabled>{{data.title|slice:0:31}}..</textarea>
             <br>
