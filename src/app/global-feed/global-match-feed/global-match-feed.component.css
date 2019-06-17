@@ -8,6 +8,7 @@
     padding-bottom: 10px;
     font-size: 3em;
 }
+
 .sidenav{
     margin-top: 4%;
 }
@@ -28,6 +29,7 @@
     margin-left:3%;
     width:45%;
     margin-bottom: 5%;
+    /* border: 1px solid red; */
     /* display: inline-block; */
 }
 #col-4>a{
