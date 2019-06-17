@@ -16,6 +16,7 @@ export class NewspageComponent implements OnInit{
   list1=[];
   arr=[];
   temp=[];
+  tempnews=[];
   mnewshead;
   mnewsimage;
   mnewsdesc;
@@ -221,6 +222,18 @@ export class NewspageComponent implements OnInit{
             this.j=this.j+1;
             x = this.time.ExactDate(Date.parse(body.news[i].insertedDate)/1000);
             x = x.replace(/T/g," at "); 
+            if(this.j === 0){
+              this.tempnews.push({
+                source: body.news[i].source,
+                id:this.j,
+                title:body.news[i].title,
+                timestamp:x.substr(0,19),
+                url: body.news[i].url,
+                image: body.news[i].newsImage,
+                desc: body.news[i].desc
+              });
+            }
+            else{
             this.news.push({
               source: body.news[i].source,
               id:this.j,
@@ -230,13 +243,14 @@ export class NewspageComponent implements OnInit{
               image: body.news[i].newsImage,
               desc: body.news[i].desc
             });
+          }
             if(this.c===0){
               if(this.datastr === undefined){
-                this.mnewshead = this.news[0].title;
-                this.mnewstime = this.news[0].timestamp;
-                this.mnewsimage = this.news[0].image;
-                this.mnewsdesc = this.news[0].desc;
-                this.mnewsurl = this.news[0].url;
+                this.mnewshead = this.tempnews[0].title;
+                this.mnewstime = this.tempnews[0].timestamp;
+                this.mnewsimage = this.tempnews[0].image;
+                this.mnewsdesc = this.tempnews[0].desc;
+                this.mnewsurl = this.tempnews[0].url;
               }
             }
             if(i==="4"){
@@ -246,8 +260,12 @@ export class NewspageComponent implements OnInit{
       });
   }
     opennews(id){
+      console.log(id);
       this.newsstatus=true;
       if(id < 5){
+        if(this.firststatus){
+          id=id-1;
+        }
         this.mnewshead = this.news[id].title;
         this.mnewstime = this.news[id].timestamp;
         this.mnewsimage = this.news[id].image;
@@ -261,7 +279,21 @@ export class NewspageComponent implements OnInit{
             this.news[i].id=this.news[i].id-1;
           }
           this.firststatus=false;
-          console.log(this.arr);
+          this.news.push({
+            id: null,
+            source: this.tempnews[0].source,
+            title:this.tempnews[0].title,
+            timestamp:this.tempnews[0].timestamp,
+            url: this.tempnews[0].url,
+            image: this.tempnews[0].image,
+            desc: this.tempnews[0].desc
+          });
+          this.news[this.news.length-1].id=this.news.length;
+          for(var i=1; i<this.news.length;i++){
+            this.news[i].id=this.news[i].id-1;
+          }
+          this.news[0].id=0;
+          console.log(this.news);
         }
         else{
           console.log(this.arr);
@@ -276,13 +308,13 @@ export class NewspageComponent implements OnInit{
             desc: this.temp[0].desc
           });
           this.news[this.news.length-1].id=this.news.length-1;
-          console.log(this.news);
           this.arr=[];
           var popnews = this.news.splice(id,1)[0];
           this.arr.push(popnews);
           for(var i=1; i<this.news.length;i++){
             this.news[i].id=this.news[i].id-1;
           }
+          this.news[0].id=0;
         }
       }
       }

@@ -64,8 +64,12 @@
           <div class="outdiv" *ngFor="let feed of news[game.gamenumber]" #targett>
             <div class="news-card" (click)="change(feed.id, game.gametitle)">
                <div class="news-img">
-                 <img src="{{feed.image}}" alt="sportsocialimg" onerror="this.src='assets/images/user-default.png'">
-               </div>
+                  <img  *ngIf="feed.source === 'Football Italia'" src="{{feed.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfi.png'">
+                  <img  *ngIf="feed.source === 'The Hindu'" src="{{feed.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialth.png'">
+                  <img  *ngIf="feed.source === 'The Times of India'" src="{{feed.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialtoi.png'">
+                  <img  *ngIf="feed.source === 'ESPN Cric Info'" src="{{feed.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialespn.jpg'">
+                  <img  *ngIf="feed.source === 'Fox Sport'" src="{{feed.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfox-sport.png'">
+                </div>
                <div class="news-detail">
                  <textarea disabled>{{feed.title | slice:0:100}}..</textarea>
                  <p>{{feed.source}}</p>  
@@ -85,8 +89,11 @@
             <div class="outdiv" *ngFor="let feed of data.gamenews" #targett>
               <div class="news-card" (click)="changenomatch(feed.id, data.gamename)">
                 <div class="news-img">
-                  <img src="{{feed.image}}" alt="sportsocialimg">
-                </div>
+                    <img  *ngIf="feed.source === 'Football Italia'" src="{{feed.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfi.png'">
+                    <img  *ngIf="feed.source === 'The Hindu'" src="{{feed.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialth.png'">
+                    <img  *ngIf="feed.source === 'The Times of India'" src="{{feed.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialtoi.png'">
+                    <img  *ngIf="feed.source === 'ESPN Cric Info'" src="{{feed.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialespn.jpg'">
+               </div>
                 <div class="news-detail">
                   <textarea disabled>{{feed.title | slice:0:100}}..</textarea>
                   <p>{{feed.source}}</p>

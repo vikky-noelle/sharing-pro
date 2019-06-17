@@ -244,6 +244,7 @@ export class HomeMatchFeedComponent{
       }
     }
   }
+  
   changenomatch(id, topic){
     topic = topic.toLowerCase();
     for(var i=0;i<this.tnews.length;i++){

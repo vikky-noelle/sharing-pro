@@ -164,6 +164,8 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
   // sportspecific feed
   sportspecific(topic){
     var id;
+    var temp, checkstat, checkstat2, upcoming=false;
+    var finished;
     for(var i=0;i<this.Sports.length; i++){
       if(this.Sports[i].title.toLowerCase() === topic){
         id = this.Sports[i].id;
@@ -173,22 +175,67 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
       this.postservice.homeMatchFeed(pos['latitude'],pos['longitude'],id,this.timestamp)
       .subscribe(data=>{
         this.show=true;
-           for(const i in data["Feed"]){
-              var x = data["Feed"][i].startdatetime;
-              x = Math.floor(x/3600);
-              this.Matcharr.push({
-              id: x,
+        this.count=this.count+1;
+      for(const i in data["Feed"]){
+        temp = data["Feed"][i].gender;
+        if(temp.toLowerCase()==="mix"){
+          temp="Mix up ";
+        }
+        else if(temp.toLowerCase()==="male"){
+          temp="Men's ";
+        }
+        else if(temp.toLowerCase()==="female"){
+          temp="Women's ";
+        }
+        var convertdate=new String(new Date(data["Feed"][i].startdatetime*1000));
+        this.startTime=convertdate.slice(3,21);
+        checkstat = Date.now();
+        checkstat2 = data["Feed"][i].startdatetime;
+        
+        if(checkstat>checkstat2){
+          if((checkstat-checkstat2)>86400){
+            if(data["Feed"][i].scoreTeam1===null || data["Feed"][i].scoreTeam2===null){
+              this.startTime="Score Awaited";
+              finished= false;
+            } 
+            if(data["Feed"][i].Team2name === null){
+              this.startTime="Match Abandoned";
+              finished= false;
+            }
+          }
+          else{
+            if(data["Feed"][i].scoreTeam1===null || data["Feed"][i].scoreTeam2===null){
+              this.startTime="Score Awaited";
+              finished= false;
+            }
+          }
+        }
+        if(checkstat === checkstat2 || checkstat < checkstat2){
+          this.startTime="Upcoming";
+          finished= false; 
+          upcoming=true;   
+        }
+        if(data["Feed"][i].scoreTeam1!==null && data["Feed"][i].scoreTeam2!==null){
+          finished= true;
+          this.startTime="Match Finished";
+        }
+    
+        this.Matcharr.push({
               feedid:data["Feed"][i].feedid,
               Activity_name:data["Feed"][i].Activity_name,
               userName: data["Feed"][i].user_name,
               Uniquename:data["Feed"][i].MatchStarterUniqueName==null?"":data["Feed"][i].MatchStarterUniqueName,
               MatchStarterUniqueName:data["Feed"][i].MatchStarterUniqueName==null?"":data["Feed"][i].MatchStarterUniqueName,
+              finished: finished,
+              upcoming: upcoming,
+              timestamp: data["Feed"][i].startdatetime,
               result:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?this.time.ExactDate(data["Feed"][i].startdatetime):'Match Finished',
               InsertedDate:data["Feed"][i].InsertedDate,
               profile_image:data["Feed"][i].profile_image,
               Venue_Name:data["Feed"][i].Venue_Name,
               EventText:data["Feed"][i].EventText,
-              startdatetime:this.time.ExactDate(data["Feed"][i].startdatetime),
+              startdatetime:this.startTime,
+              starttimestamp: data["Feed"][i].startdatatime,
               gamename:data["Feed"][i].GameName,
               GameId:data["Feed"][i].GameId,
               Event_Image:data["Feed"][i].Event_Image,
@@ -201,14 +248,14 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
               Team2Pic:data["Feed"][i].Team2Pic,
               scoreTeam1:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?'':data["Feed"][i].scoreTeam1 + ' - ',
               scoreTeam2:data["Feed"][i].scoreTeam2==null || data["Feed"][i].scoreTeam1==null?'VS':data["Feed"][i].scoreTeam2,
-              gender:data["Feed"][i].gender,
+              gender:temp,
               Profile_Photo:data["Feed"][i].Profile_Photo,
               city:data["Feed"][i].City,
               CommentCount:data["Feed"][i].CommentCount,
               PromoteCount:data["Feed"][i].PromoteCount,
               WatchCount:data["Feed"][i].WatchCount,
               JoineeCount:data["Feed"][i].JoineeCount
-            });
+            });            
       }
     });
   });
