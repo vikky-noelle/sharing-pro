@@ -16,7 +16,7 @@
     float: right;
     width: 82.5%;
     padding-left: 20px;
-    height: 240px;
+    height: 260px;
     z-index: 10;
     border-bottom: 1px solid rgb(218, 218, 218);
 }
@@ -142,7 +142,7 @@
 }
 .topic2{
     width: 95%;
-    height: 20px;
+    height: 70px;
     margin-left: 3%;
 }
 .topic2>h3{
@@ -158,13 +158,7 @@
     margin-bottom: 8px;
     color: #024771;
 }
-.topic2 h5{
-    float: right;
-    margin-right: 15px;
-    color: rgb(133, 131, 131);
-    font-size: 0.8em;
-    font-weight: lighter;
-}
+
 .blog>h3{
     font-weight: lighter;
     font-size: 1.5em;
@@ -350,16 +344,16 @@
     cursor: pointer;
 }
 .rightside1 h1{
-    font-size: 1.6em;
+    font-size: 1.4em;
     margin-bottom: 8px;
-    margin-left: 4%;
+    margin-left: 5.5%;
     font-weight: lighter;
 }
 .rightside1 h1 h5{
     float: right;
     margin-right: 5%;
     color: rgb(133, 131, 131);
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-weight: lighter;
     cursor: pointer;
 }
@@ -367,9 +361,6 @@
 .news-card{
     width: 100%;
     height: 84px;
-    /* border: 1px solid #ece9e9; */
-    /* border-right: 1px solid #ece9e9;
-    border-top: 1px solid #ece9e9; */
     margin-bottom: 2%;
     border-radius: 2%;
     overflow: hidden;

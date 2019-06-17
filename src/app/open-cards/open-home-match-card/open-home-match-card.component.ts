@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { PostService } from '../../shared/services/post.service';
 import { LocationService } from '../../shared/services/location.service';
 import { ActivatedRoute } from '@angular/router';
@@ -270,6 +270,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
               temp = data["Moments"][i].likecount;
             }
             this.MatchMoments.push({
+              id: j,
               ImageId:data["Moments"][j].ImageId,
               imagepath:data["Moments"][j].imagepath,
               eventid:data["Moments"][j].eventid,
@@ -312,26 +313,33 @@ export class OpenHomeMatchCardComponent implements OnInit {
         }
       )
   }
-
+  @HostListener('document:keyup', ['$event'])
+  handleDeleteKeyboardEvent(event: KeyboardEvent) {
+    if(event.key === 'ArrowLeft')
+    {
+      this.lscroll()
+    }
+    if(event.key === 'ArrowRight')
+    {
+      this.rscroll()
+    }
+    if(event.keyCode === 27)
+    {
+      this.close()
+    }
+  }
   ngOnInit(){
     this.getparamid();
     this.getSingleMatchFeed();
-    
-    // this.activatedroute.paramMap.subscribe(params=>{
-    //   console.log(params);
-    // })
   }
   close(){
     this.openpop[0].style.display="none";
   }
   lscroll(){
     this.widgets.nativeElement.scrollLeft -=this.widgetsContent.nativeElement.clientWidth;
-    // this.scroll[0].scrollLeft+=150;
   }
   rscroll(){
     this.widgets.nativeElement.scrollLeft +=this.widgetsContent.nativeElement.clientWidth;
-    
-    // this.scroll[0].scrollLeft+=150;
   }
 
 }
