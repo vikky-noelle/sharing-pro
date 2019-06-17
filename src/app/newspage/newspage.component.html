@@ -11,8 +11,12 @@
     <div *ngFor="let data of list" 
     class="c-element" #widgetsContent
     (click)="openews(data.id, data.game); topscroll();">
-      <img src="{{data.image}}">
-      <div class="c-head">
+    <img  *ngIf="data.source === 'Football Italia'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfi.png'">
+    <img  *ngIf="data.source === 'The Hindu'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialth.png'">
+    <img  *ngIf="data.source === 'The Times of India'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialtoi.png'">
+    <img  *ngIf="data.source === 'ESPN Cric Info'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialespn.jpg'">
+    <img  *ngIf="data.source === 'Fox Sport'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfox-sport.png'">
+  <div class="c-head">a
         <h1>{{data.title}}</h1>
         <p>{{data.source}}</p>
       </div>
@@ -23,16 +27,24 @@
   </div>
   <div *ngIf="ddata" class="dnews">
     <div (click)="openews(data.id, data.game);topscroll();" *ngFor="let data of list1">
-      <img src="{{data.image}}">
-      <h1>{{data.title|slice:0:70}}...</h1>
+      <img  *ngIf="data.source === 'Football Italia'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfi.png'">
+    <img  *ngIf="data.source === 'The Hindu'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialth.png'">
+    <img  *ngIf="data.source === 'The Times of India'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialtoi.png'">
+    <img  *ngIf="data.source === 'ESPN Cric Info'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialespn.jpg'">
+    <img  *ngIf="data.source === 'Fox Sport'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfox-sport.png'">
+  <h1>{{data.title|slice:0:70}}...</h1>
       <p class="source-dnews">{{data.source}}<br><br>{{data.timestamp}}</p>
     </div>
   </div>
   </div>
   <div *ngIf="ddata">
   <div (click)="openews(data.id, data.game);topscroll();" *ngFor="let data of news" class="normal-news">
-    <img src="{{data.image}}">
-    <h1>{{data.title}}</h1>
+    <img  *ngIf="data.source === 'Football Italia'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfi.png'">
+    <img  *ngIf="data.source === 'The Hindu'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialth.png'">
+    <img  *ngIf="data.source === 'The Times of India'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialtoi.png'">
+    <img  *ngIf="data.source === 'ESPN Cric Info'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialespn.jpg'">
+    <img  *ngIf="data.source === 'Fox Sport'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfox-sport.png'">
+  <h1>{{data.title}}</h1>
     <p class="hide-source-news">{{data.desc|slice:0:100}}...</p>
     <p class="source-desc">{{data.desc|slice:0:55}}...</p>
     <p class="source">{{data.source}}&nbsp;<span>{{data.timestamp}}</span></p>
@@ -63,7 +75,11 @@
       <hr>
       <div class="more-news">
         <div class="mnews" *ngFor="let data of news">
-        <img src="{{data.image}}" alt="more news">
+          <img  *ngIf="data.source === 'Football Italia'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfi.png'">
+          <img  *ngIf="data.source === 'The Hindu'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialth.png'">
+          <img  *ngIf="data.source === 'The Times of India'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialtoi.png'">
+          <img  *ngIf="data.source === 'ESPN Cric Info'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialespn.jpg'">
+          <img  *ngIf="data.source === 'Fox Sport'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfox-sport.png'">
         <div (click)="opennews(data.id);topscroll();">
           <h1>{{data.title|slice:0:52}}...</h1>
           <p>{{data.desc | slice:0:100}}...</p>
@@ -100,15 +116,23 @@
 
   </div>
   <div (click)="opennews(data.id);topscroll();" class="morecard" *ngFor="let data of news">
-      <img src="{{data.image}}" alt="">
-      <h1>{{data.title|slice:0:40}}....</h1>
+    <img  *ngIf="data.source === 'Football Italia'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfi.png'">
+    <img  *ngIf="data.source === 'The Hindu'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialth.png'">
+    <img  *ngIf="data.source === 'The Times of India'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialtoi.png'">
+    <img  *ngIf="data.source === 'ESPN Cric Info'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialespn.jpg'">
+    <img  *ngIf="data.source === 'Fox Sport'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfox-sport.png'">
+  <h1>{{data.title|slice:0:40}}....</h1>
     </div>
     <hr>
     <h1 class="heading">Recent Stories <p>Swipe right>></p></h1>
     <div class="tnews">
         <div (click)="opennews(data.id);topscroll();" class="tnewscard" *ngFor="let data of news">
-          <img src="{{data.image}}">
-            <textarea class="head" disabled>{{data.title|slice:0:31}}..</textarea>
+          <img  *ngIf="data.source === 'Football Italia'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfi.png'">
+    <img  *ngIf="data.source === 'The Hindu'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialth.png'">
+    <img  *ngIf="data.source === 'The Times of India'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialtoi.png'">
+    <img  *ngIf="data.source === 'ESPN Cric Info'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialespn.jpg'">
+    <img  *ngIf="data.source === 'Fox Sport'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfox-sport.png'">
+    <textarea class="head" disabled>{{data.title|slice:0:31}}..</textarea>
             <br>
             <textarea class="para" disabled>{{data.desc|slice:0:41}}....</textarea>
           </div>
