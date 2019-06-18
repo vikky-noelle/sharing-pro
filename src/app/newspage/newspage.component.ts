@@ -46,6 +46,15 @@ export class NewspageComponent implements OnInit{
   this.route.params.subscribe(params => {
     this.topic = params.topic;
   });
+  this.datastr=this._eventemiter.userToEdit;
+  if(this.datastr !== undefined){
+    this.mnewshead = this.datastr.title;
+    this.mnewstime = this.datastr.timestamp;
+    this.mnewsimage = this.datastr.image;
+    this.mnewsdesc = this.datastr.desc;
+    this.mnewsurl = this.datastr.url;
+    this.mnewssource = this.datastr.source;
+    }
    if(this.topic===""){
     this.cdata=false;
     this.getnews(this.topic);
@@ -55,15 +64,7 @@ export class NewspageComponent implements OnInit{
      this.ddata=false;
    }
     this.recentnews("");
-    this.datastr=this._eventemiter.userToEdit;
-    if(this.datastr !== undefined){
-    this.mnewshead = this.datastr.title;
-    this.mnewstime = this.datastr.timestamp;
-    this.mnewsimage = this.datastr.image;
-    this.mnewsdesc = this.datastr.desc;
-    this.mnewsurl = this.datastr.url;
-    this.mnewssource = this.datastr.source;
-    }
+   
   }
   ngtemp(topic){
       this.getnewss(topic);
@@ -127,6 +128,9 @@ export class NewspageComponent implements OnInit{
         var x;
         this.j=this.j+1;
         for (var i=0; i<5; i++) {
+          // if(this.mnewsurl === body.news[i].url){
+          //   continue;
+          // }
           x = this.time.ExactDate(Date.parse(body.news[i].insertedDate)/1000);
           x = x.replace(/T/g," at "); 
             this.list.push({
