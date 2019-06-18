@@ -104,7 +104,7 @@
     margin-left: 5%;
 }
 .pop-up{
-    /* display: none; */
+    display: none;
     position: fixed;
     z-index: 40;
     height: 100vh;
