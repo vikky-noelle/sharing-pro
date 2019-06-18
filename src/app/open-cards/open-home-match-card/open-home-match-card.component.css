@@ -49,6 +49,7 @@
 .ffooter{
     width: 84%;
     float: right;
+    margin-bottom: 0%;
 }
 .rightside{
     float: right;
@@ -192,6 +193,7 @@
     /* margin: 1% 1.1% 0% 10%; */
     border-radius: 2%;
     vertical-align: top;
+    min-height: 65vh;
 }
 
 .card{
@@ -641,6 +643,7 @@
       margin-top: 10px;
       vertical-align: top;
       width: 50%;
+      height: 40px;
       font-size: lighter;
       letter-spacing: 1px;
       border: 2px solid #024771;

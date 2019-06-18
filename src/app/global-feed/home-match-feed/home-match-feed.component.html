@@ -10,10 +10,8 @@
         </div>
         
           <div class="blog" #widgets>  
-              <div class="leftarrow" (click)="lscroll();"></div>  
-              <div class="rightarrow" (click)="rscroll();"></div> 
-                
-              <!-- <div class="outdiv"> -->
+              <!-- <div class="leftarrow" (click)="lscroll();"></div>  
+              <div class="rightarrow" (click)="rscroll();"></div>  -->
                   <div class="card" *ngFor = "let feed of game.gamearray;"  #widgetsContent>
                       <div class="head">
                           <div class="gamename">
@@ -51,7 +49,6 @@
                           <button class="footer Button">{{feed.CommentCount}} Talk</button>
                     </div> 
                   </div>    
-                <!-- </div> -->
               </div> 
           <div class="topic-news">
               <h3>News<h5 (click)="changee(game.gametitle)">See all</h5></h3> 

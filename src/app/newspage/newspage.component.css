@@ -208,58 +208,50 @@
 .share{
     width: 35%;
     float: right;
+    /* border: 1px solid red; */
+}
+.share>a>img{
+    padding-right:10%;
+    width: 30px;
+    height: 30px;
+    filter: rgb(218, 215, 215);  /* IE5+ */
+    -webkit-filter: grayscale(1);
+    cursor: pointer;
+}
+.share>a>img:hover{
+    filter: none;
+    -webkit-filter: grayscale(0);
 }
 
 .share .fb{
     background-size: 100% 100%; 
-    background-image: url('/assets/images/sportsocialnewsfacebook.png');
+    background-image: url('/assets/images/sssfacebook.png');
 }
 .share .rss{
     background-size: 100% 100%; 
-    background-image: url('/assets/images/sportsocialnewsrss.png');
-}
-.share .rss:hover{
-    cursor: pointer;
-    background-size: 100% 100%; 
     background-image: url('/assets/images/sssrss.png');
 }
+
 .share .insta{
-    background-size: 100% 100%; 
-    background-image: url('/assets/images/sportsocialnewsinstagram.png');
-}
-.share .insta:hover{
-    cursor: pointer;
     background-size: 100% 100%; 
     background-image: url('/assets/images/sssinstagram.png');
 }
+
 .share .linkedin{
-    background-size: 100% 100%; 
-    background-image: url('/assets/images/sportsocialnewslinkedin.png');
-}
-.share .linkedin:hover{
-    cursor: pointer;
     background-size: 100% 100%; 
     background-image: url('/assets/images/ssslinkedin.png');
 }
+
 .share .twitter{
-    background-size: 100% 100%; 
-    background-image: url('/assets/images/sportsocialnewstwitter.png');
-}
-.share .twitter:hover{
-    cursor: pointer;
     background-size: 100% 100%; 
     background-image: url('/assets/images/ssstwitter.png');
 }
+
 .share div{
     float: left;
     margin-left: 11%;
     height: 23px;
     width: 23px;
-}
-.share .fb:hover{
-    background-image: url('/assets/images/sssfacebook.png');
-    cursor: pointer;
-    /* transform: scale(1.1); */
 }
 .timestamp,.share{
     font-size: 1.3em;
@@ -434,6 +426,7 @@
 .tnews::-webkit-scrollbar {
     display: none;
 }
+
 .newscard button{
     font-size: 0.8em;
     border: none;
@@ -507,6 +500,7 @@
     }
     .share{
         margin-bottom: 3%;
+        margin-top: 2%;
         clear: both;
         width: 100%;
     }
