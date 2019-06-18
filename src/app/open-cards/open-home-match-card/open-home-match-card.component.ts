@@ -129,6 +129,14 @@ export class OpenHomeMatchCardComponent implements OnInit {
           for(var i=0;i<data["Feed"].length;i++){
             this.show=true;
               var time= new Date(data["Feed"][i].startdatetime*1000);
+              var tempimg;
+              if(data["Feed"][i].Team2name === null){
+                tempimg = "/assets/images/sportsocialteamlogo.png";
+                data["Feed"][i].Team2name = "None";
+              }
+              else{
+                tempimg = data["Feed"][i].Team2Pic;
+              }
               var timeconvert= new String(time);
               this.startTime=timeconvert.slice(3,21);
             this.Matcharr.push({
@@ -152,7 +160,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
                   Team2Id:data["Feed"][i].Team2Id,
                   Team1Pic:data["Feed"][i].Team1Pic,
                   Team2name:data["Feed"][i].Team2name,
-                  Team2Pic:data["Feed"][i].Team2Pic,
+                  Team2Pic:tempimg,
                   scoreTeam1:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?'':data["Feed"][i].scoreTeam1 + ' - ',
                   scoreTeam2:data["Feed"][i].scoreTeam2==null || data["Feed"][i].scoreTeam1==null?'VS':data["Feed"][i].scoreTeam2,
                   gender:data["Feed"][i].gender,

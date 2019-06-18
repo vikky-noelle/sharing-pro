@@ -68,6 +68,15 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         this.show=true;
         this.count=this.count+1;
       for(const i in data["Feed"]){
+        var tempimg;
+              if(data["Feed"][i].Team2name === null){
+                tempimg = "/assets/images/sportsocialteamlogo.png";
+                data["Feed"][i].Team2name = "None";
+              }
+              else{
+                tempimg = data["Feed"][i].Team2Pic;
+              }
+              
         temp = data["Feed"][i].gender;
         if(temp.toLowerCase()==="mix"){
           temp="Mix up ";
@@ -136,7 +145,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
               Team1Name:data["Feed"][i].Team1name,
               Team1Pic:data["Feed"][i].Team1Pic,
               Team2Name:data["Feed"][i].Team2name,
-              Team2Pic:data["Feed"][i].Team2Pic,
+              Team2Pic:tempimg,
               scoreTeam1:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?'':data["Feed"][i].scoreTeam1 + ' - ',
               scoreTeam2:data["Feed"][i].scoreTeam2==null || data["Feed"][i].scoreTeam1==null?'VS':data["Feed"][i].scoreTeam2,
               gender:temp,
@@ -177,6 +186,15 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         this.show=true;
         this.count=this.count+1;
       for(const i in data["Feed"]){
+        var tempimg;
+              if(data["Feed"][i].Team2name === null){
+                tempimg = "/assets/images/sportsocialteamlogo.png";
+                data["Feed"][i].Team2name = "None";
+              }
+              else{
+                tempimg = data["Feed"][i].Team2Pic;
+              }
+              
         temp = data["Feed"][i].gender;
         if(temp.toLowerCase()==="mix"){
           temp="Mix up ";
@@ -245,7 +263,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
               Team1Name:data["Feed"][i].Team1name,
               Team1Pic:data["Feed"][i].Team1Pic,
               Team2Name:data["Feed"][i].Team2name,
-              Team2Pic:data["Feed"][i].Team2Pic,
+              Team2Pic:tempimg,
               scoreTeam1:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?'':data["Feed"][i].scoreTeam1 + ' - ',
               scoreTeam2:data["Feed"][i].scoreTeam2==null || data["Feed"][i].scoreTeam1==null?'VS':data["Feed"][i].scoreTeam2,
               gender:temp,

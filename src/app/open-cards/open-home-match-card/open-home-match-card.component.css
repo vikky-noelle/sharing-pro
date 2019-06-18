@@ -297,13 +297,13 @@
     border-radius: 50%;
     height: 80px;
     width: 80px;
-    border: 2px solid #bbbbbb;
+    /* border: 2px solid #bbbbbb; */
 }
 .team2>img{
    border-radius: 50%;
    height: 80px;
    width: 80px;
-   border: 2px solid #bbbbbb;
+   /* border: 2px solid #bbbbbb; */
 }
 
 

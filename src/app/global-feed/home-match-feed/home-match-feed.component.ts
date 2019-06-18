@@ -70,6 +70,15 @@ export class HomeMatchFeedComponent{
         this.show=true;
         var arr=[];
           for(var i=0;i<data["Feed"].length;i++){
+            var tempimg;
+              if(data["Feed"][i].Team2name === null){
+                tempimg = "/assets/images/sportsocialteamlogo.png";
+                data["Feed"][i].Team2name = "None";
+              }
+              else{
+                tempimg = data["Feed"][i].Team2Pic;
+              }
+              
             var Starttime= new Date( data["Feed"][i].startdatetime *1000);
             var timestampConvert= new String(Starttime).slice(3,21);
               arr.push({
@@ -91,7 +100,7 @@ export class HomeMatchFeedComponent{
               Team1name:data["Feed"][i].Team1name,
               Team1Pic:data["Feed"][i].Team1Pic,
               Team2name:data["Feed"][i].Team2name,
-              Team2Pic:data["Feed"][i].Team2Pic,
+              Team2Pic:tempimg,
               scoreTeam1:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?'':data["Feed"][i].scoreTeam1 + ' - ',
               scoreTeam2:data["Feed"][i].scoreTeam2==null || data["Feed"][i].scoreTeam1==null?'VS':data["Feed"][i].scoreTeam2,
               gender:data["Feed"][i].gender,
