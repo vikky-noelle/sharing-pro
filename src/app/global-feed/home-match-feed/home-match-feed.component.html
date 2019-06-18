@@ -43,11 +43,11 @@
                             <textarea disabled>{{feed.EventText | slice:0:100}}..</textarea>
                         </div>
                     <div class="footer">
-                          <button class="footer Button">{{feed.JoineeCount}} Joinee</button>
-                          <button class="footer Button">{{feed.PromoteCount}} Promote</button>
-                          <button class="footer Button">{{feed.WatchCount}} Subscribe</button>
-                          <button class="footer Button">{{feed.CommentCount}} Talk</button>
-                    </div> 
+                      <button class="footer Button"><span *ngIf="feed.JoineeCount">{{feed.JoineeCount}}</span> Joinee</button>
+                      <button class="footer Button"><span *ngIf="feed.PromoteCount">{{feed.PromoteCount}}</span> Promote</button>
+                      <button class="footer Button">Subscribe</button>
+                      <button class="footer Button"><span *ngIf="feed.CommentCount">{{feed.CommentCount}}</span> Talk</button>
+                </div> 
                   </div>    
               </div> 
           <div class="topic-news">
