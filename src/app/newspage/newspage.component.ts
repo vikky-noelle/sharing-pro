@@ -25,6 +25,7 @@ export class NewspageComponent implements OnInit{
   datastr;
   newsstatus = false;
   mnewstime;
+  mnewssource;
   cdata=true;
   ddata=true;
   topic;
@@ -61,6 +62,7 @@ export class NewspageComponent implements OnInit{
     this.mnewsimage = this.datastr.image;
     this.mnewsdesc = this.datastr.desc;
     this.mnewsurl = this.datastr.url;
+    this.mnewssource = this.datastr.source;
     }
   }
   ngtemp(topic){
@@ -172,6 +174,7 @@ export class NewspageComponent implements OnInit{
           this.mnewsimage = this.news[0].image;
           this.mnewsdesc = this.news[0].desc;
           this.mnewsurl = this.news[0].url;
+          this.mnewssource = this.news[0].source;
           }
     });
   }
@@ -182,7 +185,8 @@ export class NewspageComponent implements OnInit{
       this.mnewstime = this.list[id].timestamp;
       this.mnewsimage = this.list[id].image;
       this.mnewsdesc = this.list[id].desc;
-      this.mnewsurl = this.list[id].url;  
+      this.mnewsurl = this.list[id].url; 
+      this.mnewssource = this.list[id].source; 
       this.ddata=false;
       this.cdata=true;
       this.ngtemp(topic);
@@ -195,6 +199,7 @@ export class NewspageComponent implements OnInit{
       this.mnewsimage = this.list1[id].image;
       this.mnewsdesc = this.list1[id].desc;
       this.mnewsurl = this.list1[id].url;  
+      this.mnewssource = this.list1[id].source; 
       this.ddata=false;1
       this.cdata=true;
       this.router.navigate(['/newspage', topic]);  
@@ -206,6 +211,7 @@ export class NewspageComponent implements OnInit{
       this.mnewsimage = this.news[id].image;
       this.mnewsdesc = this.news[id].desc;
       this.mnewsurl = this.news[id].url;  
+      this.mnewssource = this.news[id].source; 
       this.ddata=false;
       this.cdata=true;
       this.router.navigate(['/newspage', topic]); 
@@ -251,6 +257,7 @@ export class NewspageComponent implements OnInit{
                 this.mnewsimage = this.tempnews[0].image;
                 this.mnewsdesc = this.tempnews[0].desc;
                 this.mnewsurl = this.tempnews[0].url;
+                this.mnewssource = this.tempnews[0].source; 
               }
             }
             if(i==="4"){
@@ -271,6 +278,7 @@ export class NewspageComponent implements OnInit{
         this.mnewsimage = this.news[id].image;
         this.mnewsdesc = this.news[id].desc;
         this.mnewsurl = this.news[id].url;
+        this.mnewssource = this.news[id].source; 
       if(this.newsstatus){
         if(this.firststatus){
           var popnews = this.news.splice(id,1)[0];
@@ -325,6 +333,7 @@ export class NewspageComponent implements OnInit{
         this.mnewsimage = this.rnews[id].image;
         this.mnewsdesc = this.rnews[id].desc;
         this.mnewsurl = this.rnews[id].url;
+        this.mnewssource = this.rnews[id].source; 
       }
       this.topscroll();
     }
