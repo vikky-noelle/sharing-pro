@@ -16,7 +16,7 @@
     float: right;
     width: 82.5%;
     padding-left: 20px;
-    height: 460px;
+    height: 210px;
     z-index: 10;
     border-bottom: 1px solid rgb(218, 218, 218);
 }
@@ -30,14 +30,14 @@
     float: right;
     width: 82.5%;
     padding-left: 20px;
-    height: 570px;
+    height: 470px;
     z-index: 10;
     border-bottom: 1px solid rgb(218, 218, 218);
 }
 .blog{
     margin: 7% auto 0%;
     width: 90%;
-    height: 285px;
+    height: 235px;
     white-space: nowrap !important;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -122,6 +122,12 @@
     width: 73%;
     margin-left: 4%;
 }
+.topic-news{
+    /* border: 1px solid green; */
+    position: absolute;
+    width: 73%;
+    margin-left: 4%;
+}
 .topic>h2{
     font-weight: bolder;
     font-size: 1.5em;
@@ -143,9 +149,23 @@
     font-weight: lighter;
     cursor: pointer;
 }
+.topic-news>h3{
+    font-weight: lighter;
+    font-size: 1.4em;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+.topic-news h5{
+    float: right;
+    margin-right: 5px;
+    color: rgb(133, 131, 131);
+    font-size: 0.8em;
+    font-weight: lighter;
+    cursor: pointer;
+}
 .topic2{
     width: 95%;
-    height: 70px;
+    height: 30px;
     margin-left: 3%;
 }
 .topic2>h3{
@@ -172,7 +192,6 @@
     scroll-snap-align: start;
     margin: 1% 2.4% 0% 0%;
     border-radius: 2%;
-    vertical-align: top;
     /* display: grid; */
     display: block;
     grid-template-rows: 100px 300px;
@@ -310,7 +329,7 @@
     background-color: transparent;
 }
 .news-section{
-    margin: 4% auto;
+    margin: 1% auto;
     width: 90%;
     overflow-y: hidden;
     scroll-behavior: smooth;
@@ -458,12 +477,12 @@
     }
     .blog{
         width: 92%;
-        height: 380px;
+        height: 230px;
         margin: 25% auto 0%;
     }
     .card{
-        width: 97%;
-        height: 180px;
+        width: 96%;
+        height: 210px;
     }
     .gamename,.result b{
         font-size: 0.8em;
@@ -478,16 +497,26 @@
     .t1score, .t2score{
         font-size: 0.75em;
     }
-    .leftarrow,.rightarrow,.lefttarrow,.righttarrow{
+    .blog .leftarrow{
+        display: none;
+    }
+    .blog .rightarrow{
         display: none;
     }
     .home{
         margin-top: 10%;
     }
     .topic{
-        width: 100%;
-        font-size: 1.1em;
-        padding: 2px;
+        width: 90%;
+        font-size: 1em;
+        padding-left: 20px;
+        margin-left: 0%;
+        /* margin-top: 1.5%; */
+    }
+    .topic-news{
+        width: 90%;
+        font-size: 0.9em;
+        padding-left: 25px;
         margin-left: 0%;
         /* margin-top: 1.5%; */
     }
@@ -526,20 +555,38 @@
     .rightside1{
         margin-top: 7%;
         width: 100%;
+        height: 140px;
+    }
+    .cardData{
+        height: auto;
+    }
+    .matchstatus{
+        margin-top: 80px;
+        height: 60px;
     }
     .leftarrow,.rightarrow{
         margin-top: 16%;
     }
     .card {
-        height: 230px;
+        width: 47%;
+        height: auto;
     }
     .home .sidenav{
         display: none;
     }
     .topic{
-        width: 96%;
+        width: 90%;
         font-size: 1em;
         margin-left: 1%;
+        padding-left:35px;
+    }
+   
+    .topic-news{
+        width: 90%;
+        font-size: 1em;
+        margin-left: 1%;
+        padding-left:35px;
+        margin-top: -35px;
     }
     .msidenav{
         display: block;
@@ -553,11 +600,7 @@
     .blog{
         margin:11% auto 0%;
         width: 91%;
-        height: 240px;
-    }
-    .card{
-        width: 95%;
-        height: 210px;
+        height: 300px;
     }
     .leftarrow,.rightarrow{
         margin-top: 11%;
@@ -590,6 +633,21 @@
 @media screen and (min-width: 951px) and (max-width: 1100px){
     .blog{
         margin: 12% auto 0%;
+        height: 290px;
+    }
+    .news-section{
+        height: auto;
+    }
+    .topic-news h3{
+        height: 100px;
+        margin-top: -30px;
+    }
+    .rightside{
+        height: 530px;
+    }
+    .card{
+        height: auto;
+        width: 47%;
     }
     .Button{
         padding: 2.5%;
