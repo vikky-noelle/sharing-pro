@@ -16,7 +16,7 @@
     float: right;
     width: 82.5%;
     padding-left: 20px;
-    height: 260px;
+    height: 460px;
     z-index: 10;
     border-bottom: 1px solid rgb(218, 218, 218);
 }
@@ -30,18 +30,18 @@
     float: right;
     width: 82.5%;
     padding-left: 20px;
-    height: 470px;
+    height: 570px;
     z-index: 10;
     border-bottom: 1px solid rgb(218, 218, 218);
 }
 .blog{
     margin: 7% auto 0%;
     width: 90%;
-    overflow-y: hidden;
-    height: 215px;
-    scroll-behavior: smooth;
-    overflow-x: scroll;
+    height: 285px;
     white-space: nowrap !important;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
     scroll-snap-destination: 0% 100%;
@@ -50,6 +50,9 @@
 }
 .blog::-webkit-scrollbar {
     display: none;
+}
+.blog>div{
+    display: inline-block;
 }
 .leftarrow {
     position: absolute;
@@ -165,16 +168,20 @@
     position: absolute;
 }
 
-.blog .outdiv{
-    display: inline-block;
-}
-
-.outdiv{
+.card{
     scroll-snap-align: start;
-    width: 31%;
     margin: 1% 2.4% 0% 0%;
     border-radius: 2%;
     vertical-align: top;
+    /* display: grid; */
+    display: block;
+    grid-template-rows: 100px 300px;
+    width: 31%;
+    height: 210px;
+    margin-bottom: 1%;
+    border-radius: 2%;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.10);
 }
 
 .head{
@@ -224,7 +231,7 @@
 .cardData{
     float: left;
     width: 100%;
-    height: 40px;
+    height: 65px;
     margin: 2% 0% 2% 0%;
 }
 .cardData>div{
@@ -266,22 +273,12 @@
    width: 40px;
 }
 
-.card{
-    display: grid;
-    width: 100%;
-    height: 180px;
-    /* border: 1px solid red; */
-    margin-bottom: 1%;
-    border-radius: 2%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.10);
-}
 
 .matchstatus{
     width: 96%;
-    height: 30px;
-    margin-top: 5%;
+    height: 45px;
+    margin-top: 25%;
     padding: 2%;
-    /* border :1px solid red; */
 }
 .matchstatus>textarea{
     width: 100%;
@@ -327,6 +324,26 @@
 }
 .news-section::-webkit-scrollbar {
     display: none;
+}
+.outdiv{
+    /* border: 1px solid blue; */
+    scroll-snap-align: start;
+    width: 30%;
+    margin-right: 3.2%;
+    display: inline-block;
+}
+
+.news-detail textarea{
+    cursor: pointer;
+    width: 100%;
+    color:black;
+    background-color: white;
+    overflow: hidden;
+    border: none;
+    resize: none;
+    height: auto;
+    font-size: 1.5em;
+    font-weight: bolder;
 }
 
 .rightside h1{
@@ -382,7 +399,6 @@
     border-radius: 10%;
 }
 .news-detail{
-    /* border: 1px solid red; */
     word-wrap: break-word;
     width: 58%;
     float: right;
@@ -397,21 +413,10 @@
     color: rgb(87, 87, 87);
     font-size: 1.1em;
 }
-.news-section .outdiv{
+/* .news-section .outdiv{
     display: inline-block;
-}
-.news-detail textarea{
-    cursor: pointer;
-    width: 100%;
-    color:black;
-    background-color: white;
-    overflow: hidden;
-    border: none;
-    resize: none;
-    height: auto;
-    font-size: 1.5em;
-    font-weight: bolder;
-}
+} */
+
 
 @media screen and (min-width:200px) and (max-width:700px){
     .team1,.team2>p{
@@ -453,7 +458,7 @@
     }
     .blog{
         width: 92%;
-        height: 210px;
+        height: 380px;
         margin: 25% auto 0%;
     }
     .card{
