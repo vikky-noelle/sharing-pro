@@ -29,6 +29,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
   BestPerfomerUsername;
   Age;
   startTime:string;
+  show:boolean=false;
 
   comment:boolean=true;
   moment:boolean=false;
@@ -126,6 +127,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
       this.postservice.OpenOneMatchCard(this.eventid).subscribe(
         data=>{
           for(var i=0;i<data["Feed"].length;i++){
+            this.show=true;
               var time= new Date(data["Feed"][i].startdatetime*1000);
               var timeconvert= new String(time);
               this.startTime=timeconvert.slice(3,21);

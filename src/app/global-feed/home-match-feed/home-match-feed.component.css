@@ -51,6 +51,12 @@
 .blog::-webkit-scrollbar {
     display: none;
 }
+.blog { 
+overflow: auto;
+-ms-overflow-style: none; /* IE 11 */
+scrollbar-width: none;
+}
+.blog { overflow: -moz-scrollbars-none; }
 .blog>div{
     display: inline-block;
 }
@@ -344,11 +350,19 @@
 .news-section::-webkit-scrollbar {
     display: none;
 }
+.news-section { 
+overflow: auto;
+-ms-overflow-style: none; /* IE 11 */
+scrollbar-width: none;
+}
+.news-section { overflow: -moz-scrollbars-none; }
 .outdiv{
+    vertical-align: top;
     /* border: 1px solid blue; */
     scroll-snap-align: start;
     width: 30%;
     margin-right: 3.2%;
+    margin-top: 3%;
     display: inline-block;
 }
 
