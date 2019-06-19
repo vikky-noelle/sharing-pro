@@ -1,6 +1,6 @@
 .yea {
     position: relative;
-    z-index: 15;
+    /* z-index: 15; */
     background-image: url('/assets/images/sportsocialteamviewheader.jpg');
     height: 220px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -16,8 +16,6 @@
     color: white;
 }
 .body{
-    z-index: 15;
-
     padding-top: 10px;
     margin: 0 auto;
     width: 80%;
