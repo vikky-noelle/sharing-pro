@@ -119,7 +119,18 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
           finished= true;
           this.startTime="Match Finished";
         }
-    
+        if(data["Feed"][i].CommentCount===0){
+          data["Feed"][i].CommentCount = false;
+        }
+        if(data["Feed"][i].PromoteCount===0){
+          data["Feed"][i].PromoteCount = false;
+        }
+        if(data["Feed"][i].WatchCount===0){
+          data["Feed"][i].WatchCount = false;
+        }
+        if(data["Feed"][i].JoineeCount===0){
+          data["Feed"][i].JoineeCount = false;
+        }
         this.arr.push({
               feedid:data["Feed"][i].feedid,
               Activity_name:data["Feed"][i].Activity_name,

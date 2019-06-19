@@ -37,10 +37,10 @@
                     <p>{{EventText|slice:0:120}}...</p>
                 </div>
             <div class="footer">
-                  <button class="playButton">{{JoineeCount}} Joinee</button>
-                  <button class="promoteButton">{{PromoteCount}} Promote</button>
-                  <button class="watchButton">{{WatchCount}} Subscribe</button>
-                  <button class="commentButton">{{CommentCount}} Talk</button>
+                  <button class="playButton"><span *ngIf="JoineeCount">{{JoineeCount}}</span> Joinee</button>
+                  <button class="promoteButton"><span *ngIf="PromoteCount">{{PromoteCount}}</span> Promote</button>
+                  <button class="watchButton">Subscribe</button>
+                  <button class="commentButton"><span *ngIf="CommentCount">{{CommentCount}}</span> Talk</button>
             </div>
 
 </div>

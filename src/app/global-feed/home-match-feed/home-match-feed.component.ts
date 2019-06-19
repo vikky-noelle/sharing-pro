@@ -78,7 +78,18 @@ export class HomeMatchFeedComponent{
               else{
                 tempimg = data["Feed"][i].Team2Pic;
               }
-              
+              if(data["Feed"][i].CommentCount===0){
+                data["Feed"][i].CommentCount = false;
+              }
+              if(data["Feed"][i].PromoteCount===0){
+                data["Feed"][i].PromoteCount = false;
+              }
+              if(data["Feed"][i].WatchCount===0){
+                data["Feed"][i].WatchCount = false;
+              }
+              if(data["Feed"][i].JoineeCount===0){
+                data["Feed"][i].JoineeCount = false;
+              }
             var Starttime= new Date( data["Feed"][i].startdatetime *1000);
             var timestampConvert= new String(Starttime).slice(3,21);
               arr.push({
