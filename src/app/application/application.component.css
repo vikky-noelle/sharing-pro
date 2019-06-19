@@ -7,6 +7,15 @@ body{
 html{
     scroll-behavior: smooth;
 }
+.appbody{
+    position: relative;
+}
+/* .paralax-img{
+    height: 100vh;
+    position: fixed;
+    width: 68%;
+    float: left;
+} */
 /* Banner */
 .banner{
     /* position: absolute;  */

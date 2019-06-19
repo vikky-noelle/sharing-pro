@@ -36,20 +36,21 @@
     color: black;
 }
 
-@media screen and (max-width:768px){
+@media screen and (min-width: 701px) and (max-width:768px){
     #col-4{
-        width:48%;
-        margin-left:1%;
+        width:47%;
+        /* margin-left:1%; */
     }
 }
 @media screen and (max-width:700px){
   #col-4{
-      margin-left: 5%;
-      width:90%;
+      margin-left: 7.5%;
+      width:95%;
   }
 }
 @media screen and (min-width: 200px) and (max-width: 700px){
     .rightside{
+        margin-top: 20px;
         width: 100%;
     }
     .rightsidefooter{
@@ -61,6 +62,7 @@
 }
 @media screen and (min-width: 701px) and (max-width: 950px){
     .rightside{
+        margin-top: 20px;
         width: 100%;
     }
     .rightsidefooter{

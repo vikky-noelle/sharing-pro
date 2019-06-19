@@ -26,7 +26,19 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   isDropdownIconclicked: boolean = false;
   sidenav:boolean=false;
   searchButton:boolean=false;
-  list=[
+  openarenalist=[
+    {link: '', name: 'Open Arena'},
+    {link: 'cricket', name: 'Cricket' },
+    {link: 'football', name: 'Football' },
+    {link: 'basketball', name: 'Basketball' },
+    {link: 'volleyball', name: 'Volleyball' },
+    {link: 'tennis', name: 'Tennis' },
+    {link: 'table-tennis', name: 'Table Tennis' },
+    {link: 'hockey', name: 'Hockey' },
+    {link: 'badminton', name: 'Badminton' },
+  ]
+  newslist=[
+    {link: '', name: 'All News'},
     {link: 'cricket', name: 'Cricket' },
     {link: 'football', name: 'Football' },
     {link: 'basketball', name: 'Basketball' },

@@ -107,20 +107,20 @@
          </div>
         <ul class="ul">
           <a routerLink="/" (click)="topscroll()"><li>Home</li></a>
-          <li id="niftview">
-            <a routerLink="/OpenArena" (click)="topscroll()">Open Arena</a>
-            <img (click)="openarenamenu()" class="arrow-rotate" src="assets/images/sportsocialhomearrow.png" alt="">
+          <li (click)="openarenamenu()" id="niftview">
+            <a>Arena</a>
+            <img class="arrow-rotate" src="assets/images/sportsocialhomearrow.png" alt="">
           </li>
             <ul id="niftview" class="open-arena-menu">
-              <a *ngFor="let data of list" (click)="topscroll()" href="/OpenArena/{{data.link}}"><li>{{data.name}}</li></a>
+              <a *ngFor="let data of openarenalist" (click)="topscroll()" href="/OpenArena/{{data.link}}"><li>{{data.name}}</li></a>
             </ul>
           <span class="dpslide">
-            <li id="niftview"><a routerLink="/newspage" (click)="topscroll()">News</a>
-              <img (click)="opennewsmenu()" class="arrow-rotate1" src="assets/images/sportsocialhomearrow.png" alt="">
+            <li (click)="opennewsmenu()" id="niftview"><a>News</a>
+              <img class="arrow-rotate1" src="assets/images/sportsocialhomearrow.png" alt="">
             </li>
             </span>
             <ul id="niftview" class="open-news-menu">
-              <a *ngFor="let data of list" (click)="topscroll()" href="/newspage/{{data.link}}"><li>{{data.name}}</li></a>
+              <a *ngFor="let data of newslist" (click)="topscroll()" href="/newspage/{{data.link}}"><li>{{data.name}}</li></a>
             </ul>
             <span class="dpslide2">
             <li><a (click)="topscroll()" routerLink="/about">About</a></li>

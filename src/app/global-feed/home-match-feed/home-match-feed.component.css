@@ -451,7 +451,7 @@ scrollbar-width: none;
 } */
 
 
-@media screen and (min-width:200px) and (max-width:700px){
+@media screen and (min-width:200px) and (max-width:376px){
     .team1,.team2>p{
         font-size: 0.9em;
     }
@@ -558,8 +558,117 @@ scrollbar-width: none;
         margin-top: 15px;
     }
 }
+@media screen and (min-width:377px) and (max-width:700px){
+    .team1,.team2>p{
+        font-size: 0.9em;
+    }
+    .rightsidefooter{
+        width: 100%;
+    }
+    .creator{
+        margin-top: 12%;
+    }
+    .username{
+        font-size: .6em;
+    }
+    #creatorname{
+        font-size: .8em;
+    }
+    .eventtext>p{
+        font-size: .8em;
+    }
+    .home .sidenav{
+        display: none;
+    }
+    .msidenav{
+        text-align: center;
+        display:block;
+        margin-top: 24%;
+    }
+    .rightside {
+        height: 550px;
+        width: 100%;
+    }
+    .rightside1 {
+        height: 260px;
+        width: 100%;
+    }
+    .outdiv{
+        width: 90%;
+    }
+    .blog{
+        width: 92%;
+        height: auto;
+        margin: 25% auto 0%;
+    }
+    .card{
+        width: 96%;
+        height: auto;
+    }
+    .gamename,.result b{
+        font-size: 0.8em;
+    }
+    .result p {
+        font-size: 0.7em;
+    }
+    .cardData img{
+        height: 35px;
+        width: 35px;
+    }
+    .t1score, .t2score{
+        font-size: 0.75em;
+    }
+    .blog .leftarrow{
+        display: none;
+    }
+    .blog .rightarrow{
+        display: none;
+    }
+    .home{
+        margin-top: 10%;
+    }
+    .topic{
+        width: 90%;
+        font-size: 1em;
+        padding-left: 20px;
+        margin-left: 0%;
+        /* margin-top: 1.5%; */
+    }
+    .topic-news{
+        width: 90%;
+        font-size: 0.9em;
+        padding-left: 25px;
+        margin-left: 0%;
+        /* margin-top: 1.5%; */
+    }
+    .rightside h1{
+        padding: 2px;
+        font-size: 1.1em;
+    }
+    .rightside1 h1{
+        padding: 2px;
+        font-size: 1.1em;
+    }
+    .topic h3{
+        font-size: 1.1em;
+        padding: 2px;
+    }
+    .news-section{
+        width: 90%;
+        margin-top: 10%;
+    }
+    .news-section{
+        height: 230px;
+    }
+    .Button{
+        font-size: 0.7em;
+    }
+    .gametopic>h3{
+        margin-top: 15px;
+    }
+}
 
-@media screen and (min-width: 700px) and (max-width: 950px){
+@media screen and (min-width: 701px) and (max-width: 950px){
     .rightsidefooter{
         width: 100%;
     }

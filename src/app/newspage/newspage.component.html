@@ -57,10 +57,10 @@
   <h1>{{mnewshead}}</h1>
   <h2 class="timestamp">{{mnewstime}}</h2>
   <h2 class="share"> 
-      <a href="https://twitter.com/chaseyoursport"><img src="assets/images/ssstwitter.png"></a>
-      <a href="https://www.facebook.com/chaseyoursport/"><img src="assets/images/sssfacebook.png"></a>
-      <a href="https://www.linkedin.com/company/sports-social/?originalSubdomain=in"><img src="assets/images/ssslinkedin.png"></a>
-      <a href="https://www.instagram.com/chaseyoursport/"><img src="assets/images/sssinstagram.png"></a>
+      <a href="https://twitter.com/chaseyoursport" target="_blank"><img src="assets/images/ssstwitter.png"></a>
+      <a href="https://www.facebook.com/chaseyoursport/" target="_blank"><img src="assets/images/sssfacebook.png"></a>
+      <a href="https://www.linkedin.com/company/sports-social/?originalSubdomain=in" target="_blank"><img src="assets/images/ssslinkedin.png"></a>
+      <a href="https://www.instagram.com/chaseyoursport/"><img src="assets/images/sssinstagram.png" target="_blank"></a>
       <!-- <a><img src="assets/images/sssrss.png"></a> -->
     </h2>
   <!-- <hr> -->
@@ -106,11 +106,10 @@
 <!-- mobile view -->
 <div *ngIf="cdata" class="mobile-main">
     <h2 class="share"> 
-        <div class="twitter"></div>
-        <div class="linkedin"></div>
-        <div class="fb"></div>
-        <div class="insta"></div>
-        <div class="rss"></div>
+       <a href="https://twitter.com/chaseyoursport" target="_blank"> <div class="twitter"></div> </a>
+       <a href="https://www.linkedin.com/company/sports-social/?originalSubdomain=in" target="_blank"> <div class="linkedin"></div> </a>
+       <a href="https://www.facebook.com/chaseyoursport/" target="_blank"> <div class="fb"></div> </a>
+       <a href="https://www.instagram.com/chaseyoursport/" target="_blank"> <div class="insta"></div> </a>
       </h2>
   <div class="newscard">
     <h1>{{mnewshead}}</h1>
@@ -132,7 +131,7 @@
   <h1>{{data.title|slice:0:40}}....</h1>
     </div>
     <hr>
-    <h1 class="heading">Recent Stories <p>Swipe right>></p></h1>
+    <h1 class="heading">Recent Stories <p>Swipe left>></p></h1>
     <div class="tnews">
         <div (click)="opennews(data.id);topscroll();" class="tnewscard" *ngFor="let data of news">
           <img  *ngIf="data.source === 'Football Italia'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfi.png'">
