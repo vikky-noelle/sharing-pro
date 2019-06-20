@@ -31,7 +31,6 @@ export class HomeMatchFeedComponent{
   constructor(
     private _eventemiter: EventEmiterService,
     private getService: GetService,
-    private http:Http,
     private postservice:PostService,
     private time:TimeService,
     private location:LocationService,
@@ -47,10 +46,10 @@ export class HomeMatchFeedComponent{
   'Table Tennis', 
   'Volleyball']
   Sports= [
-    {id: 5, title: 'Badminton'},
-    {id: 6, title: 'Basketball'},
     {id: 17,  title: 'Cricket'},
     {id: 23, title: 'Football'},
+    {id: 6, title: 'Basketball'},
+    {id: 5, title: 'Badminton'},
     {id: 29, title: 'Hockey'},
     {id: 36, title: 'Tennis'},
     {id: 56, title: 'Table Tennis'},
@@ -64,6 +63,7 @@ export class HomeMatchFeedComponent{
     var gamename;
     this.location.getGeoLocation().then((pos)=>{
       for(var i=0;i<this.Sports.length;i++){
+      var tempsport = this.Sports;
       this.postservice.homeMatchFeed(pos['latitude'],pos['longitude'],this.Sports[i].id,this.timestamp)
       .subscribe(data=>{
         this.count1=this.count1+1;
@@ -123,8 +123,6 @@ export class HomeMatchFeedComponent{
               JoineeCount:data["Feed"][i].JoineeCount
             });
 
-            
-
             var score1 = data["Feed"][i].scoreTeam1;
             var score2 = data["Feed"][i].scoreTeam2;
               
@@ -172,11 +170,15 @@ export class HomeMatchFeedComponent{
             this.index=this.index+1;
             gamename = arr[0].GameName.replace(/ matches/g,"");
             this.getnewsdata(gamename.toLowerCase());
-            this.Matcharr.push({
-              gamenumber: this.index,
-              gametitle: arr[0].GameName,
-              gamearray: arr
-            }); 
+            for(var init=0; init<this.Sports.length;init++){
+              if(this.Sports[init].title.toLowerCase() === gamename.toLowerCase()){
+                this.Matcharr[init] = {
+                  gamenumber: init,
+                  gametitle: arr[0].GameName,
+                  gamearray: arr
+                };
+              }
+            }
           }
           for(var k=0; k<this.count; k++){
               if(this.sport[k]===gamename){
@@ -187,10 +189,11 @@ export class HomeMatchFeedComponent{
             }
             if(this.count1===this.Sports.length){
             this.gett(this.sport);
-          }
-          
+          }  
+          console.log(this.news);
      });
-    }
+    }  
+    
     });  
   }
   gett(str){
@@ -206,7 +209,6 @@ export class HomeMatchFeedComponent{
     this.getService.getsportnews(topic).subscribe(res=>{
       var body = JSON.parse(res._body);
       var arr=[];
-      console.log(body);
       for (const i in body.news) {
         var x = body.news[i].insertedDate;
         x = x.replace(/T/g," at "); 
@@ -250,7 +252,12 @@ export class HomeMatchFeedComponent{
           break;
         }
       }
-      this.news.push(arr);
+      // this.news.push(arr);
+      for(var init=0; init<this.Sports.length;init++){
+        if(this.Sports[init].title.toLowerCase() === topic){
+          this.news[init] = arr;
+        }
+      }
     });
   }
   change(id, topic){

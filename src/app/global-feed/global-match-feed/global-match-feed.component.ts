@@ -69,6 +69,8 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         this.count=this.count+1;
       for(const i in data["Feed"]){
         var tempimg;
+        var agebracket, age;
+        
               if(data["Feed"][i].Team2name === null){
                 tempimg = "/assets/images/sportsocialteamlogo.png";
                 data["Feed"][i].Team2name = "None";
@@ -131,6 +133,28 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         if(data["Feed"][i].JoineeCount===0){
           data["Feed"][i].JoineeCount = false;
         }
+        agebracket = data["Feed"][i].ageBracket;
+        if(agebracket == 0){
+          age="Under 13";
+        }
+        else if(agebracket ==1){
+          age="Under 15";
+        }
+        else if(agebracket ==2){
+          age="Under 17";
+        }
+        else if(agebracket ==3){
+          age="Under 19";
+        }
+        else if(agebracket ==4){
+          age="Under 21";
+        }
+        else if(agebracket ==5){
+          age="Under 23";
+        }
+        else if(agebracket ==-1){
+          age="Open for All";
+        }
         this.arr.push({
               feedid:data["Feed"][i].feedid,
               Activity_name:data["Feed"][i].Activity_name,
@@ -165,7 +189,8 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
               CommentCount:data["Feed"][i].CommentCount,
               PromoteCount:data["Feed"][i].PromoteCount,
               WatchCount:data["Feed"][i].WatchCount,
-              JoineeCount:data["Feed"][i].JoineeCount
+              JoineeCount:data["Feed"][i].JoineeCount,
+              age: age
             });
             this.startTime= this.arr[i].startdatetime;
             
@@ -185,7 +210,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
   sportspecific(topic){
     var id;
     var temp, checkstat, checkstat2, upcoming=false;
-    var finished;
+    var finished, agebracket, age;
     for(var i=0;i<this.Sports.length; i++){
       if(this.Sports[i].title.toLowerCase() === topic){
         id = this.Sports[i].id;
@@ -207,6 +232,29 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
               }
               
         temp = data["Feed"][i].gender;
+        agebracket = data["Feed"][i].ageBracket;
+        if(agebracket == 0){
+          age="Under 13";
+        }
+        else if(agebracket ==1){
+          age="Under 15";
+        }
+        else if(agebracket ==2){
+          age="Under 17";
+        }
+        else if(agebracket ==3){
+          age="Under 19";
+        }
+        else if(agebracket ==4){
+          age="Under 21";
+        }
+        else if(agebracket ==5){
+          age="Under 23";
+        }
+        else if(agebracket ==-1){
+          age="Open for All";
+        }
+        console.log("lala"+age);
         if(temp.toLowerCase()==="mix"){
           temp="Mix up ";
         }
@@ -283,7 +331,8 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
               CommentCount:data["Feed"][i].CommentCount,
               PromoteCount:data["Feed"][i].PromoteCount,
               WatchCount:data["Feed"][i].WatchCount,
-              JoineeCount:data["Feed"][i].JoineeCount
+              JoineeCount:data["Feed"][i].JoineeCount, 
+              age: age
             });            
       }
     });
