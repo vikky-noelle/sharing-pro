@@ -27,7 +27,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   sidenav:boolean=false;
   searchButton:boolean=false;
   openarenalist=[
-    {link: 'OpenArena', name: 'Open Arena'},
+    {link: '', name: 'Open Arena'},
     {link: 'cricket', name: 'Cricket' },
     {link: 'football', name: 'Football' },
     {link: 'basketball', name: 'Basketball' },
@@ -38,7 +38,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     {link: 'badminton', name: 'Badminton' },
   ]
   newslist=[
-    {link: 'newspage', name: 'All News'},
+    {link: '', name: 'All News'},
     {link: 'cricket', name: 'Cricket' },
     {link: 'football', name: 'Football' },
     {link: 'basketball', name: 'Basketball' },
