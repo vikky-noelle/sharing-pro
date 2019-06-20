@@ -437,12 +437,15 @@ scrollbar-width: none;
     float: right;
     font-size: 0.6em;
     cursor: pointer;
+    
 }
 .news-detail>textarea{
     margin-top: 2%;
 }
 .news-detail>p{
+    float: left;
     padding:12px;
+    padding-left: 0%;
     color: rgb(87, 87, 87);
     font-size: 1.1em;
 }

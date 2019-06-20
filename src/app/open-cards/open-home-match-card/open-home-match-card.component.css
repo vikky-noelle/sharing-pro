@@ -383,6 +383,7 @@
    width: 50%;
    height: 30px;
    font-size: 0.9em;
+   margin-bottom: 0%;
    /* font-weight: bolder; */
    cursor: pointer;
 }
@@ -663,8 +664,18 @@
     clear: both;
     display: grid;
   }
+  .details{
+      max-height: 400px;
+      min-height: 0px;
+      overflow-y: scroll;
+  }
+  .details3{
+    max-height: 400px;
+    min-height: 0px;
+    overflow-y: scroll;
+  }
   .details3>button{
-      margin-top: 10px;
+      /* margin-top: 10px; */
       vertical-align: top;
       width: 50%;
       height: 40px;

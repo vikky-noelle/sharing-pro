@@ -89,15 +89,16 @@ export class NewsidenavComponent implements OnInit {
   }
   ngOnInit() {
     if(this.router.url === '/newspage'){
-      this.openmenu1[0].style.display="block";
       this.l2=1;
       this.arrowicon[0].style.transform="rotate(90deg)";
       this.newsone[0].style.backgroundColor=" rgb(71, 148, 148)";
       this.newsonea[0].style.color="white";
       this.newspageul[0].style.color="black";
     }
+    if(this.router.url.includes('/newspage')){
+      this.openmenu1[0].style.display="block";
+    }
     if(this.router.url === '/OpenArena'){
-      console.log(this.router.url);
       this.openmenu[0].style.display="block";
       this.l1=1;
       this.arrowiconn[0].style.transform="rotate(90deg)";
