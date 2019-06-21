@@ -8,51 +8,64 @@ html{
     scroll-behavior: smooth;
 }
 .back-body{
+    width: 100%;
     position: absolute;
     width: 100%;
     /* z-index: 1; */
 }
+
+.back-body>div>img{
+    opacity: 0.6;
+}
 .back-body-image-one{
+    float: left;
+    width: 68%;
     position: relative;
     height: 2700px;
+    background-color: #000000;
 }
 .back-body-image-two{
+    float: right;
+    width: 68%;
     z-index: 3;
     position: relative;
     margin-top: 1560px;
     height: 2700px;
+    background-color: #000000;
 }
 .back-body-image-three{
+    float: left;
+    width: 68%;
     z-index: 4;
     position: relative;
     margin-top: 3120px;
     height: 2700px;
+    background-color: #000000;
 }
 .back-body-image-four{
+    float: right;
+    width: 68%;
     z-index: 5;
     position: relative;
     margin-top: 4700px;
     height: 2000px;
-}
-.back-body-image-one img{
-    float: left
-}
-.back-body-image-two img{
-    float: right;
-}
-.back-body-image-three img{
-    float: left
-}
-.back-body-image-four img{
-    float: right;
+    background-color: #000000;
 }
 
 .back-body div img{
     position: -webkit-sticky;
     position: sticky;
     height: 100vh;
-    width: 68%;
+    width: 100%;
     top: 0;
+}
+.back-body div h2{
+    position: -webkit-sticky;
+    position: sticky;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    color: #ffffff;
 }
 
 .appbody{
@@ -185,6 +198,7 @@ html{
     height: 1560px;
 }
 .right1{
+    background-color: white;
     width:32%;
     height: auto;
     position: relative;
@@ -201,6 +215,7 @@ html{
     height: 1560px;
 }
 .left1{
+    background-color: white;
     width:32%;
     height: auto;
     float: left;
@@ -217,6 +232,7 @@ html{
     height: 1580px;
 }
 .right2{
+    background-color: white;
     width:32%;
     height:auto;
     position: relative;
@@ -233,6 +249,7 @@ html{
     height: 1560px;
 }
 .left2{
+    background-color: white;
     width:32%;
     height: auto;
     float: left;

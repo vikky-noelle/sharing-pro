@@ -254,7 +254,6 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         else if(agebracket ==-1){
           age="Open for All";
         }
-        console.log("lala"+age);
         if(temp.toLowerCase()==="mix"){
           temp="Mix up ";
         }

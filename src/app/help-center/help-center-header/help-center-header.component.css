@@ -10,7 +10,7 @@
     width: 100%;
     height: 350px;
     background-size: 100% 100%;
-    margin-top:58px;
+    margin-top:49px;
 }
 .brand-title{
     color: #ffffff;
@@ -68,17 +68,28 @@
 }
 
 @media screen and (min-width:100px) and (max-width:564px) {
-    .bam {
-        height: 200px;
-    }
     .bam > p {
-        opacity: 0;
+        opacity: 1;
     } 
     .header {
-        height: 180px;
+        height: 200px;
     }
-    .trouble,.heading {
-        display: none;
+    .brand-img-holder{
+        max-width: 80px;
+        max-height: 80px;
+        margin: 5px auto;
+    }
+    .brand-img{
+      margin-top:3%;
+        width: 80%;
+        height: 80%;
+    }
+    .heading{
+        font-size: 1.3em;
+    }
+    .header>div:nth-child(2)>p:last-child{
+        margin-top: 10px;
+        font-size: 1em;
     }
 }
 

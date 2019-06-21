@@ -1,7 +1,7 @@
 .main-body{
     margin-top: 57.5px;
 }
-.cbody{
+.outer-body{
     /* height: 2000px; */
     overflow: hidden;
 }
@@ -207,6 +207,8 @@
 }
 
 .head{
+    /* border: 1px solid red; */
+    position: relative;
     margin-top: 7px;
     margin-bottom: 10px;
     width: 100%;
@@ -215,6 +217,7 @@
     border-bottom: 1px solid #dddddd;
 }
 .head>div{
+    position: absolute;
     vertical-align: top !important;
 }
 .gamename {
@@ -224,10 +227,11 @@
     float:left;
 }
 .result {
-    height: 100%;
+    margin-left: 68%;
     width: 30%;
-    margin-right: 2%;
-    float: right;
+    margin-right: 0%;
+    justify-content: right;
+    /* float: right !important; */
 }
 .result b,.result p {
     float: right;
@@ -251,7 +255,13 @@
     font-weight: bold;
     color: #5f5e5e;
 }
+.activitycount{
+    position: relative;
+    /* border: 1px solid red; */
+    margin-bottom: 4%;
+}
 .activitycount>div{
+    position: absolute;
     display: inline-flex;
 }
 .activitycount>div>img{
@@ -486,8 +496,7 @@
     .result{
         padding-bottom: 1%;
         width: 35%;
-        /* border: 1px solid blue; */
-        margin-right: 1%;
+        margin-left: 60%;
     }
     .result b{
         margin-top: 4px;
@@ -529,6 +538,9 @@
     .text>p{
         width: 100%;
         margin-top: 3%;
+    }
+    .activitycount{
+        margin-bottom: 10%;
     }
  }
 @media screen and (min-width: 701px) and (max-width: 950px){
