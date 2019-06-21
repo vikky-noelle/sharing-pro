@@ -19,7 +19,10 @@
                               <p>{{feed.Venue_Name | slice:0:30}}...</p>
                           </div>
                           <div class="result">
-                              <b>{{feed.result}}</b>
+                              <b>{{feed.startdatetime}}
+                                <img *ngIf="!feed.finished" src="/assets/images/sportsocialfinalicon.jpeg">
+                                <img *ngIf="feed.finished" src="/assets/images/sportsocialgreendot.png"><br>        
+                              </b>
                               <p> {{feed.MatchStarterUniqueName}}</p>
                           </div>  
                       </div>

@@ -20,8 +20,8 @@ export class HomeMatchFeedComponent{
   finalstatus;
   Age;
   tnews=[];
-  index=-1; //used to provide index for it
   news=[];
+  startTime;
   gendercheck;
   timestamp = Math.floor(Date.now()/1000);
   sub: Subscription;
@@ -70,7 +70,7 @@ export class HomeMatchFeedComponent{
         this.show=true;
         var arr=[];
           for(var i=0;i<data["Feed"].length;i++){
-            var tempimg;
+            var tempimg, checkstat, checkstat2, finished, upcoming=false;
               if(data["Feed"][i].Team2name === null){
                 tempimg = "/assets/images/sportsocialteamlogo.png";
                 data["Feed"][i].Team2name = "None";
@@ -90,11 +90,42 @@ export class HomeMatchFeedComponent{
               if(data["Feed"][i].JoineeCount===0){
                 data["Feed"][i].JoineeCount = false;
               }
+              checkstat = Date.now();
+        checkstat2 = data["Feed"][i].startdatetime;
+        
+        if(checkstat>checkstat2){
+          if((checkstat-checkstat2)>86400){
+            if(data["Feed"][i].scoreTeam1===null || data["Feed"][i].scoreTeam2===null){
+              this.startTime="Score Awaited";
+              finished= false;
+            } 
+            if(data["Feed"][i].Team2name === null){
+              this.startTime="Match Abandoned";
+              finished= false;
+            }
+          }
+          else{
+            if(data["Feed"][i].scoreTeam1===null || data["Feed"][i].scoreTeam2===null){
+              this.startTime="Score Awaited";
+              finished= false;
+            }
+          }
+        }
+        if(checkstat === checkstat2 || checkstat < checkstat2){
+          this.startTime="Upcoming";
+          finished= false; 
+          upcoming=true;   
+        }
+        if(data["Feed"][i].scoreTeam1!==null && data["Feed"][i].scoreTeam2!==null){
+          finished= true;
+          this.startTime="Match Finished";
+        }
             var Starttime= new Date( data["Feed"][i].startdatetime *1000);
             var timestampConvert= new String(Starttime).slice(3,21);
               arr.push({
               feedid:data["Feed"][i].feedid,
               ageBracket:data["Feed"][i].ageBracket,
+              finished: finished,
               Activity_name:data["Feed"][i].Activity_name,
               MatchStarterUniqueName:data["Feed"][i].MatchStarterUniqueName==null?"":"By:@"+data["Feed"][i].MatchStarterUniqueName,
               result:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?timestampConvert:'Final result',
@@ -102,7 +133,7 @@ export class HomeMatchFeedComponent{
               profile_image:data["Feed"][i].profile_image,
               Venue_Name:data["Feed"][i].Venue_Name,
               EventText:data["Feed"][i].EventText,
-              startdatetime:this.time.ExactDate(data["Feed"][i].startdatetime),
+              startdatetime:this.startTime,
               GameName:data["Feed"][i].GameName,
               GameId:data["Feed"][i].GameId,
               Event_Image:data["Feed"][i].Event_Image,
@@ -167,7 +198,6 @@ export class HomeMatchFeedComponent{
               }
           }  
           if(arr.length>0){
-            this.index=this.index+1;
             gamename = arr[0].GameName.replace(/ matches/g,"");
             this.getnewsdata(gamename.toLowerCase());
             for(var init=0; init<this.Sports.length;init++){
