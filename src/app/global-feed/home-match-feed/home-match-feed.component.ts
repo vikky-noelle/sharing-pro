@@ -38,10 +38,10 @@ export class HomeMatchFeedComponent{
     private router:Router
   ) { }
   count=8;
-  sport= ['Badminton', 
-  'Basketball', 
-  'Cricket', 
+  sport= ['Cricket', 
   'Football', 
+  'Basketball', 
+  'Badminton', 
   'Hockey', 
   'Tennis', 
   'Table Tennis', 
@@ -189,7 +189,6 @@ export class HomeMatchFeedComponent{
           }  
           if(arr.length>0){
             gamename = arr[0].GameName.replace(/ matches/g,"");
-            console.log("this is a game"+gamename);
             this.getnewsdata(gamename.toLowerCase());
             for(var init=0; init<this.Sports.length;init++){
               if(this.Sports[init].title.toLowerCase() === gamename.toLowerCase()){
@@ -202,8 +201,11 @@ export class HomeMatchFeedComponent{
             }
           }
             for(var k=0; k<this.count; k++){
-                if(this.sport[k]===gamename){
-                  this.sport.splice(k,1);
+              // console.log(this.sport[k]);
+              // console.log(gamename);
+                if(this.sport[k].toLowerCase()===gamename.toLowerCase()){
+                  console.log(this.sport.splice(k,1));
+
                   this.count=this.count-1;
                   break;
                 }
@@ -211,7 +213,6 @@ export class HomeMatchFeedComponent{
             if(this.count1 === this.Sports.length){
             for(var init=0; init<this.Sports.length;init++){
               if(this.Matchar[init] === undefined){
-                console.log("empty");
               }
               else{
               this.Matcharr.push(this.Matchar[init]);
@@ -219,17 +220,15 @@ export class HomeMatchFeedComponent{
           }
           }
             if(this.count1===this.Sports.length){
+              console.log("hahahah"+this.sport);
             this.gett(this.sport);
           }  
-          console.log(this.Matcharr);
      });
     }  
     
     });  
   }
-  ngfake(){
-    console.log("working");
-  }
+  
   nginit2(long, lat){
     var gamename;
     for(var i=0;i<this.Sports.length;i++){
@@ -388,13 +387,13 @@ export class HomeMatchFeedComponent{
               }
             }
             if(this.count1===this.Sports.length){
-            this.gett(this.sport);
+              this.gett(this.sport);
           }  
-          console.log(this.news);
      });
     } 
 
   }
+
   gett(str){
     this.tarray=[];
     for(var i=0; i<str.length; i++){
