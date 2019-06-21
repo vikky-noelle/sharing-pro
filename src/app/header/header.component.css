@@ -1,14 +1,95 @@
 header{
     width: 100%;
-    padding: 0.4% 1% 0.4% 1%;
+    height: 60px;
     position: fixed;
     top: 0px;
     left: 0px;
     right: 0px;
-    z-index: 10;
-    background-color: #ffffff;
+    z-index: 20;
+    background-color: white;
     box-shadow: 1px 1px 2px #bbbbbb;
     overflow-y: hidden;
+}
+ul{
+    list-style: none;
+}
+.brand{
+    float: left;
+    margin-top: 7px;
+    width: 55%;
+}
+.search-bar-shell{
+    float: left;
+    margin-top: 18px;
+    width: 12%;
+}
+.search-bar{
+    border: 1px solid #757575;
+    border-radius: 14px;
+    width: 100%;
+    height: 22px;
+    float: left;
+    cursor: pointer;
+}
+.search-bar h1{
+    font-size: 0.9em;
+    font-weight: lighter;
+    float: right;
+    margin-top: 3px;
+    margin-right: 3%;
+    color: #757575;
+}
+.location-dropdown{
+    display: none;
+    margin-top: 23px;
+    border-radius: 5px;
+    position: fixed;
+    height: auto;
+    width: 12%;
+    text-align: center;
+    background-color: rgb(236, 236, 236);
+}
+.location-dropdown li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: lighter;
+}
+.location-dropdown li input{
+    width: 80%;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+}
+.li-dropdown:hover{
+    background-color: white; 
+}
+.search-bar:hover .location-dropdown{
+    display: block;
+}
+.search-bar img{
+    margin-top: 1px;
+    height: 17px;
+    width: 17px;
+    margin-left: 4%;
+    float: left;
+}
+.menu{
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+    float: right;
+    width: 27%;
+    height: 20px;
+}
+.menu ul li{
+    text-align: center;
+    float: left;
+    width: 20%;
+}
+.menu li > a{
+    color: #757575;
+    font-size: 1em;
+}
+.menu li > a:hover{
+    color: #024771;
 }
 .brand, .search, .brand-image, .brand-title{
     display: inline-block;
@@ -39,80 +120,9 @@ header{
     font-size: 0.8em;
     font-style: italic;
 }
-.search{
-    width: 50%;
-    /* float: left; */
-    margin-left: 10%;
-    top:3px;
-    margin-top: 2%;
-    /* margin-right: 1%; */
-    /* border: 1px solid black; */
-}
-.search>input{
-    display:block;
-    text-align: left;
-    background-position: right;
-    margin: 0 0 0 auto;
-    width: 5%;
-    height: 40px;
-    box-sizing: border-box;
-    /* border: 2px solid #ccc; */
-    border: none;
-    border-radius: 4px;
-    font-size: 1em;
-    background-color: white;
-    background-image: url('/assets/images/sports-social-search.png');
-    background-size: 25px;
-    background-color: white;
-    /* background-position: 5px 5px; */
-    background-repeat: no-repeat;
-    padding: 3% 13% 7px 30px;
-    margin-right: 2%;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-}
-.search>input:focus {
-    width: 100%;
-    /* border: 1px solid #dddddd; */
-    /* border-radius: 5%; */
-    outline: none;
-  }
-ul{
-    list-style: none;
-}
-.menu{
-    position: fixed;
-    right: 1%;
-    top: 1px;
-    width: 40%;
-    height: 7%;
-    text-align: right;
-    display: inline-flex;
-    /* border: 1px solid yellow; */
-}
-.menu>ul{
-    vertical-align: right;
-    margin-left: 38%;
-    margin-top: 3%;
-    width: 40%;
-    display: inline-flex;
-    /* border: 1px solid red; */
-}
-.menu li  {
-    width: auto;
-    margin-right: 0%;
-    vertical-align: right;
-    margin-left:10%;            /* gap between contents*/
-}
-.menu li > a{
-    color: #024771;
-    font-size: 1em;
-    font-weight: 500;
-}
-.menu li > a:hover{
-    font-weight: 700;
-    color: #ffa600;
-}
+
+
+
 .dropdown-menu-image-holder{
     position: fixed;
     top:12px;

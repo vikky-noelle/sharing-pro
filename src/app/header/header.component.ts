@@ -1,13 +1,18 @@
+import { HomeMatchFeedComponent } from './../global-feed/home-match-feed/home-match-feed.component';
 import {
   Component,
   OnInit,
   ViewEncapsulation,
   HostListener,
   ViewChild,
-  AfterViewInit
+  AfterViewInit,
+  Input,
+  Injectable
 } from '@angular/core';
 import { PropertyService } from '../shared/services/property.service';
+import { EventEmiterService } from '../shared/services/event.emiter.service';
 
+@Injectable()
 @Component({
   selector: 'sports-social-header',
   templateUrl: './header.component.html',
@@ -20,12 +25,18 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   l1=true;
   l2=true;
   openstatus = true;
+  Location = "Choose Location";
   mobileView: boolean = false;
   isMenuInDropdown: boolean = false;
   isSearchInDropdown: boolean = false;
   isDropdownIconclicked: boolean = false;
   sidenav:boolean=false;
   searchButton:boolean=false;
+  locationlist = [
+    {name: 'Delhi', latitude: '77.1025',longitude: '28.7041'},
+    {name: 'Gurugram', latitude: '77.0266',longitude: '28.4595'},
+    {name: 'Gurugram', latitude: '77.0266',longitude: '28.4595'},
+  ]
   openarenalist=[
     {link: '', name: 'Open Arena'},
     {link: 'cricket', name: 'Cricket' },
@@ -55,11 +66,22 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   dpslide2 = document.getElementsByClassName('dpslide2') as HTMLCollectionOf<HTMLElement>;
   arrowrotate = document.getElementsByClassName('arrow-rotate') as HTMLCollectionOf<HTMLElement>;
   arrowrotate1 = document.getElementsByClassName('arrow-rotate1') as HTMLCollectionOf<HTMLElement>;
+  
   @ViewChild('header') header;
   constructor(
-    private height: PropertyService
+    private height: PropertyService,
+    private _eventemiter: EventEmiterService,
+    // private home: HomeMatchFeedComponent
   ) { }
-
+  
+  latlong(longitude, latitude, name){
+    this.Location=name;
+    var arr=[];
+    arr[0] = longitude;
+    arr[1] = latitude;
+    // this._eventemiter.userToEdit= arr;
+    // this.home.ngfake();
+  }
   setMobileView() {
     const width = this.header.nativeElement.getBoundingClientRect().width;
     if ( width > 800 ) {

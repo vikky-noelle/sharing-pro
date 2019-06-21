@@ -1,22 +1,4 @@
 <header #header>
-  <!-- <div class="leftmenu">
-      <ul>
-          <li class="menuImageHolder">
-              <img src="assets/images/sports-social-menu.png" role="button" (click)="openNav()" alt="sports-social-menu">
-            </li>
-          </ul>
-  </div>
-  <div id="mySidenav" *ngIf="sidenav" class="sidenav">
-      <a  class="closebtn" (click)="closeNav()">&times;</a><hr>
-      <ul class="list-block">
-        <li><a routerLink="/">Home</a></li>
-      </ul>
-      <hr class="line">
-      <p class="popular"><b>POPULAR TOPICS</b></p>
-      <ul class="list-block">  
-        <li (click)="closeNav()"></li>
-      </ul>
-    </div> -->
   <div class="brand">
     <a routerLink="/">
       <div class="brand-image">
@@ -29,7 +11,16 @@
       </div>
     </a>
   </div>
-  
+  <div class="search-bar-shell">
+    <div class="search-bar">
+      <img src="/assets/images/sportsociallocation.png" alt="">
+      <h1>{{Location|slice:0:15}}</h1>
+      <ul class="location-dropdown">
+        <li><input type="text"></li>
+        <li class="li-dropdown" *ngFor="let data of locationlist" (click)="latlong(data.longitude, data.latitude, data.name)">{{data.name}}</li>
+      </ul>
+    </div>
+  </div>
   <div class="menu" *ngIf="!isMenuInDropdown">
       <!-- <div class="search" *ngIf="!isSearchInDropdown">
           <input type="text"   placeholder="  Search Sport Social">
@@ -56,45 +47,7 @@
     </ul>
   </div>
 
-
-      <!-- mobile view 
-   <div class="mobile-view" *ngIf="mobileView">
-    <div class="dropdown-menu-image-holder">
-      <img src="/assets/images/sports-social-menu.png" (click)="openDropdown()">
-    </div>
-    <div class="dropdown-menu" *ngIf="isDropdownIconclicked">
-      <div class="dropdown-cancel-image-holder">
-        <img src="/assets/images/sports-social-cancel-black.png"  (click)="closeDropdown()">
-      </div>
-      <ul  *ngIf="isMenuInDropdown">
-           <li>
-              <a routerLink="/live" class="About btn btn-responsive" routerLinkActive="active">Live</a>
-            </li>
-         <li>
-              <a routerLink="/about" routerLinkActive="active">About</a> 
-          </li>
-          <li>
-            <a routerLink="/application" routerLinkActive="active">App</a>--> <!--https://goo.gl/qrgCz5
-          </li>
-          <li>
-              <a routerLink="/teamview" routerLinkActive="active" (click)="topscroll()">Team</a> 
-          </li>
-          <li>
-              <a routerLink="/localitypage" routerLinkActive="active" (click)="topscroll()">Locality</a> 
-          </li>
-          <li>
-              <a routerLink="/HelpCenter" routerLinkActive="active" (click)="topscroll()">Help</a> 
-            </li>
-          
-      </ul>
-      <ng-container  *ngIf="isSearchInDropdown">
-        <div class="dropdown-search">
-          <input type="text" placeholder="Search Sports Social">
-        </div>
-        <button>Search</button>
-      </ng-container> 
-  </div>
-  </div> -->
+  <!-- mobile view -->
 
   <div class="mobile-view">
       <div class="dropdown-menu-image-holder">
