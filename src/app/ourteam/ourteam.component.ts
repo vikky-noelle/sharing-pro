@@ -19,13 +19,13 @@ sourabhFb="https://www.facebook.com/sourabh.arora.5011";
     {name:"Nikhil Kanaujia",profile:"Co Founder & CEO",desc:this.Nikhildesc,url:"assets/images/football-min.jpg",fburl:""},
     {name:"Tushar Gangwar",profile:"MD & COO",desc:this.Tushardesc,url:"assets/images/football-min.jpg",fburl:""},
     {name:"Raghav Khandelwal",profile:"Director Finance and Strategy",desc:"",url:"assets/images/football-min.jpg",fburl:""},
-    {name:"Aniket Chaturvedi",profile:"Tech Lead",desc:this.Aniketdesc,url:"assets/images/football-min.jpg",fburl:""},
-    {name:"Sourabh Arora",profile:"Front end web developer",desc:this.Sourabhdesc,url:"assets/images/football-min.jpg",fburl:this.sourabhFb},
-    {name:"Kapil Pokheriyal",profile:"Android Developer",desc:"",url:"assets/images/football-min.jpg",fburl:""},
+    {name:"Aniket Chaturvedi",profile:"Tech Lead",desc:this.Aniketdesc,url:"assets/images/sport-social-team-aniket.png",fburl:""},
+    {name:"Sourabh Arora",profile:"Front end web developer",desc:this.Sourabhdesc,url:"assets/images/sport-social-team-sourabh.png",fburl:this.sourabhFb},
+    {name:"Kapil Pokheriyal",profile:"Android Developer",desc:"",url:"assets/images/sport-social-team-kapil.png",fburl:""},
     {name:"Harsh Punj",profile:"Business Development Manager",desc:"",url:"assets/images/football-min.jpg",fburl:""},
     {name:"Aditya Shastry",profile:"Content Writer",desc:"",url:"assets/images/football-min.jpg",fburl:""},
     {name:"Anubhav Bajpeyee",profile:"Marketing and Blog Manager",desc:"",url:"assets/images/football-min.jpg",fburl:""},
-    {name:"Gopal Singh",profile:"UI/UX Designer",desc:"",url:"assets/images/football-min.jpg",fburl:""},
+    {name:"Gopal Singh",profile:"UI/UX Designer",desc:"",url:"assets/images/sport-social-team-gopal.png",fburl:""},
     {name:"Abhinav Katiyar",profile:"Assistant Blog Manager",desc:"",url:"assets/images/football-min.jpg",fburl:""}
   ]
   ngOnInit() {

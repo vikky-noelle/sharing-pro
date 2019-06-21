@@ -15,7 +15,7 @@
                   <div class="card" *ngFor = "let feed of game.gamearray;" id="abhiscroll" #widgetsContent>
                       <div class="head">
                           <div class="gamename">
-                              <b>{{gendercheck}} {{feed.GameName}} <h6>- {{Age}}</h6></b>
+                              <b>{{feed.gender}} {{feed.GameName}} <h6>- {{feed.age}}</h6></b>
                               <p>{{feed.Venue_Name | slice:0:30}}...</p>
                           </div>
                           <div class="result">
