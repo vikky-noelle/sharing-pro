@@ -230,13 +230,20 @@ p{
   color: white;
   background-image: url('/assets/images/sportsocialteamviewheader.jpg');
   font-weight: lighter;
-  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
+  font-size: 1.5em;
+  height:30px;
+  /* padding-left:3%; */
+  padding:1.5%;
+  /* box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.19); */
+}.dropbtn span{
+  margin-left: 10px;
 }
 .dropbtn img{
   float: right;
   padding: 3px;
-  height: 30px;
-  width: 30px;
+  margin-right: 15px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%; 
 }
 

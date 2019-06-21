@@ -18,15 +18,15 @@
     padding-left: 20px;
     height: 210px;
     z-index: 10;
-    border-bottom: 1px solid rgb(218, 218, 218);
+    border-bottom: 2px solid rgb(218, 218, 218);
 }
 .no-matches{
     height: 55px;
     padding-top: 2%;
-    border-bottom: 1px solid rgb(218, 218, 218);
+    border-bottom: 2px solid rgb(218, 218, 218);
 }
 .rightside{
-    margin-top: 0%;
+    margin-top: 1%;
     float: right;
     width: 82.5%;
     padding-left: 20px;
@@ -195,6 +195,7 @@ scrollbar-width: none;
 }
 
 .card{
+    position: relative;
     scroll-snap-align: start;
     margin: 1% 2.4% 0% 0%;
     border-radius: 2%;
@@ -258,25 +259,36 @@ scrollbar-width: none;
 }
 
 .cardData{
+    /* border: 1px solid red; */
+    position: absolute;
+    top:35px;
     float: left;
     width: 100%;
     height: 65px;
     margin: 2% 0% 2% 0%;
 }
 .cardData>div{
-    margin-top: 0%;
+   
     margin-left: 2%;
 }
 .team1 {
+    position: absolute;
+    top: 0%;
+    left:0%;
     width:30%;
 }
 .t1score {
-    margin-top: 0%;
+    position: absolute;
+    top: 0%;
     width: 30%;
+    left:30%;
 }
 
 .team2 {
+    top: 0%;
+    position: absolute;
     width:30%;
+    right:0%;
 }
 .team1,.team2 {
     text-align: center;
@@ -304,9 +316,11 @@ scrollbar-width: none;
 
 
 .matchstatus{
+    position: absolute;
+    top:100px;
     width: 96%;
     height: 45px;
-    margin-top: 25%;
+    /* margin-top: 25%; */
     padding: 2%;
 }
 .matchstatus>textarea{
@@ -323,14 +337,17 @@ scrollbar-width: none;
     font-weight: bolder;
 }
 .footer{
+    position: absolute;
     float: left;
     border-top: 1px solid #d3d1d1;
     width: 100%;
     height: 30px;
+    bottom:0%;
 }
-.Button{
-    float: left;
+.footer>.Button{
+     float: left; 
     border: none;
+    padding: 2%;
     width: 25%;
     outline: none;
     text-align: center;
@@ -405,7 +422,7 @@ scrollbar-width: none;
 }
 .rightside1 h1 h5{
     float: right;
-    margin-right: 5%;
+    margin-right: 7%;
     color: rgb(133, 131, 131);
     font-size: 0.8em;
     font-weight: lighter;
@@ -486,7 +503,8 @@ scrollbar-width: none;
         margin-top: 24%;
     }
     .rightside {
-        height: 450px;
+        margin-top: 4%;
+        height: 470px;
         width: 100%;
     }
     .rightside1 {
@@ -565,7 +583,7 @@ scrollbar-width: none;
         margin-top: 15px;
     }
 }
-@media screen and (min-width:377px) and (max-width:700px){
+@media screen and (min-width:377px) and (max-width:455px){
     .team1,.team2>p{
         font-size: 0.9em;
     }
@@ -593,7 +611,7 @@ scrollbar-width: none;
         margin-top: 24%;
     }
     .rightside {
-        height: 550px;
+        height: 480px;
         width: 100%;
     }
     .rightside1 {
@@ -610,7 +628,7 @@ scrollbar-width: none;
     }
     .card{
         width: 96%;
-        height: auto;
+        height: 210px;
     }
     .gamename,.result b{
         font-size: 0.8em;
@@ -663,23 +681,134 @@ scrollbar-width: none;
     .news-section{
         width: 90%;
         margin-top: 10%;
+        height: 130px;
     }
-    .news-section{
-        height: 230px;
-    }
+   
     .Button{
         font-size: 0.7em;
     }
     .gametopic>h3{
         margin-top: 15px;
     }
+ 
 }
-
+@media screen and (min-width:456px) and (max-width:700px){
+    .team1,.team2>p{
+        font-size: 0.9em;
+    }
+    .rightsidefooter{
+        width: 100%;
+    }
+    .creator{
+        margin-top: 12%;
+    }
+    .username{
+        font-size: .6em;
+    }
+    #creatorname{
+        font-size: .8em;
+    }
+    .eventtext>p{
+        font-size: .8em;
+    }
+    .home .sidenav{
+        display: none;
+    }
+    .msidenav{
+        text-align: center;
+        display:block;
+        margin-top: 24%;
+    }
+    .rightside {
+        height: 480px;
+        width: 100%;
+    }
+    .rightside1 {
+        height: 260px;
+        width: 100%;
+    }
+    .outdiv{
+        width: 90%;
+    }
+    .blog{
+        width: 92%;
+        height: auto;
+        margin: 13% auto 0%;
+    }
+    .card{
+        width: 70%;
+        height: 210px;
+    }
+    .gamename,.result b{
+        font-size: 0.8em;
+    }
+    .result p {
+        font-size: 0.7em;
+    }
+    .cardData img{
+        height: 35px;
+        width: 35px;
+    }
+    .t1score, .t2score{
+        font-size: 0.75em;
+    }
+    .blog .leftarrow{
+        display: none;
+    }
+    .blog .rightarrow{
+        display: none;
+    }
+    .home{
+        margin-top: 10%;
+    }
+    .topic{
+        width: 90%;
+        font-size: 1em;
+        padding-left: 20px;
+        margin-left: 0%;
+        /* margin-top: 1.5%; */
+    }
+    .topic-news{
+        width: 90%;
+        font-size: 0.9em;
+        padding-left: 25px;
+        margin-left: 0%;
+        /* margin-top: 1.5%; */
+    }
+    .rightside h1{
+        padding: 2px;
+        font-size: 1.1em;
+    }
+    .rightside1 h1{
+        padding: 2px;
+        font-size: 1.1em;
+    }
+    .topic h3{
+        font-size: 1.1em;
+        padding: 2px;
+    }
+    .news-section{
+        width: 90%;
+        margin-top: 10%;
+        height: 130px;
+    }
+   
+    .Button{
+        font-size: 0.7em;
+    }
+    .gametopic>h3{
+        margin-top: 15px;
+    }
+    .outdiv{
+        width:70%;
+    }
+}
 @media screen and (min-width: 701px) and (max-width: 864px){
     .rightsidefooter{
         width: 100%;
     }
     .rightside{
+        height: 540px;
         margin-top: 7%;
     }
     .rightside1{
@@ -691,7 +820,7 @@ scrollbar-width: none;
         height: auto;
     }
     .matchstatus{
-        margin-top: 80px;
+        /* margin-top: 80px; */
         height: 60px;
     }
     .leftarrow,.rightarrow{
@@ -699,7 +828,7 @@ scrollbar-width: none;
     }
     .card {
         width: 47%;
-        height: auto;
+        height: 210px;
     }
     .home .sidenav{
         display: none;
@@ -777,7 +906,7 @@ scrollbar-width: none;
         height: auto;
     }
     .matchstatus{
-        margin-top: 90px;
+        /* margin-top: 90px; */
         height: 60px;
     }
     .leftarrow,.rightarrow{
@@ -785,7 +914,7 @@ scrollbar-width: none;
     }
     .card {
         width: 47%;
-        height: auto;
+        height: 210px;
     }
     .home .sidenav{
         display: none;
@@ -858,7 +987,7 @@ scrollbar-width: none;
         height: 530px;
     }
     .card{
-        height: auto;
+        height: 210px;
         width: 47%;
     }
     .Button{

@@ -12,7 +12,7 @@
           <div class="blog" #widgets>  
               <!-- <div class="leftarrow" (click)="lscroll();"></div>  
               <div class="rightarrow" (click)="rscroll();"></div>  -->
-                  <div class="card" *ngFor = "let feed of game.gamearray;"  #widgetsContent>
+                  <div class="card" *ngFor = "let feed of game.gamearray;" id="abhiscroll" #widgetsContent>
                       <div class="head">
                           <div class="gamename">
                               <b>{{gendercheck}} {{feed.GameName}} <h6>- {{Age}}</h6></b>
@@ -46,10 +46,10 @@
                             <textarea disabled>{{feed.EventText | slice:0:100}}..</textarea>
                         </div>
                     <div class="footer">
-                      <button class="footer Button"><span *ngIf="feed.JoineeCount">{{feed.JoineeCount}}</span> Joinee</button>
-                      <button class="footer Button"><span *ngIf="feed.PromoteCount">{{feed.PromoteCount}}</span> Promote</button>
-                      <button class="footer Button">Subscribe</button>
-                      <button class="footer Button"><span *ngIf="feed.CommentCount">{{feed.CommentCount}}</span> Talk</button>
+                      <button class="Button"><span *ngIf="feed.JoineeCount">{{feed.JoineeCount}}</span> Joinee</button>
+                      <button class="Button"><span *ngIf="feed.PromoteCount">{{feed.PromoteCount}}</span> Promote</button>
+                      <button class="Button">Subscribe</button>
+                      <button class="Button"><span *ngIf="feed.CommentCount">{{feed.CommentCount}}</span> Talk</button>
                 </div> 
                   </div>    
               </div> 
