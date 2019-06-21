@@ -8,6 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 .back-body{
+    width: 100%;
     position: absolute;
     /* z-index: 1; */
 }
