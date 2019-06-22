@@ -1,7 +1,5 @@
-import { NewsidenavModule } from './newsidenav/newsidenav.module';
-// import { NewsidenavComponent } from './newsidenav/newsidenav.component';
 /* angular modules */
-
+import { CookieService } from 'ngx-cookie-service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
@@ -54,6 +52,7 @@ import { OurteamComponent } from './ourteam/ourteam.component';
 import { SsMatchCardModule } from './cards/ss-match-card/ss-match-card.module';
 import { NewHeaderModule } from './newheader/newheader.module';
 import { TeamviewComponent } from './teamview/teamview.component';
+import { NewsidenavModule } from './newsidenav/newsidenav.module';
 import { LocalitypageComponent } from './localitypage/localitypage.component';
 import { NewspageComponent } from './newspage/newspage.component';
 import { EventEmiterService } from './shared/services/event.emiter.service';
@@ -122,7 +121,8 @@ import { InteractionService } from './shared/services/interaction.service';
     EventEmiterService,
     InteractionService,
     // MessagingService,
-    AsyncPipe
+    AsyncPipe,
+    CookieService,
   ],
   bootstrap: [AppComponent]
 })

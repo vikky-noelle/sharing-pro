@@ -10,9 +10,9 @@ import {
   Output
 } from '@angular/core';
 import { PropertyService } from '../shared/services/property.service';
-import { EventEmiterService } from '../shared/services/event.emiter.service';
 import { EventEmitter } from 'events';
 import { InteractionService } from '../shared/services/interaction.service';
+import { CookieService } from 'ngx-cookie-service';
 
 @Injectable()
 @Component({
@@ -27,7 +27,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   l1=true;
   l2=true;
   openstatus = true;
-  Location = "Choose Location";
+  Location;
   mobileView: boolean = false;
   isMenuInDropdown: boolean = false;
   isSearchInDropdown: boolean = false;
@@ -35,6 +35,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   sidenav:boolean=false;
   searchButton:boolean=false;
   locationlist = [
+    {name: 'None', latitude: null, longitude: null},
     {name: 'Delhi', latitude: '77.1025',longitude: '28.7041'},
     {name: 'Gurugram', latitude: '77.0266',longitude: '28.4595'},
     {name: 'Gurugram', latitude: '77.0266',longitude: '28.4595'},
@@ -67,22 +68,33 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   arrowrotate = document.getElementsByClassName('arrow-rotate') as HTMLCollectionOf<HTMLElement>;
   arrowrotate1 = document.getElementsByClassName('arrow-rotate1') as HTMLCollectionOf<HTMLElement>;
   
+  cookieValue = "Unknown";
   @Output() emitcall: EventEmitter = new EventEmitter();
   @ViewChild('header') header;
   constructor(
     private height: PropertyService,
     private interact: InteractionService,
+    private cookie: CookieService
   ) { }
   
   latlong(longitude, latitude, name){
-    this.Location=name;
-    var arr=[];
-    arr[0] = longitude;
-    arr[1] = latitude;
-    // this._eventemiter.userToEdit= arr;
-    // this.home.ngfake();
-     // this.onFilter.emit('Register click');
-     this.interact.interactfunction(arr); 
+    if(name == 'None'){
+      this.Location = "Choose Location";
+      this.cookie.delete('longitude');
+      this.cookie.delete('latitude');
+      this.cookie.delete('name');
+      this.interact.interactfunction(null); 
+    }
+    else{
+      this.Location = name;
+      var arr=[];
+      arr[0] = longitude;
+      arr[1] = latitude;
+      this.cookie.set('longitude', arr[0]);
+      this.cookie.set('latitude', arr[1]);
+      this.cookie.set('name', name);
+      this.interact.interactfunction(arr); 
+    }
    }
   setMobileView() {
     const width = this.header.nativeElement.getBoundingClientRect().width;
@@ -174,6 +186,12 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     this.height.ofHeader.next(height);
   }
   ngOnInit() {
+    if(this.cookie.check('name')){
+      this.Location = this.cookie.get('name');
+    }
+    else{
+      this.Location="Choose Location";
+    }
     this.setMobileView();
   }
 

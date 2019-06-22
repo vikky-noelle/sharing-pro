@@ -40,7 +40,12 @@ export class HomeMatchFeedComponent{
     private router:Router
   ) { 
     this.interact.listen().subscribe((m:any) => {
-      this.nginit2(m[0],m[1]);
+      if(m === null){
+        this.ssmatchfeed();
+      }
+      else{
+        this.nginit2(m[0],m[1]);
+      }
   })
   }
   count=8;

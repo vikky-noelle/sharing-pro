@@ -1,3 +1,4 @@
+import { CookieService } from 'ngx-cookie-service';
 import { PostService } from './../../shared/services/post.service';
 import { Component, OnInit, ViewEncapsulation, Renderer2, HostListener, OnDestroy } from '@angular/core';
 import { Masonry } from 'ng-masonry-grid';
@@ -57,7 +58,8 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
     private time:TimeService,
     private router: Router,
     private postservice: PostService,
-    private event: InteractionService
+    private event: InteractionService,
+    private cookie: CookieService,
   ) {
     this.event.listentoroute().subscribe((topic:any) => {
       this.Matcharr = [];
@@ -74,9 +76,14 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
    }); 
   }
   openarenamatches(){
+    console.log(this.cookie.get('longitude'));
     var temp, checkstat, checkstat2, upcoming=false;
     var finished;
     this.location.getGeoLocation().then((pos)=>{
+      if(this.cookie.check('longitude')){
+        pos['latitude'] = this.cookie.get('latitude');
+        pos['longitude'] = this.cookie.get('longitude');
+      }
       for(var ij=0;ij<this.Sports.length;ij++){
       this.postservice.homeMatchFeed(pos['latitude'],pos['longitude'],this.Sports[ij].id,this.timestamp)
       .subscribe(data=>{
