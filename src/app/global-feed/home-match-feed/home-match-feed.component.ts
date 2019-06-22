@@ -30,6 +30,7 @@ export class HomeMatchFeedComponent{
   scroll=document.getElementsByClassName('c-element') as HTMLCollectionOf<HTMLElement>;
   @ViewChild('widgets') widgets:ElementRef;
   @ViewChild('widgetsContent') widgetsContent:ElementRef;
+  public scrollbarOptions = { axis: 'yx', theme: 'rounded-dots-dark', scrollButtons: { enable: true }};
   constructor(
     private _eventemiter: EventEmiterService,
     private getService: GetService,

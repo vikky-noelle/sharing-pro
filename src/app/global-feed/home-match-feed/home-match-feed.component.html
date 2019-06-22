@@ -9,7 +9,7 @@
             <h3>Matches<h5 (click)="gotoarena(game.gametitle)">See all</h5></h3>
         </div>
         
-          <div class="blog" #widgets>  
+          <div class="blog"  malihu-scrollbar [scrollbarOptions]="scrollbarOptions">  
               <!-- <div class="leftarrow" (click)="lscroll();"></div>  
               <div class="rightarrow" (click)="rscroll();"></div>  -->
                   <div class="card" *ngFor = "let feed of game.gamearray;" id="abhiscroll" #widgetsContent>

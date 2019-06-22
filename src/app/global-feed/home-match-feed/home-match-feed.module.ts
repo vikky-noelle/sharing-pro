@@ -7,6 +7,7 @@ import { FooterModule } from '../../footer/footer.module';
 import { SsMatchCardModule } from '../../cards/ss-match-card/ss-match-card.module';
 import { BackfooterModule } from '../../backfooter/backfooter.module';
 import { NewsidenavModule } from '../../newsidenav/newsidenav.module';
+import { MalihuScrollbarModule } from 'ngx-malihu-scrollbar';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { NewsidenavModule } from '../../newsidenav/newsidenav.module';
     FooterModule,
     NewsidenavModule,
     SsMatchCardModule,
-    BackfooterModule
+    BackfooterModule,
+    MalihuScrollbarModule.forRoot(),
   ],
   declarations: [HomeMatchFeedComponent],
   exports:[HomeMatchFeedComponent]
