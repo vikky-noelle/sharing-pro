@@ -58,6 +58,7 @@ import { LocalitypageComponent } from './localitypage/localitypage.component';
 import { NewspageComponent } from './newspage/newspage.component';
 import { EventEmiterService } from './shared/services/event.emiter.service';
 import { OpenHomeMatchCardModule } from './open-cards/open-home-match-card/open-home-match-card.module';
+import { InteractionService } from './shared/services/interaction.service';
 
 
 @NgModule({
@@ -119,6 +120,7 @@ import { OpenHomeMatchCardModule } from './open-cards/open-home-match-card/open-
     LinkService,
     SeoService,
     EventEmiterService,
+    InteractionService,
     // MessagingService,
     AsyncPipe
   ],

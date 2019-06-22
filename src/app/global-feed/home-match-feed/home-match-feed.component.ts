@@ -7,6 +7,7 @@ import { PostService } from '../../shared/services/post.service';
 import { LocationService } from '../../shared/services/location.service';
 import { GetService } from '../../shared/services/get.service';
 import { EventEmiterService } from '../../shared/services/event.emiter.service';
+import { InteractionService } from '../../shared/services/interaction.service';
 
 @Component({
   selector: 'sports-social-home-match-feed',
@@ -35,8 +36,13 @@ export class HomeMatchFeedComponent{
     private postservice:PostService,
     private time:TimeService,
     private location:LocationService,
+    private interact: InteractionService,
     private router:Router
-  ) { }
+  ) { 
+    this.interact.listen().subscribe((m:any) => {
+      this.nginit2(m[0],m[1]);
+  })
+  }
   count=8;
   sport= ['Cricket', 
   'Football', 
@@ -201,11 +207,8 @@ export class HomeMatchFeedComponent{
             }
           }
             for(var k=0; k<this.count; k++){
-              // console.log(this.sport[k]);
-              // console.log(gamename);
                 if(this.sport[k].toLowerCase()===gamename.toLowerCase()){
-                  console.log(this.sport.splice(k,1));
-
+                  this.sport.splice(k,1);
                   this.count=this.count-1;
                   break;
                 }
@@ -220,7 +223,6 @@ export class HomeMatchFeedComponent{
           }
           }
             if(this.count1===this.Sports.length){
-              console.log("hahahah"+this.sport);
             this.gett(this.sport);
           }  
      });
@@ -289,11 +291,42 @@ export class HomeMatchFeedComponent{
           finished= true;
           this.startTime="Match Finished";
         }
+        var agebracket= data["Feed"][i].ageBracket;
+        if(agebracket == 0){
+          this.Age="Under 13";
+        }
+        else if(agebracket ==1){
+          this.Age="Under 15";
+        }
+        else if(agebracket ==2){
+          this.Age="Under 17";
+        }
+        else if(agebracket ==3){
+          this.Age="Under 19";
+        }
+        else if(agebracket ==4){
+          this.Age="Under 21";
+        }
+        else if(agebracket ==5){
+          this.Age="Under 23";
+        }
+        else if(agebracket ==-1){
+          this.Age="Open for All";
+        }
+        var newstring=data["Feed"][i].gender;
+            if(newstring.toLowerCase() === "mix"){
+              this.gendercheck = "Mix-up";
+             }
+             else if(newstring.toLowerCase() === "female"){
+              this.gendercheck= "Women's";
+             }
+             else if (newstring.toLowerCase() === "male"){
+              this.gendercheck= "Men's";
+             }
             var Starttime= new Date( data["Feed"][i].startdatetime *1000);
             var timestampConvert= new String(Starttime).slice(3,21);
               arr.push({
               feedid:data["Feed"][i].feedid,
-              ageBracket:data["Feed"][i].ageBracket,
               finished: finished,
               Activity_name:data["Feed"][i].Activity_name,
               MatchStarterUniqueName:data["Feed"][i].MatchStarterUniqueName==null?"":"By:@"+data["Feed"][i].MatchStarterUniqueName,
@@ -314,64 +347,22 @@ export class HomeMatchFeedComponent{
               Team2Pic:tempimg,
               scoreTeam1:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?'':data["Feed"][i].scoreTeam1 + ' - ',
               scoreTeam2:data["Feed"][i].scoreTeam2==null || data["Feed"][i].scoreTeam1==null?'VS':data["Feed"][i].scoreTeam2,
-              gender:data["Feed"][i].gender,
+              gender:this.gendercheck,
               Profile_Photo:data["Feed"][i].Profile_Photo,
               City:data["Feed"][i].City,
               CommentCount:data["Feed"][i].CommentCount,
               PromoteCount:data["Feed"][i].PromoteCount,
               WatchCount:data["Feed"][i].WatchCount,
-              JoineeCount:data["Feed"][i].JoineeCount
+              JoineeCount:data["Feed"][i].JoineeCount,
+              age: this.Age
             });
-
-            var score1 = data["Feed"][i].scoreTeam1;
-            var score2 = data["Feed"][i].scoreTeam2;
-              
-            if(score1 == null || score2 == null){
-              this.finalstatus= this.time.ExactDate(data["Feed"][i].startdatetime);
-            }
-            else{
-              this.finalstatus="Match Finish";
-            }
-            var newstring=arr[i].gender;
-            if(newstring.toLowerCase() === "mix"){
-              this.gendercheck = "Mix-up";
-             }
-             else if(newstring.toLowerCase() === "female"){
-              this.gendercheck= "Women's";
-             }
-             else if (newstring.toLowerCase() === "male"){
-              this.gendercheck= "Men's";
-             }
-
-             var agebracket= arr[i].ageBracket;
-              if(agebracket == 0){
-                this.Age="Under 13";
-              }
-              else if(agebracket ==1){
-                this.Age="Under 15";
-              }
-              else if(agebracket ==2){
-                this.Age="Under 17";
-              }
-              else if(agebracket ==3){
-                this.Age="Under 19";
-              }
-              else if(agebracket ==4){
-                this.Age="Under 21";
-              }
-              else if(agebracket ==5){
-                this.Age="Under 23";
-              }
-              else if(agebracket ==-1){
-                this.Age="Open for All";
-              }
           }  
           if(arr.length>0){
             gamename = arr[0].GameName.replace(/ matches/g,"");
             this.getnewsdata(gamename.toLowerCase());
             for(var init=0; init<this.Sports.length;init++){
               if(this.Sports[init].title.toLowerCase() === gamename.toLowerCase()){
-                this.Matcharr[init] = {
+                this.Matchar[init] = {
                   gamenumber: init,
                   gametitle: arr[0].GameName,
                   gamearray: arr
@@ -379,19 +370,27 @@ export class HomeMatchFeedComponent{
               }
             }
           }
-          for(var k=0; k<this.count; k++){
-              if(this.sport[k]===gamename){
-                this.sport.splice(k,1);
-                this.count=this.count-1;
-                break;
+            for(var k=0; k<this.count; k++){
+                if(this.sport[k].toLowerCase() === gamename.toLowerCase()){
+                  this.sport.splice(k,1);
+                  this.count=this.count-1;
+                  break;
+                }
               }
-            }
+            if(this.count1 === this.Sports.length){
+            for(var init=0; init<this.Sports.length;init++){
+              if(this.Matchar[init] === undefined){
+              }
+              else{
+              this.Matcharr.push(this.Matchar[init]);
+             }
+          }
+          }
             if(this.count1===this.Sports.length){
               this.gett(this.sport);
           }  
      });
-    } 
-
+    }
   }
 
   gett(str){

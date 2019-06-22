@@ -32,7 +32,7 @@ const App_Route: Routes = [
     {path:"Helpcenter/:topicname",component:HelpCenterComponent},
     {path: "teamview",component:TeamviewComponent},
     {path: "localitypage", component:LocalitypageComponent},
-    {path: 'newspage', redirectTo: 'newspage/'},
+    {path: 'newspage', component:NewspageComponent},
     {
         path: "newspage/:topic", 
         component:NewspageComponent

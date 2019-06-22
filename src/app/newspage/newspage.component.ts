@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { GetService } from './../shared/services/get.service';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { EventEmiterService } from '../shared/services/event.emiter.service';
+import { InteractionService } from '../shared/services/interaction.service';
 @Component({
   selector: 'sports-social-newspage',
   templateUrl: './newspage.component.html',
@@ -39,8 +40,24 @@ export class NewspageComponent implements OnInit{
     private getService: GetService,
     private route: ActivatedRoute,
     private time: TimeService,
-    private router: Router
-  ) { }
+    private router: Router,
+    private event: InteractionService
+  ) { 
+    //this is how i interact between components
+    this.event.listentoroute().subscribe((topic:any) => {
+      this.news=[];
+      this.rnews=[];
+      this.list=[];
+      this.list1=[];
+      this.arr=[];
+      this.temp=[];
+      this.cdata=true;
+      this.ddata=true;
+      this.getnewss(topic);
+      this.ddata=false;
+      this.recentnews("");
+   }); 
+  }
 
   ngOnInit() {
   this.route.params.subscribe(params => {
@@ -55,9 +72,9 @@ export class NewspageComponent implements OnInit{
     this.mnewsurl = this.datastr.url;
     this.mnewssource = this.datastr.source;
     }
-   if(this.topic===""){
+   if(this.topic===undefined){
     this.cdata=false;
-    this.getnews(this.topic);
+    this.getnews('');
    }
    else{
     this.getnewss(this.topic);
@@ -70,30 +87,7 @@ export class NewspageComponent implements OnInit{
       this.getnewss(topic);
       this.recentnews("");
   }
-  // public ngfake(){
-  //   console.log("ngfake working");  
-  //   this.route.params.subscribe(params => {
-  //     this.topic = params.topic;
-  //     console.log("topic is  "+ this.topic);
-  //   });
-  //    if(this.topic===""){
-  //     this.cdata=false;
-  //     this.getnews(this.topic);
-  //    }
-  //    else{
-  //     this.getnewss(this.topic);
-  //      this.ddata=false;
-  //    }
-  //     this.recentnews("");
-  //     this.datastr=this._eventemiter.userToEdit;
-  //     if(this.datastr !== undefined){
-  //     this.mnewshead = this.datastr.title;
-  //     this.mnewstime = this.datastr.timestamp;
-  //     this.mnewsimage = this.datastr.image;
-  //     this.mnewsdesc = this.datastr.desc;
-  //     this.mnewsurl = this.datastr.url;
-  //     }
-  // }
+  
   recentnews(topic){
     if(this.c===1){
       this.rnews=[];
@@ -124,7 +118,6 @@ export class NewspageComponent implements OnInit{
   getnews(topic){
       this.getService.getsportnews(topic).subscribe(res=>{
         var body = JSON.parse(res._body);
-        console.log(body);
         var x;
         this.j=this.j+1;
         for (var i=0; i<5; i++) {
@@ -222,12 +215,14 @@ export class NewspageComponent implements OnInit{
     }
   } 
   getnewss(topic){
+    this.tempnews=[]
     if(this.c===1){
       this.news=[];
     }
       this.getService.getsportnews(topic).subscribe(res=>{
           var body = JSON.parse(res._body);
           var x;
+          this.j=-1;
           for (const i in body.news) {
             this.j=this.j+1;
             x = this.time.ExactDate(Date.parse(body.news[i].insertedDate)/1000);
@@ -271,7 +266,6 @@ export class NewspageComponent implements OnInit{
       });
   }
     opennews(id){
-      console.log(id);
       this.newsstatus=true;
       if(id < 5){
         if(this.firststatus){
@@ -305,10 +299,8 @@ export class NewspageComponent implements OnInit{
             this.news[i].id=this.news[i].id-1;
           }
           this.news[0].id=0;
-          console.log(this.news);
         }
         else{
-          console.log(this.arr);
           this.temp=this.arr;
           this.news.push({
             id: null,

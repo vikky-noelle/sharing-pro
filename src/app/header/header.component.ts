@@ -1,4 +1,3 @@
-import { HomeMatchFeedComponent } from './../global-feed/home-match-feed/home-match-feed.component';
 import {
   Component,
   OnInit,
@@ -7,10 +6,13 @@ import {
   ViewChild,
   AfterViewInit,
   Input,
-  Injectable
+  Injectable,
+  Output
 } from '@angular/core';
 import { PropertyService } from '../shared/services/property.service';
 import { EventEmiterService } from '../shared/services/event.emiter.service';
+import { EventEmitter } from 'events';
+import { InteractionService } from '../shared/services/interaction.service';
 
 @Injectable()
 @Component({
@@ -67,11 +69,12 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   arrowrotate = document.getElementsByClassName('arrow-rotate') as HTMLCollectionOf<HTMLElement>;
   arrowrotate1 = document.getElementsByClassName('arrow-rotate1') as HTMLCollectionOf<HTMLElement>;
   
+  @Output() emitcall: EventEmitter = new EventEmitter();
   @ViewChild('header') header;
   constructor(
     private height: PropertyService,
     private _eventemiter: EventEmiterService,
-    // private home: HomeMatchFeedComponent
+    private interact: InteractionService
   ) { }
   
   latlong(longitude, latitude, name){
@@ -81,7 +84,9 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     arr[1] = latitude;
     // this._eventemiter.userToEdit= arr;
     // this.home.ngfake();
-  }
+     // this.onFilter.emit('Register click');
+     this.interact.interactfunction(arr); 
+   }
   setMobileView() {
     const width = this.header.nativeElement.getBoundingClientRect().width;
     if ( width > 800 ) {

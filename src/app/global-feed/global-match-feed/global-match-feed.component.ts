@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
 import { TimeService } from '../../shared/services/time.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { LocationService } from '../../shared/services/location.service';
+import { InteractionService } from '../../shared/services/interaction.service';
 
 @Component({
   selector: 'sports-social-global-match-feed',
@@ -56,8 +57,22 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
     private time:TimeService,
     private router: Router,
     private postservice: PostService,
-  ) { }
-
+    private event: InteractionService
+  ) {
+    this.event.listentoroute().subscribe((topic:any) => {
+      this.Matcharr = [];
+      this.arr = [];
+      if(topic === null){
+        this.openarenamatches();
+        this.selected = "Open Arena";
+      }
+      else{
+        this.sportspecific(topic);
+        this.selected = topic[0].toUpperCase();
+        this.selected = this.selected + topic.slice(1);
+      }
+   }); 
+  }
   openarenamatches(){
     var temp, checkstat, checkstat2, upcoming=false;
     var finished;

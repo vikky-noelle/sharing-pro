@@ -55,17 +55,19 @@
     padding-left: 30px;
     display: none;
 }
-li.Active{
-    color: white;
+.openarenaopen a.Active{
+    color: black;
     font-weight: bold;
-    background-color: rgb(125, 206, 206);
 }
 .newsopen{
     list-style: none;
     padding-left: 30px;
     display: none;
 }
-
+.newsopen a.Active{
+    color: black;
+    font-weight: bold;
+}
 /* .msidenav{
     display: none;
     margin-top: 10%;
