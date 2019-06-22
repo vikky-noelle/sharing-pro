@@ -65,7 +65,8 @@
             <img class="arrow-rotate" src="assets/images/sportsocialhomearrow.png" alt="">
           </li>
             <ul id="niftview" class="open-arena-menu">
-              <a *ngFor="let data of openarenalist" (click)="topscroll()" href="/OpenArena/{{data.link}}"><li>{{data.name}}</li></a>
+              <a (click)="topscroll()" routerLink="/OpenArena"><li>Open Arena</li></a>
+              <a *ngFor="let data of openarenalist" (click)="topscroll(); routechange(data.name)" routerLink="/OpenArena/{{data.link}}"><li>{{data.name}}</li></a>
             </ul>
           <span class="dpslide">
             <li (click)="opennewsmenu()" id="niftview"><a>News</a>
@@ -73,7 +74,8 @@
             </li>
             </span>
             <ul id="niftview" class="open-news-menu">
-              <a *ngFor="let data of newslist" (click)="topscroll()" href="/newspage/{{data.link}}"><li>{{data.name}}</li></a>
+                <a (click)="topscroll()" routerLink="/newspage"><li>All News</li></a>
+              <a *ngFor="let data of newslist" (click)="topscroll(); routechange(data.name)" routerLink="/newspage/{{data.link}}"><li>{{data.name}}</li></a>
             </ul>
             <span class="dpslide2">
             <li><a (click)="topscroll()" routerLink="/about">About</a></li>

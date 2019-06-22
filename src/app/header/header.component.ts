@@ -40,7 +40,6 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     {name: 'Gurugram', latitude: '77.0266',longitude: '28.4595'},
   ]
   openarenalist=[
-    {link: '', name: 'Open Arena'},
     {link: 'cricket', name: 'Cricket' },
     {link: 'football', name: 'Football' },
     {link: 'basketball', name: 'Basketball' },
@@ -51,7 +50,6 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     {link: 'badminton', name: 'Badminton' },
   ]
   newslist=[
-    {link: '', name: 'All News'},
     {link: 'cricket', name: 'Cricket' },
     {link: 'football', name: 'Football' },
     {link: 'basketball', name: 'Basketball' },
@@ -73,8 +71,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   @ViewChild('header') header;
   constructor(
     private height: PropertyService,
-    private _eventemiter: EventEmiterService,
-    private interact: InteractionService
+    private interact: InteractionService,
   ) { }
   
   latlong(longitude, latitude, name){
@@ -190,5 +187,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   topscroll(){
     window.scrollTo(0,0);
   }
-
+  routechange(topic){
+    this.interact.routechangefunction(topic.toLowerCase());
+  }
 }
