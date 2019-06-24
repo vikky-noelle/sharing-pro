@@ -274,19 +274,19 @@ scrollbar-width: none;
     position: absolute;
     top: 0%;
     left:0%;
-    width:30%;
+    width:33%;
 }
 .t1score {
     position: absolute;
     top: 0%;
-    width: 30%;
+    width: 34%;
     left:30%;
 }
 
 .team2 {
     top: 0%;
     position: absolute;
-    width:30%;
+    width:33%;
     right:0%;
 }
 .team1,.team2 {

@@ -84,6 +84,9 @@ export class NewspageComponent implements OnInit{
     this.recentnews("");
    
   }
+  randomrouteresponse(){
+       this.router.navigate(['/newspage']);
+  }
   ngtemp(topic){
       this.getsportwise(topic);
       this.recentnews("");
@@ -224,6 +227,9 @@ export class NewspageComponent implements OnInit{
     }
       this.getService.getsportnews(topic).subscribe(res=>{
           var body = JSON.parse(res._body);
+          if(body.news.length === 0){
+            this.randomrouteresponse();
+          }
           var x;
           this.j=-1;
 

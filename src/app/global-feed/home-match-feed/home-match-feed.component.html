@@ -55,9 +55,10 @@
                   </div>    
               </div> 
           <div class="topic-news">
-              <h3>News<h5 (click)="changee(game.gametitle)">See all</h5></h3> 
+            <h3 *ngIf="news[game.gamenumber].length > 0">News<h5 (click)="changee(game.gametitle)">See all</h5></h3> 
+            <h3 *ngIf="news[game.gamenumber].length === 0">News<br><br><i>&nbsp;No News As Of Now!</i></h3> 
           </div>
-     <div class="news-section">
+     <div *ngIf="news[game.gamenumber].length > 0" class="news-section">
         <!-- <div class="lefttarrow" (click)="lscroll();">
           </div>  
         <div class="righttarrow" (click)="rscroll();">
