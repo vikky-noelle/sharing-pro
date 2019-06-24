@@ -16,11 +16,14 @@
     width: 84%;
     float: right;
 }
+<<<<<<< HEAD
 .matchfeed-rightside{
     /* margin-top: 4%; */
+=======
+.rightside{
+>>>>>>> 97a47c64d1959f852845ef0586a135e7e0f1945b
     width: 80%;
     float: right;
-    /* border-left: 1px solid rgb(218, 218, 218);  */
 }
 .newbox{
     overflow: hidden;
@@ -29,8 +32,6 @@
     margin-left:3%;
     width:45%;
     margin-bottom: 5%;
-    /* border: 1px solid red; */
-    /* display: inline-block; */
 }
 #col-4>a{
     color: black;
@@ -39,7 +40,6 @@
 @media screen and (min-width: 701px) and (max-width:768px){
     #col-4{
         width:46%;
-        /* margin-left:1%; */
     }
 }
 @media screen and (max-width:700px){

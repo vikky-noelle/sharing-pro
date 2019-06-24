@@ -46,7 +46,7 @@ export class GetService {
     return this.http.get("https://prod.chaseyoursport.com/loadStartingTenblogs");
   }
   getinstadata():Observable<any>{
-    return this.http.get("https://api.instagram.com/v1/users/self/media/recent/?access_token=3238782460.1408c01.8353203fa81f4905a2e9ce680a490e51");
+    return this.http.get("https://api.instagram.com/v1/users/self/media/recent/?access_token=3238782460.1408c01.eb3b954395f34b7cace3f67763626d2a");
   }
 
   getUpcomingCricket(){
