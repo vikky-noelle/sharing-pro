@@ -137,19 +137,19 @@
 .crousal::-webkit-scrollbar {
     display: none;
 }
-.c-element{
+.crousal-element{
     position: relative;
     scroll-snap-align: start;
     width: 100%;
     height: 50vh;
     display: inline-block;
 }
-.c-element img{
+.crousal-element img{
     height: 100%;
     overflow: hidden;
     width: 100%;
 }
-.c-head{
+.crousal-heading{
     text-align: left;
     color: white;
     position: absolute;
@@ -161,12 +161,12 @@
     transform: translate(-50%, -50%);
     
 }
-.c-head h1{
+.crousal-heading h1{
     font-size: 1.6em;
     padding: 15px;
     letter-spacing: 1px;
 }
-.c-head p{
+.crousal-heading p{
     font-size: 1.3em;
     letter-spacing: 1px;
     padding-left: 15px;
@@ -409,6 +409,11 @@
     width: 45%;
     float: right;
 }
+.spinner{
+    margin-top: 250px;
+    margin-right: 50%;
+    float: right;
+}
 .tnews{
     margin-left: 5%;
     width: 85%;
@@ -518,7 +523,7 @@
         border: 2px solid white;
         width: 100%;
     }
-    .c-element{
+    .crousal-element{
         height: 27vh;
    }
    .dnews{
@@ -550,7 +555,7 @@
         /* font-weight: lighter; */
        margin-bottom: 0;
    }
-   .c-head{
+   .crousal-heading{
        font-size: 0.4em;
        font-weight: lighter;
    }
@@ -613,7 +618,7 @@
         margin-left: 0%;
         width: 100%;
     }
-    .c-element{
+    .crousal-element{
         height: 27vh;
    }
    .larrow img{
@@ -631,7 +636,7 @@
    .crousal{
        margin-top: 2%;
    }
-   .c-element{
+   .crousal-element{
         height: 27vh;
    }
    .larrow img{

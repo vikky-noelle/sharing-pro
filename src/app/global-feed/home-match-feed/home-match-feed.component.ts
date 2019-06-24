@@ -1,6 +1,5 @@
 import { Subscription } from 'rxjs/Rx';
 import { Component, ViewChild, ElementRef} from '@angular/core';
-import { Http } from '@angular/http';
 import { Router } from '@angular/router';
 import { TimeService } from '../../shared/services/time.service';
 import { PostService } from '../../shared/services/post.service';
@@ -48,13 +47,14 @@ export class HomeMatchFeedComponent{
       }
   })
   }
-  count=8;
+  count=9;
   sport= ['Cricket', 
   'Football', 
   'Basketball', 
   'Badminton', 
   'Hockey', 
   'Tennis', 
+  'Snooker',
   'Table Tennis', 
   'Volleyball']
   Sports= [
@@ -64,10 +64,10 @@ export class HomeMatchFeedComponent{
     {id: 5, title: 'Badminton'},
     {id: 29, title: 'Hockey'},
     {id: 36, title: 'Tennis'},
+    {id: 46, title: 'Snooker'},
     {id: 56, title: 'Table Tennis'},
     {id: 60, title: 'Volleyball'}
   ];
-  Sports1=[5,6,17,23,29,36,56,60];
 
   count1 = 0;
 
@@ -212,6 +212,7 @@ export class HomeMatchFeedComponent{
             }
           }
             for(var k=0; k<this.count; k++){
+              console.log(this.sport[k]+"- is -"+gamename);
                 if(this.sport[k].toLowerCase()===gamename.toLowerCase()){
                   this.sport.splice(k,1);
                   this.count=this.count-1;

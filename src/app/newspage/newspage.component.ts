@@ -13,22 +13,23 @@ export class NewspageComponent implements OnInit{
   
   news=[];
   rnews=[];
-  list=[];
-  list1=[];
+  crousallist=[];
+  crousalitem=[];
   arr=[];
   temp=[];
   tempnews=[];
-  mnewshead;
-  mnewsimage;
-  mnewsdesc;
-  mnewsurl;
+  mainnewshead;
+  mainnewsimage;
+  mainnewsdesc;
+  mainnewsurl;
   firststatus=true;
   datastr;
   newsstatus = false;
-  mnewstime;
-  mnewssource;
+  mainnewstime;
+  mainnewssource;
   cdata=true;
   ddata=true;
+  show:boolean=false;
   topic;
   c=0;
   j=-1;
@@ -47,13 +48,13 @@ export class NewspageComponent implements OnInit{
     this.event.listentoroute().subscribe((topic:any) => {
       this.news=[];
       this.rnews=[];
-      this.list=[];
-      this.list1=[];
+      this.crousallist=[];
+      this.crousalitem=[];
       this.arr=[];
       this.temp=[];
-      this.cdata=true;
+      this.cdata=false;
       this.ddata=true;
-      this.getnewss(topic);
+      this.getsportwise(topic);
       this.ddata=false;
       this.recentnews("");
    }); 
@@ -65,26 +66,26 @@ export class NewspageComponent implements OnInit{
   });
   this.datastr=this._eventemiter.userToEdit;
   if(this.datastr !== undefined){
-    this.mnewshead = this.datastr.title;
-    this.mnewstime = this.datastr.timestamp;
-    this.mnewsimage = this.datastr.image;
-    this.mnewsdesc = this.datastr.desc;
-    this.mnewsurl = this.datastr.url;
-    this.mnewssource = this.datastr.source;
+    this.mainnewshead = this.datastr.title;
+    this.mainnewstime = this.datastr.timestamp;
+    this.mainnewsimage = this.datastr.image;
+    this.mainnewsdesc = this.datastr.desc;
+    this.mainnewsurl = this.datastr.url;
+    this.mainnewssource = this.datastr.source;
     }
    if(this.topic===undefined){
     this.cdata=false;
-    this.getnews('');
+    this.getallsportnews('');
    }
    else{
-    this.getnewss(this.topic);
+    this.getsportwise(this.topic);
      this.ddata=false;
    }
     this.recentnews("");
    
   }
   ngtemp(topic){
-      this.getnewss(topic);
+      this.getsportwise(topic);
       this.recentnews("");
   }
   
@@ -93,6 +94,7 @@ export class NewspageComponent implements OnInit{
       this.rnews=[];
     }
     this.getService.getsportnews(topic).subscribe(res=>{
+      this.show=true;
       var body = JSON.parse(res._body);
       var x;
       for (var i in body.news) {
@@ -115,18 +117,19 @@ export class NewspageComponent implements OnInit{
     });
 
   }
-  getnews(topic){
+  getallsportnews(topic){
       this.getService.getsportnews(topic).subscribe(res=>{
+        this.show=true;
         var body = JSON.parse(res._body);
         var x;
         this.j=this.j+1;
         for (var i=0; i<5; i++) {
-          // if(this.mnewsurl === body.news[i].url){
+          // if(this.mainnewsurl === body.news[i].url){
           //   continue;
           // }
           x = this.time.ExactDate(Date.parse(body.news[i].insertedDate)/1000);
           x = x.replace(/T/g," at "); 
-            this.list.push({
+            this.crousallist.push({
               id: i,
               game: body.news[i].gameName,
               source: body.news[i].source,
@@ -140,7 +143,7 @@ export class NewspageComponent implements OnInit{
           for(var i=5; i<7; i++){
             x = this.time.ExactDate(Date.parse(body.news[i].insertedDate)/1000);
             x = x.replace(/T/g," at "); 
-            this.list1.push({
+            this.crousalitem.push({
               id: i,
               source: body.news[i].source,
               game: body.news[i].gameName,
@@ -166,24 +169,24 @@ export class NewspageComponent implements OnInit{
           });
         }
           if(this.datastr === undefined){
-          this.mnewshead = this.news[0].title;
-          this.mnewstime = this.news[0].timestamp;
-          this.mnewsimage = this.news[0].image;
-          this.mnewsdesc = this.news[0].desc;
-          this.mnewsurl = this.news[0].url;
-          this.mnewssource = this.news[0].source;
+          this.mainnewshead = this.news[0].title;
+          this.mainnewstime = this.news[0].timestamp;
+          this.mainnewsimage = this.news[0].image;
+          this.mainnewsdesc = this.news[0].desc;
+          this.mainnewsurl = this.news[0].url;
+          this.mainnewssource = this.news[0].source;
           }
     });
   }
   openews(id, topic){
     this.c=1;
     if(id<5){
-      this.mnewshead = this.list[id].title;
-      this.mnewstime = this.list[id].timestamp;
-      this.mnewsimage = this.list[id].image;
-      this.mnewsdesc = this.list[id].desc;
-      this.mnewsurl = this.list[id].url; 
-      this.mnewssource = this.list[id].source; 
+      this.mainnewshead = this.crousallist[id].title;
+      this.mainnewstime = this.crousallist[id].timestamp;
+      this.mainnewsimage = this.crousallist[id].image;
+      this.mainnewsdesc = this.crousallist[id].desc;
+      this.mainnewsurl = this.crousallist[id].url; 
+      this.mainnewssource = this.crousallist[id].source; 
       this.ddata=false;
       this.cdata=true;
       this.ngtemp(topic);
@@ -191,30 +194,30 @@ export class NewspageComponent implements OnInit{
     }
     else if(id >= 5 && id < 7){
       id=id-5;
-      this.mnewshead = this.list1[id].title;
-      this.mnewstime = this.list1[id].timestamp;
-      this.mnewsimage = this.list1[id].image;
-      this.mnewsdesc = this.list1[id].desc;
-      this.mnewsurl = this.list1[id].url;  
-      this.mnewssource = this.list1[id].source; 
+      this.mainnewshead = this.crousalitem[id].title;
+      this.mainnewstime = this.crousalitem[id].timestamp;
+      this.mainnewsimage = this.crousalitem[id].image;
+      this.mainnewsdesc = this.crousalitem[id].desc;
+      this.mainnewsurl = this.crousalitem[id].url;  
+      this.mainnewssource = this.crousalitem[id].source; 
       this.ddata=false;1
       this.cdata=true;
       this.router.navigate(['/newspage', topic]);  
     }
     else{
       id=id-7;
-      this.mnewshead = this.news[id].title;
-      this.mnewstime = this.news[id].timestamp;
-      this.mnewsimage = this.news[id].image;
-      this.mnewsdesc = this.news[id].desc;
-      this.mnewsurl = this.news[id].url;  
-      this.mnewssource = this.news[id].source; 
+      this.mainnewshead = this.news[id].title;
+      this.mainnewstime = this.news[id].timestamp;
+      this.mainnewsimage = this.news[id].image;
+      this.mainnewsdesc = this.news[id].desc;
+      this.mainnewsurl = this.news[id].url;  
+      this.mainnewssource = this.news[id].source; 
       this.ddata=false;
       this.cdata=true;
       this.router.navigate(['/newspage', topic]); 
     }
   } 
-  getnewss(topic){
+  getsportwise(topic){
     this.tempnews=[]
     if(this.c===1){
       this.news=[];
@@ -223,6 +226,9 @@ export class NewspageComponent implements OnInit{
           var body = JSON.parse(res._body);
           var x;
           this.j=-1;
+
+          this.show=true;
+          this.cdata=true;
           for (const i in body.news) {
             this.j=this.j+1;
             x = this.time.ExactDate(Date.parse(body.news[i].insertedDate)/1000);
@@ -251,12 +257,12 @@ export class NewspageComponent implements OnInit{
           }
             if(this.c===0){
               if(this.datastr === undefined){
-                this.mnewshead = this.tempnews[0].title;
-                this.mnewstime = this.tempnews[0].timestamp;
-                this.mnewsimage = this.tempnews[0].image;
-                this.mnewsdesc = this.tempnews[0].desc;
-                this.mnewsurl = this.tempnews[0].url;
-                this.mnewssource = this.tempnews[0].source; 
+                this.mainnewshead = this.tempnews[0].title;
+                this.mainnewstime = this.tempnews[0].timestamp;
+                this.mainnewsimage = this.tempnews[0].image;
+                this.mainnewsdesc = this.tempnews[0].desc;
+                this.mainnewsurl = this.tempnews[0].url;
+                this.mainnewssource = this.tempnews[0].source; 
               }
             }
             if(i==="4"){
@@ -271,12 +277,12 @@ export class NewspageComponent implements OnInit{
         if(this.firststatus){
           id=id-1;
         }
-        this.mnewshead = this.news[id].title;
-        this.mnewstime = this.news[id].timestamp;
-        this.mnewsimage = this.news[id].image;
-        this.mnewsdesc = this.news[id].desc;
-        this.mnewsurl = this.news[id].url;
-        this.mnewssource = this.news[id].source; 
+        this.mainnewshead = this.news[id].title;
+        this.mainnewstime = this.news[id].timestamp;
+        this.mainnewsimage = this.news[id].image;
+        this.mainnewsdesc = this.news[id].desc;
+        this.mainnewsurl = this.news[id].url;
+        this.mainnewssource = this.news[id].source; 
       if(this.newsstatus){
         if(this.firststatus){
           var popnews = this.news.splice(id,1)[0];
@@ -324,18 +330,16 @@ export class NewspageComponent implements OnInit{
       }
       else{
         id=id-5;
-        this.mnewshead = this.rnews[id].title;
-        this.mnewstime = this.rnews[id].timestamp;
-        this.mnewsimage = this.rnews[id].image;
-        this.mnewsdesc = this.rnews[id].desc;
-        this.mnewsurl = this.rnews[id].url;
-        this.mnewssource = this.rnews[id].source; 
+        this.mainnewshead = this.rnews[id].title;
+        this.mainnewstime = this.rnews[id].timestamp;
+        this.mainnewsimage = this.rnews[id].image;
+        this.mainnewsdesc = this.rnews[id].desc;
+        this.mainnewsurl = this.rnews[id].url;
+        this.mainnewssource = this.rnews[id].source; 
       }
       this.topscroll();
     }
-    ngDestroy(){
-      
-    }
+
     topscroll(){
       window.scrollTo(0,0);
     }

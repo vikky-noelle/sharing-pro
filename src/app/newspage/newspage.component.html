@@ -2,31 +2,33 @@
 <div class="side-nav">
 <sports-social-newsidenav></sports-social-newsidenav>
 </div>
-<!-- home news -->
-<div *ngIf="ddata" class="home-body">
+<!-- All Sport View -->
+<img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf="news.length === 0" alt="">
+
+<div *ngIf="ddata && crousallist.length > 0" class="home-body" >
   <div class="larrow">
     <img (click)="lscroll()" src="/assets/images/sportsocialhomearrow1.png">
   </div>
   <div class="crousal" #widgets>
-    <div *ngFor="let data of list" 
-    class="c-element" #widgetsContent
+    <div *ngFor="let data of crousallist" 
+    class="crousal-element" #widgetsContent
     (click)="openews(data.id, data.game); topscroll();">
     <img  *ngIf="data.source === 'Football Italia'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfi.png'">
     <img  *ngIf="data.source === 'The Hindu'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialth.png'">
     <img  *ngIf="data.source === 'The Times of India'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialtoi.png'">
     <img  *ngIf="data.source === 'ESPN Cric Info'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialespn.jpg'">
     <img  *ngIf="data.source === 'Fox Sport'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfox-sport.png'">
-  <div class="c-head">
+  <div class="crousal-heading">
         <h1>{{data.title}}</h1>
         <p>{{data.source}}</p>
       </div>
     </div>  
   </div>
-  <div class="rarrow">
+  <div *ngIf="crousallist.length > 0" class="rarrow">
       <img (click)="rscroll()" src="/assets/images/sportsocialhomearrow.png">
   </div>
   <div *ngIf="ddata" class="dnews">
-    <div (click)="openews(data.id, data.game);topscroll();" *ngFor="let data of list1">
+    <div (click)="openews(data.id, data.game);topscroll();" *ngFor="let data of crousalitem">
       <img  *ngIf="data.source === 'Football Italia'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfi.png'">
     <img  *ngIf="data.source === 'The Hindu'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialth.png'">
     <img  *ngIf="data.source === 'The Times of India'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialtoi.png'">
@@ -50,12 +52,13 @@
     <p class="source">{{data.source}}&nbsp;<span>{{data.timestamp}}</span></p>
   </div>
 </div>
+
 <!-- sport wise view -->
-<div *ngIf="cdata" class="main-body">
+<div *ngIf="cdata && show" class="main-body">
 <div class="newsbody">
   <div class="news-header">
-  <h1>{{mnewshead}}</h1>
-  <h2 class="timestamp">{{mnewstime}}</h2>
+  <h1>{{mainnewshead}}</h1>
+  <h2 class="timestamp">{{mainnewstime}}</h2>
   <h2 class="share"> 
       <a href="https://twitter.com/chaseyoursport" target="_blank"><img src="assets/images/ssstwitter.png"></a>
       <a href="https://www.facebook.com/chaseyoursport/" target="_blank"><img src="assets/images/sssfacebook.png"></a>
@@ -68,13 +71,13 @@
   <div class="nbody">
   <div class="news">
     <div class="main-news">
-      <img  *ngIf="mnewssource === 'Football Italia'" src="{{mnewsimage}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfi.png'">
-      <img  *ngIf="mnewssource === 'The Hindu'" src="{{mnewsimage}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialth.png'">
-      <img  *ngIf="mnewssource === 'The Times of India'" src="{{mnewsimage}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialtoi.png'">
-      <img  *ngIf="mnewssource === 'ESPN Cric Info'" src="{{mnewsimage}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialespn.jpg'">
-      <img  *ngIf="mnewssource === 'Fox Sport'" src="{{mnewsimage}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfox-sport.png'">
-   <h1>{{mnewsdesc}}...</h1>
-      <a href="{{mnewsurl}}" target="_blank"><h3>READ MORE</h3></a>
+      <img  *ngIf="mainnewssource === 'Football Italia'" src="{{mainnewsimage}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfi.png'">
+      <img  *ngIf="mainnewssource === 'The Hindu'" src="{{mainnewsimage}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialth.png'">
+      <img  *ngIf="mainnewssource === 'The Times of India'" src="{{mainnewsimage}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialtoi.png'">
+      <img  *ngIf="mainnewssource === 'ESPN Cric Info'" src="{{mainnewsimage}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialespn.jpg'">
+      <img  *ngIf="mainnewssource === 'Fox Sport'" src="{{mainnewsimage}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfox-sport.png'">
+   <h1>{{mainnewsdesc}}...</h1>
+      <a href="{{mainnewsurl}}" target="_blank"><h3>READ MORE</h3></a>
       <br>
       <hr>
       <div class="more-news">
@@ -103,7 +106,7 @@
   </div>
 </div>
 </div>
-<!-- mobile view -->
+<!-- sport wise mobile view -->
 <div *ngIf="cdata" class="mobile-main">
     <h2 class="share"> 
        <a href="https://twitter.com/chaseyoursport" target="_blank"> <div class="twitter"></div> </a>
@@ -112,14 +115,14 @@
        <a href="https://www.instagram.com/chaseyoursport/" target="_blank"> <div class="insta"></div> </a>
       </h2>
   <div class="newscard">
-    <h1>{{mnewshead}}</h1>
-    <img  *ngIf="mnewssource === 'Football Italia'" src="{{mnewsimage}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfi.png'">
-      <img  *ngIf="mnewssource === 'The Hindu'" src="{{mnewsimage}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialth.png'">
-      <img  *ngIf="mnewssource === 'The Times of India'" src="{{mnewsimage}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialtoi.png'">
-      <img  *ngIf="mnewssource === 'ESPN Cric Info'" src="{{mnewsimage}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialespn.jpg'">
-      <img  *ngIf="mnewssource === 'Fox Sport'" src="{{mnewsimage}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfox-sport.png'">
-    <p>{{mnewsdesc}}</p>
-    <a href="{{mnewsurl}}" target="_blank"><h3>READ MORE</h3></a>
+    <h1>{{mainnewshead}}</h1>
+    <img  *ngIf="mainnewssource === 'Football Italia'" src="{{mainnewsimage}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfi.png'">
+      <img  *ngIf="mainnewssource === 'The Hindu'" src="{{mainnewsimage}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialth.png'">
+      <img  *ngIf="mainnewssource === 'The Times of India'" src="{{mainnewsimage}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialtoi.png'">
+      <img  *ngIf="mainnewssource === 'ESPN Cric Info'" src="{{mainnewsimage}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialespn.jpg'">
+      <img  *ngIf="mainnewssource === 'Fox Sport'" src="{{mainnewsimage}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfox-sport.png'">
+    <p>{{mainnewsdesc}}</p>
+    <a href="{{mainnewsurl}}" target="_blank"><h3>READ MORE</h3></a>
 
   </div>
   <div (click)="opennews(data.id);topscroll();" class="morecard" *ngFor="let data of news">
@@ -145,6 +148,6 @@
           </div>
     </div>
 </div>
-<div class="back-footer">
+<div class="back-footer" *ngIf="news.length > 0">
 <sports-social-backfooter></sports-social-backfooter>
 </div>
