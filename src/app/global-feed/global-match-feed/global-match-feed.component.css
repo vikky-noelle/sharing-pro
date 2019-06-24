@@ -1,7 +1,7 @@
 *{
     scroll-behavior: smooth;
 }
-.rightside h1{
+.matchfeed-rightside h1{
     font-weight: lighter;
     border-bottom: 1px solid silver;
     letter-spacing: 2px;
@@ -16,7 +16,7 @@
     width: 84%;
     float: right;
 }
-.rightside{
+.matchfeed-rightside{
     /* margin-top: 4%; */
     width: 80%;
     float: right;
@@ -49,7 +49,7 @@
   }
 }
 @media screen and (min-width: 200px) and (max-width: 700px){
-    .rightside{
+    .matchfeed-rightside{
         margin-top: 20px;
         width: 100%;
     }
@@ -61,7 +61,7 @@
     }
 }
 @media screen and (min-width: 701px) and (max-width: 950px){
-    .rightside{
+    .matchfeed-rightside{
         margin-top: 20px;
         width: 100%;
     }

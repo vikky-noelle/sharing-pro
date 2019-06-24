@@ -1,3 +1,4 @@
+import { CookieService } from 'ngx-cookie-service';
 import { Subscription } from 'rxjs/Rx';
 import { Component, ViewChild, ElementRef} from '@angular/core';
 import { Http } from '@angular/http';
@@ -30,14 +31,14 @@ export class HomeMatchFeedComponent{
   scroll=document.getElementsByClassName('c-element') as HTMLCollectionOf<HTMLElement>;
   @ViewChild('widgets') widgets:ElementRef;
   @ViewChild('widgetsContent') widgetsContent:ElementRef;
-  public scrollbarOptions = { axis: 'yx', theme: 'rounded-dots-dark', scrollButtons: { enable: true }};
+  public scrollbarOptions = { axis: 'xy', theme: 'rounded-dark'};
   constructor(
     private _eventemiter: EventEmiterService,
     private getService: GetService,
     private postservice:PostService,
-    private time:TimeService,
     private location:LocationService,
     private interact: InteractionService,
+    private cookie: CookieService,
     private router:Router
   ) { 
     this.interact.listen().subscribe((m:any) => {
@@ -75,6 +76,10 @@ export class HomeMatchFeedComponent{
   ssmatchfeed(){
     var gamename;
     this.location.getGeoLocation().then((pos)=>{
+      if(this.cookie.check('longitude')){
+        pos['latitude'] = this.cookie.get('latitude');
+        pos['longitude'] = this.cookie.get('longitude');
+      }
       for(var i=0;i<this.Sports.length;i++){
       var tempsport = this.Sports;
       this.postservice.homeMatchFeed(pos['latitude'],pos['longitude'],this.Sports[i].id,this.timestamp)
