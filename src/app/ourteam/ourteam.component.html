@@ -10,7 +10,7 @@
     <div class="cards">
       <div class="cardsbody" *ngFor="let data of imgarr">
             <div class="cardsimg">
-              <img src="{{data.url}}">
+              <img src="{{data.url}}" onerror="this.src='assets/images/user.png'">
             </div>
 
             <div class="cardData">
