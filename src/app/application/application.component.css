@@ -14,15 +14,15 @@ html{
     /* z-index: 1; */
 }
 
-.back-body>div>img{
-    opacity: 0.6;
-}
+/* .back-body>div>img{
+    opacity: 1;
+} */
 .back-body-image-one{
     float: left;
     width: 68%;
     position: relative;
     height: 2700px;
-    background-color: #000000;
+    /* background-color: #585858; */
 }
 .back-body-image-two{
     float: right;

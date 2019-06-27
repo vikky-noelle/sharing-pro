@@ -10,7 +10,7 @@
         </div>
         
         <!-- <div class="blog"  malihu-scrollbar [scrollbarOptions]="scrollbarOptions">   -->
-          <div class="blog">  
+          <div class="blog" >  
             <!-- <div class="leftarrow" (click)="lscroll();"></div>  
               <div class="rightarrow" (click)="rscroll();"></div>  -->
                   <div class="card" *ngFor = "let feed of game.gamearray;" #widgetsContent>
@@ -58,7 +58,7 @@
               </div> 
           <div class="topic-news">
             <h3>News<h5 (click)="changee(game.gametitle)">See all</h5></h3> 
-            <h3><i>No News As Of Now!</i></h3> 
+            <h3 *ngIf="news.length === 0"><i>No News As Of Now!</i></h3> 
           </div>
      <div  class="news-section">
         <!-- <div class="lefttarrow" (click)="lscroll();">

@@ -435,10 +435,12 @@ export class HomeMatchFeedComponent{
         }
       }
       name = name.replace(/ /g,"-");
-      this.tnews.push({
-        gamename: name,
-        gamenews: arr
-      });
+      if(arr.length>0){
+        this.tnews.push({
+          gamename: name,
+          gamenews: arr
+        });
+      }
     });
   }
   getnewsdata(topic){
