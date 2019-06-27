@@ -4,6 +4,9 @@
     margin-top: 4%;
     overflow: hidden;
 }
+.spinner{
+    margin-top: 20%;
+}
 .home>div{
     display: inline-block;
 }
@@ -274,19 +277,19 @@ scrollbar-width: none;
     position: absolute;
     top: 0%;
     left:0%;
-    width:30%;
+    width:33%;
 }
 .t1score {
     position: absolute;
     top: 0%;
-    width: 30%;
+    width: 34%;
     left:30%;
 }
 
 .team2 {
     top: 0%;
     position: absolute;
-    width:30%;
+    width:33%;
     right:0%;
 }
 .team1,.team2 {
@@ -344,6 +347,7 @@ scrollbar-width: none;
     bottom:0%;
 }
 .footer>.Button{
+    cursor: pointer;
      float: left; 
     border: none;
     padding: 2%;
@@ -351,7 +355,8 @@ scrollbar-width: none;
     outline: none;
     text-align: center;
     font-size: 0.8em;
-    color: #686868;
+    /* color: #686868; */
+    color: #045a8b;
     background-color: transparent;
 }
 .news-section{
@@ -475,6 +480,9 @@ scrollbar-width: none;
 
 
 @media screen and (min-width:200px) and (max-width:376px){
+    .spinner{
+        margin-top: 55%;
+    }
     .team1,.team2>p{
         font-size: 0.9em;
     }
@@ -502,7 +510,7 @@ scrollbar-width: none;
         margin-top: 24%;
     }
     .rightside {
-        margin-top: 4%;
+        margin-top: 6%;
         height: 470px;
         width: 100%;
     }
@@ -583,6 +591,9 @@ scrollbar-width: none;
     }
 }
 @media screen and (min-width:377px) and (max-width:455px){
+    .spinner{
+        margin-top: 55%;
+    }
     .team1,.team2>p{
         font-size: 0.9em;
     }
@@ -612,6 +623,7 @@ scrollbar-width: none;
     .rightside {
         height: 480px;
         width: 100%;
+        margin-top: 5%;
     }
     .rightside1 {
         height: 260px;
@@ -692,6 +704,9 @@ scrollbar-width: none;
  
 }
 @media screen and (min-width:456px) and (max-width:700px){
+    .spinner{
+        margin-top: 55%;
+    }
     .team1,.team2>p{
         font-size: 0.9em;
     }
@@ -721,6 +736,7 @@ scrollbar-width: none;
     .rightside {
         height: 480px;
         width: 100%;
+        margin-top: 5%;
     }
     .rightside1 {
         height: 260px;
@@ -803,6 +819,9 @@ scrollbar-width: none;
     }
 }
 @media screen and (min-width: 701px) and (max-width: 864px){
+    .spinner{
+        margin-top: 55%;
+    }
     .rightsidefooter{
         width: 100%;
     }
@@ -888,6 +907,9 @@ scrollbar-width: none;
     }
 }
 @media screen and (min-width: 865px) and (max-width: 950px){
+    .spinner{
+        margin-top: 55%;
+    }
     .rightsidefooter{
         width: 100%;
     }
@@ -971,6 +993,9 @@ scrollbar-width: none;
     }
 }
 @media screen and (min-width: 951px) and (max-width: 1100px){
+    .spinner{
+        margin-top: 55%;
+    }
     .blog{
         margin: 12% auto 0%;
         height: 290px;

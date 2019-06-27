@@ -37,12 +37,18 @@
   
 <div class="outer-body">
 <div class="rightside"> 
-    <div class="outdiv" *ngFor="let feed of Matcharr;let i=index">
+    <!-- <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf="Matcharr.length === 0" alt=""> -->
+    <div class="outdiv" *ngFor="let feed of Matcharr; let i=index">
       <div class="card">
             <div class="head">
                 <div class="gamename">
                     <b>{{genderCheck}} {{feed.GameName}} - <span style="font-weight: lighter;font-size: 0.9em;color: #444444">{{Age}}</span></b>
                     <p>{{feed.Venue_Name}}</p>
+                    <br>
+                    <div class="fulllength">
+                        <h6>{{feed.Venue_Name | slice:0:35}}....</h6>
+                      <span class="addresstext">{{feed.Venue_Name}}</span>
+                    </div>
                 </div>
                 <div class="result">
                   <b>{{feed.result}}</b><br>
@@ -75,7 +81,7 @@
                 <textarea disabled>{{resultOfMatch}}</textarea>
             </div>
             <div class="matchstatus">
-                <textarea disabled>{{feed.EventText}}</textarea>
+                <p>{{feed.EventText}}</p>
             </div>
           
             <div class="performermatch">
@@ -91,7 +97,7 @@
             </div>
 
             <div class="footer">
-                  <button (click)="first()" class="one" style="background: none; color: black; font-size: 1em;">Match Talk</button>
+                  <button (click)="first()" class="one">Match Talk</button>
                   <button (click)="second()" class="two">Moments</button>
                   <button (click)="third()" class="three">Line Ups</button>
             </div> 

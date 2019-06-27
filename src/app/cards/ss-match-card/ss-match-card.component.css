@@ -2,14 +2,14 @@
  .head{
     line-height: 1.1;
     width: 100%;
-    height: 34px;
+    height: 27px;
     display: inline-block;
     margin-top: 1%;
     border-bottom: 1px solid #dddddd;
 }
 .head>b{
     margin-left: 1%;
-    font-size: 1em;
+    font-size: 0.8em;
     margin-top: 10px;
 }
 
@@ -18,13 +18,13 @@
     margin-right: 1%;
 }
 .rresult{
-    margin-top: -26px;
+    margin-top: -23px;
     float: right;
     margin-right: 1%;
     width: auto;
 }
 .rresult>p{
-    font-size: .9em;
+    font-size: 0.8em;
 }
 .rresult p img{
     margin-top: 2px;
@@ -59,7 +59,7 @@
 }
 .cardData{
     width: 100%;
-    height: 60px;
+    height: 50px;
     display: inline-flex;
     margin-top: 2%;
     margin-bottom: 10%;
@@ -68,13 +68,14 @@
     width: 20%;
     text-align: center;
 }
-.vs>h3{
+.vs>b{
     font-weight: bolder;
-    margin-top: 8%;
+    margin-top: 10%;
+    font-size: .9em;
 }
-.vs>p{
+/* .vs>p{
     font-size: 0.7em;
-}
+} */
 .creator{
     margin-top: 8%;
     width: 100%;
@@ -103,19 +104,23 @@
 }
 .card{
     width: 90%;
-    height: 284px;
+    height: auto;
     margin-bottom: 2%;
     border-radius: 2%;
     box-shadow: 0 4px 8px 0 rgba(173, 172, 172, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
 }
 .eventtext{
     width: 100%;
-    height: 90px;
+    height: 50px;
     font-size: 1em;
 }
 .eventtext>p{
-    padding: 10px;
-    font-size: 0.9em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.7em;
+    color: grey;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -144,6 +149,7 @@
 
 .team1{
     /* margin-left: 3%; */
+    font-size: 0.9em;
     width: 40%;
 }
 .team1,.team2 p{
@@ -158,12 +164,13 @@
 .team1>img{
     margin: 0 auto;
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 42px;
+    width: 42px;
     /* margin-left: 18%; */
 }
 .team2{
     text-align: center;
+    font-size: 0.9em;
     /* margin-left: 7%; */
     width: 40%;
 }
@@ -171,8 +178,8 @@
  .team2>img{
     margin: 0 auto;
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 42px;
+    width: 42px;
 }
 
 
@@ -188,7 +195,7 @@
     cursor: pointer;
     outline: none;
     text-align: center;
-    font-size: 1em;
+    font-size: 0.8em;
     width: 25%;
     padding: 5px;
     color: #7e7d7d;
@@ -236,7 +243,7 @@
         padding: 7px;
     }
     .eventtext{
-        height: 100px;
+        height: 50px;
         margin-bottom: 5%;
     }
     .eventtext>p{

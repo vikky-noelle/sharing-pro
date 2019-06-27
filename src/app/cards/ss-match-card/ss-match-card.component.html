@@ -18,8 +18,8 @@
                   </div>
 
                   <div class="vs">
-                      <h3 *ngIf="!finished">VS<br><span *ngIf="upcoming" style="font-size: 0.7em; font-weight: lighter;">On<br>{{starttimestamp}}</span></h3>
-                      <h3 *ngIf="finished">{{scoreTeam1}}{{scoreTeam2}}</h3>
+                      <b *ngIf="!finished">VS<br><span *ngIf="upcoming" style="font-size: 0.7em; font-weight: lighter;">On<br>{{starttimestamp}}</span></b>
+                      <b *ngIf="finished">{{scoreTeam1}}{{scoreTeam2}}</b>
                    </div>
 
                    <div class="team2">
@@ -34,13 +34,14 @@
             </div> -->
             
             <div class="eventtext">
-                    <p>{{EventText|slice:0:120}}...</p>
+                    <p>{{EventText|slice:0:90}}...</p>
                 </div>
             <div class="footer">
                   <button class="playButton"><span *ngIf="JoineeCount">{{JoineeCount}}</span> Joinee</button>
+                  <button class="commentButton"><span *ngIf="CommentCount">{{CommentCount}}</span> Talk</button>
                   <button class="promoteButton"><span *ngIf="PromoteCount">{{PromoteCount}}</span> Promote</button>
                   <button class="watchButton">Subscribe</button>
-                  <button class="commentButton"><span *ngIf="CommentCount">{{CommentCount}}</span> Talk</button>
+                  
             </div>
 
 </div>
