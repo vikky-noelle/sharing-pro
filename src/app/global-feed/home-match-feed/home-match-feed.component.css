@@ -200,7 +200,7 @@ scrollbar-width: none;
 .card{
     position: relative;
     scroll-snap-align: start;
-    margin: 1% 2.4% 0% 0%;
+    margin: 1% 2.4% 0% .2%;
     border-radius: 2%;
     /* display: grid; */
     display: block;
