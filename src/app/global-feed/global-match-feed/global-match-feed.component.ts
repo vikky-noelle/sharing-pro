@@ -114,6 +114,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         var convertdate=new String(new Date(data["Feed"][i].startdatetime*1000));
         this.startTime=convertdate.slice(3,21);
         checkstat = Date.now();
+        checkstat = checkstat/1000;
         checkstat2 = data["Feed"][i].startdatetime;
         
         if(checkstat>checkstat2){
@@ -138,6 +139,9 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
           this.startTime="Upcoming";
           finished= false; 
           upcoming=true;   
+          if(data["Feed"][i].Team2name === "None"){
+            this.startTime = "Waiting for oponent";
+          }
         }
         if(data["Feed"][i].scoreTeam1!==null && data["Feed"][i].scoreTeam2!==null){
           finished= true;
@@ -288,6 +292,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         var convertdate=new String(new Date(data["Feed"][i].startdatetime*1000));
         this.startTime=convertdate.slice(3,21);
         checkstat = Date.now();
+        checkstat = checkstat/1000;
         checkstat2 = data["Feed"][i].startdatetime;
         
         if(checkstat>checkstat2){

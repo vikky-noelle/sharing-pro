@@ -108,12 +108,12 @@ export class HomeMatchFeedComponent{
               if(data["Feed"][i].JoineeCount===0){
                 data["Feed"][i].JoineeCount = false;
               }
-              checkstat = Date.now();
+        checkstat = Date.now();
+        checkstat = checkstat/1000;
         checkstat2 = data["Feed"][i].startdatetime;
-        
         if(checkstat>checkstat2){
           if((checkstat-checkstat2)>86400){
-            if(data["Feed"][i].scoreTeam1===null || data["Feed"][i].scoreTeam2===null){
+            if(data["Feed"][i].scoreTeam1===null && data["Feed"][i].scoreTeam2===null){
               this.startTime="Score Awaited";
               finished= false;
             } 
@@ -129,10 +129,15 @@ export class HomeMatchFeedComponent{
             }
           }
         }
+        // if(checkstat2>checkstat){
+        // }
         if(checkstat === checkstat2 || checkstat < checkstat2){
           this.startTime="Upcoming";
           finished= false; 
           upcoming=true;   
+          if(data["Feed"][i].Team2name === "None"){
+            this.startTime = "Waiting for oponent";
+          }
         }
         if(data["Feed"][i].scoreTeam1!==null && data["Feed"][i].scoreTeam2!==null){
           finished= true;
@@ -218,7 +223,7 @@ export class HomeMatchFeedComponent{
             }
           }
             for(var k=0; k<this.count; k++){
-              console.log(this.sport[k]+"- is -"+gamename);
+              // console.log(this.sport[k]+"- is -"+gamename);
                 if(this.sport[k].toLowerCase()===gamename.toLowerCase()){
                   this.sport.splice(k,1);
                   this.count=this.count-1;
