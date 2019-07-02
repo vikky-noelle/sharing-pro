@@ -5,11 +5,9 @@
 <div class="newbox">
 <div class="matchfeed-rightside">
     <h1>{{selected}}</h1>
-        <ng-masonry-grid  
-              [masonryOptions]="{ transitionDuration: '0.4s'}"
-              [useAnimation]="false">
+        <!-- <ng-masonry-grid> -->
               <img class="spinner" src="assets/images/sports-social-loading.gif"  *ngIf="Matcharr.length == 0" alt="">
-              <ng-masonry-grid-item  id="col-4" *ngFor = "let feed of Matcharr; let i = index">
+              <div  id="col-4" *ngFor = "let feed of Matcharr; let i = index">
 
                 <!-- <a>
                     <div class="outdiv">
@@ -84,8 +82,8 @@
                   [CommentCount]="feed.CommentCount"
                   ></sports-social-ss-match-card>
           </a>
-       </ng-masonry-grid-item>
-    </ng-masonry-grid>
+        </div>
+    <!-- </ng-masonry-grid> -->
 </div>
 </div>
 <div class="rightsidefooter" *ngIf="Matcharr.length !== 0">
