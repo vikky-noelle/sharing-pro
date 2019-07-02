@@ -74,6 +74,7 @@ export class HomeMatchFeedComponent{
   count1 = 0;
 
   ssmatchfeed(){
+    console.log("This is timestamp for home card ",this.timestamp);
     var gamename;
     this.location.getGeoLocation().then((pos)=>{
       if(this.cookie.check('longitude')){
@@ -218,7 +219,7 @@ export class HomeMatchFeedComponent{
             }
           }
             for(var k=0; k<this.count; k++){
-              console.log(this.sport[k]+"- is -"+gamename);
+              // console.log(this.sport[k]+"- is -"+gamename);
                 if(this.sport[k].toLowerCase()===gamename.toLowerCase()){
                   this.sport.splice(k,1);
                   this.count=this.count-1;

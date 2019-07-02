@@ -18,10 +18,10 @@
   <div class="menu" *ngIf="!isMenuInDropdown">
     <ul>
       <li>
-        <a routerLink="/about" class="About btn btn-responsive" (click)="topscroll()" >About</a>
+        <a routerLink="/about"  (click)="topscroll()" routerLinkActive="active">About</a>
       </li>
       <li>
-        <a routerLink="/application" (click)="topscroll()" >App</a> <!--https://goo.gl/qrgCz5-->
+        <a routerLink="/application" (click)="topscroll()" routerLinkActive="active" >App</a> <!--https://goo.gl/qrgCz5-->
       </li>
       <li>
         <a routerLink="/teamview" (click)="topscroll()" routerLinkActive="active">Team</a> 
@@ -30,7 +30,7 @@
         <a routerLink="/localitypage" (click)="topscroll()" routerLinkActive="active">Locality</a> 
     </li>
       <li>
-        <a routerLink="/HelpCenter" (click)="topscroll()" >Help</a> 
+        <a routerLink="/HelpCenter" (click)="topscroll()" routerLinkActive="active">Help</a> 
       </li>
       
     </ul>
