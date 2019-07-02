@@ -89,6 +89,15 @@ export class HomeMatchFeedComponent{
         var arr=[];
           for(var i=0;i<data["Feed"].length;i++){
             var tempimg, checkstat, checkstat2, finished, upcoming=false;
+            // console.log(Date.now(data["Feed"][i].startdatetime);
+            var timestamp= new Date(data["Feed"][i].startdatetime*1000);
+            var timrstampstr = new String(timestamp).slice(16,21);
+            var timrstampstr2 = new String(timestamp).slice(0,10);
+            timrstampstr = timrstampstr2.slice(0,3) +" "+ timrstampstr;
+            timrstampstr2 = timrstampstr2.slice(3)
+            // var Ondate = + " at " + timrstampstr;
+            // console.log("Thsis is timestamp",timestamp);
+            
               if(data["Feed"][i].Team2name === null){
                 tempimg = "/assets/images/sportsocialteamlogo.png";
                 data["Feed"][i].Team2name = "None";
@@ -178,6 +187,8 @@ export class HomeMatchFeedComponent{
             var Starttime= new Date( data["Feed"][i].startdatetime *1000);
             var timestampConvert= new String(Starttime).slice(3,21);
               arr.push({
+              Ondate: timrstampstr2,
+              Ontime: timrstampstr, 
               feedid:data["Feed"][i].feedid,
               finished: finished,
               Activity_name:data["Feed"][i].Activity_name,
@@ -198,7 +209,7 @@ export class HomeMatchFeedComponent{
               Team2name:data["Feed"][i].Team2name,
               Team2Pic:tempimg,
               scoreTeam1:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?'':data["Feed"][i].scoreTeam1 + ' - ',
-              scoreTeam2:data["Feed"][i].scoreTeam2==null || data["Feed"][i].scoreTeam1==null?'VS':data["Feed"][i].scoreTeam2,
+              scoreTeam2:data["Feed"][i].scoreTeam2==null || data["Feed"][i].scoreTeam1==null?false:data["Feed"][i].scoreTeam2,
               gender:this.gendercheck,
               Profile_Photo:data["Feed"][i].Profile_Photo,
               City:data["Feed"][i].City,

@@ -21,7 +21,7 @@
     padding-left: 20px;
     height: 210px;
     z-index: 10;
-    border-bottom: 2px solid rgb(218, 218, 218);
+    border-bottom: 1px solid rgb(218, 218, 218);
 }
 .no-matches{
     height: 55px;
@@ -139,14 +139,14 @@ scrollbar-width: none;
 }
 .topic>h2{
     font-weight: bolder;
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-top: 10px;
     margin-bottom: 8px;
     color: #024771;
 }
 .topic>h3{
     font-weight: lighter;
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin-top: 10px;
     margin-bottom: 8px;
 }
@@ -207,6 +207,7 @@ scrollbar-width: none;
     grid-template-rows: 100px 300px;
     width: 31%;
     height: 210px;
+    /* background-color: rgb(252, 252, 252); */
     margin-bottom: 1%;
     border-radius: 2%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.10);
@@ -214,6 +215,7 @@ scrollbar-width: none;
 
 .head{
     width: 100%;
+    /* padding-left: 10px; */
     height: 38px;
     border-bottom: 1px solid #dddddd;
 }
@@ -221,18 +223,24 @@ scrollbar-width: none;
     height: 100%;
     width: 60%;
     float:left;
-    padding: 1%;
+    padding-top: 1px;
+    padding-left: 10px;
 }
 .gamename>b{
     display: inline-flex;
     font-size: 0.8em;
+    font-weight: 400;
 }
 .gamename>b>h6{
+    margin-top: 1px;
+    letter-spacing: 0.6px;
     font-size: .8em;
-    color: #686868;
+    color: #444444;
+    font-weight: 400;
 }
 .gamename>p {
-    font-size: 0.7em;
+    font-size: 0.6em;
+    color: #444444;
     font-weight: lighter;
 }
 
@@ -240,24 +248,29 @@ scrollbar-width: none;
     height: 100%;
     width: 30%;
     float: right;
+    margin-top: 1px;
     padding: 1%;
+    /* padding-right: 4%; */
 }
 .result b img{
     height: 8px;
     width: 8px;
+    font-weight: lighter;
 }
 .result b,.result p {
     float: right;
 }
 .result b {
     font-size: 0.8em;
+    font-weight: lighter;
 }
 
 .result p {
     font-size: 0.7em;
-    font-weight: bold;
+    /* font-weight: bold; */
     /* color: #5f5e5e; */
     color: #024771;
+    padding-right: 10px;
 }
 
 .cardData{
@@ -284,8 +297,12 @@ scrollbar-width: none;
     top: 0%;
     width: 34%;
     left:30%;
+    line-height: 0.9;
 }
-
+.t1score b span{
+    font-size: 0.7em;
+    font-weight: 400;
+}
 .team2 {
     top: 0%;
     position: absolute;
@@ -335,8 +352,9 @@ scrollbar-width: none;
     resize: none;
     text-align: center;
     height: auto;
-    font-size: .6em;
-    font-weight: bolder;
+    color: black;
+    font-size: .7em;
+    font-weight: lighter;
 }
 .footer{
     position: absolute;
@@ -356,8 +374,12 @@ scrollbar-width: none;
     text-align: center;
     font-size: 0.8em;
     /* color: #686868; */
-    color: #045a8b;
+    /* color: #045a8b; */
     background-color: transparent;
+}
+.footer>.Button span{
+    color: #045a8b;
+    font-weight: bold;
 }
 .news-section{
     margin: 1% auto;
