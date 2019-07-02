@@ -200,7 +200,7 @@ scrollbar-width: none;
 .card{
     position: relative;
     scroll-snap-align: start;
-    margin: 1% 2.4% 0% 0%;
+    margin: 1% 2.4% 0% .2%;
     border-radius: 2%;
     /* display: grid; */
     display: block;
@@ -217,7 +217,7 @@ scrollbar-width: none;
     width: 100%;
     /* padding-left: 10px; */
     height: 38px;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #ebebeb;
 }
 .gamename{
     height: 100%;
@@ -297,11 +297,11 @@ scrollbar-width: none;
     top: 0%;
     width: 34%;
     left:30%;
-    line-height: 0.9;
+    line-height: 0.8;
 }
 .t1score b span{
     font-size: 0.7em;
-    font-weight: 400;
+    /* font-weight: 500; */
 }
 .team2 {
     top: 0%;
@@ -359,7 +359,7 @@ scrollbar-width: none;
 .footer{
     position: absolute;
     float: left;
-    border-top: 1px solid #d3d1d1;
+    border-top: 1px solid #ebebeb;
     width: 100%;
     height: 30px;
     bottom:0%;
@@ -370,6 +370,7 @@ scrollbar-width: none;
     border: none;
     padding: 2%;
     width: 25%;
+    color: #444444;
     outline: none;
     text-align: center;
     font-size: 0.8em;
@@ -465,7 +466,7 @@ scrollbar-width: none;
     
 }
 .news-card:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    box-shadow: 0 4px 8px 0 rgba(126, 125, 125, 0.1), 0 6px 8px 0 rgba(133, 132, 132, 0.1);
 }
 .news-img{
     float: left;

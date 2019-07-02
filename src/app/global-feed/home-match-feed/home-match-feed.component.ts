@@ -74,6 +74,7 @@ export class HomeMatchFeedComponent{
   count1 = 0;
 
   ssmatchfeed(){
+    console.log("This is timestamp for home card ",this.timestamp);
     var gamename;
     this.location.getGeoLocation().then((pos)=>{
       if(this.cookie.check('longitude')){

@@ -16,7 +16,7 @@
                   <div class="card" *ngFor = "let feed of game.gamearray;" #widgetsContent>
                       <div class="head">
                           <div class="gamename">
-                              <b>{{feed.gender}} {{feed.GameName}} <h6>&nbsp;&nbsp;-&nbsp;&nbsp;{{feed.age}}</h6></b>
+                              <b>{{feed.gender}} {{feed.GameName}} <h6>&nbsp;-&nbsp;{{feed.age}}</h6></b>
                               <p>{{feed.Venue_Name | slice:0:30}}...</p>
                           </div>
                           <div class="result">
@@ -38,7 +38,7 @@
                                       <b *ngIf="feed.scoreTeam2" style="font-size: 1.2em;">{{feed.scoreTeam2}}</b>
                                       <b *ngIf="!feed.scoreTeam2" style="font-size: 1.2em;"><span>{{feed.Ontime}}</span></b>
                                       <br>
-                                      <b *ngIf="!feed.scoreTeam2" style="font-size: 1em;"><span>{{feed.Ondate}}</span></b>
+                                      <b *ngIf="!feed.scoreTeam2" style="font-size: 1em; font-weight: lighter;color: #444444;"><span>{{feed.Ondate}}</span></b>
                                   </div>
                                   <div class="cardData team2">
                                     <img src={{feed.Team2Pic}} onerror="this.src='assets/images/user.png'">
