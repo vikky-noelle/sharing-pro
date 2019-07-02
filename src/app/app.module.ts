@@ -42,7 +42,6 @@ import { SeoService } from './shared/services/seo.service';
 import { AsyncPipe } from '@angular/common';
 // import {AngularFirestoreModule} from 'angularfire2/firestore';
 import { LivedataComponent } from './livedata/livedata.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
 import { GooglePlaceModule } from "ngx-google-places-autocomplete";
 import {AgmCoreModule } from '@agm/core';
 import { FormsModule, ReactiveFormsModule }    from '@angular/forms';
@@ -58,6 +57,8 @@ import { NewspageComponent } from './newspage/newspage.component';
 import { EventEmiterService } from './shared/services/event.emiter.service';
 import { OpenHomeMatchCardModule } from './open-cards/open-home-match-card/open-home-match-card.module';
 import { InteractionService } from './shared/services/interaction.service';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ContactUsModule } from './contact-us/contact-us.module';
 
 
 @NgModule({
@@ -69,12 +70,12 @@ import { InteractionService } from './shared/services/interaction.service';
     // NewsidenavComponent,  
     ApplicationComponent,
     LivedataComponent,
-    ContactUsComponent,
     OurteamComponent,
     // FirebaseComponent,
     TeamviewComponent,
     LocalitypageComponent,
     NewspageComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId:'sport-social'}),

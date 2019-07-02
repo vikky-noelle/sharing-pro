@@ -172,6 +172,7 @@ agm-map {
     vertical-align: bottom;
     width: 100%;
     margin-top: 40%;
+    position: relative;
 }
 
 @media screen and (min-width:200px) and (max-width:720px){

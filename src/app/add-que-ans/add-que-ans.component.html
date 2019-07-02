@@ -7,23 +7,22 @@
     <div class="sidenav">
         <ul class="side-nav">
           <li><a routerLink="/HelpCenter"><div class="topicdata"><img style="height: 18px;width:18px;padding-top:3%;" src="/assets/images/sportsocialarrowleft.png"><p>Go Back</p></div></a></li>
-          <li routerLinkActive="active" *ngFor="let qa of  quesAns; let i = index">
-            <a routerLink="/HelpCenter/{{name}}/{{qa.qques}}" [queryParams]="{ topic_id: topicId , id: subtopicId, qid: qid, name:name}">
+          <li routerLinkActive="active" *ngFor="let qa of quesAns; let i = index">
+            <a routerLink="/HelpCenter/{{name}}/{{qa.qques}}" routerLinkActive="active" [queryParams]="{ topic_id: topicId , id: subtopicId, qid: qid, name:name}">
             <div class="topicdata" (click)="getAns(qa.id)">
-              <!-- <img src="{{data.icon}}"> -->
-             &nbsp;&nbsp;<p>{{qa.ques}}</p>
+              <!-- <img src="{{qa.icon}}"> -->
+             &nbsp;&nbsp;
+             <p [innerHtml]="qa.ques"></p>
             </div>
           </a>
           </li>
           </ul>
       </div>
-    <div class="problems">
+    <div class="quesTitle">
         <div class="subtopicdata">
             <h1 [innerHtml]="Ques"></h1>
             <hr>
-            <!-- <br>
-            <img src="{{img}}">
-            <br> -->
+           
             <br>
               <p [innerHtml]="Ans"></p>
           </div>
@@ -49,14 +48,10 @@
                  <div style="width:80%" (click)="getAns(qa.id); close();">
                     {{qa.ques}} 
                </div></a>  
-                    
-             
              </div>
-             </div> 
-           
-                
+             </div>      
              <br><br>
-             <div class="problemss">
+             <div class="quesTitles">
                     <h1 [innerHtml]="Ques"></h1>
                     <hr>
                     <br>

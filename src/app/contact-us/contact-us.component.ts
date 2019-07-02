@@ -24,16 +24,19 @@ export class ContactUsComponent implements OnInit {
   lat: number = 28.4700264/*=28.473660*/;
   lng: number = 77.0889223/*=77.086710*/;
   zoom: number = 15;
+  formresponse;
   constructor(private http:Http,private post:PostService,
     private metattitle:Title,
     private metaservice:Meta) {  }
 
   onsubmit(form2:Contactus2){
     this.post.saveformdata(form2).subscribe((res)=>{
-      // console.log("this is forom data",res);
-      window.location.reload();
+      console.log("this is forom data",res[0].status);
+      this.formresponse=res;
+      // window.location.reload();
     })
   }
+
 
   ngOnInit() {
     this.metattitle.setTitle(this.title);
@@ -43,5 +46,6 @@ export class ContactUsComponent implements OnInit {
     this.metaservice.updateTag({property:'og:title',content:this.title});
     this.metaservice.updateTag({property:'og:keywords',content:this.keywords});
     this.metaservice.updateTag({property:'og:description',content:this.description});
+    
   }  
 }
