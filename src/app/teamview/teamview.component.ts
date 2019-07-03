@@ -17,16 +17,16 @@ export class TeamviewComponent implements OnInit {
   mview: Number;
   constructor(private post:PostService,
     private titleservice:Title,
-    private metaservice:Meta) { }
+    private metaservice:Meta) {this.titleservice.setTitle(this.title);
+      this.metaservice.updateTag({name:'title',content:this.title});
+      this.metaservice.updateTag({name: 'keywords' , content:this.keywords});
+      this.metaservice.updateTag({name:'description',content:this.description});
+      this.metaservice.updateTag({property:'og:title',content:this.title});
+      this.metaservice.updateTag({property:'og:keywords',content:this.keywords});
+      this.metaservice.updateTag({property:'og:description',content:this.description}); }
 
   ngOnInit() {
-  this.titleservice.setTitle(this.title);
-  this.metaservice.updateTag({name:'title',content:this.title});
-  this.metaservice.updateTag({name: 'keywords' , content:this.keywords});
-  this.metaservice.updateTag({name:'description',content:this.description});
-  this.metaservice.updateTag({property:'og:title',content:this.title});
-  this.metaservice.updateTag({property:'og:keywords',content:this.keywords});
-  this.metaservice.updateTag({property:'og:description',content:this.description});
+  
     this.tmv();
     //mobile view 
     if(window.innerWidth <= 700) {

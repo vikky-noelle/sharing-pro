@@ -18,9 +18,7 @@ export class LocalitypageComponent implements OnInit {
   photo;
   constructor(private post:PostService,
     private titleservice:Title,
-    private metaservice:Meta) { }
-
-  ngOnInit() {
+    private metaservice:Meta) { 
   this.titleservice.setTitle(this.title);
   this.metaservice.updateTag({name:'title',content:this.title});
   this.metaservice.updateTag({name: 'keywords' , content:this.keywords});
@@ -28,6 +26,10 @@ export class LocalitypageComponent implements OnInit {
   this.metaservice.updateTag({property:'og:title',content:this.title});
   this.metaservice.updateTag({property:'og:keywords',content:this.keywords});
   this.metaservice.updateTag({property:'og:description',content:this.description});
+    }
+
+  ngOnInit() {
+  
     this.lmv();
     if(window.innerWidth <= 700) {
       this.mview = 0;

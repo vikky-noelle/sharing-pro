@@ -1,9 +1,8 @@
-
 <header #header>
   <div class="brand">
     <a routerLink="/">
       <div class="brand-image">
-        <img src="/assets/images/sports-social-logo.png" alt="Sport-Social-logo">
+        <img src="assets/images/sports-social-logo.png" alt="Sport-Social-logo">
       </div>
       <div class="brand-title">
         <span>Sports</span>
@@ -12,65 +11,82 @@
       </div>
     </a>
   </div>
-  <!-- <div class="search" *ngIf="!isSearchInDropdown">
-    <input type="text" placeholder="Search Sport Social">
-  </div> -->
+  <div class="search-bar-shell">
+    <div class="search-bar">
+      <img src="/assets/images/sportsociallocation.png" alt="">
+      <h1>{{Location|slice:0:15}}</h1>
+      <ul class="location-dropdown">
+        <li><input type="text"></li>
+        <li class="li-dropdown" *ngFor="let data of locationlist" (click)="latlong(data.longitude, data.latitude, data.name)">{{data.name}}</li>
+      </ul>
+    </div>
+  </div>
   <div class="menu" *ngIf="!isMenuInDropdown">
+      <!-- <div class="search" *ngIf="!isSearchInDropdown">
+          <input type="text"   placeholder="  Search Sport Social">
+        </div> -->
     <ul>
+        <!-- <li>
+            <a routerLink="/live" class="About btn btn-responsive" routerLinkActive="active">Live</a>
+          </li> -->
       <li>
-        <a routerLink="/about"  (click)="topscroll()" routerLinkActive="active">About</a>
+        <a routerLink="/about" class="About btn btn-responsive" routerLinkActive="active" (click)="topscroll()">About</a>
       </li>
       <li>
-        <a routerLink="/application" (click)="topscroll()" routerLinkActive="active" >App</a> <!--https://goo.gl/qrgCz5-->
+        <a routerLink="/application" routerLinkActive="active" (click)="topscroll()">App</a> <!--https://goo.gl/qrgCz5-->
       </li>
       <li>
-        <a routerLink="/team" (click)="topscroll()" routerLinkActive="active">Team</a> 
-    </li>
-    <li>
-        <a routerLink="/locality" (click)="topscroll()" routerLinkActive="active">Locality</a> 
-    </li>
+          <a routerLink="/team" (click)="topscroll()" routerLinkActive="active">Team</a> 
+      </li>
+      <li>
+          <a routerLink="/locality" (click)="topscroll()" routerLinkActive="active">Locality</a> 
+      </li>
       <li>
         <a routerLink="/HelpCenter" (click)="topscroll()" routerLinkActive="active">Help</a> 
       </li>
-      
     </ul>
   </div>
-      <!-- mobile view -->
-  <div class="mobile-view" *ngIf="mobileView">
-    <div class="dropdown-menu-image-holder">
-      <img src="/assets/images/sports-social-menu.png" (click)="openDropdown()">
-    </div>
-    <div class="dropdown-menu" *ngIf="isDropdownIconclicked">
-      <div class="dropdown-cancel-image-holder">
-        <img src="/assets/images/sports-social-cancel-black.png"  (click)="closeDropdown()">
-      </div>
-      <ul  *ngIf="isMenuInDropdown">
-          <li>
-              <a routerLink="/about" routerLinkActive="active">About</a> 
-          </li>
-          <li>
-            <a routerLink="/application" routerLinkActive="active">App</a> <!--https://goo.gl/qrgCz5-->
-          </li>
-          <li>
-            <a routerLink="/team" (click)="topscroll()" routerLinkActive="active">Team</a> 
-        </li>
-        <li>
-            <a routerLink="/locality" (click)="topscroll()" routerLinkActive="active">Locality</a> 
-        </li>
-          <li>
-            <a routerLink="/HelpCenter" routerLinkActive="active">Help</a> 
-          </li>
-          
-      </ul>
-      <!-- <ng-container  *ngIf="isSearchInDropdown">
-        <div class="dropdown-search">
-          <input type="text" placeholder="Search Sports Social">
-        </div>
-        <button>Search</button>
-      </ng-container> -->
-    </div>
-  </div>
 
+  <!-- mobile view -->
+
+  <div class="mobile-view">
+      <div class="dropdown-menu-image-holder">
+          <img src="/assets/images/sports-social-menu.png" (click)="openDropdown()">
+      </div>
+      
+      <div class="slide-menu">
+          <div class="closemenu">
+            <img class="closeicon" src="assets/images/sportsocialhomearrow.png" (click)="openDropdown()">
+         </div>
+        <ul class="ul">
+          <a routerLink="/" (click)="topscroll()"><li>Home</li></a>
+          <li (click)="openarenamenu()" id="niftview">
+            <a>Arena</a>
+            <img class="arrow-rotate" src="assets/images/sportsocialhomearrow.png" alt="">
+          </li>
+            <ul id="niftview" class="open-arena-menu">
+              <a (click)="topscroll()" routerLink="/OpenArena"><li>Open Arena</li></a>
+              <a *ngFor="let data of openarenalist" (click)="topscroll(); routechange(data.name)" routerLink="/OpenArena/{{data.link}}"><li>{{data.name}}</li></a>
+            </ul>
+          <span class="dpslide">
+            <li (click)="opennewsmenu()" id="niftview"><a>News</a>
+              <img class="arrow-rotate1" src="assets/images/sportsocialhomearrow.png" alt="">
+            </li>
+            </span>
+            <ul id="niftview" class="open-news-menu">
+                <a (click)="topscroll()" routerLink="/newspage"><li>All News</li></a>
+              <a *ngFor="let data of newslist" (click)="topscroll(); routechange(data.name)" routerLink="/newspage/{{data.link}}"><li>{{data.name}}</li></a>
+            </ul>
+            <span class="dpslide2">
+            <li><a (click)="topscroll()" routerLink="/about">About</a></li>
+            <li><a routerLink="/application" (click)="topscroll()">App</a></li>
+            <li><a routerLink="/team" (click)="topscroll()">Team</a></li>
+            <li><a routerLink="/locality" (click)="topscroll()">Locality</a></li>
+            <li><a routerLink="/HelpCenter" (click)="topscroll()">Help</a></li>
+          </span>
+        </ul>
+      </div>
+  </div>
     
 </header>
 

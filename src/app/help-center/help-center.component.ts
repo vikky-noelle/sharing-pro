@@ -24,9 +24,6 @@ export class HelpCenterComponent implements OnInit {
   constructor(private title:Title,
     private meta:Meta,
     private link:LinkService) { 
-}
-
-  ngOnInit() {
     this.title.setTitle(this.pagetitle);
     this.meta.updateTag({name:'title',content:this.pagetitle});
     this.meta.updateTag({name:'description',content:this.description});
@@ -34,6 +31,10 @@ export class HelpCenterComponent implements OnInit {
     this.meta.updateTag({property:'og:title',content:this.pagetitle});
     this.meta.updateTag({property:'og:description',content:this.description});
     this.meta.updateTag({property:'og:keywords',content:this.metakeywords});
+}
+
+  ngOnInit() {
+    
   }
   setCanonivalURL() {
     let key;
