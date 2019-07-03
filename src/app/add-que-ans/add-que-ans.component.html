@@ -7,8 +7,8 @@
     <div class="sidenav">
         <ul class="side-nav">
           <li><a routerLink="/HelpCenter"><div class="topicdata"><img style="height: 18px;width:18px;padding-top:3%;" src="/assets/images/sportsocialarrowleft.png"><p>Go Back</p></div></a></li>
-          <li routerLinkActive="active" *ngFor="let qa of  quesAns; let i = index">
-            <a routerLinkActive="active" routerLink="/HelpCenter/{{name}}/{{qa.ques}}" 
+          <li *ngFor="let qa of  quesAns; let i = index">
+            <a routerLinkActive="active" routerLink="/HelpCenter/{{qa.name}}/{{qa.ques}}" 
             [routerLinkActiveOptions]="{exact: true}"
             [queryParams]="{ topic_id: topicId , id: subtopicId, qid: qid, name:name}">
             <div class="topicdata" (click)="getAns(qa.id)">
@@ -17,7 +17,7 @@
             </div>
           </a>
           </li>
-          </ul>
+        </ul>
       </div>
     <div class="problems">
         <div class="subtopicdata">
