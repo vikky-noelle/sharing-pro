@@ -2065,6 +2065,13 @@ var AboutComponent = /** @class */ (function () {
             "to play and follow their favorite sport.";
         this.descDisplay = "";
         this.margin.height.subscribe(function (top) { return _this.marginTop = top; });
+        this.titleservice.setTitle(this.title);
+        this.metaservice.updateTag({ name: 'title', content: this.title });
+        this.metaservice.updateTag({ name: 'keywords', content: this.keywords });
+        this.metaservice.updateTag({ name: 'description', content: this.description });
+        this.metaservice.updateTag({ property: 'og:title', content: this.title });
+        this.metaservice.updateTag({ property: 'og:keywords', content: this.keywords });
+        this.metaservice.updateTag({ property: 'og:description', content: this.description });
     }
     AboutComponent.prototype.instafeed = function () {
         var _this = this;
@@ -2114,13 +2121,6 @@ var AboutComponent = /** @class */ (function () {
     AboutComponent.prototype.ngOnInit = function () {
         // console.log(this.desc.nativeElement.textContent);
         this.instafeed();
-        this.titleservice.setTitle(this.title);
-        this.metaservice.updateTag({ name: 'title', content: this.title });
-        this.metaservice.updateTag({ name: 'keywords', content: this.keywords });
-        this.metaservice.updateTag({ name: 'description', content: this.description });
-        this.metaservice.updateTag({ property: 'og:title', content: this.title });
-        this.metaservice.updateTag({ property: 'og:keywords', content: this.keywords });
-        this.metaservice.updateTag({ property: 'og:description', content: this.description });
         this.getLatestBlog();
         this.setCanonicalURL();
         this.typeWriterTitle(this.descTitle, 0);
@@ -2879,8 +2879,6 @@ var ApplicationComponent = /** @class */ (function () {
         this.title = 'Download the Sports Social App from Google PlayStore';
         this.keywords = "Sports Social,Sports Social App,Best Sports app India,Play Your Sport,Sports Networking app,Sports Profile,Playmates,Sports Fans,Connect to Sports players,Sports Venues Near by,Sports app,All Sports app,Free Sports App,Online Sports App";
         this.description = "Sports Social app is your personal sports manager that lets you maintain your sports profile,Making your sports & fitness groups (Playmates), Follow others sports activities and create a fan following , Connect with other sports enthusiasts, Discover sports and fitness activities near you and much more. You can also locate the Venues Nearby for more than 10 Sports including Cricket, Football, Lawn Tennis, Badminton etc.";
-    }
-    ApplicationComponent.prototype.ngOnInit = function () {
         this.titleservice.setTitle(this.title);
         this.metaservice.updateTag({ name: 'title', content: this.title });
         this.metaservice.updateTag({ name: 'keywords', content: this.keywords });
@@ -2888,6 +2886,8 @@ var ApplicationComponent = /** @class */ (function () {
         this.metaservice.updateTag({ property: 'og:title', content: this.title });
         this.metaservice.updateTag({ property: 'og:keywords', content: this.keywords });
         this.metaservice.updateTag({ property: 'og:description', content: this.description });
+    }
+    ApplicationComponent.prototype.ngOnInit = function () {
     };
     return ApplicationComponent;
 }());
@@ -3965,7 +3965,7 @@ function View_ContactUsComponent_0(_l) { return i1.ɵvid(0, [i1.ɵqud(402653184,
     } if (("ngModelChange" === en)) {
         var pd_4 = ((_co.form.message = $event) !== false);
         ad = (pd_4 && ad);
-    } return ad; }, null, null)), i1.ɵdid(65, 16384, null, 0, i5.DefaultValueAccessor, [i1.Renderer2, i1.ElementRef, [2, i5.COMPOSITION_BUFFER_MODE]], null, null), i1.ɵdid(66, 16384, null, 0, i5.RequiredValidator, [], { required: [0, "required"] }, null), i1.ɵprd(1024, null, i5.NG_VALIDATORS, function (p0_0) { return [p0_0]; }, [i5.RequiredValidator]), i1.ɵprd(1024, null, i5.NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [i5.DefaultValueAccessor]), i1.ɵdid(69, 671744, null, 0, i5.NgModel, [[2, i5.ControlContainer], [6, i5.NG_VALIDATORS], [8, null], [6, i5.NG_VALUE_ACCESSOR]], { name: [0, "name"], model: [1, "model"] }, { update: "ngModelChange" }), i1.ɵprd(2048, null, i5.NgControl, null, [i5.NgModel]), i1.ɵdid(71, 16384, null, 0, i5.NgControlStatus, [[4, i5.NgControl]], null, null), (_l()(), i1.ɵeld(72, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(73, 0, null, null, 1, "button", [["type", "submit"]], [[8, "disabled", 0]], null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Send"])), (_l()(), i1.ɵeld(75, 0, null, null, 10, "div", [["class", "right-model"]], null, null, null, null, null)), (_l()(), i1.ɵeld(76, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Follow Us"])), (_l()(), i1.ɵeld(78, 0, null, null, 1, "a", [["href", "https://www.facebook.com/chaseyoursport/"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵeld(79, 0, null, null, 0, "img", [["src", "assets/images/sportsocialfacebook.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(80, 0, null, null, 1, "a", [["href", "https://in.linkedin.com/company/sports-social"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵeld(81, 0, null, null, 0, "img", [["src", "assets/images/sportsociallinkedin.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(82, 0, null, null, 1, "a", [["href", "https://www.twitter.com/chaseyoursport"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵeld(83, 0, null, null, 0, "img", [["src", "assets/images/sportsocialtwitter.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(84, 0, null, null, 1, "a", [["href", "https://www.instagram.com/chaseyoursport"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵeld(85, 0, null, null, 0, "img", [["src", "assets/images/sportsocialinstagram.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(86, 0, null, null, 35, "div", [["class", "midbody"]], null, null, null, null, null)), (_l()(), i1.ɵeld(87, 0, null, null, 14, "div", [["class", "blocks"]], null, null, null, null, null)), (_l()(), i1.ɵeld(88, 0, null, null, 3, "div", [["class", "blockData"]], null, null, null, null, null)), (_l()(), i1.ɵeld(89, 0, null, null, 0, "img", [["src", "assets/images/home-icon-silhouette.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(90, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Basement,307,chakkarpur,sector28, Gurugram, Haryana 122002 "])), (_l()(), i1.ɵeld(92, 0, null, null, 3, "div", [["class", "blockData"]], null, null, null, null, null)), (_l()(), i1.ɵeld(93, 0, null, null, 0, "img", [["src", "assets/images/call-answer.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(94, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["+91-9717769226"])), (_l()(), i1.ɵeld(96, 0, null, null, 4, "div", [["class", "blockData"]], null, null, null, null, null)), (_l()(), i1.ɵeld(97, 0, null, null, 0, "img", [["src", "assets/images/envelope.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(98, 0, null, null, 2, "a", [["href", "https://mail.google.com/mail/u/0/?tab=rm#inbox"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵeld(99, 0, null, null, 1, "P", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["letstalk@sportsocial.in"])), (_l()(), i1.ɵeld(101, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(102, 0, null, null, 16, "div", [["class", "map"]], null, null, null, null, null)), (_l()(), i1.ɵeld(103, 0, null, null, 15, "agm-map", [], [[2, "sebm-google-map-container", null]], null, null, i6.View_AgmMap_0, i6.RenderType_AgmMap)), i1.ɵprd(4608, null, i7.InfoWindowManager, i7.InfoWindowManager, [i8.GoogleMapsAPIWrapper, i1.NgZone, i9.MarkerManager]), i1.ɵprd(4608, null, i10.CircleManager, i10.CircleManager, [i8.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(4608, null, i11.RectangleManager, i11.RectangleManager, [i8.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(4608, null, i12.PolylineManager, i12.PolylineManager, [i8.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(4608, null, i13.PolygonManager, i13.PolygonManager, [i8.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(4608, null, i14.KmlLayerManager, i14.KmlLayerManager, [i8.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(4608, null, i15.DataLayerManager, i15.DataLayerManager, [i8.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(512, null, i8.GoogleMapsAPIWrapper, i8.GoogleMapsAPIWrapper, [i16.MapsAPILoader, i1.NgZone]), i1.ɵprd(512, null, i17.FitBoundsService, i17.FitBoundsService, [i16.MapsAPILoader]), i1.ɵdid(113, 770048, null, 0, i18.AgmMap, [i1.ElementRef, i8.GoogleMapsAPIWrapper, i17.FitBoundsService], { longitude: [0, "longitude"], latitude: [1, "latitude"], zoom: [2, "zoom"] }, null), i1.ɵprd(512, null, i9.MarkerManager, i9.MarkerManager, [i8.GoogleMapsAPIWrapper, i1.NgZone]), (_l()(), i1.ɵeld(115, 0, null, 0, 3, "agm-marker", [], null, null, null, null, null)), i1.ɵprd(6144, null, i17.FitBoundsAccessor, null, [i19.AgmMarker]), i1.ɵdid(117, 1720320, null, 1, i19.AgmMarker, [i9.MarkerManager], { latitude: [0, "latitude"], longitude: [1, "longitude"] }, null), i1.ɵqud(603979776, 3, { infoWindow: 1 }), (_l()(), i1.ɵeld(119, 0, null, null, 2, "div", [["class", "footer"]], null, null, null, null, null)), (_l()(), i1.ɵeld(120, 0, null, null, 1, "sports-social-backfooter", [], null, null, null, i20.View_BackfooterComponent_0, i20.RenderType_BackfooterComponent)), i1.ɵdid(121, 114688, null, 0, i21.BackfooterComponent, [], null, null)], function (_ck, _v) { var _co = _v.component; _ck(_v, 3, 0); var currVal_15 = ""; _ck(_v, 23, 0, currVal_15); var currVal_16 = "firstname"; var currVal_17 = _co.form.firstname; _ck(_v, 26, 0, currVal_16, currVal_17); var currVal_25 = "lastname"; var currVal_26 = _co.form.lastname; _ck(_v, 35, 0, currVal_25, currVal_26); var currVal_36 = ""; _ck(_v, 43, 0, currVal_36); var currVal_37 = "10"; _ck(_v, 44, 0, currVal_37); var currVal_38 = "contactnumber"; var currVal_39 = _co.form.contactnumber; _ck(_v, 47, 0, currVal_38, currVal_39); var currVal_48 = ""; _ck(_v, 55, 0, currVal_48); var currVal_49 = "email"; var currVal_50 = _co.form.email; _ck(_v, 58, 0, currVal_49, currVal_50); var currVal_59 = ""; _ck(_v, 66, 0, currVal_59); var currVal_60 = "message"; var currVal_61 = _co.form.message; _ck(_v, 69, 0, currVal_60, currVal_61); var currVal_64 = _co.lng; var currVal_65 = _co.lat; var currVal_66 = _co.zoom; _ck(_v, 113, 0, currVal_64, currVal_65, currVal_66); var currVal_67 = _co.lat; var currVal_68 = _co.lng; _ck(_v, 117, 0, currVal_67, currVal_68); _ck(_v, 121, 0); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 17).ngClassUntouched; var currVal_1 = i1.ɵnov(_v, 17).ngClassTouched; var currVal_2 = i1.ɵnov(_v, 17).ngClassPristine; var currVal_3 = i1.ɵnov(_v, 17).ngClassDirty; var currVal_4 = i1.ɵnov(_v, 17).ngClassValid; var currVal_5 = i1.ɵnov(_v, 17).ngClassInvalid; var currVal_6 = i1.ɵnov(_v, 17).ngClassPending; _ck(_v, 13, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6); var currVal_7 = (i1.ɵnov(_v, 23).required ? "" : null); var currVal_8 = i1.ɵnov(_v, 28).ngClassUntouched; var currVal_9 = i1.ɵnov(_v, 28).ngClassTouched; var currVal_10 = i1.ɵnov(_v, 28).ngClassPristine; var currVal_11 = i1.ɵnov(_v, 28).ngClassDirty; var currVal_12 = i1.ɵnov(_v, 28).ngClassValid; var currVal_13 = i1.ɵnov(_v, 28).ngClassInvalid; var currVal_14 = i1.ɵnov(_v, 28).ngClassPending; _ck(_v, 21, 0, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14); var currVal_18 = i1.ɵnov(_v, 37).ngClassUntouched; var currVal_19 = i1.ɵnov(_v, 37).ngClassTouched; var currVal_20 = i1.ɵnov(_v, 37).ngClassPristine; var currVal_21 = i1.ɵnov(_v, 37).ngClassDirty; var currVal_22 = i1.ɵnov(_v, 37).ngClassValid; var currVal_23 = i1.ɵnov(_v, 37).ngClassInvalid; var currVal_24 = i1.ɵnov(_v, 37).ngClassPending; _ck(_v, 32, 0, currVal_18, currVal_19, currVal_20, currVal_21, currVal_22, currVal_23, currVal_24); var currVal_27 = (i1.ɵnov(_v, 43).required ? "" : null); var currVal_28 = (i1.ɵnov(_v, 44).maxlength ? i1.ɵnov(_v, 44).maxlength : null); var currVal_29 = i1.ɵnov(_v, 49).ngClassUntouched; var currVal_30 = i1.ɵnov(_v, 49).ngClassTouched; var currVal_31 = i1.ɵnov(_v, 49).ngClassPristine; var currVal_32 = i1.ɵnov(_v, 49).ngClassDirty; var currVal_33 = i1.ɵnov(_v, 49).ngClassValid; var currVal_34 = i1.ɵnov(_v, 49).ngClassInvalid; var currVal_35 = i1.ɵnov(_v, 49).ngClassPending; _ck(_v, 41, 0, currVal_27, currVal_28, currVal_29, currVal_30, currVal_31, currVal_32, currVal_33, currVal_34, currVal_35); var currVal_40 = (i1.ɵnov(_v, 55).required ? "" : null); var currVal_41 = i1.ɵnov(_v, 60).ngClassUntouched; var currVal_42 = i1.ɵnov(_v, 60).ngClassTouched; var currVal_43 = i1.ɵnov(_v, 60).ngClassPristine; var currVal_44 = i1.ɵnov(_v, 60).ngClassDirty; var currVal_45 = i1.ɵnov(_v, 60).ngClassValid; var currVal_46 = i1.ɵnov(_v, 60).ngClassInvalid; var currVal_47 = i1.ɵnov(_v, 60).ngClassPending; _ck(_v, 53, 0, currVal_40, currVal_41, currVal_42, currVal_43, currVal_44, currVal_45, currVal_46, currVal_47); var currVal_51 = (i1.ɵnov(_v, 66).required ? "" : null); var currVal_52 = i1.ɵnov(_v, 71).ngClassUntouched; var currVal_53 = i1.ɵnov(_v, 71).ngClassTouched; var currVal_54 = i1.ɵnov(_v, 71).ngClassPristine; var currVal_55 = i1.ɵnov(_v, 71).ngClassDirty; var currVal_56 = i1.ɵnov(_v, 71).ngClassValid; var currVal_57 = i1.ɵnov(_v, 71).ngClassInvalid; var currVal_58 = i1.ɵnov(_v, 71).ngClassPending; _ck(_v, 64, 0, currVal_51, currVal_52, currVal_53, currVal_54, currVal_55, currVal_56, currVal_57, currVal_58); var currVal_62 = i1.ɵnov(_v, 15).invalid; _ck(_v, 73, 0, currVal_62); var currVal_63 = true; _ck(_v, 103, 0, currVal_63); }); }
+    } return ad; }, null, null)), i1.ɵdid(65, 16384, null, 0, i7.DefaultValueAccessor, [i1.Renderer2, i1.ElementRef, [2, i7.COMPOSITION_BUFFER_MODE]], null, null), i1.ɵdid(66, 16384, null, 0, i7.RequiredValidator, [], { required: [0, "required"] }, null), i1.ɵprd(1024, null, i7.NG_VALIDATORS, function (p0_0) { return [p0_0]; }, [i7.RequiredValidator]), i1.ɵprd(1024, null, i7.NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [i7.DefaultValueAccessor]), i1.ɵdid(69, 671744, null, 0, i7.NgModel, [[2, i7.ControlContainer], [6, i7.NG_VALIDATORS], [8, null], [6, i7.NG_VALUE_ACCESSOR]], { name: [0, "name"], model: [1, "model"] }, { update: "ngModelChange" }), i1.ɵprd(2048, null, i7.NgControl, null, [i7.NgModel]), i1.ɵdid(71, 16384, null, 0, i7.NgControlStatus, [[4, i7.NgControl]], null, null), (_l()(), i1.ɵeld(72, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(73, 0, null, null, 1, "button", [["type", "submit"]], [[8, "disabled", 0]], null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Send"])), (_l()(), i1.ɵeld(75, 0, null, null, 10, "div", [["class", "right-model"]], null, null, null, null, null)), (_l()(), i1.ɵeld(76, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Follow Us"])), (_l()(), i1.ɵeld(78, 0, null, null, 1, "a", [["href", "https://www.facebook.com/chaseyoursport/"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵeld(79, 0, null, null, 0, "img", [["src", "assets/images/sportsocialfacebook.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(80, 0, null, null, 1, "a", [["href", "https://in.linkedin.com/company/sports-social"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵeld(81, 0, null, null, 0, "img", [["src", "assets/images/sportsociallinkedin.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(82, 0, null, null, 1, "a", [["href", "https://www.twitter.com/chaseyoursport"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵeld(83, 0, null, null, 0, "img", [["src", "assets/images/sportsocialtwitter.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(84, 0, null, null, 1, "a", [["href", "https://www.instagram.com/chaseyoursport"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵeld(85, 0, null, null, 0, "img", [["src", "assets/images/sportsocialinstagram.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(86, 0, null, null, 35, "div", [["class", "midbody"]], null, null, null, null, null)), (_l()(), i1.ɵeld(87, 0, null, null, 14, "div", [["class", "blocks"]], null, null, null, null, null)), (_l()(), i1.ɵeld(88, 0, null, null, 3, "div", [["class", "blockData"]], null, null, null, null, null)), (_l()(), i1.ɵeld(89, 0, null, null, 0, "img", [["src", "assets/images/home-icon-silhouette.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(90, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Basement,307,chakkarpur,sector28, Gurugram, Haryana 122002 "])), (_l()(), i1.ɵeld(92, 0, null, null, 3, "div", [["class", "blockData"]], null, null, null, null, null)), (_l()(), i1.ɵeld(93, 0, null, null, 0, "img", [["src", "assets/images/call-answer.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(94, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["+91-9717769226"])), (_l()(), i1.ɵeld(96, 0, null, null, 4, "div", [["class", "blockData"]], null, null, null, null, null)), (_l()(), i1.ɵeld(97, 0, null, null, 0, "img", [["src", "assets/images/envelope.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(98, 0, null, null, 2, "a", [["href", "https://mail.google.com/mail/u/0/?tab=rm#inbox"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵeld(99, 0, null, null, 1, "P", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["letstalk@sportsocial.in"])), (_l()(), i1.ɵeld(101, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(102, 0, null, null, 16, "div", [["class", "map"]], null, null, null, null, null)), (_l()(), i1.ɵeld(103, 0, null, null, 15, "agm-map", [], [[2, "sebm-google-map-container", null]], null, null, i8.View_AgmMap_0, i8.RenderType_AgmMap)), i1.ɵprd(4608, null, i9.InfoWindowManager, i9.InfoWindowManager, [i10.GoogleMapsAPIWrapper, i1.NgZone, i11.MarkerManager]), i1.ɵprd(4608, null, i12.CircleManager, i12.CircleManager, [i10.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(4608, null, i13.RectangleManager, i13.RectangleManager, [i10.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(4608, null, i14.PolylineManager, i14.PolylineManager, [i10.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(4608, null, i15.PolygonManager, i15.PolygonManager, [i10.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(4608, null, i16.KmlLayerManager, i16.KmlLayerManager, [i10.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(4608, null, i17.DataLayerManager, i17.DataLayerManager, [i10.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(512, null, i10.GoogleMapsAPIWrapper, i10.GoogleMapsAPIWrapper, [i18.MapsAPILoader, i1.NgZone]), i1.ɵprd(512, null, i19.FitBoundsService, i19.FitBoundsService, [i18.MapsAPILoader]), i1.ɵdid(113, 770048, null, 0, i20.AgmMap, [i1.ElementRef, i10.GoogleMapsAPIWrapper, i19.FitBoundsService], { longitude: [0, "longitude"], latitude: [1, "latitude"], zoom: [2, "zoom"] }, null), i1.ɵprd(512, null, i11.MarkerManager, i11.MarkerManager, [i10.GoogleMapsAPIWrapper, i1.NgZone]), (_l()(), i1.ɵeld(115, 0, null, 0, 3, "agm-marker", [], null, null, null, null, null)), i1.ɵprd(6144, null, i19.FitBoundsAccessor, null, [i21.AgmMarker]), i1.ɵdid(117, 1720320, null, 1, i21.AgmMarker, [i11.MarkerManager], { latitude: [0, "latitude"], longitude: [1, "longitude"] }, null), i1.ɵqud(603979776, 3, { infoWindow: 1 }), (_l()(), i1.ɵeld(119, 0, null, null, 2, "div", [["class", "footer"]], null, null, null, null, null)), (_l()(), i1.ɵeld(120, 0, null, null, 1, "sports-social-backfooter", [], null, null, null, i22.View_BackfooterComponent_0, i22.RenderType_BackfooterComponent)), i1.ɵdid(121, 114688, null, 0, i23.BackfooterComponent, [], null, null)], function (_ck, _v) { var _co = _v.component; _ck(_v, 3, 0); var currVal_15 = ""; _ck(_v, 23, 0, currVal_15); var currVal_16 = "firstname"; var currVal_17 = _co.form.firstname; _ck(_v, 26, 0, currVal_16, currVal_17); var currVal_25 = "lastname"; var currVal_26 = _co.form.lastname; _ck(_v, 35, 0, currVal_25, currVal_26); var currVal_36 = ""; _ck(_v, 43, 0, currVal_36); var currVal_37 = "10"; _ck(_v, 44, 0, currVal_37); var currVal_38 = "contactnumber"; var currVal_39 = _co.form.contactnumber; _ck(_v, 47, 0, currVal_38, currVal_39); var currVal_48 = ""; _ck(_v, 55, 0, currVal_48); var currVal_49 = "email"; var currVal_50 = _co.form.email; _ck(_v, 58, 0, currVal_49, currVal_50); var currVal_59 = ""; _ck(_v, 66, 0, currVal_59); var currVal_60 = "message"; var currVal_61 = _co.form.message; _ck(_v, 69, 0, currVal_60, currVal_61); var currVal_64 = _co.lng; var currVal_65 = _co.lat; var currVal_66 = _co.zoom; _ck(_v, 113, 0, currVal_64, currVal_65, currVal_66); var currVal_67 = _co.lat; var currVal_68 = _co.lng; _ck(_v, 117, 0, currVal_67, currVal_68); _ck(_v, 121, 0); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 17).ngClassUntouched; var currVal_1 = i1.ɵnov(_v, 17).ngClassTouched; var currVal_2 = i1.ɵnov(_v, 17).ngClassPristine; var currVal_3 = i1.ɵnov(_v, 17).ngClassDirty; var currVal_4 = i1.ɵnov(_v, 17).ngClassValid; var currVal_5 = i1.ɵnov(_v, 17).ngClassInvalid; var currVal_6 = i1.ɵnov(_v, 17).ngClassPending; _ck(_v, 13, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6); var currVal_7 = (i1.ɵnov(_v, 23).required ? "" : null); var currVal_8 = i1.ɵnov(_v, 28).ngClassUntouched; var currVal_9 = i1.ɵnov(_v, 28).ngClassTouched; var currVal_10 = i1.ɵnov(_v, 28).ngClassPristine; var currVal_11 = i1.ɵnov(_v, 28).ngClassDirty; var currVal_12 = i1.ɵnov(_v, 28).ngClassValid; var currVal_13 = i1.ɵnov(_v, 28).ngClassInvalid; var currVal_14 = i1.ɵnov(_v, 28).ngClassPending; _ck(_v, 21, 0, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14); var currVal_18 = i1.ɵnov(_v, 37).ngClassUntouched; var currVal_19 = i1.ɵnov(_v, 37).ngClassTouched; var currVal_20 = i1.ɵnov(_v, 37).ngClassPristine; var currVal_21 = i1.ɵnov(_v, 37).ngClassDirty; var currVal_22 = i1.ɵnov(_v, 37).ngClassValid; var currVal_23 = i1.ɵnov(_v, 37).ngClassInvalid; var currVal_24 = i1.ɵnov(_v, 37).ngClassPending; _ck(_v, 32, 0, currVal_18, currVal_19, currVal_20, currVal_21, currVal_22, currVal_23, currVal_24); var currVal_27 = (i1.ɵnov(_v, 43).required ? "" : null); var currVal_28 = (i1.ɵnov(_v, 44).maxlength ? i1.ɵnov(_v, 44).maxlength : null); var currVal_29 = i1.ɵnov(_v, 49).ngClassUntouched; var currVal_30 = i1.ɵnov(_v, 49).ngClassTouched; var currVal_31 = i1.ɵnov(_v, 49).ngClassPristine; var currVal_32 = i1.ɵnov(_v, 49).ngClassDirty; var currVal_33 = i1.ɵnov(_v, 49).ngClassValid; var currVal_34 = i1.ɵnov(_v, 49).ngClassInvalid; var currVal_35 = i1.ɵnov(_v, 49).ngClassPending; _ck(_v, 41, 0, currVal_27, currVal_28, currVal_29, currVal_30, currVal_31, currVal_32, currVal_33, currVal_34, currVal_35); var currVal_40 = (i1.ɵnov(_v, 55).required ? "" : null); var currVal_41 = i1.ɵnov(_v, 60).ngClassUntouched; var currVal_42 = i1.ɵnov(_v, 60).ngClassTouched; var currVal_43 = i1.ɵnov(_v, 60).ngClassPristine; var currVal_44 = i1.ɵnov(_v, 60).ngClassDirty; var currVal_45 = i1.ɵnov(_v, 60).ngClassValid; var currVal_46 = i1.ɵnov(_v, 60).ngClassInvalid; var currVal_47 = i1.ɵnov(_v, 60).ngClassPending; _ck(_v, 53, 0, currVal_40, currVal_41, currVal_42, currVal_43, currVal_44, currVal_45, currVal_46, currVal_47); var currVal_51 = (i1.ɵnov(_v, 66).required ? "" : null); var currVal_52 = i1.ɵnov(_v, 71).ngClassUntouched; var currVal_53 = i1.ɵnov(_v, 71).ngClassTouched; var currVal_54 = i1.ɵnov(_v, 71).ngClassPristine; var currVal_55 = i1.ɵnov(_v, 71).ngClassDirty; var currVal_56 = i1.ɵnov(_v, 71).ngClassValid; var currVal_57 = i1.ɵnov(_v, 71).ngClassInvalid; var currVal_58 = i1.ɵnov(_v, 71).ngClassPending; _ck(_v, 64, 0, currVal_51, currVal_52, currVal_53, currVal_54, currVal_55, currVal_56, currVal_57, currVal_58); var currVal_62 = i1.ɵnov(_v, 15).invalid; _ck(_v, 73, 0, currVal_62); var currVal_63 = true; _ck(_v, 103, 0, currVal_63); }); }
 exports.View_ContactUsComponent_0 = View_ContactUsComponent_0;
 function View_ContactUsComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-contact-us", [], null, null, null, View_ContactUsComponent_0, RenderType_ContactUsComponent)), i1.ɵdid(1, 114688, null, 0, i24.ContactUsComponent, [i25.Http, i26.PostService, i27.Title, i27.Meta], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_ContactUsComponent_Host_0 = View_ContactUsComponent_Host_0;
@@ -4005,6 +4005,13 @@ var ContactUsComponent = /** @class */ (function () {
         this.lat = 28.4700264 /*=28.473660*/;
         this.lng = 77.0889223 /*=77.086710*/;
         this.zoom = 15;
+        this.metattitle.setTitle(this.title);
+        this.metaservice.updateTag({ name: 'title', content: this.title });
+        this.metaservice.updateTag({ name: 'keywords', content: this.keywords });
+        this.metaservice.updateTag({ name: 'description', content: this.description });
+        this.metaservice.updateTag({ property: 'og:title', content: this.title });
+        this.metaservice.updateTag({ property: 'og:keywords', content: this.keywords });
+        this.metaservice.updateTag({ property: 'og:description', content: this.description });
     }
     ContactUsComponent.prototype.onsubmit = function (form2) {
         var _this = this;
@@ -4015,13 +4022,6 @@ var ContactUsComponent = /** @class */ (function () {
         });
     };
     ContactUsComponent.prototype.ngOnInit = function () {
-        this.metattitle.setTitle(this.title);
-        this.metaservice.updateTag({ name: 'title', content: this.title });
-        this.metaservice.updateTag({ name: 'keywords', content: this.keywords });
-        this.metaservice.updateTag({ name: 'description', content: this.description });
-        this.metaservice.updateTag({ property: 'og:title', content: this.title });
-        this.metaservice.updateTag({ property: 'og:keywords', content: this.keywords });
-        this.metaservice.updateTag({ property: 'og:description', content: this.description });
     };
     return ContactUsComponent;
 }());
@@ -4492,6 +4492,13 @@ var GlobalMatchFeedComponent = /** @class */ (function () {
         this.count = 0;
         this.arr = [];
         this.showloader = false;
+        this.pagetitle.setTitle(this.title);
+        this.metaservice.updateTag({ name: 'title', content: this.title });
+        this.metaservice.updateTag({ name: 'keywords', content: this.metakey });
+        this.metaservice.updateTag({ name: 'description', content: this.metades });
+        this.metaservice.updateTag({ property: 'og:title', content: this.title });
+        this.metaservice.updateTag({ property: 'og:description', content: this.metades });
+        this.metaservice.updateTag({ property: 'og:keywords', content: this.metakey });
         this.event.listentoroute().subscribe(function (topic) {
             _this.Matcharr = [];
             _this.arr = [];
@@ -4818,13 +4825,6 @@ var GlobalMatchFeedComponent = /** @class */ (function () {
             this.selected = topic[0].toUpperCase();
             this.selected = this.selected + topic.slice(1);
         }
-        this.pagetitle.setTitle(this.title);
-        this.metaservice.updateTag({ name: 'title', content: this.title });
-        this.metaservice.updateTag({ name: 'keywords', content: this.metakey });
-        this.metaservice.updateTag({ name: 'description', content: this.metades });
-        this.metaservice.updateTag({ property: 'og:title', content: this.title });
-        this.metaservice.updateTag({ property: 'og:description', content: this.metades });
-        this.metaservice.updateTag({ property: 'og:keywords', content: this.metakey });
     };
     GlobalMatchFeedComponent.prototype.ngOnDestroy = function () {
         if (this._masonry) {
@@ -5835,7 +5835,11 @@ exports.HomeMatchFeedModule = HomeMatchFeedModule;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
+<<<<<<< HEAD
 var styles = ["header[_ngcontent-%COMP%]{\n    width: 100%;\n    height: 60px;\n    position: fixed;\n    top: 0px;\n    left: 0px;\n    right: 0px;\n    z-index: 20;\n    background-color: white;\n    box-shadow: 1px 1px 2px #bbbbbb;\n    overflow-y: hidden;\n}\n.search-bar-shell[_ngcontent-%COMP%]{\n    display: none;\n}\nul[_ngcontent-%COMP%]{\n    list-style: none;\n}\n.brand[_ngcontent-%COMP%]{\n    float: left;\n    margin-top: 7px;\n    margin-left: 3%;\n    width: 55%;\n}\n.search-bar-shell[_ngcontent-%COMP%]{\n    float: left;\n    margin-top: 18px;\n    width: 12%;\n}\n.search-bar[_ngcontent-%COMP%]{\n    border: 1px solid #757575;\n    border-radius: 14px;\n    width: 100%;\n    height: 22px;\n    float: left;\n    cursor: pointer;\n}\n.search-bar[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n    font-size: 0.9em;\n    font-weight: lighter;\n    float: right;\n    margin-top: 3px;\n    margin-right: 3%;\n    color: #757575;\n}\n.location-dropdown[_ngcontent-%COMP%]{\n    display: none;\n    margin-top: 23px;\n    border-radius: 5px;\n    position: fixed;\n    height: auto;\n    width: 12%;\n    text-align: center;\n    background-color: white;\n    box-shadow: 2px 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 4px rgba(0, 0, 0, 0.19);\n}\n.location-dropdown[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{\n    padding-top: 5px;\n    padding-bottom: 5px;\n    font-weight: lighter;\n}\n.location-dropdown[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]{\n    width: 80%;\n    background-color: rgb(247, 247, 247);\n    border-radius: 10px;\n}\n.li-dropdown[_ngcontent-%COMP%]:hover{\n    background-color: silver; \n}\n.search-bar[_ngcontent-%COMP%]:hover   .location-dropdown[_ngcontent-%COMP%]{\n    display: block;\n}\n.search-bar[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    margin-top: 1px;\n    height: 17px;\n    width: 17px;\n    margin-left: 4%;\n    float: left;\n}\n.menu[_ngcontent-%COMP%]{\n    letter-spacing: 0.5px;\n    margin-top: 20px;\n    margin-right: 3%;\n    float: right;\n    width: 27%;\n    height: 20px;\n}\n.menu[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{\n    text-align: center;\n    float: left;\n    width: 20%;\n}\n.menu[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]{\n    color: #888888;\n    font-weight: bold;\n    font-size: 0.9em;\n}\n.menu[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:hover{\n    color: #024771;\n}\n.brand[_ngcontent-%COMP%], .search[_ngcontent-%COMP%], .brand-image[_ngcontent-%COMP%], .brand-title[_ngcontent-%COMP%]{\n    display: inline-block;\n    vertical-align: middle;\n}\n.brand-image[_ngcontent-%COMP%]{\n    width: 45px;\n    height: 45px;\n}\n.brand-image[_ngcontent-%COMP%]    > img[_ngcontent-%COMP%] {\n    width: 100%;\n    height: 100%;\n}\n.brand-title[_ngcontent-%COMP%]    > span[_ngcontent-%COMP%]{\n    font-size: 1.5em;\n    font-weight: 700;\n}\n.brand-title[_ngcontent-%COMP%]    > span[_ngcontent-%COMP%]:first-child{\n    color: #024771;\n    margin-right: 5px;\n}\n.brand-title[_ngcontent-%COMP%]    > span[_ngcontent-%COMP%]:nth-of-type(2){\n    color: #ffa600;\n}\n.brand-title[_ngcontent-%COMP%]    > p[_ngcontent-%COMP%]{\n    text-align: center;\n    color: #024771;\n    font-size: 0.8em;\n    font-style: italic;\n}\n.dropdown-menu-image-holder[_ngcontent-%COMP%]{\n    position: fixed;\n    top:12px;\n    right: 24px;\n    width: 30px;\n    height: 30px;\n}\n.dropdown-menu-image-holder[_ngcontent-%COMP%]    > img[_ngcontent-%COMP%] {\n    width: 100%;\n    height: 100%;\n    cursor: pointer;\n}\n.dropdown-cancel-image-holder[_ngcontent-%COMP%] {\n    width: 95%;\n    margin-top: 2%;\n    height: 10px;\n    text-align: right;\n    \n}\n.dropdown-cancel-image-holder[_ngcontent-%COMP%]    > img[_ngcontent-%COMP%] {\n    width: 12px;\n    height: 12px;\n    cursor: pointer;\n}\n.dropdown-menu[_ngcontent-%COMP%]{\n    background-color: #ffffff;\n    opacity: 0.9;\n  filter: alpha(opacity=30);\n}\n.dropdown-menu[_ngcontent-%COMP%]{\n    width: 55%;\n    position: fixed;\n    top:48px;\n    left: 40%;\n    box-shadow: 2px 2px 4px #bbbbbb;\n}\n.dropdown-menu[_ngcontent-%COMP%]    > ul[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]{\n    display: block;\n    text-align: center;\n    padding: 4%;\n    color:rgb(230, 167, 51);\n    font-size: 1em;\n    font-weight: 500;\n    border-bottom: 1px solid #bbbbbb;\n    width: 95%;\n    margin: 0% auto;\n}\n.dropdown-menu[_ngcontent-%COMP%]    > ul[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%] > a[_ngcontent-%COMP%]{\n    color:rgb(230, 167, 51);\n}\n.dropdown-search[_ngcontent-%COMP%]{\n    margin-top: 7%;\n    margin-left: 15%;\n    width: 100%;\n    justify-content: center;\n}\n.dropdown-search[_ngcontent-%COMP%]    > input[_ngcontent-%COMP%] {\n    text-align: center;\n    width: 70%;\n    margin: 1% auto; \n    background-image: unset;\n    border-radius: 0px;\n}\nbutton[_ngcontent-%COMP%]{\n    display: block;\n    margin: 6% auto;\n    color: #ffffff;\n    background-color: #024772;\n    padding: 1.5%;\n    width: 40%;\n    height: 30px;\n    border: none;\n    outline: none;\n    border-radius: 4px;\n    box-shadow: 2px 2px 4px #bbbbbb;\n}\n.active[_ngcontent-%COMP%]{\n    color: #024771 !important;\n    font-weight: bold;\n}\n\n.dropdown-menu-image-holder[_ngcontent-%COMP%]{\n    display: none;\n}\n.slide-menu[_ngcontent-%COMP%]{\n    display: none;\n    z-index: 50;\n    position: fixed;\n    height: 100vh;\n    width: 75%;\n    right: -1000px;\n    overflow-y: scroll;\n    overflow-x: hidden;\n    background-color: #024771; \n    background-image: linear-gradient(to bottom right, #024771, #1ab9b9);\n    transition: 0.5s ease-in;\n}\n.closemenu[_ngcontent-%COMP%]{\n    margin-left: 2%;\n    margin-top: 2%;\n}\n.mobile-view[_ngcontent-%COMP%]{\n    z-index: 17;\n}\n.ul[_ngcontent-%COMP%]{\n    margin-bottom:70px;\n    margin-top: 0%;\n}\n.slide-menu[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{\n    color: white;\n}\n.slide-menu[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{\n    color: white;\n}\n.slide-menu[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]{\n    color: white;\n    margin-top: 2%;\n    text-align: center;\n    text-decoration: none;\n    letter-spacing: 2px;\n    font-size: 2em;\n}\n.arrow-rotate[_ngcontent-%COMP%]{\n    height: 20px;\n    width: 20px;\n}\n.arrow-rotate1[_ngcontent-%COMP%]{\n    height: 50px;\n    width: 50px;\n}\n.closeicon[_ngcontent-%COMP%]{\n    height: 20px;\n    width: 20px;\n}\n.dpslide[_ngcontent-%COMP%]{\n    position: relative;\n    \n    transition: 0.5s ease-in;\n }\n.dpslide2[_ngcontent-%COMP%]{\n    position: relative;\n    \n    transition: 0.5s ease-in;\n }\n.slide-menu[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{\n    padding: 20px;\n}\n.open-arena-menu[_ngcontent-%COMP%]{\n    width: 100%;\n    text-align: center;\n    position: absolute;\n    right: -1000px;\n    border-top: 2px solid white;\n    border-bottom: 2px solid white;   \n    transition: 0.5s ease-in;\n}\n.open-news-menu[_ngcontent-%COMP%]{\n    width: 100%;\n    text-align: center;\n    position: absolute;\n    right: -1000px;\n    border-top: 2px solid white;\n    border-bottom: 2px solid white;\n    transition: 0.5s ease-in;\n}\n.open-arena-menu[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{\n    \n    font-size: 0.4em;\n    letter-spacing: 2px;\n    \n    padding-bottom: 10px;\n}\n.open-news-menu[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{\n    \n    font-size: 0.4em;\n    letter-spacing: 2px;\n    \n    padding-bottom: 10px;\n}\n#niftview[_ngcontent-%COMP%] > a[_ngcontent-%COMP%]{\n    height: 25px;\n}\n#niftview[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    height:15px;\n    width:15px;\n    margin-left: 1.5%;\n}\n@media screen and (min-width: 200px) and (max-width: 1275px){\n    .slide-menu[_ngcontent-%COMP%]{\n        display: block;\n    }\n    .dropdown-menu-image-holder[_ngcontent-%COMP%]{\n        display: block;\n    }\n    #niftview[_ngcontent-%COMP%] > a[_ngcontent-%COMP%]{\n        height: 25px;\n    }\n    @media screen and (min-width: 951px) and (max-width: 1275px){\n        #niftview[_ngcontent-%COMP%]{\n            display: none;\n        }\n    }\n    @media screen and (min-width: 200px) and (max-width: 600px){\n        .slide-menu[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]{\n            font-size: 1em;\n        }\n        .arrow-rotate[_ngcontent-%COMP%]{\n            height: 20px;\n            width: 20px;\n        }\n        .arrow-rotate1[_ngcontent-%COMP%]{\n            height: 20px;\n            width: 20px;\n        }\n        .open-arena-menu[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{\n            font-size: 0.8em;\n        }\n        .open-news-menu[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{\n            font-size: 0.8em;\n        }\n        @media screen and (min-width: 200px) and (max-width: 400px){\n            .brand[_ngcontent-%COMP%]{\n                width: 65%;\n            }\n            .search-bar-shell[_ngcontent-%COMP%]{\n                display: none;\n            }\n        }\n        \n    }\n}"];
+=======
+var styles = ["header[_ngcontent-%COMP%]{\n    width: 100%;\n    height: 60px;\n    position: fixed;\n    top: 0px;\n    left: 0px;\n    right: 0px;\n    z-index: 20;\n    background-color: white;\n    box-shadow: 1px 1px 2px #bbbbbb;\n    overflow-y: hidden;\n}\n.search-bar-shell[_ngcontent-%COMP%]{\n    display: none;\n}\nul[_ngcontent-%COMP%]{\n    list-style: none;\n}\n.brand[_ngcontent-%COMP%]{\n    float: left;\n    margin-top: 7px;\n    width: 55%;\n}\n.search-bar-shell[_ngcontent-%COMP%]{\n    float: left;\n    margin-top: 18px;\n    width: 12%;\n}\n.search-bar[_ngcontent-%COMP%]{\n    border: 1px solid #757575;\n    border-radius: 14px;\n    width: 100%;\n    height: 22px;\n    float: left;\n    cursor: pointer;\n}\n.search-bar[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n    font-size: 0.9em;\n    font-weight: lighter;\n    float: right;\n    margin-top: 3px;\n    margin-right: 3%;\n    color: #757575;\n}\n.location-dropdown[_ngcontent-%COMP%]{\n    display: none;\n    margin-top: 23px;\n    border-radius: 5px;\n    position: fixed;\n    height: auto;\n    width: 12%;\n    text-align: center;\n    background-color: white;\n    box-shadow: 2px 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 4px rgba(0, 0, 0, 0.19);\n}\n.location-dropdown[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{\n    padding-top: 5px;\n    padding-bottom: 5px;\n    font-weight: lighter;\n}\n.location-dropdown[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]{\n    width: 80%;\n    background-color: rgb(247, 247, 247);\n    border-radius: 10px;\n}\n.li-dropdown[_ngcontent-%COMP%]:hover{\n    background-color: silver; \n}\n.search-bar[_ngcontent-%COMP%]:hover   .location-dropdown[_ngcontent-%COMP%]{\n    display: block;\n}\n.search-bar[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    margin-top: 1px;\n    height: 17px;\n    width: 17px;\n    margin-left: 4%;\n    float: left;\n}\n.menu[_ngcontent-%COMP%]{\n    letter-spacing: 0.5px;\n    margin-top: 20px;\n    float: right;\n    width: 27%;\n    height: 20px;\n}\n.menu[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{\n    text-align: center;\n    float: left;\n    width: 20%;\n}\n.menu[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]{\n    color: #757575;\n    font-size: 1em;\n}\n.menu[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:hover{\n    color: #024771;\n}\n.brand[_ngcontent-%COMP%], .search[_ngcontent-%COMP%], .brand-image[_ngcontent-%COMP%], .brand-title[_ngcontent-%COMP%]{\n    display: inline-block;\n    vertical-align: middle;\n}\n.brand-image[_ngcontent-%COMP%]{\n    width: 45px;\n    height: 45px;\n}\n.brand-image[_ngcontent-%COMP%]    > img[_ngcontent-%COMP%] {\n    width: 100%;\n    height: 100%;\n}\n.brand-title[_ngcontent-%COMP%]    > span[_ngcontent-%COMP%]{\n    font-size: 1.5em;\n    font-weight: 700;\n}\n.brand-title[_ngcontent-%COMP%]    > span[_ngcontent-%COMP%]:first-child{\n    color: #024771;\n    margin-right: 5px;\n}\n.brand-title[_ngcontent-%COMP%]    > span[_ngcontent-%COMP%]:nth-of-type(2){\n    color: #ffa600;\n}\n.brand-title[_ngcontent-%COMP%]    > p[_ngcontent-%COMP%]{\n    text-align: center;\n    color: #024771;\n    font-size: 0.8em;\n    font-style: italic;\n}\n.dropdown-menu-image-holder[_ngcontent-%COMP%]{\n    position: fixed;\n    top:12px;\n    right: 24px;\n    width: 30px;\n    height: 30px;\n}\n.dropdown-menu-image-holder[_ngcontent-%COMP%]    > img[_ngcontent-%COMP%] {\n    width: 100%;\n    height: 100%;\n    cursor: pointer;\n}\n.dropdown-cancel-image-holder[_ngcontent-%COMP%] {\n    width: 95%;\n    margin-top: 2%;\n    height: 10px;\n    text-align: right;\n    \n}\n.dropdown-cancel-image-holder[_ngcontent-%COMP%]    > img[_ngcontent-%COMP%] {\n    width: 12px;\n    height: 12px;\n    cursor: pointer;\n}\n.dropdown-menu[_ngcontent-%COMP%]{\n    background-color: #ffffff;\n    opacity: 0.9;\n  filter: alpha(opacity=30);\n}\n.dropdown-menu[_ngcontent-%COMP%]{\n    width: 55%;\n    position: fixed;\n    top:48px;\n    left: 40%;\n    box-shadow: 2px 2px 4px #bbbbbb;\n}\n.dropdown-menu[_ngcontent-%COMP%]    > ul[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]{\n    display: block;\n    text-align: center;\n    padding: 4%;\n    color:rgb(230, 167, 51);\n    font-size: 1em;\n    font-weight: 500;\n    border-bottom: 1px solid #bbbbbb;\n    width: 95%;\n    margin: 0% auto;\n}\n.dropdown-menu[_ngcontent-%COMP%]    > ul[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%] > a[_ngcontent-%COMP%]{\n    color:rgb(230, 167, 51);\n}\n.dropdown-search[_ngcontent-%COMP%]{\n    margin-top: 7%;\n    margin-left: 15%;\n    width: 100%;\n    justify-content: center;\n}\n.dropdown-search[_ngcontent-%COMP%]    > input[_ngcontent-%COMP%] {\n    text-align: center;\n    width: 70%;\n    margin: 1% auto; \n    background-image: unset;\n    border-radius: 0px;\n}\nbutton[_ngcontent-%COMP%]{\n    display: block;\n    margin: 6% auto;\n    color: #ffffff;\n    background-color: #024772;\n    padding: 1.5%;\n    width: 40%;\n    height: 30px;\n    border: none;\n    outline: none;\n    border-radius: 4px;\n    box-shadow: 2px 2px 4px #bbbbbb;\n}\n.active[_ngcontent-%COMP%]{\n    color: #ffa600 !important\n}\n\n.dropdown-menu-image-holder[_ngcontent-%COMP%]{\n    display: none;\n}\n.slide-menu[_ngcontent-%COMP%]{\n    display: none;\n    z-index: 50;\n    position: fixed;\n    height: 100vh;\n    width: 75%;\n    right: -1000px;\n    overflow-y: scroll;\n    overflow-x: hidden;\n    background-color: #024771; \n    background-image: linear-gradient(to bottom right, #024771, #1ab9b9);\n    transition: 0.5s ease-in;\n}\n.closemenu[_ngcontent-%COMP%]{\n    margin-left: 2%;\n    margin-top: 2%;\n}\n.mobile-view[_ngcontent-%COMP%]{\n    z-index: 17;\n}\n.ul[_ngcontent-%COMP%]{\n    margin-bottom:70px;\n    margin-top: 0%;\n}\n.slide-menu[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{\n    color: white;\n}\n.slide-menu[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{\n    color: white;\n}\n.slide-menu[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]{\n    color: white;\n    margin-top: 2%;\n    text-align: center;\n    text-decoration: none;\n    letter-spacing: 2px;\n    font-size: 2em;\n}\n.arrow-rotate[_ngcontent-%COMP%]{\n    height: 20px;\n    width: 20px;\n}\n.arrow-rotate1[_ngcontent-%COMP%]{\n    height: 50px;\n    width: 50px;\n}\n.closeicon[_ngcontent-%COMP%]{\n    height: 20px;\n    width: 20px;\n}\n.dpslide[_ngcontent-%COMP%]{\n    position: relative;\n    \n    transition: 0.5s ease-in;\n }\n.dpslide2[_ngcontent-%COMP%]{\n    position: relative;\n    \n    transition: 0.5s ease-in;\n }\n.slide-menu[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{\n    padding: 20px;\n}\n.open-arena-menu[_ngcontent-%COMP%]{\n    width: 100%;\n    text-align: center;\n    position: absolute;\n    right: -1000px;\n    border-top: 2px solid white;\n    border-bottom: 2px solid white;   \n    transition: 0.5s ease-in;\n}\n.open-news-menu[_ngcontent-%COMP%]{\n    width: 100%;\n    text-align: center;\n    position: absolute;\n    right: -1000px;\n    border-top: 2px solid white;\n    border-bottom: 2px solid white;\n    transition: 0.5s ease-in;\n}\n.open-arena-menu[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{\n    \n    font-size: 0.4em;\n    letter-spacing: 2px;\n    \n    padding-bottom: 10px;\n}\n.open-news-menu[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{\n    \n    font-size: 0.4em;\n    letter-spacing: 2px;\n    \n    padding-bottom: 10px;\n}\n#niftview[_ngcontent-%COMP%] > a[_ngcontent-%COMP%]{\n    height: 25px;\n}\n#niftview[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    height:15px;\n    width:15px;\n    margin-left: 1.5%;\n}\n@media screen and (min-width: 200px) and (max-width: 1275px){\n    .slide-menu[_ngcontent-%COMP%]{\n        display: block;\n    }\n    .dropdown-menu-image-holder[_ngcontent-%COMP%]{\n        display: block;\n    }\n    #niftview[_ngcontent-%COMP%] > a[_ngcontent-%COMP%]{\n        height: 25px;\n    }\n    @media screen and (min-width: 951px) and (max-width: 1275px){\n        #niftview[_ngcontent-%COMP%]{\n            display: none;\n        }\n    }\n    @media screen and (min-width: 200px) and (max-width: 600px){\n        .slide-menu[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]{\n            font-size: 1em;\n        }\n        .arrow-rotate[_ngcontent-%COMP%]{\n            height: 20px;\n            width: 20px;\n        }\n        .arrow-rotate1[_ngcontent-%COMP%]{\n            height: 20px;\n            width: 20px;\n        }\n        .open-arena-menu[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{\n            font-size: 0.8em;\n        }\n        .open-news-menu[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{\n            font-size: 0.8em;\n        }\n        @media screen and (min-width: 200px) and (max-width: 400px){\n            .brand[_ngcontent-%COMP%]{\n                width: 65%;\n            }\n            .search-bar-shell[_ngcontent-%COMP%]{\n                display: none;\n            }\n        }\n        \n    }\n}"];
+>>>>>>> 7c11dfd0c69a3a71141db79c1eddff911a6668b0
 exports.styles = styles;
 
 
@@ -5868,7 +5872,15 @@ var i7 = __webpack_require__(/*! ngx-cookie-service */ "ngx-cookie-service");
 var styles_HeaderComponent = [i0.styles];
 var RenderType_HeaderComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_HeaderComponent, data: {} });
 exports.RenderType_HeaderComponent = RenderType_HeaderComponent;
+<<<<<<< HEAD
 function View_HeaderComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 36, "div", [["class", "menu"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 35, "ul", [], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 6, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 5, "a", [["class", "About btn btn-responsive"], ["routerLink", "/about"], ["routerLinkActive", "active"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+=======
+function View_HeaderComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "li", [["class", "li-dropdown"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.latlong(_v.context.$implicit.longitude, _v.context.$implicit.latitude, _v.context.$implicit.name) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵted(1, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.name; _ck(_v, 1, 0, currVal_0); }); }
+function View_HeaderComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 36, "div", [["class", "menu"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 35, "ul", [], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 6, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 5, "a", [["class", "About btn btn-responsive"], ["routerLink", "/about"], ["routerLinkActive", "active"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+>>>>>>> 7c11dfd0c69a3a71141db79c1eddff911a6668b0
         var pd_0 = (i1.ɵnov(_v, 4).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
     } if (("click" === en)) {
@@ -5899,53 +5911,115 @@ function View_HeaderComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0
         var pd_1 = (_co.topscroll() !== false);
         ad = (pd_1 && ad);
     } return ad; }, null, null)), i1.ɵdid(32, 671744, [[11, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵdid(33, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 10, { links: 1 }), i1.ɵqud(603979776, 11, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Help"]))], function (_ck, _v) { var currVal_2 = "/about"; _ck(_v, 4, 0, currVal_2); var currVal_3 = "active"; _ck(_v, 5, 0, currVal_3); var currVal_6 = "/application"; _ck(_v, 11, 0, currVal_6); var currVal_7 = "active"; _ck(_v, 12, 0, currVal_7); var currVal_10 = "/team"; _ck(_v, 18, 0, currVal_10); var currVal_11 = "active"; _ck(_v, 19, 0, currVal_11); var currVal_14 = "/locality"; _ck(_v, 25, 0, currVal_14); var currVal_15 = "active"; _ck(_v, 26, 0, currVal_15); var currVal_18 = "/HelpCenter"; _ck(_v, 32, 0, currVal_18); var currVal_19 = "active"; _ck(_v, 33, 0, currVal_19); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 4).target; var currVal_1 = i1.ɵnov(_v, 4).href; _ck(_v, 3, 0, currVal_0, currVal_1); var currVal_4 = i1.ɵnov(_v, 11).target; var currVal_5 = i1.ɵnov(_v, 11).href; _ck(_v, 10, 0, currVal_4, currVal_5); var currVal_8 = i1.ɵnov(_v, 18).target; var currVal_9 = i1.ɵnov(_v, 18).href; _ck(_v, 17, 0, currVal_8, currVal_9); var currVal_12 = i1.ɵnov(_v, 25).target; var currVal_13 = i1.ɵnov(_v, 25).href; _ck(_v, 24, 0, currVal_12, currVal_13); var currVal_16 = i1.ɵnov(_v, 32).target; var currVal_17 = i1.ɵnov(_v, 32).href; _ck(_v, 31, 0, currVal_16, currVal_17); }); }
-function View_HeaderComponent_4(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 35, "ul", [], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 6, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 5, "a", [["routerLink", "/about"], ["routerLinkActive", "active"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 3).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+function View_HeaderComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 3, "a", [], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 1).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
+    } if (("click" === en)) {
+        _co.topscroll();
+        var pd_1 = (_co.routechange(_v.context.$implicit.name) !== false);
+        ad = (pd_1 && ad);
+    } return ad; }, null, null)), i1.ɵdid(1, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(2, 0, null, null, 1, "li", [], null, null, null, null, null)), (_l()(), i1.ɵted(3, null, ["", ""]))], function (_ck, _v) { var currVal_2 = i1.ɵinlineInterpolate(1, "/OpenArena/", _v.context.$implicit.link, ""); _ck(_v, 1, 0, currVal_2); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 1).target; var currVal_1 = i1.ɵnov(_v, 1).href; _ck(_v, 0, 0, currVal_0, currVal_1); var currVal_3 = _v.context.$implicit.name; _ck(_v, 3, 0, currVal_3); }); }
+function View_HeaderComponent_4(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 3, "a", [], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 1).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+        ad = (pd_0 && ad);
+    } if (("click" === en)) {
+        _co.topscroll();
+        var pd_1 = (_co.routechange(_v.context.$implicit.name) !== false);
+        ad = (pd_1 && ad);
+    } return ad; }, null, null)), i1.ɵdid(1, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(2, 0, null, null, 1, "li", [], null, null, null, null, null)), (_l()(), i1.ɵted(3, null, ["", ""]))], function (_ck, _v) { var currVal_2 = i1.ɵinlineInterpolate(1, "/newspage/", _v.context.$implicit.link, ""); _ck(_v, 1, 0, currVal_2); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 1).target; var currVal_1 = i1.ɵnov(_v, 1).href; _ck(_v, 0, 0, currVal_0, currVal_1); var currVal_3 = _v.context.$implicit.name; _ck(_v, 3, 0, currVal_3); }); }
+function View_HeaderComponent_0(_l) { return i1.ɵvid(0, [i1.ɵqud(402653184, 1, { header: 0 }), (_l()(), i1.ɵeld(1, 0, [[1, 0], ["header", 1]], null, 80, "header", [], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 11, "div", [["class", "brand"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 10, "a", [["routerLink", "/"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 4).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), i1.ɵdid(4, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(5, 0, null, null, 1, "div", [["class", "brand-image"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 0, "img", [["alt", "Sport-Social-logo"], ["src", "assets/images/sports-social-logo.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 6, "div", [["class", "brand-title"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Sports"])), (_l()(), i1.ɵeld(10, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Social"])), (_l()(), i1.ɵeld(12, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["ChaseYourSport"])), (_l()(), i1.ɵeld(14, 0, null, null, 10, "div", [["class", "search-bar-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(15, 0, null, null, 9, "div", [["class", "search-bar"]], null, null, null, null, null)), (_l()(), i1.ɵeld(16, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsociallocation.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(17, 0, null, null, 2, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(18, null, ["", ""])), i1.ɵpid(0, i3.SlicePipe, []), (_l()(), i1.ɵeld(20, 0, null, null, 4, "ul", [["class", "location-dropdown"]], null, null, null, null, null)), (_l()(), i1.ɵeld(21, 0, null, null, 1, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(22, 0, null, null, 0, "input", [["type", "text"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HeaderComponent_1)), i1.ɵdid(24, 278528, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HeaderComponent_2)), i1.ɵdid(26, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵeld(27, 0, null, null, 54, "div", [["class", "mobile-view"]], null, null, null, null, null)), (_l()(), i1.ɵeld(28, 0, null, null, 1, "div", [["class", "dropdown-menu-image-holder"]], null, null, null, null, null)), (_l()(), i1.ɵeld(29, 0, null, null, 0, "img", [["src", "/assets/images/sports-social-menu.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.openDropdown() !== false);
+        ad = (pd_0 && ad);
+<<<<<<< HEAD
     } return ad; }, null, null)), i1.ɵdid(4, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(5, 0, null, null, 1, "div", [["class", "brand-image"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 0, "img", [["alt", "Sport-Social-logo"], ["src", "assets/images/sports-social-logo.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 6, "div", [["class", "brand-title"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Sports"])), (_l()(), i1.ɵeld(10, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Social"])), (_l()(), i1.ɵeld(12, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["ChaseYourSport"])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HeaderComponent_1)), i1.ɵdid(15, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵeld(16, 0, null, null, 50, "div", [["class", "mobile-view"]], null, null, null, null, null)), (_l()(), i1.ɵeld(17, 0, null, null, 1, "div", [["class", "dropdown-menu-image-holder"]], null, null, null, null, null)), (_l()(), i1.ɵeld(18, 0, null, null, 0, "img", [["src", "/assets/images/sports-social-menu.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(19, 0, null, null, 47, "div", [["class", "slide-menu"]], null, null, null, null, null)), (_l()(), i1.ɵeld(20, 0, null, null, 1, "div", [["class", "closemenu"]], null, null, null, null, null)), (_l()(), i1.ɵeld(21, 0, null, null, 0, "img", [["class", "closeicon"], ["src", "assets/images/sportsocialhomearrow.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(22, 0, null, null, 44, "ul", [["class", "ul"]], null, null, null, null, null)), (_l()(), i1.ɵeld(23, 0, null, null, 3, "a", [["routerLink", "/"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (i1.ɵnov(_v, 24).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+=======
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(30, 0, null, null, 51, "div", [["class", "slide-menu"]], null, null, null, null, null)), (_l()(), i1.ɵeld(31, 0, null, null, 1, "div", [["class", "closemenu"]], null, null, null, null, null)), (_l()(), i1.ɵeld(32, 0, null, null, 0, "img", [["class", "closeicon"], ["src", "assets/images/sportsocialhomearrow.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.openDropdown() !== false);
+>>>>>>> 7c11dfd0c69a3a71141db79c1eddff911a6668b0
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(10, 671744, [[15, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵdid(11, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 14, { links: 1 }), i1.ɵqud(603979776, 15, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["App"])), (_l()(), i1.ɵeld(15, 0, null, null, 6, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(16, 0, null, null, 5, "a", [["routerLink", "/team"], ["routerLinkActive", "active"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 17).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
-        ad = (pd_0 && ad);
-    } if (("click" === en)) {
-        var pd_1 = (_co.topscroll() !== false);
-        ad = (pd_1 && ad);
-    } return ad; }, null, null)), i1.ɵdid(17, 671744, [[17, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵdid(18, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 16, { links: 1 }), i1.ɵqud(603979776, 17, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Team"])), (_l()(), i1.ɵeld(22, 0, null, null, 6, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(23, 0, null, null, 5, "a", [["routerLink", "/locality"], ["routerLinkActive", "active"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 24).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(33, 0, null, null, 48, "ul", [["class", "ul"]], null, null, null, null, null)), (_l()(), i1.ɵeld(34, 0, null, null, 3, "a", [["routerLink", "/"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 35).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
     } if (("click" === en)) {
         var pd_1 = (_co.topscroll() !== false);
         ad = (pd_1 && ad);
+    } return ad; }, null, null)), i1.ɵdid(35, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(36, 0, null, null, 1, "li", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Home"])), (_l()(), i1.ɵeld(38, 0, null, null, 3, "li", [["id", "niftview"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.openarenamenu() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(39, 0, null, null, 1, "a", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Arena"])), (_l()(), i1.ɵeld(41, 0, null, null, 0, "img", [["alt", ""], ["class", "arrow-rotate"], ["src", "assets/images/sportsocialhomearrow.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(42, 0, null, null, 6, "ul", [["class", "open-arena-menu"], ["id", "niftview"]], null, null, null, null, null)), (_l()(), i1.ɵeld(43, 0, null, null, 3, "a", [["routerLink", "/OpenArena"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 44).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+        ad = (pd_0 && ad);
+    } if (("click" === en)) {
+        var pd_1 = (_co.topscroll() !== false);
+        ad = (pd_1 && ad);
+<<<<<<< HEAD
     } return ad; }, null, null)), i1.ɵdid(43, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(44, 0, null, null, 1, "li", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["All News"])), (_l()(), i1.ɵeld(46, 0, null, null, 20, "span", [["class", "dpslide2"]], null, null, null, null, null)), (_l()(), i1.ɵeld(47, 0, null, null, 3, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(48, 0, null, null, 2, "a", [["routerLink", "/about"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (i1.ɵnov(_v, 49).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+=======
+    } return ad; }, null, null)), i1.ɵdid(44, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(45, 0, null, null, 1, "li", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Open Arena"])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HeaderComponent_3)), i1.ɵdid(48, 278528, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(49, 0, null, null, 4, "span", [["class", "dpslide"]], null, null, null, null, null)), (_l()(), i1.ɵeld(50, 0, null, null, 3, "li", [["id", "niftview"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.opennewsmenu() !== false);
+>>>>>>> 7c11dfd0c69a3a71141db79c1eddff911a6668b0
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(31, 671744, [[21, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵdid(32, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 20, { links: 1 }), i1.ɵqud(603979776, 21, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Help"]))], function (_ck, _v) { var currVal_2 = "/about"; _ck(_v, 3, 0, currVal_2); var currVal_3 = "active"; _ck(_v, 4, 0, currVal_3); var currVal_6 = "/application"; _ck(_v, 10, 0, currVal_6); var currVal_7 = "active"; _ck(_v, 11, 0, currVal_7); var currVal_10 = "/team"; _ck(_v, 17, 0, currVal_10); var currVal_11 = "active"; _ck(_v, 18, 0, currVal_11); var currVal_14 = "/locality"; _ck(_v, 24, 0, currVal_14); var currVal_15 = "active"; _ck(_v, 25, 0, currVal_15); var currVal_18 = "/HelpCenter"; _ck(_v, 31, 0, currVal_18); var currVal_19 = "active"; _ck(_v, 32, 0, currVal_19); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 3).target; var currVal_1 = i1.ɵnov(_v, 3).href; _ck(_v, 2, 0, currVal_0, currVal_1); var currVal_4 = i1.ɵnov(_v, 10).target; var currVal_5 = i1.ɵnov(_v, 10).href; _ck(_v, 9, 0, currVal_4, currVal_5); var currVal_8 = i1.ɵnov(_v, 17).target; var currVal_9 = i1.ɵnov(_v, 17).href; _ck(_v, 16, 0, currVal_8, currVal_9); var currVal_12 = i1.ɵnov(_v, 24).target; var currVal_13 = i1.ɵnov(_v, 24).href; _ck(_v, 23, 0, currVal_12, currVal_13); var currVal_16 = i1.ɵnov(_v, 31).target; var currVal_17 = i1.ɵnov(_v, 31).href; _ck(_v, 30, 0, currVal_16, currVal_17); }); }
-function View_HeaderComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 4, "div", [["class", "dropdown-menu"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "div", [["class", "dropdown-cancel-image-holder"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 0, "img", [["src", "/assets/images/sports-social-cancel-black.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-        var pd_0 = (_co.closeDropdown() !== false);
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(51, 0, null, null, 1, "a", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["News"])), (_l()(), i1.ɵeld(53, 0, null, null, 0, "img", [["alt", ""], ["class", "arrow-rotate1"], ["src", "assets/images/sportsocialhomearrow.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(54, 0, null, null, 6, "ul", [["class", "open-news-menu"], ["id", "niftview"]], null, null, null, null, null)), (_l()(), i1.ɵeld(55, 0, null, null, 3, "a", [["routerLink", "/newspage"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 56).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
     } if (("click" === en)) {
         var pd_1 = (_co.topscroll() !== false);
         ad = (pd_1 && ad);
+<<<<<<< HEAD
     } return ad; }, null, null)), i1.ɵdid(53, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(-1, null, ["App"])), (_l()(), i1.ɵeld(55, 0, null, null, 3, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(56, 0, null, null, 2, "a", [["routerLink", "/teamview"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (i1.ɵnov(_v, 57).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+=======
+    } return ad; }, null, null)), i1.ɵdid(56, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(57, 0, null, null, 1, "li", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["All News"])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HeaderComponent_4)), i1.ɵdid(60, 278528, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(61, 0, null, null, 20, "span", [["class", "dpslide2"]], null, null, null, null, null)), (_l()(), i1.ɵeld(62, 0, null, null, 3, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(63, 0, null, null, 2, "a", [["routerLink", "/about"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 64).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+>>>>>>> 7c11dfd0c69a3a71141db79c1eddff911a6668b0
         ad = (pd_0 && ad);
     } if (("click" === en)) {
         var pd_1 = (_co.topscroll() !== false);
         ad = (pd_1 && ad);
+<<<<<<< HEAD
     } return ad; }, null, null)), i1.ɵdid(57, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(-1, null, ["Team"])), (_l()(), i1.ɵeld(59, 0, null, null, 3, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(60, 0, null, null, 2, "a", [["routerLink", "/localitypage"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (i1.ɵnov(_v, 61).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+=======
+    } return ad; }, null, null)), i1.ɵdid(64, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(-1, null, ["About"])), (_l()(), i1.ɵeld(66, 0, null, null, 3, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(67, 0, null, null, 2, "a", [["routerLink", "/application"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 68).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
     } if (("click" === en)) {
         var pd_1 = (_co.topscroll() !== false);
         ad = (pd_1 && ad);
+    } return ad; }, null, null)), i1.ɵdid(68, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(-1, null, ["App"])), (_l()(), i1.ɵeld(70, 0, null, null, 3, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(71, 0, null, null, 2, "a", [["routerLink", "/team"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 72).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+>>>>>>> 7c11dfd0c69a3a71141db79c1eddff911a6668b0
+        ad = (pd_0 && ad);
+    } if (("click" === en)) {
+        var pd_1 = (_co.topscroll() !== false);
+        ad = (pd_1 && ad);
+<<<<<<< HEAD
     } return ad; }, null, null)), i1.ɵdid(61, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(-1, null, ["Locality"])), (_l()(), i1.ɵeld(63, 0, null, null, 3, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(64, 0, null, null, 2, "a", [["routerLink", "/HelpCenter"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (i1.ɵnov(_v, 65).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+=======
+    } return ad; }, null, null)), i1.ɵdid(72, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(-1, null, ["Team"])), (_l()(), i1.ɵeld(74, 0, null, null, 3, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(75, 0, null, null, 2, "a", [["routerLink", "/locality"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 76).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+>>>>>>> 7c11dfd0c69a3a71141db79c1eddff911a6668b0
         ad = (pd_0 && ad);
     } if (("click" === en)) {
         var pd_1 = (_co.topscroll() !== false);
         ad = (pd_1 && ad);
+<<<<<<< HEAD
     } return ad; }, null, null)), i1.ɵdid(65, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(-1, null, ["Help"]))], function (_ck, _v) { var _co = _v.component; var currVal_2 = "/"; _ck(_v, 4, 0, currVal_2); var currVal_3 = !_co.isMenuInDropdown; _ck(_v, 15, 0, currVal_3); var currVal_6 = "/"; _ck(_v, 24, 0, currVal_6); var currVal_9 = "/OpenArena"; _ck(_v, 33, 0, currVal_9); var currVal_12 = "/newspage"; _ck(_v, 43, 0, currVal_12); var currVal_15 = "/about"; _ck(_v, 49, 0, currVal_15); var currVal_18 = "/application"; _ck(_v, 53, 0, currVal_18); var currVal_21 = "/teamview"; _ck(_v, 57, 0, currVal_21); var currVal_24 = "/localitypage"; _ck(_v, 61, 0, currVal_24); var currVal_27 = "/HelpCenter"; _ck(_v, 65, 0, currVal_27); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 4).target; var currVal_1 = i1.ɵnov(_v, 4).href; _ck(_v, 3, 0, currVal_0, currVal_1); var currVal_4 = i1.ɵnov(_v, 24).target; var currVal_5 = i1.ɵnov(_v, 24).href; _ck(_v, 23, 0, currVal_4, currVal_5); var currVal_7 = i1.ɵnov(_v, 33).target; var currVal_8 = i1.ɵnov(_v, 33).href; _ck(_v, 32, 0, currVal_7, currVal_8); var currVal_10 = i1.ɵnov(_v, 43).target; var currVal_11 = i1.ɵnov(_v, 43).href; _ck(_v, 42, 0, currVal_10, currVal_11); var currVal_13 = i1.ɵnov(_v, 49).target; var currVal_14 = i1.ɵnov(_v, 49).href; _ck(_v, 48, 0, currVal_13, currVal_14); var currVal_16 = i1.ɵnov(_v, 53).target; var currVal_17 = i1.ɵnov(_v, 53).href; _ck(_v, 52, 0, currVal_16, currVal_17); var currVal_19 = i1.ɵnov(_v, 57).target; var currVal_20 = i1.ɵnov(_v, 57).href; _ck(_v, 56, 0, currVal_19, currVal_20); var currVal_22 = i1.ɵnov(_v, 61).target; var currVal_23 = i1.ɵnov(_v, 61).href; _ck(_v, 60, 0, currVal_22, currVal_23); var currVal_25 = i1.ɵnov(_v, 65).target; var currVal_26 = i1.ɵnov(_v, 65).href; _ck(_v, 64, 0, currVal_25, currVal_26); }); }
+=======
+    } return ad; }, null, null)), i1.ɵdid(76, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(-1, null, ["Locality"])), (_l()(), i1.ɵeld(78, 0, null, null, 3, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(79, 0, null, null, 2, "a", [["routerLink", "/HelpCenter"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 80).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+        ad = (pd_0 && ad);
+    } if (("click" === en)) {
+        var pd_1 = (_co.topscroll() !== false);
+        ad = (pd_1 && ad);
+    } return ad; }, null, null)), i1.ɵdid(80, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(-1, null, ["Help"]))], function (_ck, _v) { var _co = _v.component; var currVal_2 = "/"; _ck(_v, 4, 0, currVal_2); var currVal_4 = _co.locationlist; _ck(_v, 24, 0, currVal_4); var currVal_5 = !_co.isMenuInDropdown; _ck(_v, 26, 0, currVal_5); var currVal_8 = "/"; _ck(_v, 35, 0, currVal_8); var currVal_11 = "/OpenArena"; _ck(_v, 44, 0, currVal_11); var currVal_12 = _co.openarenalist; _ck(_v, 48, 0, currVal_12); var currVal_15 = "/newspage"; _ck(_v, 56, 0, currVal_15); var currVal_16 = _co.newslist; _ck(_v, 60, 0, currVal_16); var currVal_19 = "/about"; _ck(_v, 64, 0, currVal_19); var currVal_22 = "/application"; _ck(_v, 68, 0, currVal_22); var currVal_25 = "/team"; _ck(_v, 72, 0, currVal_25); var currVal_28 = "/locality"; _ck(_v, 76, 0, currVal_28); var currVal_31 = "/HelpCenter"; _ck(_v, 80, 0, currVal_31); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = i1.ɵnov(_v, 4).target; var currVal_1 = i1.ɵnov(_v, 4).href; _ck(_v, 3, 0, currVal_0, currVal_1); var currVal_3 = i1.ɵunv(_v, 18, 0, i1.ɵnov(_v, 19).transform(_co.Location, 0, 15)); _ck(_v, 18, 0, currVal_3); var currVal_6 = i1.ɵnov(_v, 35).target; var currVal_7 = i1.ɵnov(_v, 35).href; _ck(_v, 34, 0, currVal_6, currVal_7); var currVal_9 = i1.ɵnov(_v, 44).target; var currVal_10 = i1.ɵnov(_v, 44).href; _ck(_v, 43, 0, currVal_9, currVal_10); var currVal_13 = i1.ɵnov(_v, 56).target; var currVal_14 = i1.ɵnov(_v, 56).href; _ck(_v, 55, 0, currVal_13, currVal_14); var currVal_17 = i1.ɵnov(_v, 64).target; var currVal_18 = i1.ɵnov(_v, 64).href; _ck(_v, 63, 0, currVal_17, currVal_18); var currVal_20 = i1.ɵnov(_v, 68).target; var currVal_21 = i1.ɵnov(_v, 68).href; _ck(_v, 67, 0, currVal_20, currVal_21); var currVal_23 = i1.ɵnov(_v, 72).target; var currVal_24 = i1.ɵnov(_v, 72).href; _ck(_v, 71, 0, currVal_23, currVal_24); var currVal_26 = i1.ɵnov(_v, 76).target; var currVal_27 = i1.ɵnov(_v, 76).href; _ck(_v, 75, 0, currVal_26, currVal_27); var currVal_29 = i1.ɵnov(_v, 80).target; var currVal_30 = i1.ɵnov(_v, 80).href; _ck(_v, 79, 0, currVal_29, currVal_30); }); }
+>>>>>>> 7c11dfd0c69a3a71141db79c1eddff911a6668b0
 exports.View_HeaderComponent_0 = View_HeaderComponent_0;
 function View_HeaderComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-header", [], null, [["window", "resize"]], function (_v, en, $event) { var ad = true; if (("window:resize" === en)) {
         var pd_0 = (i1.ɵnov(_v, 1).onresize() !== false);
@@ -6013,6 +6087,16 @@ var HeaderComponent = /** @class */ (function () {
             { link: 'hockey', name: 'Hockey' },
             { link: 'badminton', name: 'Badminton' },
         ];
+<<<<<<< HEAD
+=======
+        this.openmenu = document.getElementsByClassName('slide-menu');
+        this.openarena = document.getElementsByClassName('open-arena-menu');
+        this.opennews = document.getElementsByClassName('open-news-menu');
+        this.dpslide = document.getElementsByClassName('dpslide');
+        this.dpslide2 = document.getElementsByClassName('dpslide2');
+        this.arrowrotate = document.getElementsByClassName('arrow-rotate');
+        this.arrowrotate1 = document.getElementsByClassName('arrow-rotate1');
+>>>>>>> 7c11dfd0c69a3a71141db79c1eddff911a6668b0
         this.cookieValue = "Unknown";
         this.emitcall = new events_1.EventEmitter();
     }
@@ -6065,12 +6149,69 @@ var HeaderComponent = /** @class */ (function () {
         else {
             this.searchButton = true;
         }
+<<<<<<< HEAD
     };
     HeaderComponent.prototype.openNav = function () {
         this.sidenav = true;
     };
     HeaderComponent.prototype.closeNav = function () {
         this.sidenav = false;
+=======
+    };
+    HeaderComponent.prototype.openNav = function () {
+        this.sidenav = true;
+    };
+    HeaderComponent.prototype.closeNav = function () {
+        this.sidenav = false;
+    };
+    HeaderComponent.prototype.openDropdown = function () {
+        if (this.openstatus) {
+            this.openmenu[0].style.right = "0px";
+            this.openstatus = false;
+        }
+        else {
+            this.openmenu[0].style.right = "-1000px";
+            this.openstatus = true;
+        }
+    };
+    HeaderComponent.prototype.closeDropdown = function () {
+        this.openmenu[0].style.right = "2000px";
+        // this.isDropdownIconclicked = false;
+    };
+    HeaderComponent.prototype.openarenamenu = function () {
+        if (this.l1) {
+            this.openarena[0].style.right = "0px";
+            this.arrowrotate[0].style.transform = "rotate(180deg)";
+            this.dpslide[0].style.left = "-1000px";
+            this.dpslide2[0].style.left = "-1000px";
+            this.opennews[0].style.right = "-1000px";
+            this.l1 = false;
+            this.arrowrotate1[0].style.transform = "rotate(0deg)";
+            this.l2 = true;
+        }
+        else {
+            this.openarena[0].style.right = "-1000px";
+            this.arrowrotate[0].style.transform = "rotate(0deg)";
+            this.dpslide[0].style.left = "0px";
+            this.dpslide2[0].style.left = "0px";
+            this.opennews[0].style.right = "-1000px";
+            this.l1 = true;
+        }
+    };
+    HeaderComponent.prototype.opennewsmenu = function () {
+        if (this.l2) {
+            this.opennews[0].style.right = "0px";
+            this.arrowrotate1[0].style.transform = "rotate(180deg)";
+            this.dpslide2[0].style.left = "-1000px";
+            this.l2 = false;
+        }
+        else {
+            this.opennews[0].style.right = "-1000px";
+            this.arrowrotate1[0].style.transform = "rotate(0deg)";
+            this.dpslide2[0].style.left = "0px";
+            this.l2 = true;
+        }
+>>>>>>> 7c11dfd0c69a3a71141db79c1eddff911a6668b0
     };
     HeaderComponent.prototype.sendHeightOfHeader = function () {
         var height = this.header.nativeElement.getBoundingClientRect().height;
@@ -6535,8 +6676,6 @@ var HelpCenterComponent = /** @class */ (function () {
         this.metakeywords = "Sports Social Help,Sports Social Help Center,Customer care Sports Social,Contact Sports Social,Chase Your Sport,FAQ Sports Social,Sports Social Support";
         this.Keywords = [];
         this.togglableNav = false;
-    }
-    HelpCenterComponent.prototype.ngOnInit = function () {
         this.title.setTitle(this.pagetitle);
         this.meta.updateTag({ name: 'title', content: this.pagetitle });
         this.meta.updateTag({ name: 'description', content: this.description });
@@ -6544,6 +6683,8 @@ var HelpCenterComponent = /** @class */ (function () {
         this.meta.updateTag({ property: 'og:title', content: this.pagetitle });
         this.meta.updateTag({ property: 'og:description', content: this.description });
         this.meta.updateTag({ property: 'og:keywords', content: this.metakeywords });
+    }
+    HelpCenterComponent.prototype.ngOnInit = function () {
     };
     HelpCenterComponent.prototype.setCanonivalURL = function () {
         var key;
@@ -6983,11 +7124,13 @@ var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
 var i3 = __webpack_require__(/*! ../header/header.component.ngfactory */ "./src/app/header/header.component.ngfactory.js");
 var i4 = __webpack_require__(/*! ../header/header.component */ "./src/app/header/header.component.ts");
 var i5 = __webpack_require__(/*! ../shared/services/property.service */ "./src/app/shared/services/property.service.ts");
-var i6 = __webpack_require__(/*! ../backfooter/backfooter.component.ngfactory */ "./src/app/backfooter/backfooter.component.ngfactory.js");
-var i7 = __webpack_require__(/*! ../backfooter/backfooter.component */ "./src/app/backfooter/backfooter.component.ts");
-var i8 = __webpack_require__(/*! ./localitypage.component */ "./src/app/localitypage/localitypage.component.ts");
-var i9 = __webpack_require__(/*! ../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
-var i10 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
+var i6 = __webpack_require__(/*! ../shared/services/interaction.service */ "./src/app/shared/services/interaction.service.ts");
+var i7 = __webpack_require__(/*! ngx-cookie-service */ "ngx-cookie-service");
+var i8 = __webpack_require__(/*! ../backfooter/backfooter.component.ngfactory */ "./src/app/backfooter/backfooter.component.ngfactory.js");
+var i9 = __webpack_require__(/*! ../backfooter/backfooter.component */ "./src/app/backfooter/backfooter.component.ts");
+var i10 = __webpack_require__(/*! ./localitypage.component */ "./src/app/localitypage/localitypage.component.ts");
+var i11 = __webpack_require__(/*! ../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
+var i12 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
 var styles_LocalitypageComponent = [i0.styles];
 var RenderType_LocalitypageComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_LocalitypageComponent, data: {} });
 exports.RenderType_LocalitypageComponent = RenderType_LocalitypageComponent;
@@ -7004,7 +7147,7 @@ function View_LocalitypageComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵel
         ad = (pd_0 && ad);
     } return ad; }, i3.View_HeaderComponent_0, i3.RenderType_HeaderComponent)), i1.ɵdid(1, 4308992, null, 0, i4.HeaderComponent, [i5.PropertyService, i6.InteractionService, i7.CookieService], null, null), (_l()(), i1.ɵeld(2, 0, null, null, 28, "div", [["class", "dview"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 23, "div", [["class", "container"], ["style", "background-image: url('/assets/images/sportsociallocality.png'); background-size: 100% 100%;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 0, "div", [["class", "centered-div"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 11, "div", [["class", "centered-div"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 10, "div", [["class", "innerbox"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Sports Social"])), (_l()(), i1.ɵeld(9, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(10, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(11, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Welcome to sports social, this is a website that provides wings to your sports career. Search For your Favourite Locality in your Area."])), (_l()(), i1.ɵeld(13, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(14, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(15, 0, null, null, 1, "button", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Create"])), (_l()(), i1.ɵeld(17, 0, null, null, 0, "div", [["class", "centered-div"]], null, null, null, null, null)), (_l()(), i1.ɵeld(18, 0, null, null, 0, "div", [["class", "centered-div"]], null, null, null, null, null)), (_l()(), i1.ɵeld(19, 0, null, null, 7, "div", [["class", "centered-div"]], null, null, null, null, null)), (_l()(), i1.ɵeld(20, 0, null, null, 6, "div", [["class", "innerbox1"]], null, null, null, null, null)), (_l()(), i1.ɵeld(21, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Locality"])), (_l()(), i1.ɵeld(23, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(24, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(25, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Welcome to sports social, this is a website that provides wings to your sports career. Search For your Favourite Locality in your Area."])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalitypageComponent_1)), i1.ɵdid(28, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalitypageComponent_2)), i1.ɵdid(30, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(31, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(32, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(33, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(34, 0, null, null, 27, "div", [["class", "mview"]], null, null, null, null, null)), (_l()(), i1.ɵeld(35, 0, null, null, 10, "div", [["class", "mbox"]], null, null, null, null, null)), (_l()(), i1.ɵeld(36, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Sports Social"])), (_l()(), i1.ɵeld(38, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(39, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(40, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Welcome to sports social, this is a website that provides wings to your sports career. Search For your Favourite Locality in your Area."])), (_l()(), i1.ɵeld(42, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(43, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(44, 0, null, null, 1, "button", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Create"])), (_l()(), i1.ɵeld(46, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(47, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(48, 0, null, null, 0, "img", [["src", "/assets/images/sportsociallocality1.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(49, 0, null, null, 8, "div", [["class", "mbox"]], null, null, null, null, null)), (_l()(), i1.ɵeld(50, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Locality"])), (_l()(), i1.ɵeld(52, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(53, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(54, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Welcome to sports social, this is a website that provides wings to your sports career. Search For your Favourite Locality in your Area."])), (_l()(), i1.ɵeld(56, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(57, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalitypageComponent_7)), i1.ɵdid(59, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalitypageComponent_8)), i1.ɵdid(61, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(62, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(63, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(64, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(65, 0, null, null, 1, "sports-social-backfooter", [], null, null, null, i8.View_BackfooterComponent_0, i8.RenderType_BackfooterComponent)), i1.ɵdid(66, 114688, null, 0, i9.BackfooterComponent, [], null, null)], function (_ck, _v) { var _co = _v.component; _ck(_v, 1, 0); var currVal_0 = (_co.lvdata.length === 0); _ck(_v, 28, 0, currVal_0); var currVal_1 = _co.lvdata; _ck(_v, 30, 0, currVal_1); var currVal_2 = (_co.lvdata.length === 0); _ck(_v, 59, 0, currVal_2); var currVal_3 = _co.lvdata; _ck(_v, 61, 0, currVal_3); _ck(_v, 66, 0); }, null); }
 exports.View_LocalitypageComponent_0 = View_LocalitypageComponent_0;
-function View_LocalitypageComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-localitypage", [], null, null, null, View_LocalitypageComponent_0, RenderType_LocalitypageComponent)), i1.ɵdid(1, 114688, null, 0, i8.LocalitypageComponent, [i9.PostService, i10.Title, i10.Meta], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+function View_LocalitypageComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-localitypage", [], null, null, null, View_LocalitypageComponent_0, RenderType_LocalitypageComponent)), i1.ɵdid(1, 114688, null, 0, i10.LocalitypageComponent, [i11.PostService, i12.Title, i12.Meta], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_LocalitypageComponent_Host_0 = View_LocalitypageComponent_Host_0;
 var LocalitypageComponentNgFactory = i1.ɵccf("sports-social-localitypage", i10.LocalitypageComponent, View_LocalitypageComponent_Host_0, {}, {}, []);
 exports.LocalitypageComponentNgFactory = LocalitypageComponentNgFactory;
@@ -7035,8 +7178,6 @@ var LocalitypageComponent = /** @class */ (function () {
         this.description = "Get the real time updates and information about what people playing around you and where, Just visit Sports Social Locality";
         this.service = [];
         this.lvdata = [];
-    }
-    LocalitypageComponent.prototype.ngOnInit = function () {
         this.titleservice.setTitle(this.title);
         this.metaservice.updateTag({ name: 'title', content: this.title });
         this.metaservice.updateTag({ name: 'keywords', content: this.keywords });
@@ -7044,6 +7185,8 @@ var LocalitypageComponent = /** @class */ (function () {
         this.metaservice.updateTag({ property: 'og:title', content: this.title });
         this.metaservice.updateTag({ property: 'og:keywords', content: this.keywords });
         this.metaservice.updateTag({ property: 'og:description', content: this.description });
+    }
+    LocalitypageComponent.prototype.ngOnInit = function () {
         this.lmv();
         if (window.innerWidth <= 700) {
             this.mview = 0;
@@ -9201,7 +9344,7 @@ function View_OurteamComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 
 function View_OurteamComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-header", [], null, [["window", "resize"]], function (_v, en, $event) { var ad = true; if (("window:resize" === en)) {
         var pd_0 = (i1.ɵnov(_v, 1).onresize() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, i2.View_HeaderComponent_0, i2.RenderType_HeaderComponent)), i1.ɵdid(1, 4308992, null, 0, i3.HeaderComponent, [i4.PropertyService], null, null), (_l()(), i1.ɵeld(2, 0, null, null, 8, "div", [["class", "body"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 4, "div", [["class", "head"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Meet Our Team"])), (_l()(), i1.ɵeld(6, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["A perfect blend of creativity and technical wizardly. The best people formulas for great websites!. "])), (_l()(), i1.ɵeld(8, 0, null, null, 2, "div", [["class", "cards"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_OurteamComponent_1)), i1.ɵdid(10, 278528, null, 0, i5.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(11, 0, null, null, 2, "div", [["class", "bodyfooter"]], null, null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 1, "sports-social-backfooter", [], null, null, null, i6.View_BackfooterComponent_0, i6.RenderType_BackfooterComponent)), i1.ɵdid(13, 114688, null, 0, i7.BackfooterComponent, [], null, null)], function (_ck, _v) { var _co = _v.component; _ck(_v, 1, 0); var currVal_0 = _co.imgarr; _ck(_v, 10, 0, currVal_0); _ck(_v, 13, 0); }, null); }
+    } return ad; }, i2.View_HeaderComponent_0, i2.RenderType_HeaderComponent)), i1.ɵdid(1, 4308992, null, 0, i3.HeaderComponent, [i4.PropertyService, i5.InteractionService, i6.CookieService], null, null), (_l()(), i1.ɵeld(2, 0, null, null, 8, "div", [["class", "body"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 4, "div", [["class", "head"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Meet Our Team"])), (_l()(), i1.ɵeld(6, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["A perfect blend of creativity and technical wizardly. The best people formulas for great websites!. "])), (_l()(), i1.ɵeld(8, 0, null, null, 2, "div", [["class", "cards"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_OurteamComponent_1)), i1.ɵdid(10, 278528, null, 0, i7.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(11, 0, null, null, 2, "div", [["class", "bodyfooter"]], null, null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 1, "sports-social-backfooter", [], null, null, null, i8.View_BackfooterComponent_0, i8.RenderType_BackfooterComponent)), i1.ɵdid(13, 114688, null, 0, i9.BackfooterComponent, [], null, null)], function (_ck, _v) { var _co = _v.component; _ck(_v, 1, 0); var currVal_0 = _co.imgarr; _ck(_v, 10, 0, currVal_0); _ck(_v, 13, 0); }, null); }
 exports.View_OurteamComponent_0 = View_OurteamComponent_0;
 function View_OurteamComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-ourteam", [], null, null, null, View_OurteamComponent_0, RenderType_OurteamComponent)), i1.ɵdid(1, 114688, null, 0, i10.OurteamComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_OurteamComponent_Host_0 = View_OurteamComponent_Host_0;
@@ -9423,8 +9566,6 @@ var PrivacyPolicyComponent = /** @class */ (function () {
         this.title = 'Privacy Policy | Sports Social';
         this.description = "Get Sports Social's privacy policy. If you have any questions related to this policy, please feel free to contact us. We will love t o hear from you";
         this.keywords = "Privacy Policy Sports Social";
-    }
-    PrivacyPolicyComponent.prototype.ngOnInit = function () {
         this.pagetitle.setTitle(this.title);
         this.meta.updateTag({ name: 'title', content: this.title });
         this.meta.updateTag({ name: 'description', content: this.description });
@@ -9432,6 +9573,8 @@ var PrivacyPolicyComponent = /** @class */ (function () {
         this.meta.updateTag({ property: 'og:title', content: this.title });
         this.meta.updateTag({ property: 'og:description', content: this.description });
         this.meta.updateTag({ property: 'og:keywords', content: this.keywords });
+    }
+    PrivacyPolicyComponent.prototype.ngOnInit = function () {
     };
     return PrivacyPolicyComponent;
 }());
@@ -10071,7 +10214,6 @@ exports.SendService = SendService;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var tslib_1 = __webpack_require__(/*! tslib */ "tslib");
 var platform_browser_1 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
 var SeoService = /** @class */ (function () {
     function SeoService(meta) {
@@ -10079,19 +10221,17 @@ var SeoService = /** @class */ (function () {
     }
     SeoService.prototype.generateTags = function (config) {
         // default values
-        config = tslib_1.__assign({ title: 'Sports Social: Making it easier to play around', description: 'My SEO friendly Angular Component', image: 'https://test.sportsocial.in/defaultimages/Chase_Your_Sport.jpg', slug: '' }, config);
-        this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
-        this.meta.updateTag({ name: 'twitter:site', content: '@Sportsoical' });
-        this.meta.updateTag({ name: 'twitter:creator', content: '@SourabhArora' });
-        this.meta.updateTag({ name: 'twitter:title', content: config.title });
-        this.meta.updateTag({ name: 'twitter:description', content: config.description });
-        this.meta.updateTag({ name: 'twitter:image', content: config.image });
-        this.meta.updateTag({ property: 'og:type', content: 'article' });
-        this.meta.updateTag({ property: 'og:site_name', content: 'Sport Social' });
+        config = {
+            title: 'Sports Social: Making it easier to play around',
+            description: 'My SEO friendly Angular Component',
+            keywords: 'ss,phase1 , gurugram, haryana,india'
+        };
+        this.meta.updateTag({ name: 'title', content: config.title });
+        this.meta.updateTag({ name: 'keywords', content: config.keywords });
+        this.meta.updateTag({ name: 'description', content: config.description });
         this.meta.updateTag({ property: 'og:title', content: config.title });
+        this.meta.updateTag({ property: 'og:keywords', content: config.keywords });
         this.meta.updateTag({ property: 'og:description', content: config.description });
-        this.meta.updateTag({ property: 'og:image', content: config.image });
-        this.meta.updateTag({ property: 'og:url', content: "https://www.sportsocial.in/" + config.slug });
     };
     return SeoService;
 }());
@@ -10559,11 +10699,13 @@ var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
 var i3 = __webpack_require__(/*! ../header/header.component.ngfactory */ "./src/app/header/header.component.ngfactory.js");
 var i4 = __webpack_require__(/*! ../header/header.component */ "./src/app/header/header.component.ts");
 var i5 = __webpack_require__(/*! ../shared/services/property.service */ "./src/app/shared/services/property.service.ts");
-var i6 = __webpack_require__(/*! ../backfooter/backfooter.component.ngfactory */ "./src/app/backfooter/backfooter.component.ngfactory.js");
-var i7 = __webpack_require__(/*! ../backfooter/backfooter.component */ "./src/app/backfooter/backfooter.component.ts");
-var i8 = __webpack_require__(/*! ./teamview.component */ "./src/app/teamview/teamview.component.ts");
-var i9 = __webpack_require__(/*! ../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
-var i10 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
+var i6 = __webpack_require__(/*! ../shared/services/interaction.service */ "./src/app/shared/services/interaction.service.ts");
+var i7 = __webpack_require__(/*! ngx-cookie-service */ "ngx-cookie-service");
+var i8 = __webpack_require__(/*! ../backfooter/backfooter.component.ngfactory */ "./src/app/backfooter/backfooter.component.ngfactory.js");
+var i9 = __webpack_require__(/*! ../backfooter/backfooter.component */ "./src/app/backfooter/backfooter.component.ts");
+var i10 = __webpack_require__(/*! ./teamview.component */ "./src/app/teamview/teamview.component.ts");
+var i11 = __webpack_require__(/*! ../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
+var i12 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
 var styles_TeamviewComponent = [i0.styles];
 var RenderType_TeamviewComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_TeamviewComponent, data: {} });
 exports.RenderType_TeamviewComponent = RenderType_TeamviewComponent;
@@ -10583,7 +10725,7 @@ function View_TeamviewComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0,
         ad = (pd_0 && ad);
     } return ad; }, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 0, "img", [["class", "tvicon"], ["src", "assets/images/sportsocialtvicon.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 5, "div", [["class", "centered"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Team"])), (_l()(), i1.ɵeld(10, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(11, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Joining together is a beginning. Keeping together is a process. Playing together is a success."])), (_l()(), i1.ɵeld(13, 0, [["target", 1]], null, 0, "a", [], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_TeamviewComponent_1)), i1.ɵdid(15, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_TeamviewComponent_7)), i1.ɵdid(17, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵeld(18, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(19, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(20, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(21, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(22, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(23, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(24, 0, null, null, 1, "sports-social-backfooter", [], null, null, null, i8.View_BackfooterComponent_0, i8.RenderType_BackfooterComponent)), i1.ɵdid(25, 114688, null, 0, i9.BackfooterComponent, [], null, null)], function (_ck, _v) { var _co = _v.component; _ck(_v, 1, 0); var currVal_0 = (_co.mview === 1); _ck(_v, 15, 0, currVal_0); var currVal_1 = (_co.mview === 0); _ck(_v, 17, 0, currVal_1); _ck(_v, 25, 0); }, null); }
 exports.View_TeamviewComponent_0 = View_TeamviewComponent_0;
-function View_TeamviewComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-teamview", [], null, null, null, View_TeamviewComponent_0, RenderType_TeamviewComponent)), i1.ɵdid(1, 114688, null, 0, i8.TeamviewComponent, [i9.PostService, i10.Title, i10.Meta], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+function View_TeamviewComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-teamview", [], null, null, null, View_TeamviewComponent_0, RenderType_TeamviewComponent)), i1.ɵdid(1, 114688, null, 0, i10.TeamviewComponent, [i11.PostService, i12.Title, i12.Meta], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_TeamviewComponent_Host_0 = View_TeamviewComponent_Host_0;
 var TeamviewComponentNgFactory = i1.ɵccf("sports-social-teamview", i10.TeamviewComponent, View_TeamviewComponent_Host_0, {}, {}, []);
 exports.TeamviewComponentNgFactory = TeamviewComponentNgFactory;
@@ -10614,8 +10756,6 @@ var TeamviewComponent = /** @class */ (function () {
         this.description = "To easily manage, find the new matches, new opponents around you just create a new team or join a team nearby";
         this.service = [];
         this.tvdata = [];
-    }
-    TeamviewComponent.prototype.ngOnInit = function () {
         this.titleservice.setTitle(this.title);
         this.metaservice.updateTag({ name: 'title', content: this.title });
         this.metaservice.updateTag({ name: 'keywords', content: this.keywords });
@@ -10623,6 +10763,8 @@ var TeamviewComponent = /** @class */ (function () {
         this.metaservice.updateTag({ property: 'og:title', content: this.title });
         this.metaservice.updateTag({ property: 'og:keywords', content: this.keywords });
         this.metaservice.updateTag({ property: 'og:description', content: this.description });
+    }
+    TeamviewComponent.prototype.ngOnInit = function () {
         this.tmv();
         //mobile view 
         if (window.innerWidth <= 700) {
@@ -10751,8 +10893,6 @@ var TermsAndConditionComponent = /** @class */ (function () {
             'Disclaimer & Liability',
             'Entire Agreement'
         ];
-    }
-    TermsAndConditionComponent.prototype.ngOnInit = function () {
         this.pagetite.setTitle(this.title);
         this.meta.updateTag({ name: 'title', content: this.title });
         this.meta.updateTag({ name: 'description', content: this.description });
@@ -10760,6 +10900,8 @@ var TermsAndConditionComponent = /** @class */ (function () {
         this.meta.updateTag({ property: 'og:title', content: this.title });
         this.meta.updateTag({ property: 'og:keywords', content: this.keywords });
         this.meta.updateTag({ property: 'og:description', content: this.description });
+    }
+    TermsAndConditionComponent.prototype.ngOnInit = function () {
     };
     return TermsAndConditionComponent;
 }());
@@ -11305,17 +11447,6 @@ module.exports = require("rxjs/Subject");
 /***/ (function(module, exports) {
 
 module.exports = require("rxjs/operators");
-
-/***/ }),
-
-/***/ "tslib":
-/*!************************!*\
-  !*** external "tslib" ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("tslib");
 
 /***/ })
 

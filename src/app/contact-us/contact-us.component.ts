@@ -28,7 +28,15 @@ export class ContactUsComponent implements OnInit {
   formresponse;
   constructor(private http:Http,private post:PostService,
     private metattitle:Title,
-    private metaservice:Meta) {  }
+    private metaservice:Meta) { 
+      this.metattitle.setTitle(this.title);
+      this.metaservice.updateTag({name:'title',content:this.title});
+      this.metaservice.updateTag({name: 'keywords' , content: this.keywords});
+      this.metaservice.updateTag({name: 'description', content: this.description});
+      this.metaservice.updateTag({property:'og:title',content:this.title});
+      this.metaservice.updateTag({property:'og:keywords',content:this.keywords});
+      this.metaservice.updateTag({property:'og:description',content:this.description});
+     }
 
   onsubmit(form2:Contactus2){
     this.post.saveformdata(form2).subscribe((res)=>{
@@ -46,13 +54,7 @@ export class ContactUsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.metattitle.setTitle(this.title);
-    this.metaservice.updateTag({name:'title',content:this.title});
-    this.metaservice.updateTag({name: 'keywords' , content: this.keywords});
-    this.metaservice.updateTag({name: 'description', content: this.description});
-    this.metaservice.updateTag({property:'og:title',content:this.title});
-    this.metaservice.updateTag({property:'og:keywords',content:this.keywords});
-    this.metaservice.updateTag({property:'og:description',content:this.description});
+   
     
   }  
 }

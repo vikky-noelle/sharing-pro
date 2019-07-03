@@ -18,7 +18,8 @@ import { isPlatformBrowser } from '@angular/common';
 import { LinkService } from '../shared/services/link.service';
 import { Meta ,Title} from '@angular/platform-browser';
 import { Http ,Response} from '@angular/http';
-import { BuiltinVar } from '@angular/compiler';
+
+
 
 @Component({
 selector: 'app-about',
@@ -87,7 +88,14 @@ constructor(private margin:SendService,
     {   
   this.margin.height.subscribe(
     (top)=>this.marginTop=top
-  )
+  );
+  this.titleservice.setTitle(this.title);
+  this.metaservice.updateTag({name:'title',content:this.title});
+  this.metaservice.updateTag({name: 'keywords' , content:this.keywords});
+  this.metaservice.updateTag({name:'description',content:this.description});
+  this.metaservice.updateTag({property:'og:title',content:this.title});
+  this.metaservice.updateTag({property:'og:keywords',content:this.keywords});
+  this.metaservice.updateTag({property:'og:description',content:this.description});
   }
 
 instafeed():void{
@@ -137,14 +145,9 @@ setCanonicalURL() {
 }
 ngOnInit() {
   // console.log(this.desc.nativeElement.textContent);
+ 
   this.instafeed();
-  this.titleservice.setTitle(this.title);
-  this.metaservice.updateTag({name:'title',content:this.title});
-  this.metaservice.updateTag({name: 'keywords' , content:this.keywords});
-  this.metaservice.updateTag({name:'description',content:this.description});
-  this.metaservice.updateTag({property:'og:title',content:this.title});
-  this.metaservice.updateTag({property:'og:keywords',content:this.keywords});
-  this.metaservice.updateTag({property:'og:description',content:this.description});
+  
   this.getLatestBlog();
   this.setCanonicalURL();
   
