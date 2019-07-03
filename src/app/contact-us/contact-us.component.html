@@ -1,5 +1,11 @@
 <sports-social-header></sports-social-header>
-
+<!-- popup -->
+<div class="popup">
+  <div class="pop-up">
+    <h1>Your message is sent successfully! We will contact you shortly.<br>Thanks!</h1>
+    <button (click)="closepopup()">ok</button>
+  </div>
+</div>
   <div class="header">
     <div class="headerContent">
       <h2>Reach Out to us</h2>
@@ -12,7 +18,7 @@
       <div class="left-model">
           <h4></h4>
       
-        <form  #formdata="ngForm" (ngSubmit)="onsubmit(formdata.value)">
+        <form id="myform" #formdata="ngForm" (ngSubmit)="onsubmit(formdata.value)">
             <label>
               * First Name<br>
               <input type="text" name="firstname" [(ngModel)]="form.firstname" placeholder="first-name" required />
@@ -33,7 +39,7 @@
               * Message<br>
               <input  type="text" name="message" [(ngModel)]="form.message" required />
             </label><br>
-            <button type="submit" [disabled]="formdata.invalid">Send</button>
+            <button class="button" (click)="openpopup()" type="submit" [disabled]="formdata.invalid">Send</button>
         </form>
       </div>
       <div class="right-model">
