@@ -21,7 +21,7 @@ export class LocalitypageComponent implements OnInit {
     private metaservice:Meta) { }
 
   ngOnInit() {
-    this.titleservice.setTitle(this.title);
+  this.titleservice.setTitle(this.title);
   this.metaservice.updateTag({name:'title',content:this.title});
   this.metaservice.updateTag({name: 'keywords' , content:this.keywords});
   this.metaservice.updateTag({name:'description',content:this.description});

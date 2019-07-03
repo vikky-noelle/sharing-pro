@@ -30,9 +30,6 @@ p{
     vertical-align: top !important;
     margin-left: 0px;
 }
-.content>.side-nav{
-    display: inline-block;
-}
 
 .content> .side-nav::-webkit-scrollbar {
     width: 3px; 

@@ -109,6 +109,7 @@ close(){
     this.ptopic[0]=topic_id;
     this.ptopic[1]=topic_name;
     this.ptopic[2]=id;
+    topic_name = topic_name.replace(/ /g,"_");
     this.router.navigate(['/HelpCenter/' + topic_name], {queryParams: {topic_id: topic_id, id: id, qid:qid, name:topic_name}}); 
   }
 

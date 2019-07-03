@@ -8,7 +8,7 @@
         <ul class="side-nav">
           <li><a routerLink="/HelpCenter"><div class="topicdata"><img style="height: 18px;width:18px;padding-top:3%;" src="/assets/images/sportsocialarrowleft.png"><p>Go Back</p></div></a></li>
           <li routerLinkActive="active" *ngFor="let qa of quesAns; let i = index">
-            <a routerLink="/HelpCenter/{{name}}/{{qa.qques}}" routerLinkActive="active" [queryParams]="{ topic_id: topicId , id: subtopicId, qid: qid, name:name}">
+            <a  routerLink="/HelpCenter/{{qa.url}}"routerLinkActive="active" [queryParams]="{ topic_id: topicId , id: subtopicId, qid: qid, name:name}">
             <div class="topicdata" (click)="getAns(qa.id)">
               <!-- <img src="{{qa.icon}}"> -->
              &nbsp;&nbsp;
@@ -46,7 +46,7 @@
                  [queryParams]="{ topic_id: topicId , id: subtopicId, qid: qid, name:name}"
                  routerLinkActive="active"> 
                  <div style="width:80%" (click)="getAns(qa.id); close();">
-                    {{qa.ques}} 
+                     <p [innerHTML]="qa.ques"></p>
                </div></a>  
              </div>
              </div>      
