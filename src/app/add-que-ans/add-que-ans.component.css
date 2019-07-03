@@ -15,8 +15,8 @@ p{
 .size {
   font-size: 2px;
 }
-/* problems tab */
-.problems {
+/* quesTitle tab */
+.quesTitle {
   border-radius: 5px;
   float: right;
   width: 70%;
@@ -102,20 +102,30 @@ p{
   margin-left: 19%;
   font-style: bold;
 }
+.topicdata>p{
+  color: black;
+}
+.topicdata>p:active{
+  font-size:1em;
+  font-weight: bold;
+}
 
 .side-nav li.active {
+  font-weight: bold;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: rgb(179, 175, 175);
 }
-.subtopicdata h1 {
+.subtopicdata>h1 {
     width: 95%;
-    color: rgb(90, 89, 89);
+    /* color: rgb(90, 89, 89); */
+    
     padding: 20px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);
     text-align: left;
   }
 
-  .subtopicdata p {
+  .subtopicdata>p {
+    color: black;
     text-align: left;
     padding: 30px;
   }
@@ -193,10 +203,10 @@ p{
   border-radius: 50%; 
 }
 
-.problemss {
+.quesTitles {
   text-align: center;
 }
-.problemss img {
+.quesTitles img {
   height: 150px;
   width: 70%;
 }

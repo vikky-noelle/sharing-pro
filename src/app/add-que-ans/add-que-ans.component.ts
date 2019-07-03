@@ -45,9 +45,11 @@ export class AddQueAnsComponent implements OnInit {
       this.subtopicId = params['id'];
       this.qid = params['qid'];
   });
+  this.name = this.name.replace(/ /g,"-");
     // this.topicId=this.datastr[0];
     // this.name=this.datastr[1];
     // this.subtopicId=this.datastr[2];
+    console.log("this is qid;",this.qid);
     this.getQuesAns(this.topicId, this.subtopicId, this.qid); 
     if(window.innerWidth <= 700){
       this.mobv = 1;
@@ -72,8 +74,27 @@ showw() {
     this.getService.getQA(topicId, subtopicId).subscribe(res => {
       const body = JSON.parse(res._body);
       for (const i in body) {
+        var temp, status = true, temp1 = "";
+        temp = body[i].ques;
+        console.log(temp.length);
+        for(var j = 0; j<body[i].ques.length;j++){
+          if(temp[j] === "<"){
+            status = false;
+          }
+          if(temp[j] === ">"){
+            status = true;
+            continue;
+          }
+          if(status){
+            temp1 = temp1 + temp[j];
+          }
+        }
+        temp1 = temp1.replace(/ /g,"_");
+        temp1 = this.name +"/"+ temp1
+        console.log(temp1);
         this.quesAns.push({
           no:this.no,
+          url: temp1,
           id: body[i].id,
           topic_id: body[i].topic_id,
           subtopic_id: body[i].subtopic_id,

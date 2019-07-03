@@ -19,20 +19,30 @@ export class ContactUsComponent implements OnInit {
   description="You can contact Sports Social support and customer care for any issues you are facing related to app, website, blog or any of other product. You can chat with us on Whatsapp, Email us, Call us. For more information to know about sports social you can also visit our helpcenter";
   keywords="Contact Sports Social,Customer Care Sports Social,Email Sports Social,Phone Number Sports Social,Sports Social Office,Sports Social Enquiry,Sports Social Gurgaon" 
   
+  popup = document.getElementsByClassName('popup') as HTMLCollectionOf<HTMLElement>;
   @ViewChild('places') places: GooglePlaceDirective;
   @ViewChild('search' ) public searchElement: ElementRef;
   lat: number = 28.4700264/*=28.473660*/;
   lng: number = 77.0889223/*=77.086710*/;
   zoom: number = 15;
+  formresponse;
   constructor(private http:Http,private post:PostService,
     private metattitle:Title,
     private metaservice:Meta) {  }
 
   onsubmit(form2:Contactus2){
     this.post.saveformdata(form2).subscribe((res)=>{
-      // console.log("this is forom data",res);
-      window.location.reload();
+      console.log("this is forom data",res[0].status);
+      this.formresponse=res;
+      // window.location.reload();
     })
+  }
+  
+  openpopup(){
+    this.popup[0].style.display="block";
+  }
+  closepopup(){
+    this.popup[0].style.display="none";
   }
 
   ngOnInit() {
@@ -43,5 +53,6 @@ export class ContactUsComponent implements OnInit {
     this.metaservice.updateTag({property:'og:title',content:this.title});
     this.metaservice.updateTag({property:'og:keywords',content:this.keywords});
     this.metaservice.updateTag({property:'og:description',content:this.description});
+    
   }  
 }

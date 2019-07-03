@@ -23,7 +23,7 @@ import { BackfooterModule } from '../backfooter/backfooter.module';
     HelpCenterHeaderComponent,
   ],
 
-    exports:[HelpCenterHeaderComponent]
+    exports:[HelpCenterComponent,HelpCenterHeaderComponent,HelpCenterContentComponent]
 })
 export class HelpCenterModule {}
 

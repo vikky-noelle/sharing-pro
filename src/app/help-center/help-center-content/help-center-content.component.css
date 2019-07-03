@@ -20,17 +20,15 @@ p{
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);
 }
 .content{
+  /* border: 1px solid red; */
     display: inline-flex;
     padding-bottom: 5%;
 }
 .content>div{
     display: inline-block;
     white-space: normal;
-    vertical-align: top;
+    vertical-align: top !important;
     margin-left: 0px;
-}
-.content>.side-nav{
-    display: inline-block;
 }
 
 .content> .side-nav::-webkit-scrollbar {

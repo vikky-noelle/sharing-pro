@@ -30,11 +30,11 @@ const App_Route: Routes = [
     {path:"addtopic",component:AddTopicComponent},
     {path:"HelpCenter",component:HelpCenterComponent},
     {path:"Helpcenter/:topicname",component:HelpCenterComponent},
-    {path: "teamview",component:TeamviewComponent},
-    {path: "localitypage", component:LocalitypageComponent},
-    {path: 'newspage', component:NewspageComponent},
+    {path: "team",component:TeamviewComponent},
+    {path: "locality", component:LocalitypageComponent},
+    {path: 'news', component:NewspageComponent},
     {
-        path: "newspage/:topic", 
+        path: "news/:topic", 
         component:NewspageComponent
     },
     {

@@ -1,5 +1,11 @@
 <sports-social-header></sports-social-header>
-
+<!-- popup -->
+<div class="popup">
+  <div class="pop-up">
+    <h1>Your message is sent successfully! We will contact you shortly.<br>Thanks!</h1>
+    <button (click)="closepopup()">ok</button>
+  </div>
+</div>
   <div class="header">
     <div class="headerContent">
       <h2>Reach Out to us</h2>
@@ -33,7 +39,7 @@
               * Message<br>
               <input  type="text" name="message" [(ngModel)]="form.message" required />
             </label><br>
-            <button type="submit" [disabled]="formdata.invalid">Send</button>
+            <button (click)="openpopup()" type="submit" [disabled]="formdata.invalid">Send</button>
         </form>
       </div>
       <div class="right-model">
@@ -65,12 +71,12 @@
           <div class="blockData">
             <img src="assets/images/call-answer.png">
             <!-- <h3>CALL US</h3> -->
-            <p>+91-8800617124</p>
+            <p>+91-9717769226</p>
           </div>
           <div class="blockData">
             <img src="assets/images/envelope.png">
             <!-- <h3> MESSAGE US</h3> -->
-            <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" target="_blank"><P>info@sportsocial.in</P></a>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" target="_blank"><P>letstalk@sportsocial.in</P></a>
           </div><br>
       </div>
       <div class="map">
