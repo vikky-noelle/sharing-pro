@@ -4,12 +4,17 @@ import { GetService } from './../shared/services/get.service';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { EventEmiterService } from '../shared/services/event.emiter.service';
 import { InteractionService } from '../shared/services/interaction.service';
+import { Title, Meta } from '@angular/platform-browser';
 @Component({
   selector: 'sports-social-newspage',
   templateUrl: './newspage.component.html',
   styleUrls: ['./newspage.component.css']
 })
 export class NewspageComponent implements OnInit{
+  
+  title="Sports News from around the world";
+  description="Get the latest sports trends,news,updates from around the world on Sports Social from top sources";
+  keywords="Latest Sports News, Breaking news Sports,Sports Trends,Sports Social,Sports Updates,Headlines Sports,Sports News Today";
   
   news=[];
   rnews=[];
@@ -42,8 +47,17 @@ export class NewspageComponent implements OnInit{
     private route: ActivatedRoute,
     private time: TimeService,
     private router: Router,
-    private event: InteractionService
+    private event: InteractionService,
+    private titleservice:Title,
+    private metaservice:Meta
   ) { 
+    this.titleservice.setTitle(this.title);
+    this.metaservice.updateTag({name:'title',content:this.title});
+    this.metaservice.updateTag({name: 'keywords' , content:this.keywords});
+    this.metaservice.updateTag({name:'description',content:this.description});
+    this.metaservice.updateTag({property:'og:title',content:this.title});
+    this.metaservice.updateTag({property:'og:keywords',content:this.keywords});
+    this.metaservice.updateTag({property:'og:description',content:this.description});
     //this is how i interact between components
     this.event.listentoroute().subscribe((topic:any) => {
       this.news=[];
