@@ -1,3 +1,5 @@
+import { TeamprofileAboutComponent } from './../profile/team-profile/teamprofile/teamprofile-about/teamprofile-about.component';
+import { TeamprofileComponent } from './../profile/team-profile/teamprofile/teamprofile.component';
 import { LocalitypageComponent } from './../localitypage/localitypage.component';
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -18,11 +20,26 @@ import { OurteamComponent } from '../ourteam/ourteam.component';
 // import { FirebaseComponent } from '../firebase/firebase.component';
 import { TeamviewComponent } from '../teamview/teamview.component';
 import { OpenHomeMatchCardComponent } from '../open-cards/open-home-match-card/open-home-match-card.component';
+import { TeamprofileMatchesComponent } from '../profile/team-profile/teamprofile/teamprofile-matches/teamprofile-matches.component';
 
 
 const App_Route: Routes = [
     
     // {path:"firebase",component:FirebaseComponent},
+      {
+        path: 'teamprofile',            //<---- parent component declared here
+        component: TeamprofileComponent,
+        children: [                          //<---- child components declared here
+            {
+                path:'child-one',
+                component: TeamprofileAboutComponent
+            },
+            {
+                path:'child-two',
+                component: TeamprofileMatchesComponent
+            },
+        ]
+    },
     {path:"opencard/:feedid",component:OpenHomeMatchCardComponent},
     {path:"ourTeam",component:OurteamComponent},
     {path:"contactus",component:ContactUsComponent},
@@ -31,6 +48,7 @@ const App_Route: Routes = [
     {path:"HelpCenter",component:HelpCenterComponent},
     {path:"Helpcenter/:topicname",component:HelpCenterComponent},
     {path: "team",component:TeamviewComponent},
+    {path: 'teamprofile', component:TeamprofileComponent},
     {path: "locality", component:LocalitypageComponent},
     {path: 'news', component:NewspageComponent},
     {
