@@ -59,6 +59,8 @@ import { OpenHomeMatchCardModule } from './open-cards/open-home-match-card/open-
 import { InteractionService } from './shared/services/interaction.service';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ContactUsModule } from './contact-us/contact-us.module';
+import { TeamprofileComponent } from './profile/team-profile/teamprofile/teamprofile.component';
+import { UserprofileComponent } from './profile/user-profile/userprofile/userprofile.component';
 
 
 @NgModule({
@@ -75,7 +77,9 @@ import { ContactUsModule } from './contact-us/contact-us.module';
     TeamviewComponent,
     LocalitypageComponent,
     NewspageComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    TeamprofileComponent,
+    UserprofileComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId:'sport-social'}),
