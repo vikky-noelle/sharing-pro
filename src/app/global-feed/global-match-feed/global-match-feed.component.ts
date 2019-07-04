@@ -400,7 +400,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
       this.selected = topic[0].toUpperCase();
       this.selected = this.selected + topic.slice(1);
     }
-   
+    
   }
 
   ngOnDestroy() {
