@@ -1,4 +1,4 @@
-.navi{
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        .navi{
     z-index: 0;
     position: fixed;
     margin-top: 0%;
@@ -11,17 +11,20 @@
     border-top-right-radius: 30% 150%;
     border-bottom-right-radius: 30% 150%;
     width: 80%;
-    color: rgb(97, 96, 96);
     padding-top: 13px;
     padding-bottom: 13px;
-    padding-left: 30px;
+    padding-left: 30px;                                                                                 
 }
 .navi a{
-    color: rgb(97, 96, 96);
+    color: #888888;
 }
 .navi li.active a{
     color: white;
 }
+/* .openarenaopen a.Active{
+    color: black !important;
+    font-size: 3em; */
+
 .navi li.active{
     background-color: rgb(71, 148, 148);
 }
@@ -57,7 +60,7 @@
 }
 .openarenaopen a.Active{
     color: black;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 .newsopen{
     list-style: none;

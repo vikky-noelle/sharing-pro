@@ -204,6 +204,7 @@ export class HomeMatchFeedComponent{
                     GameId:data["Feed"][i].GameId,
                     Event_Image:data["Feed"][i].Event_Image,
                     MatchStarterName:data["Feed"][i].MatchStarterName,
+                    MatchStarterId:data["Feed"][i].MatchStarterId,
                     MatchStarterPhoto:data["Feed"][i].MatchStarterPhoto,
                     Team1name:data["Feed"][i].Team1name,
                     Team1Pic:data["Feed"][i].Team1Pic,

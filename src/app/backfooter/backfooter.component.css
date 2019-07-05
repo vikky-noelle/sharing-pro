@@ -1,5 +1,6 @@
 .footer-outer-shell {
-    position: relative;
+    /* position: absolute; */
+    width: 100%;
     /* z-index: 15; */
     background-image: url('/assets/images/sportsocialteamviewheader.jpg');
     height: 220px;
