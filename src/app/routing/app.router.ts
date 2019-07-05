@@ -20,6 +20,7 @@ import { OurteamComponent } from '../ourteam/ourteam.component';
 // import { FirebaseComponent } from '../firebase/firebase.component';
 import { TeamviewComponent } from '../teamview/teamview.component';
 import { OpenHomeMatchCardComponent } from '../open-cards/open-home-match-card/open-home-match-card.component';
+import { UserprofileComponent } from '../profile/user-profile/userprofile/userprofile.component';
 import { TeamprofileMatchesComponent } from '../profile/team-profile/teamprofile/teamprofile-matches/teamprofile-matches.component';
 
 
@@ -30,11 +31,11 @@ const App_Route: Routes = [
         component: TeamprofileComponent,
         children: [                          
             {
-                path:'child-one',
+                path:'About',
                 component: TeamprofileAboutComponent
             },
             {
-                path:'child-two',
+                path:'Matches',
                 component: TeamprofileMatchesComponent
             },
         ]

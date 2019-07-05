@@ -1,16 +1,42 @@
 <div class="outer-shell">
   <div class="profile-shell">
-    <div class="bg-img">
-
+    <div class="background-img">
+      <img src="{{backgroundimage}}" alt="">
     </div>
-    <div class="team-img"></div>
-    <div class="team-info"></div>
+    <div class="team-img">
+      <img src="{{profileimage}}" alt="">
+    </div>
+    <div class="team-info">
+      <div class="name">
+        <h1>{{name}}</h1>
+      </div>
+      <div class="follow">
+        <h1>Follow</h1>
+      </div>
+      <img src="assets/images/sportsocialchat.png" alt="">
+    </div>
   </div>
-  <div class="sub-header"></div>
+  <div class="sub-header">
+      <img class="profile-pic" src="{{profileimage}}" alt="">  
+     
+        <div class="fans">
+            <h1>Fans<span>Members</span></h1>
+            <h2>{{fancount}}<span>{{membercount}}</span></h2>
+            <!-- <h1>Members<h2>{{membercount}}</h2></h1> -->
+          </div>
+          <div class="name">
+              <h1>{{name}}</h1>
+              <h2>@{{teamusername}}</h2>
+            </div>
+      <div class="follow">
+          <h1>Follow</h1>
+        </div>
+        <img class="follow-img" src="assets/images/sportsocialchat.png" alt="">  
+  </div>
   <div class="side-shell"></div>
   <div class="normal-shell">
-    <a routerLink="/teamprofile/child-one" routerLinkActive="active">child-one</a>
-    <a routerLink="/teamprofile/child-two" routerLinkActive="active">child-two</a>
+    <a routerLink="/teamprofile/About" routerLinkActive="active">About</a>
+    <a routerLink="/teamprofile/Matches" routerLinkActive="active">Matches</a>
   </div>
 </div>
 <router-outlet></router-outlet>

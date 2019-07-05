@@ -4,6 +4,18 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class PostService {
 
+  userprofileobj={
+      userid:String,
+      profileid:String,
+      page:Number,
+      currentdate:String
+   }
+
+   teamprofileobj={
+    userid:String,
+    teamid:String,
+ }
+
   paramIdObj:{
     eventid:string;
   }
@@ -93,10 +105,6 @@ export class PostService {
       gameid: gameid
     };
     console.log(this.matchFeedReqObj);
-    // console.log("Heyy this is lat.="+lat);
-    // console.log("Heyy this is log.="+long);
-    // console.log("Heyy this is page.="+page);
-    // console.log("Heyy this is gameid.="+gameid);
     return this.http.post('https://prod.sportsocial.in/web/webfeed', this.matchFeedReqObj);
     // return this.http.post('https://test.sportsocial.in/poc/webfeed', this.matchFeedReqObj);
   }
@@ -163,5 +171,24 @@ export class PostService {
 
   Localityviewdata(lvdataobject){
     return this.http.post('https://test.sportsocial.in/web/webLocalityStatic', lvdataobject);
+  }
+
+  UserProfile(userid,profileid,page,currentdate){
+    this.userprofileobj={
+      userid:userid,
+      profileid:profileid,
+      page:page,
+      currentdate:currentdate
+    }
+    return this.http.post('https://test.sportsocial.in/poc/getUserDetails',this.userprofileobj);
+  }
+
+  TeamProfile(userid,teamid){
+    this.teamprofileobj={
+      userid:userid,
+      teamid:teamid,
+    }
+    console.log("working service");
+    return this.http.post('https://test.sportsocial.in/team/getTeamDetails',this.teamprofileobj);
   }
 }
