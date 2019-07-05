@@ -33,8 +33,43 @@
         </div>
         <img class="follow-img" src="assets/images/sportsocialchat.png" alt="">  
   </div>
-  <div class="side-shell"></div>
-  <div class="normal-shell">
+  <div class="side-shell">
+      <div class="followers">
+          <h4>Following<br><p>{{data.FollowingCount}}</p></h4>
+          <h5>Fans<br><p>{{data.Fancount}}</p></h5>
+      </div>
+      <div class="userinfo">
+        <h3>Basic Info</h3>
+        <table>
+          <tr>
+            <th><img src="assets/images/age.png"></th>
+            <th><p>{{data.DateofBirth}}</p></th>
+          </tr>
+          <tr>
+            <th><img src="assets/images/gender.png"></th>
+            <th><p>{{data.Gender}}</p></th>
+          </tr>
+          <tr>
+            <th><img src="assets/images/study.png"></th>
+            <th><p>{{data.TypeofInstn}}</p></th>
+          </tr>
+          <tr>
+            <th><img src="assets/images/home.png"></th>
+            <th><p>{{data.City}}</p></th>
+          </tr>
+        </table>       
+      </div>
+      <div class="media">
+          <div class="head">
+          <h4>Media</h4>
+          <a><p>See all</p></a>
+        </div>
+         <div class="mediabox" *ngFor="let icon of mediaArr">
+           <img src={{icon.Path}}>
+        </div>
+      </div>
+    </div>
+    <div class="normal-shell">
     <a routerLink="/teamprofile/About" routerLinkActive="active">About</a>
     <a routerLink="/teamprofile/Matches" routerLinkActive="active">Matches</a>
   </div>

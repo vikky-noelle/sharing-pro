@@ -59,10 +59,10 @@ import { OpenHomeMatchCardModule } from './open-cards/open-home-match-card/open-
 import { InteractionService } from './shared/services/interaction.service';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ContactUsModule } from './contact-us/contact-us.module';
-import { TeamprofileComponent } from './profile/team-profile/teamprofile/teamprofile.component';
-import { UserprofileComponent } from './profile/user-profile/userprofile/userprofile.component';
-import { TeamprofileAboutComponent } from './profile/team-profile/teamprofile/teamprofile-about/teamprofile-about.component';
-import { TeamprofileMatchesComponent } from './profile/team-profile/teamprofile/teamprofile-matches/teamprofile-matches.component';
+import { TeamprofileComponent } from './profile/teamprofile/teamprofile.component';
+import { UserprofileComponent } from './profile/userprofile/userprofile.component';
+import { TeamprofileAboutComponent } from './profile/teamprofile/teamprofile-about/teamprofile-about.component';
+import { TeamprofileMatchesComponent } from './profile/teamprofile/teamprofile-matches/teamprofile-matches.component';
 
 
 @NgModule({

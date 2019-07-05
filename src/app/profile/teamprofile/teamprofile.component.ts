@@ -1,4 +1,4 @@
-import { PostService } from './../../../shared/services/post.service';
+import { PostService } from '../../shared/services/post.service';
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
