@@ -25,9 +25,6 @@ export class TeamprofileComponent implements OnInit {
     else{
       this.opensubheader[0].style.display="none";
     }
-    //handle your scroll here
-    //notice the 'odd' function assignment to a class field
-    //this is used to be able to remove the event listener
   };
 
 }

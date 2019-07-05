@@ -55,6 +55,15 @@
     color: white;
     background-color: #024771;
 }
+.normal-shell a.active{
+    text-align: center;
+    font-size: 2em;
+    float: left;
+    width: 50%;
+    height: 40px;
+    color: #024771;
+    background-color: white;
+}
 .sub-header{
     position: fixed;
     z-index: 10;
@@ -63,4 +72,23 @@
     height: 100px;
     background-color: black;
     top: 0%;
-}
+    transition: 0.3s ease-in-out;
+    /* Chrome, Safari, Opera */
+    -webkit-animation: repeatit 0.4s linear 0s;
+    /* Standard syntax */
+    animation: repeatit 0.4s linear 0s;
+   
+    }
+
+
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes repeatit {
+        from {height: 0px;}
+        to {height: 100px;}
+    }
+
+    /* Standard syntax */
+    @keyframes repeatit {
+        from {height: 0px;}
+        to {height: 100px;}
+    }

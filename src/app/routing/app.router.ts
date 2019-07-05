@@ -30,11 +30,11 @@ const App_Route: Routes = [
         component: TeamprofileComponent,
         children: [                          
             {
-                path:'teamprofile/child-one',
+                path:'child-one',
                 component: TeamprofileAboutComponent
             },
             {
-                path:'teamprofile/child-two',
+                path:'child-two',
                 component: TeamprofileMatchesComponent
             },
         ]
