@@ -17,6 +17,26 @@ export class TeamprofileComponent implements OnInit {
   location;
   fancount;
   media=[];
+  captain=[];
+  mantra=[];
+  teamcategory;
+  teamstatus;
+  teamtype;
+  teamtypestatus;
+  gender;
+  challenge="Open For Challenge";
+  sports= [
+    {id: 17,  title: 'Cricket'},
+    {id: 23, title: 'Football'},
+    {id: 6, title: 'Basketball'},
+    {id: 5, title: 'Badminton'},
+    {id: 29, title: 'Hockey'},
+    {id: 36, title: 'Tennis'},
+    {id: 46, title: 'Snooker'},
+    {id: 56, title: 'Table Tennis'},
+    {id: 60, title: 'Volleyball'}
+  ];
+  gamename;
   opensubheader = document.getElementsByClassName('sub-header') as HTMLCollectionOf<HTMLElement>;
   constructor(
     private ActivatedRoute: ActivatedRoute,
@@ -34,6 +54,72 @@ export class TeamprofileComponent implements OnInit {
         this.fancount = res["Details"].FanCount;
         this.teamusername = res["Details"].TeamUserName;
         this.location = res["Details"].location;
+        this.captain = res["Details"].CaptainUserName;
+        this.mantra = res["Details"].slogan;
+        this.teamcategory = res["Details"].TeamCategory;
+        switch(this.teamcategory){
+          case -1:
+          this.teamstatus = "Open For All";
+          break;
+          case 0:
+          this.teamstatus = "Under 13";
+          break;
+          case 1:
+          this.teamstatus = "Under 15";
+          break;
+          case 2:
+          this.teamstatus = "Under 17";
+          break;
+          case 3:
+          this.teamstatus = "Under 19";
+          break;
+          case 4:
+          this.teamstatus = "Under 21";
+          break;
+          case 5:
+          this.teamstatus = "Under 23";
+          break;
+          default:
+          this.teamstatus = "None Selected";
+                  
+        }
+        this.teamtype = res["Details"].TeamType;
+        switch(this.teamtype){
+          case -1:
+          this.teamtypestatus = "Others";
+          break;
+          case 0:
+          this.teamtypestatus = "School";
+          break;
+          case 1:
+          this.teamtypestatus = "College";
+          break;
+          case 2:
+          this.teamtypestatus = "Academy";
+          break;
+          case 3:
+          this.teamtypestatus = "Organisation";
+          break;
+          default:
+          this.teamstatus = "None Selected";      
+        }
+        if(res['Details'].openchallenge != 1){
+          this.challenge = "Private"
+        }
+        if(res["Details"].Gender.toLowerCase() === "mix"){
+          this.gender = "Mix ";
+        }
+        if(res["Details"].Gender.toLowerCase() === "male"){
+          this.gender = "Men's ";
+        }
+        if(res["Details"].Gender.toLowerCase() === "female"){
+          this.gender = "Women's ";
+        }
+        for(var i=0; i<this.sports.length;i++){
+          if(this.sports[i].id === res["Details"].GameId){
+            this.gamename = this.sports[i].title;
+          }
+        }
         console.log(res);
         for(var i =0; i<res["Images"].length; i++){
           this.media.push({

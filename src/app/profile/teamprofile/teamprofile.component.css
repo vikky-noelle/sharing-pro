@@ -183,6 +183,84 @@
         /* Standard syntax */
         animation: repeatall 0.4s linear 0s;    
     }
+   
+    .followers{
+        position: relative;
+        width: 65%;
+        margin-left: 10%;
+    }
+    .followers h1{
+        font-size: 1.2em;
+        font-weight: 400;
+        color: #888888;
+    }
+    .followers h1 span{
+        color: #888888;
+        float: right;
+    }
+    .followers h2{
+        color: #024771;
+        font-size: 1.3em;
+    }
+    .followers h2 span{
+        float: right;
+        color: #024771;
+        margin-right: 3%;
+    }
+    .basic-info h1{
+        font-size: 1em;
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+    .basic-info-tab{
+        margin-top: 20px;
+        margin-left: 5%;
+        height: 50px;
+    }
+    .basic-info-tab div{
+        float: left;
+        width: 20%;
+    }
+    .basic-info-tab div img{
+        height: 30px;
+        width: 60px;
+    }
+    .basic-info-tab h2{
+        float: right;
+        font-size: 1em;
+        margin-top: 5px;
+        width: 70%;
+    }
+    .media{
+        width: 80%;
+        height: auto;
+        top: 30%;
+        margin: 0% 10% 0% 10%;  
+        position: relative; 
+    }
+    .head{
+        width: 100%;
+        height: 20px;
+    }
+    .head>h4{
+        float: left;
+    }
+    .head>a>p{
+        float: right;
+    }
+    .media>.mediabox{
+        width: 60px;
+        height: 60px;
+        border-radius: 10%;
+        margin: 2%;
+        /* position: absolute; */
+        display: inline-block;
+    }
+    .mediabox>img{
+        border-radius: 10%;
+        width: 100%;
+        height: 100%;
+    }
 
 
     /* Chrome, Safari, Opera */
