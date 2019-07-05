@@ -25,17 +25,16 @@ import { TeamprofileMatchesComponent } from '../profile/team-profile/teamprofile
 
 const App_Route: Routes = [
     
-    // {path:"firebase",component:FirebaseComponent},
-      {
-        path: 'teamprofile',            //<---- parent component declared here
+    {
+        path: 'teamprofile',            
         component: TeamprofileComponent,
-        children: [                          //<---- child components declared here
+        children: [                          
             {
-                path:'child-one',
+                path:'teamprofile/child-one',
                 component: TeamprofileAboutComponent
             },
             {
-                path:'child-two',
+                path:'teamprofile/child-two',
                 component: TeamprofileMatchesComponent
             },
         ]
@@ -48,7 +47,7 @@ const App_Route: Routes = [
     {path:"HelpCenter",component:HelpCenterComponent},
     {path:"Helpcenter/:topicname",component:HelpCenterComponent},
     {path: "team",component:TeamviewComponent},
-    {path: 'teamprofile', component:TeamprofileComponent},
+    // {path: 'teamprofile', component:TeamprofileComponent},
     {path: "locality", component:LocalitypageComponent},
     {path: 'news', component:NewspageComponent},
     {

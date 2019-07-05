@@ -34,14 +34,33 @@
     width: 100%;
 }
 .side-shell{
-    height: 100vh;
+    height: 140vh;
     width: 25%;
     background-color: green;
     float: left;
     position: relative;
 }
 .normal-shell{
-    height: 500px;
+    height: 40px;
+    background-color: magenta;
     width: 75%;
     margin-left: 25%;
+}
+.normal-shell a{
+    text-align: center;
+    font-size: 2em;
+    float: left;
+    width: 50%;
+    height: 40px;
+    color: white;
+    background-color: #024771;
+}
+.sub-header{
+    position: fixed;
+    z-index: 10;
+    display: none;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    top: 0%;
 }
