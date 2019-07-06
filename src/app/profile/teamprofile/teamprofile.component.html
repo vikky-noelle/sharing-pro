@@ -1,3 +1,4 @@
+<sports-social-header></sports-social-header>
 <div class="outer-shell">
   <div class="profile-shell">
     <div class="background-img">
@@ -24,25 +25,29 @@
             <h2>{{fancount}}<span>{{membercount}}</span></h2>
             <!-- <h1>Members<h2>{{membercount}}</h2></h1> -->
           </div>
-          <div class="name">
+          <div class="sub-name">
               <h1>{{name}}</h1>
               <h2>@{{teamusername}}</h2>
             </div>
-      <div class="follow">
+      <div class="sub-follow">
           <h1>Follow</h1>
         </div>
-        <img class="follow-img" src="assets/images/sportsocialchat.png" alt="">  
+        <img class="sub-follow-img" src="assets/images/sportsocialchat.png" alt="">  
   </div>
   <div class="side-shell">
+    <div class="stick">
       <div class="followers">
           <h1>Members<span>Fans</span></h1>
           <h2>&nbsp;{{membercount}}<span>{{fancount}}</span></h2>
+      </div>
+      <div class="stick-div">
+        <!-- empty div for space while scrolling -->
       </div>
       <div class="basic-info">
         <h1>Basic Info</h1>
         <div class="basic-info-tab">
           <div>
-            <img src="/assets/images/sportsocialcaptain.png" alt="">
+            <img style="width: 40px;" src="/assets/images/sportsocialcaptain.png" alt="">
           </div>
           <h2>{{captain}}</h2>
         </div>
@@ -51,6 +56,7 @@
               <img src="/assets/images/sportsocialPartnerships.png" alt="">
             </div>
             <h2>{{mantra|slice:0:25}}...</h2>
+            <p>{{mantra}}</p>
           </div>
           <div class="basic-info-tab">
               <div>
@@ -83,6 +89,13 @@
                  </div>
                  <h2>{{challenge}}</h2>
              </div>
+
+             <!-- <div class="basic-info-tab">
+              <div>
+                <img src="/assets/images/sportsocialteamprofilelocation.png" alt="">
+               </div>
+               <h2>{{challenge}}</h2>
+           </div> -->
       </div>
       <div class="media">
           <div class="head">
@@ -93,6 +106,7 @@
            <img src={{icon.url}}>
         </div>
       </div>
+    </div>
     </div>
     <div class="normal-shell">
     <a routerLink="/teamprofile/About" routerLinkActive="active">About</a>

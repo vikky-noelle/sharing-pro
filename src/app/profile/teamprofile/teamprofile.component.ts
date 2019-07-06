@@ -37,14 +37,28 @@ export class TeamprofileComponent implements OnInit {
     {id: 60, title: 'Volleyball'}
   ];
   gamename;
+  sideshell = document.getElementsByClassName('stick-div') as HTMLCollectionOf<HTMLElement>;
   opensubheader = document.getElementsByClassName('sub-header') as HTMLCollectionOf<HTMLElement>;
   constructor(
     private ActivatedRoute: ActivatedRoute,
     private PostService: PostService
   ) { }
   
+  getFans(){
+    var timestamp=Date.now();
+    var page=1;
+    this.PostService.getFan("119", this.teamid, timestamp, page).subscribe((res)=>{
+      console.log(res);
+    });
+  }
+  getMembers(){
+    var timestamp=Date.now();
+    timestamp = timestamp/1000;
+    this.PostService.getMembers(this.teamid, "119", timestamp).subscribe((res)=>{
+      console.log(res);
+    });
+  }
   getTeamData(){
-    console.log("working");
     this.PostService.TeamProfile("99999",this.teamid).subscribe(
       (res)=>{
         this.backgroundimage =  res["Details"].Cover_Photo;
@@ -130,6 +144,8 @@ export class TeamprofileComponent implements OnInit {
   }
   ngOnInit() {
     this.getTeamData();
+    this.getFans();
+    this.getMembers();
     window.addEventListener('scroll', this.scroll, true);
   }
   ngOnDestroy() {
@@ -138,8 +154,10 @@ export class TeamprofileComponent implements OnInit {
   scroll = (): void => {
       if(window.pageYOffset > 370){
       this.opensubheader[0].style.display="block";
+      this.sideshell[0].style.display="block";
     }
     else{
+      this.sideshell[0].style.display="none";
       this.opensubheader[0].style.display="none";
     }
   };
