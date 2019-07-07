@@ -109,8 +109,8 @@
     </div>
     </div>
     <div class="normal-shell">
-    <a routerLink="/teamprofile/About" routerLinkActive="active">About</a>
-    <a routerLink="/teamprofile/Matches" routerLinkActive="active">Matches</a>
+    <a routerLink="/teamprofile/{{routename}}/About" [queryParams]="{ teamid: teamid}" routerLinkActive="active">About</a>
+    <a routerLink="/teamprofile/{{routename}}/Matches" [queryParams]="{ teamid: teamid}" routerLinkActive="active">Matches</a>
   </div>
 </div>
 <router-outlet></router-outlet>

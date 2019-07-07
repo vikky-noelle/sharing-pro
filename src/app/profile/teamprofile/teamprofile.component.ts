@@ -11,6 +11,7 @@ export class TeamprofileComponent implements OnInit {
   teamid = "611";
   backgroundimage;
   name;
+  routename;
   profileimage;
   membercount;
   teamusername;
@@ -40,7 +41,7 @@ export class TeamprofileComponent implements OnInit {
   sideshell = document.getElementsByClassName('stick-div') as HTMLCollectionOf<HTMLElement>;
   opensubheader = document.getElementsByClassName('sub-header') as HTMLCollectionOf<HTMLElement>;
   constructor(
-    private ActivatedRoute: ActivatedRoute,
+    private route: ActivatedRoute,
     private PostService: PostService
   ) { }
   
@@ -143,6 +144,13 @@ export class TeamprofileComponent implements OnInit {
       });
   }
   ngOnInit() {
+    this.route.queryParams.subscribe(params => {
+      this.teamid = params['teamid'];
+      console.log(this.teamid);
+  });
+    this.route.params.subscribe(params => {
+      this.routename = params.name;
+  });
     this.getTeamData();
     this.getFans();
     this.getMembers();
