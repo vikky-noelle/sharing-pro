@@ -63,6 +63,10 @@ import { TeamprofileComponent } from './profile/teamprofile/teamprofile.componen
 import { UserprofileComponent } from './profile/userprofile/userprofile.component';
 import { TeamprofileAboutComponent } from './profile/teamprofile/teamprofile-about/teamprofile-about.component';
 import { TeamprofileMatchesComponent } from './profile/teamprofile/teamprofile-matches/teamprofile-matches.component';
+import { UserprofileAboutComponent } from './profile/userprofile/userprofile-about/userprofile-about.component';
+import { UserprofileTeamsComponent } from './profile/userprofile/userprofile-teams/userprofile-teams.component';
+import { UserprofilePlaymatesComponent } from './profile/userprofile/userprofile-playmates/userprofile-playmates.component';
+import { UserprofileMatchesComponent } from './profile/userprofile/userprofile-matches/userprofile-matches.component';
 
 
 @NgModule({
@@ -83,7 +87,11 @@ import { TeamprofileMatchesComponent } from './profile/teamprofile/teamprofile-m
     TeamprofileComponent,
     UserprofileComponent,
     TeamprofileAboutComponent,
-    TeamprofileMatchesComponent
+    TeamprofileMatchesComponent,
+    UserprofileAboutComponent,
+    UserprofileTeamsComponent,
+    UserprofilePlaymatesComponent,
+    UserprofileMatchesComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId:'sport-social'}),

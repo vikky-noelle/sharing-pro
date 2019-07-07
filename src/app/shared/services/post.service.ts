@@ -10,6 +10,14 @@ export class PostService {
       page:Number,
       currentdate:String
    }
+   userprofileplaymateObj=[
+     {
+      userid:String,
+      profileid:String,
+      page:Number,
+      timestamp:Number
+     }
+   ]
 
    teamprofileobj={
     userid:String,
@@ -183,6 +191,16 @@ export class PostService {
     return this.http.post('https://test.sportsocial.in/poc/getUserDetails',this.userprofileobj);
   }
 
+  UserProfielPlaymate(userid,profileid,page,timestamp){
+    this.userprofileplaymateObj=[{
+        userid:userid,
+        profileid:profileid,
+        page:page,
+        timestamp:timestamp
+    }];
+      return this.http.post('https://test.sportsocial.in/poc/getPlaymatesNew',this.userprofileplaymateObj);
+  }
+
   TeamProfile(userid,teamid){
     this.teamprofileobj={
       userid:userid,
@@ -191,4 +209,5 @@ export class PostService {
     console.log("working service");
     return this.http.post('https://test.sportsocial.in/team/getTeamDetails',this.teamprofileobj);
   }
+
 }

@@ -1,0 +1,17 @@
+<!-- 
+<div>
+    <div >
+      <img src={{data.profile_image}}>
+    </div>
+</div> -->
+<div class="body">
+  <div class="container" *ngFor="let data of array">
+    <img src={{data.profile_image}} onerror="this.src='assets/images/user.png'">
+    <p>{{data.user_name}}</p>
+    <div class="viewprofile">
+      <a>View Profile >></a>
+    </div>
+  </div>
+  <div>
+  </div>
+</div>

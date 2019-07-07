@@ -45,5 +45,11 @@
         </div>
     </div>
   </div>
-  
+  <div class="normal-shell">
+      <a routerLink="/userprofile/{{userid}}/matches" routerLinkActive="active">Matches</a>
+      <a routerLink="/userprofile/{{userid}}/teams" routerLinkActive="active">Teams</a>
+      <a routerLink="/userprofile/{{userid}}/playmates" routerLinkActive="active">Playmates</a>
+      <a routerLink="/userprofile/{{userid}}/about" routerLinkActive="active">About</a>
+    </div>
 </div>
+<router-outlet></router-outlet>
