@@ -208,7 +208,6 @@ export class PostService {
       page: page,
       timestamp: timestamp
     }];
-    console.log("working service");
     return this.http.post('https://test.sportsocial.in/poc/getFansNew',this.fanobj);
   }
   getMembers(teamid,userid, timestamp){
@@ -217,7 +216,6 @@ export class PostService {
       userid:userid,
       timestamp: timestamp
     }];
-    console.log("working service member");
     return this.http.post('https://test.sportsocial.in/team/getTeamMembers',this.memberobj);
   }
 }

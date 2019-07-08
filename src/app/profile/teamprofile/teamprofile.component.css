@@ -84,7 +84,7 @@
     color: #024771;
   }
 .side-shell{
-    height: 140vh;
+    height: 100%;
     width: 25%;
     background-color: #f6f6f6;
     /* box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19); */
@@ -135,36 +135,10 @@
         margin-top: 15px;
         margin-left: 1%;
    }
-   .stick{
-       top: 0%;
-       position: sticky;
-       position: -webkit-sticky;
-   }
-   .stick-div{
-       /* display: none; */
-       height: 80px;
-       /* background-color: red; */
-       position: relative;
-       transition: 0.3s ease-in-out;
-       /* Chrome, Safari, Opera */
-       -webkit-animation: sideanimation 0.3s linear 0s;
-       /* Standard syntax */
-       animation: sideanimation 0.3s linear 0s;  
-   }
-
-    @-webkit-keyframes sideanimation {
-        from {height: 0px;}
-        to {height: 80px;}
-    }
-  
-    /* Standard syntax */
-    @keyframes sideanimation {
-        from {height: 0px;}
-        to {height: 80px;}
-    }
+ 
    .sub-name{
         float: left;
-        width: 15%;
+        width: 25%;
         margin-left: 5%;
         letter-spacing: 0.7px;
         margin-top: 10px;
@@ -275,6 +249,8 @@
         font-size: 1em;
         margin-top: 5px;
         width: 70%;
+        font-weight: 400;
+        color: #444444;
     }
     .basic-info-tab p{
         position: fixed;

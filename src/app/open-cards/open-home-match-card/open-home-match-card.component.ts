@@ -120,7 +120,6 @@ export class OpenHomeMatchCardComponent implements OnInit {
   constructor(
     private postservice:PostService,
     private activatedroute:ActivatedRoute,
-    private time:TimeService,
     private router: Router
   ) {}
 

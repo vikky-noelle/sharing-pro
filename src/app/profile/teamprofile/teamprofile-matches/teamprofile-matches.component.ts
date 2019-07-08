@@ -1,3 +1,4 @@
+import { TeamprofileComponent } from './../teamprofile.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./teamprofile-matches.component.css']
 })
 export class TeamprofileMatchesComponent implements OnInit {
-
-  constructor() { }
+  
+  Matcharr;
+  constructor(
+    private parent: TeamprofileComponent
+  ) { }
 
   ngOnInit() {
+        this.Matcharr = this.parent.past;
   }
 
 }

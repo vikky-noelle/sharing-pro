@@ -1,0 +1,41 @@
+*::-webkit-scrollbar{
+    display: none;
+}
+.About-body{
+    background-color: white;
+    height: 300px;
+    width: 75%;
+    margin-left: 25%;
+}
+.About-body>div{
+    width: 85%;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.About-body>div>h1{
+    color: #222222;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 1.4em;
+    letter-spacing: 0.6px;
+}
+
+.upcoming-block{
+    /* overflow-y: hidden; */
+    scroll-behavior: smooth;
+    width: 100% !important;
+    /* overflow-x: scroll; */
+    /* white-space: nowrap !important; */
+    -webkit-overflow-scrolling: touch;
+    display: inline-block;
+}
+.upcoming-cards{
+    vertical-align: top;
+    /* border: 1px solid blue; */
+    scroll-snap-align: start;
+    width: 50%;
+    /* margin-right: 3.2%; */
+    margin-top: 3%;
+    display: inline-block;
+}
