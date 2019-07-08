@@ -2,6 +2,7 @@
     position: relative;
     height: auto;
     width: 100%;
+    margin-top: 60px;
 }
 .profile-shell{
     position: relative;
@@ -74,12 +75,7 @@
     height: 40px;
     border: 2px solid #024771;
     border-radius: 8px;
-    transition: 0.3s ease-in-out;
-    /* Chrome, Safari, Opera */
-    -webkit-animation: repeatall 0.4s linear 0s;
-    /* Standard syntax */
-    animation: repeatall 0.4s linear 0s;
-}
+  }
 .follow h1{
     font-size: 1.3em;
     font-weight: lighter;
@@ -121,43 +117,72 @@
 .sub-header{
     position: fixed;
     z-index: 10;
+    margin-top: 60px;
     display: none;
     background-color: white;
-    height:110px;
+    height:80px;
     width: 100%;
     /* margin-left: 25%; */
     box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(0, 0, 0, 0.19);
-      top: 0%;
-    transition: 0.3s ease-in-out;
-    /* Chrome, Safari, Opera */
-    -webkit-animation: repeatit 0.4s linear 0s;
-    /* Standard syntax */
-    animation: repeatit 0.4s linear 0s;
-   
+      top: 0%;  
     }
     .profile-pic{
         position: relative;
         float: left;
-        height: 65px;
-        width: 65px;
+        height: 50px;
+        width: 50px;
         border-radius: 50%;
-        margin-top: 22.5px;
+        margin-top: 15px;
         margin-left: 1%;
-        transition: 0.3s ease-in-out;
-        /* Chrome, Safari, Opera */
-        -webkit-animation: profileanimation 0.4s linear 0s;
-        /* Standard syntax */
-        animation: profileanimation 0.4s linear 0s;    
+   }
+   .stick{
+       top: 0%;
+       position: sticky;
+       position: -webkit-sticky;
+   }
+   .stick-div{
+       /* display: none; */
+       height: 80px;
+       /* background-color: red; */
+       position: relative;
+       transition: 0.3s ease-in-out;
+       /* Chrome, Safari, Opera */
+       -webkit-animation: sideanimation 0.3s linear 0s;
+       /* Standard syntax */
+       animation: sideanimation 0.3s linear 0s;  
+   }
+
+    @-webkit-keyframes sideanimation {
+        from {height: 0px;}
+        to {height: 80px;}
+    }
+  
+    /* Standard syntax */
+    @keyframes sideanimation {
+        from {height: 0px;}
+        to {height: 80px;}
+    }
+   .sub-name{
+        float: left;
+        width: 15%;
+        margin-left: 5%;
+        letter-spacing: 0.7px;
+        margin-top: 10px;
+    }
+    .sub-name h2{
+        font-size: 1.2em;
+        color: #024771;
+        /* font-weight: lighter; */
     }
     .fans{
-        margin-top: 25px;
+        margin-top: 20px;
         width: 15%;
         margin-left: 2%;
         float: left;
-        line-height: 1.5;
+        line-height: 1.1;
     }
     .fans h1{
-        font-size: 1.2em;
+        font-size: 1em;
         color: #888888;
     }
     .fans h1 span{
@@ -165,55 +190,139 @@
         float: right;
     }
     .fans h2{
+        font-size: 1.2em;
         margin-left: 4%;
     }
     .fans h2 span{
         margin-left: 60%;
     }
-    .follow-img{
+    .sub-follow{
         position: relative;
-        height: 40px;
-        width: 40px;
-        margin-top: 40px;
+        float: right;
+        margin-top: 25px;
+        margin-right: 5%;
+        width: 6%;
+        height: 30px;
+        border: 2px solid #024771;
+        border-radius: 8px;
+    }
+    .sub-follow h1{
+        font-size: 1.1em;
+        font-weight: lighter;
+        margin-top: 5px;
+        margin-left: 20%;
+        color: #024771;
+    }
+    .sub-follow-img{
+        position: relative;
+        height: 25px;
+        width: 30px;
+        margin-top: 30px;
         float: right;
         margin-right: 5%;
-        transition: 0.3s ease-in-out;
-        /* Chrome, Safari, Opera */
-        -webkit-animation: repeatall 0.4s linear 0s;
-        /* Standard syntax */
-        animation: repeatall 0.4s linear 0s;    
     }
-
-
-    /* Chrome, Safari, Opera */
-    @-webkit-keyframes repeatit {
-        from {height: 0px;}
-        to {height: 100px;}
+   
+    .followers{
+        position: relative;
+        width: 65%;
+        margin-left: 10%;
     }
-
-    /* Standard syntax */
-    @keyframes repeatit {
-        from {height: 0px;}
-        to {height: 100px;}
+    .followers h1{
+        font-size: 1.2em;
+        font-weight: 400;
+        color: #888888;
+        cursor: pointer;
     }
-
-    @-webkit-keyframes repeatall {
-        from {height: 0px;}
-        to {height: 40px;}
+    .followers h1 span{
+        color: #888888;
+        float: right;
     }
-
-    /* Standard syntax */
-    @keyframes repeatitall {
-        from {height: 0px;}
-        to {height: 40px;}
+    .followers h2{
+        color: #024771;
+        font-size: 1.3em;
+        cursor: pointer;
     }
-    @-webkit-keyframes profileanimation {
-        from {height: 0px;}
-        to {height: 65px;}
+    .followers h2 span{
+        float: right;
+        color: #024771;
+        margin-right: 3%;
     }
-
-    /* Standard syntax */
-    @keyframes profileanimation {
-        from {height: 0px;}
-        to {height: 65px;}
+    .basic-info{
+        top: 0%;
+        /* position: sticky;
+        position: -webkit-sticky; */
+    }
+    .basic-info h1{
+        font-size: 1em;
+        margin-left: 10%;
+        margin-top: 20px;
+    }
+    .basic-info-tab{
+        margin-top: 15px;
+        margin-left: 10%;
+        height: 30px;
+    }
+    .basic-info-tab div{
+        float: left;
+        width: 20%;
+    }
+    .basic-info-tab div img{
+        height: 25px;
+        width: 25px;
+    }
+    .basic-info-tab h2{
+        float: right;
+        font-size: 1em;
+        margin-top: 5px;
+        width: 70%;
+    }
+    .basic-info-tab p{
+        position: fixed;
+        z-index: 4;
+        padding: 20px;
+        top: 40%;
+        left: 8%;
+        width: 45%;
+        border-radius: 5px;
+        /* height: 50; */
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+    }
+    .basic-info-tab h2:hover ~p{
+        display: block;
+    }
+    .media{
+        width: 80%;
+        height: auto;
+        margin-top: 70px;
+        margin-left: 10%;
+        top: 0%;
+        /* position: sticky; */
+        /* position: -webkit-sticky; */
+        /* margin: 0% 70px 0% 10%;   */
+        position: relative; 
+    }
+    .head{
+        width: 100%;
+        height: 20px;
+    }
+    .head>h4{
+        float: left;
+    }
+    .head>a>p{
+        float: right;
+    }
+    .media>.mediabox{
+        width: 60px;
+        height: 60px;
+        border-radius: 10%;
+        margin: 2%;
+        /* position: absolute; */
+        display: inline-block;
+    }
+    .mediabox>img{
+        border-radius: 10%;
+        width: 100%;
+        height: 100%;
     }

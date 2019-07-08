@@ -33,7 +33,7 @@ const App_Route: Routes = [
     // {path:"firebase",component:FirebaseComponent},
     
     {
-        path: 'teamprofile',            
+        path: 'teamprofile/:name',            
         component: TeamprofileComponent,
         children: [                          
             {

@@ -18,6 +18,28 @@ export class PostService {
       timestamp:Number
      }
    ]
+   userProfielTeamObj={
+     userid:String,
+     page:Number
+   }
+   userParticularMatchesObj=[{
+    userid:String,
+    profileid:String,
+    page:Number,
+    currentdate:String
+   }]
+
+   fanobj=[{
+    userid:String,
+    profileid:String,
+    page:Number,
+    timestamp:Number
+   }]
+   memberobj=[{
+    teamid:String,
+    userid:String,
+    timestamp:Number
+   }]
 
    teamprofileobj={
     userid:String,
@@ -200,14 +222,47 @@ export class PostService {
     }];
       return this.http.post('https://test.sportsocial.in/poc/getPlaymatesNew',this.userprofileplaymateObj);
   }
+  UserProfileTeams(userid,page){
+    this.userProfielTeamObj={
+      userid:userid,
+      page:page
+    }
+    return this.http.post('https://test.sportsocial.in/team/getTeamsNew',this.userProfielTeamObj);
+  }
+  UsersParticularMatches(userid,profileid,page,currentdate){
+      this.userParticularMatchesObj=[{
+        userid:userid,
+        profileid:profileid,
+        page:page,
+        currentdate:currentdate
+      }]
+      return this.http.post('https://test.sportsocial.in/user/usermatchesPastFuture',this.userParticularMatchesObj);
+  }
 
   TeamProfile(userid,teamid){
     this.teamprofileobj={
       userid:userid,
       teamid:teamid,
     }
-    console.log("working service");
     return this.http.post('https://test.sportsocial.in/team/getTeamDetails',this.teamprofileobj);
   }
-
+  getFan(userid,teamid, timestamp, page){
+    this.fanobj=[{
+      userid:userid,
+      profileid:teamid,
+      page: page,
+      timestamp: timestamp
+    }];
+    console.log("working service");
+    return this.http.post('https://test.sportsocial.in/poc/getFansNew',this.fanobj);
+  }
+  getMembers(teamid,userid, timestamp){
+    this.memberobj=[{
+      teamid:teamid,
+      userid:userid,
+      timestamp: timestamp
+    }];
+    console.log("working service member");
+    return this.http.post('https://test.sportsocial.in/team/getTeamMembers',this.memberobj);
+  }
 }
