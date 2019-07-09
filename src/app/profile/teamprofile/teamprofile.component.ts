@@ -2,6 +2,7 @@ import { LocationService } from './../../shared/services/location.service';
 import { PostService } from '../../shared/services/post.service';
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit, Input } from '@angular/core';
+import { TimeService } from '../../shared/services/time.service';
 
 @Component({
   selector: 'sports-social-teamprofile',
@@ -9,8 +10,6 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./teamprofile.component.css']
 })
 export class TeamprofileComponent implements OnInit {
-
-  @Input() teamcaption:string;
   teamid = "611";
   backgroundimage;
   name;
@@ -99,7 +98,6 @@ export class TeamprofileComponent implements OnInit {
   getTeamData(){
     this.PostService.TeamProfile("99999",this.teamid).subscribe(
       (res)=>{
-        this.teamcaption = res["Details"].CaptainUserName;
         this.backgroundimage =  res["Details"].Cover_Photo;
         this.profileimage = res["Details"].Profile_Photo;
         this.name = res["Details"].TeamName;
@@ -353,14 +351,7 @@ export class TeamprofileComponent implements OnInit {
   }
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
-<<<<<<< HEAD
       this.teamid = params['teamid'];
-=======
-      console.log("this is param ID of team",params);
-      // this.teamid = params['teamid'];
-      this.teamid = params.teamid;
-      console.log(this.teamid);
->>>>>>> bf3ae4315e12e6175aca6d68abf5b45151d9163a
   });
     this.route.params.subscribe(params => {
       this.routename = params.name;

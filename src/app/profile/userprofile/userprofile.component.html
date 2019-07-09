@@ -1,56 +1,84 @@
 <sports-social-header></sports-social-header>
 <div class="outer-shell">
-    <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf="array.length === 0" alt="">
-  <div class="profile-shell" *ngFor="let data of array">
+  <div class="profile-shell">
     <div class="background-img">
-        <img src={{data.coverpic}} onerror="this.src='assets/images/sports-bible-default.jpg'">
+        <img src={{coverpic}} onerror="this.src='/assets/images/sportsocialteamviewheader.jpg'">
     </div>
     <div class="profile-img">
-      <img src={{data.profile_image}} onerror="this.src='assets/images/user.png'">
+      <img src={{profile_image}} onerror="this.src='assets/images/user.png'">
     </div>
-    <div class="team-info"></div>
-    <div class="sub-header"></div>
-    <div class="side-shell">
-        <div class="followers">
-            <h4>Following<br><p>{{data.FollowingCount}}</p></h4>
-            <h5>Fans<br><p>{{data.Fancount}}</p></h5>
-        </div>
-        <div class="userinfo">
-          <h3>Basic Info</h3>
-          <table>
-            <tr>
-              <th><img src="assets/images/age.png"></th>
-              <th><p>{{data.DateofBirth}}</p></th>
-            </tr>
-            <tr>
-              <th><img src="assets/images/gender.png"></th>
-              <th><p>{{data.Gender}}</p></th>
-            </tr>
-            <tr>
-              <th><img src="assets/images/study.png"></th>
-              <th><p>{{data.TypeofInstn}}</p></th>
-            </tr>
-            <tr>
-              <th><img src="assets/images/home.png"></th>
-              <th><p>{{data.City}}</p></th>
-            </tr>
-          </table>       
-        </div>
-        <div class="media">
-            <div class="head">
-            <h4>Media</h4>
-            <a><p>See all</p></a>
+    <div class="profile-info">
+      <div class="name">
+        <h1>{{FirstName}}</h1>
+        <h2>@{{UniqueName}}</h2>
+      </div>
+      <div class="follow">
+        <h1>Follow</h1>
+      </div>
+      <img src="assets/images/sportsocialchat.png" alt="">
+    </div>
+    <div class="sub-header">
+      <img class="profile-pic" src="{{profile_image}}" onerror="this.src='assets/images/user.png'" alt="">  
+     
+        <div class="fans">
+            <h1>Fans<span>Following</span></h1>
+            <h2>{{Fancount}}<span>{{FollowingCount}}</span></h2>
+            <!-- <h1>Members<h2>{{membercount}}</h2></h1> -->
           </div>
-           <div class="mediabox" *ngFor="let icon of mediaArr">
-             <img src={{icon.Path}}>
-          </div>
+          <div class="sub-name">
+              <h1>{{FirstName}}</h1>
+              <h2>@{{UniqueName}}</h2>
+            </div>
+      <div class="sub-follow">
+          <h1>Follow</h1>
         </div>
-        <div class="footer">
-          <sports-social-backfooter></sports-social-backfooter>
+        <img class="sub-follow-img" src="assets/images/sportsocialchat.png" alt="">  
+  </div>  
+</div>
+  <div class="side-shell">
+    <div class="stick">
+    <div class="followers">
+        <h1>Fan<span>&nbsp;Following</span></h1>
+        <h2>&nbsp;{{Fancount}}<span>{{FollowingCount}}</span></h2>
+    </div>
+    <div class="basic-info">
+      <h1>Basic Info</h1>
+      <div class="basic-info-tab">
+          <div>
+            <img src="assets/images/age.png">
+          </div>
+          <h2>{{DateofBirth}}</h2>
+      </div>
+      <div class="basic-info-tab">
+          <div>
+            <img src="assets/images/gender.png">
+          </div>
+          <h2>{{Gender}}</h2>
+      </div>
+      <div class="basic-info-tab">
+          <div>
+            <img src="assets/images/study.png">
+          </div>
+          <h2>{{TypeofInstn}}</h2>
+      </div>
+        <div class="basic-info-tab">
+            <div>
+              <img src="assets/images/home.png">
+            </div>
+          <h2>{{City}}</h2>
+        </div>
+    </div>    
+    </div>
+    <div class="media">
+        <div class="head">
+        <h4>Media</h4>
+        <a><p>See all</p></a>
+      </div>
+       <div class="mediabox" *ngFor="let icon of mediaArr">
+         <img src={{icon.Path}}>
       </div>
     </div>
-    
-  </div>
+</div>
   <div class="normal-shell" *ngIf="show">
       <a routerLink="/userprofile/{{userid}}/matches" routerLinkActive="active">Matches</a>
       <a routerLink="/userprofile/{{userid}}/teams" routerLinkActive="active">Teams</a>
