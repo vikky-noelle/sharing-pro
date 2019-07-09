@@ -3,7 +3,7 @@
 }
 .About-body{
     background-color: white;
-    height: 300px;
+    height: auto;
     width: 75%;
     margin-left: 25%;
 }
@@ -98,4 +98,8 @@
     margin-right: 3.2%;
     margin-top: 3%;
     display: inline-block;
+}
+.backfooter{
+    width: 75%;
+    float: right;
 }
