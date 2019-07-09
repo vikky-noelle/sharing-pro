@@ -13,6 +13,7 @@ export class UserprofilePlaymatesComponent implements OnInit {
   date = Math.abs(Date.now());
   parentUserid;
   pageno;
+  show:boolean=false;
   array=[];
   constructor(private postservice:PostService,
     private activatedroute:ActivatedRoute,
@@ -34,6 +35,7 @@ export class UserprofilePlaymatesComponent implements OnInit {
       }
     this.postservice.UserProfielPlaymate(this.parentUserid,this.parentUserid,this.pageno,this.date).subscribe(
       res=>{
+        this.show=true;
         console.log("response of playmates",res);
         for(const i in res)
         this.array.push({

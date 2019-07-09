@@ -148,7 +148,9 @@ export class TeamprofileComponent implements OnInit {
   }
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
-      this.teamid = params['teamid'];
+      console.log("this is param ID of team",params);
+      // this.teamid = params['teamid'];
+      this.teamid = params.teamid;
       console.log(this.teamid);
   });
     this.route.params.subscribe(params => {

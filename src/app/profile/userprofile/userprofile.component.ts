@@ -19,6 +19,7 @@ export class UserprofileComponent implements OnInit {
   array=[];
   mediaArr=[];
   Instutionresult;
+  show:boolean=false;
   opensubheader = document.getElementsByClassName('sub-header') as HTMLCollectionOf<HTMLElement>;
 
 
@@ -31,12 +32,13 @@ export class UserprofileComponent implements OnInit {
   }
 
   getUserDetails(){
-    for(var i=0;i<20;i++){
+    for(var i=1;i<=10;i++){
       this.pageNo=i;
     }
+    
     this.postservice.UserProfile(this.userid,this.userid,this.pageNo,this.date).subscribe(
       (res)=>{
-        
+        this.show=true;
         for(var i=0;i<res["UserData"].length;i++){
 
           /** Birthdate calculate*/
@@ -91,8 +93,7 @@ export class UserprofileComponent implements OnInit {
           });
         }
         
-      }
-    )
+      });
   }
 
   ngOnInit() {

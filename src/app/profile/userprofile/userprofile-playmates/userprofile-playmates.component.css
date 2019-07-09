@@ -1,9 +1,15 @@
+.spinner{
+  top: 10%;
+}
 .body{
     width: 50%;
+    height: 900px;
     margin-left: 0%;
     margin-right: 22%;
     background-color: #ffffff;
     float: right;
+    overflow-x: hidden;
+    overflow-y: scroll;
     /* border: 1px solid red; */
 }
 .container {

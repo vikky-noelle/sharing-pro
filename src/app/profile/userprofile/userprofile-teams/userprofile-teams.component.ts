@@ -13,6 +13,7 @@ export class UserprofileTeamsComponent implements OnInit {
   paramuserid;
   pageno;
   array=[];
+  show:boolean=false;
   public teamId;
   constructor(
     private postservice:PostService,
@@ -30,7 +31,7 @@ export class UserprofileTeamsComponent implements OnInit {
       this.pageno=i;
         this.postservice.UserProfileTeams(this.paramuserid,this.pageno).subscribe(
           data=>{
-        
+            this.show=true;
         
             for(var i=0;i<data["RandomTeams"].length;i++){
               this.teamId=data["RandomTeams"][i].TeamId;

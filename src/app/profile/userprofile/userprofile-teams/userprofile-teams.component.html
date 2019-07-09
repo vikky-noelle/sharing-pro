@@ -1,4 +1,5 @@
 <div class="body">
+    <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf="array.length === 0" alt="">
   <div class="teams"  *ngFor="let data of array;">
     <div class="head">
         <img src={{data.Cover_Photo}} onerror="this.src='assets/images/sportsocialteamheader.jpg'">

@@ -1,5 +1,8 @@
 .body{
     /* border: 1px solid red; */
+    overflow-x:hidden;
+    overflow-y: scroll;
+    height: 900px; 
     width: 70%;
     float: right;
     margin-right: 4%;

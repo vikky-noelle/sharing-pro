@@ -1,7 +1,11 @@
+.spinner{
+    margin-top: 25%;
+}
 .outer-shell{
     position: relative;
     height: auto;
     width: 100%;
+    margin-top:4%;
 }
 .profile-shell{
     position: relative;
@@ -47,6 +51,11 @@
     width: 25%;
     background-color: #f6f6f6;
     float: left;
+    position: relative;
+}
+.footer{
+    height: auto;
+    top: 70%;
     position: relative;
 }
 table{
