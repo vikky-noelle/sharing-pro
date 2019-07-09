@@ -22,6 +22,10 @@ import { TeamviewComponent } from '../teamview/teamview.component';
 import { OpenHomeMatchCardComponent } from '../open-cards/open-home-match-card/open-home-match-card.component';
 import { UserprofileComponent } from '../profile/userprofile/userprofile.component';
 import { TeamprofileMatchesComponent } from '../profile/teamprofile/teamprofile-matches/teamprofile-matches.component';
+import { UserprofileMatchesComponent } from '../profile/userprofile/userprofile-matches/userprofile-matches.component';
+import { UserprofileTeamsComponent } from '../profile/userprofile/userprofile-teams/userprofile-teams.component';
+import { UserprofilePlaymatesComponent } from '../profile/userprofile/userprofile-playmates/userprofile-playmates.component';
+import { UserprofileAboutComponent } from '../profile/userprofile/userprofile-about/userprofile-about.component';
 
 
 const App_Route: Routes = [
@@ -40,6 +44,32 @@ const App_Route: Routes = [
                 path:'Matches',
                 component: TeamprofileMatchesComponent
             },
+        ]
+    },
+    // {path:'userprofile/:MatchStarterId',component:UserprofileComponent},
+    {
+        path:'userprofile/:MatchStarterId',
+        component:UserprofileComponent,
+        children:[
+            {
+                path: '**', redirectTo: 'userprofile/about', pathMatch: 'full'
+            },
+            {
+                path:'matches',
+                component:UserprofileMatchesComponent
+            },
+            {
+                path:'teams',
+                component:UserprofileTeamsComponent
+            },
+            {
+                path:'playmates',
+                component:UserprofilePlaymatesComponent
+            },
+            {
+                path:'about',
+                component:UserprofileAboutComponent
+            }
         ]
     },
     {path:"opencard/:feedid",component:OpenHomeMatchCardComponent},
@@ -122,7 +152,7 @@ const App_Route: Routes = [
         loadChildren: 'app/home/home.module#HomeModule'
     },
    
-    {path:'userprofile/:MatchStarterId',component:UserprofileComponent},
+    
     {
         path: 'home',
         component: HomeComponent,

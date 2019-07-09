@@ -1,0 +1,101 @@
+.body{
+    /* border: 1px solid red; */
+    overflow-x:hidden;
+    overflow-y: scroll;
+    height: 900px; 
+    width: 70%;
+    float: right;
+    margin-right: 4%;
+}
+.body>.teams{
+    display: inline-block;
+    margin:3% 8% 2% 8%;
+    border-radius: 3%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    position: relative;
+}
+.teams{
+    border: 1px solid #ababab;
+    width: 32%;
+    height: 320px;
+    cursor: pointer;
+}
+.teams:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.head{
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+.head>img{
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    width: 100%;
+    height: 100px;
+}
+.profileimg{
+    position: absolute;
+    bottom: 0%;
+    height: 100px;
+    width: 100%;
+    /* border: 2px solid blue; */
+    z-index: 1;
+}
+.profileimg>img{
+    border: 2px solid #ffffff;
+    margin-left: 7%;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+.teamname{
+    width: 55%;
+    right: 0% !important;
+    height: 40px;
+    bottom: 0%;
+    position: absolute;
+}
+.teamname>h4{
+    font-size: 1em;
+    font-weight: bolder;
+}
+.teamname>h5{
+  padding: 2%;
+  padding-left: 0%;
+  color: #ababab;
+}
+.members{
+    width: 70%;
+    margin: 3% 15% 0% 15%;
+    height: 60px;
+    position: absolute;
+    
+}
+.members>h4,h5{
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-flex;
+    color: #ababab;
+    padding: 2%;
+}
+.members>h4>b{
+    margin-left: 3%;
+    margin-top: -4%;
+    color: black;
+    font-size: 1.5em !important;
+}
+.members>h5>b{
+    margin-left: 3%;
+    margin-top: -6%;
+    color: black;
+    font-size: 1.5em !important;
+}
+.members>h4{
+    font-size: .9em;
+    float: left;
+}
+.members>h5{
+    font-size: .9em;
+    float: right;
+}

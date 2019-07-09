@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { PostService } from '../../shared/services/post.service';
 import { ActivatedRoute } from '@angular/router';
 
@@ -14,11 +14,12 @@ export class UserprofileComponent implements OnInit {
     private activatedroute:ActivatedRoute) { }
 
   date = new Date();
-  userid;
-  pageNo;
+  @Input() userid;
+  @Input() pageNo;
   array=[];
   mediaArr=[];
   Instutionresult;
+  show:boolean=false;
   opensubheader = document.getElementsByClassName('sub-header') as HTMLCollectionOf<HTMLElement>;
 
 
@@ -31,12 +32,13 @@ export class UserprofileComponent implements OnInit {
   }
 
   getUserDetails(){
-    for(var i=0;i<20;i++){
+    for(var i=1;i<=10;i++){
       this.pageNo=i;
     }
+    
     this.postservice.UserProfile(this.userid,this.userid,this.pageNo,this.date).subscribe(
       (res)=>{
-        
+        this.show=true;
         for(var i=0;i<res["UserData"].length;i++){
 
           /** Birthdate calculate*/
@@ -57,7 +59,6 @@ export class UserprofileComponent implements OnInit {
           else if(typeinst ==3){
             this.Instutionresult = "Working at " + res["UserData"][i].InstnName;
           }
-          // console.log("this is typeinst",this.Instutionresult);
 
           this.array.push({
             FirstName:res["UserData"][i].FirstName,
@@ -90,11 +91,9 @@ export class UserprofileComponent implements OnInit {
             profile_photo:res["Images"][i].profile_photo,
             User_Name:res["Images"][i].User_Name
           });
-          console.log("thi is paath of image",res["Images"][i].Path);
         }
         
-      }
-    )
+      });
   }
 
   ngOnInit() {
@@ -108,7 +107,6 @@ export class UserprofileComponent implements OnInit {
     window.removeEventListener('scroll', this.scroll, true);
   }
   scroll = (): void => {
-    console.log("is it owrking?");
     if(window.pageYOffset > 370){
       this.opensubheader[0].style.display="block";
     }

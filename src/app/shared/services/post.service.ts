@@ -10,6 +10,25 @@ export class PostService {
       page:Number,
       currentdate:String
    }
+   userprofileplaymateObj=[
+     {
+      userid:String,
+      profileid:String,
+      page:Number,
+      timestamp:Number
+     }
+   ]
+   userProfielTeamObj={
+     userid:String,
+     page:Number
+   }
+   userParticularMatchesObj=[{
+    userid:String,
+    profileid:String,
+    page:Number,
+    currentdate:String
+   }]
+
    fanobj=[{
     userid:String,
     profileid:String,
@@ -192,6 +211,32 @@ export class PostService {
       currentdate:currentdate
     }
     return this.http.post('https://test.sportsocial.in/poc/getUserDetails',this.userprofileobj);
+  }
+
+  UserProfielPlaymate(userid,profileid,page,timestamp){
+    this.userprofileplaymateObj=[{
+        userid:userid,
+        profileid:profileid,
+        page:page,
+        timestamp:timestamp
+    }];
+      return this.http.post('https://test.sportsocial.in/poc/getPlaymatesNew',this.userprofileplaymateObj);
+  }
+  UserProfileTeams(userid,page){
+    this.userProfielTeamObj={
+      userid:userid,
+      page:page
+    }
+    return this.http.post('https://test.sportsocial.in/team/getTeamsNew',this.userProfielTeamObj);
+  }
+  UsersParticularMatches(userid,profileid,page,currentdate){
+      this.userParticularMatchesObj=[{
+        userid:userid,
+        profileid:profileid,
+        page:page,
+        currentdate:currentdate
+      }]
+      return this.http.post('https://test.sportsocial.in/user/usermatchesPastFuture',this.userParticularMatchesObj);
   }
 
   TeamProfile(userid,teamid){
