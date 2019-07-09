@@ -9,8 +9,7 @@
     <div class="member-tab">
       <div class="members-tab-component" *ngFor="let data of members" >
         <img src="{{data.profilepic}}" alt="">
-        <p>{{data.firstname}}</p>
-        <p *ngIf="data.captain">( C )</p>
+        <p>{{data.firstname}}<span *ngIf="data.captain">( C )</span></p>
       </div>
     </div>
   </div>

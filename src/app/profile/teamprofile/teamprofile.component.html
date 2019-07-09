@@ -1,5 +1,4 @@
 <sports-social-header></sports-social-header>
-<!-- <sports-social-teamprofile-about [member]="Members"></sports-social-teamprofile-about> -->
 <div class="outer-shell">
   <div class="profile-shell">
     <div class="background-img">
@@ -11,7 +10,6 @@
     <div class="team-info">
       <div class="name">
         <h1>{{name}}</h1>
-        <h2>@{{teamusername}}</h2>
       </div>
       <div class="follow">
         <h1>Follow</h1>
@@ -37,10 +35,12 @@
         <img class="sub-follow-img" src="assets/images/sportsocialchat.png" alt="">  
   </div>
   <div class="side-shell">
+    <div class="stick">
       <div class="followers">
           <h1>Members<span>Fans</span></h1>
           <h2>&nbsp;{{membercount}}<span>{{fancount}}</span></h2>
       </div>
+     
       <div class="basic-info">
         <h1>Basic Info</h1>
         <div class="basic-info-tab">
@@ -104,6 +104,7 @@
            <img src={{icon.url}}>
         </div>
       </div>
+    </div>
     </div>
     <div class="normal-shell">
     <a routerLink="/teamprofile/{{routename}}/About" [queryParams]="{ teamid: teamid}" routerLinkActive="active">About</a>
