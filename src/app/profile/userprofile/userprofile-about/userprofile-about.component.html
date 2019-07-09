@@ -1,23 +1,21 @@
-<p>
-  userprofile-about works!
-</p>
+<body class="body">
+    <div class="gameFeed">
+        <div style="position:relative">
+          <div class="game" #game>
+            <div  class="gameCard" *ngFor="let data of array" #gameblock>
+                <h3>{{data.gamename}}</h3>
+                <div *ngFor="let details of data" class="questions">
+                  <h4>{{details.questiontext}}</h4>
+                  <p>{{details.answer}}</p>
+                </div>
+            </div>
+            
+            
+          </div>
+        </div>
+        <img src="assets/images/sportsocialhomearrow1.png" class="left" (click)="leftScroll()">
+        <img src="assets/images/sportsocialhomearrow.png" class="right" (click)="rightScroll()">
+      </div>
+</body>
 
-<p>
-    userprofile-about works!
-  </p>
 
-  v
-  <var>v</var>
-  <p>
-      userprofile-about works!
-    </p>
-
-    <p>
-        userprofile-about works!
-      </p>
-
-      <p>
-          userprofile-about works!
-        </p>
-        
-        
