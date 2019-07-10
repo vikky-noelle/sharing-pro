@@ -22,20 +22,15 @@
 }
 
 .upcoming-block{
-    /* overflow-y: hidden; */
     scroll-behavior: smooth;
     width: 100% !important;
-    /* overflow-x: scroll; */
-    /* white-space: nowrap !important; */
     -webkit-overflow-scrolling: touch;
     display: inline-block;
 }
 .upcoming-cards{
     vertical-align: top;
-    /* border: 1px solid blue; */
     scroll-snap-align: start;
     width: 50%;
-    /* margin-right: 3.2%; */
     margin-top: 3%;
     display: inline-block;
 }

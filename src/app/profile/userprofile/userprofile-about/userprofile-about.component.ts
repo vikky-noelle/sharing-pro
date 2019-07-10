@@ -69,7 +69,7 @@ export class UserprofileAboutComponent implements OnInit {
                   }
                   if(count2!=0){
                     this.array.push({
-                      gamename: this.temparray2[count].gamename,
+                      gamename: this.temparray2[count].gamename.toUpperCase(),
                       gamedetails: this.temparray
                     });
                     console.log(this.array);

@@ -38,7 +38,7 @@
   <div class="side-shell">
     <div class="stick">
     <div class="followers">
-        <h1>Fan<span>&nbsp;Following</span></h1>
+        <h1>Fans<span>&nbsp;Following</span></h1>
         <h2>&nbsp;{{Fancount}}<span>{{FollowingCount}}</span></h2>
     </div>
     <div class="basic-info">
@@ -80,10 +80,11 @@
     </div>
 </div>
   <div class="normal-shell" *ngIf="show">
+      <a routerLink="/userprofile/{{userid}}/about" routerLinkActive="active">About</a>
       <a routerLink="/userprofile/{{userid}}/matches" routerLinkActive="active">Matches</a>
       <a routerLink="/userprofile/{{userid}}/teams" routerLinkActive="active">Teams</a>
       <a routerLink="/userprofile/{{userid}}/playmates" routerLinkActive="active">Playmates</a>
-      <a routerLink="/userprofile/{{userid}}/about" routerLinkActive="active">About</a>
+      
       
     </div>
     
