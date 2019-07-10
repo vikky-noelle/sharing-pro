@@ -56,13 +56,13 @@ export class UserprofileAboutComponent implements OnInit {
                           }
                           tempname = GameInterestgamename;
                           count2=count2+1;
-                          this.temparray.push([{
+                          this.temparray.push({
                             gameid: GameInterestgameid,
                             gamename: res["GamesInterest"][i].gamename,
                             questiontext: QuestionDataQuestiontext,
                             Questionid: Gamesquestionid,
                             answer: answer
-                          }]);
+                          });
                           break;
                         }
                       }

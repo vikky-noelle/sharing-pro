@@ -4,7 +4,7 @@
           <div class="game" #game>
             <div  class="gameCard" *ngFor="let data of array" #gameblock>
                 <h3>{{data.gamename}}</h3>
-                <div *ngFor="let details of data" class="questions">
+                <div *ngFor="let details of data.gamedetails" class="questions">
                   <h4>{{details.questiontext}}</h4>
                   <p>{{details.answer}}</p>
                 </div>
