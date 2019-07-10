@@ -37,6 +37,7 @@ export class UserprofileComponent implements OnInit {
   @Input() userid;
   @Input() pageNo;
   @Input() public array=[];
+  @Input() public upcomingarray=[];
   mediaArr=[];
   Instutionresult;
   show:boolean=false;
@@ -165,7 +166,9 @@ export class UserprofileComponent implements OnInit {
              else if (newstring.toLowerCase() === "male"){
               this.gendercheck= "Men's";
              }
+             if(res["Past"][j].scoreTeam1 !=null && res["Past"][j].scoreTeam2 !=null){
             this.array.push({
+              startdatetime: "Match Finished",
               finished: true,
               upcoming: false,
               Username:res["Past"][j].Username,
@@ -193,7 +196,73 @@ export class UserprofileComponent implements OnInit {
               matchGender:res["Past"][j].matchGender,
               profile_Photo_path:res["Past"][j].profile_Photo_path,
             });
+          }
             // console.log("this username",res["Past"][j].Eventid);
+          }
+          // upcoming matches
+          for(var j=0;j<res["Upcoming"].length;j++){
+            var agebracket= res["Upcoming"][j].ageBracket;
+            if(agebracket == 0){
+              this.Age="Under 13";
+            }
+            else if(agebracket ==1){
+              this.Age="Under 15";
+            }
+            else if(agebracket ==2){
+              this.Age="Under 17";
+            }
+            else if(agebracket ==3){
+              this.Age="Under 19";
+            }
+            else if(agebracket ==4){
+              this.Age="Under 21";
+            }
+            else if(agebracket ==5){
+              this.Age="Under 23";
+            }
+            else if(agebracket ==-1){
+              this.Age="Open for All";
+            }
+            var newstring=res["Upcoming"][j].matchGender;
+            if(newstring.toLowerCase() === "mix"){
+              this.gendercheck = "Mix-up";
+             }
+             else if(newstring.toLowerCase() === "female"){
+              this.gendercheck= "Women's";
+             }
+             else if (newstring.toLowerCase() === "male"){
+              this.gendercheck= "Men's";
+             }
+            this.upcomingarray.push({
+              startdatetime: "Upcoming",
+              finished: false,
+              upcoming: true,
+              Username:res["Upcoming"][j].Username,
+              Eventid:res["Upcoming"][j].Eventid,
+              Gamename:res["Upcoming"][j].Gamename,
+              EventText:res["Upcoming"][j].EventText,
+              // profile_image:res["Upcoming"][j].profile_image,
+              ageBracket:this.Age,
+              gender:this.gendercheck,
+              event_image:res["Upcoming"][j].event_image,
+              InsertedDate:res["Upcoming"][j].InsertedDate,
+              CommentCount:res["Upcoming"][j].CommentCount,
+              PromoteCount:res["Upcoming"][j].PromoteCount,
+              JoineeCount:res["Upcoming"][j].JoineeCount,
+              WatchCount:res["Upcoming"][j].WatchCount,
+              StartDateTime:res["Upcoming"][j].StartDateTime,
+              MatchStarterName:res["Upcoming"][j].MatchStarterName,
+              MatchStarterUniqueName:res["Upcoming"][j].MatchStarterUniqueName,
+              MatchStarterPhoto:res["Upcoming"][j].MatchStarterPhoto,
+              venue_name:res["Upcoming"][j].venue_name,
+              Team1Name:res["Upcoming"][j].Team1Name,
+              Team2Name:res["Upcoming"][j].Team2Name,
+              scoreTeam1:res["Upcoming"][j].scoreTeam1==null || res["Upcoming"][j].scoreTeam2==null?'':res["Upcoming"][j].scoreTeam1 + ' - ',
+              scoreTeam2:res["Upcoming"][j].scoreTeam2==null || res["Upcoming"][j].scoreTeam1==null?'VS':res["Upcoming"][j].scoreTeam2,
+              matchGender:res["Upcoming"][j].matchGender,
+              profile_Photo_path:res["Upcoming"][j].profile_Photo_path,
+            });
+            console.log("this upcoming",this.upcomingarray);
           }
       }
     )
