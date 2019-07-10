@@ -23,6 +23,8 @@ export class UserprofileComponent implements OnInit {
   Academy;
   TypeofInstn;
   InstnName;
+  Age;
+  gendercheck;
   followerstab = document.getElementsByClassName('followers') as HTMLCollectionOf<HTMLElement>;
   sideshellposition = document.getElementsByClassName('side-shell') as HTMLCollectionOf<HTMLElement>;
   opensubheader = document.getElementsByClassName('sub-header') as HTMLCollectionOf<HTMLElement>;
@@ -127,9 +129,40 @@ export class UserprofileComponent implements OnInit {
       // i=0;
     this.postservice.UsersParticularMatches(this.userid,this.userid,pageno,date).subscribe(
       (res)=>{
-        console.log(res["Past"].length);
-        
+        // console.log(res["Past"].length);    
           for(var j=0;j<res["Past"].length;j++){
+            var agebracket= res["Past"][j].ageBracket;
+            if(agebracket == 0){
+              this.Age="Under 13";
+            }
+            else if(agebracket ==1){
+              this.Age="Under 15";
+            }
+            else if(agebracket ==2){
+              this.Age="Under 17";
+            }
+            else if(agebracket ==3){
+              this.Age="Under 19";
+            }
+            else if(agebracket ==4){
+              this.Age="Under 21";
+            }
+            else if(agebracket ==5){
+              this.Age="Under 23";
+            }
+            else if(agebracket ==-1){
+              this.Age="Open for All";
+            }
+            var newstring=res["Past"][j].matchGender;
+            if(newstring.toLowerCase() === "mix"){
+              this.gendercheck = "Mix-up";
+             }
+             else if(newstring.toLowerCase() === "female"){
+              this.gendercheck= "Women's";
+             }
+             else if (newstring.toLowerCase() === "male"){
+              this.gendercheck= "Men's";
+             }
             this.array.push({
               finished: true,
               upcoming: false,
@@ -138,6 +171,8 @@ export class UserprofileComponent implements OnInit {
               Gamename:res["Past"][j].Gamename,
               EventText:res["Past"][j].EventText,
               // profile_image:res["Past"][j].profile_image,
+              ageBracket:this.Age,
+              gender:this.gendercheck,
               event_image:res["Past"][j].event_image,
               InsertedDate:res["Past"][j].InsertedDate,
               CommentCount:res["Past"][j].CommentCount,
@@ -149,7 +184,7 @@ export class UserprofileComponent implements OnInit {
               MatchStarterUniqueName:res["Past"][j].MatchStarterUniqueName,
               MatchStarterPhoto:res["Past"][j].MatchStarterPhoto,
               venue_name:res["Past"][j].venue_name,
-              Team1Name:res["Past"][j].Team2Name,
+              Team1Name:res["Past"][j].Team1Name,
               Team2Name:res["Past"][j].Team2Name,
               scoreTeam1:res["Past"][j].scoreTeam1==null || res["Past"][j].scoreTeam2==null?'':res["Past"][j].scoreTeam1 + ' - ',
               scoreTeam2:res["Past"][j].scoreTeam2==null || res["Past"][j].scoreTeam1==null?'VS':res["Past"][j].scoreTeam2,

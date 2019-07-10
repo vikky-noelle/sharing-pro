@@ -2,22 +2,19 @@
   top: 10%;
 }
 .body{
-    width: 50%;
-    height: 900px;
-    margin-left: 0%;
-    margin-right: 22%;
+    width: 75%;
+    height: auto;
+    margin: 2% 0% 3% 25%;
     background-color: #ffffff;
-    float: right;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    /* border: 1px solid red; */
 }
 .container {
     border: 2px solid #dedede;
+    width: 90%;
+    height: 50px;
     background-color: #f1f1f1;
     border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 14px;
+    margin: 10px 0 0 30px;
   }  
   .container::after {
     content: "";
@@ -32,12 +29,6 @@
     margin-right: 20px;
     border-radius: 50%;
   }
-  
-  .container img.right {
-    float: right;
-    margin-left: 20px;
-    margin-right:0;
-  }
   .viewprofile{
     float: right;
   }
@@ -45,3 +36,7 @@
       color: blue;
       cursor: pointer;
   }
+  .backfooter{
+    width: 75%;
+    float: right;
+}

@@ -1,11 +1,8 @@
 .body{
-    /* border: 1px solid red; */
-    overflow-x:hidden;
-    overflow-y: scroll;
-    height: 900px; 
-    width: 70%;
-    float: right;
-    margin-right: 4%;
+    height: auto; 
+    width: 75%;
+    margin-left: 25%;
+    vertical-align: top;
 }
 .body>.teams{
     display: inline-block;
@@ -97,5 +94,9 @@
 }
 .members>h5{
     font-size: .9em;
+    float: right;
+}
+.backfooter{
+    width: 75%;
     float: right;
 }
