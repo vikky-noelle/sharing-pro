@@ -292,7 +292,8 @@ export class HomeMatchFeedComponent{
               if(data["Feed"][i].JoineeCount===0){
                 data["Feed"][i].JoineeCount = false;
               }
-              checkstat = Date.now();
+              // checkstat = Date.now();
+              checkstat= Math.floor(Date.now()/1000);
         checkstat2 = data["Feed"][i].startdatetime;
         
         if(checkstat>checkstat2){
