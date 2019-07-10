@@ -1,0 +1,84 @@
+.body{
+    width: 71%;
+    height: 500px;
+    border: 1px solid red;
+    float: right;
+    margin-left: 0%;
+    margin-right: 3%;
+    position: relative;
+}
+.gameFeed{
+    z-index: 10;
+    margin: 0px;
+    padding-left: 2%;
+    padding-right: 5%;
+}
+.game{
+    width: 90%;
+    height: 500px;
+    margin: 1%;
+    margin-top: 0%;
+    margin-left: 6%;
+    overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap !important;
+    border: 1px solid yellow;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-x: repeat(25%);
+    scroll-snap-type: x mandatory;
+    
+}
+.game::-webkit-scrollbar{
+  display: none;
+}
+.game { 
+  overflow: auto;
+  -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none;
+}
+.game { overflow: -moz-scrollbars-none; }
+.game>div{
+    display: inline-block;
+    width: 90%;
+    margin-left: 1%;
+    margin-right: 3%;
+    margin-top: 5%;
+    height: 400px; 
+    border: 1p solid black;
+    border-radius:2%; 
+    scroll-snap-align: start;
+}
+.gameFeed>img{
+    height: 40px;
+    width: 40px;
+    font-weight: bolder; 
+    border: 1px solid #024770;
+    border-radius: 50%;
+}
+.gameFeed .left{
+    position: absolute;
+    top:47%;
+    left: 3%;
+    cursor: pointer; 
+}
+.gameFeed .right{
+    position: absolute;
+    top:47%;
+    right: -2%;
+    cursor: pointer;    
+}
+.gameCard{
+    border:2px solid #fff;
+    filter: brightness(100%);
+    overflow: hidden;
+    height: 100%;
+    border: 1px solid red;
+    /* transition: transform .2s;
+    box-shadow: 0 0 11px rgba(230, 62, 62, 0.2);  */
+  }
+  /* .gameCard:hover {
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2); 
+    transform: scale(1.1); 
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  } */

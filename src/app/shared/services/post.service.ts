@@ -28,6 +28,12 @@ export class PostService {
     page:Number,
     currentdate:String
    }]
+   userProfileAboutObj={
+    userid:String,
+    profileid:String,
+    page:Number,
+    currentdate:String
+   }
 
    fanobj=[{
     userid:String,
@@ -237,6 +243,15 @@ export class PostService {
         currentdate:currentdate
       }]
       return this.http.post('https://test.sportsocial.in/user/usermatchesPastFuture',this.userParticularMatchesObj);
+  }
+  UserProfileAbout(userid,profileid,page,currentdate){
+      this.userProfileAboutObj={
+        userid:userid,
+        profileid:profileid,
+        page:page,
+        currentdate:currentdate
+      }
+      return this.http.post('https://test.sportsocial.in/poc/getUserDetails',this.userProfileAboutObj);
   }
 
   TeamProfile(userid,teamid){
