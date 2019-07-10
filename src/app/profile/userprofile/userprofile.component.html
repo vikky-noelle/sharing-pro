@@ -75,7 +75,7 @@
         <a><p>See all</p></a>
       </div>
        <div class="mediabox" *ngFor="let icon of mediaArr">
-         <img src={{icon.Path}}>
+         <img (click)="openimage();" src={{icon.Path}}>
       </div>
     </div>
 </div>

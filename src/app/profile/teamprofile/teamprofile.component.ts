@@ -1,7 +1,7 @@
 import { LocationService } from './../../shared/services/location.service';
 import { PostService } from '../../shared/services/post.service';
 import { ActivatedRoute } from '@angular/router';
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { TimeService } from '../../shared/services/time.service';
 
 @Component({
@@ -40,12 +40,19 @@ export class TeamprofileComponent implements OnInit {
     {id: 60, title: 'Volleyball'}
   ];
   startTime:string;
+  crousalsingleimage;
   timestamp = Math.floor(Date.now()/1000);
   count=0;
   arr=[];
   show:boolean=false;
   gamename;
   captainuserid;
+  crousallist=[];
+  leftarrow = document.getElementsByClassName('larrow') as HTMLCollectionOf<HTMLElement>;
+  rightarrow = document.getElementsByClassName('rarrow') as HTMLCollectionOf<HTMLElement>;
+  showcrousal = document.getElementsByClassName('media-crousal') as HTMLCollectionOf<HTMLElement>;
+  singleimage = document.getElementsByClassName('single-image') as HTMLCollectionOf<HTMLElement>;
+  crousal = document.getElementsByClassName('crousal-element') as HTMLCollectionOf<HTMLElement>;
   followerstab = document.getElementsByClassName('followers') as HTMLCollectionOf<HTMLElement>;
   sideshellposition = document.getElementsByClassName('side-shell') as HTMLCollectionOf<HTMLElement>;
   opensubheader = document.getElementsByClassName('sub-header') as HTMLCollectionOf<HTMLElement>;
@@ -53,6 +60,9 @@ export class TeamprofileComponent implements OnInit {
   @Input() public upcoming=[];
   @Input() public past=[];
   @Input() public description=false;
+  @ViewChild('widgets') widgets:ElementRef;
+  @ViewChild('widgetsContent') widgetsContent:ElementRef;
+
   constructor(
     private route: ActivatedRoute,
     private PostService: PostService,
@@ -348,6 +358,49 @@ export class TeamprofileComponent implements OnInit {
       }
     });
   });
+  }
+  imageopen(url){
+    this.crousalsingleimage = url;
+    this.showcrousal[0].style.display="block";
+    this.crousal[0].style.display="none";
+    this.leftarrow[0].style.display="none";
+    this.rightarrow[0].style.display="none";
+    this.singleimage[0].style.display="block";
+  }
+  opencrousal(){
+    this.showcrousal[0].style.display="block";
+    this.crousal[0].style.display="block";
+    this.leftarrow[0].style.display="block";
+    this.rightarrow[0].style.display="block";
+    this.singleimage[0].style.display="none";
+    // this.crousallist = this.media;
+  }
+  @HostListener('document:keyup', ['$event'])
+  handleDeleteKeyboardEvent(event: KeyboardEvent) {
+    if(event.key === 'ArrowLeft')
+    {
+      this.lscroll()
+    }
+    if(event.key === 'ArrowRight')
+    {
+      this.rscroll()
+    }
+    if(event.keyCode === 27)
+    {
+      this.showcrousal[0].style.display="none";
+    }
+  }
+  lscroll(){
+    console.log("working");
+    this.widgets.nativeElement.scrollLeft -=this.widgetsContent.nativeElement.clientWidth;
+  }
+  rscroll(){
+    console.log("working");
+
+    this.widgets.nativeElement.scrollLeft +=this.widgetsContent.nativeElement.clientWidth;
+  }
+  close(){
+    this.showcrousal[0].style.display="none";
   }
   ngOnInit() {
     this.route.queryParams.subscribe(params => {

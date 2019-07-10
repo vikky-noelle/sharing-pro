@@ -98,10 +98,10 @@
       <div class="media">
           <div class="head">
           <h4>Media</h4>
-          <a><p>See all</p></a>
+          <a (click)="opencrousal()"><p>See all</p></a>
         </div>
          <div class="mediabox" *ngFor="let icon of media">
-           <img src={{icon.url}}>
+           <img (click)="imageopen(icon.url);" src={{icon.url}}>
         </div>
       </div>
     </div>
@@ -109,6 +109,23 @@
     <div class="normal-shell">
     <a routerLink="/teamprofile/{{routename}}/About" [queryParams]="{ teamid: teamid}" routerLinkActive="active">About</a>
     <a routerLink="/teamprofile/{{routename}}/Matches" [queryParams]="{ teamid: teamid}" routerLinkActive="active">Matches</a>
+  </div>
+</div>
+<div class="media-crousal">
+  <img class="single-image" src="{{crousalsingleimage}}" alt="">
+  <div class="close">
+    <img (click)="close()" src="/assets/images/sportsocialprofileclose.png">
+  </div>
+  <div class="larrow">
+    <img (click)="lscroll()" src="/assets/images/sportsocialprofilerightarrow.png" alt="">
+  </div>
+  <div class="rarrow">
+    <img (click)="rscroll()" src="/assets/images/sportsocialprofileleftarrow.png" alt="">
+  </div>
+  <div class="pop-crousal" #widgets>
+    <div *ngFor="let data of media" class="crousal-element" #widgetsContent>
+      <img src="{{data.url}}" alt="">
+    </div>
   </div>
 </div>
 <router-outlet></router-outlet>

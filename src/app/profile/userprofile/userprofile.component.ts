@@ -110,7 +110,9 @@ export class UserprofileComponent implements OnInit {
         }
       });
   }
-
+  openimage(){
+    console.log("working");
+  }
   ngOnInit() {
     this.getUserId();
     this.getUserDetails();
