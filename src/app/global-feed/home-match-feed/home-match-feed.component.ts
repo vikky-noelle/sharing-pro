@@ -498,7 +498,7 @@ export class HomeMatchFeedComponent{
         if(id === this.news[i][j].id){
           topic = topic.toLowerCase();  
           this._eventemiter.userToEdit=this.news[i][j];
-          this.router.navigate(['/newspage', topic]);
+          this.router.navigate(['/news', topic]);
         }
       }
     }
@@ -510,7 +510,7 @@ export class HomeMatchFeedComponent{
       for(var j=0;j<this.tnews[i].gamenews.length; j++){
         if(id === this.tnews[i].gamenews[j].id){
           this._eventemiter.userToEdit=this.tnews[i].gamenews[j];
-          this.router.navigate(['/newspage', topic]);
+          this.router.navigate(['/news', topic]);
        }
       }
     }
@@ -518,7 +518,7 @@ export class HomeMatchFeedComponent{
   changee(topic){
     topic = topic.toLowerCase();
     topic = topic.replace(/ /g, "-")
-    this.router.navigate(['/newspage', topic]);
+    this.router.navigate(['/news', topic]);
   }
   gotoarena(topic){
     topic = topic.toLowerCase();
