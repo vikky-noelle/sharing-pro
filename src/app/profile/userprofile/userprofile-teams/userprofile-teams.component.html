@@ -1,0 +1,22 @@
+<div class="body">
+    <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf="array.length === 0" alt="">
+  <div class="teams"  *ngFor="let data of array;">
+    <div class="head">
+        <img src={{data.Cover_Photo}} onerror="this.src='assets/images/sportsocialteamheader.jpg'">
+        <div class="profileimg">
+          <img src={{data.Profile_Photo}} onerror="this.src='assets/images/user.png'">
+            <div class="teamname">
+             <h4>{{data.TeamName}}</h4>
+             <h5>@{{data.TeamUserName}}</h5>
+           </div>
+        </div>
+    </div>
+    <div class="members">
+        <h4>Members&nbsp;<b> {{data.MemberCount}}</b></h4>
+        <h5>Fans&nbsp; <b>{{data.FanCount}} </b></h5>
+    </div>
+  </div>
+</div>
+<div class="backfooter">
+    <sports-social-backfooter></sports-social-backfooter>
+  </div>

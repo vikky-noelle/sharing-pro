@@ -61,6 +61,13 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
     private event: InteractionService,
     private cookie: CookieService,
   ) {
+    this.pagetitle.setTitle(this.title);
+    this.metaservice.updateTag({name:'title',content:this.title});
+    this.metaservice.updateTag({name:'keywords',content:this.metakey});
+    this.metaservice.updateTag({name:'description',content:this.metades});
+    this.metaservice.updateTag({property:'og:title',content:this.title});
+    this.metaservice.updateTag({property:'og:description',content:this.metades});
+    this.metaservice.updateTag({property:'og:keywords',content:this.metakey});
     this.event.listentoroute().subscribe((topic:any) => {
       this.Matcharr = [];
       this.arr = [];
@@ -114,6 +121,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         var convertdate=new String(new Date(data["Feed"][i].startdatetime*1000));
         this.startTime=convertdate.slice(3,21);
         checkstat = Date.now();
+        checkstat = checkstat/1000;
         checkstat2 = data["Feed"][i].startdatetime;
         
         if(checkstat>checkstat2){
@@ -138,6 +146,9 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
           this.startTime="Upcoming";
           finished= false; 
           upcoming=true;   
+          if(data["Feed"][i].Team2name === "None"){
+            this.startTime = "Waiting for oponent";
+          }
         }
         if(data["Feed"][i].scoreTeam1!==null && data["Feed"][i].scoreTeam2!==null){
           finished= true;
@@ -288,6 +299,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         var convertdate=new String(new Date(data["Feed"][i].startdatetime*1000));
         this.startTime=convertdate.slice(3,21);
         checkstat = Date.now();
+        checkstat = checkstat/1000;
         checkstat2 = data["Feed"][i].startdatetime;
         
         if(checkstat>checkstat2){
@@ -388,13 +400,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
       this.selected = topic[0].toUpperCase();
       this.selected = this.selected + topic.slice(1);
     }
-    this.pagetitle.setTitle(this.title);
-    this.metaservice.updateTag({name:'title',content:this.title});
-    this.metaservice.updateTag({name:'keywords',content:this.metakey});
-    this.metaservice.updateTag({name:'description',content:this.metades});
-    this.metaservice.updateTag({property:'og:title',content:this.title});
-    this.metaservice.updateTag({property:'og:description',content:this.metades});
-    this.metaservice.updateTag({property:'og:keywords',content:this.metakey});
+    
   }
 
   ngOnDestroy() {

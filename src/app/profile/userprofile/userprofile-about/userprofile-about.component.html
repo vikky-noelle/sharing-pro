@@ -1,0 +1,23 @@
+<body class="body">
+    <div class="gameFeed">
+        <div class="style" style="position:relative">
+          <div class="game" #game>
+            <div  class="gameCard" *ngFor="let data of array" #gameblock>
+                <h3>{{data.gamename}}</h3>
+                <div *ngFor="let details of data.gamedetails" class="questions">
+                  <h4>{{details.questiontext}}</h4>
+                  <p>{{details.answer}}</p>
+                </div>
+            </div>
+          </div>
+          <img src="assets/images/sportsocialhomearrow1.png" class="left" (click)="leftScroll()">
+          <img src="assets/images/sportsocialhomearrow.png" class="right" (click)="rightScroll()">
+        </div>
+        
+      </div>
+</body>
+<div class="backfooter">
+    <sports-social-backfooter></sports-social-backfooter>
+  </div>
+
+

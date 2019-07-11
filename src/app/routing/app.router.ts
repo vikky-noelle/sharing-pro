@@ -1,3 +1,5 @@
+import { TeamprofileAboutComponent } from '../profile/teamprofile/teamprofile-about/teamprofile-about.component';
+import { TeamprofileComponent } from '../profile/teamprofile/teamprofile.component';
 import { LocalitypageComponent } from './../localitypage/localitypage.component';
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -18,11 +20,58 @@ import { OurteamComponent } from '../ourteam/ourteam.component';
 // import { FirebaseComponent } from '../firebase/firebase.component';
 import { TeamviewComponent } from '../teamview/teamview.component';
 import { OpenHomeMatchCardComponent } from '../open-cards/open-home-match-card/open-home-match-card.component';
+import { UserprofileComponent } from '../profile/userprofile/userprofile.component';
+import { TeamprofileMatchesComponent } from '../profile/teamprofile/teamprofile-matches/teamprofile-matches.component';
+import { UserprofileMatchesComponent } from '../profile/userprofile/userprofile-matches/userprofile-matches.component';
+import { UserprofileTeamsComponent } from '../profile/userprofile/userprofile-teams/userprofile-teams.component';
+import { UserprofilePlaymatesComponent } from '../profile/userprofile/userprofile-playmates/userprofile-playmates.component';
+import { UserprofileAboutComponent } from '../profile/userprofile/userprofile-about/userprofile-about.component';
 
 
 const App_Route: Routes = [
     
     // {path:"firebase",component:FirebaseComponent},
+    
+    {
+        path: 'teamprofile/:name',            
+        component: TeamprofileComponent,
+        children: [                          
+            {
+                path:'About',
+                component: TeamprofileAboutComponent
+            },
+            {
+                path:'Matches',
+                component: TeamprofileMatchesComponent
+            },
+        ]
+    },
+    // {path:'userprofile/:MatchStarterId',component:UserprofileComponent},
+    {
+        path:'userprofile/:MatchStarterId',
+        component:UserprofileComponent,
+        children:[
+            {
+                path: '**', redirectTo: 'userprofile/about', pathMatch: 'full'
+            },
+            {
+                path:'matches',
+                component:UserprofileMatchesComponent
+            },
+            {
+                path:'teams',
+                component:UserprofileTeamsComponent
+            },
+            {
+                path:'playmates',
+                component:UserprofilePlaymatesComponent
+            },
+            {
+                path:'about',
+                component:UserprofileAboutComponent
+            }
+        ]
+    },
     {path:"opencard/:feedid",component:OpenHomeMatchCardComponent},
     {path:"ourTeam",component:OurteamComponent},
     {path:"contactus",component:ContactUsComponent},
@@ -30,11 +79,12 @@ const App_Route: Routes = [
     {path:"addtopic",component:AddTopicComponent},
     {path:"HelpCenter",component:HelpCenterComponent},
     {path:"Helpcenter/:topicname",component:HelpCenterComponent},
-    {path: "teamview",component:TeamviewComponent},
-    {path: "localitypage", component:LocalitypageComponent},
-    {path: 'newspage', component:NewspageComponent},
+    {path: "team",component:TeamviewComponent},
+    // {path: 'teamprofile', component:TeamprofileComponent},
+    {path: "locality", component:LocalitypageComponent},
+    {path: 'news', component:NewspageComponent},
     {
-        path: "newspage/:topic", 
+        path: "news/:topic", 
         component:NewspageComponent
     },
     {
@@ -101,6 +151,8 @@ const App_Route: Routes = [
         path: '',
         loadChildren: 'app/home/home.module#HomeModule'
     },
+   
+    
     {
         path: 'home',
         component: HomeComponent,

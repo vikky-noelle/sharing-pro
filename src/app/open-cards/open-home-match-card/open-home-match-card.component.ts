@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, ViewChild, ElementRef, HostListener, ViewChildren, QueryList } from '@angular/core';
 import { PostService } from '../../shared/services/post.service';
 import { LocationService } from '../../shared/services/location.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { TimeService } from '../../shared/services/time.service';
 
 @Component({
@@ -120,7 +120,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
   constructor(
     private postservice:PostService,
     private activatedroute:ActivatedRoute,
-    private time:TimeService
+    private router: Router
   ) {}
 
   getSingleMatchFeed(){
@@ -311,6 +311,17 @@ export class OpenHomeMatchCardComponent implements OnInit {
             }
         }
       )
+  }
+  openprofile(teamid, name){
+    name = name.replace(/ /g,"-");
+    console.log("working"+teamid);
+    if(teamid===null){
+
+    }
+    else{
+      console.log("navigate");
+      this.router.navigate(['/teamprofile', name, "About"], {queryParams: {teamid: teamid}}); 
+    }
   }
   openpopcrousal(){
     this.openpop[0].style.display="block";

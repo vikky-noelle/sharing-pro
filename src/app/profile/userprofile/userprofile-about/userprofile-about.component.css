@@ -1,0 +1,98 @@
+.body{
+    width: 75%;
+    height: auto;
+    min-height: 500px;
+    /* border: 1px solid red; */
+    margin-left: 25%;
+    vertical-align: top !important;
+    margin-top: .1%;
+}
+.gameFeed{
+    z-index: 10;
+    margin: 0px;
+    padding-left: 2%;
+    padding-right: 5%;
+}
+.game{
+    width: 90%;
+    height: 500px;
+    margin: 1%;
+    margin-top: 0%;
+    margin-left: 6%;
+    overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap !important;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-x: repeat(25%);
+    scroll-snap-type: x mandatory;
+    
+}
+.game::-webkit-scrollbar{
+  display: none;
+}
+.game { 
+  overflow: auto;
+  -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none;
+}
+.game { overflow: -moz-scrollbars-none; }
+.game>div{
+    display: inline-block;
+    width: 100%;
+    margin-top: 5%;
+    height: 400px; 
+    scroll-snap-align: start;
+    overflow: hidden;
+}
+/* .gameCard{
+    border:2px solid #fff;
+    filter: brightness(100%);
+    overflow: hidden;
+    border: 1px solid blue;
+  } */
+ 
+  .gameCard>div{
+       margin: 5% 0% 0% 0%;
+       width: 30%;
+       float: left;
+       border-left: 2px solid #ababaa;
+  }
+  .gameCard>h3{
+      color: #024770;
+      text-align: center;
+      margin-top: 5%;
+      font-size: 1.3em;
+  }
+  
+  .questions>h4{
+      padding: 3%;
+      font-weight: bolder;
+  }
+  .questions>p{
+      padding: 3%;
+      color: #ababaa;
+  }
+.style>img{
+    height: 40px;
+    width: 40px;
+    font-weight: bolder; 
+    border: 1px solid #024770;
+    border-radius: 50%;
+}
+.style>.left{
+    position: absolute;
+    top:19%;
+    left: 27%;
+    cursor: pointer; 
+}
+.gameFeed .right{
+    position: absolute;
+    top:19%;
+    right: 24%;
+    cursor: pointer;    
+}
+
+  .backfooter{
+    width: 75%;
+    float: right;
+}

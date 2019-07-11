@@ -1,0 +1,16 @@
+
+<div class="body">
+    <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf="array.length === 0" alt="">
+      <div class="container" *ngFor="let data of array">
+        <img src={{data.profile_image}} onerror="this.src='assets/images/user.png'">
+        <p>{{data.user_name}}</p>
+          <div class="viewprofile">
+            <a>View Profile >></a>
+          </div>
+      </div>
+  <div>
+  </div>
+</div>
+<div class="backfooter">
+    <sports-social-backfooter></sports-social-backfooter>
+  </div>

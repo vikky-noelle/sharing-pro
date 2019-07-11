@@ -1,0 +1,42 @@
+.spinner{
+  top: 10%;
+}
+.body{
+    width: 75%;
+    height: auto;
+    margin: 2% 0% 3% 25%;
+    background-color: #ffffff;
+}
+.container {
+    border: 2px solid #dedede;
+    width: 90%;
+    height: 50px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 14px;
+    margin: 10px 0 0 30px;
+  }  
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  .viewprofile{
+    float: right;
+  }
+  .viewprofile>a{
+      color: blue;
+      cursor: pointer;
+  }
+  .backfooter{
+    width: 75%;
+    float: right;
+}

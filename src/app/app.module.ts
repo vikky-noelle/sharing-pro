@@ -42,7 +42,6 @@ import { SeoService } from './shared/services/seo.service';
 import { AsyncPipe } from '@angular/common';
 // import {AngularFirestoreModule} from 'angularfire2/firestore';
 import { LivedataComponent } from './livedata/livedata.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
 import { GooglePlaceModule } from "ngx-google-places-autocomplete";
 import {AgmCoreModule } from '@agm/core';
 import { FormsModule, ReactiveFormsModule }    from '@angular/forms';
@@ -58,6 +57,16 @@ import { NewspageComponent } from './newspage/newspage.component';
 import { EventEmiterService } from './shared/services/event.emiter.service';
 import { OpenHomeMatchCardModule } from './open-cards/open-home-match-card/open-home-match-card.module';
 import { InteractionService } from './shared/services/interaction.service';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ContactUsModule } from './contact-us/contact-us.module';
+import { TeamprofileComponent } from './profile/teamprofile/teamprofile.component';
+import { UserprofileComponent } from './profile/userprofile/userprofile.component';
+import { TeamprofileAboutComponent } from './profile/teamprofile/teamprofile-about/teamprofile-about.component';
+import { TeamprofileMatchesComponent } from './profile/teamprofile/teamprofile-matches/teamprofile-matches.component';
+import { UserprofileAboutComponent } from './profile/userprofile/userprofile-about/userprofile-about.component';
+import { UserprofileTeamsComponent } from './profile/userprofile/userprofile-teams/userprofile-teams.component';
+import { UserprofilePlaymatesComponent } from './profile/userprofile/userprofile-playmates/userprofile-playmates.component';
+import { UserprofileMatchesComponent } from './profile/userprofile/userprofile-matches/userprofile-matches.component';
 
 
 @NgModule({
@@ -69,12 +78,20 @@ import { InteractionService } from './shared/services/interaction.service';
     // NewsidenavComponent,  
     ApplicationComponent,
     LivedataComponent,
-    ContactUsComponent,
     OurteamComponent,
     // FirebaseComponent,
     TeamviewComponent,
     LocalitypageComponent,
     NewspageComponent,
+    ContactUsComponent,
+    TeamprofileComponent,
+    UserprofileComponent,
+    TeamprofileAboutComponent,
+    TeamprofileMatchesComponent,
+    UserprofileAboutComponent,
+    UserprofileTeamsComponent,
+    UserprofilePlaymatesComponent,
+    UserprofileMatchesComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId:'sport-social'}),

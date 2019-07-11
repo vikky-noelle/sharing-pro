@@ -86,7 +86,7 @@ export class NewsidenavComponent implements OnInit {
     }
   }
   ngOnInit() {
-    if(this.router.url.includes('/newspage')){
+    if(this.router.url.includes('/news')){
       this.l2=1;
       this.arrowicon[0].style.transform="rotate(90deg)";
       this.newsone[0].style.backgroundColor=" rgb(71, 148, 148)";
