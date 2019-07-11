@@ -1,4 +1,10 @@
 <sports-social-header></sports-social-header>
+<!-- <div class="pop-crousal" #widgets>
+  <div *ngFor="let data of mediaArr" class="crousal-element" #widgetsContent>
+    <img src="{{data.Path}}" alt="">
+    <h1 style="color: white;">{{data.Path}}</h1>
+  </div>
+</div> -->
 <div class="outer-shell">
   <div class="profile-shell">
     <div class="background-img">
@@ -72,10 +78,10 @@
     <div class="media">
         <div class="head">
         <h4>Media</h4>
-        <a><p>See all</p></a>
+        <a (click)="opencrousal()"><p>See all</p></a>
       </div>
        <div class="mediabox" *ngFor="let icon of mediaArr">
-         <img (click)="openimage();" src={{icon.Path}}>
+         <img (click)="imageopen(icon.Path);" src={{icon.Path}}>
       </div>
     </div>
 </div>
@@ -89,5 +95,17 @@
     </div>
     
 </div>
-
+<div class="media-crousal">
+  <img class="single-image" src="{{crousalsingleimage}}" alt="">
+  <div class="close">
+    <img (click)="close()" src="/assets/images/sportsocialprofileclose.png">
+  </div>
+  <div class="larrow">
+    <img (click)="lscroll()" src="/assets/images/sportsocialprofilerightarrow.png" alt="">
+  </div>
+  <div class="rarrow">
+    <img (click)="rscroll()" src="/assets/images/sportsocialprofileleftarrow.png" alt="">
+  </div>
+  
+</div>
 <router-outlet></router-outlet>
