@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
         link.addTag(  { rel: 'canonical', href: 'https://www.sportsocial.in/'});
         metaservice.addTags([
           { name: 'theme-color', content: '#4327a0'},
-          { property: 'og:image', content: 'https://test.sportsocial.in/defaultimages/Chase_Your_Sport.jpg'},
+          { property: 'og:image', content: 'https://prod.sportsocial.in/defaultimages/Chase_Your_Sport.jpg'},
           { property: 'og:site_name', content: 'Sport Social' },
           { property: 'fb:app_id', content: '1750709328507665'},
           { name: 'facebook:creator', content: '@SourabhArora'},
@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
           { name: 'twitter:description', content: `Sports Social Blog: Chase Your Sport aims to create a sustainable
           platform for Indian sports lovers to provide latest updates on Indian Sports Trends, analytics and
           career in sports.`},
-          { name: 'twitter:image:src', content: 'https://test.sportsocial.in/defaultimages/Chase_Your_Sport.jpg'},
+          { name: 'twitter:image:src', content: 'https://prod.sportsocial.in/defaultimages/Chase_Your_Sport.jpg'},
         ]);
         this.isbrowser = isPlatformBrowser( platformid );
       
