@@ -202,7 +202,7 @@ export class PostService {
   }
 
   Teamviewdata(tvdataobject){
-    return this.http.post('https://test.sportsocial.in/web/webTeamStatic', tvdataobject);
+    return this.http.post('https://prod.sportsocial.in/web/webTeamStatic', tvdataobject);
   }
 
   Localityviewdata(lvdataobject){

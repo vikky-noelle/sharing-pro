@@ -5834,7 +5834,7 @@ var HomeMatchFeedComponent = /** @class */ (function () {
                 if (id === this.news[i][j].id) {
                     topic = topic.toLowerCase();
                     this._eventemiter.userToEdit = this.news[i][j];
-                    this.router.navigate(['/newspage', topic]);
+                    this.router.navigate(['/news', topic]);
                 }
             }
         }
@@ -5845,7 +5845,7 @@ var HomeMatchFeedComponent = /** @class */ (function () {
             for (var j = 0; j < this.tnews[i].gamenews.length; j++) {
                 if (id === this.tnews[i].gamenews[j].id) {
                     this._eventemiter.userToEdit = this.tnews[i].gamenews[j];
-                    this.router.navigate(['/newspage', topic]);
+                    this.router.navigate(['/news', topic]);
                 }
             }
         }
@@ -5853,7 +5853,7 @@ var HomeMatchFeedComponent = /** @class */ (function () {
     HomeMatchFeedComponent.prototype.changee = function (topic) {
         topic = topic.toLowerCase();
         topic = topic.replace(/ /g, "-");
-        this.router.navigate(['/newspage', topic]);
+        this.router.navigate(['/news', topic]);
     };
     HomeMatchFeedComponent.prototype.gotoarena = function (topic) {
         topic = topic.toLowerCase();
@@ -11881,7 +11881,7 @@ var PostService = /** @class */ (function () {
         return this.http.post('https://prod.sportsocial.in/web/webcontactus', dataObject);
     };
     PostService.prototype.Teamviewdata = function (tvdataobject) {
-        return this.http.post('https://test.sportsocial.in/web/webTeamStatic', tvdataobject);
+        return this.http.post('https://prod.sportsocial.in/web/webTeamStatic', tvdataobject);
     };
     PostService.prototype.Localityviewdata = function (lvdataobject) {
         return this.http.post('https://prod.sportsocial.in/web/webLocalityStatic', lvdataobject);
