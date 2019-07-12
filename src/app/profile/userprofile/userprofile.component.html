@@ -8,104 +8,101 @@
 <div class="outer-shell">
   <div class="profile-shell">
     <div class="background-img">
-        <img src={{coverpic}} onerror="this.src='/assets/images/sportsocialteamviewheader.jpg'">
-    </div>
-    <div class="profile-img">
-      <img src={{profile_image}} onerror="this.src='assets/images/user.png'">
-    </div>
-    <div class="profile-info">
-      <div class="name">
-        <h1>{{FirstName}}</h1>
-        <h2>@{{UniqueName}}</h2>
-      </div>
-      <div class="follow">
-        <h1>Follow</h1>
-      </div>
-      <img src="assets/images/sportsocialchat.png" alt="">
-    </div>
-    <div class="sub-header">
-      <img class="profile-pic" src="{{profile_image}}" onerror="this.src='assets/images/user.png'" alt="">  
-     
-        <div class="fans">
-            <h1>Fans<span>Following</span></h1>
-            <h2>{{Fancount}}<span>{{FollowingCount}}</span></h2>
-            <!-- <h1>Members<h2>{{membercount}}</h2></h1> -->
-          </div>
-          <div class="sub-name">
+        <!-- <img src={{coverpic}} onerror="this.src='/assets/images/sportsocialteamviewheader.jpg'"> -->
+        <img src="assets/images/sportsocialteamviewheader.jpg" >
+     </div>
+      <div class="profile-img">
+        <img src={{profile_image}} onerror="this.src='assets/images/user.png'">
+       </div>
+          <div class="profile-info">
+            <div class="name">
               <h1>{{FirstName}}</h1>
               <h2>@{{UniqueName}}</h2>
             </div>
-      <div class="sub-follow">
-          <h1>Follow</h1>
-        </div>
-        <img class="sub-follow-img" src="assets/images/sportsocialchat.png" alt="">  
-  </div>  
-</div>
-  <div class="side-shell">
-    <div class="stick">
-    <div class="followers">
-        <h1>Fans<span>&nbsp;Following</span></h1>
-        <h2>&nbsp;{{Fancount}}<span>{{FollowingCount}}</span></h2>
-    </div>
-    <div class="basic-info">
-      <h1>Basic Info</h1>
-      <div class="basic-info-tab">
-          <div>
-            <img src="assets/images/age.png">
-          </div>
-          <h2>{{DateofBirth}}</h2>
-      </div>
-      <div class="basic-info-tab">
-          <div>
-            <img src="assets/images/gender.png">
-          </div>
-          <h2>{{Gender}}</h2>
-      </div>
-      <div class="basic-info-tab">
-          <div>
-            <img src="assets/images/study.png">
-          </div>
-          <h2>{{TypeofInstn}}</h2>
-      </div>
-        <div class="basic-info-tab">
-            <div>
-              <img src="assets/images/home.png">
+            <div class="follow">
+              <h1>Follow</h1>
             </div>
-          <h2>{{City}}</h2>
+            <img src="assets/images/sportsocialchat.png" alt="">
+          </div>
+            <div class="sub-header">
+              <img class="profile-pic" src="{{profile_image}}" onerror="this.src='assets/images/user.png'" alt="">  
+            
+                <div class="fans">
+                    <h1>Fans<span>Following</span></h1>
+                    <h2>{{Fancount}}<span>{{FollowingCount}}</span></h2>
+                    <!-- <h1>Members<h2>{{membercount}}</h2></h1> -->
+                  </div>
+                  <div class="sub-name">
+                      <h1>{{FirstName}}</h1>
+                      <h2>@{{UniqueName}}</h2>
+                    </div>
+              <div class="sub-follow">
+                  <h1>Follow</h1>
+                </div>
+                <img class="sub-follow-img" src="assets/images/sportsocialchat.png" alt="">  
+          </div>  
+     </div>
+      <div class="side-shell">
+        <div class="stick">
+          <div class="followers">
+              <h1>Fans<span>&nbsp;Following</span></h1>
+              <h2>&nbsp;{{Fancount}}<span>{{FollowingCount}}</span></h2>
+          </div>
+          <div class="basic-info">
+            <h1>Basic Info</h1>
+              <div class="basic-info-tab">
+                  <div>
+                    <img src="assets/images/age.png">
+                  </div>
+                  <h2>{{DateofBirth}}</h2>
+              </div>
+              <div class="basic-info-tab">
+                  <div>
+                    <img src="assets/images/gender.png">
+                  </div>
+                  <h2>{{Gender}}</h2>
+              </div>
+              <div class="basic-info-tab">
+                <div>
+                  <img src="assets/images/study.png">
+                </div>
+                <h2>{{TypeofInstn}}</h2>
+              </div>
+              <div class="basic-info-tab">
+                  <div>
+                    <img src="assets/images/home.png">
+                  </div>
+                <h2>{{City}}</h2>
+              </div>
+          </div>    
         </div>
-    </div>    
+        <div class="media">
+            <div class="head">
+            <h4>Media</h4>
+            <a (click)="opencrousal()"><p>See all</p></a>
+          </div>
+          <div class="mediabox" *ngFor="let icon of mediaArr">
+            <img (click)="imageopen(icon.Path);" src={{icon.Path}}>
+          </div>
+        </div>
     </div>
-    <div class="media">
-        <div class="head">
-        <h4>Media</h4>
-        <a (click)="opencrousal()"><p>See all</p></a>
+      <div class="normal-shell" *ngIf="show">
+          <a routerLink="/userprofile/{{userid}}/about" routerLinkActive="active">About</a>
+          <a routerLink="/userprofile/{{userid}}/matches" routerLinkActive="active">Matches</a>
+          <a routerLink="/userprofile/{{userid}}/teams" routerLinkActive="active">Teams</a>
+          <a routerLink="/userprofile/{{userid}}/playmates" routerLinkActive="active">Playmates</a>
       </div>
-       <div class="mediabox" *ngFor="let icon of mediaArr">
-         <img (click)="imageopen(icon.Path);" src={{icon.Path}}>
-      </div>
-    </div>
-</div>
-  <div class="normal-shell" *ngIf="show">
-      <a routerLink="/userprofile/{{userid}}/about" routerLinkActive="active">About</a>
-      <a routerLink="/userprofile/{{userid}}/matches" routerLinkActive="active">Matches</a>
-      <a routerLink="/userprofile/{{userid}}/teams" routerLinkActive="active">Teams</a>
-      <a routerLink="/userprofile/{{userid}}/playmates" routerLinkActive="active">Playmates</a>
-      
-      
-    </div>
-    
 </div>
 <div class="media-crousal">
   <img class="single-image" src="{{crousalsingleimage}}" alt="">
-  <div class="close">
-    <img (click)="close()" src="/assets/images/sportsocialprofileclose.png">
+    <div class="close">
+      <img (click)="close()" src="/assets/images/sportsocialprofileclose.png">
+    </div>
+    <div class="larrow">
+      <img (click)="lscroll()" src="/assets/images/sportsocialprofilerightarrow.png" alt="">
+    </div>
+    <div class="rarrow">
+     <img (click)="rscroll()" src="/assets/images/sportsocialprofileleftarrow.png" alt="">
   </div>
-  <div class="larrow">
-    <img (click)="lscroll()" src="/assets/images/sportsocialprofilerightarrow.png" alt="">
-  </div>
-  <div class="rarrow">
-    <img (click)="rscroll()" src="/assets/images/sportsocialprofileleftarrow.png" alt="">
-  </div>
-  
 </div>
 <router-outlet></router-outlet>

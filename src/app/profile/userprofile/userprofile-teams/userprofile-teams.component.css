@@ -100,3 +100,46 @@
     width: 75%;
     float: right;
 }
+
+@media screen and (min-width:200px) and (max-width:360px){
+    .body{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .teams{
+        width: 80%;
+        height: 250px;
+    }
+    .backfooter{
+        clear: both;
+        width: 100%;
+    }
+}
+@media screen and (min-width:361px) and (max-width:550px){
+    .body{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .teams{
+        width: 80%;
+        height: 250px;
+    }
+    .backfooter{
+        clear: both;
+        width: 100%;
+    }
+}
+@media screen and (min-width:551px) and (max-width:750px){
+    .body{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .teams{
+        width: 80%;
+        height: 250px;
+    }
+    .backfooter{
+        clear: both;
+        width: 100%;
+    }
+}
