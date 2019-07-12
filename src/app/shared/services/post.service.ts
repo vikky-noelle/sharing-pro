@@ -206,7 +206,7 @@ export class PostService {
   }
 
   Localityviewdata(lvdataobject){
-    return this.http.post('https://prod.sportsocial.in/web/webLocalityStatic', lvdataobject);
+    return this.http.post('https://test.sportsocial.in/web/webLocalityStatic', lvdataobject);
   }
 
   UserProfile(userid,profileid,page,currentdate){
