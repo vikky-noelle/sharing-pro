@@ -38,3 +38,43 @@
     width: 75%;
     float: right;
 }
+
+@media screen and (min-width:200px) and (max-width:360px){
+    .About-body{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .About-body>div{
+        
+        width: 100%;
+        margin-left: 0%;
+    }
+    .upcoming-cards{
+        width: 100%;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+    .backfooter{
+        clear: both;
+        width: 100%;
+    }
+}
+@media screen and (min-width:361px) and (max-width:550px){
+    .About-body{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .About-body>div{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .upcoming-cards{
+        width: 100%;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+    .backfooter{
+        clear: both;
+        width: 100%;
+    }
+}

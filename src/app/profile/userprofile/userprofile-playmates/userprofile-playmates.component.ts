@@ -21,9 +21,6 @@ export class UserprofilePlaymatesComponent implements OnInit {
 
     getuserid(){
      this.parentUserid=this.userprofilecmp.userid;
-    //  this.pageno= this.userprofilecmp.pageNo;
-      console.log("this is paramid",this.parentUserid);
-      console.log("this is pageNumber",this.pageno);
     }
 
 
@@ -35,8 +32,7 @@ export class UserprofilePlaymatesComponent implements OnInit {
       }
     this.postservice.UserProfielPlaymate(this.parentUserid,this.parentUserid,this.pageno,this.date).subscribe(
       res=>{
-        this.show=true;
-        console.log("response of playmates",res);
+        this.show=true;  
         for(const i in res)
         this.array.push({
           user_id:res[i].user_id,
@@ -53,7 +49,7 @@ export class UserprofilePlaymatesComponent implements OnInit {
           Start_Date:res[i].Start_Date,
           EventId:res[i].EventId
         });
-        // console.log("this is response of userid",res[i].Age);
+        
       });
     }
   }
@@ -61,7 +57,6 @@ export class UserprofilePlaymatesComponent implements OnInit {
   ngOnInit() {
     this.getuserid();
     this.getplaymates();
-    console.log("thi is date",this.date);
   }
 
 }
