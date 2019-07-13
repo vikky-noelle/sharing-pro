@@ -3981,7 +3981,10 @@ function View_ContactUsComponent_0(_l) { return i1.ɵvid(0, [i1.ɵqud(402653184,
     } if (("ngModelChange" === en)) {
         var pd_4 = ((_co.form.message = $event) !== false);
         ad = (pd_4 && ad);
-    } return ad; }, null, null)), i1.ɵdid(71, 16384, null, 0, i7.DefaultValueAccessor, [i1.Renderer2, i1.ElementRef, [2, i7.COMPOSITION_BUFFER_MODE]], null, null), i1.ɵdid(72, 16384, null, 0, i7.RequiredValidator, [], { required: [0, "required"] }, null), i1.ɵprd(1024, null, i7.NG_VALIDATORS, function (p0_0) { return [p0_0]; }, [i7.RequiredValidator]), i1.ɵprd(1024, null, i7.NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [i7.DefaultValueAccessor]), i1.ɵdid(75, 671744, null, 0, i7.NgModel, [[2, i7.ControlContainer], [6, i7.NG_VALIDATORS], [8, null], [6, i7.NG_VALUE_ACCESSOR]], { name: [0, "name"], model: [1, "model"] }, { update: "ngModelChange" }), i1.ɵprd(2048, null, i7.NgControl, null, [i7.NgModel]), i1.ɵdid(77, 16384, null, 0, i7.NgControlStatus, [[4, i7.NgControl]], null, null), (_l()(), i1.ɵeld(78, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(79, 0, null, null, 1, "button", [["class", "button"], ["type", "submit"]], [[8, "disabled", 0]], null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Send"])), (_l()(), i1.ɵeld(81, 0, null, null, 10, "div", [["class", "right-model"]], null, null, null, null, null)), (_l()(), i1.ɵeld(82, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Follow Us"])), (_l()(), i1.ɵeld(84, 0, null, null, 1, "a", [["href", "https://www.facebook.com/chaseyoursport/"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵeld(85, 0, null, null, 0, "img", [["src", "assets/images/sportsocialfacebook.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(86, 0, null, null, 1, "a", [["href", "https://in.linkedin.com/company/sports-social"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵeld(87, 0, null, null, 0, "img", [["src", "assets/images/sportsociallinkedin.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(88, 0, null, null, 1, "a", [["href", "https://www.twitter.com/chaseyoursport"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵeld(89, 0, null, null, 0, "img", [["src", "assets/images/sportsocialtwitter.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(90, 0, null, null, 1, "a", [["href", "https://www.instagram.com/chaseyoursport"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵeld(91, 0, null, null, 0, "img", [["src", "assets/images/sportsocialinstagram.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(92, 0, null, null, 35, "div", [["class", "midbody"]], null, null, null, null, null)), (_l()(), i1.ɵeld(93, 0, null, null, 14, "div", [["class", "blocks"]], null, null, null, null, null)), (_l()(), i1.ɵeld(94, 0, null, null, 3, "div", [["class", "blockData"]], null, null, null, null, null)), (_l()(), i1.ɵeld(95, 0, null, null, 0, "img", [["src", "assets/images/home-icon-silhouette.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(96, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Basement,307,chakkarpur,sector28, Gurugram, Haryana 122002 "])), (_l()(), i1.ɵeld(98, 0, null, null, 3, "div", [["class", "blockData"]], null, null, null, null, null)), (_l()(), i1.ɵeld(99, 0, null, null, 0, "img", [["src", "assets/images/call-answer.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(100, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["+91-9717769226"])), (_l()(), i1.ɵeld(102, 0, null, null, 4, "div", [["class", "blockData"]], null, null, null, null, null)), (_l()(), i1.ɵeld(103, 0, null, null, 0, "img", [["src", "assets/images/envelope.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(104, 0, null, null, 2, "a", [["href", "https://mail.google.com/mail/u/0/?tab=rm#inbox"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵeld(105, 0, null, null, 1, "P", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["letstalk@sportsocial.in"])), (_l()(), i1.ɵeld(107, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(108, 0, null, null, 16, "div", [["class", "map"]], null, null, null, null, null)), (_l()(), i1.ɵeld(109, 0, null, null, 15, "agm-map", [], [[2, "sebm-google-map-container", null]], null, null, i8.View_AgmMap_0, i8.RenderType_AgmMap)), i1.ɵprd(4608, null, i9.InfoWindowManager, i9.InfoWindowManager, [i10.GoogleMapsAPIWrapper, i1.NgZone, i11.MarkerManager]), i1.ɵprd(4608, null, i12.CircleManager, i12.CircleManager, [i10.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(4608, null, i13.RectangleManager, i13.RectangleManager, [i10.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(4608, null, i14.PolylineManager, i14.PolylineManager, [i10.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(4608, null, i15.PolygonManager, i15.PolygonManager, [i10.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(4608, null, i16.KmlLayerManager, i16.KmlLayerManager, [i10.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(4608, null, i17.DataLayerManager, i17.DataLayerManager, [i10.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(512, null, i10.GoogleMapsAPIWrapper, i10.GoogleMapsAPIWrapper, [i18.MapsAPILoader, i1.NgZone]), i1.ɵprd(512, null, i19.FitBoundsService, i19.FitBoundsService, [i18.MapsAPILoader]), i1.ɵdid(119, 770048, null, 0, i20.AgmMap, [i1.ElementRef, i10.GoogleMapsAPIWrapper, i19.FitBoundsService], { longitude: [0, "longitude"], latitude: [1, "latitude"], zoom: [2, "zoom"] }, null), i1.ɵprd(512, null, i11.MarkerManager, i11.MarkerManager, [i10.GoogleMapsAPIWrapper, i1.NgZone]), (_l()(), i1.ɵeld(121, 0, null, 0, 3, "agm-marker", [], null, null, null, null, null)), i1.ɵprd(6144, null, i19.FitBoundsAccessor, null, [i21.AgmMarker]), i1.ɵdid(123, 1720320, null, 1, i21.AgmMarker, [i11.MarkerManager], { latitude: [0, "latitude"], longitude: [1, "longitude"] }, null), i1.ɵqud(603979776, 3, { infoWindow: 1 }), (_l()(), i1.ɵeld(125, 0, null, null, 2, "div", [["class", "footer"]], null, null, null, null, null)), (_l()(), i1.ɵeld(126, 0, null, null, 1, "sports-social-backfooter", [], null, null, null, i22.View_BackfooterComponent_0, i22.RenderType_BackfooterComponent)), i1.ɵdid(127, 114688, null, 0, i23.BackfooterComponent, [], null, null)], function (_ck, _v) { var _co = _v.component; _ck(_v, 3, 0); var currVal_15 = ""; _ck(_v, 29, 0, currVal_15); var currVal_16 = "firstname"; var currVal_17 = _co.form.firstname; _ck(_v, 32, 0, currVal_16, currVal_17); var currVal_25 = "lastname"; var currVal_26 = _co.form.lastname; _ck(_v, 41, 0, currVal_25, currVal_26); var currVal_36 = ""; _ck(_v, 49, 0, currVal_36); var currVal_37 = "10"; _ck(_v, 50, 0, currVal_37); var currVal_38 = "contactnumber"; var currVal_39 = _co.form.contactnumber; _ck(_v, 53, 0, currVal_38, currVal_39); var currVal_48 = ""; _ck(_v, 61, 0, currVal_48); var currVal_49 = "email"; var currVal_50 = _co.form.email; _ck(_v, 64, 0, currVal_49, currVal_50); var currVal_59 = ""; _ck(_v, 72, 0, currVal_59); var currVal_60 = "message"; var currVal_61 = _co.form.message; _ck(_v, 75, 0, currVal_60, currVal_61); var currVal_64 = _co.lng; var currVal_65 = _co.lat; var currVal_66 = _co.zoom; _ck(_v, 119, 0, currVal_64, currVal_65, currVal_66); var currVal_67 = _co.lat; var currVal_68 = _co.lng; _ck(_v, 123, 0, currVal_67, currVal_68); _ck(_v, 127, 0); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 23).ngClassUntouched; var currVal_1 = i1.ɵnov(_v, 23).ngClassTouched; var currVal_2 = i1.ɵnov(_v, 23).ngClassPristine; var currVal_3 = i1.ɵnov(_v, 23).ngClassDirty; var currVal_4 = i1.ɵnov(_v, 23).ngClassValid; var currVal_5 = i1.ɵnov(_v, 23).ngClassInvalid; var currVal_6 = i1.ɵnov(_v, 23).ngClassPending; _ck(_v, 19, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6); var currVal_7 = (i1.ɵnov(_v, 29).required ? "" : null); var currVal_8 = i1.ɵnov(_v, 34).ngClassUntouched; var currVal_9 = i1.ɵnov(_v, 34).ngClassTouched; var currVal_10 = i1.ɵnov(_v, 34).ngClassPristine; var currVal_11 = i1.ɵnov(_v, 34).ngClassDirty; var currVal_12 = i1.ɵnov(_v, 34).ngClassValid; var currVal_13 = i1.ɵnov(_v, 34).ngClassInvalid; var currVal_14 = i1.ɵnov(_v, 34).ngClassPending; _ck(_v, 27, 0, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14); var currVal_18 = i1.ɵnov(_v, 43).ngClassUntouched; var currVal_19 = i1.ɵnov(_v, 43).ngClassTouched; var currVal_20 = i1.ɵnov(_v, 43).ngClassPristine; var currVal_21 = i1.ɵnov(_v, 43).ngClassDirty; var currVal_22 = i1.ɵnov(_v, 43).ngClassValid; var currVal_23 = i1.ɵnov(_v, 43).ngClassInvalid; var currVal_24 = i1.ɵnov(_v, 43).ngClassPending; _ck(_v, 38, 0, currVal_18, currVal_19, currVal_20, currVal_21, currVal_22, currVal_23, currVal_24); var currVal_27 = (i1.ɵnov(_v, 49).required ? "" : null); var currVal_28 = (i1.ɵnov(_v, 50).maxlength ? i1.ɵnov(_v, 50).maxlength : null); var currVal_29 = i1.ɵnov(_v, 55).ngClassUntouched; var currVal_30 = i1.ɵnov(_v, 55).ngClassTouched; var currVal_31 = i1.ɵnov(_v, 55).ngClassPristine; var currVal_32 = i1.ɵnov(_v, 55).ngClassDirty; var currVal_33 = i1.ɵnov(_v, 55).ngClassValid; var currVal_34 = i1.ɵnov(_v, 55).ngClassInvalid; var currVal_35 = i1.ɵnov(_v, 55).ngClassPending; _ck(_v, 47, 0, currVal_27, currVal_28, currVal_29, currVal_30, currVal_31, currVal_32, currVal_33, currVal_34, currVal_35); var currVal_40 = (i1.ɵnov(_v, 61).required ? "" : null); var currVal_41 = i1.ɵnov(_v, 66).ngClassUntouched; var currVal_42 = i1.ɵnov(_v, 66).ngClassTouched; var currVal_43 = i1.ɵnov(_v, 66).ngClassPristine; var currVal_44 = i1.ɵnov(_v, 66).ngClassDirty; var currVal_45 = i1.ɵnov(_v, 66).ngClassValid; var currVal_46 = i1.ɵnov(_v, 66).ngClassInvalid; var currVal_47 = i1.ɵnov(_v, 66).ngClassPending; _ck(_v, 59, 0, currVal_40, currVal_41, currVal_42, currVal_43, currVal_44, currVal_45, currVal_46, currVal_47); var currVal_51 = (i1.ɵnov(_v, 72).required ? "" : null); var currVal_52 = i1.ɵnov(_v, 77).ngClassUntouched; var currVal_53 = i1.ɵnov(_v, 77).ngClassTouched; var currVal_54 = i1.ɵnov(_v, 77).ngClassPristine; var currVal_55 = i1.ɵnov(_v, 77).ngClassDirty; var currVal_56 = i1.ɵnov(_v, 77).ngClassValid; var currVal_57 = i1.ɵnov(_v, 77).ngClassInvalid; var currVal_58 = i1.ɵnov(_v, 77).ngClassPending; _ck(_v, 70, 0, currVal_51, currVal_52, currVal_53, currVal_54, currVal_55, currVal_56, currVal_57, currVal_58); var currVal_62 = i1.ɵnov(_v, 21).invalid; _ck(_v, 79, 0, currVal_62); var currVal_63 = true; _ck(_v, 109, 0, currVal_63); }); }
+    } return ad; }, null, null)), i1.ɵdid(71, 16384, null, 0, i7.DefaultValueAccessor, [i1.Renderer2, i1.ElementRef, [2, i7.COMPOSITION_BUFFER_MODE]], null, null), i1.ɵdid(72, 16384, null, 0, i7.RequiredValidator, [], { required: [0, "required"] }, null), i1.ɵprd(1024, null, i7.NG_VALIDATORS, function (p0_0) { return [p0_0]; }, [i7.RequiredValidator]), i1.ɵprd(1024, null, i7.NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [i7.DefaultValueAccessor]), i1.ɵdid(75, 671744, null, 0, i7.NgModel, [[2, i7.ControlContainer], [6, i7.NG_VALIDATORS], [8, null], [6, i7.NG_VALUE_ACCESSOR]], { name: [0, "name"], model: [1, "model"] }, { update: "ngModelChange" }), i1.ɵprd(2048, null, i7.NgControl, null, [i7.NgModel]), i1.ɵdid(77, 16384, null, 0, i7.NgControlStatus, [[4, i7.NgControl]], null, null), (_l()(), i1.ɵeld(78, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(79, 0, null, null, 1, "button", [["class", "button"], ["type", "submit"]], [[8, "disabled", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.windowReload() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Send"])), (_l()(), i1.ɵeld(81, 0, null, null, 10, "div", [["class", "right-model"]], null, null, null, null, null)), (_l()(), i1.ɵeld(82, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Follow Us"])), (_l()(), i1.ɵeld(84, 0, null, null, 1, "a", [["href", "https://www.facebook.com/chaseyoursport/"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵeld(85, 0, null, null, 0, "img", [["src", "assets/images/sportsocialfacebook.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(86, 0, null, null, 1, "a", [["href", "https://in.linkedin.com/company/sports-social"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵeld(87, 0, null, null, 0, "img", [["src", "assets/images/sportsociallinkedin.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(88, 0, null, null, 1, "a", [["href", "https://www.twitter.com/chaseyoursport"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵeld(89, 0, null, null, 0, "img", [["src", "assets/images/sportsocialtwitter.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(90, 0, null, null, 1, "a", [["href", "https://www.instagram.com/chaseyoursport"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵeld(91, 0, null, null, 0, "img", [["src", "assets/images/sportsocialinstagram.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(92, 0, null, null, 35, "div", [["class", "midbody"]], null, null, null, null, null)), (_l()(), i1.ɵeld(93, 0, null, null, 14, "div", [["class", "blocks"]], null, null, null, null, null)), (_l()(), i1.ɵeld(94, 0, null, null, 3, "div", [["class", "blockData"]], null, null, null, null, null)), (_l()(), i1.ɵeld(95, 0, null, null, 0, "img", [["src", "assets/images/home-icon-silhouette.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(96, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Basement,307,chakkarpur,sector28, Gurugram, Haryana 122002 "])), (_l()(), i1.ɵeld(98, 0, null, null, 3, "div", [["class", "blockData"]], null, null, null, null, null)), (_l()(), i1.ɵeld(99, 0, null, null, 0, "img", [["src", "assets/images/call-answer.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(100, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["+91-9717769226"])), (_l()(), i1.ɵeld(102, 0, null, null, 4, "div", [["class", "blockData"]], null, null, null, null, null)), (_l()(), i1.ɵeld(103, 0, null, null, 0, "img", [["src", "assets/images/envelope.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(104, 0, null, null, 2, "a", [["href", "https://mail.google.com/mail/u/0/?tab=rm#inbox"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵeld(105, 0, null, null, 1, "P", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["letstalk@sportsocial.in"])), (_l()(), i1.ɵeld(107, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(108, 0, null, null, 16, "div", [["class", "map"]], null, null, null, null, null)), (_l()(), i1.ɵeld(109, 0, null, null, 15, "agm-map", [], [[2, "sebm-google-map-container", null]], null, null, i8.View_AgmMap_0, i8.RenderType_AgmMap)), i1.ɵprd(4608, null, i9.InfoWindowManager, i9.InfoWindowManager, [i10.GoogleMapsAPIWrapper, i1.NgZone, i11.MarkerManager]), i1.ɵprd(4608, null, i12.CircleManager, i12.CircleManager, [i10.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(4608, null, i13.RectangleManager, i13.RectangleManager, [i10.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(4608, null, i14.PolylineManager, i14.PolylineManager, [i10.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(4608, null, i15.PolygonManager, i15.PolygonManager, [i10.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(4608, null, i16.KmlLayerManager, i16.KmlLayerManager, [i10.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(4608, null, i17.DataLayerManager, i17.DataLayerManager, [i10.GoogleMapsAPIWrapper, i1.NgZone]), i1.ɵprd(512, null, i10.GoogleMapsAPIWrapper, i10.GoogleMapsAPIWrapper, [i18.MapsAPILoader, i1.NgZone]), i1.ɵprd(512, null, i19.FitBoundsService, i19.FitBoundsService, [i18.MapsAPILoader]), i1.ɵdid(119, 770048, null, 0, i20.AgmMap, [i1.ElementRef, i10.GoogleMapsAPIWrapper, i19.FitBoundsService], { longitude: [0, "longitude"], latitude: [1, "latitude"], zoom: [2, "zoom"] }, null), i1.ɵprd(512, null, i11.MarkerManager, i11.MarkerManager, [i10.GoogleMapsAPIWrapper, i1.NgZone]), (_l()(), i1.ɵeld(121, 0, null, 0, 3, "agm-marker", [], null, null, null, null, null)), i1.ɵprd(6144, null, i19.FitBoundsAccessor, null, [i21.AgmMarker]), i1.ɵdid(123, 1720320, null, 1, i21.AgmMarker, [i11.MarkerManager], { latitude: [0, "latitude"], longitude: [1, "longitude"] }, null), i1.ɵqud(603979776, 3, { infoWindow: 1 }), (_l()(), i1.ɵeld(125, 0, null, null, 2, "div", [["class", "footer"]], null, null, null, null, null)), (_l()(), i1.ɵeld(126, 0, null, null, 1, "sports-social-backfooter", [], null, null, null, i22.View_BackfooterComponent_0, i22.RenderType_BackfooterComponent)), i1.ɵdid(127, 114688, null, 0, i23.BackfooterComponent, [], null, null)], function (_ck, _v) { var _co = _v.component; _ck(_v, 3, 0); var currVal_15 = ""; _ck(_v, 29, 0, currVal_15); var currVal_16 = "firstname"; var currVal_17 = _co.form.firstname; _ck(_v, 32, 0, currVal_16, currVal_17); var currVal_25 = "lastname"; var currVal_26 = _co.form.lastname; _ck(_v, 41, 0, currVal_25, currVal_26); var currVal_36 = ""; _ck(_v, 49, 0, currVal_36); var currVal_37 = "10"; _ck(_v, 50, 0, currVal_37); var currVal_38 = "contactnumber"; var currVal_39 = _co.form.contactnumber; _ck(_v, 53, 0, currVal_38, currVal_39); var currVal_48 = ""; _ck(_v, 61, 0, currVal_48); var currVal_49 = "email"; var currVal_50 = _co.form.email; _ck(_v, 64, 0, currVal_49, currVal_50); var currVal_59 = ""; _ck(_v, 72, 0, currVal_59); var currVal_60 = "message"; var currVal_61 = _co.form.message; _ck(_v, 75, 0, currVal_60, currVal_61); var currVal_64 = _co.lng; var currVal_65 = _co.lat; var currVal_66 = _co.zoom; _ck(_v, 119, 0, currVal_64, currVal_65, currVal_66); var currVal_67 = _co.lat; var currVal_68 = _co.lng; _ck(_v, 123, 0, currVal_67, currVal_68); _ck(_v, 127, 0); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 23).ngClassUntouched; var currVal_1 = i1.ɵnov(_v, 23).ngClassTouched; var currVal_2 = i1.ɵnov(_v, 23).ngClassPristine; var currVal_3 = i1.ɵnov(_v, 23).ngClassDirty; var currVal_4 = i1.ɵnov(_v, 23).ngClassValid; var currVal_5 = i1.ɵnov(_v, 23).ngClassInvalid; var currVal_6 = i1.ɵnov(_v, 23).ngClassPending; _ck(_v, 19, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6); var currVal_7 = (i1.ɵnov(_v, 29).required ? "" : null); var currVal_8 = i1.ɵnov(_v, 34).ngClassUntouched; var currVal_9 = i1.ɵnov(_v, 34).ngClassTouched; var currVal_10 = i1.ɵnov(_v, 34).ngClassPristine; var currVal_11 = i1.ɵnov(_v, 34).ngClassDirty; var currVal_12 = i1.ɵnov(_v, 34).ngClassValid; var currVal_13 = i1.ɵnov(_v, 34).ngClassInvalid; var currVal_14 = i1.ɵnov(_v, 34).ngClassPending; _ck(_v, 27, 0, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14); var currVal_18 = i1.ɵnov(_v, 43).ngClassUntouched; var currVal_19 = i1.ɵnov(_v, 43).ngClassTouched; var currVal_20 = i1.ɵnov(_v, 43).ngClassPristine; var currVal_21 = i1.ɵnov(_v, 43).ngClassDirty; var currVal_22 = i1.ɵnov(_v, 43).ngClassValid; var currVal_23 = i1.ɵnov(_v, 43).ngClassInvalid; var currVal_24 = i1.ɵnov(_v, 43).ngClassPending; _ck(_v, 38, 0, currVal_18, currVal_19, currVal_20, currVal_21, currVal_22, currVal_23, currVal_24); var currVal_27 = (i1.ɵnov(_v, 49).required ? "" : null); var currVal_28 = (i1.ɵnov(_v, 50).maxlength ? i1.ɵnov(_v, 50).maxlength : null); var currVal_29 = i1.ɵnov(_v, 55).ngClassUntouched; var currVal_30 = i1.ɵnov(_v, 55).ngClassTouched; var currVal_31 = i1.ɵnov(_v, 55).ngClassPristine; var currVal_32 = i1.ɵnov(_v, 55).ngClassDirty; var currVal_33 = i1.ɵnov(_v, 55).ngClassValid; var currVal_34 = i1.ɵnov(_v, 55).ngClassInvalid; var currVal_35 = i1.ɵnov(_v, 55).ngClassPending; _ck(_v, 47, 0, currVal_27, currVal_28, currVal_29, currVal_30, currVal_31, currVal_32, currVal_33, currVal_34, currVal_35); var currVal_40 = (i1.ɵnov(_v, 61).required ? "" : null); var currVal_41 = i1.ɵnov(_v, 66).ngClassUntouched; var currVal_42 = i1.ɵnov(_v, 66).ngClassTouched; var currVal_43 = i1.ɵnov(_v, 66).ngClassPristine; var currVal_44 = i1.ɵnov(_v, 66).ngClassDirty; var currVal_45 = i1.ɵnov(_v, 66).ngClassValid; var currVal_46 = i1.ɵnov(_v, 66).ngClassInvalid; var currVal_47 = i1.ɵnov(_v, 66).ngClassPending; _ck(_v, 59, 0, currVal_40, currVal_41, currVal_42, currVal_43, currVal_44, currVal_45, currVal_46, currVal_47); var currVal_51 = (i1.ɵnov(_v, 72).required ? "" : null); var currVal_52 = i1.ɵnov(_v, 77).ngClassUntouched; var currVal_53 = i1.ɵnov(_v, 77).ngClassTouched; var currVal_54 = i1.ɵnov(_v, 77).ngClassPristine; var currVal_55 = i1.ɵnov(_v, 77).ngClassDirty; var currVal_56 = i1.ɵnov(_v, 77).ngClassValid; var currVal_57 = i1.ɵnov(_v, 77).ngClassInvalid; var currVal_58 = i1.ɵnov(_v, 77).ngClassPending; _ck(_v, 70, 0, currVal_51, currVal_52, currVal_53, currVal_54, currVal_55, currVal_56, currVal_57, currVal_58); var currVal_62 = i1.ɵnov(_v, 21).invalid; _ck(_v, 79, 0, currVal_62); var currVal_63 = true; _ck(_v, 109, 0, currVal_63); }); }
 exports.View_ContactUsComponent_0 = View_ContactUsComponent_0;
 function View_ContactUsComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-contact-us", [], null, null, null, View_ContactUsComponent_0, RenderType_ContactUsComponent)), i1.ɵdid(1, 114688, null, 0, i24.ContactUsComponent, [i25.Http, i26.PostService, i27.Title, i27.Meta], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_ContactUsComponent_Host_0 = View_ContactUsComponent_Host_0;
@@ -4036,6 +4039,9 @@ var ContactUsComponent = /** @class */ (function () {
             _this.formresponse = res;
             // window.location.reload();
         });
+    };
+    ContactUsComponent.prototype.windowReload = function () {
+        window.location.reload();
     };
     // popup = document.getElementsByClassName('popup') as HTMLCollectionOf<HTMLElement>;
     // openpopup(){
@@ -5300,7 +5306,7 @@ function View_HomeMatchFeedComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵe
     } return ad; }, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HomeMatchFeedComponent_11)), i1.ɵdid(60, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵted(-1, null, [" Promote"])), (_l()(), i1.ɵeld(62, 0, null, null, 1, "button", [["class", "Button"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.openAppDownloadPopup() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Subscribe"]))], function (_ck, _v) { var currVal_5 = !_v.context.$implicit.finished; _ck(_v, 14, 0, currVal_5); var currVal_6 = _v.context.$implicit.finished; _ck(_v, 16, 0, currVal_6); var currVal_9 = i1.ɵinlineInterpolate(1, "userprofile/", _v.context.$implicit.MatchStarterId, ""); _ck(_v, 19, 0, currVal_9); var currVal_13 = i1.ɵinlineInterpolate(1, "/opencard/", _v.context.$implicit.feedid, ""); _ck(_v, 23, 0, currVal_13); var currVal_17 = _v.context.$implicit.scoreTeam2; _ck(_v, 34, 0, currVal_17); var currVal_18 = !_v.context.$implicit.scoreTeam2; _ck(_v, 36, 0, currVal_18); var currVal_19 = !_v.context.$implicit.scoreTeam2; _ck(_v, 39, 0, currVal_19); var currVal_23 = _v.context.$implicit.JoineeCount; _ck(_v, 52, 0, currVal_23); var currVal_24 = _v.context.$implicit.CommentCount; _ck(_v, 56, 0, currVal_24); var currVal_25 = _v.context.$implicit.PromoteCount; _ck(_v, 60, 0, currVal_25); }, function (_ck, _v) { var currVal_0 = _v.context.$implicit.gender; var currVal_1 = _v.context.$implicit.GameName; _ck(_v, 4, 0, currVal_0, currVal_1); var currVal_2 = _v.context.$implicit.age; _ck(_v, 6, 0, currVal_2); var currVal_3 = i1.ɵunv(_v, 8, 0, i1.ɵnov(_v, 9).transform(_v.context.$implicit.Venue_Name, 0, 30)); _ck(_v, 8, 0, currVal_3); var currVal_4 = _v.context.$implicit.startdatetime; _ck(_v, 12, 0, currVal_4); var currVal_7 = i1.ɵnov(_v, 19).target; var currVal_8 = i1.ɵnov(_v, 19).href; _ck(_v, 18, 0, currVal_7, currVal_8); var currVal_10 = _v.context.$implicit.MatchStarterUniqueName; _ck(_v, 21, 0, currVal_10); var currVal_11 = i1.ɵnov(_v, 23).target; var currVal_12 = i1.ɵnov(_v, 23).href; _ck(_v, 22, 0, currVal_11, currVal_12); var currVal_14 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.Team1Pic, ""); _ck(_v, 26, 0, currVal_14); var currVal_15 = i1.ɵunv(_v, 28, 0, i1.ɵnov(_v, 29).transform(_v.context.$implicit.Team1name, 0, 11)); _ck(_v, 28, 0, currVal_15); var currVal_16 = _v.context.$implicit.scoreTeam1; _ck(_v, 32, 0, currVal_16); var currVal_20 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.Team2Pic, ""); _ck(_v, 41, 0, currVal_20); var currVal_21 = i1.ɵunv(_v, 43, 0, i1.ɵnov(_v, 44).transform(_v.context.$implicit.Team2name, 0, 11)); _ck(_v, 43, 0, currVal_21); var currVal_22 = i1.ɵunv(_v, 47, 0, i1.ɵnov(_v, 48).transform(_v.context.$implicit.EventText, 0, 100)); _ck(_v, 47, 0, currVal_22); }); }
+    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Subscribe"]))], function (_ck, _v) { var currVal_5 = !_v.context.$implicit.finished; _ck(_v, 14, 0, currVal_5); var currVal_6 = _v.context.$implicit.finished; _ck(_v, 16, 0, currVal_6); var currVal_9 = i1.ɵinlineInterpolate(1, "userprofile/", _v.context.$implicit.MatchStarterId, "/matches"); _ck(_v, 19, 0, currVal_9); var currVal_13 = i1.ɵinlineInterpolate(1, "/opencard/", _v.context.$implicit.feedid, ""); _ck(_v, 23, 0, currVal_13); var currVal_17 = _v.context.$implicit.scoreTeam2; _ck(_v, 34, 0, currVal_17); var currVal_18 = !_v.context.$implicit.scoreTeam2; _ck(_v, 36, 0, currVal_18); var currVal_19 = !_v.context.$implicit.scoreTeam2; _ck(_v, 39, 0, currVal_19); var currVal_23 = _v.context.$implicit.JoineeCount; _ck(_v, 52, 0, currVal_23); var currVal_24 = _v.context.$implicit.CommentCount; _ck(_v, 56, 0, currVal_24); var currVal_25 = _v.context.$implicit.PromoteCount; _ck(_v, 60, 0, currVal_25); }, function (_ck, _v) { var currVal_0 = _v.context.$implicit.gender; var currVal_1 = _v.context.$implicit.GameName; _ck(_v, 4, 0, currVal_0, currVal_1); var currVal_2 = _v.context.$implicit.age; _ck(_v, 6, 0, currVal_2); var currVal_3 = i1.ɵunv(_v, 8, 0, i1.ɵnov(_v, 9).transform(_v.context.$implicit.Venue_Name, 0, 30)); _ck(_v, 8, 0, currVal_3); var currVal_4 = _v.context.$implicit.startdatetime; _ck(_v, 12, 0, currVal_4); var currVal_7 = i1.ɵnov(_v, 19).target; var currVal_8 = i1.ɵnov(_v, 19).href; _ck(_v, 18, 0, currVal_7, currVal_8); var currVal_10 = _v.context.$implicit.MatchStarterUniqueName; _ck(_v, 21, 0, currVal_10); var currVal_11 = i1.ɵnov(_v, 23).target; var currVal_12 = i1.ɵnov(_v, 23).href; _ck(_v, 22, 0, currVal_11, currVal_12); var currVal_14 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.Team1Pic, ""); _ck(_v, 26, 0, currVal_14); var currVal_15 = i1.ɵunv(_v, 28, 0, i1.ɵnov(_v, 29).transform(_v.context.$implicit.Team1name, 0, 11)); _ck(_v, 28, 0, currVal_15); var currVal_16 = _v.context.$implicit.scoreTeam1; _ck(_v, 32, 0, currVal_16); var currVal_20 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.Team2Pic, ""); _ck(_v, 41, 0, currVal_20); var currVal_21 = i1.ɵunv(_v, 43, 0, i1.ɵnov(_v, 44).transform(_v.context.$implicit.Team2name, 0, 11)); _ck(_v, 43, 0, currVal_21); var currVal_22 = i1.ɵunv(_v, 47, 0, i1.ɵnov(_v, 48).transform(_v.context.$implicit.EventText, 0, 100)); _ck(_v, 47, 0, currVal_22); }); }
 function View_HomeMatchFeedComponent_12(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "h3", [], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "i", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["No News As Of Now!"]))], null, null); }
 function View_HomeMatchFeedComponent_14(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 0, "img", [["alt", "sportsocialimg"], ["onerror", "this.src='assets/images/sportsocialfi.png'"]], [[8, "src", 4]], null, null, null, null))], null, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.parent.context.$implicit.image, ""); _ck(_v, 0, 0, currVal_0); }); }
 function View_HomeMatchFeedComponent_15(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 0, "img", [["alt", "sportsocialimg"], ["onerror", "this.src='assets/images/sportsocialth.png'"]], [[8, "src", 4]], null, null, null, null))], null, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.parent.context.$implicit.image, ""); _ck(_v, 0, 0, currVal_0); }); }
@@ -5411,7 +5417,7 @@ var HomeMatchFeedComponent = /** @class */ (function () {
     }
     HomeMatchFeedComponent.prototype.ssmatchfeed = function () {
         var _this = this;
-        console.log("This is timestamp for home card ", this.timestamp);
+        // console.log("This is timestamp for home card ",this.timestamp);
         var gamename;
         this.location.getGeoLocation().then(function (pos) {
             if (_this.cookie.check('longitude')) {
@@ -5625,7 +5631,8 @@ var HomeMatchFeedComponent = /** @class */ (function () {
                     if (data["Feed"][i].JoineeCount === 0) {
                         data["Feed"][i].JoineeCount = false;
                     }
-                    checkstat = Date.now();
+                    // checkstat = Date.now();
+                    checkstat = Math.floor(Date.now() / 1000);
                     checkstat2 = data["Feed"][i].startdatetime;
                     if (checkstat > checkstat2) {
                         if ((checkstat - checkstat2) > 86400) {
@@ -5792,6 +5799,7 @@ var HomeMatchFeedComponent = /** @class */ (function () {
                     gamenews: arr
                 });
             }
+            console.log(_this.tnews);
         });
     };
     HomeMatchFeedComponent.prototype.getnewsdata = function (topic) {
@@ -5829,7 +5837,7 @@ var HomeMatchFeedComponent = /** @class */ (function () {
                 if (id === this.news[i][j].id) {
                     topic = topic.toLowerCase();
                     this._eventemiter.userToEdit = this.news[i][j];
-                    this.router.navigate(['/newspage', topic]);
+                    this.router.navigate(['/news', topic]);
                 }
             }
         }
@@ -5840,7 +5848,7 @@ var HomeMatchFeedComponent = /** @class */ (function () {
             for (var j = 0; j < this.tnews[i].gamenews.length; j++) {
                 if (id === this.tnews[i].gamenews[j].id) {
                     this._eventemiter.userToEdit = this.tnews[i].gamenews[j];
-                    this.router.navigate(['/newspage', topic]);
+                    this.router.navigate(['/news', topic]);
                 }
             }
         }
@@ -5848,7 +5856,7 @@ var HomeMatchFeedComponent = /** @class */ (function () {
     HomeMatchFeedComponent.prototype.changee = function (topic) {
         topic = topic.toLowerCase();
         topic = topic.replace(/ /g, "-");
-        this.router.navigate(['/newspage', topic]);
+        this.router.navigate(['/news', topic]);
     };
     HomeMatchFeedComponent.prototype.gotoarena = function (topic) {
         topic = topic.toLowerCase();
@@ -8443,7 +8451,6 @@ var i11 = __webpack_require__(/*! ../../newsidenav/newsidenav.component */ "./sr
 var i12 = __webpack_require__(/*! @angular/router */ "@angular/router");
 var i13 = __webpack_require__(/*! ./open-home-match-card.component */ "./src/app/open-cards/open-home-match-card/open-home-match-card.component.ts");
 var i14 = __webpack_require__(/*! ../../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
-var i15 = __webpack_require__(/*! ../../shared/services/time.service */ "./src/app/shared/services/time.service.ts");
 var styles_OpenHomeMatchCardComponent = [i0.styles];
 var RenderType_OpenHomeMatchCardComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_OpenHomeMatchCardComponent, data: {} });
 exports.RenderType_OpenHomeMatchCardComponent = RenderType_OpenHomeMatchCardComponent;
@@ -8507,7 +8514,7 @@ exports.View_OpenHomeMatchCardComponent_0 = View_OpenHomeMatchCardComponent_0;
 function View_OpenHomeMatchCardComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-open-home-match-card", [], null, [["document", "keyup"]], function (_v, en, $event) { var ad = true; if (("document:keyup" === en)) {
         var pd_0 = (i1.ɵnov(_v, 1).handleDeleteKeyboardEvent($event) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, View_OpenHomeMatchCardComponent_0, RenderType_OpenHomeMatchCardComponent)), i1.ɵdid(1, 114688, null, 0, i13.OpenHomeMatchCardComponent, [i14.PostService, i12.ActivatedRoute, i15.TimeService, i12.Router], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+    } return ad; }, View_OpenHomeMatchCardComponent_0, RenderType_OpenHomeMatchCardComponent)), i1.ɵdid(1, 114688, null, 0, i13.OpenHomeMatchCardComponent, [i14.PostService, i12.ActivatedRoute, i12.Router], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_OpenHomeMatchCardComponent_Host_0 = View_OpenHomeMatchCardComponent_Host_0;
 var OpenHomeMatchCardComponentNgFactory = i1.ɵccf("sports-social-open-home-match-card", i13.OpenHomeMatchCardComponent, View_OpenHomeMatchCardComponent_Host_0, {}, {}, []);
 exports.OpenHomeMatchCardComponentNgFactory = OpenHomeMatchCardComponentNgFactory;
@@ -8528,12 +8535,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var post_service_1 = __webpack_require__(/*! ../../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
 var router_1 = __webpack_require__(/*! @angular/router */ "@angular/router");
-var time_service_1 = __webpack_require__(/*! ../../shared/services/time.service */ "./src/app/shared/services/time.service.ts");
 var OpenHomeMatchCardComponent = /** @class */ (function () {
-    function OpenHomeMatchCardComponent(postservice, activatedroute, time, router) {
+    function OpenHomeMatchCardComponent(postservice, activatedroute, router) {
         this.postservice = postservice;
         this.activatedroute = activatedroute;
-        this.time = time;
         this.router = router;
         this.Matcharr = [];
         this.MatchCommnets = [];
@@ -9707,7 +9712,7 @@ exports.PrivacyPolicyModule = PrivacyPolicyModule;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
-var styles = [".About-body[_ngcontent-%COMP%]{\n    background-color: white;\n    height: 300px;\n    width: 75%;\n    margin-left: 25%;\n}\n.About-body[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]{\n    width: 90%;\n    margin-left: 5%;\n    margin-top: 10px;\n    margin-bottom: 10px;\n}"];
+var styles = ["*[_ngcontent-%COMP%]::-webkit-scrollbar{\n    display: none;\n}\n.About-body[_ngcontent-%COMP%]{\n    background-color: white;\n    height: auto;\n    width: 75%;\n    margin-left: 25%;\n}\n.About-body[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{\n    width: 90%;\n    margin-left: 5%;\n    margin-top: 20px;\n    margin-bottom: 40px;\n}\n.About-body[_ngcontent-%COMP%] > div[_ngcontent-%COMP%] > h1[_ngcontent-%COMP%]{\n    color: #222222;\n    margin-bottom: 20px;\n    font-size: 1.4em;\n    letter-spacing: 0.6px;\n}\n.description[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{\n    color: #888888;\n}\n.member-tab[_ngcontent-%COMP%]{\n    overflow-y: hidden;\n    scroll-behavior: smooth;\n    width: 100% !important;\n    overflow-x: scroll;\n    white-space: nowrap !important;\n    -webkit-overflow-scrolling: touch;\n    -ms-scroll-snap-type: x mandatory;\n        scroll-snap-type: x mandatory;\n    -ms-scroll-snap-destination: 0% 100%;\n        scroll-snap-destination: 0% 100%;\n    -ms-scroll-snap-points-x: repeat(100%);\n        scroll-snap-points-x: repeat(100%);\n    display: inline-block;\n}\n.members-tab-component[_ngcontent-%COMP%]{\n    display: inline-block;\n    text-align: center;\n    width: 15%;\n    \n}\n.members-tab-component[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{\n    color: #888888;\n}\n.members[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    height: 60px;\n    width: 60px;\n    border-radius: 50%;\n    filter: rgb(194, 194, 194); \n    -webkit-filter: grayscale(0.7);\n    transition: all 0.3s ease-in-out;\n    -webkit-transition: all .3s ease-in-out;  \n    cursor: pointer;\n}\n.members[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]:hover{\n    filter: none;\n    -webkit-filter: grayscale(0);\n    \n    \n}\n.pie-chart[_ngcontent-%COMP%]{\n    position: relative;\n    height: 200px;\n    width: 200px;\n    border-radius: 50%;\n    background-color: red;\n}\n.pie-chart-inner[_ngcontent-%COMP%]{\n    position: relative;\n    z-index: 1;\n    height: 150px;\n    width: 150px;\n    margin-top: 25px;\n    margin-left: 25px;\n    background-color: white;\n    border-radius: 50%;\n}\n.upcoming-block[_ngcontent-%COMP%]{\n    overflow-y: hidden;\n    scroll-behavior: smooth;\n    width: 100% !important;\n    overflow-x: scroll;\n    white-space: nowrap !important;\n    -webkit-overflow-scrolling: touch;\n    -ms-scroll-snap-type: x mandatory;\n        scroll-snap-type: x mandatory;\n    -ms-scroll-snap-destination: 0% 100%;\n        scroll-snap-destination: 0% 100%;\n    -ms-scroll-snap-points-x: repeat(100%);\n        scroll-snap-points-x: repeat(100%);\n    display: inline-block;\n}\n.upcoming-cards[_ngcontent-%COMP%]{\n    vertical-align: top;\n    \n    scroll-snap-align: start;\n    width: 40%;\n    margin-right: 3.2%;\n    margin-top: 3%;\n    display: inline-block;\n}\n.backfooter[_ngcontent-%COMP%]{\n    width: 75%;\n    float: right;\n}"];
 exports.styles = styles;
 
 
@@ -9731,15 +9736,27 @@ exports.styles = styles;
 Object.defineProperty(exports, "__esModule", { value: true });
 var i0 = __webpack_require__(/*! ./teamprofile-about.component.css.shim.ngstyle */ "./src/app/profile/teamprofile/teamprofile-about/teamprofile-about.component.css.shim.ngstyle.js");
 var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
-var i2 = __webpack_require__(/*! ./teamprofile-about.component */ "./src/app/profile/teamprofile/teamprofile-about/teamprofile-about.component.ts");
+var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var i3 = __webpack_require__(/*! ../../../cards/ss-match-card/ss-match-card.component.ngfactory */ "./src/app/cards/ss-match-card/ss-match-card.component.ngfactory.js");
+var i4 = __webpack_require__(/*! ../../../cards/ss-match-card/ss-match-card.component */ "./src/app/cards/ss-match-card/ss-match-card.component.ts");
+var i5 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var i6 = __webpack_require__(/*! ../../../backfooter/backfooter.component.ngfactory */ "./src/app/backfooter/backfooter.component.ngfactory.js");
+var i7 = __webpack_require__(/*! ../../../backfooter/backfooter.component */ "./src/app/backfooter/backfooter.component.ts");
+var i8 = __webpack_require__(/*! ./teamprofile-about.component */ "./src/app/profile/teamprofile/teamprofile-about/teamprofile-about.component.ts");
+var i9 = __webpack_require__(/*! ../teamprofile.component */ "./src/app/profile/teamprofile/teamprofile.component.ts");
 var styles_TeamprofileAboutComponent = [i0.styles];
 var RenderType_TeamprofileAboutComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_TeamprofileAboutComponent, data: {} });
 exports.RenderType_TeamprofileAboutComponent = RenderType_TeamprofileAboutComponent;
-function View_TeamprofileAboutComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 12, "div", [["class", "About-body"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 4, "div", [["class", "description"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Description"])), (_l()(), i1.ɵeld(4, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["No Description Yet!"])), (_l()(), i1.ɵeld(6, 0, null, null, 6, "div", [["class", "members"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Members"])), (_l()(), i1.ɵeld(9, 0, null, null, 3, "div", [["class", "member-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(10, 0, null, null, 2, "div", [["class", "members"]], null, null, null, null, null)), (_l()(), i1.ɵeld(11, 0, null, null, 0, "img", [["alt", ""], ["src", ""]], null, null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 0, "p", [], null, null, null, null, null))], null, null); }
+function View_TeamprofileAboutComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["No Description Yet!"]))], null, null); }
+function View_TeamprofileAboutComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(1, null, ["", ""]))], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.description; _ck(_v, 1, 0, currVal_0); }); }
+function View_TeamprofileAboutComponent_4(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["( C )"]))], null, null); }
+function View_TeamprofileAboutComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 5, "div", [["class", "members-tab-component"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 0, "img", [["alt", ""]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 3, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(3, null, ["", ""])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_TeamprofileAboutComponent_4)), i1.ɵdid(5, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var currVal_2 = _v.context.$implicit.captain; _ck(_v, 5, 0, currVal_2); }, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.profilepic, ""); _ck(_v, 1, 0, currVal_0); var currVal_1 = _v.context.$implicit.firstname; _ck(_v, 3, 0, currVal_1); }); }
+function View_TeamprofileAboutComponent_5(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "div", [["class", "upcoming-cards"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "sports-social-ss-match-card", [], null, null, null, i3.View_SsMatchCardComponent_0, i3.RenderType_SsMatchCardComponent)), i1.ɵdid(2, 114688, null, 0, i4.SsMatchCardComponent, [i5.Router], { matchstartername: [0, "matchstartername"], userName: [1, "userName"], starttimestamp: [2, "starttimestamp"], coverpic: [3, "coverpic"], upcoming: [4, "upcoming"], team1pic: [5, "team1pic"], team2pic: [6, "team2pic"], scoreTeam1: [7, "scoreTeam1"], scoreTeam2: [8, "scoreTeam2"], gamename: [9, "gamename"], startdatetime: [10, "startdatetime"], InsertedDate: [11, "InsertedDate"], Uniquename: [12, "Uniquename"], city: [13, "city"], Venue_Name: [14, "Venue_Name"], MatchStarterUniqueName: [15, "MatchStarterUniqueName"], Team1Name: [16, "Team1Name"], Team2Name: [17, "Team2Name"], EventText: [18, "EventText"], JoineeCount: [19, "JoineeCount"], WatchCount: [20, "WatchCount"], PromoteCount: [21, "PromoteCount"], CommentCount: [22, "CommentCount"], gender: [23, "gender"], finished: [24, "finished"], age: [25, "age"] }, null)], function (_ck, _v) { var currVal_0 = _v.context.$implicit.MatchStarterName; var currVal_1 = _v.context.$implicit.userName; var currVal_2 = _v.context.$implicit.starttimestamp; var currVal_3 = _v.context.$implicit.coverpic; var currVal_4 = _v.context.$implicit.upcoming; var currVal_5 = _v.context.$implicit.Team1Pic; var currVal_6 = _v.context.$implicit.Team2Pic; var currVal_7 = _v.context.$implicit.scoreTeam1; var currVal_8 = _v.context.$implicit.scoreTeam2; var currVal_9 = _v.context.$implicit.gamename; var currVal_10 = _v.context.$implicit.startdatetime; var currVal_11 = _v.context.$implicit.InsertedDate; var currVal_12 = _v.context.$implicit.Uniquename; var currVal_13 = _v.context.$implicit.city; var currVal_14 = _v.context.$implicit.Venue_Name; var currVal_15 = _v.context.$implicit.MatchStarterUniqueName; var currVal_16 = _v.context.$implicit.Team1Name; var currVal_17 = _v.context.$implicit.Team2Name; var currVal_18 = _v.context.$implicit.EventText; var currVal_19 = _v.context.$implicit.JoineeCount; var currVal_20 = _v.context.$implicit.WatchCount; var currVal_21 = _v.context.$implicit.PromoteCount; var currVal_22 = _v.context.$implicit.CommentCount; var currVal_23 = _v.context.$implicit.gender; var currVal_24 = _v.context.$implicit.finished; var currVal_25 = _v.context.$implicit.age; _ck(_v, 2, 1, [currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17, currVal_18, currVal_19, currVal_20, currVal_21, currVal_22, currVal_23, currVal_24, currVal_25]); }, null); }
+function View_TeamprofileAboutComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 19, "div", [["class", "About-body"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 6, "div", [["class", "description"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Description"])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_TeamprofileAboutComponent_1)), i1.ɵdid(5, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_TeamprofileAboutComponent_2)), i1.ɵdid(7, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵeld(8, 0, null, null, 5, "div", [["class", "members"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Members"])), (_l()(), i1.ɵeld(11, 0, null, null, 2, "div", [["class", "member-tab"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_TeamprofileAboutComponent_3)), i1.ɵdid(13, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(14, 0, null, null, 5, "div", [["class", "upcoming-matches"]], null, null, null, null, null)), (_l()(), i1.ɵeld(15, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Upcoming Matches"])), (_l()(), i1.ɵeld(17, 0, null, null, 2, "div", [["class", "upcoming-block"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_TeamprofileAboutComponent_5)), i1.ɵdid(19, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(20, 0, null, null, 2, "div", [["class", "backfooter"]], null, null, null, null, null)), (_l()(), i1.ɵeld(21, 0, null, null, 1, "sports-social-backfooter", [], null, null, null, i6.View_BackfooterComponent_0, i6.RenderType_BackfooterComponent)), i1.ɵdid(22, 114688, null, 0, i7.BackfooterComponent, [], null, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = (_co.description == false); _ck(_v, 5, 0, currVal_0); var currVal_1 = (_co.description != false); _ck(_v, 7, 0, currVal_1); var currVal_2 = _co.members; _ck(_v, 13, 0, currVal_2); var currVal_3 = _co.Matcharr; _ck(_v, 19, 0, currVal_3); _ck(_v, 22, 0); }, null); }
 exports.View_TeamprofileAboutComponent_0 = View_TeamprofileAboutComponent_0;
-function View_TeamprofileAboutComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-teamprofile-about", [], null, null, null, View_TeamprofileAboutComponent_0, RenderType_TeamprofileAboutComponent)), i1.ɵdid(1, 114688, null, 0, i2.TeamprofileAboutComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+function View_TeamprofileAboutComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-teamprofile-about", [], null, null, null, View_TeamprofileAboutComponent_0, RenderType_TeamprofileAboutComponent)), i1.ɵdid(1, 114688, null, 0, i8.TeamprofileAboutComponent, [i9.TeamprofileComponent], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_TeamprofileAboutComponent_Host_0 = View_TeamprofileAboutComponent_Host_0;
-var TeamprofileAboutComponentNgFactory = i1.ɵccf("sports-social-teamprofile-about", i2.TeamprofileAboutComponent, View_TeamprofileAboutComponent_Host_0, {}, {}, []);
+var TeamprofileAboutComponentNgFactory = i1.ɵccf("sports-social-teamprofile-about", i8.TeamprofileAboutComponent, View_TeamprofileAboutComponent_Host_0, {}, {}, []);
 exports.TeamprofileAboutComponentNgFactory = TeamprofileAboutComponentNgFactory;
 
 
@@ -9755,11 +9772,21 @@ exports.TeamprofileAboutComponentNgFactory = TeamprofileAboutComponentNgFactory;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
+var teamprofile_component_1 = __webpack_require__(/*! ./../teamprofile.component */ "./src/app/profile/teamprofile/teamprofile.component.ts");
 var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var TeamprofileAboutComponent = /** @class */ (function () {
-    function TeamprofileAboutComponent() {
+    // @Input() member =[];
+    function TeamprofileAboutComponent(parent) {
+        this.parent = parent;
+        this.array = [];
+        this.Matcharr = [];
     }
     TeamprofileAboutComponent.prototype.ngOnInit = function () {
+        // console.log("about working");
+        this.members = this.parent.members;
+        this.description = this.parent.description;
+        this.Matcharr = this.parent.past;
+        console.log(this.description);
     };
     return TeamprofileAboutComponent;
 }());
@@ -9784,7 +9811,7 @@ exports.TeamprofileAboutComponent = TeamprofileAboutComponent;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
-var styles = [""];
+var styles = ["*[_ngcontent-%COMP%]::-webkit-scrollbar{\n    display: none;\n}\n.About-body[_ngcontent-%COMP%]{\n    background-color: white;\n    height: auto;\n    width: 75%;\n    margin-left: 25%;\n}\n.About-body[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{\n    width: 85%;\n    margin-left: 10%;\n    margin-top: 20px;\n    margin-bottom: 40px;\n}\n.About-body[_ngcontent-%COMP%] > div[_ngcontent-%COMP%] > h1[_ngcontent-%COMP%]{\n    color: #222222;\n    margin-bottom: 20px;\n    margin-top: 20px;\n    font-size: 1.4em;\n    letter-spacing: 0.6px;\n}\n.upcoming-block[_ngcontent-%COMP%]{\n    \n    scroll-behavior: smooth;\n    width: 100% !important;\n    \n    \n    -webkit-overflow-scrolling: touch;\n    display: inline-block;\n}\n.upcoming-cards[_ngcontent-%COMP%]{\n    vertical-align: top;\n    \n    scroll-snap-align: start;\n    width: 50%;\n    \n    margin-top: 3%;\n    display: inline-block;\n}\n.backfooter[_ngcontent-%COMP%]{\n    width: 75%;\n    float: right;\n}"];
 exports.styles = styles;
 
 
@@ -9808,15 +9835,23 @@ exports.styles = styles;
 Object.defineProperty(exports, "__esModule", { value: true });
 var i0 = __webpack_require__(/*! ./teamprofile-matches.component.css.shim.ngstyle */ "./src/app/profile/teamprofile/teamprofile-matches/teamprofile-matches.component.css.shim.ngstyle.js");
 var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
-var i2 = __webpack_require__(/*! ./teamprofile-matches.component */ "./src/app/profile/teamprofile/teamprofile-matches/teamprofile-matches.component.ts");
+var i2 = __webpack_require__(/*! ../../../cards/ss-match-card/ss-match-card.component.ngfactory */ "./src/app/cards/ss-match-card/ss-match-card.component.ngfactory.js");
+var i3 = __webpack_require__(/*! ../../../cards/ss-match-card/ss-match-card.component */ "./src/app/cards/ss-match-card/ss-match-card.component.ts");
+var i4 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var i5 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var i6 = __webpack_require__(/*! ../../../backfooter/backfooter.component.ngfactory */ "./src/app/backfooter/backfooter.component.ngfactory.js");
+var i7 = __webpack_require__(/*! ../../../backfooter/backfooter.component */ "./src/app/backfooter/backfooter.component.ts");
+var i8 = __webpack_require__(/*! ./teamprofile-matches.component */ "./src/app/profile/teamprofile/teamprofile-matches/teamprofile-matches.component.ts");
+var i9 = __webpack_require__(/*! ../teamprofile.component */ "./src/app/profile/teamprofile/teamprofile.component.ts");
 var styles_TeamprofileMatchesComponent = [i0.styles];
 var RenderType_TeamprofileMatchesComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_TeamprofileMatchesComponent, data: {} });
 exports.RenderType_TeamprofileMatchesComponent = RenderType_TeamprofileMatchesComponent;
-function View_TeamprofileMatchesComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" teamprofile-matches works!\n"]))], null, null); }
+function View_TeamprofileMatchesComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "div", [["class", "upcoming-cards"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "sports-social-ss-match-card", [], null, null, null, i2.View_SsMatchCardComponent_0, i2.RenderType_SsMatchCardComponent)), i1.ɵdid(2, 114688, null, 0, i3.SsMatchCardComponent, [i4.Router], { matchstartername: [0, "matchstartername"], userName: [1, "userName"], starttimestamp: [2, "starttimestamp"], coverpic: [3, "coverpic"], upcoming: [4, "upcoming"], team1pic: [5, "team1pic"], team2pic: [6, "team2pic"], scoreTeam1: [7, "scoreTeam1"], scoreTeam2: [8, "scoreTeam2"], gamename: [9, "gamename"], startdatetime: [10, "startdatetime"], InsertedDate: [11, "InsertedDate"], Uniquename: [12, "Uniquename"], city: [13, "city"], Venue_Name: [14, "Venue_Name"], MatchStarterUniqueName: [15, "MatchStarterUniqueName"], Team1Name: [16, "Team1Name"], Team2Name: [17, "Team2Name"], EventText: [18, "EventText"], JoineeCount: [19, "JoineeCount"], WatchCount: [20, "WatchCount"], PromoteCount: [21, "PromoteCount"], CommentCount: [22, "CommentCount"], gender: [23, "gender"], finished: [24, "finished"], age: [25, "age"] }, null)], function (_ck, _v) { var currVal_0 = _v.context.$implicit.MatchStarterName; var currVal_1 = _v.context.$implicit.userName; var currVal_2 = _v.context.$implicit.starttimestamp; var currVal_3 = _v.context.$implicit.coverpic; var currVal_4 = _v.context.$implicit.upcoming; var currVal_5 = _v.context.$implicit.Team1Pic; var currVal_6 = _v.context.$implicit.Team2Pic; var currVal_7 = _v.context.$implicit.scoreTeam1; var currVal_8 = _v.context.$implicit.scoreTeam2; var currVal_9 = _v.context.$implicit.gamename; var currVal_10 = _v.context.$implicit.startdatetime; var currVal_11 = _v.context.$implicit.InsertedDate; var currVal_12 = _v.context.$implicit.Uniquename; var currVal_13 = _v.context.$implicit.city; var currVal_14 = _v.context.$implicit.Venue_Name; var currVal_15 = _v.context.$implicit.MatchStarterUniqueName; var currVal_16 = _v.context.$implicit.Team1Name; var currVal_17 = _v.context.$implicit.Team2Name; var currVal_18 = _v.context.$implicit.EventText; var currVal_19 = _v.context.$implicit.JoineeCount; var currVal_20 = _v.context.$implicit.WatchCount; var currVal_21 = _v.context.$implicit.PromoteCount; var currVal_22 = _v.context.$implicit.CommentCount; var currVal_23 = _v.context.$implicit.gender; var currVal_24 = _v.context.$implicit.finished; var currVal_25 = _v.context.$implicit.age; _ck(_v, 2, 1, [currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17, currVal_18, currVal_19, currVal_20, currVal_21, currVal_22, currVal_23, currVal_24, currVal_25]); }, null); }
+function View_TeamprofileMatchesComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 7, "div", [["class", "About-body"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 6, "div", [["class", "upcoming-matches"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Finished Matches"])), (_l()(), i1.ɵeld(4, 0, null, null, 0, "hr", [], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 2, "div", [["class", "upcoming-block"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_TeamprofileMatchesComponent_1)), i1.ɵdid(7, 278528, null, 0, i5.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(8, 0, null, null, 2, "div", [["class", "backfooter"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 1, "sports-social-backfooter", [], null, null, null, i6.View_BackfooterComponent_0, i6.RenderType_BackfooterComponent)), i1.ɵdid(10, 114688, null, 0, i7.BackfooterComponent, [], null, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.Matcharr; _ck(_v, 7, 0, currVal_0); _ck(_v, 10, 0); }, null); }
 exports.View_TeamprofileMatchesComponent_0 = View_TeamprofileMatchesComponent_0;
-function View_TeamprofileMatchesComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-teamprofile-matches", [], null, null, null, View_TeamprofileMatchesComponent_0, RenderType_TeamprofileMatchesComponent)), i1.ɵdid(1, 114688, null, 0, i2.TeamprofileMatchesComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+function View_TeamprofileMatchesComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-teamprofile-matches", [], null, null, null, View_TeamprofileMatchesComponent_0, RenderType_TeamprofileMatchesComponent)), i1.ɵdid(1, 114688, null, 0, i8.TeamprofileMatchesComponent, [i9.TeamprofileComponent], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_TeamprofileMatchesComponent_Host_0 = View_TeamprofileMatchesComponent_Host_0;
-var TeamprofileMatchesComponentNgFactory = i1.ɵccf("sports-social-teamprofile-matches", i2.TeamprofileMatchesComponent, View_TeamprofileMatchesComponent_Host_0, {}, {}, []);
+var TeamprofileMatchesComponentNgFactory = i1.ɵccf("sports-social-teamprofile-matches", i8.TeamprofileMatchesComponent, View_TeamprofileMatchesComponent_Host_0, {}, {}, []);
 exports.TeamprofileMatchesComponentNgFactory = TeamprofileMatchesComponentNgFactory;
 
 
@@ -9832,11 +9867,14 @@ exports.TeamprofileMatchesComponentNgFactory = TeamprofileMatchesComponentNgFact
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
+var teamprofile_component_1 = __webpack_require__(/*! ./../teamprofile.component */ "./src/app/profile/teamprofile/teamprofile.component.ts");
 var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var TeamprofileMatchesComponent = /** @class */ (function () {
-    function TeamprofileMatchesComponent() {
+    function TeamprofileMatchesComponent(parent) {
+        this.parent = parent;
     }
     TeamprofileMatchesComponent.prototype.ngOnInit = function () {
+        this.Matcharr = this.parent.past;
     };
     return TeamprofileMatchesComponent;
 }());
@@ -9861,7 +9899,7 @@ exports.TeamprofileMatchesComponent = TeamprofileMatchesComponent;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
-var styles = [".outer-shell[_ngcontent-%COMP%]{\n    position: relative;\n    height: auto;\n    width: 100%;\n    margin-top: 60px;\n}\n.profile-shell[_ngcontent-%COMP%]{\n    position: relative;\n    height: 360px;\n    width: 100%;\n    background-color: #f6f6f6;\n}\n.background-img[_ngcontent-%COMP%]{\n    position: relative;\n    height: 250px;\n    width: 100%;\n}\n.background-img[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    width: 100%;\n    height: 250px;\n}\n.team-img[_ngcontent-%COMP%]{\n    position: absolute;\n    bottom: 0%;\n    z-index: 1;\n    left: 5%;\n    height: 200px;\n    width: 200px;\n    border-radius: 50%;\n    background-color: white;\n}\n.team-img[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    margin-left: 2px;\n    margin-top: 2px;\n    height: 196px;\n    width: 196px;\n    border-radius: 50%;\n}\n.team-info[_ngcontent-%COMP%]{\n    position: relative;\n    top: 0%;\n    background-color: white;\n    \n    \n    height:110px;\n    width: 75%;\n    margin-left: 25%;\n    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 rgba(0, 0, 0, 0.19);\n}\n.name[_ngcontent-%COMP%]{\n    float: left;\n    width: 15%;\n    margin-left: 5%;\n    letter-spacing: 0.5px;\n    margin-top: 25px;\n}\n.name[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{\n    font-size: 1.2em;\n    color: #024771;\n    \n}\n.team-info[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    height: 40px;\n    width: 40px;\n    margin-top: 40px;\n    float: right;\n    margin-right: 5%;\n}\n.follow[_ngcontent-%COMP%]{\n    position: relative;\n    float: right;\n    margin-top: 35px;\n    margin-right: 5%;\n    width: 12%;\n    height: 40px;\n    border: 2px solid #024771;\n    border-radius: 8px;\n  }\n.follow[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n    font-size: 1.3em;\n    font-weight: lighter;\n    margin-top: 9px;\n    margin-left: 26%;\n    color: #024771;\n  }\n.side-shell[_ngcontent-%COMP%]{\n    height: 140vh;\n    width: 25%;\n    background-color: #f6f6f6;\n    \n    float: left;\n    position: relative;\n}\n.normal-shell[_ngcontent-%COMP%]{\n    height: 40px;\n    width: 75%;\n    margin-left: 25%;\n}\n.normal-shell[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{\n    text-align: center;\n    font-size: 1em;\n    float: left;\n    width: 50%;\n    padding-top: 15px;\n    padding-bottom: 15px;\n    \n    border-top: 2px solid #f6f6f6;\n    border-bottom: 2px solid #f6f6f6;\n    color: #888888;\n    background-color: #f6f6f6;\n}\n.normal-shell[_ngcontent-%COMP%]   a.active[_ngcontent-%COMP%]{\n    font-weight: bold;\n    color: #024771;\n    background-color: white;\n}\n.sub-header[_ngcontent-%COMP%]{\n    position: fixed;\n    z-index: 10;\n    margin-top: 60px;\n    display: none;\n    background-color: white;\n    height:80px;\n    width: 100%;\n    \n    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(0, 0, 0, 0.19);\n      top: 0%;  \n    }\n.profile-pic[_ngcontent-%COMP%]{\n        position: relative;\n        float: left;\n        height: 50px;\n        width: 50px;\n        border-radius: 50%;\n        margin-top: 15px;\n        margin-left: 1%;\n   }\n.stick[_ngcontent-%COMP%]{\n       top: 0%;\n       position: sticky;\n       position: -webkit-sticky;\n   }\n.stick-div[_ngcontent-%COMP%]{\n       \n       height: 80px;\n       \n       position: relative;\n       transition: 0.3s ease-in-out;\n       \n       -webkit-animation: sideanimation 0.3s linear 0s;\n       \n       animation: sideanimation 0.3s linear 0s;  \n   }\n@-webkit-keyframes sideanimation {\n        from {height: 0px;}\n        to {height: 80px;}\n    }\n\n@keyframes sideanimation {\n        from {height: 0px;}\n        to {height: 80px;}\n    }\n.sub-name[_ngcontent-%COMP%]{\n        float: left;\n        width: 15%;\n        margin-left: 5%;\n        letter-spacing: 0.7px;\n        margin-top: 10px;\n    }\n.sub-name[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{\n        font-size: 1.2em;\n        color: #024771;\n        \n    }\n.fans[_ngcontent-%COMP%]{\n        margin-top: 20px;\n        width: 15%;\n        margin-left: 2%;\n        float: left;\n        line-height: 1.1;\n    }\n.fans[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n        font-size: 1em;\n        color: #888888;\n    }\n.fans[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{\n        margin-left: 2%;\n        float: right;\n    }\n.fans[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{\n        font-size: 1.2em;\n        margin-left: 4%;\n    }\n.fans[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{\n        margin-left: 60%;\n    }\n.sub-follow[_ngcontent-%COMP%]{\n        position: relative;\n        float: right;\n        margin-top: 25px;\n        margin-right: 5%;\n        width: 6%;\n        height: 30px;\n        border: 2px solid #024771;\n        border-radius: 8px;\n    }\n.sub-follow[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n        font-size: 1.1em;\n        font-weight: lighter;\n        margin-top: 5px;\n        margin-left: 20%;\n        color: #024771;\n    }\n.sub-follow-img[_ngcontent-%COMP%]{\n        position: relative;\n        height: 25px;\n        width: 30px;\n        margin-top: 30px;\n        float: right;\n        margin-right: 5%;\n    }\n.followers[_ngcontent-%COMP%]{\n        position: relative;\n        width: 65%;\n        margin-left: 10%;\n    }\n.followers[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n        font-size: 1.2em;\n        font-weight: 400;\n        color: #888888;\n        cursor: pointer;\n    }\n.followers[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{\n        color: #888888;\n        float: right;\n    }\n.followers[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{\n        color: #024771;\n        font-size: 1.3em;\n        cursor: pointer;\n    }\n.followers[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{\n        float: right;\n        color: #024771;\n        margin-right: 3%;\n    }\n.basic-info[_ngcontent-%COMP%]{\n        top: 0%;\n        \n    }\n.basic-info[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n        font-size: 1em;\n        margin-left: 10%;\n        margin-top: 20px;\n    }\n.basic-info-tab[_ngcontent-%COMP%]{\n        margin-top: 15px;\n        margin-left: 10%;\n        height: 30px;\n    }\n.basic-info-tab[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]{\n        float: left;\n        width: 20%;\n    }\n.basic-info-tab[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n        height: 25px;\n        width: 25px;\n    }\n.basic-info-tab[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{\n        float: right;\n        font-size: 1em;\n        margin-top: 5px;\n        width: 70%;\n    }\n.basic-info-tab[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{\n        position: fixed;\n        z-index: 4;\n        padding: 20px;\n        top: 40%;\n        left: 8%;\n        width: 45%;\n        border-radius: 5px;\n        \n        color: white;\n        background-color: rgba(0, 0, 0, 0.8);\n        display: none;\n    }\n.basic-info-tab[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]:hover    ~ p[_ngcontent-%COMP%]{\n        display: block;\n    }\n.media[_ngcontent-%COMP%]{\n        width: 80%;\n        height: auto;\n        margin-top: 70px;\n        margin-left: 10%;\n        top: 0%;\n        \n        \n        \n        position: relative; \n    }\n.head[_ngcontent-%COMP%]{\n        width: 100%;\n        height: 20px;\n    }\n.head[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%]{\n        float: left;\n    }\n.head[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n        float: right;\n    }\n.media[_ngcontent-%COMP%] > .mediabox[_ngcontent-%COMP%]{\n        width: 60px;\n        height: 60px;\n        border-radius: 10%;\n        margin: 2%;\n        \n        display: inline-block;\n    }\n.mediabox[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n        border-radius: 10%;\n        width: 100%;\n        height: 100%;\n    }"];
+var styles = [".outer-shell[_ngcontent-%COMP%]{\n    position: relative;\n    height: auto;\n    width: 100%;\n    margin-top: 60px;\n}\n.profile-shell[_ngcontent-%COMP%]{\n    position: relative;\n    height: 360px;\n    width: 100%;\n    background-color: #f6f6f6;\n}\n.background-img[_ngcontent-%COMP%]{\n    position: relative;\n    height: 250px;\n    width: 100%;\n}\n.background-img[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    width: 100%;\n    height: 250px;\n}\n.team-img[_ngcontent-%COMP%]{\n    position: absolute;\n    bottom: 0%;\n    z-index: 1;\n    left: 5%;\n    height: 200px;\n    width: 200px;\n    border-radius: 50%;\n    background-color: white;\n}\n.team-img[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    margin-left: 2px;\n    margin-top: 2px;\n    height: 196px;\n    width: 196px;\n    border-radius: 50%;\n}\n.team-info[_ngcontent-%COMP%]{\n    position: relative;\n    top: 0%;\n    background-color: white;\n    \n    \n    height:110px;\n    width: 75%;\n    margin-left: 25%;\n    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 rgba(0, 0, 0, 0.19);\n}\n.name[_ngcontent-%COMP%]{\n    float: left;\n    width: 15%;\n    margin-left: 5%;\n    letter-spacing: 0.5px;\n    margin-top: 25px;\n}\n.name[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{\n    font-size: 1.2em;\n    color: #024771;\n    \n}\n.team-info[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    height: 40px;\n    width: 40px;\n    margin-top: 40px;\n    float: right;\n    margin-right: 5%;\n}\n.follow[_ngcontent-%COMP%]{\n    position: relative;\n    float: right;\n    margin-top: 35px;\n    margin-right: 5%;\n    width: 12%;\n    height: 40px;\n    border: 2px solid #024771;\n    border-radius: 8px;\n  }\n.follow[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n    font-size: 1.3em;\n    font-weight: lighter;\n    margin-top: 9px;\n    margin-left: 26%;\n    color: #024771;\n  }\n.side-shell[_ngcontent-%COMP%]{\n    height: 100%;\n    width: 25%;\n    background-color: #f6f6f6;\n    \n    float: left;\n    position: relative;\n}\n.normal-shell[_ngcontent-%COMP%]{\n    height: 40px;\n    width: 75%;\n    margin-left: 25%;\n}\n.normal-shell[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{\n    text-align: center;\n    font-size: 1em;\n    float: left;\n    width: 50%;\n    padding-top: 15px;\n    padding-bottom: 15px;\n    \n    border-top: 2px solid #f6f6f6;\n    border-bottom: 2px solid #f6f6f6;\n    color: #888888;\n    background-color: #f6f6f6;\n}\n.normal-shell[_ngcontent-%COMP%]   a.active[_ngcontent-%COMP%]{\n    font-weight: bold;\n    color: #024771;\n    background-color: white;\n}\n.sub-header[_ngcontent-%COMP%]{\n    position: fixed;\n    z-index: 10;\n    margin-top: 60px;\n    display: none;\n    background-color: white;\n    height:80px;\n    width: 100%;\n    \n    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(0, 0, 0, 0.19);\n      top: 0%;  \n    }\n.profile-pic[_ngcontent-%COMP%]{\n        position: relative;\n        float: left;\n        height: 50px;\n        width: 50px;\n        border-radius: 50%;\n        margin-top: 15px;\n        margin-left: 1%;\n   }\n.sub-name[_ngcontent-%COMP%]{\n        float: left;\n        width: 25%;\n        margin-left: 5%;\n        letter-spacing: 0.7px;\n        margin-top: 10px;\n    }\n.sub-name[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{\n        font-size: 1.2em;\n        color: #024771;\n        \n    }\n.fans[_ngcontent-%COMP%]{\n        margin-top: 20px;\n        width: 15%;\n        margin-left: 2%;\n        float: left;\n        line-height: 1.1;\n    }\n.fans[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n        font-size: 1em;\n        color: #888888;\n    }\n.fans[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{\n        margin-left: 2%;\n        float: right;\n    }\n.fans[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{\n        font-size: 1.2em;\n        margin-left: 4%;\n    }\n.fans[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{\n        margin-left: 60%;\n    }\n.sub-follow[_ngcontent-%COMP%]{\n        position: relative;\n        float: right;\n        margin-top: 25px;\n        margin-right: 5%;\n        width: 6%;\n        height: 30px;\n        border: 2px solid #024771;\n        border-radius: 8px;\n    }\n.sub-follow[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n        font-size: 1.1em;\n        font-weight: lighter;\n        margin-top: 5px;\n        margin-left: 20%;\n        color: #024771;\n    }\n.sub-follow-img[_ngcontent-%COMP%]{\n        position: relative;\n        height: 25px;\n        width: 30px;\n        margin-top: 30px;\n        float: right;\n        margin-right: 5%;\n    }\n.followers[_ngcontent-%COMP%]{\n        position: relative;\n        width: 65%;\n        margin-left: 10%;\n    }\n.followers[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n        font-size: 1.2em;\n        font-weight: 400;\n        color: #888888;\n        cursor: pointer;\n    }\n.followers[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{\n        color: #888888;\n        float: right;\n    }\n.followers[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{\n        color: #024771;\n        font-size: 1.3em;\n        cursor: pointer;\n    }\n.followers[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{\n        float: right;\n        color: #024771;\n        margin-right: 3%;\n    }\n.basic-info[_ngcontent-%COMP%]{\n        top: 0%;\n        \n    }\n.basic-info[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n        font-size: 1em;\n        margin-left: 10%;\n        margin-top: 20px;\n    }\n.basic-info-tab[_ngcontent-%COMP%]{\n        margin-top: 15px;\n        margin-left: 10%;\n        height: 30px;\n    }\n.basic-info-tab[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]{\n        float: left;\n        width: 20%;\n    }\n.basic-info-tab[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n        height: 25px;\n        width: 25px;\n    }\n.basic-info-tab[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{\n        float: right;\n        font-size: 1em;\n        margin-top: 5px;\n        width: 70%;\n        font-weight: 400;\n        color: #444444;\n    }\n.basic-info-tab[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{\n        position: fixed;\n        z-index: 4;\n        padding: 20px;\n        top: 40%;\n        left: 8%;\n        width: 45%;\n        border-radius: 5px;\n        \n        color: white;\n        background-color: rgba(0, 0, 0, 0.8);\n        display: none;\n    }\n.basic-info-tab[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]:hover    ~ p[_ngcontent-%COMP%]{\n        display: block;\n    }\n.media[_ngcontent-%COMP%]{\n        width: 80%;\n        height: auto;\n        margin-top: 70px;\n        margin-left: 10%;\n        top: 0%;\n        \n        \n        \n        position: relative; \n    }\n.head[_ngcontent-%COMP%]{\n        width: 100%;\n        height: 20px;\n    }\n.head[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%]{\n        float: left;\n    }\n.head[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n        float: right;\n    }\n.media[_ngcontent-%COMP%] > .mediabox[_ngcontent-%COMP%]{\n        width: 60px;\n        height: 60px;\n        border-radius: 10%;\n        margin: 2%;\n        \n        display: inline-block;\n    }\n.mediabox[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n        border-radius: 10%;\n        width: 100%;\n        height: 100%;\n        cursor: pointer;\n    }\n.media-crousal[_ngcontent-%COMP%]{\n        display: none;\n        position: fixed;\n        width: 100%;\n        height: 100vh;\n        background-color: rgba(0, 0, 0, 0.9);\n        z-index: 30;\n        top: 0;\n    }\n.media-crousal[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n        height: 300px;\n        border-radius: 5px;\n        width: 40%;\n        margin-left: 30%;\n        position: absolute;\n        top: 25vh;\n        background-color: white;\n    }\n.pop-crousal[_ngcontent-%COMP%]{\n        overflow-y: hidden;\n        scroll-behavior: smooth;\n        overflow-x: scroll;\n        white-space: nowrap !important;\n        display: inline-block;\n        -webkit-overflow-scrolling: touch;\n        -ms-scroll-snap-type: x mandatory;\n            scroll-snap-type: x mandatory;\n        -ms-scroll-snap-destination: 0% 100%;\n            scroll-snap-destination: 0% 100%;\n        -ms-scroll-snap-points-x: repeat(100%);\n            scroll-snap-points-x: repeat(100%); \n        height: 300px;\n        width: 40%;\n        margin-left: 30%;\n        margin-top: 25vh;\n    }\n.pop-crousal[_ngcontent-%COMP%]::-webkit-scrollbar{\n        display: none;\n    }\n.crousal-element[_ngcontent-%COMP%]{\n        text-align: center;\n        height: 300px;\n        width: 100%;\n        position: relative;\n        scroll-snap-align: start;\n        display: inline-block;\n        border-radius: 5px;\n    }\n.crousal-element[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n        height: 300px;\n        border-radius: 5px;\n        background-color: white;   \n    }\n.close[_ngcontent-%COMP%]{\n        position: absolute;\n        height: 40px;\n        width: 40px;\n        top: 3%;\n        right: 3%;\n    }\n.close[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n        height: 30px;\n        width: 30px;\n        transition: 0.3s ease-in-out;\n    }\n.close[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]:hover{\n        -webkit-transform: scale(1.1);\n                transform: scale(1.1);\n    }\n.larrow[_ngcontent-%COMP%]{\n        position: absolute;\n        height: 40px;\n        width: 40px;\n        top: 50vh;\n        left: 3%;\n    }\n.larrow[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n        height: 30px;\n        width: 30px;\n        transition: 0.3s ease-in-out;\n    }\n.larrow[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]:hover{\n        -webkit-transform: scale(1.1);\n                transform: scale(1.1);\n    }\n.rarrow[_ngcontent-%COMP%]{\n        position: absolute;\n        height: 40px;\n        width: 40px;\n        top: 50vh;\n        right: 3%;\n    }\n.rarrow[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n        height: 30px;\n        width: 30px;\n        transition: 0.3s ease-in-out;\n    }\n.rarrow[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]:hover{\n        -webkit-transform: scale(1.1);\n                transform: scale(1.1);\n    }"];
 exports.styles = styles;
 
 
@@ -9894,24 +9932,45 @@ var i7 = __webpack_require__(/*! @angular/common */ "@angular/common");
 var i8 = __webpack_require__(/*! @angular/router */ "@angular/router");
 var i9 = __webpack_require__(/*! ./teamprofile.component */ "./src/app/profile/teamprofile/teamprofile.component.ts");
 var i10 = __webpack_require__(/*! ../../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
+var i11 = __webpack_require__(/*! ../../shared/services/time.service */ "./src/app/shared/services/time.service.ts");
+var i12 = __webpack_require__(/*! ../../shared/services/location.service */ "./src/app/shared/services/location.service.ts");
 var styles_TeamprofileComponent = [i0.styles];
 var RenderType_TeamprofileComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_TeamprofileComponent, data: {} });
 exports.RenderType_TeamprofileComponent = RenderType_TeamprofileComponent;
-function View_TeamprofileComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "div", [["class", "mediabox"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 0, "img", [], [[8, "src", 4]], null, null, null, null))], null, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.url, ""); _ck(_v, 1, 0, currVal_0); }); }
-function View_TeamprofileComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-header", [], null, [["window", "resize"]], function (_v, en, $event) { var ad = true; if (("window:resize" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 1).onresize() !== false);
+function View_TeamprofileComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "div", [["class", "mediabox"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 0, "img", [], [[8, "src", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.imageopen(_v.context.$implicit.url) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, i2.View_HeaderComponent_0, i2.RenderType_HeaderComponent)), i1.ɵdid(1, 4308992, null, 0, i3.HeaderComponent, [i4.PropertyService, i5.InteractionService, i6.CookieService], null, null), (_l()(), i1.ɵeld(2, 0, null, null, 110, "div", [["class", "outer-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 12, "div", [["class", "profile-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 1, "div", [["class", "background-img"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 0, "img", [["alt", ""], ["onerror", "this.src='assets/images/sportsocialteambgerror.jpg'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 1, "div", [["class", "team-img"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 0, "img", [["alt", ""]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 7, "div", [["class", "team-info"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 2, "div", [["class", "name"]], null, null, null, null, null)), (_l()(), i1.ɵeld(10, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(11, null, ["", ""])), (_l()(), i1.ɵeld(12, 0, null, null, 2, "div", [["class", "follow"]], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Follow"])), (_l()(), i1.ɵeld(15, 0, null, null, 0, "img", [["alt", ""], ["src", "assets/images/sportsocialchat.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(16, 0, null, null, 19, "div", [["class", "sub-header"]], null, null, null, null, null)), (_l()(), i1.ɵeld(17, 0, null, null, 0, "img", [["alt", ""], ["class", "profile-pic"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(18, 0, null, null, 8, "div", [["class", "fans"]], null, null, null, null, null)), (_l()(), i1.ɵeld(19, 0, null, null, 3, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Fans"])), (_l()(), i1.ɵeld(21, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Members"])), (_l()(), i1.ɵeld(23, 0, null, null, 3, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(24, null, ["", ""])), (_l()(), i1.ɵeld(25, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(26, null, ["", ""])), (_l()(), i1.ɵeld(27, 0, null, null, 4, "div", [["class", "sub-name"]], null, null, null, null, null)), (_l()(), i1.ɵeld(28, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(29, null, ["", ""])), (_l()(), i1.ɵeld(30, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(31, null, ["@", ""])), (_l()(), i1.ɵeld(32, 0, null, null, 2, "div", [["class", "sub-follow"]], null, null, null, null, null)), (_l()(), i1.ɵeld(33, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Follow"])), (_l()(), i1.ɵeld(35, 0, null, null, 0, "img", [["alt", ""], ["class", "sub-follow-img"], ["src", "assets/images/sportsocialchat.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(36, 0, null, null, 61, "div", [["class", "side-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(37, 0, null, null, 60, "div", [["class", "stick"]], null, null, null, null, null)), (_l()(), i1.ɵeld(38, 0, null, null, 8, "div", [["class", "followers"]], null, null, null, null, null)), (_l()(), i1.ɵeld(39, 0, null, null, 3, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Members"])), (_l()(), i1.ɵeld(41, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Fans"])), (_l()(), i1.ɵeld(43, 0, null, null, 3, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(44, null, ["\u00A0", ""])), (_l()(), i1.ɵeld(45, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(46, null, ["", ""])), (_l()(), i1.ɵeld(47, 0, null, null, 0, "div", [["class", "stick-div"]], null, null, null, null, null)), (_l()(), i1.ɵeld(48, 0, null, null, 40, "div", [["class", "basic-info"]], null, null, null, null, null)), (_l()(), i1.ɵeld(49, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Basic Info"])), (_l()(), i1.ɵeld(51, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(52, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(53, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialcaptain.png"], ["style", "width: 40px;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(54, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(55, null, ["", ""])), (_l()(), i1.ɵeld(56, 0, null, null, 7, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(57, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(58, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialPartnerships.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(59, 0, null, null, 2, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(60, null, ["", "..."])), i1.ɵpid(0, i7.SlicePipe, []), (_l()(), i1.ɵeld(62, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(63, null, ["", ""])), (_l()(), i1.ɵeld(64, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(65, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(66, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialopenforall.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(67, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(68, null, ["", ""])), (_l()(), i1.ɵeld(69, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(70, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(71, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialagegroup.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(72, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(73, null, ["", ""])), (_l()(), i1.ɵeld(74, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(75, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(76, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialmale.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(77, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(78, null, ["", "", ""])), (_l()(), i1.ɵeld(79, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(80, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(81, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialteamprofilelocation.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(82, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(83, null, ["", ""])), (_l()(), i1.ɵeld(84, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(85, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(86, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialteamprofilelocation.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(87, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(88, null, ["", ""])), (_l()(), i1.ɵeld(89, 0, null, null, 8, "div", [["class", "media"]], null, null, null, null, null)), (_l()(), i1.ɵeld(90, 0, null, null, 5, "div", [["class", "head"]], null, null, null, null, null)), (_l()(), i1.ɵeld(91, 0, null, null, 1, "h4", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Media"])), (_l()(), i1.ɵeld(93, 0, null, null, 2, "a", [], null, null, null, null, null)), (_l()(), i1.ɵeld(94, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["See all"])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_TeamprofileComponent_1)), i1.ɵdid(97, 278528, null, 0, i7.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(98, 0, null, null, 14, "div", [["class", "normal-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(99, 0, null, null, 6, "a", [["routerLinkActive", "active"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 100).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+    } return ad; }, null, null))], null, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.url, ""); _ck(_v, 1, 0, currVal_0); }); }
+function View_TeamprofileComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, [[2, 0], ["widgetsContent", 1]], null, 1, "div", [["class", "crousal-element"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 0, "img", [["alt", ""]], [[8, "src", 4]], null, null, null, null))], null, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.url, ""); _ck(_v, 1, 0, currVal_0); }); }
+function View_TeamprofileComponent_0(_l) { return i1.ɵvid(0, [i1.ɵqud(402653184, 1, { widgets: 0 }), i1.ɵqud(671088640, 2, { widgetsContent: 0 }), (_l()(), i1.ɵeld(2, 0, null, null, 1, "sports-social-header", [], null, [["window", "resize"]], function (_v, en, $event) { var ad = true; if (("window:resize" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 3).onresize() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(100, 671744, [[2, 4]], 0, i8.RouterLinkWithHref, [i8.Router, i8.ActivatedRoute, i7.LocationStrategy], { queryParams: [0, "queryParams"], routerLink: [1, "routerLink"] }, null), i1.ɵpod(101, { teamid: 0 }), i1.ɵdid(102, 1720320, null, 2, i8.RouterLinkActive, [i8.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 1, { links: 1 }), i1.ɵqud(603979776, 2, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["About"])), (_l()(), i1.ɵeld(106, 0, null, null, 6, "a", [["routerLinkActive", "active"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 107).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+    } return ad; }, i2.View_HeaderComponent_0, i2.RenderType_HeaderComponent)), i1.ɵdid(3, 4308992, null, 0, i3.HeaderComponent, [i4.PropertyService, i5.InteractionService, i6.CookieService], null, null), (_l()(), i1.ɵeld(4, 0, null, null, 109, "div", [["class", "outer-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 12, "div", [["class", "profile-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 1, "div", [["class", "background-img"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 0, "img", [["alt", ""], ["onerror", "this.src='assets/images/sportsocialteambgerror.jpg'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 1, "div", [["class", "team-img"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 0, "img", [["alt", ""]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(10, 0, null, null, 7, "div", [["class", "team-info"]], null, null, null, null, null)), (_l()(), i1.ɵeld(11, 0, null, null, 2, "div", [["class", "name"]], null, null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(13, null, ["", ""])), (_l()(), i1.ɵeld(14, 0, null, null, 2, "div", [["class", "follow"]], null, null, null, null, null)), (_l()(), i1.ɵeld(15, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Follow"])), (_l()(), i1.ɵeld(17, 0, null, null, 0, "img", [["alt", ""], ["src", "assets/images/sportsocialchat.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(18, 0, null, null, 19, "div", [["class", "sub-header"]], null, null, null, null, null)), (_l()(), i1.ɵeld(19, 0, null, null, 0, "img", [["alt", ""], ["class", "profile-pic"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(20, 0, null, null, 8, "div", [["class", "fans"]], null, null, null, null, null)), (_l()(), i1.ɵeld(21, 0, null, null, 3, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Fans"])), (_l()(), i1.ɵeld(23, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Members"])), (_l()(), i1.ɵeld(25, 0, null, null, 3, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(26, null, ["", ""])), (_l()(), i1.ɵeld(27, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(28, null, ["", ""])), (_l()(), i1.ɵeld(29, 0, null, null, 4, "div", [["class", "sub-name"]], null, null, null, null, null)), (_l()(), i1.ɵeld(30, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(31, null, ["", ""])), (_l()(), i1.ɵeld(32, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(33, null, ["@", ""])), (_l()(), i1.ɵeld(34, 0, null, null, 2, "div", [["class", "sub-follow"]], null, null, null, null, null)), (_l()(), i1.ɵeld(35, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Follow"])), (_l()(), i1.ɵeld(37, 0, null, null, 0, "img", [["alt", ""], ["class", "sub-follow-img"], ["src", "assets/images/sportsocialchat.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(38, 0, null, null, 60, "div", [["class", "side-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(39, 0, null, null, 59, "div", [["class", "stick"]], null, null, null, null, null)), (_l()(), i1.ɵeld(40, 0, null, null, 8, "div", [["class", "followers"]], null, null, null, null, null)), (_l()(), i1.ɵeld(41, 0, null, null, 3, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Members"])), (_l()(), i1.ɵeld(43, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Fans"])), (_l()(), i1.ɵeld(45, 0, null, null, 3, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(46, null, ["\u00A0", ""])), (_l()(), i1.ɵeld(47, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(48, null, ["", ""])), (_l()(), i1.ɵeld(49, 0, null, null, 40, "div", [["class", "basic-info"]], null, null, null, null, null)), (_l()(), i1.ɵeld(50, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Basic Info"])), (_l()(), i1.ɵeld(52, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(53, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(54, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialcaptain.png"], ["style", "width: 40px;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(55, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(56, null, ["", ""])), (_l()(), i1.ɵeld(57, 0, null, null, 7, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(58, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(59, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialPartnerships.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(60, 0, null, null, 2, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(61, null, ["", "..."])), i1.ɵpid(0, i7.SlicePipe, []), (_l()(), i1.ɵeld(63, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(64, null, ["", ""])), (_l()(), i1.ɵeld(65, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(66, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(67, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialopenforall.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(68, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(69, null, ["", ""])), (_l()(), i1.ɵeld(70, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(71, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(72, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialagegroup.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(73, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(74, null, ["", ""])), (_l()(), i1.ɵeld(75, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(76, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(77, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialmale.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(78, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(79, null, ["", "", ""])), (_l()(), i1.ɵeld(80, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(81, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(82, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialteamprofilelocation.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(83, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(84, null, ["", ""])), (_l()(), i1.ɵeld(85, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(86, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(87, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialteamprofilelocation.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(88, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(89, null, ["", ""])), (_l()(), i1.ɵeld(90, 0, null, null, 8, "div", [["class", "media"]], null, null, null, null, null)), (_l()(), i1.ɵeld(91, 0, null, null, 5, "div", [["class", "head"]], null, null, null, null, null)), (_l()(), i1.ɵeld(92, 0, null, null, 1, "h4", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Media"])), (_l()(), i1.ɵeld(94, 0, null, null, 2, "a", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.opencrousal() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(107, 671744, [[4, 4]], 0, i8.RouterLinkWithHref, [i8.Router, i8.ActivatedRoute, i7.LocationStrategy], { queryParams: [0, "queryParams"], routerLink: [1, "routerLink"] }, null), i1.ɵpod(108, { teamid: 0 }), i1.ɵdid(109, 1720320, null, 2, i8.RouterLinkActive, [i8.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 3, { links: 1 }), i1.ɵqud(603979776, 4, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Matches"])), (_l()(), i1.ɵeld(113, 16777216, null, null, 1, "router-outlet", [], null, null, null, null, null)), i1.ɵdid(114, 212992, null, 0, i8.RouterOutlet, [i8.ChildrenOutletContexts, i1.ViewContainerRef, i1.ComponentFactoryResolver, [8, null], i1.ChangeDetectorRef], null, null)], function (_ck, _v) { var _co = _v.component; _ck(_v, 1, 0); var currVal_19 = _co.media; _ck(_v, 97, 0, currVal_19); var currVal_22 = _ck(_v, 101, 0, _co.teamid); var currVal_23 = i1.ɵinlineInterpolate(1, "/teamprofile/", _co.routename, "/About"); _ck(_v, 100, 0, currVal_22, currVal_23); var currVal_24 = "active"; _ck(_v, 102, 0, currVal_24); var currVal_27 = _ck(_v, 108, 0, _co.teamid); var currVal_28 = i1.ɵinlineInterpolate(1, "/teamprofile/", _co.routename, "/Matches"); _ck(_v, 107, 0, currVal_27, currVal_28); var currVal_29 = "active"; _ck(_v, 109, 0, currVal_29); _ck(_v, 114, 0); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = i1.ɵinlineInterpolate(1, "", _co.backgroundimage, ""); _ck(_v, 5, 0, currVal_0); var currVal_1 = i1.ɵinlineInterpolate(1, "", _co.profileimage, ""); _ck(_v, 7, 0, currVal_1); var currVal_2 = _co.name; _ck(_v, 11, 0, currVal_2); var currVal_3 = i1.ɵinlineInterpolate(1, "", _co.profileimage, ""); _ck(_v, 17, 0, currVal_3); var currVal_4 = _co.fancount; _ck(_v, 24, 0, currVal_4); var currVal_5 = _co.membercount; _ck(_v, 26, 0, currVal_5); var currVal_6 = _co.name; _ck(_v, 29, 0, currVal_6); var currVal_7 = _co.teamusername; _ck(_v, 31, 0, currVal_7); var currVal_8 = _co.membercount; _ck(_v, 44, 0, currVal_8); var currVal_9 = _co.fancount; _ck(_v, 46, 0, currVal_9); var currVal_10 = _co.captain; _ck(_v, 55, 0, currVal_10); var currVal_11 = i1.ɵunv(_v, 60, 0, i1.ɵnov(_v, 61).transform(_co.mantra, 0, 25)); _ck(_v, 60, 0, currVal_11); var currVal_12 = _co.mantra; _ck(_v, 63, 0, currVal_12); var currVal_13 = _co.teamstatus; _ck(_v, 68, 0, currVal_13); var currVal_14 = _co.teamtypestatus; _ck(_v, 73, 0, currVal_14); var currVal_15 = _co.gender; var currVal_16 = _co.gamename; _ck(_v, 78, 0, currVal_15, currVal_16); var currVal_17 = _co.location; _ck(_v, 83, 0, currVal_17); var currVal_18 = _co.challenge; _ck(_v, 88, 0, currVal_18); var currVal_20 = i1.ɵnov(_v, 100).target; var currVal_21 = i1.ɵnov(_v, 100).href; _ck(_v, 99, 0, currVal_20, currVal_21); var currVal_25 = i1.ɵnov(_v, 107).target; var currVal_26 = i1.ɵnov(_v, 107).href; _ck(_v, 106, 0, currVal_25, currVal_26); }); }
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(95, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["See all"])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_TeamprofileComponent_1)), i1.ɵdid(98, 278528, null, 0, i7.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(99, 0, null, null, 14, "div", [["class", "normal-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(100, 0, null, null, 6, "a", [["routerLinkActive", "active"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 101).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), i1.ɵdid(101, 671744, [[4, 4]], 0, i8.RouterLinkWithHref, [i8.Router, i8.ActivatedRoute, i7.LocationStrategy], { queryParams: [0, "queryParams"], routerLink: [1, "routerLink"] }, null), i1.ɵpod(102, { teamid: 0 }), i1.ɵdid(103, 1720320, null, 2, i8.RouterLinkActive, [i8.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 3, { links: 1 }), i1.ɵqud(603979776, 4, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["About"])), (_l()(), i1.ɵeld(107, 0, null, null, 6, "a", [["routerLinkActive", "active"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 108).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), i1.ɵdid(108, 671744, [[6, 4]], 0, i8.RouterLinkWithHref, [i8.Router, i8.ActivatedRoute, i7.LocationStrategy], { queryParams: [0, "queryParams"], routerLink: [1, "routerLink"] }, null), i1.ɵpod(109, { teamid: 0 }), i1.ɵdid(110, 1720320, null, 2, i8.RouterLinkActive, [i8.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 5, { links: 1 }), i1.ɵqud(603979776, 6, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Matches"])), (_l()(), i1.ɵeld(114, 0, null, null, 10, "div", [["class", "media-crousal"]], null, null, null, null, null)), (_l()(), i1.ɵeld(115, 0, null, null, 0, "img", [["alt", ""], ["class", "single-image"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(116, 0, null, null, 1, "div", [["class", "close"]], null, null, null, null, null)), (_l()(), i1.ɵeld(117, 0, null, null, 0, "img", [["src", "/assets/images/sportsocialprofileclose.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.close() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(118, 0, null, null, 1, "div", [["class", "larrow"]], null, null, null, null, null)), (_l()(), i1.ɵeld(119, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialprofilerightarrow.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.lscroll() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(120, 0, null, null, 1, "div", [["class", "rarrow"]], null, null, null, null, null)), (_l()(), i1.ɵeld(121, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialprofileleftarrow.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.rscroll() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(122, 0, [[1, 0], ["widgets", 1]], null, 2, "div", [["class", "pop-crousal"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_TeamprofileComponent_2)), i1.ɵdid(124, 278528, null, 0, i7.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(125, 16777216, null, null, 1, "router-outlet", [], null, null, null, null, null)), i1.ɵdid(126, 212992, null, 0, i8.RouterOutlet, [i8.ChildrenOutletContexts, i1.ViewContainerRef, i1.ComponentFactoryResolver, [8, null], i1.ChangeDetectorRef], null, null)], function (_ck, _v) { var _co = _v.component; _ck(_v, 3, 0); var currVal_19 = _co.media; _ck(_v, 98, 0, currVal_19); var currVal_22 = _ck(_v, 102, 0, _co.teamid); var currVal_23 = i1.ɵinlineInterpolate(1, "/teamprofile/", _co.routename, "/About"); _ck(_v, 101, 0, currVal_22, currVal_23); var currVal_24 = "active"; _ck(_v, 103, 0, currVal_24); var currVal_27 = _ck(_v, 109, 0, _co.teamid); var currVal_28 = i1.ɵinlineInterpolate(1, "/teamprofile/", _co.routename, "/Matches"); _ck(_v, 108, 0, currVal_27, currVal_28); var currVal_29 = "active"; _ck(_v, 110, 0, currVal_29); var currVal_31 = _co.media; _ck(_v, 124, 0, currVal_31); _ck(_v, 126, 0); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = i1.ɵinlineInterpolate(1, "", _co.backgroundimage, ""); _ck(_v, 7, 0, currVal_0); var currVal_1 = i1.ɵinlineInterpolate(1, "", _co.profileimage, ""); _ck(_v, 9, 0, currVal_1); var currVal_2 = _co.name; _ck(_v, 13, 0, currVal_2); var currVal_3 = i1.ɵinlineInterpolate(1, "", _co.profileimage, ""); _ck(_v, 19, 0, currVal_3); var currVal_4 = _co.fancount; _ck(_v, 26, 0, currVal_4); var currVal_5 = _co.membercount; _ck(_v, 28, 0, currVal_5); var currVal_6 = _co.name; _ck(_v, 31, 0, currVal_6); var currVal_7 = _co.teamusername; _ck(_v, 33, 0, currVal_7); var currVal_8 = _co.membercount; _ck(_v, 46, 0, currVal_8); var currVal_9 = _co.fancount; _ck(_v, 48, 0, currVal_9); var currVal_10 = _co.captain; _ck(_v, 56, 0, currVal_10); var currVal_11 = i1.ɵunv(_v, 61, 0, i1.ɵnov(_v, 62).transform(_co.mantra, 0, 25)); _ck(_v, 61, 0, currVal_11); var currVal_12 = _co.mantra; _ck(_v, 64, 0, currVal_12); var currVal_13 = _co.teamstatus; _ck(_v, 69, 0, currVal_13); var currVal_14 = _co.teamtypestatus; _ck(_v, 74, 0, currVal_14); var currVal_15 = _co.gender; var currVal_16 = _co.gamename; _ck(_v, 79, 0, currVal_15, currVal_16); var currVal_17 = _co.location; _ck(_v, 84, 0, currVal_17); var currVal_18 = _co.challenge; _ck(_v, 89, 0, currVal_18); var currVal_20 = i1.ɵnov(_v, 101).target; var currVal_21 = i1.ɵnov(_v, 101).href; _ck(_v, 100, 0, currVal_20, currVal_21); var currVal_25 = i1.ɵnov(_v, 108).target; var currVal_26 = i1.ɵnov(_v, 108).href; _ck(_v, 107, 0, currVal_25, currVal_26); var currVal_30 = i1.ɵinlineInterpolate(1, "", _co.crousalsingleimage, ""); _ck(_v, 115, 0, currVal_30); }); }
 exports.View_TeamprofileComponent_0 = View_TeamprofileComponent_0;
-function View_TeamprofileComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-teamprofile", [], null, null, null, View_TeamprofileComponent_0, RenderType_TeamprofileComponent)), i1.ɵdid(1, 245760, null, 0, i9.TeamprofileComponent, [i8.ActivatedRoute, i10.PostService], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+function View_TeamprofileComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-teamprofile", [], null, [["document", "keyup"]], function (_v, en, $event) { var ad = true; if (("document:keyup" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 1).handleDeleteKeyboardEvent($event) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, View_TeamprofileComponent_0, RenderType_TeamprofileComponent)), i1.ɵdid(1, 245760, null, 0, i9.TeamprofileComponent, [i8.ActivatedRoute, i10.PostService, i11.TimeService, i12.LocationService], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_TeamprofileComponent_Host_0 = View_TeamprofileComponent_Host_0;
-var TeamprofileComponentNgFactory = i1.ɵccf("sports-social-teamprofile", i9.TeamprofileComponent, View_TeamprofileComponent_Host_0, { teamcaption: "teamcaption" }, {}, []);
+var TeamprofileComponentNgFactory = i1.ɵccf("sports-social-teamprofile", i9.TeamprofileComponent, View_TeamprofileComponent_Host_0, { members: "members", upcoming: "upcoming", past: "past", description: "description" }, {}, []);
 exports.TeamprofileComponentNgFactory = TeamprofileComponentNgFactory;
 
 
@@ -9927,14 +9986,18 @@ exports.TeamprofileComponentNgFactory = TeamprofileComponentNgFactory;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
+var location_service_1 = __webpack_require__(/*! ./../../shared/services/location.service */ "./src/app/shared/services/location.service.ts");
 var post_service_1 = __webpack_require__(/*! ../../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
 var router_1 = __webpack_require__(/*! @angular/router */ "@angular/router");
 var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var time_service_1 = __webpack_require__(/*! ../../shared/services/time.service */ "./src/app/shared/services/time.service.ts");
 var TeamprofileComponent = /** @class */ (function () {
-    function TeamprofileComponent(route, PostService) {
+    function TeamprofileComponent(route, PostService, time, getlocation) {
         var _this = this;
         this.route = route;
         this.PostService = PostService;
+        this.time = time;
+        this.getlocation = getlocation;
         this.teamid = "611";
         this.media = [];
         this.captain = [];
@@ -9951,16 +10014,35 @@ var TeamprofileComponent = /** @class */ (function () {
             { id: 56, title: 'Table Tennis' },
             { id: 60, title: 'Volleyball' }
         ];
-        this.sideshell = document.getElementsByClassName('stick-div');
+        this.timestamp = Math.floor(Date.now() / 1000);
+        this.count = 0;
+        this.arr = [];
+        this.show = false;
+        this.crousallist = [];
+        this.leftarrow = document.getElementsByClassName('larrow');
+        this.rightarrow = document.getElementsByClassName('rarrow');
+        this.showcrousal = document.getElementsByClassName('media-crousal');
+        this.singleimage = document.getElementsByClassName('single-image');
+        this.crousal = document.getElementsByClassName('crousal-element');
+        this.followerstab = document.getElementsByClassName('followers');
+        this.sideshellposition = document.getElementsByClassName('side-shell');
         this.opensubheader = document.getElementsByClassName('sub-header');
+        this.members = [];
+        this.upcoming = [];
+        this.past = [];
+        this.description = false;
         this.scroll = function () {
             if (window.pageYOffset > 370) {
                 _this.opensubheader[0].style.display = "block";
-                _this.sideshell[0].style.display = "block";
+                _this.followerstab[0].style.display = "none";
+                _this.sideshellposition[0].style.position = "fixed";
+                _this.sideshellposition[0].style.top = "130px";
             }
             else {
-                _this.sideshell[0].style.display = "none";
+                _this.sideshellposition[0].style.top = "0";
+                _this.followerstab[0].style.display = "block";
                 _this.opensubheader[0].style.display = "none";
+                _this.sideshellposition[0].style.position = "relative";
             }
         };
     }
@@ -9968,20 +10050,41 @@ var TeamprofileComponent = /** @class */ (function () {
         var timestamp = Date.now();
         var page = 1;
         this.PostService.getFan("119", this.teamid, timestamp, page).subscribe(function (res) {
-            console.log(res);
+            // console.log(res);
         });
     };
     TeamprofileComponent.prototype.getMembers = function () {
-        var timestamp = Date.now();
+        var _this = this;
+        var captainstatus, timestamp = Date.now();
         timestamp = timestamp / 1000;
+        captainstatus = false;
         this.PostService.getMembers(this.teamid, "119", timestamp).subscribe(function (res) {
             console.log(res);
+            for (var i = 0; i < _this.membercount; i++) {
+                if (res[i].UserId === _this.captainuserid) {
+                    captainstatus = true;
+                    console.log("matched");
+                }
+                else {
+                    captainstatus = false;
+                }
+                // console.log(captainstatus);
+                _this.members.push({
+                    captain: captainstatus,
+                    firstname: res[i].FirstName,
+                    lastname: res[i].LastName,
+                    uniquename: res[i].UniqueName,
+                    userid: res[i].UserId,
+                    profilepic: res[i].Profile_pic,
+                    username: res[i].User_Name
+                });
+            }
+            console.log(_this.members);
         });
     };
     TeamprofileComponent.prototype.getTeamData = function () {
         var _this = this;
         this.PostService.TeamProfile("99999", this.teamid).subscribe(function (res) {
-            _this.teamcaption = res["Details"].CaptainUserName;
             _this.backgroundimage = res["Details"].Cover_Photo;
             _this.profileimage = res["Details"].Profile_Photo;
             _this.name = res["Details"].TeamName;
@@ -9992,6 +10095,7 @@ var TeamprofileComponent = /** @class */ (function () {
             _this.captain = res["Details"].CaptainUserName;
             _this.mantra = res["Details"].slogan;
             _this.teamcategory = res["Details"].TeamCategory;
+            _this.captainuserid = res["Details"].CaptainUserId;
             switch (_this.teamcategory) {
                 case -1:
                     _this.teamstatus = "Open For All";
@@ -10049,6 +10153,9 @@ var TeamprofileComponent = /** @class */ (function () {
             if (res["Details"].Gender.toLowerCase() === "female") {
                 _this.gender = "Women's ";
             }
+            if (res["Details"].Description.length != 0) {
+                _this.description = res["Details"].Description;
+            }
             for (var i = 0; i < _this.sports.length; i++) {
                 if (_this.sports[i].id === res["Details"].GameId) {
                     _this.gamename = _this.sports[i].title;
@@ -10060,15 +10167,215 @@ var TeamprofileComponent = /** @class */ (function () {
                     url: res["Images"][i].Path
                 });
             }
+            _this.getmatches(res["Details"].GameId);
         });
+    };
+    TeamprofileComponent.prototype.getmatches = function (id) {
+        var _this = this;
+        var temp, checkstat, checkstat2, upcoming = false;
+        var finished, agebracket, age;
+        this.getlocation.getGeoLocation().then(function (pos) {
+            _this.PostService.homeMatchFeed(pos['latitude'], pos['longitude'], id, _this.timestamp)
+                .subscribe(function (data) {
+                _this.show = true;
+                _this.count = _this.count + 1;
+                for (var i in data["Feed"]) {
+                    var tempimg;
+                    if (data["Feed"][i].Team2name === null) {
+                        tempimg = "/assets/images/sportsocialteamlogo.png";
+                        data["Feed"][i].Team2name = "None";
+                    }
+                    else {
+                        tempimg = data["Feed"][i].Team2Pic;
+                    }
+                    temp = data["Feed"][i].gender;
+                    agebracket = data["Feed"][i].ageBracket;
+                    if (agebracket == 0) {
+                        age = "Under 13";
+                    }
+                    else if (agebracket == 1) {
+                        age = "Under 15";
+                    }
+                    else if (agebracket == 2) {
+                        age = "Under 17";
+                    }
+                    else if (agebracket == 3) {
+                        age = "Under 19";
+                    }
+                    else if (agebracket == 4) {
+                        age = "Under 21";
+                    }
+                    else if (agebracket == 5) {
+                        age = "Under 23";
+                    }
+                    else if (agebracket == -1) {
+                        age = "Open for All";
+                    }
+                    if (temp.toLowerCase() === "mix") {
+                        temp = "Mix up ";
+                    }
+                    else if (temp.toLowerCase() === "male") {
+                        temp = "Men's ";
+                    }
+                    else if (temp.toLowerCase() === "female") {
+                        temp = "Women's ";
+                    }
+                    var convertdate = new String(new Date(data["Feed"][i].startdatetime * 1000));
+                    _this.startTime = convertdate.slice(3, 21);
+                    checkstat = Date.now();
+                    checkstat = checkstat / 1000;
+                    checkstat2 = data["Feed"][i].startdatetime;
+                    if (checkstat > checkstat2) {
+                        if ((checkstat - checkstat2) > 86400) {
+                            if (data["Feed"][i].scoreTeam1 === null || data["Feed"][i].scoreTeam2 === null) {
+                                _this.startTime = "Score Awaited";
+                                finished = false;
+                            }
+                            if (data["Feed"][i].Team2name === null) {
+                                _this.startTime = "Match Abandoned";
+                                finished = false;
+                            }
+                        }
+                        else {
+                            if (data["Feed"][i].scoreTeam1 === null || data["Feed"][i].scoreTeam2 === null) {
+                                _this.startTime = "Score Awaited";
+                                finished = false;
+                            }
+                        }
+                    }
+                    if (checkstat === checkstat2 || checkstat < checkstat2) {
+                        _this.startTime = "Upcoming";
+                        finished = false;
+                        upcoming = true;
+                    }
+                    if (data["Feed"][i].scoreTeam1 !== null && data["Feed"][i].scoreTeam2 !== null) {
+                        finished = true;
+                        _this.startTime = "Match Finished";
+                    }
+                    if (_this.startTime === "Upcoming") {
+                        _this.upcoming.push({
+                            feedid: data["Feed"][i].feedid,
+                            Activity_name: data["Feed"][i].Activity_name,
+                            userName: data["Feed"][i].user_name,
+                            Uniquename: data["Feed"][i].MatchStarterUniqueName == null ? "" : data["Feed"][i].MatchStarterUniqueName,
+                            MatchStarterUniqueName: data["Feed"][i].MatchStarterUniqueName == null ? "" : data["Feed"][i].MatchStarterUniqueName,
+                            finished: finished,
+                            upcoming: upcoming,
+                            timestamp: data["Feed"][i].startdatetime,
+                            result: data["Feed"][i].scoreTeam1 == null || data["Feed"][i].scoreTeam2 == null ? _this.time.ExactDate(data["Feed"][i].startdatetime) : 'Match Finished',
+                            InsertedDate: data["Feed"][i].InsertedDate,
+                            profile_image: data["Feed"][i].profile_image,
+                            Venue_Name: data["Feed"][i].Venue_Name,
+                            EventText: data["Feed"][i].EventText,
+                            startdatetime: _this.startTime,
+                            starttimestamp: data["Feed"][i].startdatatime,
+                            gamename: data["Feed"][i].GameName,
+                            GameId: data["Feed"][i].GameId,
+                            Event_Image: data["Feed"][i].Event_Image,
+                            coverpic: data["Feed"][i].CoverPic,
+                            MatchStarterName: data["Feed"][i].MatchStarterName,
+                            MatchStarterPhoto: data["Feed"][i].MatchStarterPhoto,
+                            Team1Name: data["Feed"][i].Team1name,
+                            Team1Pic: data["Feed"][i].Team1Pic,
+                            Team2Name: data["Feed"][i].Team2name,
+                            Team2Pic: tempimg,
+                            scoreTeam1: data["Feed"][i].scoreTeam1 == null || data["Feed"][i].scoreTeam2 == null ? '' : data["Feed"][i].scoreTeam1 + ' - ',
+                            scoreTeam2: data["Feed"][i].scoreTeam2 == null || data["Feed"][i].scoreTeam1 == null ? 'VS' : data["Feed"][i].scoreTeam2,
+                            gender: temp,
+                            Profile_Photo: data["Feed"][i].Profile_Photo,
+                            city: data["Feed"][i].City,
+                            CommentCount: data["Feed"][i].CommentCount,
+                            PromoteCount: data["Feed"][i].PromoteCount,
+                            WatchCount: data["Feed"][i].WatchCount,
+                            JoineeCount: data["Feed"][i].JoineeCount,
+                            age: age
+                        });
+                    }
+                    else if (_this.startTime === "Match Finished") {
+                        _this.past.push({
+                            feedid: data["Feed"][i].feedid,
+                            Activity_name: data["Feed"][i].Activity_name,
+                            userName: data["Feed"][i].user_name,
+                            Uniquename: data["Feed"][i].MatchStarterUniqueName == null ? "" : data["Feed"][i].MatchStarterUniqueName,
+                            MatchStarterUniqueName: data["Feed"][i].MatchStarterUniqueName == null ? "" : data["Feed"][i].MatchStarterUniqueName,
+                            finished: finished,
+                            upcoming: upcoming,
+                            timestamp: data["Feed"][i].startdatetime,
+                            result: data["Feed"][i].scoreTeam1 == null || data["Feed"][i].scoreTeam2 == null ? _this.time.ExactDate(data["Feed"][i].startdatetime) : 'Match Finished',
+                            InsertedDate: data["Feed"][i].InsertedDate,
+                            profile_image: data["Feed"][i].profile_image,
+                            Venue_Name: data["Feed"][i].Venue_Name,
+                            EventText: data["Feed"][i].EventText,
+                            startdatetime: _this.startTime,
+                            starttimestamp: data["Feed"][i].startdatatime,
+                            gamename: data["Feed"][i].GameName,
+                            GameId: data["Feed"][i].GameId,
+                            Event_Image: data["Feed"][i].Event_Image,
+                            coverpic: data["Feed"][i].CoverPic,
+                            MatchStarterName: data["Feed"][i].MatchStarterName,
+                            MatchStarterPhoto: data["Feed"][i].MatchStarterPhoto,
+                            Team1Name: data["Feed"][i].Team1name,
+                            Team1Pic: data["Feed"][i].Team1Pic,
+                            Team2Name: data["Feed"][i].Team2name,
+                            Team2Pic: tempimg,
+                            scoreTeam1: data["Feed"][i].scoreTeam1 == null || data["Feed"][i].scoreTeam2 == null ? '' : data["Feed"][i].scoreTeam1 + ' - ',
+                            scoreTeam2: data["Feed"][i].scoreTeam2 == null || data["Feed"][i].scoreTeam1 == null ? 'VS' : data["Feed"][i].scoreTeam2,
+                            gender: temp,
+                            Profile_Photo: data["Feed"][i].Profile_Photo,
+                            city: data["Feed"][i].City,
+                            CommentCount: data["Feed"][i].CommentCount,
+                            PromoteCount: data["Feed"][i].PromoteCount,
+                            WatchCount: data["Feed"][i].WatchCount,
+                            JoineeCount: data["Feed"][i].JoineeCount,
+                            age: age
+                        });
+                    }
+                }
+            });
+        });
+    };
+    TeamprofileComponent.prototype.imageopen = function (url) {
+        this.crousalsingleimage = url;
+        this.showcrousal[0].style.display = "block";
+        this.crousal[0].style.display = "none";
+        this.leftarrow[0].style.display = "none";
+        this.rightarrow[0].style.display = "none";
+        this.singleimage[0].style.display = "block";
+    };
+    TeamprofileComponent.prototype.opencrousal = function () {
+        this.showcrousal[0].style.display = "block";
+        this.crousal[0].style.display = "block";
+        this.leftarrow[0].style.display = "block";
+        this.rightarrow[0].style.display = "block";
+        this.singleimage[0].style.display = "none";
+        // this.crousallist = this.media;
+    };
+    TeamprofileComponent.prototype.handleDeleteKeyboardEvent = function (event) {
+        if (event.key === 'ArrowLeft') {
+            this.lscroll();
+        }
+        if (event.key === 'ArrowRight') {
+            this.rscroll();
+        }
+        if (event.keyCode === 27) {
+            this.showcrousal[0].style.display = "none";
+        }
+    };
+    TeamprofileComponent.prototype.lscroll = function () {
+        console.log("working");
+        this.widgets.nativeElement.scrollLeft -= this.widgetsContent.nativeElement.clientWidth;
+    };
+    TeamprofileComponent.prototype.rscroll = function () {
+        console.log("working");
+        this.widgets.nativeElement.scrollLeft += this.widgetsContent.nativeElement.clientWidth;
+    };
+    TeamprofileComponent.prototype.close = function () {
+        this.showcrousal[0].style.display = "none";
     };
     TeamprofileComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.route.queryParams.subscribe(function (params) {
-            console.log("this is param ID of team", params);
-            // this.teamid = params['teamid'];
-            _this.teamid = params.teamid;
-            console.log(_this.teamid);
+            _this.teamid = params['teamid'];
         });
         this.route.params.subscribe(function (params) {
             _this.routename = params.name;
@@ -10104,7 +10411,7 @@ exports.TeamprofileComponent = TeamprofileComponent;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
-var styles = [""];
+var styles = [".body[_ngcontent-%COMP%]{\n    width: 75%;\n    height: auto;\n    min-height: 500px;\n    \n    margin-left: 25%;\n    vertical-align: top !important;\n    margin-top: .1%;\n}\n.gameFeed[_ngcontent-%COMP%]{\n    z-index: 10;\n    margin: 0px;\n    padding-left: 2%;\n    padding-right: 5%;\n}\n.game[_ngcontent-%COMP%]{\n    width: 90%;\n    height: 500px;\n    margin: 1%;\n    margin-top: 0%;\n    margin-left: 6%;\n    overflow: hidden;\n    overflow-x: scroll;\n    white-space: nowrap !important;\n    -ms-scroll-snap-type: mandatory;\n        scroll-snap-type: mandatory;\n    -ms-scroll-snap-points-x: repeat(25%);\n        scroll-snap-points-x: repeat(25%);\n    -ms-scroll-snap-type: x mandatory;\n        scroll-snap-type: x mandatory;\n    \n}\n.game[_ngcontent-%COMP%]::-webkit-scrollbar{\n  display: none;\n}\n.game[_ngcontent-%COMP%] { \n  overflow: auto;\n  -ms-overflow-style: none; \n  scrollbar-width: none;\n}\n.game[_ngcontent-%COMP%] { overflow: -moz-scrollbars-none; }\n.game[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{\n    display: inline-block;\n    width: 100%;\n    margin-top: 5%;\n    height: 400px; \n    scroll-snap-align: start;\n    overflow: hidden;\n}\n\n.gameCard[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{\n       margin: 5% 0% 0% 0%;\n       width: 30%;\n       float: left;\n       border-left: 2px solid #ababaa;\n  }\n.gameCard[_ngcontent-%COMP%] > h3[_ngcontent-%COMP%]{\n      color: #024770;\n      text-align: center;\n      margin-top: 5%;\n      font-size: 1.3em;\n  }\n.questions[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%]{\n      padding: 3%;\n      font-weight: bolder;\n  }\n.questions[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n      padding: 3%;\n      color: #ababaa;\n  }\n.style[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    height: 40px;\n    width: 40px;\n    font-weight: bolder; \n    border: 1px solid #024770;\n    border-radius: 50%;\n}\n.style[_ngcontent-%COMP%] > .left[_ngcontent-%COMP%]{\n    position: absolute;\n    top:19%;\n    left: 27%;\n    cursor: pointer; \n}\n.gameFeed[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]{\n    position: absolute;\n    top:19%;\n    right: 24%;\n    cursor: pointer;    \n}\n.backfooter[_ngcontent-%COMP%]{\n    width: 75%;\n    float: right;\n}"];
 exports.styles = styles;
 
 
@@ -10128,15 +10435,28 @@ exports.styles = styles;
 Object.defineProperty(exports, "__esModule", { value: true });
 var i0 = __webpack_require__(/*! ./userprofile-about.component.css.shim.ngstyle */ "./src/app/profile/userprofile/userprofile-about/userprofile-about.component.css.shim.ngstyle.js");
 var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
-var i2 = __webpack_require__(/*! ./userprofile-about.component */ "./src/app/profile/userprofile/userprofile-about/userprofile-about.component.ts");
+var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var i3 = __webpack_require__(/*! ../../../backfooter/backfooter.component.ngfactory */ "./src/app/backfooter/backfooter.component.ngfactory.js");
+var i4 = __webpack_require__(/*! ../../../backfooter/backfooter.component */ "./src/app/backfooter/backfooter.component.ts");
+var i5 = __webpack_require__(/*! ./userprofile-about.component */ "./src/app/profile/userprofile/userprofile-about/userprofile-about.component.ts");
+var i6 = __webpack_require__(/*! ../../../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
+var i7 = __webpack_require__(/*! ../userprofile.component */ "./src/app/profile/userprofile/userprofile.component.ts");
 var styles_UserprofileAboutComponent = [i0.styles];
 var RenderType_UserprofileAboutComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_UserprofileAboutComponent, data: {} });
 exports.RenderType_UserprofileAboutComponent = RenderType_UserprofileAboutComponent;
-function View_UserprofileAboutComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" userprofile-about works!\n"])), (_l()(), i1.ɵeld(2, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" userprofile-about works! "])), (_l()(), i1.ɵted(-1, null, [" v "])), (_l()(), i1.ɵeld(5, 0, null, null, 1, "var", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["v"])), (_l()(), i1.ɵeld(7, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" userprofile-about works! "])), (_l()(), i1.ɵeld(9, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" userprofile-about works! "])), (_l()(), i1.ɵeld(11, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" userprofile-about works! "]))], null, null); }
+function View_UserprofileAboutComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 4, "div", [["class", "questions"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "h4", [], null, null, null, null, null)), (_l()(), i1.ɵted(2, null, ["", ""])), (_l()(), i1.ɵeld(3, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(4, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.questiontext; _ck(_v, 2, 0, currVal_0); var currVal_1 = _v.context.$implicit.answer; _ck(_v, 4, 0, currVal_1); }); }
+function View_UserprofileAboutComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, [[2, 0], ["gameblock", 1]], null, 4, "div", [["class", "gameCard"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), i1.ɵted(2, null, ["", ""])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UserprofileAboutComponent_2)), i1.ɵdid(4, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var currVal_1 = _v.context.$implicit.gamedetails; _ck(_v, 4, 0, currVal_1); }, function (_ck, _v) { var currVal_0 = _v.context.$implicit.gamename; _ck(_v, 2, 0, currVal_0); }); }
+function View_UserprofileAboutComponent_0(_l) { return i1.ɵvid(0, [i1.ɵqud(402653184, 1, { game: 0 }), i1.ɵqud(671088640, 2, { gameblock: 0 }), (_l()(), i1.ɵeld(2, 0, null, null, 7, "body", [["class", "body"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 6, "div", [["class", "gameFeed"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 5, "div", [["class", "style"], ["style", "position:relative"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, [[1, 0], ["game", 1]], null, 2, "div", [["class", "game"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UserprofileAboutComponent_1)), i1.ɵdid(7, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(8, 0, null, null, 0, "img", [["class", "left"], ["src", "assets/images/sportsocialhomearrow1.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.leftScroll() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 0, "img", [["class", "right"], ["src", "assets/images/sportsocialhomearrow.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.rightScroll() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(10, 0, null, null, 2, "div", [["class", "backfooter"]], null, null, null, null, null)), (_l()(), i1.ɵeld(11, 0, null, null, 1, "sports-social-backfooter", [], null, null, null, i3.View_BackfooterComponent_0, i3.RenderType_BackfooterComponent)), i1.ɵdid(12, 114688, null, 0, i4.BackfooterComponent, [], null, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.array; _ck(_v, 7, 0, currVal_0); _ck(_v, 12, 0); }, null); }
 exports.View_UserprofileAboutComponent_0 = View_UserprofileAboutComponent_0;
-function View_UserprofileAboutComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-userprofile-about", [], null, null, null, View_UserprofileAboutComponent_0, RenderType_UserprofileAboutComponent)), i1.ɵdid(1, 114688, null, 0, i2.UserprofileAboutComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+function View_UserprofileAboutComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-userprofile-about", [], null, null, null, View_UserprofileAboutComponent_0, RenderType_UserprofileAboutComponent)), i1.ɵdid(1, 114688, null, 0, i5.UserprofileAboutComponent, [i6.PostService, i7.UserprofileComponent], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_UserprofileAboutComponent_Host_0 = View_UserprofileAboutComponent_Host_0;
-var UserprofileAboutComponentNgFactory = i1.ɵccf("sports-social-userprofile-about", i2.UserprofileAboutComponent, View_UserprofileAboutComponent_Host_0, {}, {}, []);
+var UserprofileAboutComponentNgFactory = i1.ɵccf("sports-social-userprofile-about", i5.UserprofileAboutComponent, View_UserprofileAboutComponent_Host_0, {}, {}, []);
 exports.UserprofileAboutComponentNgFactory = UserprofileAboutComponentNgFactory;
 
 
@@ -10153,10 +10473,90 @@ exports.UserprofileAboutComponentNgFactory = UserprofileAboutComponentNgFactory;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var post_service_1 = __webpack_require__(/*! ../../../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
+var userprofile_component_1 = __webpack_require__(/*! ../userprofile.component */ "./src/app/profile/userprofile/userprofile.component.ts");
 var UserprofileAboutComponent = /** @class */ (function () {
-    function UserprofileAboutComponent() {
+    function UserprofileAboutComponent(postservice, userprofileComponent) {
+        this.postservice = postservice;
+        this.userprofileComponent = userprofileComponent;
+        this.array = [];
+        this.temparray = [];
+        this.temparray2 = [];
     }
+    UserprofileAboutComponent.prototype.getUserid = function () {
+        this.paramUserid = this.userprofileComponent.userid;
+    };
+    UserprofileAboutComponent.prototype.getUserdetails = function () {
+        var _this = this;
+        var count = -1, tempname = null, count2 = 0;
+        var date = Math.floor(Date.now() / 1000);
+        var GameInterestgameid, Gamesquestionid, QuestionDataQuestiontext, answer, GameInterestgamename;
+        this.postservice.UserProfileAbout(this.paramUserid, this.paramUserid, 1, date).subscribe(function (res) {
+            for (var i = 0; i < res["GamesInterest"].length; i++) {
+                GameInterestgameid = res["GamesInterest"][i].gameid;
+                GameInterestgamename = res["GamesInterest"][i].gamename;
+                count2 = 0;
+                for (var j = 0; j < res["Games"].length; j++) {
+                    if (GameInterestgameid == res["Games"][j].Gameid) {
+                        for (var loop = 0; loop < res["Games"][j].QuestionData.length; loop++) {
+                            Gamesquestionid = res["Games"][j].QuestionData[loop].QuestionId;
+                            QuestionDataQuestiontext = res["Games"][j].QuestionData[loop].Questiontext;
+                            for (var k = 0; k < res["UserInterestDetails"].length; k++) {
+                                if (Gamesquestionid == res["UserInterestDetails"][k].QuestionId) {
+                                    answer = res["UserInterestDetails"][k].Answer;
+                                    if (answer.length == 0) {
+                                        break;
+                                    }
+                                    if (GameInterestgamename != tempname) {
+                                        _this.temparray2.push({
+                                            gamename: GameInterestgamename
+                                        });
+                                        count = count + 1;
+                                    }
+                                    tempname = GameInterestgamename;
+                                    count2 = count2 + 1;
+                                    _this.temparray.push({
+                                        gameid: GameInterestgameid,
+                                        gamename: res["GamesInterest"][i].gamename,
+                                        questiontext: QuestionDataQuestiontext,
+                                        Questionid: Gamesquestionid,
+                                        answer: answer
+                                    });
+                                    break;
+                                }
+                            }
+                        }
+                        if (count2 != 0) {
+                            _this.array.push({
+                                gamename: _this.temparray2[count].gamename.toUpperCase(),
+                                gamedetails: _this.temparray
+                            });
+                            console.log(_this.array);
+                        }
+                        else {
+                            _this.temparray = [];
+                        }
+                    }
+                }
+                // this.temparray.push({
+                //   gameid: GameInterestgameid,
+                //   gamename: res["GamesInterest"][i].gamename,
+                //   questiontext: QuestionDataQuestiontext,
+                //   Questionid: Gamesquestionid,
+                //   answer: answer
+                // });
+            }
+        });
+    };
+    UserprofileAboutComponent.prototype.leftScroll = function () {
+        this.game.nativeElement.scrollLeft -= this.gameblock.nativeElement.clientWidth;
+    };
+    UserprofileAboutComponent.prototype.rightScroll = function () {
+        this.game.nativeElement.scrollLeft += this.gameblock.nativeElement.clientWidth;
+    };
     UserprofileAboutComponent.prototype.ngOnInit = function () {
+        this.getUserid();
+        this.getUserdetails();
     };
     return UserprofileAboutComponent;
 }());
@@ -10181,7 +10581,7 @@ exports.UserprofileAboutComponent = UserprofileAboutComponent;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
-var styles = [""];
+var styles = ["*[_ngcontent-%COMP%]::-webkit-scrollbar{\n    display: none;\n}\n.About-body[_ngcontent-%COMP%]{\n    background-color: white;\n    height: auto;\n    width: 75%;\n    margin-left: 25%;\n}\n.About-body[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{\n    width: 85%;\n    margin-left: 10%;\n    margin-top: 20px;\n    margin-bottom: 40px;\n}\n.About-body[_ngcontent-%COMP%] > div[_ngcontent-%COMP%] > h1[_ngcontent-%COMP%]{\n    color: #222222;\n    margin-bottom: 20px;\n    margin-top: 20px;\n    font-size: 1.4em;\n    letter-spacing: 0.6px;\n}\n.upcoming-block[_ngcontent-%COMP%]{\n    scroll-behavior: smooth;\n    width: 100% !important;\n    -webkit-overflow-scrolling: touch;\n    display: inline-block;\n}\n.upcoming-cards[_ngcontent-%COMP%]{\n    vertical-align: top;\n    scroll-snap-align: start;\n    width: 50%;\n    margin-top: 3%;\n    display: inline-block;\n}\n.backfooter[_ngcontent-%COMP%]{\n    width: 75%;\n    float: right;\n}"];
 exports.styles = styles;
 
 
@@ -10205,17 +10605,23 @@ exports.styles = styles;
 Object.defineProperty(exports, "__esModule", { value: true });
 var i0 = __webpack_require__(/*! ./userprofile-matches.component.css.shim.ngstyle */ "./src/app/profile/userprofile/userprofile-matches/userprofile-matches.component.css.shim.ngstyle.js");
 var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
-var i2 = __webpack_require__(/*! ./userprofile-matches.component */ "./src/app/profile/userprofile/userprofile-matches/userprofile-matches.component.ts");
-var i3 = __webpack_require__(/*! ../../../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
-var i4 = __webpack_require__(/*! ../userprofile.component */ "./src/app/profile/userprofile/userprofile.component.ts");
+var i2 = __webpack_require__(/*! ../../../cards/ss-match-card/ss-match-card.component.ngfactory */ "./src/app/cards/ss-match-card/ss-match-card.component.ngfactory.js");
+var i3 = __webpack_require__(/*! ../../../cards/ss-match-card/ss-match-card.component */ "./src/app/cards/ss-match-card/ss-match-card.component.ts");
+var i4 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var i5 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var i6 = __webpack_require__(/*! ../../../backfooter/backfooter.component.ngfactory */ "./src/app/backfooter/backfooter.component.ngfactory.js");
+var i7 = __webpack_require__(/*! ../../../backfooter/backfooter.component */ "./src/app/backfooter/backfooter.component.ts");
+var i8 = __webpack_require__(/*! ./userprofile-matches.component */ "./src/app/profile/userprofile/userprofile-matches/userprofile-matches.component.ts");
+var i9 = __webpack_require__(/*! ../userprofile.component */ "./src/app/profile/userprofile/userprofile.component.ts");
 var styles_UserprofileMatchesComponent = [i0.styles];
 var RenderType_UserprofileMatchesComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_UserprofileMatchesComponent, data: {} });
 exports.RenderType_UserprofileMatchesComponent = RenderType_UserprofileMatchesComponent;
-function View_UserprofileMatchesComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" userprofile-matches works!\n"]))], null, null); }
+function View_UserprofileMatchesComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "div", [["class", "upcoming-cards"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "sports-social-ss-match-card", [], null, null, null, i2.View_SsMatchCardComponent_0, i2.RenderType_SsMatchCardComponent)), i1.ɵdid(2, 114688, null, 0, i3.SsMatchCardComponent, [i4.Router], { matchstartername: [0, "matchstartername"], userName: [1, "userName"], starttimestamp: [2, "starttimestamp"], coverpic: [3, "coverpic"], upcoming: [4, "upcoming"], team1pic: [5, "team1pic"], team2pic: [6, "team2pic"], scoreTeam1: [7, "scoreTeam1"], scoreTeam2: [8, "scoreTeam2"], gamename: [9, "gamename"], startdatetime: [10, "startdatetime"], InsertedDate: [11, "InsertedDate"], Uniquename: [12, "Uniquename"], city: [13, "city"], Venue_Name: [14, "Venue_Name"], MatchStarterUniqueName: [15, "MatchStarterUniqueName"], Team1Name: [16, "Team1Name"], Team2Name: [17, "Team2Name"], EventText: [18, "EventText"], JoineeCount: [19, "JoineeCount"], WatchCount: [20, "WatchCount"], PromoteCount: [21, "PromoteCount"], CommentCount: [22, "CommentCount"], gender: [23, "gender"], finished: [24, "finished"], age: [25, "age"] }, null)], function (_ck, _v) { var currVal_0 = _v.context.$implicit.MatchStarterName; var currVal_1 = _v.context.$implicit.userName; var currVal_2 = _v.context.$implicit.starttimestamp; var currVal_3 = _v.context.$implicit.coverpic; var currVal_4 = _v.context.$implicit.upcoming; var currVal_5 = _v.context.$implicit.Team1Pic; var currVal_6 = _v.context.$implicit.Team2Pic; var currVal_7 = _v.context.$implicit.scoreTeam1; var currVal_8 = _v.context.$implicit.scoreTeam2; var currVal_9 = _v.context.$implicit.gamename; var currVal_10 = _v.context.$implicit.startdatetime; var currVal_11 = _v.context.$implicit.InsertedDate; var currVal_12 = _v.context.$implicit.Uniquename; var currVal_13 = _v.context.$implicit.city; var currVal_14 = _v.context.$implicit.venue_name; var currVal_15 = _v.context.$implicit.MatchStarterUniqueName; var currVal_16 = _v.context.$implicit.Team1Name; var currVal_17 = _v.context.$implicit.Team2Name; var currVal_18 = _v.context.$implicit.EventText; var currVal_19 = _v.context.$implicit.JoineeCount; var currVal_20 = _v.context.$implicit.WatchCount; var currVal_21 = _v.context.$implicit.PromoteCount; var currVal_22 = _v.context.$implicit.CommentCount; var currVal_23 = _v.context.$implicit.gender; var currVal_24 = _v.context.$implicit.finished; var currVal_25 = _v.context.$implicit.ageBracket; _ck(_v, 2, 1, [currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17, currVal_18, currVal_19, currVal_20, currVal_21, currVal_22, currVal_23, currVal_24, currVal_25]); }, null); }
+function View_UserprofileMatchesComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 7, "div", [["class", "About-body"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 6, "div", [["class", "upcoming-matches"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Finished Matches"])), (_l()(), i1.ɵeld(4, 0, null, null, 0, "hr", [], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 2, "div", [["class", "upcoming-block"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UserprofileMatchesComponent_1)), i1.ɵdid(7, 278528, null, 0, i5.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(8, 0, null, null, 2, "div", [["class", "backfooter"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 1, "sports-social-backfooter", [], null, null, null, i6.View_BackfooterComponent_0, i6.RenderType_BackfooterComponent)), i1.ɵdid(10, 114688, null, 0, i7.BackfooterComponent, [], null, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.array; _ck(_v, 7, 0, currVal_0); _ck(_v, 10, 0); }, null); }
 exports.View_UserprofileMatchesComponent_0 = View_UserprofileMatchesComponent_0;
-function View_UserprofileMatchesComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-userprofile-matches", [], null, null, null, View_UserprofileMatchesComponent_0, RenderType_UserprofileMatchesComponent)), i1.ɵdid(1, 114688, null, 0, i2.UserprofileMatchesComponent, [i3.PostService, i4.UserprofileComponent], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+function View_UserprofileMatchesComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-userprofile-matches", [], null, null, null, View_UserprofileMatchesComponent_0, RenderType_UserprofileMatchesComponent)), i1.ɵdid(1, 114688, null, 0, i8.UserprofileMatchesComponent, [i9.UserprofileComponent], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_UserprofileMatchesComponent_Host_0 = View_UserprofileMatchesComponent_Host_0;
-var UserprofileMatchesComponentNgFactory = i1.ɵccf("sports-social-userprofile-matches", i2.UserprofileMatchesComponent, View_UserprofileMatchesComponent_Host_0, {}, {}, []);
+var UserprofileMatchesComponentNgFactory = i1.ɵccf("sports-social-userprofile-matches", i8.UserprofileMatchesComponent, View_UserprofileMatchesComponent_Host_0, {}, {}, []);
 exports.UserprofileMatchesComponentNgFactory = UserprofileMatchesComponentNgFactory;
 
 
@@ -10232,56 +10638,20 @@ exports.UserprofileMatchesComponentNgFactory = UserprofileMatchesComponentNgFact
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
-var post_service_1 = __webpack_require__(/*! ../../../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
 var userprofile_component_1 = __webpack_require__(/*! ../userprofile.component */ "./src/app/profile/userprofile/userprofile.component.ts");
 var UserprofileMatchesComponent = /** @class */ (function () {
-    function UserprofileMatchesComponent(postservice, userprofilecomponent) {
-        this.postservice = postservice;
+    function UserprofileMatchesComponent(userprofilecomponent) {
         this.userprofilecomponent = userprofilecomponent;
         this.date = Math.floor(Date.now() / 1000);
         this.array = [];
     }
     UserprofileMatchesComponent.prototype.getUserId = function () {
         this.paramUserId = this.userprofilecomponent.userid;
-    };
-    UserprofileMatchesComponent.prototype.getdataOfUserMatches = function () {
-        var _this = this;
-        for (var i = 0; i < 2; i++) {
-            this.pageno = i;
-            this.postservice.UsersParticularMatches(this.paramUserId, this.paramUserId, this.pageno, this.date).subscribe(function (res) {
-                for (var j = 0; j < res["Past"].length; j++) {
-                    _this.array.push({
-                        Username: res["Past"][j].Username,
-                        Eventid: res["Past"][j].Eventid,
-                        Gamename: res["Past"][j].Gamename,
-                        EventText: res["Past"][j].EventText,
-                        profile_image: res["Past"][j].profile_image,
-                        event_image: res["Past"][j].event_image,
-                        InsertedDate: res["Past"][j].InsertedDate,
-                        CommentCount: res["Past"][j].CommentCount,
-                        PromoteCount: res["Past"][j].PromoteCount,
-                        JoineeCount: res["Past"][j].JoineeCount,
-                        WatchCount: res["Past"][j].WatchCount,
-                        StartDateTime: res["Past"][j].StartDateTime,
-                        MatchStarterName: res["Past"][j].MatchStarterName,
-                        MatchStarterUniqueName: res["Past"][j].MatchStarterUniqueName,
-                        MatchStarterPhoto: res["Past"][j].MatchStarterPhoto,
-                        venue_name: res["Past"][j].venue_name,
-                        Team1Name: res["Past"][j].Team2Name,
-                        Team2Name: res["Past"][j].Team2Name,
-                        scoreTeam1: res["Past"][j].scoreTeam1,
-                        scoreTeam2: res["Past"][j].scoreTeam2,
-                        matchGender: res["Past"][j].matchGender,
-                        profile_Photo_path: res["Past"][j].profile_Photo_path,
-                    });
-                    console.log("this username", res["Past"][j].Eventid);
-                }
-            });
-        }
+        this.array = this.userprofilecomponent.array;
+        console.log(this.array);
     };
     UserprofileMatchesComponent.prototype.ngOnInit = function () {
         this.getUserId();
-        this.getdataOfUserMatches();
     };
     return UserprofileMatchesComponent;
 }());
@@ -10306,7 +10676,7 @@ exports.UserprofileMatchesComponent = UserprofileMatchesComponent;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
-var styles = [".body[_ngcontent-%COMP%]{\n    width: 50%;\n    margin-left: 0%;\n    margin-right: 22%;\n    background-color: #ffffff;\n    float: right;\n    \n}\n.container[_ngcontent-%COMP%] {\n    border: 2px solid #dedede;\n    background-color: #f1f1f1;\n    border-radius: 5px;\n    padding: 10px;\n    margin: 10px 0;\n  }\n.container[_ngcontent-%COMP%]::after {\n    content: \"\";\n    clear: both;\n    display: table;\n  }\n.container[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n    float: left;\n    max-width: 60px;\n    width: 100%;\n    margin-right: 20px;\n    border-radius: 50%;\n  }\n.container[_ngcontent-%COMP%]   img.right[_ngcontent-%COMP%] {\n    float: right;\n    margin-left: 20px;\n    margin-right:0;\n  }\n.viewprofile[_ngcontent-%COMP%]{\n    float: right;\n  }\n.viewprofile[_ngcontent-%COMP%] > a[_ngcontent-%COMP%]{\n      color: blue;\n      cursor: pointer;\n  }"];
+var styles = [".spinner[_ngcontent-%COMP%]{\n  top: 10%;\n}\n.body[_ngcontent-%COMP%]{\n    width: 75%;\n    height: auto;\n    margin: 2% 0% 3% 25%;\n    background-color: #ffffff;\n}\n.container[_ngcontent-%COMP%] {\n    border: 2px solid #dedede;\n    width: 90%;\n    height: 50px;\n    background-color: #f1f1f1;\n    border-radius: 5px;\n    padding: 14px;\n    margin: 10px 0 0 30px;\n  }\n.container[_ngcontent-%COMP%]::after {\n    content: \"\";\n    clear: both;\n    display: table;\n  }\n.container[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n    float: left;\n    max-width: 60px;\n    width: 100%;\n    margin-right: 20px;\n    border-radius: 50%;\n  }\n.viewprofile[_ngcontent-%COMP%]{\n    float: right;\n  }\n.viewprofile[_ngcontent-%COMP%] > a[_ngcontent-%COMP%]{\n      color: blue;\n      cursor: pointer;\n  }\n.backfooter[_ngcontent-%COMP%]{\n    width: 75%;\n    float: right;\n}"];
 exports.styles = styles;
 
 
@@ -10331,19 +10701,22 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var i0 = __webpack_require__(/*! ./userprofile-playmates.component.css.shim.ngstyle */ "./src/app/profile/userprofile/userprofile-playmates/userprofile-playmates.component.css.shim.ngstyle.js");
 var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
-var i3 = __webpack_require__(/*! ./userprofile-playmates.component */ "./src/app/profile/userprofile/userprofile-playmates/userprofile-playmates.component.ts");
-var i4 = __webpack_require__(/*! ../../../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
-var i5 = __webpack_require__(/*! @angular/router */ "@angular/router");
-var i6 = __webpack_require__(/*! ../userprofile.component */ "./src/app/profile/userprofile/userprofile.component.ts");
+var i3 = __webpack_require__(/*! ../../../backfooter/backfooter.component.ngfactory */ "./src/app/backfooter/backfooter.component.ngfactory.js");
+var i4 = __webpack_require__(/*! ../../../backfooter/backfooter.component */ "./src/app/backfooter/backfooter.component.ts");
+var i5 = __webpack_require__(/*! ./userprofile-playmates.component */ "./src/app/profile/userprofile/userprofile-playmates/userprofile-playmates.component.ts");
+var i6 = __webpack_require__(/*! ../../../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
+var i7 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var i8 = __webpack_require__(/*! ../userprofile.component */ "./src/app/profile/userprofile/userprofile.component.ts");
 var styles_UserprofilePlaymatesComponent = [i0.styles];
 var RenderType_UserprofilePlaymatesComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_UserprofilePlaymatesComponent, data: {} });
 exports.RenderType_UserprofilePlaymatesComponent = RenderType_UserprofilePlaymatesComponent;
-function View_UserprofilePlaymatesComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 6, "div", [["class", "container"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 0, "img", [["onerror", "this.src='assets/images/user.png'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(3, null, ["", ""])), (_l()(), i1.ɵeld(4, 0, null, null, 2, "div", [["class", "viewprofile"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 1, "a", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["View Profile >>"]))], null, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.profile_image, ""); _ck(_v, 1, 0, currVal_0); var currVal_1 = _v.context.$implicit.user_name; _ck(_v, 3, 0, currVal_1); }); }
-function View_UserprofilePlaymatesComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 3, "div", [["class", "body"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UserprofilePlaymatesComponent_1)), i1.ɵdid(2, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(3, 0, null, null, 0, "div", [], null, null, null, null, null))], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.array; _ck(_v, 2, 0, currVal_0); }, null); }
+function View_UserprofilePlaymatesComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 0, "img", [["alt", ""], ["class", "spinner"], ["src", "assets/images/sports-social-loading.gif"]], null, null, null, null, null))], null, null); }
+function View_UserprofilePlaymatesComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 6, "div", [["class", "container"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 0, "img", [["onerror", "this.src='assets/images/user.png'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(3, null, ["", ""])), (_l()(), i1.ɵeld(4, 0, null, null, 2, "div", [["class", "viewprofile"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 1, "a", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["View Profile >>"]))], null, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.profile_image, ""); _ck(_v, 1, 0, currVal_0); var currVal_1 = _v.context.$implicit.user_name; _ck(_v, 3, 0, currVal_1); }); }
+function View_UserprofilePlaymatesComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 5, "div", [["class", "body"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UserprofilePlaymatesComponent_1)), i1.ɵdid(2, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UserprofilePlaymatesComponent_2)), i1.ɵdid(4, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(5, 0, null, null, 0, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 2, "div", [["class", "backfooter"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 1, "sports-social-backfooter", [], null, null, null, i3.View_BackfooterComponent_0, i3.RenderType_BackfooterComponent)), i1.ɵdid(8, 114688, null, 0, i4.BackfooterComponent, [], null, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = (_co.array.length === 0); _ck(_v, 2, 0, currVal_0); var currVal_1 = _co.array; _ck(_v, 4, 0, currVal_1); _ck(_v, 8, 0); }, null); }
 exports.View_UserprofilePlaymatesComponent_0 = View_UserprofilePlaymatesComponent_0;
-function View_UserprofilePlaymatesComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-userprofile-playmates", [], null, null, null, View_UserprofilePlaymatesComponent_0, RenderType_UserprofilePlaymatesComponent)), i1.ɵdid(1, 114688, null, 0, i3.UserprofilePlaymatesComponent, [i4.PostService, i5.ActivatedRoute, i6.UserprofileComponent], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+function View_UserprofilePlaymatesComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-userprofile-playmates", [], null, null, null, View_UserprofilePlaymatesComponent_0, RenderType_UserprofilePlaymatesComponent)), i1.ɵdid(1, 114688, null, 0, i5.UserprofilePlaymatesComponent, [i6.PostService, i7.ActivatedRoute, i8.UserprofileComponent], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_UserprofilePlaymatesComponent_Host_0 = View_UserprofilePlaymatesComponent_Host_0;
-var UserprofilePlaymatesComponentNgFactory = i1.ɵccf("sports-social-userprofile-playmates", i3.UserprofilePlaymatesComponent, View_UserprofilePlaymatesComponent_Host_0, {}, {}, []);
+var UserprofilePlaymatesComponentNgFactory = i1.ɵccf("sports-social-userprofile-playmates", i5.UserprofilePlaymatesComponent, View_UserprofilePlaymatesComponent_Host_0, {}, {}, []);
 exports.UserprofilePlaymatesComponentNgFactory = UserprofilePlaymatesComponentNgFactory;
 
 
@@ -10369,6 +10742,7 @@ var UserprofilePlaymatesComponent = /** @class */ (function () {
         this.activatedroute = activatedroute;
         this.userprofilecmp = userprofilecmp;
         this.date = Math.abs(Date.now());
+        this.show = false;
         this.array = [];
     }
     UserprofilePlaymatesComponent.prototype.getuserid = function () {
@@ -10385,6 +10759,7 @@ var UserprofilePlaymatesComponent = /** @class */ (function () {
                 break;
             }
             this.postservice.UserProfielPlaymate(this.parentUserid, this.parentUserid, this.pageno, this.date).subscribe(function (res) {
+                _this.show = true;
                 console.log("response of playmates", res);
                 for (var i_1 in res)
                     _this.array.push({
@@ -10434,7 +10809,7 @@ exports.UserprofilePlaymatesComponent = UserprofilePlaymatesComponent;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
-var styles = [".body[_ngcontent-%COMP%]{\n    \n    width: 70%;\n    float: right;\n    margin-right: 4%;\n}\n.body[_ngcontent-%COMP%] > .teams[_ngcontent-%COMP%]{\n    display: inline-block;\n    margin:3% 8% 2% 8%;\n    border-radius: 3%;\n    border-top-left-radius: 5%;\n    border-top-right-radius: 5%;\n    position: relative;\n}\n.teams[_ngcontent-%COMP%]{\n    border: 1px solid #ababab;\n    width: 32%;\n    height: 320px;\n    cursor: pointer;\n}\n.teams[_ngcontent-%COMP%]:hover{\n    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n}\n.head[_ngcontent-%COMP%]{\n    width: 100%;\n    height: 150px;\n    position: relative;\n}\n.head[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    border-top-left-radius: 5%;\n    border-top-right-radius: 5%;\n    width: 100%;\n    height: 100px;\n}\n.profileimg[_ngcontent-%COMP%]{\n    position: absolute;\n    bottom: 0%;\n    height: 100px;\n    width: 100%;\n    \n    z-index: 1;\n}\n.profileimg[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    border: 2px solid #ffffff;\n    margin-left: 7%;\n    border-radius: 50%;\n    width: 90px;\n    height: 90px;\n}\n.teamname[_ngcontent-%COMP%]{\n    width: 55%;\n    right: 0% !important;\n    height: 40px;\n    bottom: 0%;\n    position: absolute;\n}\n.teamname[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%]{\n    font-size: 1em;\n    font-weight: bolder;\n}\n.teamname[_ngcontent-%COMP%] > h5[_ngcontent-%COMP%]{\n  padding: 2%;\n  padding-left: 0%;\n  color: #ababab;\n}\n.members[_ngcontent-%COMP%]{\n    width: 70%;\n    margin: 3% 15% 0% 15%;\n    height: 60px;\n    position: absolute;\n    \n}\n.members[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%], h5[_ngcontent-%COMP%]{\n    font-family: 'Times New Roman', Times, serif;\n    display: inline-flex;\n    color: #ababab;\n    padding: 2%;\n}\n.members[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%] > b[_ngcontent-%COMP%]{\n    margin-left: 3%;\n    margin-top: -4%;\n    color: black;\n    font-size: 1.5em !important;\n}\n.members[_ngcontent-%COMP%] > h5[_ngcontent-%COMP%] > b[_ngcontent-%COMP%]{\n    margin-left: 3%;\n    margin-top: -6%;\n    color: black;\n    font-size: 1.5em !important;\n}\n.members[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%]{\n    font-size: .9em;\n    float: left;\n}\n.members[_ngcontent-%COMP%] > h5[_ngcontent-%COMP%]{\n    font-size: .9em;\n    float: right;\n}"];
+var styles = [".body[_ngcontent-%COMP%]{\n    height: auto; \n    width: 75%;\n    margin-left: 25%;\n    vertical-align: top;\n}\n.body[_ngcontent-%COMP%] > .teams[_ngcontent-%COMP%]{\n    display: inline-block;\n    margin:3% 8% 2% 8%;\n    border-radius: 3%;\n    border-top-left-radius: 5%;\n    border-top-right-radius: 5%;\n    position: relative;\n}\n.teams[_ngcontent-%COMP%]{\n    border: 1px solid #ababab;\n    width: 32%;\n    height: 320px;\n    cursor: pointer;\n}\n.teams[_ngcontent-%COMP%]:hover{\n    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n}\n.head[_ngcontent-%COMP%]{\n    width: 100%;\n    height: 150px;\n    position: relative;\n}\n.head[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    border-top-left-radius: 5%;\n    border-top-right-radius: 5%;\n    width: 100%;\n    height: 100px;\n}\n.profileimg[_ngcontent-%COMP%]{\n    position: absolute;\n    bottom: 0%;\n    height: 100px;\n    width: 100%;\n    \n    z-index: 1;\n}\n.profileimg[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    border: 2px solid #ffffff;\n    margin-left: 7%;\n    border-radius: 50%;\n    width: 90px;\n    height: 90px;\n}\n.teamname[_ngcontent-%COMP%]{\n    width: 55%;\n    right: 0% !important;\n    height: 40px;\n    bottom: 0%;\n    position: absolute;\n}\n.teamname[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%]{\n    font-size: 1em;\n    font-weight: bolder;\n}\n.teamname[_ngcontent-%COMP%] > h5[_ngcontent-%COMP%]{\n  padding: 2%;\n  padding-left: 0%;\n  color: #ababab;\n}\n.members[_ngcontent-%COMP%]{\n    width: 70%;\n    margin: 3% 15% 0% 15%;\n    height: 60px;\n    position: absolute;\n    \n}\n.members[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%], h5[_ngcontent-%COMP%]{\n    font-family: 'Times New Roman', Times, serif;\n    display: inline-flex;\n    color: #ababab;\n    padding: 2%;\n}\n.members[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%] > b[_ngcontent-%COMP%]{\n    margin-left: 3%;\n    margin-top: -4%;\n    color: black;\n    font-size: 1.5em !important;\n}\n.members[_ngcontent-%COMP%] > h5[_ngcontent-%COMP%] > b[_ngcontent-%COMP%]{\n    margin-left: 3%;\n    margin-top: -6%;\n    color: black;\n    font-size: 1.5em !important;\n}\n.members[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%]{\n    font-size: .9em;\n    float: left;\n}\n.members[_ngcontent-%COMP%] > h5[_ngcontent-%COMP%]{\n    font-size: .9em;\n    float: right;\n}\n.backfooter[_ngcontent-%COMP%]{\n    width: 75%;\n    float: right;\n}"];
 exports.styles = styles;
 
 
@@ -10459,18 +10834,21 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var i0 = __webpack_require__(/*! ./userprofile-teams.component.css.shim.ngstyle */ "./src/app/profile/userprofile/userprofile-teams/userprofile-teams.component.css.shim.ngstyle.js");
 var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
-var i3 = __webpack_require__(/*! ./userprofile-teams.component */ "./src/app/profile/userprofile/userprofile-teams/userprofile-teams.component.ts");
-var i4 = __webpack_require__(/*! ../../../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
-var i5 = __webpack_require__(/*! ../userprofile.component */ "./src/app/profile/userprofile/userprofile.component.ts");
+var i3 = __webpack_require__(/*! ../../../backfooter/backfooter.component.ngfactory */ "./src/app/backfooter/backfooter.component.ngfactory.js");
+var i4 = __webpack_require__(/*! ../../../backfooter/backfooter.component */ "./src/app/backfooter/backfooter.component.ts");
+var i5 = __webpack_require__(/*! ./userprofile-teams.component */ "./src/app/profile/userprofile/userprofile-teams/userprofile-teams.component.ts");
+var i6 = __webpack_require__(/*! ../../../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
+var i7 = __webpack_require__(/*! ../userprofile.component */ "./src/app/profile/userprofile/userprofile.component.ts");
 var styles_UserprofileTeamsComponent = [i0.styles];
 var RenderType_UserprofileTeamsComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_UserprofileTeamsComponent, data: {} });
 exports.RenderType_UserprofileTeamsComponent = RenderType_UserprofileTeamsComponent;
-function View_UserprofileTeamsComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 18, "div", [["class", "teams"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 8, "div", [["class", "head"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 0, "img", [["onerror", "this.src='assets/images/sportsocialteamheader.jpg'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 6, "div", [["class", "profileimg"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 0, "img", [["onerror", "this.src='assets/images/user.png'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 4, "div", [["class", "teamname"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 1, "h4", [], null, null, null, null, null)), (_l()(), i1.ɵted(7, null, ["", ""])), (_l()(), i1.ɵeld(8, 0, null, null, 1, "h5", [], null, null, null, null, null)), (_l()(), i1.ɵted(9, null, ["@", ""])), (_l()(), i1.ɵeld(10, 0, null, null, 8, "div", [["class", "members"]], null, null, null, null, null)), (_l()(), i1.ɵeld(11, 0, null, null, 3, "h4", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Members\u00A0"])), (_l()(), i1.ɵeld(13, 0, null, null, 1, "b", [], null, null, null, null, null)), (_l()(), i1.ɵted(14, null, [" ", ""])), (_l()(), i1.ɵeld(15, 0, null, null, 3, "h5", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Fans\u00A0 "])), (_l()(), i1.ɵeld(17, 0, null, null, 1, "b", [], null, null, null, null, null)), (_l()(), i1.ɵted(18, null, ["", " "]))], null, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.Cover_Photo, ""); _ck(_v, 2, 0, currVal_0); var currVal_1 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.Profile_Photo, ""); _ck(_v, 4, 0, currVal_1); var currVal_2 = _v.context.$implicit.TeamName; _ck(_v, 7, 0, currVal_2); var currVal_3 = _v.context.$implicit.TeamUserName; _ck(_v, 9, 0, currVal_3); var currVal_4 = _v.context.$implicit.MemberCount; _ck(_v, 14, 0, currVal_4); var currVal_5 = _v.context.$implicit.FanCount; _ck(_v, 18, 0, currVal_5); }); }
-function View_UserprofileTeamsComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "div", [["class", "body"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UserprofileTeamsComponent_1)), i1.ɵdid(2, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.array; _ck(_v, 2, 0, currVal_0); }, null); }
+function View_UserprofileTeamsComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 0, "img", [["alt", ""], ["class", "spinner"], ["src", "assets/images/sports-social-loading.gif"]], null, null, null, null, null))], null, null); }
+function View_UserprofileTeamsComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 18, "div", [["class", "teams"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 8, "div", [["class", "head"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 0, "img", [["onerror", "this.src='assets/images/sportsocialteamheader.jpg'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 6, "div", [["class", "profileimg"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 0, "img", [["onerror", "this.src='assets/images/user.png'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 4, "div", [["class", "teamname"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 1, "h4", [], null, null, null, null, null)), (_l()(), i1.ɵted(7, null, ["", ""])), (_l()(), i1.ɵeld(8, 0, null, null, 1, "h5", [], null, null, null, null, null)), (_l()(), i1.ɵted(9, null, ["@", ""])), (_l()(), i1.ɵeld(10, 0, null, null, 8, "div", [["class", "members"]], null, null, null, null, null)), (_l()(), i1.ɵeld(11, 0, null, null, 3, "h4", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Members\u00A0"])), (_l()(), i1.ɵeld(13, 0, null, null, 1, "b", [], null, null, null, null, null)), (_l()(), i1.ɵted(14, null, [" ", ""])), (_l()(), i1.ɵeld(15, 0, null, null, 3, "h5", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Fans\u00A0 "])), (_l()(), i1.ɵeld(17, 0, null, null, 1, "b", [], null, null, null, null, null)), (_l()(), i1.ɵted(18, null, ["", " "]))], null, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.Cover_Photo, ""); _ck(_v, 2, 0, currVal_0); var currVal_1 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.Profile_Photo, ""); _ck(_v, 4, 0, currVal_1); var currVal_2 = _v.context.$implicit.TeamName; _ck(_v, 7, 0, currVal_2); var currVal_3 = _v.context.$implicit.TeamUserName; _ck(_v, 9, 0, currVal_3); var currVal_4 = _v.context.$implicit.MemberCount; _ck(_v, 14, 0, currVal_4); var currVal_5 = _v.context.$implicit.FanCount; _ck(_v, 18, 0, currVal_5); }); }
+function View_UserprofileTeamsComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 4, "div", [["class", "body"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UserprofileTeamsComponent_1)), i1.ɵdid(2, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UserprofileTeamsComponent_2)), i1.ɵdid(4, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(5, 0, null, null, 2, "div", [["class", "backfooter"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 1, "sports-social-backfooter", [], null, null, null, i3.View_BackfooterComponent_0, i3.RenderType_BackfooterComponent)), i1.ɵdid(7, 114688, null, 0, i4.BackfooterComponent, [], null, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = (_co.array.length === 0); _ck(_v, 2, 0, currVal_0); var currVal_1 = _co.array; _ck(_v, 4, 0, currVal_1); _ck(_v, 7, 0); }, null); }
 exports.View_UserprofileTeamsComponent_0 = View_UserprofileTeamsComponent_0;
-function View_UserprofileTeamsComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-userprofile-teams", [], null, null, null, View_UserprofileTeamsComponent_0, RenderType_UserprofileTeamsComponent)), i1.ɵdid(1, 114688, null, 0, i3.UserprofileTeamsComponent, [i4.PostService, i5.UserprofileComponent], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+function View_UserprofileTeamsComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-userprofile-teams", [], null, null, null, View_UserprofileTeamsComponent_0, RenderType_UserprofileTeamsComponent)), i1.ɵdid(1, 114688, null, 0, i5.UserprofileTeamsComponent, [i6.PostService, i7.UserprofileComponent], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_UserprofileTeamsComponent_Host_0 = View_UserprofileTeamsComponent_Host_0;
-var UserprofileTeamsComponentNgFactory = i1.ɵccf("sports-social-userprofile-teams", i3.UserprofileTeamsComponent, View_UserprofileTeamsComponent_Host_0, {}, {}, []);
+var UserprofileTeamsComponentNgFactory = i1.ɵccf("sports-social-userprofile-teams", i5.UserprofileTeamsComponent, View_UserprofileTeamsComponent_Host_0, {}, {}, []);
 exports.UserprofileTeamsComponentNgFactory = UserprofileTeamsComponentNgFactory;
 
 
@@ -10494,6 +10872,7 @@ var UserprofileTeamsComponent = /** @class */ (function () {
         this.postservice = postservice;
         this.userprofileComponent = userprofileComponent;
         this.array = [];
+        this.show = false;
     }
     UserprofileTeamsComponent.prototype.getuserid = function () {
         this.paramuserid = this.userprofileComponent.userid;
@@ -10504,6 +10883,7 @@ var UserprofileTeamsComponent = /** @class */ (function () {
         for (var i = 0; i < 10; i++) {
             this.pageno = i;
             this.postservice.UserProfileTeams(this.paramuserid, this.pageno).subscribe(function (data) {
+                _this.show = true;
                 for (var i = 0; i < data["RandomTeams"].length; i++) {
                     _this.teamId = data["RandomTeams"][i].TeamId;
                     var status;
@@ -10571,7 +10951,7 @@ exports.UserprofileTeamsComponent = UserprofileTeamsComponent;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
-var styles = [".outer-shell[_ngcontent-%COMP%]{\n    position: relative;\n    height: auto;\n    width: 100%;\n}\n.profile-shell[_ngcontent-%COMP%]{\n    position: relative;\n    height: 370px;\n    width: 100%;\n    background-color: #f6f6f6;\n}\n.background-img[_ngcontent-%COMP%]{\n    position: relative;\n    height: 250px;\n    width: 100%;\n}\n.background-img[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    margin: 0% 15% 0% 15%;\n    width: 70%;\n    height: 100%;\n}\n.profile-img[_ngcontent-%COMP%]{\n    position: absolute;\n    bottom: 0%;\n    z-index: 1;\n    left: 5%;\n    height: 200px;\n    width: 200px;\n    border-radius: 50%;\n    background-color: #ffffff;\n}\n.profile-img[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    position: absolute;\n    border: 5px solid #ffffff;\n    height: 100%;\n    width: 100%;\n    border-radius: 50%;\n}\n.team-info[_ngcontent-%COMP%]{\n    position: relative;\n    background-color: #a89a9a;\n    height:120px;\n    width: 100%;\n}\n.side-shell[_ngcontent-%COMP%]{\n    height: 130vh;\n    width: 25%;\n    background-color: #f6f6f6;\n    float: left;\n    position: relative;\n}\ntable[_ngcontent-%COMP%]{\n    margin-top: 3%;\n}\nth[_ngcontent-%COMP%]{\n    text-align: left;\n    padding: 2%;\n    padding-right: 2%;\n    \n}\nth[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    margin-right: 20px;\n    width: 30px;\n    height: 30px;\n}\n.followers[_ngcontent-%COMP%]{\n    left: 10%;\n    width: 65%;\n    top: 1%;\n    position: absolute;\n}\n.followers[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%], h5[_ngcontent-%COMP%]{\n    text-align: center;\n    font-size: 1.2em;\n    color: #024770;\n    font-weight: bolder;\n}\n.followers[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%]{\n    float: left;\n}\n.followers[_ngcontent-%COMP%] > h5[_ngcontent-%COMP%]{\n    float: right;\n}\n.userinfo[_ngcontent-%COMP%]{\n    position: absolute;\n    top: 7%;\n    left: 10%;\n}\n.userinfo[_ngcontent-%COMP%] > h3[_ngcontent-%COMP%]{\n    margin-left: 2.2%;\n    margin-bottom: 4%;\n}\n.userinfo[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    width: 20px;\n    height: 20px;\n}\n.sub-header[_ngcontent-%COMP%]{\n    position: fixed;\n    z-index: 10;\n    display: none;\n    width: 100%;\n    height: 100px;\n    background-color: black;\n    top: 0%;\n}\n.media[_ngcontent-%COMP%]{\n    width: 80%;\n    height: auto;\n    top: 30%;\n    margin: 0% 10% 0% 10%;  \n    position: relative; \n}\n.head[_ngcontent-%COMP%]{\n    width: 100%;\n    height: 20px;\n}\n.head[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%]{\n    float: left;\n}\n.head[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n    float: right;\n}\n.media[_ngcontent-%COMP%] > .mediabox[_ngcontent-%COMP%]{\n    width: 60px;\n    height: 60px;\n    border-radius: 10%;\n    margin: 2%;\n    \n    display: inline-block;\n}\n.mediabox[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n    border-radius: 10%;\n    width: 100%;\n    height: 100%;\n}\n.normal-shell[_ngcontent-%COMP%]{\n    height: 40px;\n    width: 75%;\n    margin-left: 25%;\n}\n.normal-shell[_ngcontent-%COMP%] > a[_ngcontent-%COMP%]{\n    \n    text-align: center;\n    font-size: 1em;\n    float: left;\n    width: 24.7%;\n    padding-top: 15px;\n    padding-bottom: 15px;\n    border-top: 2px solid #f6f6f6;\n    border-bottom: 2px solid #f6f6f6;\n    color: #888888;\n    background-color: #f6f6f6;\n}\n.normal-shell[_ngcontent-%COMP%]   a.active[_ngcontent-%COMP%]{\n    font-weight: bold;\n    color: #024771;\n    background-color: white;\n}"];
+var styles = [".outer-shell[_ngcontent-%COMP%]{\n    position: relative;\n    height: auto;\n    width: 100%;\n    margin-top: 60px;\n}\n.profile-shell[_ngcontent-%COMP%]{\n    position: relative;\n    height: 360px;\n    width: 100%;\n    background-color: #f6f6f6;\n}\n.background-img[_ngcontent-%COMP%]{\n    position: relative;\n    height: 250px;\n    width: 100%;\n}\n.background-img[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    width: 100%;\n    height: 250px;\n}\n.profile-img[_ngcontent-%COMP%]{\n    position: absolute;\n    bottom: 0%;\n    z-index: 1;\n    left: 5%;\n    height: 200px;\n    width: 200px;\n    border-radius: 50%;\n    background-color: white;\n}\n.profile-img[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    margin-left: 2px;\n    margin-top: 2px;\n    height: 196px;\n    width: 196px;\n    border-radius: 50%;\n}\n.profile-info[_ngcontent-%COMP%]{\n    position: relative;\n    top: 0%;\n    background-color: white;\n    \n    \n    height:110px;\n    width: 75%;\n    margin-left: 25%;\n    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 rgba(0, 0, 0, 0.19);\n}\n.name[_ngcontent-%COMP%]{\n    float: left;\n    width: 15%;\n    margin-left: 5%;\n    letter-spacing: 0.5px;\n    margin-top: 25px;\n}\n.name[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{\n    font-size: 1.2em;\n    color: #024771;\n    \n}\n.profile-info[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n    height: 40px;\n    width: 40px;\n    margin-top: 40px;\n    float: right;\n    margin-right: 5%;\n}\n.follow[_ngcontent-%COMP%]{\n    position: relative;\n    float: right;\n    margin-top: 35px;\n    margin-right: 5%;\n    width: 12%;\n    height: 40px;\n    border: 2px solid #024771;\n    border-radius: 8px;\n  }\n.follow[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n    font-size: 1.3em;\n    font-weight: lighter;\n    margin-top: 9px;\n    margin-left: 26%;\n    color: #024771;\n  }\n.side-shell[_ngcontent-%COMP%]{\n    height: 100%;\n    width: 25%;\n    min-height: 70vh;\n    background-color: #f6f6f6;\n    \n    float: left;\n    position: relative;\n}\n.normal-shell[_ngcontent-%COMP%]{\n    height: 40px;\n    width: 75%;\n    margin-left: 25%;\n}\n.normal-shell[_ngcontent-%COMP%] > a[_ngcontent-%COMP%]{\n    text-align: center;\n    font-size: 1em;\n    float: left;\n    width: 25%;\n    padding-top: 15px;\n    padding-bottom: 15px;\n    \n    border-top: 2px solid #f6f6f6;\n    border-bottom: 2px solid #f6f6f6;\n    color: #888888;\n    background-color: #f6f6f6;\n}\n.normal-shell[_ngcontent-%COMP%]   a.active[_ngcontent-%COMP%]{\n    font-weight: bold;\n    color: #024771;\n    background-color: white;\n}\n.sub-header[_ngcontent-%COMP%]{\n    position: fixed;\n    z-index: 10;\n    margin-top: 60px;\n    display: none;\n    background-color: white;\n    height:80px;\n    width: 100%;\n    \n    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(0, 0, 0, 0.19);\n      top: 0%;  \n    }\n.profile-pic[_ngcontent-%COMP%]{\n        position: relative;\n        float: left;\n        height: 50px;\n        width: 50px;\n        border-radius: 50%;\n        margin-top: 15px;\n        margin-left: 1%;\n   }\n.sub-name[_ngcontent-%COMP%]{\n        float: left;\n        width: 25%;\n        margin-left: 5%;\n        letter-spacing: 0.7px;\n        margin-top: 10px;\n    }\n.sub-name[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{\n        font-size: 1.2em;\n        color: #024771;\n        \n    }\n.fans[_ngcontent-%COMP%]{\n        margin-top: 20px;\n        width: 15%;\n        margin-left: 2%;\n        float: left;\n        line-height: 1.1;\n    }\n.fans[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n        font-size: 1em;\n        color: #888888;\n    }\n.fans[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{\n        margin-left: 2%;\n        float: right;\n    }\n.fans[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{\n        font-size: 1.2em;\n        margin-left: 4%;\n    }\n.fans[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{\n        margin-left: 60%;\n    }\n.sub-follow[_ngcontent-%COMP%]{\n        position: relative;\n        float: right;\n        margin-top: 25px;\n        margin-right: 5%;\n        width: 6%;\n        height: 30px;\n        border: 2px solid #024771;\n        border-radius: 8px;\n    }\n.sub-follow[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n        font-size: 1.1em;\n        font-weight: lighter;\n        margin-top: 5px;\n        margin-left: 20%;\n        color: #024771;\n    }\n.sub-follow-img[_ngcontent-%COMP%]{\n        position: relative;\n        height: 25px;\n        width: 30px;\n        margin-top: 30px;\n        float: right;\n        margin-right: 5%;\n    }\n.followers[_ngcontent-%COMP%]{\n        position: relative;\n        width: 65%;\n        margin-left: 10%;\n    }\n.followers[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n        font-size: 1.2em;\n        font-weight: 400;\n        color: #888888;\n        cursor: pointer;\n    }\n.followers[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{\n        color: #888888;\n        float: right;\n    }\n.followers[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{\n        color: #024771;\n        font-size: 1.3em;\n        cursor: pointer;\n    }\n.followers[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{\n        float: right;\n        color: #024771;\n        margin-right: 3%;\n    }\n.basic-info[_ngcontent-%COMP%]{\n        top: 0%;\n        \n    }\n.basic-info[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{\n        font-size: 1em;\n        margin-left: 10%;\n        margin-top: 20px;\n    }\n.basic-info-tab[_ngcontent-%COMP%]{\n        margin-top: 15px;\n        margin-left: 10%;\n        height: 30px;\n    }\n.basic-info-tab[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]{\n        float: left;\n        width: 20%;\n    }\n.basic-info-tab[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n        height: 25px;\n        width: 25px;\n    }\n.basic-info-tab[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{\n        float: right;\n        font-size: 1em;\n        margin-top: 5px;\n        width: 70%;\n        font-weight: 400;\n        color: #444444;\n    }\n.basic-info-tab[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{\n        position: fixed;\n        z-index: 4;\n        padding: 20px;\n        top: 40%;\n        left: 8%;\n        width: 45%;\n        border-radius: 5px;\n        \n        color: white;\n        background-color: rgba(0, 0, 0, 0.8);\n        display: none;\n    }\n.basic-info-tab[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]:hover    ~ p[_ngcontent-%COMP%]{\n        display: block;\n    }\n.media[_ngcontent-%COMP%]{\n        width: 80%;\n        height: auto;\n        margin-top: 70px;\n        margin-left: 10%;\n        top: 0%;\n        \n        \n        \n        position: relative; \n    }\n.head[_ngcontent-%COMP%]{\n        width: 100%;\n        height: 20px;\n    }\n.head[_ngcontent-%COMP%] > h4[_ngcontent-%COMP%]{\n        float: left;\n    }\n.head[_ngcontent-%COMP%] > a[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n        float: right;\n    }\n.media[_ngcontent-%COMP%] > .mediabox[_ngcontent-%COMP%]{\n        width: 60px;\n        height: 60px;\n        border-radius: 10%;\n        margin: 2%;\n        position: relative;\n        z-index: 2;\n        \n        display: inline-block;\n    }\n.mediabox[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n        border-radius: 10%;\n        width: 100%;\n        height: 100%;\n        cursor: pointer;\n    }\n.media-crousal[_ngcontent-%COMP%]{\n        display: none;\n        position: fixed;\n        width: 100%;\n        height: 100vh;\n        background-color: rgba(0, 0, 0, 0.9);\n        z-index: 30;\n        top: 0;\n    }\n.media-crousal[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n        height: 300px;\n        border-radius: 5px;\n        width: 40%;\n        margin-left: 30%;\n        position: absolute;\n        top: 25vh;\n        background-color: white;\n    }\n.pop-crousal[_ngcontent-%COMP%]{\n        display: none;\n        border-radius: 5px;\n        top: 0;\n        z-index: 31;\n        position: fixed;\n        margin-top: 30vh;\n        height: 300px;\n        width: 50%;\n        margin-left: 25%;\n        text-align: center;\n        overflow-y: hidden;\n        scroll-behavior: smooth;\n        overflow-x: scroll;\n        white-space: nowrap !important;\n        display: inline-block;\n        -webkit-overflow-scrolling: touch;\n        -ms-scroll-snap-type: x mandatory;\n            scroll-snap-type: x mandatory;\n        -ms-scroll-snap-destination: 0% 100%;\n            scroll-snap-destination: 0% 100%;\n        -ms-scroll-snap-points-x: repeat(100%);\n            scroll-snap-points-x: repeat(100%);\n    }\n.pop-crousal[_ngcontent-%COMP%]::-webkit-scrollbar{\n        display: none;\n    }\n.crousal-element[_ngcontent-%COMP%]{\n        overflow: hidden;\n        position: relative;\n        scroll-snap-align: start;\n        width: 100%;\n        height: 100%;\n        display: inline-block;\n        border-radius: 5px;\n    }\n.crousal-element[_ngcontent-%COMP%] > img[_ngcontent-%COMP%]{\n        height: 300px;\n        border-radius: 5px;\n        background-color: white;   \n    }\n.close[_ngcontent-%COMP%]{\n        position: absolute;\n        height: 40px;\n        width: 40px;\n        top: 3%;\n        right: 3%;\n    }\n.close[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n        height: 30px;\n        width: 30px;\n        transition: 0.3s ease-in-out;\n    }\n.close[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]:hover{\n        -webkit-transform: scale(1.1);\n                transform: scale(1.1);\n    }\n.larrow[_ngcontent-%COMP%]{\n        position: absolute;\n        height: 40px;\n        width: 40px;\n        top: 50vh;\n        left: 3%;\n    }\n.larrow[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n        height: 30px;\n        width: 30px;\n        transition: 0.3s ease-in-out;\n    }\n.larrow[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]:hover{\n        -webkit-transform: scale(1.1);\n                transform: scale(1.1);\n    }\n.rarrow[_ngcontent-%COMP%]{\n        position: absolute;\n        height: 40px;\n        width: 40px;\n        top: 50vh;\n        right: 3%;\n    }\n.rarrow[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{\n        height: 30px;\n        width: 30px;\n        transition: 0.3s ease-in-out;\n    }\n.rarrow[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]:hover{\n        -webkit-transform: scale(1.1);\n                transform: scale(1.1);\n    }"];
 exports.styles = styles;
 
 
@@ -10595,32 +10975,58 @@ exports.styles = styles;
 Object.defineProperty(exports, "__esModule", { value: true });
 var i0 = __webpack_require__(/*! ./userprofile.component.css.shim.ngstyle */ "./src/app/profile/userprofile/userprofile.component.css.shim.ngstyle.js");
 var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
-var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
-var i3 = __webpack_require__(/*! @angular/router */ "@angular/router");
-var i4 = __webpack_require__(/*! ./userprofile.component */ "./src/app/profile/userprofile/userprofile.component.ts");
-var i5 = __webpack_require__(/*! ../../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
+var i2 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var i3 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var i4 = __webpack_require__(/*! ../../header/header.component.ngfactory */ "./src/app/header/header.component.ngfactory.js");
+var i5 = __webpack_require__(/*! ../../header/header.component */ "./src/app/header/header.component.ts");
+var i6 = __webpack_require__(/*! ../../shared/services/property.service */ "./src/app/shared/services/property.service.ts");
+var i7 = __webpack_require__(/*! ../../shared/services/interaction.service */ "./src/app/shared/services/interaction.service.ts");
+var i8 = __webpack_require__(/*! ngx-cookie-service */ "ngx-cookie-service");
+var i9 = __webpack_require__(/*! ./userprofile.component */ "./src/app/profile/userprofile/userprofile.component.ts");
+var i10 = __webpack_require__(/*! ../../shared/services/post.service */ "./src/app/shared/services/post.service.ts");
 var styles_UserprofileComponent = [i0.styles];
 var RenderType_UserprofileComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_UserprofileComponent, data: {} });
 exports.RenderType_UserprofileComponent = RenderType_UserprofileComponent;
-function View_UserprofileComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "div", [["class", "mediabox"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 0, "img", [], [[8, "src", 4]], null, null, null, null))], null, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.Path, ""); _ck(_v, 1, 0, currVal_0); }); }
-function View_UserprofileComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 56, "div", [["class", "profile-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "div", [["class", "background-img"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 0, "img", [["onerror", "this.src='assets/images/sports-bible-default.jpg'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "div", [["class", "profile-img"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 0, "img", [["onerror", "this.src='assets/images/user.png'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 0, "div", [["class", "team-info"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 0, "div", [["class", "sub-header"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 49, "div", [["class", "side-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 10, "div", [["class", "followers"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 4, "h4", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Following"])), (_l()(), i1.ɵeld(11, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(13, null, ["", ""])), (_l()(), i1.ɵeld(14, 0, null, null, 4, "h5", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Fans"])), (_l()(), i1.ɵeld(16, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(17, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(18, null, ["", ""])), (_l()(), i1.ɵeld(19, 0, null, null, 28, "div", [["class", "userinfo"]], null, null, null, null, null)), (_l()(), i1.ɵeld(20, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Basic Info"])), (_l()(), i1.ɵeld(22, 0, null, null, 25, "table", [], null, null, null, null, null)), (_l()(), i1.ɵeld(23, 0, null, null, 24, "tbody", [], null, null, null, null, null)), (_l()(), i1.ɵeld(24, 0, null, null, 5, "tr", [], null, null, null, null, null)), (_l()(), i1.ɵeld(25, 0, null, null, 1, "th", [], null, null, null, null, null)), (_l()(), i1.ɵeld(26, 0, null, null, 0, "img", [["src", "assets/images/age.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(27, 0, null, null, 2, "th", [], null, null, null, null, null)), (_l()(), i1.ɵeld(28, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(29, null, ["", ""])), (_l()(), i1.ɵeld(30, 0, null, null, 5, "tr", [], null, null, null, null, null)), (_l()(), i1.ɵeld(31, 0, null, null, 1, "th", [], null, null, null, null, null)), (_l()(), i1.ɵeld(32, 0, null, null, 0, "img", [["src", "assets/images/gender.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(33, 0, null, null, 2, "th", [], null, null, null, null, null)), (_l()(), i1.ɵeld(34, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(35, null, ["", ""])), (_l()(), i1.ɵeld(36, 0, null, null, 5, "tr", [], null, null, null, null, null)), (_l()(), i1.ɵeld(37, 0, null, null, 1, "th", [], null, null, null, null, null)), (_l()(), i1.ɵeld(38, 0, null, null, 0, "img", [["src", "assets/images/study.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(39, 0, null, null, 2, "th", [], null, null, null, null, null)), (_l()(), i1.ɵeld(40, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(41, null, ["", ""])), (_l()(), i1.ɵeld(42, 0, null, null, 5, "tr", [], null, null, null, null, null)), (_l()(), i1.ɵeld(43, 0, null, null, 1, "th", [], null, null, null, null, null)), (_l()(), i1.ɵeld(44, 0, null, null, 0, "img", [["src", "assets/images/home.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(45, 0, null, null, 2, "th", [], null, null, null, null, null)), (_l()(), i1.ɵeld(46, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(47, null, ["", ""])), (_l()(), i1.ɵeld(48, 0, null, null, 8, "div", [["class", "media"]], null, null, null, null, null)), (_l()(), i1.ɵeld(49, 0, null, null, 5, "div", [["class", "head"]], null, null, null, null, null)), (_l()(), i1.ɵeld(50, 0, null, null, 1, "h4", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Media"])), (_l()(), i1.ɵeld(52, 0, null, null, 2, "a", [], null, null, null, null, null)), (_l()(), i1.ɵeld(53, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["See all"])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UserprofileComponent_2)), i1.ɵdid(56, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_8 = _co.mediaArr; _ck(_v, 56, 0, currVal_8); }, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.coverpic, ""); _ck(_v, 2, 0, currVal_0); var currVal_1 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.profile_image, ""); _ck(_v, 4, 0, currVal_1); var currVal_2 = _v.context.$implicit.FollowingCount; _ck(_v, 13, 0, currVal_2); var currVal_3 = _v.context.$implicit.Fancount; _ck(_v, 18, 0, currVal_3); var currVal_4 = _v.context.$implicit.DateofBirth; _ck(_v, 29, 0, currVal_4); var currVal_5 = _v.context.$implicit.Gender; _ck(_v, 35, 0, currVal_5); var currVal_6 = _v.context.$implicit.TypeofInstn; _ck(_v, 41, 0, currVal_6); var currVal_7 = _v.context.$implicit.City; _ck(_v, 47, 0, currVal_7); }); }
-function View_UserprofileComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 27, "div", [["class", "outer-shell"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UserprofileComponent_1)), i1.ɵdid(2, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(3, 0, null, null, 24, "div", [["class", "normal-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 5, "a", [["routerLinkActive", "active"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 5).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+function View_UserprofileComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "div", [["class", "mediabox"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 0, "img", [], [[8, "src", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.imageopen(_v.context.$implicit.Path) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(5, 671744, [[2, 4]], 0, i3.RouterLinkWithHref, [i3.Router, i3.ActivatedRoute, i2.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵdid(6, 1720320, null, 2, i3.RouterLinkActive, [i3.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 1, { links: 1 }), i1.ɵqud(603979776, 2, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Matches"])), (_l()(), i1.ɵeld(10, 0, null, null, 5, "a", [["routerLinkActive", "active"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 11).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+    } return ad; }, null, null))], null, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.Path, ""); _ck(_v, 1, 0, currVal_0); }); }
+function View_UserprofileComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 24, "div", [["class", "normal-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 5, "a", [["routerLinkActive", "active"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 2).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(11, 671744, [[4, 4]], 0, i3.RouterLinkWithHref, [i3.Router, i3.ActivatedRoute, i2.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵdid(12, 1720320, null, 2, i3.RouterLinkActive, [i3.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 3, { links: 1 }), i1.ɵqud(603979776, 4, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Teams"])), (_l()(), i1.ɵeld(16, 0, null, null, 5, "a", [["routerLinkActive", "active"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 17).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+    } return ad; }, null, null)), i1.ɵdid(2, 671744, [[4, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵdid(3, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 3, { links: 1 }), i1.ɵqud(603979776, 4, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["About"])), (_l()(), i1.ɵeld(7, 0, null, null, 5, "a", [["routerLinkActive", "active"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 8).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(17, 671744, [[6, 4]], 0, i3.RouterLinkWithHref, [i3.Router, i3.ActivatedRoute, i2.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵdid(18, 1720320, null, 2, i3.RouterLinkActive, [i3.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 5, { links: 1 }), i1.ɵqud(603979776, 6, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Playmates"])), (_l()(), i1.ɵeld(22, 0, null, null, 5, "a", [["routerLinkActive", "active"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 23).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+    } return ad; }, null, null)), i1.ɵdid(8, 671744, [[6, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵdid(9, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 5, { links: 1 }), i1.ɵqud(603979776, 6, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Matches"])), (_l()(), i1.ɵeld(13, 0, null, null, 5, "a", [["routerLinkActive", "active"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 14).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(23, 671744, [[8, 4]], 0, i3.RouterLinkWithHref, [i3.Router, i3.ActivatedRoute, i2.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵdid(24, 1720320, null, 2, i3.RouterLinkActive, [i3.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 7, { links: 1 }), i1.ɵqud(603979776, 8, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["About"])), (_l()(), i1.ɵeld(28, 16777216, null, null, 1, "router-outlet", [], null, null, null, null, null)), i1.ɵdid(29, 212992, null, 0, i3.RouterOutlet, [i3.ChildrenOutletContexts, i1.ViewContainerRef, i1.ComponentFactoryResolver, [8, null], i1.ChangeDetectorRef], null, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.array; _ck(_v, 2, 0, currVal_0); var currVal_3 = i1.ɵinlineInterpolate(1, "/userprofile/", _co.userid, "/matches"); _ck(_v, 5, 0, currVal_3); var currVal_4 = "active"; _ck(_v, 6, 0, currVal_4); var currVal_7 = i1.ɵinlineInterpolate(1, "/userprofile/", _co.userid, "/teams"); _ck(_v, 11, 0, currVal_7); var currVal_8 = "active"; _ck(_v, 12, 0, currVal_8); var currVal_11 = i1.ɵinlineInterpolate(1, "/userprofile/", _co.userid, "/playmates"); _ck(_v, 17, 0, currVal_11); var currVal_12 = "active"; _ck(_v, 18, 0, currVal_12); var currVal_15 = i1.ɵinlineInterpolate(1, "/userprofile/", _co.userid, "/about"); _ck(_v, 23, 0, currVal_15); var currVal_16 = "active"; _ck(_v, 24, 0, currVal_16); _ck(_v, 29, 0); }, function (_ck, _v) { var currVal_1 = i1.ɵnov(_v, 5).target; var currVal_2 = i1.ɵnov(_v, 5).href; _ck(_v, 4, 0, currVal_1, currVal_2); var currVal_5 = i1.ɵnov(_v, 11).target; var currVal_6 = i1.ɵnov(_v, 11).href; _ck(_v, 10, 0, currVal_5, currVal_6); var currVal_9 = i1.ɵnov(_v, 17).target; var currVal_10 = i1.ɵnov(_v, 17).href; _ck(_v, 16, 0, currVal_9, currVal_10); var currVal_13 = i1.ɵnov(_v, 23).target; var currVal_14 = i1.ɵnov(_v, 23).href; _ck(_v, 22, 0, currVal_13, currVal_14); }); }
+    } return ad; }, null, null)), i1.ɵdid(14, 671744, [[8, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵdid(15, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 7, { links: 1 }), i1.ɵqud(603979776, 8, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Teams"])), (_l()(), i1.ɵeld(19, 0, null, null, 5, "a", [["routerLinkActive", "active"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 20).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), i1.ɵdid(20, 671744, [[10, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵdid(21, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 9, { links: 1 }), i1.ɵqud(603979776, 10, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Playmates"]))], function (_ck, _v) { var _co = _v.component; var currVal_2 = i1.ɵinlineInterpolate(1, "/userprofile/", _co.userid, "/about"); _ck(_v, 2, 0, currVal_2); var currVal_3 = "active"; _ck(_v, 3, 0, currVal_3); var currVal_6 = i1.ɵinlineInterpolate(1, "/userprofile/", _co.userid, "/matches"); _ck(_v, 8, 0, currVal_6); var currVal_7 = "active"; _ck(_v, 9, 0, currVal_7); var currVal_10 = i1.ɵinlineInterpolate(1, "/userprofile/", _co.userid, "/teams"); _ck(_v, 14, 0, currVal_10); var currVal_11 = "active"; _ck(_v, 15, 0, currVal_11); var currVal_14 = i1.ɵinlineInterpolate(1, "/userprofile/", _co.userid, "/playmates"); _ck(_v, 20, 0, currVal_14); var currVal_15 = "active"; _ck(_v, 21, 0, currVal_15); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 2).target; var currVal_1 = i1.ɵnov(_v, 2).href; _ck(_v, 1, 0, currVal_0, currVal_1); var currVal_4 = i1.ɵnov(_v, 8).target; var currVal_5 = i1.ɵnov(_v, 8).href; _ck(_v, 7, 0, currVal_4, currVal_5); var currVal_8 = i1.ɵnov(_v, 14).target; var currVal_9 = i1.ɵnov(_v, 14).href; _ck(_v, 13, 0, currVal_8, currVal_9); var currVal_12 = i1.ɵnov(_v, 20).target; var currVal_13 = i1.ɵnov(_v, 20).href; _ck(_v, 19, 0, currVal_12, currVal_13); }); }
+function View_UserprofileComponent_0(_l) { return i1.ɵvid(0, [i1.ɵqud(402653184, 1, { widgets: 0 }), i1.ɵqud(402653184, 2, { widgetsContent: 0 }), (_l()(), i1.ɵeld(2, 0, null, null, 1, "sports-social-header", [], null, [["window", "resize"]], function (_v, en, $event) { var ad = true; if (("window:resize" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 3).onresize() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, i4.View_HeaderComponent_0, i4.RenderType_HeaderComponent)), i1.ɵdid(3, 4308992, null, 0, i5.HeaderComponent, [i6.PropertyService, i7.InteractionService, i8.CookieService], null, null), (_l()(), i1.ɵeld(4, 0, null, null, 80, "div", [["class", "outer-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 34, "div", [["class", "profile-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 1, "div", [["class", "background-img"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 0, "img", [["onerror", "this.src='/assets/images/sportsocialteamviewheader.jpg'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 1, "div", [["class", "profile-img"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 0, "img", [["onerror", "this.src='assets/images/user.png'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(10, 0, null, null, 9, "div", [["class", "profile-info"]], null, null, null, null, null)), (_l()(), i1.ɵeld(11, 0, null, null, 4, "div", [["class", "name"]], null, null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(13, null, ["", ""])), (_l()(), i1.ɵeld(14, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(15, null, ["@", ""])), (_l()(), i1.ɵeld(16, 0, null, null, 2, "div", [["class", "follow"]], null, null, null, null, null)), (_l()(), i1.ɵeld(17, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Follow"])), (_l()(), i1.ɵeld(19, 0, null, null, 0, "img", [["alt", ""], ["src", "assets/images/sportsocialchat.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(20, 0, null, null, 19, "div", [["class", "sub-header"]], null, null, null, null, null)), (_l()(), i1.ɵeld(21, 0, null, null, 0, "img", [["alt", ""], ["class", "profile-pic"], ["onerror", "this.src='assets/images/user.png'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(22, 0, null, null, 8, "div", [["class", "fans"]], null, null, null, null, null)), (_l()(), i1.ɵeld(23, 0, null, null, 3, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Fans"])), (_l()(), i1.ɵeld(25, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Following"])), (_l()(), i1.ɵeld(27, 0, null, null, 3, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(28, null, ["", ""])), (_l()(), i1.ɵeld(29, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(30, null, ["", ""])), (_l()(), i1.ɵeld(31, 0, null, null, 4, "div", [["class", "sub-name"]], null, null, null, null, null)), (_l()(), i1.ɵeld(32, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(33, null, ["", ""])), (_l()(), i1.ɵeld(34, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(35, null, ["@", ""])), (_l()(), i1.ɵeld(36, 0, null, null, 2, "div", [["class", "sub-follow"]], null, null, null, null, null)), (_l()(), i1.ɵeld(37, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Follow"])), (_l()(), i1.ɵeld(39, 0, null, null, 0, "img", [["alt", ""], ["class", "sub-follow-img"], ["src", "assets/images/sportsocialchat.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(40, 0, null, null, 42, "div", [["class", "side-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(41, 0, null, null, 32, "div", [["class", "stick"]], null, null, null, null, null)), (_l()(), i1.ɵeld(42, 0, null, null, 8, "div", [["class", "followers"]], null, null, null, null, null)), (_l()(), i1.ɵeld(43, 0, null, null, 3, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Fans"])), (_l()(), i1.ɵeld(45, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["\u00A0Following"])), (_l()(), i1.ɵeld(47, 0, null, null, 3, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(48, null, ["\u00A0", ""])), (_l()(), i1.ɵeld(49, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(50, null, ["", ""])), (_l()(), i1.ɵeld(51, 0, null, null, 22, "div", [["class", "basic-info"]], null, null, null, null, null)), (_l()(), i1.ɵeld(52, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Basic Info"])), (_l()(), i1.ɵeld(54, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(55, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(56, 0, null, null, 0, "img", [["src", "assets/images/age.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(57, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(58, null, ["", ""])), (_l()(), i1.ɵeld(59, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(60, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(61, 0, null, null, 0, "img", [["src", "assets/images/gender.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(62, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(63, null, ["", ""])), (_l()(), i1.ɵeld(64, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(65, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(66, 0, null, null, 0, "img", [["src", "assets/images/study.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(67, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(68, null, ["", ""])), (_l()(), i1.ɵeld(69, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(70, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(71, 0, null, null, 0, "img", [["src", "assets/images/home.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(72, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(73, null, ["", ""])), (_l()(), i1.ɵeld(74, 0, null, null, 8, "div", [["class", "media"]], null, null, null, null, null)), (_l()(), i1.ɵeld(75, 0, null, null, 5, "div", [["class", "head"]], null, null, null, null, null)), (_l()(), i1.ɵeld(76, 0, null, null, 1, "h4", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Media"])), (_l()(), i1.ɵeld(78, 0, null, null, 2, "a", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.opencrousal() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(79, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["See all"])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UserprofileComponent_1)), i1.ɵdid(82, 278528, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UserprofileComponent_2)), i1.ɵdid(84, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵeld(85, 0, null, null, 7, "div", [["class", "media-crousal"]], null, null, null, null, null)), (_l()(), i1.ɵeld(86, 0, null, null, 0, "img", [["alt", ""], ["class", "single-image"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(87, 0, null, null, 1, "div", [["class", "close"]], null, null, null, null, null)), (_l()(), i1.ɵeld(88, 0, null, null, 0, "img", [["src", "/assets/images/sportsocialprofileclose.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.close() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(89, 0, null, null, 1, "div", [["class", "larrow"]], null, null, null, null, null)), (_l()(), i1.ɵeld(90, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialprofilerightarrow.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.lscroll() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(91, 0, null, null, 1, "div", [["class", "rarrow"]], null, null, null, null, null)), (_l()(), i1.ɵeld(92, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialprofileleftarrow.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.rscroll() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(93, 16777216, null, null, 1, "router-outlet", [], null, null, null, null, null)), i1.ɵdid(94, 212992, null, 0, i2.RouterOutlet, [i2.ChildrenOutletContexts, i1.ViewContainerRef, i1.ComponentFactoryResolver, [8, null], i1.ChangeDetectorRef], null, null)], function (_ck, _v) { var _co = _v.component; _ck(_v, 3, 0); var currVal_15 = _co.mediaArr; _ck(_v, 82, 0, currVal_15); var currVal_16 = _co.show; _ck(_v, 84, 0, currVal_16); _ck(_v, 94, 0); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = i1.ɵinlineInterpolate(1, "", _co.coverpic, ""); _ck(_v, 7, 0, currVal_0); var currVal_1 = i1.ɵinlineInterpolate(1, "", _co.profile_image, ""); _ck(_v, 9, 0, currVal_1); var currVal_2 = _co.FirstName; _ck(_v, 13, 0, currVal_2); var currVal_3 = _co.UniqueName; _ck(_v, 15, 0, currVal_3); var currVal_4 = i1.ɵinlineInterpolate(1, "", _co.profile_image, ""); _ck(_v, 21, 0, currVal_4); var currVal_5 = _co.Fancount; _ck(_v, 28, 0, currVal_5); var currVal_6 = _co.FollowingCount; _ck(_v, 30, 0, currVal_6); var currVal_7 = _co.FirstName; _ck(_v, 33, 0, currVal_7); var currVal_8 = _co.UniqueName; _ck(_v, 35, 0, currVal_8); var currVal_9 = _co.Fancount; _ck(_v, 48, 0, currVal_9); var currVal_10 = _co.FollowingCount; _ck(_v, 50, 0, currVal_10); var currVal_11 = _co.DateofBirth; _ck(_v, 58, 0, currVal_11); var currVal_12 = _co.Gender; _ck(_v, 63, 0, currVal_12); var currVal_13 = _co.TypeofInstn; _ck(_v, 68, 0, currVal_13); var currVal_14 = _co.City; _ck(_v, 73, 0, currVal_14); var currVal_17 = i1.ɵinlineInterpolate(1, "", _co.crousalsingleimage, ""); _ck(_v, 86, 0, currVal_17); }); }
 exports.View_UserprofileComponent_0 = View_UserprofileComponent_0;
-function View_UserprofileComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-userprofile", [], null, null, null, View_UserprofileComponent_0, RenderType_UserprofileComponent)), i1.ɵdid(1, 245760, null, 0, i4.UserprofileComponent, [i5.PostService, i3.ActivatedRoute], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+function View_UserprofileComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-userprofile", [], null, [["document", "keyup"]], function (_v, en, $event) { var ad = true; if (("document:keyup" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 1).handleDeleteKeyboardEvent($event) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, View_UserprofileComponent_0, RenderType_UserprofileComponent)), i1.ɵdid(1, 245760, null, 0, i9.UserprofileComponent, [i10.PostService, i2.ActivatedRoute], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_UserprofileComponent_Host_0 = View_UserprofileComponent_Host_0;
-var UserprofileComponentNgFactory = i1.ɵccf("sports-social-userprofile", i4.UserprofileComponent, View_UserprofileComponent_Host_0, { userid: "userid", pageNo: "pageNo" }, {}, []);
+var UserprofileComponentNgFactory = i1.ɵccf("sports-social-userprofile", i9.UserprofileComponent, View_UserprofileComponent_Host_0, { userid: "userid", pageNo: "pageNo", array: "array", upcomingarray: "upcomingarray" }, {}, []);
 exports.UserprofileComponentNgFactory = UserprofileComponentNgFactory;
 
 
@@ -10644,16 +11050,31 @@ var UserprofileComponent = /** @class */ (function () {
         var _this = this;
         this.postservice = postservice;
         this.activatedroute = activatedroute;
+        this.followerstab = document.getElementsByClassName('followers');
+        this.sideshellposition = document.getElementsByClassName('side-shell');
+        this.opensubheader = document.getElementsByClassName('sub-header');
+        this.leftarrow = document.getElementsByClassName('larrow');
+        this.rightarrow = document.getElementsByClassName('rarrow');
+        this.showcrousal = document.getElementsByClassName('media-crousal');
+        this.singleimage = document.getElementsByClassName('single-image');
+        this.crousal = document.getElementsByClassName('crousal-element');
         this.date = new Date();
         this.array = [];
+        this.upcomingarray = [];
         this.mediaArr = [];
-        this.opensubheader = document.getElementsByClassName('sub-header');
+        this.show = false;
         this.scroll = function () {
             if (window.pageYOffset > 370) {
                 _this.opensubheader[0].style.display = "block";
+                _this.followerstab[0].style.display = "none";
+                _this.sideshellposition[0].style.position = "fixed";
+                _this.sideshellposition[0].style.top = "130px";
             }
             else {
+                _this.sideshellposition[0].style.top = "0";
+                _this.followerstab[0].style.display = "block";
                 _this.opensubheader[0].style.display = "none";
+                _this.sideshellposition[0].style.position = "relative";
             }
         };
     }
@@ -10665,10 +11086,11 @@ var UserprofileComponent = /** @class */ (function () {
     };
     UserprofileComponent.prototype.getUserDetails = function () {
         var _this = this;
-        for (var i = 0; i < 20; i++) {
+        for (var i = 1; i <= 10; i++) {
             this.pageNo = i;
         }
         this.postservice.UserProfile(this.userid, this.userid, this.pageNo, this.date).subscribe(function (res) {
+            _this.show = true;
             for (var i = 0; i < res["UserData"].length; i++) {
                 /** Birthdate calculate*/
                 var bdate = res["UserData"][i].DateofBirth;
@@ -10687,21 +11109,19 @@ var UserprofileComponent = /** @class */ (function () {
                 else if (typeinst == 3) {
                     _this.Instutionresult = "Working at " + res["UserData"][i].InstnName;
                 }
-                _this.array.push({
-                    FirstName: res["UserData"][i].FirstName,
-                    LastName: res["UserData"][i].LastName,
-                    UniqueName: res["UserData"][i].UniqueName,
-                    Gender: res["UserData"][i].Gender,
-                    DateofBirth: agecount,
-                    profile_image: res["UserData"][i].profile_image,
-                    coverpic: res["UserData"][i].coverpic,
-                    Fancount: res["UserData"][i].Fancount,
-                    FollowingCount: res["UserData"][i].FollowingCount,
-                    City: res["UserData"][i].City,
-                    Academy: res["UserData"][i].Academy,
-                    TypeofInstn: _this.Instutionresult,
-                    InstnName: res["UserData"][i].InstnName
-                });
+                _this.FirstName = res["UserData"][i].FirstName,
+                    _this.LastName = res["UserData"][i].LastName,
+                    _this.UniqueName = res["UserData"][i].UniqueName,
+                    _this.Gender = res["UserData"][i].Gender,
+                    _this.DateofBirth = agecount,
+                    _this.profile_image = res["UserData"][i].profile_image,
+                    _this.coverpic = res["UserData"][i].coverpic,
+                    _this.Fancount = res["UserData"][i].Fancount,
+                    _this.FollowingCount = res["UserData"][i].FollowingCount,
+                    _this.City = res["UserData"][i].City,
+                    _this.Academy = res["UserData"][i].Academy,
+                    _this.TypeofInstn = _this.Instutionresult,
+                    _this.InstnName = res["UserData"][i].InstnName;
             }
             /*End of Userdata loop */
             for (var i = 0; i < res["Images"].length; i++) {
@@ -10719,10 +11139,197 @@ var UserprofileComponent = /** @class */ (function () {
             }
         });
     };
+    UserprofileComponent.prototype.openimage = function () {
+        console.log("working");
+    };
     UserprofileComponent.prototype.ngOnInit = function () {
         this.getUserId();
         this.getUserDetails();
+        this.getpastmatches();
         window.addEventListener('scroll', this.scroll, true);
+    };
+    UserprofileComponent.prototype.getpastmatches = function () {
+        var _this = this;
+        var date = Math.floor(Date.now() / 1000);
+        var pageno, statusnumber;
+        // for(var i=1;i<2;i++){
+        pageno = 1;
+        // statusnumber = i;
+        // i=0;
+        this.postservice.UsersParticularMatches(this.userid, this.userid, pageno, date).subscribe(function (res) {
+            // console.log(res["Past"].length);    
+            for (var j = 0; j < res["Past"].length; j++) {
+                var agebracket = res["Past"][j].ageBracket;
+                if (agebracket == 0) {
+                    _this.Age = "Under 13";
+                }
+                else if (agebracket == 1) {
+                    _this.Age = "Under 15";
+                }
+                else if (agebracket == 2) {
+                    _this.Age = "Under 17";
+                }
+                else if (agebracket == 3) {
+                    _this.Age = "Under 19";
+                }
+                else if (agebracket == 4) {
+                    _this.Age = "Under 21";
+                }
+                else if (agebracket == 5) {
+                    _this.Age = "Under 23";
+                }
+                else if (agebracket == -1) {
+                    _this.Age = "Open for All";
+                }
+                var newstring = res["Past"][j].matchGender;
+                if (newstring.toLowerCase() === "mix") {
+                    _this.gendercheck = "Mix-up";
+                }
+                else if (newstring.toLowerCase() === "female") {
+                    _this.gendercheck = "Women's";
+                }
+                else if (newstring.toLowerCase() === "male") {
+                    _this.gendercheck = "Men's";
+                }
+                if (res["Past"][j].scoreTeam1 != null && res["Past"][j].scoreTeam2 != null) {
+                    _this.array.push({
+                        startdatetime: "Match Finished",
+                        finished: true,
+                        upcoming: false,
+                        Username: res["Past"][j].Username,
+                        Eventid: res["Past"][j].Eventid,
+                        Gamename: res["Past"][j].Gamename,
+                        EventText: res["Past"][j].EventText,
+                        // profile_image:res["Past"][j].profile_image,
+                        ageBracket: _this.Age,
+                        gender: _this.gendercheck,
+                        event_image: res["Past"][j].event_image,
+                        InsertedDate: res["Past"][j].InsertedDate,
+                        CommentCount: res["Past"][j].CommentCount,
+                        PromoteCount: res["Past"][j].PromoteCount,
+                        JoineeCount: res["Past"][j].JoineeCount,
+                        WatchCount: res["Past"][j].WatchCount,
+                        StartDateTime: res["Past"][j].StartDateTime,
+                        MatchStarterName: res["Past"][j].MatchStarterName,
+                        MatchStarterUniqueName: res["Past"][j].MatchStarterUniqueName,
+                        MatchStarterPhoto: res["Past"][j].MatchStarterPhoto,
+                        venue_name: res["Past"][j].venue_name,
+                        Team1Name: res["Past"][j].Team1Name,
+                        Team2Name: res["Past"][j].Team2Name,
+                        scoreTeam1: res["Past"][j].scoreTeam1 == null || res["Past"][j].scoreTeam2 == null ? '' : res["Past"][j].scoreTeam1 + ' - ',
+                        scoreTeam2: res["Past"][j].scoreTeam2 == null || res["Past"][j].scoreTeam1 == null ? 'VS' : res["Past"][j].scoreTeam2,
+                        matchGender: res["Past"][j].matchGender,
+                        profile_Photo_path: res["Past"][j].profile_Photo_path,
+                    });
+                }
+                // console.log("this username",res["Past"][j].Eventid);
+            }
+            // upcoming matches
+            for (var j = 0; j < res["Upcoming"].length; j++) {
+                var agebracket = res["Upcoming"][j].ageBracket;
+                if (agebracket == 0) {
+                    _this.Age = "Under 13";
+                }
+                else if (agebracket == 1) {
+                    _this.Age = "Under 15";
+                }
+                else if (agebracket == 2) {
+                    _this.Age = "Under 17";
+                }
+                else if (agebracket == 3) {
+                    _this.Age = "Under 19";
+                }
+                else if (agebracket == 4) {
+                    _this.Age = "Under 21";
+                }
+                else if (agebracket == 5) {
+                    _this.Age = "Under 23";
+                }
+                else if (agebracket == -1) {
+                    _this.Age = "Open for All";
+                }
+                var newstring = res["Upcoming"][j].matchGender;
+                if (newstring.toLowerCase() === "mix") {
+                    _this.gendercheck = "Mix-up";
+                }
+                else if (newstring.toLowerCase() === "female") {
+                    _this.gendercheck = "Women's";
+                }
+                else if (newstring.toLowerCase() === "male") {
+                    _this.gendercheck = "Men's";
+                }
+                _this.upcomingarray.push({
+                    startdatetime: "Upcoming",
+                    finished: false,
+                    upcoming: true,
+                    Username: res["Upcoming"][j].Username,
+                    Eventid: res["Upcoming"][j].Eventid,
+                    Gamename: res["Upcoming"][j].Gamename,
+                    EventText: res["Upcoming"][j].EventText,
+                    // profile_image:res["Upcoming"][j].profile_image,
+                    ageBracket: _this.Age,
+                    gender: _this.gendercheck,
+                    event_image: res["Upcoming"][j].event_image,
+                    InsertedDate: res["Upcoming"][j].InsertedDate,
+                    CommentCount: res["Upcoming"][j].CommentCount,
+                    PromoteCount: res["Upcoming"][j].PromoteCount,
+                    JoineeCount: res["Upcoming"][j].JoineeCount,
+                    WatchCount: res["Upcoming"][j].WatchCount,
+                    StartDateTime: res["Upcoming"][j].StartDateTime,
+                    MatchStarterName: res["Upcoming"][j].MatchStarterName,
+                    MatchStarterUniqueName: res["Upcoming"][j].MatchStarterUniqueName,
+                    MatchStarterPhoto: res["Upcoming"][j].MatchStarterPhoto,
+                    venue_name: res["Upcoming"][j].venue_name,
+                    Team1Name: res["Upcoming"][j].Team1Name,
+                    Team2Name: res["Upcoming"][j].Team2Name,
+                    scoreTeam1: res["Upcoming"][j].scoreTeam1 == null || res["Upcoming"][j].scoreTeam2 == null ? '' : res["Upcoming"][j].scoreTeam1 + ' - ',
+                    scoreTeam2: res["Upcoming"][j].scoreTeam2 == null || res["Upcoming"][j].scoreTeam1 == null ? 'VS' : res["Upcoming"][j].scoreTeam2,
+                    matchGender: res["Upcoming"][j].matchGender,
+                    profile_Photo_path: res["Upcoming"][j].profile_Photo_path,
+                });
+                console.log("this upcoming", _this.upcomingarray);
+            }
+        });
+        // }
+    };
+    UserprofileComponent.prototype.imageopen = function (url) {
+        this.crousalsingleimage = url;
+        console.log(url);
+        this.showcrousal[0].style.display = "block";
+        this.crousal[0].style.display = "none";
+        this.leftarrow[0].style.display = "none";
+        this.rightarrow[0].style.display = "none";
+        this.singleimage[0].style.display = "block";
+    };
+    UserprofileComponent.prototype.opencrousal = function () {
+        this.showcrousal[0].style.display = "block";
+        this.crousal[0].style.display = "block";
+        this.leftarrow[0].style.display = "block";
+        this.rightarrow[0].style.display = "block";
+        this.singleimage[0].style.display = "none";
+        // this.crousallist = this.mediaArr;
+    };
+    UserprofileComponent.prototype.handleDeleteKeyboardEvent = function (event) {
+        if (event.key === 'ArrowLeft') {
+            this.lscroll();
+        }
+        if (event.key === 'ArrowRight') {
+            this.rscroll();
+        }
+        if (event.keyCode === 27) {
+            this.showcrousal[0].style.display = "none";
+        }
+    };
+    UserprofileComponent.prototype.lscroll = function () {
+        console.log("working");
+        this.widgets.nativeElement.scrollLeft -= this.widgetsContent.nativeElement.clientWidth;
+    };
+    UserprofileComponent.prototype.rscroll = function () {
+        console.log("working");
+        this.widgets.nativeElement.scrollLeft += this.widgetsContent.nativeElement.clientWidth;
+    };
+    UserprofileComponent.prototype.close = function () {
+        this.showcrousal[0].style.display = "none";
     };
     UserprofileComponent.prototype.ngOnDestroy = function () {
         window.removeEventListener('scroll', this.scroll, true);
@@ -11166,6 +11773,12 @@ var PostService = /** @class */ (function () {
                 page: Number,
                 currentdate: String
             }];
+        this.userProfileAboutObj = {
+            userid: String,
+            profileid: String,
+            page: Number,
+            currentdate: String
+        };
         this.fanobj = [{
                 userid: String,
                 profileid: String,
@@ -11316,6 +11929,15 @@ var PostService = /** @class */ (function () {
             }];
         return this.http.post('https://test.sportsocial.in/user/usermatchesPastFuture', this.userParticularMatchesObj);
     };
+    PostService.prototype.UserProfileAbout = function (userid, profileid, page, currentdate) {
+        this.userProfileAboutObj = {
+            userid: userid,
+            profileid: profileid,
+            page: page,
+            currentdate: currentdate
+        };
+        return this.http.post('https://test.sportsocial.in/poc/getUserDetails', this.userProfileAboutObj);
+    };
     PostService.prototype.TeamProfile = function (userid, teamid) {
         this.teamprofileobj = {
             userid: userid,
@@ -11330,7 +11952,6 @@ var PostService = /** @class */ (function () {
                 page: page,
                 timestamp: timestamp
             }];
-        console.log("working service");
         return this.http.post('https://test.sportsocial.in/poc/getFansNew', this.fanobj);
     };
     PostService.prototype.getMembers = function (teamid, userid, timestamp) {
@@ -11339,7 +11960,6 @@ var PostService = /** @class */ (function () {
                 userid: userid,
                 timestamp: timestamp
             }];
-        console.log("working service member");
         return this.http.post('https://test.sportsocial.in/team/getTeamMembers', this.memberobj);
     };
     return PostService;

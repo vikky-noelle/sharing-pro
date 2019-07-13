@@ -47,6 +47,10 @@ export class ContactUsComponent implements OnInit {
       // window.location.reload();
     })
   }
+
+  windowReload(){
+    window.location.reload();
+  }
   // popup = document.getElementsByClassName('popup') as HTMLCollectionOf<HTMLElement>;
   // openpopup(){
   //       this.popup[0].style.display="block";
