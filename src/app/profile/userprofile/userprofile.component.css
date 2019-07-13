@@ -403,8 +403,11 @@
         transform: scale(1.1);
     }
     
-    @media screen and (min-width:200px) and (max-width:350px){
+    @media screen and (min-width:200px) and (max-width:700px){
         /* for header that show after scroll*/
+        .sub-header{
+            height: 60px;
+        }
         .profile-pic{
             height: 40px;
             width: 40px;
@@ -412,10 +415,7 @@
             margin-left: 3%;
         }
         .fans{
-            margin-top: 50px;
-            width: 25%;
-            margin-left: -15%;
-            line-height: .9;
+            margin-top: 12px;
         }
         .fans h1{
             margin-right: 2%;
@@ -435,7 +435,7 @@
         .sub-name{
             width: 25%;
             margin-left: 5%;
-            margin-top: 10px;
+            margin-top: 15px;
         }
         .sub-name>h1{
             font-size: .8em;
@@ -445,24 +445,26 @@
         }
        
         .sub-follow{
-            margin-top: 15px;
+            margin-top: 20px;
             margin-right: 2%;
             width: 60px;
             height: 20px;
         }
         .sub-follow>h1{
+            margin-top: 2px;
             font-size: .8em;
         }
         .sub-follow-img{
             height: 20px;
-            width: 25px;
-            margin-top: 18px;
+            width: 20px;
+            margin-top: 22px;
         }
 
         /* for bodyyy */
         .profile-shell{
             /* border: 2px solid red; */
             position: relative;
+            margin-top: 60px;
             height: 300px;
             width: 100%;
             background-color: #ffffff;
@@ -480,7 +482,7 @@
         }
         .background-img{
             position: relative;
-            height: 120px;
+            height: 100px;
             width: 100%;
         }
         .background-img img{
@@ -488,30 +490,36 @@
             height: 100%;
         }
         .profile-img{
+            clear: both;
             position: relative;
-            left: 34%;
+            margin: 0 auto;
+            left: 0%; /* it was given in the normal view but altered the current one*/
             height: 100px;
             width: 100px;
-            margin-top: -16%;
+            bottom: 20%;
         }
         .profile-img>img{
-            margin-left: 0%;
-            margin-top: 0%;
-            height: 100%;
-            width: 100%;
+            margin-left: 2%;
+            margin-top: 2%;
+            height: 96%;
+            width: 96%;
         }
         .profile-info{
-            position: absolute;
-            top: 56%;
-            height:110px;
+            /* position: absolute; */
+            margin-top: -30px;
+            height: 80px;
             width: 100%;
             margin-left: 0%;
+            box-shadow: none !important;
             /* border: 1px solid blue; */
         }
         .profile-info>img{
             height: 20px;
             width: 20px;
-            margin-top: -21%;
+            margin: 0;
+            top: 0%;
+            /* float: left; */
+            margin-top: -65px;
             clear: both;
             margin-right: 30%;
         }
@@ -548,584 +556,4 @@
           }
     }
 
-    /* for 361 tp 450 */
-    @media screen and (min-width:351px) and (max-width:420px){
-        /* for header that show after scroll*/
-        .profile-pic{
-            height: 40px;
-            width: 40px;
-            margin-top: 10px;
-            margin-left: 3%;
-        }
-        .fans{
-            margin-top: 50px;
-            width: 25%;
-            margin-left: -15%;
-            line-height: .9;
-        }
-        .fans h1{
-            margin-right: 2%;
-            display: inline-flex;
-            font-size: .7em;
-        }
-        .fans h1 span{
-            margin-left: 8%;
-        }
-        .fans h2{
-            display: inline-flex;
-            font-size: .7em;
-        }
-        .fans h2 span{
-            margin-left: 60%;
-        }
-        .sub-name{
-            width: 25%;
-            margin-left: 5%;
-            margin-top: 10px;
-        }
-        .sub-name>h1{
-            font-size: .8em;
-        }
-        .sub-name h2{
-            font-size: .8em;
-        }
-       
-        .sub-follow{
-            margin-top: 15px;
-            margin-right: 2%;
-            width: 60px;
-            height: 20px;
-        }
-        .sub-follow>h1{
-            font-size: .8em;
-        }
-        .sub-follow-img{
-            height: 20px;
-            width: 25px;
-            margin-top: 18px;
-        }
-
-        /* for bodyyy */
-        .profile-shell{
-            /* border: 2px solid red; */
-            position: relative;
-            height: 300px;
-            width: 100%;
-            background-color: #ffffff;
-        }
-        .side-shell{
-            display: none;
-        }
-        .normal-shell{
-            height: 40px;
-            width: 100%;
-            margin-left: 0%;
-        }
-        .normal-shell>a{
-            font-size: .8em;
-        }
-        .background-img{
-            position: relative;
-            height: 120px;
-            width: 100%;
-        }
-        .background-img img{
-            width: 100%;
-            height: 100%;
-        }
-        .profile-img{
-            position: relative;
-            left: 34%;
-            height: 100px;
-            width: 100px;
-            margin-top: -16%;
-        }
-        .profile-img>img{
-            margin-left: 0%;
-            margin-top: 0%;
-            height: 100%;
-            width: 100%;
-        }
-        .profile-info{
-            position: absolute;
-            top: 56%;
-            height:110px;
-            width: 100%;
-            margin-left: 0%;
-            /* border: 1px solid blue; */
-        }
-        .profile-info>img{
-            height: 20px;
-            width: 20px;
-            margin-top: -18%;
-            clear: both;
-            margin-right: 30%;
-        }
-        .name{
-            clear: both !important;
-            text-align: center;
-            align-content: center;
-            width: 30%;
-            margin-left: 32%;
-            margin-top: 0%;
-        }
-        .name>h1{
-            font-size: 1.2em;
-            padding: 1%;
-        }
-        .name>h2{
-            font-size: .8em;
-            color: #024771;
-        }
-        .follow{
-            clear: both !important;
-            margin-top: 7px;
-            margin-right: 42%;
-            width: 20%;
-            height: 20px;
-            border-radius: 4px;
-          }
-        .follow>h1{
-            font-size: .9em;
-            font-weight: bold;
-            text-align: center;
-            margin-top: 2px;
-            margin-left: 0%;
-            color: #024771;
-          }
-    }
-    @media screen and (min-width:421px) and (max-width:480px){
-        /* for header that show after scroll*/
-        .profile-pic{
-            height: 40px;
-            width: 40px;
-            margin-top: 10px;
-            margin-left: 3%;
-        }
-        .fans{
-            margin-top: 50px;
-            width: 25%;
-            margin-left: -15%;
-            line-height: .9;
-        }
-        .fans h1{
-            margin-right: 2%;
-            display: inline-flex;
-            font-size: .7em;
-        }
-        .fans h1 span{
-            margin-left: 8%;
-        }
-        .fans h2{
-            display: inline-flex;
-            font-size: .7em;
-        }
-        .fans h2 span{
-            margin-left: 60%;
-        }
-        .sub-name{
-            width: 25%;
-            margin-left: 5%;
-            margin-top: 10px;
-        }
-        .sub-name>h1{
-            font-size: .8em;
-        }
-        .sub-name h2{
-            font-size: .8em;
-        }
-       
-        .sub-follow{
-            margin-top: 15px;
-            margin-right: 2%;
-            width: 60px;
-            height: 20px;
-        }
-        .sub-follow>h1{
-            font-size: .8em;
-        }
-        .sub-follow-img{
-            height: 20px;
-            width: 25px;
-            margin-top: 18px;
-        }
-
-        /* for bodyyy */
-        .profile-shell{
-            /* border: 2px solid red; */
-            position: relative;
-            height: 300px;
-            width: 100%;
-            background-color: #ffffff;
-        }
-        .side-shell{
-            display: none;
-        }
-        .normal-shell{
-            height: 40px;
-            width: 100%;
-            margin-left: 0%;
-        }
-        .normal-shell>a{
-            font-size: .8em;
-        }
-        .background-img{
-            position: relative;
-            height: 120px;
-            width: 100%;
-        }
-        .background-img img{
-            width: 100%;
-            height: 100%;
-        }
-        .profile-img{
-            position: relative;
-            left: 38%;
-            height: 100px;
-            width: 100px;
-            margin-top: -16%;
-        }
-        .profile-img>img{
-            margin-left: 0%;
-            margin-top: 0%;
-            height: 100%;
-            width: 100%;
-        }
-        .profile-info{
-            position: absolute;
-            top: 56%;
-            height:110px;
-            width: 100%;
-            margin-left: 0%;
-            /* border: 1px solid blue; */
-        }
-        .profile-info>img{
-            height: 20px;
-            width: 20px;
-            margin-top: -16%;
-            clear: both;
-            margin-right: 32%;
-        }
-        .name{
-            clear: both !important;
-            text-align: center;
-            align-content: center;
-            width: 30%;
-            margin-left: 34%;
-            margin-top: 0%;
-        }
-        .name>h1{
-            font-size: 1.2em;
-            padding: 2%;
-        }
-        .name>h2{
-            font-size: .8em;
-            color: #024771;
-        }
-        .follow{
-            clear: both !important;
-            margin-top: 7px;
-            margin-right: 40%;
-            width: 20%;
-            height: 20px;
-            border-radius: 4px;
-          }
-        .follow>h1{
-            font-size: .9em;
-            font-weight: bold;
-            text-align: center;
-            margin-top: 2px;
-            margin-left: 0%;
-            color: #024771;
-          }
-    }
-    @media screen and (min-width:481px) and (max-width:530px){
-        /* for header that show after scroll*/
-        .profile-pic{
-            height: 40px;
-            width: 40px;
-            margin-top: 10px;
-            margin-left: 3%;
-        }
-        .fans{
-            margin-top: 50px;
-            width: 25%;
-            margin-left: -15%;
-            line-height: .9;
-        }
-        .fans h1{
-            margin-right: 2%;
-            display: inline-flex;
-            font-size: .7em;
-        }
-        .fans h1 span{
-            margin-left: 8%;
-        }
-        .fans h2{
-            display: inline-flex;
-            font-size: .7em;
-        }
-        .fans h2 span{
-            margin-left: 60%;
-        }
-        .sub-name{
-            width: 25%;
-            margin-left: 5%;
-            margin-top: 10px;
-        }
-        .sub-name>h1{
-            font-size: .8em;
-        }
-        .sub-name h2{
-            font-size: .8em;
-        }
-       
-        .sub-follow{
-            margin-top: 15px;
-            margin-right: 2%;
-            width: 60px;
-            height: 20px;
-        }
-        .sub-follow>h1{
-            font-size: .8em;
-        }
-        .sub-follow-img{
-            height: 20px;
-            width: 25px;
-            margin-top: 18px;
-        }
-
-        /* for bodyyy */
-        .profile-shell{
-            border: 2px solid red;
-            position: relative;
-            height: 250px;
-            width: 100%;
-            background-color: #ffffff;
-        }
-        .side-shell{
-            display: none;
-        }
-        .normal-shell{
-            height: 40px;
-            width: 100%;
-            margin-left: 0%;
-        }
-        .normal-shell>a{
-            font-size: .8em;
-        }
-        .background-img{
-            position: relative;
-            height: 120px;
-            width: 100%;
-        }
-        .background-img img{
-            width: 100%;
-            height: 100%;
-        }
-        .profile-img{
-            position: relative;
-            left: 39%;
-            height: 100px;
-            width: 100px;
-            margin-top: -16%;
-        }
-        .profile-img>img{
-            margin-left: 0%;
-            margin-top: 0%;
-            height: 100%;
-            width: 100%;
-        }
-        .profile-info{
-            position: absolute;
-            top: 56%;
-            height:110px;
-            width: 100%;
-            margin-left: 0%;
-            /* border: 1px solid blue; */
-        }
-        .profile-info>img{
-            height: 20px;
-            width: 20px;
-            margin-top: -14%;
-            clear: both;
-            margin-right: 32%;
-        }
-        .name{
-            clear: both !important;
-            text-align: center;
-            align-content: center;
-            width: 30%;
-            margin-left: 34%;
-            margin-top: 0%;
-        }
-        .name>h1{
-            font-size: 1.2em;
-            padding: 2%;
-        }
-        .name>h2{
-            font-size: .8em;
-            color: #024771;
-        }
-        .follow{
-            clear: both !important;
-            margin-top: 7px;
-            margin-right: 40%;
-            width: 20%;
-            height: 20px;
-            border-radius: 4px;
-          }
-        .follow>h1{
-            font-size: .9em;
-            font-weight: bold;
-            text-align: center;
-            margin-top: 2px;
-            margin-left: 0%;
-            color: #024771;
-          }
-    }
-    @media screen and (min-width:531px) and (max-width:600px){
-        /* for header that show after scroll*/
-        .profile-pic{
-            height: 40px;
-            width: 40px;
-            margin-top: 10px;
-            margin-left: 3%;
-        }
-        .fans{
-            margin-top: 50px;
-            width: 25%;
-            margin-left: -15%;
-            line-height: .9;
-        }
-        .fans h1{
-            margin-right: 2%;
-            display: inline-flex;
-            font-size: .7em;
-        }
-        .fans h1 span{
-            margin-left: 8%;
-        }
-        .fans h2{
-            display: inline-flex;
-            font-size: .7em;
-        }
-        .fans h2 span{
-            margin-left: 60%;
-        }
-        .sub-name{
-            width: 25%;
-            margin-left: 5%;
-            margin-top: 10px;
-        }
-        .sub-name>h1{
-            font-size: .8em;
-        }
-        .sub-name h2{
-            font-size: .8em;
-        }
-       
-        .sub-follow{
-            margin-top: 15px;
-            margin-right: 2%;
-            width: 60px;
-            height: 20px;
-        }
-        .sub-follow>h1{
-            font-size: .8em;
-        }
-        .sub-follow-img{
-            height: 20px;
-            width: 25px;
-            margin-top: 18px;
-        }
-
-        /* for bodyyy */
-        .profile-shell{
-            border: 2px solid red;
-            position: relative;
-            height: 250px;
-            width: 100%;
-            background-color: #ffffff;
-        }
-        .side-shell{
-            display: none;
-        }
-        .normal-shell{
-            height: 40px;
-            width: 100%;
-            margin-left: 0%;
-        }
-        .normal-shell>a{
-            font-size: .8em;
-        }
-        .background-img{
-            position: relative;
-            height: 120px;
-            width: 100%;
-        }
-        .background-img img{
-            width: 100%;
-            height: 100%;
-        }
-        .profile-img{
-            position: relative;
-            left: 39%;
-            height: 100px;
-            width: 100px;
-            margin-top: -10%;
-        }
-        .profile-img>img{
-            margin-left: 0%;
-            margin-top: 0%;
-            height: 100%;
-            width: 100%;
-        }
-        .profile-info{
-            position: absolute;
-            top: 56%;
-            height:110px;
-            width: 100%;
-            margin-left: 0%;
-            /* border: 1px solid blue; */
-        }
-        .profile-info>img{
-            height: 20px;
-            width: 20px;
-            margin-top: -12%;
-            clear: both;
-            margin-right: 30%;
-        }
-        .name{
-            clear: both !important;
-            text-align: center;
-            align-content: center;
-            width: 30%;
-            margin-left: 32%;
-            margin-top: 3%;
-        }
-        .name>h1{
-            font-size: 1.2em;
-            padding: 2%;
-        }
-        .name>h2{
-            font-size: .8em;
-            color: #024771;
-        }
-        .follow{
-            clear: both !important;
-            margin-top: 7px;
-            margin-right: 40%;
-            width: 20%;
-            height: 20px;
-            border-radius: 4px;
-          }
-        .follow>h1{
-            font-size: .9em;
-            font-weight: bold;
-            text-align: center;
-            margin-top: 2px;
-            margin-left: 0%;
-            color: #024771;
-          }
-    }
+   
