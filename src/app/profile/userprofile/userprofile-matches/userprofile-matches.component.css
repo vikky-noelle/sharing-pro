@@ -59,18 +59,12 @@
         width: 100%;
     }
 }
- @media screen and (min-width:701px) and (max-width:850px){ 
-    .About-body{
-        width: 100%;
-        margin-left: 0%;
-    }
-    .About-body>div{
-        width: 100%;
-        margin-left: 0%;
-    }
+ @media screen and (min-width:701px) and (max-width:1060px){ 
+   
     .upcoming-cards{
-        width: 45%;
-        margin-left: 5%;
+        /* border: 1px solid red; */
+        width: 100%;
+        margin-left: 0%;
         margin-top: 3%;
     }
     .backfooter{

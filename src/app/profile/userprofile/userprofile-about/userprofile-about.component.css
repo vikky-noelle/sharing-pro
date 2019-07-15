@@ -205,3 +205,24 @@
     width: 100%;
 }
 }
+
+@media screen and (min-width:701px) and (max-width:1100px){
+    .game{
+        margin-left: 0%;
+        width: 100%;
+    }
+    .style>.left{
+        top:12%;
+        left: 15%;
+    }
+    .style .right{
+        top:12%;
+        right: 13%;
+    }
+    .gameCard>div{
+        margin: 8% 0% 0% 2%;
+        width: 40%;
+        float: left;
+        border-left: 2px solid #ababaa;
+   }
+}
