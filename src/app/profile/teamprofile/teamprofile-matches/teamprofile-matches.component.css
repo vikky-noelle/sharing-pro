@@ -33,7 +33,7 @@
 .upcoming-cards{
     vertical-align: top;
     /* border: 1px solid blue; */
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     width: 50%;
     /* margin-right: 3.2%; */
     margin-top: 3%;
@@ -42,4 +42,22 @@
 .backfooter{
     width: 75%;
     float: right;
+}
+@media screen and (min-width: 200px) and (max-width: 700px){
+    .About-body{
+        margin-left: 0;
+        width: 100%;
+    }
+    .About-body>div{
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    .upcoming-cards{
+        width: 93%;
+        margin-left: 7%;
+    }
+    .backfooter{
+        clear: both;
+        width: 100%;
+    }
 }

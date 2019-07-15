@@ -19,6 +19,30 @@
     font-size: 1.4em;
     letter-spacing: 0.6px;
 }
+.temporary-side-shell{
+    display: none;
+}
+.temp-basic-info>h1{
+    color: #222222;
+    font-size: 1.4em;
+}
+.temp-basic-info-tab{
+    height: 50px;
+    margin-top: 10px;
+    width: 100%;
+}
+.temp-basic-info-tab>div{
+    float: left;
+    width: 20%;
+}
+.temp-basic-info-tab>h2{
+    float: right;
+    width: 80%;
+}
+.temp-basic-info-tab>div>img{
+    height:30px;
+    width: 30px;
+}
 .description p{
     color: #888888;
 }
@@ -102,4 +126,28 @@
 .backfooter{
     width: 75%;
     float: right;
+}
+@media screen and (min-width: 200px) and (max-width: 700px){
+    .About-body{
+        margin-left: 0;
+        width: 100%;
+    }
+    .About-body>div{
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    .upcoming-cards{
+        width: 96%;
+        /* margin-left: 7%; */
+    }
+    .backfooter{
+        clear: both;
+        width: 100%;
+    }
+    .members{
+        display: none;
+    }
+    .temporary-side-shell{
+        display: block;
+    }
 }
