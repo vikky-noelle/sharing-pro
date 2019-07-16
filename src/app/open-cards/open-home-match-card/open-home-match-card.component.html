@@ -63,7 +63,8 @@
             </div>
           
             <div class="cardData">
-                <div (click)="openprofile(feed.Team1Id, feed.Team1name);" class="cardData team1">
+                <!-- <div (click)="openprofile(feed.Team1Id, feed.Team1name);" class="cardData team1"> -->
+                    <div  class="cardData team1">
                     <img src={{feed.Team1Pic}} onerror="this.src='assets/images/user.png'">
                     <p>{{feed.Team1name}}</p>    
                 </div>
@@ -71,7 +72,8 @@
                     <b style="font-size: 1.2em;">{{feed.scoreTeam1}}</b>
                     <b style="font-size: 1.2em;">{{feed.scoreTeam2}}</b>
                 </div>
-                <div (click)="openprofile(feed.Team2Id, feed.Team2name);" class="cardData team2">
+                <!-- <div (click)="openprofile(feed.Team2Id, feed.Team2name);" class="cardData team2"> -->
+                    <div  class="cardData team2">
                     <img src={{feed.Team2Pic}} onerror="this.src='assets/images/user.png'">
                     <p>{{feed.Team2name}}</p>
                 </div>     
