@@ -17,17 +17,11 @@ export class TeamprofileComponent implements OnInit {
   profileimage;
   membercount;
   teamusername;
-  location;
   fancount;
   media=[];
   captain=[];
-  mantra=[];
   teamcategory;
-  teamstatus;
   teamtype;
-  teamtypestatus;
-  gender;
-  challenge="Open For Challenge";
   sports= [
     {id: 17,  title: 'Cricket'},
     {id: 23, title: 'Football'},
@@ -45,7 +39,6 @@ export class TeamprofileComponent implements OnInit {
   count=0;
   arr=[];
   show:boolean=false;
-  gamename;
   captainuserid;
   crousallist=[];
   leftarrow = document.getElementsByClassName('larrow') as HTMLCollectionOf<HTMLElement>;
@@ -56,10 +49,19 @@ export class TeamprofileComponent implements OnInit {
   followerstab = document.getElementsByClassName('followers') as HTMLCollectionOf<HTMLElement>;
   sideshellposition = document.getElementsByClassName('side-shell') as HTMLCollectionOf<HTMLElement>;
   opensubheader = document.getElementsByClassName('sub-header') as HTMLCollectionOf<HTMLElement>;
+  
+  @Input() public location;
+  @Input() public challenge="Open For Challenge";
+  @Input() public gender;
+  @Input() public gamename;
+  @Input() public teamtypestatus;
+  @Input() public teamstatus;
+  @Input() public mantra=[];
   @Input() public members=[];
   @Input() public upcoming=[];
   @Input() public past=[];
   @Input() public description=false;
+  
   @ViewChild('widgets') widgets:ElementRef;
   @ViewChild('widgetsContent') widgetsContent:ElementRef;
 
