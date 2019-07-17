@@ -20,7 +20,7 @@
     margin-top: 0%;
     margin-left: 6%;
     overflow: hidden;
-    overflow-x: scroll;
+    overflow-x: hidden;
     white-space: nowrap !important;
     scroll-snap-type: mandatory;
     scroll-snap-points-x: repeat(25%);
@@ -30,7 +30,7 @@
   display: none;
 }
 .game { 
-  overflow: auto;
+  overflow: hidden;
   -ms-overflow-style: none; /* IE 11 */
   scrollbar-width: none;
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { PostService } from '../../shared/services/post.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { InteractionService } from '../../shared/services/interaction.service';
 
 @Component({
@@ -34,7 +34,8 @@ export class UserprofileComponent implements OnInit {
   constructor(
     private postservice:PostService,
     private activatedroute:ActivatedRoute,
-    private event: InteractionService
+    private event: InteractionService,
+    private router:Router
     ) {
       this.event.listentoroute().subscribe((topic:any) => {
         if(topic === null || topic === undefined){
@@ -76,6 +77,7 @@ export class UserprofileComponent implements OnInit {
   }
 
   getUserDetails(){
+    this.mediaArr=[];
     for(var i=1;i<=10;i++){
       this.pageNo=i;
     }
@@ -123,6 +125,7 @@ export class UserprofileComponent implements OnInit {
         /*End of Userdata loop */
 
         for (var i=0 ;i<res["Images"].length;i++){
+          
           this.mediaArr.push({
             imageId:res["Images"][i].imageId,
             Path:res["Images"][i].Path,
@@ -134,6 +137,7 @@ export class UserprofileComponent implements OnInit {
             profile_photo:res["Images"][i].profile_photo,
             User_Name:res["Images"][i].User_Name
           });
+          
         }
       });
   }
@@ -335,6 +339,9 @@ export class UserprofileComponent implements OnInit {
   }
   close(){
     this.showcrousal[0].style.display="none";
+  }
+  openAppDownloadPopup() {
+    this.router.navigate( [ { outlets: { 'AppDownload': ['PopUp'] }} ], { skipLocationChange: true });
   }
   ngOnDestroy() {
     window.removeEventListener('scroll', this.scroll, true);

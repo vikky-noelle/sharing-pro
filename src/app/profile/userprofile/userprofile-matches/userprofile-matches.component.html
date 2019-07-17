@@ -1,6 +1,7 @@
 <div class="About-body">
   <div class="upcoming-matches">
     <h1>Finished Matches</h1>
+    <h2 *ngIf="array == 0">No Matches</h2>
     <hr>
     <div class="upcoming-block">
       <div class="upcoming-cards" *ngFor="let feed of array">

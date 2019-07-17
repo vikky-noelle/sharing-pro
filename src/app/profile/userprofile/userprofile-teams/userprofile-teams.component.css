@@ -3,6 +3,7 @@
     width: 75%;
     margin-left: 25%;
     vertical-align: top;
+    min-height: 300px;
 }
 .body>.teams{
     display: inline-block;

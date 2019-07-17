@@ -13,7 +13,8 @@
 .background-img{
     position: relative;
     height: 250px;
-    width: 100%;
+    width: 80%;
+    margin: 0% 10% 0% 10%;
 }
 .background-img img{
     width: 100%;
@@ -64,7 +65,9 @@
     color: #024771;
     /* font-weight: lighter; */
 }
-
+.mobilefollower{
+    display: none;
+}
 .follow{
     position: relative;
     float: right;
@@ -74,6 +77,7 @@
     height: 40px;
     border: 2px solid #024771;
     border-radius: 8px;
+    cursor: pointer;
   }
 .follow h1{
     font-size: 1.3em;
@@ -170,6 +174,7 @@
         margin-left: 60%;
     }
     .sub-follow{
+        cursor: pointer;
         position: relative;
         float: right;
         margin-top: 25px;
@@ -187,6 +192,7 @@
         color: #024771;
     }
     .sub-follow-img{
+        cursor: pointer;
         position: relative;
         height: 25px;
         width: 30px;
@@ -406,6 +412,9 @@
 
     @media screen and (min-width:200px) and (max-width:320px){
         /* for header that show after scroll*/
+        .background-img{
+            box-shadow: 2px 2px 2px #c9c7c7;
+        }
         .sub-header{
             height: 60px;
         }
@@ -415,6 +424,33 @@
             margin-top: 10px;
             margin-left: 1.5%;
         }
+        .mobilefollower{
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 32%;
+        }
+        .mobilefollower>h1{
+            margin-left: 15%;
+            font-size: .9em;
+            color: #888888;
+        }
+        .mobilefollower>h1>span{
+            margin-right: 10%;
+            color: #888888;
+            float: right;
+        }
+        .mobilefollower>h2{
+            margin-left: 15%;
+            color: #024771;
+            font-size: .9em;
+        }
+        .mobilefollower>h2>span{
+            float: right;
+            color: #024771;
+            margin-right: 18%;
+        }
+        
         .fans{
             margin-top: 12px;
         }
@@ -566,11 +602,40 @@
         .sub-header{
             height: 60px;
         }
+        .background-img{
+            box-shadow: 2px 2px 2px #c9c7c7;
+        }
         .profile-pic{
             height: 35px;
             width: 35px;
             margin-top: 10px;
             margin-left: 1.5%;
+        }
+        .mobilefollower{
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 32%;
+        }
+        .mobilefollower>h1{
+            margin-left: 15%;
+            font-size: .9em;
+            color: #888888;
+        }
+        .mobilefollower>h1>span{
+            margin-right: 10%;
+            color: #888888;
+            float: right;
+        }
+        .mobilefollower>h2{
+            margin-left: 15%;
+            color: #024771;
+            font-size: .9em;
+        }
+        .mobilefollower>h2>span{
+            float: right;
+            color: #024771;
+            margin-right: 18%;
         }
         .fans{
             margin-top: 12px;

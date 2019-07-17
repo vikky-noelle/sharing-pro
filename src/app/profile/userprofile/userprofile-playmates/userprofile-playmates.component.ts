@@ -19,7 +19,7 @@ export class UserprofilePlaymatesComponent implements OnInit {
   constructor(private postservice:PostService,
     private activatedroute:ActivatedRoute,
     private userprofilecmp:UserprofileComponent,
-    private event: InteractionService,
+    private interactionService: InteractionService,
     private router: Router
     ) { }
 
@@ -30,8 +30,8 @@ export class UserprofilePlaymatesComponent implements OnInit {
   // it sends the value to the interaction service.
   changeroute(id){
     console.log("working" + id);
-    this.event.routechangefunction(id);
-    this.router.navigate(['/userprofile', id, 'about']);
+    this.interactionService.routechangefunction(id);
+    this.router.navigate(['/userprofile', id, 'matches']);
   }
   getplaymates(){
     for(var i=1;i<=10;i++){
@@ -44,6 +44,7 @@ export class UserprofilePlaymatesComponent implements OnInit {
         this.show=true;  
         for(const i in res)
         this.array.push({
+          
           user_id:res[i].user_id,
           user_name:res[i].user_name,
           UniqueName:res[i].UniqueName,
