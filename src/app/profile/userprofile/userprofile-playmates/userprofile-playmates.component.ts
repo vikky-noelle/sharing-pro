@@ -26,7 +26,8 @@ export class UserprofilePlaymatesComponent implements OnInit {
     getuserid(){
      this.parentUserid=this.userprofilecmp.userid;
     }
-
+  // route change for playmates defined here!!!!
+  // it sends the value to the interaction service.
   changeroute(id){
     console.log("working" + id);
     this.event.routechangefunction(id);
