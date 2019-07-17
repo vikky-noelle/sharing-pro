@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { PostService } from '../../shared/services/post.service';
 import { ActivatedRoute } from '@angular/router';
+import { InteractionService } from '../../shared/services/interaction.service';
 
 @Component({
   selector: 'sports-social-userprofile',
@@ -32,7 +33,21 @@ export class UserprofileComponent implements OnInit {
   
   constructor(
     private postservice:PostService,
-    private activatedroute:ActivatedRoute) { }
+    private activatedroute:ActivatedRoute,
+    private event: InteractionService
+    ) {
+      this.event.listentoroute().subscribe((topic:any) => {
+        if(topic === null || topic === undefined){
+          console.log("empty change");
+        }
+        else{
+          this.userid = topic;
+          this.getUserDetails();
+          this.getpastmatches();      
+        }
+     }); 
+     }
+
     leftarrow = document.getElementsByClassName('larrow') as HTMLCollectionOf<HTMLElement>;
   rightarrow = document.getElementsByClassName('rarrow') as HTMLCollectionOf<HTMLElement>;
   showcrousal = document.getElementsByClassName('media-crousal') as HTMLCollectionOf<HTMLElement>;

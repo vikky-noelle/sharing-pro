@@ -3,7 +3,6 @@ import { PostService } from './../../shared/services/post.service';
 import { Component, OnInit, ViewEncapsulation, Renderer2, HostListener, OnDestroy } from '@angular/core';
 import { Masonry } from 'ng-masonry-grid';
 import { ISubscription, Subscription } from 'rxjs/Subscription';
-import { MatchDataService } from '../../shared/services/match-data.service';
 import { Title, Meta } from '@angular/platform-browser';
 import { Http } from '@angular/http';
 import { Observable } from 'rxjs';

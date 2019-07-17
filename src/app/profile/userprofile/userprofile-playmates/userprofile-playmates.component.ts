@@ -1,6 +1,7 @@
+import { InteractionService } from './../../../shared/services/interaction.service';
 import { Component, OnInit } from '@angular/core';
 import { PostService } from '../../../shared/services/post.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { UserprofileComponent } from '../userprofile.component';
 
 @Component({
@@ -17,13 +18,20 @@ export class UserprofilePlaymatesComponent implements OnInit {
   array=[];
   constructor(private postservice:PostService,
     private activatedroute:ActivatedRoute,
-    private userprofilecmp:UserprofileComponent) { }
+    private userprofilecmp:UserprofileComponent,
+    private event: InteractionService,
+    private router: Router
+    ) { }
 
     getuserid(){
      this.parentUserid=this.userprofilecmp.userid;
     }
 
-
+  changeroute(id){
+    console.log("working" + id);
+    this.event.routechangefunction(id);
+    this.router.navigate(['/userprofile', id, 'about']);
+  }
   getplaymates(){
     for(var i=1;i<=10;i++){
       this.pageno=i;
