@@ -1,49 +1,75 @@
-
+.card{
+    position: relative;
+    width: 90%;
+    height: 220px;
+    margin-bottom: 2%;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px 0 rgba(173, 172, 172, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+}
  .head{
+    position: absolute;
     line-height: 1.1;
     width: 100%;
-    height: 27px;
+    height: 30px;
     display: inline-block;
     margin-top: 1%;
     border-bottom: 1px solid #dddddd;
 }
-.head>b{
+.head>div{
+    display: inline-block;
+    vertical-align: top !important;
+}
+.venue{
+    width: 50%;
+    height: 100%;
+}
+.venue>b{
     margin-left: 1%;
     font-size: 0.8em;
     margin-top: 10px;
 }
+.venue>b>span{
+    color: grey;
+    font-size: .8em;
+}
 
-.head>p{
+.venue>p{
     float: right;
     margin-right: 1%;
+    padding: 2%;
 }
-.rresult{
-    margin-top: -23px;
+.result{
     float: right;
     margin-right: 1%;
-    width: auto;
+    width: 40%;
+    height: 100%;
 }
-.rresult>p{
+.result>p{
+    text-align: right;
     font-size: 0.8em;
 }
-.rresult p img{
+.result p img{
     margin-top: 2px;
     float: right;
     height: 12px;
     width: 12px;
 }
-.rresult p span{
-    float: left;
+.result>p>span{
+    padding: 1.5%;
     font-size: 0.7em;
+    margin-right: 10%;
     color: #024771;
 }
-.head b span{
+.venue b span{
    margin-top:1%;
 }
 .pp{
     margin-left: 1%;
     color: grey;
     font-size: 0.6em;
+}
+.mobile{
+    display: none;
 }
 .icon{
     width: 100%;
@@ -58,11 +84,12 @@
     width: 40px;
 }
 .cardData{
+    position: absolute;
     width: 100%;
-    height: 50px;
+    height: 80px;
     display: inline-flex;
-    margin-top: 2%;
-    margin-bottom: 10%;
+    margin-top: 13%;
+    margin-bottom: 10%; 
 }
 .vs{
     width: 20%;
@@ -73,9 +100,7 @@
     margin-top: 10%;
     font-size: .9em;
 }
-/* .vs>p{
-    font-size: 0.7em;
-} */
+
 .creator{
     margin-top: 8%;
     width: 100%;
@@ -102,17 +127,12 @@
     float: right;
     color: #024771;
 }
-.card{
-    width: 90%;
-    height: auto;
-    margin-bottom: 2%;
-    border-radius: 2%;
-    box-shadow: 0 4px 8px 0 rgba(173, 172, 172, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
-}
+
 .eventtext{
     width: 100%;
-    height: 50px;
-    font-size: 1em;
+    height: 60px;
+    position: absolute;
+    bottom: 30px;
 }
 .eventtext>p{
     padding-top: 5px;
@@ -131,8 +151,6 @@
     border-bottom-right-radius: 50% 50%;
     border-bottom-left-radius: 50% 50%;
 }
-
-
 .card>p{
     margin: 1% 0% 1% 2%;
     color: #000000;
@@ -145,33 +163,25 @@
     width: 50% !important;
     color: #7e7d7d;
 }
-
-
 .team1{
     /* margin-left: 3%; */
     font-size: 0.9em;
     width: 40%;
 }
 .team1,.team2 p{
+    font-size: .9em;
     text-align: center;
 }
-.team1 p{
-    padding: 10px;
-}
-.team2 p{
-    padding: 10px;
-}
+
 .team1>img{
     margin: 0 auto;
     border-radius: 50%;
     height: 42px;
     width: 42px;
-    /* margin-left: 18%; */
 }
 .team2{
     text-align: center;
     font-size: 0.9em;
-    /* margin-left: 7%; */
     width: 40%;
 }
 
@@ -181,13 +191,12 @@
     height: 42px;
     width: 42px;
 }
-
-
-.footer
-{
+.footer{
     border-top: 1px solid #d3d1d1;
     width: 100%;
     height: 30px;
+    position: absolute;
+    bottom: 0% !important;
 }
 .footer>button{
     border: none;
@@ -202,10 +211,33 @@
     background-color: transparent;
 }
 
-@media screen and (min-width:200px) and (max-width:800px){
-    .head>b{
+@media screen and (min-width:200px) and (max-width:400px){
+    
+    .head{
+        height: 35px;
+    }
+    .venue{
+        width: 56%;
+        height: 100%;
+    }
+    .venue>b{
         margin-left: 1%;
-        font-size: 0.8em;
+        margin-bottom: 1%;
+        font-size: 0.7em;
+    }
+    .venue>b>.pp{
+        display: none;
+    }
+    .venue>b>.mobile{
+        display: block;
+        padding: 2%;
+        font-weight: lighter;
+        font-size: 0.6em;
+        color: grey;
+    }
+    .venue>b>span{
+        color: grey;
+        font-size: .8em;
     }
     .team1,.team2>p{
         font-size: 0.9em;
@@ -216,42 +248,144 @@
     .username{
         font-size: .6em;
     }
-    .rresult{
+    .result{
         width: 40%;
-        margin-top: -20px;
-        /* border: 1px solid red; */
+        margin-top: 1.5%;
     }
-    .rresult>p{
+    .result>p{
         float: right;
-        font-size: 0.7em;
+        font-size: 0.6em;
         font-weight: bold;
     }
-    .rresult p img{
+    .result p img{
+        float: right;
+        height: 8px;
+        width: 8px;
+    }
+    .result>p>span{
+        float: right;
+        margin-top: 2.5%;
+        font-size: 0.8em !important;
+        color:grey;
+    }
+    .cardData{
+        width: 100%;
+        height: 80px;
+        margin-top: 18%;
+        margin-bottom: 10%;
+    }
+    .footer{
+        height: 30px;
+        bottom: 0% !important;
+    }
+    .footer>button{
+        font-size: 0.6em ;
+        padding: 5px;
+    }
+    /* .eventtext{
+        height: 50px;
+        bottom: 30px;
+    }
+    .eventtext>p{
+        font-size: .6em;
+    } */
+    .eventtext{
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        bottom: 30px;
+    }
+    .eventtext>p{
+        padding: 5px 10px 5px 10px;
+        font-size: 0.7em;
+        color: grey;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+
+}
+@media screen and (min-width:401px) and (max-width:800px){
+    .head{
+        height: 35px;
+    }
+    .venue{
+        width: 56%;
+        height: 100%;
+    }
+    .venue>b{
+        margin-left: 1%;
+        margin-bottom: 1%;
+        font-size: 0.7em;
+    }
+    .venue>b>.pp{
+        display: none;
+    }
+    .venue>b>.mobile{
+        display: block;
+        font-weight: lighter;
+        font-size: 0.6em;
+        padding: 2%;
+        color: grey;
+    }
+    .venue>b>span{
+        color: grey;
+        font-size: .8em;
+    }
+    .team1,.team2>p{
+        font-size: 0.9em;
+    }
+    .creator{
+        margin-top: 12%;
+    }
+    .username{
+        font-size: .6em;
+    }
+    .result{
+        width: 40%;
+        margin-top: 1.5%;
+    }
+    .result>p{
+        float: right;
+        font-size: 0.6em;
+        font-weight: bold;
+    }
+    .result p img{
         /* margin-top: 2px; */
         float: right;
         height: 8px;
         width: 8px;
     }
-    .rresult p span{
+    .result>p>span{
         float: right;
-        font-size: 0.7em !important;
-        color: rgb(75, 73, 73);
+        font-size: 0.8em !important;
+        color:grey;
+    }
+    .cardData{
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 50px;
+        margin-top: 18%;
+        margin-bottom: 10%;
+    }
+    .footer{
+        height:30px;
+        bottom: 0% !important;
+        vertical-align: bottom !important;
     }
     .footer>button{
-        font-size: 0.6em;
+        font-size: 0.7em;
         float: left;
         padding: 7px;
     }
     .eventtext{
+        /* border: 1px solid green; */
         height: 50px;
-        margin-bottom: 5%;
+        margin-top: 5%;
     }
     .eventtext>p{
-        font-size: .8em;
+        font-size: .6em;
     }
-    .card{
-        height: auto;
-    }
+   
 
 }
 @media screen and (min-width:801px) and (max-width:920px){

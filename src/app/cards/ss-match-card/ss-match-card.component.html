@@ -1,16 +1,19 @@
 <div class="card">
-              <div class="head">
-                    <b>{{gender}}{{gamename}} - <span style="font-weight: lighter;">{{age}}</span>
-                        <p class="pp">{{Venue_Name|slice:0:30}}...</p>
-                    </b>
-                <div class="rresult">
-                    <p>{{startdatetime}} 
-                        <img *ngIf="!finished" src="/assets/images/sportsocialfinalicon.jpeg">
-                        <img *ngIf="finished" src="/assets/images/sportsocialgreendot.png"><br>
-                        <span>Created by: {{matchstartername}}</span>
-                    </p>
-                </div> 
-              </div>
+        <div class="head">
+          <div class="venue">
+            <b>{{gender}}{{gamename}} - <span style="font-weight: lighter;">{{age}}</span>
+                <p class="pp">{{Venue_Name|slice:0:30}}...</p>
+                <p class="mobile">{{Venue_Name}}</p>
+            </b>
+          </div>
+          <div class="result">
+            <p>{{startdatetime}} 
+               <img *ngIf="!finished" src="assets/images/sportsocialfinalicon.jpeg">
+               <img *ngIf="finished" src="assets/images/sportsocialgreendot.png"><br>
+               <span> By: {{matchstartername}}</span>
+            </p>
+          </div> 
+        </div>
             <div class="cardData">
                   <div class="team1">
                       <img src={{team1pic}} onerror="this.src='assets/images/user.png'">
