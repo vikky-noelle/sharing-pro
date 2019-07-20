@@ -10,6 +10,10 @@ export class PostService {
       page:Number,
       currentdate:String
    }
+   localityobj={
+    userid:String,
+    venueid:String,
+ }
    userprofileplaymateObj=[
      {
       userid:String,
@@ -277,5 +281,12 @@ export class PostService {
       timestamp: timestamp
     }];
     return this.http.post('https://test.sportsocial.in/team/getTeamMembers',this.memberobj);
+  }
+  getLocalityDetails(userid,venueid){
+    this.localityobj={
+      userid:userid,
+      venueid:venueid,
+    };
+    return this.http.post('https://test.sportsocial.in/venue/getvenueslotdetails_V1',this.localityobj);
   }
 }

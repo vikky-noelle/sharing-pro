@@ -7,18 +7,18 @@
     
     <div class="team-info">
       <div class="name">
-        <h1>{{name}}</h1>
+        <h1>{{venuename}}</h1>
+        <h2>{{venuetype}}</h2>
       </div>
       <div class="follow">
-        <h1>Follow</h1>
+        <h1>Favourite</h1>
       </div>
     </div>
   </div>
   <div class="sub-header">
-      <img class="profile-pic" src="{{profileimage}}" alt="">  
           <div class="sub-name">
-              <h1>{{name}}</h1>
-              <h2>@{{teamusername}}</h2>
+              <h1>{{venuename}}</h1>
+              <h2>{{venuetype}}</h2>
             </div>
       <div class="sub-follow">
           <h1>Follow</h1>
@@ -27,11 +27,14 @@
   <div class="side-shell">
     <div class="stick">
       <div class="basic-info">
-        <h1>Basic Info</h1>
-        <div class="basic-info-tab">
-          
-          <h2>sports menu</h2>
+        <div class="owner">
+          <img class="owner-img" src="{{profileimage}}" alt=""> 
+          <h1>{{ownername}}</h1>
+          <h2>Owner</h2> 
         </div>
+          <a class="basic-info-tab" *ngFor="let data of sports">
+          <h2>{{data}}</h2>
+          </a>
       </div>
       <div class="media">
           <div class="head">
@@ -43,11 +46,11 @@
         </div>
       </div>
     </div>
-    </div>
+    </div> 
+
     <div class="normal-shell">
-    <a routerLink="/teamprofile/{{routename}}/About" [queryParams]="{ teamid: teamid}" routerLinkActive="active">About</a>
-    <a routerLink="/teamprofile/{{routename}}/Matches" [queryParams]="{ teamid: teamid}" routerLinkActive="active">Matches</a>
-  </div>
+      
+    </div>
 </div>
 <div class="media-crousal">
   <img class="single-image" src="{{crousalsingleimage}}" alt="">

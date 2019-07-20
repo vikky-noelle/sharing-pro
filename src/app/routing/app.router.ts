@@ -26,6 +26,7 @@ import { UserprofileMatchesComponent } from '../profile/userprofile/userprofile-
 import { UserprofileTeamsComponent } from '../profile/userprofile/userprofile-teams/userprofile-teams.component';
 import { UserprofilePlaymatesComponent } from '../profile/userprofile/userprofile-playmates/userprofile-playmates.component';
 import { UserprofileAboutComponent } from '../profile/userprofile/userprofile-about/userprofile-about.component';
+import { LocalityComponent } from '../profile/locality/locality.component';
 
 
 const App_Route: Routes = [
@@ -73,6 +74,7 @@ const App_Route: Routes = [
         ]
     },
     // {path:':user_id',component:UserprofilePlaymatesComponent},
+    {path:"localityprofile",component:LocalityComponent},
     {path:"opencard/:feedid",component:OpenHomeMatchCardComponent},
     {path:"ourTeam",component:OurteamComponent},
     {path:"contactus",component:ContactUsComponent},
