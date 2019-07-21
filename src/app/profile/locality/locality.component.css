@@ -125,7 +125,7 @@
         height: 50px;
         width: 50px;
         border-radius: 50%;
-        margin-left: 3%;
+        margin-left: 1%;
     }
     .owner h1{
         font-size: 1em;
@@ -139,52 +139,69 @@
         margin-left: 30%;
     }
     .basic-info-tab{
-        margin-top: 15px;
-        margin-left: 10%;
-        height: 30px;
+        list-style: none;
+        margin-top: 35px;
+        margin-bottom: 35px;
     }
-    .basic-info-tab div{
-        float: left;
-        width: 20%;
-    }
-    .basic-info-tab div img{
-        height: 25px;
-        width: 25px;
-    }
-    .basic-info-tab h2{
+    .basic-info-tab h1{
+        font-size: 1.1em;
         float: right;
-        font-size: 1em;
-        margin-top: 5px;
-        width: 70%;
-        font-weight: 400;
+        width: 85%;
+        padding-bottom:15px;
         color: #444444;
+        font-weight: bold;
     }
-    .basic-info-tab p{
-        position: fixed;
-        z-index: 4;
-        padding: 20px;
-        top: 40%;
-        left: 8%;
-        width: 45%;
-        border-radius: 5px;
-        /* height: 50; */
-        color: white;
-        background-color: rgba(0, 0, 0, 0.8);
-        display: none;
+    .basic-info-tab li{
+        /* margin-left: 10%; */
+        /* height: 30px; */
+        width: 85%;
+        float: right;
+        padding: 10px;
     }
-    .basic-info-tab h2:hover ~p{
-        display: block;
+    a{
+        color: black;
+    }
+    a.active li{
+        border-left: 5px solid #024771;
+        background-color: white;
     }
     .media{
         width: 80%;
         height: auto;
-        margin-top: 70px;
+        margin-top: 100px;
         margin-left: 10%;
         top: 0%;
         /* position: sticky; */
         /* position: -webkit-sticky; */
         /* margin: 0% 70px 0% 10%;   */
         position: relative; 
+    }
+    .slots{
+        margin-top: 30px;
+    }
+    .slot-days{
+        margin-top: 10px;
+        margin-right: 8%;
+        float: right;
+        width: 75%;
+        height: 20px;
+    }
+    .slot-days h1{
+        float: left;
+        font-size: 1em;
+    }
+    .slot-days h2{
+        float: right;
+        font-size: 0.8em;
+    }
+    .Address{
+        width: 75%;
+        margin-left: 8%;
+        margin-top: 30px;
+        float: right;
+    }
+    .Address h1{
+        font-size: 0.8em;
     }
     .head{
         width: 100%;

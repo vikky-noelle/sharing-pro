@@ -1,4 +1,4 @@
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { PostService } from './../../shared/services/post.service';
 import { Component, OnInit } from '@angular/core';
 import { THROW_IF_NOT_FOUND } from '@angular/core/src/di/injector';
@@ -71,7 +71,8 @@ export class LocalityComponent implements OnInit {
   ];
   constructor(
     private PostService: PostService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -81,8 +82,20 @@ export class LocalityComponent implements OnInit {
     // console.log(this.sportlist);
     this.PostService.getLocalityDetails("119", "11").subscribe(res => {
       console.log(res);
+      // getting sports and changing the route
+      for(var i=0; i< res["Sports"].length; i++){
+        for(var j=0; j<this.sportlist.length; j++){
+          // console.log(this.sportlist[j].title);
+          if(res["Sports"][i].gameid === this.sportlist[j].id){
+            this.sports.push(this.sportlist[j].title);
+          }
+        }
+      }
+      this.router.navigate(['localityprofile', this.sports[0]]);
+  
       // slot details
       for(var i=0; i < res["SlotDetails"].length; i++){
+        res["SlotDetails"][i].Day = res["SlotDetails"][i].Day.replace(/"/g, "")
         this.slotdetails.push(res["SlotDetails"][i]);
       }
       // gallery
@@ -113,15 +126,6 @@ export class LocalityComponent implements OnInit {
         break;
         default: this.venuetype = "Unknown";
       }
-
-      for(var i=0; i< res["Sports"].length; i++){
-        for(var j=0; j<this.sportlist.length; j++){
-          // console.log(this.sportlist[j].title);
-          if(res["Sports"][i].gameid === this.sportlist[j].id){
-            this.sports.push(this.sportlist[j].title);
-          }
-        }
-      }
-    });
+  });
   }
 }

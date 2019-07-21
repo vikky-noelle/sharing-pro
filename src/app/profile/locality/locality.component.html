@@ -32,10 +32,14 @@
           <h1>{{ownername}}</h1>
           <h2>Owner</h2> 
         </div>
-          <a class="basic-info-tab" *ngFor="let data of sports">
-          <h2>{{data}}</h2>
-          </a>
-      </div>
+          <!-- <a class="basic-info-tab" *ngFor="let data of sports">
+          {{data}}
+          </a> -->
+          <ul class="basic-info-tab">
+            <h1>Available Sports Facilities</h1>
+          <a routerLink="/localityprofile/{{data}}" routerLinkActive="active" *ngFor="let data of sports"><li>{{data}}</li></a>
+        </ul>
+        </div>
       <div class="media">
           <div class="head">
           <h4>Media</h4>
@@ -44,6 +48,15 @@
          <div class="mediabox" *ngFor="let icon of media">
            <img (click)="imageopen(icon.url);" src={{icon.url}}>
         </div>
+      </div>
+      <div class="slots">
+        <div class="slot-days" *ngFor="let data of slotdetails">
+          <h1>{{data.Day|slice:0:3}}</h1>
+          <h2>{{data.StartTime}} - {{data.EndTime}}</h2>
+        </div>
+      </div>
+      <div class="Address">
+        <h1>{{address}}</h1>
       </div>
     </div>
     </div> 
