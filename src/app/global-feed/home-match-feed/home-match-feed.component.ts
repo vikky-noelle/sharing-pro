@@ -187,9 +187,7 @@ export class HomeMatchFeedComponent{
                   var Starttime= new Date( data["Feed"][i].startdatetime *1000);
                   var timestampConvert= new String(Starttime).slice(3,21);
             
-                  
-                  
-                  if(insertDate>2018){  /// LOOP FOR INSEERTED DATE SHOULD BE GREATER THEN 2018
+                  //if(insertDate>=2019){  /// LOOP FOR INSEERTED DATE SHOULD BE GREATER THEN 2018
                     arr.push({
                     Ondate: timrstampstr2,
                     Ontime: timrstampstr, 
@@ -206,6 +204,7 @@ export class HomeMatchFeedComponent{
                     startdatetime:this.startTime,
                     GameName:data["Feed"][i].GameName,
                     GameId:data["Feed"][i].GameId,
+                    eventid:data["Feed"][i].eventid,
                     Event_Image:data["Feed"][i].Event_Image,
                     MatchStarterName:data["Feed"][i].MatchStarterName,
                     MatchStarterId:data["Feed"][i].MatchStarterId,
@@ -227,7 +226,7 @@ export class HomeMatchFeedComponent{
                   });
                   // console.log("after insertdate",insertDate);
                   console.log("this is arr",arr);
-                  } ////LOOP END FOR INSERTEDDATE
+                 // } ////LOOP END FOR INSERTEDDATE
               }
           if(arr.length>0){
             gamename = arr[0].GameName.replace(/ matches/g,"");

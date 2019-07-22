@@ -88,11 +88,11 @@ scrollbar-width: none;
 }
 .leftarrow {
     border: 1px solid silver;
-    background-image: url('/assets/images/sportsocialhomearrow1.png');
+    /* background-image: url('/assets/images/sportsocialhomearrow1.png'); */
 }
 .rightarrow {
     border: 1px solid silver;
-    background-image: url('/assets/images/sportsocialhomearrow.png');
+    /* background-image: url('/assets/images/sportsocialhomearrow.png'); */
 }
 
 .lefttarrow {

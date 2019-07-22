@@ -99,7 +99,7 @@ export class NewspageComponent implements OnInit{
    
   }
   randomrouteresponse(){
-       this.router.navigate(['/newspage']);
+       this.router.navigate(['/news']);
   }
   ngtemp(topic){
       this.getsportwise(topic);
@@ -207,7 +207,7 @@ export class NewspageComponent implements OnInit{
       this.ddata=false;
       this.cdata=true;
       this.ngtemp(topic);
-      this.router.navigate(['/newspage', topic]);  
+      this.router.navigate(['/news', topic]);  
     }
     else if(id >= 5 && id < 7){
       id=id-5;
@@ -219,7 +219,7 @@ export class NewspageComponent implements OnInit{
       this.mainnewssource = this.crousalitem[id].source; 
       this.ddata=false;1
       this.cdata=true;
-      this.router.navigate(['/newspage', topic]);  
+      this.router.navigate(['/news', topic]);  
     }
     else{
       id=id-7;
@@ -231,7 +231,7 @@ export class NewspageComponent implements OnInit{
       this.mainnewssource = this.news[id].source; 
       this.ddata=false;
       this.cdata=true;
-      this.router.navigate(['/newspage', topic]); 
+      this.router.navigate(['/news', topic]); 
     }
   } 
   getsportwise(topic){

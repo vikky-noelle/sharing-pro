@@ -11,8 +11,8 @@
         
         <!-- <div class="blog"  malihu-scrollbar [scrollbarOptions]="scrollbarOptions">   -->
           <div class="blog" >  
-            <!-- <div class="leftarrow" (click)="lscroll();"></div>  
-              <div class="rightarrow" (click)="rscroll();"></div>  -->
+            <!-- <div class="leftarrow" (click)="lscroll();"> &#x290E; </div>  
+              <div class="rightarrow" (click)="rscroll();"> &#x290F;</div>  -->
                   <div class="card" *ngFor = "let feed of game.gamearray;" #widgetsContent>
                       <div class="head">
                           <div class="gamename">
@@ -24,11 +24,11 @@
                                 <img *ngIf="!feed.finished" src="/assets/images/sportsocialfinalicon.jpeg">
                                 <img *ngIf="feed.finished" src="/assets/images/sportsocialgreendot.png"><br>        
                               </b>
-                             <!-- <a routerLink="userprofile/{{feed.MatchStarterId}}/matches"> </a> -->
-                             <p> {{feed.MatchStarterUniqueName}}</p>
+                             <a routerLink="userprofile/{{feed.MatchStarterId}}/matches"> 
+                             <p> {{feed.MatchStarterUniqueName}}</p></a>
                           </div>  
                       </div>
-                          <a routerLink="/opencard/{{feed.feedid}}">      
+                          <a routerLink="/opencard/{{feed.eventid}}">      
                               <div class="cardData">
                                   <div class="cardData team1">
                                       <img src={{feed.Team1Pic}} onerror="this.src='assets/images/user.png'">
