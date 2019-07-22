@@ -367,9 +367,6 @@ export class HomeMatchFeedComponent{
              }
             var Starttime= new Date( data["Feed"][i].startdatetime *1000);
             var timestampConvert= new String(Starttime).slice(3,21);
-            var insertDate = data["Feed"][i].InsertedDate.slice(0,4);
-            console.log("this is init 2 insertdtae",insertDate);
-            if(insertDate>2018){
               arr.push({
               feedid:data["Feed"][i].feedid,
               finished: finished,
@@ -401,7 +398,7 @@ export class HomeMatchFeedComponent{
               JoineeCount:data["Feed"][i].JoineeCount,
               age: this.Age
             });
-          }
+          
           }  
           if(arr.length>0){
             gamename = arr[0].GameName.replace(/ matches/g,"");
