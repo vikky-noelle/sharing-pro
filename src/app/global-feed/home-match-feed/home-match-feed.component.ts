@@ -74,7 +74,6 @@ export class HomeMatchFeedComponent{
   count1 = 0;
 
   ssmatchfeed(){
-    // console.log("This is timestamp for home card ",this.timestamp);
     var gamename;
     this.location.getGeoLocation().then((pos)=>{
       if(this.cookie.check('longitude')){
@@ -89,8 +88,9 @@ export class HomeMatchFeedComponent{
         this.show=true;
         var arr=[];
           for(var i=0;i<data["Feed"].length;i++){
+            var insertDate = data["Feed"][i].InsertedDate.slice(0,4);
+            // console.log("this is date afetr slice",insertDate);
                     var tempimg, checkstat, checkstat2, finished, upcoming=false;
-                    // console.log(Date.now(data["Feed"][i].startdatetime);
                     var timestamp= new Date(data["Feed"][i].startdatetime*1000);
                     var timrstampstr = new String(timestamp).slice(16,21);
                     var timrstampstr2 = new String(timestamp).slice(0,10);
@@ -186,6 +186,10 @@ export class HomeMatchFeedComponent{
                         }
                   var Starttime= new Date( data["Feed"][i].startdatetime *1000);
                   var timestampConvert= new String(Starttime).slice(3,21);
+            
+                  
+                  
+                  if(insertDate>2018){  /// LOOP FOR INSEERTED DATE SHOULD BE GREATER THEN 2018
                     arr.push({
                     Ondate: timrstampstr2,
                     Ontime: timrstampstr, 
@@ -221,7 +225,10 @@ export class HomeMatchFeedComponent{
                     JoineeCount:data["Feed"][i].JoineeCount,
                     age: this.Age
                   });
-                }  
+                  // console.log("after insertdate",insertDate);
+                  console.log("this is arr",arr);
+                  } ////LOOP END FOR INSERTEDDATE
+              }
           if(arr.length>0){
             gamename = arr[0].GameName.replace(/ matches/g,"");
             this.getnewsdata(gamename.toLowerCase());
@@ -256,10 +263,13 @@ export class HomeMatchFeedComponent{
             if(this.count1===this.Sports.length){
             this.gett(this.sport);
           }  
+           
      });
-    }  
     
+    }  
+  
     });  
+  
   }
   
   nginit2(long, lat){
@@ -357,6 +367,9 @@ export class HomeMatchFeedComponent{
              }
             var Starttime= new Date( data["Feed"][i].startdatetime *1000);
             var timestampConvert= new String(Starttime).slice(3,21);
+            var insertDate = data["Feed"][i].InsertedDate.slice(0,4);
+            console.log("this is init 2 insertdtae",insertDate);
+            if(insertDate>2018){
               arr.push({
               feedid:data["Feed"][i].feedid,
               finished: finished,
@@ -388,6 +401,7 @@ export class HomeMatchFeedComponent{
               JoineeCount:data["Feed"][i].JoineeCount,
               age: this.Age
             });
+          }
           }  
           if(arr.length>0){
             gamename = arr[0].GameName.replace(/ matches/g,"");
@@ -461,7 +475,7 @@ export class HomeMatchFeedComponent{
           gamenews: arr
         });
       }
-      console.log(this.tnews);
+      // console.log(this.tnews);
     });
   }
   getnewsdata(topic){
