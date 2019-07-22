@@ -18,8 +18,6 @@ export class NewspageComponent implements OnInit{
   
   news=[];
   rnews=[];
-  crousallist=[];
-  crousalitem=[];
   arr=[];
   temp=[];
   tempnews=[];
@@ -62,8 +60,6 @@ export class NewspageComponent implements OnInit{
     this.event.listentoroute().subscribe((topic:any) => {
       this.news=[];
       this.rnews=[];
-      this.crousallist=[];
-      this.crousalitem=[];
       this.arr=[];
       this.temp=[];
       this.cdata=false;
@@ -87,14 +83,8 @@ export class NewspageComponent implements OnInit{
     this.mainnewsurl = this.datastr.url;
     this.mainnewssource = this.datastr.source;
     }
-   if(this.topic===undefined){
-    this.cdata=false;
-    this.getallsportnews('');
-   }
-   else{
     this.getsportwise(this.topic);
-     this.ddata=false;
-   }
+    this.ddata=false;
     this.recentnews("");
    
   }
@@ -134,91 +124,15 @@ export class NewspageComponent implements OnInit{
     });
 
   }
-  getallsportnews(topic){
-      this.getService.getsportnews(topic).subscribe(res=>{
-        this.show=true;
-        var body = JSON.parse(res._body);
-        var x;
-        this.j=this.j+1;
-        for (var i=0; i<5; i++) {
-          // if(this.mainnewsurl === body.news[i].url){
-          //   continue;
-          // }
-          x = this.time.ExactDate(Date.parse(body.news[i].insertedDate)/1000);
-          x = x.replace(/T/g," at "); 
-            this.crousallist.push({
-              id: i,
-              game: body.news[i].gameName,
-              source: body.news[i].source,
-              title:body.news[i].title,
-              timestamp:x.substr(0,19),
-              url: body.news[i].url,
-              image: body.news[i].newsImage,
-              desc: body.news[i].desc
-            });
-          }
-          for(var i=5; i<7; i++){
-            x = this.time.ExactDate(Date.parse(body.news[i].insertedDate)/1000);
-            x = x.replace(/T/g," at "); 
-            this.crousalitem.push({
-              id: i,
-              source: body.news[i].source,
-              game: body.news[i].gameName,
-              title:body.news[i].title,
-              timestamp:x.substr(0,19),
-              url: body.news[i].url,
-              image: body.news[i].newsImage,
-              desc: body.news[i].desc
-            });
-          }
-          for(var i=7; i<20; i++){
-            x = this.time.ExactDate(Date.parse(body.news[i].insertedDate)/1000);
-            x = x.replace(/T/g," at "); 
-            this.news.push({
-              id: i,
-              game: body.news[i].gameName,
-              source: body.news[i].source,
-              title:body.news[i].title,
-              timestamp:x.substr(0,19),
-              url: body.news[i].url,
-              image: body.news[i].newsImage,
-              desc: body.news[i].desc
-          });
-        }
-          if(this.datastr === undefined){
-          this.mainnewshead = this.news[0].title;
-          this.mainnewstime = this.news[0].timestamp;
-          this.mainnewsimage = this.news[0].image;
-          this.mainnewsdesc = this.news[0].desc;
-          this.mainnewsurl = this.news[0].url;
-          this.mainnewssource = this.news[0].source;
-          }
-    });
-  }
+ 
   openews(id, topic){
     this.c=1;
     if(id<5){
-      this.mainnewshead = this.crousallist[id].title;
-      this.mainnewstime = this.crousallist[id].timestamp;
-      this.mainnewsimage = this.crousallist[id].image;
-      this.mainnewsdesc = this.crousallist[id].desc;
-      this.mainnewsurl = this.crousallist[id].url; 
-      this.mainnewssource = this.crousallist[id].source; 
-      this.ddata=false;
-      this.cdata=true;
       this.ngtemp(topic);
       this.router.navigate(['/news', topic]);  
     }
     else if(id >= 5 && id < 7){
       id=id-5;
-      this.mainnewshead = this.crousalitem[id].title;
-      this.mainnewstime = this.crousalitem[id].timestamp;
-      this.mainnewsimage = this.crousalitem[id].image;
-      this.mainnewsdesc = this.crousalitem[id].desc;
-      this.mainnewsurl = this.crousalitem[id].url;  
-      this.mainnewssource = this.crousalitem[id].source; 
-      this.ddata=false;1
-      this.cdata=true;
       this.router.navigate(['/news', topic]);  
     }
     else{
@@ -363,10 +277,5 @@ export class NewspageComponent implements OnInit{
     topscroll(){
       window.scrollTo(0,0);
     }
-    lscroll(){
-      this.widgets.nativeElement.scrollLeft -=this.widgetsContent.nativeElement.clientWidth;
-    }
-    rscroll(){
-      this.widgets.nativeElement.scrollLeft +=this.widgetsContent.nativeElement.clientWidth;
-    }
+  
 }
