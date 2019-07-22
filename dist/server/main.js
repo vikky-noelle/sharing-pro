@@ -11878,10 +11878,10 @@ var PostService = /** @class */ (function () {
             .map(function (response) { return response.json(); });
     };
     PostService.prototype.saveformdata = function (dataObject) {
-        return this.http.post('https://prod.sportsocial.in/web/webcontactus', dataObject);
+        return this.http.post('https://test.sportsocial.in/web/webcontactus', dataObject);
     };
     PostService.prototype.Teamviewdata = function (tvdataobject) {
-        return this.http.post('https://prod.sportsocial.in/web/webTeamStatic', tvdataobject);
+        return this.http.post('https://test.sportsocial.in/web/webTeamStatic', tvdataobject);
     };
     PostService.prototype.Localityviewdata = function (lvdataobject) {
         return this.http.post('https://test.sportsocial.in/web/webLocalityStatic', lvdataobject);

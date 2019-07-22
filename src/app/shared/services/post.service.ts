@@ -198,11 +198,11 @@ export class PostService {
   }
 
   saveformdata(dataObject){
-    return this.http.post('https://prod.sportsocial.in/web/webcontactus',dataObject);
+    return this.http.post('https://test.sportsocial.in/web/webcontactus',dataObject);
   }
 
   Teamviewdata(tvdataobject){
-    return this.http.post('https://prod.sportsocial.in/web/webTeamStatic', tvdataobject);
+    return this.http.post('https://test.sportsocial.in/web/webTeamStatic', tvdataobject);
   }
 
   Localityviewdata(lvdataobject){
