@@ -30,9 +30,6 @@ export class NewspageComponent implements OnInit{
   newsstatus = false;
   mainnewstime;
   mainnewssource;
-  cdata=true;
-  ddata=true;
-  show:boolean=false;
   topic;
   c=0;
   j=-1;
@@ -62,10 +59,7 @@ export class NewspageComponent implements OnInit{
       this.rnews=[];
       this.arr=[];
       this.temp=[];
-      this.cdata=false;
-      this.ddata=true;
-      this.getsportwise(topic);
-      this.ddata=false;
+       this.getsportwise(topic);
       this.recentnews("");
    }); 
   }
@@ -84,7 +78,6 @@ export class NewspageComponent implements OnInit{
     this.mainnewssource = this.datastr.source;
     }
     this.getsportwise(this.topic);
-    this.ddata=false;
     this.recentnews("");
    
   }
@@ -101,7 +94,6 @@ export class NewspageComponent implements OnInit{
       this.rnews=[];
     }
     this.getService.getsportnews(topic).subscribe(res=>{
-      this.show=true;
       var body = JSON.parse(res._body);
       var x;
       for (var i in body.news) {
@@ -143,8 +135,6 @@ export class NewspageComponent implements OnInit{
       this.mainnewsdesc = this.news[id].desc;
       this.mainnewsurl = this.news[id].url;  
       this.mainnewssource = this.news[id].source; 
-      this.ddata=false;
-      this.cdata=true;
       this.router.navigate(['/news', topic]); 
     }
   } 
@@ -161,9 +151,7 @@ export class NewspageComponent implements OnInit{
           var x;
           this.j=-1;
 
-          this.show=true;
-          this.cdata=true;
-          for (const i in body.news) {
+           for (const i in body.news) {
             this.j=this.j+1;
             x = this.time.ExactDate(Date.parse(body.news[i].insertedDate)/1000);
             x = x.replace(/T/g," at "); 

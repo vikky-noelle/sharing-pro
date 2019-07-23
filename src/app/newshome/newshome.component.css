@@ -145,23 +145,58 @@
     margin-right: 50%;
     float: right;
 }
-.source-desc{
-    display: none;
-}
-.source-dnews{
-    display: none;
-}
 .heading p{
     float: right;
     margin-top: 1%;
     font-weight: bold;
     font-size: 0.5em;
 }
-.tnewscard h1{
-    padding: 10px;
-    font-size: 1em;
-    font-weight: lighter;
-    width: 45%;
+.sportwise-shell{
+    overflow: hidden;
+    width: 84%;
+    margin-left: 16%;
+    margin-bottom: 3%;
+    /* border-bottom: 2px solid silver; */
+}
+.sport-heading{
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+    height: 60px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.sport-heading h1{
+    float: left;
+}
+.sport-heading h2{
+    float: right;
+}
+.main-news{
+    margin-left: 5%;
+    float: left;
+    height: 10vh;
+    background-color: blue;
+    width: 55%;
+}
+.side-news{
+    float: right;
+    height: 10vh;
+    margin-right: 5%;
+    background-color: green;
+    width: 35%;
+}
+.news-tab img{
+    height: 200px;
+    width: 30%;
+    background-color: white;
+    float: left;
+}
+.news-tab-info{
+    float: right;
+    width: 70%;
+    height: 200px;
+    background-color: magenta;
 }
 @media screen and (min-width: 200px) and (max-width: 700px){
     .main-body{
