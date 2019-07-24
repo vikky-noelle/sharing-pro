@@ -99,13 +99,16 @@ export class NewshomeComponent implements OnInit {
      
   }
   
-  openspecificnews(){
-    for(var i=0; i<this.news.length;i++){
-      for(var j=0; j<this.news[i]["news"].length;j++){
-        console.log(this.news[i]["news"][j]);
-      }
-    }
-    // this._eventemiter.userToEdit =  
+  openspecificnews(feed){
+    console.log(feed);
+    // for(var i=0; i<this.news.length;i++){
+    //   for(var j=0; j<this.news[i]["news"].length;j++){
+    //     console.log(this.news[i]["news"][j]);
+    //   }
+    // }
+    this._eventemiter.userToEdit = feed;
+    feed.game=feed.game.replace(/ /g,"-");
+    this.router.navigate(['/news', feed.game])  
   }
   ngOnInit() {
     this.getsportnewsheader('');
@@ -144,6 +147,7 @@ export class NewshomeComponent implements OnInit {
           console.log(this.temporarynews);
           console.log(i);
           this.news.push({
+            gamename: this.temporarynews[0].game,
             news: this.temporarynews
           });
         }
