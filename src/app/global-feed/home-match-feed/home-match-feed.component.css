@@ -29,7 +29,6 @@
     border-bottom: 2px solid rgb(218, 218, 218);
 }
 .rightside{
-    
     margin-top: 1%;
     float: right;
     width: 82.5%;
@@ -39,7 +38,7 @@
     border-bottom: 1px solid rgb(218, 218, 218);
 }
 .blog{
-    margin: 7% auto 0%;
+    margin: 5% auto 0%;
     width: 90%;
     height: 235px;
     white-space: nowrap !important;
@@ -127,13 +126,11 @@ scrollbar-width: none;
 }
 
 .topic{
-    /* border: 1px solid green; */
     position: absolute;
     width: 73%;
     margin-left: 4%;
 }
 .topic-news{
-    /* border: 1px solid green; */
     position: absolute;
     width: 73%;
     margin-left: 4%;
@@ -151,19 +148,27 @@ scrollbar-width: none;
     margin-top: 10px;
     margin-bottom: 8px;
 }
-.topic h5{
+ .topic h5{
     float: right;
     margin-right: 5px;
     color: rgb(133, 131, 131);
     font-size: 0.8em;
     font-weight: lighter;
     cursor: pointer;
+    text-decoration: underline;
 }
 .topic-news>h3{
     font-weight: lighter;
     font-size: 1.4em;
     margin-top: 10px;
     margin-bottom: 8px;
+}
+.topic-news>h2{
+    font-weight: bolder;
+    font-size: 1.4em;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    color: #024771;
 }
 .topic-news h5{
     float: right;
@@ -172,6 +177,7 @@ scrollbar-width: none;
     font-size: 0.8em;
     font-weight: lighter;
     cursor: pointer;
+    text-decoration: underline;
 }
 .topic2{
     width: 95%;
@@ -548,7 +554,7 @@ scrollbar-width: none;
     .blog{
         width: 92%;
         height: 230px;
-        margin: 25% auto 0%;
+        margin: 20% auto 0%;
     }
     .card{
         width: 96%;
@@ -659,7 +665,7 @@ scrollbar-width: none;
     .blog{
         width: 92%;
         height: auto;
-        margin: 25% auto 0%;
+        margin: 15% auto 0%;
     }
     .card{
         width: 96%;
@@ -772,7 +778,7 @@ scrollbar-width: none;
     .blog{
         width: 92%;
         height: auto;
-        margin: 13% auto 0%;
+        margin: 10% auto 0%;
     }
     .card{
         width: 70%;
@@ -850,7 +856,7 @@ scrollbar-width: none;
         width: 100%;
     }
     .rightside{
-        height: 540px;
+        height: 520px;
         margin-top: 7%;
     }
     .rightside1{
@@ -886,7 +892,7 @@ scrollbar-width: none;
         font-size: 1em;
         margin-left: 1%;
         padding-left:35px;
-        margin-top: -35px;
+        /* margin-top: -35px; */
     }
     .msidenav{
         display: block;
@@ -898,7 +904,7 @@ scrollbar-width: none;
         width: 48%;
     }
     .blog{
-        margin:11% auto 0%;
+        margin:7% auto 0%;
         width: 91%;
         height: 300px;
     }

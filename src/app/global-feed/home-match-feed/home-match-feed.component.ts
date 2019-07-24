@@ -87,8 +87,18 @@ export class HomeMatchFeedComponent{
         this.count1=this.count1+1;
         this.show=true;
         var arr=[];
+
+      //  for(var feedlength=0;feedlength<data["Feed"].length;feedlength++){
+        // var insertDate2 = new Date(data["Feed"][feedlength].InsertedDate);
+        // var gettimestamp = insertDate2.getTime()/1000;
+        // console.log("surviveeee",gettimestamp);
+        // var dateOfJune2019 = 1559692800;
+            
+            // console.log("hi this is date after 2019:",insertDate2);
+            
+          
           for(var i=0;i<data["Feed"].length;i++){
-            var insertDate = data["Feed"][i].InsertedDate.slice(0,4);
+            
             // console.log("this is date afetr slice",insertDate);
                     var tempimg, checkstat, checkstat2, finished, upcoming=false;
                     var timestamp= new Date(data["Feed"][i].startdatetime*1000);
@@ -101,7 +111,7 @@ export class HomeMatchFeedComponent{
                 
                         if(data["Feed"][i].Team2name === null){
                           tempimg = "/assets/images/sportsocialteamlogo.png";
-                          data["Feed"][i].Team2name = "None";
+                          data["Feed"][i].Team2name = "Yet to Join";
                         }
                         else{
                           tempimg = data["Feed"][i].Team2Pic;
@@ -145,7 +155,7 @@ export class HomeMatchFeedComponent{
                       finished= false; 
                       upcoming=true;   
                       if(data["Feed"][i].Team2name === "None"){
-                        this.startTime = "Waiting for oponent";
+                        this.startTime = "Upcoming Match";
                       }
                     }
                     if(data["Feed"][i].scoreTeam1!==null && data["Feed"][i].scoreTeam2!==null){
@@ -187,7 +197,7 @@ export class HomeMatchFeedComponent{
                   var Starttime= new Date( data["Feed"][i].startdatetime *1000);
                   var timestampConvert= new String(Starttime).slice(3,21);
             
-                  if(insertDate>=2019){  /// LOOP FOR INSEERTED DATE SHOULD BE GREATER THEN 2018
+                 // if(gettimestamp>=dateOfJune2019){  /// LOOP FOR INSEERTED DATE SHOULD BE GREATER THEN 2018
                     arr.push({
                     Ondate: timrstampstr2,
                     Ontime: timrstampstr, 
@@ -224,8 +234,10 @@ export class HomeMatchFeedComponent{
                     JoineeCount:data["Feed"][i].JoineeCount,
                     age: this.Age
                   });
-              }
+             // }
+            //  console.log("insetdate",data["Feed"][i].InsertedDate);
             }
+          
           if(arr.length>0){
             gamename = arr[0].GameName.replace(/ matches/g,"");
             this.getnewsdata(gamename.toLowerCase());
@@ -260,13 +272,15 @@ export class HomeMatchFeedComponent{
             if(this.count1===this.Sports.length){
             this.gett(this.sport);
           }  
-           
-     });
-    
+         
+      //  }
+      // }
+       });
+      
     }  
-  
+      
     });  
-  
+      
   }
   
   // nginit2(long, lat){
