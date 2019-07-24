@@ -51,10 +51,10 @@ export class OpenHomeMatchCardComponent implements OnInit {
   
   first(){  
     this.one[0].style.background="none";
-    this.one[0].style.fontWeight="bolder";
+    // this.one[0].style.fontWeight="bolder";
     this.two[0].style.background="#f4f4f4";
-     this.three[0].style.background="#f4f4f4";
-      this.one[0].style.fontSize="1em";
+    this.three[0].style.background="#f4f4f4";
+    this.one[0].style.fontSize="1em";
      this.two[0].style.fontSize="0.9em";
      this.three[0].style.fontSize="0.9em";
      this.comment=true;

@@ -146,7 +146,7 @@ export class PostService {
     };
     console.log(this.matchFeedReqObj);
     return this.http.post('https://prod.sportsocial.in/web/webfeed', this.matchFeedReqObj);
-    // return this.http.post('https://test.sportsocial.in/poc/webfeed', this.matchFeedReqObj);
+    // return this.http.post('https://prod.sportsocial.in/poc/webfeed', this.matchFeedReqObj);
   }
 
   homeMatchFeed(lat,long,Gameid,timest){
@@ -156,14 +156,14 @@ export class PostService {
         gameid:Gameid,
         timestamp:timest
       }
-      return this.http.post('https://test.sportsocial.in/web/webfeed',this.homematchfeedObj);
+      return this.http.post('https://prod.sportsocial.in/web/webfeed',this.homematchfeedObj);
   }
 
   OpenOneMatchCard(id){
     this.paramIdObj={
       eventid:id
     }
-    return this.http.post('https://test.sportsocial.in/web/webmatchinfo',this.paramIdObj);
+    return this.http.post('https://prod.sportsocial.in/web/webmatchinfo',this.paramIdObj);
   }
 
   singleMatchData(eventid, userid, activityid, urlId, page) {
@@ -220,7 +220,7 @@ export class PostService {
       page:page,
       currentdate:currentdate
     }
-    return this.http.post('https://test.sportsocial.in/poc/getUserDetails',this.userprofileobj);
+    return this.http.post('https://prod.sportsocial.in/poc/getUserDetails',this.userprofileobj);
   }
 
   UserProfielPlaymate(userid,profileid,page,timestamp){
@@ -230,14 +230,14 @@ export class PostService {
         page:page,
         timestamp:timestamp
     }];
-      return this.http.post('https://test.sportsocial.in/poc/getPlaymatesNew',this.userprofileplaymateObj);
+      return this.http.post('https://prod.sportsocial.in/poc/getPlaymatesNew',this.userprofileplaymateObj);
   }
   UserProfileTeams(userid,page){
     this.userProfielTeamObj={
       userid:userid,
       page:page
     }
-    return this.http.post('https://test.sportsocial.in/team/getTeamsNew',this.userProfielTeamObj);
+    return this.http.post('https://prod.sportsocial.in/team/getTeamsNew',this.userProfielTeamObj);
   }
   UsersParticularMatches(userid,profileid,page,currentdate){
       this.userParticularMatchesObj=[{
@@ -246,7 +246,7 @@ export class PostService {
         page:page,
         currentdate:currentdate
       }]
-      return this.http.post('https://test.sportsocial.in/user/usermatchesPastFuture',this.userParticularMatchesObj);
+      return this.http.post('https://prod.sportsocial.in/user/usermatchesPastFuture',this.userParticularMatchesObj);
   }
   UserProfileAbout(userid,profileid,page,currentdate){
       this.userProfileAboutObj={
@@ -255,7 +255,7 @@ export class PostService {
         page:page,
         currentdate:currentdate
       }
-      return this.http.post('https://test.sportsocial.in/poc/getUserDetails',this.userProfileAboutObj);
+      return this.http.post('https://prod.sportsocial.in/poc/getUserDetails',this.userProfileAboutObj);
   }
 
   TeamProfile(userid,teamid){
@@ -263,7 +263,7 @@ export class PostService {
       userid:userid,
       teamid:teamid,
     }
-    return this.http.post('https://test.sportsocial.in/team/getTeamDetails',this.teamprofileobj);
+    return this.http.post('https://prod.sportsocial.in/team/getTeamDetails',this.teamprofileobj);
   }
   getFan(userid,teamid, timestamp, page){
     this.fanobj=[{
@@ -272,7 +272,7 @@ export class PostService {
       page: page,
       timestamp: timestamp
     }];
-    return this.http.post('https://test.sportsocial.in/poc/getFansNew',this.fanobj);
+    return this.http.post('https://prod.sportsocial.in/poc/getFansNew',this.fanobj);
   }
   getMembers(teamid,userid, timestamp){
     this.memberobj=[{
@@ -280,7 +280,7 @@ export class PostService {
       userid:userid,
       timestamp: timestamp
     }];
-    return this.http.post('https://test.sportsocial.in/team/getTeamMembers',this.memberobj);
+    return this.http.post('https://prod.sportsocial.in/team/getTeamMembers',this.memberobj);
   }
   getLocalityDetails(userid,venueid){
     this.localityobj={
