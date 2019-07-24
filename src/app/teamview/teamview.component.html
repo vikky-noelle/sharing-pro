@@ -2,34 +2,34 @@
 <sports-social-header></sports-social-header>
 <div class="container">
   <img class="tvbg" src="assets/images/sportsocialteamviewbg.jpg">
-  <div class="bottom-left"><a (click)="scrollToElement(target)"><img class="tvicon" src="assets/images/sportsocialtvicon.png"></a>
-  </div>
-  <div class="centered">
-    <h1>Team</h1>
-    <br>
-    <p>Joining together is a beginning. Keeping together is a process. Playing together is a success.</p></div>
+    <div class="bottom-left"><a (click)="scrollToElement(target)">
+      <img class="tvicon" src="assets/images/sportsocialtvicon.png"></a>
+    </div>
+    <div class="centered">
+      <h1>Team</h1>
+      <br>
+      <p>Joining together is a beginning. Keeping together is a process. Playing together is a success.</p>
+    </div>
 </div>
 <a #target></a>
 <div *ngIf="mview === 1">
-<div class="container2" *ngFor="let data of tvdata">
-    <br><br><br><br><br><br>
-  <div class="content" *ngIf = "data.id % 2 === 0">
-    <h1>{{data.name}}</h1>
-    <p>{{data.shortDesc}}</p>
+  <div class="container2" *ngFor="let data of tvdata">
+      <br><br><br><br><br><br>
+      <div class="content" *ngIf = "data.id % 2 === 0">
+        <h1>{{data.name}}</h1>
+        <p>{{data.shortDesc}}</p>
+      </div>
+      <div class="content-gif" *ngIf = "data.id % 2 === 0">
+        <img src="{{data.icon}}">
+      </div>
+      <div class="contentt" *ngIf = "data.id % 2 != 0">
+          <h1>{{data.name}}</h1>
+          <p>{{data.shortDesc}}</p>
+      </div>
+      <div class="contentt-gif" *ngIf = "data.id % 2 != 0">
+          <img src="{{data.icon}}">
+      </div>
   </div>
-  <div class="content-gif" *ngIf = "data.id % 2 === 0">
-    <img src="{{data.icon}}">
-  </div>
-
-
-  <div class="contentt" *ngIf = "data.id % 2 != 0">
-      <h1>{{data.name}}</h1>
-      <p>{{data.shortDesc}}</p>
-    </div>
-    <div class="contentt-gif" *ngIf = "data.id % 2 != 0">
-      <img src="{{data.icon}}">
-    </div>
-</div>
 </div>
 <!-- mobile view -->
 <div *ngIf="mview === 0">
