@@ -17,6 +17,7 @@ export class NewshomeComponent implements OnInit {
   news=[];
   crousallist=[];
   crousalitem=[];
+  temporarynews=[];
   c=0;
   j=-1;
   title="Sports News from around the world";
@@ -97,7 +98,15 @@ export class NewshomeComponent implements OnInit {
     // this is how i interact between components
      
   }
-
+  
+  openspecificnews(){
+    for(var i=0; i<this.news.length;i++){
+      for(var j=0; j<this.news[i]["news"].length;j++){
+        console.log(this.news[i]["news"][j]);
+      }
+    }
+    // this._eventemiter.userToEdit =  
+  }
   ngOnInit() {
     this.getsportnewsheader('');
     this.getsportwisenews(); 
@@ -113,13 +122,14 @@ export class NewshomeComponent implements OnInit {
       this.getService.getsportnews(topic).subscribe(res=>{
         var body = JSON.parse(res._body);
         // console.log(body.news);
+        this.temporarynews=[];
         var x;
         this.j=this.j+1;
         if(body.news.length > 0){
           for(var j=0; j<6; j++){
             x = this.time.ExactDate(Date.parse(body.news[j].insertedDate)/1000);
             x = x.replace(/T/g," at "); 
-            this.news.push({
+            this.temporarynews.push({
               id: j,
               source: body.news[j].source,
               game: body.news[j].gameName,
@@ -129,7 +139,13 @@ export class NewshomeComponent implements OnInit {
               image: body.news[j].newsImage,
               desc: body.news[j].desc
             });
+
           }
+          console.log(this.temporarynews);
+          console.log(i);
+          this.news.push({
+            news: this.temporarynews
+          });
         }
         });
     }
