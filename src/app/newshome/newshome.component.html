@@ -45,18 +45,20 @@
   </div>
   </div>
   <!-- sportwise view -->
-  <div class="sportwise-shell">
+  <div class="sportwise-shell" *ngFor="let data of news">
     <div class="sport-heading">
       <h1>Head</h1>
       <h2>See All</h2>
     </div>
     <div class="main-news">
       <div class="news-tab">
+        <div *ngFor="let feed of data.news">
         <img src="" alt="">
         <div class="news-tab-info">
-          <h1>head</h1>
+          <h1>{{feed.title|slice:0:10}}...</h1>
           <p>body</p>
         </div>
+      </div>
       </div>
     </div>
     <div class="side-news">
