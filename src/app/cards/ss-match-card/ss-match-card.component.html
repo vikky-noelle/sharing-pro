@@ -1,50 +1,51 @@
 <div class="card">
-              <div class="head">
-                  <div class="gamename">
-                    <b>{{gender}} {{gamename}} - <span> &nbsp;{{age}}</span></b>
-                    <p class="pp">{{Venue_Name|slice:0:30}}...</p>
-                  </div>
-                    <div class="rresult">
-                        <p>{{startdatetime}} 
-                            <img *ngIf="!finished" src="/assets/images/sportsocialfinalicon.jpeg">
-                            <img *ngIf="finished" src="/assets/images/sportsocialgreendot.png"><br>
-                            <a>By:{{matchstartername}}</a>
-                        </p>
-                        
-                    </div> 
+    <div class="head">
+      <div class="venue">
+        <b>{{gender}}{{gamename}} - <span style="font-weight: lighter;">{{age}}</span>
+            <p class="pp">{{Venue_Name|slice:0:30}}...</p>
+            <p class="mobile">{{Venue_Name}}</p>
+        </b>
+      </div>
+      <div class="result">
+        <p>{{startdatetime}} 
+           <img *ngIf="!finished" src="assets/images/sportsocialfinalicon.jpeg">
+           <img *ngIf="finished" src="assets/images/sportsocialgreendot.png"><br>
+           <span> By:{{matchstartername}}</span>
+        </p>
+      </div> 
+    </div>
+        <div class="cardData">
+              <div class="team1">
+                  <img src={{team1pic}} onerror="this.src='assets/images/user.png'">
+                  <p>{{Team1Name | slice:0:11}}</p>
               </div>
-            <div class="cardData">
-                  <div class="team1">
-                      <img src={{team1pic}} onerror="this.src='assets/images/user.png'">
-                      <p>{{Team1Name | slice:0:11 }}</p>
-                  </div>
 
-                  <div class="vs">
-                      <b *ngIf="!finished">VS<br><span *ngIf="upcoming" style="font-size: 0.7em; font-weight: lighter;">On<br>{{starttimestamp}}</span></b>
-                      <b *ngIf="finished">{{scoreTeam1}}{{scoreTeam2}}</b>
-                   </div>
+              <div class="vs">
+                  <b *ngIf="!finished">VS<br><span *ngIf="upcoming" style="font-size: 0.7em; font-weight: lighter;">On<br>{{starttimestamp}}</span></b>
+                  <b *ngIf="finished">{{scoreTeam1}}{{scoreTeam2}}</b>
+               </div>
 
-                   <div class="team2">
-                      <img src={{team2pic}} onerror="this.src='assets/images/user.png'">
-                      <p>{{Team2Name | slice:0:11}}</p>
-                   </div>      
+               <div class="team2">
+                  <img src={{team2pic}} onerror="this.src='assets/images/user.png'">
+                  <p>{{Team2Name | slice:0:11}}</p>
+               </div>      
+        </div>
+        <!-- <div class="creator">
+            <img src={{team1pic}} class="circularImage" onerror="this.src='assets/images/user-default.png'"> 
+            <p class="username"><b style="color:#000000;">{{matchstartername}}</b><br>@{{Uniquename}}</p>
+            <p id="creatorname">{{InsertedDate |slice:0:16}}</p>
+        </div> -->
+        
+        <div class="eventtext">
+                <p>{{EventText|slice:0:100}}...</p>
             </div>
-            <!-- <div class="creator">
-                <img src={{team1pic}} class="circularImage" onerror="this.src='assets/images/user-default.png'"> 
-                <p class="username"><b style="color:#000000;">{{matchstartername}}</b><br>@{{Uniquename}}</p>
-                <p id="creatorname">{{InsertedDate |slice:0:16}}</p>
-            </div> -->
-            
-            <div class="eventtext">
-                    <p>{{EventText|slice:0:100}}..</p>
-                </div>
-            <div class="footer">
-                  <button class="playButton"><span *ngIf="JoineeCount">{{JoineeCount}}</span> Joinee</button>
-                  <button class="commentButton"><span *ngIf="CommentCount">{{CommentCount}}</span> Talk</button>
-                  <button class="promoteButton"><span *ngIf="PromoteCount">{{PromoteCount}}</span> Promote</button>
-                  <button class="watchButton">Subscribe</button>
-                  
-            </div>
+        <div class="footer">
+              <button class="playButton"><span *ngIf="JoineeCount">{{JoineeCount}}</span> Joinee</button>
+              <button class="commentButton"><span *ngIf="CommentCount">{{CommentCount}}</span> Talk</button>
+              <button class="promoteButton"><span *ngIf="PromoteCount">{{PromoteCount}}</span> Promote</button>
+              <button class="watchButton">Subscribe</button>
+              
+        </div>
 
 </div>
 

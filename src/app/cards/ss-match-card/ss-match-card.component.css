@@ -1,11 +1,13 @@
 .card{
+    position: relative;
     width: 90%;
-    height: 210px;
+    height: 200px;
     margin-bottom: 2%;
     border-radius: 2%;
     box-shadow: 0 4px 8px 0 rgba(173, 172, 172, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
 }
  .head{
+    position: absolute;
     line-height: 1.1;
     width: 100%;
     height: 30px;
@@ -13,92 +15,67 @@
     margin-top: 1%;
     border-bottom: 1px solid #dddddd;
 }
-.gamename{
+.head>div{
+    display: inline-block;
+    vertical-align: top !important;
+}
+.venue{
+    width: 50%;
     height: 100%;
-    width: 58%;
-    float:left;
-    margin-top: 0%;
-    padding-left: 10px;
 }
-.gamename>b{
-    display: inline-flex;
+.venue>b{
+    margin-left: 1.5%;
     font-size: 0.8em;
-    font-weight: 400;
-}
-
-.gamename>p{
-    font-size: 0.6em;
-    color: #444444;
+    margin-top: 8px;
     font-weight: lighter;
 }
-.gamename>b>span{
-    margin-top: 1px;
-    letter-spacing: 0.6px;
-    font-size: .8em;
-    color: #444444;
+.venue>b>span{
+    color: grey;
     font-weight: 400;
+    font-size: .8em;
 }
-.rresult{
-    margin-top: 1%;
+
+.venue>p{
     float: right;
     margin-right: 1%;
-    width: 35%;
-    
+    padding: 2%;
 }
-.rresult>p{
-    text-align: right;
+.result{
+    float: right;
     margin-right: 1%;
-    font-size: 0.7em;
+    width: 40%;
+    height: 100%;
 }
-.rresult p img{ 
+.result>p{
+    text-align: right;
+    font-size: 0.8em;
+    font-weight: lighter;
+}
+.result p img{
+    margin-top: 2px;
     float: right;
     height: 12px;
     width: 12px;
 }
-.rresult>p>a{
-    /* text-align: right; */
-    margin-right: 12%;
-    font-size: 0.9em;
+.result>p>span{
+    padding: 1.5%;
+    font-size: 0.8em;
+    margin-right: 9%;
     color: #024771;
+    font-weight: bold;
 }
-/* .result {
-    height: 30px;
-    width: 35%;
-    float: right;
-    margin-top: 1px;
-    padding: 1%;
-    border: 1px solid blue;
-}
-.result b img{
-    height: 8px;
-    width: 8px;
-    font-weight: lighter;
-}
-.result b,.result p {
-    float: right;
-    
-}
-.result b {
-    font-size: 0.7em;
-    font-weight: lighter;
-}
-
-.result p {
-    font-size: 0.7em;
-    border: 1px solid red;
-    float: right !important;
-    margin-right: 0%;
-    color: #024771;
-} */
-/* .head b span{
+.venue b span{
    margin-top:1%;
-} */
-/* .pp{
-    float: left;
+}
+.pp{
     margin-left: 1%;
+    padding: 1%;
     color: grey;
-    font-size: 0.6em;
-} */
+    font-size: 0.7em;
+}
+.mobile{
+    display: none;
+}
 .icon{
     width: 100%;
 }
@@ -112,11 +89,11 @@
     width: 40px;
 }
 .cardData{
+    position: absolute;
     width: 100%;
-    height: 50px;
+    height: 80px;
     display: inline-flex;
-    margin-top: 2%;
-    margin-bottom: 10%;
+    margin-top: 13%;
 }
 .vs{
     width: 20%;
@@ -127,9 +104,6 @@
     margin-top: 10%;
     font-size: .9em;
 }
-/* .vs>p{
-    font-size: 0.7em;
-} */
 .creator{
     margin-top: 8%;
     width: 100%;
@@ -159,17 +133,18 @@
 
 .eventtext{
     width: 100%;
-    height: 50px;
-    font-size: 1em;
+    height: 60px;
+    position: absolute;
+    bottom: 30px;
 }
 .eventtext>p{
-    text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 0.8em;
+    font-size: 0.7em;
     color: grey;
+    text-align: center;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -180,8 +155,6 @@
     border-bottom-right-radius: 50% 50%;
     border-bottom-left-radius: 50% 50%;
 }
-
-
 .card>p{
     margin: 1% 0% 1% 2%;
     color: #000000;
@@ -194,53 +167,41 @@
     width: 50% !important;
     color: #7e7d7d;
 }
-
-
 .team1{
     /* margin-left: 3%; */
     font-size: 0.9em;
     width: 40%;
 }
 .team1,.team2 p{
+    color: black;
+    font-size: 0.8em;
     text-align: center;
 }
-.team1 p{
-    padding: 10px;
-}
-.team2 p{
-    padding: 10px;
-}
+
 .team1>img{
     margin: 0 auto;
     border-radius: 50%;
-    height: 42px;
-    width: 42px;
-    /* margin-left: 18%; */
+    height: 40px;
+    width: 40px;
 }
 .team2{
     text-align: center;
     font-size: 0.9em;
-    /* margin-left: 7%; */
     width: 40%;
 }
 
  .team2>img{
     margin: 0 auto;
     border-radius: 50%;
-    height: 42px;
-    width: 42px;
+    height: 40px;
+    width: 40px;
 }
-
-
-.footer
-{
+.footer{
     border-top: 1px solid #d3d1d1;
     width: 100%;
     height: 30px;
-}
-.footer>button>span{
-    color: #024771;
-    font-weight: bolder;
+    position: absolute;
+    bottom: 0% !important;
 }
 .footer>button{
     border: none;
@@ -250,16 +211,45 @@
     text-align: center;
     font-size: 0.8em;
     width: 25%;
-    padding: 5px;
-    /* color: #7e7d7d; */
-    color: #000000;
+    padding: 2%;
+    color: #7e7d7d;
     background-color: transparent;
 }
+.footer>button span{
+    color: #045a8b;
+    font-weight: bold;
+}
 
-@media screen and (min-width:200px) and (max-width:800px){
-    .head>b{
+@media screen and (min-width:200px) and (max-width:400px){
+    .card{
+        width: 90%;
+        height: 200px;
+    }
+    .head{
+        height: 34px;
+    }
+    .venue{
+        width: 56%;
+        height: 100%;
+    }
+    .venue>b{
         margin-left: 1%;
-        font-size: 0.8em;
+        margin-bottom: 1%;
+        font-size: 0.7em;
+    }
+    .venue>b>.pp{
+        display: none;
+    }
+    .venue>b>.mobile{
+        display: block;
+        padding: 2%;
+        font-weight: lighter;
+        font-size: 0.6em;
+        color: grey;
+    }
+    .venue>b>span{
+        color: grey;
+        font-size: .8em;
     }
     .team1,.team2>p{
         font-size: 0.9em;
@@ -270,50 +260,219 @@
     .username{
         font-size: .6em;
     }
-    .rresult{
+    .result{
         width: 40%;
-        margin-top: -20px;
-        /* border: 1px solid red; */
+        margin-top: 1.5%;
     }
-    .rresult>p{
+    .result>p{
         float: right;
-        font-size: 0.7em;
+        font-size: 0.6em;
         font-weight: bold;
     }
-    .rresult p img{
+    .result p img{
+        float: right;
+        height: 8px;
+        width: 8px;
+    }
+    .result>p>span{
+        float: right;
+        margin-top: 2.5%;
+        font-size: 0.8em !important;
+        color:grey;
+    }
+    .cardData{
+        width: 100%;
+        height: 75px;
+        margin-top: 45px;
+    }
+    .footer{
+        margin: 0%;
+        padding: 0%;
+        height: 30px;
+        bottom: 0% !important;
+    }
+    .footer>button{
+        font-size: 0.6em ;
+        padding: 5px;
+    }
+    .eventtext{
+        width: 100%;
+        height: 60px;
+        bottom: 30px;
+    }
+    .eventtext>p{
+        padding: 5px 10px 5px 10px;
+        font-size: 0.6em;
+    }
+    
+
+}
+@media screen and (min-width:401px) and (max-width:800px){
+    .head{
+        height: 35px;
+    }
+    .venue{
+        width: 56%;
+        height: 100%;
+    }
+    .venue>b{
+        margin-left: 1%;
+        margin-bottom: 1%;
+        font-size: 0.7em;
+    }
+    .venue>b>.pp{
+        display: none;
+    }
+    .venue>b>.mobile{
+        display: block;
+        font-weight: lighter;
+        font-size: 0.6em;
+        padding: 2%;
+        color: grey;
+    }
+    .venue>b>span{
+        color: grey;
+        font-size: .8em;
+    }
+    .team1,.team2>p{
+        font-size: 0.9em;
+    }
+    .creator{
+        margin-top: 12%;
+    }
+    .username{
+        font-size: .6em;
+    }
+    .result{
+        width: 40%;
+        margin-top: 1.5%;
+    }
+    .result>p{
+        float: right;
+        font-size: 0.6em;
+        font-weight: bold;
+    }
+    .result p img{
         /* margin-top: 2px; */
         float: right;
         height: 8px;
         width: 8px;
     }
-    .rresult p span{
+    .result>p>span{
         float: right;
-        font-size: 0.7em !important;
-        color: rgb(75, 73, 73);
+        font-size: 0.8em !important;
+        color:grey;
+    }
+    .cardData{
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 50px;
+        margin-top: 45px; 
+    }
+    .footer{
+        margin: 0%;
+        padding: 0%;
+        height:30px;
+        bottom: 0% !important;
+        
     }
     .footer>button{
-        font-size: 0.6em;
+        font-size: 0.7em;
         float: left;
         padding: 7px;
     }
     .eventtext{
+        /* border: 1px solid green; */
         height: 50px;
-        margin-bottom: 5%;
+        margin-top: 5%;
     }
     .eventtext>p{
-        font-size: .8em;
+        font-size: .6em;
     }
-    .card{
-        height: auto;
-    }
+   
 
 }
 @media screen and (min-width:801px) and (max-width:920px){
-    .footer button{
-        font-size: 0.8em;
+    .head{
+        height: 35px;
     }
-    .card{
-        height: auto;
+    .venue{
+        width: 56%;
+        height: 100%;
+    }
+    .venue>b{
+        margin-left: 1%;
+        margin-bottom: 1%;
+        font-size: 0.7em;
+    }
+    .venue>b>.pp{
+        display: none;
+    }
+    .venue>b>.mobile{
+        display: block;
+        font-weight: lighter;
+        font-size: 0.6em;
+        padding: 2%;
+        color: grey;
+    }
+    .venue>b>span{
+        color: grey;
+        font-size: .8em;
+    }
+    .team1,.team2>p{
+        font-size: 0.9em;
+    }
+    .creator{
+        margin-top: 12%;
+    }
+    .username{
+        font-size: .6em;
+    }
+    .result{
+        width: 40%;
+        margin-top: 1.5%;
+    }
+    .result>p{
+        float: right;
+        font-size: 0.6em;
+        font-weight: bold;
+    }
+    .result p img{
+        /* margin-top: 2px; */
+        float: right;
+        height: 8px;
+        width: 8px;
+    }
+    .result>p>span{
+        float: right;
+        font-size: 0.8em !important;
+        color:grey;
+    }
+    .cardData{
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 50px;
+        margin-top: 45px; 
+    }
+    .footer{
+        margin: 0%;
+        padding: 0%;
+        height:30px;
+        bottom: 0% !important;
+        
+    }
+    .footer>button{
+        font-size: 0.7em;
+        float: left;
+        padding: 7px;
+    }
+    .eventtext{
+        /* border: 1px solid green; */
+        height: 50px;
+        margin-top: 5%;
+    }
+    .eventtext>p{
+        font-size: .6em;
     }
 }
 
