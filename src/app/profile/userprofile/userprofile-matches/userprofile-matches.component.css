@@ -6,6 +6,7 @@
     height: auto;
     width: 75%;
     margin-left: 25%;
+    min-height: 300px;
 }
 .About-body>div{
     width: 85%;
@@ -25,7 +26,6 @@
     scroll-behavior: smooth;
     width: 100% !important;
     -webkit-overflow-scrolling: touch;
-    display: inline-block;
 }
 .upcoming-cards{
     vertical-align: top;
@@ -38,3 +38,38 @@
     width: 75%;
     float: right;
 }
+
+@media screen and (min-width:200px) and (max-width:700px){
+    .About-body{
+        overflow: hidden;
+        width: 100%;
+        margin-left: 0%;
+    }
+    .About-body>div{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .upcoming-cards{
+        width: 100%;
+        margin-left: 5%;
+        margin-top: 3%;
+        margin-right: 0%;
+    }
+    .backfooter{
+        clear: both;
+        width: 100%;
+    }
+}
+ @media screen and (min-width:701px) and (max-width:1060px){ 
+   
+    .upcoming-cards{
+        /* border: 1px solid red; */
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 3%;
+    }
+    .backfooter{
+        clear: both;
+        width: 100%;
+    }
+} 

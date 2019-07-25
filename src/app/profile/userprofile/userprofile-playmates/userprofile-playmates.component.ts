@@ -1,6 +1,7 @@
+import { InteractionService } from './../../../shared/services/interaction.service';
 import { Component, OnInit } from '@angular/core';
 import { PostService } from '../../../shared/services/post.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { UserprofileComponent } from '../userprofile.component';
 
 @Component({
@@ -17,16 +18,21 @@ export class UserprofilePlaymatesComponent implements OnInit {
   array=[];
   constructor(private postservice:PostService,
     private activatedroute:ActivatedRoute,
-    private userprofilecmp:UserprofileComponent) { }
+    private userprofilecmp:UserprofileComponent,
+    private interactionService: InteractionService,
+    private router: Router
+    ) { }
 
     getuserid(){
      this.parentUserid=this.userprofilecmp.userid;
-    //  this.pageno= this.userprofilecmp.pageNo;
-      console.log("this is paramid",this.parentUserid);
-      console.log("this is pageNumber",this.pageno);
     }
-
-
+  // route change for playmates defined here!!!!
+  // it sends the value to the interaction service.
+  changeroute(id){
+    console.log("working" + id);
+    this.interactionService.routechangefunction(id);
+    this.router.navigate(['/userprofile', id, 'matches']);
+  }
   getplaymates(){
     for(var i=1;i<=10;i++){
       this.pageno=i;
@@ -35,10 +41,10 @@ export class UserprofilePlaymatesComponent implements OnInit {
       }
     this.postservice.UserProfielPlaymate(this.parentUserid,this.parentUserid,this.pageno,this.date).subscribe(
       res=>{
-        this.show=true;
-        console.log("response of playmates",res);
+        this.show=true;  
         for(const i in res)
         this.array.push({
+          
           user_id:res[i].user_id,
           user_name:res[i].user_name,
           UniqueName:res[i].UniqueName,
@@ -53,7 +59,7 @@ export class UserprofilePlaymatesComponent implements OnInit {
           Start_Date:res[i].Start_Date,
           EventId:res[i].EventId
         });
-        // console.log("this is response of userid",res[i].Age);
+        
       });
     }
   }
@@ -61,7 +67,6 @@ export class UserprofilePlaymatesComponent implements OnInit {
   ngOnInit() {
     this.getuserid();
     this.getplaymates();
-    console.log("thi is date",this.date);
   }
 
 }

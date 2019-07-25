@@ -13,17 +13,33 @@ export class TeamprofileAboutComponent implements OnInit {
   description;
   array=[];
   Matcharr=[];
+  location;
+  challenge="Open For Challenge";
+  gender;
+  gamename;
+  teamtypestatus;
+  teamstatus;
+  mantra=[];
   // @Input() member =[];
   constructor(
     private parent: TeamprofileComponent
   ) { }
   
-  ngOnInit() {
-    // console.log("about working");
+  initvariables(){
     this.members = this.parent.members;
     this.description = this.parent.description;
     this.Matcharr = this.parent.past;
     console.log(this.description);
-
+    this.location = this.parent.location;
+    this.challenge = this.parent.challenge; 
+    this.gender = this.parent.gender;
+    this.gamename = this.parent.gamename;
+    this.teamtypestatus = this.parent.teamtypestatus;
+    this.teamstatus = this.parent.teamstatus;
+    this.mantra = this.parent.mantra;
+  }
+  ngOnInit() {
+    // console.log("about working");
+    this.initvariables();
   }
 }

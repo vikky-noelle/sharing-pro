@@ -52,6 +52,7 @@ export class UserprofileTeamsComponent implements OnInit {
                   Cover_Photo:data["RandomTeams"][i].Cover_Photo,
                   FanCount:data["RandomTeams"][i].FanCount,
                   MemberCount:data["RandomTeams"][i].MemberCount,
+                  MatchCount:data["RandomTeams"][i].MatchCount
                 }); 
                 
                 // console.log("this is teamid",this.teamId);

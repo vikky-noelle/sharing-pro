@@ -1,5 +1,6 @@
 <sports-social-header></sports-social-header>
 <!-- popup -->
+<body>
 <div class="popup">
   <div class="pop-up">
     <h1>Your message is sent successfully! We will contact you shortly.<br>Thanks!</h1>
@@ -78,16 +79,13 @@
             <!-- <h3> MESSAGE US</h3> -->
             <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" target="_blank"><P>letstalk@sportsocial.in</P></a>
           </div><br>
-      </div>
-      <div class="map">
-          <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
-              <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-            </agm-map>
+          <div class="map">
+              <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+                  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                </agm-map>
           </div> 
-          <div class="footer">
-              <sports-social-backfooter></sports-social-backfooter>
-          </div>
+      </div>
     </div>
-
-   
+  </body>
+    <sports-social-backfooter></sports-social-backfooter>
 

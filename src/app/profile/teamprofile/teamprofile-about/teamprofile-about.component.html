@@ -1,4 +1,66 @@
 <div class="About-body">
+    <div class="temporary-side-shell"> 
+        <div class="temp-basic-info">
+          <h1>Basic Info</h1>
+          <div class="temp-basic-info-tab">
+            <div>
+              <img style="width: 40px;" src="/assets/images/sportsocialcaptain.png" alt="">
+            </div>
+            <!-- <h2>{{captain}}</h2> -->
+          </div>
+          <div class="temp-basic-info-tab">
+              <div>
+                <img src="/assets/images/sportsocialPartnerships.png" alt="">
+              </div>
+              <h2>{{mantra|slice:0:25}}...</h2>
+              <p>{{mantra}}</p>
+            </div>
+            <div class="temp-basic-info-tab">
+                <div>
+                  <img src="/assets/images/sportsocialopenforall.png" alt="">
+                </div>
+                <h2>{{teamstatus}}</h2>
+              </div>
+              <div class="temp-basic-info-tab">
+                  <div>
+                    <img src="/assets/images/sportsocialagegroup.png" alt="">
+                  </div>
+                  <h2>{{teamtypestatus}}</h2>
+                </div>
+  
+              <div class="temp-basic-info-tab">
+                 <div>
+                   <img src="/assets/images/sportsocialmale.png" alt="">
+                  </div>
+                  <h2>{{gender}}{{gamename}}</h2>
+              </div>
+              <div class="temp-basic-info-tab">
+                  <div>
+                    <img src="/assets/images/sportsocialteamprofilelocation.png" alt="">
+                   </div>
+                   <h2>{{location}}</h2>
+               </div>
+               <div class="temp-basic-info-tab">
+                  <div>
+                    <img src="/assets/images/sportsocialteamprofilelocation.png" alt="">
+                   </div>
+                   <h2>{{challenge}}</h2>
+               </div>
+  
+              
+        </div>
+        <div class="media">
+            <div class="head">
+            <h4>Media</h4>
+            <!-- <a (click)="opencrousal()"><p>See all</p></a> -->
+            <a><p>See all</p></a>
+          </div>
+           <!-- <div class="mediabox" *ngFor="let icon of media">
+             <img (click)="imageopen(icon.url);" src={{icon.url}}>
+          </div> -->
+        </div>
+  
+  </div>
   <div class="description">
     <h1>Description</h1>
     <p *ngIf="description==false">No Description Yet!</p>
@@ -49,7 +111,14 @@
                 </div>
             </div>
   </div>
-  <!-- <div class="stats">
+  
+  
+</div>
+<div class="backfooter">
+  <sports-social-backfooter></sports-social-backfooter>
+</div>
+
+<!-- <div class="stats">
     <div class="win"></div>
     <div class="chart">
       <div class="pie-chart">
@@ -58,8 +127,3 @@
     </div>
     <div class="draw"></div>
   </div> -->
-  
-</div>
-<div class="backfooter">
-  <sports-social-backfooter></sports-social-backfooter>
-</div>

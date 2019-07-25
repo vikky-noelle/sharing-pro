@@ -8,6 +8,9 @@
     margin-bottom: 20px;
     font-size: 3em;
 }
+.newbox{
+    min-height: 600px;
+}
 
 .sidenav{
     margin-top: 4%;

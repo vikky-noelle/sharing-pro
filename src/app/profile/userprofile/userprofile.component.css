@@ -13,7 +13,8 @@
 .background-img{
     position: relative;
     height: 250px;
-    width: 100%;
+    width: 80%;
+    margin: 0% 10% 0% 10%;
 }
 .background-img img{
     width: 100%;
@@ -40,12 +41,17 @@
     position: relative;
     top: 0%;
     background-color: white;
-    /* border-bottom: 2px solid silver; */
-    /* border-left: 2px solid silver; */
     height:110px;
     width: 75%;
     margin-left: 25%;
     box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 rgba(0, 0, 0, 0.19);
+}
+.profile-info>img{
+    height: 40px;
+    width: 40px;
+    margin-top: 40px;
+    float: right;
+    margin-right: 5%;
 }
 .name{
     float: left;
@@ -59,12 +65,8 @@
     color: #024771;
     /* font-weight: lighter; */
 }
-.profile-info img{
-    height: 40px;
-    width: 40px;
-    margin-top: 40px;
-    float: right;
-    margin-right: 5%;
+.mobilefollower{
+    display: none;
 }
 .follow{
     position: relative;
@@ -75,6 +77,7 @@
     height: 40px;
     border: 2px solid #024771;
     border-radius: 8px;
+    cursor: pointer;
   }
 .follow h1{
     font-size: 1.3em;
@@ -123,9 +126,8 @@
     background-color: white;
     height:80px;
     width: 100%;
-    /* margin-left: 25%; */
     box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(0, 0, 0, 0.19);
-      top: 0%;  
+    top: 0%;  
     }
     .profile-pic{
         position: relative;
@@ -172,6 +174,7 @@
         margin-left: 60%;
     }
     .sub-follow{
+        cursor: pointer;
         position: relative;
         float: right;
         margin-top: 25px;
@@ -189,6 +192,7 @@
         color: #024771;
     }
     .sub-follow-img{
+        cursor: pointer;
         position: relative;
         height: 25px;
         width: 30px;
@@ -227,6 +231,7 @@
         /* position: sticky;
         position: -webkit-sticky; */
     }
+    
     .basic-info h1{
         font-size: 1em;
         margin-left: 10%;
@@ -275,9 +280,6 @@
         margin-top: 70px;
         margin-left: 10%;
         top: 0%;
-        /* position: sticky; */
-        /* position: -webkit-sticky; */
-        /* margin: 0% 70px 0% 10%;   */
         position: relative; 
     }
     .head{
@@ -407,4 +409,428 @@
     .rarrow img:hover{
         transform: scale(1.1);
     }
+
+    @media screen and (min-width:200px) and (max-width:320px){
+        /* for header that show after scroll*/
+        .background-img{
+            box-shadow: 2px 2px 2px #c9c7c7;
+        }
+        .sub-header{
+            height: 60px;
+        }
+        .profile-pic{
+            height: 35px;
+            width: 35px;
+            margin-top: 10px;
+            margin-left: 1.5%;
+        }
+        .mobilefollower{
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 32%;
+        }
+        .mobilefollower>h1{
+            margin-left: 15%;
+            font-size: .9em;
+            color: #888888;
+        }
+        .mobilefollower>h1>span{
+            margin-right: 10%;
+            color: #888888;
+            float: right;
+        }
+        .mobilefollower>h2{
+            margin-left: 15%;
+            color: #024771;
+            font-size: .9em;
+        }
+        .mobilefollower>h2>span{
+            float: right;
+            color: #024771;
+            margin-right: 18%;
+        }
+        
+        .fans{
+            margin-top: 12px;
+        }
+        .fans h1{
+            margin-right: 2%;
+            display: inline-flex;
+            font-size: .6em;
+        }
+        .fans h1 span{
+            margin-left: 8%;
+        }
+        .fans h2{
+            display: inline-flex;
+            font-size: .6em;
+        }
+        .fans h2 span{
+            margin-left: 60%;
+        }
+        .sub-name{
+            /* border: 1px solid red; */
+            width: 30%;
+            margin-left: 10%;
+            margin-top: 15px;
+        }
+        .sub-name>h1{
+            font-size: .7em;
+        }
+        .sub-name h2{
+            font-size: .6em;
+        }
+       
+        .sub-follow{
+            margin-top: 15px;
+            margin-right: 2%;
+            margin-left: 0%;
+            width: 60px;
+            height: 20px;
+        }
+        .sub-follow>h1{
+            margin-top: 2px;
+            font-size: .8em;
+        }
+        .sub-follow-img{
+            /* border: 1px solid red; */
+            height: 20px;
+            margin-right: 1%;
+            width: 20px;
+            margin-top: 16px;
+        }
+
+        /* for bodyyy */
+        .profile-shell{
+            /* border: 2px solid red; */
+            position: relative;
+            margin-top: 60px;
+            height: 300px;
+            width: 100%;
+            background-color: #ffffff;
+        }
+        .side-shell{
+            display: none;
+        }
+        .normal-shell{
+            height: 40px;
+            width: 100%;
+            margin-left: 0%;
+        }
+        .normal-shell>a{
+            font-size: .8em;
+        }
+        .background-img{
+            position: relative;
+            height: 100px;
+            width: 100%;
+        }
+        .background-img img{
+            width: 100%;
+            height: 100%;
+        }
+        .profile-img{
+            clear: both;
+            position: relative;
+            margin: 0 auto;
+            left: 0%; /* it was given in the normal view but altered the current one*/
+            height: 100px;
+            width: 100px;
+            bottom: 20%;
+        }
+        .profile-img>img{
+            margin-left: 2%;
+            margin-top: 2%;
+            height: 96%;
+            width: 96%;
+        }
+        .profile-info{
+            /* position: absolute; */
+            margin-top: -30px;
+            height: 80px;
+            width: 100%;
+            margin-left: 0%;
+            box-shadow: none !important;
+            /* border: 1px solid blue; */
+        }
+        .profile-info>img{
+            height: 20px;
+            width: 20px;
+            margin: 0;
+            top: 0%;
+            /* float: left; */
+            margin-top: -65px;
+            clear: both;
+            margin-right: 30%;
+        }
+        .name{
+            clear: both !important;
+            text-align: center;
+            align-content: center;
+            width: 30%;
+            margin-left: 34%;
+            margin-top: 0%;
+        }
+        .name>h1{
+            font-size: 1.2em;
+        }
+        .name>h2{
+            font-size: .8em;
+            color: #024771;
+        }
+        .follow{
+            clear: both !important;
+            margin-top: 7px;
+            margin-right: 40%;
+            width: 20%;
+            height: 20px;
+            border-radius: 4px;
+          }
+        .follow>h1{
+            font-size: .9em;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 2px;
+            margin-left: 0%;
+            color: #024771;
+          }
+    }
     
+    @media screen and (min-width:321px) and (max-width:700px){
+        /* for header that show after scroll*/
+        .sub-header{
+            height: 60px;
+        }
+        .background-img{
+            box-shadow: 2px 2px 2px #c9c7c7;
+        }
+        .profile-pic{
+            height: 35px;
+            width: 35px;
+            margin-top: 10px;
+            margin-left: 1.5%;
+        }
+        .mobilefollower{
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 32%;
+        }
+        .mobilefollower>h1{
+            margin-left: 15%;
+            font-size: .9em;
+            color: #888888;
+        }
+        .mobilefollower>h1>span{
+            margin-right: 10%;
+            color: #888888;
+            float: right;
+        }
+        .mobilefollower>h2{
+            margin-left: 15%;
+            color: #024771;
+            font-size: .9em;
+        }
+        .mobilefollower>h2>span{
+            float: right;
+            color: #024771;
+            margin-right: 18%;
+        }
+        .fans{
+            margin-top: 12px;
+        }
+        .fans h1{
+            margin-right: 2%;
+            display: inline-flex;
+            font-size: .7em;
+        }
+        .fans h1 span{
+            margin-left: 8%;
+        }
+        .fans h2{
+            display: inline-flex;
+            font-size: .7em;
+        }
+        .fans h2 span{
+            margin-left: 60%;
+        }
+        .sub-name{
+            /* border: 1px solid red; */
+            width: 32%;
+            margin-left: 10%;
+            margin-top: 15px;
+        }
+        .sub-name>h1{
+            font-size: .8em;
+        }
+        .sub-name h2{
+            font-size: .8em;
+        }
+       
+        .sub-follow{
+            margin-top: 20px;
+            margin-right: 2%;
+            margin-left: 0%;
+            width: 60px;
+            height: 20px;
+        }
+        .sub-follow>h1{
+            margin-top: 2px;
+            font-size: .8em;
+        }
+        .sub-follow-img{
+            height: 20px;
+            margin-right: 1%;
+            width: 20px;
+            margin-top: 22px;
+        }
+
+        /* for bodyyy */
+        .profile-shell{
+            /* border: 2px solid red; */
+            position: relative;
+            margin-top: 60px;
+            height: 300px;
+            width: 100%;
+            background-color: #ffffff;
+        }
+        .side-shell{
+            display: none;
+        }
+        .normal-shell{
+            height: 40px;
+            width: 100%;
+            margin-left: 0%;
+        }
+        .normal-shell>a{
+            font-size: .8em;
+        }
+        .background-img{
+            position: relative;
+            height: 100px;
+            width: 100%;
+        }
+        .background-img img{
+            width: 100%;
+            height: 100%;
+        }
+        .profile-img{
+            clear: both;
+            position: relative;
+            margin: 0 auto;
+            left: 0%; /* it was given in the normal view but altered the current one*/
+            height: 100px;
+            width: 100px;
+            bottom: 20%;
+        }
+        .profile-img>img{
+            margin-left: 2%;
+            margin-top: 2%;
+            height: 96%;
+            width: 96%;
+        }
+        .profile-info{
+            /* position: absolute; */
+            margin-top: -30px;
+            height: 80px;
+            width: 100%;
+            margin-left: 0%;
+            box-shadow: none !important;
+            /* border: 1px solid blue; */
+        }
+        .profile-info>img{
+            height: 20px;
+            width: 20px;
+            margin: 0;
+            top: 0%;
+            /* float: left; */
+            margin-top: -65px;
+            clear: both;
+            margin-right: 30%;
+        }
+        .name{
+            clear: both !important;
+            text-align: center;
+            align-content: center;
+            width: 30%;
+            margin-left: 34%;
+            margin-top: 0%;
+        }
+        .name>h1{
+            font-size: 1.2em;
+        }
+        .name>h2{
+            font-size: .8em;
+            color: #024771;
+        }
+        .follow{
+            clear: both !important;
+            margin-top: 7px;
+            margin-right: 40%;
+            width: 20%;
+            height: 20px;
+            border-radius: 4px;
+          }
+        .follow>h1{
+            font-size: .9em;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 2px;
+            margin-left: 0%;
+            color: #024771;
+          }
+    }
+
+    @media screen and (min-width:701px) and (max-width:1100px){
+       .profile-img{
+        position: absolute;
+        bottom: 5%;
+        left: 10%;
+        height: 130px;
+        width: 130px;
+    }
+    .profile-img img{
+        margin-left: 0px;
+        margin-top: 2px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .name{
+        float: left;
+        width: 25%;
+        margin-left: 8%;
+        margin-top: 25px;
+    }
+    .name h2{
+        font-size: 1em;
+    }
+    .follow{
+        margin-top: 35px;
+        margin-right: 6%;
+        width: 14%;
+      }
+    .follow h1{
+        font-size: 1em;
+        margin-top: 9px;
+      }
+      .side-shell{
+        height: 100%;
+        width: 25%;
+        min-height: 70vh;
+    }
+    .followers{
+        vertical-align: top !important;
+    }
+    .followers>h1{
+        font-size: 1em;
+    }
+    .study{
+        top: 0%;
+        font-size: .7em !important;
+    }
+
+    }
+
+   

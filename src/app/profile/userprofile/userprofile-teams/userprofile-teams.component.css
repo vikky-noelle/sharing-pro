@@ -3,6 +3,7 @@
     width: 75%;
     margin-left: 25%;
     vertical-align: top;
+    min-height: 300px;
 }
 .body>.teams{
     display: inline-block;
@@ -37,7 +38,6 @@
     bottom: 0%;
     height: 100px;
     width: 100%;
-    /* border: 2px solid blue; */
     z-index: 1;
 }
 .profileimg>img{
@@ -53,6 +53,7 @@
     height: 40px;
     bottom: 0%;
     position: absolute;
+    /* float: right; */
 }
 .teamname>h4{
     font-size: 1em;
@@ -64,12 +65,14 @@
   color: #ababab;
 }
 .members{
-    width: 70%;
-    margin: 3% 15% 0% 15%;
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: 3% 5% 0% 5%;
     height: 60px;
     position: absolute;
     
 }
+
 .members>h4,h5{
     font-family: 'Times New Roman', Times, serif;
     display: inline-flex;
@@ -89,6 +92,7 @@
     font-size: 1.5em !important;
 }
 .members>h4{
+    margin-left: 7%;
     font-size: .9em;
     float: left;
 }
@@ -99,4 +103,98 @@
 .backfooter{
     width: 75%;
     float: right;
+}
+
+@media screen and (min-width:200px) and (max-width:360px){
+    .body{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .teams{
+        width: 80%;
+        height: 250px;
+    }
+    .backfooter{
+        clear: both;
+        width: 100%;
+    }
+    .members>h4{
+        margin-left: 5%;
+        font-size: .7em;
+        float: left;
+    }
+    .members>h5{
+        font-size: .7em;
+        float: right;
+    }
+}
+@media screen and (min-width:361px) and (max-width:550px){
+    .body{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .teams{
+        width: 80%;
+        height: 250px;
+    }
+    .backfooter{
+        clear: both;
+        width: 100%;
+    }
+}
+@media screen and (min-width:551px) and (max-width:750px){
+    .body{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .teams{
+        width: 80%;
+        height: 250px;
+    }
+    .backfooter{
+        clear: both;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:751px) and (max-width:1100px){
+    .body{
+        min-height: 470px;
+    }
+    .body>.teams{
+        margin:3% 3% 2% 3%;
+        position: relative;
+    }
+    .teams{
+        width: 40%;
+        height: 270px;
+    }
+   
+    .profileimg>img{
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        margin-top: 5%;
+        width: 70px;
+        height: 70px;
+    }
+    .teamname{
+        margin-right: 1%;
+        width: 55%;
+        height: 40px;
+        bottom: 0%;
+        position: absolute;
+        text-align: right;
+
+    }
+    .members>h4{
+        margin-left: 5%;
+        font-size: .7em;
+        float: left;
+    }
+    .members>h5{
+        font-size: .7em;
+        float: right;
+    }
+    
+   
 }

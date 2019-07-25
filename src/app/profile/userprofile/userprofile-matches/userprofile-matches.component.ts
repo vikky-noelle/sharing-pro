@@ -19,6 +19,7 @@ export class UserprofileMatchesComponent implements OnInit {
     getUserId(){
       this.paramUserId=this.userprofilecomponent.userid;
       this.array=this.userprofilecomponent.array;
+      
       console.log(this.array);
     }
   ngOnInit() {

@@ -72,6 +72,7 @@ const App_Route: Routes = [
             }
         ]
     },
+    // {path:':user_id',component:UserprofilePlaymatesComponent},
     {path:"opencard/:feedid",component:OpenHomeMatchCardComponent},
     {path:"ourTeam",component:OurteamComponent},
     {path:"contactus",component:ContactUsComponent},
