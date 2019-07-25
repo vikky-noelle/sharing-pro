@@ -291,7 +291,6 @@ scrollbar-width: none;
     margin: 2% 0% 2% 0%;
 }
 .cardData>div{
-   
     margin-left: 2%;
 }
 .team1 {
@@ -360,7 +359,7 @@ scrollbar-width: none;
     resize: none;
     text-align: center;
     height: auto;
-    color: black;
+    color: grey;
     font-size: .7em;
     font-weight: lighter;
 }

@@ -167,9 +167,11 @@
     border-bottom: 1px solid black;
 }
 .sport-heading h1{
+    margin-top: 10px;
     float: left;
 }
 .sport-heading h2{
+    margin-top: 16px;
     float: right;
 }
 .main-news{
@@ -184,19 +186,28 @@
     margin-right: 5%;
     width: 35%;
 }
+.news-tab>div{
+    height: 150px;
+}
 .news-tab img{
-    height: 200px;
+    margin-top: 25px;
+    height: 100px;
     width: 30%;
     background-color: white;
     float: left;
 }
 .news-tab-info{
+    margin-top: 25px;
+    margin-left: 5%;
     float: right;
-    width: 70%;
+    width: 65%;
     height: auto;
 }
 .news-tab-info h1{
     font-size: 1em;
+}
+.news-tab-info p{
+    margin-top: 62px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px){
     .main-body{

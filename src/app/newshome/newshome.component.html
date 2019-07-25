@@ -47,16 +47,16 @@
   <!-- sportwise view -->
   <div class="sportwise-shell" *ngFor="let data of news">
     <div class="sport-heading">
-      <h1>Head</h1>
+      <h1>{{data.gamename}}</h1>
       <h2>See All</h2>
     </div>
     <div class="main-news">
       <div class="news-tab">
-        <div *ngFor="let feed of data.news">
-        <img src="" alt="">
+        <div (click)="openspecificnews(feed)" *ngFor="let feed of data.news">
+        <img src="{{feed.image}}" alt="">
         <div class="news-tab-info">
-          <h1>{{feed.title|slice:0:10}}...</h1>
-          <p>body</p>
+          <h1>{{feed.title|slice:0:40}}...</h1>
+          <p>{{feed.timestamp}}</p>
         </div>
       </div>
       </div>
