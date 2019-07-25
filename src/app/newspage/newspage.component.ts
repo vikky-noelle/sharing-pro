@@ -69,6 +69,7 @@ export class NewspageComponent implements OnInit{
     this.topic = params.topic;
   });
   this.datastr=this._eventemiter.userToEdit;
+  console.log(this.datastr);
   if(this.datastr !== undefined){
     this.mainnewshead = this.datastr.title;
     this.mainnewstime = this.datastr.timestamp;
