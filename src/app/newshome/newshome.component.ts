@@ -178,7 +178,7 @@ export class NewshomeComponent implements OnInit {
               desc: body.news[i].desc
             });
           }
-          for(var i=5; i<8; i++){
+          for(var i=5; i<9; i++){
             x = this.time.ExactDate(Date.parse(body.news[i].insertedDate)/1000);
             x = x.replace(/T/g," at "); 
             this.crousalitem.push({

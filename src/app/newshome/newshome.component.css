@@ -28,13 +28,19 @@
 }
 .dnews div{
     margin-top: 1.2%;
-    width: 33%;
+    width: 25%;
     float: left;
+}
+.dnews div p{
+    /* background-color: black; */
+    font-size: 1em;
+    margin-left: 3%;
+    margin-bottom: 10px;
 }
 .dnews div img{
     padding: 10px;
-    width: 95%;
-    height: 180px;
+    width: 92%;
+    height: 150px;
 }
 .dnews div h1{
     padding-left: 10px;
@@ -42,14 +48,14 @@
     height: auto;
     letter-spacing: 1px;
     font-size: 1em;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 
 .crousal-side-bar{
     margin-top:2%;
     height: 55vh;
-    width: 47%;
+    width: 41%;
     float: right;
 }
 .crousal-side-bar h1{
@@ -58,11 +64,11 @@
 }
 .side-bar-component{
     margin-top: 10px;
-    height: 90px;
+    height: 70px;
 }
 .side-bar-component img{
-    height: 80px;
-    width: 120px;
+    height: 60px;
+    width: 90px;
     float: left;
 }
 .side-bar-component h1{
@@ -73,8 +79,8 @@
 }
 .side-bar-component p{
     color: #444444;
-    padding-top: 60px;
-    padding-left: 30%;
+    padding-top: 40px;
+    padding-left: 28%;
     /* margin-top: 60px; */
 }
 .side-bar-component p span{
@@ -86,7 +92,7 @@
     position: relative;
     text-align: center;
     /* float: left; */
-    width: 50%;
+    width: 56%;
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.19);
     /* margin-left: 12.5%; */
     overflow-y: hidden;
@@ -106,7 +112,7 @@
     position: relative;
     scroll-snap-align: start;
     width: 100%;
-    height: 50vh;
+    height: 52vh;
     display: inline-block;
 }
 .crousal-element img{
@@ -236,14 +242,7 @@
        width: 100%;
        margin-left: 0% !important;
    }
-   .source-dnews{
-       display: block;
-       font-size: 0.8em;
-       margin-top: 25px;
-       float: left;
-       padding-left: 10px;
-       width: 55%;
-   }
+   
    .dnews div{
        width: 100%;
        clear: both; 
