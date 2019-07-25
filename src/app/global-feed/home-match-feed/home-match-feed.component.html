@@ -6,7 +6,6 @@
     <div class="rightside" *ngFor = "let game of Matcharr;"> 
         <div class="topic">
             <h2>{{game.gametitle}} Matches<h5 (click)="gotoarena(game.gametitle)">See all</h5></h2>
-            <h3></h3>
         </div>
         
         <!-- <div class="blog"  malihu-scrollbar [scrollbarOptions]="scrollbarOptions">   -->
@@ -87,11 +86,9 @@
        </div>
     </div> 
     <div class="rightside1" *ngFor="let data of tnews">
-      <div class="topic2">
-          <h2>{{data.gamename}}</h2>
+      <div class="topic">
+          <h2>{{data.gamename}} News<h5 (click)="changee(data.gamename)">See all</h5></h2>
         </div>
-  
-          <h1>News<h5 (click)="changee(data.gamename)">See all</h5></h1> 
           <div class="news-section">
             <div class="outdiv" *ngFor="let feed of data.gamenews" #targett>
               <div class="news-card" (click)="changenomatch(feed.id, data.gamename)">
