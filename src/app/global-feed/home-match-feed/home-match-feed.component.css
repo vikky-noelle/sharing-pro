@@ -16,6 +16,7 @@
 }
 .rightside1{
     margin-top: 0%;
+    margin-bottom: 1%;
     float: right;
     width: 82.5%;
     padding-left: 20px;
@@ -29,7 +30,6 @@
     border-bottom: 2px solid rgb(218, 218, 218);
 }
 .rightside{
-    
     margin-top: 1%;
     float: right;
     width: 82.5%;
@@ -39,7 +39,7 @@
     border-bottom: 1px solid rgb(218, 218, 218);
 }
 .blog{
-    margin: 7% auto 0%;
+    margin: 4% auto 0%;
     width: 90%;
     height: 235px;
     white-space: nowrap !important;
@@ -127,7 +127,6 @@ scrollbar-width: none;
 }
 
 .topic{
-    /* border: 1px solid green; */
     position: absolute;
     width: 73%;
     margin-left: 4%;
@@ -145,17 +144,13 @@ scrollbar-width: none;
     margin-bottom: 8px;
     color: #024771;
 }
-.topic>h3{
-    font-weight: lighter;
-    font-size: 1.2em;
-    margin-top: 10px;
-    margin-bottom: 8px;
-}
+
 .topic h5{
     float: right;
     margin-right: 5px;
     color: rgb(133, 131, 131);
     font-size: 0.8em;
+    text-decoration: underline;
     font-weight: lighter;
     cursor: pointer;
 }
@@ -170,6 +165,7 @@ scrollbar-width: none;
     margin-right: 5px;
     color: rgb(133, 131, 131);
     font-size: 0.8em;
+    text-decoration: underline;
     font-weight: lighter;
     cursor: pointer;
 }
@@ -186,6 +182,13 @@ scrollbar-width: none;
 .topic2>h2{
     font-weight: bolder;
     margin-left: 2.5%;
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    color: #024771;
+}
+.topic-news>h2{
+    font-weight: bolder;
     font-size: 1.5em;
     margin-top: 10px;
     margin-bottom: 8px;
@@ -383,7 +386,7 @@ scrollbar-width: none;
     font-weight: bold;
 }
 .news-section{
-    margin: 1% auto;
+    margin: 3% auto;
     width: 90%;
     overflow-y: hidden;
     scroll-behavior: smooth;
@@ -530,7 +533,7 @@ scrollbar-width: none;
     }
     .rightside {
         margin-top: 6%;
-        height: 470px;
+        height: 450px;
         width: 100%;
     }
     .rightside1 {
@@ -543,7 +546,7 @@ scrollbar-width: none;
     .blog{
         width: 92%;
         height: 230px;
-        margin: 25% auto 0%;
+        margin: 18% auto 1%;
     }
     .card{
         width: 96%;
@@ -599,7 +602,11 @@ scrollbar-width: none;
     }
     .news-section{
         width: 90%;
-        margin-top: 10%;
+        margin-top: 12%;
+    }
+    .footer{
+        margin: 0%;
+        padding: 0%;
     }
     .footer{
         margin: 0%;
@@ -643,7 +650,7 @@ scrollbar-width: none;
         margin-top: 24%;
     }
     .rightside {
-        height: 480px;
+        height: 460px;
         width: 100%;
         margin-top: 5%;
     }
@@ -657,7 +664,7 @@ scrollbar-width: none;
     .blog{
         width: 92%;
         height: auto;
-        margin: 25% auto 0%;
+        margin: 15% auto 1%;
     }
     .card{
         width: 96%;
@@ -713,7 +720,7 @@ scrollbar-width: none;
     }
     .news-section{
         width: 90%;
-        margin-top: 10%;
+        margin-top: 12%;
         height: 130px;
     }
     .footer{
@@ -773,7 +780,7 @@ scrollbar-width: none;
     .blog{
         width: 92%;
         height: auto;
-        margin: 13% auto 0%;
+        margin: 13% auto 1%;
     }
     .card{
         width: 70%;
@@ -829,7 +836,7 @@ scrollbar-width: none;
     }
     .news-section{
         width: 90%;
-        margin-top: 10%;
+        margin-top: 12%;
         height: 130px;
     }
     .footer{
@@ -854,7 +861,7 @@ scrollbar-width: none;
         width: 100%;
     }
     .rightside{
-        height: 540px;
+        height: 520px;
         margin-top: 7%;
     }
     .rightside1{
@@ -902,7 +909,7 @@ scrollbar-width: none;
         width: 48%;
     }
     .blog{
-        margin:11% auto 0%;
+        margin:8% auto 1%;
         width: 91%;
         height: 300px;
     }
@@ -921,6 +928,10 @@ scrollbar-width: none;
     }
     .righttarrow{
         margin-left: 89%;
+    }
+    .news-section{
+        width: 90%;
+        height: 130px;
     }
     .home{
         margin-top: 1%;

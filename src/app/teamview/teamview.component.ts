@@ -45,6 +45,7 @@ export class TeamviewComponent implements OnInit {
     this.post.Teamviewdata(this.service)
     .subscribe(
       (response) => {
+        console.log("this is resposne",response);
       for(const i in response){
         this.tvdata.push(response[i]);
       }    

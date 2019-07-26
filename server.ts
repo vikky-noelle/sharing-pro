@@ -35,7 +35,12 @@ app.set('views', join(DIST_FOLDER, 'browser'));
 
 // TODO: implement data requests securely
 app.get('/api/*', (req, res) => {
+  try{
   res.status(404).send('data requests are not supported');
+  }
+  catch(ReferenceError) {
+    console.log("ref error");
+  }
 });
 
 // Server static files from /browser
@@ -43,7 +48,12 @@ app.get('*.*', express.static(join(DIST_FOLDER, 'browser')));
 
 // All regular routes use the Universal engine
 app.get('*', (req, res) => {
+  try{
   res.render('index', { req });
+  }
+  catch(ReferenceError){
+    console.log("ref error");
+  }
 });
 
 // Start up the Node server

@@ -1,3 +1,4 @@
+
 import { TeamprofileAboutComponent } from '../profile/teamprofile/teamprofile-about/teamprofile-about.component';
 import { TeamprofileComponent } from '../profile/teamprofile/teamprofile.component';
 import { LocalitypageComponent } from './../localitypage/localitypage.component';

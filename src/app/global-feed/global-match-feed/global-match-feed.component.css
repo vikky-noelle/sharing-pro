@@ -2,11 +2,13 @@
     scroll-behavior: smooth;
 }
 .matchfeed-rightside>h1{
-    font-weight: lighter;
     border-bottom: 1px solid silver;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    font-size: 3em;
+    margin-top: 10px;
+    font-size: 2em;
+    color: #024770;
+    font-weight: bold;
 }
 .newbox{
     min-height: 600px;
