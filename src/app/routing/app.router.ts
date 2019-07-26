@@ -1,4 +1,4 @@
-import { NewshomeComponent } from './../newshome/newshome.component';
+
 import { TeamprofileAboutComponent } from '../profile/teamprofile/teamprofile-about/teamprofile-about.component';
 import { TeamprofileComponent } from '../profile/teamprofile/teamprofile.component';
 import { LocalitypageComponent } from './../localitypage/localitypage.component';
@@ -83,7 +83,7 @@ const App_Route: Routes = [
     {path: "team",component:TeamviewComponent},
     // {path: 'teamprofile', component:TeamprofileComponent},
     {path: "locality", component:LocalitypageComponent},
-    {path: 'news', component:NewshomeComponent},
+    {path: 'news', component:NewspageComponent},
     {
         path: "news/:topic", 
         component:NewspageComponent

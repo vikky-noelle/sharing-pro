@@ -46,7 +46,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     {link: 'basketball', name: 'Basketball' },
     {link: 'volleyball', name: 'Volleyball' },
     {link: 'tennis', name: 'Tennis' },
-    {link: 'table-tennis', name: 'Table Tennis' },
+    {link: 'table-tennis', name: 'Table Tennis'},
     {link: 'hockey', name: 'Hockey' },
     {link: 'badminton', name: 'Badminton' },
   ]
@@ -56,7 +56,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     {link: 'basketball', name: 'Basketball' },
     {link: 'volleyball', name: 'Volleyball' },
     {link: 'tennis', name: 'Tennis' },
-    {link: 'table-tennis', name: 'Table Tennis' },
+    // {link: 'table-tennis', name: 'Table Tennis'},
     {link: 'hockey', name: 'Hockey' },
     {link: 'badminton', name: 'Badminton' },
   ]

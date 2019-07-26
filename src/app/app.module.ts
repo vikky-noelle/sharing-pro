@@ -67,7 +67,6 @@ import { UserprofileAboutComponent } from './profile/userprofile/userprofile-abo
 import { UserprofileTeamsComponent } from './profile/userprofile/userprofile-teams/userprofile-teams.component';
 import { UserprofilePlaymatesComponent } from './profile/userprofile/userprofile-playmates/userprofile-playmates.component';
 import { UserprofileMatchesComponent } from './profile/userprofile/userprofile-matches/userprofile-matches.component';
-import { NewshomeComponent } from './newshome/newshome.component';
 
 
 @NgModule({
@@ -92,8 +91,7 @@ import { NewshomeComponent } from './newshome/newshome.component';
     UserprofileAboutComponent,
     UserprofileTeamsComponent,
     UserprofilePlaymatesComponent,
-    UserprofileMatchesComponent,
-    NewshomeComponent
+    UserprofileMatchesComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId:'sport-social'}),
