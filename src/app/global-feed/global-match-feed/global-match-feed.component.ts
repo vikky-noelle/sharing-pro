@@ -344,6 +344,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
               profile_image:data["Feed"][i].profile_image,
               Venue_Name:data["Feed"][i].Venue_Name,
               EventText:data["Feed"][i].EventText,
+              eventid:data["Feed"][i].eventid,
               startdatetime:this.startTime,
               starttimestamp: data["Feed"][i].startdatatime,
               gamename:data["Feed"][i].GameName,

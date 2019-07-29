@@ -149,8 +149,7 @@ scrollbar-width: none;
     float: right;
     margin-right: 5px;
     color: rgb(133, 131, 131);
-    font-size: 0.8em;
-    text-decoration: underline;
+    font-size: 0.7em;
     font-weight: lighter;
     cursor: pointer;
 }
@@ -164,8 +163,7 @@ scrollbar-width: none;
     float: right;
     margin-right: 5px;
     color: rgb(133, 131, 131);
-    font-size: 0.8em;
-    text-decoration: underline;
+    font-size: 0.7em;
     font-weight: lighter;
     cursor: pointer;
 }

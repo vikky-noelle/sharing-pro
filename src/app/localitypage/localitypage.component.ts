@@ -1,6 +1,7 @@
 import { PostService } from './../shared/services/post.service';
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'sports-social-localitypage',
@@ -18,7 +19,8 @@ export class LocalitypageComponent implements OnInit {
   photo;
   constructor(private post:PostService,
     private titleservice:Title,
-    private metaservice:Meta) { 
+    private metaservice:Meta,
+    private router:Router) { 
   this.titleservice.setTitle(this.title);
   this.metaservice.updateTag({name:'title',content:this.title});
   this.metaservice.updateTag({name: 'keywords' , content:this.keywords});
@@ -27,6 +29,11 @@ export class LocalitypageComponent implements OnInit {
   this.metaservice.updateTag({property:'og:keywords',content:this.keywords});
   this.metaservice.updateTag({property:'og:description',content:this.description});
     }
+
+    openAppDownloadPopup() {
+      this.router.navigate( [ { outlets: { 'AppDownload': ['PopUp'] }} ], { skipLocationChange: true });
+    }
+    
 
   ngOnInit() {
   

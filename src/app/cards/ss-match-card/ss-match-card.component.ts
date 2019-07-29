@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class SsMatchCardComponent implements OnInit {
 
   @Input() feedid:string;
+  @Input() eventid:string;
   @Input() matchstartername:string;
   @Input() userName:string;
   @Input() starttimestamp:string;

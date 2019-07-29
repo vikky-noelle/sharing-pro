@@ -55,4 +55,5 @@ export class GetService {
   getsportnews(topic): Observable<any> {
     return this.http.get("http://atg.sportsocial.in:3100/api/news/" +topic);
   }
+
 }
