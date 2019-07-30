@@ -117,6 +117,7 @@ export class NewspageComponent implements OnInit{
       for (var i in body.news) {
         this.j=this.j+1;
         x = this.time.ExactDate(Date.parse(body.news[i].insertedDate));
+        console.log("this is x ",x);
         x = x.replace(/T/g," at "); 
         this.rnews.push({
           source: body.news[i].source,

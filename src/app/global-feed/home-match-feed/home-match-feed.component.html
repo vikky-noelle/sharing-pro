@@ -63,7 +63,7 @@
               </div> 
           <div class="topic-news">
             <h2>{{game.gametitle}} News<h5 (click)="changee(game.gametitle)">See all</h5></h2> 
-            <h3 *ngIf="news.length === 0"><i>No News As Of Now!</i></h3> 
+            <h3 *ngIf="news.length === 0"><i *ngIf = !show>No News As Of Now!</i></h3> 
           </div>
      <div  class="news-section">
         <!-- <div class="lefttarrow" (click)="lscroll();">
