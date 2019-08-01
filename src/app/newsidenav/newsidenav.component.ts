@@ -1,4 +1,3 @@
-import { DOCUMENT } from '@angular/platform-browser';
 import { Router, ActivatedRoute } from '@angular/router';
 import { NewspageComponent } from './../newspage/newspage.component';
 import { Component, OnInit, Input } from '@angular/core';
