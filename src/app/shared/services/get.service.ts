@@ -56,7 +56,7 @@ export class GetService {
   //   return this.http.get("http://atg.sportsocial.in:3100/api/news/" +topic);
   // }
   getsportnews(topic): Observable<any> {
-    return this.http.get("http://52.212.208.47:3100/api/news/" +topic);
+    return this.http.get("http://testnews.sportsocial.in:7700/api/news/" +topic);
   }
 
   
