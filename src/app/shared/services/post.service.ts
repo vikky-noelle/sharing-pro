@@ -108,9 +108,9 @@ export class PostService {
     }
   ]
   url = [
-    'https://test.sportsocial.in/poc/matchinfo',
-   'https://test.sportsocial.in/poc/activityuserdetails',
-   'https://test.sportsocial.in/poc/activityuserdetailsWeb'
+    'https://prod.sportsocial.in/poc/matchinfo',
+   'https://prod.sportsocial.in/poc/activityuserdetails',
+   'https://prod.sportsocial.in/poc/activityuserdetailsWeb'
    ];
 
   constructor(private http: HttpClient) { }
@@ -121,7 +121,7 @@ export class PostService {
       game: game
     };
     console.log(this.newsFeedRequestObject);
-    return this.http.post('https://atg.sportsocial.in/news', this.newsFeedRequestObject);
+    return this.http.post('https://testnews.sportsocial.in/api/news/', this.newsFeedRequestObject);
   }
 
   blogData(i: number, s: string) {
@@ -141,7 +141,7 @@ export class PostService {
       gameid: gameid
     };
     console.log(this.matchFeedReqObj);
-    return this.http.post('https://test.sportsocial.in/web/webfeed', this.matchFeedReqObj);
+    return this.http.post('https://prod.sportsocial.in/web/webfeed', this.matchFeedReqObj);
     // return this.http.post('https://test.sportsocial.in/poc/webfeed', this.matchFeedReqObj);
   }
 
@@ -152,14 +152,14 @@ export class PostService {
         gameid:Gameid,
         timestamp:timest
       }
-      return this.http.post('https://test.sportsocial.in/web/webfeed',this.homematchfeedObj);
+      return this.http.post('https://prod.sportsocial.in/web/webfeed',this.homematchfeedObj);
   }
 
   OpenOneMatchCard(id){
     this.paramIdObj={
       eventid:id
     }
-    return this.http.post('https://test.sportsocial.in/web/webmatchinfo',this.paramIdObj);
+    return this.http.post('https://prod.sportsocial.in/web/webmatchinfo',this.paramIdObj);
   }
 
   singleMatchData(eventid, userid, activityid, urlId, page) {
@@ -174,7 +174,7 @@ export class PostService {
   }
 
   singleNewsData(id) {
-    return this.http.post('https://atg.sportsocial.in/newsById', { id: id} );
+    return this.http.post('https://testnews.sportsocial.in/api/newsById', { id: id} );
   }
 
   insertTopics(topic) {
