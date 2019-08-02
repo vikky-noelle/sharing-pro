@@ -417,7 +417,8 @@
 /* +++============= */
 
 .container {
-    border: 2px solid #fafafa;
+    /* border: 2px solid #fafafa; */
+    border: none;
     border-radius: 5px;
     margin-top: 15px;
   }
