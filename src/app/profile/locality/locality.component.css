@@ -24,6 +24,12 @@
 .normal-shell>h3{
     color: #444444;
 }
+.normal-shell>h2{
+    color: #024771;
+    text-align: left;
+    padding: 10px;
+    margin-top: 20px;
+}
 .current-matches{
     overflow-y: hidden;
     scroll-behavior: smooth;
@@ -225,6 +231,7 @@
     }
     .slot-days h1{
         float: left;
+        color: #006905;
         font-size: 1em;
     }
     .slot-days h2{

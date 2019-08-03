@@ -77,11 +77,17 @@ export class LocalityComponent implements OnInit {
 
   ngOnInit() {
     this.getDetails();
+    this.getLocalityTeams();
+  }
+  getLocalityTeams(){
+    this.PostService.getLocalityTeams("11").subscribe(res => {
+      console.log(res);
+    });
   }
   getDetails(){
     // console.log(this.sportlist);
     this.PostService.getLocalityDetails("119", "11").subscribe(res => {
-      console.log(res);
+      // console.log(res);
       // getting sports and changing the route
       for(var i=0; i< res["Sports"].length; i++){
         for(var j=0; j<this.sportlist.length; j++){
@@ -104,7 +110,7 @@ export class LocalityComponent implements OnInit {
           url: res["Images"][i].Path
         });
       }
-      console.log(this.media);
+      // console.log(this.media);
       this.venuename = res["Venue"][0].Venue_Name;
       this.ownername = res["Venue"][0].User_Name;
       this.address = res["Venue"][0].Address;

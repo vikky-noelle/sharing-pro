@@ -3,7 +3,9 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class PostService {
-
+  localityteams={
+    localityid: Number
+  }
   userprofileobj={
       userid:String,
       profileid:String,
@@ -288,5 +290,11 @@ export class PostService {
       venueid:venueid,
     };
     return this.http.post('https://test.sportsocial.in/venue/getvenueslotdetails_V1',this.localityobj);
+  }
+  getLocalityTeams(localityid){
+    this.localityteams={
+      localityid:localityid,
+    };
+    return this.http.post('https://test.sportsocial.in/venue/getLocalityTeams',this.localityteams);
   }
 }
