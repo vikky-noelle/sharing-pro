@@ -50,19 +50,55 @@
         </div>
       </div>
       <div class="slots">
+        <img src="/assets/images/sportsocialcalender.png" alt="">
         <div class="slot-days" *ngFor="let data of slotdetails">
           <h1>{{data.Day|slice:0:3}}</h1>
           <h2>{{data.StartTime}} - {{data.EndTime}}</h2>
         </div>
       </div>
       <div class="Address">
+        <img src="/assets/images/sportsociallocation1.png" alt="">
         <h1>{{address}}</h1>
       </div>
     </div>
     </div> 
 
     <div class="normal-shell">
-      
+      <img class="ground" src="/assets/images/sportsocialground.jpg" alt="">
+      <h3>The Average Ground</h3>
+      <div class="current-matches">
+          <div class="match-cards" *ngFor="let feed of Matcharr">
+              <sports-social-ss-match-card
+                        [coverpic]="feed.coverpic"
+                        [matchstartername]="feed.MatchStarterName"
+                        [userName]="feed.userName"
+                        [gamename]="feed.gamename"
+                        [startdatetime]="feed.startdatetime"
+                        [team1pic]="feed.Team1Pic"
+                        [team2pic]="feed.Team2Pic"
+                        [InsertedDate]="feed.InsertedDate"
+                        [Uniquename]="feed.Uniquename"
+                        [EventText]="feed.EventText"
+                        [city]="feed.city"
+                        [age]="feed.age"
+                        [starttimestamp]="feed.starttimestamp"
+                        [scoreTeam1]="feed.scoreTeam1"
+                        [scoreTeam2]="feed.scoreTeam2"
+                        [finished]="feed.finished"
+                        [upcoming]="feed.upcoming"
+                        [gender]="feed.gender"
+                        [Venue_Name]="feed.Venue_Name"
+                        [MatchStarterUniqueName]="feed.MatchStarterUniqueName"
+                        [Team1Name]="feed.Team1Name"
+                        [Team2Name]="feed.Team2Name"
+                        [JoineeCount]="feed.JoineeCount"
+                        [WatchCount]="feed.WatchCount"
+                        [PromoteCount]="feed.PromoteCount"
+                        [CommentCount]="feed.CommentCount"
+                        ></sports-social-ss-match-card>
+          
+                      </div>
+      </div>
     </div>
 </div>
 <div class="media-crousal">

@@ -184,7 +184,7 @@
     margin-left: 5%;
     float: left;
     /* height: 10vh; */
-    width: 55%;
+    width: 95%;
 }
 .side-news{
     float: right;
@@ -193,11 +193,11 @@
     width: 35%;
 }
 .news-tab>div{
-    height: 150px;
+    height: 180px;
 }
 .news-tab img{
     margin-top: 25px;
-    height: 100px;
+    height: 150px;
     width: 30%;
     background-color: white;
     float: left;
@@ -213,9 +213,12 @@
     font-size: 1em;
 }
 .news-tab-info p{
-    margin-top: 62px;
+    margin-top: 100px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px){
+    .crousal-side-bar{
+        display: none;
+    }
     .main-body{
         display: none;
     }
@@ -244,21 +247,15 @@
    }
    
    .dnews div{
-       width: 100%;
-       clear: both; 
+       width: 45%;
+       margin-left: 2%;
+       /* clear: both;  */
    }
    .dnews div img{
-       width: 35%;
-       float: left;
+       width: 100%;
+       /* float: left; */
    }
-   .dnews div h1{
-       padding-top: 10px;
-       float: left;
-       width: 55%;
-       height: 30px;
-        /* font-weight: lighter; */
-       margin-bottom: 0;
-   }
+   
    .crousal-heading{
        font-size: 0.4em;
        font-weight: lighter;
@@ -269,6 +266,40 @@
    .dnews div h1{
        font-size: 0.8em;
    }
+   .dnews div p{
+       font-size: 0.7em;
+   }
+   .outer-body{
+       margin-top: 60px;
+       height: 40vh;
+   }
+   .sportwise-shell{
+       /* clear: both; */
+       margin-left: 0%;
+       width: 100%;
+   }
+   .sport-heading{
+       height: 40px;
+   }
+   .sport-heading h1, .sport-heading h2{
+       font-size: 1em;
+   }
+   .sport-heading h2{
+       margin-top: 10px;  
+   }
+   .news-tab>div{
+       height: 130px;
+    }
+    .news-tab img{
+       margin-top: 25px;
+       height: 100px;
+       width: 30%;
+       background-color: white;
+       float: left;
+    }
+    .news-tab-info p{
+        margin-top: 40px;
+    }
 }
 @media screen and (min-width: 700px) and (max-width: 1000px){
     .main-body{
