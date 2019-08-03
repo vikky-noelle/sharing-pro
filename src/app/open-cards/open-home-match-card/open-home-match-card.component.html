@@ -104,18 +104,17 @@
                   <button (click)="third()" class="three">Line Ups</button>
             </div> 
             <div class="details" *ngIf="comment"> 
-                <div class="container" *ngFor="let data of MatchCommnets">
-                  <div class="profile-data">
+              <div class="container" *ngFor="let data of MatchCommnets">
+                <div class="profile-data">
                     <img src="{{data.Profileimage}}" onerror="this.src='assets/images/user.png'" style="width:100%;">
-                    <h6>{{data.User_name}}<br>{{data.uniquename}}</h6>
-                  <div class="message-outter">
+                    <h6>{{data.User_name}}<br><p>@{{data.Uniquename}}</p></h6>
+                </div>
+                <div class="message-outter">
                   <div class="message">
-                    <p>{{data.Comment}}</p>
+                    <p>{{data.Comment |slice:0:150}}<br><b>{{data.commentdatetime}} pm</b></p>
                   </div>
-                </div>
-                </div>
+               </div>
               </div>
-
             </div>
             <div class="details" *ngIf="moment"> 
                 <div class="container2" *ngFor="let data of MatchMoments">
