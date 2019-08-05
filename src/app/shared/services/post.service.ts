@@ -3,6 +3,12 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class PostService {
+  upcomingmatchesobj={
+    venueid: String,
+    userid: String,
+    page: Number,
+    timestamp: Number
+  }
   localityteams={
     localityid: Number
   }
@@ -296,5 +302,14 @@ export class PostService {
       localityid:localityid,
     };
     return this.http.post('https://test.sportsocial.in/venue/getLocalityTeams',this.localityteams);
+  }
+  getUpcomingMatches(userid,venueid, timestamp, page){
+    this.upcomingmatchesobj={
+      venueid:venueid,
+      userid:userid,
+      page: page,
+      timestamp: timestamp
+    };
+    return this.http.post('https://test.sportsocial.in/poc/getVenueUpcomingMatches',this.upcomingmatchesobj);
   }
 }

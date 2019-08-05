@@ -78,6 +78,13 @@ export class LocalityComponent implements OnInit {
   ngOnInit() {
     this.getDetails();
     this.getLocalityTeams();
+    this.getUpcomingMatches();
+  }
+  getUpcomingMatches(){
+    this.PostService.getUpcomingMatches("119", "844", 1564844406046, 1).subscribe(res=>{
+      console.log(res);
+      // for(var i = 0; i < res.length)
+    });
   }
   getLocalityTeams(){
     this.PostService.getLocalityTeams("11").subscribe(res => {
