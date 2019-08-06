@@ -414,6 +414,7 @@
         /* for header that show after scroll*/
         .background-img{
             box-shadow: 2px 2px 2px #c9c7c7;
+            margin: 0% 0% 0% 0%;
         }
         .sub-header{
             height: 60px;
@@ -604,6 +605,7 @@
         }
         .background-img{
             box-shadow: 2px 2px 2px #c9c7c7;
+            margin: 0% 0% 0% 0%;
         }
         .profile-pic{
             height: 35px;

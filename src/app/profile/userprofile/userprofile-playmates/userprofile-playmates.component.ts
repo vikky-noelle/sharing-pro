@@ -57,7 +57,8 @@ export class UserprofilePlaymatesComponent implements OnInit {
           FanCount:res[i].FanCount,
           GameId:res[i].GameId,
           Start_Date:res[i].Start_Date,
-          EventId:res[i].EventId
+          EventId:res[i].EventId,
+          City:res[i].City
         });
         
       });

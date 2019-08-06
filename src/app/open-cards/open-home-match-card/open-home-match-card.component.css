@@ -284,11 +284,11 @@
 }
 .team1 {
     width:33%;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 .team2 {
     width:33%;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 .t1score {
     width: 33%;
