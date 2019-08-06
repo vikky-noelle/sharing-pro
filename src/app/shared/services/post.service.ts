@@ -120,9 +120,9 @@ export class PostService {
     }
   ]
   url = [
-    'https://prod.sportsocial.in/poc/matchinfo',
-   'https://prod.sportsocial.in/poc/activityuserdetails',
-   'https://prod.sportsocial.in/poc/activityuserdetailsWeb'
+    'https://test.sportsocial.in/poc/matchinfo',
+   'https://test.sportsocial.in/poc/activityuserdetails',
+   'https://test.sportsocial.in/poc/activityuserdetailsWeb'
    ];
 
   constructor(private http: HttpClient) { }
@@ -142,7 +142,7 @@ export class PostService {
       page: i
     };
    // console.log(this.Page);
-    return this.http.post('https://prod.chaseyoursport.com/loadblogdata', this.blogRequestObject);
+    return this.http.post('https://test.chaseyoursport.com/loadblogdata', this.blogRequestObject);
   }
 
   globalMatchFeed(lat, long, page, gameid) {
@@ -153,7 +153,7 @@ export class PostService {
       gameid: gameid
     };
     console.log(this.matchFeedReqObj);
-    return this.http.post('https://prod.sportsocial.in/web/webfeed', this.matchFeedReqObj);
+    return this.http.post('https://test.sportsocial.in/web/webfeed', this.matchFeedReqObj);
     // return this.http.post('https://test.sportsocial.in/poc/webfeed', this.matchFeedReqObj);
   }
 
@@ -164,14 +164,14 @@ export class PostService {
         gameid:Gameid,
         timestamp:timest
       }
-      return this.http.post('https://prod.sportsocial.in/web/webfeed',this.homematchfeedObj);
+      return this.http.post('https://test.sportsocial.in/web/webfeed',this.homematchfeedObj);
   }
 
   OpenOneMatchCard(id){
     this.paramIdObj={
       eventid:id
     }
-    return this.http.post('https://prod.sportsocial.in/web/webmatchinfo',this.paramIdObj);
+    return this.http.post('https://test.sportsocial.in/web/webmatchinfo',this.paramIdObj);
   }
 
   singleMatchData(eventid, userid, activityid, urlId, page) {
@@ -205,7 +205,7 @@ export class PostService {
       blogid: id
     };
    // console.log(this.BlogId);
-    return this.http.post('https://prod.chaseyoursport.com/loadSingleBlogDataSmallDesc', this.BlogId)
+    return this.http.post('https://test.chaseyoursport.com/loadSingleBlogDataSmallDesc', this.BlogId)
     .map((response: Response) => response.json());
   }
 

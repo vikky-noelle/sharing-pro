@@ -12065,9 +12065,9 @@ var PostService = /** @class */ (function () {
             gameid: Number
         };
         this.url = [
-            'https://prod.sportsocial.in/poc/matchinfo',
-            'https://prod.sportsocial.in/poc/activityuserdetails',
-            'https://prod.sportsocial.in/poc/activityuserdetailsWeb'
+            'https://test.sportsocial.in/poc/matchinfo',
+            'https://test.sportsocial.in/poc/activityuserdetails',
+            'https://test.sportsocial.in/poc/activityuserdetailsWeb'
         ];
     }
     PostService.prototype.globalNewsFeed = function (pageNo, game) {
@@ -12084,7 +12084,7 @@ var PostService = /** @class */ (function () {
             page: i
         };
         // console.log(this.Page);
-        return this.http.post('https://prod.chaseyoursport.com/loadblogdata', this.blogRequestObject);
+        return this.http.post('https://test.chaseyoursport.com/loadblogdata', this.blogRequestObject);
     };
     PostService.prototype.globalMatchFeed = function (lat, long, page, gameid) {
         this.matchFeedReqObj = {
@@ -12094,7 +12094,7 @@ var PostService = /** @class */ (function () {
             gameid: gameid
         };
         console.log(this.matchFeedReqObj);
-        return this.http.post('https://prod.sportsocial.in/web/webfeed', this.matchFeedReqObj);
+        return this.http.post('https://test.sportsocial.in/web/webfeed', this.matchFeedReqObj);
         // return this.http.post('https://test.sportsocial.in/poc/webfeed', this.matchFeedReqObj);
     };
     PostService.prototype.homeMatchFeed = function (lat, long, Gameid, timest) {
@@ -12104,13 +12104,13 @@ var PostService = /** @class */ (function () {
             gameid: Gameid,
             timestamp: timest
         };
-        return this.http.post('https://prod.sportsocial.in/web/webfeed', this.homematchfeedObj);
+        return this.http.post('https://test.sportsocial.in/web/webfeed', this.homematchfeedObj);
     };
     PostService.prototype.OpenOneMatchCard = function (id) {
         this.paramIdObj = {
             eventid: id
         };
-        return this.http.post('https://prod.sportsocial.in/web/webmatchinfo', this.paramIdObj);
+        return this.http.post('https://test.sportsocial.in/web/webmatchinfo', this.paramIdObj);
     };
     PostService.prototype.singleMatchData = function (eventid, userid, activityid, urlId, page) {
         this.singleMatchReqObj = [{
@@ -12140,7 +12140,7 @@ var PostService = /** @class */ (function () {
             blogid: id
         };
         // console.log(this.BlogId);
-        return this.http.post('https://prod.chaseyoursport.com/loadSingleBlogDataSmallDesc', this.BlogId)
+        return this.http.post('https://test.chaseyoursport.com/loadSingleBlogDataSmallDesc', this.BlogId)
             .map(function (response) { return response.json(); });
     };
     PostService.prototype.saveformdata = function (dataObject) {
