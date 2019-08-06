@@ -187,6 +187,8 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         else if(agebracket ==-1){
           age="Open for All";
         }
+        var Starttime= new Date( data["Feed"][i].startdatetime *1000);
+        var timestampConvert= new String(Starttime).slice(3,21);
         this.arr.push({
               feedid:data["Feed"][i].feedid,
               Activity_name:data["Feed"][i].Activity_name,
