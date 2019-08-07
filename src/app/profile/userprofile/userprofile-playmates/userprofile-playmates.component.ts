@@ -29,10 +29,12 @@ export class UserprofilePlaymatesComponent implements OnInit {
   // route change for playmates defined here!!!!
   // it sends the value to the interaction service.
   changeroute(id){
-    console.log("working" + id);
+    console.log("this is id of change route:",id);
     this.interactionService.routechangefunction(id);
+
     this.router.navigate(['/userprofile', id, 'matches']);
   }
+
   getplaymates(){
     for(var i=1;i<=10;i++){
       this.pageno=i;
