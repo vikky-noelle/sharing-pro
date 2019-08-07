@@ -179,6 +179,7 @@
 .sport-heading h2{
     margin-top: 16px;
     float: right;
+    cursor: pointer;
 }
 .main-news{
     margin-left: 5%;

@@ -5,7 +5,7 @@
 <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf="news.length === 0" alt="">
 
 <!-- sport wise view -->
-<div class="main-body">
+<div class="main-body" *ngIf="news.length > 0">
 <div class="newsbody">
   <div class="news-header">
   <h1>{{mainnewshead}}</h1>

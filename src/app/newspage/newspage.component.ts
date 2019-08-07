@@ -16,6 +16,7 @@ export class NewspageComponent implements OnInit{
   description="Get the latest sports trends,news,updates from around the world on Sports Social from top sources";
   keywords="Latest Sports News, Breaking news Sports,Sports Trends,Sports Social,Sports Updates,Headlines Sports,Sports News Today";
   
+  routechangestatus=false;
   news=[];
   rnews=[];
   arr=[];
@@ -59,6 +60,7 @@ export class NewspageComponent implements OnInit{
       this.rnews=[];
       this.arr=[];
       this.temp=[];
+      this.routechangestatus=true;
        this.getsportwise(topic);
       this.recentnews("");
    }); 
