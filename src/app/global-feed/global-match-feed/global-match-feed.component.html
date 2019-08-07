@@ -54,6 +54,8 @@
                 </a> -->
               <a routerLink="/opencard/{{feed.eventid}}">
                   <sports-social-ss-match-card
+                  [Ontime]="feed.Ontime"
+                  [Ondate]="feed.Ondate"
                   [coverpic]="feed.coverpic"
                   [matchstartername]="feed.MatchStarterName"
                   [userName]="feed.userName"
