@@ -60,7 +60,7 @@
 }
 .openarenaopen a.Active{
     color: black;
-    /* font-weight: bold; */
+    font-weight: bold;
 }
 .newsopen{
     list-style: none;

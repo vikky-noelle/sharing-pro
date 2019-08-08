@@ -7,7 +7,7 @@
       <div class="brand-title">
         <span>Sports</span>
         <span>Social</span>
-        <p>ChaseYourSport</p>
+        <!-- <p>ChaseYourSport</p> -->
       </div>
     </a>
   </div>
@@ -74,8 +74,11 @@
             </li>
             </span>
             <ul id="niftview" class="open-news-menu">
-                <a (click)="topscroll()" routerLink="/newspage"><li>All News</li></a>
-              <a *ngFor="let data of newslist" (click)="topscroll(); routechange(data.name)" routerLink="/newspage/{{data.link}}"><li>{{data.name}}</li></a>
+                <a (click)="topscroll()" routerLink="/news"><li>All News</li></a>
+              <a *ngFor="let data of newslist" (click)="topscroll(); routechange(data.name)" routerLink="/news/{{data.link}}"><li>{{data.name}}</li></a>
+              <a  (click)="topscroll()" routerLink="/news/table-tennis"><li>Table Tennis</li></a>
+              
+
             </ul>
             <span class="dpslide2">
             <li><a (click)="topscroll()" routerLink="/about">About</a></li>

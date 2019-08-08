@@ -44,9 +44,9 @@ export class HomeMatchFeedComponent{
       if(m === null){
         this.ssmatchfeed();
       }
-      else{
-        this.nginit2(m[0],m[1]);
-      }
+      // else{
+      //   this.nginit2(m[0],m[1]);
+      // }
   })
   }
   count=9;
@@ -74,7 +74,6 @@ export class HomeMatchFeedComponent{
   count1 = 0;
 
   ssmatchfeed(){
-    // console.log("This is timestamp for home card ",this.timestamp);
     var gamename;
     this.location.getGeoLocation().then((pos)=>{
       if(this.cookie.check('longitude')){
@@ -88,9 +87,18 @@ export class HomeMatchFeedComponent{
         this.count1=this.count1+1;
         this.show=true;
         var arr=[];
+
+      //  for(var feedlength=0;feedlength<data["Feed"].length;feedlength++){
+        // var insertDate2 = new Date(data["Feed"][feedlength].InsertedDate);
+        // var gettimestamp = insertDate2.getTime()/1000;
+        // console.log("surviveeee",gettimestamp);
+        // var dateOfJune2019 = 1559692800;
+            
+            // console.log("hi this is date after 2019:",insertDate2);
+            
+          
           for(var i=0;i<data["Feed"].length;i++){
                     var tempimg, checkstat, checkstat2, finished, upcoming=false;
-                    // console.log(Date.now(data["Feed"][i].startdatetime);
                     var timestamp= new Date(data["Feed"][i].startdatetime*1000);
                     var timrstampstr = new String(timestamp).slice(16,21);
                     var timrstampstr2 = new String(timestamp).slice(0,10);
@@ -101,7 +109,7 @@ export class HomeMatchFeedComponent{
                 
                         if(data["Feed"][i].Team2name === null){
                           tempimg = "/assets/images/sportsocialteamlogo.png";
-                          data["Feed"][i].Team2name = "None";
+                          data["Feed"][i].Team2name = "Yet to Join";
                         }
                         else{
                           tempimg = data["Feed"][i].Team2Pic;
@@ -118,8 +126,7 @@ export class HomeMatchFeedComponent{
                         if(data["Feed"][i].JoineeCount===0){
                           data["Feed"][i].JoineeCount = false;
                         }
-                    checkstat = Date.now();
-                    checkstat = checkstat/1000;
+                    checkstat = Date.now()/1000;
                     checkstat2 = data["Feed"][i].startdatetime;
                     if(checkstat>checkstat2){
                       if((checkstat-checkstat2)>86400){
@@ -145,7 +152,7 @@ export class HomeMatchFeedComponent{
                       finished= false; 
                       upcoming=true;   
                       if(data["Feed"][i].Team2name === "None"){
-                        this.startTime = "Waiting for oponent";
+                        this.startTime = "Upcoming Match";
                       }
                     }
                     if(data["Feed"][i].scoreTeam1!==null && data["Feed"][i].scoreTeam2!==null){
@@ -186,6 +193,7 @@ export class HomeMatchFeedComponent{
                         }
                   var Starttime= new Date( data["Feed"][i].startdatetime *1000);
                   var timestampConvert= new String(Starttime).slice(3,21);
+                 // if(gettimestamp>=dateOfJune2019){  /// LOOP FOR INSEERTED DATE SHOULD BE GREATER THEN 2018
                     arr.push({
                     Ondate: timrstampstr2,
                     Ontime: timrstampstr, 
@@ -202,6 +210,7 @@ export class HomeMatchFeedComponent{
                     startdatetime:this.startTime,
                     GameName:data["Feed"][i].GameName,
                     GameId:data["Feed"][i].GameId,
+                    eventid:data["Feed"][i].eventid,
                     Event_Image:data["Feed"][i].Event_Image,
                     MatchStarterName:data["Feed"][i].MatchStarterName,
                     MatchStarterId:data["Feed"][i].MatchStarterId,
@@ -221,7 +230,10 @@ export class HomeMatchFeedComponent{
                     JoineeCount:data["Feed"][i].JoineeCount,
                     age: this.Age
                   });
-                }  
+             // }
+            //  console.log("insetdate",data["Feed"][i].InsertedDate);
+            }
+          
           if(arr.length>0){
             gamename = arr[0].GameName.replace(/ matches/g,"");
             this.getnewsdata(gamename.toLowerCase());
@@ -256,173 +268,15 @@ export class HomeMatchFeedComponent{
             if(this.count1===this.Sports.length){
             this.gett(this.sport);
           }  
-     });
+         
+      //  }
+      // }
+       });
+      
     }  
-    
+      
     });  
-  }
-  
-  nginit2(long, lat){
-    var gamename;
-    for(var i=0;i<this.Sports.length;i++){
-      var tempsport = this.Sports;
-      this.postservice.homeMatchFeed(long,lat,this.Sports[i].id,this.timestamp)
-      .subscribe(data=>{
-        this.count1=this.count1+1;
-        this.show=true;
-        var arr=[];
-          for(var i=0;i<data["Feed"].length;i++){
-            var tempimg, checkstat, checkstat2, finished, upcoming=false;
-              if(data["Feed"][i].Team2name === null){
-                tempimg = "/assets/images/sportsocialteamlogo.png";
-                data["Feed"][i].Team2name = "None";
-              }
-              else{
-                tempimg = data["Feed"][i].Team2Pic;
-              }
-              if(data["Feed"][i].CommentCount===0){
-                data["Feed"][i].CommentCount = false;
-              }
-              if(data["Feed"][i].PromoteCount===0){
-                data["Feed"][i].PromoteCount = false;
-              }
-              if(data["Feed"][i].WatchCount===0){
-                data["Feed"][i].WatchCount = false;
-              }
-              if(data["Feed"][i].JoineeCount===0){
-                data["Feed"][i].JoineeCount = false;
-              }
-              // checkstat = Date.now();
-              checkstat= Math.floor(Date.now()/1000);
-        checkstat2 = data["Feed"][i].startdatetime;
-        
-        if(checkstat>checkstat2){
-          if((checkstat-checkstat2)>86400){
-            if(data["Feed"][i].scoreTeam1===null || data["Feed"][i].scoreTeam2===null){
-              this.startTime="Score Awaited";
-              finished= false;
-            } 
-            if(data["Feed"][i].Team2name === null){
-              this.startTime="Match Abandoned";
-              finished= false;
-            }
-          }
-          else{
-            if(data["Feed"][i].scoreTeam1===null || data["Feed"][i].scoreTeam2===null){
-              this.startTime="Score Awaited";
-              finished= false;
-            }
-          }
-        }
-        if(checkstat === checkstat2 || checkstat < checkstat2){
-          this.startTime="Upcoming";
-          finished= false; 
-          upcoming=true;   
-        }
-        if(data["Feed"][i].scoreTeam1!==null && data["Feed"][i].scoreTeam2!==null){
-          finished= true;
-          this.startTime="Match Finished";
-        }
-        var agebracket= data["Feed"][i].ageBracket;
-        if(agebracket == 0){
-          this.Age="Under 13";
-        }
-        else if(agebracket ==1){
-          this.Age="Under 15";
-        }
-        else if(agebracket ==2){
-          this.Age="Under 17";
-        }
-        else if(agebracket ==3){
-          this.Age="Under 19";
-        }
-        else if(agebracket ==4){
-          this.Age="Under 21";
-        }
-        else if(agebracket ==5){
-          this.Age="Under 23";
-        }
-        else if(agebracket ==-1){
-          this.Age="Open for All";
-        }
-        var newstring=data["Feed"][i].gender;
-            if(newstring.toLowerCase() === "mix"){
-              this.gendercheck = "Mix-up";
-             }
-             else if(newstring.toLowerCase() === "female"){
-              this.gendercheck= "Women's";
-             }
-             else if (newstring.toLowerCase() === "male"){
-              this.gendercheck= "Men's";
-             }
-            var Starttime= new Date( data["Feed"][i].startdatetime *1000);
-            var timestampConvert= new String(Starttime).slice(3,21);
-              arr.push({
-              feedid:data["Feed"][i].feedid,
-              finished: finished,
-              Activity_name:data["Feed"][i].Activity_name,
-              MatchStarterUniqueName:data["Feed"][i].MatchStarterUniqueName==null?"":"By:@"+data["Feed"][i].MatchStarterUniqueName,
-              result:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?timestampConvert:'Final result',
-              InsertedDate:data["Feed"][i].InsertedDate,
-              profile_image:data["Feed"][i].profile_image,
-              Venue_Name:data["Feed"][i].Venue_Name,
-              EventText:data["Feed"][i].EventText,
-              startdatetime:this.startTime,
-              GameName:data["Feed"][i].GameName,
-              GameId:data["Feed"][i].GameId,
-              Event_Image:data["Feed"][i].Event_Image,
-              MatchStarterName:data["Feed"][i].MatchStarterName,
-              MatchStarterPhoto:data["Feed"][i].MatchStarterPhoto,
-              Team1name:data["Feed"][i].Team1name,
-              Team1Pic:data["Feed"][i].Team1Pic,
-              Team2name:data["Feed"][i].Team2name,
-              Team2Pic:tempimg,
-              scoreTeam1:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?'':data["Feed"][i].scoreTeam1 + ' - ',
-              scoreTeam2:data["Feed"][i].scoreTeam2==null || data["Feed"][i].scoreTeam1==null?'VS':data["Feed"][i].scoreTeam2,
-              gender:this.gendercheck,
-              Profile_Photo:data["Feed"][i].Profile_Photo,
-              City:data["Feed"][i].City,
-              CommentCount:data["Feed"][i].CommentCount,
-              PromoteCount:data["Feed"][i].PromoteCount,
-              WatchCount:data["Feed"][i].WatchCount,
-              JoineeCount:data["Feed"][i].JoineeCount,
-              age: this.Age
-            });
-          }  
-          if(arr.length>0){
-            gamename = arr[0].GameName.replace(/ matches/g,"");
-            this.getnewsdata(gamename.toLowerCase());
-            for(var init=0; init<this.Sports.length;init++){
-              if(this.Sports[init].title.toLowerCase() === gamename.toLowerCase()){
-                this.Matchar[init] = {
-                  gamenumber: init,
-                  gametitle: arr[0].GameName,
-                  gamearray: arr
-                };
-              }
-            }
-          }
-            for(var k=0; k<this.count; k++){
-                if(this.sport[k].toLowerCase() === gamename.toLowerCase()){
-                  this.sport.splice(k,1);
-                  this.count=this.count-1;
-                  break;
-                }
-              }
-            if(this.count1 === this.Sports.length){
-            for(var init=0; init<this.Sports.length;init++){
-              if(this.Matchar[init] === undefined){
-              }
-              else{
-              this.Matcharr.push(this.Matchar[init]);
-             }
-          }
-          }
-            if(this.count1===this.Sports.length){
-              this.gett(this.sport);
-          }  
-     });
-    }
+      
   }
 
   gett(str){
@@ -461,11 +315,12 @@ export class HomeMatchFeedComponent{
           gamenews: arr
         });
       }
-      console.log(this.tnews);
+      // console.log(this.tnews);
     });
   }
   getnewsdata(topic){
     this.getService.getsportnews(topic).subscribe(res=>{
+      this.show= true;
       var body = JSON.parse(res._body);
       var arr=[];
       for (const i in body.news) {

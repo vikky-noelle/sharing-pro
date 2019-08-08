@@ -24,9 +24,15 @@
     height: 100%;
 }
 .venue>b{
-    margin-left: 1%;
+    margin-left: 1.5%;
     font-size: 0.8em;
-    margin-top: 10px;
+    margin-top: 8px;
+    font-weight: lighter;
+}
+.venue>b>span{
+    color: grey;
+    font-weight: 400;
+    font-size: .8em;
 }
 .venue>b>span{
     color: grey;
@@ -47,6 +53,7 @@
 .result>p{
     text-align: right;
     font-size: 0.8em;
+    font-weight: lighter;
 }
 .result p img{
     margin-top: 2px;
@@ -56,17 +63,22 @@
 }
 .result>p>span{
     padding: 1.5%;
-    font-size: 0.7em;
-    margin-right: 10%;
+    font-size: 0.8em;
+    margin-right: 9%;
     color: #024771;
+    font-weight: bold;
 }
 .venue b span{
    margin-top:1%;
 }
 .pp{
     margin-left: 1%;
+    padding: 1%;
     color: grey;
-    font-size: 0.6em;
+    font-size: 0.7em;
+}
+.mobile{
+    display: none;
 }
 .mobile{
     display: none;
@@ -139,6 +151,7 @@
     padding-right: 10px;
     font-size: 0.7em;
     color: grey;
+    text-align: center;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -167,15 +180,16 @@
     width: 40%;
 }
 .team1,.team2 p{
-    font-size: .9em;
+    color: black;
+    font-size: 0.8em;
     text-align: center;
 }
 
 .team1>img{
     margin: 0 auto;
     border-radius: 50%;
-    height: 42px;
-    width: 42px;
+    height: 40px;
+    width: 40px;
 }
 .team2{
     text-align: center;
@@ -186,8 +200,8 @@
  .team2>img{
     margin: 0 auto;
     border-radius: 50%;
-    height: 42px;
-    width: 42px;
+    height: 40px;
+    width: 40px;
 }
 .footer{
     border-top: 1px solid #d3d1d1;
@@ -204,9 +218,13 @@
     text-align: center;
     font-size: 0.8em;
     width: 25%;
-    padding: 5px;
+    padding: 2%;
     color: #7e7d7d;
     background-color: transparent;
+}
+.footer>button span{
+    color: #045a8b;
+    font-weight: bold;
 }
 
 @media screen and (min-width:200px) and (max-width:400px){

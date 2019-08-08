@@ -63,8 +63,8 @@
             </div>
           
             <div class="cardData">
-                <div (click)="openprofile(feed.Team1Id, feed.Team1name);" class="cardData team1">
-                    <!-- <div  class="cardData team1"> -->
+                <!-- <div (click)="openprofile(feed.Team1Id, feed.Team1name);" class="cardData team1"> -->
+                    <div class="cardData team1">
                     <img src={{feed.Team1Pic}} onerror="this.src='assets/images/user.png'">
                     <p>{{feed.Team1name}}</p>    
                 </div>
@@ -72,8 +72,8 @@
                     <b style="font-size: 1.2em;">{{feed.scoreTeam1}}</b>
                     <b style="font-size: 1.2em;">{{feed.scoreTeam2}}</b>
                 </div>
-                <div (click)="openprofile(feed.Team2Id, feed.Team2name);" class="cardData team2">
-                    <!-- <div  class="cardData team2"> -->
+                <!-- <div (click)="openprofile(feed.Team2Id, feed.Team2name);" class="cardData team2"> -->
+                    <div  class="cardData team2">
                     <img src={{feed.Team2Pic}} onerror="this.src='assets/images/user.png'">
                     <p>{{feed.Team2name}}</p>
                 </div>     
@@ -99,23 +99,22 @@
             </div>
 
             <div class="footer">
-                  <button (click)="first()" class="one">Match Talk</button>
+                  <button (click)="first()" class="one" style="color: black; font-size:1em;">Match Talk</button>
                   <button (click)="second()" class="two">Moments</button>
                   <button (click)="third()" class="three">Line Ups</button>
             </div> 
             <div class="details" *ngIf="comment"> 
-                <div class="container" *ngFor="let data of MatchCommnets">
-                  <div class="profile-data">
+              <div class="container" *ngFor="let data of MatchCommnets">
+                <div class="profile-data">
                     <img src="{{data.Profileimage}}" onerror="this.src='assets/images/user.png'" style="width:100%;">
-                    <h6>{{data.User_name}}<br>{{data.uniquename}}</h6>
-                  <div class="message-outter">
+                    <h6>{{data.User_name}}<br><p>@{{data.Uniquename}}</p></h6>
+                </div>
+                <div class="message-outter">
                   <div class="message">
-                    <p>{{data.Comment}}</p>
+                    <p>{{data.Comment |slice:0:150}}<br><b>{{data.commentdatetime}} pm</b></p>
                   </div>
-                </div>
-                </div>
+               </div>
               </div>
-
             </div>
             <div class="details" *ngIf="moment"> 
                 <div class="container2" *ngFor="let data of MatchMoments">

@@ -108,9 +108,9 @@ export class PostService {
     }
   ]
   url = [
-    'https://prod.sportsocial.in/poc/matchinfo',
-   'https://prod.sportsocial.in/poc/activityuserdetails',
-   'https://prod.sportsocial.in/poc/activityuserdetailsWeb'
+    'https://test.sportsocial.in/poc/matchinfo',
+   'https://test.sportsocial.in/poc/activityuserdetails',
+   'https://test.sportsocial.in/poc/activityuserdetailsWeb'
    ];
 
   constructor(private http: HttpClient) { }
@@ -141,7 +141,7 @@ export class PostService {
       gameid: gameid
     };
     console.log(this.matchFeedReqObj);
-    return this.http.post('https://prod.sportsocial.in/web/webfeed', this.matchFeedReqObj);
+    return this.http.post('https://test.sportsocial.in/web/webfeed', this.matchFeedReqObj);
     // return this.http.post('https://test.sportsocial.in/poc/webfeed', this.matchFeedReqObj);
   }
 

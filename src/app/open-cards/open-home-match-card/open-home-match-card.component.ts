@@ -51,10 +51,10 @@ export class OpenHomeMatchCardComponent implements OnInit {
   
   first(){  
     this.one[0].style.background="none";
-    this.one[0].style.fontWeight="bolder";
+    // this.one[0].style.fontWeight="bolder";
     this.two[0].style.background="#f4f4f4";
-     this.three[0].style.background="#f4f4f4";
-      this.one[0].style.fontSize="1em";
+    this.three[0].style.background="#f4f4f4";
+    this.one[0].style.fontSize="1em";
      this.two[0].style.fontSize="0.9em";
      this.three[0].style.fontSize="0.9em";
      this.comment=true;
@@ -235,12 +235,23 @@ export class OpenHomeMatchCardComponent implements OnInit {
           
 
           for(var j=0;j<data["Match Talk"].length;j++){
+
+            var timestamp = new Date(data["Match Talk"][j].commentdatetime *1000);
+            var strconvert = new String(timestamp);
+            var split = strconvert.split(" ",5);
+            var slicetoString = split.slice(4);
+            var convertintostr = new String(slicetoString);
+            var gethourMin  = convertintostr.substring(0,5);
+
+            console.log("this si tiem ",gethourMin);
             this.MatchCommnets.push({
               eventid:data["Match Talk"][j].eventid,
               UserId:data["Match Talk"][j].UserId,
               User_name:data["Match Talk"][j].User_name,
               Profileimage:data["Match Talk"][j].Profileimage,
               Comment:data["Match Talk"][j].Comment,
+              Uniquename:data["Match Talk"][j].Uniquename,
+              commentdatetime:gethourMin
             });
           }  
           
