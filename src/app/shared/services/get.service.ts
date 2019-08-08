@@ -19,7 +19,8 @@ export class GetService {
   }
 
   GlobalNewsFeed() {
-    return this.http.get('http://atg.sportsocial.in:4000/news');
+    return this.http.get('https://testnews.sportsocial.in/api/news/');
+
   }
 
 
@@ -56,7 +57,7 @@ export class GetService {
   //   return this.http.get("http://atg.sportsocial.in:3100/api/news/" +topic);
   // }
   getsportnews(topic): Observable<any> {
-    return this.http.get("http://testnews.sportsocial.in:7700/api/news/" +topic);
+    return this.http.get("https://testnews.sportsocial.in/api/news/" +topic);
   }
 
   
