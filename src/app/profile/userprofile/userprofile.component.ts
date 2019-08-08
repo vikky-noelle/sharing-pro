@@ -225,7 +225,7 @@ export class UserprofileComponent implements OnInit {
               profile_Photo_path:res["Past"][j].profile_Photo_path,
             });
           }
-            // console.log("this username",res["Past"][j].Eventid);
+            // console.log("this username",this.array.length);
           }
           // upcoming matches
           for(var j=0;j<res["Upcoming"].length;j++){
