@@ -1,3 +1,4 @@
+import { NewshomeComponent } from './../newshome/newshome.component';
 
 import { TeamprofileAboutComponent } from '../profile/teamprofile/teamprofile-about/teamprofile-about.component';
 import { TeamprofileComponent } from '../profile/teamprofile/teamprofile.component';
@@ -27,6 +28,7 @@ import { UserprofileMatchesComponent } from '../profile/userprofile/userprofile-
 import { UserprofileTeamsComponent } from '../profile/userprofile/userprofile-teams/userprofile-teams.component';
 import { UserprofilePlaymatesComponent } from '../profile/userprofile/userprofile-playmates/userprofile-playmates.component';
 import { UserprofileAboutComponent } from '../profile/userprofile/userprofile-about/userprofile-about.component';
+import { LocalityComponent } from '../profile/locality/locality.component';
 
 
 const App_Route: Routes = [
@@ -74,6 +76,7 @@ const App_Route: Routes = [
         ]
     },
     // {path:':user_id',component:UserprofilePlaymatesComponent},
+    {path:"localityprofile/:name",component:LocalityComponent},
     {path:"opencard/:feedid",component:OpenHomeMatchCardComponent},
     {path:"ourTeam",component:OurteamComponent},
     {path:"contactus",component:ContactUsComponent},
@@ -84,7 +87,7 @@ const App_Route: Routes = [
     {path: "team",component:TeamviewComponent},
     // {path: 'teamprofile', component:TeamprofileComponent},
     {path: "locality", component:LocalitypageComponent},
-    {path: 'news', component:NewspageComponent},
+    {path: 'news', component:NewshomeComponent},
     {
         path: "news/:topic", 
         component:NewspageComponent

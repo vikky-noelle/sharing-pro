@@ -3,13 +3,25 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class PostService {
-
+  upcomingmatchesobj={
+    venueid: String,
+    userid: String,
+    page: Number,
+    timestamp: Number
+  }
+  localityteams={
+    localityid: Number
+  }
   userprofileobj={
       userid:String,
       profileid:String,
       page:Number,
       currentdate:String
    }
+   localityobj={
+    userid:String,
+    venueid:String,
+ }
    userprofileplaymateObj=[
      {
       userid:String,
@@ -277,5 +289,27 @@ export class PostService {
       timestamp: timestamp
     }];
     return this.http.post('https://test.sportsocial.in/team/getTeamMembers',this.memberobj);
+  }
+  getLocalityDetails(userid,venueid){
+    this.localityobj={
+      userid:userid,
+      venueid:venueid,
+    };
+    return this.http.post('https://test.sportsocial.in/venue/getvenueslotdetails_V1',this.localityobj);
+  }
+  getLocalityTeams(localityid){
+    this.localityteams={
+      localityid:localityid,
+    };
+    return this.http.post('https://test.sportsocial.in/venue/getLocalityTeams',this.localityteams);
+  }
+  getUpcomingMatches(userid, venueid, timestamp, page){
+    this.upcomingmatchesobj={
+      venueid:venueid,
+      userid:userid,
+      page: page,
+      timestamp: timestamp
+    };
+    return this.http.post('https://test.sportsocial.in/poc/getVenueUpcomingMatches',this.upcomingmatchesobj);
   }
 }

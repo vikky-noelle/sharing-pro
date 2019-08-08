@@ -36,6 +36,8 @@ export class SsMatchCardComponent implements OnInit {
   @Input() gender:string;
   @Input() finished:boolean;
   @Input() age:string;
+  @Input() Ontime:string;
+  @Input() Ondate:string;
 
   constructor(private router:Router) { }
 

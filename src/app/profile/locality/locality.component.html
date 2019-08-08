@@ -1,0 +1,122 @@
+<sports-social-header></sports-social-header>
+<div class="outer-shell">
+  <div class="profile-shell">
+    <div class="background-img">
+      <!-- <img src="{{backgroundimage}}" onerror="this.src='assets/images/sportsocialteambgerror.jpg'" alt=""> -->
+    </div>
+    
+    <div class="team-info">
+      <div class="name">
+        <h1>{{venuename}}</h1>
+        <h2>{{venuetype}}</h2>
+      </div>
+      <div class="follow">
+        <h1>Favourite</h1>
+      </div>
+    </div>
+  </div>
+  <div class="sub-header">
+          <div class="sub-name">
+              <h1>{{venuename}}</h1>
+              <h2>{{venuetype}}</h2>
+            </div>
+      <div class="sub-follow">
+          <h1>Follow</h1>
+        </div>
+  </div>
+  <div class="side-shell">
+    <div class="stick">
+      <div class="basic-info">
+        <div class="owner">
+          <img class="owner-img" src="{{profileimage}}" alt=""> 
+          <h1>{{ownername}}</h1>
+          <h2>Owner</h2> 
+        </div>
+          <!-- <a class="basic-info-tab" *ngFor="let data of sports">
+          {{data}}
+          </a> -->
+          <ul class="basic-info-tab">
+            <h1>Available Sports Facilities</h1>
+          <a routerLink="/localityprofile/{{data}}" routerLinkActive="active" *ngFor="let data of sports"><li>{{data}}</li></a>
+        </ul>
+        </div>
+      <div class="media">
+          <div class="head">
+          <h4>Media</h4>
+          <!-- <a (click)="opencrousal()"><p>See all</p></a> -->
+        </div>
+         <div class="mediabox" *ngFor="let icon of media">
+           <img (click)="imageopen(icon.url);" src={{icon.url}}>
+        </div>
+      </div>
+      <div class="slots">
+        <img src="/assets/images/sportsocialcalender.png" alt="">
+        <div class="slot-days" *ngFor="let data of slotdetails">
+          <h1>{{data.Day|slice:0:3}}</h1>
+          <h2>{{data.StartTime}} - {{data.EndTime}}</h2>
+        </div>
+      </div>
+      <div class="Address">
+        <img src="/assets/images/sportsociallocation1.png" alt="">
+        <h1>{{address}}</h1>
+      </div>
+    </div>
+    </div> 
+
+    <div class="normal-shell">
+      <img class="ground" src="/assets/images/sportsocialground.jpg" alt="">
+      <h3>The Average Ground</h3>
+      <h2>Matches This Week</h2>
+      <div class="current-matches">
+          <div class="match-cards" *ngFor="let feed of Matcharr">
+              <sports-social-ss-match-card
+                        [coverpic]="feed.coverpic"
+                        [matchstartername]="feed.MatchStarterName"
+                        [userName]="feed.userName"
+                        [gamename]="feed.gamename"
+                        [startdatetime]="feed.startdatetime"
+                        [team1pic]="feed.Team1Pic"
+                        [team2pic]="feed.Team2Pic"
+                        [InsertedDate]="feed.InsertedDate"
+                        [Uniquename]="feed.Uniquename"
+                        [EventText]="feed.EventText"
+                        [city]="feed.city"
+                        [age]="feed.age"
+                        [starttimestamp]="feed.starttimestamp"
+                        [scoreTeam1]="feed.scoreTeam1"
+                        [scoreTeam2]="feed.scoreTeam2"
+                        [finished]="feed.finished"
+                        [upcoming]="feed.upcoming"
+                        [gender]="feed.gender"
+                        [Venue_Name]="feed.Venue_Name"
+                        [MatchStarterUniqueName]="feed.MatchStarterUniqueName"
+                        [Team1Name]="feed.Team1Name"
+                        [Team2Name]="feed.Team2Name"
+                        [JoineeCount]="feed.JoineeCount"
+                        [WatchCount]="feed.WatchCount"
+                        [PromoteCount]="feed.PromoteCount"
+                        [CommentCount]="feed.CommentCount"
+                        ></sports-social-ss-match-card>
+          
+                      </div>
+      </div>
+      <h2>Teams</h2>
+    </div>
+</div>
+<div class="media-crousal">
+  <!-- <img class="single-image" src="{{crousalsingleimage}}" alt=""> -->
+  <div class="close">
+    <!-- <img (click)="close()" src="/assets/images/sportsocialprofileclose.png"> -->
+  </div>
+  <div class="larrow">
+    <!-- <img (click)="lscroll()" src="/assets/images/sportsocialprofilerightarrow.png" alt=""> -->
+  </div>
+  <div class="rarrow">
+    <!-- <img (click)="rscroll()" src="/assets/images/sportsocialprofileleftarrow.png" alt=""> -->
+  </div>
+  <div class="pop-crousal" #widgets>
+    <div *ngFor="let data of media" class="crousal-element" #widgetsContent>
+      <img src="{{data.url}}" alt="">
+    </div>
+  </div>
+</div>

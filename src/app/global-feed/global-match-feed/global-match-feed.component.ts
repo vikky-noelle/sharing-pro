@@ -95,7 +95,14 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
       .subscribe(data=>{
         this.show=true;
         this.count=this.count+1;
+        
       for(const i in data["Feed"]){
+        var timestamp= new Date(data["Feed"][i].startdatetime*1000);
+        var timrstampstr = new String(timestamp).slice(16,21);
+        var timrstampstr2 = new String(timestamp).slice(0,10);
+        timrstampstr = timrstampstr2.slice(0,3) +" "+ timrstampstr;
+        timrstampstr2 = timrstampstr2.slice(3)
+      
         var tempimg;
         var agebracket, age;
         
@@ -187,7 +194,11 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         else if(agebracket ==-1){
           age="Open for All";
         }
+        var Starttime= new Date( data["Feed"][i].startdatetime *1000);
+        var timestampConvert= new String(Starttime).slice(3,21);
         this.arr.push({
+              Ondate: timrstampstr2,
+              Ontime: timrstampstr,
               feedid:data["Feed"][i].feedid,
               Activity_name:data["Feed"][i].Activity_name,
               userName: data["Feed"][i].user_name,
@@ -215,7 +226,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
               Team2Name:data["Feed"][i].Team2name,
               Team2Pic:tempimg,
               scoreTeam1:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?'':data["Feed"][i].scoreTeam1 + ' - ',
-              scoreTeam2:data["Feed"][i].scoreTeam2==null || data["Feed"][i].scoreTeam1==null?'VS':data["Feed"][i].scoreTeam2,
+              scoreTeam2:data["Feed"][i].scoreTeam2==null || data["Feed"][i].scoreTeam1==null?'':data["Feed"][i].scoreTeam2,
               gender:temp,
               Profile_Photo:data["Feed"][i].Profile_Photo,
               city:data["Feed"][i].City,
@@ -249,12 +260,19 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         id = this.Sports[i].id;
       }
     }
+    
     this.location.getGeoLocation().then((pos)=>{
       this.postservice.homeMatchFeed(pos['latitude'],pos['longitude'],id,this.timestamp)
       .subscribe(data=>{
         this.show=true;
         this.count=this.count+1;
-      for(const i in data["Feed"]){
+        for(const i in data["Feed"]){
+          var timestamp= new Date(data["Feed"][i].startdatetime*1000);
+          var timrstampstr = new String(timestamp).slice(16,21);
+          var timrstampstr2 = new String(timestamp).slice(0,10);
+          timrstampstr = timrstampstr2.slice(0,3) +" "+ timrstampstr;
+          timrstampstr2 = timrstampstr2.slice(3)
+      
         var tempimg;
               if(data["Feed"][i].Team2name === null){
                 tempimg = "/assets/images/sportsocialteamlogo.png";
@@ -331,6 +349,8 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         }
     
         this.Matcharr.push({
+              Ondate: timrstampstr2,
+              Ontime: timrstampstr,
               feedid:data["Feed"][i].feedid,
               Activity_name:data["Feed"][i].Activity_name,
               userName: data["Feed"][i].user_name,
@@ -358,7 +378,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
               Team2Name:data["Feed"][i].Team2name,
               Team2Pic:tempimg,
               scoreTeam1:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?'':data["Feed"][i].scoreTeam1 + ' - ',
-              scoreTeam2:data["Feed"][i].scoreTeam2==null || data["Feed"][i].scoreTeam1==null?false+'VS':data["Feed"][i].scoreTeam2,
+              scoreTeam2:data["Feed"][i].scoreTeam2==null || data["Feed"][i].scoreTeam1==null?false+'':data["Feed"][i].scoreTeam2,
               gender:temp,
               Profile_Photo:data["Feed"][i].Profile_Photo,
               city:data["Feed"][i].City,

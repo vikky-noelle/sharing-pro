@@ -1,0 +1,353 @@
+.home-body{
+    overflow: hidden;
+    width: 84%;
+    margin-left: 16%;
+    margin-bottom: 3%;
+    border-bottom: 2px solid silver;
+}
+.outer-body{
+    margin-top: 70px;
+    margin-left: 5%;
+    width: 90%;
+    height: 60vh;
+    border: none;
+    border-top: 2px solid black;
+}
+.outer-body>legend{
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+.back-footer{
+    float: right;
+    width: 84%;
+}
+.dnews{
+    width: 90%;
+    margin-left: 5%;
+    background-color: red;
+}
+.dnews div{
+    margin-top: 1.2%;
+    width: 25%;
+    float: left;
+    cursor: pointer;
+}
+.dnews div p{
+    /* background-color: black; */
+    font-size: 1em;
+    margin-left: 3%;
+    margin-bottom: 10px;
+}
+.dnews div img{
+    padding: 10px;
+    width: 92%;
+    height: 150px;
+}
+.dnews div h1{
+    padding-left: 10px;
+    width: 95%;
+    height: auto;
+    letter-spacing: 1px;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+
+.crousal-side-bar{
+    margin-top:2%;
+    height: 55vh;
+    width: 41%;
+    float: right;
+}
+.crousal-side-bar h1{
+    font-size: 1.4em;
+    /* padding-left: 10px; */
+}
+.side-bar-component{
+    margin-top: 10px;
+    height: 70px;
+    cursor: pointer;
+}
+.side-bar-component img{
+    height: 60px;
+    width: 90px;
+    float: left;
+}
+.side-bar-component h1{
+    float: left;
+    /* width: 70%; */
+    margin-left: 5%;
+    font-weight: 500;
+}
+.side-bar-component p{
+    color: #444444;
+    padding-top: 40px;
+    padding-left: 28%;
+    /* margin-top: 60px; */
+}
+.side-bar-component p span{
+    /* margin-left: 5%; */
+    float: right;
+}
+.crousal{
+    margin-top:2%;
+    position: relative;
+    text-align: center;
+    /* float: left; */
+    width: 56%;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    /* margin-left: 12.5%; */
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+    white-space: nowrap !important;
+    display: inline-block;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-snap-destination: 0% 100%;
+    scroll-snap-points-x: repeat(100%);
+}
+.crousal::-webkit-scrollbar {
+    display: none;
+}
+.crousal-element{
+    position: relative;
+    scroll-snap-align: start;
+    width: 100%;
+    height: 52vh;
+    display: inline-block;
+}
+.crousal-element img{
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+.crousal-heading{
+    text-align: left;
+    color: white;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.7);
+    top: 90%;
+    left: 50%;
+    width: 100%;
+    height: 29%;
+    transform: translate(-50%, -50%);
+    
+}
+.crousal-heading h1{
+    font-size: 1.6em;
+    padding: 15px;
+    letter-spacing: 1px;
+}
+.crousal-heading p{
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    padding-left: 15px;
+}
+.side-nav{
+    width: 25%;
+    margin-top: 3.5%;
+}
+.spinner{
+    margin-top: 250px;
+    margin-right: 50%;
+    float: right;
+}
+.heading p{
+    float: right;
+    margin-top: 1%;
+    font-weight: bold;
+    font-size: 0.5em;
+}
+.sportwise-shell{
+    overflow: hidden;
+    width: 84%;
+    margin-left: 16%;
+    margin-bottom: 3%;
+    /* border-bottom: 2px solid silver; */
+}
+.sport-heading{
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+    height: 60px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.sport-heading h1{
+    margin-top: 10px;
+    float: left;
+}
+.sport-heading h2{
+    margin-top: 16px;
+    float: right;
+    cursor: pointer;
+}
+.main-news{
+    margin-left: 5%;
+    float: left;
+    /* height: 10vh; */
+    width: 95%;
+}
+.side-news{
+    float: right;
+    height: 10vh;
+    margin-right: 5%;
+    width: 35%;
+}
+.news-tab>div{
+    height: 180px;
+    cursor: pointer;
+}
+.news-tab img{
+    margin-top: 25px;
+    height: 150px;
+    width: 25%;
+    background-color: white;
+    float: left;
+}
+.news-tab-info{
+    margin-top: 25px;
+    margin-left: 5%;
+    float: right;
+    width: 70%;
+    height: auto;
+}
+.news-tab-info h1{
+    font-size: 1em;
+}
+.news-tab-info p{
+    margin-top: 90px;
+}
+@media screen and (min-width: 200px) and (max-width: 700px){
+    .crousal-side-bar{
+        display: none;
+    }
+    .main-body{
+        display: none;
+    }
+    .mobile-main{
+        display: block;
+    }
+    .back-footer{
+        width: 100%;
+    }
+    .home-body{
+        margin-left: 0%;
+        width: 100%;
+    }
+    .crousal{
+        margin-top: 40px;
+        border: 2px solid white;
+        width: 100%;
+    }
+    .crousal-element{
+        height: 27vh;
+   }
+   .dnews{
+       clear: both;
+       width: 100%;
+       margin-left: 0% !important;
+   }
+   
+   .dnews div{
+       width: 45%;
+       margin-left: 2%;
+       /* clear: both;  */
+       cursor: pointer;
+   }
+   .dnews div img{
+       width: 100%;
+       /* float: left; */
+   }
+   
+   .crousal-heading{
+       font-size: 0.4em;
+       font-weight: lighter;
+   }
+   .dnews div img{
+       height: 100px;
+   }
+   .dnews div h1{
+       font-size: 0.8em;
+   }
+   .dnews div p{
+       font-size: 0.7em;
+   }
+   .outer-body{
+       margin-top: 60px;
+       height: 40vh;
+   }
+   .sportwise-shell{
+       /* clear: both; */
+       margin-left: 0%;
+       width: 100%;
+   }
+   .sport-heading{
+       height: 40px;
+   }
+   .sport-heading h1, .sport-heading h2{
+       font-size: 1em;
+   }
+   .sport-heading h2{
+       margin-top: 10px;  
+   }
+   .news-tab>div{
+       height: 130px;
+       cursor: pointer;
+    }
+    .news-tab img{
+       margin-top: 25px;
+       height: 100px;
+       width: 30%;
+       background-color: white;
+       float: left;
+       cursor: pointer;
+    }
+    .news-tab-info{
+        cursor: pointer;
+    }
+    .news-tab-info p{
+        margin-top: 40px;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 1000px){
+    .main-body{
+        display: none;
+    }
+    .mobile-main{
+        display: block;
+    }
+    .share{
+        margin-bottom: 3%;
+        clear: both;
+        width: 100%;
+    }
+    .home-body{
+        margin-left: 0%;
+        width: 100%;
+    }
+    .crousal-element{
+        height: 27vh;
+   }
+  
+}
+@media screen and (min-width: 1000px) and (max-width: 1100px){
+   .crousal{
+       margin-top: 2%;
+   }
+   .crousal-element{
+        height: 27vh;
+   }
+  
+}
+@media screen and (min-width: 1100px) and (max-width: 2000px){
+    .main-body{
+        display: block;
+    }
+    .mobile-main{
+        display: none;
+    }
+}
+
+

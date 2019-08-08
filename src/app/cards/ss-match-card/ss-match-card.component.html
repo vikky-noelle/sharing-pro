@@ -22,9 +22,12 @@
               </div>
 
               <div class="vs">
-                  <b *ngIf="!finished"><br>VS<span *ngIf="upcoming" style="font-size: 0.7em; font-weight: lighter;">On<br>{{starttimestamp}}</span></b>
-                  <b *ngIf="finished">{{scoreTeam1}}{{scoreTeam2}}</b>
-               </div>
+                <b style="font-size: 0.9em;">{{scoreTeam1}}</b>
+                <b *ngIf="scoreTeam2" style="font-size: 0.9em; font-weight: 500;">{{scoreTeam2}}</b>
+                <b *ngIf="!scoreTeam2" style="font-size: 0.9em; font-weight: 500;"><span>{{Ontime}}</span></b>
+                <br>
+                <b *ngIf="!scoreTeam2" style="font-size: 0.8em; font-weight: lighter;color: #444444;"><span>{{Ondate}}</span></b>
+              </div>
 
                <div class="team2">
                   <img src={{team2pic}} onerror="this.src='assets/images/user.png'">
