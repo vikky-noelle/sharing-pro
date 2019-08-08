@@ -163,7 +163,7 @@ export class NewspageComponent implements OnInit{
             });
           }
             if(this.c===0){
-              if(this.datastr === undefined){
+              if(this.datastr === undefined || this.routechangestatus){
                 this.mainnewshead = this.tempnews[0].title;
                 this.mainnewstime = this.tempnews[0].timestamp;
                 this.mainnewsimage = this.tempnews[0].image;

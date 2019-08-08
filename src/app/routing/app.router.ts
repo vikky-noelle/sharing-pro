@@ -1,4 +1,4 @@
-import { NewshomeComponent } from './../newshome/newshome.component';
+
 
 import { TeamprofileAboutComponent } from '../profile/teamprofile/teamprofile-about/teamprofile-about.component';
 import { TeamprofileComponent } from '../profile/teamprofile/teamprofile.component';
@@ -29,6 +29,7 @@ import { UserprofileTeamsComponent } from '../profile/userprofile/userprofile-te
 import { UserprofilePlaymatesComponent } from '../profile/userprofile/userprofile-playmates/userprofile-playmates.component';
 import { UserprofileAboutComponent } from '../profile/userprofile/userprofile-about/userprofile-about.component';
 import { LocalityComponent } from '../profile/locality/locality.component';
+import { NewshomeComponent } from '../newshome/newshome.component';
 
 
 const App_Route: Routes = [

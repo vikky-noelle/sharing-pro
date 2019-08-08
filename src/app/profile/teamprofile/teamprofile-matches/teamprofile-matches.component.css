@@ -4,6 +4,8 @@
 .About-body{
     background-color: white;
     height: auto;
+    min-height: 700px;
+    /* border: 1px solid red; */
     width: 75%;
     margin-left: 25%;
 }

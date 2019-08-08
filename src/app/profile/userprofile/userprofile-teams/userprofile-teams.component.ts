@@ -13,6 +13,7 @@ export class UserprofileTeamsComponent implements OnInit {
   paramuserid;
   pageno;
   array=[];
+  Age;
   show:boolean=false;
   public teamId;
   constructor(
@@ -37,10 +38,35 @@ export class UserprofileTeamsComponent implements OnInit {
               this.teamId=data["RandomTeams"][i].TeamId;
               var status;
               status = this.getTeamId(this.teamId);
-              console.log(this.getTeamId(this.teamId));
+              var agebracket= data["RandomTeams"][i].TeamCategory;
+              console.log("thi sia is age brancter",agebracket);
+                    if(agebracket == 0){
+                      this.Age="Under 13";
+                    }
+                    else if(agebracket ==1){
+                      this.Age="Under 15";
+                    }
+                    else if(agebracket ==2){
+                      this.Age="Under 17";
+                    }
+                    else if(agebracket ==3){
+                      this.Age="Under 19";
+                    } 
+                    else if(agebracket ==4){
+                      this.Age="Under 21";
+                    }
+                    else if(agebracket ==5){
+                      this.Age="Under 23";
+                    }
+                    else if(agebracket ==6 || agebracket ==-1){
+                      this.Age="Open for All";
+                    }
                   this.array.push({
                   // captain: this.getTeamId(this.teamId),
                   TeamId:data["RandomTeams"][i].TeamId,
+                  TeamCategory:this.Age,
+                  GameName:data["RandomTeams"][i].GameName,
+                  TeamCity:data["RandomTeams"][i].TeamCity,
                   Slogan:data["RandomTeams"][i].Slogan,
                   TeamName:data["RandomTeams"][i].TeamName,
                   GameId:data["RandomTeams"][i].GameId,
@@ -53,11 +79,9 @@ export class UserprofileTeamsComponent implements OnInit {
                   FanCount:data["RandomTeams"][i].FanCount,
                   MemberCount:data["RandomTeams"][i].MemberCount,
                   MatchCount:data["RandomTeams"][i].MatchCount
-                }); 
-                
-                // console.log("this is teamid",this.teamId);
-                // console.log("this is array",this.array);
+                });
             }
+
           });  
       }  
   }
@@ -65,20 +89,12 @@ export class UserprofileTeamsComponent implements OnInit {
   getTeamId(teamid){
     this.postservice.TeamProfile("99999",teamid).subscribe(
       res=>{
-        // console.log(res["Details"].CaptainUserId);
-
         if(this.paramuserid==res["Details"].CaptainUserId){
-          console.log("working");
-          
-        
         }
         else{
-          console.log("not working");
           return false;
         }
-    
-      }
-    );
+      });
 
   }
 
