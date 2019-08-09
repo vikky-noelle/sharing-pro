@@ -58,7 +58,7 @@
                   <div>
                     <img src="assets/images/age.png">
                   </div>
-                  <h2>{{DateofBirth}}</h2>
+                  <h2>{{DateofBirth}} Years</h2>
               </div>
               <div class="basic-info-tab">
                   <div>
@@ -66,13 +66,13 @@
                   </div>
                   <h2>{{Gender}}</h2>
               </div>
-              <div class="basic-info-tab">
+              <div class="basic-info-tab" *ngIf="showcontent">
                 <div>
                   <img src="assets/images/study.png">
                 </div>
                 <h2 class="study">{{TypeofInstn}}</h2>
               </div>
-              <div class="basic-info-tab">
+              <div class="basic-info-tab" *ngIf="showcontent">
                   <div>
                     <img src="assets/images/home.png">
                   </div>
@@ -99,7 +99,7 @@
 </div>
 <div class="media-crousal" #widgets>
   <!-- <div *ngFor="let data of mediaArr" #widgetsContent> -->
-    <img class="single-image"  src="{{data.Path}}" alt="" onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'">
+    <img class="single-image"  src="{{crousalsingleimage}}" alt="" onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'">
   <!-- </div>  -->
   <div class="close">
       <img (click)="close()" src="/assets/images/sportsocialprofileclose.png">

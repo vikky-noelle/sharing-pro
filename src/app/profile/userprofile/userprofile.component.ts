@@ -21,6 +21,7 @@ export class UserprofileComponent implements OnInit {
   Fancount;
   FollowingCount;            
   City;
+  showcontent:boolean=true;
   Academy;
   TypeofInstn;
   InstnName;
@@ -120,6 +121,18 @@ export class UserprofileComponent implements OnInit {
             this.Academy=res["UserData"][i].Academy,
             this.TypeofInstn=this.Instutionresult,
             this.InstnName=res["UserData"][i].InstnName
+            console.log("Institute:",this.TypeofInstn);
+            if(this.City=="NULL"){
+              this.showcontent=false;
+            }
+
+            if(this.TypeofInstn==undefined || this.TypeofInstn== null || this.TypeofInstn=="NULL"){
+              this.showcontent=false;
+            }
+            
+            if(this.Gender==undefined || this.Gender== null || this.Gender=="NULL"){
+              this.showcontent=false;
+            }
         }
 
         /*End of Userdata loop */
@@ -160,6 +173,7 @@ export class UserprofileComponent implements OnInit {
       // i=0;
     this.postservice.UsersParticularMatches(this.userid,this.userid,pageno,date).subscribe(
       (res)=>{
+
         // console.log(res["Past"].length);    
           for(var j=0;j<res["Past"].length;j++){
             var agebracket= res["Past"][j].ageBracket;
@@ -290,7 +304,7 @@ export class UserprofileComponent implements OnInit {
               matchGender:res["Upcoming"][j].matchGender,
               profile_Photo_path:res["Upcoming"][j].profile_Photo_path,
             });
-            console.log("this upcoming",this.upcomingarray);
+            // console.log("this upcoming",this.upcomingarray);
           }
       }
     )

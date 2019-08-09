@@ -294,7 +294,9 @@
    }
    .news-tab>div{
        height: 130px;
-       cursor: pointer;
+       display: inline-flex;
+       top: 0%;
+       vertical-align: top !important;
     }
     .news-tab img{
        margin-top: 25px;
@@ -302,13 +304,12 @@
        width: 30%;
        background-color: white;
        float: left;
-       cursor: pointer;
     }
     .news-tab-info{
-        cursor: pointer;
+        width: 65%;
     }
     .news-tab-info p{
-        margin-top: 40px;
+        margin-top: 25px;
     }
 }
 @media screen and (min-width: 700px) and (max-width: 1000px){

@@ -39,7 +39,7 @@ export class UserprofileTeamsComponent implements OnInit {
               var status;
               status = this.getTeamId(this.teamId);
               var agebracket= data["RandomTeams"][i].TeamCategory;
-              console.log("thi sia is age brancter",agebracket);
+              // console.log("thi sia is age brancter",agebracket);
                     if(agebracket == 0){
                       this.Age="Under 13";
                     }
