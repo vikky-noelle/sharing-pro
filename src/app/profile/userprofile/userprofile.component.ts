@@ -298,7 +298,7 @@ export class UserprofileComponent implements OnInit {
   }
   imageopen(url){
     this.crousalsingleimage = url;
-    console.log(url);
+    console.log("url of image :",url);
     this.showcrousal[0].style.display="block";
     this.crousal[0].style.display="none";
     this.leftarrow[0].style.display="none";
@@ -333,8 +333,6 @@ export class UserprofileComponent implements OnInit {
     this.widgets.nativeElement.scrollLeft -=this.widgetsContent.nativeElement.clientWidth;
   }
   rscroll(){
-    console.log("working");
-
     this.widgets.nativeElement.scrollLeft +=this.widgetsContent.nativeElement.clientWidth;
   }
   close(){

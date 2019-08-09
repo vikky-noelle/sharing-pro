@@ -250,8 +250,6 @@ export class OpenHomeMatchCardComponent implements OnInit {
             var slicetoString = split.slice(4);
             var convertintostr = new String(slicetoString);
             var gethourMin  = convertintostr.substring(0,5);
-
-            console.log("this si tiem ",gethourMin);
             this.MatchCommnets.push({
               eventid:data["Match Talk"][j].eventid,
               UserId:data["Match Talk"][j].UserId,
