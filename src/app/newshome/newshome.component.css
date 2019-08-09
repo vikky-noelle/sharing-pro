@@ -305,10 +305,11 @@
        cursor: pointer;
     }
     .news-tab-info{
+        width: 65%;
         cursor: pointer;
     }
     .news-tab-info p{
-        margin-top: 40px;
+        margin-top: 30px;
     }
 }
 @media screen and (min-width: 700px) and (max-width: 1000px){

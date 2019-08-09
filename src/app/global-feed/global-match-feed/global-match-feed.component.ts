@@ -136,7 +136,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
               this.startTime="Score Awaited";
               finished= false;
             } 
-            if(data["Feed"][i].Team2name === null){
+            if(data["Feed"][i].Team2name.toLowerCase() === "yet to join"){
               this.startTime="Match Abandoned";
               finished= false;
             }
@@ -326,7 +326,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
               this.startTime="Score Awaited";
               finished= false;
             } 
-            if(data["Feed"][i].Team2name === null){
+            if(data["Feed"][i].Team2name.toLowerCase() === "yet to join"){
               this.startTime="Match Abandoned";
               finished= false;
             }
