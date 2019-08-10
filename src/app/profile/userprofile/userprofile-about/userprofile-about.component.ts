@@ -46,6 +46,12 @@ export class UserprofileAboutComponent implements OnInit {
                           answer = res["UserInterestDetails"][k].Answer;
                         
                           if(answer.length==0){
+                            if(GameInterestgamename != tempname){
+                              this.temparray2.push({
+                                gamename: GameInterestgamename
+                              });
+                              count=count+1;
+                            }
                             break;
                           }
                           if(GameInterestgamename != tempname){
@@ -66,6 +72,16 @@ export class UserprofileAboutComponent implements OnInit {
                           break;
                         }
                       }
+                  }
+                  if(count2 === 0){
+                    var x =[];
+                    x.push({
+                      questiontext: "No Skills Yet"
+                    });
+                    this.array.push({
+                      gamename: this.temparray2[count].gamename.toUpperCase(),
+                      gamedetails: x
+                    });
                   }
                   if(count2!=0){
                     this.array.push({
