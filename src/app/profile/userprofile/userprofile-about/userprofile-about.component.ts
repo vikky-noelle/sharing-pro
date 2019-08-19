@@ -72,7 +72,6 @@ export class UserprofileAboutComponent implements OnInit {
                       gamename: this.temparray2[count].gamename.toUpperCase(),
                       gamedetails: this.temparray
                     });
-                    console.log(this.array);
 
                   }
                   else{

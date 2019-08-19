@@ -50,13 +50,14 @@ export class UserprofileComponent implements OnInit {
      }); 
      }
 
-    leftarrow = document.getElementsByClassName('larrow') as HTMLCollectionOf<HTMLElement>;
+  leftarrow = document.getElementsByClassName('larrow') as HTMLCollectionOf<HTMLElement>;
   rightarrow = document.getElementsByClassName('rarrow') as HTMLCollectionOf<HTMLElement>;
   showcrousal = document.getElementsByClassName('media-crousal') as HTMLCollectionOf<HTMLElement>;
   singleimage = document.getElementsByClassName('single-image') as HTMLCollectionOf<HTMLElement>;
   crousal = document.getElementsByClassName('crousal-element') as HTMLCollectionOf<HTMLElement>;
   
   date = new Date();
+  timestamp = Math.floor(Date.now()/1000);
   @Input() userid;
   @Input() pageNo;
   @Input() public array=[];
@@ -65,6 +66,8 @@ export class UserprofileComponent implements OnInit {
   @ViewChild('widgetsContent') widgetsContent:ElementRef;
 
   mediaArr=[];
+  Fans=[];
+  userrefId;
   Instutionresult;
   show:boolean=false;
 
@@ -73,9 +76,12 @@ export class UserprofileComponent implements OnInit {
       this.activatedroute.params.subscribe(
         (param)=>{
           this.userid= param.MatchStarterId;
+          console.log("this is userid:",this.userid);
         }
       );
   }
+
+  
 
   getUserDetails(){
     this.mediaArr=[];
@@ -90,6 +96,8 @@ export class UserprofileComponent implements OnInit {
 
           /** Birthdate calculate*/
           var bdate= res["UserData"][i].DateofBirth;
+         this.userrefId =res["UserData"][i].User_id;
+          this.getuserFans(this.userrefId);
           var bdateSubStr = new String(bdate).slice(0,4);
           var bdateIntiger =  parseInt(bdateSubStr)-1970;
           let timeDiff = Math.abs(Date.now() - bdateIntiger);
@@ -121,7 +129,6 @@ export class UserprofileComponent implements OnInit {
             this.Academy=res["UserData"][i].Academy,
             this.TypeofInstn=this.Instutionresult,
             this.InstnName=res["UserData"][i].InstnName
-            console.log("Institute:",this.TypeofInstn);
             if(this.City=="NULL"){
               this.showcontent=false;
             }
@@ -154,6 +161,22 @@ export class UserprofileComponent implements OnInit {
         }
       });
   }
+  getuserFans(profile_id){
+    this.userrefId=profile_id;
+    this.pageNo;
+    console.log("userref id:",profile_id);
+
+    this.postservice.getUserProfileFans(this.userid,profile_id,1,this.timestamp)
+    .subscribe((res:Response)=>{
+     
+      for(const i in res){
+        this.Fans.push({
+          user_id:res[i].user_id
+        });
+      }
+      console.log("this is reposne of get userfan API:",res);
+    })
+  }
   openimage(){
     console.log("working");
   }
@@ -161,6 +184,7 @@ export class UserprofileComponent implements OnInit {
     this.getUserId();
     this.getUserDetails();
     this.getpastmatches();
+    // this.getuserFans(this.userid);
     window.addEventListener('scroll', this.scroll, true);
     
   }
@@ -312,7 +336,6 @@ export class UserprofileComponent implements OnInit {
   }
   imageopen(url){
     this.crousalsingleimage = url;
-    console.log("url of image :",url);
     this.showcrousal[0].style.display="block";
     this.crousal[0].style.display="none";
     this.leftarrow[0].style.display="none";

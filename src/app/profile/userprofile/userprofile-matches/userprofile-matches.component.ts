@@ -29,7 +29,6 @@ export class UserprofileMatchesComponent implements OnInit {
       //   this.result="No Matches";
         
       // }
-      console.log(this.array);
     }
   ngOnInit() {
     this.getUserId();

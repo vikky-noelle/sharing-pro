@@ -3,9 +3,6 @@
     float: right;
     width: 84%;
 }
-
-
-
 .side-nav{
     width: 25%;
     margin-top: 3.5%;
@@ -15,17 +12,18 @@
 }
 .newsbody{  
     float: right;
-    padding: 20px;
+    padding: 15px;
     margin-right: 5%;
     width: 74%;
 }
 .news-header{
     padding-bottom: 5px;
+    vertical-align: top;
     overflow: hidden;
     border-bottom: 2px solid rgb(216, 216, 216);
 }
 .news-header h1,h2{
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .news-header h2{
@@ -43,12 +41,12 @@
 .share{
     width: 35%;
     float: right;
-    /* border: 1px solid red; */
 }
 .share>a>img{
+    float: right;
     padding-right:10%;
-    width: 30px;
-    height: 30px;
+    width: 27px;
+    height: 27px;
     filter: rgb(218, 215, 215);  /* IE5+ */
     -webkit-filter: grayscale(1);
     cursor: pointer;
@@ -337,15 +335,28 @@
     .main-body{
         display: none;
     }
+    .newsbody{  
+        padding-top: 3%;
+        border: 4px solid red;
+    }
+    .news-header h1,h2{
+        padding-top: 44px;
+    }
     .mobile-main{
         display: block;
     }
     .share{
+        /* border: 1px solid red; */
         margin-bottom: 3%;
         margin-top: 2%;
         clear: both;
         width: 100%;
     }
+    .share>a{
+        margin-left: 6%;
+        padding-right: 0%;
+    }
+   
     .back-footer{
         width: 100%;
     }

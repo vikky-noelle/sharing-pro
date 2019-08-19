@@ -289,12 +289,12 @@ export class OpenHomeMatchCardComponent implements OnInit {
               } 
             }
           var temp;
-          for(var j=0;j<data["Moments"].length;j++){
-            if(data["Moments"][i].likecount==null){
+          for(var j=0;j<data["Moments"].length;j++){            
+            if(data["Moments"][j].likecount==null){
               temp = 0;
             }
             else{
-              temp = data["Moments"][i].likecount;
+              temp = data["Moments"][j].likecount;
             }
             this.MatchMoments.push({
               id: j,

@@ -177,6 +177,7 @@ export class NewspageComponent implements OnInit{
             }
           }
       });
+      this.topscroll();
   }
     opennews(data){
       var id = data.id;
