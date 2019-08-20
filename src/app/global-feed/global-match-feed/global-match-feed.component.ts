@@ -4,7 +4,6 @@ import { Component, OnInit, ViewEncapsulation, Renderer2, HostListener, OnDestro
 import { Masonry } from 'ng-masonry-grid';
 import { ISubscription, Subscription } from 'rxjs/Subscription';
 import { Title, Meta } from '@angular/platform-browser';
-import { Http } from '@angular/http';
 import { Observable } from 'rxjs';
 import { TimeService } from '../../shared/services/time.service';
 import { Router, ActivatedRoute } from '@angular/router';
@@ -271,7 +270,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
           var timrstampstr = new String(timestamp).slice(16,21);
           var timrstampstr2 = new String(timestamp).slice(0,10);
           timrstampstr = timrstampstr2.slice(0,3) +" "+ timrstampstr;
-          timrstampstr2 = timrstampstr2.slice(3)
+          timrstampstr2 = timrstampstr2.slice(3);
       
         var tempimg;
               if(data["Feed"][i].Team2name === null){
@@ -378,7 +377,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
               Team2Name:data["Feed"][i].Team2name,
               Team2Pic:tempimg,
               scoreTeam1:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?'':data["Feed"][i].scoreTeam1 + ' - ',
-              scoreTeam2:data["Feed"][i].scoreTeam2==null || data["Feed"][i].scoreTeam1==null?false+'':data["Feed"][i].scoreTeam2,
+              scoreTeam2:data["Feed"][i].scoreTeam2==null || data["Feed"][i].scoreTeam1==null?'':data["Feed"][i].scoreTeam2,
               gender:temp,
               Profile_Photo:data["Feed"][i].Profile_Photo,
               city:data["Feed"][i].City,

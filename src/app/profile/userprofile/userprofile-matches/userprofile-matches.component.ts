@@ -13,14 +13,22 @@ export class UserprofileMatchesComponent implements OnInit {
   date= Math.floor(Date.now() / 1000);
   pageno;
   array=[];
+  show:boolean=true;
+  result;
   constructor(
     private userprofilecomponent:UserprofileComponent) { }
 
     getUserId(){
       this.paramUserId=this.userprofilecomponent.userid;
       this.array=this.userprofilecomponent.array;
-      
-      console.log(this.array);
+    
+      // if(this.array[0]!=null){
+      //   this.result="Finished Matches";
+      // }
+      // else{
+      //   this.result="No Matches";
+        
+      // }
     }
   ngOnInit() {
     this.getUserId();

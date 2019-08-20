@@ -137,7 +137,7 @@ export class NewspageComponent implements OnInit{
            for (const i in body.news) {
             this.j=this.j+1;
             x = this.time.ExactDate(Date.parse(body.news[i].insertedDate)/1000);
-            x = x.replace(/T/g," at "); 
+            // x = x.replace(/T/g," at "); 
             if(this.j === 0){
               this.tempnews.push({
                 recentnews: false,
@@ -177,6 +177,7 @@ export class NewspageComponent implements OnInit{
             }
           }
       });
+      this.topscroll();
   }
     opennews(data){
       var id = data.id;
@@ -208,6 +209,7 @@ export class NewspageComponent implements OnInit{
             image: this.tempnews[0].image,
             desc: this.tempnews[0].desc
           });
+          console.log("this is tiemstamp:",this.tempnews[0].timestamp);
           this.news[this.news.length-1].id=this.news.length;
           for(var i=1; i<this.news.length;i++){
             this.news[i].id=this.news[i].id-1;
