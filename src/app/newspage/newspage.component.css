@@ -456,16 +456,50 @@
     }
     .share{
         margin-bottom: 3%;
+        margin-top: 3%;
         clear: both;
         width: 100%;
     }
     .home-body{
+        /* border: 2px solid red; */
         margin-left: 0%;
         width: 100%;
     }
     .crousal-element{
         height: 27vh;
    }
+   .morecard>h1{
+    font-size: 1em;
+    font-weight: bold;
+    width: 55%;
+    padding: 2px;
+}
+   .morecard>p{
+    font-size: .9em;
+    font-weight: lighter;
+    float: right;
+    width: 55%;
+    padding: 2px;
+    margin-bottom: 10px;
+   }
+   .morecard>b{
+       margin-left: 2%;
+       font-size: .9em;
+       font-weight: lighter;
+       margin-left: 4%;
+   }
+   .head{
+        width: 55%;
+        padding: 2px;
+        font-size: .9em;
+       color: #000000;
+   }
+   .para{
+       font-size: .7em;
+   }
+   .back-footer{
+    width: 100%;
+}
   
 }
 

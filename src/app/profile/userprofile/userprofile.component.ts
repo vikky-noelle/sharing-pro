@@ -170,7 +170,10 @@ export class UserprofileComponent implements OnInit {
      
       for(const i in res){
         this.Fans.push({
-          user_id:res[i].user_id
+          user_id:res[i].user_id,
+          user_name:res[i].user_name,
+          UniqueName:res[i].UniqueName,
+          profile_image:res[i].profile_image
         });
       }
       console.log("this is reposne of get userfan API:",res);
