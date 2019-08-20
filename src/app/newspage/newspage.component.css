@@ -236,7 +236,6 @@
 .morecard img{
     border:1px solid silver;
     float: left;
-
     border-radius: 5px; 
     height: 100px;
     width: 40%;
@@ -417,6 +416,35 @@
    .dnews div h1{
        font-size: 0.8em;
    }
+   
+   .morecard>h1{
+       font-size: .9em;
+       font-weight: bold;
+       width: 55%;
+       padding: 2px;
+   }
+   .morecard>p{
+    font-size: .7em;
+    font-weight: lighter;
+    float: right;
+    width: 55%;
+    padding: 2px;
+   }
+   .morecard>b{
+       font-size: .7em;
+       font-weight: lighter;
+       margin-left: 4%;
+   }
+   .head{
+        width: 55%;
+        padding: 2px;
+        font-size: .9em;
+       color: #000000;
+   }
+   .para{
+       font-size: .7em;
+   }
+  
   
 }
 @media screen and (min-width: 700px) and (max-width: 1000px){
