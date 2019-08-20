@@ -134,7 +134,7 @@ export class HomeMatchFeedComponent{
                           this.startTime="Score Awaited";
                           finished= false;
                         } 
-                        if(data["Feed"][i].Team2name === "Yet to Join" ){
+                        if(data["Feed"][i].Team2name.toLowerCase() === "yet to join"){
                           this.startTime="Match Abandoned";
                           finished= false;
                         }
@@ -146,6 +146,7 @@ export class HomeMatchFeedComponent{
                         }
                       }
                     }
+                   
        
                     if(checkstat === checkstat2 || checkstat < checkstat2){
                       this.startTime="Upcoming";

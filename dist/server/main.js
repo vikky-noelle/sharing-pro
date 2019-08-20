@@ -4597,7 +4597,7 @@ var GlobalMatchFeedComponent = /** @class */ (function () {
                                     _this.startTime = "Score Awaited";
                                     finished = false;
                                 }
-                                if (data["Feed"][i].Team2name === null) {
+                                if (data["Feed"][i].Team2name.toLowerCase() === "yet to join") {
                                     _this.startTime = "Match Abandoned";
                                     finished = false;
                                 }
@@ -4782,7 +4782,7 @@ var GlobalMatchFeedComponent = /** @class */ (function () {
                                 _this.startTime = "Score Awaited";
                                 finished = false;
                             }
-                            if (data["Feed"][i_1].Team2name === null) {
+                            if (data["Feed"][i_1].Team2name.toLowerCase() === "yet to join") {
                                 _this.startTime = "Match Abandoned";
                                 finished = false;
                             }
@@ -5447,7 +5447,7 @@ var HomeMatchFeedComponent = /** @class */ (function () {
                                     _this.startTime = "Score Awaited";
                                     finished = false;
                                 }
-                                if (data["Feed"][i].Team2name === "Yet to Join") {
+                                if (data["Feed"][i].Team2name.toLowerCase() === "yet to join") {
                                     _this.startTime = "Match Abandoned";
                                     finished = false;
                                 }
@@ -10767,6 +10767,12 @@ var UserprofileAboutComponent = /** @class */ (function () {
                                 if (Gamesquestionid == res["UserInterestDetails"][k].QuestionId) {
                                     answer = res["UserInterestDetails"][k].Answer;
                                     if (answer.length == 0) {
+                                        if (GameInterestgamename != tempname) {
+                                            _this.temparray2.push({
+                                                gamename: GameInterestgamename
+                                            });
+                                            count = count + 1;
+                                        }
                                         break;
                                     }
                                     if (GameInterestgamename != tempname) {
@@ -10787,6 +10793,16 @@ var UserprofileAboutComponent = /** @class */ (function () {
                                     break;
                                 }
                             }
+                        }
+                        if (count2 === 0) {
+                            var x = [];
+                            x.push({
+                                questiontext: "No Skills Yet"
+                            });
+                            _this.array.push({
+                                gamename: _this.temparray2[count].gamename.toUpperCase(),
+                                gamedetails: x
+                            });
                         }
                         if (count2 != 0) {
                             _this.array.push({
