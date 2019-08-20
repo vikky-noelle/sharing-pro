@@ -8,20 +8,20 @@
 <div *ngIf="crousallist.length > 0" class="home-body">
   <fieldset class="outer-body">
     <legend>Latest News</legend>
-  <div class="crousal" #widgets>
-    <div *ngFor="let data of crousallist" 
-    class="crousal-element" #widgetsContent
-    (click)="openspecificnews(data);topscroll();">
-    <img  *ngIf="data.source === 'Football Italia'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfi.png'">
-    <img  *ngIf="data.source === 'The Hindu'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialth.png'">
-    <img  *ngIf="data.source === 'The Times of India'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialtoi.png'">
-    <img  *ngIf="data.source === 'ESPN Cric Info'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialespn.jpg'">
-    <img  *ngIf="data.source === 'Fox Sport'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfox-sport.png'">
-  <div class="crousal-heading">
-        <h1>{{data.title}}</h1>
-        <p>{{data.source}}</p>
-      </div>
-    </div>  
+     <div class="crousal" #widgets>
+      <div *ngFor="let data of crousallist" 
+        class="crousal-element" #widgetsContent
+        (click)="openspecificnews(data);topscroll();">
+        <img  *ngIf="data.source === 'Football Italia'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfi.png'">
+        <img  *ngIf="data.source === 'The Hindu'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialth.png'">
+        <img  *ngIf="data.source === 'The Times of India'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialtoi.png'">
+        <img  *ngIf="data.source === 'ESPN Cric Info'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialespn.jpg'">
+        <img  *ngIf="data.source === 'Fox Sport'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfox-sport.png'">
+         <div class="crousal-heading">
+          <h1>{{data.title}}</h1>
+          <p>{{data.source}}</p>
+         </div>
+      </div>  
   </div>
   <div class="crousal-side-bar">
     <h1>Most Popular</h1>
@@ -55,7 +55,8 @@
         <div (click)="openspecificnews(feed);topscroll();" *ngFor="let feed of data.news">
         <img src="{{feed.image}}" alt="">
         <div class="news-tab-info">
-          <h1>{{feed.title|slice:0:68}}...</h1>
+          <h1>{{feed.title|slice:0:65}}...</h1>
+          <h6>{{feed.desc |slice:0:70}}...</h6>
           <p>{{feed.timestamp}}</p>
         </div>
       </div>

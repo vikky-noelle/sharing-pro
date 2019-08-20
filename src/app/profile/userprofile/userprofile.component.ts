@@ -115,7 +115,6 @@ export class UserprofileComponent implements OnInit {
             this.Instutionresult = "Working at " + res["UserData"][i].InstnName;
           }
 
-  
             this.FirstName=res["UserData"][i].FirstName,
             this.LastName=res["UserData"][i].LastName,
             this.UniqueName=res["UserData"][i].UniqueName,
