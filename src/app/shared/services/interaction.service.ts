@@ -18,7 +18,6 @@ export class InteractionService {
        this._listners.next(array);
     }
     routechangefunction(arr: String){
-        console.log("route changing"+arr);
         this._response.next(arr);
     }
 

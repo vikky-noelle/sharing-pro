@@ -4,9 +4,10 @@
       <div class="container" *ngFor="let data of array">
         <img src={{data.profile_image}} onerror="this.src='assets/images/user.png'">
         <p>{{data.user_name}}</p>
-          <div class="viewprofile">
-            <a (click)="changeroute(data.user_id)">View Profile >></a>
-          </div>
+        <h6>{{data.City}} <a (click)="changeroute(data.user_id)">View Profile ></a></h6>
+          <!-- <div class="viewprofile">
+            
+          </div> -->
       </div>
   <div>
   </div>

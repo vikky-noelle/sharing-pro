@@ -3,6 +3,7 @@ import { PostService } from '../../shared/services/post.service';
 import { LocationService } from '../../shared/services/location.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { TimeService } from '../../shared/services/time.service';
+import { InteractionService } from '../../shared/services/interaction.service';
 
 @Component({
   selector: 'sports-social-open-home-match-card',
@@ -120,8 +121,14 @@ export class OpenHomeMatchCardComponent implements OnInit {
   constructor(
     private postservice:PostService,
     private activatedroute:ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private interactionservice:InteractionService
   ) {}
+   
+  changeroute(id){
+      this.interactionservice.routechangefunction(id);
+      this.router.navigate(['/userprofile',id,'matches']);
+  }
 
   getSingleMatchFeed(){
       this.postservice.OpenOneMatchCard(this.eventid).subscribe(
@@ -132,7 +139,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
               var tempimg;
               if(data["Feed"][i].Team2name === null){
                 tempimg = "/assets/images/sportsocialteamlogo.png";
-                data["Feed"][i].Team2name = "None";
+                data["Feed"][i].Team2name = "Yet to Join";
               }
               else{
                 tempimg = data["Feed"][i].Team2Pic;
@@ -153,6 +160,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
                   GameId:data["Feed"][i].GameId,
                   Event_Image:data["Feed"][i].Event_Image,
                   MatchStarterName:data["Feed"][i].MatchStarterName,
+                  MatchStarterId:data["Feed"][i].MatchStarterId,
                   MatchStarterPhoto:data["Feed"][i].MatchStarterPhoto,
                   MatchStarterUniqueName:data["Feed"][i].MatchStarterUniqueName==null?"":"@"+data["Feed"][i].MatchStarterUniqueName,
                   Team1name:data["Feed"][i].Team1name,
@@ -242,8 +250,6 @@ export class OpenHomeMatchCardComponent implements OnInit {
             var slicetoString = split.slice(4);
             var convertintostr = new String(slicetoString);
             var gethourMin  = convertintostr.substring(0,5);
-
-            console.log("this si tiem ",gethourMin);
             this.MatchCommnets.push({
               eventid:data["Match Talk"][j].eventid,
               UserId:data["Match Talk"][j].UserId,
@@ -283,12 +289,12 @@ export class OpenHomeMatchCardComponent implements OnInit {
               } 
             }
           var temp;
-          for(var j=0;j<data["Moments"].length;j++){
-            if(data["Moments"][i].likecount==null){
+          for(var j=0;j<data["Moments"].length;j++){            
+            if(data["Moments"][j].likecount==null){
               temp = 0;
             }
             else{
-              temp = data["Moments"][i].likecount;
+              temp = data["Moments"][j].likecount;
             }
             this.MatchMoments.push({
               id: j,

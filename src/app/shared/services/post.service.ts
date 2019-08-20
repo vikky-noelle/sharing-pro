@@ -3,6 +3,13 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class PostService {
+
+  userprofileFans=[{
+    userid:Number,
+    profileid:Number,
+    page:Number,
+    timestamp:Number
+  }]
   upcomingmatchesobj={
     venueid: String,
     userid: String,
@@ -133,7 +140,7 @@ export class PostService {
       game: game
     };
     console.log(this.newsFeedRequestObject);
-    return this.http.post('https://atg.sportsocial.in/news', this.newsFeedRequestObject);
+    return this.http.post('https://testnews.sportsocial.in/api/news/', this.newsFeedRequestObject);
   }
 
   blogData(i: number, s: string) {
@@ -142,7 +149,7 @@ export class PostService {
       page: i
     };
    // console.log(this.Page);
-    return this.http.post('https://prod.chaseyoursport.com/loadblogdata', this.blogRequestObject);
+    return this.http.post('https://test.chaseyoursport.com/loadblogdata', this.blogRequestObject);
   }
 
   globalMatchFeed(lat, long, page, gameid) {
@@ -186,7 +193,7 @@ export class PostService {
   }
 
   singleNewsData(id) {
-    return this.http.post('https://atg.sportsocial.in/newsById', { id: id} );
+    return this.http.post('https://testnews.sportsocial.in/api/newsById', { id: id} );
   }
 
   insertTopics(topic) {
@@ -205,7 +212,7 @@ export class PostService {
       blogid: id
     };
    // console.log(this.BlogId);
-    return this.http.post('https://prod.chaseyoursport.com/loadSingleBlogDataSmallDesc', this.BlogId)
+    return this.http.post('https://test.chaseyoursport.com/loadSingleBlogDataSmallDesc', this.BlogId)
     .map((response: Response) => response.json());
   }
 
@@ -311,5 +318,15 @@ export class PostService {
       timestamp: timestamp
     };
     return this.http.post('https://test.sportsocial.in/poc/getVenueUpcomingMatches',this.upcomingmatchesobj);
+  }
+
+  getUserProfileFans(userid,profileid,page,timestamp){
+    this.userprofileFans=[{
+      userid:userid,
+      profileid:profileid,
+      page:page,
+      timestamp:timestamp
+    }]
+    return this.http.post('https://test.sportsocial.in/poc/getFansNew',this.userprofileFans);
   }
 }

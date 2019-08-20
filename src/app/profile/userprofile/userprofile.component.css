@@ -59,6 +59,7 @@
     margin-left: 5%;
     letter-spacing: 0.5px;
     margin-top: 25px;
+    /* border: 1px solid red; */
 }
 .name h2{
     font-size: 1.2em;
@@ -205,6 +206,7 @@
         position: relative;
         width: 65%;
         margin-left: 10%;
+        border: 1px solid red;
     }
     .followers h1{
         font-size: 1.2em;
@@ -414,6 +416,7 @@
         /* for header that show after scroll*/
         .background-img{
             box-shadow: 2px 2px 2px #c9c7c7;
+            margin: 0% 0% 0% 0%;
         }
         .sub-header{
             height: 60px;
@@ -547,19 +550,18 @@
         }
         .profile-info{
             /* position: absolute; */
-            margin-top: -30px;
+            margin-top: -45px;
             height: 80px;
             width: 100%;
             margin-left: 0%;
             box-shadow: none !important;
-            /* border: 1px solid blue; */
+            border: 1px solid blue;
         }
         .profile-info>img{
             height: 20px;
             width: 20px;
             margin: 0;
             top: 0%;
-            /* float: left; */
             margin-top: -65px;
             clear: both;
             margin-right: 30%;
@@ -568,11 +570,15 @@
             clear: both !important;
             text-align: center;
             align-content: center;
+            vertical-align: middle !important;
             width: 30%;
-            margin-left: 34%;
+            margin-left: 36%;
             margin-top: 0%;
+            /* border: 1px solid blue; */
         }
         .name>h1{
+            padding-right: 2%;
+            margin-right: 4%;
             font-size: 1.2em;
         }
         .name>h2{
@@ -582,7 +588,7 @@
         .follow{
             clear: both !important;
             margin-top: 7px;
-            margin-right: 40%;
+            margin-right: 37%;
             width: 20%;
             height: 20px;
             border-radius: 4px;
@@ -604,6 +610,7 @@
         }
         .background-img{
             box-shadow: 2px 2px 2px #c9c7c7;
+            margin: 0% 0% 0% 0%;
         }
         .profile-pic{
             height: 35px;
@@ -732,7 +739,7 @@
         }
         .profile-info{
             /* position: absolute; */
-            margin-top: -30px;
+            margin-top: -45px;
             height: 80px;
             width: 100%;
             margin-left: 0%;
@@ -754,7 +761,7 @@
             text-align: center;
             align-content: center;
             width: 30%;
-            margin-left: 34%;
+            margin-left: 36%;
             margin-top: 0%;
         }
         .name>h1{
@@ -767,7 +774,7 @@
         .follow{
             clear: both !important;
             margin-top: 7px;
-            margin-right: 40%;
+            margin-right: 37%;
             width: 20%;
             height: 20px;
             border-radius: 4px;

@@ -58,7 +58,7 @@
                   <div>
                     <img src="assets/images/age.png">
                   </div>
-                  <h2>{{DateofBirth}}</h2>
+                  <h2>{{DateofBirth}} Years</h2>
               </div>
               <div class="basic-info-tab">
                   <div>
@@ -66,13 +66,13 @@
                   </div>
                   <h2>{{Gender}}</h2>
               </div>
-              <div class="basic-info-tab">
+              <div class="basic-info-tab" *ngIf="showcontent">
                 <div>
                   <img src="assets/images/study.png">
                 </div>
                 <h2 class="study">{{TypeofInstn}}</h2>
               </div>
-              <div class="basic-info-tab">
+              <div class="basic-info-tab" *ngIf="showcontent">
                   <div>
                     <img src="assets/images/home.png">
                   </div>
@@ -86,7 +86,7 @@
             <a (click)="opencrousal()"><p>See all</p></a>
           </div>
           <div class="mediabox" *ngFor="let icon of mediaArr">
-            <img (click)="imageopen(icon.Path);" src={{icon.Path}}>
+            <img (click)="imageopen(icon.Path);" src={{icon.Path}} onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'">
           </div>
         </div>
     </div>
@@ -97,9 +97,11 @@
           <a routerLink="/userprofile/{{userid}}/playmates" routerLinkActive="active">Playmates</a>
       </div>
 </div>
-<div class="media-crousal">
-  <img class="single-image" src="{{crousalsingleimage}}" alt="">
-    <div class="close">
+<div class="media-crousal" #widgets>
+  <!-- <div *ngFor="let data of mediaArr" #widgetsContent> -->
+    <img class="single-image"  src="{{crousalsingleimage}}" alt="" onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'">
+  <!-- </div>  -->
+  <div class="close">
       <img (click)="close()" src="/assets/images/sportsocialprofileclose.png">
     </div>
     <div class="larrow">

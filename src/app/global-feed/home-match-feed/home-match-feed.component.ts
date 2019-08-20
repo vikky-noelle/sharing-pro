@@ -134,7 +134,7 @@ export class HomeMatchFeedComponent{
                           this.startTime="Score Awaited";
                           finished= false;
                         } 
-                        if(data["Feed"][i].Team2name === null){
+                        if(data["Feed"][i].Team2name === "Yet to Join" ){
                           this.startTime="Match Abandoned";
                           finished= false;
                         }

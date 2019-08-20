@@ -9,8 +9,9 @@
       <div class="result">
         <p>{{startdatetime}} 
            <img *ngIf="!finished" src="assets/images/sportsocialfinalicon.jpeg">
-           <img *ngIf="finished" src="assets/images/sportsocialgreendot.png"><br>
-           <span> By:{{matchstartername}}</span>
+           <!-- <img *ngIf="finished" src="assets/images/sportsocialgreendot.png"><br> -->
+           <img *ngIf="finished" src="assets/images/sportsocialRedDot.jpg"><br>
+           <span> By:@{{matchstartername}}</span>
         </p>
       </div> 
     </div>
@@ -22,11 +23,10 @@
               </div>
 
               <div class="vs">
-                <b style="font-size: 0.9em;">{{scoreTeam1}}</b>
-                <b *ngIf="scoreTeam2" style="font-size: 0.9em; font-weight: 500;">{{scoreTeam2}}</b>
-                <b *ngIf="!scoreTeam2" style="font-size: 0.9em; font-weight: 500;"><span>{{Ontime}}</span></b>
-                <br>
-                <b *ngIf="!scoreTeam2" style="font-size: 0.8em; font-weight: lighter;color: #444444;"><span>{{Ondate}}</span></b>
+                <b style="font-size: 0.7em;">{{scoreTeam1}}</b>
+                <b *ngIf="scoreTeam2"  style="font-size: 0.7em; ">{{scoreTeam2}}</b>
+                <b *ngIf="!scoreTeam2" style="font-weight: 500;"><span>{{Ontime}}</span></b>
+                <p *ngIf="!scoreTeam2" style="font-size: 0.7em; font-weight: lighter;color: #444444;"><span>{{Ondate}}</span></p>
               </div>
 
                <div class="team2">

@@ -16,7 +16,7 @@
 .teams{
     border: 1px solid #ababab;
     width: 32%;
-    height: 320px;
+    height: 350px;
     cursor: pointer;
 }
 .teams:hover{
@@ -103,6 +103,31 @@
 .backfooter{
     width: 75%;
     float: right;
+}
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: #ebe8e8;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    margin: 0%;
+    bottom: 2%;
+}
+.footer>p,h6{
+    margin: 1.5% 0% 1% 0%;
+    text-align: center;
+}
+.footer>p{
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    font-family:'Roboto',sans-serif;
+}
+.footer>h6{
+    font-size: .9em;
+    color: grey;
+    font-family:'Roboto',sans-serif;
 }
 
 @media screen and (min-width:200px) and (max-width:360px){
