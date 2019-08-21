@@ -5,11 +5,45 @@
     <h1 style="color: white;">{{data.Path}}</h1>
   </div>
 </div> -->
+<div class="fanslist">
+    <img (click)="closefan()" class="closelist" src="assets/images/close.png" alt="">
+  <div class="list">
+    <div *ngFor="let data of Fans" class="listItem">
+      <div class="Pimage">
+          <img src={{data.profile_image}} onerror="this.src='assets/images/user.png'">
+      </div>
+      <div class="fansname">
+          <p>{{data.user_name}}</p>
+          <h6>{{data.UniqueName}}</h6>
+      </div>
+      <div class="btn">
+        <button (click)="openAppDownloadPopup()">Follow</button>
+     </div>
+    </div>
+  </div>
+</div>
+
+<div class="followerlist">
+    <img (click)="closefollower()" class="closelist" src="assets/images/close.png" alt="">
+    <div class="list">
+        <div *ngFor="let data of Followers" class="listItem">
+            <div class="Pimage">
+                <img src={{data.profile_image}} onerror="this.src='assets/images/user.png'">
+            </div>
+            <div class="fansname">
+                <p>{{data.user_name}}</p>
+                <h6>{{data.UniqueName}}</h6>
+            </div>
+            <div class="btn">
+              <button (click)="openAppDownloadPopup()">Follow</button>
+           </div>
+          </div>
+    </div>
+</div>
 <div class="outer-shell">
   <div class="profile-shell">
     <div class="background-img">
         <img src={{coverpic}} onerror="this.src='/assets/images/sportsocialteamviewheader.jpg'">
-        <!-- <img src="assets/images/sportsocialteamviewheader.jpg" > -->
      </div>
       <div class="profile-img">
         <img src={{profile_image}} onerror="this.src='assets/images/user.png'">
@@ -26,11 +60,9 @@
           </div>
             <div class="sub-header">
               <img class="profile-pic" src="{{profile_image}}" onerror="this.src='assets/images/user.png'" alt="">  
-            
                 <div class="fans">
                     <h1>Fans<span>Following</span></h1>
                     <h2>{{Fancount}}<span>{{FollowingCount}}</span></h2>
-                    <!-- <h1>Members<h2>{{membercount}}</h2></h1> -->
                   </div>
                   <div class="sub-name">
                       <h1>{{FirstName}}</h1>
@@ -43,14 +75,27 @@
           </div>  
      </div>
      <div class="mobilefollower">
-        <h1>Fans<span>&nbsp;Following</span></h1>
-        <h2>&nbsp;{{Fancount}}<span>{{FollowingCount}}</span></h2>
+       <div (click)="openFanFunc()" class="mfan">
+          <h1>Fans</h1>
+          <h2>{{Fancount}}</h2>
+       </div>
+        <div (click)="openFollowerFunc()" class="mfollow">
+            <h1>Follow</h1>
+            <h2>{{FollowingCount}}</h2>
+        </div>
+        
     </div>
       <div class="side-shell">
         <div class="stick">
           <div class="followers">
-              <h1>Fans<span>&nbsp;Following</span></h1>
-              <h2>&nbsp;{{Fancount}}<span>{{FollowingCount}}</span></h2>
+            <div class="userfans" (click)="openFanFunc()">
+                <h1>Fans</h1>
+                <h2>{{Fancount}}</h2>
+            </div>
+            <div class="userfollowers" (click)="openFollowerFunc()">
+              <h1>Following</h1>
+              <h2>{{FollowingCount}}</h2>
+            </div>
           </div>
           <div class="basic-info">
             <h1>Basic Info</h1>
@@ -111,4 +156,6 @@
      <img (click)="rscroll()" src="/assets/images/sportsocialprofileleftarrow.png" alt="">
   </div>
 </div>
+
+
 <router-outlet></router-outlet>
