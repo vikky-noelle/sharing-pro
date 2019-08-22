@@ -4,7 +4,14 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class PostService {
 
-  userprofileFans=[{
+  userprofilefollowerObj=[{
+    userid:Number,
+    profileid:Number,
+    page:Number,
+    timestamp:Number
+  }]
+
+  userprofileFansObj=[{
     userid:Number,
     profileid:Number,
     page:Number,
@@ -321,12 +328,22 @@ export class PostService {
   }
 
   getUserProfileFans(userid,profileid,page,timestamp){
-    this.userprofileFans=[{
+    this.userprofileFansObj=[{
       userid:userid,
       profileid:profileid,
       page:page,
       timestamp:timestamp
     }]
-    return this.http.post('https://test.sportsocial.in/poc/getFansNew',this.userprofileFans);
+    return this.http.post('https://test.sportsocial.in/poc/getFansNew',this.userprofileFansObj);
+  }
+
+  getUserProfileFollowers(userid,profileid,page,timestamp){
+    this.userprofilefollowerObj =[{
+      userid:userid,
+      profileid:profileid,
+      page:page,
+      timestamp:timestamp
+    }]
+    return this.http.post('https://test.sportsocial.in/poc/getFanFollowing',this.userprofilefollowerObj);
   }
 }

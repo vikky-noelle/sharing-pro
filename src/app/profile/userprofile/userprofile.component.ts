@@ -56,6 +56,23 @@ export class UserprofileComponent implements OnInit {
   singleimage = document.getElementsByClassName('single-image') as HTMLCollectionOf<HTMLElement>;
   crousal = document.getElementsByClassName('crousal-element') as HTMLCollectionOf<HTMLElement>;
   
+  openfan= document.getElementsByClassName('fanslist') as HTMLCollectionOf<HTMLAnchorElement>;
+  openfollower=document.getElementsByClassName('followerlist') as HTMLCollectionOf<HTMLAnchorElement>;
+
+  openFanFunc(){
+    this.openfan[0].style.display="block";
+    this.openfan[0].style.transition="0.5s ease-in"
+  }
+  openFollowerFunc(){
+    this.openfollower[0].style.display="block";
+    this.openfollower[0].style.transition="0.5s ease-in"
+  }
+  closefan(){
+   this.openfan[0].style.display="none";
+  }
+  closefollower(){
+    this.openfollower[0].style.display="none";
+   }
   date = new Date();
   timestamp = Math.floor(Date.now()/1000);
   @Input() userid;
@@ -67,6 +84,7 @@ export class UserprofileComponent implements OnInit {
 
   mediaArr=[];
   Fans=[];
+  Followers=[];
   userrefId;
   Instutionresult;
   show:boolean=false;
@@ -80,6 +98,7 @@ export class UserprofileComponent implements OnInit {
         }
       );
   }
+  
 
   
 
@@ -98,6 +117,7 @@ export class UserprofileComponent implements OnInit {
           var bdate= res["UserData"][i].DateofBirth;
          this.userrefId =res["UserData"][i].User_id;
           this.getuserFans(this.userrefId);
+          this.getuserFollowers(this.userrefId);
           var bdateSubStr = new String(bdate).slice(0,4);
           var bdateIntiger =  parseInt(bdateSubStr)-1970;
           let timeDiff = Math.abs(Date.now() - bdateIntiger);
@@ -162,18 +182,32 @@ export class UserprofileComponent implements OnInit {
   }
   getuserFans(profile_id){
     this.userrefId=profile_id;
-    this.pageNo;
-    console.log("userref id:",profile_id);
-
     this.postservice.getUserProfileFans(this.userid,profile_id,1,this.timestamp)
     .subscribe((res:Response)=>{
-     
       for(const i in res){
         this.Fans.push({
-          user_id:res[i].user_id
+          user_id:res[i].user_id,
+          user_name:res[i].user_name,
+          UniqueName:res[i].UniqueName,
+          profile_image:res[i].profile_image
         });
       }
-      console.log("this is reposne of get userfan API:",res);
+    })
+  }
+  getuserFollowers(profile_id){
+    this.userrefId=profile_id;
+    this.postservice.getUserProfileFollowers(this.userid,profile_id,1,this.timestamp)
+    .subscribe((res:Response)=>{
+      console.log("this si res of folloers",res);
+      for(const i in res){
+        this.Followers.push({
+          user_id:res[i].user_id,
+          user_name:res[i].user_name,
+          UniqueName:res[i].UniqueName,
+          profile_image:res[i].profile_image
+        });
+        
+      }
     })
   }
   openimage(){
