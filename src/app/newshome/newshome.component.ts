@@ -129,9 +129,9 @@ export class NewshomeComponent implements OnInit {
         var x;
         this.j=this.j+1;
         if(body.news.length > 0){
-          for(var j=0; j<6; j++){
+          for(var j=0; j<15; j++){
             x = this.time.ExactDate(Date.parse(body.news[j].insertedDate)/1000);
-            x = x.replace(/T/g," at "); 
+            // x = x.replace(/T/g," at "); 
             this.temporarynews.push({
               id: j,
               source: body.news[j].source,
@@ -144,8 +144,6 @@ export class NewshomeComponent implements OnInit {
             });
 
           }
-          console.log(this.temporarynews);
-          console.log(i);
           this.news.push({
             gamename: this.temporarynews[0].game,
             news: this.temporarynews
@@ -180,7 +178,7 @@ export class NewshomeComponent implements OnInit {
           }
           for(var i=5; i<9; i++){
             x = this.time.ExactDate(Date.parse(body.news[i].insertedDate)/1000);
-            x = x.replace(/T/g," at "); 
+            // x = x.replace(/T/g," at "); 
             this.crousalitem.push({
               id: i,
               source: body.news[i].source,
@@ -193,6 +191,7 @@ export class NewshomeComponent implements OnInit {
             });
           }
         });
+        this.topscroll();
   }
  
   

@@ -15,6 +15,7 @@ export class LocalityComponent implements OnInit {
   venuetype;
   ownername;
   sports=[];
+  upcomingmatches=[];
   media=[];
   slotdetails=[];
   address;
@@ -83,11 +84,33 @@ export class LocalityComponent implements OnInit {
   getUpcomingMatches(){
     this.PostService.getUpcomingMatches("119", "844", 1564844406046, 1).subscribe(res=>{
       console.log(res);
+      for(var i=0; i < res.length; i++){
+        this.upcomingmatches.push({
+          coverpic: res[i].image,
+          userName: res[i].userName,
+          gamename: res[i].gameName,
+          Team1Pic: res[i].Team1Image,
+          Team2Pic: res[i].Team2Image,
+          Team1Name: res[i].Team1Name,
+          Team2Name: res[i].Team2Name,
+          Uniquename: res[i].UniqueName,
+          scoreTeam1: res[i].scoreTeam1,
+          scoreTeam2: res[i].scoreTeam2,
+          JoineeCount: res[i].JoineeCount,
+          WatchCount: res[i].WatchCount,
+          PromoteCount: res[i].PromoteCount,
+          CommentCount: res[i].CommentCount,
+          upcoming: true,
+          finished: false,
+          Venue_Name: res[i].VenueName,
+          gender: res[i].matchGender,
+        });
+      }
       // for(var i = 0; i < res.length)
     });
   }
   getLocalityTeams(){
-    this.PostService.getLocalityTeams("11").subscribe(res => {
+    this.PostService.getLocalityTeams("11").subscribe((res: any[]) => {
       console.log(res);
     });
   }
