@@ -17,14 +17,15 @@ export class PostService {
     page:Number,
     timestamp:Number
   }]
+  
   upcomingmatchesobj={
     venueid: String,
-    userid: String,
+    timestamp: Number,
     page: Number,
-    timestamp: Number
+    userid: String,  
   }
   localityteams={
-    localityid: Number
+    LocalityId: Number
   }
   userprofileobj={
       userid:String,
@@ -313,16 +314,16 @@ export class PostService {
   }
   getLocalityTeams(localityid){
     this.localityteams={
-      localityid:localityid,
+      LocalityId:localityid,
     };
     return this.http.post('https://test.sportsocial.in/venue/getLocalityTeams',this.localityteams);
   }
-  getUpcomingMatches(userid, venueid, timestamp, page){
+  getUpcomingMatches(venueid, timestamp, page,userid){
     this.upcomingmatchesobj={
       venueid:venueid,
-      userid:userid,
       page: page,
-      timestamp: timestamp
+      timestamp: timestamp,
+      userid:userid,
     };
     return this.http.post('https://test.sportsocial.in/poc/getVenueUpcomingMatches',this.upcomingmatchesobj);
   }

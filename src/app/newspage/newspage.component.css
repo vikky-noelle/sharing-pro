@@ -115,6 +115,7 @@
     padding-left: 25px;
     padding-right: 20px;
     padding-bottom: 25px;
+    /* border: 1px solid red; */
 }
 .top-stories h2{
     font-size: 1.2em;
@@ -123,6 +124,15 @@
     padding-top: 5px;
     font-size: 0.9em;
 }
+.top-stories>div>h5{
+    display: inline-flex;
+}
+.top-stories>div>h6{
+    margin-top: 1%;
+    float: right;
+    margin-right: 5%;
+    display: inline-flex;
+}
 
 .main-news img{
     margin-bottom: 30px;
@@ -130,15 +140,16 @@
     height: 350px;
 }
 .main-news h1{
-    /* border: 1px solid orange; */
     margin-right: 25px;
     margin-bottom: 10px;
-    font-size: 1.2em;
+    font-size: 1em;
+}
+.main-news>h1 a{
+    color: #024770;
 }
 
 .main-news h3{
     color: black;
-    /* font-weight: lighter; */
     font-size: 1.8em;
     text-align: center;
 }
@@ -269,7 +280,9 @@
 .tnews::-webkit-scrollbar {
     display: none;
 }
-
+.tnews>div>h5{
+    font-size: .8em;
+}
 .newscard button{
     font-size: 0.8em;
     border: none;
@@ -335,6 +348,18 @@
     font-size: 1em;
     font-weight: lighter;
     width: 45%;
+}
+.tnews>div>h5{
+    display: inline-flex;
+    font-size: .7em;
+    margin-left: 5%;
+}
+.tnews>div>h6{
+    margin-top: 2%;
+    margin-right: 1%;
+    float: right;
+    display: inline-flex;
+    font-size: .6em;
 }
 @media screen and (min-width: 200px) and (max-width: 700px){
     .main-body{

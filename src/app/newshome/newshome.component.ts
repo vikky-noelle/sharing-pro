@@ -164,7 +164,7 @@ export class NewshomeComponent implements OnInit {
           //   continue;
           // }
           x = this.time.ExactDate(Date.parse(body.news[i].insertedDate)/1000);
-          x = x.replace(/T/g," at "); 
+          // x = x.replace(/T/g," at "); 
             this.crousallist.push({
               id: i,
               game: body.news[i].gameName,

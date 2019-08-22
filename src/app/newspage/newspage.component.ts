@@ -101,8 +101,8 @@ export class NewspageComponent implements OnInit{
       var x;
       for (var i in body.news) {
         this.j=this.j+1;
-        x = this.time.ExactDate(Date.parse(body.news[i].insertedDate));
-        x = x.replace(/T/g," at "); 
+        x = this.time.ExactDate(Date.parse(body.news[i].insertedDate)/1000);
+        // x = x.replace(/T/g," at "); 
         this.rnews.push({
           recentnews: true,
           source: body.news[i].source,

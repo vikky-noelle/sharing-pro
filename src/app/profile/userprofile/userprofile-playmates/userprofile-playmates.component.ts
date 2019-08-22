@@ -29,9 +29,7 @@ export class UserprofilePlaymatesComponent implements OnInit {
   // route change for playmates defined here!!!!
   // it sends the value to the interaction service.
   changeroute(id){
-    console.log("this is id of change route:",id);
     this.interactionService.routechangefunction(id);
-
     this.router.navigate(['/userprofile', id, 'matches']);
   }
 
@@ -46,7 +44,6 @@ export class UserprofilePlaymatesComponent implements OnInit {
         this.show=true;  
         for(const i in res)
         this.array.push({
-          
           user_id:res[i].user_id,
           user_name:res[i].user_name,
           UniqueName:res[i].UniqueName,

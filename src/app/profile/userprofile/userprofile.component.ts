@@ -98,8 +98,13 @@ export class UserprofileComponent implements OnInit {
         }
       );
   }
-  
 
+  changeroute(id){
+    this.event.routechangefunction(id);
+    this.router.navigate(['/userprofile', id, 'matches']);
+    this.openfan[0].style.display="none";
+    this.openfollower[0].style.display="none";
+  }
   
 
   getUserDetails(){
@@ -181,6 +186,7 @@ export class UserprofileComponent implements OnInit {
       });
   }
   getuserFans(profile_id){
+    this.Fans=[];
     this.userrefId=profile_id;
     this.postservice.getUserProfileFans(this.userid,profile_id,1,this.timestamp)
     .subscribe((res:Response)=>{
@@ -195,6 +201,7 @@ export class UserprofileComponent implements OnInit {
     })
   }
   getuserFollowers(profile_id){
+    this.Followers=[];
     this.userrefId=profile_id;
     this.postservice.getUserProfileFollowers(this.userid,profile_id,1,this.timestamp)
     .subscribe((res:Response)=>{

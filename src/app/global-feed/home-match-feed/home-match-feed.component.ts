@@ -299,7 +299,7 @@ export class HomeMatchFeedComponent{
         arr.push({
           id:body.news[i]._id,
           title:body.news[i].title,
-          timestamp:x.substr(0,19),
+          timestamp:x.substr(0,10),
           url: body.news[i].url,
           image: body.news[i].newsImage,
           desc: body.news[i].desc,
@@ -327,15 +327,17 @@ export class HomeMatchFeedComponent{
       for (const i in body.news) {
         var x = body.news[i].insertedDate;
         x = x.replace(/T/g," at "); 
+        console.log("timestam vakue f  honme",x);
         arr.push({
           id:body.news[i]._id,
           title:body.news[i].title,
-          timestamp:x.substr(0,19),
+          timestamp:x.substr(0,10),
           url: body.news[i].url,
           image: body.news[i].newsImage,
           desc: body.news[i].desc,
           source: body.news[i].source
         });
+        
         if(i==="10"){
           break;
         }

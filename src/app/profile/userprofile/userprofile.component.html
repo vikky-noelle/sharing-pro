@@ -13,8 +13,8 @@
           <img src={{data.profile_image}} onerror="this.src='assets/images/user.png'">
       </div>
       <div class="fansname">
-          <p>{{data.user_name}}</p>
-          <h6>{{data.UniqueName}}</h6>
+          <p (click)="changeroute(data.user_id)">{{data.user_name}}</p>
+          <h6 (click)="changeroute(data.user_id)">{{data.UniqueName}}</h6>
       </div>
       <div class="btn">
         <button (click)="openAppDownloadPopup()">Follow</button>
@@ -31,8 +31,8 @@
                 <img src={{data.profile_image}} onerror="this.src='assets/images/user.png'">
             </div>
             <div class="fansname">
-                <p>{{data.user_name}}</p>
-                <h6>{{data.UniqueName}}</h6>
+                <p (click)="changeroute(data.user_id)">{{data.user_name}}</p>
+                <h6 (click)="changeroute(data.user_id)">{{data.UniqueName}}</h6>
             </div>
             <div class="btn">
               <button (click)="openAppDownloadPopup()">Follow</button>

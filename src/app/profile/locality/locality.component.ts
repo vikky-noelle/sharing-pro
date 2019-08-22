@@ -70,7 +70,7 @@ export class LocalityComponent implements OnInit {
         {id: 65, title: "Yoga"} 
   ];
   constructor(
-    private PostService: PostService,
+    private postService: PostService,
     private route: ActivatedRoute,
     private router: Router
   ) { }
@@ -80,20 +80,26 @@ export class LocalityComponent implements OnInit {
     this.getLocalityTeams();
     this.getUpcomingMatches();
   }
+  // getUpcomingMatches(){
+  //   this.PostService.getUpcomingMatches(119, 844, 1564844406046, 1).subscribe(res=>{
+  //     console.log(res);
+  //     // for(var i = 0; i < res.length)
+  //   });
+  // }
   getUpcomingMatches(){
-    this.PostService.getUpcomingMatches("119", "844", 1564844406046, 1).subscribe(res=>{
-      console.log(res);
+    this.postService.getUpcomingMatches(844, 1564844406046,1, 119).subscribe(res=>{
+      console.log("gyggg",res);
       // for(var i = 0; i < res.length)
     });
   }
   getLocalityTeams(){
-    this.PostService.getLocalityTeams("11").subscribe(res => {
+    this.postService.getLocalityTeams("11").subscribe(res => {
       console.log(res);
     });
   }
   getDetails(){
     // console.log(this.sportlist);
-    this.PostService.getLocalityDetails("119", "11").subscribe(res => {
+    this.postService.getLocalityDetails("119", "11").subscribe(res => {
       // console.log(res);
       // getting sports and changing the route
       for(var i=0; i< res["Sports"].length; i++){
@@ -104,8 +110,8 @@ export class LocalityComponent implements OnInit {
           }
         }
       }
-      this.router.navigate(['localityprofile', this.sports[0]]);
-  
+     // this.router.navigate(['localityprofile', this.sports[0]]);
+   
       // slot details
       for(var i=0; i < res["SlotDetails"].length; i++){
         res["SlotDetails"][i].Day = res["SlotDetails"][i].Day.replace(/"/g, "")
