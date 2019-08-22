@@ -11312,7 +11312,7 @@ function View_UserprofileComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld
     } return ad; }, null, null)), (_l()(), i1.ɵted(5, null, ["", ""])), (_l()(), i1.ɵeld(6, 0, null, null, 1, "h6", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.changeroute(_v.context.$implicit.user_id) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵted(7, null, ["", ""])), (_l()(), i1.ɵeld(8, 0, null, null, 2, "div", [["class", "btn"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 1, "button", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+    } return ad; }, null, null)), (_l()(), i1.ɵted(7, null, ["@", ""])), (_l()(), i1.ɵeld(8, 0, null, null, 2, "div", [["class", "btn"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 1, "button", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.openAppDownloadPopup() !== false);
         ad = (pd_0 && ad);
     } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Follow"]))], null, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.profile_image, ""); _ck(_v, 2, 0, currVal_0); var currVal_1 = _v.context.$implicit.user_name; _ck(_v, 5, 0, currVal_1); var currVal_2 = _v.context.$implicit.UniqueName; _ck(_v, 7, 0, currVal_2); }); }
@@ -11322,7 +11322,7 @@ function View_UserprofileComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld
     } return ad; }, null, null)), (_l()(), i1.ɵted(5, null, ["", ""])), (_l()(), i1.ɵeld(6, 0, null, null, 1, "h6", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.changeroute(_v.context.$implicit.user_id) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵted(7, null, ["", ""])), (_l()(), i1.ɵeld(8, 0, null, null, 2, "div", [["class", "btn"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 1, "button", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+    } return ad; }, null, null)), (_l()(), i1.ɵted(7, null, ["@", ""])), (_l()(), i1.ɵeld(8, 0, null, null, 2, "div", [["class", "btn"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 1, "button", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.openAppDownloadPopup() !== false);
         ad = (pd_0 && ad);
     } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Follow"]))], null, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.profile_image, ""); _ck(_v, 2, 0, currVal_0); var currVal_1 = _v.context.$implicit.user_name; _ck(_v, 5, 0, currVal_1); var currVal_2 = _v.context.$implicit.UniqueName; _ck(_v, 7, 0, currVal_2); }); }

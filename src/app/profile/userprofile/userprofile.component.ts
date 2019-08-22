@@ -216,6 +216,7 @@ export class UserprofileComponent implements OnInit {
         
       }
     })
+  
   }
   openimage(){
     console.log("working");
