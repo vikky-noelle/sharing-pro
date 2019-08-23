@@ -1,6 +1,6 @@
 import { ActivatedRoute, Router } from '@angular/router';
 import { PostService } from './../../shared/services/post.service';
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { THROW_IF_NOT_FOUND } from '@angular/core/src/di/injector';
 
 @Component({
@@ -74,6 +74,10 @@ export class LocalityComponent implements OnInit {
   sideshellposition = document.getElementsByClassName('side-shell') as HTMLCollectionOf<HTMLElement>;
   opensubheader = document.getElementsByClassName('sub-header') as HTMLCollectionOf<HTMLElement>;
  
+
+  @ViewChild('parent') parent:ElementRef;  
+  @ViewChild('child') child:ElementRef;
+
   constructor(
     private postService: PostService,
     private route: ActivatedRoute,
@@ -85,6 +89,12 @@ export class LocalityComponent implements OnInit {
     this.getLocalityTeams();
     this.getUpcomingMatches();
     window.addEventListener('scroll', this.scroll, true);
+  }
+  lscroll(){
+    this.parent.nativeElement.scrollLeft -=this.child.nativeElement.clientWidth;
+  }
+  rscroll(){
+    this.parent.nativeElement.scrollLeft +=this.child.nativeElement.clientWidth;
   }
   // @HostListener('document:keyup', ['$event'])
   // handleDeleteKeyboardEvent(event: KeyboardEvent) {
@@ -104,21 +114,15 @@ export class LocalityComponent implements OnInit {
   scroll = (): void => {
     if(window.pageYOffset > 370){
     this.opensubheader[0].style.display="block";
-    this.sideshellposition[0].style.position="fixed";
-    this.sideshellposition[0].style.top="130px";
+    // this.sideshellposition[0].style.position="fixed";
+    // this.sideshellposition[0].style.top="130px";
   }
   else{
-    this.sideshellposition[0].style.top="0";
+    // this.sideshellposition[0].style.top="0";
     this.opensubheader[0].style.display="none";
-    this.sideshellposition[0].style.position="relative";
+    // this.sideshellposition[0].style.position="relative";
   }
 };
-  // getUpcomingMatches(){
-  //   this.PostService.getUpcomingMatches(119, 844, 1564844406046, 1).subscribe(res=>{
-  //     console.log(res);
-  //     // for(var i = 0; i < res.length)
-  //   });
-  // }
   getUpcomingMatches(){
     this.postService.getUpcomingMatches("119", "844", 1564844406046, 1).subscribe((res : any[])=>{
       console.log(res);
@@ -152,10 +156,10 @@ export class LocalityComponent implements OnInit {
       console.log(res[0][1]);
       for(var i=0; i<res[0].length;i++){
         this.teams.push({
-          captain: res[0][i].CaptainName,
-          captainUniquename: res[0][i].CaptainUniquename,
-          creator: res[0][i].CreatorName,
-          creatorUsername: res[0][i].CreatorUniqueName,
+          fancount: res[0][i].FanCount,
+          membercount: res[0][i].memberCount,
+          bgimage: res[0][i].Cover_Photo,
+          pfp: res[0][i].Profile_Photo,
           gameid: res[0][i].GameId,
           gamename: res[0][i].GameName,
           insertedDate: res[0][i].InsertedDate,
@@ -164,8 +168,6 @@ export class LocalityComponent implements OnInit {
           teamid: res[0][i].TeamId,
           teamname: res[0][i].TeamName,
           teamtype: res[0][i].TeamType,
-          creatorid: res[0][i].creatorId,
-          challenge: res[0][i].openchallenge,
           teamuniquename: res[0][i].teamUniqueName
         });
       }

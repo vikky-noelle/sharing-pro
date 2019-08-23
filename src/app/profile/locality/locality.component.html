@@ -18,10 +18,10 @@
   <div class="sub-header">
           <div class="sub-name">
               <h1>{{venuename}}</h1>
-              <!-- <h2>{{venuetype}}</h2> -->
+              <h2>{{venuetype}}</h2>
             </div>
       <div class="sub-follow">
-          <h1>Follow</h1>
+          <h1>Favourite</h1>
         </div>
   </div>
   <div class="side-shell">
@@ -67,12 +67,14 @@
       <img class="ground" src="/assets/images/sportsocialground.jpg" alt="">
       <h3>The Average Ground</h3>
       <h2>Teams</h2>
-      <div class="teams">
-        <div class="team-card" *ngFor="let data of teams">
+      <div class="teams" #parent>
+          <div (click)="rscroll();" class="rightarrow"></div>
+          <div (click)="lscroll();" class="leftarrow"></div>
+          <div class="team-card" *ngFor="let data of teams" #child>
           <div class="bg-team-part">
-            <img class="bg-img" src="assets/images/sportsocialteambgerror.jpg" alt="">
+            <img class="bg-img" src="{{data.bgimage}}" alt="">
             <div class="team-pfp">
-              <img src="assets/images/sportsocialchat.png" alt="">
+              <img src="{{data.pfp}}" alt="">
             </div>  
           </div>
           <h1>{{data.teamname}}</h1>
@@ -81,11 +83,11 @@
           <div class="social-status">
             <div class="fan-status">
               <h1>Fans</h1>
-              <p>10</p>
+              <p>{{data.fancount}}</p>
             </div>
             <div class="member-status">
               <h1>Members</h1>
-              <p>10</p>
+              <p>{{data.membercount}}</p>
             </div>
           </div>
         </div>
@@ -93,7 +95,7 @@
       <h2>Matches This Week</h2>
       <div class="current-matches">
           <div class="match-cards" *ngFor="let feed of upcomingmatches">
-              <sports-social-ss-match-card
+              <!-- <sports-social-ss-match-card
                         [coverpic]="feed.coverpic"
                         [matchstartername]="feed.MatchStarterName"
                         [userName]="feed.userName"
@@ -121,7 +123,7 @@
                         [PromoteCount]="feed.PromoteCount"
                         [CommentCount]="feed.CommentCount"
                         ></sports-social-ss-match-card>
-          
+           -->
                       </div>
       </div>
       
