@@ -1,10 +1,6 @@
 <sports-social-header></sports-social-header>
-<!-- <div class="pop-crousal" #widgets>
-  <div *ngFor="let data of mediaArr" class="crousal-element" #widgetsContent>
-    <img src="{{data.Path}}" alt="">
-    <h1 style="color: white;">{{data.Path}}</h1>
-  </div>
-</div> -->
+
+
 <div class="fanslist">
     <img (click)="closefan()" class="closelist" src="assets/images/close.png" alt="">
   <div class="list">
@@ -131,7 +127,7 @@
             <a (click)="opencrousal()"><p>See all</p></a>
           </div>
           <div class="mediabox" *ngFor="let icon of mediaArr">
-            <img (click)="imageopen(icon.Path);" src={{icon.Path}} onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'">
+            <img (click)="opencrousal()" src={{icon.Path}} onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'">
           </div>
         </div>
     </div>
@@ -142,20 +138,39 @@
           <a routerLink="/userprofile/{{userid}}/playmates" routerLinkActive="active">Playmates</a>
       </div>
 </div>
-<div class="media-crousal" #widgets>
-  <!-- <div *ngFor="let data of mediaArr" #widgetsContent> -->
-    <img class="single-image"  src="{{crousalsingleimage}}" alt="" onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'">
-  <!-- </div>  -->
-  <div class="close">
-      <img (click)="close()" src="/assets/images/sportsocialprofileclose.png">
+<div class="media-crousal">
+    <div class="pop-crousal" #widgets>
+      <div *ngFor="let data of mediaArr" class="crousal-element" #widgetsContent>
+          <img src={{data.Path}} onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'">
+         <div class="uploader-info">
+            <img src={{data.profile_photo}}>
+              <div class="uploader-name">
+                <p>{{data.User_Name}}</p><br>
+                <h6>@{{data.Uniquename}}</h6>
+            </div>
+         </div>
+         <div class="likeCount">
+          <img src="assets/images/heart.png">&nbsp;&nbsp;<b>{{data.likecount}}</b>
+          &nbsp;&nbsp;<img src="assets/images/chat-comment-oval-speech-bubble-with-text-lines.png">&nbsp;&nbsp;<b>{{data.commentcount}}</b>
+         </div>
+         <div class="past-time">
+            <h5>{{data.UploadTime | timeAgo}}</h5>
+         </div>
+          
+      </div>
     </div>
-    <div class="larrow">
-      <img (click)="lscroll()" src="/assets/images/sportsocialprofilerightarrow.png" alt="">
-    </div>
-    <div class="rarrow">
-     <img (click)="rscroll()" src="/assets/images/sportsocialprofileleftarrow.png" alt="">
-  </div>
+   
+      <div class="close">
+        <img (click)="close()" src="assets/images/sportsocialprofileclose.png">
+      </div>
+      <div class="larrow">
+        <img (click)="lscroll()" src="assets/images/sportsocialprofilerightarrow.png" alt="">
+      </div>
+      <div class="rarrow">
+       <img (click)="rscroll()" src="assets/images/sportsocialprofileleftarrow.png" alt="">
+      </div>
 </div>
+
 
 
 <router-outlet></router-outlet>

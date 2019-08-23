@@ -30,7 +30,7 @@ export class UserprofilePlaymatesComponent implements OnInit {
   // it sends the value to the interaction service.
   changeroute(id){
     this.interactionService.routechangefunction(id);
-    this.router.navigate(['/userprofile', id, 'matches']);
+    this.router.navigate(['/userprofile', id, 'about']);
   }
 
   getplaymates(){

@@ -101,7 +101,7 @@ export class UserprofileComponent implements OnInit {
 
   changeroute(id){
     this.event.routechangefunction(id);
-    this.router.navigate(['/userprofile', id, 'matches']);
+    this.router.navigate(['/userprofile', id, 'about']);
     this.openfan[0].style.display="none";
     this.openfollower[0].style.display="none";
   }
@@ -169,7 +169,6 @@ export class UserprofileComponent implements OnInit {
         /*End of Userdata loop */
 
         for (var i=0 ;i<res["Images"].length;i++){
-          
           this.mediaArr.push({
             imageId:res["Images"][i].imageId,
             Path:res["Images"][i].Path,
@@ -179,9 +178,10 @@ export class UserprofileComponent implements OnInit {
             text:res["Images"][i].text,
             UserId:res["Images"][i].UserId,
             profile_photo:res["Images"][i].profile_photo,
-            User_Name:res["Images"][i].User_Name
+            User_Name:res["Images"][i].User_Name,
+            Uniquename:res["Images"][i].Uniquename,
+            UploadTime:res["Images"][i].UploadTime
           });
-          
         }
       });
   }
@@ -385,11 +385,10 @@ export class UserprofileComponent implements OnInit {
   }
   opencrousal(){
     this.showcrousal[0].style.display="block";
-    this.crousal[0].style.display="block";
-    this.leftarrow[0].style.display="block";
-    this.rightarrow[0].style.display="block";
+    // this.crousal[0].style.display="block";
+    // this.leftarrow[0].style.display="block";
+    // this.rightarrow[0].style.display="block";
     this.singleimage[0].style.display="none";
-    // this.crousallist = this.mediaArr;
   }
   @HostListener('document:keyup', ['$event'])
   handleDeleteKeyboardEvent(event: KeyboardEvent) {
