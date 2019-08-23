@@ -24,7 +24,7 @@
 
 .upcoming-block{
     scroll-behavior: smooth;
-    width: 100% !important;
+    width: 70% !important;
     -webkit-overflow-scrolling: touch;
 }
 .upcoming-cards{

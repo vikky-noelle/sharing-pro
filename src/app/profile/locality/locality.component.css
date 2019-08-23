@@ -31,23 +31,14 @@
     margin-top: 20px;
 }
 .current-matches{
-    overflow-y: hidden;
     scroll-behavior: smooth;
     width: 100% !important;
-    overflow-x: scroll;
-    white-space: nowrap !important;
     -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-    scroll-snap-destination: 0% 100%;
-    scroll-snap-points-x: repeat(100%);
-    display: inline-block;
 }
 .match-cards{
     vertical-align: top;
-    /* border: 1px solid blue; */
     scroll-snap-align: start;
-    width: 40%;
-    margin-right: 3.2%;
+    width: 50%;
     margin-top: 3%;
     display: inline-block;
 }
@@ -375,6 +366,113 @@
     }
     .rarrow img:hover{
         transform: scale(1.1);
+    }
+
+    .teams{
+        width: 90%;
+        margin-top: 20px;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        overflow-x: scroll;
+        white-space: nowrap !important;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        scroll-snap-destination: 0% 100%;
+        scroll-snap-points-x: repeat(100%);
+        display: inline-block;
+        height: 380px;
+    }
+    .team-card{
+        scroll-snap-align: start;
+        width: 30%;
+        margin-right: 4%;
+        height: 340px;
+        border-radius: 15px; 
+        position: relative;
+        box-shadow: 2px 2px rgb(233, 232, 232), 3px 3px rgb(240, 240, 240);
+        border: 1px solid silver; 
+        display: inline-block;
+    }
+    .team-card>h1{
+        color: #333333;
+        padding-top: 5px;
+        text-align: center;
+        font-size: 1.4em;
+        padding: 5px;
+    }
+    .team-card>h2{
+        color: #555555;
+        text-align: center;
+        font-size: 1.2em;
+        padding: 5px;
+    }
+    .team-join{
+        border: 1px solid #024771;
+        background-color: white;
+        padding: 3px;
+        width: 30%;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+    .bg-team-part{
+        height: 180px;
+        width: 100%;
+        position: relative;
+    }
+    .bg-img{
+        height: 120px;
+        width: 100%;
+        border-top-left-radius: 15px; 
+        border-top-right-radius: 15px; 
+    }
+    .team-pfp{
+        margin-left: 32%;
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0%;
+        background-color: white;
+    }
+    .team-pfp>img{
+        height: 106px;
+        width: 106px;
+        margin-left: 2px;
+        margin-top: 2px;
+        border-radius: 50%;
+    }
+    .social-status{
+        margin-top: 20px;
+    }
+    .fan-status{
+        float: left;
+        width: 50%;
+    }
+    .member-status{
+        float: left;
+        width: 50%;
+    }
+    .fan-status>h1{
+        color: #024771;
+        float: left;
+        margin-left: 15%;
+        font-size: 1em;
+    }
+    .fan-status>p{
+        color: #333333;
+        margin-left: 5%;
+        float: left;
+    }
+    .member-status>h1{
+        color: #024771;
+        float: left;
+        margin-left: 15%;
+        font-size: 1em;
+    }
+    .member-status>p{
+        color: #333333;
+        margin-left: 5%;
+        float: left;
     }
     @media screen and (min-width:200px) and (max-width:700px){
         /* for header that show after scroll*/

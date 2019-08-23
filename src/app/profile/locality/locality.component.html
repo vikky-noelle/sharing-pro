@@ -18,7 +18,7 @@
   <div class="sub-header">
           <div class="sub-name">
               <h1>{{venuename}}</h1>
-              <h2>{{venuetype}}</h2>
+              <!-- <h2>{{venuetype}}</h2> -->
             </div>
       <div class="sub-follow">
           <h1>Follow</h1>
@@ -66,6 +66,30 @@
     <div class="normal-shell">
       <img class="ground" src="/assets/images/sportsocialground.jpg" alt="">
       <h3>The Average Ground</h3>
+      <h2>Teams</h2>
+      <div class="teams">
+        <div class="team-card" *ngFor="let data of teams">
+          <div class="bg-team-part">
+            <img class="bg-img" src="assets/images/sportsocialteambgerror.jpg" alt="">
+            <div class="team-pfp">
+              <img src="assets/images/sportsocialchat.png" alt="">
+            </div>  
+          </div>
+          <h1>{{data.teamname}}</h1>
+          <h2>@{{data.teamuniquename}}</h2>
+          <button class="team-join">Join</button>
+          <div class="social-status">
+            <div class="fan-status">
+              <h1>Fans</h1>
+              <p>10</p>
+            </div>
+            <div class="member-status">
+              <h1>Members</h1>
+              <p>10</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <h2>Matches This Week</h2>
       <div class="current-matches">
           <div class="match-cards" *ngFor="let feed of upcomingmatches">
@@ -100,7 +124,7 @@
           
                       </div>
       </div>
-      <h2>Teams</h2>
+      
     </div>
 </div>
 <div class="media-crousal">

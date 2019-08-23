@@ -4,17 +4,25 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class PostService {
 
-  userprofileFans=[{
+  userprofilefollowerObj=[{
     userid:Number,
     profileid:Number,
     page:Number,
     timestamp:Number
   }]
+
+  userprofileFansObj=[{
+    userid:Number,
+    profileid:Number,
+    page:Number,
+    timestamp:Number
+  }]
+  
   upcomingmatchesobj={
     venueid: String,
-    userid: String,
+    timestamp: Number,
     page: Number,
-    timestamp: Number
+    userid: String,  
   }
   localityteams={
     LocalityId: Number
@@ -313,20 +321,30 @@ export class PostService {
   getUpcomingMatches(userid, venueid, timestamp, page){
     this.upcomingmatchesobj={
       venueid:venueid,
-      userid:userid,
       page: page,
-      timestamp: timestamp
+      timestamp: timestamp,
+      userid:userid,
     };
     return this.http.post('https://test.sportsocial.in/poc/getVenueUpcomingMatches',this.upcomingmatchesobj);
   }
 
   getUserProfileFans(userid,profileid,page,timestamp){
-    this.userprofileFans=[{
+    this.userprofileFansObj=[{
       userid:userid,
       profileid:profileid,
       page:page,
       timestamp:timestamp
     }]
-    return this.http.post('https://test.sportsocial.in/poc/getFansNew',this.userprofileFans);
+    return this.http.post('https://test.sportsocial.in/poc/getFansNew',this.userprofileFansObj);
+  }
+
+  getUserProfileFollowers(userid,profileid,page,timestamp){
+    this.userprofilefollowerObj =[{
+      userid:userid,
+      profileid:profileid,
+      page:page,
+      timestamp:timestamp
+    }]
+    return this.http.post('https://test.sportsocial.in/poc/getFanFollowing',this.userprofilefollowerObj);
   }
 }

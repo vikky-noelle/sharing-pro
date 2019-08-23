@@ -20,8 +20,8 @@
                           </div>
                           <div class="result">
                               <b>{{feed.startdatetime}}
-                                <img *ngIf="!feed.finished" src="/assets/images/sportsocialfinalicon.jpeg">
-                                <img *ngIf="feed.finished" src="/assets/images/sportsocialreddot.png"><br>        
+                                <img *ngIf="!feed.finished" src="assets/images/sportsocialfinalicon.jpeg">
+                                <img *ngIf="feed.finished" src="assets/images/sportsocialRedDot.jpg"><br>        
                               </b>
                              <a routerLink="userprofile/{{feed.MatchStarterId}}/about"> 
                              <p> {{feed.MatchStarterUniqueName}}</p></a>
@@ -81,7 +81,7 @@
                 </div>
                <div class="news-detail">
                  <textarea disabled>{{feed.title | slice:0:100}}..</textarea>
-                 <p>{{feed.source}}</p>  
+                 <p>{{feed.source}},{{feed.timestamp}}</p>  
               </div>
             </div>
            </div>
@@ -102,7 +102,7 @@
                </div>
                 <div class="news-detail">
                   <textarea disabled>{{feed.title | slice:0:100}}..</textarea>
-                  <p>{{feed.source}}</p>
+                  <p>{{feed.source}},{{feed.timestamp}}</p>
                 </div>
               </div>
             </div>

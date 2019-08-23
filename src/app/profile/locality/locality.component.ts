@@ -1,6 +1,6 @@
 import { ActivatedRoute, Router } from '@angular/router';
 import { PostService } from './../../shared/services/post.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { THROW_IF_NOT_FOUND } from '@angular/core/src/di/injector';
 
 @Component({
@@ -17,6 +17,7 @@ export class LocalityComponent implements OnInit {
   sports=[];
   upcomingmatches=[];
   media=[];
+  teams=[]
   slotdetails=[];
   address;
   profileimage;
@@ -70,8 +71,11 @@ export class LocalityComponent implements OnInit {
         {id: 64, title: "Wrestling"},                     
         {id: 65, title: "Yoga"} 
   ];
+  sideshellposition = document.getElementsByClassName('side-shell') as HTMLCollectionOf<HTMLElement>;
+  opensubheader = document.getElementsByClassName('sub-header') as HTMLCollectionOf<HTMLElement>;
+ 
   constructor(
-    private PostService: PostService,
+    private postService: PostService,
     private route: ActivatedRoute,
     private router: Router
   ) { }
@@ -80,9 +84,43 @@ export class LocalityComponent implements OnInit {
     this.getDetails();
     this.getLocalityTeams();
     this.getUpcomingMatches();
+    window.addEventListener('scroll', this.scroll, true);
   }
+  // @HostListener('document:keyup', ['$event'])
+  // handleDeleteKeyboardEvent(event: KeyboardEvent) {
+  //   if(event.key === 'ArrowLeft')
+  //   {
+  //     this.lscroll()
+  //   }
+  //   if(event.key === 'ArrowRight')
+  //   {
+  //     this.rscroll()
+  //   }
+  //   if(event.keyCode === 27)
+  //   {
+  //     this.showcrousal[0].style.display="none";
+  //   }
+  // }
+  scroll = (): void => {
+    if(window.pageYOffset > 370){
+    this.opensubheader[0].style.display="block";
+    this.sideshellposition[0].style.position="fixed";
+    this.sideshellposition[0].style.top="130px";
+  }
+  else{
+    this.sideshellposition[0].style.top="0";
+    this.opensubheader[0].style.display="none";
+    this.sideshellposition[0].style.position="relative";
+  }
+};
+  // getUpcomingMatches(){
+  //   this.PostService.getUpcomingMatches(119, 844, 1564844406046, 1).subscribe(res=>{
+  //     console.log(res);
+  //     // for(var i = 0; i < res.length)
+  //   });
+  // }
   getUpcomingMatches(){
-    this.PostService.getUpcomingMatches("119", "844", 1564844406046, 1).subscribe(res=>{
+    this.postService.getUpcomingMatches("119", "844", 1564844406046, 1).subscribe((res : any[])=>{
       console.log(res);
       for(var i=0; i < res.length; i++){
         this.upcomingmatches.push({
@@ -110,13 +148,33 @@ export class LocalityComponent implements OnInit {
     });
   }
   getLocalityTeams(){
-    this.PostService.getLocalityTeams("11").subscribe((res: any[]) => {
-      console.log(res);
+    this.postService.getLocalityTeams("11").subscribe((res: any[]) => {
+      console.log(res[0][1]);
+      for(var i=0; i<res[0].length;i++){
+        this.teams.push({
+          captain: res[0][i].CaptainName,
+          captainUniquename: res[0][i].CaptainUniquename,
+          creator: res[0][i].CreatorName,
+          creatorUsername: res[0][i].CreatorUniqueName,
+          gameid: res[0][i].GameId,
+          gamename: res[0][i].GameName,
+          insertedDate: res[0][i].InsertedDate,
+          istemp: res[0][i].IsTemp,
+          Teamcategory: res[0][i].TeamCategory,
+          teamid: res[0][i].TeamId,
+          teamname: res[0][i].TeamName,
+          teamtype: res[0][i].TeamType,
+          creatorid: res[0][i].creatorId,
+          challenge: res[0][i].openchallenge,
+          teamuniquename: res[0][i].teamUniqueName
+        });
+      }
+      // console.log(this.teams);
     });
   }
   getDetails(){
     // console.log(this.sportlist);
-    this.PostService.getLocalityDetails("119", "11").subscribe(res => {
+    this.postService.getLocalityDetails("119", "11").subscribe(res => {
       // console.log(res);
       // getting sports and changing the route
       for(var i=0; i< res["Sports"].length; i++){
@@ -127,8 +185,8 @@ export class LocalityComponent implements OnInit {
           }
         }
       }
-      this.router.navigate(['localityprofile', this.sports[0]]);
-  
+     // this.router.navigate(['localityprofile', this.sports[0]]);
+   
       // slot details
       for(var i=0; i < res["SlotDetails"].length; i++){
         res["SlotDetails"][i].Day = res["SlotDetails"][i].Day.replace(/"/g, "")
