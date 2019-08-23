@@ -21,6 +21,7 @@ export class NewspageComponent implements OnInit{
   rnews=[];
   arr=[];
   temp=[];
+  newspool=[];
   tempnews=[];
   mainnewshead;
   mainnewsimage;
@@ -34,6 +35,7 @@ export class NewspageComponent implements OnInit{
   topic;
   c=0;
   j=-1;
+  loadcheck=30;
   scroll=document.getElementsByClassName('c-element') as HTMLCollectionOf<HTMLElement>;
   @ViewChild('widgets') widgets:ElementRef;
   @ViewChild('widgetsContent') widgetsContent:ElementRef;
@@ -133,7 +135,7 @@ export class NewspageComponent implements OnInit{
           }
           var x;
           this.j=-1;
-
+            this.newspool = body.news;
            for (const i in body.news) {
             this.j=this.j+1;
             x = this.time.ExactDate(Date.parse(body.news[i].insertedDate)/1000);
@@ -172,12 +174,33 @@ export class NewspageComponent implements OnInit{
                 this.mainnewssource = this.tempnews[0].source; 
               }
             }
-            if(i==="4"){
+            if(+i===this.loadcheck){
               break;
             }
           }
       });
       this.topscroll();
+  }
+
+  loadmore(){
+    this.loadcheck=this.loadcheck+30;
+    for (const i in this.newspool) {
+      this.j=this.j+1;
+      var x = this.time.ExactDate(Date.parse(this.newspool[i].insertedDate)/1000);
+      // x = x.replace(/T/g," at "); 
+      if(+i>this.loadcheck-30 && +i<this.loadcheck){
+        this.news.push({
+          recentnews: false,
+            source: this.newspool[i].source,
+            id:this.j,
+            title:this.newspool[i].title,
+            timestamp:x.substr(0,19),
+            url: this.newspool[i].url,
+            image: this.newspool[i].newsImage,
+            desc: this.newspool[i].desc
+        });
+      }
+    }
   }
     opennews(data){
       var id = data.id;

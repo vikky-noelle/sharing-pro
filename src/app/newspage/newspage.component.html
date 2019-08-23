@@ -30,7 +30,7 @@
       
       <br>
       <hr>
-      <!-- <div class="more-news">
+      <div class="more-news">
         <div class="mnews" *ngFor="let data of news">
           <img  *ngIf="data.source === 'Football Italia'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfi.png'">
           <img  *ngIf="data.source === 'The Hindu'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialth.png'">
@@ -43,10 +43,8 @@
             <b>{{data.source}},{{data.timestamp}}</b>
          </div>
         </div>
-      </div> -->
-      <div class="mnews">
-        <h1>Load moredkjhkjldhsjklhsdakjhkla</h1>
       </div>
+      <h1 (click)="loadmore()" style="text-align: center;margin-top: 30px; font-size: 1.3em; cursor: pointer;">Read More...</h1>
     </div>
   </div>
   <div class="top-stories">
