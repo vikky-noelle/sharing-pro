@@ -10,7 +10,8 @@ import { InteractionService } from '../../shared/services/interaction.service';
 })
 export class UserprofileComponent implements OnInit {
 
-
+  followerpage=1;
+  fanpage=1;
   FirstName;
   LastName;
   UniqueName;
@@ -22,6 +23,8 @@ export class UserprofileComponent implements OnInit {
   FollowingCount;            
   City;
   showcontent:boolean=true;
+  fanstatus = true;
+  followerstatus = true;
   Academy;
   TypeofInstn;
   InstnName;
@@ -186,10 +189,16 @@ export class UserprofileComponent implements OnInit {
       });
   }
   getuserFans(profile_id){
-    this.Fans=[];
+    if(this.fanpage == 1){
+      this.Fans=[];
+    }
     this.userrefId=profile_id;
-    this.postservice.getUserProfileFans(this.userid,profile_id,1,this.timestamp)
+    this.postservice.getUserProfileFans(this.userid,profile_id,this.fanpage,this.timestamp)
     .subscribe((res:Response)=>{
+      if(res[0] === undefined){
+        console.log("empty");
+        this.fanstatus = false;  
+      }
       for(const i in res){
         this.Fans.push({
           user_id:res[i].user_id,
@@ -201,11 +210,17 @@ export class UserprofileComponent implements OnInit {
     })
   }
   getuserFollowers(profile_id){
-    this.Followers=[];
+    if(this.followerpage == 1){
+      this.Followers=[];
+    }
     this.userrefId=profile_id;
-    this.postservice.getUserProfileFollowers(this.userid,profile_id,1,this.timestamp)
+    this.postservice.getUserProfileFollowers(this.userid,profile_id,this.followerpage,this.timestamp)
     .subscribe((res:Response)=>{
       console.log("this si res of folloers",res);
+      if(res[0] === undefined){
+        console.log("empty");
+        this.followerstatus = false;  
+      }
       for(const i in res){
         this.Followers.push({
           user_id:res[i].user_id,
@@ -390,6 +405,29 @@ export class UserprofileComponent implements OnInit {
     this.singleimage[0].style.display="none";
     // this.crousallist = this.mediaArr;
   }
+  @HostListener('scroll', ['$event'])
+  onscroll(event: any) {
+    // visible height + pixel scrolled >= total height 
+    if (event.target.offsetHeight + event.target.scrollTop >= event.target.scrollHeight) {
+      // console.log("End");
+      if(this.fanstatus){
+        this.fanpage=this.fanpage+1;
+        this.getuserFans(this.userrefId);
+    
+      }
+    }
+  }
+    onscrollf(event: any) {
+      // visible height + pixel scrolled >= total height 
+      if (event.target.offsetHeight + event.target.scrollTop >= event.target.scrollHeight) {
+        // console.log("End");
+        if(this.followerstatus){
+          this.followerpage=this.followerpage+1;
+          this.getuserFollowers(this.userrefId);
+      
+        }
+      }
+}
   @HostListener('document:keyup', ['$event'])
   handleDeleteKeyboardEvent(event: KeyboardEvent) {
     if(event.key === 'ArrowLeft')
