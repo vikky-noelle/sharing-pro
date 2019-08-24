@@ -129,10 +129,14 @@ export class OpenHomeMatchCardComponent implements OnInit {
       this.interactionservice.routechangefunction(id);
       this.router.navigate(['/userprofile',id,'matches']);
   }
-
+  openlocality(id){
+    // console.log("working"+id);
+    this.router.navigate(['/localityprofile/name'], {queryParams: {id: id}});
+  }
   getSingleMatchFeed(){
       this.postservice.OpenOneMatchCard(this.eventid).subscribe(
         data=>{
+          console.log(data);
           for(var i=0;i<data["Feed"].length;i++){
             this.show=true;
               var time= new Date(data["Feed"][i].startdatetime*1000);
@@ -147,6 +151,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
               var timeconvert= new String(time);
               this.startTime=timeconvert.slice(3,21);
             this.Matcharr.push({
+                  venueId: data["Feed"][i].VenueId,
                   Activity_name:data["Feed"][i].Activity_name,
                   uniquename:data["Feed"][i].uniquename==null?"":"@"+data["Feed"][i].uniquename,
                   result:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?""+this.startTime:'Match Finished',

@@ -7,7 +7,7 @@
     
     <div class="team-info">
       <div class="name">
-        <h1>{{venuename}}</h1>
+        <h1>{{venuename|slice:0:50}}</h1>
         <h2>{{venuetype}}</h2>
       </div>
       <div class="follow">
@@ -36,11 +36,12 @@
           {{data}}
           </a> -->
           <ul class="basic-info-tab">
-            <h1>Available Sports Facilities</h1>
+            <h1 *ngIf="sports.length>0">Available Sports Facilities</h1>
+            <h1 *ngIf="sports.length == 0" style="font-size: 1em; text-align: center;"> No Sports Facilities Yet</h1>
           <a routerLink="/localityprofile/{{data}}" routerLinkActive="active" *ngFor="let data of sports"><li>{{data}}</li></a>
         </ul>
         </div>
-      <div class="media">
+      <div class="media" *ngIf="media.lenght>0">
           <div class="head">
           <h4>Media</h4>
           <!-- <a (click)="opencrousal()"><p>See all</p></a> -->
@@ -49,7 +50,7 @@
            <img (click)="imageopen(icon.url);" src={{icon.url}}>
         </div>
       </div>
-      <div class="slots">
+      <div class="slots" *ngIf="slotdetails>0">
         <img src="/assets/images/sportsocialcalender.png" alt="">
         <div class="slot-days" *ngFor="let data of slotdetails">
           <h1>{{data.Day|slice:0:3}}</h1>
@@ -67,9 +68,14 @@
       <img class="ground" src="/assets/images/sportsocialground.jpg" alt="">
       <h3>The Average Ground</h3>
       <h2>Teams</h2>
-      <div class="teams" #parent>
-          <div (click)="rscroll();" class="rightarrow"></div>
-          <div (click)="lscroll();" class="leftarrow"></div>
+      <h3 *ngIf="teams.length == 0" style="font-size: 1.3em; color: #444444; padding: 20px; text-align: left;">No Teams Yet</h3>
+      <div *ngIf="teams.length > 0" class="teams" #parent>
+          <div (click)="rscroll();" class="rightarrow">
+            <img src="/assets/images/sportsocialhomearrow.png" alt="">
+          </div>
+          <div (click)="lscroll();" class="leftarrow">
+            <img src="/assets/images/sportsocialhomearrow.png" alt="">
+          </div>
           <div class="team-card" *ngFor="let data of teams" #child>
           <div class="bg-team-part">
             <img class="bg-img" src="{{data.bgimage}}" alt="">

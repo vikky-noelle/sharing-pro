@@ -17,7 +17,8 @@ export class LocalityComponent implements OnInit {
   sports=[];
   upcomingmatches=[];
   media=[];
-  teams=[]
+  teams=[];
+  localityid;
   slotdetails=[];
   address;
   profileimage;
@@ -85,6 +86,9 @@ export class LocalityComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.route.queryParams.subscribe(params=>{
+      this.localityid=params['id'];
+    });
     this.getDetails();
     this.getLocalityTeams();
     this.getUpcomingMatches();
@@ -124,7 +128,7 @@ export class LocalityComponent implements OnInit {
   }
 };
   getUpcomingMatches(){
-    this.postService.getUpcomingMatches("119", "844", 1564844406046, 1).subscribe((res : any[])=>{
+    this.postService.getUpcomingMatches("119", this.localityid, 1564844406046, 1).subscribe((res : any[])=>{
       console.log(res);
       for(var i=0; i < res.length; i++){
         this.upcomingmatches.push({
@@ -148,11 +152,10 @@ export class LocalityComponent implements OnInit {
           gender: res[i].matchGender,
         });
       }
-      // for(var i = 0; i < res.length)
     });
   }
   getLocalityTeams(){
-    this.postService.getLocalityTeams("11").subscribe((res: any[]) => {
+    this.postService.getLocalityTeams(this.localityid).subscribe((res: any[]) => {
       console.log(res[0][1]);
       for(var i=0; i<res[0].length;i++){
         this.teams.push({
@@ -171,23 +174,22 @@ export class LocalityComponent implements OnInit {
           teamuniquename: res[0][i].teamUniqueName
         });
       }
-      // console.log(this.teams);
     });
   }
   getDetails(){
-    // console.log(this.sportlist);
-    this.postService.getLocalityDetails("119", "11").subscribe(res => {
-      // console.log(res);
+    this.postService.getLocalityDetails("119", this.localityid).subscribe(res => {
       // getting sports and changing the route
       for(var i=0; i< res["Sports"].length; i++){
         for(var j=0; j<this.sportlist.length; j++){
-          // console.log(this.sportlist[j].title);
           if(res["Sports"][i].gameid === this.sportlist[j].id){
             this.sports.push(this.sportlist[j].title);
           }
         }
       }
-     // this.router.navigate(['localityprofile', this.sports[0]]);
+      console.log(this.sports[0]);
+      if(this.sports[0] != undefined){
+         this.router.navigate(['localityprofile', this.sports[0]], {queryParams:{id: this.localityid}});
+      }
    
       // slot details
       for(var i=0; i < res["SlotDetails"].length; i++){
