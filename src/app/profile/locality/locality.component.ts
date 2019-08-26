@@ -18,6 +18,8 @@ export class LocalityComponent implements OnInit {
   upcomingmatches=[];
   media=[];
   teams=[];
+  matches=[];
+  specificteam=[];
   localityid;
   slotdetails=[];
   address;
@@ -90,7 +92,7 @@ export class LocalityComponent implements OnInit {
       this.localityid=params['id'];
     });
     this.getDetails();
-    this.getLocalityTeams();
+    // this.getLocalityTeams();
     this.getUpcomingMatches();
     window.addEventListener('scroll', this.scroll, true);
   }
@@ -127,6 +129,21 @@ export class LocalityComponent implements OnInit {
     // this.sideshellposition[0].style.position="relative";
   }
 };
+openspecificsport(name){
+  name=name.toLowerCase();
+  this.specificteam=[];
+  for(var i=0; i < this.teams.length; i++){
+    if(name == this.teams[i].gamename.toLowerCase()){
+      this.specificteam.push(this.teams[i]);
+    }
+  }
+  for(var i=0; i < this.upcomingmatches.length; i++){
+    if(name == this.upcomingmatches[i].gamename.toLowerCase()){
+      this.matches.push(this.upcomingmatches[i]);
+    }
+  }
+
+}
   getUpcomingMatches(){
     this.postService.getUpcomingMatches("119", this.localityid, 1564844406046, 1).subscribe((res : any[])=>{
       console.log(res);
@@ -152,6 +169,14 @@ export class LocalityComponent implements OnInit {
           gender: res[i].matchGender,
         });
       }
+      for(var i=0; i < this.upcomingmatches.length; i++){
+        console.log(this.sports[0]);
+        if(this.sports[0].toLowerCase() == this.upcomingmatches[i].gamename.toLowerCase()){
+          this.matches.push(this.upcomingmatches[i]);
+          console.log("matched");
+        }
+      }
+      console.log(this.specificteam);
     });
   }
   getLocalityTeams(){
@@ -174,6 +199,14 @@ export class LocalityComponent implements OnInit {
           teamuniquename: res[0][i].teamUniqueName
         });
       }
+      for(var i=0; i < this.teams.length; i++){
+        console.log(this.sports[0]);
+        if(this.sports[0].toLowerCase() == this.teams[i].gamename.toLowerCase()){
+          this.specificteam.push(this.teams[i]);
+          console.log("matched");
+        }
+      }
+      console.log(this.specificteam);
     });
   }
   getDetails(){
@@ -186,6 +219,7 @@ export class LocalityComponent implements OnInit {
           }
         }
       }
+      this.getLocalityTeams(); //called here because asynch
       console.log(this.sports[0]);
       if(this.sports[0] != undefined){
          this.router.navigate(['localityprofile', this.sports[0]], {queryParams:{id: this.localityid}});
