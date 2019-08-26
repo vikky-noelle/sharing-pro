@@ -23,7 +23,8 @@ export class NewshomeComponent implements OnInit {
   title="Sports News from around the world";
   description="Get the latest sports trends,news,updates from around the world on Sports Social from top sources";
   keywords="Latest Sports News, Breaking news Sports,Sports Trends,Sports Social,Sports Updates,Headlines Sports,Sports News Today";
-   
+  show:boolean=false;
+  
   sportlist=[
     {id: 1, title: "Aerobics"},                 
     {id: 3, title: "Archery"},                  
@@ -123,6 +124,7 @@ export class NewshomeComponent implements OnInit {
     for(var i=0; i<this.sportlist.length;i++){
       topic = this.sportlist[i].title.toLowerCase();
       this.getService.getsportnews(topic).subscribe(res=>{
+        this.show=true;
         var body = JSON.parse(res._body);
         // console.log(body.news);
         this.temporarynews=[];
@@ -157,6 +159,7 @@ export class NewshomeComponent implements OnInit {
   getsportnewsheader(topic){
       this.getService.getsportnews(topic).subscribe(res=>{
         var body = JSON.parse(res._body);
+        this.show=true;
         var x;
         this.j=this.j+1;
         for (var i=0; i<5; i++) {

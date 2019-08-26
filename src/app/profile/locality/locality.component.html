@@ -41,7 +41,7 @@
           <a routerLink="/localityprofile/{{data}}" routerLinkActive="active" *ngFor="let data of sports"><li>{{data}}</li></a>
         </ul>
         </div>
-      <div class="media" *ngIf="media.lenght>0">
+      <div class="media" *ngIf="media.length > 0">
           <div class="head">
           <h4>Media</h4>
           <!-- <a (click)="opencrousal()"><p>See all</p></a> -->
@@ -50,7 +50,7 @@
            <img (click)="imageopen(icon.url);" src={{icon.url}}>
         </div>
       </div>
-      <div class="slots" *ngIf="slotdetails>0">
+      <div class="slots" *ngIf="slotdetails.length > 0">
         <img src="/assets/images/sportsocialcalender.png" alt="">
         <div class="slot-days" *ngFor="let data of slotdetails">
           <h1>{{data.Day|slice:0:3}}</h1>
