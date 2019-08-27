@@ -189,13 +189,23 @@
         /* width: 50%; */
         float: left;
         margin-left: 3%;
-        margin-top: 15px;
+        margin-top: 10px;
     }
     .owner h2{
+        display: none;
         font-size: 0.9em;
         float: left;
         margin-top: 17px;
         margin-left: 3%;
+        color: #444444;
+    }
+    .owner h3{
+        width: 100%;    
+        font-size: 0.9em;
+        float: left;
+        margin-top: -17px;
+        margin-left: 20%;
+        color: #444444; 
     }
     .basic-info-tab{
         list-style: none;
@@ -578,7 +588,15 @@
         .sub-header{
             height: 60px;
         }
-        
+        .owner h1{
+            margin-top: 15px;
+        }
+        .owner h3{
+            display: none;
+        }
+        .owner h2{
+            display: block;
+        }
         
         .sub-name{
             width: 55%;
@@ -773,6 +791,15 @@
         
     }
     @media screen and (min-width:701px) and (max-width:800px){
+        .owner h3{
+            display: none;
+        }
+        .owner h2{
+            display: block;
+        }
+        .owner h1{
+            margin-top: 15px;
+        }
         .sub-header{
             height: 60px;
         }
@@ -969,6 +996,8 @@
         }
        
     }
-@media screen and (min-width:701px) and (max-width:800px){
-
+@media screen and (min-width:801px) and (max-width:1100px){
+    .owner h3{
+        margin-left: 25%;
+    }
 }
