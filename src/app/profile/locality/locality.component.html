@@ -37,7 +37,7 @@
           <ul class="basic-info-tab">
             <h1 *ngIf="sports.length>0">Available Sports Facilities</h1>
             <h1 *ngIf="sports.length == 0" style="font-size: 1em; text-align: center;"> No Sports Facilities Yet</h1>
-          <a (click)="openspecificsport(data)" routerLink="/localityprofile/{{data}}" routerLinkActive="active" *ngFor="let data of sports"><li>{{data}}</li></a>
+          <a (click)="openspecificsport(data)" routerLink="/localityprofile/{{data}}" [queryParams]="{id: localityid}" routerLinkActive="active" *ngFor="let data of sports"><li>{{data}}</li></a>
         </ul>
         </div>
       <div class="media" *ngIf="media.lenght>0">
@@ -78,12 +78,12 @@
           <div class="team-card" *ngFor="let data of specificteam" #child>
           <div class="bg-team-part">
             <img class="bg-img" src="{{data.bgimage}}" onerror="this.src='assets/images/sportsocialteambgerror.jpg'" alt="">
-            <div class="team-pfp">
+            <div (click)="openteam()" class="team-pfp">
               <img src="{{data.pfp}}" onerror="this.src='assets/images/sportsociallocalitypfperror.jpg'" alt="">
             </div>  
           </div>
-          <h1>{{data.teamname}}</h1>
-          <h2>@{{data.teamuniquename}}</h2>
+          <h1 (click)="openteam()">{{data.teamname}}</h1>
+          <h2 (click)="openteam()">@{{data.teamuniquename}}</h2>
           <button class="team-join">Join</button>
           <div class="social-status">
             <div class="fan-status">

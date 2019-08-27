@@ -87,6 +87,7 @@ export class LocalityComponent implements OnInit {
     private router: Router
   ) { }
 
+  
   ngOnInit() {
     this.route.queryParams.subscribe(params=>{
       this.localityid=params['id'];
@@ -96,6 +97,9 @@ export class LocalityComponent implements OnInit {
     this.getUpcomingMatches();
     window.addEventListener('scroll', this.scroll, true);
   }
+  // openteam(id){
+  //   this.router.navigate(['localityprofile', this.sports[0]], {queryParams:{id: this.localityid}});
+  // }
   lscroll(){
     this.parent.nativeElement.scrollLeft -=this.child.nativeElement.clientWidth;
   }
