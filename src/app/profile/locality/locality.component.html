@@ -30,7 +30,6 @@
           <h1>{{ownername}}</h1>
           <h2>Owner</h2> 
           <img (click)="openAppDownloadPopup()" class="chat-icon" src="assets/images/sportsocialchat.png" alt="">
-          <h3>Owner</h3>
         </div>
           <!-- <a class="basic-info-tab" *ngFor="let data of sports">
           {{data}}
@@ -47,7 +46,8 @@
           <!-- <a (click)="opencrousal()"><p>See all</p></a> -->
         </div>
          <div class="mediabox" *ngFor="let icon of media">
-           <img (click)="imageopen(icon.url);" src={{icon.url}} onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'">
+           <!-- <img (click)="imageopen(icon.url);" src={{icon.url}} onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'"> -->
+           <img src={{icon.url}} onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'">
         </div>
       </div>
       <div class="slots" *ngIf="slotdetails.length > 0">
@@ -175,9 +175,9 @@
       </div>
     </div>
    
-      <div class="close">
+      <!-- <div class="close">
         <img (click)="close()" src="assets/images/sportsocialprofileclose.png">
-      </div>
+      </div> -->
       <div class="larrow">
         <img (click)="lscroll()" src="assets/images/sportsocialprofilerightarrow.png" alt="">
       </div>
