@@ -30,7 +30,7 @@ export class UserprofileComponent implements OnInit {
   InstnName;
   Age;
   gendercheck;
-  crousalsingleimage
+  crousalsingleimage;
   followerstab = document.getElementsByClassName('followers') as HTMLCollectionOf<HTMLElement>;
   sideshellposition = document.getElementsByClassName('side-shell') as HTMLCollectionOf<HTMLElement>;
   opensubheader = document.getElementsByClassName('sub-header') as HTMLCollectionOf<HTMLElement>;
