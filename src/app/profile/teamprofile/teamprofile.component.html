@@ -11,10 +11,10 @@
       <div class="name">
         <h1>{{name}}</h1>
       </div>
-      <div class="follow">
-        <h1>Follow</h1>
+      <div class="follow" (click)="openAppDownloadPopup()">
+        <h1 >Follow</h1>
       </div>
-      <img src="assets/images/sportsocialchat.png" alt="">
+      <img src="assets/images/sportsocialchat.png" alt="" (click)="openAppDownloadPopup()">
     </div>
   </div>
   <div class="sub-header">
@@ -29,10 +29,10 @@
               <h1>{{name}}</h1>
               <h2>@{{teamusername}}</h2>
             </div>
-      <div class="sub-follow">
+      <div class="sub-follow" (click)="openAppDownloadPopup()">
           <h1>Follow</h1>
         </div>
-        <img class="sub-follow-img" src="assets/images/sportsocialchat.png" alt="">  
+        <img class="sub-follow-img" src="assets/images/sportsocialchat.png" alt="" (click)="openAppDownloadPopup()">  
   </div>
   <div class="side-shell">
     <div class="stick">
@@ -101,7 +101,7 @@
           <a (click)="opencrousal()"><p>See all</p></a>
         </div>
          <div class="mediabox" *ngFor="let icon of media">
-           <img (click)="imageopen(icon.url);" src={{icon.url}}>
+           <img (click)="imageopen(icon.url);" src={{icon.url}} onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'">
         </div>
       </div>
     </div>

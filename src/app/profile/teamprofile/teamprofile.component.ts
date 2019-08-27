@@ -1,6 +1,6 @@
 import { LocationService } from './../../shared/services/location.service';
 import { PostService } from '../../shared/services/post.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit, Input, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { TimeService } from '../../shared/services/time.service';
 
@@ -69,7 +69,8 @@ export class TeamprofileComponent implements OnInit {
     private route: ActivatedRoute,
     private PostService: PostService,
     private time:TimeService,
-    private getlocation: LocationService
+    private getlocation: LocationService,
+    private router:Router
   ) { }
   
   getFans(){
@@ -433,5 +434,8 @@ export class TeamprofileComponent implements OnInit {
       this.sideshellposition[0].style.position="relative";
     }
   };
+  openAppDownloadPopup() {
+    this.router.navigate( [ { outlets: { 'AppDownload': ['PopUp'] }} ], { skipLocationChange: true });
+  }
 
 }

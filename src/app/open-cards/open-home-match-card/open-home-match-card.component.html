@@ -7,7 +7,7 @@
       <div *ngFor="let data of MatchMoments" 
       class="c-element" #widgetsContent
       (click)="openews(data.id, data.game)" #widgetsContent>
-      <img src="{{data.imagepath}}" onerror="this.src='assets/images/user.png'">
+      <img src="{{data.imagepath}}" onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'">
       <div *ngIf="data.Text.length > 0" class="c-head">
           <h1>{{data.Text}}</h1>
           <p>by:{{data.User_Name}}</p>
@@ -122,7 +122,7 @@
             </div>
             <div class="details" *ngIf="moment"> 
                 <div class="container2" *ngFor="let data of MatchMoments">
-                  <img (click)="openpopcrousal()" src="{{data.imagepath}}" onerror="this.src='assets/images/user.png'">
+                  <img (click)="openpopcrousal()" src="{{data.imagepath}}" onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'">
                 </div>
             </div>
             <div class="details3" *ngIf="joinee"> 
