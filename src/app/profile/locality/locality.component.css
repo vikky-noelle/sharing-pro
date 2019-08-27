@@ -24,9 +24,9 @@
 .chat-icon{
     height: 35px;
     width: 35px;
-    float: right;
-    margin-right: 5%;
-    margin-top: -35px;
+    float: left;
+    margin-left: 5%;
+    margin-top: 10px;
     cursor: pointer;
 }
 .ground{
@@ -68,11 +68,8 @@
     z-index: 1;
     top: 0%;
     background-color: white;
-    /* border-bottom: 2px solid silver; */
-    /* border-left: 2px solid silver; */
     height:110px;
     width: 100%;
-    /* margin-left: 25%; */
     box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 rgba(0, 0, 0, 0.19);
 }
 .name{
@@ -176,7 +173,9 @@
     }
     .owner{
         margin-top: 10px;
-        margin-left: 14%;
+        margin-left: 5%;
+        width: 95%;
+        height: 60px;
     }
     .owner-img{
         float: left;
@@ -187,14 +186,16 @@
     }
     .owner h1{
         font-size: 1em;
-        width: 70%;
+        /* width: 50%; */
         float: left;
         margin-left: 3%;
-        margin-top: 10px;
+        margin-top: 15px;
     }
     .owner h2{
         font-size: 0.9em;
-        margin-left: 30%;
+        float: left;
+        margin-top: 17px;
+        margin-left: 3%;
     }
     .basic-info-tab{
         list-style: none;
@@ -568,30 +569,17 @@
         margin-left: 5%;
         float: left;
     }
-    .owner>h1>span{
-        display: none;
-    }
+   
     .sport-menu{
         display: none;
     }
     @media screen and (min-width:200px) and (max-width:700px){
         /* for header that show after scroll*/
-        @media screen and (min-width:400px){
-            .chat-icon{
-                margin-top: 30px;
-            }
-        }
-
         .sub-header{
             height: 60px;
         }
-        .owner>h2{
-            display: none;
-        }
-        .owner>h1>span{
-            color: #333333;
-            display: block;
-        }
+        
+        
         .sub-name{
             width: 55%;
             margin-left: 5%;
@@ -626,14 +614,15 @@
         }
         .owner{
             margin-left: 2%;
+            margin-top: 40px;
         }
         .owner-img{
             float: left;
             margin-left: 0%;
         }
         .chat-icon{
-            margin-right: 5%;
-            margin-top: -37px;
+            margin-top: 10px;
+            cursor: pointer;
         }
         .media{
             margin-top: 30px;
@@ -787,13 +776,6 @@
         .sub-header{
             height: 60px;
         }
-        .owner>h2{
-            display: none;
-        }
-        .owner>h1>span{
-            color: #333333;
-            display: block;
-        }
         .sub-name{
             width: 55%;
             margin-left: 5%;
@@ -834,10 +816,10 @@
             margin-left: 0%;
         }
         .chat-icon{
-            margin-right: 5%;
+            margin-left: 5%;
             float: left;
-            margin-left: -40%;
-            margin-top: 5px;
+            margin-top: 10px;
+            cursor: pointer;
         }
         .media{
             margin-top: 30px;

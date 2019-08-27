@@ -9,7 +9,7 @@
       <div class="name">
         <h1>{{venuename|slice:0:50}}<span>&nbsp;-&nbsp;{{venuetype}}</span></h1>
       </div>
-      <div class="follow">
+      <div (click)="openAppDownloadPopup()" class="follow">
         <h1>Favourite</h1>
       </div>
     </div>
@@ -27,7 +27,7 @@
       <div class="basic-info">
         <div class="owner">
           <img class="owner-img" src="{{profileimage}}" onerror="this.src='assets/images/sportsociallocalitypfperror.jpg'" alt=""> 
-          <h1>{{ownername}}<span>&nbsp;(owner)</span></h1>
+          <h1>{{ownername}}</h1>
           <h2>Owner</h2> 
           <img (click)="openAppDownloadPopup()" class="chat-icon" src="assets/images/sportsocialchat.png" alt="">
         </div>
