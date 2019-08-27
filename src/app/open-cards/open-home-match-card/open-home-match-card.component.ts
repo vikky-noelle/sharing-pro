@@ -127,7 +127,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
    
   changeroute(id){
       this.interactionservice.routechangefunction(id);
-      this.router.navigate(['/userprofile',id,'matches']);
+      this.router.navigate(['/userprofile',id,'about']);
   }
   openlocality(id){
     // console.log("working"+id);

@@ -846,6 +846,74 @@
         .btn>button{
             font-size: .9em;
         }
+        .pop-crousal{
+            width: 80%;
+            height: 450px;
+            margin: 18% 10% 0% 10%;
+        }
+        .close{
+            height: 20px;
+            width: 20px;
+            margin: 10% 10% 0% 0%;
+        }
+        .close>img{
+            height: 20px;
+            width: 20px;
+        }
+
+        .larrow{
+            height: 30px;
+            width: 30px;
+            top: 43vh;
+            left: 2%;
+        }
+        .larrow>img{
+            height: 25px;
+            width: 25px;
+        }
+        .rarrow{
+            height: 30px;
+            width: 30px;
+            top: 42vh;
+            right: 1%;
+        }
+        .rarrow>img{
+            height: 25px;
+            width: 25px;
+        }
+        .past-time{
+            width: 5%;
+            bottom: 2.5%;
+            right: 25%;
+        }
+        .past-time>h5{
+            font-size: .7em;
+        }
+        .uploader-info{
+            width: 80%;
+            height: 14%;
+            top: 1% !important;
+            margin-left: 2%;
+        }
+        .uploader-info>img{
+            margin: 2% 0% 0% 5%;
+            width: 40px;
+            height: 40px;
+        }
+        .likeCount{
+            left: 5%;
+            width: 18%;
+            bottom: 2%;
+        }
+        .likeCount>b{
+            font-size: .9em;
+        }
+        .likeCount>img{
+            margin-left: 5%;
+            width: 15px;
+            height: 15px;
+            vertical-align: top;
+        }
     }
     
     @media screen and (min-width:321px) and (max-width:700px){
@@ -1070,6 +1138,74 @@
         .btn>button{
             font-size: .9em;
         }
+        .pop-crousal{
+            width: 80%;
+            height: 500px;
+            margin: 18% 10% 0% 10%;
+        }
+        .close{
+            height: 20px;
+            width: 20px;
+            margin: 10% 10% 0% 0%;
+        }
+        .close>img{
+            height: 20px;
+            width: 20px;
+        }
+
+        .larrow{
+            height: 30px;
+            width: 30px;
+            top: 43vh;
+            left: 2%;
+        }
+        .larrow>img{
+            height: 25px;
+            width: 25px;
+        }
+        .rarrow{
+            height: 30px;
+            width: 30px;
+            top: 42vh;
+            right: 1%;
+        }
+        .rarrow>img{
+            height: 25px;
+            width: 25px;
+        }
+        .past-time{
+            width: 5%;
+            bottom: 2.5%;
+            right: 25%;
+        }
+        .past-time>h5{
+            font-size: .7em;
+        }
+        .uploader-info{
+            width: 80%;
+            height: 14%;
+            top: 1% !important;
+            margin-left: 2%;
+        }
+        .uploader-info>img{
+            margin: 2% 0% 0% 5%;
+            width: 40px;
+            height: 40px;
+        }
+        .likeCount{
+            left: 5%;
+            width: 18%;
+            bottom: 2%;
+        }
+        .likeCount>b{
+            font-size: .9em;
+        }
+        .likeCount>img{
+            margin-left: 5%;
+            width: 15px;
+            height: 15px;
+            vertical-align: top;
+        }
     }
 
     @media screen and (min-width:701px) and (max-width:1100px){
@@ -1147,6 +1283,82 @@
         font-size: .9em;
     }
     .btn>button{
+        font-size: .9em;
+    }
+    .pop-crousal{
+        width: 80%;
+        height: 650px;
+        margin: 18% 10% 0% 10%;
+    }
+    .close{
+        height: 20px;
+        width: 20px;
+        margin: 14% 10% 0% 0%;
+    }
+    .close>img{
+        height: 20px;
+        width: 20px;
+    }
+
+    .larrow{
+        height: 30px;
+        width: 30px;
+        top: 43vh;
+        left: 4%;
+    }
+    .larrow>img{
+        height: 25px;
+        width: 25px;
+    }
+    .rarrow{
+        height: 30px;
+        width: 30px;
+        top: 42vh;
+        right: 4%;
+    }
+    .rarrow>img{
+        height: 25px;
+        width: 25px;
+    }
+    .past-time{
+        width: 5%;
+        bottom: 2.5%;
+        right: 15%;
+    }
+    .past-time>h5{
+        font-size: 1em;
+    }
+    .uploader-info{
+        width: 80%;
+        height: 14%;
+        top: 1% !important;
+        margin-left: 2%;
+    }
+    .uploader-info>img{
+        margin: 2% 0% 0% 5%;
+        width: 50px;
+        height: 50px;
+    }
+    .likeCount{
+        left: 5%;
+        width: 18%;
+        bottom: 2%;
+    }
+    .likeCount>b{
+        font-size: 1em;
+    }
+    .likeCount>img{
+        margin-left: 5%;
+        width: 25px;
+        height: 25px;
+        vertical-align: top;
+    }
+    .uploader-name>p{
+        margin: 3% 0% 0% 5%;
+        font-size: 1.3em;
+    }
+    .uploader-name>h6{
+        margin: 4% 0% 0% 4%;
         font-size: .9em;
     }
 
