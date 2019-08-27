@@ -1,10 +1,11 @@
 <sports-social-header></sports-social-header>
 <div class="outer-shell">
   <div class="profile-shell">
-    <div class="background-img">
-      <img src="{{backgroundimage}}" onerror="this.src='assets/images/sportsocialteambgerror.jpg'" alt="">
-    </div>
-    
+    <div class="slide-show" #slide>
+      <div class="background-img" *ngFor="let data of media" #show>
+        <img src="{{data.url}}" onerror="this.src='assets/images/sportsocialteambgerror.jpg'" alt="">
+      </div>
+  </div>
     <div class="team-info">
       <div class="name">
         <h1>{{venuename|slice:0:50}}<span>&nbsp;-&nbsp;{{venuetype}}</span></h1>
@@ -41,15 +42,6 @@
           <a routerLink="/localityprofile/{{data}}" [queryParams]="{id: localityid}" routerLinkActive="active" *ngFor="let data of sports"><li (click)="openspecificsport(data)">{{data}}</li></a>
         </ul>
         </div>
-      <div class="media" *ngIf="media.length > 0">
-          <div class="head">
-          <h4>Media</h4>
-          <!-- <a (click)="opencrousal()"><p>See all</p></a> -->
-        </div>
-         <div class="mediabox" *ngFor="let icon of media">
-           <img (click)="imageopen(icon.url);" src={{icon.url}} onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'">
-        </div>
-      </div>
       <div class="slots" *ngIf="slotdetails.length > 0">
         <img src="/assets/images/sportsocialcalender.png" alt="">
         <div class="slot-days" *ngFor="let data of slotdetails">
@@ -142,48 +134,4 @@
       
     </div>
 </div>
-<div class="media-crousal">
-  <!-- <img class="single-image" src="{{crousalsingleimage}}" alt=""> -->
-  <div class="close">
-    <!-- <img (click)="close()" src="/assets/images/sportsocialprofileclose.png"> -->
-  </div>
-  <div class="larrow">
-    <!-- <img (click)="lscroll()" src="/assets/images/sportsocialprofilerightarrow.png" alt=""> -->
-  </div>
-  <div class="rarrow">
-    <!-- <img (click)="rscroll()" src="/assets/images/sportsocialprofileleftarrow.png" alt=""> -->
-  </div>
-  <div class="media-crousal">
-    <div class="pop-crousal" #widgets>
-      <div *ngFor="let data of media" class="crousal-element" #widgetsContent>
-          <img src={{data.Path}} onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'">
-         <div class="uploader-info">
-            <img src={{data.profile_photo}} onerror="this.src='assets/images/user.png'">
-              <div class="uploader-name">
-                <p>{{data.User_Name}}</p><br>
-                <h6>@{{data.Uniquename}}</h6>
-            </div>
-         </div>
-         <div class="likeCount">
-          <img src="assets/images/heart.png">&nbsp;&nbsp;<b>{{data.likecount}}</b>
-          &nbsp;&nbsp;<img src="assets/images/chat-comment-oval-speech-bubble-with-text-lines.png">&nbsp;&nbsp;<b>{{data.commentcount}}</b>
-         </div>
-         <div class="past-time">
-            <h5>{{data.UploadTime | timeAgo}}</h5>
-         </div>
-          
-      </div>
-    </div>
-   
-      <div class="close">
-        <img (click)="close()" src="assets/images/sportsocialprofileclose.png">
-      </div>
-      <div class="larrow">
-        <img (click)="lscroll()" src="assets/images/sportsocialprofilerightarrow.png" alt="">
-      </div>
-      <div class="rarrow">
-       <img (click)="rscroll()" src="assets/images/sportsocialprofileleftarrow.png" alt="">
-      </div>
-</div>
 
-</div>
