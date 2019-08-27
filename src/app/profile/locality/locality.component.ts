@@ -23,6 +23,7 @@ export class LocalityComponent implements OnInit {
   localityid;
   slotdetails=[];
   address;
+  crousalsingleimage;
   profileimage;
   sportlist=[
         {id: 1, title: "Aerobics"},                 
@@ -76,7 +77,15 @@ export class LocalityComponent implements OnInit {
   ];
   sideshellposition = document.getElementsByClassName('side-shell') as HTMLCollectionOf<HTMLElement>;
   opensubheader = document.getElementsByClassName('sub-header') as HTMLCollectionOf<HTMLElement>;
- 
+  leftarrow = document.getElementsByClassName('larrow') as HTMLCollectionOf<HTMLElement>;
+  rightarrow = document.getElementsByClassName('rarrow') as HTMLCollectionOf<HTMLElement>;
+  showcrousal = document.getElementsByClassName('media-crousal') as HTMLCollectionOf<HTMLElement>;
+  singleimage = document.getElementsByClassName('single-image') as HTMLCollectionOf<HTMLElement>;
+  crousal = document.getElementsByClassName('crousal-element') as HTMLCollectionOf<HTMLElement>;
+  
+  openfan= document.getElementsByClassName('fanslist') as HTMLCollectionOf<HTMLAnchorElement>;
+  openfollower=document.getElementsByClassName('followerlist') as HTMLCollectionOf<HTMLAnchorElement>;
+
 
   @ViewChild('parent') parent:ElementRef;  
   @ViewChild('child') child:ElementRef;
@@ -94,7 +103,7 @@ export class LocalityComponent implements OnInit {
     });
     this.getDetails();
     // this.getLocalityTeams();
-    this.getUpcomingMatches();
+    // this.getUpcomingMatches();
     window.addEventListener('scroll', this.scroll, true);
   }
   // openteam(id){
@@ -134,6 +143,7 @@ export class LocalityComponent implements OnInit {
   }
 };
 openspecificsport(name){
+  // console.log("working haha")
   name=name.toLowerCase();
   this.specificteam=[];
   for(var i=0; i < this.teams.length; i++){
@@ -147,6 +157,21 @@ openspecificsport(name){
     }
   }
 
+}
+imageopen(url){
+  this.crousalsingleimage = url;
+  this.showcrousal[0].style.display="block";
+  this.crousal[0].style.display="none";
+  this.leftarrow[0].style.display="none";
+  this.rightarrow[0].style.display="none";
+  this.singleimage[0].style.display="block";
+}
+opencrousal(){
+  this.showcrousal[0].style.display="block";
+  this.crousal[0].style.display="block";
+  this.leftarrow[0].style.display="block";
+  this.rightarrow[0].style.display="block";
+  this.singleimage[0].style.display="none";
 }
   getUpcomingMatches(){
     this.postService.getUpcomingMatches("119", this.localityid, 1564844406046, 1).subscribe((res : any[])=>{
@@ -224,6 +249,8 @@ openspecificsport(name){
         }
       }
       this.getLocalityTeams(); //called here because asynch
+      this.getUpcomingMatches();
+
       console.log(this.sports[0]);
       if(this.sports[0] != undefined){
          this.router.navigate(['localityprofile', this.sports[0]], {queryParams:{id: this.localityid}});
@@ -263,5 +290,8 @@ openspecificsport(name){
         default: this.venuetype = "Unknown";
       }
   });
+  }
+  openAppDownloadPopup() {
+    this.router.navigate( [ { outlets: { 'AppDownload': ['PopUp'] }} ], { skipLocationChange: true });
   }
 }
