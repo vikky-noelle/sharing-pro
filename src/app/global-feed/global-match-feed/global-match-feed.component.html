@@ -52,8 +52,8 @@
                         </div>
                   </div>
                 </a> -->
-              <a routerLink="/matchcenter/{{feed.gamename}}/{{feed.eventid}}">
                   <sports-social-ss-match-card
+                  [eventid]="feed.eventid"
                   [Ontime]="feed.Ontime"
                   [Ondate]="feed.Ondate"
                   [coverpic]="feed.coverpic"
@@ -83,7 +83,6 @@
                   [PromoteCount]="feed.PromoteCount"
                   [CommentCount]="feed.CommentCount"
                   ></sports-social-ss-match-card>
-          </a>
         </div>
     <!-- </ng-masonry-grid> -->
 </div>

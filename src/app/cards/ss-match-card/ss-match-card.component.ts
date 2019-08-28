@@ -41,11 +41,12 @@ export class SsMatchCardComponent implements OnInit {
 
   constructor(private router:Router) { }
 
-  openAppDownloadPopup() {
-    this.router.navigate( [ { outlets: { 'AppDownload': ['PopUp'] }} ], { skipLocationChange: true });
-  }
-
   ngOnInit() {
   }
-
+  openmatchcard(gamename, eventid){
+    this.router.navigate(['/matchcenter', gamename, eventid]);
+  }
+  openpopup(){
+    this.router.navigate( [ { outlets: { 'AppDownload': ['PopUp'] }} ], { skipLocationChange: true });
+  }
 }
