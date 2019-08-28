@@ -35,6 +35,11 @@ export class UserprofileComponent implements OnInit {
   sideshellposition = document.getElementsByClassName('side-shell') as HTMLCollectionOf<HTMLElement>;
   opensubheader = document.getElementsByClassName('sub-header') as HTMLCollectionOf<HTMLElement>;
   
+  showcrousal = document.getElementsByClassName('media-crousal') as HTMLCollectionOf<HTMLElement>;
+   
+  openfan= document.getElementsByClassName('fanslist') as HTMLCollectionOf<HTMLAnchorElement>;
+  openfollower=document.getElementsByClassName('followerlist') as HTMLCollectionOf<HTMLAnchorElement>;
+
   constructor(
     private postservice:PostService,
     private activatedroute:ActivatedRoute,
@@ -52,15 +57,6 @@ export class UserprofileComponent implements OnInit {
         }
      }); 
      }
-
-  leftarrow = document.getElementsByClassName('larrow') as HTMLCollectionOf<HTMLElement>;
-  rightarrow = document.getElementsByClassName('rarrow') as HTMLCollectionOf<HTMLElement>;
-  showcrousal = document.getElementsByClassName('media-crousal') as HTMLCollectionOf<HTMLElement>;
-  singleimage = document.getElementsByClassName('single-image') as HTMLCollectionOf<HTMLElement>;
-  crousal = document.getElementsByClassName('crousal-element') as HTMLCollectionOf<HTMLElement>;
-  
-  openfan= document.getElementsByClassName('fanslist') as HTMLCollectionOf<HTMLAnchorElement>;
-  openfollower=document.getElementsByClassName('followerlist') as HTMLCollectionOf<HTMLAnchorElement>;
 
   openFanFunc(){
     this.openfan[0].style.display="block";
@@ -390,20 +386,8 @@ export class UserprofileComponent implements OnInit {
     )
     // }
   }
-  imageopen(url){
-    this.crousalsingleimage = url;
-    this.showcrousal[0].style.display="block";
-    this.crousal[0].style.display="none";
-    this.leftarrow[0].style.display="none";
-    this.rightarrow[0].style.display="none";
-    this.singleimage[0].style.display="block";
-  }
   opencrousal(){
     this.showcrousal[0].style.display="block";
-    // this.crousal[0].style.display="block";
-    // this.leftarrow[0].style.display="block";
-    // this.rightarrow[0].style.display="block";
-    this.singleimage[0].style.display="none";
   }
   @HostListener('scroll', ['$event'])
   onscroll(event: any) {

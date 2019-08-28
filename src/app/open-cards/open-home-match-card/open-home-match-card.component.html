@@ -1,39 +1,38 @@
 <sports-social-header></sports-social-header>
 <sports-social-newsidenav></sports-social-newsidenav>
 <router-outlet></router-outlet>
-<div class="pop-up">
-    <div class="pop-crousal" #widgets>
-    <!-- <img class="cancel" src="/assets/images/sportsocialcancel.png"> -->
-      <div *ngFor="let data of MatchMoments" 
-      class="c-element" #widgetsContent
-      (click)="openews(data.id, data.game)" #widgetsContent>
-      <img src="{{data.imagepath}}" onerror="this.src='assets/images/user.png'">
-      <div *ngIf="data.Text.length > 0" class="c-head">
-          <h1>{{data.Text}}</h1>
-          <p>by:{{data.User_Name}}</p>
-      </div>
-      <div class="c-bottom">
-        <h1><img src="/assets/images/sportsociallike.png" alt="">&nbsp;{{data.likecount}}</h1>
-    </div>
+
+<!-- crousal -->
+<div class="media-crousal">
+  <div class="pop-crousal" #widgets>
+    <div *ngFor="let data of MatchMoments" class="crousal-element" #widgetsContent>
+        <img src={{data.imagepath}} onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'">
+       <div class="uploader-info">
+          <img src={{data.profile_photo}} onerror="this.src='assets/images/user.png'">
+            <div class="uploader-name">
+              <p>{{data.User_Name}}</p><br>
+              <!-- <h6>@{{data.Uniquename}}</h6> -->
+          </div>
+       </div>
+       <div class="likeCount">
+        <img src="assets/images/heart.png">&nbsp;&nbsp;<b>{{data.likecount}}</b>
+        &nbsp;&nbsp;<img src="assets/images/chat-comment-oval-speech-bubble-with-text-lines.png">&nbsp;&nbsp;<b>{{data.commentcount}}</b>
+       </div>        
     </div>
   </div>
-  <div class="circle-tab">
-    <div *ngFor="let data of MatchMoments" class="circle"></div>
-  </div>
-  <!-- <div class="tab">
-    <img (click)="lscroll()" src="/assets/images/sportsocialmatcharrow1.png" alt="">
-    <img (click)="close()" src="/assets/images/sportsocialhomecross.png" alt="">
-    <img (click)="rscroll()" src="/assets/images/sportsocialmatcharrow.png" alt="">
-  </div> -->
-  <img (click)="close()" class="close" src="/assets/images/close.png" alt="">
-  <div class="arrow-left">
-      <img (click)="lscroll()" src="/assets/images/sportsocialmatcharrow1.png" alt="">
+ 
+    <div class="close">
+      <img (click)="close()" src="assets/images/sportsocialprofileclose.png">
     </div>
-  <div class="arrow-right">
-      <img (click)="rscroll()" src="/assets/images/sportsocialmatcharrow.png" alt="">
+    <div class="larrow">
+      <img (click)="lscroll()" src="assets/images/sportsocialprofilerightarrow.png" alt="">
+    </div>
+    <div class="rarrow">
+     <img (click)="rscroll()" src="assets/images/sportsocialprofileleftarrow.png" alt="">
     </div>
 </div>
 
+<!-- main content -->
 <div class="main-body">
   
 <div class="outer-body">

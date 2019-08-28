@@ -106,7 +106,7 @@ export class LocalityComponent implements OnInit {
     .subscribe((val) => { 
       if(this.count == this.media.length){
         for(var i=0; i< this.count; i++){
-          console.log("loop working");
+          console.log("loop working"); //logical error
           this.slide.nativeElement.scrollLeft -=this.images.nativeElement.clientWidth;
         }
         this.count=0;

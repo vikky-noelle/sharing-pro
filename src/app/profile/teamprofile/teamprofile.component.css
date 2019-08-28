@@ -310,19 +310,17 @@
         width: 100%;
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.9);
-        z-index: 30;
-        top: 0;
-    }
-    .media-crousal>img{
-        height: 300px;
-        border-radius: 5px;
-        width: 40%;
-        margin-left: 30%;
-        position: absolute;
-        top: 25vh;
-        background-color: white;
+        z-index: 40;
+        top: 0%;
     }
     .pop-crousal{
+        width: 60%;
+        height: 550px;
+        margin: 4% 20% 0% 20%;
+        border-radius: 5px;
+        z-index: 20;
+        position: fixed;
+        text-align: center;
         overflow-y: hidden;
         scroll-behavior: smooth;
         overflow-x: scroll;
@@ -331,39 +329,61 @@
         -webkit-overflow-scrolling: touch;
         scroll-snap-type: x mandatory;
         scroll-snap-destination: 0% 100%;
-        scroll-snap-points-x: repeat(100%); 
-        height: 300px;
-        width: 40%;
-        margin-left: 30%;
-        margin-top: 25vh;
+        scroll-snap-points-x: repeat(100%);
     }
     .pop-crousal::-webkit-scrollbar{
         display: none;
     }
+
     .crousal-element{
-        text-align: center;
-        height: 300px;
-        width: 100%;
+        overflow: hidden;
         position: relative;
         scroll-snap-align: start;
+        width: 100%;
+        height: 100%;
         display: inline-block;
         border-radius: 5px;
+        background-color: #ffffff;
     }
     .crousal-element>img{
-        height: 300px;
+        height: 100%;
+        width: 100%;
         border-radius: 5px;
-        background-color: white;   
     }
+    .crousal-element::before{   /*  use for top gradient on image */
+        content: "";
+        top: 80%;
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+        rgba(0, 0, 0, 0.0) 0%,
+        rgb(36, 35, 35) 20%
+        );
+    }
+    .crousal-element:before {     /*  use for top gradient on image */
+        content: "";
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        background: linear-gradient(
+            to bottom, 
+            rgba(64,64,64,1) 0%, 
+            rgba(64,64,64,0) 10%, 
+            rgba(64,64,64,0) 90%, 
+            rgba(64,64,64,1) 100%
+        ); 
+    }
+
     .close{
         position: absolute;
-        height: 40px;
-        width: 40px;
-        top: 3%;
-        right: 3%;
-    }
-    .close img{
         height: 30px;
         width: 30px;
+        margin: 2% 20% 0% 0%;
+    }
+    .close>img{
+        height: 25px;
+        width: 25px;
         transition: 0.3s ease-in-out;
     }
     .close img:hover{
@@ -373,10 +393,10 @@
         position: absolute;
         height: 40px;
         width: 40px;
-        top: 50vh;
-        left: 3%;
+        top: 43vh;
+        left: 17%;
     }
-    .larrow img{
+    .larrow>img{
         height: 30px;
         width: 30px;
         transition: 0.3s ease-in-out;
@@ -388,16 +408,86 @@
         position: absolute;
         height: 40px;
         width: 40px;
-        top: 50vh;
-        right: 3%;
+        top: 42vh;
+        right: 16%;
     }
-    .rarrow img{
+    .rarrow>img{
         height: 30px;
         width: 30px;
         transition: 0.3s ease-in-out;
     }
     .rarrow img:hover{
         transform: scale(1.1);
+    }
+    .uploader-info{
+        z-index: 1;
+        position: absolute;
+        width: 30%;
+        height: 14%;
+        top: 1% !important;
+        margin-left: 2%;
+    }
+
+    .uploader-info>img{
+        margin: 2% 0% 0% 5%;
+        float: left;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #ffffff;
+    }
+    .uploader-info>div{
+        display: inline-block;
+    }
+    .uploader-name{
+        width: 70%;
+        float: left;
+    }
+    .uploader-name>p{
+        margin: 3% 0% 0% 5%;
+        float: left;
+        font-size: 1em;
+        color: #ffffff;
+        font-weight: bold;
+        
+    }
+    .uploader-name>h6{
+        position: absolute;
+        /* border: 1px solid red; */
+        margin: 4% 0% 0% 4%;
+        float: left;
+        color: #ffffff;
+        font-size: .8em;
+    }
+    .likeCount{
+        position: absolute;
+        width: 18%;
+        z-index: 1;
+        bottom: 2%;
+    }
+    .likeCount>img{
+        margin-left: 5%;
+        width: 20px;
+        height: 20px;
+        vertical-align: top;
+    }
+    .likeCount>b{
+        top: 4%;
+        font-size: 1em;
+        color: #ffffff;
+        vertical-align: top;
+    }
+    .past-time{
+        position: absolute;
+        width: 5%;
+        z-index: 1;
+        bottom: 2.5%;
+        right: 8%;
+    }
+    .past-time>h5{
+        color: #ffffff;
+        font-weight: lighter;
+        font-size: .9em;
     }
     @media screen and (min-width:200px) and (max-width:700px){
         /* for header that show after scroll*/

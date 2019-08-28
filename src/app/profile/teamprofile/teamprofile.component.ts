@@ -41,11 +41,9 @@ export class TeamprofileComponent implements OnInit {
   show:boolean=false;
   captainuserid;
   crousallist=[];
-  leftarrow = document.getElementsByClassName('larrow') as HTMLCollectionOf<HTMLElement>;
-  rightarrow = document.getElementsByClassName('rarrow') as HTMLCollectionOf<HTMLElement>;
+
   showcrousal = document.getElementsByClassName('media-crousal') as HTMLCollectionOf<HTMLElement>;
-  singleimage = document.getElementsByClassName('single-image') as HTMLCollectionOf<HTMLElement>;
-  crousal = document.getElementsByClassName('crousal-element') as HTMLCollectionOf<HTMLElement>;
+ 
   followerstab = document.getElementsByClassName('followers') as HTMLCollectionOf<HTMLElement>;
   sideshellposition = document.getElementsByClassName('side-shell') as HTMLCollectionOf<HTMLElement>;
   opensubheader = document.getElementsByClassName('sub-header') as HTMLCollectionOf<HTMLElement>;
@@ -187,10 +185,20 @@ export class TeamprofileComponent implements OnInit {
             this.gamename = this.sports[i].title;
           }
         }
-        console.log(res);
+        console.log(res["Images"]);
         for(var i =0; i<res["Images"].length; i++){
           this.media.push({
-            url: res["Images"][i].Path
+            imageId:res["Images"][i].Id,
+            Path:res["Images"][i].Path,
+            likecount:res["Images"][i].likecount,
+            commentcount:res["Images"][i].commentcount,
+            isliked:res["Images"][i].isLiked,
+            text:res["Images"][i].text,
+            UserId:res["Images"][i].UserId,
+            profile_photo:res["Images"][i].profile_photo,
+            User_Name:res["Images"][i].User_Name,
+            // Uniquename:res["Images"][i].Uniquename,
+            // UploadTime:res["Images"][i].UploadTime
           });
         }
         this.getmatches(res["Details"].GameId);
@@ -361,21 +369,8 @@ export class TeamprofileComponent implements OnInit {
     });
   });
   }
-  imageopen(url){
-    this.crousalsingleimage = url;
-    this.showcrousal[0].style.display="block";
-    this.crousal[0].style.display="none";
-    this.leftarrow[0].style.display="none";
-    this.rightarrow[0].style.display="none";
-    this.singleimage[0].style.display="block";
-  }
   opencrousal(){
     this.showcrousal[0].style.display="block";
-    this.crousal[0].style.display="block";
-    this.leftarrow[0].style.display="block";
-    this.rightarrow[0].style.display="block";
-    this.singleimage[0].style.display="none";
-    // this.crousallist = this.media;
   }
   @HostListener('document:keyup', ['$event'])
   handleDeleteKeyboardEvent(event: KeyboardEvent) {

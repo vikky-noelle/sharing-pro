@@ -41,7 +41,9 @@ export class OpenHomeMatchCardComponent implements OnInit {
 
   child1:boolean=true;
   child2:boolean=false;
-  openpop=document.getElementsByClassName('pop-up') as HTMLCollectionOf<HTMLElement>;
+
+  showcrousal=document.getElementsByClassName('media-crousal') as HTMLCollectionOf<HTMLElement>;
+
   one=document.getElementsByClassName('one') as HTMLCollectionOf<HTMLElement>;
   two=document.getElementsByClassName('two') as HTMLCollectionOf<HTMLElement>;
   three=document.getElementsByClassName('three') as HTMLCollectionOf<HTMLElement>;
@@ -346,9 +348,8 @@ export class OpenHomeMatchCardComponent implements OnInit {
     }
   }
   openpopcrousal(){
-    this.openpop[0].style.display="block";
-    this.openpop[0].style.transition="0.5s ease-in"
-  }
+    this.showcrousal[0].style.display="block";
+ }
   getparamid(){
       this.activatedroute.params.subscribe(
         (param)=>{
@@ -379,7 +380,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
     this.getSingleMatchFeed();
   }
   close(){
-    this.openpop[0].style.display="none";
+    this.showcrousal[0].style.display="none";
   }
   lscroll(){
     this.widgets.nativeElement.scrollLeft -=this.widgetsContent.nativeElement.clientWidth;
