@@ -44,7 +44,7 @@
             <div class="head">
                 <div class="gamename">
                     <b>{{genderCheck}} {{feed.GameName}} - <span style="font-weight: lighter;font-size: 0.9em;color: #444444">{{Age}}</span></b>
-                    <p (click)="openlocality(data.venueId);" style="cursor: pointer;">{{feed.Venue_Name}}</p>
+                    <p (click)="openlocality(feed.venueId);" style="cursor: pointer;">{{feed.Venue_Name}}</p>
                     <br>
                     <div class="fulllength">
                         <h6 (click)="openlocality(feed.venueId);" style="cursor: pointer;">{{feed.Venue_Name | slice:0:35}}....</h6>

@@ -241,9 +241,10 @@ scrollbar-width: none;
     font-weight: 400;
 }
 .gamename>p {
-    font-size: 0.6em;
-    color: #444444;
-    font-weight: lighter;
+    font-size: 0.7em;
+    color: #024771;
+    cursor: pointer;
+    /* font-weight: lighter; */
 }
 
 .result {

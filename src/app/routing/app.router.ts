@@ -70,7 +70,7 @@ const App_Route: Routes = [
                 path:'playmates',
                 component:UserprofilePlaymatesComponent
             },
-            {
+            {   
                 path:'about',
                 component:UserprofileAboutComponent
             }
@@ -78,7 +78,8 @@ const App_Route: Routes = [
     },
     // {path:':user_id',component:UserprofilePlaymatesComponent},
     {path:"localityprofile/:name",component:LocalityComponent},
-    {path:"opencard/:feedid",component:OpenHomeMatchCardComponent},
+    {path:"localityprofile",component:LocalityComponent},
+    {path:"matchcenter/:gamename/:feedid",component:OpenHomeMatchCardComponent},
     {path:"ourTeam",component:OurteamComponent},
     {path:"contactus",component:ContactUsComponent},
     {path:"live",component:LivedataComponent},

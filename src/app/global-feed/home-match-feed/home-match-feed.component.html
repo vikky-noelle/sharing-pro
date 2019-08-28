@@ -16,7 +16,7 @@
                       <div class="head">
                           <div class="gamename">
                               <b>{{feed.gender}} {{feed.GameName}} <h6>&nbsp;-&nbsp;{{feed.age}}</h6></b>
-                              <p>{{feed.Venue_Name | slice:0:30}}...</p>
+                              <p (click)="openlocality(feed.VenueId)">{{feed.Venue_Name | slice:0:30}}...</p>
                           </div>
                           <div class="result">
                               <b>{{feed.startdatetime}}
@@ -29,7 +29,7 @@
                               <!-- <p> {{feed.MatchStarterUniqueName}}</p> -->
                           </div>  
                       </div>
-                          <a routerLink="/opencard/{{feed.eventid}}">      
+                          <a routerLink="/matchcenter/{{feed.GameName}}/{{feed.eventid}}">      
                               <div class="cardData">
                                   <div class="cardData team1">
                                       <img src={{feed.Team1Pic}} onerror="this.src='assets/images/user.png'">
