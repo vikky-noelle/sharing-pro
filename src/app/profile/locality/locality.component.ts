@@ -1,7 +1,9 @@
+import { Observable } from 'rxjs/Observable';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PostService } from './../../shared/services/post.service';
 import { Component, OnInit, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { THROW_IF_NOT_FOUND } from '@angular/core/src/di/injector';
+import 'rxjs/add/observable/interval';
 
 @Component({
   selector: 'sports-social-locality',
@@ -85,10 +87,13 @@ export class LocalityComponent implements OnInit {
   
   openfan= document.getElementsByClassName('fanslist') as HTMLCollectionOf<HTMLAnchorElement>;
   openfollower=document.getElementsByClassName('followerlist') as HTMLCollectionOf<HTMLAnchorElement>;
-
+  sub;
+  count=0;
 
   @ViewChild('parent') parent:ElementRef;  
   @ViewChild('child') child:ElementRef;
+  @ViewChild('slide') slide:ElementRef;  
+  @ViewChild('show') images:ElementRef;
 
   constructor(
     private postService: PostService,
@@ -96,7 +101,22 @@ export class LocalityComponent implements OnInit {
     private router: Router
   ) { }
 
-  
+  sample(){
+    this.sub = Observable.interval(3000)
+    .subscribe((val) => { 
+      if(this.count == this.media.length){
+        for(var i=0; i< this.count; i++){
+          console.log("loop working");
+          this.slide.nativeElement.scrollLeft -=this.images.nativeElement.clientWidth;
+        }
+        this.count=0;
+      }
+      else{
+        this.count=this.count+1;
+        this.slide.nativeElement.scrollLeft +=this.images.nativeElement.clientWidth;
+      }
+    });
+  }
   ngOnInit() {
     this.route.queryParams.subscribe(params=>{
       this.localityid=params['id'];
@@ -105,6 +125,7 @@ export class LocalityComponent implements OnInit {
     // this.getLocalityTeams();
     // this.getUpcomingMatches();
     window.addEventListener('scroll', this.scroll, true);
+    this.sample();
   }
   // openteam(id){
   //   this.router.navigate(['localityprofile', this.sports[0]], {queryParams:{id: this.localityid}});
