@@ -38,6 +38,7 @@ export class SsMatchCardComponent implements OnInit {
   @Input() age:string;
   @Input() Ontime:string;
   @Input() Ondate:string;
+  @Input() matchstarterid:string;
 
   constructor(private router:Router) { }
 
@@ -45,6 +46,9 @@ export class SsMatchCardComponent implements OnInit {
   }
   openmatchcard(gamename, eventid){
     this.router.navigate(['/matchcenter', gamename, eventid]);
+  }
+  openuserprofile(id){
+    this.router.navigate(['/userprofile', id, 'about']);
   }
   openpopup(){
     this.router.navigate( [ { outlets: { 'AppDownload': ['PopUp'] }} ], { skipLocationChange: true });

@@ -11,9 +11,7 @@
            <img *ngIf="!finished" src="assets/images/sportsocialfinalicon.jpeg">
            <!-- <img *ngIf="finished" src="assets/images/sportsocialgreendot.png"><br> -->
            <img *ngIf="finished" src="assets/images/sportsocialRedDot.jpg"><br>
-           <a routerLink="userprofile/{{feed.MatchStarterId}}/about"> 
-            <span> By:@{{matchstartername}}</span>
-            </a>
+            <span (click)="openuserprofile(matchstarterid)"> By:@{{matchstartername}}</span>
         </p>
       </div> 
     </div>
