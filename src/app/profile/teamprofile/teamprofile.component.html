@@ -1,4 +1,42 @@
 <sports-social-header></sports-social-header>
+
+<!-- =======fan and member popup -->
+<div class="fanslist">
+  <img (click)="closefan()" class="closelist" src="assets/images/close.png" alt="">
+<div class="list" (scroll)="onscroll($event)">
+  <div *ngFor="let data of Fans" class="listItem">
+    <div class="Pimage">
+        <img src={{data.profile_image}} onerror="this.src='assets/images/user.png'">
+    </div>
+    <div class="fansname">
+        <p (click)="changeroute(data.user_id)">{{data.user_name}}</p>
+        <h6 (click)="changeroute(data.user_id)">@{{data.UniqueName}}</h6>
+    </div>
+    <div class="btn">
+      <button (click)="openAppDownloadPopup()">Follow</button>
+   </div>
+  </div>
+</div>
+</div>
+
+<div class="followerlist">
+  <img (click)="closefollower()" class="closelist" src="assets/images/close.png" alt="">
+  <div class="list" (scroll)="onscrollf($event)">
+      <div *ngFor="let data of Followers" class="listItem">
+          <div class="Pimage">
+              <img src={{data.profile_image}} onerror="this.src='assets/images/user.png'">
+          </div>
+          <div class="fansname">
+              <p (click)="changeroute(data.user_id)">{{data.user_name}}</p>
+              <h6 (click)="changeroute(data.user_id)">@{{data.UniqueName}}</h6>
+          </div>
+          <div class="btn">
+            <button (click)="openAppDownloadPopup()">Follow</button>
+         </div>
+        </div>
+  </div>
+</div>
+
 <div class="outer-shell">
   <div class="profile-shell">
     <div class="background-img">
@@ -11,34 +49,45 @@
       <div class="name">
         <h1>{{name}}</h1>
       </div>
-      <div class="follow">
-        <h1>Follow</h1>
+      <div class="follow" (click)="openAppDownloadPopup()">
+        <h1 >Follow</h1>
       </div>
-      <img src="assets/images/sportsocialchat.png" alt="">
+      <img src="assets/images/sportsocialchat.png" alt="" (click)="openAppDownloadPopup()">
     </div>
   </div>
   <div class="sub-header">
       <img class="profile-pic" src="{{profileimage}}" alt="">  
      
         <div class="fans">
-            <h1>Fans<span>Members</span></h1>
-            <h2>{{fancount}}<span>{{membercount}}</span></h2>
-            <!-- <h1>Members<h2>{{membercount}}</h2></h1> -->
+          <div class="userfans">
+            <h1>Fans</h1>
+            <h2>{{fancount}}</h2>
+        </div>
+        <div class="userfollowers" (click)="openMemberFunc()">
+          <h1>Members</h1>
+          <h2>{{membercount}}</h2>
+        </div>
           </div>
           <div class="sub-name">
               <h1>{{name}}</h1>
               <h2>@{{teamusername}}</h2>
             </div>
-      <div class="sub-follow">
+      <div class="sub-follow" (click)="openAppDownloadPopup()">
           <h1>Follow</h1>
         </div>
-        <img class="sub-follow-img" src="assets/images/sportsocialchat.png" alt="">  
+        <img class="sub-follow-img" src="assets/images/sportsocialchat.png" alt="" (click)="openAppDownloadPopup()">  
   </div>
   <div class="side-shell">
     <div class="stick">
       <div class="followers">
-          <h1>Members<span>Fans</span></h1>
-          <h2>&nbsp;{{membercount}}<span>{{fancount}}</span></h2>
+           <div class="userfans" (click)="openFanFunc()">
+                <h1>Fans</h1>
+                <h2>{{fancount}}</h2>
+            </div>
+            <div class="userfollowers">
+              <h1>Members</h1>
+              <h2>{{membercount}}</h2>
+            </div>
       </div>
      
       <div class="basic-info">

@@ -73,6 +73,10 @@ export class HomeMatchFeedComponent{
 
   count1 = 0;
 
+  openlocality(id){
+    this.router.navigate(['/localityprofile'], {queryParams: {id: id}});
+  }
+
   ssmatchfeed(){
     var gamename;
     this.location.getGeoLocation().then((pos)=>{
@@ -207,6 +211,7 @@ export class HomeMatchFeedComponent{
                     InsertedDate:data["Feed"][i].InsertedDate,
                     profile_image:data["Feed"][i].profile_image,
                     Venue_Name:data["Feed"][i].Venue_Name,
+                    VenueId:data["Feed"][i].VenueId,
                     EventText:data["Feed"][i].EventText,
                     startdatetime:this.startTime,
                     GameName:data["Feed"][i].GameName,

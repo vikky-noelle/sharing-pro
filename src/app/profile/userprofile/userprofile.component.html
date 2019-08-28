@@ -57,8 +57,14 @@
             <div class="sub-header">
               <img class="profile-pic" src="{{profile_image}}" onerror="this.src='assets/images/user.png'" alt="">  
                 <div class="fans">
-                    <h1>Fans<span>Following</span></h1>
-                    <h2>{{Fancount}}<span>{{FollowingCount}}</span></h2>
+                  <div class="userfans" (click)="openFanFunc()">
+                    <h1>Fans</h1>
+                    <h2>{{Fancount}}</h2>
+                </div>
+                <div class="userfollowers" (click)="openFollowerFunc()">
+                  <h1>Following</h1>
+                  <h2>{{FollowingCount}}</h2>
+                </div>
                   </div>
                   <div class="sub-name">
                       <h1>{{FirstName}}</h1>

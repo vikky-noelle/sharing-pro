@@ -1,6 +1,6 @@
 import { LocationService } from './../../shared/services/location.service';
 import { PostService } from '../../shared/services/post.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit, Input, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { TimeService } from '../../shared/services/time.service';
 
@@ -48,6 +48,9 @@ export class TeamprofileComponent implements OnInit {
   sideshellposition = document.getElementsByClassName('side-shell') as HTMLCollectionOf<HTMLElement>;
   opensubheader = document.getElementsByClassName('sub-header') as HTMLCollectionOf<HTMLElement>;
   
+  openfan= document.getElementsByClassName('fanslist') as HTMLCollectionOf<HTMLAnchorElement>;
+  openfollower=document.getElementsByClassName('followerlist') as HTMLCollectionOf<HTMLAnchorElement>;
+
   @Input() public location;
   @Input() public challenge="Open For Challenge";
   @Input() public gender;
@@ -67,9 +70,24 @@ export class TeamprofileComponent implements OnInit {
     private route: ActivatedRoute,
     private PostService: PostService,
     private time:TimeService,
-    private getlocation: LocationService
+    private getlocation: LocationService,
+    private router:Router
   ) { }
   
+  openFanFunc(){
+    this.openfan[0].style.display="block";
+    this.openfan[0].style.transition="0.5s ease-in"
+  }
+  openMemberFunc(){
+    this.openfollower[0].style.display="block";
+    this.openfollower[0].style.transition="0.5s ease-in"
+  }
+  closefan(){
+   this.openfan[0].style.display="none";
+  }
+  closefollower(){
+    this.openfollower[0].style.display="none";
+   }
   getFans(){
     var timestamp=Date.now();
     var page=1;
@@ -428,5 +446,8 @@ export class TeamprofileComponent implements OnInit {
       this.sideshellposition[0].style.position="relative";
     }
   };
+  openAppDownloadPopup() {
+    this.router.navigate( [ { outlets: { 'AppDownload': ['PopUp'] }} ], { skipLocationChange: true });
+  }
 
 }
