@@ -81,7 +81,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
    }); 
   }
   openarenamatches(){
-    console.log(this.cookie.get('longitude'));
+    // console.log(this.cookie.get('longitude'));
     var temp, checkstat, checkstat2, upcoming=false;
     var finished;
     this.location.getGeoLocation().then((pos)=>{
@@ -193,7 +193,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         else if(agebracket ==-1){
           age="Open for All";
         }
-        console.log(data["Feed"][i]);
+        // console.log(data["Feed"][i]);
         var Starttime= new Date( data["Feed"][i].startdatetime *1000);
         var timestampConvert= new String(Starttime).slice(3,21);
         this.arr.push({
@@ -212,6 +212,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
               InsertedDate:data["Feed"][i].InsertedDate,
               profile_image:data["Feed"][i].profile_image,
               Venue_Name:data["Feed"][i].Venue_Name,
+              VenueId: data["Feed"][i].VenueId,
               EventText:data["Feed"][i].EventText,
               eventid:data["Feed"][i].eventid,
               startdatetime:this.startTime,

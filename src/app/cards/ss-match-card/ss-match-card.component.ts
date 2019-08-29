@@ -39,6 +39,7 @@ export class SsMatchCardComponent implements OnInit {
   @Input() Ontime:string;
   @Input() Ondate:string;
   @Input() matchstarterid:string;
+  @Input() VenueId:string;
 
   constructor(private router:Router) { }
 
@@ -52,5 +53,9 @@ export class SsMatchCardComponent implements OnInit {
   }
   openpopup(){
     this.router.navigate( [ { outlets: { 'AppDownload': ['PopUp'] }} ], { skipLocationChange: true });
+  }
+  openlocality(id){
+    // console.log("working"+id);
+    this.router.navigate(['/localityprofile/name'], {queryParams: {id: id}});
   }
 }
