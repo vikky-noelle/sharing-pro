@@ -411,7 +411,7 @@ export class UserprofileComponent implements OnInit {
       
         }
       }
-}
+  }
   @HostListener('document:keyup', ['$event'])
   handleDeleteKeyboardEvent(event: KeyboardEvent) {
     if(event.key === 'ArrowLeft')
