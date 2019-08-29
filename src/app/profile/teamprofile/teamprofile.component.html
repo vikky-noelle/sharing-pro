@@ -1,10 +1,10 @@
 <sports-social-header></sports-social-header>
 
 <!-- =======fan and member popup -->
-<div class="fanslist">
+<!-- <div class="fanslist">
   <img (click)="closefan()" class="closelist" src="assets/images/close.png" alt="">
 <div class="list" (scroll)="onscroll($event)">
-  <div *ngFor="let data of Fans" class="listItem">
+  <div *ngFor="let data of upcoming" class="listItem">
     <div class="Pimage">
         <img src={{data.profile_image}} onerror="this.src='assets/images/user.png'">
     </div>
@@ -22,7 +22,7 @@
 <div class="followerlist">
   <img (click)="closefollower()" class="closelist" src="assets/images/close.png" alt="">
   <div class="list" (scroll)="onscrollf($event)">
-      <div *ngFor="let data of Followers" class="listItem">
+      <div *ngFor="let data of upcoming" class="listItem">
           <div class="Pimage">
               <img src={{data.profile_image}} onerror="this.src='assets/images/user.png'">
           </div>
@@ -35,7 +35,7 @@
          </div>
         </div>
   </div>
-</div>
+</div> -->
 
 <div class="outer-shell">
   <div class="profile-shell">
@@ -150,7 +150,7 @@
           <a (click)="opencrousal()"><p>See all</p></a>
         </div>
          <div class="mediabox" *ngFor="let icon of media">
-           <img (click)="opencrousal();" src={{icon.Path}}>
+           <img (click)="opencrousal();" src={{icon.Path}} onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'">
         </div>
       </div>
     </div>
