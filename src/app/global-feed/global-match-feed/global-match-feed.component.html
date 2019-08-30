@@ -52,8 +52,9 @@
                         </div>
                   </div>
                 </a> -->
-              <a routerLink="/opencard/{{feed.eventid}}">
                   <sports-social-ss-match-card
+                  [eventid]="feed.eventid"
+                  [matchstarterid]="feed.MatchStarterId"
                   [Ontime]="feed.Ontime"
                   [Ondate]="feed.Ondate"
                   [coverpic]="feed.coverpic"
@@ -75,6 +76,7 @@
                   [upcoming]="feed.upcoming"
                   [gender]="feed.gender"
                   [Venue_Name]="feed.Venue_Name"
+                  [VenueId]="feed.VenueId"
                   [MatchStarterUniqueName]="feed.MatchStarterUniqueName"
                   [Team1Name]="feed.Team1Name"
                   [Team2Name]="feed.Team2Name"
@@ -83,7 +85,6 @@
                   [PromoteCount]="feed.PromoteCount"
                   [CommentCount]="feed.CommentCount"
                   ></sports-social-ss-match-card>
-          </a>
         </div>
     <!-- </ng-masonry-grid> -->
 </div>

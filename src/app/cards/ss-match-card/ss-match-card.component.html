@@ -1,6 +1,6 @@
 <div class="card">
     <div class="head">
-      <div class="venue">
+      <div class="venue" (click)="openlocality(VenueId)">
         <b>{{gender}}{{gamename}} - <span style="font-weight: lighter;">{{age}}</span>
             <p class="pp">{{Venue_Name|slice:0:30}}...</p>
             <p class="mobile">{{Venue_Name}}</p>
@@ -11,12 +11,12 @@
            <img *ngIf="!finished" src="assets/images/sportsocialfinalicon.jpeg">
            <!-- <img *ngIf="finished" src="assets/images/sportsocialgreendot.png"><br> -->
            <img *ngIf="finished" src="assets/images/sportsocialRedDot.jpg"><br>
-           <span> By:@{{matchstartername}}</span>
+            <span (click)="openuserprofile(matchstarterid)"> By:@{{matchstartername}}</span>
         </p>
       </div> 
     </div>
     
-        <div class="cardData">
+        <div class="cardData" (click)="openmatchcard(gamename, eventid)">
               <div class="team1">
                   <img src={{team1pic}} onerror="this.src='assets/images/user.png'">
                   <p>{{Team1Name | slice:0:11}}</p>
@@ -40,10 +40,10 @@
             <p id="creatorname">{{InsertedDate |slice:0:16}}</p>
         </div> -->
         
-        <div class="eventtext">
+        <div class="eventtext" (click)="openmatchcard(gamename, eventid)">
                 <p>{{EventText|slice:0:100}}...</p>
             </div>
-        <div class="footer">
+        <div (click)="openpopup()" class="footer">
               <button class="playButton"><span *ngIf="JoineeCount">{{JoineeCount}}</span> Joinee</button>
               <button class="commentButton"><span *ngIf="CommentCount">{{CommentCount}}</span> Talk</button>
               <button class="promoteButton"><span *ngIf="PromoteCount">{{PromoteCount}}</span> Promote</button>

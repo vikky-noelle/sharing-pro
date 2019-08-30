@@ -41,15 +41,21 @@ export class TeamprofileComponent implements OnInit {
   show:boolean=false;
   captainuserid;
   crousallist=[];
-  leftarrow = document.getElementsByClassName('larrow') as HTMLCollectionOf<HTMLElement>;
-  rightarrow = document.getElementsByClassName('rarrow') as HTMLCollectionOf<HTMLElement>;
+  fanstatus = true;
+  followerstatus = true;
+
+  followerpage=1;
+  fanpage=1;
+
   showcrousal = document.getElementsByClassName('media-crousal') as HTMLCollectionOf<HTMLElement>;
-  singleimage = document.getElementsByClassName('single-image') as HTMLCollectionOf<HTMLElement>;
-  crousal = document.getElementsByClassName('crousal-element') as HTMLCollectionOf<HTMLElement>;
+ 
   followerstab = document.getElementsByClassName('followers') as HTMLCollectionOf<HTMLElement>;
   sideshellposition = document.getElementsByClassName('side-shell') as HTMLCollectionOf<HTMLElement>;
   opensubheader = document.getElementsByClassName('sub-header') as HTMLCollectionOf<HTMLElement>;
   
+  openfan= document.getElementsByClassName('fanslist') as HTMLCollectionOf<HTMLAnchorElement>;
+  openfollower=document.getElementsByClassName('followerlist') as HTMLCollectionOf<HTMLAnchorElement>;
+
   @Input() public location;
   @Input() public challenge="Open For Challenge";
   @Input() public gender;
@@ -73,6 +79,20 @@ export class TeamprofileComponent implements OnInit {
     private router:Router
   ) { }
   
+  openFanFunc(){
+    this.openfan[0].style.display="block";
+    this.openfan[0].style.transition="0.5s ease-in"
+  }
+  openMemberFunc(){
+    this.openfollower[0].style.display="block";
+    this.openfollower[0].style.transition="0.5s ease-in"
+  }
+  closefan(){
+   this.openfan[0].style.display="none";
+  }
+  closefollower(){
+    this.openfollower[0].style.display="none";
+   }
   getFans(){
     var timestamp=Date.now();
     var page=1;
@@ -188,10 +208,20 @@ export class TeamprofileComponent implements OnInit {
             this.gamename = this.sports[i].title;
           }
         }
-        console.log(res);
+        console.log(res["Images"]);
         for(var i =0; i<res["Images"].length; i++){
           this.media.push({
-            url: res["Images"][i].Path
+            imageId:res["Images"][i].Id,
+            Path:res["Images"][i].Path,
+            likecount:res["Images"][i].likecount,
+            commentcount:res["Images"][i].commentcount,
+            isliked:res["Images"][i].isLiked,
+            text:res["Images"][i].text,
+            UserId:res["Images"][i].UserId,
+            profile_photo:res["Images"][i].profile_photo,
+            User_Name:res["Images"][i].User_Name,
+            // Uniquename:res["Images"][i].Uniquename,
+            // UploadTime:res["Images"][i].UploadTime
           });
         }
         this.getmatches(res["Details"].GameId);
@@ -362,21 +392,8 @@ export class TeamprofileComponent implements OnInit {
     });
   });
   }
-  imageopen(url){
-    this.crousalsingleimage = url;
-    this.showcrousal[0].style.display="block";
-    this.crousal[0].style.display="none";
-    this.leftarrow[0].style.display="none";
-    this.rightarrow[0].style.display="none";
-    this.singleimage[0].style.display="block";
-  }
   opencrousal(){
     this.showcrousal[0].style.display="block";
-    this.crousal[0].style.display="block";
-    this.leftarrow[0].style.display="block";
-    this.rightarrow[0].style.display="block";
-    this.singleimage[0].style.display="none";
-    // this.crousallist = this.media;
   }
   @HostListener('document:keyup', ['$event'])
   handleDeleteKeyboardEvent(event: KeyboardEvent) {
@@ -393,6 +410,26 @@ export class TeamprofileComponent implements OnInit {
       this.showcrousal[0].style.display="none";
     }
   }
+  onscroll(event: any) {
+    // visible height + pixel scrolled >= total height 
+    if (event.target.offsetHeight + event.target.scrollTop >= event.target.scrollHeight) {
+      // console.log("End");
+      if(this.fanstatus){
+        this.fanpage=this.fanpage+1;
+    
+      }
+    }
+  }
+  onscrollf(event: any) {
+    // visible height + pixel scrolled >= total height 
+    if (event.target.offsetHeight + event.target.scrollTop >= event.target.scrollHeight) {
+      // console.log("End");
+      if(this.followerstatus){
+        this.followerpage=this.followerpage+1;
+    
+      }
+    }
+}
   lscroll(){
     console.log("working");
     this.widgets.nativeElement.scrollLeft -=this.widgetsContent.nativeElement.clientWidth;

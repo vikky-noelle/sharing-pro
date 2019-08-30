@@ -41,7 +41,9 @@ export class OpenHomeMatchCardComponent implements OnInit {
 
   child1:boolean=true;
   child2:boolean=false;
-  openpop=document.getElementsByClassName('pop-up') as HTMLCollectionOf<HTMLElement>;
+
+  showcrousal=document.getElementsByClassName('media-crousal') as HTMLCollectionOf<HTMLElement>;
+
   one=document.getElementsByClassName('one') as HTMLCollectionOf<HTMLElement>;
   two=document.getElementsByClassName('two') as HTMLCollectionOf<HTMLElement>;
   three=document.getElementsByClassName('three') as HTMLCollectionOf<HTMLElement>;
@@ -129,10 +131,11 @@ export class OpenHomeMatchCardComponent implements OnInit {
       this.interactionservice.routechangefunction(id);
       this.router.navigate(['/userprofile',id,'about']);
   }
-  openlocality(id){
-    // console.log("working"+id);
-    this.router.navigate(['/localityprofile/name'], {queryParams: {id: id}});
+  openlocality(id,nameoflocality){
+    nameoflocality= nameoflocality.replace(/ /g,"-");
+    this.router.navigate(['/locality',nameoflocality], {queryParams: {id: id}});
   }
+
   getSingleMatchFeed(){
       this.postservice.OpenOneMatchCard(this.eventid).subscribe(
         data=>{
@@ -336,19 +339,19 @@ export class OpenHomeMatchCardComponent implements OnInit {
   }
   openprofile(teamid, name){
     name = name.replace(/ /g,"-");
-    console.log("working"+teamid);
+    console.log("working:"+teamid);
+    console.log("this is name:",name);
     if(teamid===null){
 
     }
     else{
       console.log("navigate");
-      this.router.navigate(['/teamprofile', name, "About"], {queryParams: {teamid: teamid}}); 
+      this.router.navigate(['/team', name, "About"], {queryParams: {teamid: teamid}}); 
     }
   }
   openpopcrousal(){
-    this.openpop[0].style.display="block";
-    this.openpop[0].style.transition="0.5s ease-in"
-  }
+    this.showcrousal[0].style.display="block";
+ }
   getparamid(){
       this.activatedroute.params.subscribe(
         (param)=>{
@@ -379,7 +382,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
     this.getSingleMatchFeed();
   }
   close(){
-    this.openpop[0].style.display="none";
+    this.showcrousal[0].style.display="none";
   }
   lscroll(){
     this.widgets.nativeElement.scrollLeft -=this.widgetsContent.nativeElement.clientWidth;

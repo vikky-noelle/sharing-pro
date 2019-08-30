@@ -81,7 +81,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
    }); 
   }
   openarenamatches(){
-    console.log(this.cookie.get('longitude'));
+    // console.log(this.cookie.get('longitude'));
     var temp, checkstat, checkstat2, upcoming=false;
     var finished;
     this.location.getGeoLocation().then((pos)=>{
@@ -193,9 +193,11 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         else if(agebracket ==-1){
           age="Open for All";
         }
+        // console.log(data["Feed"][i]);
         var Starttime= new Date( data["Feed"][i].startdatetime *1000);
         var timestampConvert= new String(Starttime).slice(3,21);
         this.arr.push({
+              MatchStarterId: data["Feed"][i].MatchStarterId,
               Ondate: timrstampstr2,
               Ontime: timrstampstr,
               feedid:data["Feed"][i].feedid,
@@ -210,6 +212,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
               InsertedDate:data["Feed"][i].InsertedDate,
               profile_image:data["Feed"][i].profile_image,
               Venue_Name:data["Feed"][i].Venue_Name,
+              VenueId: data["Feed"][i].VenueId,
               EventText:data["Feed"][i].EventText,
               eventid:data["Feed"][i].eventid,
               startdatetime:this.startTime,
@@ -348,45 +351,47 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         }
     
         this.Matcharr.push({
-              Ondate: timrstampstr2,
-              Ontime: timrstampstr,
-              feedid:data["Feed"][i].feedid,
-              Activity_name:data["Feed"][i].Activity_name,
-              userName: data["Feed"][i].user_name,
-              Uniquename:data["Feed"][i].MatchStarterUniqueName==null?"":data["Feed"][i].MatchStarterUniqueName,
-              MatchStarterUniqueName:data["Feed"][i].MatchStarterUniqueName==null?"":data["Feed"][i].MatchStarterUniqueName,
-              finished: finished,
-              upcoming: upcoming,
-              timestamp: data["Feed"][i].startdatetime,
-              result:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?this.time.ExactDate(data["Feed"][i].startdatetime):'Match Finished',
-              InsertedDate:data["Feed"][i].InsertedDate,
-              profile_image:data["Feed"][i].profile_image,
-              Venue_Name:data["Feed"][i].Venue_Name,
-              EventText:data["Feed"][i].EventText,
-              eventid:data["Feed"][i].eventid,
-              startdatetime:this.startTime,
-              starttimestamp: data["Feed"][i].startdatetime,
-              gamename:data["Feed"][i].GameName,
-              GameId:data["Feed"][i].GameId,
-              Event_Image:data["Feed"][i].Event_Image,
-              coverpic: data["Feed"][i].CoverPic,
-              MatchStarterName:data["Feed"][i].MatchStarterName,
-              MatchStarterPhoto:data["Feed"][i].MatchStarterPhoto,
-              Team1Name:data["Feed"][i].Team1name,
-              Team1Pic:data["Feed"][i].Team1Pic,
-              Team2Name:data["Feed"][i].Team2name,
-              Team2Pic:tempimg,
-              scoreTeam1:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?'':data["Feed"][i].scoreTeam1 + ' - ',
-              scoreTeam2:data["Feed"][i].scoreTeam2==null || data["Feed"][i].scoreTeam1==null?'':data["Feed"][i].scoreTeam2,
-              gender:temp,
-              Profile_Photo:data["Feed"][i].Profile_Photo,
-              city:data["Feed"][i].City,
-              CommentCount:data["Feed"][i].CommentCount,
-              PromoteCount:data["Feed"][i].PromoteCount,
-              WatchCount:data["Feed"][i].WatchCount,
-              JoineeCount:data["Feed"][i].JoineeCount, 
-              age: age
-            });            
+          MatchStarterId: data["Feed"][i].MatchStarterId,
+          Ondate: timrstampstr2,
+          Ontime: timrstampstr,
+          feedid:data["Feed"][i].feedid,
+          Activity_name:data["Feed"][i].Activity_name,
+          userName: data["Feed"][i].user_name,
+          Uniquename:data["Feed"][i].MatchStarterUniqueName==null?"":data["Feed"][i].MatchStarterUniqueName,
+          MatchStarterUniqueName:data["Feed"][i].MatchStarterUniqueName==null?"":data["Feed"][i].MatchStarterUniqueName,
+          finished: finished,
+          upcoming: upcoming,
+          timestamp: data["Feed"][i].startdatetime,
+          result:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?this.time.ExactDate(data["Feed"][i].startdatetime):'Match Finished',
+          InsertedDate:data["Feed"][i].InsertedDate,
+          profile_image:data["Feed"][i].profile_image,
+          Venue_Name:data["Feed"][i].Venue_Name,
+          VenueId: data["Feed"][i].VenueId,
+          EventText:data["Feed"][i].EventText,
+          eventid:data["Feed"][i].eventid,
+          startdatetime:this.startTime,
+          starttimestamp: data["Feed"][i].startdatatime,
+          gamename:data["Feed"][i].GameName,
+          GameId:data["Feed"][i].GameId,
+          Event_Image:data["Feed"][i].Event_Image,
+          coverpic: data["Feed"][i].CoverPic,
+          MatchStarterName:data["Feed"][i].MatchStarterName,
+          MatchStarterPhoto:data["Feed"][i].MatchStarterPhoto,
+          Team1Name:data["Feed"][i].Team1name,
+          Team1Pic:data["Feed"][i].Team1Pic,
+          Team2Name:data["Feed"][i].Team2name,
+          Team2Pic:tempimg,
+          scoreTeam1:data["Feed"][i].scoreTeam1==null ||data["Feed"][i].scoreTeam2==null?'':data["Feed"][i].scoreTeam1 + ' - ',
+          scoreTeam2:data["Feed"][i].scoreTeam2==null || data["Feed"][i].scoreTeam1==null?'':data["Feed"][i].scoreTeam2,
+          gender:temp,
+          Profile_Photo:data["Feed"][i].Profile_Photo,
+          city:data["Feed"][i].City,
+          CommentCount:data["Feed"][i].CommentCount,
+          PromoteCount:data["Feed"][i].PromoteCount,
+          WatchCount:data["Feed"][i].WatchCount,
+          JoineeCount:data["Feed"][i].JoineeCount,
+          age: age
+        });            
       }
     });
   });

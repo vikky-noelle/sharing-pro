@@ -208,6 +208,7 @@
     .userfans{
         width: 30%;
         float: left;
+        cursor: pointer;
     }
     .userfans>h1{
         text-align: center;
@@ -220,6 +221,7 @@
         text-align: center;
     }
     .userfollowers{
+        cursor: pointer;
         width: 30%;
         margin: 0% 3% 0% 0%;
         float: right;
@@ -349,7 +351,7 @@
     .pop-crousal{
         width: 60%;
         height: 550px;
-        margin: 8% 20% 0% 20%;
+        margin: 4% 20% 0% 20%;
         border-radius: 5px;
         z-index: 20;
         position: fixed;
@@ -412,7 +414,7 @@
         position: absolute;
         height: 30px;
         width: 30px;
-        margin: 5% 20% 0% 0%;
+        margin: 1% 20% 0% 0%;
     }
     .close>img{
         height: 25px;

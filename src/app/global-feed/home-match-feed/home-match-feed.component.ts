@@ -25,6 +25,7 @@ export class HomeMatchFeedComponent{
   news=[];
   startTime;
   gendercheck;
+  MatchStarterName;
   timestamp = Math.floor(Date.now()/1000);
   sub: Subscription;
   scroll=document.getElementsByClassName('c-element') as HTMLCollectionOf<HTMLElement>;
@@ -73,6 +74,11 @@ export class HomeMatchFeedComponent{
 
   count1 = 0;
 
+  openlocality(id,nameoflocality){
+    nameoflocality= nameoflocality.replace(/ /g,"-");
+    this.router.navigate(['/locality',nameoflocality], {queryParams: {id: id}});
+  }
+
   ssmatchfeed(){
     var gamename;
     this.location.getGeoLocation().then((pos)=>{
@@ -87,6 +93,7 @@ export class HomeMatchFeedComponent{
         this.count1=this.count1+1;
         this.show=true;
         var arr=[];
+        
 
       //  for(var feedlength=0;feedlength<data["Feed"].length;feedlength++){
         // var insertDate2 = new Date(data["Feed"][feedlength].InsertedDate);
@@ -98,8 +105,14 @@ export class HomeMatchFeedComponent{
             
           
           for(var i=0;i<data["Feed"].length;i++){
+            var user_name=data["Feed"][i].MatchStarterName.replace(/ /g,'-');
+            // var name=user_name.replace(" ",'-');
+
+            
+
+            // console.log("Matchstartetrnameeeee:",user_name);
                     var tempimg, checkstat, checkstat2, finished, upcoming=false;
-                    var timestamp= new Date(data["Feed"][i].startdatetime*1000);
+                    var timestamp= new Date(data["Feed"][i].startdatetime*1000);                    
                     var timrstampstr = new String(timestamp).slice(16,21);
                     var timrstampstr2 = new String(timestamp).slice(0,10);
                     timrstampstr = timrstampstr2.slice(0,3) +" "+ timrstampstr;
@@ -194,8 +207,11 @@ export class HomeMatchFeedComponent{
                         }
                   var Starttime= new Date( data["Feed"][i].startdatetime *1000);
                   var timestampConvert= new String(Starttime).slice(3,21);
+                  var bothTeamName= data["Feed"][i].Team1name+data["Feed"][i].Team2name.replace(" ",'-').trim();
+                  console.log("this is both team name:",bothTeamName);
                  // if(gettimestamp>=dateOfJune2019){  /// LOOP FOR INSEERTED DATE SHOULD BE GREATER THEN 2018
                     arr.push({
+                    bothteams:bothTeamName,
                     Ondate: timrstampstr2,
                     Ontime: timrstampstr, 
                     feedid:data["Feed"][i].feedid,
@@ -207,13 +223,14 @@ export class HomeMatchFeedComponent{
                     InsertedDate:data["Feed"][i].InsertedDate,
                     profile_image:data["Feed"][i].profile_image,
                     Venue_Name:data["Feed"][i].Venue_Name,
+                    VenueId:data["Feed"][i].VenueId,
                     EventText:data["Feed"][i].EventText,
                     startdatetime:this.startTime,
                     GameName:data["Feed"][i].GameName,
                     GameId:data["Feed"][i].GameId,
                     eventid:data["Feed"][i].eventid,
                     Event_Image:data["Feed"][i].Event_Image,
-                    MatchStarterName:data["Feed"][i].MatchStarterName,
+                    MatchStarterName:user_name,
                     MatchStarterId:data["Feed"][i].MatchStarterId,
                     MatchStarterPhoto:data["Feed"][i].MatchStarterPhoto,
                     Team1name:data["Feed"][i].Team1name,
@@ -233,7 +250,9 @@ export class HomeMatchFeedComponent{
                   });
              // }
             //  console.log("insetdate",data["Feed"][i].InsertedDate);
+            
             }
+            
           
           if(arr.length>0){
             gamename = arr[0].GameName.replace(/ matches/g,"");

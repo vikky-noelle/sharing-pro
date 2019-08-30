@@ -38,14 +38,24 @@ export class SsMatchCardComponent implements OnInit {
   @Input() age:string;
   @Input() Ontime:string;
   @Input() Ondate:string;
+  @Input() matchstarterid:string;
+  @Input() VenueId:string;
 
   constructor(private router:Router) { }
 
-  openAppDownloadPopup() {
-    this.router.navigate( [ { outlets: { 'AppDownload': ['PopUp'] }} ], { skipLocationChange: true });
-  }
-
   ngOnInit() {
   }
-
+  openmatchcard(gamename, eventid){
+    this.router.navigate(['/matchcenter', gamename, eventid]);
+  }
+  openuserprofile(id){
+    this.router.navigate(['/userprofile', id, 'about']);
+  }
+  openpopup(){
+    this.router.navigate( [ { outlets: { 'AppDownload': ['PopUp'] }} ], { skipLocationChange: true });
+  }
+  openlocality(id){
+    // console.log("working"+id);
+    this.router.navigate(['/localityprofile/name'], {queryParams: {id: id}});
+  }
 }

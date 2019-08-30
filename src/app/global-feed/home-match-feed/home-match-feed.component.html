@@ -16,20 +16,20 @@
                       <div class="head">
                           <div class="gamename">
                               <b>{{feed.gender}} {{feed.GameName}} <h6>&nbsp;-&nbsp;{{feed.age}}</h6></b>
-                              <p>{{feed.Venue_Name | slice:0:30}}...</p>
+                              <p (click)="openlocality(feed.VenueId, feed.Venue_Name);">{{feed.Venue_Name | slice:0:30}}...</p>
                           </div>
                           <div class="result">
                               <b>{{feed.startdatetime}}
                                 <img *ngIf="!feed.finished" src="assets/images/sportsocialfinalicon.jpeg">
                                 <img *ngIf="feed.finished" src="assets/images/sportsocialRedDot.jpg"><br>        
                               </b>
-                             <a routerLink="userprofile/{{feed.MatchStarterId}}/about"> 
-                             <p> {{feed.MatchStarterUniqueName}}</p></a>
-                             
-                              <!-- <p> {{feed.MatchStarterUniqueName}}</p> -->
+                             <!-- <a routerLink="profile/{{feed.user_name}}/{{feed.MatchStarterId}}">  -->
+                              <a routerLink="profile/{{feed.MatchStarterName}}/{{feed.MatchStarterId}}/about"> 
+                               <p> {{feed.MatchStarterUniqueName}}</p>
+                             </a>
                           </div>  
                       </div>
-                          <a routerLink="/opencard/{{feed.eventid}}">      
+                          <a routerLink="/matchcenter/{{feed.GameName}}/{{feed.bothteams}}/{{feed.eventid}}">      
                               <div class="cardData">
                                   <div class="cardData team1">
                                       <img src={{feed.Team1Pic}} onerror="this.src='assets/images/user.png'">

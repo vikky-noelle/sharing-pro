@@ -1,4 +1,42 @@
 <sports-social-header></sports-social-header>
+
+<!-- =======fan and member popup -->
+<!-- <div class="fanslist">
+  <img (click)="closefan()" class="closelist" src="assets/images/close.png" alt="">
+<div class="list" (scroll)="onscroll($event)">
+   <div *ngFor="let data of Fans" class="listItem">
+    <div class="Pimage">
+        <img src={{data.profile_image}} onerror="this.src='assets/images/user.png'">
+    </div>
+    <div class="fansname">
+        <p (click)="changeroute(data.user_id)">{{data.user_name}}</p>
+        <h6 (click)="changeroute(data.user_id)">@{{data.UniqueName}}</h6>
+    </div>
+    <div class="btn">
+      <button (click)="openAppDownloadPopup()">Follow</button>
+   </div>
+  </div> 
+</div>
+</div>-->
+
+<div class="followerlist">
+  <img (click)="closefollower()" class="closelist" src="assets/images/close.png" alt="">
+  <div class="list" (scroll)="onscrollf($event)">
+      <!-- <div *ngFor="let data of Followers" class="listItem">
+          <div class="Pimage">
+              <img src={{data.profile_image}} onerror="this.src='assets/images/user.png'">
+          </div>
+          <div class="fansname">
+              <p (click)="changeroute(data.user_id)">{{data.user_name}}</p>
+              <h6 (click)="changeroute(data.user_id)">@{{data.UniqueName}}</h6>
+          </div>
+          <div class="btn">
+            <button (click)="openAppDownloadPopup()">Follow</button>
+         </div>
+        </div> -->
+  </div>
+</div> 
+
 <div class="outer-shell">
   <div class="profile-shell">
     <div class="background-img">
@@ -21,9 +59,14 @@
       <img class="profile-pic" src="{{profileimage}}" alt="">  
      
         <div class="fans">
-            <h1>Fans<span>Members</span></h1>
-            <h2>{{fancount}}<span>{{membercount}}</span></h2>
-            <!-- <h1>Members<h2>{{membercount}}</h2></h1> -->
+          <div class="userfans">
+            <h1>Fans</h1>
+            <h2>{{fancount}}</h2>
+        </div>
+        <div class="userfollowers" (click)="openMemberFunc()">
+          <h1>Members</h1>
+          <h2>{{membercount}}</h2>
+        </div>
           </div>
           <div class="sub-name">
               <h1>{{name}}</h1>
@@ -37,8 +80,14 @@
   <div class="side-shell">
     <div class="stick">
       <div class="followers">
-          <h1>Members<span>Fans</span></h1>
-          <h2>&nbsp;{{membercount}}<span>{{fancount}}</span></h2>
+           <div class="userfans" (click)="openFanFunc()">
+                <h1>Fans</h1>
+                <h2>{{fancount}}</h2>
+            </div>
+            <div class="userfollowers">
+              <h1>Members</h1>
+              <h2>{{membercount}}</h2>
+            </div>
       </div>
      
       <div class="basic-info">
@@ -101,31 +150,46 @@
           <a (click)="opencrousal()"><p>See all</p></a>
         </div>
          <div class="mediabox" *ngFor="let icon of media">
-           <img (click)="imageopen(icon.url);" src={{icon.url}} onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'">
+           <img (click)="opencrousal();" src={{icon.Path}} onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'">
         </div>
       </div>
     </div>
     </div>
     <div class="normal-shell">
-    <a routerLink="/teamprofile/{{routename}}/About" [queryParams]="{ teamid: teamid}" routerLinkActive="active">About</a>
-    <a routerLink="/teamprofile/{{routename}}/Matches" [queryParams]="{ teamid: teamid}" routerLinkActive="active">Matches</a>
+    <a routerLink="/team/{{routename}}/About" [queryParams]="{ teamid: teamid}" routerLinkActive="active">About</a>
+    <a routerLink="/team/{{routename}}/Matches" [queryParams]="{ teamid: teamid}" routerLinkActive="active">Matches</a>
   </div>
 </div>
 <div class="media-crousal">
-  <img class="single-image" src="{{crousalsingleimage}}" alt="">
-  <div class="close">
-    <img (click)="close()" src="/assets/images/sportsocialprofileclose.png">
-  </div>
-  <div class="larrow">
-    <img (click)="lscroll()" src="/assets/images/sportsocialprofilerightarrow.png" alt="">
-  </div>
-  <div class="rarrow">
-    <img (click)="rscroll()" src="/assets/images/sportsocialprofileleftarrow.png" alt="">
-  </div>
   <div class="pop-crousal" #widgets>
     <div *ngFor="let data of media" class="crousal-element" #widgetsContent>
-      <img src="{{data.url}}" alt="">
+        <img src={{data.Path}} onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'">
+       <div class="uploader-info">
+          <img src={{data.profile_photo}} onerror="this.src='assets/images/user.png'">
+            <div class="uploader-name">
+              <p>{{data.User_Name}}</p><br>
+              <!-- <h6>@{{data.Uniquename}}</h6> -->
+          </div>
+       </div>
+       <div class="likeCount">
+        <img src="assets/images/heart.png">&nbsp;&nbsp;<b>{{data.likecount}}</b>
+        &nbsp;&nbsp;<img src="assets/images/chat-comment-oval-speech-bubble-with-text-lines.png">&nbsp;&nbsp;<b>{{data.commentcount}}</b>
+       </div>
+       <div class="past-time">
+          <h5>{{data.UploadTime | timeAgo}}</h5>
+       </div>
+        
     </div>
   </div>
+ 
+    <div class="close">
+      <img (click)="close()" src="assets/images/sportsocialprofileclose.png">
+    </div>
+    <div class="larrow">
+      <img (click)="lscroll()" src="assets/images/sportsocialprofilerightarrow.png" alt="">
+    </div>
+    <div class="rarrow">
+     <img (click)="rscroll()" src="assets/images/sportsocialprofileleftarrow.png" alt="">
+    </div>
 </div>
 <router-outlet></router-outlet>
