@@ -48,14 +48,18 @@ export class SsMatchCardComponent implements OnInit {
   openmatchcard(gamename, eventid){
     this.router.navigate(['/matchcenter', gamename, eventid]);
   }
-  openuserprofile(id){
-    this.router.navigate(['/userprofile', id, 'about']);
+  openuserprofile(id, name){
+    name = name.replace(/ /g,"-");
+    console.log(name);
+    // this.router.navigate(['/profile', name, id, 'about']);
   }
   openpopup(){
     this.router.navigate( [ { outlets: { 'AppDownload': ['PopUp'] }} ], { skipLocationChange: true });
   }
-  openlocality(id){
+  openlocality(id, venue){
     // console.log("working"+id);
-    this.router.navigate(['/localityprofile/name'], {queryParams: {id: id}});
+    venue = venue.replace(/ /g,"-");
+    venue = venue.replace(/,/g,"");
+    this.router.navigate(['/locality', venue, 'cricket'], {queryParams: {id: id}});
   }
 }

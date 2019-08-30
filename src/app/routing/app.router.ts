@@ -37,7 +37,7 @@ const App_Route: Routes = [
     // {path:"firebase",component:FirebaseComponent},
     
     {
-        path: 'teamprofile/:name',            
+        path: 'team/:name',            
         component: TeamprofileComponent,
         children: [                          
             {
@@ -52,11 +52,11 @@ const App_Route: Routes = [
     },
     // {path:'userprofile/:MatchStarterId',component:UserprofileComponent},
     {
-        path:'userprofile/:MatchStarterId',
+        path:'profile/:username/:MatchStarterId',
         component:UserprofileComponent,
         children:[
             {
-                path: '**', redirectTo: 'userprofile/about', pathMatch: 'full'
+                path: '**', redirectTo: 'profile/about', pathMatch: 'full'
             },
             {
                 path:'matches',
@@ -77,9 +77,8 @@ const App_Route: Routes = [
         ]
     },
     // {path:':user_id',component:UserprofilePlaymatesComponent},
-    {path:"localityprofile/:name",component:LocalityComponent},
-    {path:"localityprofile",component:LocalityComponent},
-    {path:"matchcenter/:gamename/:feedid",component:OpenHomeMatchCardComponent},
+    {path:'locality/:venue/:name',component:LocalityComponent},
+    {path:"matchcenter/:gamename/:teams/:feedid",component:OpenHomeMatchCardComponent},
     {path:"ourTeam",component:OurteamComponent},
     {path:"contactus",component:ContactUsComponent},
     {path:"live",component:LivedataComponent},

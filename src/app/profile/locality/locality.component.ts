@@ -14,6 +14,7 @@ export class LocalityComponent implements OnInit {
 
 
   venuename;
+  venueroute;
   venuetype;
   ownername;
   sports=[];
@@ -121,6 +122,11 @@ export class LocalityComponent implements OnInit {
     this.route.queryParams.subscribe(params=>{
       this.localityid=params['id'];
     });
+    this.route.params.subscribe(
+      (param)=>{
+        this.venueroute=param.venue;
+      }
+    )
     this.getDetails();
     // this.getLocalityTeams();
     // this.getUpcomingMatches();
@@ -231,7 +237,7 @@ opencrousal(){
   }
   getLocalityTeams(){
     this.postService.getLocalityTeams(this.localityid).subscribe((res: any[]) => {
-      console.log(res[0][1]);
+      // console.log(res[0][1]);
       for(var i=0; i<res[0].length;i++){
         this.teams.push({
           fancount: res[0][i].FanCount,
@@ -269,12 +275,13 @@ opencrousal(){
           }
         }
       }
+      console.log("working");
       this.getLocalityTeams(); //called here because asynch
       this.getUpcomingMatches();
 
-      console.log(this.sports[0]);
+      console.log(this.venueroute);
       if(this.sports[0] != undefined){
-         this.router.navigate(['localityprofile', this.sports[0]], {queryParams:{id: this.localityid}});
+         this.router.navigate(['locality', this.venueroute, this.sports[0]], {queryParams:{id: this.localityid}});
       }
    
       // slot details

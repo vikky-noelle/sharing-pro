@@ -127,14 +127,31 @@ export class OpenHomeMatchCardComponent implements OnInit {
     private interactionservice:InteractionService
   ) {}
    
-  changeroute(id){
+  changeroute(id, name){
+    var index;
+    for(var j=0;j<name.length;j++){
+      if(name[j] == " "){
+        index = j;
+      }
+    }
+    var last_name = name.substring(index);
+    name = name.substring(0, index); 
+    if(name.replace(/ /,"")==" "){
+      name = name.replace(/ /,"");
+    }
+    else{
+      name = name.replace(/ /,"")+" "+last_name.replace(/ /,"");
+    }
+    name = name.replace(/ /,"-");
+    // console.log(name.replace(/ /,"-"));
       this.interactionservice.routechangefunction(id);
-      this.router.navigate(['/userprofile',id,'about']);
+      this.router.navigate(['/profile',name, id, 'about']);
   }
-  openlocality(id){
-    // console.log("working"+id);
-    this.router.navigate(['/localityprofile/name'], {queryParams: {id: id}});
+  openlocality(id,nameoflocality){
+    nameoflocality= nameoflocality.replace(/ /g,"-");
+    this.router.navigate(['/locality',nameoflocality, "cricket"], {queryParams: {id: id}});
   }
+
   getSingleMatchFeed(){
       this.postservice.OpenOneMatchCard(this.eventid).subscribe(
         data=>{
@@ -338,13 +355,14 @@ export class OpenHomeMatchCardComponent implements OnInit {
   }
   openprofile(teamid, name){
     name = name.replace(/ /g,"-");
-    console.log("working"+teamid);
+    console.log("working:"+teamid);
+    console.log("this is name:",name);
     if(teamid===null){
 
     }
     else{
       console.log("navigate");
-      this.router.navigate(['/teamprofile', name, "About"], {queryParams: {teamid: teamid}}); 
+      this.router.navigate(['/team', name, "About"], {queryParams: {teamid: teamid}}); 
     }
   }
   openpopcrousal(){

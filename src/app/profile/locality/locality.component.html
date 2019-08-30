@@ -38,7 +38,7 @@
           <ul class="basic-info-tab">
             <h1 *ngIf="sports.length>0">Available Sports Facilities</h1>
             <h1 *ngIf="sports.length == 0" style="font-size: 1em; text-align: center;"> No Sports Facilities Yet</h1>
-          <a routerLink="/localityprofile/{{data}}" [queryParams]="{id: localityid}" routerLinkActive="active" *ngFor="let data of sports"><li (click)="openspecificsport(data)">{{data}}</li></a>
+          <a routerLink="/locality/{{venueroute}}/{{data}}" [queryParams]="{id: localityid}" routerLinkActive="active" *ngFor="let data of sports"><li (click)="openspecificsport(data)">{{data}}</li></a>
         </ul>
         </div>
       <div class="slots" *ngIf="slotdetails.length > 0">
@@ -61,7 +61,7 @@
         <h1 *ngIf="sports.length == 0" style="font-size: 1em; text-align: center;"> No Sports Facilities Yet</h1>
        
         <ul class="sport-menu">
-           <a routerLink="/localityprofile/{{data}}" [queryParams]="{id: localityid}" routerLinkActive="active" *ngFor="let data of sports"><li (click)="openspecificsport(data)">{{data}}</li></a>
+           <a routerLink="/locality/{{venueroute}}/{{data}}" [queryParams]="{id: localityid}" routerLinkActive="active" *ngFor="let data of sports"><li (click)="openspecificsport(data)">{{data}}</li></a>
         </ul>
       <img class="ground" src="/assets/images/sportsocialground.jpg" alt="">
       <h3>The Average Ground</h3>

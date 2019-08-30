@@ -1,6 +1,6 @@
 <div class="card">
     <div class="head">
-      <div class="venue" (click)="openlocality(VenueId)">
+      <div class="venue" (click)="openlocality(VenueId, Venue_Name)">
         <b>{{gender}}{{gamename}} - <span style="font-weight: lighter;">{{age}}</span>
             <p class="pp">{{Venue_Name|slice:0:30}}...</p>
             <p class="mobile">{{Venue_Name}}</p>
@@ -11,7 +11,7 @@
            <img *ngIf="!finished" src="assets/images/sportsocialfinalicon.jpeg">
            <!-- <img *ngIf="finished" src="assets/images/sportsocialgreendot.png"><br> -->
            <img *ngIf="finished" src="assets/images/sportsocialRedDot.jpg"><br>
-            <span (click)="openuserprofile(matchstarterid)"> By:@{{matchstartername}}</span>
+            <span (click)="openuserprofile(matchstarterid, matchstartername)"> By:@{{matchstartername}}</span>
         </p>
       </div> 
     </div>
