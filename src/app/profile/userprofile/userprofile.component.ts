@@ -100,7 +100,7 @@ export class UserprofileComponent implements OnInit {
 
   changeroute(id){
     this.event.routechangefunction(id);
-    this.router.navigate(['/userprofile', id, 'about']);
+    this.router.navigate(['/profile', id, 'about']);
     this.openfan[0].style.display="none";
     this.openfollower[0].style.display="none";
   }
@@ -411,7 +411,7 @@ export class UserprofileComponent implements OnInit {
       
         }
       }
-}
+  }
   @HostListener('document:keyup', ['$event'])
   handleDeleteKeyboardEvent(event: KeyboardEvent) {
     if(event.key === 'ArrowLeft')

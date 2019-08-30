@@ -4,7 +4,7 @@
 <!-- <div class="fanslist">
   <img (click)="closefan()" class="closelist" src="assets/images/close.png" alt="">
 <div class="list" (scroll)="onscroll($event)">
-  <div *ngFor="let data of upcoming" class="listItem">
+   <div *ngFor="let data of Fans" class="listItem">
     <div class="Pimage">
         <img src={{data.profile_image}} onerror="this.src='assets/images/user.png'">
     </div>
@@ -15,14 +15,14 @@
     <div class="btn">
       <button (click)="openAppDownloadPopup()">Follow</button>
    </div>
-  </div>
+  </div> 
 </div>
-</div>
+</div>-->
 
 <div class="followerlist">
   <img (click)="closefollower()" class="closelist" src="assets/images/close.png" alt="">
   <div class="list" (scroll)="onscrollf($event)">
-      <div *ngFor="let data of upcoming" class="listItem">
+      <!-- <div *ngFor="let data of Followers" class="listItem">
           <div class="Pimage">
               <img src={{data.profile_image}} onerror="this.src='assets/images/user.png'">
           </div>
@@ -33,9 +33,9 @@
           <div class="btn">
             <button (click)="openAppDownloadPopup()">Follow</button>
          </div>
-        </div>
+        </div> -->
   </div>
-</div> -->
+</div> 
 
 <div class="outer-shell">
   <div class="profile-shell">
@@ -156,8 +156,8 @@
     </div>
     </div>
     <div class="normal-shell">
-    <a routerLink="/teamprofile/{{routename}}/About" [queryParams]="{ teamid: teamid}" routerLinkActive="active">About</a>
-    <a routerLink="/teamprofile/{{routename}}/Matches" [queryParams]="{ teamid: teamid}" routerLinkActive="active">Matches</a>
+    <a routerLink="/team/{{routename}}/About" [queryParams]="{ teamid: teamid}" routerLinkActive="active">About</a>
+    <a routerLink="/team/{{routename}}/Matches" [queryParams]="{ teamid: teamid}" routerLinkActive="active">Matches</a>
   </div>
 </div>
 <div class="media-crousal">

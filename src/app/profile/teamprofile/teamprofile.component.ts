@@ -41,6 +41,11 @@ export class TeamprofileComponent implements OnInit {
   show:boolean=false;
   captainuserid;
   crousallist=[];
+  fanstatus = true;
+  followerstatus = true;
+
+  followerpage=1;
+  fanpage=1;
 
   showcrousal = document.getElementsByClassName('media-crousal') as HTMLCollectionOf<HTMLElement>;
  
@@ -405,6 +410,26 @@ export class TeamprofileComponent implements OnInit {
       this.showcrousal[0].style.display="none";
     }
   }
+  onscroll(event: any) {
+    // visible height + pixel scrolled >= total height 
+    if (event.target.offsetHeight + event.target.scrollTop >= event.target.scrollHeight) {
+      // console.log("End");
+      if(this.fanstatus){
+        this.fanpage=this.fanpage+1;
+    
+      }
+    }
+  }
+  onscrollf(event: any) {
+    // visible height + pixel scrolled >= total height 
+    if (event.target.offsetHeight + event.target.scrollTop >= event.target.scrollHeight) {
+      // console.log("End");
+      if(this.followerstatus){
+        this.followerpage=this.followerpage+1;
+    
+      }
+    }
+}
   lscroll(){
     console.log("working");
     this.widgets.nativeElement.scrollLeft -=this.widgetsContent.nativeElement.clientWidth;
