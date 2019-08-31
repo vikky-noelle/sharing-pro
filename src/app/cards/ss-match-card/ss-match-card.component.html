@@ -16,7 +16,7 @@
       </div> 
     </div>
     
-        <div class="cardData" (click)="openmatchcard(gamename, eventid)">
+        <div class="cardData" (click)="openmatchcard(gamename, eventid, bothteam)">
               <div class="team1">
                   <img src={{team1pic}} onerror="this.src='assets/images/user.png'">
                   <p>{{Team1Name | slice:0:11}}</p>

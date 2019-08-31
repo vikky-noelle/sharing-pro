@@ -11,6 +11,7 @@ import { InteractionService } from '../../shared/services/interaction.service';
 export class UserprofileComponent implements OnInit {
 
   followerpage=1;
+  name;
   fanpage=1;
   FirstName;
   LastName;
@@ -141,6 +142,8 @@ export class UserprofileComponent implements OnInit {
 
             this.FirstName=res["UserData"][i].FirstName,
             this.LastName=res["UserData"][i].LastName,
+            this.name = this.FirstName+this.LastName;
+            this.name = this.name.replace(/ /g,"-");
             this.UniqueName=res["UserData"][i].UniqueName,
             this.Gender=res["UserData"][i].Gender,
             this.DateofBirth=agecount,

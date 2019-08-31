@@ -107,7 +107,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         
               if(data["Feed"][i].Team2name === null){
                 tempimg = "/assets/images/sportsocialteamlogo.png";
-                data["Feed"][i].Team2name = "None";
+                data["Feed"][i].Team2name = "Yet to Join";
               }
               else{
                 tempimg = data["Feed"][i].Team2Pic;
@@ -151,7 +151,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
           this.startTime="Upcoming";
           finished= false; 
           upcoming=true;   
-          if(data["Feed"][i].Team2name === "None"){
+          if(data["Feed"][i].Team2name === "Yet to Join"){
             this.startTime = "Waiting for oponent";
           }
         }
@@ -193,10 +193,18 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         else if(agebracket ==-1){
           age="Open for All";
         }
+        var bothTeamName;
+        if(data["Feed"][i].Team2name == "Yet to Join"){
+          bothTeamName= data["Feed"][i].Team1name.replace(/ /g,"-");
+        }
+        else{
+          bothTeamName= data["Feed"][i].Team1name.replace(/ /g,"-")+"-v-"+data["Feed"][i].Team2name.replace(" ",'-').trim();
+        }
         // console.log(data["Feed"][i]);
         var Starttime= new Date( data["Feed"][i].startdatetime *1000);
         var timestampConvert= new String(Starttime).slice(3,21);
         this.arr.push({
+              bothteam: bothTeamName,
               MatchStarterId: data["Feed"][i].MatchStarterId,
               Ondate: timrstampstr2,
               Ontime: timrstampstr,
@@ -278,7 +286,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         var tempimg;
               if(data["Feed"][i].Team2name === null){
                 tempimg = "/assets/images/sportsocialteamlogo.png";
-                data["Feed"][i].Team2name = "None";
+                data["Feed"][i].Team2name = "Yet to Join";
               }
               else{
                 tempimg = data["Feed"][i].Team2Pic;
@@ -349,8 +357,15 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
           finished= true;
           this.startTime="Match Finished";
         }
-    
+        var bothTeamName;
+        if(data["Feed"][i].Team2name == "Yet to Join"){
+          bothTeamName= data["Feed"][i].Team1name.replace(/ /g,"-");
+        }
+        else{
+          bothTeamName= data["Feed"][i].Team1name.replace(/ /g,"-")+"-v-"+data["Feed"][i].Team2name.replace(" ",'-').trim();
+        }
         this.Matcharr.push({
+          bothteam: bothTeamName,
           MatchStarterId: data["Feed"][i].MatchStarterId,
           Ondate: timrstampstr2,
           Ontime: timrstampstr,

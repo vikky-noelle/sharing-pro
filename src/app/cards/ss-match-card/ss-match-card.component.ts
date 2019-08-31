@@ -40,18 +40,33 @@ export class SsMatchCardComponent implements OnInit {
   @Input() Ondate:string;
   @Input() matchstarterid:string;
   @Input() VenueId:string;
+  @Input() bothteam:string;
 
   constructor(private router:Router) { }
 
   ngOnInit() {
   }
-  openmatchcard(gamename, eventid){
-    this.router.navigate(['/matchcenter', gamename, eventid]);
+  openmatchcard(gamename, eventid, teams){
+    console.log(teams);
+    this.router.navigate(['/matchcenter', gamename, teams, eventid]);
   }
   openuserprofile(id, name){
-    name = name.replace(/ /g,"-");
+    var index;
+    for(var j=0;j<name.length;j++){
+      if(name[j] == " "){
+        index = j;
+      }
+    }
+    name = name.replace(/ /g,"");
+    if(index == name.length){
+      name = name.replace(/ /g,"");
+    }
+    else{
+      name = name.substring(0,index-1)+" "+name.substring(index-1);
+      name = name.replace(/ /g,"-");
+    }
     console.log(name);
-    // this.router.navigate(['/profile', name, id, 'about']);
+    this.router.navigate(['/profile', name, id, 'about']);
   }
   openpopup(){
     this.router.navigate( [ { outlets: { 'AppDownload': ['PopUp'] }} ], { skipLocationChange: true });

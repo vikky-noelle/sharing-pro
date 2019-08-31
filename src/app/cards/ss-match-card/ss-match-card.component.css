@@ -64,6 +64,7 @@
     width: 12px;
 }
 .result>p>span{
+    cursor: pointer;
     padding: 1.5%;
     font-size: 0.8em;
     font-weight: 400;

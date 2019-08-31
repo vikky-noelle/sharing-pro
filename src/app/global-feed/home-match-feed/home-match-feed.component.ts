@@ -115,13 +115,13 @@ export class HomeMatchFeedComponent{
                 index = j;
               }
             }
-            var last_name = user_name.substring(index);
-            user_name = user_name.substring(0, index); 
-            if(last_name.replace(/ /g,"")==" "){
+            user_name = user_name.replace(/ /g,"");
+            if(index == user_name.length){
               user_name = user_name.replace(/ /g,"");
             }
             else{
-              user_name = user_name.replace(/ /g,"")+" "+last_name.replace(/ /g,"");
+              user_name = user_name.substring(0,index-1)+" "+user_name.substring(index-1);
+              user_name = user_name.replace(/ /g,"-");
             }
       
 
