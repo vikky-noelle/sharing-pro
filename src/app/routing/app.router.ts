@@ -87,7 +87,7 @@ const App_Route: Routes = [
     {path:"Helpcenter/:topicname",component:HelpCenterComponent},
     {path: "team",component:TeamviewComponent},
     // {path: 'teamprofile', component:TeamprofileComponent},
-    {path: "locality", component:LocalitypageComponent},
+    {path: "localityprofile", component:LocalitypageComponent},
     {path: 'news', component:NewshomeComponent},
     {
         path: "news/:topic", 
