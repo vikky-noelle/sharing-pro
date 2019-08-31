@@ -143,12 +143,12 @@ export class OpenHomeMatchCardComponent implements OnInit {
       name = name.replace(/ /,"")+" "+last_name.replace(/ /,"");
     }
     name = name.replace(/ /,"-");
-    // console.log(name.replace(/ /,"-"));
       this.interactionservice.routechangefunction(id);
       this.router.navigate(['/profile',name, id, 'about']);
   }
   openlocality(id,nameoflocality){
     nameoflocality= nameoflocality.replace(/ /g,"-");
+    nameoflocality = nameoflocality.replace(/,/g,"");
     this.router.navigate(['/locality',nameoflocality, "cricket"], {queryParams: {id: id}});
   }
 
@@ -355,13 +355,10 @@ export class OpenHomeMatchCardComponent implements OnInit {
   }
   openprofile(teamid, name){
     name = name.replace(/ /g,"-");
-    console.log("working:"+teamid);
-    console.log("this is name:",name);
     if(teamid===null){
 
     }
     else{
-      console.log("navigate");
       this.router.navigate(['/team', name, "About"], {queryParams: {teamid: teamid}}); 
     }
   }

@@ -70,7 +70,6 @@
     font-weight: 400;
     margin-right: 9%;
     color: #024771;
-    font-weight: lighter;
     font-family: 'Roboto', sans-serif;
 }
 .venue b span{
@@ -79,8 +78,9 @@
 .pp{
     margin-left: 3.5%;
     padding: 1%;
-    color: grey;
+    color: #024770;
     font-size: 0.7em;
+    cursor: pointer;
 }
 .mobile{
     display: none;
@@ -101,6 +101,7 @@
     width: 40px;
 }
 .cardData{
+    cursor: pointer;
     position: absolute;
     width: 100%;
     height: 80px;

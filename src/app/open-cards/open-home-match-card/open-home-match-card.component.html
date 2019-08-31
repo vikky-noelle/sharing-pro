@@ -47,7 +47,7 @@
                     <br>
                     <div class="fulllength">
                         <h6 (click)="openlocality(feed.venueId, feed.Venue_Name);" style="cursor: pointer;">{{feed.Venue_Name | slice:0:35}}....</h6>
-                      <span class="addresstext">{{feed.Venue_Name}}</span>
+                      <span class="addresstext" (click)="openlocality(feed.venueId, feed.Venue_Name);">{{feed.Venue_Name}}</span>
                     </div>
                 </div>
                 <div class="result">
