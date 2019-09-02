@@ -4543,15 +4543,6 @@ var GlobalMatchFeedComponent = /** @class */ (function () {
         this.postservice = postservice;
         this.event = event;
         this.cookie = cookie;
-        this.show = false;
-        this.title = "Arena | Sports Social";
-        this.metakey = "Open Arena,Sports Social,Sports Arena nearby,Sports events nearby,Sports Activities nearby,Sports Grounds nearby, Connect to Sports players nearby,Find Sports players nearby";
-        this.metades = "See What's going around you in sports in the open Arena. Use Arena to find,connect,play, follow matches, players, academies, coaches and events in your favorite sport in your locality and around the world | stay connected to your sports world.";
-        this.Matcharr = [];
-        this.gendercheck = "";
-        this.selected = "";
-        this.number = [];
-        this.timestamp = Math.floor(Date.now() / 1000);
         this.Sports = [
             { id: 5, title: 'Badminton' },
             { id: 6, title: 'Basketball' },
@@ -4562,16 +4553,19 @@ var GlobalMatchFeedComponent = /** @class */ (function () {
             { id: 56, title: 'Table Tennis' },
             { id: 60, title: 'Volleyball' }
         ];
+        this.show = false;
+        this.title = "Arena | Sports Social";
+        this.metakey = "Open Arena,Sports Social,Sports Arena nearby,Sports events nearby,Sports Activities nearby,Sports Grounds nearby, Connect to Sports players nearby,Find Sports players nearby";
+        this.metades = "See What's going around you in sports in the open Arena. Use Arena to find,connect,play, follow matches, players, academies, coaches and events in your favorite sport in your locality and around the world | stay connected to your sports world.";
+        this.Matcharr = [];
+        this.gendercheck = "";
+        this.selected = "";
+        this.number = [];
+        this.timestamp = Math.floor(Date.now() / 1000);
         this.count = 0;
         this.arr = [];
         this.showloader = false;
-        this.pagetitle.setTitle(this.title);
-        this.metaservice.updateTag({ name: 'title', content: this.title });
-        this.metaservice.updateTag({ name: 'keywords', content: this.metakey });
-        this.metaservice.updateTag({ name: 'description', content: this.metades });
-        this.metaservice.updateTag({ property: 'og:title', content: this.title });
-        this.metaservice.updateTag({ property: 'og:description', content: this.metades });
-        this.metaservice.updateTag({ property: 'og:keywords', content: this.metakey });
+        this.getnamefromparams();
         this.event.listentoroute().subscribe(function (topic) {
             _this.Matcharr = [];
             _this.arr = [];
@@ -4586,6 +4580,33 @@ var GlobalMatchFeedComponent = /** @class */ (function () {
             }
         });
     }
+    GlobalMatchFeedComponent.prototype.getnamefromparams = function () {
+        var _this = this;
+        this.route.params.subscribe(function (param) {
+            _this.gamename = param.topic;
+            console.log("this is param of OPENARENA:", _this.gamename);
+        });
+        var metadesc = "See What's going around you in" + this.gamename + "in the " + this.gamename + " Arena. Use " + this.gamename + " Arena to find,connect,play, follow " + this.gamename + " matches, players, academies, coaches, events etc. in your locality and around the world | stay connected to your " + this.gamename + " world";
+        var metakeys = this.gamename + " Arena,Sports Social " + this.gamename + "," + this.gamename + " Grounds Nearby," + this.gamename + " Events Nearby, " + this.gamename + " Matches Nearby, Connect " + this.gamename + " Players, Play " + this.gamename + ", Find " + this.gamename + " Players,Find " + this.gamename + " Academies," + this.gamename + " Tournaments Nearby";
+        if (this.gamename === undefined) {
+            this.pagetitle.setTitle(this.title);
+            this.metaservice.updateTag({ name: 'title', content: this.title });
+            this.metaservice.updateTag({ name: 'keywords', content: this.metakey });
+            this.metaservice.updateTag({ name: 'description', content: this.metades });
+            this.metaservice.updateTag({ property: 'og:title', content: this.title });
+            this.metaservice.updateTag({ property: 'og:description', content: this.metades });
+            this.metaservice.updateTag({ property: 'og:keywords', content: this.metakey });
+        }
+        else {
+            this.pagetitle.setTitle(this.gamename + ' Arena | Sports Social');
+            this.metaservice.updateTag({ name: 'title', content: this.gamename + ' Arena | Sports Social' });
+            this.metaservice.updateTag({ name: 'keywords', content: metakeys });
+            this.metaservice.updateTag({ name: 'description', content: metadesc });
+            this.metaservice.updateTag({ property: 'og:title', content: this.gamename + ' Arena | Sports Social' });
+            this.metaservice.updateTag({ property: 'og:keywords', content: metakeys });
+            this.metaservice.updateTag({ property: 'og:description', content: metadesc });
+        }
+    };
     GlobalMatchFeedComponent.prototype.openarenamatches = function () {
         var _this = this;
         // console.log(this.cookie.get('longitude'));
@@ -4937,6 +4958,7 @@ var GlobalMatchFeedComponent = /** @class */ (function () {
             this.selected = topic[0].toUpperCase();
             this.selected = this.selected + topic.slice(1);
         }
+        this.getnamefromparams();
     };
     GlobalMatchFeedComponent.prototype.ngOnDestroy = function () {
         if (this._masonry) {
@@ -7707,8 +7729,13 @@ var NewshomeComponent = /** @class */ (function () {
         this.metaservice.updateTag({ property: 'og:title', content: this.title });
         this.metaservice.updateTag({ property: 'og:keywords', content: this.keywords });
         this.metaservice.updateTag({ property: 'og:description', content: this.description });
-        // this is how i interact between components
+        this.getparamtopic();
     }
+    NewshomeComponent.prototype.getparamtopic = function () {
+        this.route.params.subscribe(function (param) {
+            console.log("this is news params:", param);
+        });
+    };
     NewshomeComponent.prototype.openspecificnews = function (feed) {
         console.log(feed);
         // for(var i=0; i<this.news.length;i++){

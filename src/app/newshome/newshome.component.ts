@@ -79,6 +79,12 @@ export class NewshomeComponent implements OnInit {
   scroll=document.getElementsByClassName('c-element') as HTMLCollectionOf<HTMLElement>;
   @ViewChild('widgets') widgets:ElementRef;
   @ViewChild('widgetsContent') widgetsContent:ElementRef;
+
+  getparamtopic(){
+    this.route.params.subscribe((param)=>{
+      console.log("this is news params:",param);
+    })
+  }
   constructor(
     private _eventemiter: EventEmiterService,
     private getService: GetService,
@@ -96,7 +102,7 @@ export class NewshomeComponent implements OnInit {
     this.metaservice.updateTag({property:'og:title',content:this.title});
     this.metaservice.updateTag({property:'og:keywords',content:this.keywords});
     this.metaservice.updateTag({property:'og:description',content:this.description});
-    // this is how i interact between components
+    this.getparamtopic();
      
   }
   
