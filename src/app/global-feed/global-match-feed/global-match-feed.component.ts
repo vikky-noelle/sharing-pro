@@ -71,7 +71,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
       this.metaservice.updateTag({property:'og:description',content:this.metades});
       this.metaservice.updateTag({property:'og:keywords',content:this.metakey});
     }
-    else 
+    else if(this.gamename !== undefined)
     {
       this.pagetitle.setTitle(this.gamename + ' Arena | Sports Social');
       this.metaservice.updateTag({name:'title',content:this.gamename + ' Arena | Sports Social'});
@@ -472,6 +472,15 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
       this.selected = this.selected + topic.slice(1);
     }
     this.getnamefromparams();
+    this.route.params.subscribe((param)=>{
+      this.gamename=param.topic;
+      if(this.gamename == undefined){
+        this.pagetitle.setTitle('Arena | Sports Social');
+      }
+      else{
+      this.pagetitle.setTitle(this.gamename + ' Arena | Sports Social');
+      }
+    })
     
   }
 

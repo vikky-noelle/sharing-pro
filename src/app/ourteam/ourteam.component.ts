@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'sports-social-ourteam',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ourteam.component.css']
 })
 export class OurteamComponent implements OnInit {
-
-  constructor() { }
+ title="Team behind Sports Social";
+  constructor(private titleservice:Title,
+    private metaservice:Meta) {
+      this.titleservice.setTitle(this.title);
+     }
 sourabhFb="https://www.facebook.com/sourabh.arora.5011";
 
   Sourabhdesc="Sourabh handels the frontend developement at Sport Social,where he oversees the company's goal, including functionality of website & he actively involved in other departments of company.Sourabh holds a Masters in Computer application from National institute of technology."

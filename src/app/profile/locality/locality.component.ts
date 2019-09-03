@@ -4,6 +4,7 @@ import { PostService } from './../../shared/services/post.service';
 import { Component, OnInit, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { THROW_IF_NOT_FOUND } from '@angular/core/src/di/injector';
 import 'rxjs/add/observable/interval';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'sports-social-locality',
@@ -99,7 +100,8 @@ export class LocalityComponent implements OnInit {
   constructor(
     private postService: PostService,
     private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private titleservice:Title
   ) { }
 
   sample(){
@@ -267,6 +269,7 @@ opencrousal(){
   }
   getDetails(){
     this.postService.getLocalityDetails("119", this.localityid).subscribe(res => {
+      console.log("responseeeee",res);
       // getting sports and changing the route
       for(var i=0; i< res["Sports"].length; i++){
         for(var j=0; j<this.sportlist.length; j++){
@@ -300,6 +303,7 @@ opencrousal(){
       this.ownername = res["Venue"][0].User_Name;
       this.address = res["Venue"][0].Address;
       this.profileimage = res["Venue"][0].profile_image;
+      this.titleservice.setTitle(this.venuename +" | Sports Social");
       switch(res["Venue"][0].Category){
         case 0: this.venuetype = "School";
         break;

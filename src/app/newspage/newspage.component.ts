@@ -12,9 +12,6 @@ import { Title, Meta } from '@angular/platform-browser';
 })
 export class NewspageComponent implements OnInit{
   
-  title="Sports News from around the world";
-  description="Get the latest sports trends,news,updates from around the world on Sports Social from top sources";
-  keywords="Latest Sports News, Breaking news Sports,Sports Trends,Sports Social,Sports Updates,Headlines Sports,Sports News Today";
   
   routechangestatus=false;
   news=[];
@@ -39,6 +36,32 @@ export class NewspageComponent implements OnInit{
   scroll=document.getElementsByClassName('c-element') as HTMLCollectionOf<HTMLElement>;
   @ViewChild('widgets') widgets:ElementRef;
   @ViewChild('widgetsContent') widgetsContent:ElementRef;
+
+  newsParamTopic;
+
+  getparamtopic(){
+    this.route.params.subscribe((param)=>{
+      this.newsParamTopic=param.topic;
+      // console.log("this is news params:",this.newsParamTopic);
+    });
+    var title=this.newsParamTopic+" News from around the world";
+    var metadesc="Get the latest"+ this.newsParamTopic+ " trends,news,updates from around the world on Sports Social from top sources";
+    var metakeys="Latest "+ this.newsParamTopic+ " News, Breaking news "+ this.newsParamTopic+ ","+ this.newsParamTopic+ " Trends,Sports Social,"+ this.newsParamTopic+ " Updates,Headlines "+ this.newsParamTopic+ ","+ this.newsParamTopic+ " News Today";
+   
+    if(this.newsParamTopic === null){
+           
+    }
+    else{
+      this.titleservice.setTitle(title);
+      this.metaservice.updateTag({name:'title',content:title});
+      this.metaservice.updateTag({name:'keywords' , content:metakeys});
+      this.metaservice.updateTag({name:'description',content:metadesc});
+      this.metaservice.updateTag({property:'og:title',content:title});
+      this.metaservice.updateTag({property:'og:keywords',content:metakeys});
+      this.metaservice.updateTag({property:'og:description',content:metadesc});
+    }
+   
+  }
   constructor(
     private _eventemiter: EventEmiterService,
     private getService: GetService,
@@ -49,14 +72,9 @@ export class NewspageComponent implements OnInit{
     private titleservice:Title,
     private metaservice:Meta
   ) { 
-    this.titleservice.setTitle(this.title);
-    this.metaservice.updateTag({name:'title',content:this.title});
-    this.metaservice.updateTag({name: 'keywords' , content:this.keywords});
-    this.metaservice.updateTag({name:'description',content:this.description});
-    this.metaservice.updateTag({property:'og:title',content:this.title});
-    this.metaservice.updateTag({property:'og:keywords',content:this.keywords});
-    this.metaservice.updateTag({property:'og:description',content:this.description});
+  
     //this is how i interact between components
+    this.getparamtopic();
     this.event.listentoroute().subscribe((topic:any) => {
       this.news=[];
       this.rnews=[];
@@ -66,7 +84,10 @@ export class NewspageComponent implements OnInit{
        this.getsportwise(topic);
       this.recentnews("");
    }); 
+   
+
   }
+ 
 
   ngOnInit() {
   this.route.params.subscribe(params => {
@@ -84,7 +105,14 @@ export class NewspageComponent implements OnInit{
     }
     this.getsportwise(this.topic);
     this.recentnews("");
-   
+    this.getparamtopic();
+    this.route.params.subscribe((param)=>{
+      this.newsParamTopic=param.topic;
+      this.titleservice.setTitle(this.newsParamTopic +" News from around the world");
+      
+      
+    });
+
   }
   randomrouteresponse(){
        this.router.navigate(['/news']);
