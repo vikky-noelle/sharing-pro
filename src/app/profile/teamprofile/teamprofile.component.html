@@ -22,15 +22,10 @@
 <div class="followerlist">
   <img (click)="closefollower()" class="closelist" src="assets/images/close.png" alt="">
   <div class="list" (scroll)="onscrollf($event)">
-<<<<<<< HEAD
-<<<<<<< HEAD
       <!-- <div *ngFor="let data of Followers" class="listItem">
-=======
       <div *ngFor="let data of upcoming" class="listItem">
->>>>>>> 53c7b78a58b9fc822bacbd4144806de43da29661
-=======
-      <!-- <div *ngFor="let data of Followers" class="listItem">
->>>>>>> a3508103811772f754c32912aa4ab7e34e217ff0
+
+       <div *ngFor="let data of Followers" class="listItem">
           <div class="Pimage">
               <img src={{data.profile_image}} onerror="this.src='assets/images/user.png'">
           </div>
