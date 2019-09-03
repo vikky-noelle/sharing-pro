@@ -97,7 +97,8 @@
         </div>
       </div>
       <h2>Matches This Week</h2>
-      <div class="current-matches">
+      <h3 *ngIf="matches.length == 0" style="font-size: 1.3em; color: #444444; padding: 20px; text-align: left;">No Games Yet</h3>
+      <div *ngIf="matches > 0" class="current-matches">
           <div class="match-cards" *ngFor="let feed of matches">
               <!-- <sports-social-ss-match-card
                         [coverpic]="feed.coverpic"

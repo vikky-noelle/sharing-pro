@@ -2,7 +2,8 @@
   <div class="upcoming-matches">
     <h1>Finished Matches</h1>
     <hr>
-    <div class="upcoming-block">
+    <h2 *ngIf="matchstatus == false" style ="font-size: 1em; color: #444444;">No Matches Yet</h2>
+    <div class="upcoming-block" *ngIf="matchstatus">
       <div class="upcoming-cards" *ngFor="let feed of array">
         <sports-social-ss-match-card
                   [coverpic]="feed.coverpic"

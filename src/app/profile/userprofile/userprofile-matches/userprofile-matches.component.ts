@@ -15,12 +15,20 @@ export class UserprofileMatchesComponent implements OnInit {
   array=[];
   show:boolean=true;
   result;
+  matchstatus;
+
   constructor(
     private userprofilecomponent:UserprofileComponent) { }
 
     getUserId(){
       this.paramUserId=this.userprofilecomponent.userid;
       this.array=this.userprofilecomponent.array;
+      this.array = this.userprofilecomponent.array;
+        if(this.userprofilecomponent.array[0] == undefined){
+          this.matchstatus = false;
+          console.log("matched");
+          console.log(this.array);
+        }
     
       // if(this.array[0]!=null){
       //   this.result="Finished Matches";
