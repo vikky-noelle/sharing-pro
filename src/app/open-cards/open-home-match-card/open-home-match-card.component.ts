@@ -4,6 +4,7 @@ import { LocationService } from '../../shared/services/location.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { TimeService } from '../../shared/services/time.service';
 import { InteractionService } from '../../shared/services/interaction.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'sports-social-open-home-match-card',
@@ -31,6 +32,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
   Age;
   startTime:string;
   show:boolean=false;
+  team2Name;
 
   comment:boolean=true;
   moment:boolean=false;
@@ -124,7 +126,8 @@ export class OpenHomeMatchCardComponent implements OnInit {
     private postservice:PostService,
     private activatedroute:ActivatedRoute,
     private router: Router,
-    private interactionservice:InteractionService
+    private interactionservice:InteractionService,
+    private titleservice:Title
   ) {}
    
   changeroute(id, name){
@@ -143,12 +146,12 @@ export class OpenHomeMatchCardComponent implements OnInit {
       name = name.replace(/ /,"")+" "+last_name.replace(/ /,"");
     }
     name = name.replace(/ /,"-");
-    // console.log(name.replace(/ /,"-"));
       this.interactionservice.routechangefunction(id);
       this.router.navigate(['/profile',name, id, 'about']);
   }
   openlocality(id,nameoflocality){
     nameoflocality= nameoflocality.replace(/ /g,"-");
+    nameoflocality = nameoflocality.replace(/,/g,"");
     this.router.navigate(['/locality',nameoflocality, "cricket"], {queryParams: {id: id}});
   }
 
@@ -204,6 +207,19 @@ export class OpenHomeMatchCardComponent implements OnInit {
                   winnerid:data["Feed"][i].winnerid,
                   eventStatus:data["Feed"][i].eventStatus
             });
+            var nameOfGame=data["Feed"][i].GameName;
+            var team1Name=data["Feed"][i].Team1name;
+            
+            if(data["Feed"][i].Team2name == null || undefined ){
+               this.team2Name= " ";
+            }
+            else{
+              this.team2Name=data["Feed"][i].Team2name;
+            }
+            console.log(" this is name of team2,",this.team2Name);
+            
+            this.titleservice.setTitle(nameOfGame+" Match center "+ team1Name+" " + this.team2Name +"| Sports Social" );
+
             this.team1id=this.Matcharr[i].Team1Id;
             this.team2id=this.Matcharr[i].Team2Id;
 
@@ -355,13 +371,10 @@ export class OpenHomeMatchCardComponent implements OnInit {
   }
   openprofile(teamid, name){
     name = name.replace(/ /g,"-");
-    console.log("working:"+teamid);
-    console.log("this is name:",name);
     if(teamid===null){
 
     }
     else{
-      console.log("navigate");
       this.router.navigate(['/team', name, "About"], {queryParams: {teamid: teamid}}); 
     }
   }

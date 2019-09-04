@@ -40,7 +40,7 @@
             <p id="creatorname">{{InsertedDate |slice:0:16}}</p>
         </div> -->
         
-        <div class="eventtext" (click)="openmatchcard(gamename, eventid)">
+        <div class="eventtext" (click)="openmatchcard(gamename, eventid,bothteam)">
                 <p>{{EventText|slice:0:100}}...</p>
             </div>
         <div (click)="openpopup()" class="footer">

@@ -2,6 +2,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { NewspageComponent } from './../newspage/newspage.component';
 import { Component, OnInit, Input } from '@angular/core';
 import { InteractionService } from '../shared/services/interaction.service';
+
 @Component({
   selector: 'sports-social-newsidenav',
   templateUrl: './newsidenav.component.html',
@@ -24,11 +25,7 @@ export class NewsidenavComponent implements OnInit {
   arrowiconn=document.getElementsByClassName('arrowiconn') as HTMLCollectionOf<HTMLElement>;
   openmenu=document.getElementsByClassName('openarenaopen') as HTMLCollectionOf<HTMLElement>;
   openmenu1=document.getElementsByClassName('newsopen') as HTMLCollectionOf<HTMLElement>;
-  constructor(
-    private router: Router,
-    private route: ActivatedRoute,
-    private event: InteractionService
-  ) { }
+
   openarenalist=[
     {link: '', name: 'Open Arena'},
     {link: 'cricket', name: 'Cricket' },
@@ -51,6 +48,15 @@ export class NewsidenavComponent implements OnInit {
     {link: 'hockey', name: 'Hockey' },
     {link: 'badminton', name: 'Badminton' },
   ]
+  
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+    private event: InteractionService
+  ) 
+  { 
+  }
+ 
   routechange(topic){
     this.event.routechangefunction(topic);
   }
@@ -98,6 +104,8 @@ export class NewsidenavComponent implements OnInit {
       this.arrowiconn[0].style.transform="rotate(90deg)";
       this.openarena[0].style.backgroundColor=" rgb(71, 148, 148)";
       this.openarena1[0].style.color="white";
-    }    
+    }   
+    
+    
   }
 }

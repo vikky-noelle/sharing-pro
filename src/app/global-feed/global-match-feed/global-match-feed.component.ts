@@ -17,17 +17,6 @@ import { InteractionService } from '../../shared/services/interaction.service';
   encapsulation: ViewEncapsulation.None
 })
 export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
-  show:boolean=false;
-  title="Arena | Sports Social";
-  metakey="Open Arena,Sports Social,Sports Arena nearby,Sports events nearby,Sports Activities nearby,Sports Grounds nearby, Connect to Sports players nearby,Find Sports players nearby";
-  metades="See What's going around you in sports in the open Arena. Use Arena to find,connect,play, follow matches, players, academies, coaches and events in your favorite sport in your locality and around the world | stay connected to your sports world.";
-  Matcharr = [];
-  gendercheck="";
-  selected="";
-  number=[];
-  startTime:string;
-
-  timestamp = Math.floor(Date.now()/1000);
   Sports= [
     {id: 5, title: 'Badminton'},
     {id: 6, title: 'Basketball'},
@@ -38,6 +27,20 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
     {id: 56, title: 'Table Tennis'},
     {id: 60, title: 'Volleyball'}
   ];
+  show:boolean=false;
+  title="Arena | Sports Social";
+  metakey="Open Arena,Sports Social,Sports Arena nearby,Sports events nearby,Sports Activities nearby,Sports Grounds nearby, Connect to Sports players nearby,Find Sports players nearby";
+  metades="See What's going around you in sports in the open Arena. Use Arena to find,connect,play, follow matches, players, academies, coaches and events in your favorite sport in your locality and around the world | stay connected to your sports world.";
+
+  Matcharr = [];
+  gendercheck="";
+  selected="";
+  number=[];
+  startTime:string;
+  gamename;
+
+  timestamp = Math.floor(Date.now()/1000);
+
   _masonry: Masonry;
   count=0;
   arr=[];
@@ -48,6 +51,39 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
   public showloader: boolean = false; 
   private subscription: Subscription;
   private timer: Observable<any>;
+
+  
+  
+  getnamefromparams(){
+    this.route.params.subscribe((param)=>{
+      this.gamename=param.topic;
+      console.log("this is param of OPENARENA:",this.gamename);
+    });
+   var metadesc="See What's going around you in"+ this.gamename+"in the "+ this.gamename+" Arena. Use "+ this.gamename+" Arena to find,connect,play, follow "+ this.gamename+" matches, players, academies, coaches, events etc. in your locality and around the world | stay connected to your "+this.gamename+" world";
+   var metakeys= this.gamename+" Arena,Sports Social "+this.gamename+","+ this.gamename+" Grounds Nearby,"+ this.gamename+" Events Nearby, "+ this.gamename+" Matches Nearby, Connect "+ this.gamename+" Players, Play "+ this.gamename+", Find "+this.gamename+" Players,Find "+this.gamename+" Academies,"+ this.gamename+" Tournaments Nearby";
+  
+    if(this.gamename === undefined){
+      this.pagetitle.setTitle(this.title);
+      this.metaservice.updateTag({name:'title',content:this.title});
+      this.metaservice.updateTag({name:'keywords',content:this.metakey});
+      this.metaservice.updateTag({name:'description',content:this.metades});
+      this.metaservice.updateTag({property:'og:title',content:this.title});
+      this.metaservice.updateTag({property:'og:description',content:this.metades});
+      this.metaservice.updateTag({property:'og:keywords',content:this.metakey});
+    }
+    else if(this.gamename !== undefined)
+    {
+      this.pagetitle.setTitle(this.gamename + ' Arena | Sports Social');
+      this.metaservice.updateTag({name:'title',content:this.gamename + ' Arena | Sports Social'});
+      this.metaservice.updateTag({name: 'keywords' , content: metakeys});
+      this.metaservice.updateTag({name: 'description', content: metadesc});
+      this.metaservice.updateTag({property:'og:title',content:this.gamename+ ' Arena | Sports Social'});
+      this.metaservice.updateTag({property:'og:keywords',content:metakeys});
+      this.metaservice.updateTag({property:'og:description',content:metadesc});
+    }
+   
+  }
+  
   constructor(
     private pagetitle:Title,
     private metaservice:Meta,
@@ -59,13 +95,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
     private event: InteractionService,
     private cookie: CookieService,
   ) {
-    this.pagetitle.setTitle(this.title);
-    this.metaservice.updateTag({name:'title',content:this.title});
-    this.metaservice.updateTag({name:'keywords',content:this.metakey});
-    this.metaservice.updateTag({name:'description',content:this.metades});
-    this.metaservice.updateTag({property:'og:title',content:this.title});
-    this.metaservice.updateTag({property:'og:description',content:this.metades});
-    this.metaservice.updateTag({property:'og:keywords',content:this.metakey});
+    this.getnamefromparams();
     this.event.listentoroute().subscribe((topic:any) => {
       this.Matcharr = [];
       this.arr = [];
@@ -80,6 +110,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
       }
    }); 
   }
+  
   openarenamatches(){
     // console.log(this.cookie.get('longitude'));
     var temp, checkstat, checkstat2, upcoming=false;
@@ -364,7 +395,7 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
         else{
           bothTeamName= data["Feed"][i].Team1name.replace(/ /g,"-")+"-v-"+data["Feed"][i].Team2name.replace(" ",'-').trim();
         }
-        this.Matcharr.push({
+          this.Matcharr.push({
           bothteam: bothTeamName,
           MatchStarterId: data["Feed"][i].MatchStarterId,
           Ondate: timrstampstr2,
@@ -440,6 +471,16 @@ export class GlobalMatchFeedComponent implements OnInit, OnDestroy {
       this.selected = topic[0].toUpperCase();
       this.selected = this.selected + topic.slice(1);
     }
+    this.getnamefromparams();
+    this.route.params.subscribe((param)=>{
+      this.gamename=param.topic;
+      if(this.gamename == undefined){
+        this.pagetitle.setTitle('Arena | Sports Social');
+      }
+      else{
+      this.pagetitle.setTitle(this.gamename + ' Arena | Sports Social');
+      }
+    })
     
   }
 

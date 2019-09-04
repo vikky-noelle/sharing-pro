@@ -2,6 +2,7 @@ import { Component, OnInit, Input, HostListener, ViewChild, ElementRef } from '@
 import { PostService } from '../../shared/services/post.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { InteractionService } from '../../shared/services/interaction.service';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'sports-social-userprofile',
@@ -45,7 +46,9 @@ export class UserprofileComponent implements OnInit {
     private postservice:PostService,
     private activatedroute:ActivatedRoute,
     private event: InteractionService,
-    private router:Router
+    private router:Router,
+    private title:Title,
+    private metaservice:Meta
     ) {
       this.event.listentoroute().subscribe((topic:any) => {
         if(topic === null || topic === undefined){
@@ -166,6 +169,8 @@ export class UserprofileComponent implements OnInit {
             if(this.Gender==undefined || this.Gender== null || this.Gender=="NULL"){
               this.showcontent=false;
             }
+
+            this.title.setTitle(this.FirstName+ this.LastName + "(@"+this.UniqueName+")" +" | Sports Social Profile");
         }
 
         /*End of Userdata loop */

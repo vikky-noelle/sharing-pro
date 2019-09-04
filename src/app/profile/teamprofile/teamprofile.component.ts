@@ -3,6 +3,7 @@ import { PostService } from '../../shared/services/post.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit, Input, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { TimeService } from '../../shared/services/time.service';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'sports-social-teamprofile',
@@ -46,6 +47,7 @@ export class TeamprofileComponent implements OnInit {
 
   followerpage=1;
   fanpage=1;
+  uniqueNameOfUser;
 
   showcrousal = document.getElementsByClassName('media-crousal') as HTMLCollectionOf<HTMLElement>;
  
@@ -71,13 +73,28 @@ export class TeamprofileComponent implements OnInit {
   @ViewChild('widgets') widgets:ElementRef;
   @ViewChild('widgetsContent') widgetsContent:ElementRef;
 
+
+  title="Create and Manage your Sports Team";
+  metadesc="To easily manage, find the new matches, new opponents around you just create a new team or join a team nearby";
+  metakeys="Create New Team Sports Social,Sports Teams on Sports Social,My Sports Team Profile,Find a sports team,School Sports Team,Colleges Sports Team";
+
   constructor(
     private route: ActivatedRoute,
     private PostService: PostService,
     private time:TimeService,
     private getlocation: LocationService,
-    private router:Router
-  ) { }
+    private router:Router,
+    private pagetitle:Title,
+    private metaservice:Meta
+  ) { 
+      // this.pagetitle.setTitle(this.title);
+      // this.metaservice.updateTag({name:'title',content:this.title});
+      // this.metaservice.updateTag({name: 'keywords' , content: this.metakeys});
+      // this.metaservice.updateTag({name: 'description', content: this.metadesc});
+      // this.metaservice.updateTag({property:'og:title',content:this.title});
+      // this.metaservice.updateTag({property:'og:keywords',content:this.metakeys});
+      // this.metaservice.updateTag({property:'og:description',content:this.metadesc});
+  }
   
   openFanFunc(){
     this.openfan[0].style.display="block";
@@ -142,6 +159,11 @@ export class TeamprofileComponent implements OnInit {
         this.mantra = res["Details"].slogan;
         this.teamcategory = res["Details"].TeamCategory;
         this.captainuserid = res["Details"].CaptainUserId;
+
+        var substring= new String(this.name);
+        this.uniqueNameOfUser= substring.split(" ");
+        this.pagetitle.setTitle(this.name + " (@"+this.uniqueNameOfUser[0]+")"+ " | Sports Social Team Profile");
+        
         switch(this.teamcategory){
           case -1:
           this.teamstatus = "Open For All";
