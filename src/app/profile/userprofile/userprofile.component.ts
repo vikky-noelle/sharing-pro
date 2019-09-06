@@ -79,7 +79,7 @@ export class UserprofileComponent implements OnInit {
   date = new Date();
   timestamp = Math.floor(Date.now()/1000);
   @Input() userid;
-  @Input() pageNo;
+  @Input() userdetailspage;
   @Input() public array=[];
   @Input() public upcomingarray=[];
   @ViewChild('widgets') widgets:ElementRef;
@@ -90,6 +90,7 @@ export class UserprofileComponent implements OnInit {
   Followers=[];
   userrefId;
   Instutionresult;
+  getpastmatchpage=1;
   show:boolean=false;
 
 
@@ -111,17 +112,11 @@ export class UserprofileComponent implements OnInit {
   
 
   getUserDetails(){
-    this.mediaArr=[];
-    for(var i=1;i<=10;i++){
-      this.pageNo=i;
-    }
-    
-    this.postservice.UserProfile(this.userid,this.userid,this.pageNo,this.date).subscribe(
+    this.postservice.UserProfile(this.userid,this.userid,this.userdetailspage,this.date).subscribe(
       (res)=>{
         this.show=true;
         for(var i=0;i<res["UserData"].length;i++){
-
-          /** Birthdate calculate*/
+          /* Birthdate calculate */
           var bdate= res["UserData"][i].DateofBirth;
          this.userrefId =res["UserData"][i].User_id;
           this.getuserFans(this.userrefId);
@@ -190,6 +185,11 @@ export class UserprofileComponent implements OnInit {
             UploadTime:res["Images"][i].UploadTime
           });
         }
+        if(res["Past"] != undefined){
+          this.getpastmatchpage=this.getpastmatchpage+1;
+          this.getpastmatches();
+          console.log("matches");
+        }
       });
   }
   getuserFans(profile_id){
@@ -250,14 +250,12 @@ export class UserprofileComponent implements OnInit {
   }
   getpastmatches(){
     var date= Math.floor(Date.now() / 1000);
-    var pageno, statusnumber;
+    var statusnumber;
     // for(var i=1;i<2;i++){
-      pageno=1;
       // statusnumber = i;
       // i=0;
-    this.postservice.UsersParticularMatches(this.userid,this.userid,pageno,date).subscribe(
+    this.postservice.UsersParticularMatches(this.userid,this.userid,this.getpastmatchpage,date).subscribe(
       (res)=>{
-
         // console.log(res["Past"].length);    
           for(var j=0;j<res["Past"].length;j++){
             var agebracket= res["Past"][j].ageBracket;
@@ -389,6 +387,10 @@ export class UserprofileComponent implements OnInit {
               profile_Photo_path:res["Upcoming"][j].profile_Photo_path,
             });
             // console.log("this upcoming",this.upcomingarray);
+          }
+          if(res["Past"].length > 0){
+            this.getpastmatchpage=this.getpastmatchpage+1;
+            this.getpastmatches();
           }
       }
     )

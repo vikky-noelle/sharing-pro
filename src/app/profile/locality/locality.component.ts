@@ -13,7 +13,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class LocalityComponent implements OnInit {
 
-
+  pageno=1;
   venuename;
   venueroute;
   venuetype;
@@ -203,7 +203,7 @@ opencrousal(){
   this.singleimage[0].style.display="none";
 }
   getUpcomingMatches(){
-    this.postService.getUpcomingMatches("119", this.localityid, 1564844406046, 1).subscribe((res : any[])=>{
+    this.postService.getUpcomingMatches("119", this.localityid, 1564844406046, this.pageno).subscribe((res : any[])=>{
       console.log(res);
       for(var i=0; i < res.length; i++){
         this.upcomingmatches.push({
@@ -235,6 +235,10 @@ opencrousal(){
         }
       }
       console.log(this.specificteam);
+      if(res.length>0){
+        this.pageno=this.pageno+1;
+        this.getUpcomingMatches();
+      }
     });
   }
   getLocalityTeams(){

@@ -16,6 +16,7 @@ export class UserprofileAboutComponent implements OnInit {
   array=[];
   temparray=[];
   temparray2=[];
+  pageno=1;
   constructor(
     private postservice:PostService,
     private userprofileComponent:UserprofileComponent
@@ -28,9 +29,11 @@ export class UserprofileAboutComponent implements OnInit {
     var count=-1, tempname=null, count2=0;
     var date = Math.floor(Date.now()/1000);
     var GameInterestgameid, Gamesquestionid,QuestionDataQuestiontext,answer,GameInterestgamename;
-    this.postservice.UserProfileAbout(this.paramUserid,this.paramUserid,1,date).subscribe(
+    this.postservice.UserProfileAbout(this.paramUserid,this.paramUserid,this.pageno,date).subscribe(
       res=>{
-
+          if(res["GameInterest"] == undefined){
+            console.log("matches");
+          }
           for(var i=0;i<res["GamesInterest"].length;i++){
             GameInterestgameid = res["GamesInterest"][i].gameid;
             GameInterestgamename= res["GamesInterest"][i].gamename;
@@ -105,6 +108,10 @@ export class UserprofileAboutComponent implements OnInit {
               //   Questionid: Gamesquestionid,
               //   answer: answer
               // });
+          }
+          if(res["GameInterest"] !=undefined){
+            this.pageno=this.pageno+1;
+            this.getUserdetails();
           }
        });
   }

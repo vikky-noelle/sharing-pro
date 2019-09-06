@@ -13,7 +13,7 @@ export class UserprofilePlaymatesComponent implements OnInit {
 
   date = Math.abs(Date.now());
   parentUserid;
-  pageno;
+  pageno=1;
   show:boolean=false;
   array=[];
   constructor(private postservice:PostService,
@@ -34,13 +34,11 @@ export class UserprofilePlaymatesComponent implements OnInit {
   }
 
   getplaymates(){
-    for(var i=1;i<=10;i++){
-      this.pageno=i;
-      if(this.pageno==0){
-        break;
-      }
     this.postservice.UserProfielPlaymate(this.parentUserid,this.parentUserid,this.pageno,this.date).subscribe(
       res=>{
+        if(res[0].user_id == undefined){
+          console.log("matches");
+        }
         this.show=true;  
         for(const i in res)
         this.array.push({
@@ -59,10 +57,12 @@ export class UserprofilePlaymatesComponent implements OnInit {
           EventId:res[i].EventId,
           City:res[i].City
         });
-        
+        if(res[0].user_id != undefined){
+          this.pageno=this.pageno+1;
+          this.getplaymates();
+        }
       });
     }
-  }
 
   ngOnInit() {
     this.getuserid();
