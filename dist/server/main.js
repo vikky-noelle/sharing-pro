@@ -12920,7 +12920,7 @@ var PostService = /** @class */ (function () {
             gameid: gameid
         };
         console.log(this.matchFeedReqObj);
-        return this.http.post('https://test.sportsocial.in/web/webfeed', this.matchFeedReqObj);
+        return this.http.post('https://prod.sportsocial.in/web/webfeed', this.matchFeedReqObj);
         // return this.http.post('https://test.sportsocial.in/poc/webfeed', this.matchFeedReqObj);
     };
     PostService.prototype.homeMatchFeed = function (lat, long, Gameid, timest) {
@@ -12930,13 +12930,13 @@ var PostService = /** @class */ (function () {
             gameid: Gameid,
             timestamp: timest
         };
-        return this.http.post('https://test.sportsocial.in/web/webfeed', this.homematchfeedObj);
+        return this.http.post('https://prod.sportsocial.in/web/webfeed', this.homematchfeedObj);
     };
     PostService.prototype.OpenOneMatchCard = function (id) {
         this.paramIdObj = {
             eventid: id
         };
-        return this.http.post('https://test.sportsocial.in/web/webmatchinfo', this.paramIdObj);
+        return this.http.post('https://prod.sportsocial.in/web/webmatchinfo', this.paramIdObj);
     };
     PostService.prototype.singleMatchData = function (eventid, userid, activityid, urlId, page) {
         this.singleMatchReqObj = [{
@@ -12985,7 +12985,7 @@ var PostService = /** @class */ (function () {
             page: page,
             currentdate: currentdate
         };
-        return this.http.post('https://test.sportsocial.in/poc/getUserDetails', this.userprofileobj);
+        return this.http.post('https://prod.sportsocial.in/poc/getUserDetails', this.userprofileobj);
     };
     PostService.prototype.UserProfielPlaymate = function (userid, profileid, page, timestamp) {
         this.userprofileplaymateObj = [{
@@ -12994,14 +12994,14 @@ var PostService = /** @class */ (function () {
                 page: page,
                 timestamp: timestamp
             }];
-        return this.http.post('https://test.sportsocial.in/poc/getPlaymatesNew', this.userprofileplaymateObj);
+        return this.http.post('https://prod.sportsocial.in/poc/getPlaymatesNew', this.userprofileplaymateObj);
     };
     PostService.prototype.UserProfileTeams = function (userid, page) {
         this.userProfielTeamObj = {
             userid: userid,
             page: page
         };
-        return this.http.post('https://test.sportsocial.in/team/getTeamsNew', this.userProfielTeamObj);
+        return this.http.post('https://prod.sportsocial.in/team/getTeamsNew', this.userProfielTeamObj);
     };
     PostService.prototype.UsersParticularMatches = function (userid, profileid, page, currentdate) {
         this.userParticularMatchesObj = [{
@@ -13010,7 +13010,7 @@ var PostService = /** @class */ (function () {
                 page: page,
                 currentdate: currentdate
             }];
-        return this.http.post('https://test.sportsocial.in/user/usermatchesPastFuture', this.userParticularMatchesObj);
+        return this.http.post('https://prod.sportsocial.in/user/usermatchesPastFuture', this.userParticularMatchesObj);
     };
     PostService.prototype.UserProfileAbout = function (userid, profileid, page, currentdate) {
         this.userProfileAboutObj = {
@@ -13019,14 +13019,14 @@ var PostService = /** @class */ (function () {
             page: page,
             currentdate: currentdate
         };
-        return this.http.post('https://test.sportsocial.in/poc/getUserDetails', this.userProfileAboutObj);
+        return this.http.post('https://prod.sportsocial.in/poc/getUserDetails', this.userProfileAboutObj);
     };
     PostService.prototype.TeamProfile = function (userid, teamid) {
         this.teamprofileobj = {
             userid: userid,
             teamid: teamid,
         };
-        return this.http.post('https://test.sportsocial.in/team/getTeamDetails', this.teamprofileobj);
+        return this.http.post('https://prod.sportsocial.in/team/getTeamDetails', this.teamprofileobj);
     };
     PostService.prototype.getFan = function (userid, teamid, timestamp, page) {
         this.fanobj = [{
@@ -13035,7 +13035,7 @@ var PostService = /** @class */ (function () {
                 page: page,
                 timestamp: timestamp
             }];
-        return this.http.post('https://test.sportsocial.in/poc/getFansNew', this.fanobj);
+        return this.http.post('https://prod.sportsocial.in/poc/getFansNew', this.fanobj);
     };
     PostService.prototype.getMembers = function (teamid, userid, timestamp) {
         this.memberobj = [{
@@ -13043,20 +13043,20 @@ var PostService = /** @class */ (function () {
                 userid: userid,
                 timestamp: timestamp
             }];
-        return this.http.post('https://test.sportsocial.in/team/getTeamMembers', this.memberobj);
+        return this.http.post('https://prod.sportsocial.in/team/getTeamMembers', this.memberobj);
     };
     PostService.prototype.getLocalityDetails = function (userid, venueid) {
         this.localityobj = {
             userid: userid,
             venueid: venueid,
         };
-        return this.http.post('https://test.sportsocial.in/venue/getvenueslotdetails_V1', this.localityobj);
+        return this.http.post('https://prod.sportsocial.in/venue/getvenueslotdetails_V1', this.localityobj);
     };
     PostService.prototype.getLocalityTeams = function (localityid) {
         this.localityteams = {
             LocalityId: localityid,
         };
-        return this.http.post('https://test.sportsocial.in/venue/getLocalityTeams', this.localityteams);
+        return this.http.post('https://prod.sportsocial.in/venue/getLocalityTeams', this.localityteams);
     };
     PostService.prototype.getUpcomingMatches = function (userid, venueid, timestamp, page) {
         this.upcomingmatchesobj = {
@@ -13065,7 +13065,7 @@ var PostService = /** @class */ (function () {
             timestamp: timestamp,
             userid: userid,
         };
-        return this.http.post('https://test.sportsocial.in/poc/getVenueUpcomingMatches', this.upcomingmatchesobj);
+        return this.http.post('https://prod.sportsocial.in/poc/getVenueUpcomingMatches', this.upcomingmatchesobj);
     };
     PostService.prototype.getUserProfileFans = function (userid, profileid, page, timestamp) {
         this.userprofileFansObj = [{
@@ -13074,7 +13074,7 @@ var PostService = /** @class */ (function () {
                 page: page,
                 timestamp: timestamp
             }];
-        return this.http.post('https://test.sportsocial.in/poc/getFansNew', this.userprofileFansObj);
+        return this.http.post('https://prod.sportsocial.in/poc/getFansNew', this.userprofileFansObj);
     };
     PostService.prototype.getUserProfileFollowers = function (userid, profileid, page, timestamp) {
         this.userprofilefollowerObj = [{
@@ -13083,7 +13083,7 @@ var PostService = /** @class */ (function () {
                 page: page,
                 timestamp: timestamp
             }];
-        return this.http.post('https://test.sportsocial.in/poc/getFanFollowing', this.userprofilefollowerObj);
+        return this.http.post('https://prod.sportsocial.in/poc/getFanFollowing', this.userprofilefollowerObj);
     };
     return PostService;
 }());
