@@ -112,6 +112,7 @@ export class UserprofileComponent implements OnInit {
   
 
   getUserDetails(){
+    this.mediaArr=[];
     this.postservice.UserProfile(this.userid,this.userid,this.userdetailspage,this.date).subscribe(
       (res)=>{
         this.show=true;

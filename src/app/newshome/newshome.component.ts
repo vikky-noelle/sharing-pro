@@ -91,11 +91,6 @@ export class NewshomeComponent implements OnInit {
     private titleservice:Title,
     private metaservice:Meta
   ) { 
-    this.seoUpdate();
-     
-  }
-
-  seoUpdate(){
     this.titleservice.setTitle(this.title);
     this.metaservice.updateTag({name:'title',content:this.title});
     this.metaservice.updateTag({name: 'keywords' , content:this.keywords});
@@ -103,6 +98,12 @@ export class NewshomeComponent implements OnInit {
     this.metaservice.updateTag({property:'og:title',content:this.title});
     this.metaservice.updateTag({property:'og:keywords',content:this.keywords});
     this.metaservice.updateTag({property:'og:description',content:this.description});
+    // this.seoUpdate();
+     
+  }
+
+  seoUpdate(){
+    
   }
   
   
@@ -120,7 +121,7 @@ export class NewshomeComponent implements OnInit {
   ngOnInit() {
     this.getsportnewsheader('');
     this.getsportwisenews(); 
-    this.seoUpdate();
+    // this.seoUpdate();
   }
   randomrouteresponse(){
        this.router.navigate(['/news']);
