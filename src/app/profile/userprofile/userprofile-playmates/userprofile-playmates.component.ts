@@ -1,7 +1,7 @@
 import { InteractionService } from './../../../shared/services/interaction.service';
 import { Component, OnInit } from '@angular/core';
 import { PostService } from '../../../shared/services/post.service';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { UserprofileComponent } from '../userprofile.component';
 
 @Component({
@@ -28,9 +28,10 @@ export class UserprofilePlaymatesComponent implements OnInit {
     }
   // route change for playmates defined here!!!!
   // it sends the value to the interaction service.
-  changeroute(id){
+  changeroute(name,id){
+    name = name.replace(/ /g,"-");
     this.interactionService.routechangefunction(id);
-    this.router.navigate(['/userprofile', id, 'about']);
+    this.router.navigate(['/profile', name,id, 'about'],{queryParams:id});
   }
 
   getplaymates(){

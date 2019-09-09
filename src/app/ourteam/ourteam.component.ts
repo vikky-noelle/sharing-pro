@@ -14,17 +14,17 @@ export class OurteamComponent implements OnInit {
      }
 sourabhFb="https://www.facebook.com/sourabh.arora.5011";
 
-  Sourabhdesc="Sourabh handels the frontend developement at Sport Social,where he oversees the company's goal, including functionality of website & he actively involved in other departments of company.Sourabh holds a Masters in Computer application from National institute of technology."
-  Tushardesc="Tushar Gangvar co-founded of Sport Social Inc. in 2015 and returned as chief executive officer in September 2016.Additionaly.Tushar Co-founder square, Where he serves as CEO and chairman"
-  Nikhildesc="Nikhil Kanujiya co-founded of Sport Social Inc. in 2015 and returned as chief executive officer in September 2016.Additionaly.Nikhil Co-founder square, Where he serves as CEO and chairman"
-  Aniketdesc="Aniket Chaturvedi is the Tech Lead for Sport Social.He is a Full Stack Developer with vested interests in technology.A software engineer, responsible for leading a development team, and responsible for the quality of its technical deliverables."
+  Sourabhdesc="Sourabh handels the frontend developement at Sports Social,where he oversees the company's goal, including functionality of website & he actively involved in other departments of company.Sourabh holds a Masters in Computer application from National institute of technology."
+  Tushardesc="Tushar Gangvar co-founded of Sports Social Inc. in 2015 and returned as chief executive officer in September 2016.Additionaly.Tushar Co-founder square, Where he serves as CEO and chairman"
+  Nikhildesc="Nikhil Kanujiya co-founded of Sports Social Inc. in 2015 and returned as chief executive officer in September 2016.Additionaly.Nikhil Co-founder square, Where he serves as CEO and chairman"
+  Aniketdesc="Aniket Chaturvedi is the Tech Lead for Sports Social.He is a Full Stack Developer with vested interests in technology.A software engineer, responsible for leading a development team, and responsible for the quality of its technical deliverables."
   Gopaldesc="Gathering and evaluating user requirements, in collaboration with product managers and engineers. Illustrating design ideas using storyboards, process flows and sitemaps. Designing graphic user interface elements, like menus, tabs and widgets.";
   imgarr=[
     {name:"Nikhil Kanaujia",profile:"Co Founder & CEO",desc:this.Nikhildesc,url:"",fburl:""},
     {name:"Tushar Gangwar",profile:"MD & COO",desc:this.Tushardesc,url:"",fburl:""},
     {name:"Raghav Khandelwal",profile:"Director Finance and Strategy",desc:"",url:"",fburl:""},
     {name:"Aniket Chaturvedi",profile:"Tech Lead",desc:this.Aniketdesc,url:"assets/images/sport-social-team-aniket.png",fburl:""},
-    {name:"Sourabh Arora",profile:"Front end web developer",desc:this.Sourabhdesc,url:"assets/images/sport-social-team-sourabh.png",fburl:this.sourabhFb},
+    {name:"Sourabh Arora",profile:"Front end developer",desc:this.Sourabhdesc,url:"assets/images/sport-social-team-sourabh.png",fburl:this.sourabhFb},
     {name:"Kapil Pokheriyal",profile:"Android Developer",desc:"",url:"assets/images/sport-social-team-kapil.png",fburl:""},
     {name:"Harsh Punj",profile:"Business Development Manager",desc:"",url:"",fburl:""},
     {name:"Aditya Shastry",profile:"Content Writer",desc:"",url:"",fburl:""},

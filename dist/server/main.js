@@ -9666,17 +9666,17 @@ var OurteamComponent = /** @class */ (function () {
         this.metaservice = metaservice;
         this.title = "Team behind Sports Social";
         this.sourabhFb = "https://www.facebook.com/sourabh.arora.5011";
-        this.Sourabhdesc = "Sourabh handels the frontend developement at Sport Social,where he oversees the company's goal, including functionality of website & he actively involved in other departments of company.Sourabh holds a Masters in Computer application from National institute of technology.";
-        this.Tushardesc = "Tushar Gangvar co-founded of Sport Social Inc. in 2015 and returned as chief executive officer in September 2016.Additionaly.Tushar Co-founder square, Where he serves as CEO and chairman";
-        this.Nikhildesc = "Nikhil Kanujiya co-founded of Sport Social Inc. in 2015 and returned as chief executive officer in September 2016.Additionaly.Nikhil Co-founder square, Where he serves as CEO and chairman";
-        this.Aniketdesc = "Aniket Chaturvedi is the Tech Lead for Sport Social.He is a Full Stack Developer with vested interests in technology.A software engineer, responsible for leading a development team, and responsible for the quality of its technical deliverables.";
+        this.Sourabhdesc = "Sourabh handels the frontend developement at Sports Social,where he oversees the company's goal, including functionality of website & he actively involved in other departments of company.Sourabh holds a Masters in Computer application from National institute of technology.";
+        this.Tushardesc = "Tushar Gangvar co-founded of Sports Social Inc. in 2015 and returned as chief executive officer in September 2016.Additionaly.Tushar Co-founder square, Where he serves as CEO and chairman";
+        this.Nikhildesc = "Nikhil Kanujiya co-founded of Sports Social Inc. in 2015 and returned as chief executive officer in September 2016.Additionaly.Nikhil Co-founder square, Where he serves as CEO and chairman";
+        this.Aniketdesc = "Aniket Chaturvedi is the Tech Lead for Sports Social.He is a Full Stack Developer with vested interests in technology.A software engineer, responsible for leading a development team, and responsible for the quality of its technical deliverables.";
         this.Gopaldesc = "Gathering and evaluating user requirements, in collaboration with product managers and engineers. Illustrating design ideas using storyboards, process flows and sitemaps. Designing graphic user interface elements, like menus, tabs and widgets.";
         this.imgarr = [
             { name: "Nikhil Kanaujia", profile: "Co Founder & CEO", desc: this.Nikhildesc, url: "", fburl: "" },
             { name: "Tushar Gangwar", profile: "MD & COO", desc: this.Tushardesc, url: "", fburl: "" },
             { name: "Raghav Khandelwal", profile: "Director Finance and Strategy", desc: "", url: "", fburl: "" },
             { name: "Aniket Chaturvedi", profile: "Tech Lead", desc: this.Aniketdesc, url: "assets/images/sport-social-team-aniket.png", fburl: "" },
-            { name: "Sourabh Arora", profile: "Front end web developer", desc: this.Sourabhdesc, url: "assets/images/sport-social-team-sourabh.png", fburl: this.sourabhFb },
+            { name: "Sourabh Arora", profile: "Front end developer", desc: this.Sourabhdesc, url: "assets/images/sport-social-team-sourabh.png", fburl: this.sourabhFb },
             { name: "Kapil Pokheriyal", profile: "Android Developer", desc: "", url: "assets/images/sport-social-team-kapil.png", fburl: "" },
             { name: "Harsh Punj", profile: "Business Development Manager", desc: "", url: "", fburl: "" },
             { name: "Aditya Shastry", profile: "Content Writer", desc: "", url: "", fburl: "" },
@@ -10032,11 +10032,13 @@ function View_LocalityComponent_11(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0
         var pd_0 = (_co.lscroll() !== false);
         ad = (pd_0 && ad);
     } return ad; }, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialhomearrow.png"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_12)), i1.ɵdid(6, 278528, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.specificteam; _ck(_v, 6, 0, currVal_0); }, null); }
-function View_LocalityComponent_13(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 0, "div", [["class", "match-cards"]], null, null, null, null, null))], null, null); }
+function View_LocalityComponent_13(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "h3", [["style", "font-size: 1.3em; color: #444444; padding: 20px; text-align: left;"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["No Games Yet"]))], null, null); }
+function View_LocalityComponent_15(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 0, "div", [["class", "match-cards"]], null, null, null, null, null))], null, null); }
+function View_LocalityComponent_14(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "div", [["class", "current-matches"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_15)), i1.ɵdid(2, 278528, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.matches; _ck(_v, 2, 0, currVal_0); }, null); }
 function View_LocalityComponent_0(_l) { return i1.ɵvid(0, [i1.ɵqud(671088640, 1, { parent: 0 }), i1.ɵqud(671088640, 2, { child: 0 }), i1.ɵqud(402653184, 3, { slide: 0 }), i1.ɵqud(671088640, 4, { images: 0 }), (_l()(), i1.ɵeld(4, 0, null, null, 1, "sports-social-header", [], null, [["window", "resize"]], function (_v, en, $event) { var ad = true; if (("window:resize" === en)) {
         var pd_0 = (i1.ɵnov(_v, 5).onresize() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, i4.View_HeaderComponent_0, i4.RenderType_HeaderComponent)), i1.ɵdid(5, 4308992, null, 0, i5.HeaderComponent, [i6.PropertyService, i7.InteractionService, i8.CookieService], null, null), (_l()(), i1.ɵeld(6, 0, null, null, 69, "div", [["class", "outer-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 13, "div", [["class", "profile-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, [[3, 0], ["slide", 1]], null, 2, "div", [["class", "slide-show"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_1)), i1.ɵdid(10, 278528, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(11, 0, null, null, 9, "div", [["class", "team-info"]], null, null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 5, "div", [["class", "name"]], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 4, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(14, null, ["", ""])), i1.ɵpid(0, i3.SlicePipe, []), (_l()(), i1.ɵeld(16, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(17, null, ["\u00A0-\u00A0", ""])), (_l()(), i1.ɵeld(18, 0, null, null, 2, "div", [["class", "follow"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+    } return ad; }, i4.View_HeaderComponent_0, i4.RenderType_HeaderComponent)), i1.ɵdid(5, 4308992, null, 0, i5.HeaderComponent, [i6.PropertyService, i7.InteractionService, i8.CookieService], null, null), (_l()(), i1.ɵeld(6, 0, null, null, 70, "div", [["class", "outer-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 13, "div", [["class", "profile-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, [[3, 0], ["slide", 1]], null, 2, "div", [["class", "slide-show"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_1)), i1.ɵdid(10, 278528, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(11, 0, null, null, 9, "div", [["class", "team-info"]], null, null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 5, "div", [["class", "name"]], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 4, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(14, null, ["", ""])), i1.ɵpid(0, i3.SlicePipe, []), (_l()(), i1.ɵeld(16, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(17, null, ["\u00A0-\u00A0", ""])), (_l()(), i1.ɵeld(18, 0, null, null, 2, "div", [["class", "follow"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.openAppDownloadPopup() !== false);
         ad = (pd_0 && ad);
     } return ad; }, null, null)), (_l()(), i1.ɵeld(19, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Favourite"])), (_l()(), i1.ɵeld(21, 0, null, null, 8, "div", [["class", "sub-header"]], null, null, null, null, null)), (_l()(), i1.ɵeld(22, 0, null, null, 4, "div", [["class", "sub-name"]], null, null, null, null, null)), (_l()(), i1.ɵeld(23, 0, null, null, 3, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(24, null, ["", ""])), (_l()(), i1.ɵeld(25, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(26, null, ["\u00A0-\u00A0", ""])), (_l()(), i1.ɵeld(27, 0, null, null, 2, "div", [["class", "sub-follow"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
@@ -10045,7 +10047,7 @@ function View_LocalityComponent_0(_l) { return i1.ɵvid(0, [i1.ɵqud(671088640, 
     } return ad; }, null, null)), (_l()(), i1.ɵeld(28, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Favourite"])), (_l()(), i1.ɵeld(30, 0, null, null, 22, "div", [["class", "side-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(31, 0, null, null, 21, "div", [["class", "stick"]], null, null, null, null, null)), (_l()(), i1.ɵeld(32, 0, null, null, 14, "div", [["class", "basic-info"]], null, null, null, null, null)), (_l()(), i1.ɵeld(33, 0, null, null, 6, "div", [["class", "owner"]], null, null, null, null, null)), (_l()(), i1.ɵeld(34, 0, null, null, 0, "img", [["alt", ""], ["class", "owner-img"], ["onerror", "this.src='assets/images/sportsociallocalitypfperror.jpg'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(35, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(36, null, ["", ""])), (_l()(), i1.ɵeld(37, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Owner"])), (_l()(), i1.ɵeld(39, 0, null, null, 0, "img", [["alt", ""], ["class", "chat-icon"], ["src", "assets/images/sportsocialchat.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.openAppDownloadPopup() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵeld(40, 0, null, null, 6, "ul", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_2)), i1.ɵdid(42, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_3)), i1.ɵdid(44, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_4)), i1.ɵdid(46, 278528, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_5)), i1.ɵdid(48, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵeld(49, 0, null, null, 3, "div", [["class", "Address"]], null, null, null, null, null)), (_l()(), i1.ɵeld(50, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsociallocation1.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(51, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(52, null, ["", ""])), (_l()(), i1.ɵeld(53, 0, null, null, 22, "div", [["class", "normal-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(54, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_7)), i1.ɵdid(56, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_8)), i1.ɵdid(58, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵeld(59, 0, null, null, 2, "ul", [["class", "sport-menu"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_9)), i1.ɵdid(61, 278528, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(62, 0, null, null, 0, "img", [["alt", ""], ["class", "ground"], ["src", "/assets/images/sportsocialground.jpg"]], null, null, null, null, null)), (_l()(), i1.ɵeld(63, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["The Average Ground"])), (_l()(), i1.ɵeld(65, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Teams"])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_10)), i1.ɵdid(68, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_11)), i1.ɵdid(70, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵeld(71, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Matches This Week"])), (_l()(), i1.ɵeld(73, 0, null, null, 2, "div", [["class", "current-matches"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_13)), i1.ɵdid(75, 278528, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; _ck(_v, 5, 0); var currVal_0 = _co.media; _ck(_v, 10, 0, currVal_0); var currVal_7 = (_co.sports.length > 0); _ck(_v, 42, 0, currVal_7); var currVal_8 = (_co.sports.length == 0); _ck(_v, 44, 0, currVal_8); var currVal_9 = _co.sports; _ck(_v, 46, 0, currVal_9); var currVal_10 = (_co.slotdetails.length > 0); _ck(_v, 48, 0, currVal_10); var currVal_12 = (_co.sports.length > 0); _ck(_v, 56, 0, currVal_12); var currVal_13 = (_co.sports.length == 0); _ck(_v, 58, 0, currVal_13); var currVal_14 = _co.sports; _ck(_v, 61, 0, currVal_14); var currVal_15 = (_co.specificteam.length == 0); _ck(_v, 68, 0, currVal_15); var currVal_16 = (_co.specificteam.length > 0); _ck(_v, 70, 0, currVal_16); var currVal_17 = _co.matches; _ck(_v, 75, 0, currVal_17); }, function (_ck, _v) { var _co = _v.component; var currVal_1 = i1.ɵunv(_v, 14, 0, i1.ɵnov(_v, 15).transform(_co.venuename, 0, 50)); _ck(_v, 14, 0, currVal_1); var currVal_2 = _co.venuetype; _ck(_v, 17, 0, currVal_2); var currVal_3 = _co.venuename; _ck(_v, 24, 0, currVal_3); var currVal_4 = _co.venuetype; _ck(_v, 26, 0, currVal_4); var currVal_5 = i1.ɵinlineInterpolate(1, "", _co.profileimage, ""); _ck(_v, 34, 0, currVal_5); var currVal_6 = _co.ownername; _ck(_v, 36, 0, currVal_6); var currVal_11 = _co.address; _ck(_v, 52, 0, currVal_11); }); }
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(40, 0, null, null, 6, "ul", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_2)), i1.ɵdid(42, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_3)), i1.ɵdid(44, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_4)), i1.ɵdid(46, 278528, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_5)), i1.ɵdid(48, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵeld(49, 0, null, null, 3, "div", [["class", "Address"]], null, null, null, null, null)), (_l()(), i1.ɵeld(50, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsociallocation1.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(51, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(52, null, ["", ""])), (_l()(), i1.ɵeld(53, 0, null, null, 23, "div", [["class", "normal-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(54, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_7)), i1.ɵdid(56, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_8)), i1.ɵdid(58, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵeld(59, 0, null, null, 2, "ul", [["class", "sport-menu"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_9)), i1.ɵdid(61, 278528, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(62, 0, null, null, 0, "img", [["alt", ""], ["class", "ground"], ["src", "/assets/images/sportsocialground.jpg"]], null, null, null, null, null)), (_l()(), i1.ɵeld(63, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["The Average Ground"])), (_l()(), i1.ɵeld(65, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Teams"])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_10)), i1.ɵdid(68, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_11)), i1.ɵdid(70, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵeld(71, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Matches This Week"])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_13)), i1.ɵdid(74, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_LocalityComponent_14)), i1.ɵdid(76, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var _co = _v.component; _ck(_v, 5, 0); var currVal_0 = _co.media; _ck(_v, 10, 0, currVal_0); var currVal_7 = (_co.sports.length > 0); _ck(_v, 42, 0, currVal_7); var currVal_8 = (_co.sports.length == 0); _ck(_v, 44, 0, currVal_8); var currVal_9 = _co.sports; _ck(_v, 46, 0, currVal_9); var currVal_10 = (_co.slotdetails.length > 0); _ck(_v, 48, 0, currVal_10); var currVal_12 = (_co.sports.length > 0); _ck(_v, 56, 0, currVal_12); var currVal_13 = (_co.sports.length == 0); _ck(_v, 58, 0, currVal_13); var currVal_14 = _co.sports; _ck(_v, 61, 0, currVal_14); var currVal_15 = (_co.specificteam.length == 0); _ck(_v, 68, 0, currVal_15); var currVal_16 = (_co.specificteam.length > 0); _ck(_v, 70, 0, currVal_16); var currVal_17 = (_co.matches.length == 0); _ck(_v, 74, 0, currVal_17); var currVal_18 = (_co.matches.length > 0); _ck(_v, 76, 0, currVal_18); }, function (_ck, _v) { var _co = _v.component; var currVal_1 = i1.ɵunv(_v, 14, 0, i1.ɵnov(_v, 15).transform(_co.venuename, 0, 50)); _ck(_v, 14, 0, currVal_1); var currVal_2 = _co.venuetype; _ck(_v, 17, 0, currVal_2); var currVal_3 = _co.venuename; _ck(_v, 24, 0, currVal_3); var currVal_4 = _co.venuetype; _ck(_v, 26, 0, currVal_4); var currVal_5 = i1.ɵinlineInterpolate(1, "", _co.profileimage, ""); _ck(_v, 34, 0, currVal_5); var currVal_6 = _co.ownername; _ck(_v, 36, 0, currVal_6); var currVal_11 = _co.address; _ck(_v, 52, 0, currVal_11); }); }
 exports.View_LocalityComponent_0 = View_LocalityComponent_0;
 function View_LocalityComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-locality", [], null, null, null, View_LocalityComponent_0, RenderType_LocalityComponent)), i1.ɵdid(1, 114688, null, 0, i9.LocalityComponent, [i10.PostService, i2.ActivatedRoute, i2.Router, i11.Title], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_LocalityComponent_Host_0 = View_LocalityComponent_Host_0;
@@ -10078,6 +10080,7 @@ var LocalityComponent = /** @class */ (function () {
         this.route = route;
         this.router = router;
         this.titleservice = titleservice;
+        this.pageno = 1;
         this.sports = [];
         this.upcomingmatches = [];
         this.media = [];
@@ -10245,7 +10248,7 @@ var LocalityComponent = /** @class */ (function () {
     };
     LocalityComponent.prototype.getUpcomingMatches = function () {
         var _this = this;
-        this.postService.getUpcomingMatches("119", this.localityid, 1564844406046, 1).subscribe(function (res) {
+        this.postService.getUpcomingMatches("119", this.localityid, 1564844406046, this.pageno).subscribe(function (res) {
             console.log(res);
             for (var i = 0; i < res.length; i++) {
                 _this.upcomingmatches.push({
@@ -10277,6 +10280,10 @@ var LocalityComponent = /** @class */ (function () {
                 }
             }
             console.log(_this.specificteam);
+            if (res.length > 0) {
+                _this.pageno = _this.pageno + 1;
+                _this.getUpcomingMatches();
+            }
         });
     };
     LocalityComponent.prototype.getLocalityTeams = function () {
@@ -10544,8 +10551,10 @@ var i9 = __webpack_require__(/*! ../teamprofile.component */ "./src/app/profile/
 var styles_TeamprofileMatchesComponent = [i0.styles];
 var RenderType_TeamprofileMatchesComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_TeamprofileMatchesComponent, data: {} });
 exports.RenderType_TeamprofileMatchesComponent = RenderType_TeamprofileMatchesComponent;
-function View_TeamprofileMatchesComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "div", [["class", "upcoming-cards"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "sports-social-ss-match-card", [], null, null, null, i2.View_SsMatchCardComponent_0, i2.RenderType_SsMatchCardComponent)), i1.ɵdid(2, 114688, null, 0, i3.SsMatchCardComponent, [i4.Router], { matchstartername: [0, "matchstartername"], userName: [1, "userName"], starttimestamp: [2, "starttimestamp"], coverpic: [3, "coverpic"], upcoming: [4, "upcoming"], team1pic: [5, "team1pic"], team2pic: [6, "team2pic"], scoreTeam1: [7, "scoreTeam1"], scoreTeam2: [8, "scoreTeam2"], gamename: [9, "gamename"], startdatetime: [10, "startdatetime"], InsertedDate: [11, "InsertedDate"], Uniquename: [12, "Uniquename"], city: [13, "city"], Venue_Name: [14, "Venue_Name"], MatchStarterUniqueName: [15, "MatchStarterUniqueName"], Team1Name: [16, "Team1Name"], Team2Name: [17, "Team2Name"], EventText: [18, "EventText"], JoineeCount: [19, "JoineeCount"], WatchCount: [20, "WatchCount"], PromoteCount: [21, "PromoteCount"], CommentCount: [22, "CommentCount"], gender: [23, "gender"], finished: [24, "finished"], age: [25, "age"] }, null)], function (_ck, _v) { var currVal_0 = _v.context.$implicit.MatchStarterName; var currVal_1 = _v.context.$implicit.userName; var currVal_2 = _v.context.$implicit.starttimestamp; var currVal_3 = _v.context.$implicit.coverpic; var currVal_4 = _v.context.$implicit.upcoming; var currVal_5 = _v.context.$implicit.Team1Pic; var currVal_6 = _v.context.$implicit.Team2Pic; var currVal_7 = _v.context.$implicit.scoreTeam1; var currVal_8 = _v.context.$implicit.scoreTeam2; var currVal_9 = _v.context.$implicit.gamename; var currVal_10 = _v.context.$implicit.startdatetime; var currVal_11 = _v.context.$implicit.InsertedDate; var currVal_12 = _v.context.$implicit.Uniquename; var currVal_13 = _v.context.$implicit.city; var currVal_14 = _v.context.$implicit.Venue_Name; var currVal_15 = _v.context.$implicit.MatchStarterUniqueName; var currVal_16 = _v.context.$implicit.Team1Name; var currVal_17 = _v.context.$implicit.Team2Name; var currVal_18 = _v.context.$implicit.EventText; var currVal_19 = _v.context.$implicit.JoineeCount; var currVal_20 = _v.context.$implicit.WatchCount; var currVal_21 = _v.context.$implicit.PromoteCount; var currVal_22 = _v.context.$implicit.CommentCount; var currVal_23 = _v.context.$implicit.gender; var currVal_24 = _v.context.$implicit.finished; var currVal_25 = _v.context.$implicit.age; _ck(_v, 2, 1, [currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17, currVal_18, currVal_19, currVal_20, currVal_21, currVal_22, currVal_23, currVal_24, currVal_25]); }, null); }
-function View_TeamprofileMatchesComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 7, "div", [["class", "About-body"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 6, "div", [["class", "upcoming-matches"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Finished Matches"])), (_l()(), i1.ɵeld(4, 0, null, null, 0, "hr", [], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 2, "div", [["class", "upcoming-block"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_TeamprofileMatchesComponent_1)), i1.ɵdid(7, 278528, null, 0, i5.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(8, 0, null, null, 2, "div", [["class", "backfooter"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 1, "sports-social-backfooter", [], null, null, null, i6.View_BackfooterComponent_0, i6.RenderType_BackfooterComponent)), i1.ɵdid(10, 114688, null, 0, i7.BackfooterComponent, [], null, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.Matcharr; _ck(_v, 7, 0, currVal_0); _ck(_v, 10, 0); }, null); }
+function View_TeamprofileMatchesComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "h2", [["style", "font-size: 1em; color: #444444;"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["No Matches Yet"]))], null, null); }
+function View_TeamprofileMatchesComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "div", [["class", "upcoming-cards"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "sports-social-ss-match-card", [], null, null, null, i2.View_SsMatchCardComponent_0, i2.RenderType_SsMatchCardComponent)), i1.ɵdid(2, 114688, null, 0, i3.SsMatchCardComponent, [i4.Router], { matchstartername: [0, "matchstartername"], userName: [1, "userName"], starttimestamp: [2, "starttimestamp"], coverpic: [3, "coverpic"], upcoming: [4, "upcoming"], team1pic: [5, "team1pic"], team2pic: [6, "team2pic"], scoreTeam1: [7, "scoreTeam1"], scoreTeam2: [8, "scoreTeam2"], gamename: [9, "gamename"], startdatetime: [10, "startdatetime"], InsertedDate: [11, "InsertedDate"], Uniquename: [12, "Uniquename"], city: [13, "city"], Venue_Name: [14, "Venue_Name"], MatchStarterUniqueName: [15, "MatchStarterUniqueName"], Team1Name: [16, "Team1Name"], Team2Name: [17, "Team2Name"], EventText: [18, "EventText"], JoineeCount: [19, "JoineeCount"], WatchCount: [20, "WatchCount"], PromoteCount: [21, "PromoteCount"], CommentCount: [22, "CommentCount"], gender: [23, "gender"], finished: [24, "finished"], age: [25, "age"] }, null)], function (_ck, _v) { var currVal_0 = _v.context.$implicit.MatchStarterName; var currVal_1 = _v.context.$implicit.userName; var currVal_2 = _v.context.$implicit.starttimestamp; var currVal_3 = _v.context.$implicit.coverpic; var currVal_4 = _v.context.$implicit.upcoming; var currVal_5 = _v.context.$implicit.Team1Pic; var currVal_6 = _v.context.$implicit.Team2Pic; var currVal_7 = _v.context.$implicit.scoreTeam1; var currVal_8 = _v.context.$implicit.scoreTeam2; var currVal_9 = _v.context.$implicit.gamename; var currVal_10 = _v.context.$implicit.startdatetime; var currVal_11 = _v.context.$implicit.InsertedDate; var currVal_12 = _v.context.$implicit.Uniquename; var currVal_13 = _v.context.$implicit.city; var currVal_14 = _v.context.$implicit.Venue_Name; var currVal_15 = _v.context.$implicit.MatchStarterUniqueName; var currVal_16 = _v.context.$implicit.Team1Name; var currVal_17 = _v.context.$implicit.Team2Name; var currVal_18 = _v.context.$implicit.EventText; var currVal_19 = _v.context.$implicit.JoineeCount; var currVal_20 = _v.context.$implicit.WatchCount; var currVal_21 = _v.context.$implicit.PromoteCount; var currVal_22 = _v.context.$implicit.CommentCount; var currVal_23 = _v.context.$implicit.gender; var currVal_24 = _v.context.$implicit.finished; var currVal_25 = _v.context.$implicit.age; _ck(_v, 2, 1, [currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17, currVal_18, currVal_19, currVal_20, currVal_21, currVal_22, currVal_23, currVal_24, currVal_25]); }, null); }
+function View_TeamprofileMatchesComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "div", [["class", "upcoming-block"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_TeamprofileMatchesComponent_3)), i1.ɵdid(2, 278528, null, 0, i5.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.Matcharr; _ck(_v, 2, 0, currVal_0); }, null); }
+function View_TeamprofileMatchesComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 8, "div", [["class", "About-body"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 7, "div", [["class", "upcoming-matches"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Finished Matches"])), (_l()(), i1.ɵeld(4, 0, null, null, 0, "hr", [], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_TeamprofileMatchesComponent_1)), i1.ɵdid(6, 16384, null, 0, i5.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_TeamprofileMatchesComponent_2)), i1.ɵdid(8, 16384, null, 0, i5.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵeld(9, 0, null, null, 2, "div", [["class", "backfooter"]], null, null, null, null, null)), (_l()(), i1.ɵeld(10, 0, null, null, 1, "sports-social-backfooter", [], null, null, null, i6.View_BackfooterComponent_0, i6.RenderType_BackfooterComponent)), i1.ɵdid(11, 114688, null, 0, i7.BackfooterComponent, [], null, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = (_co.matchstatus == false); _ck(_v, 6, 0, currVal_0); var currVal_1 = _co.matchstatus; _ck(_v, 8, 0, currVal_1); _ck(_v, 11, 0); }, null); }
 exports.View_TeamprofileMatchesComponent_0 = View_TeamprofileMatchesComponent_0;
 function View_TeamprofileMatchesComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-teamprofile-matches", [], null, null, null, View_TeamprofileMatchesComponent_0, RenderType_TeamprofileMatchesComponent)), i1.ɵdid(1, 114688, null, 0, i8.TeamprofileMatchesComponent, [i9.TeamprofileComponent], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_TeamprofileMatchesComponent_Host_0 = View_TeamprofileMatchesComponent_Host_0;
@@ -10570,9 +10579,15 @@ var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var TeamprofileMatchesComponent = /** @class */ (function () {
     function TeamprofileMatchesComponent(parent) {
         this.parent = parent;
+        this.matchstatus = true;
     }
     TeamprofileMatchesComponent.prototype.ngOnInit = function () {
         this.Matcharr = this.parent.past;
+        if (this.parent.past[0] == undefined) {
+            this.matchstatus = false;
+            console.log("matched");
+            console.log(this.Matcharr);
+        }
     };
     return TeamprofileMatchesComponent;
 }());
@@ -10645,49 +10660,49 @@ function View_TeamprofileComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld
 function View_TeamprofileComponent_0(_l) { return i1.ɵvid(0, [i1.ɵqud(402653184, 1, { widgets: 0 }), i1.ɵqud(671088640, 2, { widgetsContent: 0 }), (_l()(), i1.ɵeld(2, 0, null, null, 1, "sports-social-header", [], null, [["window", "resize"]], function (_v, en, $event) { var ad = true; if (("window:resize" === en)) {
         var pd_0 = (i1.ɵnov(_v, 3).onresize() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, i3.View_HeaderComponent_0, i3.RenderType_HeaderComponent)), i1.ɵdid(3, 4308992, null, 0, i4.HeaderComponent, [i5.PropertyService, i6.InteractionService, i7.CookieService], null, null), (_l()(), i1.ɵeld(4, 0, null, null, 3, "div", [["class", "followerlist"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 0, "img", [["alt", ""], ["class", "closelist"], ["src", "assets/images/close.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+    } return ad; }, i3.View_HeaderComponent_0, i3.RenderType_HeaderComponent)), i1.ɵdid(3, 4308992, null, 0, i4.HeaderComponent, [i5.PropertyService, i6.InteractionService, i7.CookieService], null, null), (_l()(), i1.ɵeld(4, 0, null, null, 2, "div", [["class", "followerlist"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 0, "img", [["alt", ""], ["class", "closelist"], ["src", "assets/images/close.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.closefollower() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 1, "div", [["class", "list"]], null, [[null, "scroll"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("scroll" === en)) {
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 0, "div", [["class", "list"]], null, [[null, "scroll"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("scroll" === en)) {
         var pd_0 = (_co.onscrollf($event) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["\n<<<<<<< HEAD\n<<<<<<< HEAD "])), (_l()(), i1.ɵeld(8, 0, null, null, 113, "div", [["class", "outer-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 12, "div", [["class", "profile-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(10, 0, null, null, 1, "div", [["class", "background-img"]], null, null, null, null, null)), (_l()(), i1.ɵeld(11, 0, null, null, 0, "img", [["alt", ""], ["onerror", "this.src='assets/images/sportsocialteambgerror.jpg'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 1, "div", [["class", "team-img"]], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 0, "img", [["alt", ""]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(14, 0, null, null, 7, "div", [["class", "team-info"]], null, null, null, null, null)), (_l()(), i1.ɵeld(15, 0, null, null, 2, "div", [["class", "name"]], null, null, null, null, null)), (_l()(), i1.ɵeld(16, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(17, null, ["", ""])), (_l()(), i1.ɵeld(18, 0, null, null, 2, "div", [["class", "follow"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 113, "div", [["class", "outer-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 12, "div", [["class", "profile-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 1, "div", [["class", "background-img"]], null, null, null, null, null)), (_l()(), i1.ɵeld(10, 0, null, null, 0, "img", [["alt", ""], ["onerror", "this.src='assets/images/sportsocialteambgerror.jpg'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(11, 0, null, null, 1, "div", [["class", "team-img"]], null, null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 0, "img", [["alt", ""]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 7, "div", [["class", "team-info"]], null, null, null, null, null)), (_l()(), i1.ɵeld(14, 0, null, null, 2, "div", [["class", "name"]], null, null, null, null, null)), (_l()(), i1.ɵeld(15, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(16, null, ["", ""])), (_l()(), i1.ɵeld(17, 0, null, null, 2, "div", [["class", "follow"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.openAppDownloadPopup() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵeld(19, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Follow"])), (_l()(), i1.ɵeld(21, 0, null, null, 0, "img", [["alt", ""], ["src", "assets/images/sportsocialchat.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(18, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Follow"])), (_l()(), i1.ɵeld(20, 0, null, null, 0, "img", [["alt", ""], ["src", "assets/images/sportsocialchat.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.openAppDownloadPopup() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵeld(22, 0, null, null, 21, "div", [["class", "sub-header"]], null, null, null, null, null)), (_l()(), i1.ɵeld(23, 0, null, null, 0, "img", [["alt", ""], ["class", "profile-pic"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(24, 0, null, null, 10, "div", [["class", "fans"]], null, null, null, null, null)), (_l()(), i1.ɵeld(25, 0, null, null, 4, "div", [["class", "userfans"]], null, null, null, null, null)), (_l()(), i1.ɵeld(26, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Fans"])), (_l()(), i1.ɵeld(28, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(29, null, ["", ""])), (_l()(), i1.ɵeld(30, 0, null, null, 4, "div", [["class", "userfollowers"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(21, 0, null, null, 21, "div", [["class", "sub-header"]], null, null, null, null, null)), (_l()(), i1.ɵeld(22, 0, null, null, 0, "img", [["alt", ""], ["class", "profile-pic"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(23, 0, null, null, 10, "div", [["class", "fans"]], null, null, null, null, null)), (_l()(), i1.ɵeld(24, 0, null, null, 4, "div", [["class", "userfans"]], null, null, null, null, null)), (_l()(), i1.ɵeld(25, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Fans"])), (_l()(), i1.ɵeld(27, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(28, null, ["", ""])), (_l()(), i1.ɵeld(29, 0, null, null, 4, "div", [["class", "userfollowers"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.openMemberFunc() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵeld(31, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Members"])), (_l()(), i1.ɵeld(33, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(34, null, ["", ""])), (_l()(), i1.ɵeld(35, 0, null, null, 4, "div", [["class", "sub-name"]], null, null, null, null, null)), (_l()(), i1.ɵeld(36, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(37, null, ["", ""])), (_l()(), i1.ɵeld(38, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(39, null, ["@", ""])), (_l()(), i1.ɵeld(40, 0, null, null, 2, "div", [["class", "sub-follow"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(30, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Members"])), (_l()(), i1.ɵeld(32, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(33, null, ["", ""])), (_l()(), i1.ɵeld(34, 0, null, null, 4, "div", [["class", "sub-name"]], null, null, null, null, null)), (_l()(), i1.ɵeld(35, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(36, null, ["", ""])), (_l()(), i1.ɵeld(37, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(38, null, ["@", ""])), (_l()(), i1.ɵeld(39, 0, null, null, 2, "div", [["class", "sub-follow"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.openAppDownloadPopup() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵeld(41, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Follow"])), (_l()(), i1.ɵeld(43, 0, null, null, 0, "img", [["alt", ""], ["class", "sub-follow-img"], ["src", "assets/images/sportsocialchat.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(40, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Follow"])), (_l()(), i1.ɵeld(42, 0, null, null, 0, "img", [["alt", ""], ["class", "sub-follow-img"], ["src", "assets/images/sportsocialchat.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.openAppDownloadPopup() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵeld(44, 0, null, null, 62, "div", [["class", "side-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(45, 0, null, null, 61, "div", [["class", "stick"]], null, null, null, null, null)), (_l()(), i1.ɵeld(46, 0, null, null, 10, "div", [["class", "followers"]], null, null, null, null, null)), (_l()(), i1.ɵeld(47, 0, null, null, 4, "div", [["class", "userfans"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(43, 0, null, null, 62, "div", [["class", "side-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(44, 0, null, null, 61, "div", [["class", "stick"]], null, null, null, null, null)), (_l()(), i1.ɵeld(45, 0, null, null, 10, "div", [["class", "followers"]], null, null, null, null, null)), (_l()(), i1.ɵeld(46, 0, null, null, 4, "div", [["class", "userfans"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.openFanFunc() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵeld(48, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Fans"])), (_l()(), i1.ɵeld(50, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(51, null, ["", ""])), (_l()(), i1.ɵeld(52, 0, null, null, 4, "div", [["class", "userfollowers"]], null, null, null, null, null)), (_l()(), i1.ɵeld(53, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Members"])), (_l()(), i1.ɵeld(55, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(56, null, ["", ""])), (_l()(), i1.ɵeld(57, 0, null, null, 40, "div", [["class", "basic-info"]], null, null, null, null, null)), (_l()(), i1.ɵeld(58, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Basic Info"])), (_l()(), i1.ɵeld(60, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(61, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(62, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialcaptain.png"], ["style", "width: 40px;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(63, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(64, null, ["", ""])), (_l()(), i1.ɵeld(65, 0, null, null, 7, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(66, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(67, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialPartnerships.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(68, 0, null, null, 2, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(69, null, ["", "..."])), i1.ɵpid(0, i8.SlicePipe, []), (_l()(), i1.ɵeld(71, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(72, null, ["", ""])), (_l()(), i1.ɵeld(73, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(74, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(75, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialopenforall.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(76, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(77, null, ["", ""])), (_l()(), i1.ɵeld(78, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(79, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(80, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialagegroup.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(81, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(82, null, ["", ""])), (_l()(), i1.ɵeld(83, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(84, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(85, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialmale.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(86, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(87, null, ["", "", ""])), (_l()(), i1.ɵeld(88, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(89, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(90, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialteamprofilelocation.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(91, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(92, null, ["", ""])), (_l()(), i1.ɵeld(93, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(94, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(95, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialteamprofilelocation.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(96, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(97, null, ["", ""])), (_l()(), i1.ɵeld(98, 0, null, null, 8, "div", [["class", "media"]], null, null, null, null, null)), (_l()(), i1.ɵeld(99, 0, null, null, 5, "div", [["class", "head"]], null, null, null, null, null)), (_l()(), i1.ɵeld(100, 0, null, null, 1, "h4", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Media"])), (_l()(), i1.ɵeld(102, 0, null, null, 2, "a", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(47, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Fans"])), (_l()(), i1.ɵeld(49, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(50, null, ["", ""])), (_l()(), i1.ɵeld(51, 0, null, null, 4, "div", [["class", "userfollowers"]], null, null, null, null, null)), (_l()(), i1.ɵeld(52, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Members"])), (_l()(), i1.ɵeld(54, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(55, null, ["", ""])), (_l()(), i1.ɵeld(56, 0, null, null, 40, "div", [["class", "basic-info"]], null, null, null, null, null)), (_l()(), i1.ɵeld(57, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Basic Info"])), (_l()(), i1.ɵeld(59, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(60, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(61, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialcaptain.png"], ["style", "width: 40px;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(62, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(63, null, ["", ""])), (_l()(), i1.ɵeld(64, 0, null, null, 7, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(65, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(66, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialPartnerships.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(67, 0, null, null, 2, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(68, null, ["", "..."])), i1.ɵpid(0, i8.SlicePipe, []), (_l()(), i1.ɵeld(70, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(71, null, ["", ""])), (_l()(), i1.ɵeld(72, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(73, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(74, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialopenforall.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(75, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(76, null, ["", ""])), (_l()(), i1.ɵeld(77, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(78, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(79, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialagegroup.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(80, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(81, null, ["", ""])), (_l()(), i1.ɵeld(82, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(83, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(84, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialmale.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(85, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(86, null, ["", "", ""])), (_l()(), i1.ɵeld(87, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(88, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(89, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialteamprofilelocation.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(90, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(91, null, ["", ""])), (_l()(), i1.ɵeld(92, 0, null, null, 4, "div", [["class", "basic-info-tab"]], null, null, null, null, null)), (_l()(), i1.ɵeld(93, 0, null, null, 1, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(94, 0, null, null, 0, "img", [["alt", ""], ["src", "/assets/images/sportsocialteamprofilelocation.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(95, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(96, null, ["", ""])), (_l()(), i1.ɵeld(97, 0, null, null, 8, "div", [["class", "media"]], null, null, null, null, null)), (_l()(), i1.ɵeld(98, 0, null, null, 5, "div", [["class", "head"]], null, null, null, null, null)), (_l()(), i1.ɵeld(99, 0, null, null, 1, "h4", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Media"])), (_l()(), i1.ɵeld(101, 0, null, null, 2, "a", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.opencrousal() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵeld(103, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["See all"])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_TeamprofileComponent_1)), i1.ɵdid(106, 278528, null, 0, i8.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(107, 0, null, null, 14, "div", [["class", "normal-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(108, 0, null, null, 6, "a", [["routerLinkActive", "active"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 109).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(102, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["See all"])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_TeamprofileComponent_1)), i1.ɵdid(105, 278528, null, 0, i8.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(106, 0, null, null, 14, "div", [["class", "normal-shell"]], null, null, null, null, null)), (_l()(), i1.ɵeld(107, 0, null, null, 6, "a", [["routerLinkActive", "active"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 108).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(109, 671744, [[4, 4]], 0, i9.RouterLinkWithHref, [i9.Router, i9.ActivatedRoute, i8.LocationStrategy], { queryParams: [0, "queryParams"], routerLink: [1, "routerLink"] }, null), i1.ɵpod(110, { teamid: 0 }), i1.ɵdid(111, 1720320, null, 2, i9.RouterLinkActive, [i9.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 3, { links: 1 }), i1.ɵqud(603979776, 4, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["About"])), (_l()(), i1.ɵeld(115, 0, null, null, 6, "a", [["routerLinkActive", "active"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 116).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+    } return ad; }, null, null)), i1.ɵdid(108, 671744, [[4, 4]], 0, i9.RouterLinkWithHref, [i9.Router, i9.ActivatedRoute, i8.LocationStrategy], { queryParams: [0, "queryParams"], routerLink: [1, "routerLink"] }, null), i1.ɵpod(109, { teamid: 0 }), i1.ɵdid(110, 1720320, null, 2, i9.RouterLinkActive, [i9.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 3, { links: 1 }), i1.ɵqud(603979776, 4, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["About"])), (_l()(), i1.ɵeld(114, 0, null, null, 6, "a", [["routerLinkActive", "active"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 115).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(116, 671744, [[6, 4]], 0, i9.RouterLinkWithHref, [i9.Router, i9.ActivatedRoute, i8.LocationStrategy], { queryParams: [0, "queryParams"], routerLink: [1, "routerLink"] }, null), i1.ɵpod(117, { teamid: 0 }), i1.ɵdid(118, 1720320, null, 2, i9.RouterLinkActive, [i9.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 5, { links: 1 }), i1.ɵqud(603979776, 6, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Matches"])), (_l()(), i1.ɵeld(122, 0, null, null, 9, "div", [["class", "media-crousal"]], null, null, null, null, null)), (_l()(), i1.ɵeld(123, 0, [[1, 0], ["widgets", 1]], null, 2, "div", [["class", "pop-crousal"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_TeamprofileComponent_2)), i1.ɵdid(125, 278528, null, 0, i8.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(126, 0, null, null, 1, "div", [["class", "close"]], null, null, null, null, null)), (_l()(), i1.ɵeld(127, 0, null, null, 0, "img", [["src", "assets/images/sportsocialprofileclose.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+    } return ad; }, null, null)), i1.ɵdid(115, 671744, [[6, 4]], 0, i9.RouterLinkWithHref, [i9.Router, i9.ActivatedRoute, i8.LocationStrategy], { queryParams: [0, "queryParams"], routerLink: [1, "routerLink"] }, null), i1.ɵpod(116, { teamid: 0 }), i1.ɵdid(117, 1720320, null, 2, i9.RouterLinkActive, [i9.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 5, { links: 1 }), i1.ɵqud(603979776, 6, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Matches"])), (_l()(), i1.ɵeld(121, 0, null, null, 9, "div", [["class", "media-crousal"]], null, null, null, null, null)), (_l()(), i1.ɵeld(122, 0, [[1, 0], ["widgets", 1]], null, 2, "div", [["class", "pop-crousal"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_TeamprofileComponent_2)), i1.ɵdid(124, 278528, null, 0, i8.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(125, 0, null, null, 1, "div", [["class", "close"]], null, null, null, null, null)), (_l()(), i1.ɵeld(126, 0, null, null, 0, "img", [["src", "assets/images/sportsocialprofileclose.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.close() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵeld(128, 0, null, null, 1, "div", [["class", "larrow"]], null, null, null, null, null)), (_l()(), i1.ɵeld(129, 0, null, null, 0, "img", [["alt", ""], ["src", "assets/images/sportsocialprofilerightarrow.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(127, 0, null, null, 1, "div", [["class", "larrow"]], null, null, null, null, null)), (_l()(), i1.ɵeld(128, 0, null, null, 0, "img", [["alt", ""], ["src", "assets/images/sportsocialprofilerightarrow.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.lscroll() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵeld(130, 0, null, null, 1, "div", [["class", "rarrow"]], null, null, null, null, null)), (_l()(), i1.ɵeld(131, 0, null, null, 0, "img", [["alt", ""], ["src", "assets/images/sportsocialprofileleftarrow.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(129, 0, null, null, 1, "div", [["class", "rarrow"]], null, null, null, null, null)), (_l()(), i1.ɵeld(130, 0, null, null, 0, "img", [["alt", ""], ["src", "assets/images/sportsocialprofileleftarrow.png"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.rscroll() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵeld(132, 16777216, null, null, 1, "router-outlet", [], null, null, null, null, null)), i1.ɵdid(133, 212992, null, 0, i9.RouterOutlet, [i9.ChildrenOutletContexts, i1.ViewContainerRef, i1.ComponentFactoryResolver, [8, null], i1.ChangeDetectorRef], null, null)], function (_ck, _v) { var _co = _v.component; _ck(_v, 3, 0); var currVal_19 = _co.media; _ck(_v, 106, 0, currVal_19); var currVal_22 = _ck(_v, 110, 0, _co.teamid); var currVal_23 = i1.ɵinlineInterpolate(1, "/team/", _co.routename, "/About"); _ck(_v, 109, 0, currVal_22, currVal_23); var currVal_24 = "active"; _ck(_v, 111, 0, currVal_24); var currVal_27 = _ck(_v, 117, 0, _co.teamid); var currVal_28 = i1.ɵinlineInterpolate(1, "/team/", _co.routename, "/Matches"); _ck(_v, 116, 0, currVal_27, currVal_28); var currVal_29 = "active"; _ck(_v, 118, 0, currVal_29); var currVal_30 = _co.media; _ck(_v, 125, 0, currVal_30); _ck(_v, 133, 0); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = i1.ɵinlineInterpolate(1, "", _co.backgroundimage, ""); _ck(_v, 11, 0, currVal_0); var currVal_1 = i1.ɵinlineInterpolate(1, "", _co.profileimage, ""); _ck(_v, 13, 0, currVal_1); var currVal_2 = _co.name; _ck(_v, 17, 0, currVal_2); var currVal_3 = i1.ɵinlineInterpolate(1, "", _co.profileimage, ""); _ck(_v, 23, 0, currVal_3); var currVal_4 = _co.fancount; _ck(_v, 29, 0, currVal_4); var currVal_5 = _co.membercount; _ck(_v, 34, 0, currVal_5); var currVal_6 = _co.name; _ck(_v, 37, 0, currVal_6); var currVal_7 = _co.teamusername; _ck(_v, 39, 0, currVal_7); var currVal_8 = _co.fancount; _ck(_v, 51, 0, currVal_8); var currVal_9 = _co.membercount; _ck(_v, 56, 0, currVal_9); var currVal_10 = _co.captain; _ck(_v, 64, 0, currVal_10); var currVal_11 = i1.ɵunv(_v, 69, 0, i1.ɵnov(_v, 70).transform(_co.mantra, 0, 25)); _ck(_v, 69, 0, currVal_11); var currVal_12 = _co.mantra; _ck(_v, 72, 0, currVal_12); var currVal_13 = _co.teamstatus; _ck(_v, 77, 0, currVal_13); var currVal_14 = _co.teamtypestatus; _ck(_v, 82, 0, currVal_14); var currVal_15 = _co.gender; var currVal_16 = _co.gamename; _ck(_v, 87, 0, currVal_15, currVal_16); var currVal_17 = _co.location; _ck(_v, 92, 0, currVal_17); var currVal_18 = _co.challenge; _ck(_v, 97, 0, currVal_18); var currVal_20 = i1.ɵnov(_v, 109).target; var currVal_21 = i1.ɵnov(_v, 109).href; _ck(_v, 108, 0, currVal_20, currVal_21); var currVal_25 = i1.ɵnov(_v, 116).target; var currVal_26 = i1.ɵnov(_v, 116).href; _ck(_v, 115, 0, currVal_25, currVal_26); }); }
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(131, 16777216, null, null, 1, "router-outlet", [], null, null, null, null, null)), i1.ɵdid(132, 212992, null, 0, i9.RouterOutlet, [i9.ChildrenOutletContexts, i1.ViewContainerRef, i1.ComponentFactoryResolver, [8, null], i1.ChangeDetectorRef], null, null)], function (_ck, _v) { var _co = _v.component; _ck(_v, 3, 0); var currVal_19 = _co.media; _ck(_v, 105, 0, currVal_19); var currVal_22 = _ck(_v, 109, 0, _co.teamid); var currVal_23 = i1.ɵinlineInterpolate(1, "/team/", _co.routename, "/About"); _ck(_v, 108, 0, currVal_22, currVal_23); var currVal_24 = "active"; _ck(_v, 110, 0, currVal_24); var currVal_27 = _ck(_v, 116, 0, _co.teamid); var currVal_28 = i1.ɵinlineInterpolate(1, "/team/", _co.routename, "/Matches"); _ck(_v, 115, 0, currVal_27, currVal_28); var currVal_29 = "active"; _ck(_v, 117, 0, currVal_29); var currVal_30 = _co.media; _ck(_v, 124, 0, currVal_30); _ck(_v, 132, 0); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = i1.ɵinlineInterpolate(1, "", _co.backgroundimage, ""); _ck(_v, 10, 0, currVal_0); var currVal_1 = i1.ɵinlineInterpolate(1, "", _co.profileimage, ""); _ck(_v, 12, 0, currVal_1); var currVal_2 = _co.name; _ck(_v, 16, 0, currVal_2); var currVal_3 = i1.ɵinlineInterpolate(1, "", _co.profileimage, ""); _ck(_v, 22, 0, currVal_3); var currVal_4 = _co.fancount; _ck(_v, 28, 0, currVal_4); var currVal_5 = _co.membercount; _ck(_v, 33, 0, currVal_5); var currVal_6 = _co.name; _ck(_v, 36, 0, currVal_6); var currVal_7 = _co.teamusername; _ck(_v, 38, 0, currVal_7); var currVal_8 = _co.fancount; _ck(_v, 50, 0, currVal_8); var currVal_9 = _co.membercount; _ck(_v, 55, 0, currVal_9); var currVal_10 = _co.captain; _ck(_v, 63, 0, currVal_10); var currVal_11 = i1.ɵunv(_v, 68, 0, i1.ɵnov(_v, 69).transform(_co.mantra, 0, 25)); _ck(_v, 68, 0, currVal_11); var currVal_12 = _co.mantra; _ck(_v, 71, 0, currVal_12); var currVal_13 = _co.teamstatus; _ck(_v, 76, 0, currVal_13); var currVal_14 = _co.teamtypestatus; _ck(_v, 81, 0, currVal_14); var currVal_15 = _co.gender; var currVal_16 = _co.gamename; _ck(_v, 86, 0, currVal_15, currVal_16); var currVal_17 = _co.location; _ck(_v, 91, 0, currVal_17); var currVal_18 = _co.challenge; _ck(_v, 96, 0, currVal_18); var currVal_20 = i1.ɵnov(_v, 108).target; var currVal_21 = i1.ɵnov(_v, 108).href; _ck(_v, 107, 0, currVal_20, currVal_21); var currVal_25 = i1.ɵnov(_v, 115).target; var currVal_26 = i1.ɵnov(_v, 115).href; _ck(_v, 114, 0, currVal_25, currVal_26); }); }
 exports.View_TeamprofileComponent_0 = View_TeamprofileComponent_0;
 function View_TeamprofileComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-teamprofile", [], null, [["document", "keyup"]], function (_v, en, $event) { var ad = true; if (("document:keyup" === en)) {
         var pd_0 = (i1.ɵnov(_v, 1).handleDeleteKeyboardEvent($event) !== false);
@@ -11255,6 +11270,7 @@ var UserprofileAboutComponent = /** @class */ (function () {
         this.array = [];
         this.temparray = [];
         this.temparray2 = [];
+        this.pageno = 1;
     }
     UserprofileAboutComponent.prototype.getUserid = function () {
         this.paramUserid = this.userprofileComponent.userid;
@@ -11264,7 +11280,10 @@ var UserprofileAboutComponent = /** @class */ (function () {
         var count = -1, tempname = null, count2 = 0;
         var date = Math.floor(Date.now() / 1000);
         var GameInterestgameid, Gamesquestionid, QuestionDataQuestiontext, answer, GameInterestgamename;
-        this.postservice.UserProfileAbout(this.paramUserid, this.paramUserid, 1, date).subscribe(function (res) {
+        this.postservice.UserProfileAbout(this.paramUserid, this.paramUserid, this.pageno, date).subscribe(function (res) {
+            if (res["GameInterest"] == undefined) {
+                console.log("matches");
+            }
             for (var i = 0; i < res["GamesInterest"].length; i++) {
                 GameInterestgameid = res["GamesInterest"][i].gameid;
                 GameInterestgamename = res["GamesInterest"][i].gamename;
@@ -11333,6 +11352,10 @@ var UserprofileAboutComponent = /** @class */ (function () {
                 //   Questionid: Gamesquestionid,
                 //   answer: answer
                 // });
+            }
+            if (res["GameInterest"] != undefined) {
+                _this.pageno = _this.pageno + 1;
+                _this.getUserdetails();
             }
         });
     };
@@ -11404,8 +11427,10 @@ var i9 = __webpack_require__(/*! ../userprofile.component */ "./src/app/profile/
 var styles_UserprofileMatchesComponent = [i0.styles];
 var RenderType_UserprofileMatchesComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_UserprofileMatchesComponent, data: {} });
 exports.RenderType_UserprofileMatchesComponent = RenderType_UserprofileMatchesComponent;
-function View_UserprofileMatchesComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "div", [["class", "upcoming-cards"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "sports-social-ss-match-card", [], null, null, null, i2.View_SsMatchCardComponent_0, i2.RenderType_SsMatchCardComponent)), i1.ɵdid(2, 114688, null, 0, i3.SsMatchCardComponent, [i4.Router], { matchstartername: [0, "matchstartername"], userName: [1, "userName"], starttimestamp: [2, "starttimestamp"], coverpic: [3, "coverpic"], upcoming: [4, "upcoming"], team1pic: [5, "team1pic"], team2pic: [6, "team2pic"], scoreTeam1: [7, "scoreTeam1"], scoreTeam2: [8, "scoreTeam2"], gamename: [9, "gamename"], startdatetime: [10, "startdatetime"], InsertedDate: [11, "InsertedDate"], Uniquename: [12, "Uniquename"], city: [13, "city"], Venue_Name: [14, "Venue_Name"], MatchStarterUniqueName: [15, "MatchStarterUniqueName"], Team1Name: [16, "Team1Name"], Team2Name: [17, "Team2Name"], EventText: [18, "EventText"], JoineeCount: [19, "JoineeCount"], WatchCount: [20, "WatchCount"], PromoteCount: [21, "PromoteCount"], CommentCount: [22, "CommentCount"], gender: [23, "gender"], finished: [24, "finished"], age: [25, "age"] }, null)], function (_ck, _v) { var currVal_0 = _v.context.$implicit.MatchStarterName; var currVal_1 = _v.context.$implicit.userName; var currVal_2 = _v.context.$implicit.starttimestamp; var currVal_3 = _v.context.$implicit.coverpic; var currVal_4 = _v.context.$implicit.upcoming; var currVal_5 = _v.context.$implicit.Team1Pic; var currVal_6 = _v.context.$implicit.Team2Pic; var currVal_7 = _v.context.$implicit.scoreTeam1; var currVal_8 = _v.context.$implicit.scoreTeam2; var currVal_9 = _v.context.$implicit.gamename; var currVal_10 = _v.context.$implicit.startdatetime; var currVal_11 = _v.context.$implicit.InsertedDate; var currVal_12 = _v.context.$implicit.Uniquename; var currVal_13 = _v.context.$implicit.city; var currVal_14 = _v.context.$implicit.venue_name; var currVal_15 = _v.context.$implicit.MatchStarterUniqueName; var currVal_16 = _v.context.$implicit.Team1Name; var currVal_17 = _v.context.$implicit.Team2Name; var currVal_18 = _v.context.$implicit.EventText; var currVal_19 = _v.context.$implicit.JoineeCount; var currVal_20 = _v.context.$implicit.WatchCount; var currVal_21 = _v.context.$implicit.PromoteCount; var currVal_22 = _v.context.$implicit.CommentCount; var currVal_23 = _v.context.$implicit.gender; var currVal_24 = _v.context.$implicit.finished; var currVal_25 = _v.context.$implicit.ageBracket; _ck(_v, 2, 1, [currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17, currVal_18, currVal_19, currVal_20, currVal_21, currVal_22, currVal_23, currVal_24, currVal_25]); }, null); }
-function View_UserprofileMatchesComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 7, "div", [["class", "About-body"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 6, "div", [["class", "upcoming-matches"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Finished Matches"])), (_l()(), i1.ɵeld(4, 0, null, null, 0, "hr", [], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 2, "div", [["class", "upcoming-block"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UserprofileMatchesComponent_1)), i1.ɵdid(7, 278528, null, 0, i5.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(8, 0, null, null, 2, "div", [["class", "backfooter"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 1, "sports-social-backfooter", [], null, null, null, i6.View_BackfooterComponent_0, i6.RenderType_BackfooterComponent)), i1.ɵdid(10, 114688, null, 0, i7.BackfooterComponent, [], null, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.array; _ck(_v, 7, 0, currVal_0); _ck(_v, 10, 0); }, null); }
+function View_UserprofileMatchesComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "h2", [["style", "font-size: 1em; color: #444444;"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["No Matches Yet"]))], null, null); }
+function View_UserprofileMatchesComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "div", [["class", "upcoming-cards"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "sports-social-ss-match-card", [], null, null, null, i2.View_SsMatchCardComponent_0, i2.RenderType_SsMatchCardComponent)), i1.ɵdid(2, 114688, null, 0, i3.SsMatchCardComponent, [i4.Router], { matchstartername: [0, "matchstartername"], userName: [1, "userName"], starttimestamp: [2, "starttimestamp"], coverpic: [3, "coverpic"], upcoming: [4, "upcoming"], team1pic: [5, "team1pic"], team2pic: [6, "team2pic"], scoreTeam1: [7, "scoreTeam1"], scoreTeam2: [8, "scoreTeam2"], gamename: [9, "gamename"], startdatetime: [10, "startdatetime"], InsertedDate: [11, "InsertedDate"], Uniquename: [12, "Uniquename"], city: [13, "city"], Venue_Name: [14, "Venue_Name"], MatchStarterUniqueName: [15, "MatchStarterUniqueName"], Team1Name: [16, "Team1Name"], Team2Name: [17, "Team2Name"], EventText: [18, "EventText"], JoineeCount: [19, "JoineeCount"], WatchCount: [20, "WatchCount"], PromoteCount: [21, "PromoteCount"], CommentCount: [22, "CommentCount"], gender: [23, "gender"], finished: [24, "finished"], age: [25, "age"] }, null)], function (_ck, _v) { var currVal_0 = _v.context.$implicit.MatchStarterName; var currVal_1 = _v.context.$implicit.userName; var currVal_2 = _v.context.$implicit.starttimestamp; var currVal_3 = _v.context.$implicit.coverpic; var currVal_4 = _v.context.$implicit.upcoming; var currVal_5 = _v.context.$implicit.Team1Pic; var currVal_6 = _v.context.$implicit.Team2Pic; var currVal_7 = _v.context.$implicit.scoreTeam1; var currVal_8 = _v.context.$implicit.scoreTeam2; var currVal_9 = _v.context.$implicit.gamename; var currVal_10 = _v.context.$implicit.startdatetime; var currVal_11 = _v.context.$implicit.InsertedDate; var currVal_12 = _v.context.$implicit.Uniquename; var currVal_13 = _v.context.$implicit.city; var currVal_14 = _v.context.$implicit.venue_name; var currVal_15 = _v.context.$implicit.MatchStarterUniqueName; var currVal_16 = _v.context.$implicit.Team1Name; var currVal_17 = _v.context.$implicit.Team2Name; var currVal_18 = _v.context.$implicit.EventText; var currVal_19 = _v.context.$implicit.JoineeCount; var currVal_20 = _v.context.$implicit.WatchCount; var currVal_21 = _v.context.$implicit.PromoteCount; var currVal_22 = _v.context.$implicit.CommentCount; var currVal_23 = _v.context.$implicit.gender; var currVal_24 = _v.context.$implicit.finished; var currVal_25 = _v.context.$implicit.ageBracket; _ck(_v, 2, 1, [currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17, currVal_18, currVal_19, currVal_20, currVal_21, currVal_22, currVal_23, currVal_24, currVal_25]); }, null); }
+function View_UserprofileMatchesComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "div", [["class", "upcoming-block"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UserprofileMatchesComponent_3)), i1.ɵdid(2, 278528, null, 0, i5.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.array; _ck(_v, 2, 0, currVal_0); }, null); }
+function View_UserprofileMatchesComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 8, "div", [["class", "About-body"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 7, "div", [["class", "upcoming-matches"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Finished Matches"])), (_l()(), i1.ɵeld(4, 0, null, null, 0, "hr", [], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UserprofileMatchesComponent_1)), i1.ɵdid(6, 16384, null, 0, i5.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UserprofileMatchesComponent_2)), i1.ɵdid(8, 16384, null, 0, i5.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵeld(9, 0, null, null, 2, "div", [["class", "backfooter"]], null, null, null, null, null)), (_l()(), i1.ɵeld(10, 0, null, null, 1, "sports-social-backfooter", [], null, null, null, i6.View_BackfooterComponent_0, i6.RenderType_BackfooterComponent)), i1.ɵdid(11, 114688, null, 0, i7.BackfooterComponent, [], null, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = (_co.matchstatus == false); _ck(_v, 6, 0, currVal_0); var currVal_1 = _co.matchstatus; _ck(_v, 8, 0, currVal_1); _ck(_v, 11, 0); }, null); }
 exports.View_UserprofileMatchesComponent_0 = View_UserprofileMatchesComponent_0;
 function View_UserprofileMatchesComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-userprofile-matches", [], null, null, null, View_UserprofileMatchesComponent_0, RenderType_UserprofileMatchesComponent)), i1.ɵdid(1, 114688, null, 0, i8.UserprofileMatchesComponent, [i9.UserprofileComponent], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_UserprofileMatchesComponent_Host_0 = View_UserprofileMatchesComponent_Host_0;
@@ -11437,6 +11462,12 @@ var UserprofileMatchesComponent = /** @class */ (function () {
     UserprofileMatchesComponent.prototype.getUserId = function () {
         this.paramUserId = this.userprofilecomponent.userid;
         this.array = this.userprofilecomponent.array;
+        this.array = this.userprofilecomponent.array;
+        if (this.userprofilecomponent.array[0] == undefined) {
+            this.matchstatus = false;
+            console.log("matched");
+            console.log(this.array);
+        }
         // if(this.array[0]!=null){
         //   this.result="Finished Matches";
         // }
@@ -11470,7 +11501,7 @@ exports.UserprofileMatchesComponent = UserprofileMatchesComponent;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
-var styles = [".spinner[_ngcontent-%COMP%]{\n  top: 10%;\n}\n.body[_ngcontent-%COMP%]{\n    width: 75%;\n    height: auto;\n    margin: 2% 0% 3% 25%;\n    background-color: #ffffff;\n    position: relative;\n    min-height: 300px;\n    \n}\n.container[_ngcontent-%COMP%] {\n    border: 2px solid #dedede;\n    width: 90%;\n    height: 50px;\n    background-color: #f6f6f6;\n    border-radius: 5px;\n    padding: 14px;\n    margin: 10px 0 0 30px;\n  }\n.container[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n    font-size: 1.2em;\n    font-family:'Roboto',sans-serif;\n  }\n.container[_ngcontent-%COMP%] > h6[_ngcontent-%COMP%]{\n    color: grey;\n    font-family:'Roboto',sans-serif;\n    font-size: 1em;\n    font-weight: lighter;\n  }\n.container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{\n    vertical-align: top;\n    margin-top: 0% !important;\n  }\n.container[_ngcontent-%COMP%]::after {\n    content: \"\";\n    clear: both;\n    display: table;\n  }\n.container[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n    float: left;\n    max-width: 60px;\n    width: 40px;\n    height: 40px;\n    margin-right: 20px;\n    border-radius: 50%;\n  }\n.container[_ngcontent-%COMP%] > h6[_ngcontent-%COMP%] > a[_ngcontent-%COMP%]{\n    vertical-align: top;\n    float: right;\n  }\n.container[_ngcontent-%COMP%] > h6[_ngcontent-%COMP%] > a[_ngcontent-%COMP%]{\n      color: blue;\n      cursor: pointer;\n  }\n.backfooter[_ngcontent-%COMP%]{\n    width: 75%;\n    float: right;\n}\n@media screen and (min-width:200px)and (max-width:700px){\n  .body[_ngcontent-%COMP%]{\n    width: 100%;\n    height: auto;\n    margin-left: 0%;\n}\n.container[_ngcontent-%COMP%] {\n  width: 90%;\n  height: 40px;\n  border-radius: 5px;\n  margin: 10px auto;\n} \n.container[_ngcontent-%COMP%] > img[_ngcontent-%COMP%] {\n  width: 30px;\n  height: 30px;\n  margin-right: 20px;\n}\n.container[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n  font-size: 1em;\n}\n.container[_ngcontent-%COMP%] > h6[_ngcontent-%COMP%]{\n  font-size: 0.9em;\n}\n.viewprofile[_ngcontent-%COMP%]{\n  margin-top: -40px;\n}\n.viewprofile[_ngcontent-%COMP%] > a[_ngcontent-%COMP%]{\n  font-size: .7em;\n}\n.backfooter[_ngcontent-%COMP%]{\n  clear: both;\n  width: 100%;\n}\n}\n@media screen and (min-width:701px) and (max-width:1100px){\n  .container[_ngcontent-%COMP%]{\n    border: 1px solid red;\n      border: 2px solid #dedede;\n      width: 92%;\n      height: 50px;\n      border-radius: 5px;\n      padding: 14px;\n      margin: 10px 20px 0 5px;\n  }\n}"];
+var styles = [".spinner[_ngcontent-%COMP%]{\n  top: 10%;\n}\n.body[_ngcontent-%COMP%]{\n    width: 75%;\n    height: auto;\n    margin: 2% 0% 3% 25%;\n    background-color: #ffffff;\n    position: relative;\n    min-height: 300px;\n    \n}\n.container[_ngcontent-%COMP%] {\n    border: 2px solid #dedede;\n    width: 90%;\n    height: 50px;\n    background-color: #f6f6f6;\n    border-radius: 5px;\n    padding: 14px;\n    margin: 10px 0 0 30px;\n  }\n.container[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n    font-size: 1.2em;\n    font-family:'Roboto',sans-serif;\n  }\n.container[_ngcontent-%COMP%] > h6[_ngcontent-%COMP%]{\n    color: grey;\n    font-family:'Roboto',sans-serif;\n    font-size: 1em;\n    font-weight: lighter;\n  }\n.container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{\n    vertical-align: top;\n    margin-top: 0% !important;\n  }\n.container[_ngcontent-%COMP%]::after {\n    content: \"\";\n    clear: both;\n    display: table;\n  }\n.container[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n    float: left;\n    max-width: 60px;\n    width: 40px;\n    height: 40px;\n    margin-right: 20px;\n    border-radius: 50%;\n  }\n.container[_ngcontent-%COMP%] > h6[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n    vertical-align: top;\n    float: right;\n  }\n.container[_ngcontent-%COMP%] > h6[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n      color: blue;\n      cursor: pointer;\n  }\n.backfooter[_ngcontent-%COMP%]{\n    width: 75%;\n    float: right;\n}\n@media screen and (min-width:200px)and (max-width:700px){\n  .body[_ngcontent-%COMP%]{\n    width: 100%;\n    height: auto;\n    margin-left: 0%;\n}\n.container[_ngcontent-%COMP%] {\n  width: 90%;\n  height: 40px;\n  border-radius: 5px;\n  margin: 10px auto;\n} \n.container[_ngcontent-%COMP%] > img[_ngcontent-%COMP%] {\n  width: 30px;\n  height: 30px;\n  margin-right: 20px;\n}\n.container[_ngcontent-%COMP%] > p[_ngcontent-%COMP%]{\n  font-size: 1em;\n}\n.container[_ngcontent-%COMP%] > h6[_ngcontent-%COMP%]{\n  font-size: 0.9em;\n}\n.viewprofile[_ngcontent-%COMP%]{\n  margin-top: -40px;\n}\n.viewprofile[_ngcontent-%COMP%] > a[_ngcontent-%COMP%]{\n  font-size: .7em;\n}\n.backfooter[_ngcontent-%COMP%]{\n  clear: both;\n  width: 100%;\n}\n}\n@media screen and (min-width:701px) and (max-width:1100px){\n  .container[_ngcontent-%COMP%]{\n    border: 1px solid red;\n      border: 2px solid #dedede;\n      width: 92%;\n      height: 50px;\n      border-radius: 5px;\n      padding: 14px;\n      margin: 10px 20px 0 5px;\n  }\n}"];
 exports.styles = styles;
 
 
@@ -11506,8 +11537,8 @@ var styles_UserprofilePlaymatesComponent = [i0.styles];
 var RenderType_UserprofilePlaymatesComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_UserprofilePlaymatesComponent, data: {} });
 exports.RenderType_UserprofilePlaymatesComponent = RenderType_UserprofilePlaymatesComponent;
 function View_UserprofilePlaymatesComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 0, "img", [["alt", ""], ["class", "spinner"], ["src", "assets/images/sports-social-loading.gif"]], null, null, null, null, null))], null, null); }
-function View_UserprofilePlaymatesComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 7, "div", [["class", "container"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 0, "img", [["onerror", "this.src='assets/images/user.png'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(3, null, ["", ""])), (_l()(), i1.ɵeld(4, 0, null, null, 3, "h6", [], null, null, null, null, null)), (_l()(), i1.ɵted(5, null, ["", " "])), (_l()(), i1.ɵeld(6, 0, null, null, 1, "a", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-        var pd_0 = (_co.changeroute(_v.context.$implicit.user_id) !== false);
+function View_UserprofilePlaymatesComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 7, "div", [["class", "container"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 0, "img", [["onerror", "this.src='assets/images/user.png'"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(3, null, ["", ""])), (_l()(), i1.ɵeld(4, 0, null, null, 3, "h6", [], null, null, null, null, null)), (_l()(), i1.ɵted(5, null, ["", " "])), (_l()(), i1.ɵeld(6, 0, null, null, 1, "p", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.changeroute(_v.context.$implicit.user_name, _v.context.$implicit.user_id) !== false);
         ad = (pd_0 && ad);
     } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["View Profile >"]))], null, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.profile_image, ""); _ck(_v, 1, 0, currVal_0); var currVal_1 = _v.context.$implicit.user_name; _ck(_v, 3, 0, currVal_1); var currVal_2 = _v.context.$implicit.City; _ck(_v, 5, 0, currVal_2); }); }
 function View_UserprofilePlaymatesComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 5, "div", [["class", "body"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UserprofilePlaymatesComponent_1)), i1.ɵdid(2, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UserprofilePlaymatesComponent_2)), i1.ɵdid(4, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(5, 0, null, null, 0, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 2, "div", [["class", "backfooter"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 1, "sports-social-backfooter", [], null, null, null, i3.View_BackfooterComponent_0, i3.RenderType_BackfooterComponent)), i1.ɵdid(8, 114688, null, 0, i4.BackfooterComponent, [], null, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = (_co.array.length === 0); _ck(_v, 2, 0, currVal_0); var currVal_1 = _co.array; _ck(_v, 4, 0, currVal_1); _ck(_v, 8, 0); }, null); }
@@ -11543,6 +11574,7 @@ var UserprofilePlaymatesComponent = /** @class */ (function () {
         this.interactionService = interactionService;
         this.router = router;
         this.date = Math.abs(Date.now());
+        this.pageno = 1;
         this.show = false;
         this.array = [];
     }
@@ -11551,38 +11583,40 @@ var UserprofilePlaymatesComponent = /** @class */ (function () {
     };
     // route change for playmates defined here!!!!
     // it sends the value to the interaction service.
-    UserprofilePlaymatesComponent.prototype.changeroute = function (id) {
+    UserprofilePlaymatesComponent.prototype.changeroute = function (name, id) {
+        name = name.replace(/ /g, "-");
         this.interactionService.routechangefunction(id);
-        this.router.navigate(['/userprofile', id, 'about']);
+        this.router.navigate(['/profile', name, id, 'about'], { queryParams: id });
     };
     UserprofilePlaymatesComponent.prototype.getplaymates = function () {
         var _this = this;
-        for (var i = 1; i <= 10; i++) {
-            this.pageno = i;
-            if (this.pageno == 0) {
-                break;
+        this.postservice.UserProfielPlaymate(this.parentUserid, this.parentUserid, this.pageno, this.date).subscribe(function (res) {
+            if (res[0].user_id == undefined) {
+                console.log("matches");
             }
-            this.postservice.UserProfielPlaymate(this.parentUserid, this.parentUserid, this.pageno, this.date).subscribe(function (res) {
-                _this.show = true;
-                for (var i_1 in res)
-                    _this.array.push({
-                        user_id: res[i_1].user_id,
-                        user_name: res[i_1].user_name,
-                        UniqueName: res[i_1].UniqueName,
-                        profile_image: res[i_1].profile_image,
-                        Gender: res[i_1].Gender,
-                        Age: res[i_1].Age,
-                        distance: res[i_1].distance,
-                        IsPlaymate: res[i_1].IsPlaymate,
-                        PlaymateCount: res[i_1].PlaymateCount,
-                        FanCount: res[i_1].FanCount,
-                        GameId: res[i_1].GameId,
-                        Start_Date: res[i_1].Start_Date,
-                        EventId: res[i_1].EventId,
-                        City: res[i_1].City
-                    });
-            });
-        }
+            _this.show = true;
+            for (var i in res)
+                _this.array.push({
+                    user_id: res[i].user_id,
+                    user_name: res[i].user_name,
+                    UniqueName: res[i].UniqueName,
+                    profile_image: res[i].profile_image,
+                    Gender: res[i].Gender,
+                    Age: res[i].Age,
+                    distance: res[i].distance,
+                    IsPlaymate: res[i].IsPlaymate,
+                    PlaymateCount: res[i].PlaymateCount,
+                    FanCount: res[i].FanCount,
+                    GameId: res[i].GameId,
+                    Start_Date: res[i].Start_Date,
+                    EventId: res[i].EventId,
+                    City: res[i].City
+                });
+            if (res[0].user_id != undefined) {
+                _this.pageno = _this.pageno + 1;
+                _this.getplaymates();
+            }
+        });
     };
     UserprofilePlaymatesComponent.prototype.ngOnInit = function () {
         this.getuserid();
@@ -11673,6 +11707,7 @@ var UserprofileTeamsComponent = /** @class */ (function () {
     function UserprofileTeamsComponent(postservice, userprofileComponent) {
         this.postservice = postservice;
         this.userprofileComponent = userprofileComponent;
+        this.pageno = 0;
         this.array = [];
         this.show = false;
     }
@@ -11682,59 +11717,63 @@ var UserprofileTeamsComponent = /** @class */ (function () {
     };
     UserprofileTeamsComponent.prototype.getTeamData = function () {
         var _this = this;
-        for (var i = 0; i < 10; i++) {
-            this.pageno = i;
-            this.postservice.UserProfileTeams(this.paramuserid, this.pageno).subscribe(function (data) {
-                _this.show = true;
-                for (var i = 0; i < data["RandomTeams"].length; i++) {
-                    _this.teamId = data["RandomTeams"][i].TeamId;
-                    var status;
-                    status = _this.getTeamId(_this.teamId);
-                    var agebracket = data["RandomTeams"][i].TeamCategory;
-                    // console.log("thi sia is age brancter",agebracket);
-                    if (agebracket == 0) {
-                        _this.Age = "Under 13";
-                    }
-                    else if (agebracket == 1) {
-                        _this.Age = "Under 15";
-                    }
-                    else if (agebracket == 2) {
-                        _this.Age = "Under 17";
-                    }
-                    else if (agebracket == 3) {
-                        _this.Age = "Under 19";
-                    }
-                    else if (agebracket == 4) {
-                        _this.Age = "Under 21";
-                    }
-                    else if (agebracket == 5) {
-                        _this.Age = "Under 23";
-                    }
-                    else if (agebracket == 6 || agebracket == -1) {
-                        _this.Age = "Open for All";
-                    }
-                    _this.array.push({
-                        // captain: this.getTeamId(this.teamId),
-                        TeamId: data["RandomTeams"][i].TeamId,
-                        TeamCategory: _this.Age,
-                        GameName: data["RandomTeams"][i].GameName,
-                        TeamCity: data["RandomTeams"][i].TeamCity,
-                        Slogan: data["RandomTeams"][i].Slogan,
-                        TeamName: data["RandomTeams"][i].TeamName,
-                        GameId: data["RandomTeams"][i].GameId,
-                        CaptainUserId: data["RandomTeams"][i].CaptainUserId,
-                        TeamType: data["RandomTeams"][i].TeamType,
-                        Description: data["RandomTeams"][i].Description,
-                        TeamUserName: data["RandomTeams"][i].TeamUserName,
-                        Profile_Photo: data["RandomTeams"][i].Profile_Photo,
-                        Cover_Photo: data["RandomTeams"][i].Cover_Photo,
-                        FanCount: data["RandomTeams"][i].FanCount,
-                        MemberCount: data["RandomTeams"][i].MemberCount,
-                        MatchCount: data["RandomTeams"][i].MatchCount
-                    });
+        this.postservice.UserProfileTeams(this.paramuserid, this.pageno).subscribe(function (data) {
+            _this.show = true;
+            if (data["RandomTeams"] == undefined) {
+                console.log("matched");
+            }
+            for (var i = 0; i < data["RandomTeams"].length; i++) {
+                _this.teamId = data["RandomTeams"][i].TeamId;
+                var status;
+                status = _this.getTeamId(_this.teamId);
+                var agebracket = data["RandomTeams"][i].TeamCategory;
+                // console.log("thi sia is age brancter",agebracket);
+                if (agebracket == 0) {
+                    _this.Age = "Under 13";
                 }
-            });
-        }
+                else if (agebracket == 1) {
+                    _this.Age = "Under 15";
+                }
+                else if (agebracket == 2) {
+                    _this.Age = "Under 17";
+                }
+                else if (agebracket == 3) {
+                    _this.Age = "Under 19";
+                }
+                else if (agebracket == 4) {
+                    _this.Age = "Under 21";
+                }
+                else if (agebracket == 5) {
+                    _this.Age = "Under 23";
+                }
+                else if (agebracket == 6 || agebracket == -1) {
+                    _this.Age = "Open for All";
+                }
+                _this.array.push({
+                    // captain: this.getTeamId(this.teamId),
+                    TeamId: data["RandomTeams"][i].TeamId,
+                    TeamCategory: _this.Age,
+                    GameName: data["RandomTeams"][i].GameName,
+                    TeamCity: data["RandomTeams"][i].TeamCity,
+                    Slogan: data["RandomTeams"][i].Slogan,
+                    TeamName: data["RandomTeams"][i].TeamName,
+                    GameId: data["RandomTeams"][i].GameId,
+                    CaptainUserId: data["RandomTeams"][i].CaptainUserId,
+                    TeamType: data["RandomTeams"][i].TeamType,
+                    Description: data["RandomTeams"][i].Description,
+                    TeamUserName: data["RandomTeams"][i].TeamUserName,
+                    Profile_Photo: data["RandomTeams"][i].Profile_Photo,
+                    Cover_Photo: data["RandomTeams"][i].Cover_Photo,
+                    FanCount: data["RandomTeams"][i].FanCount,
+                    MemberCount: data["RandomTeams"][i].MemberCount,
+                    MatchCount: data["RandomTeams"][i].MatchCount
+                });
+            }
+            if (data["RandomTeams"] != undefined) {
+                _this.pageno = _this.pageno + 1;
+                _this.getTeamData();
+            }
+        });
     };
     UserprofileTeamsComponent.prototype.getTeamId = function (teamid) {
         var _this = this;
@@ -11919,7 +11958,7 @@ function View_UserprofileComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.
         ad = (pd_1 && ad);
     } return ad; }, View_UserprofileComponent_0, RenderType_UserprofileComponent)), i1.ɵdid(1, 245760, null, 0, i10.UserprofileComponent, [i11.PostService, i2.ActivatedRoute, i8.InteractionService, i2.Router, i12.Title, i12.Meta], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_UserprofileComponent_Host_0 = View_UserprofileComponent_Host_0;
-var UserprofileComponentNgFactory = i1.ɵccf("sports-social-userprofile", i10.UserprofileComponent, View_UserprofileComponent_Host_0, { userid: "userid", pageNo: "pageNo", array: "array", upcomingarray: "upcomingarray" }, {}, []);
+var UserprofileComponentNgFactory = i1.ɵccf("sports-social-userprofile", i10.UserprofileComponent, View_UserprofileComponent_Host_0, { userid: "userid", userdetailspage: "userdetailspage", array: "array", upcomingarray: "upcomingarray" }, {}, []);
 exports.UserprofileComponentNgFactory = UserprofileComponentNgFactory;
 
 
@@ -11967,6 +12006,7 @@ var UserprofileComponent = /** @class */ (function () {
         this.mediaArr = [];
         this.Fans = [];
         this.Followers = [];
+        this.getpastmatchpage = 1;
         this.show = false;
         this.scroll = function () {
             if (window.pageYOffset > 370) {
@@ -12022,14 +12062,10 @@ var UserprofileComponent = /** @class */ (function () {
     };
     UserprofileComponent.prototype.getUserDetails = function () {
         var _this = this;
-        this.mediaArr = [];
-        for (var i = 1; i <= 10; i++) {
-            this.pageNo = i;
-        }
-        this.postservice.UserProfile(this.userid, this.userid, this.pageNo, this.date).subscribe(function (res) {
+        this.postservice.UserProfile(this.userid, this.userid, this.userdetailspage, this.date).subscribe(function (res) {
             _this.show = true;
             for (var i = 0; i < res["UserData"].length; i++) {
-                /** Birthdate calculate*/
+                /* Birthdate calculate */
                 var bdate = res["UserData"][i].DateofBirth;
                 _this.userrefId = res["UserData"][i].User_id;
                 _this.getuserFans(_this.userrefId);
@@ -12091,6 +12127,11 @@ var UserprofileComponent = /** @class */ (function () {
                     UploadTime: res["Images"][i].UploadTime
                 });
             }
+            if (res["Past"] != undefined) {
+                _this.getpastmatchpage = _this.getpastmatchpage + 1;
+                _this.getpastmatches();
+                console.log("matches");
+            }
         });
     };
     UserprofileComponent.prototype.getuserFans = function (profile_id) {
@@ -12151,12 +12192,11 @@ var UserprofileComponent = /** @class */ (function () {
     UserprofileComponent.prototype.getpastmatches = function () {
         var _this = this;
         var date = Math.floor(Date.now() / 1000);
-        var pageno, statusnumber;
+        var statusnumber;
         // for(var i=1;i<2;i++){
-        pageno = 1;
         // statusnumber = i;
         // i=0;
-        this.postservice.UsersParticularMatches(this.userid, this.userid, pageno, date).subscribe(function (res) {
+        this.postservice.UsersParticularMatches(this.userid, this.userid, this.getpastmatchpage, date).subscribe(function (res) {
             // console.log(res["Past"].length);    
             for (var j = 0; j < res["Past"].length; j++) {
                 var agebracket = res["Past"][j].ageBracket;
@@ -12288,6 +12328,10 @@ var UserprofileComponent = /** @class */ (function () {
                     profile_Photo_path: res["Upcoming"][j].profile_Photo_path,
                 });
                 // console.log("this upcoming",this.upcomingarray);
+            }
+            if (res["Past"].length > 0) {
+                _this.getpastmatchpage = _this.getpastmatchpage + 1;
+                _this.getpastmatches();
             }
         });
         // }
