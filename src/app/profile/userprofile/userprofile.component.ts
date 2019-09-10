@@ -186,7 +186,7 @@ export class UserprofileComponent implements OnInit {
             UploadTime:res["Images"][i].UploadTime
           });
         }
-        if(res["Past"] != undefined){
+        if(res["Past"].length>=0 ){
           this.getpastmatchpage=this.getpastmatchpage+1;
           this.getpastmatches();
           console.log("matches");

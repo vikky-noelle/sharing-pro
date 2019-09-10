@@ -383,7 +383,7 @@
     }
     .crousal-element>img{
         height: 100%;
-        width: 100%;
+        width: 60%;
         border-radius: 5px;
     }
     .crousal-element::before{   /*  use for top gradient on image */

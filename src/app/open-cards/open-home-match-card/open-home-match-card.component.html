@@ -95,7 +95,7 @@
                     <div class="manofmatch" *ngIf="manOfMatchImg != null">
                       <img src={{data.profilepic}} onerror="this.src='assets/images/user.png'">
                         <div class="text">
-                            <div>{{data.username}}</div>
+                            <div (click)="changeroute(data.performerid,data.username)">{{data.username}}</div>
                         </div>
                     </div>
                 </div>
@@ -109,8 +109,8 @@
             <div class="details" *ngIf="comment"> 
               <div class="container" *ngFor="let data of MatchCommnets">
                 <div class="profile-data">
-                    <img src="{{data.Profileimage}}" (click)="changeroute(data.UserId)" onerror="this.src='assets/images/user.png'" style="width:100%;">
-                    <h6  (click)="changeroute(data.UserId)">{{data.User_name}}<br>
+                    <img src="{{data.Profileimage}}" (click)="changeroute(data.UserId,data.Uniquename)" onerror="this.src='assets/images/user.png'" style="width:100%;">
+                    <h6  (click)="changeroute(data.UserId,data.Uniquename)">{{data.User_name}}<br>
                       <p>@{{data.Uniquename}}</p></h6>
                 </div>
                 <div class="message-outter">
@@ -131,14 +131,14 @@
               
                   <div *ngIf="child1">
                     <div class="container3" *ngFor="let data of MatchLineup1">
-                      <img src="{{data.Profileimage}}" (click)="changeroute(data.UserId)" onerror="this.src='assets/images/user.png'" style="width:100%;">
-                      <p (click)="changeroute(data.UserId)">{{data.User_name}}</p>
+                      <img src="{{data.Profileimage}}" (click)="changeroute(data.UserId,data.User_name)" onerror="this.src='assets/images/user.png'" style="width:100%;">
+                      <p (click)="changeroute(data.UserId,data.User_name)">{{data.User_name}}</p>
                     </div>
                   </div>
                   <div *ngIf="child2">
                     <div class="container3"  *ngFor="let data of MatchLineup2">
-                      <img src="{{data.Profileimage}}"  (click)="changeroute(data.UserId)" onerror="this.src='assets/images/user.png'" style="width:100%;">
-                      <p (click)="changeroute(data.UserId)">{{data.User_name}}</p>
+                      <img src="{{data.Profileimage}}"  (click)="changeroute(data.UserId,data.User_name)" onerror="this.src='assets/images/user.png'" style="width:100%;">
+                      <p (click)="changeroute(data.UserId,data.User_name)">{{data.User_name}}</p>
                     </div>
                   </div>
             </div>

@@ -353,6 +353,7 @@ export class OpenHomeMatchCardComponent implements OnInit {
           for(var j=0;j<data["Player Of The Match"].length;j++){
             this.ManOfMatch.push({
               username:data["Player Of The Match"][j].username,
+              performerid:data["Player Of The Match"][j].performerid,
               profilepic:data["Player Of The Match"][j].profilepic == null ? " " : data["Player Of The Match"][j].profilepic
             });
               this.manOfMatchImg=this.ManOfMatch[j].profilepic;

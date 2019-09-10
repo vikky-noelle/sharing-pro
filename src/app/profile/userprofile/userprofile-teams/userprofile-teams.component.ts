@@ -11,7 +11,7 @@ import { elementDef } from '@angular/core/src/view';
 export class UserprofileTeamsComponent implements OnInit {
 
   paramuserid;
-  pageno=0;
+  pageno=1;
   array=[];
   Age;
   show:boolean=false;
@@ -31,7 +31,7 @@ export class UserprofileTeamsComponent implements OnInit {
         this.postservice.UserProfileTeams(this.paramuserid,this.pageno).subscribe(
           data=>{
             this.show=true;
-            if(data["RandomTeams"]==undefined){
+            if(data["RandomTeams"].length>0){
               console.log("matched");
             }
             for(var i=0;i<data["RandomTeams"].length;i++){
@@ -81,7 +81,7 @@ export class UserprofileTeamsComponent implements OnInit {
                   MatchCount:data["RandomTeams"][i].MatchCount
                 });
             }
-            if(data["RandomTeams"]!=undefined){
+            if(data["RandomTeams"].length>0==undefined){
               this.pageno=this.pageno+1;
               this.getTeamData();
             }
