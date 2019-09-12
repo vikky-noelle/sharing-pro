@@ -6,6 +6,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { EventEmiterService } from '../shared/services/event.emiter.service';
 import { TimeService } from '../shared/services/time.service';
 import { Title, Meta } from '@angular/platform-browser';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'sports-social-newshome',
@@ -17,6 +18,7 @@ export class NewshomeComponent implements OnInit {
   news=[];
   crousallist=[];
   crousalitem=[];
+  crousalitem2=[];
   temporarynews=[];
   c=0;
   j=-1;
@@ -79,6 +81,11 @@ export class NewshomeComponent implements OnInit {
   scroll=document.getElementsByClassName('c-element') as HTMLCollectionOf<HTMLElement>;
   @ViewChild('widgets') widgets:ElementRef;
   @ViewChild('widgetsContent') widgetsContent:ElementRef;
+  
+
+
+  sub;
+  count=0;
 
   
   constructor(
@@ -102,8 +109,21 @@ export class NewshomeComponent implements OnInit {
      
   }
 
-  seoUpdate(){
-    
+  sample(){
+     Observable.interval(5000)
+    .subscribe((val) => { 
+      if(this.count == this.crousallist.length){
+        for(var i=0; i< this.count; i++){
+          console.log("loop working"); //logical error
+          this.widgets.nativeElement.scrollLeft -=this.widgetsContent.nativeElement.clientWidth;
+        }
+        this.count=0;
+      }
+      else{
+        this.count=this.count+1;
+        this.widgets.nativeElement.scrollLeft +=this.widgetsContent.nativeElement.clientWidth;
+      }
+    });
   }
   
   
@@ -121,7 +141,7 @@ export class NewshomeComponent implements OnInit {
   ngOnInit() {
     this.getsportnewsheader('');
     this.getsportwisenews(); 
-    // this.seoUpdate();
+    this.sample();
   }
   randomrouteresponse(){
        this.router.navigate(['/news']);
@@ -187,10 +207,24 @@ export class NewshomeComponent implements OnInit {
               desc: body.news[i].desc
             });
           }
-          for(var i=5; i<9; i++){
+          for(var i=5; i<10; i++){
             x = this.time.ExactDate(Date.parse(body.news[i].insertedDate)/1000);
             // x = x.replace(/T/g," at "); 
             this.crousalitem.push({
+              id: i,
+              source: body.news[i].source,
+              game: body.news[i].gameName,
+              title:body.news[i].title,
+              timestamp:x.substr(0,19),
+              url: body.news[i].url,
+              image: body.news[i].newsImage,
+              desc: body.news[i].desc
+            });
+          }
+          for(var i=10; i<14; i++){
+            x = this.time.ExactDate(Date.parse(body.news[i].insertedDate)/1000);
+            // x = x.replace(/T/g," at "); 
+            this.crousalitem2.push({
               id: i,
               source: body.news[i].source,
               game: body.news[i].gameName,

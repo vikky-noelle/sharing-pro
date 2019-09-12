@@ -38,11 +38,12 @@ export class NewspageComponent implements OnInit{
   @ViewChild('widgetsContent') widgetsContent:ElementRef;
 
   newsParamTopic;
+  gamenameSet;
 
   getparamtopic(){
     this.route.params.subscribe((param)=>{
       this.newsParamTopic=param.topic;
-      // console.log("this is news params:",this.newsParamTopic);
+      console.log("this is news params:",this.gamenameSet);
     });
     var title=this.newsParamTopic+" News from around the world";
     var metadesc="Get the latest"+ this.newsParamTopic+ " trends,news,updates from around the world on Sports Social from top sources";

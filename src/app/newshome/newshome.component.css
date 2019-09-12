@@ -14,7 +14,8 @@
     border-top: 2px solid black;
 }
 .outer-body>legend{
-    font-size: 1.5em;
+    font-size: 1.7em;
+    font-weight: 500;    
     letter-spacing: 1px;
 }
 .back-footer{
@@ -23,33 +24,34 @@
 }
 .dnews{
     width: 90%;
-    margin-left: 5%;
-    background-color: red;
+    margin-left: 5%; 
 }
-.dnews div{
+.dnews>div{
     margin-top: 1.2%;
     width: 25%;
     float: left;
     cursor: pointer;
 }
-.dnews div p{
-    /* background-color: black; */
-    font-size: 1em;
-    margin-left: 3%;
-    margin-bottom: 10px;
-}
+
 .dnews div img{
     padding: 10px;
     width: 92%;
     height: 150px;
 }
-.dnews div h1{
+.dnews>div>h1{
     padding-left: 10px;
     width: 95%;
     height: auto;
-    letter-spacing: 1px;
-    font-size: 1em;
+    /* letter-spacing: 1px; */
+    font-weight: bold;
+    font-size: .9em;
     margin-bottom: 20px;
+}
+.dnews>div>p{
+    font-size: .8em;
+    color: #ffa600;
+    margin-left: 3%;
+    margin-bottom: 10px;
 }
 
 
@@ -59,8 +61,9 @@
     width: 41%;
     float: right;
 }
-.crousal-side-bar h1{
+.crousal-side-bar>h1{
     font-size: 1.4em;
+    color: #024770;
 }
 .crousal-side-bar>div>p{
     font-size: .8em;
@@ -69,22 +72,27 @@
     margin-top: 10px;
     height: 70px;
     cursor: pointer;
+    border-bottom: 1px solid #dfdbdb;
 }
 .side-bar-component img{
     height: 60px;
     width: 90px;
     float: left;
 }
-.side-bar-component h1{
-    float: left;
-    /* width: 70%; */
-    margin-left: 5%;
-    font-weight: 500;
+.side-bar-component>h1{
+    vertical-align: top;
+    font-weight: bolder;
+    font-size: .8em;
+    float: right;
+    width: 75%;
+    margin-bottom: 1%;
+    /* font-weight: 500; */
 }
-.side-bar-component p{
-    color: #444444;
+.side-bar-component>p{
+    /* color: #444444; */
+    color: #ffa600;
     padding-top: 40px;
-    padding-left: 25.5%;
+    margin-left: 25%;
 }
 .side-bar-component p span{
     float: right;
@@ -120,6 +128,7 @@
     height: 100%;
     overflow: hidden;
     width: 100%;
+    vertical-align: middle;
 }
 .crousal-heading{
     text-align: left;
@@ -131,17 +140,25 @@
     width: 100%;
     height: 29%;
     transform: translate(-50%, -50%);
-    
 }
-.crousal-heading h1{
-    font-size: 1.2em;
-    padding: 13px;
+
+.crousal-heading>h1{
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 8px;
     letter-spacing: 1px;
+    width: 90%;
+    margin-right: 4%;
+    text-align: left;
+    /* text-transform: uppercase; */
 }
 .crousal-heading p{
-    font-size: 1.1em;
+    font-size: .9em;
+    color: #ffa600;
+    font-weight: lighter;
     letter-spacing: 1px;
-    padding-left: 15px;
+    padding-left: 10px;
+    margin-top: 3%;
 }
 .side-nav{
     width: 25%;
@@ -163,7 +180,6 @@
     width: 84%;
     margin-left: 16%;
     margin-bottom: 3%;
-    /* border-bottom: 2px solid red; */
 }
 .sport-heading{
     height: auto;
@@ -176,6 +192,7 @@
 .sport-heading h1{
     text-transform: uppercase;
     margin-top: 10px;
+    color: #024770;
     float: left;
 }
 .sport-heading h2{
@@ -201,24 +218,26 @@
 .news-tab>div{
     height: 180px;
     cursor: pointer;
+    border-bottom: 1px solid #dfdbdb;
+    width: 95%;
 }
-.news-tab img{
+.news-tab>div>img{
     margin-top: 25px;
     height: 150px;
     width: 25%;
     background-color: white;
     float: left;
+    border-radius: 3%;
 }
 .news-tab-info{
-    /* border: 1px solid red; */
     margin-top: 25px;
-    margin-left: 3%;
+    margin-right: 5%;
     float: right;
-    width: 70%;
+    width: 68%;
     height: auto;
 }
 .news-tab-info h1{
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 10px;
 }
 .news-tab-info>h6{
@@ -227,8 +246,16 @@
     font-size: 1em;
     margin-bottom: 40px;
 }
+.news-tab-info>p{
+    color: #ffa600;
+    font-weight: lighter;
+}
+.news-tab-info>h5,h2{
+    display: none;
+}
 
-@media screen and (min-width: 200px) and (max-width: 700px){
+
+@media screen and (min-width: 200px) and (max-width: 320px){
     .crousal-side-bar{
         display: none;
     }
@@ -253,6 +280,20 @@
     .crousal-element{
         height: 27vh;
    }
+
+    .crousal-heading>h1{
+        font-size: .7em;
+        font-weight: bolder;
+        padding: 2px;
+        width: 90%;
+        margin-right: 4%; 
+    }
+    .crousal-heading p{
+        font-size: .7em;
+        padding-left: 2px;
+        margin-top: 0%;
+    }
+
    .dnews{
        clear: both;
        width: 100%;
@@ -261,28 +302,153 @@
    
    .dnews div{
        width: 45%;
+       height: 230px;
        margin-left: 2%;
-       /* clear: both;  */
-       cursor: pointer;
+       margin-bottom: 2%;
+       vertical-align: top !important;
+       border: 1px solid rgb(219, 218, 218);
+       border-radius: 3%; 
    }
-   .dnews div img{
+   .dnews>div>img{
        width: 100%;
-       /* float: left; */
+       height: 100px;
+       padding: 0px;
+       border-top-right-radius: 4%;
+       border-top-left-radius: 4%;
+   }
+
+    .dnews div h1{
+        font-size: 0.8em;
+    }
+    .dnews div p{
+        font-size: 0.7em;
+    }
+   .outer-body{
+       margin-top: 60px;
+       height: 40vh;
+   }
+   .sportwise-shell{
+       /* clear: both; */
+       margin-left: 0%;
+       width: 100%;
+   }
+   .sport-heading{
+       height: 40px;
+   }
+   .sport-heading h1, .sport-heading h2{
+       font-size: 1em;
+   }
+   .sport-heading h2{
+       margin-top: 10px;  
+   }
+   .news-tab>div{
+       height: 155px;
+       display: inline-flex;
+       top: 0%;
+       vertical-align: top !important;
+    }
+    .news-tab>div>img{
+       margin-top: 25px;
+       height: 100px;
+       width: 30%;
+       background-color: white;
+       float: left;
+    }
+    .news-tab-info{
+        width: 65%;
+        margin-left: 4%;
+    }
+    .news-tab-info h1{
+        display: none;
+    }
+    .news-tab-info>h2{
+        display: block;
+        font-size: .8em;
+        margin-bottom: 7px;
+    }
+    .news-tab-info>h6{
+        display: none;
+    }
+    .news-tab-info>h5{
+        width: 90%;
+        font-size: 0.7em;
+        font-weight: lighter;
+        margin-bottom: 10px;
+        display: block;
+    }
+    .news-tab-info p{
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 700px){
+    .crousal-side-bar{
+        display: none;
+    }
+    .main-body{
+        display: none;
+    }
+    .mobile-main{
+        display: block;
+    }
+    .back-footer{
+        width: 100%;
+    }
+    .home-body{
+        margin-left: 0%;
+        width: 100%;
+    }
+    .crousal{
+        margin-top: 40px;
+        border: 2px solid white;
+        width: 100%;
+    }
+    .crousal-element{
+        height: 27vh;
+   }
+    .crousal-heading>h1{
+        font-size: .9em;
+        font-weight: bolder;
+        padding: 2px;
+        width: 90%;
+        margin-right: 4%; 
+    }
+    .crousal-heading p{
+        font-size: .6em;
+        padding-left: 2px;
+        margin-top: 0%;
+    }
+   .dnews{
+       clear: both;
+       width: 100%;
+       margin-left: 0% !important;
    }
    
-   .crousal-heading{
-       font-size: 0.4em;
-       font-weight: lighter;
+   .dnews div{
+       width: 45%;
+       height: 220px;
+       margin-left: 2%;
+       margin-bottom: 2%;
+       vertical-align: top !important;
+       border: 1px solid rgb(219, 218, 218);
+       border-radius: 3%; 
    }
-   .dnews div img{
+   .dnews>div>img{
+       width: 100%;
        height: 100px;
+       padding: 0px;
+       border-top-right-radius: 4%;
+       border-top-left-radius: 4%;
    }
-   .dnews div h1{
-       font-size: 0.8em;
-   }
-   .dnews div p{
-       font-size: 0.7em;
-   }
+
+    .dnews div h1{
+        font-size: 0.8em;
+    }
+    .dnews div p{
+        font-size: 0.7em;
+    }
+   
+   
    .outer-body{
        margin-top: 60px;
        height: 40vh;
@@ -307,7 +473,7 @@
        top: 0%;
        vertical-align: top !important;
     }
-    .news-tab img{
+    .news-tab>div>img{
        margin-top: 25px;
        height: 100px;
        width: 30%;
@@ -316,15 +482,25 @@
     }
     .news-tab-info{
         width: 65%;
+        margin-left: 4%;
     }
     .news-tab-info h1{
-        font-size: .9em;
+        display: none;
+    }
+    .news-tab-info>h2{
+        display: block;
+        font-size: .8em;
         margin-bottom: 7px;
     }
     .news-tab-info>h6{
+        display: none;
+    }
+    .news-tab-info>h5{
         width: 90%;
         font-size: 0.7em;
+        font-weight: lighter;
         margin-bottom: 10px;
+        display: block;
     }
     .news-tab-info p{
         font-size: 0.7em;

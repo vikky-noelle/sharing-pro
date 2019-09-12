@@ -27,17 +27,22 @@
 }
 
 .news-header h2{
-    color: rgb(126, 126, 126);
+    float: left;
+    font-weight: lighter;
+    font-size: 1em;
+    color: #ffa600 !important;
+
 }
 .news-header h1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     font-weight: 500;
-    text-shadow: 1px 1px 3px #585858;
+    /* text-shadow: 1px 1px 3px #585858; */
+    color: #024771;
     font-size: 2.3em;
 }
-.timestamp{
-    float: left;
-}
+/* .timestamp{
+    
+} */
 .share{
     width: 35%;
     float: right;
@@ -127,6 +132,14 @@
 .top-stories>div>h5{
     display: inline-flex;
 }
+.top-stories>h1{
+    text-align: left;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-left: 6%;
+    color: #024770;
+    margin-bottom: 2%;
+}
 .top-stories>div>h6{
     margin-top: 1%;
     float: right;
@@ -184,6 +197,7 @@
 .element>b{
     font-weight: .9em;
     font-weight: lighter;
+    color: #ffa600;
 }
 .mnews>div{
     float: right;
@@ -216,7 +230,7 @@
     text-align: center;
     border-radius: 5px;
     width: 90%;
-    margin: 0 auto;
+    margin: 20% auto;
     overflow: hidden;
     margin-bottom: 20px;
     border-bottom: 2px solid silver;
@@ -235,6 +249,19 @@
 }
 .newscard a{
     color: black;
+}
+.newscard button{
+    font-size: 0.8em;
+    border: none;
+    background-color: #024771;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
+.newscard>h6{
+    color: #ffa600;
+    font-weight: lighter;
+    font-size: 1em;
 }
 .morecard{
     border-radius: 5px;
@@ -265,7 +292,7 @@
 }
 .tnews{
     margin-left: 5%;
-    width: 85%;
+    width: 90%;
     /* float: left; */
     overflow-y: hidden;
     scroll-behavior: smooth;
@@ -283,19 +310,12 @@
 .tnews>div>h5{
     font-size: .8em;
 }
-.newscard button{
-    font-size: 0.8em;
-    border: none;
-    background-color: #024771;
-    border-radius: 5px;
-    color: white;
-    padding: 5px;
-}
+
 .heading{
     margin-top: 5%;
     margin-bottom: 5%;
     padding: 10px;
-    font-weight: lighter;   
+    font-weight: lighter; 
 }
 
 .head{
@@ -309,7 +329,7 @@
     display: inline-block;
     scroll-snap-align: start;
     border-radius: 5px;
-    width: 93%;
+    width: 95%;
     height: 120px;
     margin-left: 5%;
     margin-bottom: 20px;
@@ -331,6 +351,17 @@
     border-radius: 5px;
     margin: 3.5% 2% 2% 2%;
 }
+.tnewscard h1{
+    padding: 10px;
+    font-size: 1em;
+    font-weight: lighter;
+    width: 45%;
+}
+.tnewscard>h5{
+    color: #ffa600;
+    font-size: .7em;
+    font-weight: lighter;
+}
 .source-desc{
     display: none;
 }
@@ -343,12 +374,7 @@
     font-weight: bold;
     font-size: 0.5em;
 }
-.tnewscard h1{
-    padding: 10px;
-    font-size: 1em;
-    font-weight: lighter;
-    width: 45%;
-}
+
 .tnews>div>h5{
     display: inline-flex;
     font-size: .7em;
@@ -360,6 +386,9 @@
     float: right;
     display: inline-flex;
     font-size: .6em;
+}
+.recent>h5{
+    color: #ffa600;
 }
 @media screen and (min-width: 200px) and (max-width: 700px){
     .main-body{
@@ -458,6 +487,7 @@
    .morecard>b{
        font-size: .7em;
        font-weight: lighter;
+       color: #ffa600;
        margin-left: 4%;
    }
    .head{

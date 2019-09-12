@@ -6,7 +6,7 @@
 <div class="content">
     <div class="sidenav">
         <ul class="side-nav">
-          <li><a routerLink="/HelpCenter"><div class="topicdata"><img style="height: 18px;width:18px;padding-top:3%;" src="/assets/images/sportsocialarrowleft.png"><p>Go Back</p></div></a></li>
+          <li><a routerLink="/HelpCenter"><div class="topicdata"><img style="height: 18px;width:18px;padding-top:3%;" src="/assets/images/sportsocialarrowleft.png"><p>Back</p></div></a></li>
           <li routerLinkActive="active" *ngFor="let qa of quesAns; let i = index">
             <a  routerLink="/HelpCenter/{{qa.url}}"routerLinkActive="active" [queryParams]="{ topic_id: topicId , id: subtopicId, qid: qid, name:name}">
             <div class="topicdata" (click)="getAns(qa.id)">
@@ -40,14 +40,18 @@
            
              <div class="modal">
                <div class="modal-content">
-                <div class="modal-header" style="display: inline-flex;" (click)="home(); close()"><h1>Go Back</h1><img (click)="close();" style="height: 18px;width:18px;z-index: 1;" src="/assets/images/sportsocialcross.png"></div>   
+                <div class="modal-header" style="display: inline-flex;" (click)="home(); close()">
+                  <h1>Back</h1>
+                  <img (click)="close();" style="height: 20px;width:20px;z-index: 1;padding-right: 5%;" src="/assets/images/sportsocialcross.png">
+                </div>   
                  <a *ngFor="let qa of  quesAns; let i = index" routerLink="/Helpcenter/{{name}}/{{qa.qques}}"
-                 [queryParams]="{ topic_id: topicId , id: subtopicId, qid: qid, name:name}"
-                 routerLinkActive="active"> 
-                 <div style="width:80%" (click)="getAns(qa.id); close();">
-                     <p [innerHTML]="qa.ques"></p>
-               </div></a>  
-             </div>
+                  [queryParams]="{ topic_id: topicId , id: subtopicId, qid: qid, name:name}"
+                  routerLinkActive="active"> 
+                    <div style="width:80%" (click)="getAns(qa.id); close();">
+                        <p [innerHTML]="qa.ques"></p>
+                    </div>
+                 </a>  
+              </div>
              </div>      
              <br><br>
              <div class="quesTitles">

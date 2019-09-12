@@ -32,6 +32,9 @@ export class OpenHomeMatchCardComponent implements OnInit {
   Age;
   startTime:string;
   show:boolean=false;
+  clickTeams:boolean= false;
+  team1Click;
+  team2Click;
   team2Name;
 
   comment:boolean=true;
@@ -158,8 +161,11 @@ export class OpenHomeMatchCardComponent implements OnInit {
   getSingleMatchFeed(){
       this.postservice.OpenOneMatchCard(this.eventid).subscribe(
         data=>{
-          console.log(data);
           for(var i=0;i<data["Feed"].length;i++){
+            this.team1Click=data["Feed"][i].IsTeam1Temp;
+            this.team2Click=data["Feed"][i].IsTeam2Temp; 
+            console.log("this is ID of team1 and team2",this.team1Click,+"and "+this.team2Click);
+
             this.show=true;
               var time= new Date(data["Feed"][i].startdatetime*1000);
               var tempimg;
@@ -216,7 +222,6 @@ export class OpenHomeMatchCardComponent implements OnInit {
             else{
               this.team2Name=data["Feed"][i].Team2name;
             }
-            console.log(" this is name of team2,",this.team2Name);
             
             this.titleservice.setTitle(nameOfGame+" Match center "+ team1Name+" " + this.team2Name +"| Sports Social" );
 
@@ -370,7 +375,8 @@ export class OpenHomeMatchCardComponent implements OnInit {
         }
       )
   }
-  openprofile(teamid, name){
+
+   openprofile(teamid, name){
     name = name.replace(/ /g,"-");
     if(teamid===null){
 
@@ -378,6 +384,13 @@ export class OpenHomeMatchCardComponent implements OnInit {
     else{
       this.router.navigate(['/team', name, "About"], {queryParams: {teamid: teamid}}); 
     }
+    // if(this.team1Click ==1 || null){
+    //   alert("Team is Temporary,Can't click !!");
+    // }
+
+    // if(this.team2Click ==1 || null){
+    //   alert("Team is Temporary,Can't click !!");
+    // }
   }
   openpopcrousal(){
     this.showcrousal[0].style.display="block";
