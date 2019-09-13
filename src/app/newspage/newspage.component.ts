@@ -27,6 +27,7 @@ export class NewspageComponent implements OnInit{
   firststatus=true;
   datastr;
   newsstatus = false;
+  show:boolean= false;  
   mainnewstime;
   mainnewssource;
   topic;
@@ -43,7 +44,6 @@ export class NewspageComponent implements OnInit{
   getparamtopic(){
     this.route.params.subscribe((param)=>{
       this.newsParamTopic=param.topic;
-      console.log("this is news params:",this.gamenameSet);
     });
     var title=this.newsParamTopic+" News from around the world";
     var metadesc="Get the latest"+ this.newsParamTopic+ " trends,news,updates from around the world on Sports Social from top sources";
@@ -129,6 +129,7 @@ export class NewspageComponent implements OnInit{
     }
     this.getService.getsportnews(topic).subscribe(res=>{
       var body = JSON.parse(res._body);
+      this.show= true;
       var x;
       for (var i in body.news) {
         this.j=this.j+1;
@@ -159,6 +160,7 @@ export class NewspageComponent implements OnInit{
     }
       this.getService.getsportnews(topic).subscribe(res=>{
           var body = JSON.parse(res._body);
+          this.show=true;
           if(body.news.length === 0){
             this.randomrouteresponse();
           }

@@ -86,6 +86,7 @@ export class NewshomeComponent implements OnInit {
 
   sub;
   count=0;
+  hidetitle;
 
   
   constructor(
@@ -107,6 +108,9 @@ export class NewshomeComponent implements OnInit {
     this.metaservice.updateTag({property:'og:description',content:this.description});
     // this.seoUpdate();
      
+  }
+  routechange(topic){
+    this.event.routechangefunction(topic);
   }
 
   sample(){
@@ -161,11 +165,20 @@ export class NewshomeComponent implements OnInit {
         if(body.news.length > 0){
           for(var j=0; j<15; j++){
             x = this.time.ExactDate(Date.parse(body.news[j].insertedDate)/1000);
+            var title= new String (body.news[j].title).slice(0,60);
+            if(title.length >= 60){
+              this.hidetitle= title+"...";
+            }
+            else{
+              this.hidetitle= title;
+            }
+            
             // x = x.replace(/T/g," at "); 
             this.temporarynews.push({
               id: j,
               source: body.news[j].source,
               game: body.news[j].gameName,
+              title1:this.hidetitle,
               title:body.news[j].title,
               timestamp:x.substr(0,19),
               url: body.news[j].url,

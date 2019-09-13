@@ -5,7 +5,7 @@
 <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf="news.length === 0" alt="">
 
 <!-- sport wise view -->
-<div class="main-body" *ngIf="news.length > 0">
+<div class="main-body" *ngIf="show">
 <div class="newsbody">
   <div class="news-header">
     <h1>{{mainnewshead}}</h1>
@@ -61,7 +61,7 @@
 </div>
 </div>
 <!-- sport wise mobile view -->
-<div class="mobile-main">
+<div class="mobile-main" *ngIf="show">
   <div class="newscard">
     <h6>{{mainnewssource}},&nbsp;{{mainnewstime}}</h6>
     <h1>{{mainnewshead}}</h1>

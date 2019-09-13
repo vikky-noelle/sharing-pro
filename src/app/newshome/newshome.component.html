@@ -25,9 +25,14 @@
       </div>  
   </div>
   <div class="crousal-side-bar">
-    <h1>Most Popular</h1>
+    <h1>Popular Today</h1>
     <div (click)="openspecificnews(data)" class="side-bar-component" *ngFor="let data of crousalitem">
-      <img src="{{data.image}}" alt="">
+        <img  *ngIf="data.source === 'Football Italia'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfi.png'">
+        <img  *ngIf="data.source === 'The Hindu'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialth.png'">
+        <img  *ngIf="data.source === 'The Times of India'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialtoi.png'">
+        <img  *ngIf="data.source === 'ESPN Cric Info'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialespn.jpg'">
+        <img  *ngIf="data.source === 'Fox Sport'" src="{{data.image}}" alt="sportsocialimg" onerror="this.src='assets/images/sportsocialfox-sport.png'">
+        
       <h1>{{data.title}}.</h1>
       <p>{{data.source}}, {{data.timestamp}}</p>
     </div>
@@ -50,7 +55,7 @@
   <div class="sportwise-shell" *ngFor="let data of news" >
     <div class="sport-heading">
       <h1>{{data.gamename}}</h1>
-      <h2 routerLink="/news/{{data.gamename}}">See All</h2>
+      <h4 routerLink="/news/{{data.gamename}}">See All</h4>
     </div>
     <div class="main-news">
       <div class="news-tab">
@@ -58,7 +63,7 @@
           <img src="{{feed.image}}" alt="">
           <div class="news-tab-info">
             <h1>{{feed.title}}</h1>
-            <h2>{{feed.title | slice:0:50}}...</h2>
+            <h2>{{feed.title1}}</h2>
             <h6>{{feed.desc | slice:0:125}}...</h6>
             <h5>{{feed.desc | slice:0:75}}...</h5>
             <p>{{feed.source}}, {{feed.timestamp}}</p>
