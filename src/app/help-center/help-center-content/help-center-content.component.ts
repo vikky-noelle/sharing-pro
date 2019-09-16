@@ -30,6 +30,7 @@ export class HelpCenterContentComponent implements OnInit {
   isDropdownIconclicked: boolean = false;
   top='';
   sub: Subscription;
+  showData:boolean=false;
   constructor(private getService: GetService,
     private router: Router, 
     private route:ActivatedRoute,
@@ -46,6 +47,7 @@ export class HelpCenterContentComponent implements OnInit {
   // Getting topics
   AllTopics() {
     this.getService.getTopics().subscribe(res => {
+      this.showData=true;
       var body = JSON.parse(res._body);
       for (const i in body) {
         this.topics.push({
@@ -82,6 +84,7 @@ export class HelpCenterContentComponent implements OnInit {
   
   getSubTopics(id){
   this.getService.getSubTopic(id).subscribe(res=>{
+    this.showData=true;
       var body = JSON.parse(res._body);
       this.subtopics=[];
       for (const i in body) {
@@ -132,8 +135,6 @@ getSeo(id){
   
   
   ngOnInit() {
-   
-
     if(this.route.snapshot.paramMap.has("topicname")){
        this.topicname = this.route.snapshot.paramMap.get("topicname");
     }

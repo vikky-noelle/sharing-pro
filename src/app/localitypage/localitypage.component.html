@@ -32,28 +32,32 @@
 <img class="spinner" style="height: 70px; width:60px;" src="assets/images/sports-social-loading.gif" *ngIf = "lvdata.length === 0" alt="">
 <div class="container2" *ngFor="let data of lvdata">
     <br><br><br><br><br><br>
-  <div class="content" *ngIf = "data.id % 2 === 0">
-    <h1>{{data.name}}</h1>
-    <p>{{data.shortDesc}}</p>
-  </div>
-  <div class="content-gif" *ngIf = "data.id % 2 === 0">
-    <img src="{{data.icon}}">
-  </div>
-  <div class="contentt" *ngIf = "data.id % 2 != 0">
+    <div class="content" *ngIf = "data.id % 2 === 0">
       <h1>{{data.name}}</h1>
       <p>{{data.shortDesc}}</p>
     </div>
-    <div class="contentt-gif" *ngIf = "data.id % 2 != 0">
+    <div class="content-gif" *ngIf = "data.id % 2 === 0">
       <img src="{{data.icon}}">
     </div>
+    <div class="contentt" *ngIf = "data.id % 2 != 0">
+      <h1>{{data.name}}</h1>
+      <p>{{data.shortDesc}}</p>
+    </div>
+     <div class="contentt-gif" *ngIf = "data.id % 2 != 0">
+      <img src="{{data.icon}}">
+     </div>
+   </div>
+   
 </div>
+<div class="learn-more">
+    <h5>Visit our helpcenter to learn more</h5>
+    <button  routerLink="/HelpCenter">Learn More</button>
 </div>
-<br><br><br>
 
 <!-- mobile view -->
 <div class="mview">
-    <div class="mbox">
-      <h1> See What People Are Playing Around You In Your Locality</h1>
+  <div class="mbox">
+    <h1> See What People Are Playing Around You In Your Locality</h1>
       <br><br>
        <p>
           The locality feature of sports social allows you to see all the sporting arenas be it 
@@ -61,28 +65,33 @@
           about it easily.
        </p>
       <br><br>
-      <button>Locality</button></div>
+      <button>Locality</button>
+    </div>
       <br><br>
-<img src="/assets/images/sportsociallocality1.png">
-<div class="mbox">
-  <h1>See What People Are Playing Around You in your Locality.</h1>
-  <br><br>
-  <p>
-      You do not need to roam in search of a playing place, 
-      just log onto sports social and find all the arenas near you and get real time updates.
-     </p>
-  <br><br>
-</div>
-<img style="height:60px; width:60px;" src="assets/images/sports-social-loading.gif" *ngIf = "lvdata.length === 0" alt="">
-<div class="mboxx" *ngFor="let data of lvdata">
-  <br>
-    <h1>{{data.name}}</h1> 
-    <br>
-  <img src="{{data.icon}}">
-  <br><br>
-   <p>{{ data.shortDesc }}</p>
-  <br><br>
-</div>
+      <img src="/assets/images/sportsociallocality1.png">
+        <div class="mbox">
+          <h1>See What People Are Playing Around You in your Locality.</h1>
+          <br><br>
+          <p>
+              You do not need to roam in search of a playing place, 
+              just log onto sports social and find all the arenas near you and get real time updates.
+            </p>
+          <br><br>
+        </div>
+          <img style="height:60px; width:60px;" src="assets/images/sports-social-loading.gif" *ngIf = "lvdata.length === 0" alt="">
+          <div class="mboxx" *ngFor="let data of lvdata">
+            <br>
+              <h1>{{data.name}}</h1> 
+              <br>
+              <img src="{{data.icon}}">
+              <br><br>
+              <p>{{ data.shortDesc }}</p>
+              <br><br>
+          </div>
+          <div class="learn-more1">
+              <h5>Visit our helpcenter to learn more</h5>
+              <button  routerLink="/HelpCenter">Learn More</button>
+          </div>
 </div>
 <br><br><br>
 <sports-social-backfooter></sports-social-backfooter>

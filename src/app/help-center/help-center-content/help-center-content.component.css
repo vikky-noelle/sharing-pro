@@ -96,8 +96,8 @@ p{
     text-align: left;
     text-align-last: left;
     font-size: 1em;
+    font-weight: bold;
     margin-left: 19%;
-    font-style: bold;
 }
 
 /*====Subtoipcs=======*/
@@ -266,6 +266,10 @@ p{
         font-size: 0.8em;
         width: calc(100% *(1/2) - 10px - 1px);
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);
+      }
+      .subtopicdata>a>p{
+        font-weight: bold;
+        font-size: 1em;
       }
       .subtopicdataa img {
           align-self: center;

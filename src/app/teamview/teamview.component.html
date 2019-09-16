@@ -30,16 +30,25 @@
           <img src="{{data.icon}}">
       </div>
   </div>
+  <div class="learn-more">
+      <h5>Visit our helpcenter to learn more</h5>
+      <button  routerLink="/HelpCenter">Learn More</button>
+  </div>
 </div>
 <!-- mobile view -->
 <div *ngIf="mview === 0">
   <div class="mview" *ngFor=" let data of tvdata">
       <br><br><br><br>
     <h1>{{ data.name }}</h1>
-    <br><br>
+    <br>
+    <img src="{{ data.icon }}">
     <p>{{ data.shortDesc }}</p>
     <br><br>
-    <img src="{{ data.icon }}">
+    
+  </div>
+  <div class="learn-more1">
+      <h5>Visit our helpcenter to learn more</h5>
+      <button  routerLink="/HelpCenter">Learn More</button>
   </div>
 </div>
 <br>

@@ -3,6 +3,7 @@
 <p>Get Answer for the most common question and learn to use "Sports Social" like Champ.</p>
 
 <div class="content">
+    
   <div class="sidenav">
       <ul class="side-nav" *ngIf="windowNavbar">
           <!-- <li routerLinkActive="active"><a routerLink="/Helpcenter/">Home</a></li> -->
@@ -19,6 +20,7 @@
         </ul>
     </div>
   <div class="problems" #problems>
+      <img style="height:50px; width:50px; margin-left: 20%;" src="assets/images/sports-social-loading.gif" *ngIf = "subtopics.length === 0" alt="">
       <div class="subtopicdata" *ngFor="let data of subtopics" #problem>
           <a (click)="getSeo(data.id)" 
            (click)="getdata(data.topic_id, data.name, data.id)">
