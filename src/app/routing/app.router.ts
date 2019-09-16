@@ -83,7 +83,13 @@ const App_Route: Routes = [
     {path:"contactus",component:ContactUsComponent},
     {path:"live",component:LivedataComponent},
     {path:"addtopic",component:AddTopicComponent},
-    {path:"HelpCenter",component:HelpCenterComponent},
+    {path:"HelpCenter",component:HelpCenterComponent,
+        children:[
+            {path:'answer',
+            component:AddQueAnsComponent
+            }
+        ]    
+},
     {path:"Helpcenter/:topicname",component:HelpCenterComponent},
     {path: "teamprofile",component:TeamviewComponent},
     // {path: 'teamprofile', component:TeamprofileComponent},

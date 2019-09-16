@@ -9,16 +9,21 @@
 </div>
   <div class="header">
     <div class="headerContent">
-      <h2>Reach Out to us</h2>
-      <p>For any queries and suggestions, please leave your contact info here and we will be in touch with you shortly.
-      </p>
+      <h2>You make it a Passion</h2><br>
+      <h2>We make it a&nbsp; joy!</h2><br><br><br><br>
+      <button class="first-btn" routerLink='/application'>Capture Your Journey</button>
+      <button class="second-btn" routerLink='/HelpCenter'>Get Started</button>
+      <!-- <p>For any queries and suggestions, please leave your contact info here and we will be in touch with you shortly.
+      </p> -->
     </div>
+  </div>
+  <div class="above">
+    <h1>Get In Touch </h1>
+    <h3>Just fill out the below form with your message and we will be in touch with you at lightening speed</h3>
   </div>
 
   <div class="userform">
       <div class="left-model">
-          <h4></h4>
-      
         <form id="myform" #formdata="ngForm" (ngSubmit)="onsubmit(formdata.value)">
             <label>
               * First Name<br>
@@ -38,7 +43,7 @@
             </label>
             <label class="msg">
               * Message<br>
-              <input  type="text" name="message" [(ngModel)]="form.message" required />
+              <input  type="text" name="message" [(ngModel)]="form.message" placeholder="type your message here" required />
             </label><br>
             <button class="button" (click)="windowReload()" type="submit" [disabled]="formdata.invalid">Send</button>
         </form>
@@ -62,9 +67,11 @@
 
 
     <div class="midbody">
+      <h1>Connect With Us</h1>
+      <h3>for any support or queries</h3>
       <div class="blocks">
           <div class="blockData">
-            <img src="assets/images/home-icon-silhouette.png">
+            <img src="assets/images/12-_Company_adress-512 (1).png">
             <!-- <h3>VISIT US</h3> -->
             <p>Basement,307,chakkarpur,sector28,
               Gurugram, Haryana 122002 </p>
@@ -83,7 +90,7 @@
               <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
                   <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
                 </agm-map>
-          </div> 
+          </div> <br><br>
       </div>
     </div>
   </body>

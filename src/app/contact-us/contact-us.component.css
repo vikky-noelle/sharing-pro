@@ -44,9 +44,9 @@ body{
     width: 100%;
     height: 500px;
     background-size: cover;
-    background-image: url('/assets/images/corinne-kutz-211251-unsplash-min.jpg');
+    background-image: url('/assets/images/Contact us banner.jpg');
     position: relative;
-    margin-top: 0% !important;
+    margin-top: 3% !important;
 }
 .headerContent{
     position: absolute;
@@ -67,12 +67,48 @@ body{
     color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.headerContent>button{
+    height: 40px;
+    width: 170px;
+    text-align: center;
+    background-image: linear-gradient(#024770,#0a6177);
+    background-color: #024771;
+    color: #ffffff;
+    font-size: 1em;
+    border-radius: 4%;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    border-color: skyblue;
+    transition: 0.3s ease-in-out;
+}
+.headerContent>button:hover{
+    transform: scale(1.05);
+}
+.second-btn{
+    margin-left: 10%;
+}
+.above{
+    text-align: center;
+    margin: 4%;
+}
+.above>h1{
+    font-size: 3em;
+    color: #024770;
+    margin-bottom: 2%;
+}
+.above>h3{
+    width: 40%;
+    text-align: center;
+    margin-left: 30%;
+
+}
 .userform{
     width: 60%;
     height: 400px;
-    box-shadow: 0 8px 6px -6px #aaaaaa;
+    box-shadow: 2px 8px 6px 2px #aaaaaa;
     position: absolute;
-    margin: -8% 20% 0% 20%;
+    margin: 0% 20% 0% 20%;
     border-radius: 1%;
 } 
 .left-model{
@@ -134,20 +170,21 @@ input{
     background-color: #024771;
 }
 .right-model>h2{
-    color: #969191;
+    color: #ffffff;
     font-size: 2em;
     font-weight: bolder;
-    margin-top: 25%;
+    margin-top: 5%;
     margin-left: 5%;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .right-model>a>img{
-    margin-top: 5%;
+    /* margin-top: 5%; */
+    margin-left: 40%;
     padding: 5%;
     width: 15%;
     height: 12%;
-    display: inline-block;
+    display: block;
     transition: transform .2s;
 }
 .right-model>a>img:hover{
@@ -156,10 +193,20 @@ input{
 .midbody{
     position: relative;
     width: 100%;
-    height: 700px;
-    margin-top: 23%;
+    height: 790px;
+    margin-top: 40%;
 }
-
+.midbody>h1,h3{
+    text-align: center;
+}
+.midbody>h1{
+    text-decoration: underline;
+    color: #024770;
+    margin-bottom: .5%;
+}
+.midbody>h3{
+    margin-bottom: 3%;
+}
  .blockData{
     vertical-align: top;
     margin-left: 6.5%;
@@ -171,7 +218,7 @@ input{
     position: absolute;
     width: 70%;
     margin-left: 15%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 .midbody .blockData>img{
     margin-top: 5%;
@@ -195,12 +242,12 @@ input{
 agm-map {
     height: 400px;
     width: 100%;
-    margin-bottom: 5%;
+    margin-bottom: 40%;
 }
 .map{
     height: 40%;
     width: 90%;
-    margin: 15% 5% 10% 5%;
+    margin: 10% 5% 40% 5%;
     position: absolute;
 }
 
@@ -212,12 +259,13 @@ agm-map {
     }
     .headerContent{
         margin-top: 25%;
-        margin-left: 15%;
-        position: absolute;
+        margin-left: 5%;
+        position: absolute; 
+        width: 90%;
     }
     .headerContent>h2{
-        font-size: 2em;
-        font-weight: bolder;
+        font-size: 1.8em;
+        font-weight: bolder; 
     }
     .headerContent>p{
         width: 80%;
@@ -225,6 +273,26 @@ agm-map {
         text-align: left;
         font-size: 1.3em;
         color: #ffffff;
+    }
+    .headerContent>button{
+        height: 40px;
+        width: 150px;
+        margin: 2% 5% 0% 0%;    
+        font-size: .9em;
+    }
+    .second-btn{
+        margin-left: 0%;
+    }
+    .above{
+        width: 100%;
+    }
+    .above>h1{
+        font-size: 2em; 
+    }
+    .above>h3{
+        width: 90%;
+        margin-left: 0%;
+        padding: 5px;
     }
     .userform{
         width: 100%;
@@ -236,8 +304,8 @@ agm-map {
     } 
     .midbody{
         width: 100%;
-        height: 800px;
-        margin-top: 145%;
+        height: 850px;
+        margin-top: 150%;
     }
     .blocks{
         width: 70%;
@@ -289,6 +357,9 @@ agm-map {
     .right-model a img{
         height: 40px;
         width: 40px;
+        margin-left: 30%;
+        margin-top: 1%;
+        margin-bottom: 1%;
     }
     input{
         margin-top: 0%;
@@ -341,18 +412,30 @@ agm-map {
         margin-top: 20%;
         margin-left: 15%;
     }
+    .above{
+        width: 100%;
+    }
+    .above>h1{
+        font-size: 2em; 
+    }
+    .above>h3{
+        width: 90%;
+        margin-left: 0%;
+        padding: 5px;
+    }
     .userform{
         width: 70%;
         height: 400px;
         box-shadow: 0 8px 6px -6px #aaaaaa;
         position: absolute;
-        margin-top: -8%;
+        margin-top: 2%;
         margin-left: 15%;
         border-radius: 1%;
     } 
     .midbody{
-        width: 100%;
-        height: 35%;
+        width: 95%;
+        height: 650px;
+        margin-top:60%;
     }
     .blockData{
         vertical-align: top;
@@ -377,5 +460,13 @@ agm-map {
         color: orange;
         font-weight: bolder;
         font-size: .7em;
+    }
+    .right-model>a>img{
+        margin-left: 35%;
+        padding: 5%;
+        width: 30%;
+        height: 15%;
+        display: block;
+        transition: transform .2s;
     }
 }
