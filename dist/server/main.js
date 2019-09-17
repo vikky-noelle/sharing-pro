@@ -8335,7 +8335,7 @@ function View_NewspageComponent_33(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0
 function View_NewspageComponent_0(_l) { return i1.ɵvid(0, [i1.ɵqud(402653184, 1, { widgets: 0 }), i1.ɵqud(402653184, 2, { widgetsContent: 0 }), (_l()(), i1.ɵeld(2, 0, null, null, 1, "sports-social-header", [], null, [["window", "resize"]], function (_v, en, $event) { var ad = true; if (("window:resize" === en)) {
         var pd_0 = (i1.ɵnov(_v, 3).onresize() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, i5.View_HeaderComponent_0, i5.RenderType_HeaderComponent)), i1.ɵdid(3, 4308992, null, 0, i6.HeaderComponent, [i7.PropertyService, i8.InteractionService, i9.CookieService], null, null), (_l()(), i1.ɵeld(4, 0, null, null, 2, "div", [["class", "side-nav"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 1, "sports-social-newsidenav", [], null, null, null, i10.View_NewsidenavComponent_0, i10.RenderType_NewsidenavComponent)), i1.ɵdid(6, 114688, null, 0, i11.NewsidenavComponent, [i12.Router, i12.ActivatedRoute, i8.InteractionService], null, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_NewspageComponent_1)), i1.ɵdid(8, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_NewspageComponent_2)), i1.ɵdid(10, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_NewspageComponent_15)), i1.ɵdid(12, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_NewspageComponent_33)), i1.ɵdid(14, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var _co = _v.component; _ck(_v, 3, 0); _ck(_v, 6, 0); var currVal_0 = (_co.news.length === 0); _ck(_v, 8, 0, currVal_0); var currVal_1 = _co.show; _ck(_v, 10, 0, currVal_1); var currVal_2 = _co.show; _ck(_v, 12, 0, currVal_2); var currVal_3 = (_co.news.length > 0); _ck(_v, 14, 0, currVal_3); }, null); }
+    } return ad; }, i5.View_HeaderComponent_0, i5.RenderType_HeaderComponent)), i1.ɵdid(3, 4308992, null, 0, i6.HeaderComponent, [i7.PropertyService, i8.InteractionService, i9.CookieService], null, null), (_l()(), i1.ɵeld(4, 0, null, null, 2, "div", [["class", "side-nav"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 1, "sports-social-newsidenav", [], null, null, null, i10.View_NewsidenavComponent_0, i10.RenderType_NewsidenavComponent)), i1.ɵdid(6, 114688, null, 0, i11.NewsidenavComponent, [i12.Router, i12.ActivatedRoute, i8.InteractionService], null, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_NewspageComponent_1)), i1.ɵdid(8, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_NewspageComponent_2)), i1.ɵdid(10, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_NewspageComponent_15)), i1.ɵdid(12, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_NewspageComponent_33)), i1.ɵdid(14, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var _co = _v.component; _ck(_v, 3, 0); _ck(_v, 6, 0); var currVal_0 = (_co.news.length === 0); _ck(_v, 8, 0, currVal_0); var currVal_1 = (_co.news.length > 0); _ck(_v, 10, 0, currVal_1); var currVal_2 = (_co.news.length > 0); _ck(_v, 12, 0, currVal_2); var currVal_3 = (_co.news.length > 0); _ck(_v, 14, 0, currVal_3); }, null); }
 exports.View_NewspageComponent_0 = View_NewspageComponent_0;
 function View_NewspageComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "sports-social-newspage", [], null, null, null, View_NewspageComponent_0, RenderType_NewspageComponent)), i1.ɵdid(1, 114688, null, 0, i13.NewspageComponent, [i14.EventEmiterService, i15.GetService, i12.ActivatedRoute, i16.TimeService, i12.Router, i8.InteractionService, i17.Title, i17.Meta], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_NewspageComponent_Host_0 = View_NewspageComponent_Host_0;
@@ -8812,6 +8812,7 @@ var OpenHomeMatchCardComponent = /** @class */ (function () {
         this.ManOfMatch = [];
         this.show = false;
         this.clickTeams = false;
+        this.dar = [];
         this.comment = true;
         this.moment = false;
         this.joinee = false;
@@ -9046,6 +9047,18 @@ var OpenHomeMatchCardComponent = /** @class */ (function () {
                     Uniquename: data["Match Talk"][j].Uniquename,
                     commentdatetime: gethourMin
                 });
+                // for(const i in data["Match Talk"][j].Comment){ 
+                //   for(var Cdata=0;i< data["Match Talk"][j].Comment.data.length;Cdata++){
+                //     this.dar=data["Match Talk"][j].Comment.data;
+                //     var junk = String.fromCharCode.apply(null, this.dar)
+                //     .split('').map(char => char.charCodeAt(0) <= 127 && char.charCodeAt(0) >= 32 ? char : '')
+                //     .join('');
+                //     console.log("this is junk",this.dar);
+                //     this.MatchCommnets.push({
+                //       comment:data["Match Talk"][j].Comment[Cdata].data
+                //     });
+                //   }
+                // }
             }
             for (var j = 0; j < data["Line Ups"].length; j++) {
                 _this.JoineeTeamId = data["Line Ups"][j].teamid;
@@ -13016,7 +13029,7 @@ var PostService = /** @class */ (function () {
         this.paramIdObj = {
             eventid: id
         };
-        return this.http.post('https://test.sportsocial.in/web/webmatchinfo', this.paramIdObj);
+        return this.http.post('https://test.sportsocial.in/web/webmatchinfoV1', this.paramIdObj);
     };
     PostService.prototype.singleMatchData = function (eventid, userid, activityid, urlId, page) {
         this.singleMatchReqObj = [{

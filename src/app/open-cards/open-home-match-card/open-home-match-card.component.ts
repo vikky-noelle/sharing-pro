@@ -36,6 +36,8 @@ export class OpenHomeMatchCardComponent implements OnInit {
   team1Click;
   team2Click;
   team2Name;
+  blobResult;
+  dar=[];
 
   comment:boolean=true;
   moment:boolean=false;
@@ -288,13 +290,13 @@ export class OpenHomeMatchCardComponent implements OnInit {
           
 
           for(var j=0;j<data["Match Talk"].length;j++){
-
             var timestamp = new Date(data["Match Talk"][j].commentdatetime *1000);
             var strconvert = new String(timestamp);
             var split = strconvert.split(" ",5);
             var slicetoString = split.slice(4);
             var convertintostr = new String(slicetoString);
             var gethourMin  = convertintostr.substring(0,5);
+            
             this.MatchCommnets.push({
               eventid:data["Match Talk"][j].eventid,
               UserId:data["Match Talk"][j].UserId,
@@ -304,6 +306,23 @@ export class OpenHomeMatchCardComponent implements OnInit {
               Uniquename:data["Match Talk"][j].Uniquename,
               commentdatetime:gethourMin
             });
+
+            // for(const i in data["Match Talk"][j].Comment){ 
+            //   for(var Cdata=0;i< data["Match Talk"][j].Comment.data.length;Cdata++){
+            //     this.dar=data["Match Talk"][j].Comment.data;
+             
+            //     var junk = String.fromCharCode.apply(null, this.dar)
+            //     .split('').map(char => char.charCodeAt(0) <= 127 && char.charCodeAt(0) >= 32 ? char : '')
+            //     .join('');
+  
+            //     console.log("this is junk",this.dar);
+            //     this.MatchCommnets.push({
+            //       comment:data["Match Talk"][j].Comment[Cdata].data
+            //     });
+                
+                
+            //   }
+            // }
           }  
           
           for(var j=0;j<data["Line Ups"].length;j++){

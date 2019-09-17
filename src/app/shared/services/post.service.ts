@@ -186,7 +186,7 @@ export class PostService {
     this.paramIdObj={
       eventid:id
     }
-    return this.http.post('https://test.sportsocial.in/web/webmatchinfo',this.paramIdObj);
+    return this.http.post('https://test.sportsocial.in/web/webmatchinfoV1',this.paramIdObj);
   }
 
   singleMatchData(eventid, userid, activityid, urlId, page) {

@@ -38,6 +38,7 @@
     "@nguniversal/express-engine": "^6.1.0",
     "@nguniversal/module-map-ngfactory-loader": "^6.1.0",
     "@types/googlemaps": "^3.30.19",
+    "b64-to-blob": "^1.2.19",
     "contributor": "^0.1.25",
     "core-js": "^2.5.4",
     "http-server": "^0.11.1",
