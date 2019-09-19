@@ -5,6 +5,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { TimeService } from '../../shared/services/time.service';
 import { InteractionService } from '../../shared/services/interaction.service';
 import { Title } from '@angular/platform-browser';
+import { empty } from 'rxjs';
 
 @Component({
   selector: 'sports-social-open-home-match-card',
@@ -33,10 +34,12 @@ export class OpenHomeMatchCardComponent implements OnInit {
   startTime:string;
   show:boolean=false;
   clickTeams:boolean= false;
+  cmtImageShow:boolean= true;
   team1Click;
   team2Click;
   team2Name;
   blobResult;
+  cmtImagestrore;
   dar=[];
 
   comment:boolean=true;
@@ -58,6 +61,8 @@ export class OpenHomeMatchCardComponent implements OnInit {
   five=document.getElementsByClassName('five') as HTMLCollectionOf<HTMLElement>;
   joineechild1=document.getElementsByClassName('joineechild1') as HTMLCollectionOf<HTMLElement>;
   joineechild2=document.getElementsByClassName('joineechild2') as HTMLCollectionOf<HTMLElement>;
+
+  showCmtImage=document.getElementsByClassName('cmt-img') as HTMLCollectionOf<HTMLElement>;
   
   first(){  
     this.one[0].style.background="none";
@@ -296,12 +301,26 @@ export class OpenHomeMatchCardComponent implements OnInit {
             var slicetoString = split.slice(4);
             var convertintostr = new String(slicetoString);
             var gethourMin  = convertintostr.substring(0,5);
+
+            var commentImage = data["Match Talk"][j].commentImage;
+            
+            if(commentImage == null || commentImage == undefined){
+              // this.showCmtImage[0].style.display="none"
+              // this.cmtImageShow=false;
+              this.cmtImagestrore= " ";
+            }
+            else{
+              // this.showCmtImage[0].style.display="block"
+              // this.cmtImageShow=true;
+              this.cmtImagestrore=data["Match Talk"][j].commentImage;
+            }
             
             this.MatchCommnets.push({
               eventid:data["Match Talk"][j].eventid,
               UserId:data["Match Talk"][j].UserId,
               User_name:data["Match Talk"][j].User_name,
               Profileimage:data["Match Talk"][j].Profileimage,
+              commentImage:this.cmtImagestrore,
               Comment:data["Match Talk"][j].Comment,
               Uniquename:data["Match Talk"][j].Uniquename,
               commentdatetime:gethourMin
@@ -309,11 +328,12 @@ export class OpenHomeMatchCardComponent implements OnInit {
 
             // for(const i in data["Match Talk"][j].Comment){ 
             //   for(var Cdata=0;i< data["Match Talk"][j].Comment.data.length;Cdata++){
-            //     this.dar=data["Match Talk"][j].Comment.data;
+                // this.dar=data["Match Talk"][j].Comment.data;
              
-            //     var junk = String.fromCharCode.apply(null, this.dar)
-            //     .split('').map(char => char.charCodeAt(0) <= 127 && char.charCodeAt(0) >= 32 ? char : '')
-            //     .join('');
+                // var junk = String.fromCharCode.apply(null, this.dar)
+                // .split('').map(char => char.charCodeAt(0) <= 127 && char.charCodeAt(0) >= 32 ? char : '')
+                // .join('');
+                // console.log("junk filesss",junk);
   
             //     console.log("this is junk",this.dar);
             //     this.MatchCommnets.push({

@@ -34,36 +34,34 @@
 
 <!-- main content -->
 <div class="main-body">
-  
-<div class="outer-body">
-<div class="rightside"> 
-    <!-- <img class="spinner" src="assets/images/sports-social-loading.gif" *ngIf="Matcharr.length === 0" alt=""> -->
-    <div class="outdiv" *ngFor="let feed of Matcharr; let i=index">
-      <div class="card">
-            <div class="head">
-                <div class="gamename">
-                    <b>{{genderCheck}} {{feed.GameName}} - <span style="font-weight: lighter;font-size: 0.9em;color: #444444">{{Age}}</span></b>
-                    <p (click)="openlocality(feed.venueId, feed.Venue_Name);" style="cursor: pointer;">{{feed.Venue_Name}}</p>
-                    <br>
-                    <div class="fulllength">
-                        <h6 (click)="openlocality(feed.venueId, feed.Venue_Name);" style="cursor: pointer;">{{feed.Venue_Name | slice:0:35}}....</h6>
-                      <span class="addresstext" (click)="openlocality(feed.venueId, feed.Venue_Name);">{{feed.Venue_Name}}</span>
-                    </div>
-                </div>
-                <div class="result">
-                  <b>{{feed.result}}</b><br>
-                  <p style="color: #024771"><span style="color: #888888; font-weight: lighter;">Created By: </span>
-                    <a (click)="changeroute(feed.MatchStarterId, feed.MatchStarterName)">
-                      {{feed.MatchStarterUniqueName}}</a>
-                  </p>
-                </div> 
-            </div>
-            <div class="activitycount">
-              <div>
-                <img src="assets/images/sports-social-promote.png"><p>{{feed.PromoteCount}}</p>
-                <img src="assets/images/sports-social-watching.png"><p>{{feed.WatchCount}}</p>
+  <div class="outer-body">
+    <div class="rightside"> 
+      <div class="outdiv" *ngFor="let feed of Matcharr; let i=index">
+        <div class="card">
+          <div class="head">
+              <div class="gamename">
+                  <b>{{genderCheck}} {{feed.GameName}} - <span style="font-weight: lighter;font-size: 0.9em;color: #444444">{{Age}}</span></b>
+                  <p (click)="openlocality(feed.venueId, feed.Venue_Name);" style="cursor: pointer;">{{feed.Venue_Name}}</p>
+                  <br>
+                  <div class="fulllength">
+                      <h6 (click)="openlocality(feed.venueId, feed.Venue_Name);">{{feed.Venue_Name | slice:0:35}}....</h6>
+                    <span class="addresstext" (click)="openlocality(feed.venueId, feed.Venue_Name);">{{feed.Venue_Name}}</span>
+                  </div>
               </div>
+              <div class="result">
+                <b>{{feed.result}}</b><br>
+                <p style="color: #024771"><span style="color: #888888; font-weight: lighter;">Created By: </span>
+                  <a (click)="changeroute(feed.MatchStarterId, feed.MatchStarterName)">
+                    {{feed.MatchStarterUniqueName}}</a>
+                </p>
+              </div> 
+          </div>
+          <div class="activitycount">
+            <div>
+              <img src="assets/images/sports-social-promote.png"><p>{{feed.PromoteCount}}</p>
+              <img src="assets/images/sports-social-watching.png"><p>{{feed.WatchCount}}</p>
             </div>
+          </div>
           
             <div class="cardData">
                 <div  (click)="team1Click==0 && openprofile(feed.Team1Id, feed.Team1name); " class="cardData team1" >
@@ -115,16 +113,20 @@
                 </div>
                 <div class="message-outter">
                   <div class="message">
-                    <p>{{data.Comment |slice:0:150}}<br><b>{{data.commentdatetime}} pm</b></p>
-                  </div>
+                    <p>{{data.Comment |slice:0:150}}</p>
+                      <div class="cmt-img">
+                        <img #image src={{data.commentImage}}  (error)="image.hidden = true" [hidden]="image.hidden">
+                        <!-- <b>{{data.commentdatetime}} pm</b> -->
+                      </div>
+                   </div>
+                 </div>
                </div>
+             </div>
+              <div class="details" *ngIf="moment"> 
+                  <div class="container2" *ngFor="let data of MatchMoments">
+                    <img (click)="openpopcrousal()" src="{{data.imagepath}}" onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'">
+                  </div>
               </div>
-            </div>
-            <div class="details" *ngIf="moment"> 
-                <div class="container2" *ngFor="let data of MatchMoments">
-                  <img (click)="openpopcrousal()" src="{{data.imagepath}}" onerror="this.src='assets/images/My-iPad-Screen-Is-Broken-Heres-The-Real-Fix.-828x466.jpg'">
-                </div>
-            </div>
             <div class="details3" *ngIf="joinee"> 
               <button (click)="thirdchild1()" class="joineechild1" style="color: #024771; background-color: white; font-weight: bolder">{{feed.Team1name}}</button>
               <button (click)="thirdchild2()" class="joineechild2">{{feed.Team2name}}</button>
@@ -141,12 +143,12 @@
                       <p (click)="changeroute(data.UserId,data.User_name)">{{data.User_name}}</p>
                     </div>
                   </div>
-            </div>
-        </div>    
-    </div>            
+              </div>
+          </div>    
+       </div>            
+     </div> 
   </div> 
-</div> 
-<div class="ffooter" *ngIf=show>
-  <sports-social-backfooter></sports-social-backfooter>
-</div>
+    <div class="ffooter" *ngIf=show>
+      <sports-social-backfooter></sports-social-backfooter>
+    </div>
 </div>
