@@ -30,12 +30,13 @@ import { UserprofilePlaymatesComponent } from '../profile/userprofile/userprofil
 import { UserprofileAboutComponent } from '../profile/userprofile/userprofile-about/userprofile-about.component';
 import { LocalityComponent } from '../profile/locality/locality.component';
 import { NewshomeComponent } from '../newshome/newshome.component';
+import { TeamsComponent } from '../connect/teams/teams.component';
 
 
 const App_Route: Routes = [
     
     // {path:"firebase",component:FirebaseComponent},
-    
+    { path: 'connect', component: TeamsComponent},
     {
         path: 'team/:name',            
         component: TeamprofileComponent,

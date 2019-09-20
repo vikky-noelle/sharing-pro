@@ -1,0 +1,56 @@
+<sports-social-header></sports-social-header>
+<div class="pos-nav">
+  <sports-social-newsidenav></sports-social-newsidenav>
+</div>
+<!-- filter menu -->
+<div class="filter-menu-bg">
+  <!-- black faded background -->
+</div>
+<div class="filter-menu">
+  <h1>filters</h1>
+</div>
+<!-- <button style="float: right; margin-top: 200px; padding: 10px;" (click)="showfiltermenu();">lala</button> -->
+<div class="main-body">
+  <!-- connect header -->
+  <div class="connect-header">
+    <h1>Connect</h1>
+    <div class="circle-pfp">
+      <div>
+        <img src="assets/images/sportsociallocalitypfperror.jpg" alt="" onerror="this.src='assets/images/sportsociallocalitypfperror.jpg'">
+      </div>
+      <div style="margin-left: -4%;">
+        <img src="assets/images/sportsociallocalitypfperror.jpg" alt="" onerror="this.src='assets/images/sportsociallocalitypfperror.jpg'">
+      </div>
+      <div style="margin-left: -4%;">
+        <img src="assets/images/sportsociallocalitypfperror.jpg" alt="" onerror="this.src='assets/images/sportsociallocalitypfperror.jpg'">
+      </div>
+      <div style="margin-left: -4%;">
+        <img src="assets/images/sportsociallocalitypfperror.jpg" alt="" onerror="this.src='assets/images/sportsociallocalitypfperror.jpg'">
+      </div>
+      <p>+ 1,50,0000 sports person using our app</p>
+    </div>
+  </div>
+  <div class="card-div">
+    <div class="cards">
+        <div class="head">
+            <img src={{data.Cover_Photo}} onerror="this.src='assets/images/sportsocialteamheader.jpg'">
+            <div class="profileimg">
+              <img src={{data.Profile_Photo}} onerror="this.src='assets/images/user.png'">
+                <div class="teamname">
+                 <h4>{{data.TeamName}}</h4>
+                 <h5>@{{data.TeamUserName}}</h5>
+               </div>
+            </div>
+        </div>
+        <div class="members">
+            <h4>Members&nbsp;<b> {{data.MemberCount}}</b></h4>
+            <h4>Matches&nbsp;<b> {{data.MatchCount}}</b></h4>
+            <h5>Fans&nbsp; <b>{{data.FanCount}} </b></h5>
+        </div>
+        <div class="footer">
+          <p>{{data.TeamCategory}} {{data.GameName}} Team</p>
+          <h6>{{data.TeamCity}}</h6>
+        </div>
+    </div>
+  </div>
+</div>

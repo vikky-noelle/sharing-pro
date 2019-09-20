@@ -70,6 +70,7 @@ import { UserprofileMatchesComponent } from './profile/userprofile/userprofile-m
 import { LocalityComponent } from './profile/locality/locality.component';
 import { NewshomeComponent } from './newshome/newshome.component';
 import {TimeAgoPipe} from 'time-ago-pipe';
+import { TeamsComponent } from './connect/teams/teams.component';
 
 
 @NgModule({
@@ -97,7 +98,8 @@ import {TimeAgoPipe} from 'time-ago-pipe';
     UserprofileMatchesComponent,
     LocalityComponent,
     NewshomeComponent,
-    TimeAgoPipe
+    TimeAgoPipe,
+    TeamsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId:'sport-social'}),
