@@ -30,27 +30,50 @@
       <p>+ 1,50,0000 sports person using our app</p>
     </div>
   </div>
+  <div class="right-side-nav">
+    <ul>
+      <li>Most Popular</li>
+      <li>Playing Today</li>
+      <li>Most Popular</li>
+      <li>Most Popular</li>
+      
+    </ul>
+  </div>
+
   <div class="card-div">
     <div class="cards">
         <div class="head">
-            <img src={{data.Cover_Photo}} onerror="this.src='assets/images/sportsocialteamheader.jpg'">
+            <img src="assets/images/sportsociallocalitypfperror.jpg" onerror="this.src='assets/images/sportsocialteamheader.jpg'">
             <div class="profileimg">
-              <img src={{data.Profile_Photo}} onerror="this.src='assets/images/user.png'">
+              <img src="assets/images/sportsociallocalitypfperror.jpg" onerror="this.src='assets/images/user.png'">
                 <div class="teamname">
-                 <h4>{{data.TeamName}}</h4>
-                 <h5>@{{data.TeamUserName}}</h5>
+                 <h4>{{data.TeamName}</h4>
+                 <h5>@{{data.TeamUserName}</h5>
                </div>
             </div>
         </div>
         <div class="members">
-            <h4>Members&nbsp;<b> {{data.MemberCount}}</b></h4>
-            <h4>Matches&nbsp;<b> {{data.MatchCount}}</b></h4>
-            <h5>Fans&nbsp; <b>{{data.FanCount}} </b></h5>
+          <div>
+            <h4>Fans</h4>
+            <p>10</p>
+          </div>
+          <div>
+            <h4>Followers</h4>
+            <p>10</p>
+          </div>    
+        </div>
+        <div class="interest">
+          <h1>Sports Interest</h1>
+          <div>
+            <h2>interest</h2>
+          </div>
         </div>
         <div class="footer">
-          <p>{{data.TeamCategory}} {{data.GameName}} Team</p>
-          <h6>{{data.TeamCity}}</h6>
+          <h6>View Profile</h6>
         </div>
     </div>
+    <div class="more-cards">
+      <h1>+15 More.</h1>
+  </div>
   </div>
 </div>

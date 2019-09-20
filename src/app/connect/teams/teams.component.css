@@ -84,27 +84,32 @@
 /* cards */
 .card-div{
     position: relative;
-    width: 100%;
-    /* height: 50vh; */
+    width: 80%;
+    height: auto;
+    min-height: 50vh;
     /* background-color: aquamarine; */
 }
 .cards{
-    display: inline-block;
+    float: left;
+    /* display: inline-block; */
     margin:3% 8% 2% 8%;
     border-radius: 5px;
     /* border-top-left-radius: 5%;
     border-top-right-radius: 5%; */
     position: relative;
     border: 1px solid #ababab;
-    width: 32%;
-    height: 350px;
+    width: 30%;
+    min-height: 310px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 .cards:hover{
-    height: 370px;
+    height: 350px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.cards:hover .footer{
+    display: block;
+  }
 .head{
     width: 100%;
     height: 150px;
@@ -135,7 +140,9 @@
     right: 0% !important;
     height: 40px;
     bottom: 0%;
-    position: absolute;
+    padding: 10px;
+    margin-top: 5px;
+    /* position: absolute; */
     /* float: right; */
 }
 .teamname>h4{
@@ -148,57 +155,64 @@
   color: #ababab;
 }
 .members{
-    /* border: 1px solid red; */
-    width: 90%;
-    margin: 3% 5% 0% 5%;
+    width: 50%;
     height: 60px;
+    padding-right: 10px;
     position: absolute;
-    
+    top: 100px;
+    right: 0;
 }
-
-.members>h4,h5{
+.members>div{
+    margin-top: 10px;
+    float: left;
+    width: 50%;
+    line-height: 1.4;
+}
+.members>div>p{
+    margin-left: 5%;
+}
+.members>div>h4{
     font-family: 'Times New Roman', Times, serif;
     display: inline-flex;
     color: #ababab;
     padding: 2%;
 }
-.members>h4>b{
-    margin-left: 3%;
-    margin-top: -4%;
-    color: black;
-    font-size: 1.5em !important;
+.interest{
+    position: relative;
+    margin-top: 60px;
 }
-.members>h5>b{
-    margin-left: 3%;
-    margin-top: -6%;
-    color: black;
-    font-size: 1.5em !important;
+.interest>h1{
+    padding: 10px;
+    font-size: 1.1em;
+    color: #222222;
+    font-weight: 400;
 }
-.members>h4{
-    margin-left: 7%;
-    font-size: .9em;
+.interest>div{
     float: left;
+    margin-left: 10px;
+    border-radius: 15px;
+    border: 2px solid #666666;
 }
-.members>h5{
-    font-size: .9em;
-    float: right;
+.interest>div>h2{
+    font-size: 0.9em;
+    padding: 5px;
+    color: #666666;
 }
 .backfooter{
     width: 75%;
     float: right;
 }
 .footer{
+    display: none;
     position: absolute;
-    width: 100%;
+    width: 70%;
+    margin-left: 15%;
     height: 50px;
-    background-color: #ebe8e8;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-    margin: 0%;
-    bottom: 2%;
+    bottom: 0;
+    border-top: 2px solid #888888;
 }
-.footer>p,h6{
-    margin: 1.5% 0% 1% 0%;
+.footer>h6{
+    padding: 15px;
     text-align: center;
 }
 .footer>p{
@@ -211,4 +225,53 @@
     font-size: .9em;
     color: grey;
     font-family:'Roboto',sans-serif;
+}
+
+/* more card */
+.more-cards{
+    float: left;
+    /* display: inline-block; */
+    margin:3% 8% 2% 8%;
+    border-radius: 5px;
+    /* border-top-left-radius: 5%;
+    border-top-right-radius: 5%; */
+    position: relative;
+    border: 2px solid #024771;
+    width: 30%;
+    min-height: 310px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+.more-cards h1{
+    margin-top: 150px;
+    color: #024771;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+/* right side nav */
+.right-side-nav{
+    border-radius: 5px;
+    position: fixed;
+    height: 50vh;
+    width: 20%;
+    right: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+ul{
+    list-style: none;
+}
+.right-side-nav>ul{
+    margin-top: 15px;
+}
+.right-side-nav>ul>li{
+    height: auto;
+    padding: 10px;
+    margin-right: 3%;
+    font-size: 1.6em;
+    font-weight: 400;
+    width: 82%;
+    float: right;
+    color: #024771;
+    border-right: 6px solid #024771;
 }
