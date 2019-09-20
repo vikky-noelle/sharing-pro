@@ -29,6 +29,7 @@
     font-size: 3em;
   }
   .content > p {
+    display: table;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     text-align: left;

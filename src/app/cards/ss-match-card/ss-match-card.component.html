@@ -41,7 +41,7 @@
         </div> -->
         
         <div class="eventtext" (click)="openmatchcard(gamename, eventid,bothteam)">
-                <p>{{EventText|slice:0:100}}...</p>
+                <p>{{textResult|slice:0:100}}</p>
             </div>
         <div (click)="openpopup()" class="footer">
               <button class="playButton"><span *ngIf="JoineeCount">{{JoineeCount}}</span> Joinee</button>

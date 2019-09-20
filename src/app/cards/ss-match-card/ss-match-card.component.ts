@@ -43,8 +43,15 @@ export class SsMatchCardComponent implements OnInit {
   @Input() bothteam:string;
 
   constructor(private router:Router) { }
+  textResult;
 
   ngOnInit() {
+    if(this.EventText== null){
+      this.textResult= " ";
+    }
+    else{
+      this.textResult= this.EventText;
+    }
   }
   openmatchcard(gamename, eventid, teams){
     console.log(teams);

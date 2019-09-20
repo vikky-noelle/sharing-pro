@@ -70,6 +70,8 @@ import { UserprofileMatchesComponent } from './profile/userprofile/userprofile-m
 import { LocalityComponent } from './profile/locality/locality.component';
 import { NewshomeComponent } from './newshome/newshome.component';
 import {TimeAgoPipe} from 'time-ago-pipe';
+import {ReplacecharPipe} from './teamview/replacechar.pipe';
+import {Nl2BrPipeModule} from 'nl2br-pipe';
 
 
 @NgModule({
@@ -97,7 +99,8 @@ import {TimeAgoPipe} from 'time-ago-pipe';
     UserprofileMatchesComponent,
     LocalityComponent,
     NewshomeComponent,
-    TimeAgoPipe
+    TimeAgoPipe,
+    ReplacecharPipe
   ],
   imports: [
     BrowserModule.withServerTransition({appId:'sport-social'}),
@@ -127,7 +130,8 @@ import {TimeAgoPipe} from 'time-ago-pipe';
     BackfooterModule,
     SsMatchCardModule,
     NewHeaderModule,
-    OpenHomeMatchCardModule
+    OpenHomeMatchCardModule,
+    Nl2BrPipeModule
   ],
   providers: [
     PropertyService,
