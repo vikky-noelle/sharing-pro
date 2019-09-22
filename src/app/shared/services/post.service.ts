@@ -3,7 +3,14 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class PostService {
-
+  
+  connectObj = {
+      sportCode: Number,
+      sport: String,
+      ageCode: Number,
+      ageBracket: Number,
+      genderBracket: String
+  }
   userprofilefollowerObj=[{
     userid:Number,
     profileid:Number,
@@ -346,5 +353,20 @@ export class PostService {
       timestamp:timestamp
     }]
     return this.http.post('https://test.sportsocial.in/poc/getFanFollowing',this.userprofilefollowerObj);
+  }
+
+  getconnectteamsfilter(sportCode,sport,ageCode,ageBracket,genderBracket){
+    this.connectObj ={
+     sportCode: sportCode,
+     sport: sport,
+     ageCode: ageCode,
+     ageBracket: ageBracket,
+     genderBracket 
+    }
+    return this.http.post('https://test.sportsocial.in/web/WebConnectFilter',this.connectObj);
+ 
+  }
+  getconnectteams(){
+    return this.http.post('https://test.sportsocial.in/web/WebConnect', {});
   }
 }

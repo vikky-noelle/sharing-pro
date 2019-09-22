@@ -89,18 +89,6 @@
     min-height: 50vh;
     /* background-color: aquamarine; */
 }
-.roll{
-    float:left;
-    height: 310px;
-    width: 30%;
-    background-color: red;
-    border: 2px solid black;
-    margin:3% 8% 2% 8%;
-    position: relative;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
 .cards{
     float: left;
     /* display: inline-block; */
