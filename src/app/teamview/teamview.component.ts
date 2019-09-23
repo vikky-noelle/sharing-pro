@@ -14,6 +14,7 @@ export class TeamviewComponent implements OnInit {
   description="To easily manage, find the new matches, new opponents around you just create a new team or join a team nearby";
   service = [];
   tvdata = [];
+  desc;
   mview: Number;
   constructor(private post:PostService,
     private titleservice:Title,
@@ -36,6 +37,17 @@ export class TeamviewComponent implements OnInit {
       this.mview = 1;
     }
   }
+
+  //  getUrlVars() {
+  //   var url = window.location.href,
+  //       vars = {};
+  //   url.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
+  //        key = decodeURIComponent(key);
+  //        value = decodeURIComponent(value);
+  //        vars[key] = value;
+  //   });
+  //   return vars;
+  // }
   // anchor scroll
   scrollToElement($element): void {
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
@@ -47,8 +59,8 @@ export class TeamviewComponent implements OnInit {
       (response) => {
         
       for(const i in response){
-        // var desc=response[i].shortDesc.split("$");
-        // console.log("hshssh",desc);
+        this.desc =response[i].shortDesc.split('"$"');
+       
         this.tvdata.push({
           id:response[i].id,
           name:response[i].name,
