@@ -3,7 +3,7 @@
   <sports-social-newsidenav></sports-social-newsidenav>
 </div>
 <!-- filter menu -->
-<div class="filter-menu-bg">
+<div class="filter-menu-bg" onmouseover="document.body.style.overflow='hidden';"  onmouseout="document.body.style.overflow='auto';">
   <!-- black faded background -->
 </div>
 <div class="filter-menu">
@@ -18,7 +18,18 @@
       <li>Gender</li>
     </ul>
   </div>
-  <div class="right-side"></div>
+  <div class="right-side">
+    <ul>
+      <li *ngFor="let data of sportlist">
+        {{data.title}}    
+        <input name="{{data.title}}" type="checkbox">
+      </li>
+    </ul>
+  </div>
+  <div class="apply-filter">
+    <button>Clear All</button>
+    <button style="color: #024771">Apply</button>
+  </div>
 </div>
 <!-- <button style="float: right; margin-top: 200px; padding: 10px;" (click)="showfiltermenu();">lala</button> -->
 <div class="main-body">

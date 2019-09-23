@@ -44,14 +44,15 @@
     position: relative;
     float: left;
     width: 40%;
-    height: 100vh;
+    height: 70vh;
     background-color: #e0e0e0;
 }
 .filter-menu>.right-side{
     position: relative;
     float: left;
     width: 60%;
-    height: 100vh;
+    height: 70vh;
+    overflow-y: scroll;
     background-color: white;
 }
 .left-side>ul>li{
@@ -60,7 +61,33 @@
     padding-top: 15px;
     padding-bottom: 15px;
 }
-
+.right-side>ul>li{
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.right-side>ul>li>input{
+    float: right;
+    margin-right: 5%;
+}
+.apply-filter{
+    width: 100%;
+    margin-top: 70vh;
+    position: relative;
+    height: 10vh;
+}
+.apply-filter>button{
+    float: left;
+    border: none;
+    width: 48%;
+    margin-left: 1.5%;
+    height: 9vh;
+    font-size: 1.2em;
+    margin-top: 1vh;
+    /* padding: 5px; */
+}
 /* main body */
 .main-body{
     position: relative;
