@@ -36,7 +36,7 @@ import { TeamsComponent } from '../connect/teams/teams.component';
 const App_Route: Routes = [
     
     // {path:"firebase",component:FirebaseComponent},
-    { path: 'connect', component: TeamsComponent},
+    { path: 'connect/teams/:filter', component: TeamsComponent},
     {
         path: 'team/:name',            
         component: TeamprofileComponent,

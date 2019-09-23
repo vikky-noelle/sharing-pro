@@ -7,7 +7,18 @@
   <!-- black faded background -->
 </div>
 <div class="filter-menu">
-  <h1>filters</h1>
+  <div class="filter-header">
+    <div (click)="close();" class="close">+</div>
+    <h1>Filter</h1>
+  </div>
+  <div class="left-side">
+    <ul>
+      <li style="background-color: white;">Sports</li>
+      <li>Age</li>
+      <li>Gender</li>
+    </ul>
+  </div>
+  <div class="right-side"></div>
 </div>
 <!-- <button style="float: right; margin-top: 200px; padding: 10px;" (click)="showfiltermenu();">lala</button> -->
 <div class="main-body">
@@ -32,8 +43,8 @@
   </div>
   <div class="right-side-nav">
     <ul>
-      <li>Most Popular</li>
-      <li>Playing Today</li>
+      <li (click)="initdata()" routerLink="/connect/teams/Most_Popular" routerLinkActive="active">Most Popular</li>
+      <li (click)="initdata()" routerLink="/connect/teams/Playing_Today" routerLinkActive="active">Playing Today</li>
       <li>Most Popular</li>
       <li>Most Popular</li>
       
