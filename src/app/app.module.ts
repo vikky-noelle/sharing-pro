@@ -71,6 +71,8 @@ import { LocalityComponent } from './profile/locality/locality.component';
 import { NewshomeComponent } from './newshome/newshome.component';
 import {TimeAgoPipe} from 'time-ago-pipe';
 import { TeamsComponent } from './connect/teams/teams.component';
+import {ReplacecharPipe} from './teamview/replacechar.pipe';
+import {Nl2BrPipeModule} from 'nl2br-pipe';
 
 
 @NgModule({
@@ -99,7 +101,8 @@ import { TeamsComponent } from './connect/teams/teams.component';
     LocalityComponent,
     NewshomeComponent,
     TimeAgoPipe,
-    TeamsComponent
+    TeamsComponent,
+    ReplacecharPipe
   ],
   imports: [
     BrowserModule.withServerTransition({appId:'sport-social'}),
@@ -129,7 +132,8 @@ import { TeamsComponent } from './connect/teams/teams.component';
     BackfooterModule,
     SsMatchCardModule,
     NewHeaderModule,
-    OpenHomeMatchCardModule
+    OpenHomeMatchCardModule,
+    Nl2BrPipeModule
   ],
   providers: [
     PropertyService,

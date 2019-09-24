@@ -76,7 +76,7 @@ showw() {
       for (const i in body) {
         var temp, status = true, temp1 = "";
         temp = body[i].ques;
-        console.log(temp.length);
+        console.log(temp);
         for(var j = 0; j<body[i].ques.length;j++){
           if(temp[j] === "<"){
             status = false;

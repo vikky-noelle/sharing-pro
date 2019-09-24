@@ -86,7 +86,7 @@ const App_Route: Routes = [
     {path:"addtopic",component:AddTopicComponent},
     {path:"HelpCenter",component:HelpCenterComponent},
     {path:"Helpcenter/:topicname",component:HelpCenterComponent},
-    {path: "teamprofile",component:TeamviewComponent},
+    {path: "Create and Manage your Sports Team",component:TeamviewComponent},
     // {path: 'teamprofile', component:TeamprofileComponent},
     {path: "localityprofile", component:LocalitypageComponent},
     {path: 'news', component:NewshomeComponent},
