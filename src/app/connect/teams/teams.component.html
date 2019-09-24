@@ -22,13 +22,13 @@
     <ul>
       <li *ngFor="let data of sportlist">
         {{data.title}}    
-        <input name="{{data.title}}" type="checkbox">
+        <input class="input-chkbox" (click)="checkbox(data.title);" [(ngModel)]="data.status" name="{{data.title}}" type="checkbox">
       </li>
     </ul>
   </div>
   <div class="apply-filter">
-    <button>Clear All</button>
-    <button style="color: #024771">Apply</button>
+    <button (click)="clearfilter()">Clear All</button>
+    <button (click)="applyfilter()" style="color: #024771">Apply</button>
   </div>
 </div>
 <!-- <button style="float: right; margin-top: 200px; padding: 10px;" (click)="showfiltermenu();">lala</button> -->
