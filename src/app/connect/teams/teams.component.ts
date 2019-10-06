@@ -11,6 +11,21 @@ export class TeamsComponent implements OnInit {
   
   arraypool; //this is used to store all the data from the api in connect for filters
   team = [];
+  gifstatus=false;
+  menulist=[];
+  Age=[
+    {id:13, title: "Under 13", status: false},
+    {id:15, title: "Under 15", status: false},
+    {id:17, title: "Under 17", status: false},
+    {id:19, title: "Under 19", status: false},
+    {id:21, title: "Under 21", status: false},
+    {id:23, title: "Under 23", status: false}
+  ];
+  Gender=[
+    {id:1, title: "Male", status: false},
+    {id:2, title: "Female", status: false},
+    {id:3, title: "All", status: false}
+  ];
   sportlist=[
     {id: 1, title: "Aerobics", status:false},                 
     {id: 3, title: "Archery", status:false},                  
@@ -65,6 +80,9 @@ export class TeamsComponent implements OnInit {
   filtermenubg = document.getElementsByClassName("filter-menu-bg") as HTMLCollectionOf<HTMLElement>;
   filtermenu = document.getElementsByClassName("filter-menu") as HTMLCollectionOf<HTMLElement>;
   clear = document.getElementsByClassName("input-chkbox") as HTMLCollectionOf<HTMLElement>;
+  sport = document.getElementsByClassName("sport") as HTMLCollectionOf<HTMLElement>;
+  age = document.getElementsByClassName("age") as HTMLCollectionOf<HTMLElement>;
+  gender = document.getElementsByClassName("gender") as HTMLCollectionOf<HTMLElement>;
  
   constructor(
     private postservice: PostService,
@@ -72,22 +90,99 @@ export class TeamsComponent implements OnInit {
   ) { }
   ngOnInit() {
     this.getconnectteams();
+    this.menulist=this.sportlist;
   }
-  getconnectteamsfilter(){
-    this.postservice.getconnectteamsfilter(0, "Basketball", 0, 90, "ALL").subscribe(res=>{
-      console.log(res);
-      for(const i in res){
-        this.team.push({
-          username: res[i].UserName,
-          uniquename: res[i].Uniquename,
-          pfp: res[i].ProfilePhoto,
-          sportsinterest: res[i].SportsInterest,
-          userid: res[i].UserId,
-          bg: null
+  // function to change filter menu
+  one(){
+    this.menulist=this.sportlist;
+    this.sport[0].style.backgroundColor="white";
+    this.age[0].style.backgroundColor="#e0e0e0";
+    this.gender[0].style.backgroundColor="#e0e0e0";
+  }
+  two(){
+    this.menulist=this.Age;
+    this.sport[0].style.backgroundColor="#e0e0e0";
+    this.age[0].style.backgroundColor="white";
+    this.gender[0].style.backgroundColor="#e0e0e0";
+  }
+  three(){
+    this.menulist=this.Gender;
+    this.sport[0].style.backgroundColor="#e0e0e0";
+    this.age[0].style.backgroundColor="#e0e0e0";
+    this.gender[0].style.backgroundColor="white";
+  
+  }
+    // applying filter
+  applyfilter(){
+    this.gifstatus=true;
+    this.team=[];
+    var clearstatus=true, sportname = null, agestatus=0, age=22, genderstatus;
+    for(var i=0; i<this.sportlist.length; i++){
+        if(this.sportlist[i].status == true){
+          clearstatus=false;
+          sportname = this.sportlist[i].title;    
+        }
+      }
+    if(!clearstatus){
+      for(var j=0; j<this.sportlist.length; j++){
+        // filter service
+        for(var k=0; k<this.Age.length;k++){
+          if(this.Age[k].status == true){
+            agestatus = 1;
+            age = this.Age[k].id;
+          }
+        }
+        for(var k=0; k<this.Gender.length;k++){
+          if(this.Gender[k].status == true){
+            genderstatus = this.Gender[k].title;
+          }
+        }
+        this.postservice.getconnectteamsfilter(1, this.sportlist[j].title, agestatus, age, genderstatus).subscribe(res=>{
+          console.log(res);
+          for(const i in res){
+            this.team.push({
+              username: res[i].UserName,
+              uniquename: res[i].Uniquename,
+              pfp: res[i].ProfilePhoto,
+              sportsinterest: res[i].SportsInterest,
+              userid: res[i].UserId,
+              bg: null
+            });
+          }  
+          this.gifstatus=false;
+          console.log(this.team);
         });
       }
-      console.log(this.team);
-    });
+    }
+    else{
+      for(var j=0; j<this.sportlist.length; j++){
+        // filter service
+
+        // for all age
+        if(this.sportlist[j].status == true){
+
+          this.postservice.getconnectteamsfilter(0, this.sportlist[j].title, 0, 90, "ALL").subscribe(res=>{
+            console.log(res);
+            for(const i in res){
+              this.team.push({
+                username: res[i].UserName,
+                uniquename: res[i].Uniquename,
+                pfp: res[i].ProfilePhoto,
+                sportsinterest: res[i].SportsInterest,
+                userid: res[i].UserId,
+                bg: null
+              });
+            }  
+            this.gifstatus=false;
+            console.log(this.team);
+          });
+        }
+      }
+    }
+    // if(this.team.length == 0){
+    //   this.gifstatus = false;
+    // }
+    this.close();
   }
   getconnectteams(){
     this.postservice.getconnectteams().subscribe(res=>{
@@ -139,20 +234,42 @@ export class TeamsComponent implements OnInit {
     console.log("chck working");
     for(var i=0; i<this.sportlist.length; i++){
       if(string == this.sportlist[i].title){
-        if(this.sportlist[i].status == false){
-          this.sportlist[i].status = true;
-        }
-        else{
-          this.sportlist[i].status = false;
-        }
+       this.sportlist[i].status=true;
+      }
+      else{
+        this.sportlist[i].status=false;
       }
     }
+    for(var i=0; i<this.Age.length; i++){
+      if(string == this.Age[i].title){
+       this.Age[i].status=true;
+      }
+      else{
+        this.Age[i].status=false;
+      }
+    }
+    for(var i=0; i<this.Gender.length; i++){
+      if(string == this.Gender[i].title){
+       this.Gender[i].status=true;
+      }
+      else{
+        this.Gender[i].status=false;
+      }
+    }
+
+    // this.getconnectteams();
     // console.log(this.sportlist);
   }
   // clearing chkbox
   clearfilter(){
     for(var i=0; i<this.sportlist.length; i++){
-      
+      this.sportlist[i].status=false;
+    }
+    for(var i=0; i<this.Age.length; i++){
+      this.Age[i].status=false;
+    }
+    for(var i=0; i<this.Gender.length; i++){
+      this.Gender[i].status=false;
     }
   }
 }

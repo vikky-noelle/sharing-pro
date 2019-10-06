@@ -6,6 +6,7 @@
 <div class="filter-menu-bg" onmouseover="document.body.style.overflow='hidden';"  onmouseout="document.body.style.overflow='auto';">
   <!-- black faded background -->
 </div>
+<img *ngIf="gifstatus" class="gif" src="assets/images/sportsocialloading.gif" alt="">
 <div class="filter-menu">
   <div class="filter-header">
     <div (click)="close();" class="close">+</div>
@@ -13,14 +14,14 @@
   </div>
   <div class="left-side">
     <ul>
-      <li style="background-color: white;">Sports</li>
-      <li>Age</li>
-      <li>Gender</li>
+      <li (click)="one();" class="sport" style="background-color: white;">Sports</li>
+      <li (click)="two();" class="age">Age</li>
+      <li (click)="three();" class="gender">Gender</li>
     </ul>
   </div>
   <div class="right-side">
     <ul>
-      <li *ngFor="let data of sportlist">
+      <li *ngFor="let data of menulist">
         {{data.title}}    
         <input class="input-chkbox" (click)="checkbox(data.title);" [(ngModel)]="data.status" name="{{data.title}}" type="checkbox">
       </li>
@@ -57,7 +58,7 @@
       <li (click)="initdata()" routerLink="/connect/teams/Most_Popular" routerLinkActive="active">Most Popular</li>
       <li (click)="initdata()" routerLink="/connect/teams/Playing_Today" routerLinkActive="active">Playing Today</li>
       <li>Most Popular</li>
-      <li>Most Popular</li>
+      <li style="margin-top: 25px; border-radius: 10px; width: auto; float: left; margin-left: 31%;font-size: 1em;background-color: #696969; color: white;" (click)="showfiltermenu();">More filters&nbsp;+</li>
       
     </ul>
   </div>
