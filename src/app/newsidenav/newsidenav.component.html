@@ -77,6 +77,26 @@
      <li>Badminton</li>  
     </a>
   </ul>
+
+  <li (click)="openconnect()"    
+    class="connect" routerLinkActive="active">
+  <a class="connect-one">
+    Connect </a> <img class="arrowicon-connect" src="/assets/images/sportsocialarrowhome.png" alt="">  
+  </li>
+    <ul class="connectopen">
+    <a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="Active" routerLink="/connect/users/Most_Popular">
+      <li class="connectul">Users</li>
+    </a>
+    <a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="Active" routerLink="/connect/teams/Most_Popular">
+      <li class="connectul">Teams</li>
+    </a>
+    <a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="Active" routerLink="/connect/locality/Most_Popular">
+      <li class="connectul">Locality</li>
+    </a>
+    <!-- <a (click)="routechange('cricket')" routerLinkActive="Active" routerLink="/news/cricket">
+      <li>Cricket</li>
+    </a> -->
+  </ul>
 </ul>
 
 <!-- 

@@ -1,4 +1,6 @@
+import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { PostService } from '../../shared/services/post.service';
 
 @Component({
   selector: 'sports-social-locality',
@@ -7,16 +9,49 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocalityComponent implements OnInit {
 
-  filtermenubg = document.getElementsByClassName("filter-menu-bg") as HTMLCollectionOf<HTMLElement>;
-  filtermenu = document.getElementsByClassName("filter-menu") as HTMLCollectionOf<HTMLElement>;
+  arraypool;
+  locality=[];
  
-  constructor() { }
+  constructor(
+    private postservice: PostService,
+    private route: ActivatedRoute
+  ) { }
 
   ngOnInit() {
+    this.getconnectlocality();
   }
-  showfiltermenu(){
+  getconnectlocality(){
+    this.postservice.getconnectteams().subscribe(res=>{
+      console.log(res["PopularOnSportsSocial"]);
+      this.arraypool = res;
+      this.initdata();
+    });
+  }
+  initdata(){
+    this.locality = [];
     console.log("working");
-    this.filtermenubg[0].style.display="block";
-    this.filtermenu[0].style.right="0";
+    var url;
+    this.route.params.subscribe(params=>{
+      url = params['filter'];
+    });
+    console.log(url);
+    if(url == "Most_Popular"){
+      url = "PopularOnSportsSocial";
+      console.log("incorrect output");
+    }
+    for(const i in this.arraypool[url]){
+      this.locality.push({
+        username: this.arraypool[url][i].UserName,
+        uniquename: this.arraypool[url][i].Uniquename,
+        pfp: this.arraypool[url][i].ProfilePhoto,
+        sportsinterest: this.arraypool[url][i].SportsInterest,
+        userid: this.arraypool[url][i].UserId,
+        bg: null
+      });
+      if(+i==5){
+        break;
+      }
+    }
+    console.log(this.locality);
   }
 }

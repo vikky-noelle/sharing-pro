@@ -73,6 +73,7 @@ import {TimeAgoPipe} from 'time-ago-pipe';
 import { TeamsComponent } from './connect/teams/teams.component';
 import {ReplacecharPipe} from './teamview/replacechar.pipe';
 import {Nl2BrPipeModule} from 'nl2br-pipe';
+import { UsersComponent } from './connect/users/users.component';
 
 
 @NgModule({
@@ -102,7 +103,8 @@ import {Nl2BrPipeModule} from 'nl2br-pipe';
     NewshomeComponent,
     TimeAgoPipe,
     TeamsComponent,
-    ReplacecharPipe
+    ReplacecharPipe,
+    UsersComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId:'sport-social'}),

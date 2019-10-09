@@ -2,14 +2,7 @@
 <div class="pos-nav">
   <sports-social-newsidenav></sports-social-newsidenav>
 </div>
-<!-- filter menu -->
-<div class="filter-menu-bg">
-  <!-- black faded background -->
-</div>
-<div class="filter-menu">
-  <h1>filters</h1>
-</div>
-<!-- <button style="float: right; margin-top: 200px; padding: 10px;" (click)="showfiltermenu();">lala</button> -->
+
 <div class="main-body">
   <!-- connect header -->
   <div class="connect-header">
@@ -32,20 +25,20 @@
   </div>
   <div class="right-side-nav">
     <ul>
+      <li (click)="initdata()" routerLink="/connect/teams/Most_Popular" routerLinkActive="active">Most Popular</li>
+      <li (click)="initdata()" routerLink="/connect/teams/Playing_Today" routerLinkActive="active">Playing Today</li>
       <li>Most Popular</li>
-      <li>Playing Today</li>
-      <li>Most Popular</li>
-      <li>Most Popular</li>
+      <!-- <li style="margin-top: 25px; border-radius: 10px; width: auto; float: left; margin-left: 31%;font-size: 1em;background-color: #696969; color: white;" (click)="showfiltermenu();">More filters&nbsp;+</li> -->
       
     </ul>
   </div>
 
   <div class="card-div">
-    <div class="cards">
+    <!-- <div class="roll" *ngFor="let data of team">
         <div class="head">
             <img src="assets/images/sportsociallocalitypfperror.jpg" onerror="this.src='assets/images/sportsocialteamheader.jpg'">
             <div class="profileimg">
-              <img src="assets/images/sportsociallocalitypfperror.jpg" onerror="this.src='assets/images/user.png'">
+              <img src="{{data.pfp}}" onerror="this.src='assets/images/user.png'">
                 <div class="teamname">
                  <h4>{{data.TeamName}</h4>
                  <h5>@{{data.TeamUserName}</h5>
@@ -71,8 +64,39 @@
         <div class="footer">
           <h6>View Profile</h6>
         </div>
-    </div>
-    <div class="more-cards">
+    </div> -->
+    <div class="cards" *ngFor="let data of locality">
+        <div class="head">
+            <img src="assets/images/sportsociallocalitypfperror.jpg" onerror="this.src='assets/images/sportsocialteamheader.jpg'">
+            <div class="profileimg">
+              <img src="{{data.pfp}}" onerror="this.src='assets/images/user.png'">
+                <div class="teamname">
+                 <h4>{{data.TeamName}</h4>
+                 <h5>@{{data.TeamUserName}</h5>
+               </div>
+            </div>
+        </div>
+        <div class="members">
+          <div>
+            <h4>Fans</h4>
+            <p>10</p>
+          </div>
+          <div>
+            <h4>Followers</h4>
+            <p>10</p>
+          </div>    
+        </div>
+        <div class="interest">
+          <h1>Sports Interest</h1>
+          <div>
+            <h2>interest</h2>
+          </div>
+        </div>
+        <div class="footer">
+          <h6>View Profile</h6>
+        </div>
+    </div> 
+     <div class="more-cards">
       <h1>+15 More.</h1>
   </div>
   </div>

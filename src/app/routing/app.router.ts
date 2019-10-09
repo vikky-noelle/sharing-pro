@@ -1,5 +1,4 @@
 
-
 import { TeamprofileAboutComponent } from '../profile/teamprofile/teamprofile-about/teamprofile-about.component';
 import { TeamprofileComponent } from '../profile/teamprofile/teamprofile.component';
 import { LocalitypageComponent } from './../localitypage/localitypage.component';
@@ -31,12 +30,17 @@ import { UserprofileAboutComponent } from '../profile/userprofile/userprofile-ab
 import { LocalityComponent } from '../profile/locality/locality.component';
 import { NewshomeComponent } from '../newshome/newshome.component';
 import { TeamsComponent } from '../connect/teams/teams.component';
+import { UsersComponent } from '../connect/users/users.component';
+import { LocalityComponent as oldcomponent } from './../connect/locality/locality.component';
+
 
 
 const App_Route: Routes = [
     
     // {path:"firebase",component:FirebaseComponent},
     { path: 'connect/teams/:filter', component: TeamsComponent},
+    { path: 'connect/users/:filter', component: UsersComponent},
+    // { path: 'connect/locality/:filter', component: oldcomponent },
     {
         path: 'team/:name',            
         component: TeamprofileComponent,

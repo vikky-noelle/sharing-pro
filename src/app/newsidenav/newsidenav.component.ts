@@ -14,17 +14,23 @@ export class NewsidenavComponent implements OnInit {
   @Input() clurl: NewspageComponent;
   l1=0;
   l2=0;
+  l3=0;
   list1=['cricket', 'football', 'basketball', 'volleyball', 'tennis', 'table tennis', 'hockey', 'badminton'];
   list2=['cricket', 'football', 'basketball', 'volleyball', 'tennis', 'table tennis', 'hockey', 'badminton'];
   
   newsone=document.getElementsByClassName('newsone') as HTMLCollectionOf<HTMLElement>;
   newsonea=document.getElementsByClassName('newsonea') as HTMLCollectionOf<HTMLElement>;
+  connect=document.getElementsByClassName('connect') as HTMLCollectionOf<HTMLElement>;
+  connectone=document.getElementsByClassName('connect-one') as HTMLCollectionOf<HTMLElement>;
+
   openarena=document.getElementsByClassName('openarena') as HTMLCollectionOf<HTMLElement>;
   openarena1=document.getElementsByClassName('openarena1') as HTMLCollectionOf<HTMLElement>;
   arrowicon=document.getElementsByClassName('arrowicon') as HTMLCollectionOf<HTMLElement>;
+  arrowiconconnect=document.getElementsByClassName('arrowicon-connect') as HTMLCollectionOf<HTMLElement>;
   arrowiconn=document.getElementsByClassName('arrowiconn') as HTMLCollectionOf<HTMLElement>;
   openmenu=document.getElementsByClassName('openarenaopen') as HTMLCollectionOf<HTMLElement>;
   openmenu1=document.getElementsByClassName('newsopen') as HTMLCollectionOf<HTMLElement>;
+  openmenu2=document.getElementsByClassName('connectopen') as HTMLCollectionOf<HTMLElement>;
 
   openarenalist=[
     {link: '', name: 'Open Arena'},
@@ -88,6 +94,25 @@ export class NewsidenavComponent implements OnInit {
       this.arrowicon[0].style.transform="rotate(0deg)";
       this.l2=0;
       this.openmenu1[0].style.display="none";
+    }
+  }
+  // open connect menu
+  openconnect(){
+    if(this.l3===0){
+      this.l3=1;
+      this.arrowiconconnect[0].style.transform="rotate(90deg)";
+      this.openmenu2[0].style.display="block";
+      this.arrowiconn[0].style.transform="rotate(0deg)";
+      this.arrowicon[0].style.transform="rotate(0deg)";
+      this.l1=0;
+      this.l2=0;
+      this.openmenu[0].style.display="none";
+      this.openmenu1[0].style.display="none";
+    }
+    else{
+      this.arrowiconconnect[0].style.transform="rotate(0deg)";
+      this.l3=0;
+      this.openmenu2[0].style.display="none";
     }
   }
   ngOnInit() {

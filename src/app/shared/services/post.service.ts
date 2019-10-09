@@ -355,7 +355,7 @@ export class PostService {
     return this.http.post('https://test.sportsocial.in/poc/getFanFollowing',this.userprofilefollowerObj);
   }
 
-  getconnectteamsfilter(sportCode,sport,ageCode,ageBracket,genderBracket){
+  getconnectusersfilter(sportCode,sport,ageCode,ageBracket,genderBracket){
     this.connectObj ={
      sportCode: sportCode,
      sport: sport,
@@ -366,7 +366,16 @@ export class PostService {
     return this.http.post('https://test.sportsocial.in/web/WebConnectFilter',this.connectObj);
  
   }
-  getconnectteams(){
+  
+  getconnectusers(){
     return this.http.post('https://test.sportsocial.in/web/WebConnect', {});
+  }
+
+  getconnectteams(){
+    return this.http.post('https://test.sportsocial.in/web/WebTeams', {});
+  }
+
+  getconnectlocality(){
+    return this.http.post('https://test.sportsocial.in/web/WebLocality', {});
   }
 }
