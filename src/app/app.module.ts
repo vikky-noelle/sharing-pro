@@ -1,3 +1,4 @@
+import { LocalitysComponent } from './connect/locality/locality.component';
 /* angular modules */
 import { CookieService } from 'ngx-cookie-service';
 import { NgModule } from '@angular/core';
@@ -104,7 +105,8 @@ import { UsersComponent } from './connect/users/users.component';
     TimeAgoPipe,
     TeamsComponent,
     ReplacecharPipe,
-    UsersComponent
+    UsersComponent,
+    LocalitysComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId:'sport-social'}),

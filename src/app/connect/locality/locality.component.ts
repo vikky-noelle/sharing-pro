@@ -7,7 +7,7 @@ import { PostService } from '../../shared/services/post.service';
   templateUrl: './locality.component.html',
   styleUrls: ['./locality.component.css']
 })
-export class LocalityComponent implements OnInit {
+export class LocalitysComponent implements OnInit {
 
   arraypool;
   locality=[];

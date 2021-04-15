@@ -31,7 +31,7 @@ import { LocalityComponent } from '../profile/locality/locality.component';
 import { NewshomeComponent } from '../newshome/newshome.component';
 import { TeamsComponent } from '../connect/teams/teams.component';
 import { UsersComponent } from '../connect/users/users.component';
-import { LocalityComponent as oldcomponent } from './../connect/locality/locality.component';
+import { LocalitysComponent } from './../connect/locality/locality.component';
 
 
 
@@ -40,7 +40,7 @@ const App_Route: Routes = [
     // {path:"firebase",component:FirebaseComponent},
     { path: 'connect/teams/:filter', component: TeamsComponent},
     { path: 'connect/users/:filter', component: UsersComponent},
-    // { path: 'connect/locality/:filter', component: oldcomponent },
+    { path: 'connect/locality/:filter', component: LocalitysComponent },
     {
         path: 'team/:name',            
         component: TeamprofileComponent,

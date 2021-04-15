@@ -1,4 +1,3 @@
-import { PostService } from './../shared/services/post.service';
 import { InteractionService } from './../shared/services/interaction.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { GetService } from './../shared/services/get.service';
